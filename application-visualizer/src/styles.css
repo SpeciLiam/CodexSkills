@@ -326,7 +326,7 @@ select option {
 
 .metric-strip {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   padding: 14px;
 }
 
@@ -568,9 +568,107 @@ select option {
   gap: 18px;
 }
 
-.recruiter-list, .gap-list {
+.outreach-lanes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.outreach-lane {
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(3, 7, 18, .28);
+  border-radius: 8px;
+}
+
+.outreach-lane.engineer {
+  background:
+    linear-gradient(135deg, rgba(112, 161, 255, .1), transparent),
+    rgba(3, 7, 18, .28);
+}
+
+.outreach-lane > header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: start;
+  margin-bottom: 12px;
+}
+
+.outreach-lane header span {
+  display: inline-flex;
+  width: max-content;
+  max-width: 100%;
+  padding: 5px 8px;
+  color: #06111e;
+  background: #55d6be;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 950;
+}
+
+.outreach-lane.engineer header span {
+  background: #a7c7ff;
+}
+
+.outreach-lane h4 {
+  margin: 10px 0 0;
+  font-size: 18px;
+}
+
+.outreach-lane p {
+  margin-top: 6px;
+  color: #aebed0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.outreach-lane button,
+.outreach-modal button {
+  display: inline-grid;
+  place-items: center;
+  min-height: 34px;
+  padding: 0 11px;
+  border: 1px solid rgba(255,255,255,.12);
+  color: #dbeafe;
+  background: rgba(255,255,255,.07);
+  border-radius: 8px;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.lane-counts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.lane-counts b {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.05);
+  border-radius: 8px;
+  font-size: 24px;
+}
+
+.lane-counts small {
+  color: #95a8bd;
+  font-size: 12px;
+}
+
+.recruiter-list, .gap-list, .modal-list {
   display: grid;
   gap: 10px;
+}
+
+.recruiter-list.compact {
+  max-height: 620px;
+  overflow: hidden;
 }
 
 .recruiter-row, .gap-row {
@@ -607,6 +705,70 @@ select option {
 .recruiter-row a {
   width: 34px;
   height: 34px;
+}
+
+.lane-state {
+  display: inline-flex;
+  width: max-content;
+  padding: 6px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 950;
+}
+
+.lane-state.done {
+  color: #022c22;
+  background: #55d6be;
+}
+
+.lane-state.open {
+  color: #251005;
+  background: #f7b267;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+  background: rgba(0, 0, 0, .62);
+  backdrop-filter: blur(8px);
+}
+
+.outreach-modal {
+  width: min(980px, 100%);
+  max-height: min(780px, calc(100vh - 44px));
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.14);
+  background: #07111f;
+  border-radius: 8px;
+  box-shadow: 0 28px 90px rgba(0,0,0,.45);
+}
+
+.outreach-modal > header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.outreach-modal h2 {
+  font-size: 30px;
+}
+
+.outreach-modal button {
+  width: 36px;
+  padding: 0;
+}
+
+.modal-list {
+  max-height: calc(min(780px, 100vh - 44px) - 92px);
+  overflow-y: auto;
+  padding: 14px;
 }
 
 .gap-row {
@@ -937,7 +1099,7 @@ td {
     grid-template-columns: 1fr;
   }
 
-  .command-steps, .mode-grid, .skill-grid {
+  .outreach-lanes, .command-steps, .mode-grid, .skill-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -983,7 +1145,7 @@ td {
     min-height: 220px;
   }
 
-  .kpi-grid, .metric-strip {
+  .kpi-grid, .metric-strip, .outreach-lanes {
     grid-template-columns: 1fr;
   }
 
@@ -1004,7 +1166,8 @@ td {
     grid-template-columns: minmax(0, 1fr) 42px 34px;
   }
 
-  .recruiter-row .status {
+  .recruiter-row .status,
+  .recruiter-row .lane-state {
     display: none;
   }
 }

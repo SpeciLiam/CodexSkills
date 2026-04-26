@@ -62,8 +62,8 @@ const NAV_ITEMS = [
   { href: "#actions", label: "Actions" },
   { href: "#trends", label: "Trends" },
   { href: "#outreach", label: "Outreach" },
-  { href: "#pipeline", label: "Pipeline" },
   { href: "#browser", label: "Browser" },
+  { href: "#pipeline", label: "Pipeline" },
 ];
 
 const INFO_COPY = {
@@ -76,44 +76,44 @@ const INFO_COPY = {
   radar: "Summarizes campaign health across applied rate, high-fit share, reach-out coverage, recruiter coverage, and active share.",
   recruiters: "Lists applications with a known recruiter or LinkedIn path, sorted toward stronger fit so outreach targets are easy to open.",
   gaps: "Highlights high-fit reach-out rows that still need more prospects or ready email addresses.",
-  pipeline: "Explains the Codex recruiting workflow behind this dashboard: when to run the full pipeline, when to run focused modes, and what each local skill is responsible for.",
+  pipeline: "Explains which Codex skills to ask Codex to run. The commands are the deterministic scripts behind those skills, but the intended workflow is that Codex runs them and updates the tracker for you.",
 } as const;
 
 const PIPELINE_MODES = [
   {
     name: "Full Pipeline",
     command: "python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py",
-    description: "Best starting point for a recruiting session. It sequences status refresh, resume/apply work, LinkedIn outreach, prospecting, prep, and dashboard refresh.",
+    description: "Ask Codex to start here for a recruiting session. It sequences status refresh, resume/apply work, LinkedIn outreach, prospecting, prep, and dashboard refresh.",
   },
   {
     name: "LinkedIn Only",
     command: "python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode linkedin",
-    description: "Runs the recruiter and engineer outreach lanes together, then checks prospecting gaps and refreshes the dashboard.",
+    description: "Ask Codex to run this when you only want outbound networking. It keeps recruiter and engineer lanes separate.",
   },
   {
     name: "Resume Tailor",
     command: "python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode resume",
-    description: "Use when you have a new job link or pasted posting and want the surrounding apply/outreach follow-through visible.",
+    description: "Ask Codex to run this when you have a new job link or pasted posting and want resume plus follow-through.",
   },
   {
     name: "Recruiter Lane",
     command: "python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode recruiter",
-    description: "Focuses on talent, university, and technical recruiter contacts without marking engineer outreach as done.",
+    description: "Ask Codex for recruiter-only outreach. It focuses on talent, university, and technical recruiter contacts.",
   },
   {
     name: "Engineer Lane",
     command: "python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode engineer",
-    description: "Focuses on one engineer or relevant employee per company, ideally UGA alumni or team-aligned engineers.",
+    description: "Ask Codex for engineer-only outreach. It focuses on UGA alumni, team-aligned engineers, or credible peer contacts.",
   },
   {
     name: "Dashboard Refresh",
     command: "python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py && cd application-visualizer && npm run build",
-    description: "Rebuilds the data cache and production site output after tracker, outreach, or prospect changes.",
+    description: "Ask Codex to rebuild the dashboard after tracker, outreach, or prospect changes.",
   },
   {
     name: "Notion Mirror",
     command: "python3 skills/notion-application-sync/scripts/sync_applications_to_notion.py --dry-run",
-    description: "Optional slow path. Preview or run Notion matching from the website JSON cache without blocking normal recruiting work.",
+    description: "Ask Codex to run this only when you want the optional Notion mirror checked or synced.",
   },
 ];
 
@@ -216,6 +216,7 @@ function App() {
   const [query, setQuery] = useState("");
   const [status, setStatus] = useState("All");
   const [minFit, setMinFit] = useState(0);
+  const [openOutreachLane, setOpenOutreachLane] = useState<"recruiter" | "engineer" | null>(null);
 
   const statuses = useMemo(() => ["All", ...data.stats.statusCounts.map((item) => item.name)], []);
   const filtered = useMemo(() => {
@@ -223,7 +224,7 @@ function App() {
     return data.applications.filter((app) => {
       const matchesText =
         !needle ||
-        [app.company, app.role, app.location, app.source, app.recruiterContact, app.notes].some((value) =>
+        [app.company, app.role, app.location, app.source, app.recruiterContact, app.engineerContact, app.notes].some((value) =>
           value.toLowerCase().includes(needle),
         );
       return matchesText && (status === "All" || app.status === status) && app.fitScore >= minFit;
@@ -234,9 +235,15 @@ function App() {
   const recruiterApps = useMemo(
     () =>
       filtered
-        .filter((app) => app.recruiterContact || app.recruiterProfile || app.noteLinks.some((link) => link.url.includes("linkedin.com/in/")))
-        .sort((a, b) => b.fitScore - a.fitScore)
-        .slice(0, 18),
+        .filter((app) => app.reachOut || app.recruiterContact || app.recruiterProfile)
+        .sort((a, b) => outreachPriority(b, "recruiter") - outreachPriority(a, "recruiter")),
+    [filtered],
+  );
+  const engineerApps = useMemo(
+    () =>
+      filtered
+        .filter((app) => app.reachOut || app.engineerContact || app.engineerProfile)
+        .sort((a, b) => outreachPriority(b, "engineer") - outreachPriority(a, "engineer")),
     [filtered],
   );
 
@@ -317,7 +324,8 @@ function App() {
         <MiniMetric label="Visible roles" value={filtered.length} />
         <MiniMetric label="Visible applied" value={filteredStats.applied} />
         <MiniMetric label="Avg fit" value={filteredStats.avgFit.toFixed(1)} />
-        <MiniMetric label="Recruiter paths" value={recruiterApps.length} />
+        <MiniMetric label="Recruiter lanes" value={laneDoneCount(recruiterApps, "recruiter")} />
+        <MiniMetric label="Engineer lanes" value={laneDoneCount(engineerApps, "engineer")} />
       </section>
 
       <section id="actions" className="dashboard-grid section-anchor">
@@ -410,9 +418,22 @@ function App() {
       </section>
 
       <section id="outreach" className="split section-anchor">
-        <Panel title="Recruiter Flight Deck" icon={<Users />} info={INFO_COPY.recruiters} wide>
-          <div className="recruiter-list">
-            {recruiterApps.map((app) => <RecruiterRow key={`${app.company}-${app.role}-${app.postingKey}`} app={app} />)}
+        <Panel title="Outreach Flight Deck" icon={<Users />} info={INFO_COPY.recruiters} wide>
+          <div className="outreach-lanes">
+            <OutreachLane
+              lane="recruiter"
+              title="Recruiter Outreach"
+              description="Talent, university, technical recruiter, or hiring contact."
+              apps={recruiterApps}
+              onOpen={() => setOpenOutreachLane("recruiter")}
+            />
+            <OutreachLane
+              lane="engineer"
+              title="Engineer Outreach"
+              description="Engineer, UGA alum, team-aligned employee, or credible peer contact."
+              apps={engineerApps}
+              onOpen={() => setOpenOutreachLane("engineer")}
+            />
           </div>
         </Panel>
         <Panel title="Outreach Gaps" icon={<MailCheck />} info={INFO_COPY.gaps}>
@@ -431,22 +452,71 @@ function App() {
         </Panel>
       </section>
 
+      {openOutreachLane && (
+        <OutreachModal
+          lane={openOutreachLane}
+          apps={openOutreachLane === "recruiter" ? recruiterApps : engineerApps}
+          onClose={() => setOpenOutreachLane(null)}
+        />
+      )}
+
+      <section id="browser" className="table-section section-anchor">
+        <div className="section-heading">
+          <h2>Application Browser</h2>
+          <p>{filtered.length} visible rows</p>
+        </div>
+        <div className="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Company</th>
+                <th>Role</th>
+                <th>Status</th>
+                <th>Fit</th>
+                <th>Recruiter</th>
+                <th>Engineer</th>
+                <th>Links</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filtered.slice(0, 80).map((app) => (
+                <tr key={`${app.company}-${app.role}-${app.postingKey}`}>
+                  <td><strong>{app.company}</strong><small>{app.source}</small></td>
+                  <td>{app.role}<small>{app.location}</small></td>
+                  <td><span className={`status ${STATUS_TONE[app.status] || "cool"}`}>{app.status}</span></td>
+                  <td><b>{app.fitScore || "-"}</b></td>
+                  <td>{app.recruiterContact || "Open"}<small>{app.recruiterProfile && hostFromUrl(app.recruiterProfile)}</small></td>
+                  <td>{app.engineerContact || "Open"}<small>{app.engineerProfile && hostFromUrl(app.engineerProfile)}</small></td>
+                  <td>
+                    <div className="link-pack">
+                      {app.jobLink && <a href={app.jobLink} target="_blank" rel="noreferrer" aria-label="Job"><ExternalLink size={16} /></a>}
+                      {app.recruiterProfile && <a href={app.recruiterProfile} target="_blank" rel="noreferrer" aria-label="Recruiter"><Users size={16} /></a>}
+                      {app.engineerProfile && <a href={app.engineerProfile} target="_blank" rel="noreferrer" aria-label="Engineer"><Users size={16} /></a>}
+                      {app.resumePdf && <a href={app.resumePdf} target="_blank" rel="noreferrer" aria-label="Resume"><BriefcaseBusiness size={16} /></a>}
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       <section id="pipeline" className="pipeline-section section-anchor">
         <div className="section-heading">
           <div>
             <p className="eyebrow"><TerminalSquare size={16} /> Codex skills</p>
-            <h2>Recruiting Pipeline Playbook</h2>
+            <h2>Codex Skill Runbook</h2>
           </div>
           <InfoBubble text={INFO_COPY.pipeline} />
         </div>
 
         <div className="pipeline-hero">
           <div>
-            <h3>Run the whole machine, or just one lane.</h3>
+            <h3>Ask Codex to run the whole machine, or just one lane.</h3>
             <p>
-              The tracker is the source of truth. The generated JSON cache powers this dashboard. The skills below keep resumes, applications,
-              recruiter outreach, engineer outreach, company prospects, Gmail statuses, and the Vercel data build moving in the same direction.
-              Notion runs separately as an optional mirror so the main flow stays fast.
+              A Codex skill is a local workflow Codex can follow with scripts, tracker rules, and guardrails. You can ask Codex to run a skill by name,
+              or ask for the outcome in plain English. The commands shown here are the underlying scripts Codex runs when it needs deterministic data.
             </p>
           </div>
           <div className="pipeline-flow" aria-label="Recommended recruiting flow">
@@ -459,7 +529,7 @@ function App() {
         <div className="command-flow">
           <div className="section-heading compact">
             <div>
-              <p className="eyebrow"><Activity size={16} /> Optimal command flow</p>
+              <p className="eyebrow"><Activity size={16} /> Ask Codex to run these</p>
               <h2>Run Order</h2>
             </div>
           </div>
@@ -497,45 +567,6 @@ function App() {
           ))}
         </div>
       </section>
-
-      <section id="browser" className="table-section section-anchor">
-        <div className="section-heading">
-          <h2>Application Browser</h2>
-          <p>{filtered.length} visible rows</p>
-        </div>
-        <div className="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Company</th>
-                <th>Role</th>
-                <th>Status</th>
-                <th>Fit</th>
-                <th>Recruiter</th>
-                <th>Links</th>
-              </tr>
-            </thead>
-            <tbody>
-              {filtered.slice(0, 80).map((app) => (
-                <tr key={`${app.company}-${app.role}-${app.postingKey}`}>
-                  <td><strong>{app.company}</strong><small>{app.source}</small></td>
-                  <td>{app.role}<small>{app.location}</small></td>
-                  <td><span className={`status ${STATUS_TONE[app.status] || "cool"}`}>{app.status}</span></td>
-                  <td><b>{app.fitScore || "-"}</b></td>
-                  <td>{app.recruiterContact || "Open"}<small>{app.recruiterProfile && hostFromUrl(app.recruiterProfile)}</small></td>
-                  <td>
-                    <div className="link-pack">
-                      {app.jobLink && <a href={app.jobLink} target="_blank" rel="noreferrer" aria-label="Job"><ExternalLink size={16} /></a>}
-                      {app.recruiterProfile && <a href={app.recruiterProfile} target="_blank" rel="noreferrer" aria-label="Recruiter"><Users size={16} /></a>}
-                      {app.resumePdf && <a href={app.resumePdf} target="_blank" rel="noreferrer" aria-label="Resume"><BriefcaseBusiness size={16} /></a>}
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
     </main>
   );
 }
@@ -556,6 +587,74 @@ function MiniMetric({ label, value }: { label: string; value: string | number })
     <div>
       <span>{label}</span>
       <b>{value}</b>
+    </div>
+  );
+}
+
+function OutreachLane({
+  lane,
+  title,
+  description,
+  apps,
+  onOpen,
+}: {
+  lane: "recruiter" | "engineer";
+  title: string;
+  description: string;
+  apps: Application[];
+  onOpen: () => void;
+}) {
+  const done = laneDoneCount(apps, lane);
+  const open = apps.length - done;
+  return (
+    <section className={`outreach-lane ${lane}`}>
+      <header>
+        <div>
+          <span>{lane === "recruiter" ? "Recruiter lane" : "Engineer lane"}</span>
+          <h4>{title}</h4>
+          <p>{description}</p>
+        </div>
+        <button onClick={onOpen} type="button">View all</button>
+      </header>
+      <div className="lane-counts">
+        <b>{done}<small>done</small></b>
+        <b>{open}<small>open</small></b>
+      </div>
+      <div className="recruiter-list compact">
+        {apps.slice(0, 7).map((app) => (
+          <OutreachRow key={`${lane}-${app.company}-${app.role}-${app.postingKey}`} app={app} lane={lane} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function OutreachModal({
+  lane,
+  apps,
+  onClose,
+}: {
+  lane: "recruiter" | "engineer";
+  apps: Application[];
+  onClose: () => void;
+}) {
+  const title = lane === "recruiter" ? "Recruiter Outreach" : "Engineer Outreach";
+  return (
+    <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
+      <section className="outreach-modal" role="dialog" aria-modal="true" aria-label={title} onMouseDown={(event) => event.stopPropagation()}>
+        <header>
+          <div>
+            <p className="eyebrow">{lane === "recruiter" ? "Recruiter lane" : "Engineer lane"}</p>
+            <h2>{title}</h2>
+          </div>
+          <button onClick={onClose} type="button" aria-label="Close"><X size={18} /></button>
+        </header>
+        <div className="modal-list">
+          {apps.map((app) => (
+            <OutreachRow key={`modal-${lane}-${app.company}-${app.role}-${app.postingKey}`} app={app} lane={lane} />
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
@@ -605,17 +704,19 @@ function LegendDots({ items }: { items: Array<{ name: string; value: number }> }
   );
 }
 
-function RecruiterRow({ app }: { app: Application }) {
-  const linkedinNotes = app.noteLinks.filter((link) => link.url.includes("linkedin.com/in/"));
-  const primary = app.recruiterProfile || linkedinNotes[0]?.url || "";
+function OutreachRow({ app, lane }: { app: Application; lane: "recruiter" | "engineer" }) {
+  const contact = lane === "recruiter" ? app.recruiterContact : app.engineerContact;
+  const profile = lane === "recruiter" ? app.recruiterProfile : app.engineerProfile;
+  const primary = profile || app.jobLink || "";
+  const isDone = Boolean(contact || profile);
   return (
     <div className="recruiter-row">
       <div>
         <strong>{app.company}</strong>
         <p>{app.role}</p>
-        <small>{app.recruiterContact || linkedinNotes[0]?.label || "LinkedIn path in notes"}</small>
+        <small>{contact || (lane === "recruiter" ? "Needs recruiter contact" : "Needs engineer contact")}</small>
       </div>
-      <span className={`status ${STATUS_TONE[app.status] || "cool"}`}>{app.status}</span>
+      <span className={`lane-state ${isDone ? "done" : "open"}`}>{isDone ? "Done" : "Open"}</span>
       <b>{app.fitScore}</b>
       {primary ? <a href={primary} target="_blank" rel="noreferrer"><ArrowUpRight size={18} /></a> : <span />}
     </div>
@@ -767,6 +868,22 @@ function actionPriority(app: Application) {
   const contactBoost = app.recruiterContact || app.recruiterProfile ? 6 : 0;
   const outreachBoost = app.reachOut ? 4 : 0;
   return app.fitScore * 10 + statusBoost + contactBoost + outreachBoost;
+}
+
+function laneDoneCount(apps: Application[], lane: "recruiter" | "engineer") {
+  return apps.filter((app) =>
+    lane === "recruiter"
+      ? Boolean(app.recruiterContact || app.recruiterProfile)
+      : Boolean(app.engineerContact || app.engineerProfile),
+  ).length;
+}
+
+function outreachPriority(app: Application, lane: "recruiter" | "engineer") {
+  const done = lane === "recruiter"
+    ? Boolean(app.recruiterContact || app.recruiterProfile)
+    : Boolean(app.engineerContact || app.engineerProfile);
+  const statusBoost = app.status === "Interviewing" ? 20 : app.status.includes("Assessment") ? 16 : app.status === "Applied" ? 8 : 0;
+  return app.fitScore * 10 + statusBoost + (app.reachOut ? 6 : 0) + (done ? -100 : 0);
 }
 
 function summarize(apps: Application[]) {
