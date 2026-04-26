@@ -684,7 +684,7 @@ select option {
 }
 
 .recruiter-row {
-  grid-template-columns: minmax(0, 1fr) auto 42px 34px;
+  grid-template-columns: minmax(0, 1fr) auto 42px auto 34px;
 }
 
 .recruiter-row p {
@@ -694,7 +694,7 @@ select option {
   white-space: nowrap;
 }
 
-.recruiter-row a, .link-pack a {
+.recruiter-row a, .link-pack a, .row-detail {
   display: grid;
   place-items: center;
   color: #06111e;
@@ -705,6 +705,15 @@ select option {
 .recruiter-row a {
   width: 34px;
   height: 34px;
+}
+
+.row-detail {
+  min-height: 34px;
+  padding: 0 10px;
+  border: 0;
+  font-size: 12px;
+  font-weight: 900;
+  cursor: pointer;
 }
 
 .lane-state {
@@ -747,6 +756,10 @@ select option {
   box-shadow: 0 28px 90px rgba(0,0,0,.45);
 }
 
+.outreach-modal.detail {
+  width: min(1040px, 100%);
+}
+
 .outreach-modal > header {
   display: flex;
   align-items: start;
@@ -756,11 +769,16 @@ select option {
   border-bottom: 1px solid rgba(255,255,255,.1);
 }
 
+.outreach-modal > header p:last-child {
+  margin-top: 6px;
+  color: #aebed0;
+}
+
 .outreach-modal h2 {
   font-size: 30px;
 }
 
-.outreach-modal button {
+.outreach-modal > header button {
   width: 36px;
   padding: 0;
 }
@@ -769,6 +787,70 @@ select option {
   max-height: calc(min(780px, 100vh - 44px) - 92px);
   overflow-y: auto;
   padding: 14px;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  max-height: calc(min(780px, 100vh - 44px) - 112px);
+  overflow-y: auto;
+  padding: 14px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 178px;
+  padding: 14px;
+  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(255,255,255,.055);
+  border-radius: 8px;
+}
+
+.contact-card span {
+  width: max-content;
+  max-width: 100%;
+  padding: 5px 8px;
+  color: #06111e;
+  background: #a7c7ff;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 950;
+}
+
+.contact-card h3 {
+  margin-top: 12px;
+  font-size: 17px;
+}
+
+.contact-card p {
+  margin-top: 8px;
+  color: #aebed0;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+.contact-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 0 10px;
+  color: #06111e;
+  background: #55d6be;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 900;
+  text-decoration: none;
 }
 
 .gap-row {
@@ -1174,7 +1256,7 @@ td {
   }
 
   .recruiter-row {
-    grid-template-columns: minmax(0, 1fr) 42px 34px;
+    grid-template-columns: minmax(0, 1fr) 42px auto 34px;
   }
 
   .recruiter-row .status,

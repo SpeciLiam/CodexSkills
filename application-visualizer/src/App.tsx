@@ -43,7 +43,7 @@ import {
 } from "recharts";
 import rawData from "./data/tracker-data.json";
 import { hostFromUrl, percent, readableDate } from "./lib/format";
-import type { Application, TrackerData } from "./lib/types";
+import type { Application, Prospect, TrackerData } from "./lib/types";
 
 const data = rawData as TrackerData;
 
@@ -240,6 +240,7 @@ function App() {
   const [status, setStatus] = useState("All");
   const [minFit, setMinFit] = useState(0);
   const [openOutreachLane, setOpenOutreachLane] = useState<"recruiter" | "engineer" | null>(null);
+  const [selectedOutreach, setSelectedOutreach] = useState<{ app: Application; lane: "recruiter" | "engineer" } | null>(null);
 
   const statuses = useMemo(() => ["All", ...data.stats.statusCounts.map((item) => item.name)], []);
   const filtered = useMemo(() => {
@@ -449,6 +450,7 @@ function App() {
               description="Talent, university, technical recruiter, or hiring contact."
               apps={recruiterApps}
               onOpen={() => setOpenOutreachLane("recruiter")}
+              onInspect={(app) => setSelectedOutreach({ app, lane: "recruiter" })}
             />
             <OutreachLane
               lane="engineer"
@@ -456,6 +458,7 @@ function App() {
               description="Engineer, UGA alum, team-aligned employee, or credible peer contact."
               apps={engineerApps}
               onOpen={() => setOpenOutreachLane("engineer")}
+              onInspect={(app) => setSelectedOutreach({ app, lane: "engineer" })}
             />
           </div>
         </Panel>
@@ -480,6 +483,16 @@ function App() {
           lane={openOutreachLane}
           apps={openOutreachLane === "recruiter" ? recruiterApps : engineerApps}
           onClose={() => setOpenOutreachLane(null)}
+          onInspect={(app) => setSelectedOutreach({ app, lane: openOutreachLane })}
+        />
+      )}
+
+      {selectedOutreach && (
+        <OutreachDetailModal
+          app={selectedOutreach.app}
+          lane={selectedOutreach.lane}
+          prospects={data.prospects}
+          onClose={() => setSelectedOutreach(null)}
         />
       )}
 
@@ -638,12 +651,14 @@ function OutreachLane({
   description,
   apps,
   onOpen,
+  onInspect,
 }: {
   lane: "recruiter" | "engineer";
   title: string;
   description: string;
   apps: Application[];
   onOpen: () => void;
+  onInspect: (app: Application) => void;
 }) {
   const done = laneDoneCount(apps, lane);
   const open = apps.length - done;
@@ -663,7 +678,7 @@ function OutreachLane({
       </div>
       <div className="recruiter-list compact">
         {apps.slice(0, 7).map((app) => (
-          <OutreachRow key={`${lane}-${app.company}-${app.role}-${app.postingKey}`} app={app} lane={lane} />
+          <OutreachRow key={`${lane}-${app.company}-${app.role}-${app.postingKey}`} app={app} lane={lane} onInspect={onInspect} />
         ))}
       </div>
     </section>
@@ -674,10 +689,12 @@ function OutreachModal({
   lane,
   apps,
   onClose,
+  onInspect,
 }: {
   lane: "recruiter" | "engineer";
   apps: Application[];
   onClose: () => void;
+  onInspect: (app: Application) => void;
 }) {
   const title = lane === "recruiter" ? "Recruiter Outreach" : "Engineer Outreach";
   return (
@@ -692,7 +709,7 @@ function OutreachModal({
         </header>
         <div className="modal-list">
           {apps.map((app) => (
-            <OutreachRow key={`modal-${lane}-${app.company}-${app.role}-${app.postingKey}`} app={app} lane={lane} />
+            <OutreachRow key={`modal-${lane}-${app.company}-${app.role}-${app.postingKey}`} app={app} lane={lane} onInspect={onInspect} />
           ))}
         </div>
       </section>
@@ -745,7 +762,48 @@ function LegendDots({ items }: { items: Array<{ name: string; value: number }> }
   );
 }
 
-function OutreachRow({ app, lane }: { app: Application; lane: "recruiter" | "engineer" }) {
+function OutreachDetailModal({
+  app,
+  lane,
+  prospects,
+  onClose,
+}: {
+  app: Application;
+  lane: "recruiter" | "engineer";
+  prospects: Prospect[];
+  onClose: () => void;
+}) {
+  const contacts = buildOutreachContacts(app, lane, prospects);
+  return (
+    <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
+      <section className="outreach-modal detail" role="dialog" aria-modal="true" aria-label={`${app.company} outreach contacts`} onMouseDown={(event) => event.stopPropagation()}>
+        <header>
+          <div>
+            <p className="eyebrow">{lane === "recruiter" ? "Recruiter lane" : "Engineer lane"}</p>
+            <h2>{app.company}</h2>
+            <p>{app.role}</p>
+          </div>
+          <button onClick={onClose} type="button" aria-label="Close"><X size={18} /></button>
+        </header>
+        <div className="contact-list">
+          {contacts.map((contact) => (
+            <article className="contact-card" key={`${contact.name}-${contact.url}-${contact.kind}`}>
+              <span>{contact.kind}</span>
+              <h3>{contact.name}</h3>
+              <p>{contact.detail}</p>
+              <div className="contact-actions">
+                {contact.url && <a href={contact.url} target="_blank" rel="noreferrer"><ExternalLink size={15} /> Open</a>}
+                {contact.email && <a href={`mailto:${contact.email}`}><MailCheck size={15} /> Email</a>}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function OutreachRow({ app, lane, onInspect }: { app: Application; lane: "recruiter" | "engineer"; onInspect: (app: Application) => void }) {
   const contact = lane === "recruiter" ? app.recruiterContact : app.engineerContact;
   const profile = lane === "recruiter" ? app.recruiterProfile : app.engineerProfile;
   const primary = profile || app.jobLink || "";
@@ -759,6 +817,7 @@ function OutreachRow({ app, lane }: { app: Application; lane: "recruiter" | "eng
       </div>
       <span className={`lane-state ${isDone ? "done" : "open"}`}>{isDone ? "Done" : "Open"}</span>
       <b>{app.fitScore}</b>
+      <button className="row-detail" type="button" onClick={() => onInspect(app)}>Details</button>
       {primary ? <a href={primary} target="_blank" rel="noreferrer"><ArrowUpRight size={18} /></a> : <span />}
     </div>
   );
@@ -925,6 +984,75 @@ function outreachPriority(app: Application, lane: "recruiter" | "engineer") {
     : Boolean(app.engineerContact || app.engineerProfile);
   const statusBoost = app.status === "Interviewing" ? 20 : app.status.includes("Assessment") ? 16 : app.status === "Applied" ? 8 : 0;
   return app.fitScore * 10 + statusBoost + (app.reachOut ? 6 : 0) + (done ? -100 : 0);
+}
+
+function buildOutreachContacts(app: Application, lane: "recruiter" | "engineer", prospects: Prospect[]) {
+  const contacts: Array<{ kind: string; name: string; detail: string; url: string; email: string }> = [];
+  const add = (contact: { kind: string; name: string; detail?: string; url?: string; email?: string }) => {
+    const key = `${contact.kind}|${contact.name}|${contact.url || ""}|${contact.email || ""}`.toLowerCase();
+    if (contacts.some((item) => `${item.kind}|${item.name}|${item.url}|${item.email}`.toLowerCase() === key)) return;
+    contacts.push({
+      kind: contact.kind,
+      name: contact.name,
+      detail: contact.detail || "",
+      url: contact.url || "",
+      email: contact.email || "",
+    });
+  };
+
+  const laneContact = lane === "recruiter" ? app.recruiterContact : app.engineerContact;
+  const laneProfile = lane === "recruiter" ? app.recruiterProfile : app.engineerProfile;
+  if (laneContact || laneProfile) {
+    add({
+      kind: lane === "recruiter" ? "Tracked recruiter" : "Tracked engineer",
+      name: laneContact || "Saved LinkedIn profile",
+      detail: "Saved directly on the application row.",
+      url: laneProfile,
+    });
+  }
+
+  const targetWords = lane === "recruiter"
+    ? ["recruiter", "talent", "hiring", "university"]
+    : ["engineer", "alumni", "employee", "peer"];
+  prospects
+    .filter((prospect) =>
+      normalizeKey(prospect.company) === normalizeKey(app.company) &&
+      (!prospect.postingKey || !app.postingKey || normalizeKey(prospect.postingKey) === normalizeKey(app.postingKey)) &&
+      targetWords.some((word) => normalizeKey(prospect.targetType).includes(word) || normalizeKey(prospect.title).includes(word)),
+    )
+    .forEach((prospect) => {
+      add({
+        kind: prospect.targetType || (lane === "recruiter" ? "Recruiter prospect" : "Engineer prospect"),
+        name: prospect.name || "Unnamed prospect",
+        detail: [prospect.title, prospect.emailStatus, prospect.notes].filter(Boolean).join(" | "),
+        url: prospect.linkedin,
+        email: prospect.apolloEmail,
+      });
+    });
+
+  app.noteLinks
+    .filter((link) => link.url.includes("linkedin.com/in/"))
+    .forEach((link) => {
+      add({
+        kind: "LinkedIn note link",
+        name: link.label || "LinkedIn profile",
+        detail: "Found in tracker notes.",
+        url: link.url,
+      });
+    });
+
+  if (!contacts.length) {
+    add({
+      kind: lane === "recruiter" ? "Open recruiter slot" : "Open engineer slot",
+      name: lane === "recruiter" ? "No recruiter saved yet" : "No engineer saved yet",
+      detail: "Run the lane queue, pick contacts, then record sends with update_outreach_tracker.py.",
+    });
+  }
+  return contacts;
+}
+
+function normalizeKey(value: string) {
+  return (value || "").trim().toLowerCase().split(/\s+/).join(" ");
 }
 
 function summarize(apps: Application[]) {
