@@ -5,6 +5,7 @@ import {
   BriefcaseBusiness,
   ExternalLink,
   Filter,
+  Info,
   Link as LinkIcon,
   MailCheck,
   Network,
@@ -55,6 +56,26 @@ const STATUS_TONE: Record<string, string> = {
   Offer: "hot",
 };
 
+const NAV_ITEMS = [
+  { href: "#overview", label: "Overview" },
+  { href: "#graph", label: "Graph" },
+  { href: "#trends", label: "Trends" },
+  { href: "#outreach", label: "Outreach" },
+  { href: "#browser", label: "Browser" },
+];
+
+const INFO_COPY = {
+  graph: "Each node is an application. Larger nodes are stronger opportunities; colors show status/reach-out signal. Lines connect roles that share useful traits like status, source, location, role family, or similar fit. Drag nodes to untangle clusters; double-click a node to open its best link.",
+  velocity: "Shows how the pipeline grew over time. The filled curve is cumulative tracked roles, while the line highlights applications submitted on each date.",
+  status: "Breaks the tracker into current outcomes such as tailored, applied, interviewing, assessment, rejected, or offer.",
+  fit: "Counts roles by fit score, making it easy to see whether the pipeline is concentrated around high-fit opportunities.",
+  source: "Compares where roles are coming from, so you can see which channels are feeding the most opportunities.",
+  role: "Plots visible applications by fit score and status. It is useful for spotting high-fit roles that are still only tailored or need action.",
+  radar: "Summarizes campaign health across applied rate, high-fit share, reach-out coverage, recruiter coverage, and active share.",
+  recruiters: "Lists applications with a known recruiter or LinkedIn path, sorted toward stronger fit so outreach targets are easy to open.",
+  gaps: "Highlights high-fit reach-out rows that still need more prospects or ready email addresses.",
+} as const;
+
 function App() {
   const [query, setQuery] = useState("");
   const [status, setStatus] = useState("All");
@@ -96,7 +117,17 @@ function App() {
 
   return (
     <main>
-      <section className="topbar">
+      <nav className="sticky-nav" aria-label="Dashboard sections">
+        <a className="brand-chip" href="#overview"><Sparkles size={16} /> Tracker</a>
+        <div>
+          {NAV_ITEMS.map((item) => (
+            <a key={item.href} href={item.href}>{item.label}</a>
+          ))}
+        </div>
+        <span>{filtered.length} visible</span>
+      </nav>
+
+      <section id="overview" className="topbar section-anchor">
         <div>
           <p className="eyebrow"><Sparkles size={16} /> Application intelligence</p>
           <h1>Tracker Command Center</h1>
@@ -151,12 +182,12 @@ function App() {
         <MiniMetric label="Recruiter paths" value={recruiterApps.length} />
       </section>
 
-      <section className="dashboard-grid">
-        <Panel title="Opportunity Graph" icon={<Network />} wide>
+      <section id="graph" className="dashboard-grid section-anchor">
+        <Panel title="Opportunity Graph" icon={<Network />} info={INFO_COPY.graph} wide>
           <OpportunityGraph apps={filtered} />
         </Panel>
 
-        <Panel title="Application Velocity" icon={<Activity />}>
+        <Panel id="trends" title="Application Velocity" icon={<Activity />} info={INFO_COPY.velocity}>
           <ResponsiveContainer width="100%" height={290}>
             <AreaChart data={data.stats.timeline}>
               <defs>
@@ -175,7 +206,7 @@ function App() {
           </ResponsiveContainer>
         </Panel>
 
-        <Panel title="Status Gravity" icon={<Network />}>
+        <Panel title="Status Gravity" icon={<Network />} info={INFO_COPY.status}>
           <ResponsiveContainer width="100%" height={290}>
             <PieChart>
               <Pie data={data.stats.statusCounts} dataKey="value" nameKey="name" innerRadius={60} outerRadius={108} paddingAngle={3}>
@@ -187,7 +218,7 @@ function App() {
           <LegendDots items={data.stats.statusCounts.slice(0, 6)} />
         </Panel>
 
-        <Panel title="Fit Score Heat" icon={<Target />}>
+        <Panel title="Fit Score Heat" icon={<Target />} info={INFO_COPY.fit}>
           <ResponsiveContainer width="100%" height={280}>
             <BarChart data={data.stats.fitCounts}>
               <CartesianGrid stroke="rgba(255,255,255,.08)" vertical={false} />
@@ -201,19 +232,7 @@ function App() {
           </ResponsiveContainer>
         </Panel>
 
-        <Panel title="Campaign Radar" icon={<Radar />}>
-          <ResponsiveContainer width="100%" height={280}>
-            <RadarChart data={radarData}>
-              <PolarGrid stroke="rgba(255,255,255,.14)" />
-              <PolarAngleAxis dataKey="axis" tick={{ fill: "#dbeafe", fontSize: 12 }} />
-              <PolarRadiusAxis angle={90} domain={[0, 100]} tick={false} axisLine={false} />
-              <RadarShape dataKey="value" stroke="#f7b267" fill="#f7b267" fillOpacity={0.35} strokeWidth={3} />
-              <Tooltip content={<ChartTooltip />} />
-            </RadarChart>
-          </ResponsiveContainer>
-        </Panel>
-
-        <Panel title="Sources x Outcomes" icon={<LinkIcon />} wide>
+        <Panel title="Sources x Outcomes" icon={<LinkIcon />} info={INFO_COPY.source} wide>
           <ResponsiveContainer width="100%" height={320}>
             <ComposedChart data={data.stats.sourceCounts.slice(0, 10)}>
               <CartesianGrid stroke="rgba(255,255,255,.08)" vertical={false} />
@@ -226,7 +245,7 @@ function App() {
           </ResponsiveContainer>
         </Panel>
 
-        <Panel title="Role Field" icon={<BriefcaseBusiness />}>
+        <Panel title="Role Field" icon={<BriefcaseBusiness />} info={INFO_COPY.role}>
           <ResponsiveContainer width="100%" height={320}>
             <ScatterChart>
               <CartesianGrid stroke="rgba(255,255,255,.08)" />
@@ -237,15 +256,28 @@ function App() {
             </ScatterChart>
           </ResponsiveContainer>
         </Panel>
+
+        <Panel title="Campaign Radar" icon={<Radar />} info={INFO_COPY.radar}>
+          <ResponsiveContainer width="100%" height={280}>
+            <RadarChart data={radarData}>
+              <PolarGrid stroke="rgba(255,255,255,.14)" />
+              <PolarAngleAxis dataKey="axis" tick={{ fill: "#dbeafe", fontSize: 12 }} />
+              <PolarRadiusAxis angle={90} domain={[0, 100]} tick={false} axisLine={false} />
+              <RadarShape dataKey="value" stroke="#f7b267" fill="#f7b267" fillOpacity={0.35} strokeWidth={3} />
+              <Tooltip content={<ChartTooltip />} />
+            </RadarChart>
+          </ResponsiveContainer>
+        </Panel>
+
       </section>
 
-      <section className="split">
-        <Panel title="Recruiter Flight Deck" icon={<Users />} wide>
+      <section id="outreach" className="split section-anchor">
+        <Panel title="Recruiter Flight Deck" icon={<Users />} info={INFO_COPY.recruiters} wide>
           <div className="recruiter-list">
             {recruiterApps.map((app) => <RecruiterRow key={`${app.company}-${app.role}-${app.postingKey}`} app={app} />)}
           </div>
         </Panel>
-        <Panel title="Outreach Gaps" icon={<MailCheck />}>
+        <Panel title="Outreach Gaps" icon={<MailCheck />} info={INFO_COPY.gaps}>
           <div className="gap-list">
             {data.stats.outreachGaps.slice(0, 14).map((gap) => (
               <a className="gap-row" key={`${gap.company}-${gap.role}-${gap.jobLink}`} href={gap.jobLink || undefined} target="_blank" rel="noreferrer">
@@ -261,7 +293,7 @@ function App() {
         </Panel>
       </section>
 
-      <section className="table-section">
+      <section id="browser" className="table-section section-anchor">
         <div className="section-heading">
           <h2>Application Browser</h2>
           <p>{filtered.length} visible rows</p>
@@ -323,14 +355,38 @@ function MiniMetric({ label, value }: { label: string; value: string | number })
   );
 }
 
-function Panel({ title, icon, children, wide = false }: { title: string; icon: ReactNode; children: ReactNode; wide?: boolean }) {
+function Panel({
+  id,
+  title,
+  icon,
+  info,
+  children,
+  wide = false,
+}: {
+  id?: string;
+  title: string;
+  icon: ReactNode;
+  info?: string;
+  children: ReactNode;
+  wide?: boolean;
+}) {
   return (
-    <article className={`panel ${wide ? "wide" : ""}`}>
+    <article id={id} className={`panel section-anchor ${wide ? "wide" : ""}`}>
       <header>
         <h3>{icon}{title}</h3>
+        {info && <InfoBubble text={info} />}
       </header>
       {children}
     </article>
+  );
+}
+
+function InfoBubble({ text }: { text: string }) {
+  return (
+    <span className="info-bubble" tabIndex={0} aria-label={text}>
+      <Info size={16} />
+      <span>{text}</span>
+    </span>
   );
 }
 
