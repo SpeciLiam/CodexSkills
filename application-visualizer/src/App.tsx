@@ -14,6 +14,7 @@ import {
   Send,
   Sparkles,
   Target,
+  TerminalSquare,
   Users,
   X,
 } from "lucide-react";
@@ -61,6 +62,7 @@ const NAV_ITEMS = [
   { href: "#actions", label: "Actions" },
   { href: "#trends", label: "Trends" },
   { href: "#outreach", label: "Outreach" },
+  { href: "#pipeline", label: "Pipeline" },
   { href: "#browser", label: "Browser" },
 ];
 
@@ -74,7 +76,74 @@ const INFO_COPY = {
   radar: "Summarizes campaign health across applied rate, high-fit share, reach-out coverage, recruiter coverage, and active share.",
   recruiters: "Lists applications with a known recruiter or LinkedIn path, sorted toward stronger fit so outreach targets are easy to open.",
   gaps: "Highlights high-fit reach-out rows that still need more prospects or ready email addresses.",
+  pipeline: "Explains the Codex recruiting workflow behind this dashboard: when to run the full pipeline, when to run focused modes, and what each local skill is responsible for.",
 } as const;
+
+const PIPELINE_MODES = [
+  {
+    name: "Full Pipeline",
+    command: "python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py",
+    description: "Best starting point for a recruiting session. It sequences status refresh, resume/apply work, LinkedIn outreach, prospecting, prep, and dashboard refresh.",
+  },
+  {
+    name: "LinkedIn Only",
+    command: "python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode linkedin",
+    description: "Runs the recruiter and engineer outreach lanes together, then checks prospecting gaps and refreshes the dashboard.",
+  },
+  {
+    name: "Resume Tailor",
+    command: "python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode resume",
+    description: "Use when you have a new job link or pasted posting and want the surrounding apply/outreach follow-through visible.",
+  },
+  {
+    name: "Recruiter Lane",
+    command: "python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode recruiter",
+    description: "Focuses on talent, university, and technical recruiter contacts without marking engineer outreach as done.",
+  },
+  {
+    name: "Engineer Lane",
+    command: "python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode engineer",
+    description: "Focuses on one engineer or relevant employee per company, ideally UGA alumni or team-aligned engineers.",
+  },
+  {
+    name: "Dashboard Refresh",
+    command: "python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py && cd application-visualizer && npm run build",
+    description: "Rebuilds the data cache and production site output after tracker, outreach, or prospect changes.",
+  },
+];
+
+const SKILL_CARDS = [
+  {
+    name: "recruiting-pipeline",
+    role: "Orchestrator",
+    text: "Chooses the next best recruiting moves and supports focused modes for LinkedIn, resume tailoring, prospecting, prep, status, and dashboard work.",
+  },
+  {
+    name: "resume-tailor",
+    role: "Role intake",
+    text: "Creates a company-specific one-page resume, renders the PDF, updates the markdown tracker, and decides fit score plus Reach Out defaults.",
+  },
+  {
+    name: "linkedin-outreach",
+    role: "Networking",
+    text: "Builds separate recruiter and engineer queues, drafts connection notes, and records each successful invite back into the tracker.",
+  },
+  {
+    name: "company-prospecting",
+    role: "People search",
+    text: "Maintains deeper company prospect lists and flags missing recruiter or engineer lanes before Apollo email lookup.",
+  },
+  {
+    name: "gmail-application-refresh",
+    role: "Status sync",
+    text: "Reviews application emails and updates statuses for confirmations, rejections, interviews, and online assessments when confidence is high.",
+  },
+  {
+    name: "application-visualizer-refresh",
+    role: "Data build",
+    text: "Turns markdown tracker data into the normalized JSON cache this website uses for charts, filters, outreach gaps, and action views.",
+  },
+];
 
 function App() {
   const [query, setQuery] = useState("");
@@ -293,6 +362,51 @@ function App() {
             ))}
           </div>
         </Panel>
+      </section>
+
+      <section id="pipeline" className="pipeline-section section-anchor">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow"><TerminalSquare size={16} /> Codex skills</p>
+            <h2>Recruiting Pipeline Playbook</h2>
+          </div>
+          <InfoBubble text={INFO_COPY.pipeline} />
+        </div>
+
+        <div className="pipeline-hero">
+          <div>
+            <h3>Run the whole machine, or just one lane.</h3>
+            <p>
+              The tracker is the source of truth. The generated JSON cache powers this dashboard. The skills below keep resumes, applications,
+              recruiter outreach, engineer outreach, company prospects, Gmail statuses, and the Vercel data build moving in the same direction.
+            </p>
+          </div>
+          <div className="pipeline-flow" aria-label="Recommended recruiting flow">
+            {["Refresh", "Tailor", "Apply", "Recruiter", "Engineer", "Prospect", "Prep", "Visualize"].map((step) => (
+              <span key={step}>{step}</span>
+            ))}
+          </div>
+        </div>
+
+        <div className="mode-grid">
+          {PIPELINE_MODES.map((mode) => (
+            <article className="mode-card" key={mode.name}>
+              <h3>{mode.name}</h3>
+              <p>{mode.description}</p>
+              <code>{mode.command}</code>
+            </article>
+          ))}
+        </div>
+
+        <div className="skill-grid">
+          {SKILL_CARDS.map((skill) => (
+            <article className="skill-card" key={skill.name}>
+              <span>{skill.role}</span>
+              <h3>{skill.name}</h3>
+              <p>{skill.text}</p>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section id="browser" className="table-section section-anchor">
