@@ -1122,7 +1122,7 @@ select option {
 table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 980px;
+  min-width: 1120px;
 }
 
 th, td {
@@ -1151,6 +1151,49 @@ td {
 .link-pack a {
   width: 32px;
   height: 32px;
+}
+
+.resume-ref {
+  display: grid;
+  gap: 6px;
+  min-width: 132px;
+}
+
+.resume-ref > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: max-content;
+  min-height: 32px;
+  padding: 0 10px;
+  color: #06111e;
+  background: #55d6be;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.resume-ref small {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: 210px;
+  color: #95a8bd;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.resume-ref small a {
+  color: #9df1e3;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.resume-ref.missing {
+  color: #95a8bd;
+  font-size: 12px;
 }
 
 .tooltip {

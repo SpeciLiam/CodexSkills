@@ -507,6 +507,7 @@ function App() {
               <tr>
                 <th>Company</th>
                 <th>Role</th>
+                <th>Resume</th>
                 <th>Status</th>
                 <th>Fit</th>
                 <th>Recruiter</th>
@@ -519,6 +520,7 @@ function App() {
                 <tr key={`${app.company}-${app.role}-${app.postingKey}`}>
                   <td><strong>{app.company}</strong><small>{app.source}</small></td>
                   <td>{app.role}<small>{app.location}</small></td>
+                  <td><ResumeReference app={app} /></td>
                   <td><span className={`status ${STATUS_TONE[app.status] || "cool"}`}>{app.status}</span></td>
                   <td><b>{app.fitScore || "-"}</b></td>
                   <td>{app.recruiterContact || "Open"}<small>{app.recruiterProfile && hostFromUrl(app.recruiterProfile)}</small></td>
@@ -528,7 +530,7 @@ function App() {
                       {app.jobLink && <a href={app.jobLink} target="_blank" rel="noreferrer" aria-label="Job"><ExternalLink size={16} /></a>}
                       {app.recruiterProfile && <a href={app.recruiterProfile} target="_blank" rel="noreferrer" aria-label="Recruiter"><Users size={16} /></a>}
                       {app.engineerProfile && <a href={app.engineerProfile} target="_blank" rel="noreferrer" aria-label="Engineer"><Users size={16} /></a>}
-                      {app.resumePdf && <a href={app.resumePdf} target="_blank" rel="noreferrer" aria-label="Resume"><BriefcaseBusiness size={16} /></a>}
+                      {app.resumePdf && <a href={repoLink(app.resumePdf)} target="_blank" rel="noreferrer" aria-label="Resume"><BriefcaseBusiness size={16} /></a>}
                     </div>
                   </td>
                 </tr>
@@ -641,6 +643,30 @@ function MiniMetric({ label, value }: { label: string; value: string | number })
     <div>
       <span>{label}</span>
       <b>{value}</b>
+    </div>
+  );
+}
+
+function ResumeReference({ app }: { app: Application }) {
+  if (!app.resumePdf && !app.resumeFolder) {
+    return <span className="resume-ref missing">No tailored resume</span>;
+  }
+  return (
+    <div className="resume-ref">
+      {app.resumePdf ? (
+        <a href={repoLink(app.resumePdf)} target="_blank" rel="noreferrer">
+          <BriefcaseBusiness size={15} />
+          Open PDF
+        </a>
+      ) : (
+        <span>No PDF</span>
+      )}
+      {app.resumeFolder && (
+        <small>
+          <a href={repoLink(app.resumeFolder)} target="_blank" rel="noreferrer">Folder</a>
+          {resumeName(app.resumePdf || app.resumeFolder)}
+        </small>
+      )}
     </div>
   );
 }
@@ -1053,6 +1079,21 @@ function buildOutreachContacts(app: Application, lane: "recruiter" | "engineer",
 
 function normalizeKey(value: string) {
   return (value || "").trim().toLowerCase().split(/\s+/).join(" ");
+}
+
+function repoLink(path: string) {
+  if (!path) return "";
+  if (path.startsWith("http://") || path.startsWith("https://")) return path;
+  const marker = "/CodexSkills/";
+  const relative = path.includes(marker) ? path.split(marker, 2)[1] : path.replace(/^\/+/, "");
+  const encoded = relative.split("/").map(encodeURIComponent).join("/");
+  const isPdf = relative.toLowerCase().endsWith(".pdf");
+  return `https://github.com/SpeciLiam/CodexSkills/${isPdf ? "raw" : "tree"}/main/${encoded}`;
+}
+
+function resumeName(path: string) {
+  const filename = path.split("/").filter(Boolean).pop() || "Tailored resume";
+  return filename.replace(/_/g, " ");
 }
 
 function summarize(apps: Application[]) {
