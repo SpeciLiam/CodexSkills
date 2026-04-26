@@ -147,7 +147,9 @@ function App() {
               A visual layer over applications, recruiter paths, fit scores, sources, timing, and outreach gaps.
             </p>
           </div>
-          <Constellation apps={filtered.slice(0, 90)} />
+          <div className="constellation-preview" aria-hidden="true">
+            <Constellation apps={filtered.slice(0, 70)} />
+          </div>
         </div>
         <div className="kpi-grid">
           <Kpi icon={<BriefcaseBusiness />} label="Applied" value={data.stats.kpis.applied} sub={percent(data.stats.kpis.applyRate)} />
