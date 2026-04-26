@@ -1,0 +1,25 @@
+{
+  "name": "application-visualizer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run refresh && vite --host 0.0.0.0",
+    "refresh": "python3 ../skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py",
+    "build": "npm run refresh && tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
+    "lucide-react": "^0.468.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^2.10.3",
+    "typescript": "^5.3.3",
+    "vite": "^6.4.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.28",
+    "@types/react-dom": "^18.3.7"
+  }
+}
