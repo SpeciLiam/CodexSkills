@@ -138,15 +138,15 @@ const OPTIMAL_COMMAND_FLOW = [
   },
   {
     step: "4",
-    name: "Run recruiter outreach",
+    name: "Recruiter outreach lane",
     command: "python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type recruiter --limit 20",
-    note: "Find one recruiter or talent contact per reachable role and record the invite immediately.",
+    note: "Ask Codex to run this as its own lane. It finds one recruiter or talent contact per reachable role.",
   },
   {
     step: "5",
-    name: "Run engineer outreach",
+    name: "Engineer outreach lane",
     command: "python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type engineer --limit 20",
-    note: "Find one engineer, UGA alum, or relevant employee per role. This is separate from recruiter outreach.",
+    note: "Ask Codex to run this as a separate lane. It finds one engineer, UGA alum, or relevant employee per role.",
   },
   {
     step: "6",
@@ -171,6 +171,29 @@ const OPTIMAL_COMMAND_FLOW = [
     name: "Optional Notion mirror",
     command: "python3 skills/notion-application-sync/scripts/sync_applications_to_notion.py --dry-run",
     note: "Keep this outside the fast path. Use the 12-hour automation or run it manually after checking the dry run.",
+  },
+];
+
+const PARALLEL_WORKSTREAMS = [
+  {
+    name: "1. Snapshot",
+    text: "Refresh data once so every lane works from the same tracker state.",
+    command: "python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py",
+  },
+  {
+    name: "2. Recruiter workstream",
+    text: "One Codex run owns recruiter/talent contacts and records only recruiter fields.",
+    command: "python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type recruiter --format json",
+  },
+  {
+    name: "3. Engineer workstream",
+    text: "A second Codex run owns engineer/alumni/peer contacts and records only engineer fields.",
+    command: "python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type engineer --format json",
+  },
+  {
+    name: "4. Merge safely",
+    text: "Both lanes write through the outreach updater, then Codex refreshes the dashboard.",
+    command: "python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py && cd application-visualizer && npm run build",
   },
 ];
 
@@ -542,6 +565,24 @@ function App() {
                   <p>{item.note}</p>
                   <code>{item.command}</code>
                 </div>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <div className="parallel-flow">
+          <div className="section-heading compact">
+            <div>
+              <p className="eyebrow"><Users size={16} /> Parallel Codex workstreams</p>
+              <h2>Fast LinkedIn Pass</h2>
+            </div>
+          </div>
+          <div className="parallel-grid">
+            {PARALLEL_WORKSTREAMS.map((item) => (
+              <article className="parallel-card" key={item.name}>
+                <h3>{item.name}</h3>
+                <p>{item.text}</p>
+                <code>{item.command}</code>
               </article>
             ))}
           </div>

@@ -109,6 +109,7 @@ Follow this sequence unless the user asks for a specific step:
      - one recruiter contact
      - one engineer contact
    - Recording recruiter outreach must not mark engineer outreach complete, and vice versa.
+   - When speed matters, run recruiter and engineer outreach as two parallel Codex workstreams from the same refreshed cache snapshot.
 
 5. **Build deeper prospect lists**
    - Use `company-prospecting` for companies that need more than LinkedIn invites.
@@ -143,6 +144,40 @@ cd application-visualizer && npm run build
 - Need dashboard data rebuilt: use `application-visualizer-refresh`.
 - Need Notion mirroring or 12-hour schedule setup: use `notion-application-sync`.
 - Need overall priorities: use this skill first.
+
+## Parallel Workstreams
+
+Use parallel Codex workstreams only when the lanes are independent and both can update through deterministic scripts.
+
+Best parallel pattern:
+
+1. Refresh the cache once:
+
+```bash
+python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
+```
+
+2. Build separate lane queues from that same snapshot:
+
+```bash
+python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type recruiter --limit 20 --format json
+python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type engineer --limit 20 --format json
+```
+
+3. Run two Codex workstreams:
+   - Workstream A owns recruiter outreach only.
+   - Workstream B owns engineer outreach only.
+
+4. Each workstream records sends only through:
+
+```bash
+python3 skills/linkedin-outreach/scripts/update_outreach_tracker.py --contact-type recruiter ...
+python3 skills/linkedin-outreach/scripts/update_outreach_tracker.py --contact-type engineer ...
+```
+
+5. After both finish, refresh the visualizer cache and rebuild the website.
+
+Avoid more than two concurrent outreach workstreams unless each has a disjoint company list. Do not let parallel workers manually edit the same tracker row; they should use the lane-aware update script so recruiter and engineer fields merge cleanly.
 
 ## Guardrails
 

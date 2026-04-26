@@ -839,7 +839,7 @@ select option {
   font-weight: 900;
 }
 
-.command-flow {
+.command-flow, .parallel-flow {
   padding: 0 18px 18px;
 }
 
@@ -851,13 +851,17 @@ select option {
   font-size: 26px;
 }
 
-.command-steps {
+.command-steps, .parallel-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
 }
 
-.command-step {
+.parallel-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.command-step, .parallel-card {
   display: grid;
   grid-template-columns: 38px minmax(0, 1fr);
   gap: 12px;
@@ -866,6 +870,13 @@ select option {
   border: 1px solid rgba(255,255,255,.1);
   background: rgba(3, 7, 18, .34);
   border-radius: 8px;
+}
+
+.parallel-card {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: none;
+  min-height: 190px;
 }
 
 .command-step > span {
@@ -879,20 +890,20 @@ select option {
   font-weight: 950;
 }
 
-.command-step h3 {
+.command-step h3, .parallel-card h3 {
   font-size: 16px;
 }
 
-.command-step p {
+.command-step p, .parallel-card p {
   margin-top: 8px;
   color: #aebed0;
   font-size: 13px;
   line-height: 1.45;
 }
 
-.command-step code {
+.command-step code, .parallel-card code {
   display: block;
-  margin-top: 12px;
+  margin-top: auto;
   padding: 11px;
   overflow-x: auto;
   border: 1px solid rgba(85, 214, 190, .2);
@@ -1099,7 +1110,7 @@ td {
     grid-template-columns: 1fr;
   }
 
-  .outreach-lanes, .command-steps, .mode-grid, .skill-grid {
+  .outreach-lanes, .command-steps, .parallel-grid, .mode-grid, .skill-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -1149,7 +1160,7 @@ td {
     grid-template-columns: 1fr;
   }
 
-  .command-steps, .mode-grid, .skill-grid, .pipeline-flow {
+  .command-steps, .parallel-grid, .mode-grid, .skill-grid, .pipeline-flow {
     grid-template-columns: 1fr;
   }
 

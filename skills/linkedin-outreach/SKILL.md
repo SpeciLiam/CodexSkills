@@ -17,6 +17,8 @@ python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode
 
 Use `--mode recruiter` or `--mode engineer` when the user names only one lane.
 
+For faster sessions, recruiter outreach and engineer outreach can run as two parallel Codex workstreams. Use the same refreshed tracker cache, split by `--contact-type recruiter` and `--contact-type engineer`, then record all sends through `update_outreach_tracker.py` so the two lanes merge safely.
+
 ## Default strategy
 
 1. Start from the markdown tracker, not memory.
@@ -63,6 +65,23 @@ python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 ```
 
 The script emits separate recruiter and engineer lanes for each application. A role can appear twice if both are still missing. The `contact_type`, `recruiter_done`, and `engineer_done` fields in JSON output tell the agent which lane to work.
+
+## Parallel lane pattern
+
+Use this when the user wants LinkedIn outreach done faster:
+
+```bash
+python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
+python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type recruiter --limit 20 --format json
+python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type engineer --limit 20 --format json
+```
+
+Then split work:
+
+- recruiter workstream: recruiter/talent/university/hiring contacts only
+- engineer workstream: engineer, UGA alum, team-aligned employee, or peer contact only
+
+Both workstreams must record sends with `update_outreach_tracker.py` and the correct `--contact-type`. Do not manually edit the markdown table from parallel workstreams.
 
 ## Connection note helper
 
