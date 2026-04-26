@@ -20,6 +20,7 @@ from update_application_tracker import (  # type: ignore
     tracker_path,
     truthy,
 )
+from tracker_data_cache import load_cached_application_rows  # type: ignore
 
 TITLE_LINE = "# Outreach Prospect Tracker"
 DESCRIPTION_LINE = (
@@ -71,6 +72,10 @@ def company_key(company: str, posting_key: str) -> tuple[str, str]:
 
 
 def load_application_rows(repo_root: Path) -> list[dict[str, str]]:
+    cached_rows = load_cached_application_rows(repo_root)
+    if cached_rows:
+        return cached_rows
+
     lines = tracker_path(repo_root).read_text().splitlines()
     _, row_lines = parse_rows(lines)
     rows: list[dict[str, str]] = []

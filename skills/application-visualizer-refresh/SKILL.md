@@ -7,6 +7,8 @@ description: Refresh the Vercel-ready application tracker visualization website 
 
 Use this skill when the user wants to refresh, rebuild, or update the application tracker visualization website data.
 
+For full recruiting sessions, start with `recruiting-pipeline`; it uses this skill at the beginning for read-model freshness and at the end after tracker changes.
+
 ## Source Files
 
 - Application tracker: `application-trackers/applications.md`

@@ -110,7 +110,7 @@ def main() -> int:
                     row["Notes"] = append_note(row.get("Notes", ""), args.notes)
             updated_rows.append(build_row(row))
         else:
-            updated_rows.append(row_line)
+            updated_rows.append(build_row(row))
 
     if not matched:
         key_hint = target_posting_key or f"{args.company} / {args.role}"

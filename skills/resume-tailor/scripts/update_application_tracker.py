@@ -26,10 +26,17 @@ CURRENT_COLUMNS = [
     "Resume PDF",
     "Recruiter Contact",
     "Recruiter Profile",
+    "Engineer Contact",
+    "Engineer Profile",
     "Notes",
 ]
 
-PRE_RECRUITER_COLUMNS = [column for column in CURRENT_COLUMNS if column not in {"Recruiter Contact", "Recruiter Profile"}]
+PRE_ENGINEER_COLUMNS = [column for column in CURRENT_COLUMNS if column not in {"Engineer Contact", "Engineer Profile"}]
+PRE_RECRUITER_COLUMNS = [
+    column
+    for column in CURRENT_COLUMNS
+    if column not in {"Recruiter Contact", "Recruiter Profile", "Engineer Contact", "Engineer Profile"}
+]
 
 LEGACY_COLUMNS = [
     "Company",
@@ -64,10 +71,17 @@ def truthy(value: str) -> bool:
 def row_from_cells(cells: list[str]) -> dict[str, str] | None:
     if len(cells) == len(DEFAULT_COLUMNS):
         return dict(zip(DEFAULT_COLUMNS, cells))
+    if len(cells) == len(PRE_ENGINEER_COLUMNS):
+        row = dict(zip(PRE_ENGINEER_COLUMNS, cells))
+        row["Engineer Contact"] = ""
+        row["Engineer Profile"] = ""
+        return {column: row.get(column, "") for column in DEFAULT_COLUMNS}
     if len(cells) == len(PRE_RECRUITER_COLUMNS):
         row = dict(zip(PRE_RECRUITER_COLUMNS, cells))
         row["Recruiter Contact"] = ""
         row["Recruiter Profile"] = ""
+        row["Engineer Contact"] = ""
+        row["Engineer Profile"] = ""
         return {column: row.get(column, "") for column in DEFAULT_COLUMNS}
     if len(cells) == len(LEGACY_COLUMNS):
         row = dict(zip(LEGACY_COLUMNS, cells))
@@ -75,6 +89,8 @@ def row_from_cells(cells: list[str]) -> dict[str, str] | None:
         row["Reach Out"] = ""
         row["Recruiter Contact"] = ""
         row["Recruiter Profile"] = ""
+        row["Engineer Contact"] = ""
+        row["Engineer Profile"] = ""
         return {column: row.get(column, "") for column in DEFAULT_COLUMNS}
     return None
 
@@ -258,6 +274,10 @@ def main() -> int:
         "Posting Key": posting_key(args.job_link, args.role),
         "Resume Folder": f"[Folder]({args.resume_folder})",
         "Resume PDF": f"[PDF]({args.resume_pdf})",
+        "Recruiter Contact": "",
+        "Recruiter Profile": "",
+        "Engineer Contact": "",
+        "Engineer Profile": "",
         "Notes": args.notes,
     }
 
@@ -282,7 +302,7 @@ def main() -> int:
             updated_rows.append(build_row(new_row))
             replaced = True
         else:
-            updated_rows.append(row_line)
+            updated_rows.append(build_row(row))
 
     if not replaced:
         updated_rows.append(build_row(new_row))

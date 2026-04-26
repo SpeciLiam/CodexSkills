@@ -20,6 +20,8 @@ export type Application = {
   resumePdf: string;
   recruiterContact: string;
   recruiterProfile: string;
+  engineerContact: string;
+  engineerProfile: string;
   notes: string;
   noteLinks: Array<{ label: string; url: string }>;
   activityDates: string[];

@@ -20,6 +20,7 @@ from update_application_tracker import (  # type: ignore
     split_row,
     tracker_path,
 )
+from tracker_data_cache import load_cached_application_rows  # type: ignore
 
 
 DEFAULT_EXCLUDED_STATUSES = {"rejected", "archived"}
@@ -49,6 +50,10 @@ def build_search_query(company: str, role: str, source: str) -> str:
 
 
 def load_rows(repo_root: Path) -> list[dict[str, str]]:
+    cached_rows = load_cached_application_rows(repo_root)
+    if cached_rows:
+        return cached_rows
+
     tracker = tracker_path(repo_root)
     lines = tracker.read_text().splitlines()
     _, rows = parse_rows(lines)

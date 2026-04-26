@@ -7,6 +7,16 @@ description: Tailor a one-page resume from a generic Overleaf LaTeX resume using
 
 Use this skill when a user wants to adapt the generic resume to a specific job posting.
 
+For full recruiting sessions that include status refreshes, applications, recruiter/engineer outreach, prospecting, and dashboard refreshes, start with `recruiting-pipeline` and let it route into this skill for new role tailoring.
+
+When the user wants to focus only on resume tailoring but still keep the surrounding recruiting flow organized, run:
+
+```bash
+python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode resume
+```
+
+Then tailor the requested role, update the tracker, and only continue into apply/outreach steps when the plan or user request calls for it.
+
 ## Inputs
 
 Gather these before editing:

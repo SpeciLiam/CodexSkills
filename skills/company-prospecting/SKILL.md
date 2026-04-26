@@ -7,6 +7,8 @@ description: Build and maintain a separate company-to-people outreach prospect t
 
 Use this skill when you want a separate tracker of who to contact at each company before email outreach.
 
+For full recruiting sessions, start with `recruiting-pipeline`; it will call this skill after LinkedIn lanes identify companies that still need deeper recruiter/engineer prospecting or Apollo lookup.
+
 ## Goal
 
 Turn each company into a small prospect list:
@@ -28,11 +30,11 @@ For each company, prioritize prospects in this order:
 3. engineer on the likely team
 4. another relevant employee with a visible path to reply
 
-If recruiter confidence is low, include both a recruiter and an engineer in the top 3.
+Every queued company should have at least one recruiter prospect and one engineer prospect when both can be found. If recruiter confidence is low, still keep the engineer lane rather than treating recruiter outreach as enough.
 
 ## Seed the separate tracker
 
-Create or refresh the company queue from `applications.md`:
+Create or refresh the company queue from the organized tracker data when available, with markdown fallback:
 
 ```bash
 python3 skills/company-prospecting/scripts/sync_company_prospect_tracker.py
@@ -46,6 +48,14 @@ python3 skills/company-prospecting/scripts/sync_company_prospect_tracker.py --co
 ```
 
 This keeps `application-trackers/outreach-prospects.md` as the source of truth for prospecting.
+
+The sync script reads `application-visualizer/src/data/tracker-data.json` first because it has normalized rows and links. If that generated cache is missing, it falls back to `application-trackers/applications.md`.
+
+Refresh the cache before a large prospecting pass:
+
+```bash
+python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
+```
 
 ## Find the next companies that still need names
 

@@ -96,6 +96,8 @@ def normalize_application(row: dict[str, str]) -> dict[str, Any]:
         "resumePdf": first_link(row.get("Resume PDF", "")) or first_link(row.get("Company Resume", "")),
         "recruiterContact": clean_text(row.get("Recruiter Contact", "")),
         "recruiterProfile": first_link(row.get("Recruiter Profile", "")),
+        "engineerContact": clean_text(row.get("Engineer Contact", "")),
+        "engineerProfile": first_link(row.get("Engineer Profile", "")),
         "notes": notes,
         "noteLinks": all_links(row.get("Notes", "")),
         "activityDates": DATE_RE.findall(row.get("Notes", "")),

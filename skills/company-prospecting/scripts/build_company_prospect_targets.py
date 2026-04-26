@@ -42,19 +42,28 @@ def main() -> int:
         key = company_key(row["Company"], row["Posting Key"])
         prospects = prospect_map.get(key, [])
         ready_count = sum(1 for prospect in prospects if prospect.get("Email Status", "").strip().lower() == "ready")
-        if len(prospects) < 3 or ready_count < len(prospects):
-            targets.append((row, len(prospects), ready_count))
+        recruiter_count = sum(1 for prospect in prospects if prospect.get("Target Type", "").strip().lower() == "recruiter")
+        engineer_count = sum(1 for prospect in prospects if prospect.get("Target Type", "").strip().lower() == "engineer")
+        missing_lanes = []
+        if recruiter_count == 0:
+            missing_lanes.append("recruiter")
+        if engineer_count == 0:
+            missing_lanes.append("engineer")
+        if len(prospects) < 3 or ready_count < len(prospects) or missing_lanes:
+            targets.append((row, len(prospects), ready_count, missing_lanes))
 
     if args.limit > 0:
         targets = targets[: args.limit]
 
     print(f"Company prospect targets: {len(targets)}")
     print("")
-    for index, (row, prospect_count, ready_count) in enumerate(targets, start=1):
+    for index, (row, prospect_count, ready_count, missing_lanes) in enumerate(targets, start=1):
         print(
             f"{index}. {row['Company']} | {row['Role']} | Fit {row['Fit Score'] or '?'} | "
             f"Prospects {prospect_count}/3 | Ready emails {ready_count}"
         )
+        if missing_lanes:
+            print(f"   Missing lanes: {', '.join(missing_lanes)}")
         print(f"   Posting Key: {row['Posting Key']}")
         print(f"   Job Link: {row['Job Link']}")
         if row["Notes"].strip():

@@ -12,6 +12,7 @@ if str(RESUME_TAILOR_SCRIPTS) not in sys.path:
     sys.path.append(str(RESUME_TAILOR_SCRIPTS))
 
 from update_application_tracker import (  # type: ignore
+    DEFAULT_COLUMNS,
     normalize,
     parse_rows,
     render_tracker,
@@ -100,7 +101,7 @@ def main() -> int:
     contact_text = format_contact(args.contact_name, args.profile_url)
     addition = f"LinkedIn invite sent to {contact_text} ({contact_label}) {args.date}"
 
-    if contact_text in row.get("Notes", "") and args.date in row.get("Notes", ""):
+    if contact_text in row.get("Notes", "") and contact_label in row.get("Notes", "") and args.date in row.get("Notes", ""):
         print("Tracker already includes this outreach note.")
         return 0
 
@@ -111,6 +112,11 @@ def main() -> int:
             row["Recruiter Contact"] = args.contact_name
         if args.profile_url.strip() and not row.get("Recruiter Profile", "").strip():
             row["Recruiter Profile"] = f"[Profile]({args.profile_url})"
+    elif args.contact_type == "engineer":
+        if not row.get("Engineer Contact", "").strip():
+            row["Engineer Contact"] = args.contact_name
+        if args.profile_url.strip() and not row.get("Engineer Profile", "").strip():
+            row["Engineer Profile"] = f"[Profile]({args.profile_url})"
 
     new_lines = [build_row(row) for row in rows]
     tracker.write_text(render_tracker(new_lines))
@@ -123,31 +129,10 @@ def main() -> int:
 
 
 def build_row(data: dict[str, str]) -> str:
-    columns = [
-        "Company",
-        "Role",
-        "Applied",
-        "Status",
-        "Fit Score",
-        "Reach Out",
-        "Company Resume",
-        "Referral",
-        "Date Added",
-        "Location",
-        "Source",
-        "Job Link",
-        "Posting Key",
-        "Resume Folder",
-        "Resume PDF",
-        "Recruiter Contact",
-        "Recruiter Profile",
-        "Notes",
-    ]
-
     def escape_cell(value: str) -> str:
         return value.replace("|", "\\|").replace("\n", " ").strip()
 
-    return "| " + " | ".join(escape_cell(data.get(column, "")) for column in columns) + " |"
+    return "| " + " | ".join(escape_cell(data.get(column, "")) for column in DEFAULT_COLUMNS) + " |"
 
 
 if __name__ == "__main__":

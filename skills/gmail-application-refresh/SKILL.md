@@ -7,6 +7,8 @@ description: Review Gmail for application-related emails, infer status changes s
 
 Use this skill when the user wants to refresh application statuses from Gmail.
 
+For full recruiting sessions, start with `recruiting-pipeline`; it runs Gmail/status refresh before outbound work so stale rows do not waste outreach time.
+
 This skill is designed for safe updates:
 
 - read recent application-related emails
@@ -33,10 +35,19 @@ If the user later wants this on a schedule, this skill can be used inside an aut
 Gather these first:
 
 1. the markdown tracker in `application-trackers/applications.md`
+   or the generated tracker cache in `application-visualizer/src/data/tracker-data.json`
 2. the Notion config in `application-trackers/notion-config.md`
 3. recent Gmail messages likely related to jobs
 
 Start from the tracker, not from the inbox.
+
+For target building, prefer the generated cache when available because it has normalized application rows. Refresh it with:
+
+```bash
+python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
+```
+
+If the cache is missing, use the markdown tracker directly.
 
 The preferred refresh flow is:
 

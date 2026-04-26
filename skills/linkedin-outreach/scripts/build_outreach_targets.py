@@ -21,18 +21,27 @@ from update_application_tracker import (  # type: ignore
     tracker_path,
     truthy,
 )
+from tracker_data_cache import load_cached_application_rows  # type: ignore
 
 
 DEFAULT_EXCLUDED_STATUSES = {"rejected", "archived"}
 OUTREACH_MARKERS = (
     "linkedin invite sent",
+    "linkedin invites sent",
     "connection invite sent",
+    "connection invites sent",
     "reached out",
     "connect request sent",
+    "connect requests sent",
 )
+CONTACT_TYPES = ("recruiter", "engineer")
 
 
 def load_rows(repo_root: Path) -> list[dict[str, str]]:
+    cached_rows = load_cached_application_rows(repo_root)
+    if cached_rows:
+        return cached_rows
+
     tracker = tracker_path(repo_root)
     lines = tracker.read_text().splitlines()
     _, rows = parse_rows(lines)
@@ -45,15 +54,33 @@ def load_rows(repo_root: Path) -> list[dict[str, str]]:
     return parsed_rows
 
 
-def has_outreach_record(row: dict[str, str]) -> bool:
+def has_contact_type_record(row: dict[str, str], contact_type: str) -> bool:
     notes = normalize(row.get("Notes", ""))
+    if contact_type == "recruiter":
+        if row.get("Recruiter Contact", "").strip():
+            return True
+        if row.get("Recruiter Profile", "").strip():
+            return True
+        return any(marker in notes and "recruiter" in notes for marker in OUTREACH_MARKERS)
+
+    if contact_type == "engineer":
+        if row.get("Engineer Contact", "").strip():
+            return True
+        if row.get("Engineer Profile", "").strip():
+            return True
+        return any(marker in notes and "engineer" in notes for marker in OUTREACH_MARKERS)
+
     if any(marker in notes for marker in OUTREACH_MARKERS):
         return True
-    if row.get("Recruiter Contact", "").strip():
+    if row.get("Recruiter Contact", "").strip() or row.get("Recruiter Profile", "").strip():
         return True
-    if row.get("Recruiter Profile", "").strip():
+    if row.get("Engineer Contact", "").strip() or row.get("Engineer Profile", "").strip():
         return True
     return False
+
+
+def has_outreach_record(row: dict[str, str]) -> bool:
+    return any(has_contact_type_record(row, contact_type) for contact_type in CONTACT_TYPES)
 
 
 def fit_score_value(row: dict[str, str]) -> int:
@@ -71,6 +98,7 @@ def filter_rows(
     include_statuses: set[str],
     exclude_statuses: set[str],
     include_contacted: bool,
+    contact_types: tuple[str, ...],
 ) -> list[dict[str, str]]:
     filtered: list[dict[str, str]] = []
     company_norm = normalize(company)
@@ -88,9 +116,14 @@ def filter_rows(
             continue
         if posting_key_norm and normalize(row.get("Posting Key", "")) != posting_key_norm:
             continue
-        if not include_contacted and has_outreach_record(row):
-            continue
-        filtered.append(row)
+        for contact_type in contact_types:
+            if not include_contacted and has_contact_type_record(row, contact_type):
+                continue
+            target = row.copy()
+            target["Contact Type"] = contact_type
+            target["Recruiter Done"] = "Yes" if has_contact_type_record(row, "recruiter") else ""
+            target["Engineer Done"] = "Yes" if has_contact_type_record(row, "engineer") else ""
+            filtered.append(target)
 
     filtered.sort(
         key=lambda row: (
@@ -108,6 +141,7 @@ def row_summary(row: dict[str, str]) -> dict[str, str]:
     return {
         "company": row["Company"],
         "role": row["Role"],
+        "contact_type": row.get("Contact Type", ""),
         "status": row["Status"],
         "fit_score": row["Fit Score"],
         "reach_out": row["Reach Out"],
@@ -117,6 +151,10 @@ def row_summary(row: dict[str, str]) -> dict[str, str]:
         "posting_key": row["Posting Key"],
         "recruiter_contact": row["Recruiter Contact"],
         "recruiter_profile": row["Recruiter Profile"],
+        "engineer_contact": row.get("Engineer Contact", ""),
+        "engineer_profile": row.get("Engineer Profile", ""),
+        "recruiter_done": row.get("Recruiter Done", ""),
+        "engineer_done": row.get("Engineer Done", ""),
         "notes": row["Notes"],
     }
 
@@ -126,9 +164,10 @@ def print_text(rows: list[dict[str, str]]) -> None:
     print("")
     for index, row in enumerate(rows, start=1):
         print(
-            f"{index}. {row['Company']} | {row['Role']} | "
+            f"{index}. [{row.get('Contact Type', 'contact').title()}] {row['Company']} | {row['Role']} | "
             f"Fit {row['Fit Score'] or '?'} | {row['Status']}"
         )
+        print(f"   Recruiter done: {row.get('Recruiter Done') or 'No'} | Engineer done: {row.get('Engineer Done') or 'No'}")
         print(f"   Location: {row['Location'] or 'Unknown'}")
         print(f"   Source: {row['Source'] or 'Unknown'}")
         print(f"   Posting Key: {row['Posting Key']}")
@@ -160,7 +199,13 @@ def main() -> int:
     parser.add_argument(
         "--include-contacted",
         action="store_true",
-        help="Include rows that already show outreach in tracker notes or recruiter fields.",
+        help="Include recruiter/engineer lanes that already show outreach in tracker notes or contact fields.",
+    )
+    parser.add_argument(
+        "--contact-type",
+        choices=("both", "recruiter", "engineer"),
+        default="both",
+        help="Which outreach lane to emit. Default emits one recruiter and one engineer lane where missing.",
     )
     parser.add_argument(
         "--limit",
@@ -182,6 +227,7 @@ def main() -> int:
     exclude_statuses = DEFAULT_EXCLUDED_STATUSES | {
         normalize(value) for value in args.exclude_status if value.strip()
     }
+    contact_types = CONTACT_TYPES if args.contact_type == "both" else (args.contact_type,)
 
     filtered = filter_rows(
         rows,
@@ -190,6 +236,7 @@ def main() -> int:
         include_statuses=include_statuses,
         exclude_statuses=exclude_statuses,
         include_contacted=args.include_contacted,
+        contact_types=contact_types,
     )
 
     if args.limit > 0:
