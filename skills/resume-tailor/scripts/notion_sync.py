@@ -156,6 +156,13 @@ def page_summary(page: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def markdown_url(value: str) -> str:
+    value = value.strip()
+    if "](" in value and value.endswith(")"):
+        return value.rsplit("](", 1)[1][:-1].strip()
+    return value
+
+
 def normalize(value: str) -> str:
     return " ".join(value.strip().lower().split())
 
@@ -204,6 +211,44 @@ def update_page_scores(
     )
 
 
+def page_properties_from_tracker_row(row: dict[str, str]) -> dict[str, Any]:
+    properties: dict[str, Any] = {
+        "Company": {"title": [{"type": "text", "text": {"content": row.get("Company", "")}}]},
+        "Role": {"rich_text": [{"type": "text", "text": {"content": row.get("Role", "")}}]},
+        "Applied": {"checkbox": truthy_text(row.get("Applied", ""))},
+        "Status": {"select": {"name": row.get("Status", "") or "Resume Tailored"}},
+        "Fit Score": {"number": int(row.get("Fit Score", "").strip() or "0")},
+        "Reach Out": {"checkbox": truthy_text(row.get("Reach Out", ""))},
+        "Referral": {"checkbox": truthy_text(row.get("Referral", ""))},
+        "Location": {"rich_text": [{"type": "text", "text": {"content": row.get("Location", "")}}]},
+        "Source": {"select": {"name": row.get("Source", "") or "Other"}},
+        "Job Link": {"url": markdown_url(row.get("Job Link", "")) or None},
+        "Posting Key": {"rich_text": [{"type": "text", "text": {"content": row.get("Posting Key", "")}}]},
+        "Resume PDF": {"url": markdown_url(row.get("Resume PDF", "")) or None},
+        "Recruiter Contact": {
+            "rich_text": [{"type": "text", "text": {"content": row.get("Recruiter Contact", "")}}]
+        },
+        "Recruiter Profile": {"url": markdown_url(row.get("Recruiter Profile", "")) or None},
+        "Notes": {"rich_text": [{"type": "text", "text": {"content": row.get("Notes", "")}}]},
+    }
+    if row.get("Date Added", "").strip():
+        properties["Date Added"] = {"date": {"start": row["Date Added"].strip()}}
+    return properties
+
+
+def truthy_text(value: str) -> bool:
+    return normalize(value) in {"yes", "true", "1", "x"}
+
+
+def update_page_from_tracker_row(token: str, page_id: str, row: dict[str, str]) -> None:
+    notion_request(
+        "PATCH",
+        f"/v1/pages/{page_id}",
+        token,
+        {"properties": page_properties_from_tracker_row(row)},
+    )
+
+
 def update_database_title(token: str, config: NotionConfig, total_count: int) -> None:
     notion_request(
         "PATCH",
@@ -219,6 +264,7 @@ def sync_tracker_to_notion(
     posting_key: str | None = None,
     update_title: bool = False,
     dry_run: bool = False,
+    full: bool = False,
 ) -> dict[str, int]:
     config = load_notion_config(repo_root)
     tracker_rows = load_tracker_rows(repo_root)
@@ -240,12 +286,15 @@ def sync_tracker_to_notion(
             missing += 1
             continue
 
-        if page["fit_score"] == fit_score and page["reach_out"] == reach_out:
+        if not full and page["fit_score"] == fit_score and page["reach_out"] == reach_out:
             skipped += 1
             continue
 
         if not dry_run:
-            update_page_scores(token, page["id"], fit_score, reach_out)
+            if full:
+                update_page_from_tracker_row(token, page["id"], row)
+            else:
+                update_page_scores(token, page["id"], fit_score, reach_out)
         updated += 1
 
     if update_title and not posting_key and not dry_run:
@@ -268,4 +317,3 @@ def token_from_env(env_name: str = DEFAULT_TOKEN_ENV) -> str:
             "and export the token before running sync."
         )
     return token
-

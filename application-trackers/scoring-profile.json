@@ -1,0 +1,88 @@
+{
+  "reach_out_threshold": 9,
+  "base_score": 3,
+  "weights": {
+    "preferred_location": 1,
+    "acceptable_location": 1,
+    "strong_role": 3,
+    "level_fit": 2,
+    "worthwhile_company": 2,
+    "avoid_company": -1,
+    "preferred_source": 1,
+    "avoid_status": -8,
+    "referral": 1
+  },
+  "preferred_location_terms": [
+    "new york",
+    "new york city",
+    "nyc",
+    "brooklyn",
+    "manhattan"
+  ],
+  "acceptable_location_terms": [
+    "hybrid",
+    "remote",
+    "united states",
+    "seattle",
+    "san francisco",
+    "bay area",
+    "palo alto",
+    "new york"
+  ],
+  "strong_role_terms": [
+    "software engineer",
+    "backend",
+    "full stack",
+    "fullstack",
+    "platform",
+    "product engineer",
+    "generalist"
+  ],
+  "level_fit_terms": [
+    "early career",
+    "new grad",
+    "junior",
+    "associate",
+    "engineer i",
+    "software engineer i"
+  ],
+  "worthwhile_company_terms": [
+    "plaid",
+    "spotify",
+    "notion",
+    "the new york times",
+    "disney",
+    "anrok",
+    "warp",
+    "morgan stanley",
+    "navan",
+    "scale ai",
+    "linkedin",
+    "lyft",
+    "tinder",
+    "intuit",
+    "warner bros",
+    "microsoft",
+    "cadence",
+    "pinterest",
+    "uber"
+  ],
+  "avoid_company_terms": [
+    "recruiters",
+    "recruiter",
+    "talent acquisition",
+    "advisors",
+    "staffing"
+  ],
+  "preferred_sources": [
+    "ashby",
+    "greenhouse",
+    "lever",
+    "company site",
+    "workday"
+  ],
+  "avoid_statuses": [
+    "rejected",
+    "archived"
+  ]
+}

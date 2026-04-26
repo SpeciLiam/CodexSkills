@@ -1,0 +1,203 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+\fi
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+% \usepackage[default]{sourcesanspro}
+
+
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable when the engine supports it.
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in,itemsep=1pt,topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+%\begin{center}
+%    \textbf{\Huge \scshape Liam Van} \\ \vspace{1pt}
+%    \small 678-488-7259 $|$ \small Johns Creek, GA 30005 $|${ liampjvan@gmail.com}
+% {{\\linkedin.com/in/liam-van} {$|$ github.com/SpeciLiam} {$|$ \href{https://speciliam.github.io/PersonalWebsite}{speciliam.github.io/PersonalWebsite}}}
+%
+%\end{center}
+\begin{center}
+    \textbf{\Huge \scshape Liam Van} \\ \vspace{1pt}
+    \small 678-488-7259 $|$ \small {liamvanpj@gmail.com} $|$ Seattle, WA
+ {{$|$ linkedin.com/in/liam-van} {$|$ github.com/SpeciLiam} {$|$ \href{https://speciliam.github.io/PersonalWebsite}{speciliam.github.io/PersonalWebsite}}}
+
+\end{center}
+
+ %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, JavaScript, TypeScript, SQL, C++, C\#, C, PHP} \\
+     \textbf{Backend / Cloud}{: REST APIs, Spring Boot, Node.js, MySQL, OpenSearch, OCI, GCP, AWS, Docker, OCI CLI, GCloud CLI} \\
+     \textbf{Frontend / Product}{: React, NestJS, Angular, user-facing product development, end-to-end feature delivery, Android Studio} \\
+     \textbf{Testing / Operations}{: CI/CD, Robot Framework, Azure DevOps, Grafana, T2, Selenium, Jira, Bitbucket, integration testing} \\
+    }}
+ \end{itemize}
+%
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+  {Oracle}{May 2025 - Present}
+  {Software Engineer, GCP Integration (Oasis)}{Seattle, WA}
+  \resumeItemListStart
+    \resumeItem{Drove GA readiness for BaseDB and Exadata DB workflows bringing OCI database services onto GCP, validating create, restore, backup, and Data Guard scenarios across console, CLI, and API-driven flows}
+    \resumeItem{Built and scaled end-to-end validation for BaseDB and ADBS services with reusable GCloud and OCI scripting, regression tooling, and blackbox API coverage across critical backend workflows}
+    \resumeItem{Implemented and merged dry-run support for Exascale Storage Vault, improving preflight validation and customer safety, and achieving over 90\% unit test coverage across BaseDB and Exadata Infrastructure components}
+    \resumeItem{Partnered with Oracle and GCP engineers to investigate edge cases, communicate release blockers, and align fixes for canary health, production readiness, and long-term service reliability}
+    \resumeItem{Served as primary on-call for Oasis releases, leading Sev2 investigations, resolving Sev3/Sev4 issues, and driving mitigation through log analysis, Grafana and T2 metrics, and alarm-threshold recommendations}
+  \resumeItemListEnd
+
+    \resumeSubheading
+      {Oracle}{May 2024 - August 2024}
+      {Software Engineer}{Redwood City, CA}
+      \resumeItemListStart
+        \resumeItem{Integrated OpenSearch indexing and retrieval pipelines into Oracle University's search experience to improve discovery across video content}
+        \resumeItem{Implemented the product experience in React and NestJS from Figma designs and stakeholder feedback, using PHP and SQL to retrieve metadata for front-end features and model inputs}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Caterpillar Inc.}{May 2023 - December 2023}
+      {Software Engineer}{Chicago, IL}
+      \resumeItemListStart
+        \resumeItem{Built Java data-processing workflows to convert JSON to Apache Parquet, improving storage efficiency by 30\%}
+        \resumeItem{Developed backend APIs and data-modeling flows for thousands of data points, improving analysis speed by 50\%}
+        \resumeItem{Deployed Angular and Spring Boot services through Azure DevOps pipelines}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Caterpillar Inc.}{May 2022 - August 2022}
+      {Software Engineer}{Chicago, IL}
+      \resumeItemListStart
+        \resumeItem{Enhanced Java Spring Boot REST APIs, improving response time by 20\%}
+        \resumeItem{Used logs and platform telemetry across API endpoints, AWS Apigee, ECS, RDS, ELB, and Elasticsearch to debug service behavior}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Georgia, School of Computing}{Athens, GA}
+      {Bachelor of Science in Computer Science, GPA: 3.9}{Dec 2024}
+  \resumeSubHeadingListEnd
+
+%
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Fantasy Wizard} $|$ \emph{React, Spring Boot, REST APIs, AI}}{}
+          \resumeItemListStart
+            \resumeItem{Built a fantasy football web application with a React frontend and Spring Boot backend, with user-facing league integrations through Sleeper APIs}
+            \resumeItem{Implemented an AI chat assistant that analyzed scraped league data and generated lineup, trade, and draft-strategy recommendations based on user questions}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

@@ -3,15 +3,15 @@
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
 Companies queued: 81
-Prospects recorded: 0 | Ready emails: 0 | Pending Apollo: 0
+Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
 
 | Company | Role | Posting Key | Fit Score | Status | Reach Out | Job Link | Prospect Count | Ready Emails | Last Updated | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Zettabyte | Software Engineer (New Grad) | 4399493417 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4399493417/) |  |  |  |  |
-| Warp | Software Engineer | 4324888004 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/warp/jobs/4324888004?gh_src=4qxzq4jk4us) |  |  |  |  |
-| Warner Bros. Discovery | Software Engineer I | Software-Engineer-I | 10 | Applied | Yes | [Posting](https://careers.wbd.com/global/en/job/R000103732/Software-Engineer-I) |  |  |  |  |
+| Zettabyte | Software Engineer (New Grad) | 4399493417 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4399493417/) | 1 | 1 |  |  |
+| Warp | Software Engineer | 4324888004 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/warp/jobs/4324888004?gh_src=4qxzq4jk4us) | 1 | 1 |  |  |
+| Warner Bros. Discovery | Software Engineer I | Software-Engineer-I | 10 | Applied | Yes | [Posting](https://careers.wbd.com/global/en/job/R000103732/Software-Engineer-I) | 1 | 1 |  |  |
 | Uber | Software Engineer II | 156932 | 10 | Applied | Yes | [Posting](https://www.uber.com/global/en/careers/list/156932/?uclick_id=c3eed852-3739-4c33-ba86-8487c6d2f43b) |  |  |  |  |
 | Trexquant Investment LP | Software Engineer - Early Career (USA) | 4297854738 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4297854738/) |  |  |  |  |
 | Trexquant Investment LP | Software Engineer - Early Career (USA) | software-engineer-early-career-usa-at-trexquant-investment-lp-4330689211 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-early-career-usa-at-trexquant-investment-lp-4330689211) |  |  |  |  |
@@ -95,3 +95,6 @@ Prospects recorded: 0 | Ready emails: 0 | Pending Apollo: 0
 
 | Company | Posting Key | Priority | Target Type | Name | Title | LinkedIn | Apollo Email | Email Status | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Warner Bros. Discovery | Software-Engineer-I | 1 | recruiter | Darian Adriano | Recruiter |  | darian.adriano@wbd.com | Ready | Apollo recruiter search; verified work email. |
+| Warp | 4324888004 | 1 | recruiter | Nick Miller | Recruiter |  | nick.miller@warp.dev | Ready | Apollo recruiter search; verified work email. |
+| Zettabyte | 4399493417 | 1 | recruiter | Tiana Cheng | Recruiter |  | tiana.cheng@zettabyte.space | Ready | Apollo recruiter search; verified work email. |
