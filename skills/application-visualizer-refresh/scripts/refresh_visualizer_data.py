@@ -274,6 +274,17 @@ def main() -> None:
     parser.add_argument("--output", type=Path, default=OUTPUT_JSON)
     args = parser.parse_args()
 
+    if not args.applications.exists():
+        if args.output.exists():
+            print(
+                f"Source tracker {args.applications} is missing; "
+                f"leaving existing {args.output.relative_to(ROOT)} in place."
+            )
+            return
+        raise FileNotFoundError(
+            f"Source tracker {args.applications} is missing and no generated JSON exists at {args.output}."
+        )
+
     app_tables = extract_tables(args.applications.read_text(encoding="utf-8"))
     outreach_tables = extract_tables(args.outreach.read_text(encoding="utf-8")) if args.outreach.exists() else {}
 
