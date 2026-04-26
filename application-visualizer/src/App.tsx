@@ -117,6 +117,63 @@ const PIPELINE_MODES = [
   },
 ];
 
+const OPTIMAL_COMMAND_FLOW = [
+  {
+    step: "1",
+    name: "Plan the day",
+    command: "python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py",
+    note: "Start here. This ranks the work before opening Gmail, LinkedIn, or tailoring another resume.",
+  },
+  {
+    step: "2",
+    name: "Refresh application status",
+    command: "python3 skills/gmail-application-refresh/scripts/build_refresh_targets.py --limit 20",
+    note: "Check active rows for confirmations, rejections, OAs, and interviews before more outreach.",
+  },
+  {
+    step: "3",
+    name: "Tailor or apply",
+    command: "python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode resume",
+    note: "Use this lane when adding a new role, tailoring a resume, or finding high-fit tailored roles that are ready to submit.",
+  },
+  {
+    step: "4",
+    name: "Run recruiter outreach",
+    command: "python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type recruiter --limit 20",
+    note: "Find one recruiter or talent contact per reachable role and record the invite immediately.",
+  },
+  {
+    step: "5",
+    name: "Run engineer outreach",
+    command: "python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type engineer --limit 20",
+    note: "Find one engineer, UGA alum, or relevant employee per role. This is separate from recruiter outreach.",
+  },
+  {
+    step: "6",
+    name: "Fill prospect gaps",
+    command: "python3 skills/company-prospecting/scripts/build_company_prospect_targets.py --limit 20",
+    note: "Use this when LinkedIn lanes need deeper company-level people or Apollo-ready email candidates.",
+  },
+  {
+    step: "7",
+    name: "Prep hot opportunities",
+    command: "python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode prep",
+    note: "Pull interviews and online assessments to the top so prep work does not get buried under new applications.",
+  },
+  {
+    step: "8",
+    name: "Rebuild dashboard",
+    command: "python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py && cd application-visualizer && npm run build",
+    note: "Run after tracker or outreach edits so the website reflects the latest markdown data.",
+  },
+  {
+    step: "9",
+    name: "Optional Notion mirror",
+    command: "python3 skills/notion-application-sync/scripts/sync_applications_to_notion.py --dry-run",
+    note: "Keep this outside the fast path. Use the 12-hour automation or run it manually after checking the dry run.",
+  },
+];
+
 const SKILL_CARDS = [
   {
     name: "recruiting-pipeline",
@@ -395,6 +452,27 @@ function App() {
           <div className="pipeline-flow" aria-label="Recommended recruiting flow">
             {["Refresh", "Tailor", "Apply", "Recruiter", "Engineer", "Prospect", "Prep", "Visualize"].map((step) => (
               <span key={step}>{step}</span>
+            ))}
+          </div>
+        </div>
+
+        <div className="command-flow">
+          <div className="section-heading compact">
+            <div>
+              <p className="eyebrow"><Activity size={16} /> Optimal command flow</p>
+              <h2>Run Order</h2>
+            </div>
+          </div>
+          <div className="command-steps">
+            {OPTIMAL_COMMAND_FLOW.map((item) => (
+              <article className="command-step" key={item.step}>
+                <span>{item.step}</span>
+                <div>
+                  <h3>{item.name}</h3>
+                  <p>{item.note}</p>
+                  <code>{item.command}</code>
+                </div>
+              </article>
             ))}
           </div>
         </div>

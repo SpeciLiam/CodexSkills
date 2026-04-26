@@ -677,6 +677,72 @@ select option {
   font-weight: 900;
 }
 
+.command-flow {
+  padding: 0 18px 18px;
+}
+
+.section-heading.compact {
+  padding: 0 0 14px;
+}
+
+.section-heading.compact h2 {
+  font-size: 26px;
+}
+
+.command-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.command-step {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 12px;
+  min-height: 210px;
+  padding: 14px;
+  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(3, 7, 18, .34);
+  border-radius: 8px;
+}
+
+.command-step > span {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  color: #06111e;
+  background: #55d6be;
+  border-radius: 50%;
+  font-weight: 950;
+}
+
+.command-step h3 {
+  font-size: 16px;
+}
+
+.command-step p {
+  margin-top: 8px;
+  color: #aebed0;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.command-step code {
+  display: block;
+  margin-top: 12px;
+  padding: 11px;
+  overflow-x: auto;
+  border: 1px solid rgba(85, 214, 190, .2);
+  background: rgba(1, 8, 17, .62);
+  border-radius: 8px;
+  color: #9df1e3;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
 .mode-grid, .skill-grid {
   display: grid;
   gap: 12px;
@@ -871,7 +937,7 @@ td {
     grid-template-columns: 1fr;
   }
 
-  .mode-grid, .skill-grid {
+  .command-steps, .mode-grid, .skill-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -921,7 +987,7 @@ td {
     grid-template-columns: 1fr;
   }
 
-  .mode-grid, .skill-grid, .pipeline-flow {
+  .command-steps, .mode-grid, .skill-grid, .pipeline-flow {
     grid-template-columns: 1fr;
   }
 
