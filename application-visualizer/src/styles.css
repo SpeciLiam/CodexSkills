@@ -417,90 +417,113 @@ select option {
   border-radius: 50%;
 }
 
-.opportunity-shell {
+.action-matrix {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 230px;
-  gap: 16px;
-  min-height: 470px;
+  grid-template-columns: repeat(5, minmax(210px, 1fr));
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 2px;
 }
 
-.opportunity-graph {
-  width: 100%;
-  min-height: 450px;
-  border: 1px solid rgba(255, 255, 255, .09);
-  background:
-    radial-gradient(circle at 50% 50%, rgba(85, 214, 190, .12), transparent 24rem),
-    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px),
-    rgba(3, 7, 18, .24);
-  background-size: auto, 7.5% 12.5%, 7.5% 12.5%, auto;
-  border-radius: 8px;
-  touch-action: none;
-}
-
-.opportunity-graph line {
-  stroke: rgba(148, 163, 184, .26);
-  transition: stroke .16s ease, stroke-width .16s ease;
-}
-
-.opportunity-graph line.hot-link {
-  stroke: rgba(247, 178, 103, .82);
-}
-
-.graph-node circle {
-  cursor: grab;
-  transition: opacity .16s ease, r .16s ease;
-}
-
-.graph-node circle:active {
-  cursor: grabbing;
-}
-
-.graph-node.selected circle:last-of-type {
-  stroke: #fff;
-  stroke-width: .45;
-}
-
-.graph-node text {
-  fill: #e8f3ff;
-  font-size: 2.2px;
-  font-weight: 800;
-  paint-order: stroke;
-  pointer-events: none;
-  stroke: rgba(3, 7, 18, .84);
-  stroke-width: .8px;
-  text-anchor: middle;
-}
-
-.graph-inspector {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-}
-
-.graph-inspector div {
-  min-height: 84px;
-  padding: 14px;
+.action-lane {
+  min-width: 210px;
   border: 1px solid rgba(255,255,255,.09);
-  background: rgba(3, 7, 18, .32);
+  background: rgba(3, 7, 18, .26);
   border-radius: 8px;
+  overflow: hidden;
 }
 
-.graph-inspector span {
-  display: block;
+.action-lane > header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 10px;
+  min-height: 92px;
+  margin: 0;
+  padding: 14px;
+  border-bottom: 1px solid rgba(255,255,255,.09);
+  background: rgba(255,255,255,.045);
+}
+
+.action-lane h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.action-lane p {
+  margin-top: 6px;
   color: #95a8bd;
   font-size: 12px;
-  letter-spacing: .08em;
-  text-transform: uppercase;
+  line-height: 1.35;
 }
 
-.graph-inspector b {
-  display: block;
-  margin-top: 8px;
-  color: #e8f3ff;
-  font-size: 22px;
-  line-height: 1.05;
-  overflow-wrap: anywhere;
+.action-lane > header b {
+  display: grid;
+  place-items: center;
+  min-width: 34px;
+  height: 34px;
+  padding: 0 8px;
+  color: #06111e;
+  background: #55d6be;
+  border-radius: 999px;
+}
+
+.action-cards {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  max-height: 540px;
+  overflow-y: auto;
+}
+
+.action-card {
+  display: grid;
+  gap: 9px;
+  padding: 12px;
+  border: 1px solid rgba(255,255,255,.09);
+  background: rgba(255,255,255,.055);
+  border-radius: 8px;
+}
+
+.action-card-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: start;
+}
+
+.action-card-top strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.action-card-top span {
+  display: grid;
+  place-items: center;
+  min-width: 30px;
+  height: 30px;
+  color: #251005;
+  background: #f7b267;
+  border-radius: 50%;
+  font-weight: 900;
+}
+
+.action-card p {
+  color: #cbd5e1;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.action-meta {
+  display: grid;
+  gap: 7px;
+}
+
+.action-meta small {
+  color: #95a8bd;
+  font-size: 12px;
+  line-height: 1.3;
 }
 
 .split {
@@ -672,14 +695,6 @@ td {
     grid-template-columns: 1fr;
   }
 
-  .opportunity-shell {
-    grid-template-columns: 1fr;
-  }
-
-  .graph-inspector {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
   .panel.wide {
     grid-column: auto;
   }
@@ -731,14 +746,6 @@ td {
 
   .kpi-grid, .metric-strip {
     grid-template-columns: 1fr;
-  }
-
-  .opportunity-graph {
-    min-height: 360px;
-  }
-
-  .graph-inspector {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .metric-strip div {

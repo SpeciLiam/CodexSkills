@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type PointerEvent, type ReactNode } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 import {
   Activity,
   ArrowUpRight,
@@ -58,14 +58,14 @@ const STATUS_TONE: Record<string, string> = {
 
 const NAV_ITEMS = [
   { href: "#overview", label: "Overview" },
-  { href: "#graph", label: "Graph" },
+  { href: "#actions", label: "Actions" },
   { href: "#trends", label: "Trends" },
   { href: "#outreach", label: "Outreach" },
   { href: "#browser", label: "Browser" },
 ];
 
 const INFO_COPY = {
-  graph: "Each node is an application. Larger nodes are stronger opportunities; colors show status/reach-out signal. Lines connect roles that share useful traits like status, source, location, role family, or similar fit. Drag nodes to untangle clusters; double-click a node to open its best link.",
+  actions: "A practical action board. Roles are grouped by what to do next: apply, follow up, prepare for interviews or assessments, monitor, or deprioritize closed/rejected roles. Cards are sorted by fit score so the strongest opportunities stay visible.",
   velocity: "Shows how the pipeline grew over time. The filled curve is cumulative tracked roles, while the line highlights applications submitted on each date.",
   status: "Breaks the tracker into current outcomes such as tailored, applied, interviewing, assessment, rejected, or offer.",
   fit: "Counts roles by fit score, making it easy to see whether the pipeline is concentrated around high-fit opportunities.",
@@ -182,9 +182,9 @@ function App() {
         <MiniMetric label="Recruiter paths" value={recruiterApps.length} />
       </section>
 
-      <section id="graph" className="dashboard-grid section-anchor">
-        <Panel title="Opportunity Graph" icon={<Network />} info={INFO_COPY.graph} wide>
-          <OpportunityGraph apps={filtered} />
+      <section id="actions" className="dashboard-grid section-anchor">
+        <Panel title="Action Matrix" icon={<Target />} info={INFO_COPY.actions} wide>
+          <ActionMatrix apps={filtered} />
         </Panel>
 
         <Panel id="trends" title="Application Velocity" icon={<Activity />} info={INFO_COPY.velocity}>
@@ -439,152 +439,48 @@ function AppTooltip({ active, payload }: any) {
   );
 }
 
-type GraphNode = {
+type ActionLane = {
   id: string;
-  app: Application;
-  x: number;
-  y: number;
-  size: number;
-  color: string;
+  title: string;
+  hint: string;
+  apps: Application[];
 };
 
-type GraphLink = {
-  source: string;
-  target: string;
-  weight: number;
-};
-
-function OpportunityGraph({ apps }: { apps: Application[] }) {
-  const svgRef = useRef<SVGSVGElement | null>(null);
-  const [dragging, setDragging] = useState<string | null>(null);
-  const graph = useMemo(() => buildOpportunityGraph(apps), [apps]);
-  const [nodes, setNodes] = useState(graph.nodes);
-
-  useEffect(() => {
-    setNodes(graph.nodes);
-  }, [graph.nodes]);
-
-  const nodeById = useMemo(() => new Map(nodes.map((node) => [node.id, node])), [nodes]);
-  const focusedNode = dragging ? nodeById.get(dragging) : null;
-
-  function pointFromEvent(event: PointerEvent<SVGSVGElement>) {
-    const svg = svgRef.current;
-    if (!svg) return { x: 0, y: 0 };
-    const rect = svg.getBoundingClientRect();
-    return {
-      x: ((event.clientX - rect.left) / rect.width) * 100,
-      y: ((event.clientY - rect.top) / rect.height) * 100,
-    };
-  }
-
-  function startDrag(event: PointerEvent<SVGCircleElement>, id: string) {
-    event.currentTarget.setPointerCapture(event.pointerId);
-    setDragging(id);
-  }
-
-  function moveNode(event: PointerEvent<SVGSVGElement>) {
-    if (!dragging) return;
-    const point = pointFromEvent(event);
-    setNodes((current) =>
-      current.map((node) =>
-        node.id === dragging
-          ? { ...node, x: Math.min(96, Math.max(4, point.x)), y: Math.min(92, Math.max(8, point.y)) }
-          : node,
-      ),
-    );
-  }
-
-  function openNode(app: Application) {
-    const url = app.jobLink || app.recruiterProfile || app.resumePdf;
-    if (url) window.open(url, "_blank", "noopener,noreferrer");
-  }
-
+function ActionMatrix({ apps }: { apps: Application[] }) {
+  const lanes = useMemo(() => buildActionLanes(apps), [apps]);
   return (
-    <div className="opportunity-shell">
-      <svg
-        ref={svgRef}
-        className="opportunity-graph"
-        viewBox="0 0 100 64"
-        role="img"
-        aria-label="Application opportunity graph"
-        onPointerMove={moveNode}
-        onPointerUp={() => setDragging(null)}
-        onPointerLeave={() => setDragging(null)}
-      >
-        <defs>
-          <filter id="graphGlow" x="-60%" y="-60%" width="220%" height="220%">
-            <feGaussianBlur stdDeviation="1.8" result="blur" />
-            <feMerge>
-              <feMergeNode in="blur" />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
-          </filter>
-        </defs>
-        {graph.links.map((link, index) => {
-          const source = nodeById.get(link.source);
-          const target = nodeById.get(link.target);
-          if (!source || !target) return null;
-          const isHot = dragging && (dragging === link.source || dragging === link.target);
-          return (
-            <line
-              key={`${link.source}-${link.target}-${index}`}
-              x1={source.x}
-              y1={source.y}
-              x2={target.x}
-              y2={target.y}
-              className={isHot ? "hot-link" : ""}
-              strokeWidth={0.12 + link.weight * 0.08}
-            />
-          );
-        })}
-        {nodes.map((node) => {
-          const selected = dragging === node.id;
-          return (
-            <g key={node.id} className={selected ? "graph-node selected" : "graph-node"}>
-              <circle
-                cx={node.x}
-                cy={node.y}
-                r={node.size + 1.8}
-                fill={node.color}
-                opacity={0.16}
-                filter="url(#graphGlow)"
-              />
-              <circle
-                cx={node.x}
-                cy={node.y}
-                r={node.size}
-                fill={node.color}
-                tabIndex={0}
-                onPointerDown={(event) => startDrag(event, node.id)}
-                onDoubleClick={() => openNode(node.app)}
-              >
-                <title>{node.app.company} - {node.app.role} - {node.app.status} - fit {node.app.fitScore}</title>
-              </circle>
-              {(node.app.fitScore >= 10 || selected) && (
-                <text x={node.x} y={node.y - node.size - 1.9}>{node.app.company}</text>
-              )}
-            </g>
-          );
-        })}
-      </svg>
-      <div className="graph-inspector">
-        <div>
-          <span>Nodes</span>
-          <b>{nodes.length}</b>
-        </div>
-        <div>
-          <span>Links</span>
-          <b>{graph.links.length}</b>
-        </div>
-        <div>
-          <span>Focus</span>
-          <b>{focusedNode?.app.company || "All"}</b>
-        </div>
-        <div>
-          <span>Signal</span>
-          <b>{focusedNode ? focusedNode.app.status : "Fit/Source/Place"}</b>
-        </div>
-      </div>
+    <div className="action-matrix">
+      {lanes.map((lane) => (
+        <section className="action-lane" key={lane.id}>
+          <header>
+            <div>
+              <h4>{lane.title}</h4>
+              <p>{lane.hint}</p>
+            </div>
+            <b>{lane.apps.length}</b>
+          </header>
+          <div className="action-cards">
+            {lane.apps.slice(0, 8).map((app) => (
+              <article className="action-card" key={`${lane.id}-${app.company}-${app.role}-${app.postingKey}`}>
+                <div className="action-card-top">
+                  <strong>{app.company}</strong>
+                  <span>{app.fitScore || "-"}</span>
+                </div>
+                <p>{app.role}</p>
+                <div className="action-meta">
+                  <span className={`status ${STATUS_TONE[app.status] || "cool"}`}>{app.status}</span>
+                  <small>{app.source} · {app.location}</small>
+                </div>
+                <div className="link-pack">
+                  {app.jobLink && <a href={app.jobLink} target="_blank" rel="noreferrer" aria-label={`${app.company} job`}><ExternalLink size={15} /></a>}
+                  {app.recruiterProfile && <a href={app.recruiterProfile} target="_blank" rel="noreferrer" aria-label={`${app.company} recruiter`}><Users size={15} /></a>}
+                  {app.resumePdf && <a href={app.resumePdf} target="_blank" rel="noreferrer" aria-label={`${app.company} resume`}><BriefcaseBusiness size={15} /></a>}
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      ))}
     </div>
   );
 }
@@ -623,87 +519,49 @@ function Constellation({ apps }: { apps: Application[] }) {
   );
 }
 
-function buildOpportunityGraph(apps: Application[]): { nodes: GraphNode[]; links: GraphLink[] } {
-  const sorted = [...apps]
-    .filter((app) => app.company && app.role)
-    .sort((a, b) => graphPriority(b) - graphPriority(a))
-    .slice(0, 54);
+function buildActionLanes(apps: Application[]): ActionLane[] {
+  const open = apps.filter((app) => app.status !== "Rejected" && app.status !== "Archived");
+  const sort = (items: Application[]) => [...items].sort((a, b) => actionPriority(b) - actionPriority(a));
 
-  const nodes = sorted.map((app, index) => {
-    const statusRing = statusIndex(app.status);
-    const angle = (index * 2.399963229728653 + statusRing * 0.52) % (Math.PI * 2);
-    const radius = 13 + (index % 11) * 2.4 + Math.max(0, 10 - app.fitScore) * 0.7;
-    return {
-      id: `${app.company}-${app.postingKey || app.role}-${index}`,
-      app,
-      x: 50 + Math.cos(angle) * radius * 1.35,
-      y: 32 + Math.sin(angle) * radius * 0.82,
-      size: 1.25 + Math.max(app.fitScore, 1) * 0.28 + (app.status === "Interviewing" ? 1.3 : 0),
-      color: graphColor(app),
-    };
-  });
-
-  const links: GraphLink[] = [];
-  for (let i = 0; i < nodes.length; i += 1) {
-    const candidates: GraphLink[] = [];
-    for (let j = i + 1; j < nodes.length; j += 1) {
-      const weight = connectionWeight(nodes[i].app, nodes[j].app);
-      if (weight > 1) candidates.push({ source: nodes[i].id, target: nodes[j].id, weight });
-    }
-    links.push(...candidates.sort((a, b) => b.weight - a.weight).slice(0, 3));
-  }
-
-  return { nodes, links: links.slice(0, 120) };
+  return [
+    {
+      id: "apply",
+      title: "Apply Now",
+      hint: "Tailored and high-fit, but not submitted yet.",
+      apps: sort(open.filter((app) => !app.applied && app.fitScore >= 8)),
+    },
+    {
+      id: "outreach",
+      title: "Outreach",
+      hint: "Needs recruiter, alumni, or engineer follow-up.",
+      apps: sort(open.filter((app) => app.reachOut || app.recruiterContact || app.recruiterProfile)),
+    },
+    {
+      id: "active",
+      title: "Interview / OA",
+      hint: "Prep and response-critical opportunities.",
+      apps: sort(open.filter((app) => app.status === "Interviewing" || app.status.includes("Assessment"))),
+    },
+    {
+      id: "monitor",
+      title: "Monitor",
+      hint: "Applied roles waiting for movement.",
+      apps: sort(open.filter((app) => app.applied && app.status === "Applied")),
+    },
+    {
+      id: "closed",
+      title: "Closed",
+      hint: "Rejected roles kept for pipeline stats.",
+      apps: sort(apps.filter((app) => app.status === "Rejected")),
+    },
+  ];
 }
 
-function graphPriority(app: Application) {
-  const statusBoost = app.status === "Interviewing" ? 16 : app.status.includes("Assessment") ? 13 : app.status === "Applied" ? 8 : 0;
-  const contactBoost = app.recruiterContact || app.recruiterProfile ? 4 : 0;
-  return app.fitScore * 10 + statusBoost + contactBoost + (app.reachOut ? 5 : 0) - (app.status === "Rejected" ? 40 : 0);
-}
-
-function statusIndex(status: string) {
-  return ["Interviewing", "Online Assessment", "Applied", "Resume Tailored", "Rejected"].indexOf(status);
-}
-
-function graphColor(app: Application) {
-  if (app.status === "Interviewing" || app.status.includes("Assessment")) return "#f7b267";
-  if (app.status === "Rejected") return "#f25f5c";
-  if (app.applied) return "#55d6be";
-  if (app.reachOut) return "#b388ff";
-  return "#70a1ff";
-}
-
-function connectionWeight(a: Application, b: Application) {
-  let weight = 0;
-  if (a.source === b.source) weight += 2;
-  if (a.status === b.status) weight += 2;
-  if (locationFamily(a.location) === locationFamily(b.location)) weight += 2;
-  if (roleFamilyName(a.role) === roleFamilyName(b.role)) weight += 2;
-  if (a.reachOut && b.reachOut) weight += 1;
-  if (Math.abs(a.fitScore - b.fitScore) <= 1) weight += 1;
-  return weight;
-}
-
-function locationFamily(location: string) {
-  const text = location.toLowerCase();
-  if (text.includes("remote")) return "Remote";
-  if (text.includes("new york") || text.includes("ny")) return "New York";
-  if (text.includes("san francisco") || text.includes("bay area") || text.includes("palo alto")) return "Bay Area";
-  if (text.includes("seattle")) return "Seattle";
-  if (text.includes("atlanta") || text.includes("georgia")) return "Georgia";
-  return "Other";
-}
-
-function roleFamilyName(role: string) {
-  const text = role.toLowerCase();
-  if (text.includes("backend") || text.includes("back end")) return "Backend";
-  if (text.includes("frontend") || text.includes("front end")) return "Frontend";
-  if (text.includes("full")) return "Full Stack";
-  if (text.includes("ai") || text.includes("ml")) return "AI";
-  if (text.includes("data")) return "Data";
-  if (text.includes("platform") || text.includes("infrastructure")) return "Platform";
-  return "General";
+function actionPriority(app: Application) {
+  const statusBoost = app.status === "Interviewing" ? 30 : app.status.includes("Assessment") ? 24 : app.status === "Applied" ? 8 : 0;
+  const contactBoost = app.recruiterContact || app.recruiterProfile ? 6 : 0;
+  const outreachBoost = app.reachOut ? 4 : 0;
+  return app.fitScore * 10 + statusBoost + contactBoost + outreachBoost;
 }
 
 function summarize(apps: Application[]) {
