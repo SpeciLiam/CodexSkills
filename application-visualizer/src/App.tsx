@@ -1,4 +1,4 @@
-import { useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type PointerEvent, type ReactNode } from "react";
 import {
   Activity,
   ArrowUpRight,
@@ -152,6 +152,10 @@ function App() {
       </section>
 
       <section className="dashboard-grid">
+        <Panel title="Opportunity Graph" icon={<Network />} wide>
+          <OpportunityGraph apps={filtered} />
+        </Panel>
+
         <Panel title="Application Velocity" icon={<Activity />}>
           <ResponsiveContainer width="100%" height={290}>
             <AreaChart data={data.stats.timeline}>
@@ -379,6 +383,156 @@ function AppTooltip({ active, payload }: any) {
   );
 }
 
+type GraphNode = {
+  id: string;
+  app: Application;
+  x: number;
+  y: number;
+  size: number;
+  color: string;
+};
+
+type GraphLink = {
+  source: string;
+  target: string;
+  weight: number;
+};
+
+function OpportunityGraph({ apps }: { apps: Application[] }) {
+  const svgRef = useRef<SVGSVGElement | null>(null);
+  const [dragging, setDragging] = useState<string | null>(null);
+  const graph = useMemo(() => buildOpportunityGraph(apps), [apps]);
+  const [nodes, setNodes] = useState(graph.nodes);
+
+  useEffect(() => {
+    setNodes(graph.nodes);
+  }, [graph.nodes]);
+
+  const nodeById = useMemo(() => new Map(nodes.map((node) => [node.id, node])), [nodes]);
+  const focusedNode = dragging ? nodeById.get(dragging) : null;
+
+  function pointFromEvent(event: PointerEvent<SVGSVGElement>) {
+    const svg = svgRef.current;
+    if (!svg) return { x: 0, y: 0 };
+    const rect = svg.getBoundingClientRect();
+    return {
+      x: ((event.clientX - rect.left) / rect.width) * 100,
+      y: ((event.clientY - rect.top) / rect.height) * 100,
+    };
+  }
+
+  function startDrag(event: PointerEvent<SVGCircleElement>, id: string) {
+    event.currentTarget.setPointerCapture(event.pointerId);
+    setDragging(id);
+  }
+
+  function moveNode(event: PointerEvent<SVGSVGElement>) {
+    if (!dragging) return;
+    const point = pointFromEvent(event);
+    setNodes((current) =>
+      current.map((node) =>
+        node.id === dragging
+          ? { ...node, x: Math.min(96, Math.max(4, point.x)), y: Math.min(92, Math.max(8, point.y)) }
+          : node,
+      ),
+    );
+  }
+
+  function openNode(app: Application) {
+    const url = app.jobLink || app.recruiterProfile || app.resumePdf;
+    if (url) window.open(url, "_blank", "noopener,noreferrer");
+  }
+
+  return (
+    <div className="opportunity-shell">
+      <svg
+        ref={svgRef}
+        className="opportunity-graph"
+        viewBox="0 0 100 64"
+        role="img"
+        aria-label="Application opportunity graph"
+        onPointerMove={moveNode}
+        onPointerUp={() => setDragging(null)}
+        onPointerLeave={() => setDragging(null)}
+      >
+        <defs>
+          <filter id="graphGlow" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="1.8" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+        {graph.links.map((link, index) => {
+          const source = nodeById.get(link.source);
+          const target = nodeById.get(link.target);
+          if (!source || !target) return null;
+          const isHot = dragging && (dragging === link.source || dragging === link.target);
+          return (
+            <line
+              key={`${link.source}-${link.target}-${index}`}
+              x1={source.x}
+              y1={source.y}
+              x2={target.x}
+              y2={target.y}
+              className={isHot ? "hot-link" : ""}
+              strokeWidth={0.12 + link.weight * 0.08}
+            />
+          );
+        })}
+        {nodes.map((node) => {
+          const selected = dragging === node.id;
+          return (
+            <g key={node.id} className={selected ? "graph-node selected" : "graph-node"}>
+              <circle
+                cx={node.x}
+                cy={node.y}
+                r={node.size + 1.8}
+                fill={node.color}
+                opacity={0.16}
+                filter="url(#graphGlow)"
+              />
+              <circle
+                cx={node.x}
+                cy={node.y}
+                r={node.size}
+                fill={node.color}
+                tabIndex={0}
+                onPointerDown={(event) => startDrag(event, node.id)}
+                onDoubleClick={() => openNode(node.app)}
+              >
+                <title>{node.app.company} - {node.app.role} - {node.app.status} - fit {node.app.fitScore}</title>
+              </circle>
+              {(node.app.fitScore >= 10 || selected) && (
+                <text x={node.x} y={node.y - node.size - 1.9}>{node.app.company}</text>
+              )}
+            </g>
+          );
+        })}
+      </svg>
+      <div className="graph-inspector">
+        <div>
+          <span>Nodes</span>
+          <b>{nodes.length}</b>
+        </div>
+        <div>
+          <span>Links</span>
+          <b>{graph.links.length}</b>
+        </div>
+        <div>
+          <span>Focus</span>
+          <b>{focusedNode?.app.company || "All"}</b>
+        </div>
+        <div>
+          <span>Signal</span>
+          <b>{focusedNode ? focusedNode.app.status : "Fit/Source/Place"}</b>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Constellation({ apps }: { apps: Application[] }) {
   const nodes = apps.map((app, index) => {
     const angle = index * 137.5 * (Math.PI / 180);
@@ -411,6 +565,89 @@ function Constellation({ apps }: { apps: Application[] }) {
       ))}
     </svg>
   );
+}
+
+function buildOpportunityGraph(apps: Application[]): { nodes: GraphNode[]; links: GraphLink[] } {
+  const sorted = [...apps]
+    .filter((app) => app.company && app.role)
+    .sort((a, b) => graphPriority(b) - graphPriority(a))
+    .slice(0, 54);
+
+  const nodes = sorted.map((app, index) => {
+    const statusRing = statusIndex(app.status);
+    const angle = (index * 2.399963229728653 + statusRing * 0.52) % (Math.PI * 2);
+    const radius = 13 + (index % 11) * 2.4 + Math.max(0, 10 - app.fitScore) * 0.7;
+    return {
+      id: `${app.company}-${app.postingKey || app.role}-${index}`,
+      app,
+      x: 50 + Math.cos(angle) * radius * 1.35,
+      y: 32 + Math.sin(angle) * radius * 0.82,
+      size: 1.25 + Math.max(app.fitScore, 1) * 0.28 + (app.status === "Interviewing" ? 1.3 : 0),
+      color: graphColor(app),
+    };
+  });
+
+  const links: GraphLink[] = [];
+  for (let i = 0; i < nodes.length; i += 1) {
+    const candidates: GraphLink[] = [];
+    for (let j = i + 1; j < nodes.length; j += 1) {
+      const weight = connectionWeight(nodes[i].app, nodes[j].app);
+      if (weight > 1) candidates.push({ source: nodes[i].id, target: nodes[j].id, weight });
+    }
+    links.push(...candidates.sort((a, b) => b.weight - a.weight).slice(0, 3));
+  }
+
+  return { nodes, links: links.slice(0, 120) };
+}
+
+function graphPriority(app: Application) {
+  const statusBoost = app.status === "Interviewing" ? 16 : app.status.includes("Assessment") ? 13 : app.status === "Applied" ? 8 : 0;
+  const contactBoost = app.recruiterContact || app.recruiterProfile ? 4 : 0;
+  return app.fitScore * 10 + statusBoost + contactBoost + (app.reachOut ? 5 : 0) - (app.status === "Rejected" ? 40 : 0);
+}
+
+function statusIndex(status: string) {
+  return ["Interviewing", "Online Assessment", "Applied", "Resume Tailored", "Rejected"].indexOf(status);
+}
+
+function graphColor(app: Application) {
+  if (app.status === "Interviewing" || app.status.includes("Assessment")) return "#f7b267";
+  if (app.status === "Rejected") return "#f25f5c";
+  if (app.applied) return "#55d6be";
+  if (app.reachOut) return "#b388ff";
+  return "#70a1ff";
+}
+
+function connectionWeight(a: Application, b: Application) {
+  let weight = 0;
+  if (a.source === b.source) weight += 2;
+  if (a.status === b.status) weight += 2;
+  if (locationFamily(a.location) === locationFamily(b.location)) weight += 2;
+  if (roleFamilyName(a.role) === roleFamilyName(b.role)) weight += 2;
+  if (a.reachOut && b.reachOut) weight += 1;
+  if (Math.abs(a.fitScore - b.fitScore) <= 1) weight += 1;
+  return weight;
+}
+
+function locationFamily(location: string) {
+  const text = location.toLowerCase();
+  if (text.includes("remote")) return "Remote";
+  if (text.includes("new york") || text.includes("ny")) return "New York";
+  if (text.includes("san francisco") || text.includes("bay area") || text.includes("palo alto")) return "Bay Area";
+  if (text.includes("seattle")) return "Seattle";
+  if (text.includes("atlanta") || text.includes("georgia")) return "Georgia";
+  return "Other";
+}
+
+function roleFamilyName(role: string) {
+  const text = role.toLowerCase();
+  if (text.includes("backend") || text.includes("back end")) return "Backend";
+  if (text.includes("frontend") || text.includes("front end")) return "Frontend";
+  if (text.includes("full")) return "Full Stack";
+  if (text.includes("ai") || text.includes("ml")) return "AI";
+  if (text.includes("data")) return "Data";
+  if (text.includes("platform") || text.includes("infrastructure")) return "Platform";
+  return "General";
 }
 
 function summarize(apps: Application[]) {
