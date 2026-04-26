@@ -1159,7 +1159,7 @@ td {
   min-width: 132px;
 }
 
-.resume-ref > a {
+.resume-ref > button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1167,12 +1167,13 @@ td {
   width: max-content;
   min-height: 32px;
   padding: 0 10px;
+  border: 0;
   color: #06111e;
   background: #55d6be;
   border-radius: 8px;
   font-size: 12px;
   font-weight: 900;
-  text-decoration: none;
+  cursor: pointer;
 }
 
 .resume-ref small {
@@ -1185,10 +1186,16 @@ td {
   line-height: 1.35;
 }
 
-.resume-ref small a {
+.resume-ref small a,
+.resume-ref small button {
+  padding: 0;
+  border: 0;
+  background: transparent;
   color: #9df1e3;
+  font: inherit;
   font-weight: 850;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .resume-ref.missing {

@@ -241,6 +241,7 @@ function App() {
   const [minFit, setMinFit] = useState(0);
   const [openOutreachLane, setOpenOutreachLane] = useState<"recruiter" | "engineer" | null>(null);
   const [selectedOutreach, setSelectedOutreach] = useState<{ app: Application; lane: "recruiter" | "engineer" } | null>(null);
+  const [copiedResumePath, setCopiedResumePath] = useState("");
 
   const statuses = useMemo(() => ["All", ...data.stats.statusCounts.map((item) => item.name)], []);
   const filtered = useMemo(() => {
@@ -520,7 +521,17 @@ function App() {
                 <tr key={`${app.company}-${app.role}-${app.postingKey}`}>
                   <td><strong>{app.company}</strong><small>{app.source}</small></td>
                   <td>{app.role}<small>{app.location}</small></td>
-                  <td><ResumeReference app={app} /></td>
+                  <td>
+                    <ResumeReference
+                      app={app}
+                      copiedPath={copiedResumePath}
+                      onCopy={(path) => {
+                        void navigator.clipboard.writeText(path);
+                        setCopiedResumePath(path);
+                        window.setTimeout(() => setCopiedResumePath(""), 1600);
+                      }}
+                    />
+                  </td>
                   <td><span className={`status ${STATUS_TONE[app.status] || "cool"}`}>{app.status}</span></td>
                   <td><b>{app.fitScore || "-"}</b></td>
                   <td>{app.recruiterContact || "Open"}<small>{app.recruiterProfile && hostFromUrl(app.recruiterProfile)}</small></td>
@@ -647,26 +658,34 @@ function MiniMetric({ label, value }: { label: string; value: string | number })
   );
 }
 
-function ResumeReference({ app }: { app: Application }) {
+function ResumeReference({
+  app,
+  copiedPath,
+  onCopy,
+}: {
+  app: Application;
+  copiedPath: string;
+  onCopy: (path: string) => void;
+}) {
   if (!app.resumePdf && !app.resumeFolder) {
     return <span className="resume-ref missing">No tailored resume</span>;
   }
+  const primaryPath = app.resumePdf || app.resumeFolder;
   return (
     <div className="resume-ref">
       {app.resumePdf ? (
-        <a href={repoLink(app.resumePdf)} target="_blank" rel="noreferrer">
+        <button type="button" onClick={() => onCopy(app.resumePdf)}>
           <BriefcaseBusiness size={15} />
-          Open PDF
-        </a>
+          {copiedPath === app.resumePdf ? "Copied" : "Copy PDF path"}
+        </button>
       ) : (
         <span>No PDF</span>
       )}
-      {app.resumeFolder && (
-        <small>
-          <a href={repoLink(app.resumeFolder)} target="_blank" rel="noreferrer">Folder</a>
-          {resumeName(app.resumePdf || app.resumeFolder)}
-        </small>
-      )}
+      <small>
+        {app.resumeFolder && <button type="button" onClick={() => onCopy(app.resumeFolder)}>Copy folder</button>}
+        {app.resumePdf && <a href={repoLink(app.resumePdf)} target="_blank" rel="noreferrer">GitHub PDF</a>}
+        {primaryPath && resumeName(primaryPath)}
+      </small>
     </div>
   );
 }
