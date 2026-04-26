@@ -41,6 +41,7 @@ If a link is provided, open it and extract:
 - Generic source resume lives in `generic-resume/`
 - The primary resume source file should usually be `generic-resume/resume.tex`
 - Candidate metadata lives in `generic-resume/README.md`
+- The canonical personal website is `liamvan.dev`; every tailored resume header should preserve `\href{https://liamvan.dev}{liamvan.dev}`
 - Set `candidate_name: Your Name` in that README so the scripts can name output folders and PDFs
 - Treat `generic-resume/README.md` as the richer candidate profile and evidence source, not just naming metadata
 - Treat the generic resume and README as the context bank; they can be richer than one page because the tailored output is what must be compressed to one page

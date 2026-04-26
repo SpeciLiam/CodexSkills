@@ -66,7 +66,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-1pt}}
   }
 }
 
@@ -98,7 +98,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in,itemsep=1pt,topsep=2pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -121,8 +121,8 @@
 %\end{center}
 \begin{center}
     \textbf{\Huge \scshape Liam Van} \\ \vspace{1pt}
-    \small 678-488-7259 $|$ \small {liamvanpj@gmail.com} $|$ Alpharetta, GA 30005
- {{$|$ linkedin.com/in/liam-van} {$|$ github.com/SpeciLiam }}
+    \small 678-488-7259 $|$ \small {liamvanpj@gmail.com} $|$ Seattle, WA
+ {{$|$ linkedin.com/in/liam-van} {$|$ github.com/SpeciLiam} {$|$ \href{https://liamvan.dev}{liamvan.dev}}}
 
 \end{center}
 
@@ -130,10 +130,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, C++, C\#, JavaScript, TypeScript, SQL, C, PHP} \\
-     \textbf{Cloud / Backend}{: OCI, GCP, AWS, REST APIs, Spring Boot, MySQL, OpenSearch, Docker, OCI CLI, GCloud CLI} \\
-     \textbf{Testing / DevOps}{: Robot Framework, CI/CD, Azure DevOps, Grafana, T2, Jira, Bitbucket, Selenium} \\
-     \textbf{Frontend / Data}{: React, NestJS, Angular, Node.js, Android Studio, Apache Spark, Hadoop} \\
+     \textbf{Languages}{: Java, Python, JavaScript, TypeScript, SQL, C++, C\#, PHP, C} \\
+     \textbf{Cloud / Backend}{: OCI, GCP, AWS, REST APIs, Spring Boot, MySQL, OpenSearch, Docker, CLI tooling} \\
+     \textbf{Testing / Operations}{: Robot Framework, CI/CD, Azure DevOps, Grafana, T2, Selenium, release support, on-call response} \\
+     \textbf{Frontend / Product}{: React, NestJS, Angular, Node.js, product integrations, technical documentation} \\
     }}
  \end{itemize}
 %
@@ -146,41 +146,31 @@
   {Oracle}{May 2025 - Present}
   {Software Engineer, GCP Integration (Oasis)}{Seattle, WA}
   \resumeItemListStart
-    \resumeItem{Drove GA readiness for BaseDB and Exadata DB workflows bringing OCI database services onto GCP, validating create, restore, backup, and Data Guard scenarios across OCI Console, OCI CLI, and GCloud flows}
-    \resumeItem{Partnered with Oracle and GCP teams to investigate edge cases, communicate release blockers, and align fixes for GCP integration, canary health, and production readiness}
-    \resumeItem{Spearheaded AI-assisted blackbox API testing for Oasis services by designing prompting strategy, repository structure, Robot Framework setup, onboarding docs, and auth/spec parsing scripts}
+    \resumeItem{Drove GA readiness for BaseDB and Exadata DB workflows that brought OCI database services onto GCP, validating create, restore, backup, and Data Guard scenarios across console, CLI, and API-driven flows}
+    \resumeItem{Partnered with Oracle and GCP engineers to investigate edge cases, communicate release blockers, and align fixes for integration health, canary stability, and production readiness}
+    \resumeItem{Built AI-assisted blackbox API testing for Oasis services by designing prompting strategy, repository structure, Robot Framework setup, onboarding docs, and auth/spec parsing scripts}
     \resumeItem{Built reusable GCloud and OCI scripting workflows plus performance and regression utilities, improving local testing efficiency and scaling end-to-end validation for BaseDB and ADBS}
-    \resumeItem{Implemented and merged dry-run support for Exascale Storage Vault, improving preflight validation and customer safety, and achieved $>$90\% unit test coverage across BaseDB and Exadata Infrastructure components}
-    \resumeItem{Served as primary on-call for Oasis releases, leading Sev2 investigations, resolving Sev3/Sev4 issues, and driving mitigation through log analysis, Grafana and T2 metrics, and alarm-threshold recommendations}
+    \resumeItem{Implemented and merged dry-run support for Exascale Storage Vault, improving preflight validation and customer safety while reaching over 90\% unit test coverage across BaseDB and Exadata Infrastructure components}
+    \resumeItem{Served as primary on-call for Oasis releases, leading Sev2 investigations, resolving Sev3 and Sev4 issues, and driving mitigation through log analysis, Grafana and T2 metrics, and alarm-threshold recommendations}
   \resumeItemListEnd
 
     \resumeSubheading
       {Oracle}{May 2024 - August 2024}
-      {Software Engineer Intern}{Redwood City, CA}
+      {Software Engineer}{Redwood City, CA}
       \resumeItemListStart
         \resumeItem{Built an LLM-powered recommendation experience for Oracle University and OCI learning content, helping customers discover tailored OCI information and course paths}
         \resumeItem{Integrated video search into Oracle University's search experience using OpenSearch indexing and retrieval pipelines}
-        \resumeItem{Implemented the search interface in React and NestJS from Figma designs and stakeholder feedback, using PHP and SQL to retrieve metadata for front-end features and model inputs}
+        \resumeItem{Implemented the search interface in React and NestJS from Figma designs and stakeholder feedback, using PHP and SQL to retrieve metadata for product features and model inputs}
       \resumeItemListEnd
 
     \resumeSubheading
       {Caterpillar Inc.}{May 2023 - December 2023}
-      {Software Engineer Intern}{Chicago, IL}
+      {Software Engineer}{Chicago, IL}
       \resumeItemListStart
         \resumeItem{Built Java data-processing workflows to convert JSON to Apache Parquet, improving storage efficiency by 30\%}
         \resumeItem{Developed APIs and data-modeling flows for thousands of data points, improving analysis speed by 50\%}
         \resumeItem{Implemented distributed caching for real-time search across API responses, increasing parsing speed by 1000\%}
-        \resumeItem{Deployed Angular and Spring Boot services through Azure DevOps pipelines}
       \resumeItemListEnd
-
-    \resumeSubheading
-      {Caterpillar Inc.}{May 2022 - August 2022}
-      {Software Engineer Intern}{Chicago, IL}
-      \resumeItemListStart
-        \resumeItem{Enhanced Java Spring Boot REST APIs, improving response time by 20\%}
-        \resumeItem{Used logs and platform telemetry across API endpoints, AWS Apigee, ECS, RDS, ELB, and Elasticsearch to debug service behavior}
-        \resumeItem{Revamped CI/CD pipelines in Azure DevOps, reducing deployment failures by 30\%}
-    \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -196,10 +186,10 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{County Food Schedule Phone App} $|$ \emph{Java, Android Studio, C\#, Visual Studio, Selenium, Git}}{}
+          {\textbf{Fantasy Wizard} $|$ \emph{React, Spring Boot, REST APIs, AI}}{}
           \resumeItemListStart
-            \resumeItem{Developed an Android application that displayed data parsed from a web-hosted text file}
-            \resumeItem{Implemented Selenium WebDriver to parse data and store it in cloud-based storage, enabling reliable automated updates}
+            \resumeItem{Built a fantasy football web application with a React frontend and Spring Boot backend, with UI patterns inspired by Sleeper and league integrations through Sleeper APIs}
+            \resumeItem{Integrated multiple APIs and scraping workflows to track IR status, rosters, trades, and league activity for live product analysis}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
