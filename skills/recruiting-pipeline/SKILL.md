@@ -1,6 +1,6 @@
 ---
 name: recruiting-pipeline
-description: Orchestrate Liam Van's full recruiting workflow across resume tailoring, application tracking, Gmail status refreshes, LinkedIn recruiter and engineer outreach, company prospecting, Apollo email lookup, Notion sync, and the Vercel visualizer.
+description: Orchestrate Liam Van's full recruiting workflow across resume tailoring, application tracking, Gmail status refreshes, LinkedIn recruiter and engineer outreach, company prospecting, Apollo email lookup, and the Vercel visualizer, with optional routing to the separate Notion mirror skill only when requested.
 ---
 
 # Recruiting Pipeline
@@ -16,9 +16,9 @@ Use these in order:
 1. Markdown tracker: `application-trackers/applications.md`
 2. Outreach prospect tracker: `application-trackers/outreach-prospects.md`
 3. Generated cache: `application-visualizer/src/data/tracker-data.json`
-4. Notion mirror, if configured in `application-trackers/notion-config.md`
 
 Markdown stays authoritative. The generated cache is the fast read model for dashboards and target builders.
+Notion is a separate optional mirror handled by `notion-application-sync`; do not include it in normal recruiting runs.
 
 ## Daily Command
 
@@ -59,6 +59,7 @@ python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode
 python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode prep
 python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode status
 python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode dashboard
+python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode notion
 ```
 
 Mode behavior:
@@ -72,6 +73,7 @@ Mode behavior:
 - `prep`: focus on interviews and online assessments.
 - `status`: focus on Gmail/application status changes.
 - `dashboard`: only rebuild visualizer data/site output.
+- `notion`: refresh website data and preview the optional Notion mirror.
 
 When the user explicitly says "only LinkedIn outreach" or "just resume tailor," run the matching mode first, then perform only the companion steps that are listed for that mode.
 
@@ -115,7 +117,7 @@ Follow this sequence unless the user asks for a specific step:
 
 6. **Monitor responses**
    - Use `gmail-application-refresh` to detect confirmations, rejections, assessments, and interviews.
-   - High-confidence changes can update markdown and Notion.
+   - High-confidence changes update markdown. Notion sync is separate and optional.
    - Ambiguous messages should be reported, not guessed.
 
 7. **Prepare interviews and assessments**
@@ -139,6 +141,7 @@ cd application-visualizer && npm run build
 - Need company-level people plus emails: use `company-prospecting`.
 - Need email/status updates: use `gmail-application-refresh`.
 - Need dashboard data rebuilt: use `application-visualizer-refresh`.
+- Need Notion mirroring or 12-hour schedule setup: use `notion-application-sync`.
 - Need overall priorities: use this skill first.
 
 ## Guardrails

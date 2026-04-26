@@ -110,6 +110,11 @@ const PIPELINE_MODES = [
     command: "python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py && cd application-visualizer && npm run build",
     description: "Rebuilds the data cache and production site output after tracker, outreach, or prospect changes.",
   },
+  {
+    name: "Notion Mirror",
+    command: "python3 skills/notion-application-sync/scripts/sync_applications_to_notion.py --dry-run",
+    description: "Optional slow path. Preview or run Notion matching from the website JSON cache without blocking normal recruiting work.",
+  },
 ];
 
 const SKILL_CARDS = [
@@ -142,6 +147,11 @@ const SKILL_CARDS = [
     name: "application-visualizer-refresh",
     role: "Data build",
     text: "Turns markdown tracker data into the normalized JSON cache this website uses for charts, filters, outreach gaps, and action views.",
+  },
+  {
+    name: "notion-application-sync",
+    role: "Optional mirror",
+    text: "Matches the generated website data cache into Notion on demand or every 12 hours, while keeping markdown and JSON as the fast source of truth.",
   },
 ];
 
@@ -379,6 +389,7 @@ function App() {
             <p>
               The tracker is the source of truth. The generated JSON cache powers this dashboard. The skills below keep resumes, applications,
               recruiter outreach, engineer outreach, company prospects, Gmail statuses, and the Vercel data build moving in the same direction.
+              Notion runs separately as an optional mirror so the main flow stays fast.
             </p>
           </div>
           <div className="pipeline-flow" aria-label="Recommended recruiting flow">

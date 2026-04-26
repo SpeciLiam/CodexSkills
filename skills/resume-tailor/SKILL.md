@@ -48,8 +48,7 @@ If a link is provided, open it and extract:
 - If the same role is tailored again, create `companies/<Company Name>/<Role_Slug>/<Candidate_Name>_Resume_2`, then `_3`, and so on
 - Fall back to `companies/<Company Name>/<Candidate_Name>_Resume/` only when the role is unknown
 - Application tracking lives in `application-trackers/applications.md`
-- Optional Notion tracking should mirror the markdown tracker in a database named `Application Tracker`
-- If `application-trackers/notion-config.md` exists, use it as the source of truth for the Notion parent page and data source to update
+- Optional Notion mirroring is handled by the separate `notion-application-sync` skill and should not run during normal resume tailoring.
 
 Before editing, prepare the output directory with:
 
@@ -105,26 +104,6 @@ python3 skills/resume-tailor/scripts/update_application_tracker.py \
   --status "Resume Tailored"
 ```
 
-If a Notion integration token is available, you can sync the matching Notion row in the same step:
-
-```bash
-python3 skills/resume-tailor/scripts/update_application_tracker.py \
-  --company "Company Name" \
-  --role "Role Title" \
-  --job-link "https://example.com/job" \
-  --location "City, State" \
-  --source "Ashby" \
-  --referral "No" \
-  --date-added "YYYY-MM-DD" \
-  --resume-folder "/absolute/path/to/companies/Company Name/Candidate_Name_Resume" \
-  --resume-pdf "/absolute/path/to/companies/Company Name/Candidate_Name_Resume/Candidate_Name_Company_Name.pdf" \
-  --status "Resume Tailored" \
-  --sync-notion \
-  --update-notion-title
-```
-
-This requires a Notion internal integration token in `NOTION_TOKEN` and access to the configured tracker database.
-
 The tracker also supports a configurable fit score and recruiter outreach flag:
 
 - preferences live in `application-trackers/scoring-profile.json`
@@ -138,21 +117,6 @@ To backfill or recompute those values across the full tracker, run:
 python3 skills/resume-tailor/scripts/score_application_tracker.py
 ```
 
-If you also want to sync those recomputed values into Notion, run:
-
-```bash
-python3 skills/resume-tailor/scripts/score_application_tracker.py \
-  --sync-notion \
-  --update-notion-title
-```
-
-Or, if markdown is already correct and you only want to push scores to Notion:
-
-```bash
-python3 skills/resume-tailor/scripts/sync_notion_scores.py \
-  --update-title
-```
-
 Use the tracker every time the user provides a new role link so the repository keeps a single running application log.
 If the user mentions a referral, record it in the `Referral` column. If they do not mention one, leave it blank or mark `No` based on the user's preference.
 Treat the posting itself as the unique identity of the application. Multiple roles at the same company should create separate folder paths and separate tracker rows, even when the titles are similar.
@@ -160,31 +124,7 @@ Use status values such as `Resume Tailored`, `Applied`, `Online Assessment`, `In
 Keep the markdown tracker header count in sync so `application-trackers/applications.md` shows `Total applications tracked: N` above the table.
 If the resulting row has `Reach Out` enabled and the user wants outbound networking, hand off to the `linkedin-outreach` skill next so recruiter and engineer outreach gets tracked in the same markdown row.
 
-If the user wants Notion tracking too, create or update a Notion database with a clean table-oriented schema:
-
-- `Company` as the title property
-- `Role` as rich text
-- `Posting Key` as rich text
-- `Date Added` as date
-- `Status` as a status property
-- `Applied` as checkbox
-- `Referral` as checkbox
-- `Referral Name` as rich text
-- `Location` as rich text
-- `Source` as a select property
-- `Job Link` as URL
-- `Resume PDF` as URL
-- `Notes` as rich text
-
-Prefer a simple polished table view with:
-
-- rows sorted by `Date Added` descending
-- the running total visible in the database title or primary table view name, such as `Applications (12)`
-- `Applied` shown as a checkbox for quick green-check scanning
-- `Referral` shown as a checkbox for quick scanning
-- `Status`, `Company`, `Role`, `Location`, `Source`, `Applied`, `Referral`, `Job Link`, and `Resume PDF` visible
-
-When the repo already contains `application-trackers/notion-config.md`, prefer updating that configured database instead of creating a new one.
+If the user wants Notion updated after tailoring, hand off to `notion-application-sync` after the markdown tracker and visualizer cache are refreshed.
 
 ## Tailoring rules
 
@@ -269,9 +209,9 @@ Use that map to drive edits instead of only reordering the existing list.
     - Include a company-and-role labeled PDF link so the tracker can open the tailored resume directly from the table.
     - Keep the markdown tracker ordered for fast scanning: `Company`, `Role`, `Applied`, `Status`, `Company Resume`, `Referral`, then supporting details.
     - Refresh the header count so the markdown tracker shows the current total number of tracked applications.
-13. If the user has requested Notion tracking and has provided or already has a parent page for it, create or update the matching Notion tracker row as well.
-    - Refresh the Notion database title or primary table view name so the visible count stays current there too.
-14. Summarize what changed and why, including which skills were added, removed, promoted, or rewritten using stronger profile evidence.
+13. Refresh the visualizer cache when tracker rows changed.
+14. If the user explicitly wants Notion updated, hand off to `notion-application-sync`.
+15. Summarize what changed and why, including which skills were added, removed, promoted, or rewritten using stronger profile evidence.
 
 ## Prioritization heuristics
 
@@ -301,9 +241,8 @@ The final deliverable should usually include:
 2. A final PDF named `<Candidate_Name>_<Company_Name>.pdf` in that same directory when local LaTeX tooling exists
 3. When requested, a basic `cover_letter.tex` and `<Candidate_Name>_<Company_Name>_Cover_Letter.pdf` in that same directory
 4. An updated row in `application-trackers/applications.md`
-5. When requested and configured, a matching Notion tracker entry
-6. A brief summary of changes made
-7. Any notes about missing evidence for requested skills
+5. A brief summary of changes made
+6. Any notes about missing evidence for requested skills
 
 If local LaTeX tooling is missing, leave the LaTeX ready for Overleaf upload and note the intended PDF filename.
 

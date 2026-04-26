@@ -24,6 +24,7 @@ MODE_CHOICES = (
     "prospecting",
     "prep",
     "dashboard",
+    "notion",
 )
 
 
@@ -180,6 +181,11 @@ def build_plan(data: dict[str, Any], limit: int, mode: str = "all") -> dict[str,
             "command": "python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py && cd application-visualizer && npm run build",
             "why": "Update the website after tracker or outreach changes.",
         },
+        "notion": {
+            "name": "Optional Notion mirror",
+            "command": "python3 skills/notion-application-sync/scripts/sync_applications_to_notion.py --dry-run",
+            "why": "Preview or run the slower Notion mirror separately from the normal recruiting loop.",
+        },
     }
 
     mode_steps = {
@@ -193,6 +199,7 @@ def build_plan(data: dict[str, Any], limit: int, mode: str = "all") -> dict[str,
         "prospecting": ["status", "prospecting", "recruiter", "engineer", "dashboard"],
         "prep": ["status", "prep", "dashboard"],
         "dashboard": ["dashboard"],
+        "notion": ["dashboard", "notion"],
     }
 
     return {
