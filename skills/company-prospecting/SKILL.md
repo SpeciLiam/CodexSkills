@@ -17,6 +17,8 @@ Turn each company into a small prospect list:
 - look up their Apollo emails
 - keep company-level and person-level progress out of the application tracker
 
+Apollo lookup should be used to find a real matched email. Do not guess email patterns from a person's name and employer.
+
 ## Default ranking
 
 For each company, prioritize prospects in this order:
@@ -83,13 +85,38 @@ python3 skills/company-prospecting/scripts/record_company_prospect.py \
 
 Use `target-type` values like `recruiter`, `alumni`, `engineer`, or `general`.
 
+## Apollo queue export
+
+Export the exact rows that still need Apollo verification:
+
+```bash
+python3 skills/company-prospecting/scripts/export_apollo_queue.py
+```
+
+Useful filters:
+
+```bash
+python3 skills/company-prospecting/scripts/export_apollo_queue.py --limit 25
+python3 skills/company-prospecting/scripts/export_apollo_queue.py --format csv
+python3 skills/company-prospecting/scripts/export_apollo_queue.py --company "Navan"
+```
+
+This only emits prospects whose email is still missing or marked as needing Apollo.
+
+Recommended statuses:
+
+- `Needs Apollo` when the prospect is selected but not looked up yet
+- `Needs Review` when Apollo returns a weak or ambiguous match
+- `Ready` when Apollo returns a verified email worth using
+- `No Match` when Apollo cannot find a reliable work email
+
 ## Expected workflow
 
 1. run `resume-tailor`
 2. update `applications.md`
 3. run this skill to seed the separate company prospect tracker
 4. for each queued company, find the top 3 names on LinkedIn
-5. use Apollo to look for email addresses
+5. export the `Needs Apollo` queue and use Apollo to look for real email addresses
 6. record names, titles, LinkedIn URLs, Apollo emails, and status in `outreach-prospects.md`
 7. use that tracker for outreach batching later
 
@@ -97,6 +124,6 @@ Use `target-type` values like `recruiter`, `alumni`, `engineer`, or `general`.
 
 - Keep this tracker separate from `applications.md`.
 - Prefer real people over generic company inboxes.
-- Do not invent email addresses.
+- Do not invent email addresses or infer them from common company patterns.
 - Mark uncertain or partial Apollo matches in `Notes`.
 - Keep the top 3 focused; do not spray extra names into the tracker unless the user asks.

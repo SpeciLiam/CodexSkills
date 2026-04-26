@@ -46,6 +46,12 @@ def candidate_token(value: str) -> str:
     return "_".join(value.split())
 
 
+def role_token(value: str) -> str:
+    cleaned = "".join(char if char.isalnum() else "_" for char in value.strip())
+    compact = "_".join(part for part in cleaned.split("_") if part)
+    return compact or "General_Role"
+
+
 def unique_destination(base_dir: Path, folder_name: str) -> Path:
     destination = base_dir / folder_name
     if not destination.exists():
@@ -64,6 +70,11 @@ def main() -> int:
         description="Create a company-specific resume folder from the generic resume source."
     )
     parser.add_argument("--company", required=True, help="Target company name")
+    parser.add_argument(
+        "--role",
+        default="",
+        help="Optional target role title. When provided, creates a role-specific subfolder under the company.",
+    )
     parser.add_argument(
         "--root",
         default=None,
@@ -89,6 +100,8 @@ def main() -> int:
     candidate_name = load_candidate_name(template_dir)
     folder_name = f"{candidate_token(candidate_name)}_Resume"
     company_base = repo_root / "companies" / company_display
+    if args.role.strip():
+        company_base = company_base / role_token(args.role)
     destination = unique_destination(company_base, folder_name)
 
     if destination.exists():

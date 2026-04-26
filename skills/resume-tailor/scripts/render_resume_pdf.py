@@ -7,6 +7,15 @@ import shutil
 import subprocess
 from pathlib import Path
 
+INTERMEDIATE_SUFFIXES = {
+    ".aux",
+    ".log",
+    ".out",
+    ".xdv",
+    ".fls",
+    ".fdb_latexmk",
+}
+
 
 def read_candidate_name(readme_path: Path) -> str | None:
     if not readme_path.exists():
@@ -25,9 +34,10 @@ def load_candidate_name(resume_dir: Path) -> str:
     if local_value:
         return local_value
 
-    repo_value = read_candidate_name(resume_dir.parents[2] / "generic-resume" / "README.md")
-    if repo_value:
-        return repo_value
+    for ancestor in resume_dir.parents:
+        repo_value = read_candidate_name(ancestor / "generic-resume" / "README.md")
+        if repo_value:
+            return repo_value
     return "Candidate Name"
 
 
@@ -36,6 +46,10 @@ def candidate_token(value: str) -> str:
 
 
 def infer_company_name(folder: Path) -> str:
+    if folder.parent.parent.name == "companies":
+        return folder.parent.name or "Company"
+    if folder.parent.parent.parent.name == "companies":
+        return folder.parent.parent.name or "Company"
     return folder.parent.name or "Company"
 
 
@@ -72,6 +86,19 @@ def build_pdf(resume_dir: Path, engine: list[str]) -> Path:
     if not output.exists():
         raise SystemExit(f"Expected PDF was not created: {output}")
     return output
+
+
+def cleanup_generated_files(resume_dir: Path, final_pdf: Path) -> None:
+    for path in resume_dir.iterdir():
+        if path == final_pdf or path.name == "resume.tex":
+            continue
+
+        if path.name == "resume.pdf" or path.name == "README.md":
+            path.unlink(missing_ok=True)
+            continue
+
+        if path.suffix in INTERMEDIATE_SUFFIXES:
+            path.unlink(missing_ok=True)
 
 
 def main() -> int:
@@ -112,6 +139,7 @@ def main() -> int:
 
     built_pdf = build_pdf(resume_dir, engine)
     shutil.copyfile(built_pdf, final_pdf)
+    cleanup_generated_files(resume_dir, final_pdf)
     print(final_pdf)
     return 0
 
