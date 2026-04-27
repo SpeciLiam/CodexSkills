@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T21:06:49.362248+00:00",
+  "generatedAt": "2026-04-27T21:16:03.756260+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -50,18 +50,18 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 135
+        "value": 134
       },
       {
         "name": "Ashby",
         "value": 46
       },
       {
-        "name": "Company Site",
-        "value": 21
+        "name": "Greenhouse",
+        "value": 22
       },
       {
-        "name": "Greenhouse",
+        "name": "Company Site",
         "value": 21
       },
       {
@@ -84,7 +84,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 106
+        "value": 107
       },
       {
         "name": "Bay Area",
@@ -96,7 +96,7 @@
       },
       {
         "name": "Remote",
-        "value": 11
+        "value": 10
       },
       {
         "name": "Seattle",
@@ -114,7 +114,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 148
+        "value": 147
       },
       {
         "name": "Backend",
@@ -129,11 +129,11 @@
         "value": 13
       },
       {
-        "name": "Data",
-        "value": 7
+        "name": "Infra/Platform",
+        "value": 8
       },
       {
-        "name": "Infra/Platform",
+        "name": "Data",
         "value": 7
       },
       {
@@ -789,24 +789,24 @@
   "applications": [
     {
       "company": "Clever",
-      "role": "Software Engineer",
+      "role": "Software Engineer, Infrastructure",
       "applied": false,
       "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
       "dateAdded": "2026-04-15",
-      "location": "United States (Remote)",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/collections/recommended/?currentJobId=4389828144",
-      "postingKey": "4389828144",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Clever/Software_Engineer/Liam_Van_Resume",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Clever/Software_Engineer/Liam_Van_Resume/Liam_Van_Clever.pdf",
+      "location": "San Francisco, CA, or Anywhere in the Continental U.S.",
+      "source": "Greenhouse",
+      "jobLink": "https://www.clever.com/about/careers?gh_jid=7437730&gh_src=auac04yc1us",
+      "postingKey": "7437730",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Clever/Software_Engineer_Infrastructure/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Clever/Software_Engineer_Infrastructure/Liam_Van_Resume/Liam_Van_Clever.pdf",
       "recruiterContact": "John Stoecker",
       "recruiterProfile": "https://www.linkedin.com/in/johnstoecker/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Raquel Gonzalez, Cruz Gonzalez, Kristin Jue, Amelia Jones, Febin Bellamy, Matthew Negasi, and John Stoecker 2026-04-25; Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "LinkedIn invite sent to Raquel Gonzalez, Cruz Gonzalez, Kristin Jue, Amelia Jones, Febin Bellamy, Matthew Negasi, and John Stoecker 2026-04-25; Replaced closed LinkedIn posting with Greenhouse role 2026-04-27; Manual apply needed: required Clever culture-tenet free response 2026-04-27",
       "noteLinks": [
         {
           "label": "Raquel Gonzalez",
@@ -839,6 +839,7 @@
       ],
       "activityDates": [
         "2026-04-25",
+        "2026-04-27",
         "2026-04-27"
       ]
     },
