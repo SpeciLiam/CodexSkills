@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T22:32:16.133009+00:00",
+  "generatedAt": "2026-04-27T22:36:43.727726+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,8 +7,8 @@
   "stats": {
     "kpis": {
       "total": 236,
-      "applied": 132,
-      "unapplied": 104,
+      "applied": 133,
+      "unapplied": 103,
       "active": 193,
       "rejected": 29,
       "interviewing": 2,
@@ -18,17 +18,17 @@
       "recruiterRows": 61,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 55.9,
-      "rejectionRate": 22.0
+      "applyRate": 56.4,
+      "rejectionRate": 21.8
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 97
+        "value": 98
       },
       {
         "name": "Manual Apply Needed",
-        "value": 92
+        "value": 91
       },
       {
         "name": "Rejected",
@@ -50,11 +50,11 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 107
+        "value": 100
       },
       {
         "name": "Ashby",
-        "value": 55
+        "value": 57
       },
       {
         "name": "Greenhouse",
@@ -62,15 +62,15 @@
       },
       {
         "name": "Company Site",
-        "value": 25
+        "value": 26
+      },
+      {
+        "name": "LinkedIn Easy Apply",
+        "value": 8
       },
       {
         "name": "Lever",
         "value": 7
-      },
-      {
-        "name": "LinkedIn Easy Apply",
-        "value": 6
       },
       {
         "name": "Gem",
@@ -78,6 +78,10 @@
       },
       {
         "name": "Other",
+        "value": 2
+      },
+      {
+        "name": "Workday",
         "value": 2
       },
       {
@@ -320,7 +324,7 @@
         "date": "2026-04-27",
         "cumulative": 236,
         "added": 71,
-        "applied": 3,
+        "applied": 4,
         "rejected": 0,
         "interviewing": 0
       }
@@ -5592,15 +5596,15 @@
     {
       "company": "Ruli",
       "role": "Software Engineer, AI",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
       "dateAdded": "2026-04-27",
       "location": "San Francisco Bay Area",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/4405909745/?trackingId=qhNl4VxgdEdNPZQv%2B%2FeUaQ%3D%3D&refId=ynHDPB5ZgeFfDqqpeBArmA%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BWcNebljBS2mutfEz9mC%2Bkg%3D%3D",
+      "source": "LinkedIn Easy Apply",
+      "jobLink": "https://www.linkedin.com/jobs/view/4405909745/",
       "postingKey": "4405909745",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ruli/Software_Engineer_AI/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ruli/Software_Engineer_AI/Liam_Van_Resume/Liam_Van_Ruli.pdf",
@@ -5608,7 +5612,7 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "LinkedIn showed application submitted 2026-04-27",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27"
@@ -6076,18 +6080,19 @@
       "referral": "No",
       "dateAdded": "2026-04-27",
       "location": "Seattle, WA",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/4393271841/",
-      "postingKey": "4393271841",
+      "source": "Workday",
+      "jobLink": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/California---San-Francisco/Software-Engineering-AMTS-MTS--College-Grad-_JR330400-1?source=LinkedIn_Jobs",
+      "postingKey": "JR330400-1",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Salesforce/Software_Engineering_AMTS_College_Grad/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Salesforce/Software_Engineering_AMTS_College_Grad/Liam_Van_Resume/Liam_Van_Salesforce.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Replaced LinkedIn posting with direct Workday application 2026-04-27; Manual apply needed: Workday posting 2026-04-27",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-27",
         "2026-04-27"
       ]
     },
@@ -6207,18 +6212,19 @@
       "referral": "No",
       "dateAdded": "2026-04-27",
       "location": "San Francisco, CA",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/4393219831/",
-      "postingKey": "4393219831",
+      "source": "Workday",
+      "jobLink": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/California---San-Francisco/Software-Engineering-AMTS-MTS--College-Grad-_JR330400-1?source=LinkedIn_Jobs",
+      "postingKey": "JR330400-1",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Salesforce/Software_Engineering_AMTS_College_Grad/Liam_Van_Resume_2",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Salesforce/Software_Engineering_AMTS_College_Grad/Liam_Van_Resume_2/Liam_Van_Salesforce.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Replaced LinkedIn posting with direct Workday application 2026-04-27; Manual apply needed: Workday posting 2026-04-27",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-27",
         "2026-04-27"
       ]
     },
@@ -6282,18 +6288,19 @@
       "referral": "No",
       "dateAdded": "2026-04-27",
       "location": "New York City Metropolitan Area",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/4404472667/",
-      "postingKey": "4404472667",
+      "source": "Company Site",
+      "jobLink": "https://www.reval.site/jobs/820e461b-cae2-4e13-b9e4-2e17270bd78f",
+      "postingKey": "820e461b-cae2-4e13-b9e4-2e17270bd78f",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Reval/Founding_Software_Engineer/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Reval/Founding_Software_Engineer/Liam_Van_Resume/Liam_Van_Reval.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Replaced LinkedIn posting with direct Reval application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-27",
         "2026-04-27"
       ]
     },
@@ -6560,18 +6567,19 @@
       "referral": "No",
       "dateAdded": "2026-04-27",
       "location": "New York, NY",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/4405484744/",
-      "postingKey": "4405484744",
+      "source": "Ashby",
+      "jobLink": "https://jobs.ashbyhq.com/slash-financial/77521da6-5a0a-44bf-b434-6947f345c970/application?utm_source=YkgywEnPOZ",
+      "postingKey": "77521da6-5a0a-44bf-b434-6947f345c970",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Slash/Software_Engineer_Growth/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Slash/Software_Engineer_Growth/Liam_Van_Resume/Liam_Van_Slash.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required startup-fit/free-response question 2026-04-27",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-27",
         "2026-04-27"
       ]
     },
@@ -6636,8 +6644,8 @@
       "referral": "No",
       "dateAdded": "2026-04-27",
       "location": "New York, NY",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/4404464189/",
+      "source": "LinkedIn Easy Apply",
+      "jobLink": "https://www.linkedin.com/jobs/view/4404464189/apply/",
       "postingKey": "4404464189",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Stott and May/Software_Engineer/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Stott and May/Software_Engineer/Liam_Van_Resume/Liam_Van_Stott_and_May.pdf",
@@ -6645,9 +6653,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Rechecked authenticated LinkedIn Easy Apply 2026-04-27; Manual apply needed: LinkedIn Easy Apply final submit confirmation 2026-04-27",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-27",
         "2026-04-27"
       ]
     },
@@ -6712,18 +6721,19 @@
       "referral": "No",
       "dateAdded": "2026-04-27",
       "location": "New York, NY",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/4373478768/",
-      "postingKey": "4373478768",
+      "source": "Ashby",
+      "jobLink": "https://jobs.ashbyhq.com/savvy/41dabf52-d665-4c67-a2ae-31f70df6c470/application?utm_source=LinkedInJobWrapping",
+      "postingKey": "41dabf52-d665-4c67-a2ae-31f70df6c470",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Savvy Wealth/Software_Engineer_Applied_AI/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Savvy Wealth/Software_Engineer_Applied_AI/Liam_Van_Resume/Liam_Van_Savvy_Wealth.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-27",
         "2026-04-27"
       ]
     },
