@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T03:53:28.075960+00:00",
+  "generatedAt": "2026-04-27T04:03:28.729785+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,8 +7,8 @@
   "stats": {
     "kpis": {
       "total": 218,
-      "applied": 115,
-      "unapplied": 103,
+      "applied": 116,
+      "unapplied": 102,
       "active": 189,
       "rejected": 29,
       "interviewing": 2,
@@ -18,17 +18,17 @@
       "recruiterRows": 61,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 52.8,
-      "rejectionRate": 25.2
+      "applyRate": 53.2,
+      "rejectionRate": 25.0
     },
     "statusCounts": [
       {
         "name": "Resume Tailored",
-        "value": 102
+        "value": 101
       },
       {
         "name": "Applied",
-        "value": 83
+        "value": 84
       },
       {
         "name": "Rejected",
@@ -248,7 +248,7 @@
         "date": "2026-04-12",
         "cumulative": 103,
         "added": 10,
-        "applied": 4,
+        "applied": 5,
         "rejected": 1,
         "interviewing": 0
       },
@@ -2302,8 +2302,8 @@
     {
       "company": "Color",
       "role": "New Grad Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "",
@@ -2318,9 +2318,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application confirmation email received 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Procore Technologies",
