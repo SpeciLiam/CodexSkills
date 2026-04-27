@@ -70,6 +70,15 @@ python3 skills/resume-tailor/scripts/render_resume_pdf.py \
 
 This attempts to compile `resume.tex` and writes a final PDF named `<Candidate_Name>_<Company_Name>.pdf` in that same company-specific folder.
 
+After every resume PDF render, verify that the PDF is exactly one page and materially fills the page:
+
+```bash
+python3 skills/resume-tailor/scripts/verify_resume_pdf.py \
+  --pdf "companies/Company Name/Role_Slug/Candidate_Name_Resume/Candidate_Name_Company_Name.pdf"
+```
+
+If verification fails because the resume spills past one page, trim or compress the least relevant content, rerender, and verify again. If verification fails because the one-page resume is visibly underfilled, add more truthful, role-relevant evidence from `generic-resume/README.md`, the generic resume, or the provided job context, then rerender and verify again. Do not update the tracker until the rendered PDF passes this check or you have manually inspected the PDF and can explain why the automated fill check is unavailable or too conservative.
+
 If the user wants a basic cover letter in the same folder, create it with:
 
 ```bash
@@ -139,7 +148,7 @@ Primary edits:
 4. Rewrite bullets to foreground matching technologies, outcomes, scope, and ownership
 5. Drop or compress older or less relevant roles if needed to stay within one page
 6. Preserve measurable impact whenever possible
-7. Keep the final tailored result to one page after LaTeX render
+7. Keep the final tailored result to exactly one page after LaTeX render
 8. Use the full page effectively when strong truthful content fits; avoid leaving obvious empty space in the final one-page layout
 9. Keep the bullet-based layout; do not replace experience bullets with paragraph blocks
 10. Allow two-line bullets when they improve clarity, but do not force bullets to fill space unnecessarily
@@ -206,13 +215,18 @@ Use that map to drive edits instead of only reordering the existing list.
    - prefer strengthening bullets, skills, or a relevant project line over leaving the page underfilled
    - keep the final rendered PDF to exactly one page
 11. Render the final PDF with `render_resume_pdf.py`.
-12. Update `application-trackers/applications.md` with the new role, posting key, link, resume folder, PDF path, source, referral status, and current status.
+12. Run `verify_resume_pdf.py` on the rendered PDF.
+    - If it reports more than one page, remove, compress, or tighten lower-priority content and rerender.
+    - If it reports underfilled page usage, add truthful, role-aligned detail before rerendering.
+    - If the automated fill check is unavailable, manually inspect the PDF before proceeding.
+    - Repeat render and verification until the PDF is exactly one full page and no more than one page.
+13. Update `application-trackers/applications.md` with the new role, posting key, link, resume folder, PDF path, source, referral status, and current status.
     - Include a company-and-role labeled PDF link so the tracker can open the tailored resume directly from the table.
     - Keep the markdown tracker ordered for fast scanning: `Company`, `Role`, `Applied`, `Status`, `Company Resume`, `Referral`, then supporting details.
     - Refresh the header count so the markdown tracker shows the current total number of tracked applications.
-13. Refresh the visualizer cache when tracker rows changed.
-14. If the user explicitly wants Notion updated, hand off to `notion-application-sync`.
-15. Summarize what changed and why, including which skills were added, removed, promoted, or rewritten using stronger profile evidence.
+14. Refresh the visualizer cache when tracker rows changed.
+15. If the user explicitly wants Notion updated, hand off to `notion-application-sync`.
+16. Summarize what changed and why, including which skills were added, removed, promoted, or rewritten using stronger profile evidence, and state that the rendered PDF passed the one-page/full-page verification.
 
 ## Prioritization heuristics
 
