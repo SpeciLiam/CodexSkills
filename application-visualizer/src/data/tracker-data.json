@@ -1,34 +1,34 @@
 {
-  "generatedAt": "2026-04-27T01:18:08.312487+00:00",
+  "generatedAt": "2026-04-27T03:34:50.943444+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
   },
   "stats": {
     "kpis": {
-      "total": 166,
-      "applied": 112,
-      "unapplied": 54,
-      "active": 137,
+      "total": 167,
+      "applied": 115,
+      "unapplied": 52,
+      "active": 138,
       "rejected": 29,
       "interviewing": 2,
       "assessments": 2,
-      "highFit": 119,
+      "highFit": 120,
       "reachOut": 82,
       "recruiterRows": 57,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 67.5,
-      "rejectionRate": 25.9
+      "applyRate": 68.9,
+      "rejectionRate": 25.2
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 80
+        "value": 83
       },
       {
         "name": "Resume Tailored",
-        "value": 53
+        "value": 51
       },
       {
         "name": "Rejected",
@@ -46,7 +46,7 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 69
+        "value": 70
       },
       {
         "name": "Ashby",
@@ -84,7 +84,7 @@
       },
       {
         "name": "New York",
-        "value": 63
+        "value": 64
       },
       {
         "name": "Other",
@@ -118,7 +118,7 @@
       },
       {
         "name": "Full Stack",
-        "value": 14
+        "value": 15
       },
       {
         "name": "AI/ML",
@@ -172,7 +172,7 @@
       },
       {
         "score": "8",
-        "count": 38
+        "count": 39
       },
       {
         "score": "9",
@@ -232,7 +232,7 @@
         "date": "2026-04-10",
         "cumulative": 81,
         "added": 9,
-        "applied": 7,
+        "applied": 9,
         "rejected": 0,
         "interviewing": 0
       },
@@ -302,9 +302,9 @@
       },
       {
         "date": "2026-04-27",
-        "cumulative": 166,
-        "added": 1,
-        "applied": 1,
+        "cumulative": 167,
+        "added": 2,
+        "applied": 2,
         "rejected": 0,
         "interviewing": 0
       }
@@ -2158,7 +2158,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/christinajsimpson/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Ian McGregor (Engineer) 2026-04-25; LinkedIn invite sent to Christy Simpson (Recruiter) 2026-04-26",
+      "notes": "LinkedIn invite sent to Ian McGregor (Engineer) 2026-04-25; LinkedIn invite sent to Christy Simpson (Recruiter) 2026-04-26; Automation reached live form; blocked on resume upload control 2026-04-27",
       "noteLinks": [
         {
           "label": "Ian McGregor",
@@ -2171,7 +2171,8 @@
       ],
       "activityDates": [
         "2026-04-25",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ]
     },
     {
@@ -2193,7 +2194,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/alden-woolford-963a29bb/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Nitish Natarajan (Engineer) 2026-04-25; LinkedIn invite sent to Alden Woolford (Recruiter) 2026-04-26",
+      "notes": "LinkedIn invite sent to Nitish Natarajan (Engineer) 2026-04-25; LinkedIn invite sent to Alden Woolford (Recruiter) 2026-04-26; Posting returned Job not found in Ashby UI 2026-04-27",
       "noteLinks": [
         {
           "label": "Nitish Natarajan",
@@ -2206,7 +2207,8 @@
       ],
       "activityDates": [
         "2026-04-25",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ]
     },
     {
@@ -2882,8 +2884,8 @@
     {
       "company": "Maybern",
       "role": "Software Engineer, New Grad",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -2898,13 +2900,8 @@
       "recruiterProfile": "https://www.linkedin.com/in/brendanpatrickcarty",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Brendan Carty (Recruiter) 2026-04-26",
-      "noteLinks": [
-        {
-          "label": "Brendan Carty",
-          "url": "https://www.linkedin.com/in/brendanpatrickcarty"
-        }
-      ],
+      "notes": "Application submitted 2026-04-26",
+      "noteLinks": [],
       "activityDates": [
         "2026-04-26"
       ]
@@ -2912,8 +2909,8 @@
     {
       "company": "Benchling",
       "role": "Software Engineer, New Grad (2026)",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -2928,13 +2925,8 @@
       "recruiterProfile": "https://www.linkedin.com/in/deanzar/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Dean Talanehzar (Recruiter) 2026-04-26",
-      "noteLinks": [
-        {
-          "label": "Dean Talanehzar",
-          "url": "https://www.linkedin.com/in/deanzar/"
-        }
-      ],
+      "notes": "Application submitted 2026-04-26",
+      "noteLinks": [],
       "activityDates": [
         "2026-04-26"
       ]
@@ -4343,10 +4335,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-07",
+      "notes": "Application confirmation email received 2026-04-07; Automation reached live form; blocked on sponsorship answer and resume upload control 2026-04-27",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-07"
+        "2026-04-07",
+        "2026-04-27"
       ]
     },
     {
@@ -5325,7 +5318,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/miguel-chucaralao/",
       "engineerContact": "Animesh Fatehpuria",
       "engineerProfile": "https://www.linkedin.com/in/animesh-fatehpuria-087a51167/",
-      "notes": "LinkedIn invite sent to recruiter Miguel Chucaralao 2026-04-24; LinkedIn invite sent to recruiter Rico Curry 2026-04-25; LinkedIn invite sent to recruiter Cara Fishman 2026-04-25; LinkedIn invite sent to Animesh Fatehpuria (Engineer) 2026-04-26",
+      "notes": "LinkedIn invite sent to recruiter Miguel Chucaralao 2026-04-24; LinkedIn invite sent to recruiter Rico Curry 2026-04-25; LinkedIn invite sent to recruiter Cara Fishman 2026-04-25; LinkedIn invite sent to Animesh Fatehpuria (Engineer) 2026-04-26; Automation reached live form; blocked on sponsorship answer and resume upload control 2026-04-27",
       "noteLinks": [
         {
           "label": "Miguel Chucaralao",
@@ -5348,7 +5341,8 @@
         "2026-04-24",
         "2026-04-25",
         "2026-04-25",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ]
     },
     {
@@ -5364,6 +5358,31 @@
       "source": "LinkedIn",
       "jobLink": "https://www.linkedin.com/jobs/view/4404859319/",
       "postingKey": "4404859319",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Loop/Software_Engineer_Full_Stack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Loop/Software_Engineer_Full_Stack/Liam_Van_Resume/Liam_Van_Loop.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application confirmation email received 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
+      ]
+    },
+    {
+      "company": "Loop",
+      "role": "2026 New Grad Software Engineer, Full-Stack (New York)",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4406677608/",
+      "postingKey": "4406677608",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Loop/Software_Engineer_Full_Stack/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Loop/Software_Engineer_Full_Stack/Liam_Van_Resume/Liam_Van_Loop.pdf",
       "recruiterContact": "",
