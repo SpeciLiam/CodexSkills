@@ -114,6 +114,17 @@ Use the candidate profile and resume as evidence. Keep answers concise and truth
 
 Use these saved answers without interrupting Liam unless a form asks for a materially different or more specific commitment:
 
+- Full name: Liam Van.
+- Email: liamvanpj@gmail.com.
+- Phone: 678-488-7259.
+- Current location: Seattle, WA.
+- Current company: Oracle.
+- LinkedIn: https://www.linkedin.com/in/liam-van.
+- GitHub: https://github.com/SpeciLiam.
+- Portfolio / website: https://liamvan.dev.
+- School: University of Georgia, School of Computing.
+- Degree: Bachelor of Science in Computer Science.
+- Graduation date: Dec 2024; graduation year: 2024.
 - Work authorization: Liam is a U.S. citizen.
 - Sponsorship: Liam does not require employer sponsorship now or in the future.
 - Location/relocation: Liam is open to the locations where he is applying, with a preference for NYC and SF.
@@ -121,6 +132,12 @@ Use these saved answers without interrupting Liam unless a form asks for a mater
 - Disability status: not disabled.
 - Veteran status: not a veteran / not a protected veteran.
 - Routine applicant privacy notices and data-processing acknowledgements: acknowledge when required to submit.
+
+### Reusable Custom Answer Seeds
+
+Use these as source material for short custom questions, but do not submit custom essays without reviewing the final text when the question is personal, evaluative, or company-specific.
+
+- Favorite or proud AI project: Liam created an AI skill that reduced stress for the on-call engineer and the broader team during high-severity incidents. When a high-severity issue arose, the skill would trigger in parallel with the manual incident response and begin an organized investigation: gathering context, structuring possible causes, tracking evidence, and helping the human on-call engineer move faster without replacing their judgment. This is a good answer seed for prompts about a project Liam liked working on, AI improving a workflow, operational impact, incident response, developer productivity, or helping a team under pressure.
 
 Preserve Liam's flow: keep applying with these defaults and only ask when there is a hard blocker such as login, 2FA, CAPTCHA, account creation, a legal signature/attestation beyond routine privacy acknowledgement, a salary/start-date/custom essay question, or a question whose answer cannot reasonably be derived from these standing answers.
 
