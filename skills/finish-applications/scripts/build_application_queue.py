@@ -38,6 +38,7 @@ TRUE_MANUAL_BLOCKERS = (
     "honeypot",
     "legal signature",
     "login",
+    "non-compete",
     "not automation-accessible",
     "otp",
     "partner sharing",
