@@ -124,6 +124,7 @@ Use these saved answers without interrupting Liam unless a form asks for a mater
 - Portfolio / website: https://liamvan.dev.
 - School: University of Georgia, School of Computing.
 - Degree: Bachelor of Science in Computer Science.
+- School start date: August 2021.
 - Graduation date: Dec 2024; graduation year: 2024.
 - Work authorization: Liam is a U.S. citizen.
 - Sponsorship: Liam does not require employer sponsorship now or in the future.
