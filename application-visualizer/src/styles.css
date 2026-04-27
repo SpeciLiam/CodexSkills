@@ -107,6 +107,10 @@ main {
   color: #95a8bd;
 }
 
+.mobile-jump {
+  display: none;
+}
+
 .topbar {
   display: flex;
   align-items: flex-start;
@@ -1119,6 +1123,10 @@ select option {
   overflow-x: auto;
 }
 
+.mobile-browser-list {
+  display: none;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -1203,6 +1211,79 @@ td {
   font-size: 12px;
 }
 
+.mobile-app-card {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.055);
+  border-radius: 8px;
+}
+
+.mobile-app-card header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 12px;
+}
+
+.mobile-app-card h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.mobile-app-card p,
+.mobile-app-card small {
+  color: #95a8bd;
+}
+
+.mobile-app-card header b {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  min-height: 42px;
+  padding: 0 8px;
+  border: 1px solid rgba(85, 214, 190, .36);
+  background: rgba(85, 214, 190, .12);
+  border-radius: 8px;
+  color: #bffff4;
+}
+
+.mobile-app-meta,
+.mobile-contact-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.mobile-app-meta {
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+}
+
+.mobile-contact-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mobile-contact-grid span {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,.09);
+  background: rgba(3, 7, 18, .28);
+  border-radius: 8px;
+  color: #dbeafe;
+  overflow-wrap: anywhere;
+}
+
+.mobile-contact-grid b {
+  color: #8dd7cf;
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
 .tooltip {
   max-width: 280px;
   padding: 10px 12px;
@@ -1254,12 +1335,55 @@ td {
   }
 
   .section-anchor {
-    scroll-margin-top: 122px;
+    scroll-margin-top: 132px;
   }
 
   .sticky-nav {
     top: 0;
     grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .sticky-nav div {
+    display: none;
+  }
+
+  .sticky-nav .brand-chip {
+    width: 100%;
+  }
+
+  .mobile-jump {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: 10px;
+    min-height: 40px;
+    padding: 8px 10px;
+    border: 1px solid rgba(255,255,255,.12);
+    background: rgba(255,255,255,.07);
+    border-radius: 8px;
+  }
+
+  .mobile-jump span {
+    min-height: auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #8dd7cf;
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  .mobile-jump select {
+    width: 100%;
+    min-width: 0;
+    color: #e8f3ff;
+    background: rgba(3, 7, 18, .55);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 8px;
+    padding: 8px 10px;
   }
 
   .sticky-nav > span {
@@ -1280,6 +1404,16 @@ td {
     padding: 18px;
   }
 
+  h1 {
+    font-size: 40px;
+    line-height: .98;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 1;
+  }
+
   .mission-copy {
     padding: 0;
   }
@@ -1294,6 +1428,48 @@ td {
 
   .command-steps, .parallel-grid, .mode-grid, .skill-grid, .pipeline-flow {
     grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    display: grid;
+    align-items: start;
+    padding: 14px;
+  }
+
+  .section-heading h2 {
+    font-size: 22px;
+    line-height: 1.08;
+  }
+
+  .panel {
+    padding: 14px;
+  }
+
+  .table-wrap {
+    display: none;
+  }
+
+  .mobile-browser-list {
+    display: grid;
+    gap: 12px;
+    padding: 0 12px 14px;
+  }
+
+  .mobile-app-card .resume-ref {
+    min-width: 0;
+  }
+
+  .mobile-app-card .resume-ref > button {
+    width: 100%;
+  }
+
+  .mobile-app-card .resume-ref small {
+    max-width: none;
+  }
+
+  .mobile-app-card .link-pack a {
+    flex: 1;
+    width: auto;
   }
 
   .metric-strip div {
@@ -1312,5 +1488,14 @@ td {
   .recruiter-row .status,
   .recruiter-row .lane-state {
     display: none;
+  }
+
+  .modal-backdrop {
+    align-items: stretch;
+    padding: 10px;
+  }
+
+  .outreach-modal {
+    max-height: calc(100vh - 20px);
   }
 }

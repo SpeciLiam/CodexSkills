@@ -292,6 +292,17 @@ function App() {
             <a key={item.href} href={item.href}>{item.label}</a>
           ))}
         </div>
+        <label className="mobile-jump">
+          <span>Jump to</span>
+          <select
+            defaultValue="#overview"
+            onChange={(event) => {
+              window.location.hash = event.target.value;
+            }}
+          >
+            {NAV_ITEMS.map((item) => <option key={item.href} value={item.href}>{item.label}</option>)}
+          </select>
+        </label>
         <span>{filtered.length} visible</span>
       </nav>
 
@@ -548,6 +559,41 @@ function App() {
               ))}
             </tbody>
           </table>
+        </div>
+        <div className="mobile-browser-list">
+          {filtered.slice(0, 40).map((app) => (
+            <article className="mobile-app-card" key={`mobile-${app.company}-${app.role}-${app.postingKey}`}>
+              <header>
+                <div>
+                  <h3>{app.company}</h3>
+                  <p>{app.role}</p>
+                </div>
+                <b>{app.fitScore || "-"}</b>
+              </header>
+              <div className="mobile-app-meta">
+                <span className={`status ${STATUS_TONE[app.status] || "cool"}`}>{app.status}</span>
+                <small>{app.location || app.source}</small>
+              </div>
+              <div className="mobile-contact-grid">
+                <span><b>Recruiter</b>{app.recruiterContact || "Open"}</span>
+                <span><b>Engineer</b>{app.engineerContact || "Open"}</span>
+              </div>
+              <ResumeReference
+                app={app}
+                copiedPath={copiedResumePath}
+                onCopy={(path) => {
+                  void navigator.clipboard.writeText(path);
+                  setCopiedResumePath(path);
+                  window.setTimeout(() => setCopiedResumePath(""), 1600);
+                }}
+              />
+              <div className="link-pack">
+                {app.jobLink && <a href={app.jobLink} target="_blank" rel="noreferrer" aria-label="Job"><ExternalLink size={16} /></a>}
+                {app.recruiterProfile && <a href={app.recruiterProfile} target="_blank" rel="noreferrer" aria-label="Recruiter"><Users size={16} /></a>}
+                {app.engineerProfile && <a href={app.engineerProfile} target="_blank" rel="noreferrer" aria-label="Engineer"><Users size={16} /></a>}
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
