@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-04-26T19:11:13.282656+00:00",
+  "generatedAt": "2026-04-27T01:18:08.312487+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
   },
   "stats": {
     "kpis": {
-      "total": 165,
-      "applied": 111,
+      "total": 166,
+      "applied": 112,
       "unapplied": 54,
-      "active": 136,
+      "active": 137,
       "rejected": 29,
       "interviewing": 2,
       "assessments": 2,
-      "highFit": 118,
+      "highFit": 119,
       "reachOut": 82,
-      "recruiterRows": 43,
+      "recruiterRows": 57,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 67.3,
-      "rejectionRate": 26.1
+      "applyRate": 67.5,
+      "rejectionRate": 25.9
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 79
+        "value": 80
       },
       {
         "name": "Resume Tailored",
@@ -46,7 +46,7 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 68
+        "value": 69
       },
       {
         "name": "Ashby",
@@ -80,7 +80,7 @@
     "locationCounts": [
       {
         "name": "Bay Area",
-        "value": 63
+        "value": 64
       },
       {
         "name": "New York",
@@ -118,7 +118,7 @@
       },
       {
         "name": "Full Stack",
-        "value": 13
+        "value": 14
       },
       {
         "name": "AI/ML",
@@ -172,7 +172,7 @@
       },
       {
         "score": "8",
-        "count": 37
+        "count": 38
       },
       {
         "score": "9",
@@ -297,6 +297,14 @@
         "cumulative": 165,
         "added": 9,
         "applied": 4,
+        "rejected": 0,
+        "interviewing": 0
+      },
+      {
+        "date": "2026-04-27",
+        "cumulative": 166,
+        "added": 1,
+        "applied": 1,
         "rejected": 0,
         "interviewing": 0
       }
@@ -894,14 +902,20 @@
       "postingKey": "c1c54c79-d3cf-41d7-a3d2-a230ec9b6c9e",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Brellium/Software_Engineer_AI/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Brellium/Software_Engineer_AI/Liam_Van_Resume/Liam_Van_Brellium.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Peter Miniutti",
+      "recruiterProfile": "https://www.linkedin.com/in/peterminiutti/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-16",
-      "noteLinks": [],
+      "notes": "Application confirmation email received 2026-04-16; LinkedIn invite sent to Peter Miniutti (Recruiter) 2026-04-26",
+      "noteLinks": [
+        {
+          "label": "Peter Miniutti",
+          "url": "https://www.linkedin.com/in/peterminiutti/"
+        }
+      ],
       "activityDates": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-26"
       ]
     },
     {
@@ -919,13 +933,20 @@
       "postingKey": "e353d1bc-9b67-476f-846c-961e1db8c49b",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Polymarket/Software_Engineer_Markets/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Polymarket/Software_Engineer_Markets/Liam_Van_Resume/Liam_Van_Polymarket.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Madison Workman",
+      "recruiterProfile": "https://www.linkedin.com/in/madison-workman-93a87319a/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
-      "noteLinks": [],
-      "activityDates": []
+      "notes": "LinkedIn invite sent to Madison Workman (Recruiter) 2026-04-26",
+      "noteLinks": [
+        {
+          "label": "Madison Workman",
+          "url": "https://www.linkedin.com/in/madison-workman-93a87319a/"
+        }
+      ],
+      "activityDates": [
+        "2026-04-26"
+      ]
     },
     {
       "company": "AfterQuery",
@@ -1293,13 +1314,20 @@
       "postingKey": "4684333005",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Spot & Tango/Jr_Software_Engineer/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Spot & Tango/Jr_Software_Engineer/Liam_Van_Resume/Liam_Van_Spot_&_Tango.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Morgan Keiper",
+      "recruiterProfile": "https://www.linkedin.com/in/morgankeiper/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
-      "noteLinks": [],
-      "activityDates": []
+      "notes": "LinkedIn invite sent to Morgan Keiper (Recruiter) 2026-04-26",
+      "noteLinks": [
+        {
+          "label": "Morgan Keiper",
+          "url": "https://www.linkedin.com/in/morgankeiper/"
+        }
+      ],
+      "activityDates": [
+        "2026-04-26"
+      ]
     },
     {
       "company": "Reevo",
@@ -1584,18 +1612,23 @@
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Nectar Social/Software_Engineer_Early_Career/Liam_Van_Resume_2/Liam_Van_Nectar_Social.pdf",
       "recruiterContact": "Courtney Hynes",
       "recruiterProfile": "https://www.linkedin.com/in/courtneyhynes/",
-      "engineerContact": "",
-      "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-13; LinkedIn invite sent to Courtney Hynes (Recruiter) 2026-04-25",
+      "engineerContact": "Ana Nguyen",
+      "engineerProfile": "https://www.linkedin.com/in/ana-nguyen-175948364/",
+      "notes": "Application confirmation email received 2026-04-13; LinkedIn invite sent to Courtney Hynes (Recruiter) 2026-04-25; LinkedIn invite sent to Ana Nguyen (Engineer) 2026-04-26",
       "noteLinks": [
         {
           "label": "Courtney Hynes",
           "url": "https://www.linkedin.com/in/courtneyhynes/"
+        },
+        {
+          "label": "Ana Nguyen",
+          "url": "https://www.linkedin.com/in/ana-nguyen-175948364/"
         }
       ],
       "activityDates": [
         "2026-04-13",
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-26"
       ]
     },
     {
@@ -1771,14 +1804,20 @@
       "postingKey": "63c216dc-a082-43df-928c-d71b3ed4f887",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Netic/Software_Engineer_New_Grad/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Netic/Software_Engineer_New_Grad/Liam_Van_Resume/Liam_Van_Netic.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Grace Schaefer",
+      "recruiterProfile": "https://www.linkedin.com/in/graceschaefer223/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-13",
-      "noteLinks": [],
+      "notes": "Application confirmation email received 2026-04-13; LinkedIn invite sent to Grace Schaefer (Recruiter) 2026-04-26",
+      "noteLinks": [
+        {
+          "label": "Grace Schaefer",
+          "url": "https://www.linkedin.com/in/graceschaefer223/"
+        }
+      ],
       "activityDates": [
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-26"
       ]
     },
     {
@@ -1821,18 +1860,23 @@
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scale AI/Software_Engineer_New_Grad/Liam_Van_Resume/Liam_Van_Scale_AI.pdf",
       "recruiterContact": "Morgan Khodayari",
       "recruiterProfile": "https://www.linkedin.com/in/mkhodayari/",
-      "engineerContact": "",
-      "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-13; LinkedIn invite sent to Morgan Khodayari (Recruiter) 2026-04-25",
+      "engineerContact": "Edwin Pavlovsky",
+      "engineerProfile": "https://www.linkedin.com/in/edwin-pavlovsky/",
+      "notes": "Application confirmation email received 2026-04-13; LinkedIn invite sent to Morgan Khodayari (Recruiter) 2026-04-25; LinkedIn invite sent to Edwin Pavlovsky (Engineer) 2026-04-26",
       "noteLinks": [
         {
           "label": "Morgan Khodayari",
           "url": "https://www.linkedin.com/in/mkhodayari/"
+        },
+        {
+          "label": "Edwin Pavlovsky",
+          "url": "https://www.linkedin.com/in/edwin-pavlovsky/"
         }
       ],
       "activityDates": [
         "2026-04-13",
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-26"
       ]
     },
     {
@@ -1952,18 +1996,23 @@
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Morgan Stanley/Associate_Software_Engineer/Liam_Van_Resume/Liam_Van_Morgan_Stanley.pdf",
       "recruiterContact": "Marlana Nguyen",
       "recruiterProfile": "https://www.linkedin.com/in/marlana-nguyen/",
-      "engineerContact": "",
-      "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-13; LinkedIn invite sent to Marlana Nguyen (Recruiter) 2026-04-25",
+      "engineerContact": "Sanskruti Reddy Donthi",
+      "engineerProfile": "https://www.linkedin.com/in/sanskruti-reddy/",
+      "notes": "Application confirmation email received 2026-04-13; LinkedIn invite sent to Marlana Nguyen (Recruiter) 2026-04-25; LinkedIn invite sent to Sanskruti Reddy Donthi (Engineer) 2026-04-26",
       "noteLinks": [
         {
           "label": "Marlana Nguyen",
           "url": "https://www.linkedin.com/in/marlana-nguyen/"
+        },
+        {
+          "label": "Sanskruti Reddy Donthi",
+          "url": "https://www.linkedin.com/in/sanskruti-reddy/"
         }
       ],
       "activityDates": [
         "2026-04-13",
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-26"
       ]
     },
     {
@@ -2875,13 +2924,20 @@
       "postingKey": "b3c9b312-6e2b-4dbc-9b15-0b0310d75a7f",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Benchling/Software_Engineer_University_Graduate/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Benchling/Software_Engineer_University_Graduate/Liam_Van_Resume/Liam_Van_Benchling.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Dean Talanehzar",
+      "recruiterProfile": "https://www.linkedin.com/in/deanzar/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
-      "noteLinks": [],
-      "activityDates": []
+      "notes": "LinkedIn invite sent to Dean Talanehzar (Recruiter) 2026-04-26",
+      "noteLinks": [
+        {
+          "label": "Dean Talanehzar",
+          "url": "https://www.linkedin.com/in/deanzar/"
+        }
+      ],
+      "activityDates": [
+        "2026-04-26"
+      ]
     },
     {
       "company": "The New York Times",
@@ -3004,14 +3060,20 @@
       "postingKey": "130a5389-83e1-493f-9205-542d3ff53afb",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OpenAI/Software_Engineer_Codex_Cloud/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OpenAI/Software_Engineer_Codex_Cloud/Liam_Van_Resume/Liam_Van_OpenAI.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Jesse Crowder",
+      "recruiterProfile": "https://www.linkedin.com/in/crowderj",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-09",
-      "noteLinks": [],
+      "notes": "Application confirmation email received 2026-04-09; LinkedIn invite sent to Jesse Crowder (Recruiter) 2026-04-26",
+      "noteLinks": [
+        {
+          "label": "Jesse Crowder",
+          "url": "https://www.linkedin.com/in/crowderj"
+        }
+      ],
       "activityDates": [
-        "2026-04-09"
+        "2026-04-09",
+        "2026-04-26"
       ]
     },
     {
@@ -3236,15 +3298,21 @@
       "postingKey": "software-engineer-early-career-usa-at-trexquant-investment-lp-4330689211",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Trexquant Investment LP/Software_Engineer_Early_Career_USA/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Trexquant Investment LP/Software_Engineer_Early_Career_USA/Liam_Van_Resume/Liam_Van_Trexquant_Investment_LP.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Kelly Heins",
+      "recruiterProfile": "https://www.linkedin.com/in/kelly-heins/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-07; Application confirmation email received 2026-04-10",
-      "noteLinks": [],
+      "notes": "Application confirmation email received 2026-04-07; Application confirmation email received 2026-04-10; LinkedIn invite sent to Kelly Heins (Recruiter) 2026-04-26",
+      "noteLinks": [
+        {
+          "label": "Kelly Heins",
+          "url": "https://www.linkedin.com/in/kelly-heins/"
+        }
+      ],
       "activityDates": [
         "2026-04-07",
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-26"
       ]
     },
     {
@@ -3287,13 +3355,20 @@
       "postingKey": "8495850002",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Airtable/Software_Engineer/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Airtable/Software_Engineer/Liam_Van_Resume/Liam_Van_Airtable.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Joe Callina",
+      "recruiterProfile": "https://www.linkedin.com/in/joecallinarecruiter",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
-      "noteLinks": [],
-      "activityDates": []
+      "notes": "LinkedIn invite sent to Joe Callina (Recruiter) 2026-04-26",
+      "noteLinks": [
+        {
+          "label": "Joe Callina",
+          "url": "https://www.linkedin.com/in/joecallinarecruiter"
+        }
+      ],
+      "activityDates": [
+        "2026-04-26"
+      ]
     },
     {
       "company": "Speakeasy",
@@ -3609,14 +3684,20 @@
       "postingKey": "5102422007",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/The Trade Desk/Software_Engineer_II/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/The Trade Desk/Software_Engineer_II/Liam_Van_Resume/Liam_Van_The_Trade_Desk.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Emery Tarpkin",
+      "recruiterProfile": "https://www.linkedin.com/in/emerydtarpkin/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-09",
-      "noteLinks": [],
+      "notes": "Application confirmation email received 2026-04-09; LinkedIn invite sent to Emery Tarpkin (Recruiter) 2026-04-26",
+      "noteLinks": [
+        {
+          "label": "Emery Tarpkin",
+          "url": "https://www.linkedin.com/in/emerydtarpkin/"
+        }
+      ],
       "activityDates": [
-        "2026-04-09"
+        "2026-04-09",
+        "2026-04-26"
       ]
     },
     {
@@ -3703,13 +3784,20 @@
       "postingKey": "7232592",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Stripe/Backend_Engineer_Payments_and_Risk/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Stripe/Backend_Engineer_Payments_and_Risk/Liam_Van_Resume/Liam_Van_Stripe.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Austin Lehn",
+      "recruiterProfile": "https://www.linkedin.com/in/austin-lehn-43b9aba8",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
-      "noteLinks": [],
-      "activityDates": []
+      "notes": "LinkedIn invite sent to Austin Lehn (Recruiter) 2026-04-26",
+      "noteLinks": [
+        {
+          "label": "Austin Lehn",
+          "url": "https://www.linkedin.com/in/austin-lehn-43b9aba8"
+        }
+      ],
+      "activityDates": [
+        "2026-04-26"
+      ]
     },
     {
       "company": "Evolve Group",
@@ -3749,15 +3837,21 @@
       "postingKey": "156932",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Uber/Software_Engineer_II/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Uber/Software_Engineer_II/Liam_Van_Resume/Liam_Van_Uber.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Mike Chavez",
+      "recruiterProfile": "https://www.linkedin.com/in/michael-t-chavez/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-07; Referred by Raksheet Kota 2026-04-15",
-      "noteLinks": [],
+      "notes": "Application confirmation email received 2026-04-07; Referred by Raksheet Kota 2026-04-15; LinkedIn invite sent to Mike Chavez (Recruiter) 2026-04-26",
+      "noteLinks": [
+        {
+          "label": "Mike Chavez",
+          "url": "https://www.linkedin.com/in/michael-t-chavez/"
+        }
+      ],
       "activityDates": [
         "2026-04-07",
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-26"
       ]
     },
     {
@@ -4010,13 +4104,20 @@
       "postingKey": "1970393556643571",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Microsoft/Liam_Van_Resume_3",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Microsoft/Liam_Van_Resume_3/Liam_Van_Microsoft.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Bryce Clausen",
+      "recruiterProfile": "https://www.linkedin.com/in/bryclausen/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
-      "noteLinks": [],
-      "activityDates": []
+      "notes": "LinkedIn invite sent to Bryce Clausen (Recruiter) 2026-04-26",
+      "noteLinks": [
+        {
+          "label": "Bryce Clausen",
+          "url": "https://www.linkedin.com/in/bryclausen/"
+        }
+      ],
+      "activityDates": [
+        "2026-04-26"
+      ]
     },
     {
       "company": "Redfin",
@@ -4056,13 +4157,20 @@
       "postingKey": "ba9b543d-e85c-4bd1-978b-f838d7a4062f",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Giga/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Giga/Liam_Van_Resume/Liam_Van_Giga.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Jon J. LoCurto",
+      "recruiterProfile": "https://www.linkedin.com/in/leader-in-talent/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
-      "noteLinks": [],
-      "activityDates": []
+      "notes": "LinkedIn invite sent to Jon J. LoCurto (Recruiter) 2026-04-26",
+      "noteLinks": [
+        {
+          "label": "Jon J. LoCurto",
+          "url": "https://www.linkedin.com/in/leader-in-talent/"
+        }
+      ],
+      "activityDates": [
+        "2026-04-26"
+      ]
     },
     {
       "company": "Tinder",
@@ -4974,19 +5082,24 @@
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Procore Technologies/Software_Engineer_I_Datagrid/Liam_Van_Resume_2/Liam_Van_Procore_Technologies.pdf",
       "recruiterContact": "Stephanie (Peters) MacInnes",
       "recruiterProfile": "https://www.linkedin.com/in/steph-macinnes/",
-      "engineerContact": "",
-      "engineerProfile": "",
-      "notes": "LinkedIn invite sent 2026-04-24; Application confirmation email received 2026-04-24; LinkedIn invite sent to Maddy Stevens (Recruiter) 2026-04-25",
+      "engineerContact": "Manpreet Gandhi",
+      "engineerProfile": "https://www.linkedin.com/in/manpreetgandhi/",
+      "notes": "LinkedIn invite sent 2026-04-24; Application confirmation email received 2026-04-24; LinkedIn invite sent to Maddy Stevens (Recruiter) 2026-04-25; LinkedIn invite sent to Manpreet Gandhi (Engineer) 2026-04-26",
       "noteLinks": [
         {
           "label": "Maddy Stevens",
           "url": "https://www.linkedin.com/in/maddy-stevens-336192195/"
+        },
+        {
+          "label": "Manpreet Gandhi",
+          "url": "https://www.linkedin.com/in/manpreetgandhi/"
         }
       ],
       "activityDates": [
         "2026-04-24",
         "2026-04-24",
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-26"
       ]
     },
     {
@@ -5038,17 +5151,22 @@
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Zettabyte/Software_Engineer_New_Grad/Liam_Van_Resume/Liam_Van_Zettabyte.pdf",
       "recruiterContact": "Tiana Cheng",
       "recruiterProfile": "https://www.linkedin.com/in/tiana-cheng-277b66388/",
-      "engineerContact": "",
-      "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Tiana Cheng (Recruiter) 2026-04-25",
+      "engineerContact": "David Ku",
+      "engineerProfile": "https://www.linkedin.com/in/davidku/",
+      "notes": "LinkedIn invite sent to Tiana Cheng (Recruiter) 2026-04-25; LinkedIn invite sent to David Ku (Engineer) 2026-04-26",
       "noteLinks": [
         {
           "label": "Tiana Cheng",
           "url": "https://www.linkedin.com/in/tiana-cheng-277b66388/"
+        },
+        {
+          "label": "David Ku",
+          "url": "https://www.linkedin.com/in/davidku/"
         }
       ],
       "activityDates": [
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-26"
       ]
     },
     {
@@ -5101,14 +5219,20 @@
       "postingKey": "580ec8b6-c894-497e-9769-270e6e21efbe",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Valon/Software_Engineer/Liam_Van_Resume_3",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Valon/Software_Engineer/Liam_Van_Resume_3/Liam_Van_Valon.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Brianna Flint",
+      "recruiterProfile": "https://www.linkedin.com/in/brianna-flint/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-24",
-      "noteLinks": [],
+      "notes": "Application confirmation email received 2026-04-24; LinkedIn invite sent to Brianna Flint (Recruiter) 2026-04-26",
+      "noteLinks": [
+        {
+          "label": "Brianna Flint",
+          "url": "https://www.linkedin.com/in/brianna-flint/"
+        }
+      ],
       "activityDates": [
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-26"
       ]
     },
     {
@@ -5225,6 +5349,31 @@
         "2026-04-25",
         "2026-04-25",
         "2026-04-26"
+      ]
+    },
+    {
+      "company": "Loop",
+      "role": "2026 New Grad Software Engineer, Full-Stack",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4404859319/",
+      "postingKey": "4404859319",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Loop/Software_Engineer_Full_Stack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Loop/Software_Engineer_Full_Stack/Liam_Van_Resume/Liam_Van_Loop.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application confirmation email received 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
       ]
     }
   ],
