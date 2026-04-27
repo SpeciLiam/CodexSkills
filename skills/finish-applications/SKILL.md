@@ -126,6 +126,7 @@ Use these saved answers without interrupting Liam unless a form asks for a mater
 - Email: liamvanpj@gmail.com.
 - Phone: 678-488-7259.
 - Current location: Seattle, WA.
+- Legal address: 1421 Harvard Avenue, Seattle, WA 98122.
 - Current company: Oracle.
 - LinkedIn: https://www.linkedin.com/in/liam-van.
 - GitHub: https://github.com/SpeciLiam.
@@ -159,7 +160,7 @@ Use `Manual Apply Needed` only for real blockers that Liam should handle directl
 - Login/account blockers after retrying LinkedIn through Liam's authenticated Chrome profile
 - CAPTCHA, hCaptcha, reCAPTCHA, bot checks, anti-automation, or AI-deterrent gates
 - 2FA, email/SMS OTP, password prompts, account creation, or account recovery
-- Legal address, legal signature, background-check consent, declarations of accuracy, or non-routine legal attestations
+- Legal signature, background-check consent, declarations of accuracy, or non-routine legal attestations
 - Consent choices not covered by the standing answers, such as AI notetaker consent or partner-sharing consent
 - Required salary, start-date, deadline, relocation, or location commitments not already covered by the standing answers
 - Required custom essays, motivation prompts, culture-fit prompts, project/accomplishment prompts, or company-specific free responses
