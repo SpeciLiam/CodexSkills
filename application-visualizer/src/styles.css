@@ -31,6 +31,10 @@ button, input, select {
   font: inherit;
 }
 
+button {
+  cursor: pointer;
+}
+
 main {
   width: min(1520px, calc(100% - 32px));
   margin: 0 auto;
@@ -74,7 +78,7 @@ main {
   display: none;
 }
 
-.sticky-nav a, .sticky-nav span {
+.sticky-nav a, .sticky-nav button, .sticky-nav span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -91,7 +95,10 @@ main {
 }
 
 .sticky-nav a:hover,
-.sticky-nav a:focus-visible {
+.sticky-nav a:focus-visible,
+.sticky-nav button:hover,
+.sticky-nav button:focus-visible,
+.sticky-nav button.active {
   border-color: rgba(85, 214, 190, .55);
   background: rgba(85, 214, 190, .15);
   outline: 0;
@@ -99,6 +106,7 @@ main {
 
 .sticky-nav .brand-chip {
   gap: 8px;
+  border-color: transparent;
   color: #06111e;
   background: #55d6be;
 }
@@ -109,6 +117,22 @@ main {
 
 .mobile-jump {
   display: none;
+}
+
+.tab-panel {
+  animation: tabIn .24s ease both;
+}
+
+@keyframes tabIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .topbar {

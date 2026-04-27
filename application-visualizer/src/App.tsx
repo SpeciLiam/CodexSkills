@@ -1,4 +1,4 @@
-import { useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import {
   Activity,
   ArrowUpRight,
@@ -58,13 +58,15 @@ const STATUS_TONE: Record<string, string> = {
 };
 
 const NAV_ITEMS = [
-  { href: "#overview", label: "Overview" },
-  { href: "#actions", label: "Actions" },
-  { href: "#trends", label: "Trends" },
-  { href: "#outreach", label: "Outreach" },
-  { href: "#browser", label: "Browser" },
-  { href: "#pipeline", label: "Pipeline" },
-];
+  { id: "overview", label: "Overview" },
+  { id: "actions", label: "Actions" },
+  { id: "trends", label: "Trends" },
+  { id: "outreach", label: "Outreach" },
+  { id: "browser", label: "Browser" },
+  { id: "pipeline", label: "Pipeline" },
+] as const;
+
+type TabId = (typeof NAV_ITEMS)[number]["id"];
 
 const INFO_COPY = {
   actions: "A practical action board. Roles are grouped by what to do next: apply, follow up, prepare for interviews or assessments, monitor, or deprioritize closed/rejected roles. Cards are sorted by fit score so the strongest opportunities stay visible.",
@@ -235,13 +237,31 @@ const SKILL_CARDS = [
   },
 ];
 
+function tabFromHash(hash: string): TabId {
+  const candidate = hash.replace("#", "");
+  return NAV_ITEMS.some((item) => item.id === candidate) ? (candidate as TabId) : "overview";
+}
+
 function App() {
+  const [activeTab, setActiveTab] = useState<TabId>(() => tabFromHash(window.location.hash));
   const [query, setQuery] = useState("");
   const [status, setStatus] = useState("All");
   const [minFit, setMinFit] = useState(0);
   const [openOutreachLane, setOpenOutreachLane] = useState<"recruiter" | "engineer" | null>(null);
   const [selectedOutreach, setSelectedOutreach] = useState<{ app: Application; lane: "recruiter" | "engineer" } | null>(null);
   const [copiedResumePath, setCopiedResumePath] = useState("");
+
+  useEffect(() => {
+    const syncHash = () => setActiveTab(tabFromHash(window.location.hash));
+    window.addEventListener("hashchange", syncHash);
+    return () => window.removeEventListener("hashchange", syncHash);
+  }, []);
+
+  const selectTab = (tab: TabId) => {
+    setActiveTab(tab);
+    window.history.replaceState(null, "", `#${tab}`);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   const statuses = useMemo(() => ["All", ...data.stats.statusCounts.map((item) => item.name)], []);
   const filtered = useMemo(() => {
@@ -282,178 +302,206 @@ function App() {
     ],
     [],
   );
+  const showDataControls = activeTab !== "pipeline";
+  const filterBar = (
+    <section className="filters">
+      <div className="searchbox">
+        <Search size={18} />
+        <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search companies, roles, recruiters, notes..." />
+        {query && <button onClick={() => setQuery("")} aria-label="Clear search"><X size={16} /></button>}
+      </div>
+      <label>
+        <Filter size={16} />
+        <select value={status} onChange={(event) => setStatus(event.target.value)}>
+          {statuses.map((item) => <option key={item}>{item}</option>)}
+        </select>
+      </label>
+      <label className="range">
+        Fit {minFit}+
+        <input type="range" min="0" max="10" value={minFit} onChange={(event) => setMinFit(Number(event.target.value))} />
+      </label>
+    </section>
+  );
+  const metricStrip = (
+    <section className="metric-strip">
+      <MiniMetric label="Visible roles" value={filtered.length} />
+      <MiniMetric label="Visible applied" value={filteredStats.applied} />
+      <MiniMetric label="Avg fit" value={filteredStats.avgFit.toFixed(1)} />
+      <MiniMetric label="Recruiter lanes" value={laneDoneCount(recruiterApps, "recruiter")} />
+      <MiniMetric label="Engineer lanes" value={laneDoneCount(engineerApps, "engineer")} />
+    </section>
+  );
 
   return (
     <main>
       <nav className="sticky-nav" aria-label="Dashboard sections">
-        <a className="brand-chip" href="#overview"><Sparkles size={16} /> Tracker</a>
-        <div>
+        <button className="brand-chip" type="button" onClick={() => selectTab("overview")}><Sparkles size={16} /> Tracker</button>
+        <div role="tablist" aria-label="Dashboard tabs">
           {NAV_ITEMS.map((item) => (
-            <a key={item.href} href={item.href}>{item.label}</a>
+            <button
+              aria-selected={activeTab === item.id}
+              className={activeTab === item.id ? "active" : ""}
+              key={item.id}
+              onClick={() => selectTab(item.id)}
+              role="tab"
+              type="button"
+            >
+              {item.label}
+            </button>
           ))}
         </div>
         <label className="mobile-jump">
           <span>Jump to</span>
           <select
-            defaultValue="#overview"
+            value={activeTab}
             onChange={(event) => {
-              window.location.hash = event.target.value;
+              selectTab(event.target.value as TabId);
             }}
           >
-            {NAV_ITEMS.map((item) => <option key={item.href} value={item.href}>{item.label}</option>)}
+            {NAV_ITEMS.map((item) => <option key={item.id} value={item.id}>{item.label}</option>)}
           </select>
         </label>
         <span>{filtered.length} visible</span>
       </nav>
 
-      <section id="overview" className="topbar section-anchor">
-        <div>
-          <p className="eyebrow"><Sparkles size={16} /> Application intelligence</p>
-          <h1>Tracker Command Center</h1>
+      {showDataControls && activeTab !== "overview" && filterBar}
+      {showDataControls && activeTab !== "overview" && metricStrip}
+
+      {activeTab === "overview" && (
+        <div className="tab-panel">
+          <section id="overview" className="topbar section-anchor">
+            <div>
+              <p className="eyebrow"><Sparkles size={16} /> Application intelligence</p>
+              <h1>Tracker Command Center</h1>
+            </div>
+            <div className="sync-pill">
+              <Activity size={16} />
+              <span>Data refreshed {new Date(data.generatedAt).toLocaleString()}</span>
+            </div>
+          </section>
+
+          <section className="hero-grid">
+            <div className="mission-control">
+              <div className="mission-copy">
+                <p className="eyebrow"><Radar size={16} /> Live campaign map</p>
+                <h2>{data.stats.kpis.total} roles, {data.stats.kpis.active} still alive, {data.stats.kpis.highFit} high-fit shots.</h2>
+                <p>
+                  A visual layer over applications, recruiter paths, fit scores, sources, timing, and outreach gaps.
+                </p>
+              </div>
+              <div className="constellation-preview" aria-hidden="true">
+                <Constellation apps={filtered.slice(0, 70)} />
+              </div>
+            </div>
+            <div className="kpi-grid">
+              <Kpi icon={<BriefcaseBusiness />} label="Applied" value={data.stats.kpis.applied} sub={percent(data.stats.kpis.applyRate)} />
+              <Kpi icon={<Target />} label="Interview/OA" value={data.stats.kpis.interviewing + data.stats.kpis.assessments} sub="warm leads" />
+              <Kpi icon={<Send />} label="Reach out" value={data.stats.kpis.reachOut} sub="queued targets" />
+              <Kpi icon={<MailCheck />} label="Ready emails" value={data.stats.kpis.readyEmails} sub={`${data.stats.kpis.prospects} prospects`} />
+            </div>
+          </section>
+
+          {filterBar}
+          {metricStrip}
         </div>
-        <div className="sync-pill">
-          <Activity size={16} />
-          <span>Data refreshed {new Date(data.generatedAt).toLocaleString()}</span>
-        </div>
-      </section>
+      )}
 
-      <section className="hero-grid">
-        <div className="mission-control">
-          <div className="mission-copy">
-            <p className="eyebrow"><Radar size={16} /> Live campaign map</p>
-            <h2>{data.stats.kpis.total} roles, {data.stats.kpis.active} still alive, {data.stats.kpis.highFit} high-fit shots.</h2>
-            <p>
-              A visual layer over applications, recruiter paths, fit scores, sources, timing, and outreach gaps.
-            </p>
-          </div>
-          <div className="constellation-preview" aria-hidden="true">
-            <Constellation apps={filtered.slice(0, 70)} />
-          </div>
-        </div>
-        <div className="kpi-grid">
-          <Kpi icon={<BriefcaseBusiness />} label="Applied" value={data.stats.kpis.applied} sub={percent(data.stats.kpis.applyRate)} />
-          <Kpi icon={<Target />} label="Interview/OA" value={data.stats.kpis.interviewing + data.stats.kpis.assessments} sub="warm leads" />
-          <Kpi icon={<Send />} label="Reach out" value={data.stats.kpis.reachOut} sub="queued targets" />
-          <Kpi icon={<MailCheck />} label="Ready emails" value={data.stats.kpis.readyEmails} sub={`${data.stats.kpis.prospects} prospects`} />
-        </div>
-      </section>
+      {activeTab === "actions" && (
+        <section id="actions" className="dashboard-grid tab-panel section-anchor">
+          <Panel title="Action Matrix" icon={<Target />} info={INFO_COPY.actions} wide>
+            <ActionMatrix apps={filtered} />
+          </Panel>
+        </section>
+      )}
 
-      <section className="filters">
-        <div className="searchbox">
-          <Search size={18} />
-          <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search companies, roles, recruiters, notes..." />
-          {query && <button onClick={() => setQuery("")} aria-label="Clear search"><X size={16} /></button>}
-        </div>
-        <label>
-          <Filter size={16} />
-          <select value={status} onChange={(event) => setStatus(event.target.value)}>
-            {statuses.map((item) => <option key={item}>{item}</option>)}
-          </select>
-        </label>
-        <label className="range">
-          Fit {minFit}+
-          <input type="range" min="0" max="10" value={minFit} onChange={(event) => setMinFit(Number(event.target.value))} />
-        </label>
-      </section>
+      {activeTab === "trends" && (
+        <section id="trends" className="dashboard-grid tab-panel section-anchor">
+          <Panel title="Application Velocity" icon={<Activity />} info={INFO_COPY.velocity}>
+            <ResponsiveContainer width="100%" height={290}>
+              <AreaChart data={data.stats.timeline}>
+                <defs>
+                  <linearGradient id="areaGlow" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="5%" stopColor="#55d6be" stopOpacity={0.85} />
+                    <stop offset="95%" stopColor="#55d6be" stopOpacity={0.05} />
+                  </linearGradient>
+                </defs>
+                <CartesianGrid stroke="rgba(255,255,255,.08)" vertical={false} />
+                <XAxis dataKey="date" tickFormatter={readableDate} tick={{ fill: "#94a3b8", fontSize: 12 }} />
+                <YAxis tick={{ fill: "#94a3b8", fontSize: 12 }} />
+                <Tooltip content={<ChartTooltip />} />
+                <Area type="monotone" dataKey="cumulative" stroke="#55d6be" fill="url(#areaGlow)" strokeWidth={3} />
+                <Line type="monotone" dataKey="applied" stroke="#f7b267" strokeWidth={2} />
+              </AreaChart>
+            </ResponsiveContainer>
+          </Panel>
 
-      <section className="metric-strip">
-        <MiniMetric label="Visible roles" value={filtered.length} />
-        <MiniMetric label="Visible applied" value={filteredStats.applied} />
-        <MiniMetric label="Avg fit" value={filteredStats.avgFit.toFixed(1)} />
-        <MiniMetric label="Recruiter lanes" value={laneDoneCount(recruiterApps, "recruiter")} />
-        <MiniMetric label="Engineer lanes" value={laneDoneCount(engineerApps, "engineer")} />
-      </section>
+          <Panel title="Status Gravity" icon={<Network />} info={INFO_COPY.status}>
+            <ResponsiveContainer width="100%" height={290}>
+              <PieChart>
+                <Pie data={data.stats.statusCounts} dataKey="value" nameKey="name" innerRadius={60} outerRadius={108} paddingAngle={3}>
+                  {data.stats.statusCounts.map((_, index) => <Cell key={index} fill={COLORS[index % COLORS.length]} />)}
+                </Pie>
+                <Tooltip content={<ChartTooltip />} />
+              </PieChart>
+            </ResponsiveContainer>
+            <LegendDots items={data.stats.statusCounts.slice(0, 6)} />
+          </Panel>
 
-      <section id="actions" className="dashboard-grid section-anchor">
-        <Panel title="Action Matrix" icon={<Target />} info={INFO_COPY.actions} wide>
-          <ActionMatrix apps={filtered} />
-        </Panel>
+          <Panel title="Fit Score Heat" icon={<Target />} info={INFO_COPY.fit}>
+            <ResponsiveContainer width="100%" height={280}>
+              <BarChart data={data.stats.fitCounts}>
+                <CartesianGrid stroke="rgba(255,255,255,.08)" vertical={false} />
+                <XAxis dataKey="score" tick={{ fill: "#94a3b8" }} />
+                <YAxis tick={{ fill: "#94a3b8" }} />
+                <Tooltip content={<ChartTooltip />} />
+                <Bar dataKey="count" radius={[8, 8, 0, 0]}>
+                  {data.stats.fitCounts.map((_, index) => <Cell key={index} fill={COLORS[index % COLORS.length]} />)}
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </Panel>
 
-        <Panel id="trends" title="Application Velocity" icon={<Activity />} info={INFO_COPY.velocity}>
-          <ResponsiveContainer width="100%" height={290}>
-            <AreaChart data={data.stats.timeline}>
-              <defs>
-                <linearGradient id="areaGlow" x1="0" x2="0" y1="0" y2="1">
-                  <stop offset="5%" stopColor="#55d6be" stopOpacity={0.85} />
-                  <stop offset="95%" stopColor="#55d6be" stopOpacity={0.05} />
-                </linearGradient>
-              </defs>
-              <CartesianGrid stroke="rgba(255,255,255,.08)" vertical={false} />
-              <XAxis dataKey="date" tickFormatter={readableDate} tick={{ fill: "#94a3b8", fontSize: 12 }} />
-              <YAxis tick={{ fill: "#94a3b8", fontSize: 12 }} />
-              <Tooltip content={<ChartTooltip />} />
-              <Area type="monotone" dataKey="cumulative" stroke="#55d6be" fill="url(#areaGlow)" strokeWidth={3} />
-              <Line type="monotone" dataKey="applied" stroke="#f7b267" strokeWidth={2} />
-            </AreaChart>
-          </ResponsiveContainer>
-        </Panel>
+          <Panel title="Sources x Outcomes" icon={<LinkIcon />} info={INFO_COPY.source} wide>
+            <ResponsiveContainer width="100%" height={320}>
+              <ComposedChart data={data.stats.sourceCounts.slice(0, 10)}>
+                <CartesianGrid stroke="rgba(255,255,255,.08)" vertical={false} />
+                <XAxis dataKey="name" tick={{ fill: "#94a3b8", fontSize: 12 }} />
+                <YAxis tick={{ fill: "#94a3b8", fontSize: 12 }} />
+                <Tooltip content={<ChartTooltip />} />
+                <Bar dataKey="value" fill="#70a1ff" radius={[8, 8, 0, 0]} />
+                <Line type="monotone" dataKey="value" stroke="#f4d35e" strokeWidth={3} dot={{ r: 4 }} />
+              </ComposedChart>
+            </ResponsiveContainer>
+          </Panel>
 
-        <Panel title="Status Gravity" icon={<Network />} info={INFO_COPY.status}>
-          <ResponsiveContainer width="100%" height={290}>
-            <PieChart>
-              <Pie data={data.stats.statusCounts} dataKey="value" nameKey="name" innerRadius={60} outerRadius={108} paddingAngle={3}>
-                {data.stats.statusCounts.map((_, index) => <Cell key={index} fill={COLORS[index % COLORS.length]} />)}
-              </Pie>
-              <Tooltip content={<ChartTooltip />} />
-            </PieChart>
-          </ResponsiveContainer>
-          <LegendDots items={data.stats.statusCounts.slice(0, 6)} />
-        </Panel>
+          <Panel title="Role Field" icon={<BriefcaseBusiness />} info={INFO_COPY.role}>
+            <ResponsiveContainer width="100%" height={320}>
+              <ScatterChart>
+                <CartesianGrid stroke="rgba(255,255,255,.08)" />
+                <XAxis type="number" dataKey="fitScore" name="Fit" domain={[0, 10]} tick={{ fill: "#94a3b8" }} />
+                <YAxis type="category" dataKey="status" name="Status" tick={{ fill: "#94a3b8", fontSize: 11 }} width={110} />
+                <Tooltip cursor={{ strokeDasharray: "3 3" }} content={<AppTooltip />} />
+                <Scatter data={filtered.slice(0, 120)} fill="#55d6be" />
+              </ScatterChart>
+            </ResponsiveContainer>
+          </Panel>
 
-        <Panel title="Fit Score Heat" icon={<Target />} info={INFO_COPY.fit}>
-          <ResponsiveContainer width="100%" height={280}>
-            <BarChart data={data.stats.fitCounts}>
-              <CartesianGrid stroke="rgba(255,255,255,.08)" vertical={false} />
-              <XAxis dataKey="score" tick={{ fill: "#94a3b8" }} />
-              <YAxis tick={{ fill: "#94a3b8" }} />
-              <Tooltip content={<ChartTooltip />} />
-              <Bar dataKey="count" radius={[8, 8, 0, 0]}>
-                {data.stats.fitCounts.map((_, index) => <Cell key={index} fill={COLORS[index % COLORS.length]} />)}
-              </Bar>
-            </BarChart>
-          </ResponsiveContainer>
-        </Panel>
+          <Panel title="Campaign Radar" icon={<Radar />} info={INFO_COPY.radar}>
+            <ResponsiveContainer width="100%" height={280}>
+              <RadarChart data={radarData}>
+                <PolarGrid stroke="rgba(255,255,255,.14)" />
+                <PolarAngleAxis dataKey="axis" tick={{ fill: "#dbeafe", fontSize: 12 }} />
+                <PolarRadiusAxis angle={90} domain={[0, 100]} tick={false} axisLine={false} />
+                <RadarShape dataKey="value" stroke="#f7b267" fill="#f7b267" fillOpacity={0.35} strokeWidth={3} />
+                <Tooltip content={<ChartTooltip />} />
+              </RadarChart>
+            </ResponsiveContainer>
+          </Panel>
+        </section>
+      )}
 
-        <Panel title="Sources x Outcomes" icon={<LinkIcon />} info={INFO_COPY.source} wide>
-          <ResponsiveContainer width="100%" height={320}>
-            <ComposedChart data={data.stats.sourceCounts.slice(0, 10)}>
-              <CartesianGrid stroke="rgba(255,255,255,.08)" vertical={false} />
-              <XAxis dataKey="name" tick={{ fill: "#94a3b8", fontSize: 12 }} />
-              <YAxis tick={{ fill: "#94a3b8", fontSize: 12 }} />
-              <Tooltip content={<ChartTooltip />} />
-              <Bar dataKey="value" fill="#70a1ff" radius={[8, 8, 0, 0]} />
-              <Line type="monotone" dataKey="value" stroke="#f4d35e" strokeWidth={3} dot={{ r: 4 }} />
-            </ComposedChart>
-          </ResponsiveContainer>
-        </Panel>
-
-        <Panel title="Role Field" icon={<BriefcaseBusiness />} info={INFO_COPY.role}>
-          <ResponsiveContainer width="100%" height={320}>
-            <ScatterChart>
-              <CartesianGrid stroke="rgba(255,255,255,.08)" />
-              <XAxis type="number" dataKey="fitScore" name="Fit" domain={[0, 10]} tick={{ fill: "#94a3b8" }} />
-              <YAxis type="category" dataKey="status" name="Status" tick={{ fill: "#94a3b8", fontSize: 11 }} width={110} />
-              <Tooltip cursor={{ strokeDasharray: "3 3" }} content={<AppTooltip />} />
-              <Scatter data={filtered.slice(0, 120)} fill="#55d6be" />
-            </ScatterChart>
-          </ResponsiveContainer>
-        </Panel>
-
-        <Panel title="Campaign Radar" icon={<Radar />} info={INFO_COPY.radar}>
-          <ResponsiveContainer width="100%" height={280}>
-            <RadarChart data={radarData}>
-              <PolarGrid stroke="rgba(255,255,255,.14)" />
-              <PolarAngleAxis dataKey="axis" tick={{ fill: "#dbeafe", fontSize: 12 }} />
-              <PolarRadiusAxis angle={90} domain={[0, 100]} tick={false} axisLine={false} />
-              <RadarShape dataKey="value" stroke="#f7b267" fill="#f7b267" fillOpacity={0.35} strokeWidth={3} />
-              <Tooltip content={<ChartTooltip />} />
-            </RadarChart>
-          </ResponsiveContainer>
-        </Panel>
-
-      </section>
-
-      <section id="outreach" className="split section-anchor">
+      {activeTab === "outreach" && (
+        <section id="outreach" className="split tab-panel section-anchor">
         <Panel title="Outreach Flight Deck" icon={<Users />} info={INFO_COPY.recruiters} wide>
           <div className="outreach-lanes">
             <OutreachLane
@@ -488,7 +536,8 @@ function App() {
             ))}
           </div>
         </Panel>
-      </section>
+        </section>
+      )}
 
       {openOutreachLane && (
         <OutreachModal
@@ -508,7 +557,8 @@ function App() {
         />
       )}
 
-      <section id="browser" className="table-section section-anchor">
+      {activeTab === "browser" && (
+        <section id="browser" className="table-section tab-panel section-anchor">
         <div className="section-heading">
           <h2>Application Browser</h2>
           <p>{filtered.length} visible rows</p>
@@ -595,9 +645,11 @@ function App() {
             </article>
           ))}
         </div>
-      </section>
+        </section>
+      )}
 
-      <section id="pipeline" className="pipeline-section section-anchor">
+      {activeTab === "pipeline" && (
+        <section id="pipeline" className="pipeline-section tab-panel section-anchor">
         <div className="section-heading">
           <div>
             <p className="eyebrow"><TerminalSquare size={16} /> Codex skills</p>
@@ -679,7 +731,8 @@ function App() {
             </article>
           ))}
         </div>
-      </section>
+        </section>
+      )}
     </main>
   );
 }
