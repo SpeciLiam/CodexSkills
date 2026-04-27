@@ -1,38 +1,46 @@
 {
-  "generatedAt": "2026-04-27T19:54:29.552643+00:00",
+  "generatedAt": "2026-04-27T21:02:09.066786+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
   },
   "stats": {
     "kpis": {
-      "total": 218,
-      "applied": 119,
-      "unapplied": 99,
-      "active": 189,
+      "total": 232,
+      "applied": 131,
+      "unapplied": 101,
+      "active": 194,
       "rejected": 29,
       "interviewing": 2,
       "assessments": 2,
-      "highFit": 160,
-      "reachOut": 91,
+      "highFit": 168,
+      "reachOut": 93,
       "recruiterRows": 61,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 54.6,
-      "rejectionRate": 24.4
+      "applyRate": 56.5,
+      "rejectionRate": 22.1
     },
     "statusCounts": [
       {
-        "name": "Resume Tailored",
-        "value": 98
+        "name": "Applied",
+        "value": 96
       },
       {
-        "name": "Applied",
-        "value": 87
+        "name": "Manual Apply Needed",
+        "value": 71
       },
       {
         "name": "Rejected",
         "value": 29
+      },
+      {
+        "name": "Resume Tailored",
+        "value": 23
+      },
+      {
+        "name": "Archived",
+        "value": 9
       },
       {
         "name": "Online Assessment",
@@ -46,7 +54,7 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 121
+        "value": 135
       },
       {
         "name": "Ashby",
@@ -80,7 +88,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 93
+        "value": 106
       },
       {
         "name": "Bay Area",
@@ -92,7 +100,7 @@
       },
       {
         "name": "Remote",
-        "value": 10
+        "value": 11
       },
       {
         "name": "Seattle",
@@ -110,30 +118,30 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 140
+        "value": 148
       },
       {
         "name": "Backend",
-        "value": 28
+        "value": 29
       },
       {
         "name": "Full Stack",
-        "value": 20
+        "value": 22
       },
       {
         "name": "AI/ML",
-        "value": 12
+        "value": 13
       },
       {
         "name": "Data",
         "value": 7
       },
       {
-        "name": "Forward Deployed",
-        "value": 5
+        "name": "Infra/Platform",
+        "value": 7
       },
       {
-        "name": "Infra/Platform",
+        "name": "Forward Deployed",
         "value": 5
       },
       {
@@ -160,7 +168,7 @@
       },
       {
         "score": "5",
-        "count": 9
+        "count": 12
       },
       {
         "score": "6",
@@ -168,15 +176,15 @@
       },
       {
         "score": "7",
-        "count": 21
+        "count": 24
       },
       {
         "score": "8",
-        "count": 70
+        "count": 76
       },
       {
         "score": "9",
-        "count": 33
+        "count": 35
       },
       {
         "score": "10",
@@ -200,7 +208,7 @@
         "date": "2026-04-06",
         "cumulative": 29,
         "added": 29,
-        "applied": 23,
+        "applied": 25,
         "rejected": 8,
         "interviewing": 1
       },
@@ -216,7 +224,7 @@
         "date": "2026-04-08",
         "cumulative": 60,
         "added": 21,
-        "applied": 11,
+        "applied": 12,
         "rejected": 6,
         "interviewing": 0
       },
@@ -224,7 +232,7 @@
         "date": "2026-04-09",
         "cumulative": 72,
         "added": 12,
-        "applied": 7,
+        "applied": 10,
         "rejected": 1,
         "interviewing": 0
       },
@@ -240,7 +248,7 @@
         "date": "2026-04-11",
         "cumulative": 93,
         "added": 12,
-        "applied": 9,
+        "applied": 10,
         "rejected": 2,
         "interviewing": 0
       },
@@ -256,7 +264,7 @@
         "date": "2026-04-13",
         "cumulative": 120,
         "added": 17,
-        "applied": 16,
+        "applied": 17,
         "rejected": 4,
         "interviewing": 0
       },
@@ -264,7 +272,7 @@
         "date": "2026-04-14",
         "cumulative": 141,
         "added": 21,
-        "applied": 15,
+        "applied": 16,
         "rejected": 2,
         "interviewing": 0
       },
@@ -272,7 +280,7 @@
         "date": "2026-04-15",
         "cumulative": 150,
         "added": 9,
-        "applied": 6,
+        "applied": 7,
         "rejected": 1,
         "interviewing": 0
       },
@@ -280,7 +288,7 @@
         "date": "2026-04-16",
         "cumulative": 154,
         "added": 4,
-        "applied": 2,
+        "applied": 3,
         "rejected": 0,
         "interviewing": 1
       },
@@ -288,7 +296,7 @@
         "date": "2026-04-17",
         "cumulative": 156,
         "added": 2,
-        "applied": 0,
+        "applied": 1,
         "rejected": 0,
         "interviewing": 0
       },
@@ -302,8 +310,8 @@
       },
       {
         "date": "2026-04-27",
-        "cumulative": 218,
-        "added": 53,
+        "cumulative": 232,
+        "added": 67,
         "applied": 3,
         "rejected": 0,
         "interviewing": 0
@@ -787,7 +795,7 @@
       "company": "Clever",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -802,7 +810,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/johnstoecker/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Raquel Gonzalez, Cruz Gonzalez, Kristin Jue, Amelia Jones, Febin Bellamy, Matthew Negasi, and John Stoecker 2026-04-25",
+      "notes": "LinkedIn invite sent to Raquel Gonzalez, Cruz Gonzalez, Kristin Jue, Amelia Jones, Febin Bellamy, Matthew Negasi, and John Stoecker 2026-04-25; Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [
         {
           "label": "Raquel Gonzalez",
@@ -834,7 +842,8 @@
         }
       ],
       "activityDates": [
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-27"
       ]
     },
     {
@@ -921,8 +930,8 @@
     {
       "company": "Polymarket",
       "role": "Software Engineer Markets",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -937,7 +946,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/madison-workman-93a87319a/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Madison Workman (Recruiter) 2026-04-26",
+      "notes": "LinkedIn invite sent to Madison Workman (Recruiter) 2026-04-26; Application submitted 2026-04-27",
       "noteLinks": [
         {
           "label": "Madison Workman",
@@ -945,7 +954,8 @@
         }
       ],
       "activityDates": [
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ]
     },
     {
@@ -978,7 +988,7 @@
       "company": "Navan",
       "role": "New College Grad Software Engineer (Backend)",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -993,7 +1003,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/brendan-spears/",
       "engineerContact": "Ahmad Ur Rehman",
       "engineerProfile": "https://www.linkedin.com/in/ahmadurrehman/",
-      "notes": "LinkedIn invite sent to Ahmad Ur Rehman (Engineer) 2026-04-25; LinkedIn invite sent to Brendan S. (Recruiter) 2026-04-26",
+      "notes": "LinkedIn invite sent to Ahmad Ur Rehman (Engineer) 2026-04-25; LinkedIn invite sent to Brendan S. (Recruiter) 2026-04-26; LinkedIn posting expired 2026-04-27",
       "noteLinks": [
         {
           "label": "Ahmad Ur Rehman",
@@ -1006,14 +1016,15 @@
       ],
       "activityDates": [
         "2026-04-25",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ]
     },
     {
       "company": "Mentor Talent Acquisition",
       "role": "Junior Full Stack Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -1028,9 +1039,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "LinkedIn posting expired 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Monarch Recruiters",
@@ -1112,7 +1125,7 @@
       "company": "Helic & Co.",
       "role": "Junior Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -1127,9 +1140,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "LinkedIn posting expired 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Anrok",
@@ -1268,7 +1283,7 @@
       "company": "Giga",
       "role": "Software Engineer (New Grads) - San Francisco",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -1283,7 +1298,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/cameron-ellis-33216b75/",
       "engineerContact": "Viswak Hanumanth",
       "engineerProfile": "https://www.linkedin.com/in/vis-/",
-      "notes": "LinkedIn invite sent to Cameron Ellis 2026-04-25; LinkedIn invite sent to Viswak Hanumanth (Engineer) 2026-04-26",
+      "notes": "LinkedIn invite sent to Cameron Ellis 2026-04-25; LinkedIn invite sent to Viswak Hanumanth (Engineer) 2026-04-26; Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [
         {
           "label": "Cameron Ellis",
@@ -1296,7 +1311,8 @@
       ],
       "activityDates": [
         "2026-04-25",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ]
     },
     {
@@ -1576,8 +1592,8 @@
     {
       "company": "Supio",
       "role": "Software Engineer, Full Stack",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -1592,9 +1608,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application confirmation email received 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Nectar Social",
@@ -1724,7 +1742,7 @@
       "company": "Navan",
       "role": "New College Grad Software Engineer (Backend)",
       "applied": true,
-      "status": "Applied",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -1739,7 +1757,7 @@
       "recruiterProfile": "",
       "engineerContact": "Ahmad Ur Rehman",
       "engineerProfile": "https://www.linkedin.com/in/ahmadurrehman/",
-      "notes": "LinkedIn invites sent to Urvi Mendez, Harshal Veera, Phineas Pham, Benjamin Nodvin, Christian Lim, and Alan Wong 2026-04-25; LinkedIn invite sent to Ahmad Ur Rehman (Engineer) 2026-04-25",
+      "notes": "LinkedIn invites sent to Urvi Mendez, Harshal Veera, Phineas Pham, Benjamin Nodvin, Christian Lim, and Alan Wong 2026-04-25; LinkedIn invite sent to Ahmad Ur Rehman (Engineer) 2026-04-25; LinkedIn posting expired 2026-04-27",
       "noteLinks": [
         {
           "label": "Urvi Mendez",
@@ -1772,7 +1790,8 @@
       ],
       "activityDates": [
         "2026-04-25",
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-27"
       ]
     },
     {
@@ -1834,8 +1853,8 @@
     {
       "company": "Narmi",
       "role": "Software Engineer, New Grad",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "",
@@ -1850,9 +1869,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application confirmation email received 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Scale AI",
@@ -2137,7 +2158,7 @@
       "company": "Maybern",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -2152,15 +2173,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: custom motivation question 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Lindy",
       "role": "Full Stack Software Engineer (Early Career)",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -2175,7 +2198,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/christinajsimpson/",
       "engineerContact": "Ian McGregor",
       "engineerProfile": "https://www.linkedin.com/in/idmcgregor/",
-      "notes": "LinkedIn invite sent to Ian McGregor (Engineer) 2026-04-25; LinkedIn invite sent to Christy Simpson (Recruiter) 2026-04-26",
+      "notes": "LinkedIn invite sent to Ian McGregor (Engineer) 2026-04-25; LinkedIn invite sent to Christy Simpson (Recruiter) 2026-04-26; Blocked on Ashby verification 2026-04-27; Manual apply needed: Ashby verification 2026-04-27",
       "noteLinks": [
         {
           "label": "Ian McGregor",
@@ -2188,14 +2211,16 @@
       ],
       "activityDates": [
         "2026-04-25",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27",
+        "2026-04-27"
       ]
     },
     {
       "company": "Profound",
       "role": "Software Engineer, New Grad",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -2210,7 +2235,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/alden-woolford-963a29bb/",
       "engineerContact": "Nitish Natarajan",
       "engineerProfile": "https://www.linkedin.com/in/nitish-natarajan/",
-      "notes": "LinkedIn invite sent to Nitish Natarajan (Engineer) 2026-04-25; LinkedIn invite sent to Alden Woolford (Recruiter) 2026-04-26",
+      "notes": "LinkedIn invite sent to Nitish Natarajan (Engineer) 2026-04-25; LinkedIn invite sent to Alden Woolford (Recruiter) 2026-04-26; Posting unavailable 2026-04-27",
       "noteLinks": [
         {
           "label": "Nitish Natarajan",
@@ -2223,7 +2248,8 @@
       ],
       "activityDates": [
         "2026-04-25",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ]
     },
     {
@@ -2440,7 +2466,7 @@
       "company": "Plaud",
       "role": "Founding Backend Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -2455,15 +2481,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Savvy",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -2478,9 +2506,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Palantir Technologies",
@@ -2512,7 +2542,7 @@
       "company": "Glimpse",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -2527,9 +2557,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: custom accomplishment and role-fit questions 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Disney",
@@ -2931,7 +2963,7 @@
       "company": "Maybern",
       "role": "Software Engineer, New Grad",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -2946,7 +2978,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/brendanpatrickcarty",
       "engineerContact": "Roshan Patel",
       "engineerProfile": "https://www.linkedin.com/in/patel-roshan/",
-      "notes": "LinkedIn invite sent to Brendan Carty (Recruiter) 2026-04-26; LinkedIn invite sent to Roshan Patel (Engineer) 2026-04-26",
+      "notes": "LinkedIn invite sent to Brendan Carty (Recruiter) 2026-04-26; LinkedIn invite sent to Roshan Patel (Engineer) 2026-04-26; Blocked on custom motivation question 2026-04-27; Manual apply needed: custom motivation question 2026-04-27",
       "noteLinks": [
         {
           "label": "Brendan Carty",
@@ -2959,7 +2991,9 @@
       ],
       "activityDates": [
         "2026-04-26",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27",
+        "2026-04-27"
       ]
     },
     {
@@ -3002,7 +3036,7 @@
       "company": "The New York Times",
       "role": "Software Engineer, Scoop Core",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -3017,7 +3051,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/nadia-tiwari-28b1a5151/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Nadia Tiwari (Recruiter) 2026-04-25",
+      "notes": "LinkedIn invite sent to Nadia Tiwari (Recruiter) 2026-04-25; Blocked on legal address question 2026-04-27; Manual apply needed: legal address question 2026-04-27",
       "noteLinks": [
         {
           "label": "Nadia Tiwari",
@@ -3025,7 +3059,9 @@
         }
       ],
       "activityDates": [
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-27",
+        "2026-04-27"
       ]
     },
     {
@@ -3194,8 +3230,8 @@
     {
       "company": "Iterable",
       "role": "Software Engineer II",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -3210,7 +3246,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/laura-goodrich-2b9974a/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Laura Goodrich (Recruiter) 2026-04-25",
+      "notes": "LinkedIn invite sent to Laura Goodrich (Recruiter) 2026-04-25; Application submitted 2026-04-27",
       "noteLinks": [
         {
           "label": "Laura Goodrich",
@@ -3218,7 +3254,8 @@
         }
       ],
       "activityDates": [
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-27"
       ]
     },
     {
@@ -3256,7 +3293,7 @@
       "company": "Meshy",
       "role": "Software Engineer - New Grad",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -3271,7 +3308,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/mattshoop/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Matt Shoop (Recruiter) 2026-04-25",
+      "notes": "LinkedIn invite sent to Matt Shoop (Recruiter) 2026-04-25; Posting unavailable 2026-04-27",
       "noteLinks": [
         {
           "label": "Matt Shoop",
@@ -3279,14 +3316,15 @@
         }
       ],
       "activityDates": [
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-27"
       ]
     },
     {
       "company": "Warp",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -3301,7 +3339,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/nick-miller-8a739335/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Nick Miller (Recruiter) 2026-04-25",
+      "notes": "LinkedIn invite sent to Nick Miller (Recruiter) 2026-04-25; Application submitted 2026-04-27",
       "noteLinks": [
         {
           "label": "Nick Miller",
@@ -3309,14 +3347,15 @@
         }
       ],
       "activityDates": [
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-27"
       ]
     },
     {
       "company": "Color Health",
       "role": "New Grad Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -3331,7 +3370,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/stephanie-valverde-1ab537129/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Stephanie Valverde (Recruiter) 2026-04-25",
+      "notes": "LinkedIn invite sent to Stephanie Valverde (Recruiter) 2026-04-25; Application confirmation email received 2026-04-27",
       "noteLinks": [
         {
           "label": "Stephanie Valverde",
@@ -3339,7 +3378,8 @@
         }
       ],
       "activityDates": [
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-27"
       ]
     },
     {
@@ -3403,7 +3443,7 @@
       "company": "Airtable",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -3418,7 +3458,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/joecallinarecruiter",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Joe Callina (Recruiter) 2026-04-26",
+      "notes": "LinkedIn invite sent to Joe Callina (Recruiter) 2026-04-26; Posting unavailable 2026-04-27",
       "noteLinks": [
         {
           "label": "Joe Callina",
@@ -3426,14 +3466,15 @@
         }
       ],
       "activityDates": [
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ]
     },
     {
       "company": "Speakeasy",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -3448,9 +3489,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Rippling",
@@ -3607,8 +3650,8 @@
     {
       "company": "Profound",
       "role": "Software Engineer, Backend",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "",
@@ -3623,9 +3666,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Robinhood",
@@ -3763,7 +3808,7 @@
       "company": "Anthropic",
       "role": "Software Engineer, Backend",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -3778,15 +3823,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Posting unavailable 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Rise Technical",
       "role": "Software Engineer (Model Evaluation & Benchmarking)",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -3801,15 +3848,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "NetApp",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -3824,15 +3873,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Posting unavailable 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Stripe",
       "role": "Backend Engineer, Payments and Risk",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -3847,7 +3898,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/austin-lehn-43b9aba8",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Austin Lehn (Recruiter) 2026-04-26",
+      "notes": "LinkedIn invite sent to Austin Lehn (Recruiter) 2026-04-26; Manual apply needed: Greenhouse verification did not complete after code 2026-04-27",
       "noteLinks": [
         {
           "label": "Austin Lehn",
@@ -3855,14 +3906,15 @@
         }
       ],
       "activityDates": [
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ]
     },
     {
       "company": "Evolve Group",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -3877,9 +3929,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Uber",
@@ -4152,7 +4206,7 @@
       "company": "Microsoft",
       "role": "Software Engineer II",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -4167,7 +4221,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/bryclausen/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Bryce Clausen (Recruiter) 2026-04-26",
+      "notes": "LinkedIn invite sent to Bryce Clausen (Recruiter) 2026-04-26; Manual apply needed: Microsoft account login 2026-04-27",
       "noteLinks": [
         {
           "label": "Bryce Clausen",
@@ -4175,7 +4229,8 @@
         }
       ],
       "activityDates": [
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ]
     },
     {
@@ -4204,8 +4259,8 @@
     {
       "company": "Giga",
       "role": "Software Engineer I / II",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -4220,7 +4275,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/leader-in-talent/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Jon J. LoCurto (Recruiter) 2026-04-26",
+      "notes": "LinkedIn invite sent to Jon J. LoCurto (Recruiter) 2026-04-26; Application submitted 2026-04-27",
       "noteLinks": [
         {
           "label": "Jon J. LoCurto",
@@ -4228,7 +4283,8 @@
         }
       ],
       "activityDates": [
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ]
     },
     {
@@ -4387,7 +4443,7 @@
       "company": "Plaid",
       "role": "Software Engineer",
       "applied": true,
-      "status": "Applied",
+      "status": "Manual Apply Needed",
       "fitScore": 9,
       "reachOut": true,
       "referral": "",
@@ -4402,17 +4458,19 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-07",
+      "notes": "Application confirmation email received 2026-04-07; Blocked on hCaptcha 2026-04-27; Manual apply needed: hCaptcha 2026-04-27",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-07"
+        "2026-04-07",
+        "2026-04-27",
+        "2026-04-27"
       ]
     },
     {
       "company": "LinkedIn",
       "role": "Software Engineer - Applications",
       "applied": true,
-      "status": "Applied",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "",
@@ -4427,10 +4485,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-07",
+      "notes": "Application confirmation email received 2026-04-07; Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-07"
+        "2026-04-07",
+        "2026-04-27"
       ]
     },
     {
@@ -4514,8 +4573,8 @@
     {
       "company": "Automat",
       "role": "Software Engineer (Junior/Intermediate)",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -4530,9 +4589,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Nectar Social",
@@ -4589,7 +4650,7 @@
       "company": "Notion",
       "role": "Software Engineer, Fullstack, Early Career",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -4604,7 +4665,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/angela-ching-1536a9a0/",
       "engineerContact": "Hanna Koh",
       "engineerProfile": "https://www.linkedin.com/in/hannakohxt/",
-      "notes": "LinkedIn invite sent to recruiter 2026-04-24; LinkedIn invite sent to engineer Hanna Koh 2026-04-24; LinkedIn invite sent to Hanna Koh (Engineer) 2026-04-24",
+      "notes": "LinkedIn invite sent to recruiter 2026-04-24; LinkedIn invite sent to engineer Hanna Koh 2026-04-24; LinkedIn invite sent to Hanna Koh (Engineer) 2026-04-24; Blocked on custom motivation question 2026-04-27; Manual apply needed: custom motivation question 2026-04-27",
       "noteLinks": [
         {
           "label": "Hanna Koh",
@@ -4618,7 +4679,9 @@
       "activityDates": [
         "2026-04-24",
         "2026-04-24",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-27",
+        "2026-04-27"
       ]
     },
     {
@@ -4829,7 +4892,7 @@
       "company": "Nuvo",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "",
@@ -4844,9 +4907,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: custom project and technology questions 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Valon",
@@ -4904,7 +4969,7 @@
       "company": "First Resonance",
       "role": "Forward Deployed Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -4919,9 +4984,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Uber",
@@ -5029,8 +5096,8 @@
     {
       "company": "Albert Bow",
       "role": "Software Engineer, Low Latency Trading",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -5045,15 +5112,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Confido",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -5068,15 +5137,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Joveo",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -5091,7 +5162,7 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Mayur Bansal, Vinay Choudhary 2026-04-25",
+      "notes": "LinkedIn invite sent to Mayur Bansal, Vinay Choudhary 2026-04-25; Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [
         {
           "label": "Mayur Bansal",
@@ -5103,14 +5174,15 @@
         }
       ],
       "activityDates": [
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-27"
       ]
     },
     {
       "company": "Known",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -5125,9 +5197,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-04-27; Application confirmation email received 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27",
+        "2026-04-27"
+      ]
     },
     {
       "company": "Procore Technologies",
@@ -5207,7 +5282,7 @@
       "company": "Zettabyte",
       "role": "Software Engineer (New Grad)",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -5222,7 +5297,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/tiana-cheng-277b66388/",
       "engineerContact": "David Ku",
       "engineerProfile": "https://www.linkedin.com/in/davidku/",
-      "notes": "LinkedIn invite sent to Tiana Cheng (Recruiter) 2026-04-25; LinkedIn invite sent to David Ku (Engineer) 2026-04-26",
+      "notes": "LinkedIn invite sent to Tiana Cheng (Recruiter) 2026-04-25; LinkedIn invite sent to David Ku (Engineer) 2026-04-26; Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [
         {
           "label": "Tiana Cheng",
@@ -5235,14 +5310,15 @@
       ],
       "activityDates": [
         "2026-04-25",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ]
     },
     {
       "company": "Julius AI",
       "role": "Software Engineer - Product (New Grad)",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -5257,7 +5333,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/vanshikaguptapm",
       "engineerContact": "Aleksandr Diamond",
       "engineerProfile": "https://www.linkedin.com/in/asdiamond/",
-      "notes": "LinkedIn invite sent to Vanshika Gupta 2026-04-25; LinkedIn invite sent to Aleksandr Diamond (Engineer) 2026-04-26",
+      "notes": "LinkedIn invite sent to Vanshika Gupta 2026-04-25; LinkedIn invite sent to Aleksandr Diamond (Engineer) 2026-04-26; Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [
         {
           "label": "Vanshika Gupta",
@@ -5270,7 +5346,8 @@
       ],
       "activityDates": [
         "2026-04-25",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ]
     },
     {
@@ -5356,7 +5433,7 @@
       "company": "Epic Placements",
       "role": "Agent Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -5371,15 +5448,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Plaid",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -5394,7 +5473,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/miguel-chucaralao/",
       "engineerContact": "Animesh Fatehpuria",
       "engineerProfile": "https://www.linkedin.com/in/animesh-fatehpuria-087a51167/",
-      "notes": "LinkedIn invite sent to recruiter Miguel Chucaralao 2026-04-24; LinkedIn invite sent to recruiter Rico Curry 2026-04-25; LinkedIn invite sent to recruiter Cara Fishman 2026-04-25; LinkedIn invite sent to Animesh Fatehpuria (Engineer) 2026-04-26",
+      "notes": "LinkedIn invite sent to recruiter Miguel Chucaralao 2026-04-24; LinkedIn invite sent to recruiter Rico Curry 2026-04-25; LinkedIn invite sent to recruiter Cara Fishman 2026-04-25; LinkedIn invite sent to Animesh Fatehpuria (Engineer) 2026-04-26; Blocked on hCaptcha 2026-04-27; Manual apply needed: hCaptcha 2026-04-27",
       "noteLinks": [
         {
           "label": "Miguel Chucaralao",
@@ -5417,7 +5496,9 @@
         "2026-04-24",
         "2026-04-25",
         "2026-04-25",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27",
+        "2026-04-27"
       ]
     },
     {
@@ -5449,7 +5530,7 @@
       "company": "Twitch",
       "role": "Software Engineer I - Ads Demand Enablement",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -5464,7 +5545,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/robertitgigs/",
       "engineerContact": "Peter Nguyen",
       "engineerProfile": "https://www.linkedin.com/in/petercrackthecode/",
-      "notes": "LinkedIn invite sent to Robert Macias (Recruiter) 2026-04-26; LinkedIn invite sent to Peter Nguyen (Engineer) 2026-04-26",
+      "notes": "LinkedIn invite sent to Robert Macias (Recruiter) 2026-04-26; LinkedIn invite sent to Peter Nguyen (Engineer) 2026-04-26; Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [
         {
           "label": "Robert Macias",
@@ -5477,14 +5558,15 @@
       ],
       "activityDates": [
         "2026-04-26",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ]
     },
     {
       "company": "Ruli",
       "role": "Software Engineer, AI",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -5499,9 +5581,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Adobe",
@@ -5576,7 +5660,7 @@
       "company": "Uber",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -5591,7 +5675,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/shweta-r-mba-cdr/",
       "engineerContact": "Dharshan Tharumia",
       "engineerProfile": "https://www.linkedin.com/in/dharshan-tharumia/",
-      "notes": "LinkedIn invite sent to Shweta R. (Recruiter) 2026-04-26; LinkedIn invite sent to Dharshan Tharumia (Engineer) 2026-04-26",
+      "notes": "LinkedIn invite sent to Shweta R. (Recruiter) 2026-04-26; LinkedIn invite sent to Dharshan Tharumia (Engineer) 2026-04-26; Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [
         {
           "label": "Shweta R.",
@@ -5604,7 +5688,8 @@
       ],
       "activityDates": [
         "2026-04-26",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ]
     },
     {
@@ -5634,7 +5719,7 @@
       "company": "TechKareer",
       "role": "Software Engineer (SF / NYC)",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -5649,9 +5734,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Jobright.ai",
@@ -5680,7 +5767,7 @@
       "company": "RemoteHunter",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -5695,15 +5782,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Remitly",
       "role": "Software Development Engineer 1, Pricing Platform",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -5718,15 +5807,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Aurora",
       "role": "Software Engineer I, FinOps",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -5741,15 +5832,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Flexport",
       "role": "Software Engineer I, Autonomous Freight Systems",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -5764,7 +5857,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/taylormontello/",
       "engineerContact": "Kartik Prajapati",
       "engineerProfile": "https://www.linkedin.com/in/ktk-pjpt/",
-      "notes": "LinkedIn invite sent to Taylor Montello (Recruiter) 2026-04-26; LinkedIn invite sent to Kartik Prajapati (Engineer) 2026-04-26",
+      "notes": "LinkedIn invite sent to Taylor Montello (Recruiter) 2026-04-26; LinkedIn invite sent to Kartik Prajapati (Engineer) 2026-04-26; Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [
         {
           "label": "Taylor Montello",
@@ -5777,7 +5870,8 @@
       ],
       "activityDates": [
         "2026-04-26",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ]
     },
     {
@@ -5807,14 +5901,14 @@
       "company": "Initi8 Recruitment",
       "role": "Software Engineer (Founding Team / 0-3 Years Experience)",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
       "dateAdded": "2026-04-27",
       "location": "Manhattan, NY",
       "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/4402469688/?trackingId=5s8PQrljUfTys4IS7jbqwg%3D%3D&refId=tt1hXB%2BF7BLNNKKHeaoexg%3D%3D",
+      "jobLink": "https://www.linkedin.com/jobs/view/4402469688/",
       "postingKey": "4402469688",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Initi8 Recruitment/Software_Engineer_Founding_Team_0_3_Years_Experience/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Initi8 Recruitment/Software_Engineer_Founding_Team_0_3_Years_Experience/Liam_Van_Resume/Liam_Van_Initi8_Recruitment.pdf",
@@ -5822,15 +5916,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "TradeForm",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -5845,9 +5941,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Jackbox Games",
@@ -5899,7 +5997,7 @@
       "company": "Wonderschool",
       "role": "Early Career Software Engineer - Applied AI",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -5914,15 +6012,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Salesforce",
       "role": "Software Engineering AMTS (College Grad)",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -5937,9 +6037,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Picogrid",
@@ -5999,7 +6101,7 @@
       "company": "Asha Health",
       "role": "Software Engineer, AI x Healthcare",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6014,15 +6116,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "A4Assist",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6037,15 +6141,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Salesforce",
       "role": "Software Engineering AMTS (College Grad)",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6060,15 +6166,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "PowerMarket",
       "role": "Full Stack Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6083,15 +6191,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "LinkedIn",
       "role": "Software Engineer - Applications",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -6106,15 +6216,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Reval",
       "role": "Founding Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6129,15 +6241,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Crossing Hurdles",
       "role": "Full Stack Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6152,15 +6266,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Underdog.io",
       "role": "Full Stack Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6175,9 +6291,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Prismera",
@@ -6206,7 +6324,7 @@
       "company": "Cruzader Advanced Recruiting Solutions",
       "role": "Software Engineer Backend Platform",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6221,15 +6339,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Yuzu",
       "role": "Product Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6244,15 +6364,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Kashable",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6267,15 +6389,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Distyl",
       "role": "Software Engineer - Back End",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6290,15 +6414,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Clay",
       "role": "Software Engineer Backend",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6313,15 +6439,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Chicago Trading Company",
       "role": "Software Engineer - Risk",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6336,15 +6464,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Tennr",
       "role": "Backend Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6359,15 +6489,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Slash",
       "role": "Software Engineer, Growth",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6382,15 +6514,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Figma",
       "role": "Software Engineer, Full Stack",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6405,15 +6539,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Whatnot",
       "role": "Software Engineer, Data",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6428,15 +6564,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Stott and May",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6451,15 +6589,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "NBCUniversal",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6474,15 +6614,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Spotify",
       "role": "Backend Engineer, Music",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -6497,15 +6639,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Savvy Wealth",
       "role": "Software Engineer, Applied AI",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6520,15 +6664,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Uphold",
       "role": "Software Engineer - Trading Execution",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6543,15 +6689,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Grow Therapy",
       "role": "Software Engineer, Backend",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6566,15 +6714,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "SMBC Group",
       "role": "Software Engineer - Capital Markets",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6589,15 +6739,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Astronomer",
       "role": "Software Engineer - Airflow Infrastructure",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6612,15 +6764,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Ramp",
       "role": "Software Engineer, Banking",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6635,9 +6789,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-27"
+      ]
     },
     {
       "company": "Stainless",
@@ -6686,6 +6842,344 @@
       "activityDates": [
         "2026-04-27"
       ]
+    },
+    {
+      "company": "Magnite",
+      "role": "Engineer I, Automation and Custom Applications",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 7,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York City, NY (hybrid)",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4394227079/",
+      "postingKey": "4394227079",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Magnite/Engineer_I_Automation_and_Custom_Applications/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Magnite/Engineer_I_Automation_and_Custom_Applications/Liam_Van_Resume/Liam_Van_Magnite.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Pinecone",
+      "role": "Associate Field Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 7,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4386732730/",
+      "postingKey": "4386732730",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Pinecone/Associate_Field_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Pinecone/Associate_Field_Engineer/Liam_Van_Resume/Liam_Van_Pinecone.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Traba",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4406201539/",
+      "postingKey": "4406201539",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Traba/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Traba/Software_Engineer/Liam_Van_Resume/Liam_Van_Traba.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
+      ]
+    },
+    {
+      "company": "Bilt",
+      "role": "Back End Engineer (All Levels)",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4397753575/",
+      "postingKey": "4397753575",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Bilt/Back_End_Engineer_All_Levels/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Bilt/Back_End_Engineer_All_Levels/Liam_Van_Resume/Liam_Van_Bilt.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Radley James",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York City Metropolitan Area",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4407470141/",
+      "postingKey": "4407470141",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Radley James/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Radley James/Software_Engineer/Liam_Van_Resume/Liam_Van_Radley_James.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
+      ]
+    },
+    {
+      "company": "Dagster Labs",
+      "role": "Software Engineer - Platform",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4407459153/",
+      "postingKey": "4407459153",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Dagster Labs/Software_Engineer_Platform/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Dagster Labs/Software_Engineer_Platform/Liam_Van_Resume/Liam_Van_Dagster_Labs.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
+      ]
+    },
+    {
+      "company": "Alexander Chapman",
+      "role": "Founding Full Stack Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York City Metropolitan Area",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4407459453/",
+      "postingKey": "4407459453",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Alexander Chapman/Founding_Full_Stack_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Alexander Chapman/Founding_Full_Stack_Engineer/Liam_Van_Resume/Liam_Van_Alexander_Chapman.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
+      ]
+    },
+    {
+      "company": "Dash0",
+      "role": "Platform Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4405135405/",
+      "postingKey": "4405135405",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Dash0/Platform_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Dash0/Platform_Engineer/Liam_Van_Resume/Liam_Van_Dash0.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
+      ]
+    },
+    {
+      "company": "Marex",
+      "role": "Software Developer - Onboarding",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4377071101/",
+      "postingKey": "4377071101",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Marex/Software_Developer_Onboarding/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Marex/Software_Developer_Onboarding/Liam_Van_Resume/Liam_Van_Marex.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "The Voleon Group",
+      "role": "Software Engineer, DevOps",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 7,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY / Remote US",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4407401640/",
+      "postingKey": "4407401640",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/The Voleon Group/Software_Engineer_DevOps/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/The Voleon Group/Software_Engineer_DevOps/Liam_Van_Resume/Liam_Van_The_Voleon_Group.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Prism Data",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY / San Diego, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4406210577/",
+      "postingKey": "4406210577",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Prism Data/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Prism Data/Software_Engineer/Liam_Van_Resume/Liam_Van_Prism_Data.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
+      ]
+    },
+    {
+      "company": "Epic Placements",
+      "role": "Forward Deployed Engineer (AI Data Platform)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY / San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4406830426/",
+      "postingKey": "4406830426",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Epic Placements/Forward_Deployed_Engineer_AI_Data_Platform/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Epic Placements/Forward_Deployed_Engineer_AI_Data_Platform/Liam_Van_Resume/Liam_Van_Epic_Placements.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
+      ]
+    },
+    {
+      "company": "DW SISTERS LLC",
+      "role": "Full Stack Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York City Metropolitan Area",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4407442306/",
+      "postingKey": "4407442306",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DW SISTERS LLC/Full_Stack_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DW SISTERS LLC/Full_Stack_Engineer/Liam_Van_Resume/Liam_Van_DW_SISTERS_LLC.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
+      ]
+    },
+    {
+      "company": "DoorDash",
+      "role": "Application Engineer - GTMT",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4158283450/",
+      "postingKey": "4158283450",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DoorDash/Application_Engineer_GTMT/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DoorDash/Application_Engineer_GTMT/Liam_Van_Resume/Liam_Van_DoorDash.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
     }
   ],
   "outreachQueue": [

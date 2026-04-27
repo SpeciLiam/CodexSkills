@@ -94,6 +94,8 @@ python3 skills/gmail-application-refresh/scripts/update_application_status.py \
 ```
 
    If the application cannot be completed, do not mark it applied. Append a short note only when it is useful and factual, such as `Posting closed 2026-04-27` or `Blocked on sponsorship question 2026-04-27`.
+   If the blocker is something Liam must complete later, such as CAPTCHA, forced login, account creation, bot/AI-deterrent verification, legal address, signature, or custom motivation text, set `Status` to `Manual Apply Needed` and append a `Manual apply needed: ... YYYY-MM-DD` note.
+   If the posting is unavailable or closed, set `Status` to `Archived` and append a short factual note.
    For Workday rows, do not open the application flow. Leave `Status` as `Resume Tailored`, leave `Applied` blank, and append `Manual apply needed: Workday posting YYYY-MM-DD` if that note is not already present.
 
 7. Continue through the queue.
@@ -108,6 +110,22 @@ python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 
 Use the candidate profile and resume as evidence. Keep answers concise and truthful.
 
+### Liam's Standing Answers
+
+Use these saved answers without interrupting Liam unless a form asks for a materially different or more specific commitment:
+
+- Work authorization: Liam is a U.S. citizen.
+- Sponsorship: Liam does not require employer sponsorship now or in the future.
+- Location/relocation: Liam is open to the locations where he is applying, with a preference for NYC and SF.
+- Race/ethnicity: Hispanic / Latino and Two or More Races. For "select all that apply" demographic questions, select the reasonable matching options from those labels.
+- Disability status: not disabled.
+- Veteran status: not a veteran / not a protected veteran.
+- Routine applicant privacy notices and data-processing acknowledgements: acknowledge when required to submit.
+
+Preserve Liam's flow: keep applying with these defaults and only ask when there is a hard blocker such as login, 2FA, CAPTCHA, account creation, a legal signature/attestation beyond routine privacy acknowledgement, a salary/start-date/custom essay question, or a question whose answer cannot reasonably be derived from these standing answers.
+
+Fill every required factual field that can be answered from Liam's profile, resume, tracker, or standing answers. Leave optional free-text prompts like `Anything else?`, `Additional information`, or similar blank unless the tracker/profile already provides a precise answer. Treat anti-automation or AI-deterrent gates, including CAPTCHA, bot checks, forced login traps, or verification-only walls, as manual follow-up items for Liam instead of repeatedly attempting them.
+
 Safe to answer without asking when the answer is clearly available:
 
 - name, email, phone, website, GitHub, LinkedIn, school, degree, graduation date
@@ -116,14 +134,14 @@ Safe to answer without asking when the answer is clearly available:
 - standard "how did you hear about us" from the tracker `Source`
 - referral as `No` or blank when the tracker has no referral value
 
-Ask instead of guessing for anything not evidenced. If a form has optional demographic questions, prefer the user's known preference if documented; otherwise leave optional fields blank or choose the neutral "decline to self-identify" style option when available.
+Ask instead of guessing for anything not evidenced. If a form has optional demographic questions, prefer Liam's standing answers when the form offers matching choices; otherwise leave optional fields blank or choose the neutral "decline to self-identify" style option when available.
 
 ## Tracker Rules
 
 - Workday rows are for Liam to submit manually. Never attempt to complete them as the agent.
 - Never mark a row applied based only on opening the form or clicking LinkedIn Easy Apply before the confirmation step.
 - Treat a visible confirmation page, confirmation email, or application portal status as sufficient evidence.
-- Keep notes short: `Application submitted YYYY-MM-DD`, `LinkedIn Easy Apply submitted YYYY-MM-DD`, `Posting closed YYYY-MM-DD`, `Blocked on custom question YYYY-MM-DD`, or `Manual apply needed: Workday posting YYYY-MM-DD`.
+- Keep notes short: `Application submitted YYYY-MM-DD`, `LinkedIn Easy Apply submitted YYYY-MM-DD`, `Posting closed YYYY-MM-DD`, `Blocked on custom question YYYY-MM-DD`, `Manual apply needed: LinkedIn login YYYY-MM-DD`, or `Manual apply needed: Workday posting YYYY-MM-DD`.
 - Preserve recruiter and engineer contact fields.
 - If multiple tracker rows match the same company, pass `--posting-key` to the update script.
 - Refresh the dashboard cache after any tracker update.
