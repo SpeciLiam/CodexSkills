@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-04-27T21:19:44.235778+00:00",
+  "generatedAt": "2026-04-27T21:26:04.757487+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
   },
   "stats": {
     "kpis": {
-      "total": 232,
+      "total": 236,
       "applied": 132,
-      "unapplied": 100,
-      "active": 190,
+      "unapplied": 104,
+      "active": 194,
       "rejected": 29,
       "interviewing": 2,
       "assessments": 2,
-      "highFit": 168,
-      "reachOut": 93,
+      "highFit": 172,
+      "reachOut": 96,
       "recruiterRows": 61,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 56.9,
+      "applyRate": 55.9,
       "rejectionRate": 22.0
     },
     "statusCounts": [
@@ -28,7 +28,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 89
+        "value": 93
       },
       {
         "name": "Rejected",
@@ -65,15 +65,15 @@
         "value": 21
       },
       {
+        "name": "Lever",
+        "value": 6
+      },
+      {
         "name": "Gem",
         "value": 4
       },
       {
         "name": "Other",
-        "value": 2
-      },
-      {
-        "name": "Lever",
         "value": 2
       },
       {
@@ -84,7 +84,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 107
+        "value": 111
       },
       {
         "name": "Bay Area",
@@ -114,7 +114,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 147
+        "value": 148
       },
       {
         "name": "Backend",
@@ -130,7 +130,7 @@
       },
       {
         "name": "Infra/Platform",
-        "value": 8
+        "value": 10
       },
       {
         "name": "Data",
@@ -138,7 +138,7 @@
       },
       {
         "name": "Forward Deployed",
-        "value": 5
+        "value": 6
       },
       {
         "name": "Frontend",
@@ -176,7 +176,7 @@
       },
       {
         "score": "8",
-        "count": 76
+        "count": 77
       },
       {
         "score": "9",
@@ -184,7 +184,7 @@
       },
       {
         "score": "10",
-        "count": 57
+        "count": 60
       }
     ],
     "targetCounts": [
@@ -306,14 +306,20 @@
       },
       {
         "date": "2026-04-27",
-        "cumulative": 232,
-        "added": 67,
+        "cumulative": 236,
+        "added": 71,
         "applied": 3,
         "rejected": 0,
         "interviewing": 0
       }
     ],
     "topCompanies": [
+      {
+        "company": "Palantir Technologies",
+        "roles": 5,
+        "avgFit": 7.8,
+        "bestFit": 10
+      },
       {
         "company": "Intuit",
         "roles": 3,
@@ -448,12 +454,6 @@
       },
       {
         "company": "EliseAI",
-        "roles": 1,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Pinterest",
         "roles": 1,
         "avgFit": 10.0,
         "bestFit": 10
@@ -7222,6 +7222,106 @@
       "engineerContact": "",
       "engineerProfile": "",
       "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
+      ]
+    },
+    {
+      "company": "Palantir Technologies",
+      "role": "Software Engineer, New Grad - Production Infrastructure",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY",
+      "source": "Lever",
+      "jobLink": "https://jobs.lever.co/palantir/e1a6c138-98bf-45e2-97f7-2c70371cc38a",
+      "postingKey": "e1a6c138-98bf-45e2-97f7-2c70371cc38a",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Palantir Technologies/Software_Engineer_New_Grad_Production_Infrastructure/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Palantir Technologies/Software_Engineer_New_Grad_Production_Infrastructure/Liam_Van_Resume/Liam_Van_Palantir_Technologies.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: required Palantir free-response questions and AI notetaker consent 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
+      ]
+    },
+    {
+      "company": "Palantir Technologies",
+      "role": "Software Engineer, New Grad - Infrastructure",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY",
+      "source": "Lever",
+      "jobLink": "https://jobs.lever.co/palantir/4abf26b4-795c-420a-bf22-1ab98db268b4",
+      "postingKey": "4abf26b4-795c-420a-bf22-1ab98db268b4",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Palantir Technologies/Software_Engineer_New_Grad_Infrastructure/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Palantir Technologies/Software_Engineer_New_Grad_Infrastructure/Liam_Van_Resume/Liam_Van_Palantir_Technologies.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: required Palantir free-response questions and AI notetaker consent 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
+      ]
+    },
+    {
+      "company": "Palantir Technologies",
+      "role": "Software Engineer, New Grad",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY",
+      "source": "Lever",
+      "jobLink": "https://jobs.lever.co/palantir/94984771-0704-446c-88c6-91ce748f6d92",
+      "postingKey": "94984771-0704-446c-88c6-91ce748f6d92",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Palantir Technologies/Software_Engineer_New_Grad/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Palantir Technologies/Software_Engineer_New_Grad/Liam_Van_Resume/Liam_Van_Palantir_Technologies.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: required Palantir free-response questions and AI notetaker consent 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
+      ]
+    },
+    {
+      "company": "Palantir Technologies",
+      "role": "Forward Deployed Software Engineer (New York)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY",
+      "source": "Lever",
+      "jobLink": "https://jobs.lever.co/palantir/dab396d4-2f14-4796-aac0-0d82883dccf0",
+      "postingKey": "dab396d4-2f14-4796-aac0-0d82883dccf0",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Palantir Technologies/Forward_Deployed_Software_Engineer_New_York/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Palantir Technologies/Forward_Deployed_Software_Engineer_New_York/Liam_Van_Resume/Liam_Van_Palantir_Technologies.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: Palantir partner sharing acknowledgement and AI notetaker consent 2026-04-27",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27"
