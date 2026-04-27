@@ -57,6 +57,8 @@ const STATUS_TONE: Record<string, string> = {
   Offer: "hot",
 };
 
+const MANUAL_STATUS = "Manual Apply Needed";
+
 const NAV_ITEMS = [
   { id: "overview", label: "Overview" },
   { id: "actions", label: "Actions" },
@@ -609,7 +611,7 @@ function App() {
                       }}
                     />
                   </td>
-                  <td><span className={`status ${STATUS_TONE[app.status] || "cool"}`}>{app.status}</span></td>
+                  <td><StatusBadge app={app} /></td>
                   <td><b>{app.fitScore || "-"}</b></td>
                   <td>{app.recruiterContact || "Open"}<small>{app.recruiterProfile && hostFromUrl(app.recruiterProfile)}</small></td>
                   <td>{app.engineerContact || "Open"}<small>{app.engineerProfile && hostFromUrl(app.engineerProfile)}</small></td>
@@ -637,7 +639,7 @@ function App() {
                 <b>{app.fitScore || "-"}</b>
               </header>
               <div className="mobile-app-meta">
-                <span className={`status ${STATUS_TONE[app.status] || "cool"}`}>{app.status}</span>
+                <StatusBadge app={app} />
                 <small>{app.location || app.source}</small>
               </div>
               <div className="mobile-contact-grid">
@@ -996,13 +998,41 @@ function ChartTooltip({ active, payload, label }: any) {
 function AppTooltip({ active, payload }: any) {
   if (!active || !payload?.length) return null;
   const app = payload[0].payload as Application;
+  const manualReason = manualApplyReason(app);
   return (
     <div className="tooltip">
       <strong>{app.company}</strong>
       <p>{app.role}</p>
       <p>Fit: {app.fitScore} | {app.status}</p>
+      {manualReason && <p>Why manual: {manualReason}</p>}
     </div>
   );
+}
+
+function StatusBadge({ app }: { app: Application }) {
+  const reason = manualApplyReason(app);
+  return (
+    <span className="status-wrap">
+      <span className={`status ${STATUS_TONE[app.status] || "cool"}`}>{app.status}</span>
+      {reason && (
+        <span className="manual-info" tabIndex={0} aria-label={`Manual apply reason: ${reason}`}>
+          <Info size={13} aria-hidden="true" />
+          <span className="manual-info-popover" role="tooltip">{reason}</span>
+        </span>
+      )}
+    </span>
+  );
+}
+
+function manualApplyReason(app: Application) {
+  if (app.status !== MANUAL_STATUS) return "";
+  const noteParts = app.notes
+    .split(";")
+    .map((part) => part.trim())
+    .filter(Boolean);
+  const blocker = [...noteParts].reverse().find((part) => /manual apply needed|blocked on|posting closed|login|captcha|workday|custom question/i.test(part));
+  if (!blocker) return app.notes || "Manual follow-up required.";
+  return blocker.replace(/^Manual apply needed:\s*/i, "").trim();
 }
 
 type ActionLane = {
@@ -1034,7 +1064,7 @@ function ActionMatrix({ apps }: { apps: Application[] }) {
                 </div>
                 <p>{app.role}</p>
                 <div className="action-meta">
-                  <span className={`status ${STATUS_TONE[app.status] || "cool"}`}>{app.status}</span>
+                  <StatusBadge app={app} />
                   <small>{app.source} · {app.location}</small>
                 </div>
                 <div className="link-pack">
