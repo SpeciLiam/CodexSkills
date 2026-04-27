@@ -99,6 +99,7 @@ Follow this sequence unless the user asks for a specific step:
    - Let fit score and `Reach Out` be set by the tracker helper unless the user overrides.
 
 3. **Submit applications**
+   - Use `finish-applications` for ready tailored rows.
    - Prioritize high-fit `Resume Tailored` rows that are not applied.
    - After applying, use `gmail-application-refresh` or the status helper to mark `Applied`.
 
@@ -138,6 +139,7 @@ cd application-visualizer && npm run build
 - User asks for a whole recruiting session: run `--mode all`.
 - User asks for only one recruiting lane: run the closest focused mode first.
 - New job link or pasted posting: use `resume-tailor`.
+- Ready tailored rows need submission: use `finish-applications`.
 - Need next LinkedIn people: use `linkedin-outreach`.
 - Need company-level people plus emails: use `company-prospecting`.
 - Need email/status updates: use `gmail-application-refresh`.
