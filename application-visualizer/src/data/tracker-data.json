@@ -1,34 +1,34 @@
 {
-  "generatedAt": "2026-04-27T03:14:09.664208+00:00",
+  "generatedAt": "2026-04-27T03:53:28.075960+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
   },
   "stats": {
     "kpis": {
-      "total": 217,
-      "applied": 112,
-      "unapplied": 105,
-      "active": 188,
+      "total": 218,
+      "applied": 115,
+      "unapplied": 103,
+      "active": 189,
       "rejected": 29,
       "interviewing": 2,
       "assessments": 2,
-      "highFit": 159,
-      "reachOut": 90,
+      "highFit": 160,
+      "reachOut": 91,
       "recruiterRows": 61,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 51.6,
-      "rejectionRate": 25.9
+      "applyRate": 52.8,
+      "rejectionRate": 25.2
     },
     "statusCounts": [
       {
         "name": "Resume Tailored",
-        "value": 104
+        "value": 102
       },
       {
         "name": "Applied",
-        "value": 80
+        "value": 83
       },
       {
         "name": "Rejected",
@@ -46,7 +46,7 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 120
+        "value": 121
       },
       {
         "name": "Ashby",
@@ -80,7 +80,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 92
+        "value": 93
       },
       {
         "name": "Bay Area",
@@ -118,7 +118,7 @@
       },
       {
         "name": "Full Stack",
-        "value": 19
+        "value": 20
       },
       {
         "name": "AI/ML",
@@ -180,7 +180,7 @@
       },
       {
         "score": "10",
-        "count": 56
+        "count": 57
       }
     ],
     "targetCounts": [
@@ -232,7 +232,7 @@
         "date": "2026-04-10",
         "cumulative": 81,
         "added": 9,
-        "applied": 7,
+        "applied": 8,
         "rejected": 0,
         "interviewing": 0
       },
@@ -302,9 +302,9 @@
       },
       {
         "date": "2026-04-27",
-        "cumulative": 217,
-        "added": 52,
-        "applied": 1,
+        "cumulative": 218,
+        "added": 53,
+        "applied": 3,
         "rejected": 0,
         "interviewing": 0
       }
@@ -320,6 +320,12 @@
         "company": "Spotify",
         "roles": 3,
         "avgFit": 9.33,
+        "bestFit": 10
+      },
+      {
+        "company": "Loop",
+        "roles": 3,
+        "avgFit": 8.67,
         "bestFit": 10
       },
       {
@@ -444,12 +450,6 @@
       },
       {
         "company": "Pinterest",
-        "roles": 1,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Cadence",
         "roles": 1,
         "avgFit": 10.0,
         "bestFit": 10
@@ -991,8 +991,8 @@
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Navan/New_College_Grad_Software_Engineer_Backend/Liam_Van_Resume_2/Liam_Van_Navan.pdf",
       "recruiterContact": "Brendan S.",
       "recruiterProfile": "https://www.linkedin.com/in/brendan-spears/",
-      "engineerContact": "",
-      "engineerProfile": "",
+      "engineerContact": "Ahmad Ur Rehman",
+      "engineerProfile": "https://www.linkedin.com/in/ahmadurrehman/",
       "notes": "LinkedIn invite sent to Ahmad Ur Rehman (Engineer) 2026-04-25; LinkedIn invite sent to Brendan S. (Recruiter) 2026-04-26",
       "noteLinks": [
         {
@@ -1468,8 +1468,8 @@
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Intuit/Center_of_Money_Software_Engineer_1/Liam_Van_Resume_2/Liam_Van_Intuit.pdf",
       "recruiterContact": "Naeema Kaleem",
       "recruiterProfile": "https://www.linkedin.com/in/naeema-kaleem-445103115/",
-      "engineerContact": "",
-      "engineerProfile": "",
+      "engineerContact": "Ishu Anand Jaiswal",
+      "engineerProfile": "https://www.linkedin.com/in/ijaiswal/",
       "notes": "Application confirmation email received 2026-04-15; LinkedIn invite sent to Ishu Anand Jaiswal (Engineer) 2026-04-25; LinkedIn invite sent to Naeema Kaleem (Recruiter) 2026-04-26",
       "noteLinks": [
         {
@@ -1736,9 +1736,9 @@
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Navan/New_College_Grad_Software_Engineer_Backend/Liam_Van_Resume/Liam_Van_Navan.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
-      "engineerContact": "",
-      "engineerProfile": "",
-      "notes": "LinkedIn invites sent to Urvi Mendez, Harshal Veera, Phineas Pham, Benjamin Nodvin, Christian Lim, and Alan Wong 2026-04-25",
+      "engineerContact": "Ahmad Ur Rehman",
+      "engineerProfile": "https://www.linkedin.com/in/ahmadurrehman/",
+      "notes": "LinkedIn invites sent to Urvi Mendez, Harshal Veera, Phineas Pham, Benjamin Nodvin, Christian Lim, and Alan Wong 2026-04-25; LinkedIn invite sent to Ahmad Ur Rehman (Engineer) 2026-04-25",
       "noteLinks": [
         {
           "label": "Urvi Mendez",
@@ -1763,9 +1763,14 @@
         {
           "label": "Alan Wong",
           "url": "https://www.linkedin.com/in/alanwongg/"
+        },
+        {
+          "label": "Ahmad Ur Rehman",
+          "url": "https://www.linkedin.com/in/ahmadurrehman/"
         }
       ],
       "activityDates": [
+        "2026-04-25",
         "2026-04-25"
       ]
     },
@@ -2088,12 +2093,18 @@
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Intuit/Center_of_Money_Software_Engineer_1/Liam_Van_Resume/Liam_Van_Intuit.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
-      "engineerContact": "",
-      "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-15",
-      "noteLinks": [],
+      "engineerContact": "Ishu Anand Jaiswal",
+      "engineerProfile": "https://www.linkedin.com/in/ijaiswal/",
+      "notes": "Application confirmation email received 2026-04-15; LinkedIn invite sent to Ishu Anand Jaiswal (Engineer) 2026-04-25",
+      "noteLinks": [
+        {
+          "label": "Ishu Anand Jaiswal",
+          "url": "https://www.linkedin.com/in/ijaiswal/"
+        }
+      ],
       "activityDates": [
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-25"
       ]
     },
     {
@@ -2161,8 +2172,8 @@
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Lindy/Full_Stack_Software_Engineer_Early_Career/Liam_Van_Resume/Liam_Van_Lindy.pdf",
       "recruiterContact": "Christy Simpson",
       "recruiterProfile": "https://www.linkedin.com/in/christinajsimpson/",
-      "engineerContact": "",
-      "engineerProfile": "",
+      "engineerContact": "Ian McGregor",
+      "engineerProfile": "https://www.linkedin.com/in/idmcgregor/",
       "notes": "LinkedIn invite sent to Ian McGregor (Engineer) 2026-04-25; LinkedIn invite sent to Christy Simpson (Recruiter) 2026-04-26",
       "noteLinks": [
         {
@@ -2196,8 +2207,8 @@
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Profound/Software_Engineer/Liam_Van_Resume/Liam_Van_Profound.pdf",
       "recruiterContact": "Alden Woolford",
       "recruiterProfile": "https://www.linkedin.com/in/alden-woolford-963a29bb/",
-      "engineerContact": "",
-      "engineerProfile": "",
+      "engineerContact": "Nitish Natarajan",
+      "engineerProfile": "https://www.linkedin.com/in/nitish-natarajan/",
       "notes": "LinkedIn invite sent to Nitish Natarajan (Engineer) 2026-04-25; LinkedIn invite sent to Alden Woolford (Recruiter) 2026-04-26",
       "noteLinks": [
         {
@@ -2926,24 +2937,29 @@
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Maybern/Software_Engineer_New_Grad/Liam_Van_Resume/Liam_Van_Maybern.pdf",
       "recruiterContact": "Brendan Carty",
       "recruiterProfile": "https://www.linkedin.com/in/brendanpatrickcarty",
-      "engineerContact": "",
-      "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Brendan Carty (Recruiter) 2026-04-26",
+      "engineerContact": "Roshan Patel",
+      "engineerProfile": "https://www.linkedin.com/in/patel-roshan/",
+      "notes": "LinkedIn invite sent to Brendan Carty (Recruiter) 2026-04-26; LinkedIn invite sent to Roshan Patel (Engineer) 2026-04-26",
       "noteLinks": [
         {
           "label": "Brendan Carty",
           "url": "https://www.linkedin.com/in/brendanpatrickcarty"
+        },
+        {
+          "label": "Roshan Patel",
+          "url": "https://www.linkedin.com/in/patel-roshan/"
         }
       ],
       "activityDates": [
+        "2026-04-26",
         "2026-04-26"
       ]
     },
     {
       "company": "Benchling",
       "role": "Software Engineer, New Grad (2026)",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -2956,17 +2972,23 @@
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Benchling/Software_Engineer_University_Graduate/Liam_Van_Resume/Liam_Van_Benchling.pdf",
       "recruiterContact": "Dean Talanehzar",
       "recruiterProfile": "https://www.linkedin.com/in/deanzar/",
-      "engineerContact": "",
-      "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Dean Talanehzar (Recruiter) 2026-04-26",
+      "engineerContact": "Reema Kshetramade",
+      "engineerProfile": "https://www.linkedin.com/in/reema-kshetramade/",
+      "notes": "LinkedIn invite sent to Dean Talanehzar (Recruiter) 2026-04-26; LinkedIn invite sent to Reema Kshetramade (Engineer) 2026-04-26; Application confirmation email received 2026-04-27",
       "noteLinks": [
         {
           "label": "Dean Talanehzar",
           "url": "https://www.linkedin.com/in/deanzar/"
+        },
+        {
+          "label": "Reema Kshetramade",
+          "url": "https://www.linkedin.com/in/reema-kshetramade/"
         }
       ],
       "activityDates": [
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-26",
+        "2026-04-27"
       ]
     },
     {
@@ -4573,16 +4595,21 @@
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Notion/Software_Engineer_Fullstack_Early_Career/Liam_Van_Resume_2/Liam_Van_Notion.pdf",
       "recruiterContact": "Angela Ching",
       "recruiterProfile": "https://www.linkedin.com/in/angela-ching-1536a9a0/",
-      "engineerContact": "",
-      "engineerProfile": "",
-      "notes": "LinkedIn invite sent to recruiter 2026-04-24; LinkedIn invite sent to engineer Hanna Koh 2026-04-24",
+      "engineerContact": "Hanna Koh",
+      "engineerProfile": "https://www.linkedin.com/in/hannakohxt/",
+      "notes": "LinkedIn invite sent to recruiter 2026-04-24; LinkedIn invite sent to engineer Hanna Koh 2026-04-24; LinkedIn invite sent to Hanna Koh (Engineer) 2026-04-24",
       "noteLinks": [
+        {
+          "label": "Hanna Koh",
+          "url": "https://www.linkedin.com/in/hannakohxt/"
+        },
         {
           "label": "Hanna Koh",
           "url": "https://www.linkedin.com/in/hannakohxt/"
         }
       ],
       "activityDates": [
+        "2026-04-24",
         "2026-04-24",
         "2026-04-24"
       ]
@@ -5149,16 +5176,21 @@
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Handshake/Associate_Software_Engineer_RLE/Liam_Van_Resume/Liam_Van_Handshake.pdf",
       "recruiterContact": "Ramiro Molina",
       "recruiterProfile": "https://www.linkedin.com/in/ramiro-molina-6b2416153/",
-      "engineerContact": "",
-      "engineerProfile": "",
-      "notes": "LinkedIn invite sent 2026-04-24; LinkedIn InMail sent to engineer Alden Lu 2026-04-24; Application confirmation email received 2026-04-24",
+      "engineerContact": "Alden Lu",
+      "engineerProfile": "https://www.linkedin.com/in/aldenlu/",
+      "notes": "LinkedIn invite sent 2026-04-24; LinkedIn InMail sent to engineer Alden Lu 2026-04-24; Application confirmation email received 2026-04-24; LinkedIn invite sent to Alden Lu (Engineer) 2026-04-24",
       "noteLinks": [
+        {
+          "label": "Alden Lu",
+          "url": "https://www.linkedin.com/in/aldenlu/"
+        },
         {
           "label": "Alden Lu",
           "url": "https://www.linkedin.com/in/aldenlu/"
         }
       ],
       "activityDates": [
+        "2026-04-24",
         "2026-04-24",
         "2026-04-24",
         "2026-04-24"
@@ -5928,8 +5960,8 @@
     {
       "company": "Notion",
       "role": "Software Engineer, New Grad",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -5944,7 +5976,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/marie-fuchslin-162a9536/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Marie Fuchslin (Recruiter) 2026-04-26",
+      "notes": "LinkedIn invite sent to Marie Fuchslin (Recruiter) 2026-04-26; Application confirmation email received 2026-04-24",
       "noteLinks": [
         {
           "label": "Marie Fuchslin",
@@ -5952,7 +5984,8 @@
         }
       ],
       "activityDates": [
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-24"
       ]
     },
     {
@@ -6621,6 +6654,31 @@
       "notes": "",
       "noteLinks": [],
       "activityDates": []
+    },
+    {
+      "company": "Loop",
+      "role": "2026 New Grad Software Engineer, Full-Stack (New York)",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4406677608/",
+      "postingKey": "4406677608",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Loop/Software_Engineer_Full_Stack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Loop/Software_Engineer_Full_Stack/Liam_Van_Resume/Liam_Van_Loop.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application confirmation email received 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
+      ]
     }
   ],
   "outreachQueue": [
