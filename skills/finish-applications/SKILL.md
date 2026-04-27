@@ -60,11 +60,19 @@ python3 skills/finish-applications/scripts/build_application_queue.py --limit 10
    - Skip rows whose posting link is missing, expired, or clearly no longer accepts applications. Report them as blocked.
    - Do not submit Workday applications. Treat any posting whose source, URL, or notes mention Workday as manual-only.
    - Run `build_application_queue.py --mark-workday-manual` so Liam can find those rows later by searching for `Manual apply needed`.
+   - Do not treat `LinkedIn login` as a final manual blocker when Liam's authenticated Chrome profile is available. Open the LinkedIn job in Chrome, click `Apply` or `Apply on company website`, capture the real ATS URL, and continue there. Update the tracker source/link/posting key when a direct ATS posting is discovered.
 
 3. Open one application at a time.
    - Use the row's `Job Link`, `Resume PDF`, company, role, location, and source.
    - Prefer the tailored resume path in `Resume PDF`; do not upload the generic resume unless the tracker row explicitly points to it.
    - Use existing factual profile information from `generic-resume/README.md` and the tailored resume when answering routine application fields.
+   - For LinkedIn-sourced rows marked `Manual apply needed: LinkedIn login`, first retry through the authenticated Chrome session:
+     1. Open the LinkedIn job URL in Chrome.
+     2. Verify Liam is signed in and the job is the same company/role.
+     3. Click `Apply`, `Apply on company website`, or the equivalent LinkedIn apply control.
+     4. If it opens an external ATS such as Lever, Ashby, Greenhouse, Rippling, SmartRecruiters, or a company careers page, use that URL as the active application link and continue the normal form workflow.
+     5. If LinkedIn shows Easy Apply, continue only for routine fields and stop before final submission for confirmation.
+     6. If LinkedIn or the ATS shows login, 2FA, CAPTCHA, account creation, or bot/AI-deterrent verification, keep it manual and record that specific blocker instead of the generic LinkedIn login note.
 
 4. Ask the user only for blockers.
    Ask before submitting when the form requests information that is not safely inferable, including:
@@ -94,7 +102,7 @@ python3 skills/gmail-application-refresh/scripts/update_application_status.py \
 ```
 
    If the application cannot be completed, do not mark it applied. Append a short note only when it is useful and factual, such as `Posting closed 2026-04-27` or `Blocked on sponsorship question 2026-04-27`.
-   If the blocker is something Liam must complete later, such as CAPTCHA, forced login, account creation, bot/AI-deterrent verification, legal address, signature, or custom motivation text, set `Status` to `Manual Apply Needed` and append a `Manual apply needed: ... YYYY-MM-DD` note.
+   If the blocker is something Liam must complete later, such as CAPTCHA, forced login after the authenticated LinkedIn retry, account creation, bot/AI-deterrent verification, legal address, signature, consent that is not covered by Liam's standing answers, or custom motivation text, set `Status` to `Manual Apply Needed` and append a specific `Manual apply needed: ... YYYY-MM-DD` note. Avoid generic `LinkedIn login` notes unless the authenticated Chrome retry is unavailable or LinkedIn itself has actually logged Liam out.
    If the posting is unavailable or closed, set `Status` to `Archived` and append a short factual note.
    For Workday rows, do not open the application flow. Leave `Status` as `Resume Tailored`, leave `Applied` blank, and append `Manual apply needed: Workday posting YYYY-MM-DD` if that note is not already present.
 
@@ -143,6 +151,24 @@ Use these as source material for short custom questions, but do not submit custo
 Preserve Liam's flow: keep applying with these defaults and only ask when there is a hard blocker such as login, 2FA, CAPTCHA, account creation, a legal signature/attestation beyond routine privacy acknowledgement, a salary/start-date/custom essay question, or a question whose answer cannot reasonably be derived from these standing answers.
 
 Fill every required factual field that can be answered from Liam's profile, resume, tracker, or standing answers. Leave optional free-text prompts like `Anything else?`, `Additional information`, or similar blank unless the tracker/profile already provides a precise answer. Treat anti-automation or AI-deterrent gates, including CAPTCHA, bot checks, forced login traps, or verification-only walls, as manual follow-up items for Liam instead of repeatedly attempting them.
+
+### Manual Apply Criteria
+
+Use `Manual Apply Needed` only for real blockers that Liam should handle directly:
+
+- Login/account blockers after retrying LinkedIn through Liam's authenticated Chrome profile
+- CAPTCHA, hCaptcha, reCAPTCHA, bot checks, anti-automation, or AI-deterrent gates
+- 2FA, email/SMS OTP, password prompts, account creation, or account recovery
+- Legal address, legal signature, background-check consent, declarations of accuracy, or non-routine legal attestations
+- Consent choices not covered by the standing answers, such as AI notetaker consent or partner-sharing consent
+- Required salary, start-date, deadline, relocation, or location commitments not already covered by the standing answers
+- Required custom essays, motivation prompts, culture-fit prompts, project/accomplishment prompts, or company-specific free responses
+- Missing or closed application forms, expired postings, redirects to materially different roles, or sites with no visible apply path
+
+Do not use `Manual Apply Needed` for these by themselves:
+
+- A LinkedIn job URL when authenticated Chrome can reveal a direct ATS link
+- A routine external ATS form asking only saved profile fields, resume upload, work authorization, sponsorship, location openness, referral/source, school, degree, graduation dates, veteran/disability, or matching demographic options
 
 Safe to answer without asking when the answer is clearly available:
 
