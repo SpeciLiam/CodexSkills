@@ -36,6 +36,12 @@ Then build the application queue:
 python3 skills/finish-applications/scripts/build_application_queue.py --limit 10
 ```
 
+To mark Workday rows in the tracker for Liam:
+
+```bash
+python3 skills/finish-applications/scripts/build_application_queue.py --mark-workday-manual
+```
+
 For JSON output:
 
 ```bash
@@ -53,6 +59,7 @@ python3 skills/finish-applications/scripts/build_application_queue.py --limit 10
    - Lower-fit rows can be processed only when the user asks for all unapplied applications or the high-fit queue is empty.
    - Skip rows whose posting link is missing, expired, or clearly no longer accepts applications. Report them as blocked.
    - Do not submit Workday applications. Treat any posting whose source, URL, or notes mention Workday as manual-only.
+   - Run `build_application_queue.py --mark-workday-manual` so Liam can find those rows later by searching for `Manual apply needed`.
 
 3. Open one application at a time.
    - Use the row's `Job Link`, `Resume PDF`, company, role, location, and source.

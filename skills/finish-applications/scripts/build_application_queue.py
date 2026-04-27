@@ -3,6 +3,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
+from datetime import date
 from pathlib import Path
 from typing import Any
 
@@ -10,6 +12,19 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[3]
 CACHE = ROOT / "application-visualizer" / "src" / "data" / "tracker-data.json"
 ACTIVE_SKIP_STATUSES = {"applied", "rejected", "archived", "online assessment", "interviewing", "offer"}
+RESUME_TAILOR_SCRIPTS = ROOT / "skills" / "resume-tailor" / "scripts"
+if str(RESUME_TAILOR_SCRIPTS) not in sys.path:
+    sys.path.append(str(RESUME_TAILOR_SCRIPTS))
+
+from update_application_tracker import (
+    build_row,
+    ensure_tracker,
+    parse_rows,
+    render_tracker,
+    row_from_cells,
+    split_row,
+    tracker_path,
+)
 
 
 def norm(value: Any) -> str:
@@ -105,6 +120,43 @@ def build_queues(data: dict[str, Any], limit: int, min_fit: int, include_low_fit
     }
 
 
+def append_note(existing: str, new_note: str) -> str:
+    existing = existing.strip()
+    if not existing:
+        return new_note
+    if new_note in existing:
+        return existing
+    return f"{existing}; {new_note}"
+
+
+def mark_manual_workday(root: Path, items: list[dict[str, Any]], note_date: str) -> list[dict[str, str]]:
+    if not items:
+        return []
+    tracker = tracker_path(root)
+    ensure_tracker(tracker)
+    lines = tracker.read_text(encoding="utf-8").splitlines()
+    _, rows = parse_rows(lines)
+    posting_keys = {norm(item.get("postingKey", "")) for item in items if item.get("postingKey")}
+    note = f"Manual apply needed: Workday posting {note_date}"
+    marked: list[dict[str, str]] = []
+    updated_rows: list[str] = []
+
+    for row_line in rows:
+        row = row_from_cells(split_row(row_line))
+        if row is None:
+            updated_rows.append(row_line)
+            continue
+        if norm(row.get("Posting Key", "")) in posting_keys:
+            before = row.get("Notes", "")
+            row["Notes"] = append_note(before, note)
+            if row["Notes"] != before:
+                marked.append({"company": row["Company"], "role": row["Role"], "postingKey": row["Posting Key"]})
+        updated_rows.append(build_row(row))
+
+    tracker.write_text(render_tracker(updated_rows), encoding="utf-8")
+    return marked
+
+
 def print_section(title: str, items: list[dict[str, Any]]) -> None:
     print(title)
     print("=" * len(title))
@@ -141,12 +193,24 @@ def main() -> int:
     parser.add_argument("--min-fit", type=int, default=8, help="Minimum fit score unless --include-low-fit is set")
     parser.add_argument("--include-low-fit", action="store_true", help="Include fit scores below --min-fit")
     parser.add_argument("--format", choices=("text", "json"), default="text")
+    parser.add_argument(
+        "--mark-workday-manual",
+        action="store_true",
+        help="Append a manual-apply note to matching Workday rows in the markdown tracker",
+    )
+    parser.add_argument("--date", default=date.today().isoformat(), help="Date for manual Workday notes, in YYYY-MM-DD")
     args = parser.parse_args()
 
     root = Path(args.root).expanduser().resolve() if args.root else ROOT
     queues = build_queues(load_cache(root), args.limit, args.min_fit, args.include_low_fit)
+    marked = []
+    if args.mark_workday_manual:
+        marked = mark_manual_workday(root, queues["manualWorkday"], args.date)
+        if args.format == "text":
+            print(f"Marked {len(marked)} Workday row(s) for manual application.")
+            print("")
     if args.format == "json":
-        print(json.dumps(queues, indent=2))
+        print(json.dumps({**queues, "markedManualWorkday": marked}, indent=2))
     else:
         print_text(queues)
     return 0
