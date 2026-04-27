@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T21:16:03.756260+00:00",
+  "generatedAt": "2026-04-27T21:18:11.901639+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,8 +7,8 @@
   "stats": {
     "kpis": {
       "total": 232,
-      "applied": 131,
-      "unapplied": 101,
+      "applied": 132,
+      "unapplied": 100,
       "active": 190,
       "rejected": 29,
       "interviewing": 2,
@@ -18,17 +18,17 @@
       "recruiterRows": 61,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 56.5,
-      "rejectionRate": 22.1
+      "applyRate": 56.9,
+      "rejectionRate": 22.0
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 96
+        "value": 97
       },
       {
         "name": "Manual Apply Needed",
-        "value": 90
+        "value": 89
       },
       {
         "name": "Rejected",
@@ -50,11 +50,11 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 134
+        "value": 133
       },
       {
         "name": "Ashby",
-        "value": 46
+        "value": 47
       },
       {
         "name": "Greenhouse",
@@ -268,7 +268,7 @@
         "date": "2026-04-14",
         "cumulative": 141,
         "added": 21,
-        "applied": 16,
+        "applied": 17,
         "rejected": 2,
         "interviewing": 0
       },
@@ -1279,23 +1279,23 @@
     {
       "company": "Giga",
       "role": "Software Engineer (New Grads) - San Francisco",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
       "dateAdded": "2026-04-14",
       "location": "San Francisco, CA",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/4370317193/",
-      "postingKey": "4370317193",
+      "source": "Ashby",
+      "jobLink": "https://jobs.ashbyhq.com/GigaML/cb74c445-322b-47fc-804c-b0565e18ca3a/application?utm_source=6p28rgeQLE",
+      "postingKey": "cb74c445-322b-47fc-804c-b0565e18ca3a",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Giga/Software_Engineer_New_Grads_San_Francisco/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Giga/Software_Engineer_New_Grads_San_Francisco/Liam_Van_Resume/Liam_Van_Giga.pdf",
       "recruiterContact": "Cameron Ellis",
       "recruiterProfile": "https://www.linkedin.com/in/cameron-ellis-33216b75/",
       "engineerContact": "Viswak Hanumanth",
       "engineerProfile": "https://www.linkedin.com/in/vis-/",
-      "notes": "LinkedIn invite sent to Cameron Ellis 2026-04-25; LinkedIn invite sent to Viswak Hanumanth (Engineer) 2026-04-26; Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "LinkedIn invite sent to Cameron Ellis 2026-04-25; LinkedIn invite sent to Viswak Hanumanth (Engineer) 2026-04-26; Replaced LinkedIn posting with direct Ashby application 2026-04-27; Application submitted 2026-04-27",
       "noteLinks": [
         {
           "label": "Cameron Ellis",
@@ -1309,6 +1309,7 @@
       "activityDates": [
         "2026-04-25",
         "2026-04-26",
+        "2026-04-27",
         "2026-04-27"
       ]
     },
