@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T22:48:53.453501+00:00",
+  "generatedAt": "2026-04-27T22:53:35.019446+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,9 +7,9 @@
   "stats": {
     "kpis": {
       "total": 236,
-      "applied": 133,
-      "unapplied": 103,
-      "active": 191,
+      "applied": 135,
+      "unapplied": 101,
+      "active": 190,
       "rejected": 29,
       "interviewing": 2,
       "assessments": 2,
@@ -18,17 +18,17 @@
       "recruiterRows": 61,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 56.4,
-      "rejectionRate": 21.8
+      "applyRate": 57.2,
+      "rejectionRate": 21.5
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 98
+        "value": 100
       },
       {
         "name": "Manual Apply Needed",
-        "value": 89
+        "value": 86
       },
       {
         "name": "Rejected",
@@ -36,7 +36,7 @@
       },
       {
         "name": "Archived",
-        "value": 16
+        "value": 17
       },
       {
         "name": "Online Assessment",
@@ -50,11 +50,11 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 88
+        "value": 84
       },
       {
         "name": "Ashby",
-        "value": 59
+        "value": 61
       },
       {
         "name": "Greenhouse",
@@ -66,7 +66,7 @@
       },
       {
         "name": "LinkedIn Easy Apply",
-        "value": 13
+        "value": 14
       },
       {
         "name": "Lever",
@@ -86,6 +86,10 @@
       },
       {
         "name": "Unknown",
+        "value": 1
+      },
+      {
+        "name": "Y Combinator",
         "value": 1
       },
       {
@@ -244,7 +248,7 @@
         "date": "2026-04-08",
         "cumulative": 60,
         "added": 21,
-        "applied": 12,
+        "applied": 14,
         "rejected": 6,
         "interviewing": 0
       },
@@ -2498,18 +2502,19 @@
       "referral": "No",
       "dateAdded": "2026-04-11",
       "location": "Seattle, WA",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/4341550113",
-      "postingKey": "4341550113",
+      "source": "Ashby",
+      "jobLink": "https://jobs.ashbyhq.com/Plaud/e158152c-c34f-47bd-995b-3fedaeab09cf/application?utm_source=gZLE667dqO",
+      "postingKey": "e158152c-c34f-47bd-995b-3fedaeab09cf",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Plaud/Founding_Backend_Engineer/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Plaud/Founding_Backend_Engineer/Liam_Van_Resume/Liam_Van_Plaud.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-27",
         "2026-04-27"
       ]
     },
@@ -3501,8 +3506,8 @@
     {
       "company": "Speakeasy",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -3517,7 +3522,7 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "LinkedIn application status shows submitted 2 weeks ago; recorded 2026-04-27",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27"
@@ -3862,8 +3867,8 @@
     {
       "company": "Rise Technical",
       "role": "Software Engineer (Model Evaluation & Benchmarking)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -3878,7 +3883,7 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "LinkedIn application status shows submitted 2 weeks ago; recorded 2026-04-27",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27"
@@ -5009,18 +5014,19 @@
       "referral": "No",
       "dateAdded": "2026-04-15",
       "location": "San Francisco, CA",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/collections/recommended/?currentJobId=4396360673",
-      "postingKey": "4396360673",
+      "source": "Ashby",
+      "jobLink": "https://jobs.ashbyhq.com/first-resonance/fdb3fcb7-2575-4fb2-b5d8-945a7aeab427/application",
+      "postingKey": "fdb3fcb7-2575-4fb2-b5d8-945a7aeab427",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/First Resonance/Forward_Deployed_Software_Engineer/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/First Resonance/Forward_Deployed_Software_Engineer/Liam_Van_Resume/Liam_Van_First_Resonance.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-27",
         "2026-04-27"
       ]
     },
@@ -5162,18 +5168,19 @@
       "referral": "No",
       "dateAdded": "2026-04-16",
       "location": "New York, NY",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/4401827377/",
-      "postingKey": "4401827377",
+      "source": "Y Combinator",
+      "jobLink": "https://www.ycombinator.com/companies/confido/jobs/JbodeMW-new-grad-software-engineer?utm_source=syn_li",
+      "postingKey": "JbodeMW-new-grad-software-engineer",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Confido/Software_Engineer/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Confido/Software_Engineer/Liam_Van_Resume/Liam_Van_Confido.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Replaced LinkedIn posting with direct YC Work at a Startup role 2026-04-27; Manual apply needed: Y Combinator Work at a Startup login/account application flow 2026-04-27",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-27",
         "2026-04-27"
       ]
     },
@@ -5181,7 +5188,7 @@
       "company": "Joveo",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -5196,7 +5203,7 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Mayur Bansal, Vinay Choudhary 2026-04-25; Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "LinkedIn invite sent to Mayur Bansal, Vinay Choudhary 2026-04-25; Posting closed and resolved to Hire Feed Junior Software Engineer rather than Joveo 2026-04-27",
       "noteLinks": [
         {
           "label": "Mayur Bansal",
@@ -5477,8 +5484,8 @@
       "referral": "No",
       "dateAdded": "2026-04-24",
       "location": "San Francisco, CA (Onsite)",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/4394678938/",
+      "source": "LinkedIn Easy Apply",
+      "jobLink": "https://www.linkedin.com/jobs/view/4394678938/apply/",
       "postingKey": "4394678938",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Epic Placements/Agent_Software_Engineer/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Epic Placements/Agent_Software_Engineer/Liam_Van_Resume/Liam_Van_Epic_Placements.pdf",
@@ -5486,9 +5493,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Rechecked authenticated LinkedIn Easy Apply 2026-04-27; Manual apply needed: LinkedIn Easy Apply final submit confirmation 2026-04-27",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-27",
         "2026-04-27"
       ]
     },
