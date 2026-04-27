@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T19:52:54.217259+00:00",
+  "generatedAt": "2026-04-27T19:18:22.472105+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,8 +7,8 @@
   "stats": {
     "kpis": {
       "total": 218,
-      "applied": 119,
-      "unapplied": 99,
+      "applied": 117,
+      "unapplied": 101,
       "active": 189,
       "rejected": 29,
       "interviewing": 2,
@@ -18,17 +18,17 @@
       "recruiterRows": 61,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 54.6,
-      "rejectionRate": 24.4
+      "applyRate": 53.7,
+      "rejectionRate": 24.8
     },
     "statusCounts": [
       {
         "name": "Resume Tailored",
-        "value": 98
+        "value": 100
       },
       {
         "name": "Applied",
-        "value": 87
+        "value": 85
       },
       {
         "name": "Rejected",
@@ -248,7 +248,7 @@
         "date": "2026-04-12",
         "cumulative": 103,
         "added": 10,
-        "applied": 6,
+        "applied": 5,
         "rejected": 1,
         "interviewing": 0
       },
@@ -264,7 +264,7 @@
         "date": "2026-04-14",
         "cumulative": 141,
         "added": 21,
-        "applied": 15,
+        "applied": 14,
         "rejected": 2,
         "interviewing": 0
       },
@@ -1302,8 +1302,8 @@
     {
       "company": "Spot & Tango",
       "role": "Jr Software Engineer",
-      "applied": true,
-      "status": "Applied",
+      "applied": false,
+      "status": "Resume Tailored",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -1318,7 +1318,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/morgankeiper/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Morgan Keiper (Recruiter) 2026-04-26; Application confirmation email received 2026-04-27",
+      "notes": "LinkedIn invite sent to Morgan Keiper (Recruiter) 2026-04-26",
       "noteLinks": [
         {
           "label": "Morgan Keiper",
@@ -1326,8 +1326,7 @@
         }
       ],
       "activityDates": [
-        "2026-04-26",
-        "2026-04-27"
+        "2026-04-26"
       ]
     },
     {
@@ -2364,8 +2363,8 @@
     {
       "company": "HeyGen",
       "role": "Software Engineer, University Graduate",
-      "applied": true,
-      "status": "Applied",
+      "applied": false,
+      "status": "Resume Tailored",
       "fitScore": 8,
       "reachOut": false,
       "referral": "",
@@ -2380,11 +2379,9 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-27",
+      "notes": "",
       "noteLinks": [],
-      "activityDates": [
-        "2026-04-27"
-      ]
+      "activityDates": []
     },
     {
       "company": "Kalshi",
