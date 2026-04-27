@@ -26,6 +26,14 @@ def load_cache(root: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def is_workday(app: dict[str, Any]) -> bool:
+    haystack = " ".join(
+        str(app.get(field) or "")
+        for field in ("source", "jobLink", "notes")
+    ).lower()
+    return "workday" in haystack or "myworkdayjobs" in haystack
+
+
 def is_ready(app: dict[str, Any], min_fit: int, include_low_fit: bool) -> bool:
     if app.get("applied"):
         return False
@@ -35,6 +43,20 @@ def is_ready(app: dict[str, Any], min_fit: int, include_low_fit: bool) -> bool:
     if status != "resume tailored":
         return False
     if not app.get("jobLink") or not app.get("resumePdf"):
+        return False
+    if is_workday(app):
+        return False
+    fit = int(app.get("fitScore") or 0)
+    return include_low_fit or fit >= min_fit
+
+
+def is_manual_workday(app: dict[str, Any], min_fit: int, include_low_fit: bool) -> bool:
+    if app.get("applied") or not is_workday(app):
+        return False
+    status = norm(app.get("status", ""))
+    if status in ACTIVE_SKIP_STATUSES:
+        return False
+    if status != "resume tailored":
         return False
     fit = int(app.get("fitScore") or 0)
     return include_low_fit or fit >= min_fit
@@ -67,17 +89,28 @@ def queue_item(app: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def build_queue(data: dict[str, Any], limit: int, min_fit: int, include_low_fit: bool) -> list[dict[str, Any]]:
+def manual_item(app: dict[str, Any]) -> dict[str, Any]:
+    item = queue_item(app)
+    item["manualReason"] = "Workday posting; Liam should submit manually."
+    return item
+
+
+def build_queues(data: dict[str, Any], limit: int, min_fit: int, include_low_fit: bool) -> dict[str, list[dict[str, Any]]]:
     applications = [app for app in data.get("applications", []) if isinstance(app, dict)]
     ready = [app for app in applications if is_ready(app, min_fit=min_fit, include_low_fit=include_low_fit)]
-    return [queue_item(app) for app in sorted(ready, key=score, reverse=True)[:limit]]
+    manual_workday = [app for app in applications if is_manual_workday(app, min_fit=min_fit, include_low_fit=include_low_fit)]
+    return {
+        "ready": [queue_item(app) for app in sorted(ready, key=score, reverse=True)[:limit]],
+        "manualWorkday": [manual_item(app) for app in sorted(manual_workday, key=score, reverse=True)[:limit]],
+    }
 
 
-def print_text(items: list[dict[str, Any]]) -> None:
-    print("Ready Unapplied Applications")
-    print("============================")
+def print_section(title: str, items: list[dict[str, Any]]) -> None:
+    print(title)
+    print("=" * len(title))
     if not items:
-        print("No ready unapplied applications found.")
+        print("None.")
+        print("")
         return
     for index, item in enumerate(items, start=1):
         exists = "yes" if item["resumeExists"] else "missing"
@@ -85,9 +118,20 @@ def print_text(items: list[dict[str, Any]]) -> None:
             f"{index}. {item['company']} | {item['role']} | "
             f"Fit {item['fitScore']} | {item['source']} | Resume: {exists}"
         )
+        if item.get("manualReason"):
+            print(f"   Manual reason: {item['manualReason']}")
         print(f"   Posting key: {item['postingKey']}")
         print(f"   Job: {item['jobLink']}")
         print(f"   Resume: {item['resumePdf']}")
+    print("")
+
+
+def print_text(queues: dict[str, list[dict[str, Any]]]) -> None:
+    print("Ready Unapplied Applications")
+    print("============================")
+    print("")
+    print_section("Agent-submit Queue", queues["ready"])
+    print_section("Manual Workday Queue", queues["manualWorkday"])
 
 
 def main() -> int:
@@ -100,11 +144,11 @@ def main() -> int:
     args = parser.parse_args()
 
     root = Path(args.root).expanduser().resolve() if args.root else ROOT
-    items = build_queue(load_cache(root), args.limit, args.min_fit, args.include_low_fit)
+    queues = build_queues(load_cache(root), args.limit, args.min_fit, args.include_low_fit)
     if args.format == "json":
-        print(json.dumps(items, indent=2))
+        print(json.dumps(queues, indent=2))
     else:
-        print_text(items)
+        print_text(queues)
     return 0
 
 

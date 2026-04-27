@@ -56,6 +56,14 @@ def active(app: dict[str, Any]) -> bool:
     return norm(app.get("status", "")) not in {"rejected", "archived"}
 
 
+def is_workday(app: dict[str, Any]) -> bool:
+    haystack = " ".join(
+        str(app.get(field) or "")
+        for field in ("source", "jobLink", "notes")
+    ).lower()
+    return "workday" in haystack or "myworkdayjobs" in haystack
+
+
 def score(app: dict[str, Any]) -> tuple[int, str]:
     fit = int(app.get("fitScore") or 0)
     status = norm(app.get("status", ""))
@@ -98,7 +106,10 @@ def build_plan(data: dict[str, Any], limit: int, mode: str = "all") -> dict[str,
     apply_now = [
         app_item(app)
         for app in sorted_active
-        if not app.get("applied") and norm(app.get("status", "")) == "resume tailored" and int(app.get("fitScore") or 0) >= 8
+        if not app.get("applied")
+        and norm(app.get("status", "")) == "resume tailored"
+        and int(app.get("fitScore") or 0) >= 8
+        and not is_workday(app)
     ][:limit]
 
     recruiter_outreach = [

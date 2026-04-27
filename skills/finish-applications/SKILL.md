@@ -52,6 +52,7 @@ python3 skills/finish-applications/scripts/build_application_queue.py --limit 10
    - Prioritize `Status: Resume Tailored`, `Applied` false, existing resume PDF, fit score >= 8.
    - Lower-fit rows can be processed only when the user asks for all unapplied applications or the high-fit queue is empty.
    - Skip rows whose posting link is missing, expired, or clearly no longer accepts applications. Report them as blocked.
+   - Do not submit Workday applications. Treat any posting whose source, URL, or notes mention Workday as manual-only.
 
 3. Open one application at a time.
    - Use the row's `Job Link`, `Resume PDF`, company, role, location, and source.
@@ -86,6 +87,7 @@ python3 skills/gmail-application-refresh/scripts/update_application_status.py \
 ```
 
    If the application cannot be completed, do not mark it applied. Append a short note only when it is useful and factual, such as `Posting closed 2026-04-27` or `Blocked on sponsorship question 2026-04-27`.
+   For Workday rows, do not open the application flow. Leave `Status` as `Resume Tailored`, leave `Applied` blank, and append `Manual apply needed: Workday posting YYYY-MM-DD` if that note is not already present.
 
 7. Continue through the queue.
    - Batch user questions when possible instead of interrupting for every small field.
@@ -111,9 +113,10 @@ Ask instead of guessing for anything not evidenced. If a form has optional demog
 
 ## Tracker Rules
 
+- Workday rows are for Liam to submit manually. Never attempt to complete them as the agent.
 - Never mark a row applied based only on opening the form or clicking LinkedIn Easy Apply before the confirmation step.
 - Treat a visible confirmation page, confirmation email, or application portal status as sufficient evidence.
-- Keep notes short: `Application submitted YYYY-MM-DD`, `LinkedIn Easy Apply submitted YYYY-MM-DD`, `Posting closed YYYY-MM-DD`, or `Blocked on custom question YYYY-MM-DD`.
+- Keep notes short: `Application submitted YYYY-MM-DD`, `LinkedIn Easy Apply submitted YYYY-MM-DD`, `Posting closed YYYY-MM-DD`, `Blocked on custom question YYYY-MM-DD`, or `Manual apply needed: Workday posting YYYY-MM-DD`.
 - Preserve recruiter and engineer contact fields.
 - If multiple tracker rows match the same company, pass `--posting-key` to the update script.
 - Refresh the dashboard cache after any tracker update.
@@ -123,6 +126,7 @@ Ask instead of guessing for anything not evidenced. If a form has optional demog
 Summarize:
 
 - submitted applications
+- Workday applications marked for manual submission
 - blocked applications and the exact question or obstacle
 - skipped applications and why
 - tracker/cache updates made
