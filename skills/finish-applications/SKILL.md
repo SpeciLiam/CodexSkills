@@ -30,7 +30,7 @@ Refresh the cache first when it may be stale:
 python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 ```
 
-Then build the application queue:
+Then build the application queue. The queue intentionally includes both `Resume Tailored` rows and `Manual Apply Needed` rows; only rows with concrete blockers should remain manual, while stale/generic manual rows should be retried:
 
 ```bash
 python3 skills/finish-applications/scripts/build_application_queue.py --limit 10
@@ -55,7 +55,8 @@ python3 skills/finish-applications/scripts/build_application_queue.py --limit 10
    - Do not apply to rows that are already `Applied`, `Rejected`, `Archived`, `Online Assessment`, `Interviewing`, or `Offer`.
 
 2. Build and inspect the queue.
-   - Prioritize `Status: Resume Tailored`, `Applied` false, existing resume PDF, fit score >= 8.
+   - Prioritize `Applied` false, existing resume PDF, fit score >= 8, and `Status` of either `Resume Tailored` or `Manual Apply Needed`.
+   - Keep `Manual Apply Needed` rows in the same queue as still-needed applications. If the recorded reason is not a true manual blocker, retry the application path and replace the stale note with the real outcome.
    - Lower-fit rows can be processed only when the user asks for all unapplied applications or the high-fit queue is empty.
    - Skip rows whose posting link is missing, expired, or clearly no longer accepts applications. Report them as blocked.
    - Do not submit Workday applications. Treat any posting whose source, URL, or notes mention Workday as manual-only.

@@ -12,6 +12,40 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[3]
 CACHE = ROOT / "application-visualizer" / "src" / "data" / "tracker-data.json"
 ACTIVE_SKIP_STATUSES = {"applied", "rejected", "archived", "online assessment", "interviewing", "offer"}
+MANUAL_STATUS = "manual apply needed"
+READY_STATUS = "resume tailored"
+TRUE_MANUAL_BLOCKERS = (
+    "account creation",
+    "account login",
+    "account sign-in",
+    "ashby verification",
+    "background-check",
+    "bot",
+    "captcha",
+    "custom",
+    "declaration",
+    "embedded",
+    "experience-level",
+    "final application submission confirmation",
+    "final submit confirmation",
+    "free response",
+    "free-response",
+    "hcaptcha",
+    "legal signature",
+    "login",
+    "not automation-accessible",
+    "otp",
+    "partner sharing",
+    "recaptcha",
+    "salary",
+    "signature",
+    "start date",
+    "verification",
+    "workday",
+)
+RETRYABLE_MANUAL_BLOCKERS = (
+    "linkedin login",
+)
 RESUME_TAILOR_SCRIPTS = ROOT / "skills" / "resume-tailor" / "scripts"
 if str(RESUME_TAILOR_SCRIPTS) not in sys.path:
     sys.path.append(str(RESUME_TAILOR_SCRIPTS))
@@ -49,20 +83,56 @@ def is_workday(app: dict[str, Any]) -> bool:
     return "workday" in haystack or "myworkdayjobs" in haystack
 
 
-def is_ready(app: dict[str, Any], min_fit: int, include_low_fit: bool) -> bool:
+def passes_basic_filters(app: dict[str, Any], min_fit: int, include_low_fit: bool) -> bool:
     if app.get("applied"):
         return False
     status = norm(app.get("status", ""))
     if status in ACTIVE_SKIP_STATUSES:
         return False
-    if status != "resume tailored":
-        return False
     if not app.get("jobLink") or not app.get("resumePdf"):
-        return False
-    if is_workday(app):
         return False
     fit = int(app.get("fitScore") or 0)
     return include_low_fit or fit >= min_fit
+
+
+def is_ready(app: dict[str, Any], min_fit: int, include_low_fit: bool) -> bool:
+    if not passes_basic_filters(app, min_fit=min_fit, include_low_fit=include_low_fit):
+        return False
+    if is_workday(app):
+        return False
+    return norm(app.get("status", "")) == READY_STATUS
+
+
+def manual_reason_from_notes(notes: str) -> str:
+    for part in reversed([part.strip() for part in notes.split(";") if part.strip()]):
+        if part.lower().startswith("manual apply needed:"):
+            return part
+    return ""
+
+
+def is_retryable_manual(app: dict[str, Any]) -> bool:
+    reason = norm(manual_reason_from_notes(str(app.get("notes") or "")))
+    return any(blocker in reason for blocker in RETRYABLE_MANUAL_BLOCKERS)
+
+
+def true_manual_reason(app: dict[str, Any]) -> str:
+    if is_workday(app):
+        return "Workday posting; Liam should submit manually."
+    reason = manual_reason_from_notes(str(app.get("notes") or ""))
+    normalized = norm(reason)
+    if not reason:
+        return "Manual follow-up required; no specific reason recorded yet."
+    if is_retryable_manual(app):
+        return ""
+    if any(blocker in normalized for blocker in TRUE_MANUAL_BLOCKERS):
+        return reason.replace("Manual apply needed:", "").strip()
+    return ""
+
+
+def is_queue_candidate(app: dict[str, Any], min_fit: int, include_low_fit: bool) -> bool:
+    if not passes_basic_filters(app, min_fit=min_fit, include_low_fit=include_low_fit):
+        return False
+    return norm(app.get("status", "")) in {READY_STATUS, MANUAL_STATUS}
 
 
 def is_manual_workday(app: dict[str, Any], min_fit: int, include_low_fit: bool) -> bool:
@@ -87,6 +157,13 @@ def score(app: dict[str, Any]) -> tuple[int, int, str, str]:
 def queue_item(app: dict[str, Any]) -> dict[str, Any]:
     resume_pdf = app.get("resumePdf") or ""
     resume_exists = bool(resume_pdf and Path(resume_pdf).expanduser().exists())
+    manual_reason = true_manual_reason(app) if norm(app.get("status", "")) == MANUAL_STATUS else ""
+    if norm(app.get("status", "")) == READY_STATUS:
+        action = "apply"
+    elif manual_reason:
+        action = "manual"
+    else:
+        action = "retry/apply"
     return {
         "company": app.get("company", ""),
         "role": app.get("role", ""),
@@ -101,6 +178,8 @@ def queue_item(app: dict[str, Any]) -> dict[str, Any]:
         "resumePdf": resume_pdf,
         "resumeExists": resume_exists,
         "notes": app.get("notes", ""),
+        "action": action,
+        "manualReason": manual_reason,
     }
 
 
@@ -113,9 +192,18 @@ def manual_item(app: dict[str, Any]) -> dict[str, Any]:
 def build_queues(data: dict[str, Any], limit: int, min_fit: int, include_low_fit: bool) -> dict[str, list[dict[str, Any]]]:
     applications = [app for app in data.get("applications", []) if isinstance(app, dict)]
     ready = [app for app in applications if is_ready(app, min_fit=min_fit, include_low_fit=include_low_fit)]
+    all_candidates = [
+        app
+        for app in applications
+        if is_queue_candidate(app, min_fit=min_fit, include_low_fit=include_low_fit)
+    ]
     manual_workday = [app for app in applications if is_manual_workday(app, min_fit=min_fit, include_low_fit=include_low_fit)]
+    unified = [queue_item(app) for app in sorted(all_candidates, key=score, reverse=True)[:limit]]
     return {
+        "queue": unified,
         "ready": [queue_item(app) for app in sorted(ready, key=score, reverse=True)[:limit]],
+        "manual": [item for item in unified if item.get("action") == "manual"],
+        "retry": [item for item in unified if item.get("action") == "retry/apply"],
         "manualWorkday": [manual_item(app) for app in sorted(manual_workday, key=score, reverse=True)[:limit]],
     }
 
@@ -168,7 +256,7 @@ def print_section(title: str, items: list[dict[str, Any]]) -> None:
         exists = "yes" if item["resumeExists"] else "missing"
         print(
             f"{index}. {item['company']} | {item['role']} | "
-            f"Fit {item['fitScore']} | {item['source']} | Resume: {exists}"
+            f"Fit {item['fitScore']} | {item['source']} | Action: {item.get('action', 'apply')} | Resume: {exists}"
         )
         if item.get("manualReason"):
             print(f"   Manual reason: {item['manualReason']}")
@@ -179,10 +267,12 @@ def print_section(title: str, items: list[dict[str, Any]]) -> None:
 
 
 def print_text(queues: dict[str, list[dict[str, Any]]]) -> None:
-    print("Ready Unapplied Applications")
-    print("============================")
+    print("Application Queue")
+    print("=================")
     print("")
-    print_section("Agent-submit Queue", queues["ready"])
+    print_section("All Open Applications", queues["queue"])
+    print_section("Agent-submit Queue", queues["ready"] + queues["retry"])
+    print_section("True Manual Queue", queues["manual"])
     print_section("Manual Workday Queue", queues["manualWorkday"])
 
 
