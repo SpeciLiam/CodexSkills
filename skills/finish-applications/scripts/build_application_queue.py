@@ -45,6 +45,7 @@ TRUE_MANUAL_BLOCKERS = (
     "preference",
     "profile",
     "recaptcha",
+    "repeat application limit",
     "salary",
     "signature",
     "start date",
