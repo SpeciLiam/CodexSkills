@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-04-28T03:00:08.279429+00:00",
+  "generatedAt": "2026-04-28T03:14:01.464280+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
   },
   "stats": {
     "kpis": {
-      "total": 239,
+      "total": 240,
       "applied": 152,
-      "unapplied": 87,
-      "active": 191,
+      "unapplied": 88,
+      "active": 192,
       "rejected": 30,
-      "interviewing": 2,
+      "interviewing": 3,
       "assessments": 2,
-      "highFit": 174,
+      "highFit": 175,
       "reachOut": 98,
-      "recruiterRows": 61,
+      "recruiterRows": 62,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 63.6,
+      "applyRate": 63.3,
       "rejectionRate": 19.7
     },
     "statusCounts": [
@@ -39,11 +39,11 @@
         "value": 18
       },
       {
-        "name": "Online Assessment",
-        "value": 2
+        "name": "Interviewing",
+        "value": 3
       },
       {
-        "name": "Interviewing",
+        "name": "Online Assessment",
         "value": 2
       }
     ],
@@ -85,11 +85,11 @@
         "value": 2
       },
       {
-        "name": "Unknown",
-        "value": 1
+        "name": "Y Combinator",
+        "value": 2
       },
       {
-        "name": "Y Combinator",
+        "name": "Unknown",
         "value": 1
       },
       {
@@ -116,7 +116,7 @@
       },
       {
         "name": "Bay Area",
-        "value": 74
+        "value": 75
       },
       {
         "name": "Other",
@@ -150,7 +150,7 @@
       },
       {
         "name": "Full Stack",
-        "value": 23
+        "value": 24
       },
       {
         "name": "AI/ML",
@@ -204,7 +204,7 @@
       },
       {
         "score": "8",
-        "count": 77
+        "count": 78
       },
       {
         "score": "9",
@@ -334,11 +334,11 @@
       },
       {
         "date": "2026-04-27",
-        "cumulative": 239,
-        "added": 74,
+        "cumulative": 240,
+        "added": 75,
         "applied": 12,
         "rejected": 0,
-        "interviewing": 0
+        "interviewing": 1
       }
     ],
     "topCompanies": [
@@ -6096,6 +6096,32 @@
       "activityDates": [
         "2026-04-27",
         "2026-04-28"
+      ]
+    },
+    {
+      "company": "SalesPatriot",
+      "role": "Full Stack Engineer (San Francisco)",
+      "applied": false,
+      "status": "Interviewing",
+      "fitScore": 8,
+      "reachOut": false,
+      "referral": "",
+      "dateAdded": "2026-04-27",
+      "location": "San Francisco, CA",
+      "source": "Y Combinator",
+      "jobLink": "https://www.workatastartup.com/jobs/91296",
+      "postingKey": "91296",
+      "resumeFolder": "",
+      "resumePdf": "",
+      "recruiterContact": "Sophia Morse",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "YC outreach from Sophia Morse received 2026-04-14; interview signup link sent 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-14",
+        "2026-04-27"
       ]
     },
     {
