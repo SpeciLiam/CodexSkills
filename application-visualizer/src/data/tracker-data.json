@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T00:32:50.694202+00:00",
+  "generatedAt": "2026-04-28T00:40:25.758075+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,8 +7,8 @@
   "stats": {
     "kpis": {
       "total": 239,
-      "applied": 135,
-      "unapplied": 104,
+      "applied": 136,
+      "unapplied": 103,
       "active": 192,
       "rejected": 29,
       "interviewing": 2,
@@ -18,17 +18,17 @@
       "recruiterRows": 61,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 56.5,
-      "rejectionRate": 21.5
+      "applyRate": 56.9,
+      "rejectionRate": 21.3
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 100
+        "value": 101
       },
       {
         "name": "Manual Apply Needed",
-        "value": 88
+        "value": 87
       },
       {
         "name": "Rejected",
@@ -280,7 +280,7 @@
         "date": "2026-04-12",
         "cumulative": 103,
         "added": 10,
-        "applied": 6,
+        "applied": 7,
         "rejected": 1,
         "interviewing": 0
       },
@@ -2210,8 +2210,8 @@
     {
       "company": "Lindy",
       "role": "Full Stack Software Engineer (Early Career)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -2226,7 +2226,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/christinajsimpson/",
       "engineerContact": "Ian McGregor",
       "engineerProfile": "https://www.linkedin.com/in/idmcgregor/",
-      "notes": "LinkedIn invite sent to Ian McGregor (Engineer) 2026-04-25; LinkedIn invite sent to Christy Simpson (Recruiter) 2026-04-26; Blocked on Ashby verification 2026-04-27; Manual apply needed: Ashby verification 2026-04-27",
+      "notes": "LinkedIn invite sent to Ian McGregor (Engineer) 2026-04-25; LinkedIn invite sent to Christy Simpson (Recruiter) 2026-04-26; Blocked on Ashby verification 2026-04-27; Application submitted successfully via Ashby 2026-04-28",
       "noteLinks": [
         {
           "label": "Ian McGregor",
@@ -2241,7 +2241,7 @@
         "2026-04-25",
         "2026-04-26",
         "2026-04-27",
-        "2026-04-27"
+        "2026-04-28"
       ]
     },
     {
