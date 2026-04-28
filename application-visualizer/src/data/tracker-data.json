@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T19:48:35.965171+00:00",
+  "generatedAt": "2026-04-28T19:51:22.392426+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,8 +7,8 @@
   "stats": {
     "kpis": {
       "total": 245,
-      "applied": 203,
-      "unapplied": 42,
+      "applied": 204,
+      "unapplied": 41,
       "active": 191,
       "rejected": 30,
       "interviewing": 3,
@@ -18,13 +18,13 @@
       "recruiterRows": 62,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 82.9,
-      "rejectionRate": 14.8
+      "applyRate": 83.3,
+      "rejectionRate": 14.7
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 168
+        "value": 169
       },
       {
         "name": "Rejected",
@@ -43,11 +43,11 @@
         "value": 3
       },
       {
-        "name": "Resume Tailored",
-        "value": 3
+        "name": "Online Assessment",
+        "value": 2
       },
       {
-        "name": "Online Assessment",
+        "name": "Resume Tailored",
         "value": 2
       }
     ],
@@ -352,7 +352,7 @@
         "date": "2026-04-28",
         "cumulative": 245,
         "added": 5,
-        "applied": 3,
+        "applied": 4,
         "rejected": 0,
         "interviewing": 0
       }
@@ -7770,8 +7770,8 @@
     {
       "company": "Airbnb",
       "role": "iOS Software Engineer, Airbnb - New Grad",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 7,
       "reachOut": false,
       "referral": "No",
@@ -7786,9 +7786,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Airbnb Quality Reputation new grad posting 2026-04-28; kept mobile alignment truthful via Android Studio/product/API experience and did not claim Swift, SwiftUI, UIKit, GraphQL, or iOS production experience.",
+      "notes": "Tailored for Airbnb Quality Reputation new grad posting 2026-04-28; kept mobile alignment truthful via Android Studio/product/API experience and did not claim Swift, SwiftUI, UIKit, GraphQL, or iOS production experience.; Application submitted 2026-04-28",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-28",
         "2026-04-28"
       ]
     },
