@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T03:44:52.182411+00:00",
+  "generatedAt": "2026-04-28T04:15:23.664056+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,8 +7,8 @@
   "stats": {
     "kpis": {
       "total": 240,
-      "applied": 155,
-      "unapplied": 85,
+      "applied": 156,
+      "unapplied": 84,
       "active": 192,
       "rejected": 30,
       "interviewing": 3,
@@ -18,17 +18,17 @@
       "recruiterRows": 62,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 64.6,
-      "rejectionRate": 19.4
+      "applyRate": 65.0,
+      "rejectionRate": 19.2
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 119
+        "value": 120
       },
       {
         "name": "Manual Apply Needed",
-        "value": 68
+        "value": 67
       },
       {
         "name": "Rejected",
@@ -336,7 +336,7 @@
         "date": "2026-04-27",
         "cumulative": 240,
         "added": 75,
-        "applied": 15,
+        "applied": 16,
         "rejected": 0,
         "interviewing": 1
       }
@@ -5584,8 +5584,8 @@
     {
       "company": "Twitch",
       "role": "Software Engineer I - Ads Demand Enablement",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -5600,7 +5600,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/robertitgigs/",
       "engineerContact": "Peter Nguyen",
       "engineerProfile": "https://www.linkedin.com/in/petercrackthecode/",
-      "notes": "LinkedIn invite sent to Robert Macias (Recruiter) 2026-04-26; LinkedIn invite sent to Peter Nguyen (Engineer) 2026-04-26; Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: required Twitch/Amazon application history questions and final application submission confirmation 2026-04-27; Manual apply needed: Greenhouse country/location custom dropdown misbehaves under automation and final submit is protected by reCAPTCHA; tailored cover letter generated 2026-04-28",
+      "notes": "LinkedIn invite sent to Robert Macias (Recruiter) 2026-04-26; LinkedIn invite sent to Peter Nguyen (Engineer) 2026-04-26; Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: required Twitch/Amazon application history questions and final application submission confirmation 2026-04-27; Manual apply needed: Greenhouse country/location custom dropdown misbehaves under automation and final submit is protected by reCAPTCHA; tailored cover letter generated 2026-04-28; Application submitted via Greenhouse with tailored resume, tailored cover letter, routine profile/work authorization/Amazon history answers, relocation openness, compensation expectation, and EEO answers 2026-04-28",
       "noteLinks": [
         {
           "label": "Robert Macias",
@@ -5616,6 +5616,7 @@
         "2026-04-26",
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
