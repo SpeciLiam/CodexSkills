@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-04-28T17:25:03.407969+00:00",
+  "generatedAt": "2026-04-28T19:24:34.227842+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
   },
   "stats": {
     "kpis": {
-      "total": 244,
-      "applied": 189,
-      "unapplied": 55,
-      "active": 189,
+      "total": 245,
+      "applied": 197,
+      "unapplied": 48,
+      "active": 191,
       "rejected": 30,
       "interviewing": 3,
       "assessments": 2,
@@ -18,17 +18,13 @@
       "recruiterRows": 62,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 77.5,
-      "rejectionRate": 15.9
+      "applyRate": 80.4,
+      "rejectionRate": 15.2
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 154
-      },
-      {
-        "name": "Manual Apply Needed",
-        "value": 30
+        "value": 162
       },
       {
         "name": "Rejected",
@@ -36,10 +32,18 @@
       },
       {
         "name": "Archived",
-        "value": 25
+        "value": 24
+      },
+      {
+        "name": "Manual Apply Needed",
+        "value": 21
       },
       {
         "name": "Interviewing",
+        "value": 3
+      },
+      {
+        "name": "Resume Tailored",
         "value": 3
       },
       {
@@ -50,7 +54,7 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 85
+        "value": 86
       },
       {
         "name": "Ashby",
@@ -77,15 +81,15 @@
         "value": 4
       },
       {
-        "name": "Workday",
-        "value": 3
-      },
-      {
         "name": "Other",
         "value": 2
       },
       {
         "name": "Y Combinator",
+        "value": 2
+      },
+      {
+        "name": "Workday",
         "value": 2
       },
       {
@@ -107,6 +111,10 @@
       {
         "name": "Notion Form",
         "value": 1
+      },
+      {
+        "name": "Airbnb Careers",
+        "value": 1
       }
     ],
     "locationCounts": [
@@ -116,7 +124,7 @@
       },
       {
         "name": "Bay Area",
-        "value": 75
+        "value": 77
       },
       {
         "name": "Other",
@@ -128,7 +136,7 @@
       },
       {
         "name": "Seattle",
-        "value": 10
+        "value": 9
       },
       {
         "name": "Unknown",
@@ -142,7 +150,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 151
+        "value": 150
       },
       {
         "name": "Backend",
@@ -150,11 +158,11 @@
       },
       {
         "name": "Full Stack",
-        "value": 24
+        "value": 25
       },
       {
         "name": "AI/ML",
-        "value": 14
+        "value": 15
       },
       {
         "name": "Infra/Platform",
@@ -200,7 +208,7 @@
       },
       {
         "score": "7",
-        "count": 24
+        "count": 25
       },
       {
         "score": "8",
@@ -232,7 +240,7 @@
         "date": "2026-04-06",
         "cumulative": 29,
         "added": 29,
-        "applied": 26,
+        "applied": 27,
         "rejected": 8,
         "interviewing": 1
       },
@@ -248,7 +256,7 @@
         "date": "2026-04-08",
         "cumulative": 60,
         "added": 21,
-        "applied": 14,
+        "applied": 15,
         "rejected": 7,
         "interviewing": 0
       },
@@ -304,7 +312,7 @@
         "date": "2026-04-15",
         "cumulative": 150,
         "added": 9,
-        "applied": 7,
+        "applied": 8,
         "rejected": 1,
         "interviewing": 0
       },
@@ -328,23 +336,23 @@
         "date": "2026-04-24",
         "cumulative": 165,
         "added": 9,
-        "applied": 7,
+        "applied": 8,
         "rejected": 0,
         "interviewing": 0
       },
       {
         "date": "2026-04-27",
-        "cumulative": 242,
-        "added": 77,
-        "applied": 44,
+        "cumulative": 240,
+        "added": 75,
+        "applied": 47,
         "rejected": 0,
         "interviewing": 1
       },
       {
         "date": "2026-04-28",
-        "cumulative": 244,
-        "added": 2,
-        "applied": 2,
+        "cumulative": 245,
+        "added": 5,
+        "applied": 3,
         "rejected": 0,
         "interviewing": 0
       }
@@ -826,8 +834,8 @@
     {
       "company": "Clever",
       "role": "Software Engineer, Infrastructure",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -842,7 +850,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/johnstoecker/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Raquel Gonzalez, Cruz Gonzalez, Kristin Jue, Amelia Jones, Febin Bellamy, Matthew Negasi, and John Stoecker 2026-04-25; Replaced closed LinkedIn posting with Greenhouse role 2026-04-27; Manual apply needed: required Clever culture-tenet free response 2026-04-27; Manual apply verified: reCAPTCHA present on application flow 2026-04-28; Manual apply verified: Greenhouse embed form filled with tailored resume, Seattle location, sponsorship No, LinkedIn/source, custom Always a Student culture-tenet response, Kubernetes Yes, and demographic selections; all required fields validated but submit attempt stayed on form with embedded reCAPTCHA/no confirmation 2026-04-28",
+      "notes": "LinkedIn invite sent to Raquel Gonzalez, Cruz Gonzalez, Kristin Jue, Amelia Jones, Febin Bellamy, Matthew Negasi, and John Stoecker 2026-04-25; Replaced closed LinkedIn posting with Greenhouse role 2026-04-27; Manual apply needed: required Clever culture-tenet free response 2026-04-27; Manual apply verified: reCAPTCHA present on application flow 2026-04-28; Manual apply verified: Greenhouse embed form filled with tailored resume, Seattle location, sponsorship No, LinkedIn/source, custom Always a Student culture-tenet response, Kubernetes Yes, and demographic selections; all required fields validated but submit attempt stayed on form with embedded reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [
         {
           "label": "Raquel Gonzalez",
@@ -877,6 +885,7 @@
         "2026-04-25",
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -3936,8 +3945,8 @@
     {
       "company": "Stripe",
       "role": "Backend Engineer, Payments and Risk",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -3952,7 +3961,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/austin-lehn-43b9aba8",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Austin Lehn (Recruiter) 2026-04-26; Manual apply needed: Greenhouse verification did not complete after code 2026-04-27; Manual apply verified: login/verification gate remains blocker 2026-04-28; Manual apply verified: Stripe Greenhouse form filled with tailored resume and tailored cover letter; submit attempt triggered 8-character email verification code sent to liamvanpj@gmail.com before final submission 2026-04-28",
+      "notes": "LinkedIn invite sent to Austin Lehn (Recruiter) 2026-04-26; Manual apply needed: Greenhouse verification did not complete after code 2026-04-27; Manual apply verified: login/verification gate remains blocker 2026-04-28; Manual apply verified: Stripe Greenhouse form filled with tailored resume and tailored cover letter; submit attempt triggered 8-character email verification code sent to liamvanpj@gmail.com before final submission 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [
         {
           "label": "Austin Lehn",
@@ -3962,6 +3971,7 @@
       "activityDates": [
         "2026-04-26",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -4522,14 +4532,15 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-07; Blocked on hCaptcha 2026-04-27; Manual apply needed: hCaptcha 2026-04-27; Manual apply verified: Lever form filled with tailored resume, contact info, current company, profile links, sponsorship No, prior Plaid employment No, Plaid mission/fintech/product/AI interest selections, AI rating, NY office Yes, and EEO fields; final submit blocked by hCaptcha iframe overlay 2026-04-28; Restored applied status for previously confirmed LinkedIn Plaid row after duplicate direct Lever retry tracking 2026-04-28",
+      "notes": "Application confirmation email received 2026-04-07; Blocked on hCaptcha 2026-04-27; Manual apply needed: hCaptcha 2026-04-27; Manual apply verified: Lever form filled with tailored resume, contact info, current company, profile links, sponsorship No, prior Plaid employment No, Plaid mission/fintech/product/AI interest selections, AI rating, NY office Yes, and EEO fields; final submit blocked by hCaptcha iframe overlay 2026-04-28; Restored applied status for previously confirmed LinkedIn Plaid row after duplicate direct Lever retry tracking 2026-04-28; Application already submitted per Lever confirmation; previous application received 2026-04-06",
       "noteLinks": [],
       "activityDates": [
         "2026-04-07",
         "2026-04-27",
         "2026-04-27",
         "2026-04-28",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-06"
       ]
     },
     {
@@ -4715,8 +4726,8 @@
     {
       "company": "Notion",
       "role": "Software Engineer, Fullstack, Early Career",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -4731,7 +4742,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/angela-ching-1536a9a0/",
       "engineerContact": "Hanna Koh",
       "engineerProfile": "https://www.linkedin.com/in/hannakohxt/",
-      "notes": "LinkedIn invite sent to recruiter 2026-04-24; LinkedIn invite sent to engineer Hanna Koh 2026-04-24; LinkedIn invite sent to Hanna Koh (Engineer) 2026-04-24; Blocked on custom motivation question 2026-04-27; Manual apply needed: custom motivation question 2026-04-27; Manual apply verified: required motivation free-response 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, contact/location, LinkedIn, GitHub, tailored Notion motivation response, pronoun preference, full-stack preference, in-office acknowledgement, New York location interest, sponsorship No, LinkedIn source, 2024 graduation, and EEO fields; submit clicked but form stayed with hidden reCAPTCHA/no confirmation 2026-04-28",
+      "notes": "LinkedIn invite sent to recruiter 2026-04-24; LinkedIn invite sent to engineer Hanna Koh 2026-04-24; LinkedIn invite sent to Hanna Koh (Engineer) 2026-04-24; Blocked on custom motivation question 2026-04-27; Manual apply needed: custom motivation question 2026-04-27; Manual apply verified: required motivation free-response 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, contact/location, LinkedIn, GitHub, tailored Notion motivation response, pronoun preference, full-stack preference, in-office acknowledgement, New York location interest, sponsorship No, LinkedIn source, 2024 graduation, and EEO fields; submit clicked but form stayed with hidden reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [
         {
           "label": "Hanna Koh",
@@ -4748,6 +4759,7 @@
         "2026-04-24",
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -4975,10 +4987,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: custom project and technology questions 2026-04-27; Manual apply verified: captcha gates and required custom fields present 2026-04-28; Application submitted via Gem with tailored resume, in-office NYC/SF confirmation Yes, and custom impressive-project plus OpenTelemetry technology responses 2026-04-28",
+      "notes": "Manual apply needed: custom project and technology questions 2026-04-27; Manual apply verified: captcha gates and required custom fields present 2026-04-28; Application submitted via Gem with tailored resume, in-office NYC/SF confirmation Yes, and custom impressive-project plus OpenTelemetry technology responses 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -5541,8 +5554,8 @@
     {
       "company": "Plaid",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -5557,7 +5570,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/miguel-chucaralao/",
       "engineerContact": "Animesh Fatehpuria",
       "engineerProfile": "https://www.linkedin.com/in/animesh-fatehpuria-087a51167/",
-      "notes": "LinkedIn invite sent to recruiter Miguel Chucaralao 2026-04-24; LinkedIn invite sent to recruiter Rico Curry 2026-04-25; LinkedIn invite sent to recruiter Cara Fishman 2026-04-25; LinkedIn invite sent to Animesh Fatehpuria (Engineer) 2026-04-26; Blocked on hCaptcha 2026-04-27; Manual apply needed: hCaptcha 2026-04-27; Manual apply verified: hCaptcha present on Lever form 2026-04-28; Manual apply verified: Lever form filled with tailored resume, contact info, current company, profile links, sponsorship No, prior Plaid employment No, Plaid mission/fintech/product/AI interest selections, AI rating, NY office Yes, and EEO fields; final submit blocked by hCaptcha iframe overlay 2026-04-28",
+      "notes": "LinkedIn invite sent to recruiter Miguel Chucaralao 2026-04-24; LinkedIn invite sent to recruiter Rico Curry 2026-04-25; LinkedIn invite sent to recruiter Cara Fishman 2026-04-25; LinkedIn invite sent to Animesh Fatehpuria (Engineer) 2026-04-26; Blocked on hCaptcha 2026-04-27; Manual apply needed: hCaptcha 2026-04-27; Manual apply verified: hCaptcha present on Lever form 2026-04-28; Manual apply verified: Lever form filled with tailored resume, contact info, current company, profile links, sponsorship No, prior Plaid employment No, Plaid mission/fintech/product/AI interest selections, AI rating, NY office Yes, and EEO fields; final submit blocked by hCaptcha iframe overlay 2026-04-28; Application already submitted per Lever confirmation; previous application received 2026-04-06",
       "noteLinks": [
         {
           "label": "Miguel Chucaralao",
@@ -5584,7 +5597,8 @@
         "2026-04-27",
         "2026-04-27",
         "2026-04-28",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-06"
       ]
     },
     {
@@ -5705,8 +5719,8 @@
     {
       "company": "Adobe",
       "role": "Software Development Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 5,
       "reachOut": false,
       "referral": "No",
@@ -5721,10 +5735,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: Adobe Workday application/account flow R162540 2026-04-28",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: Adobe Workday application/account flow R162540 2026-04-28; Application confirmation email received 2026-04-28 for Workday requisition R162540",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -5900,28 +5915,29 @@
     },
     {
       "company": "Remitly",
-      "role": "Software Development Engineer 1, Pricing Platform",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "role": "Software Development Engineer II - Trust Decisioning Platform",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
-      "dateAdded": "2026-04-27",
+      "dateAdded": "2026-04-28",
       "location": "Seattle, WA",
       "source": "Workday",
-      "jobLink": "https://careers.remitly.com/job/23307327/software-development-engineer-1-pricing-platform-seattle-wa/?source=LinkedIn",
-      "postingKey": "R_106145",
+      "jobLink": "https://careers.remitly.com/",
+      "postingKey": "R_104873",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Remitly/Software_Development_Engineer_1_Pricing_Platform/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Remitly/Software_Development_Engineer_1_Pricing_Platform/Liam_Van_Resume/Liam_Van_Remitly.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with Remitly careers application 2026-04-27; Manual apply needed: Remitly Workday portal continuation and required terms/privacy acknowledgement 2026-04-27; Manual apply verified: Workday portal handoff 2026-04-28",
+      "notes": "Replaced tracked Remitly role with Software Development Engineer II - Trust Decisioning Platform, req R_104873, based on Workday application record 2026-04-28; Application submitted 2026-04-28; Workday status In Process as of 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27",
-        "2026-04-27",
+        "2026-04-28",
+        "2026-04-28",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -5956,8 +5972,8 @@
     {
       "company": "Flexport",
       "role": "Software Engineer I, Autonomous Freight Systems",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -5972,7 +5988,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/taylormontello/",
       "engineerContact": "Kartik Prajapati",
       "engineerProfile": "https://www.linkedin.com/in/ktk-pjpt/",
-      "notes": "LinkedIn invite sent to Taylor Montello (Recruiter) 2026-04-26; LinkedIn invite sent to Kartik Prajapati (Engineer) 2026-04-26; Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: required Flexport technical/business challenge free response and reCAPTCHA 2026-04-27; Manual apply verified: required free-response plus reCAPTCHA 2026-04-28; Manual apply verified: Greenhouse form filled with tailored resume, contact/location, LinkedIn, source LinkedIn, onsite SF willingness, authorization/sponsorship, prior-employment answer, custom technical-project response, and demographics; submit clicked but page stayed on form with reCAPTCHA/no confirmation 2026-04-28",
+      "notes": "LinkedIn invite sent to Taylor Montello (Recruiter) 2026-04-26; LinkedIn invite sent to Kartik Prajapati (Engineer) 2026-04-26; Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: required Flexport technical/business challenge free response and reCAPTCHA 2026-04-27; Manual apply verified: required free-response plus reCAPTCHA 2026-04-28; Manual apply verified: Greenhouse form filled with tailored resume, contact/location, LinkedIn, source LinkedIn, onsite SF willingness, authorization/sponsorship, prior-employment answer, custom technical-project response, and demographics; submit clicked but page stayed on form with reCAPTCHA/no confirmation 2026-04-28; Application submitted 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [
         {
           "label": "Taylor Montello",
@@ -5988,6 +6004,8 @@
         "2026-04-26",
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -6180,13 +6198,13 @@
     {
       "company": "Salesforce",
       "role": "Software Engineering AMTS (College Grad)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
       "dateAdded": "2026-04-27",
-      "location": "Seattle, WA",
+      "location": "Seattle, WA / San Francisco, CA",
       "source": "Workday",
       "jobLink": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/California---San-Francisco/Software-Engineering-AMTS-MTS--College-Grad-_JR330400-1?source=LinkedIn_Jobs",
       "postingKey": "JR330400-1",
@@ -6196,11 +6214,14 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Workday application 2026-04-27; Manual apply needed: Workday posting 2026-04-27; Manual apply verified: Salesforce account/login gate 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Workday application 2026-04-27; Manual apply needed: Workday posting 2026-04-27; Manual apply verified: Salesforce account/login gate 2026-04-28; Consolidated duplicate Salesforce Workday rows because Seattle and San Francisco locations lead to the same application JR330400-1 2026-04-28; Application confirmation email received 2026-04-28; Workday status/application confirmation verified from Salesforce email 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
+        "2026-04-28",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6313,33 +6334,6 @@
       "noteLinks": [],
       "activityDates": [
         "2026-04-27"
-      ]
-    },
-    {
-      "company": "Salesforce",
-      "role": "Software Engineering AMTS (College Grad)",
-      "applied": false,
-      "status": "Manual Apply Needed",
-      "fitScore": 8,
-      "reachOut": false,
-      "referral": "No",
-      "dateAdded": "2026-04-27",
-      "location": "San Francisco, CA",
-      "source": "Workday",
-      "jobLink": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/California---San-Francisco/Software-Engineering-AMTS-MTS--College-Grad-_JR330400-1?source=LinkedIn_Jobs",
-      "postingKey": "JR330400-1",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Salesforce/Software_Engineering_AMTS_College_Grad/Liam_Van_Resume_2",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Salesforce/Software_Engineering_AMTS_College_Grad/Liam_Van_Resume_2/Liam_Van_Salesforce.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
-      "engineerContact": "",
-      "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Workday application 2026-04-27; Manual apply needed: Workday posting 2026-04-27; Manual apply verified: Salesforce account/login gate 2026-04-28",
-      "noteLinks": [],
-      "activityDates": [
-        "2026-04-27",
-        "2026-04-27",
-        "2026-04-28"
       ]
     },
     {
@@ -6716,11 +6710,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required startup-fit/free-response question 2026-04-27; Manual apply verified: required startup-fit free response plus reCAPTCHA 2026-04-28; Application submitted via Ashby with tailored Slash resume and custom startup-fit response 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required startup-fit/free-response question 2026-04-27; Manual apply verified: required startup-fit free response plus reCAPTCHA 2026-04-28; Application submitted via Ashby with tailored Slash resume and custom startup-fit response 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -6827,11 +6822,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct SmartRecruiters/Smartr application 2026-04-27; Manual apply needed: Smartr profile/application form error and required profile sections 2026-04-27; Manual apply verified: custom application flow remains blocker 2026-04-28; Manual apply verified: SmartRecruiters/Smartr application filled with tailored resume, parsed experience/education, contact details, postal code, LinkedIn, and website; required fields validated but Next button failed to advance reliably from profile page before final submission 2026-04-28; Manual apply verified: SmartRecruiters application handoff now presents DataDome verification/slider CAPTCHA in authenticated Chrome before application can continue 2026-04-28; Application submitted via SmartRecruiters with tailored NBCUniversal resume after DataDome verification was completed manually; profile, experience, education, contact info, LinkedIn, website, and required answers completed 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct SmartRecruiters/Smartr application 2026-04-27; Manual apply needed: Smartr profile/application form error and required profile sections 2026-04-27; Manual apply verified: custom application flow remains blocker 2026-04-28; Manual apply verified: SmartRecruiters/Smartr application filled with tailored resume, parsed experience/education, contact details, postal code, LinkedIn, and website; required fields validated but Next button failed to advance reliably from profile page before final submission 2026-04-28; Manual apply verified: SmartRecruiters application handoff now presents DataDome verification/slider CAPTCHA in authenticated Chrome before application can continue 2026-04-28; Application submitted via SmartRecruiters with tailored NBCUniversal resume after DataDome verification was completed manually; profile, experience, education, contact info, LinkedIn, website, and required answers completed 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28",
         "2026-04-28",
@@ -6942,11 +6938,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Application submitted via Greenhouse with tailored resume, tailored cover letter, and routine profile/work authorization answers 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Application submitted via Greenhouse with tailored resume, tailored cover letter, and routine profile/work authorization answers 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6997,11 +6994,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required Python/Golang and Kubernetes experience free-response questions 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28; Application submitted via Ashby with tailored resume, authorization/sponsorship answers, Oracle/current-location details, and custom Python/Golang plus Kubernetes experience responses 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required Python/Golang and Kubernetes experience free-response questions 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28; Application submitted via Ashby with tailored resume, authorization/sponsorship answers, Oracle/current-location details, and custom Python/Golang plus Kubernetes experience responses 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -7186,10 +7184,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: Gem application live but requires custom eligibility answers for 5 days/week Meatpacking NYC office, Java experience, 5+ years full-time programming, and cloud experience 2026-04-28; Application submitted via direct Gem posting am9icG9zdDrhNAIZzLM9OvpaPkquH_AK with tailored resume, NYC in-office comfort Yes, work authorization Yes, prior employment No, sponsorship No, source selections, and Java/experience/cloud responses 2026-04-28",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: Gem application live but requires custom eligibility answers for 5 days/week Meatpacking NYC office, Java experience, 5+ years full-time programming, and cloud experience 2026-04-28; Application submitted via direct Gem posting am9icG9zdDrhNAIZzLM9OvpaPkquH_AK with tailored resume, NYC in-office comfort Yes, work authorization Yes, prior employment No, sponsorship No, source selections, and Java/experience/cloud responses 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -7337,7 +7336,7 @@
       "company": "The Voleon Group",
       "role": "Software Engineer, DevOps",
       "applied": false,
-      "status": "Archived",
+      "status": "Resume Tailored",
       "fitScore": 7,
       "reachOut": false,
       "referral": "No",
@@ -7352,12 +7351,9 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Replaced LinkedIn posting with direct Ashby application 2026-04-28; Manual apply verified: invisible reCAPTCHA present on Ashby form 2026-04-28; Archived: direct Voleon Lever posting 9508bdf5-2ab1-44c3-bd80-2a7b58c6a1d0 now returns 404 and Voleon Lever board shows no open postings 2026-04-28",
+      "notes": "LinkedIn posting 4407401640 is live again as of 2026-04-28; tailored for DevOps software engineering across Python, CI/CD, Docker, Git, automated testing, release support, on-call, Grafana, cloud/backend APIs, and cross-team production systems. Did not claim Kubernetes, Ansible, Chef, Puppet, Bazel, KVM, or PostgreSQL ownership beyond supported evidence.",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27",
-        "2026-04-28",
-        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -7762,6 +7758,56 @@
       "engineerContact": "",
       "engineerProfile": "",
       "notes": "LinkedIn application status shows submitted 2026-04-28",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Airbnb",
+      "role": "iOS Software Engineer, Airbnb - New Grad",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 7,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "San Francisco, CA / Seattle, WA",
+      "source": "Airbnb Careers",
+      "jobLink": "https://careers.airbnb.com/positions/7859317/?gh_jid=7859317",
+      "postingKey": "7859317",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Airbnb/iOS_Software_Engineer_Airbnb_New_Grad/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Airbnb/iOS_Software_Engineer_Airbnb_New_Grad/Liam_Van_Resume/Liam_Van_Airbnb.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Airbnb Quality Reputation new grad posting 2026-04-28; kept mobile alignment truthful via Android Studio/product/API experience and did not claim Swift, SwiftUI, UIKit, GraphQL, or iOS production experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "BlackRock",
+      "role": "Associate, Full Stack Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4380495648/?trackingId=AJW6hfwNSWOSl69I9BEbpA%3D%3D&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BI6XXU%2BGdQIad7YU%2Bc9JYoA%3D%3D",
+      "postingKey": "4380495648",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/BlackRock/Associate_Full_Stack_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/BlackRock/Associate_Full_Stack_Engineer/Liam_Van_Resume/Liam_Van_BlackRock.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for BlackRock SMA Solutions full-stack platform role 2026-04-28; promoted React, TypeScript, Python, SQL, AWS, APIs, reliability, and product collaboration; did not claim Kubernetes ownership despite posting preference.",
       "noteLinks": [],
       "activityDates": [
         "2026-04-28"
