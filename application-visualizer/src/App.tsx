@@ -58,6 +58,7 @@ const STATUS_TONE: Record<string, string> = {
 };
 
 const MANUAL_STATUS = "Manual Apply Needed";
+const NOT_APPLIED_FILTER = "Not Applied";
 
 const NAV_ITEMS = [
   { id: "overview", label: "Overview" },
@@ -281,7 +282,7 @@ function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const statuses = useMemo(() => ["All", ...data.stats.statusCounts.map((item) => item.name)], []);
+  const statuses = useMemo(() => ["All", NOT_APPLIED_FILTER, ...data.stats.statusCounts.map((item) => item.name)], []);
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
     return data.applications.filter((app) => {
@@ -290,7 +291,10 @@ function App() {
         [app.company, app.role, app.location, app.source, app.recruiterContact, app.engineerContact, app.notes].some((value) =>
           value.toLowerCase().includes(needle),
         );
-      return matchesText && (status === "All" || app.status === status) && app.fitScore >= minFit;
+      const matchesStatus =
+        status === "All" ||
+        (status === NOT_APPLIED_FILTER ? !app.applied : app.status === status);
+      return matchesText && matchesStatus && app.fitScore >= minFit;
     });
   }, [query, status, minFit]);
 
