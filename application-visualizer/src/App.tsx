@@ -596,7 +596,7 @@ function App() {
               </tr>
             </thead>
             <tbody>
-              {filtered.slice(0, 80).map((app) => (
+              {filtered.map((app) => (
                 <tr key={`${app.company}-${app.role}-${app.postingKey}`}>
                   <td><strong>{app.company}</strong><small>{app.source}</small></td>
                   <td>{app.role}<small>{app.location}</small></td>
@@ -629,7 +629,7 @@ function App() {
           </table>
         </div>
         <div className="mobile-browser-list">
-          {filtered.slice(0, 40).map((app) => (
+          {filtered.map((app) => (
             <article className="mobile-app-card" key={`mobile-${app.company}-${app.role}-${app.postingKey}`}>
               <header>
                 <div>
