@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T06:17:04.406506+00:00",
+  "generatedAt": "2026-04-28T06:49:31.242479+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,9 +7,9 @@
   "stats": {
     "kpis": {
       "total": 244,
-      "applied": 168,
-      "unapplied": 76,
-      "active": 195,
+      "applied": 170,
+      "unapplied": 74,
+      "active": 193,
       "rejected": 30,
       "interviewing": 3,
       "assessments": 2,
@@ -18,17 +18,17 @@
       "recruiterRows": 62,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 68.9,
-      "rejectionRate": 17.9
+      "applyRate": 69.7,
+      "rejectionRate": 17.6
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 132
+        "value": 134
       },
       {
         "name": "Manual Apply Needed",
-        "value": 58
+        "value": 54
       },
       {
         "name": "Rejected",
@@ -36,7 +36,7 @@
       },
       {
         "name": "Archived",
-        "value": 19
+        "value": 21
       },
       {
         "name": "Interviewing",
@@ -336,7 +336,7 @@
         "date": "2026-04-27",
         "cumulative": 242,
         "added": 77,
-        "applied": 25,
+        "applied": 27,
         "rejected": 0,
         "interviewing": 1
       },
@@ -4292,7 +4292,7 @@
       "company": "Redfin",
       "role": "Software Developer I",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 5,
       "reachOut": false,
       "referral": "",
@@ -4307,10 +4307,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Workday/Rocket redirect 2026-04-27",
+      "notes": "Manual apply needed: Workday/Rocket redirect 2026-04-27; Posting closed/unavailable verified 2026-04-28; original Redfin/Rocket URL redirects away and direct job endpoint returns unavailable",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -5778,8 +5779,8 @@
     {
       "company": "SynergisticIT",
       "role": "Junior Java Spring boot developer/Data Scientist",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 7,
       "reachOut": false,
       "referral": "No",
@@ -5794,10 +5795,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: LinkedIn Easy Apply reached final Submit application after uploading tailored resume, but posting discloses resume may be shared with SynergisticIT JOPP/client databases and final submit requires user consent 2026-04-28; LinkedIn Easy Apply submitted 2026-04-28 with tailored SynergisticIT resume; posting discloses resume may be shared with SynergisticIT JOPP/client databases",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28",
+        "2026-04-28"
       ]
     },
     {
@@ -5971,8 +5974,8 @@
     {
       "company": "Roblox",
       "role": "Software Engineer, User Sharing",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 7,
       "reachOut": false,
       "referral": "No",
@@ -5987,10 +5990,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Submitted on Roblox Greenhouse careers form 2026-04-28 with tailored Roblox resume; confirmation page displayed application received",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -7000,10 +7004,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: Ashby application requires invisible reCAPTCHA and custom Stainless motivation text 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -7060,7 +7065,7 @@
       "company": "Pinecone",
       "role": "Associate Field Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 7,
       "reachOut": false,
       "referral": "No",
@@ -7075,10 +7080,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Posting closed/no longer accepting applications verified in authenticated LinkedIn 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -7260,10 +7266,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: Breezy form live but requires expected salary range answer 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -7285,10 +7292,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Replaced LinkedIn posting with direct Ashby application 2026-04-28; Manual apply verified: invisible reCAPTCHA present on Ashby form 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28",
+        "2026-04-28"
       ]
     },
     {
@@ -7520,10 +7529,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27",
+      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27; Manual apply verified: invisible reCAPTCHA present on Ashby application 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
