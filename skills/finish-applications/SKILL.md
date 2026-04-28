@@ -72,7 +72,7 @@ python3 skills/finish-applications/scripts/build_application_queue.py --limit 10
      2. Verify Liam is signed in and the job is the same company/role.
      3. Click `Apply`, `Apply on company website`, or the equivalent LinkedIn apply control.
      4. If it opens an external ATS such as Lever, Ashby, Greenhouse, Rippling, SmartRecruiters, or a company careers page, use that URL as the active application link and continue the normal form workflow.
-     5. If LinkedIn shows Easy Apply, continue only for routine fields and stop before final submission for confirmation.
+     5. If LinkedIn shows Easy Apply, continue only for routine fields and stop before final submission for confirmation. Always verify and reset the contact email to `liamvanpj@gmail.com`; LinkedIn may prefill `liampjvan@gmail.com`, which should not be used.
      6. If LinkedIn or the ATS shows login, 2FA, CAPTCHA, account creation, or bot/AI-deterrent verification, keep it manual and record that specific blocker instead of the generic LinkedIn login note.
 
 4. Ask the user only for blockers.
