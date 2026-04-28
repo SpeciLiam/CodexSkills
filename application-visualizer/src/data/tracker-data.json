@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-04-27T22:55:59.125411+00:00",
+  "generatedAt": "2026-04-28T00:32:50.694202+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
   },
   "stats": {
     "kpis": {
-      "total": 236,
+      "total": 239,
       "applied": 135,
-      "unapplied": 101,
-      "active": 189,
+      "unapplied": 104,
+      "active": 192,
       "rejected": 29,
       "interviewing": 2,
       "assessments": 2,
-      "highFit": 172,
-      "reachOut": 96,
+      "highFit": 174,
+      "reachOut": 98,
       "recruiterRows": 61,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 57.2,
+      "applyRate": 56.5,
       "rejectionRate": 21.5
     },
     "statusCounts": [
@@ -28,7 +28,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 85
+        "value": 88
       },
       {
         "name": "Rejected",
@@ -54,7 +54,7 @@
       },
       {
         "name": "Ashby",
-        "value": 61
+        "value": 64
       },
       {
         "name": "Greenhouse",
@@ -112,7 +112,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 111
+        "value": 114
       },
       {
         "name": "Bay Area",
@@ -146,11 +146,11 @@
       },
       {
         "name": "Backend",
-        "value": 29
+        "value": 30
       },
       {
         "name": "Full Stack",
-        "value": 22
+        "value": 23
       },
       {
         "name": "AI/ML",
@@ -166,7 +166,7 @@
       },
       {
         "name": "Forward Deployed",
-        "value": 6
+        "value": 7
       },
       {
         "name": "Frontend",
@@ -196,7 +196,7 @@
       },
       {
         "score": "6",
-        "count": 3
+        "count": 4
       },
       {
         "score": "7",
@@ -208,7 +208,7 @@
       },
       {
         "score": "9",
-        "count": 35
+        "count": 37
       },
       {
         "score": "10",
@@ -334,14 +334,20 @@
       },
       {
         "date": "2026-04-27",
-        "cumulative": 236,
-        "added": 71,
+        "cumulative": 239,
+        "added": 74,
         "applied": 4,
         "rejected": 0,
         "interviewing": 0
       }
     ],
     "topCompanies": [
+      {
+        "company": "Profound",
+        "roles": 5,
+        "avgFit": 8.4,
+        "bestFit": 10
+      },
       {
         "company": "Palantir Technologies",
         "roles": 5,
@@ -430,12 +436,6 @@
         "company": "Plaid",
         "roles": 2,
         "avgFit": 9.5,
-        "bestFit": 10
-      },
-      {
-        "company": "Profound",
-        "roles": 2,
-        "avgFit": 9.0,
         "bestFit": 10
       },
       {
@@ -7398,6 +7398,81 @@
       "engineerContact": "",
       "engineerProfile": "",
       "notes": "Manual apply needed: Palantir partner sharing acknowledgement and AI notetaker consent 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
+      ]
+    },
+    {
+      "company": "Profound",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 6,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY / San Francisco, CA / Buenos Aires, Argentina",
+      "source": "Ashby",
+      "jobLink": "https://jobs.ashbyhq.com/Profound/b076c997-0ba3-4d3c-9dc9-ad0b3ed49b05?departmentId=ff9a5ed0-40fd-481a-be99-bb7ea5ee8111&utm_source=paKr5qNkRZ",
+      "postingKey": "b076c997-0ba3-4d3c-9dc9-ad0b3ed49b05",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Profound/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Profound/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Profound.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
+      ]
+    },
+    {
+      "company": "Profound",
+      "role": "Software Engineer, Backend, Workflow Runner",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY / San Francisco, CA",
+      "source": "Ashby",
+      "jobLink": "https://jobs.ashbyhq.com/Profound/4c29c22e-c6fa-4bde-97ed-79edd5a96cea?departmentId=ff9a5ed0-40fd-481a-be99-bb7ea5ee8111&utm_source=paKr5qNkRZ",
+      "postingKey": "4c29c22e-c6fa-4bde-97ed-79edd5a96cea",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Profound/Software_Engineer_Backend_Workflow_Runner/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Profound/Software_Engineer_Backend_Workflow_Runner/Liam_Van_Resume/Liam_Van_Profound.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
+      ]
+    },
+    {
+      "company": "Profound",
+      "role": "Software Engineer, Fullstack",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY / San Francisco, CA / Buenos Aires, Argentina",
+      "source": "Ashby",
+      "jobLink": "https://jobs.ashbyhq.com/Profound/9b429dfb-bb80-4bd6-b996-e5dd3a96908e?departmentId=ff9a5ed0-40fd-481a-be99-bb7ea5ee8111&utm_source=paKr5qNkRZ",
+      "postingKey": "9b429dfb-bb80-4bd6-b996-e5dd3a96908e",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Profound/Software_Engineer_Fullstack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Profound/Software_Engineer_Fullstack/Liam_Van_Resume/Liam_Van_Profound.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27"
