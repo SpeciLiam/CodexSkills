@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T21:55:41.694080+00:00",
+  "generatedAt": "2026-04-28T22:01:48.859959+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,9 +7,9 @@
   "stats": {
     "kpis": {
       "total": 245,
-      "applied": 210,
-      "unapplied": 35,
-      "active": 191,
+      "applied": 218,
+      "unapplied": 27,
+      "active": 190,
       "rejected": 30,
       "interviewing": 3,
       "assessments": 2,
@@ -18,13 +18,13 @@
       "recruiterRows": 62,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 85.7,
-      "rejectionRate": 14.3
+      "applyRate": 89.0,
+      "rejectionRate": 13.8
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 174
+        "value": 182
       },
       {
         "name": "Rejected",
@@ -32,11 +32,11 @@
       },
       {
         "name": "Archived",
-        "value": 24
+        "value": 25
       },
       {
         "name": "Manual Apply Needed",
-        "value": 11
+        "value": 3
       },
       {
         "name": "Interviewing",
@@ -45,10 +45,6 @@
       {
         "name": "Online Assessment",
         "value": 2
-      },
-      {
-        "name": "Resume Tailored",
-        "value": 1
       }
     ],
     "sourceCounts": [
@@ -312,7 +308,7 @@
         "date": "2026-04-15",
         "cumulative": 150,
         "added": 9,
-        "applied": 8,
+        "applied": 9,
         "rejected": 1,
         "interviewing": 0
       },
@@ -344,7 +340,7 @@
         "date": "2026-04-27",
         "cumulative": 240,
         "added": 75,
-        "applied": 59,
+        "applied": 65,
         "rejected": 0,
         "interviewing": 1
       },
@@ -352,7 +348,7 @@
         "date": "2026-04-28",
         "cumulative": 245,
         "added": 5,
-        "applied": 4,
+        "applied": 5,
         "rejected": 0,
         "interviewing": 0
       }
@@ -5051,8 +5047,8 @@
     {
       "company": "First Resonance",
       "role": "Forward Deployed Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -5067,11 +5063,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28; Manual apply verified: Ashby form filled with tailored resume and visa support set No; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28; Manual apply verified: Ashby form filled with tailored resume and visa support set No; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28; Application submitted 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -5944,8 +5941,8 @@
     {
       "company": "Aurora",
       "role": "Software Engineer I, FinOps",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -5960,11 +5957,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Aurora Careers application 2026-04-27; Manual apply needed: embedded Aurora application form not automation-accessible 2026-04-27; Manual apply verified: custom embedded application flow remains blocker 2026-04-28; Manual apply verified: direct Greenhouse form filled with tailored resume, contact info, authorization/sponsorship, Mountain View onsite willingness, recent-grad/project/coding-language answers, LinkedIn source, website, LinkedIn profile, and demographics; submit clicked but page stayed on form with invisible reCAPTCHA/no confirmation 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Aurora Careers application 2026-04-27; Manual apply needed: embedded Aurora application form not automation-accessible 2026-04-27; Manual apply verified: custom embedded application flow remains blocker 2026-04-28; Manual apply verified: direct Greenhouse form filled with tailored resume, contact info, authorization/sponsorship, Mountain View onsite willingness, recent-grad/project/coding-language answers, LinkedIn source, website, LinkedIn profile, and demographics; submit clicked but page stayed on form with invisible reCAPTCHA/no confirmation 2026-04-28; Application submitted 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -7011,7 +7009,7 @@
       "company": "Ramp",
       "role": "Software Engineer, Banking",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -7026,11 +7024,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Manual apply needed: Ashby repeat application limit reached after submit attempt 2026-04-28; Manual apply verified: Ashby application still gated by reCAPTCHA/custom fields; prior repeat-limit blocker retained 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, payroll location, phone, and LinkedIn; submit attempt returned possible-spam blocker 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Manual apply needed: Ashby repeat application limit reached after submit attempt 2026-04-28; Manual apply verified: Ashby application still gated by reCAPTCHA/custom fields; prior repeat-limit blocker retained 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, payroll location, phone, and LinkedIn; submit attempt returned possible-spam blocker 2026-04-28; Archived: posting closed 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28",
         "2026-04-28"
@@ -7092,8 +7091,8 @@
     {
       "company": "Magnite",
       "role": "Engineer I, Automation and Custom Applications",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 7,
       "reachOut": false,
       "referral": "No",
@@ -7108,10 +7107,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: direct Magnite Workday application flow/account gate 2026-04-28",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: direct Magnite Workday application flow/account gate 2026-04-28; Application submitted 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -7563,8 +7563,8 @@
     {
       "company": "Palantir Technologies",
       "role": "Forward Deployed Software Engineer (New York)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -7579,10 +7579,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Palantir partner sharing acknowledgement and AI notetaker consent 2026-04-27; Manual apply verified: required Palantir free-response questions 2026-04-28; Manual apply verified: Lever form filled with tailored resume, Palantir free responses, partner sharing set No, AI notetaker consent set No; final submit blocked by hCaptcha overlay 2026-04-28",
+      "notes": "Manual apply needed: Palantir partner sharing acknowledgement and AI notetaker consent 2026-04-27; Manual apply verified: required Palantir free-response questions 2026-04-28; Manual apply verified: Lever form filled with tailored resume, Palantir free responses, partner sharing set No, AI notetaker consent set No; final submit blocked by hCaptcha overlay 2026-04-28; Application submitted 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -7590,8 +7591,8 @@
     {
       "company": "Profound",
       "role": "Forward Deployed Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 6,
       "reachOut": false,
       "referral": "No",
@@ -7606,10 +7607,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27; Manual apply verified: invisible reCAPTCHA present on Ashby application 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, LinkedIn, phone, sponsorship No, custom forward-deployed/AI workflow note, and New York location; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28",
+      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27; Manual apply verified: invisible reCAPTCHA present on Ashby application 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, LinkedIn, phone, sponsorship No, custom forward-deployed/AI workflow note, and New York location; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28; Application submitted 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -7617,8 +7619,8 @@
     {
       "company": "Profound",
       "role": "Software Engineer, Backend, Workflow Runner",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -7633,10 +7635,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27; Manual apply verified: invisible reCAPTCHA present on Ashby application 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, LinkedIn, phone, sponsorship No, custom workflow-runner note, and New York location; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28",
+      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27; Manual apply verified: invisible reCAPTCHA present on Ashby application 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, LinkedIn, phone, sponsorship No, custom workflow-runner note, and New York location; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28; Application submitted 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -7644,8 +7647,8 @@
     {
       "company": "Profound",
       "role": "Software Engineer, Fullstack",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -7660,10 +7663,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27; Manual apply verified: invisible reCAPTCHA present on Ashby application 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, LinkedIn, phone, sponsorship No, custom fullstack/AI workflow note, and New York location; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28",
+      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27; Manual apply verified: invisible reCAPTCHA present on Ashby application 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, LinkedIn, phone, sponsorship No, custom fullstack/AI workflow note, and New York location; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28; Application submitted 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -7801,8 +7805,8 @@
     {
       "company": "BlackRock",
       "role": "Associate, Full Stack Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -7817,9 +7821,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for BlackRock SMA Solutions full-stack platform role 2026-04-28; promoted React, TypeScript, Python, SQL, AWS, APIs, reliability, and product collaboration; did not claim Kubernetes ownership despite posting preference.",
+      "notes": "Tailored for BlackRock SMA Solutions full-stack platform role 2026-04-28; promoted React, TypeScript, Python, SQL, AWS, APIs, reliability, and product collaboration; did not claim Kubernetes ownership despite posting preference.; Application submitted 2026-04-28",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-28",
         "2026-04-28"
       ]
     }
