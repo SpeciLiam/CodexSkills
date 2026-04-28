@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T01:39:21.488668+00:00",
+  "generatedAt": "2026-04-28T02:09:09.688829+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,10 +7,10 @@
   "stats": {
     "kpis": {
       "total": 239,
-      "applied": 142,
-      "unapplied": 97,
-      "active": 192,
-      "rejected": 29,
+      "applied": 147,
+      "unapplied": 92,
+      "active": 191,
+      "rejected": 30,
       "interviewing": 2,
       "assessments": 2,
       "highFit": 174,
@@ -18,21 +18,21 @@
       "recruiterRows": 61,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 59.4,
+      "applyRate": 61.5,
       "rejectionRate": 20.4
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 107
+        "value": 111
       },
       {
         "name": "Manual Apply Needed",
-        "value": 81
+        "value": 76
       },
       {
         "name": "Rejected",
-        "value": 29
+        "value": 30
       },
       {
         "name": "Archived",
@@ -249,14 +249,14 @@
         "cumulative": 60,
         "added": 21,
         "applied": 14,
-        "rejected": 6,
+        "rejected": 7,
         "interviewing": 0
       },
       {
         "date": "2026-04-09",
         "cumulative": 72,
         "added": 12,
-        "applied": 10,
+        "applied": 11,
         "rejected": 1,
         "interviewing": 0
       },
@@ -272,7 +272,7 @@
         "date": "2026-04-11",
         "cumulative": 93,
         "added": 12,
-        "applied": 11,
+        "applied": 12,
         "rejected": 2,
         "interviewing": 0
       },
@@ -328,7 +328,7 @@
         "date": "2026-04-24",
         "cumulative": 165,
         "added": 9,
-        "applied": 5,
+        "applied": 7,
         "rejected": 0,
         "interviewing": 0
       },
@@ -336,7 +336,7 @@
         "date": "2026-04-27",
         "cumulative": 239,
         "added": 74,
-        "applied": 7,
+        "applied": 8,
         "rejected": 0,
         "interviewing": 0
       }
@@ -2574,8 +2574,8 @@
     {
       "company": "Glimpse",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -2590,10 +2590,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: custom accomplishment and role-fit questions 2026-04-27",
+      "notes": "Manual apply needed: custom accomplishment and role-fit questions 2026-04-27; Application submitted via Ashby with tailored Glimpse resume and custom AI/on-call accomplishment responses 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -3068,8 +3069,8 @@
     {
       "company": "The New York Times",
       "role": "Software Engineer, Scoop Core",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -3084,7 +3085,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/nadia-tiwari-28b1a5151/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Nadia Tiwari (Recruiter) 2026-04-25; Replaced company posting with direct Greenhouse application 2026-04-27; Manual apply needed: desired salary and final application submission confirmation 2026-04-27",
+      "notes": "LinkedIn invite sent to Nadia Tiwari (Recruiter) 2026-04-25; Replaced company posting with direct Greenhouse application 2026-04-27; Manual apply needed: desired salary and final application submission confirmation 2026-04-27; Application submitted via Greenhouse with tailored NYTimes resume and provided salary/source answers 2026-04-28",
       "noteLinks": [
         {
           "label": "Nadia Tiwari",
@@ -3094,7 +3095,8 @@
       "activityDates": [
         "2026-04-25",
         "2026-04-27",
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -3738,7 +3740,7 @@
       "company": "Clay",
       "role": "Software Engineer, Developer Experience (AI)",
       "applied": true,
-      "status": "Applied",
+      "status": "Rejected",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -3753,10 +3755,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-08",
+      "notes": "Application confirmation email received 2026-04-08; Rejection email received 2026-04-27",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-27"
       ]
     },
     {
@@ -5324,8 +5327,8 @@
     {
       "company": "Zettabyte",
       "role": "Software Engineer (New Grad)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -5340,7 +5343,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/tiana-cheng-277b66388/",
       "engineerContact": "David Ku",
       "engineerProfile": "https://www.linkedin.com/in/davidku/",
-      "notes": "LinkedIn invite sent to Tiana Cheng (Recruiter) 2026-04-25; LinkedIn invite sent to David Ku (Engineer) 2026-04-26; Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27",
+      "notes": "LinkedIn invite sent to Tiana Cheng (Recruiter) 2026-04-25; LinkedIn invite sent to David Ku (Engineer) 2026-04-26; Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Application submitted via Ashby with tailored Zettabyte resume 2026-04-28",
       "noteLinks": [
         {
           "label": "Tiana Cheng",
@@ -5355,14 +5358,15 @@
         "2026-04-25",
         "2026-04-26",
         "2026-04-27",
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
       "company": "Julius AI",
       "role": "Software Engineer - Product (New Grad)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -5377,7 +5381,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/vanshikaguptapm",
       "engineerContact": "Aleksandr Diamond",
       "engineerProfile": "https://www.linkedin.com/in/asdiamond/",
-      "notes": "LinkedIn invite sent to Vanshika Gupta 2026-04-25; LinkedIn invite sent to Aleksandr Diamond (Engineer) 2026-04-26; Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required favorite-project free response review and final application submission confirmation 2026-04-27",
+      "notes": "LinkedIn invite sent to Vanshika Gupta 2026-04-25; LinkedIn invite sent to Aleksandr Diamond (Engineer) 2026-04-26; Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required favorite-project free response review and final application submission confirmation 2026-04-27; Application submitted via Ashby with tailored Julius AI resume and AI incident-response project response 2026-04-28",
       "noteLinks": [
         {
           "label": "Vanshika Gupta",
@@ -5392,7 +5396,8 @@
         "2026-04-25",
         "2026-04-26",
         "2026-04-27",
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -6069,8 +6074,8 @@
     {
       "company": "Wonderschool",
       "role": "Early Career Software Engineer - Applied AI",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -6085,10 +6090,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn Easy Apply final submit confirmation 2026-04-27",
+      "notes": "Manual apply needed: LinkedIn Easy Apply final submit confirmation 2026-04-27; LinkedIn Easy Apply submitted with corrected email and tailored Wonderschool resume 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
