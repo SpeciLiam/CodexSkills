@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T16:27:04.678300+00:00",
+  "generatedAt": "2026-04-28T16:38:24.149030+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,8 +7,8 @@
   "stats": {
     "kpis": {
       "total": 244,
-      "applied": 183,
-      "unapplied": 61,
+      "applied": 184,
+      "unapplied": 60,
       "active": 189,
       "rejected": 30,
       "interviewing": 3,
@@ -18,17 +18,17 @@
       "recruiterRows": 62,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 75.0,
-      "rejectionRate": 16.4
+      "applyRate": 75.4,
+      "rejectionRate": 16.3
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 148
+        "value": 149
       },
       {
         "name": "Manual Apply Needed",
-        "value": 36
+        "value": 35
       },
       {
         "name": "Rejected",
@@ -336,7 +336,7 @@
         "date": "2026-04-27",
         "cumulative": 242,
         "added": 77,
-        "applied": 38,
+        "applied": 39,
         "rejected": 0,
         "interviewing": 1
       },
@@ -6810,8 +6810,8 @@
     {
       "company": "NBCUniversal",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6826,11 +6826,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct SmartRecruiters/Smartr application 2026-04-27; Manual apply needed: Smartr profile/application form error and required profile sections 2026-04-27; Manual apply verified: custom application flow remains blocker 2026-04-28; Manual apply verified: SmartRecruiters/Smartr application filled with tailored resume, parsed experience/education, contact details, postal code, LinkedIn, and website; required fields validated but Next button failed to advance reliably from profile page before final submission 2026-04-28; Manual apply verified: SmartRecruiters application handoff now presents DataDome verification/slider CAPTCHA in authenticated Chrome before application can continue 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct SmartRecruiters/Smartr application 2026-04-27; Manual apply needed: Smartr profile/application form error and required profile sections 2026-04-27; Manual apply verified: custom application flow remains blocker 2026-04-28; Manual apply verified: SmartRecruiters/Smartr application filled with tailored resume, parsed experience/education, contact details, postal code, LinkedIn, and website; required fields validated but Next button failed to advance reliably from profile page before final submission 2026-04-28; Manual apply verified: SmartRecruiters application handoff now presents DataDome verification/slider CAPTCHA in authenticated Chrome before application can continue 2026-04-28; Application submitted via SmartRecruiters with tailored NBCUniversal resume after DataDome verification was completed manually; profile, experience, education, contact info, LinkedIn, website, and required answers completed 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28",
         "2026-04-28"
