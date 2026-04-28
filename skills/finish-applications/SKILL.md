@@ -24,6 +24,15 @@ Markdown is authoritative. Use the cache only as a normalized read model and ref
 
 ## Start Command
 
+Start every new run by syncing local state and checking for unrelated work:
+
+```bash
+git pull --ff-only origin main
+git status --short
+```
+
+Do not stage unrelated untracked files. If `git pull` cannot fast-forward or the working tree has tracker/cache edits from a prior unfinished run, inspect them before applying or submitting anything.
+
 Refresh the cache first when it may be stale:
 
 ```bash
@@ -48,6 +57,12 @@ For JSON output:
 python3 skills/finish-applications/scripts/build_application_queue.py --limit 10 --format json
 ```
 
+For a longer unattended run, write the queue to `/tmp/application_queue.json` so progress can be resumed without re-reading the whole tracker:
+
+```bash
+python3 skills/finish-applications/scripts/build_application_queue.py --limit 120 --format json > /tmp/application_queue.json
+```
+
 ## Workflow
 
 1. Refresh status first when emails may have changed.
@@ -56,6 +71,7 @@ python3 skills/finish-applications/scripts/build_application_queue.py --limit 10
 
 2. Build and inspect the queue.
    - Prioritize `Applied` false, existing resume PDF, fit score >= 8, and `Status` of either `Resume Tailored` or `Manual Apply Needed`.
+   - At the start of a fresh chat, choose the next row from the rebuilt queue rather than relying on prior conversation memory. Skip rows already marked `Applied`, `Rejected`, `Archived`, `Online Assessment`, `Interviewing`, or `Offer`.
    - Keep `Manual Apply Needed` rows in the same queue as still-needed applications. If the recorded reason is not a true manual blocker, retry the application path and replace the stale note with the real outcome.
    - Lower-fit rows can be processed only when the user asks for all unapplied applications or the high-fit queue is empty.
    - Skip rows whose posting link is missing, expired, or clearly no longer accepts applications. Report them as blocked.
@@ -69,6 +85,7 @@ python3 skills/finish-applications/scripts/build_application_queue.py --limit 10
    - Use existing factual profile information from `generic-resume/README.md` and the tailored resume when answering routine application fields.
    - If the form has a required cover letter field or upload, generate a tailored cover letter first using the `resume-tailor` skill's cover-letter workflow in the same company-specific resume folder, then upload or paste it as requested. Base the letter on the tailored resume, the job posting, and Liam's saved profile context; keep it truthful, concise, and role-specific.
    - If the cover letter field is optional and the form can be submitted without it, skip it unless the job posting explicitly asks for one or Liam has provided company-specific cover letter instructions.
+   - Keep one browser tab focused on the active application. If a role becomes manual, leave the tab open only when Liam needs the partially completed state; otherwise record the blocker and move on.
    - For LinkedIn-sourced rows marked `Manual apply needed: LinkedIn login`, first retry through the authenticated Chrome session:
      1. Open the LinkedIn job URL in Chrome.
      2. Verify Liam is signed in and the job is the same company/role.
@@ -111,6 +128,7 @@ python3 skills/gmail-application-refresh/scripts/update_application_status.py \
 
 7. Continue through the queue.
    - Batch user questions when possible instead of interrupting for every small field.
+   - Maintain a short in-run ledger of confirmed submissions, manual blockers, archived/closed postings, and generated cover letters. Use it for the final response and for deciding when the 5-application push threshold has been reached.
    - After tracker edits, refresh the visualizer cache:
 
 ```bash
