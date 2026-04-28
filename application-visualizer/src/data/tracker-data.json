@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T07:22:26.117796+00:00",
+  "generatedAt": "2026-04-28T15:07:44.119174+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,8 +7,8 @@
   "stats": {
     "kpis": {
       "total": 244,
-      "applied": 174,
-      "unapplied": 70,
+      "applied": 179,
+      "unapplied": 65,
       "active": 191,
       "rejected": 30,
       "interviewing": 3,
@@ -18,17 +18,17 @@
       "recruiterRows": 62,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 71.3,
-      "rejectionRate": 17.2
+      "applyRate": 73.4,
+      "rejectionRate": 16.8
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 138
+        "value": 143
       },
       {
         "name": "Manual Apply Needed",
-        "value": 48
+        "value": 43
       },
       {
         "name": "Rejected",
@@ -232,7 +232,7 @@
         "date": "2026-04-06",
         "cumulative": 29,
         "added": 29,
-        "applied": 25,
+        "applied": 26,
         "rejected": 8,
         "interviewing": 1
       },
@@ -336,7 +336,7 @@
         "date": "2026-04-27",
         "cumulative": 242,
         "added": 77,
-        "applied": 30,
+        "applied": 34,
         "rejected": 0,
         "interviewing": 1
       },
@@ -842,7 +842,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/johnstoecker/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Raquel Gonzalez, Cruz Gonzalez, Kristin Jue, Amelia Jones, Febin Bellamy, Matthew Negasi, and John Stoecker 2026-04-25; Replaced closed LinkedIn posting with Greenhouse role 2026-04-27; Manual apply needed: required Clever culture-tenet free response 2026-04-27; Manual apply verified: reCAPTCHA present on application flow 2026-04-28",
+      "notes": "LinkedIn invite sent to Raquel Gonzalez, Cruz Gonzalez, Kristin Jue, Amelia Jones, Febin Bellamy, Matthew Negasi, and John Stoecker 2026-04-25; Replaced closed LinkedIn posting with Greenhouse role 2026-04-27; Manual apply needed: required Clever culture-tenet free response 2026-04-27; Manual apply verified: reCAPTCHA present on application flow 2026-04-28; Manual apply verified: Greenhouse embed form filled with tailored resume, Seattle location, sponsorship No, LinkedIn/source, custom Always a Student culture-tenet response, Kubernetes Yes, and demographic selections; all required fields validated but submit attempt stayed on form with embedded reCAPTCHA/no confirmation 2026-04-28",
       "noteLinks": [
         {
           "label": "Raquel Gonzalez",
@@ -877,6 +877,7 @@
         "2026-04-25",
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -3324,7 +3325,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/michaelarzate/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-12; LinkedIn invite sent to Michael Arzate (Recruiter) 2026-04-25",
+      "notes": "Application confirmation email received 2026-04-12; LinkedIn invite sent to Michael Arzate (Recruiter) 2026-04-25; Application confirmation email received 2026-04-28",
       "noteLinks": [
         {
           "label": "Michael Arzate",
@@ -3333,7 +3334,8 @@
       ],
       "activityDates": [
         "2026-04-12",
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-28"
       ]
     },
     {
@@ -3950,7 +3952,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/austin-lehn-43b9aba8",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Austin Lehn (Recruiter) 2026-04-26; Manual apply needed: Greenhouse verification did not complete after code 2026-04-27; Manual apply verified: login/verification gate remains blocker 2026-04-28",
+      "notes": "LinkedIn invite sent to Austin Lehn (Recruiter) 2026-04-26; Manual apply needed: Greenhouse verification did not complete after code 2026-04-27; Manual apply verified: login/verification gate remains blocker 2026-04-28; Manual apply verified: Stripe Greenhouse form filled with tailored resume and tailored cover letter; submit attempt triggered 8-character email verification code sent to liamvanpj@gmail.com before final submission 2026-04-28",
       "noteLinks": [
         {
           "label": "Austin Lehn",
@@ -3960,6 +3962,7 @@
       "activityDates": [
         "2026-04-26",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -4952,8 +4955,8 @@
     {
       "company": "Nuvo",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "",
@@ -4968,10 +4971,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: custom project and technology questions 2026-04-27; Manual apply verified: captcha gates and required custom fields present 2026-04-28",
+      "notes": "Manual apply needed: custom project and technology questions 2026-04-27; Manual apply verified: captcha gates and required custom fields present 2026-04-28; Application submitted via Gem with tailored resume, in-office NYC/SF confirmation Yes, and custom impressive-project plus OpenTelemetry technology responses 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -5046,11 +5050,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28; Manual apply verified: Ashby form filled with tailored resume and visa support set No; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6021,11 +6026,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Rechecked authenticated LinkedIn Easy Apply 2026-04-27; Application submitted via LinkedIn Easy Apply with liamvanpj@gmail.com 2026-04-27",
+      "notes": "Rechecked authenticated LinkedIn Easy Apply 2026-04-27; Application submitted via LinkedIn Easy Apply with liamvanpj@gmail.com 2026-04-27; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -6047,11 +6053,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Rechecked authenticated LinkedIn Easy Apply 2026-04-27; Application submitted via LinkedIn Easy Apply with liamvanpj@gmail.com and TradeForm tailored resume 2026-04-27",
+      "notes": "Rechecked authenticated LinkedIn Easy Apply 2026-04-27; Application submitted via LinkedIn Easy Apply with liamvanpj@gmail.com and TradeForm tailored resume 2026-04-27; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -6260,11 +6267,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Rechecked authenticated LinkedIn Easy Apply 2026-04-27; Manual apply needed: LinkedIn Easy Apply final submit confirmation 2026-04-27; Application submitted via LinkedIn Easy Apply with corrected email liamvanpj@gmail.com, tailored Asha Health resume, Bachelor's Degree answer, and follow/top-choice unchecked 2026-04-28",
+      "notes": "Rechecked authenticated LinkedIn Easy Apply 2026-04-27; Manual apply needed: LinkedIn Easy Apply final submit confirmation 2026-04-27; Application submitted via LinkedIn Easy Apply with corrected email liamvanpj@gmail.com, tailored Asha Health resume, Bachelor's Degree answer, and follow/top-choice unchecked 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6391,11 +6399,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Reval application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Application submitted via Reval form with tailored resume and routine authorization/location answers 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Reval application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Application submitted via Reval form with tailored resume and routine authorization/location answers 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6429,8 +6438,8 @@
     {
       "company": "Underdog.io",
       "role": "Full Stack Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6445,11 +6454,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with Underdog candidate network application 2026-04-27; Manual apply needed: required hiring-network preference profile and non-role-specific application flow 2026-04-27; Manual apply verified: non-role-specific hiring-network preference profile required 2026-04-28",
+      "notes": "Replaced LinkedIn posting with Underdog candidate network application 2026-04-27; Manual apply needed: required hiring-network preference profile and non-role-specific application flow 2026-04-27; Manual apply verified: non-role-specific hiring-network preference profile required 2026-04-28; Submitted Underdog.io hiring-network application with tailored resume; confirmation page says check inbox to finish account setup 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6525,11 +6535,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct company application 2026-04-27; Manual apply needed: anti-AI custom questions and honeypot checkbox 2026-04-27; Manual apply verified: anti-AI/custom question flow remains blocker 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct company application 2026-04-27; Manual apply needed: anti-AI custom questions and honeypot checkbox 2026-04-27; Manual apply verified: anti-AI/custom question flow remains blocker 2026-04-28; Manual apply verified: live Yuzu form requires candidate-authored Why Yuzu and hardest-project free responses with explicit no-AI instruction plus human/honeypot checkbox before submission 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6606,19 +6617,20 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Application submitted via Ashby with tailored resume and routine profile/work authorization/location answers 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Application submitted via Ashby with tailored resume and routine profile/work authorization/location answers 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
     {
       "company": "Chicago Trading Company",
       "role": "Software Engineer - Risk",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6633,11 +6645,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: required non-compete/employer details and embedded reCAPTCHA 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: required non-compete/employer details and embedded reCAPTCHA 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28; Application submitted via Greenhouse with tailored resume and completed CTC-specific employment, relocation, authorization, FINRA/licensing, non-compete, education, and experience questions 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6660,19 +6673,20 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required salary and proud-product free-response questions 2026-04-27; Manual apply verified: required salary/proud-product free responses plus reCAPTCHA 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required salary and proud-product free-response questions 2026-04-27; Manual apply verified: required salary/proud-product free responses plus reCAPTCHA 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, salary, relocation/sponsorship, LinkedIn, referral, and proud-product response; submit attempt returned 'We couldn't submit your application' possible-spam blocker 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
     {
       "company": "Slash",
       "role": "Software Engineer, Growth",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6687,11 +6701,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required startup-fit/free-response question 2026-04-27; Manual apply verified: required startup-fit free response plus reCAPTCHA 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required startup-fit/free-response question 2026-04-27; Manual apply verified: required startup-fit free response plus reCAPTCHA 2026-04-28; Application submitted via Ashby with tailored Slash resume and custom startup-fit response 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6714,11 +6729,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: required Figma motivation free-response question 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: required Figma motivation free-response question 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28; Manual apply verified: live Greenhouse posting 5691911004 filled with tailored resume and custom Figma responses; submit attempt triggered 8-character email verification code sent to liamvanpj@gmail.com 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6741,11 +6757,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Application submitted via Ashby with tailored Whatnot resume, Seattle hub, LinkedIn source, work authorization yes/no sponsorship 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Application submitted via Ashby with tailored Whatnot resume, Seattle hub, LinkedIn source, work authorization yes/no sponsorship 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6930,19 +6947,20 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct SMBC Careers application 2026-04-27; Manual apply needed: SMBC careers profile/application flow 2026-04-27; Manual apply verified: company careers profile/application flow remains blocker 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct SMBC Careers application 2026-04-27; Manual apply needed: SMBC careers profile/application flow 2026-04-27; Manual apply verified: company careers profile/application flow remains blocker 2026-04-28; Manual apply verified: live SMBC Apply button redirects to SuccessFactors sign-in/account creation before application form 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
     {
       "company": "Astronomer",
       "role": "Software Engineer - Airflow Infrastructure",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6957,11 +6975,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required Python/Golang and Kubernetes experience free-response questions 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required Python/Golang and Kubernetes experience free-response questions 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28; Application submitted via Ashby with tailored resume, authorization/sponsorship answers, Oracle/current-location details, and custom Python/Golang plus Kubernetes experience responses 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6984,11 +7003,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Manual apply needed: Ashby repeat application limit reached after submit attempt 2026-04-28; Manual apply verified: Ashby application still gated by reCAPTCHA/custom fields; prior repeat-limit blocker retained 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Manual apply needed: Ashby repeat application limit reached after submit attempt 2026-04-28; Manual apply verified: Ashby application still gated by reCAPTCHA/custom fields; prior repeat-limit blocker retained 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, payroll location, phone, and LinkedIn; submit attempt returned possible-spam blocker 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -7115,11 +7135,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required salary, motivation, and startup-hours free-response questions 2026-04-27; Manual apply verified: required salary/motivation free responses plus reCAPTCHA 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required salary, motivation, and startup-hours free-response questions 2026-04-27; Manual apply verified: required salary/motivation free responses plus reCAPTCHA 2026-04-28; Manual apply verified: Ashby form filled with tailored resume and custom salary/motivation/startup-hours responses; submit attempt did not complete with invisible reCAPTCHA present 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -7195,11 +7216,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: required infrastructure experience-level question and final application submission confirmation 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: required infrastructure experience-level question and final application submission confirmation 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28; Manual apply verified: Greenhouse form filled with tailored resume, contact info, authorization Yes, and infrastructure experience 2-3 years; all required fields validated but submit attempt stayed on form with embedded reCAPTCHA/no confirmation 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -7222,11 +7244,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Rechecked authenticated LinkedIn Easy Apply 2026-04-27; Manual apply needed: LinkedIn Easy Apply final submit confirmation 2026-04-27; Manual apply verified: LinkedIn Easy Apply final submit confirmation required 2026-04-28; LinkedIn Easy Apply submitted 2026-04-28 with tailored Alexander Chapman resume and contact email liamvanpj@gmail.com; optional company follow unchecked",
+      "notes": "Rechecked authenticated LinkedIn Easy Apply 2026-04-27; Manual apply needed: LinkedIn Easy Apply final submit confirmation 2026-04-27; Manual apply verified: LinkedIn Easy Apply final submit confirmation required 2026-04-28; LinkedIn Easy Apply submitted 2026-04-28 with tailored Alexander Chapman resume and contact email liamvanpj@gmail.com; optional company follow unchecked; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -7250,11 +7273,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required salary/start-date, skill-rating, and motivation questions 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required salary/start-date, skill-rating, and motivation questions 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, start date, salary, sponsorship, English fluency, remote preference, skill ratings, and custom Dash0 motivation response; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -7357,11 +7381,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Rechecked authenticated LinkedIn Easy Apply 2026-04-27; Manual apply needed: LinkedIn Easy Apply final submit confirmation 2026-04-27; Application submitted via LinkedIn Easy Apply with tailored Epic Placements FDE resume, corrected email liamvanpj@gmail.com, and AI/RAG/customer-solution experience answers 2026-04-28",
+      "notes": "Rechecked authenticated LinkedIn Easy Apply 2026-04-27; Manual apply needed: LinkedIn Easy Apply final submit confirmation 2026-04-27; Application submitted via LinkedIn Easy Apply with tailored Epic Placements FDE resume, corrected email liamvanpj@gmail.com, and AI/RAG/customer-solution experience answers 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -7384,11 +7409,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Rechecked authenticated LinkedIn Easy Apply 2026-04-27; Manual apply needed: LinkedIn Easy Apply final submit confirmation 2026-04-27; Application submitted via LinkedIn Easy Apply with corrected email liamvanpj@gmail.com, tailored resume, and Node.js/JavaScript experience answers 2026-04-28",
+      "notes": "Rechecked authenticated LinkedIn Easy Apply 2026-04-27; Manual apply needed: LinkedIn Easy Apply final submit confirmation 2026-04-27; Application submitted via LinkedIn Easy Apply with corrected email liamvanpj@gmail.com, tailored resume, and Node.js/JavaScript experience answers 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -7411,10 +7437,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Submitted on DoorDash Greenhouse 2026-04-28 with tailored DoorDash resume; confirmation page displayed application received",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Submitted on DoorDash Greenhouse 2026-04-28 with tailored DoorDash resume; confirmation page displayed application received; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -7515,10 +7542,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Palantir partner sharing acknowledgement and AI notetaker consent 2026-04-27; Manual apply verified: required Palantir free-response questions 2026-04-28",
+      "notes": "Manual apply needed: Palantir partner sharing acknowledgement and AI notetaker consent 2026-04-27; Manual apply verified: required Palantir free-response questions 2026-04-28; Manual apply verified: Lever form filled with tailored resume, Palantir free responses, partner sharing set No, AI notetaker consent set No; final submit blocked by hCaptcha overlay 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -7619,9 +7647,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application submitted via Ashby with refreshed tailored resume and routine profile/work authorization answers 2026-04-28. No outreach planned because posting asks applicants not to contact employees directly.",
+      "notes": "Application submitted via Ashby with refreshed tailored resume and routine profile/work authorization answers 2026-04-28. No outreach planned because posting asks applicants not to contact employees directly.; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -7644,9 +7673,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Direct Greenhouse URL discovered from LinkedIn 2026-04-28; Application submitted via Greenhouse with tailored resume and tailored cover letter 2026-04-28.",
+      "notes": "Direct Greenhouse URL discovered from LinkedIn 2026-04-28; Application submitted via Greenhouse with tailored resume and tailored cover letter 2026-04-28.; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -7670,10 +7700,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application submitted via Greenhouse with tailored resume and cover letter 2026-04-27.",
+      "notes": "Application submitted via Greenhouse with tailored resume and cover letter 2026-04-27.; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
