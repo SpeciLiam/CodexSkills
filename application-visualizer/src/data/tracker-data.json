@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T05:04:54.900299+00:00",
+  "generatedAt": "2026-04-28T05:11:02.692859+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,8 +7,8 @@
   "stats": {
     "kpis": {
       "total": 240,
-      "applied": 163,
-      "unapplied": 77,
+      "applied": 164,
+      "unapplied": 76,
       "active": 192,
       "rejected": 30,
       "interviewing": 3,
@@ -18,17 +18,17 @@
       "recruiterRows": 62,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 67.9,
-      "rejectionRate": 18.4
+      "applyRate": 68.3,
+      "rejectionRate": 18.3
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 127
+        "value": 128
       },
       {
         "name": "Manual Apply Needed",
-        "value": 60
+        "value": 59
       },
       {
         "name": "Rejected",
@@ -296,7 +296,7 @@
         "date": "2026-04-14",
         "cumulative": 141,
         "added": 21,
-        "applied": 17,
+        "applied": 18,
         "rejected": 2,
         "interviewing": 0
       },
@@ -1570,8 +1570,8 @@
     {
       "company": "TestSprite",
       "role": "Senior AI Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 6,
       "reachOut": false,
       "referral": "No",
@@ -1586,10 +1586,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: no application form visible on posting 2026-04-27",
+      "notes": "Manual apply needed: no application form visible on posting 2026-04-27; Application completed by Liam on TestSprite posting 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
