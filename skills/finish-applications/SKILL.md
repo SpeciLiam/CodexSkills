@@ -117,6 +117,8 @@ python3 skills/gmail-application-refresh/scripts/update_application_status.py \
 python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 ```
 
+   - Keep a running count of confirmed applications submitted since the last repository push. After every 5 confirmed applications, stage only the tracker/cache changes for those applications, commit them with a short application-status message, and push `main` so the deployed dashboard can refresh. If work stops before reaching 5, commit and push the confirmed tracker/cache updates before ending the run.
+
 ## Answering Form Questions
 
 Use the candidate profile and resume as evidence. Keep answers concise and truthful.
@@ -222,6 +224,7 @@ Ask instead of guessing for anything not evidenced. If a form has optional demog
 - Preserve recruiter and engineer contact fields.
 - If multiple tracker rows match the same company, pass `--posting-key` to the update script.
 - Refresh the dashboard cache after any tracker update.
+- Commit and push progress to `main` after every 5 confirmed applied jobs, and also before stopping if there are fewer than 5 unpushed confirmed applications. Do not include unrelated files such as generated drafts, writeups, or company artifacts unless they are part of the submitted application record.
 
 ## Final Response
 
