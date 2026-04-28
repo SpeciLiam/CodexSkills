@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-04-28T05:40:05.256529+00:00",
+  "generatedAt": "2026-04-28T06:05:44.437405+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
   },
   "stats": {
     "kpis": {
-      "total": 243,
-      "applied": 167,
+      "total": 244,
+      "applied": 168,
       "unapplied": 76,
-      "active": 195,
+      "active": 196,
       "rejected": 30,
       "interviewing": 3,
       "assessments": 2,
-      "highFit": 178,
-      "reachOut": 101,
+      "highFit": 179,
+      "reachOut": 102,
       "recruiterRows": 62,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 68.7,
-      "rejectionRate": 18.0
+      "applyRate": 68.9,
+      "rejectionRate": 17.9
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 131
+        "value": 132
       },
       {
         "name": "Manual Apply Needed",
@@ -50,7 +50,7 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 84
+        "value": 85
       },
       {
         "name": "Ashby",
@@ -112,7 +112,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 117
+        "value": 118
       },
       {
         "name": "Bay Area",
@@ -154,7 +154,7 @@
       },
       {
         "name": "AI/ML",
-        "value": 13
+        "value": 14
       },
       {
         "name": "Infra/Platform",
@@ -212,7 +212,7 @@
       },
       {
         "score": "10",
-        "count": 61
+        "count": 62
       }
     ],
     "targetCounts": [
@@ -334,15 +334,15 @@
       },
       {
         "date": "2026-04-27",
-        "cumulative": 241,
-        "added": 76,
-        "applied": 24,
+        "cumulative": 242,
+        "added": 77,
+        "applied": 25,
         "rejected": 0,
         "interviewing": 1
       },
       {
         "date": "2026-04-28",
-        "cumulative": 243,
+        "cumulative": 244,
         "added": 2,
         "applied": 2,
         "rejected": 0,
@@ -7614,6 +7614,31 @@
       "noteLinks": [],
       "activityDates": [
         "2026-04-27"
+      ]
+    },
+    {
+      "company": "Sartre Group",
+      "role": "Founding Software Engineer, NYC (onsite), AI-native consumer insurance",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York City Metropolitan Area",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4407183931/",
+      "postingKey": "4407183931",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Sartre Group/Founding_Software_Engineer_NYC_onsite_AI_native_consumer_insurance/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Sartre Group/Founding_Software_Engineer_NYC_onsite_AI_native_consumer_insurance/Liam_Van_Resume/Liam_Van_Sartre_Group.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn application status shows submitted 2026-04-28",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
       ]
     }
   ],
