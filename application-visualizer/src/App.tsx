@@ -293,7 +293,11 @@ function App() {
         );
       const matchesStatus =
         status === "All" ||
-        (status === NOT_APPLIED_FILTER ? !app.applied : app.status === status);
+        (
+          status === NOT_APPLIED_FILTER
+            ? !app.applied && app.status !== "Archived" && app.status !== "Rejected"
+            : app.status === status
+        );
       return matchesText && matchesStatus && app.fitScore >= minFit;
     });
   }, [query, status, minFit]);
