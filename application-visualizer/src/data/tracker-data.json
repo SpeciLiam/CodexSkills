@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T06:49:31.242479+00:00",
+  "generatedAt": "2026-04-28T07:01:53.507502+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,9 +7,9 @@
   "stats": {
     "kpis": {
       "total": 244,
-      "applied": 170,
-      "unapplied": 74,
-      "active": 193,
+      "applied": 171,
+      "unapplied": 73,
+      "active": 191,
       "rejected": 30,
       "interviewing": 3,
       "assessments": 2,
@@ -18,17 +18,17 @@
       "recruiterRows": 62,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 69.7,
-      "rejectionRate": 17.6
+      "applyRate": 70.1,
+      "rejectionRate": 17.5
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 134
+        "value": 135
       },
       {
         "name": "Manual Apply Needed",
-        "value": 54
+        "value": 51
       },
       {
         "name": "Rejected",
@@ -36,7 +36,7 @@
       },
       {
         "name": "Archived",
-        "value": 21
+        "value": 23
       },
       {
         "name": "Interviewing",
@@ -336,7 +336,7 @@
         "date": "2026-04-27",
         "cumulative": 242,
         "added": 77,
-        "applied": 27,
+        "applied": 28,
         "rejected": 0,
         "interviewing": 1
       },
@@ -3599,7 +3599,7 @@
       "company": "ByteDance",
       "role": "Software Development Engineer, Virtual Network",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 4,
       "reachOut": false,
       "referral": "",
@@ -3614,10 +3614,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Posting closed/no longer accepting applications verified on LinkedIn 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -5667,7 +5668,7 @@
       "company": "Adobe",
       "role": "2026 University Graduate - Software Development Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 4,
       "reachOut": false,
       "referral": "No",
@@ -5682,10 +5683,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Posting closed/no apply path visible on LinkedIn and no exact live Adobe apply URL found 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -5707,10 +5709,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: Adobe Workday application/account flow R162540 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -5732,10 +5735,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: direct Ashby application requires submit-time Google reCAPTCHA 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -6197,10 +6201,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: LinkedIn posting has no apply CTA/appears closed; alternate Built In listing requires account/login 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -7055,10 +7060,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: direct Magnite Workday application flow/account gate 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -7133,10 +7139,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: Gem application live but requires custom eligibility answers for 5 days/week Meatpacking NYC office, Java experience, 5+ years full-time programming, and cloud experience 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -7384,8 +7391,8 @@
     {
       "company": "DoorDash",
       "role": "Application Engineer - GTMT",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 5,
       "reachOut": false,
       "referral": "No",
@@ -7400,10 +7407,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Submitted on DoorDash Greenhouse 2026-04-28 with tailored DoorDash resume; confirmation page displayed application received",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
