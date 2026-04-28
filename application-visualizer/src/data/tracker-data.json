@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T19:24:34.227842+00:00",
+  "generatedAt": "2026-04-28T19:42:20.180503+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,8 +7,8 @@
   "stats": {
     "kpis": {
       "total": 245,
-      "applied": 197,
-      "unapplied": 48,
+      "applied": 202,
+      "unapplied": 43,
       "active": 191,
       "rejected": 30,
       "interviewing": 3,
@@ -18,13 +18,13 @@
       "recruiterRows": 62,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 80.4,
-      "rejectionRate": 15.2
+      "applyRate": 82.4,
+      "rejectionRate": 14.9
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 162
+        "value": 167
       },
       {
         "name": "Rejected",
@@ -36,7 +36,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 21
+        "value": 16
       },
       {
         "name": "Interviewing",
@@ -150,11 +150,11 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 150
+        "value": 149
       },
       {
         "name": "Backend",
-        "value": 30
+        "value": 31
       },
       {
         "name": "Full Stack",
@@ -344,7 +344,7 @@
         "date": "2026-04-27",
         "cumulative": 240,
         "added": 75,
-        "applied": 47,
+        "applied": 52,
         "rejected": 0,
         "interviewing": 1
       },
@@ -6527,28 +6527,27 @@
     },
     {
       "company": "Yuzu",
-      "role": "Product Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "role": "Software Engineer (Backend)",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
       "dateAdded": "2026-04-27",
-      "location": "New York, NY",
+      "location": "Flatiron, NYC",
       "source": "Company Site",
-      "jobLink": "https://yuzu.health/careers/875a76b8-fb1b-4fc0-9478-0127635ae322?utm_source=src%3Dlinkedin",
-      "postingKey": "875a76b8-fb1b-4fc0-9478-0127635ae322",
+      "jobLink": "https://yuzu.health/careers/7dbc14c4-0ff0-48c4-9df3-0e6a2357bab9",
+      "postingKey": "7dbc14c4-0ff0-48c4-9df3-0e6a2357bab9",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Yuzu/Product_Engineer/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Yuzu/Product_Engineer/Liam_Van_Resume/Liam_Van_Yuzu.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct company application 2026-04-27; Manual apply needed: anti-AI custom questions and honeypot checkbox 2026-04-27; Manual apply verified: anti-AI/custom question flow remains blocker 2026-04-28; Manual apply verified: live Yuzu form requires candidate-authored Why Yuzu and hardest-project free responses with explicit no-AI instruction plus human/honeypot checkbox before submission 2026-04-28",
+      "notes": "Replaced tracked Product Engineer posting with Software Engineer (Backend) posting 2026-04-28; role focuses on TypeScript, SvelteKit, NestJS, healthcare data structures, early-employee ownership, and in-person Flatiron NYC work. Manual apply needed: candidate-authored Why Yuzu and hardest-project free responses plus human/honeypot checkbox before submission 2026-04-28; Application submitted 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27",
-        "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -6666,8 +6665,8 @@
     {
       "company": "Tennr",
       "role": "Backend Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6682,11 +6681,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required salary and proud-product free-response questions 2026-04-27; Manual apply verified: required salary/proud-product free responses plus reCAPTCHA 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, salary, relocation/sponsorship, LinkedIn, referral, and proud-product response; submit attempt returned 'We couldn't submit your application' possible-spam blocker 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required salary and proud-product free-response questions 2026-04-27; Manual apply verified: required salary/proud-product free responses plus reCAPTCHA 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, salary, relocation/sponsorship, LinkedIn, referral, and proud-product response; submit attempt returned 'We couldn't submit your application' possible-spam blocker 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -6723,8 +6723,8 @@
     {
       "company": "Figma",
       "role": "Software Engineer, Full Stack",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6739,11 +6739,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: required Figma motivation free-response question 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28; Manual apply verified: live Greenhouse posting 5691911004 filled with tailored resume and custom Figma responses; submit attempt triggered 8-character email verification code sent to liamvanpj@gmail.com 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: required Figma motivation free-response question 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28; Manual apply verified: live Greenhouse posting 5691911004 filled with tailored resume and custom Figma responses; submit attempt triggered 8-character email verification code sent to liamvanpj@gmail.com 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -6893,8 +6894,8 @@
     {
       "company": "Uphold",
       "role": "Software Engineer - Trading Execution",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6909,13 +6910,14 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct BambooHR application 2026-04-27; Manual apply needed: required desired-pay field and anti-automation honeypot/reCAPTCHA fields 2026-04-27; Manual apply verified: required desired pay plus reCAPTCHA 2026-04-28; Manual apply verified: BambooHR form filled with tailored resume, legal address, Washington state, 2026-05-19 availability, desired pay, links, sponsorship No, work authorization Yes, hybrid NYC comfort Yes, and LinkedIn source; final submit reached 'Almost there! Please confirm you\u2019re not a robot' CAPTCHA gate 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct BambooHR application 2026-04-27; Manual apply needed: required desired-pay field and anti-automation honeypot/reCAPTCHA fields 2026-04-27; Manual apply verified: required desired pay plus reCAPTCHA 2026-04-28; Manual apply verified: BambooHR form filled with tailored resume, legal address, Washington state, 2026-05-19 availability, desired pay, links, sponsorship No, work authorization Yes, hybrid NYC comfort Yes, and LinkedIn source; final submit reached 'Almost there! Please confirm you\u2019re not a robot' CAPTCHA gate 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
         "2026-04-28",
         "2026-05-19",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6950,8 +6952,8 @@
     {
       "company": "SMBC Group",
       "role": "Software Engineer - Capital Markets",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6966,11 +6968,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct SMBC Careers application 2026-04-27; Manual apply needed: SMBC careers profile/application flow 2026-04-27; Manual apply verified: company careers profile/application flow remains blocker 2026-04-28; Manual apply verified: live SMBC Apply button redirects to SuccessFactors sign-in/account creation before application form 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct SMBC Careers application 2026-04-27; Manual apply needed: SMBC careers profile/application flow 2026-04-27; Manual apply verified: company careers profile/application flow remains blocker 2026-04-28; Manual apply verified: live SMBC Apply button redirects to SuccessFactors sign-in/account creation before application form 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
