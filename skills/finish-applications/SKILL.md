@@ -67,6 +67,8 @@ python3 skills/finish-applications/scripts/build_application_queue.py --limit 10
    - Use the row's `Job Link`, `Resume PDF`, company, role, location, and source.
    - Prefer the tailored resume path in `Resume PDF`; do not upload the generic resume unless the tracker row explicitly points to it.
    - Use existing factual profile information from `generic-resume/README.md` and the tailored resume when answering routine application fields.
+   - If the form has a required cover letter field or upload, generate a tailored cover letter first using the `resume-tailor` skill's cover-letter workflow in the same company-specific resume folder, then upload or paste it as requested. Base the letter on the tailored resume, the job posting, and Liam's saved profile context; keep it truthful, concise, and role-specific.
+   - If the cover letter field is optional and the form can be submitted without it, skip it unless the job posting explicitly asks for one or Liam has provided company-specific cover letter instructions.
    - For LinkedIn-sourced rows marked `Manual apply needed: LinkedIn login`, first retry through the authenticated Chrome session:
      1. Open the LinkedIn job URL in Chrome.
      2. Verify Liam is signed in and the job is the same company/role.
@@ -153,6 +155,35 @@ Use these as source material for short custom questions, but do not submit custo
 Preserve Liam's flow: keep applying with these defaults and only ask when there is a hard blocker such as login, 2FA, CAPTCHA, account creation, a legal signature/attestation beyond routine privacy acknowledgement, a salary/start-date/custom essay question, or a question whose answer cannot reasonably be derived from these standing answers.
 
 Fill every required factual field that can be answered from Liam's profile, resume, tracker, or standing answers. Leave optional free-text prompts like `Anything else?`, `Additional information`, or similar blank unless the tracker/profile already provides a precise answer. Treat anti-automation or AI-deterrent gates, including CAPTCHA, bot checks, forced login traps, or verification-only walls, as manual follow-up items for Liam instead of repeatedly attempting them.
+
+### Cover Letters
+
+When an application requires a cover letter upload or cover letter text:
+
+1. Use the existing `Resume Folder` from the tracker row and the cover-letter commands documented in `skills/resume-tailor/SKILL.md`.
+2. Create the letter in that folder with:
+
+```bash
+python3 skills/resume-tailor/scripts/create_cover_letter.py \
+  --dir "<company resume folder>" \
+  --company "<Company>" \
+  --role "<Role>" \
+  --why-interest "<2-3 sentences on why the role is a strong fit based on the job description and Liam's background>"
+```
+
+   The `--why-interest` value should be grounded in the posting and Liam's truthful project/work evidence.
+3. Render the PDF with:
+
+```bash
+python3 skills/resume-tailor/scripts/render_cover_letter_pdf.py \
+  --dir "<company resume folder>"
+```
+
+4. Upload the resulting PDF named `Liam_Van_<Company>_Cover_Letter.pdf` to the cover letter field when the form requests a file, or paste the generated letter text when the form requests text.
+5. Record in the tracker note that a tailored cover letter was submitted.
+
+Do not generate a cover letter for optional fields when the application accepts a resume-only submission, unless Liam has specifically asked for one for that company or role.
+If no cover letter field exists, skip this step and continue the application as normal.
 
 ### Manual Apply Criteria
 
