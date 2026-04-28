@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T00:40:25.758075+00:00",
+  "generatedAt": "2026-04-28T00:43:45.312588+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,8 +7,8 @@
   "stats": {
     "kpis": {
       "total": 239,
-      "applied": 136,
-      "unapplied": 103,
+      "applied": 137,
+      "unapplied": 102,
       "active": 192,
       "rejected": 29,
       "interviewing": 2,
@@ -18,17 +18,17 @@
       "recruiterRows": 61,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 56.9,
-      "rejectionRate": 21.3
+      "applyRate": 57.3,
+      "rejectionRate": 21.2
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 101
+        "value": 102
       },
       {
         "name": "Manual Apply Needed",
-        "value": 87
+        "value": 86
       },
       {
         "name": "Rejected",
@@ -280,7 +280,7 @@
         "date": "2026-04-12",
         "cumulative": 103,
         "added": 10,
-        "applied": 7,
+        "applied": 8,
         "rejected": 1,
         "interviewing": 0
       },
@@ -2185,8 +2185,8 @@
     {
       "company": "Maybern",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -2201,10 +2201,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: custom motivation question 2026-04-27",
+      "notes": "Manual apply needed: custom motivation question 2026-04-27; Application submitted 2026-04-28",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
