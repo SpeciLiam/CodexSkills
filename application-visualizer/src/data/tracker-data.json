@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T15:07:44.119174+00:00",
+  "generatedAt": "2026-04-28T16:14:21.587552+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,9 +7,9 @@
   "stats": {
     "kpis": {
       "total": 244,
-      "applied": 179,
-      "unapplied": 65,
-      "active": 191,
+      "applied": 183,
+      "unapplied": 61,
+      "active": 189,
       "rejected": 30,
       "interviewing": 3,
       "assessments": 2,
@@ -18,17 +18,17 @@
       "recruiterRows": 62,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 73.4,
-      "rejectionRate": 16.8
+      "applyRate": 75.0,
+      "rejectionRate": 16.4
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 143
+        "value": 148
       },
       {
         "name": "Manual Apply Needed",
-        "value": 43
+        "value": 36
       },
       {
         "name": "Rejected",
@@ -36,7 +36,7 @@
       },
       {
         "name": "Archived",
-        "value": 23
+        "value": 25
       },
       {
         "name": "Interviewing",
@@ -336,7 +336,7 @@
         "date": "2026-04-27",
         "cumulative": 242,
         "added": 77,
-        "applied": 34,
+        "applied": 38,
         "rejected": 0,
         "interviewing": 1
       },
@@ -4280,7 +4280,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/bryclausen/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Bryce Clausen (Recruiter) 2026-04-26; Manual apply needed: Microsoft account login 2026-04-27; Manual apply verified: Microsoft account/login gate and reCAPTCHA 2026-04-28",
+      "notes": "LinkedIn invite sent to Bryce Clausen (Recruiter) 2026-04-26; Manual apply needed: Microsoft account login 2026-04-27; Manual apply verified: Microsoft account/login gate and reCAPTCHA 2026-04-28; Manual apply verified: correct Microsoft Careers apply route for pid 1970393556643571 opened Software Engineer II form but requires Microsoft Careers sign-in or account creation before beginning application 2026-04-28",
       "noteLinks": [
         {
           "label": "Bryce Clausen",
@@ -4290,6 +4290,7 @@
       "activityDates": [
         "2026-04-26",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -4506,7 +4507,7 @@
       "company": "Plaid",
       "role": "Software Engineer",
       "applied": true,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "",
@@ -4521,12 +4522,14 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-07; Blocked on hCaptcha 2026-04-27; Manual apply needed: hCaptcha 2026-04-27",
+      "notes": "Application confirmation email received 2026-04-07; Blocked on hCaptcha 2026-04-27; Manual apply needed: hCaptcha 2026-04-27; Manual apply verified: Lever form filled with tailored resume, contact info, current company, profile links, sponsorship No, prior Plaid employment No, Plaid mission/fintech/product/AI interest selections, AI rating, NY office Yes, and EEO fields; final submit blocked by hCaptcha iframe overlay 2026-04-28; Restored applied status for previously confirmed LinkedIn Plaid row after duplicate direct Lever retry tracking 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-07",
         "2026-04-27",
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28",
+        "2026-04-28"
       ]
     },
     {
@@ -4728,7 +4731,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/angela-ching-1536a9a0/",
       "engineerContact": "Hanna Koh",
       "engineerProfile": "https://www.linkedin.com/in/hannakohxt/",
-      "notes": "LinkedIn invite sent to recruiter 2026-04-24; LinkedIn invite sent to engineer Hanna Koh 2026-04-24; LinkedIn invite sent to Hanna Koh (Engineer) 2026-04-24; Blocked on custom motivation question 2026-04-27; Manual apply needed: custom motivation question 2026-04-27; Manual apply verified: required motivation free-response 2026-04-28",
+      "notes": "LinkedIn invite sent to recruiter 2026-04-24; LinkedIn invite sent to engineer Hanna Koh 2026-04-24; LinkedIn invite sent to Hanna Koh (Engineer) 2026-04-24; Blocked on custom motivation question 2026-04-27; Manual apply needed: custom motivation question 2026-04-27; Manual apply verified: required motivation free-response 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, contact/location, LinkedIn, GitHub, tailored Notion motivation response, pronoun preference, full-stack preference, in-office acknowledgement, New York location interest, sponsorship No, LinkedIn source, 2024 graduation, and EEO fields; submit clicked but form stayed with hidden reCAPTCHA/no confirmation 2026-04-28",
       "noteLinks": [
         {
           "label": "Hanna Koh",
@@ -4745,6 +4748,7 @@
         "2026-04-24",
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -5206,11 +5210,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct YC Work at a Startup role 2026-04-27; Manual apply needed: Y Combinator Work at a Startup login/account application flow 2026-04-27; Manual apply verified: YC Work at a Startup login/account required 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct YC Work at a Startup role 2026-04-27; Manual apply needed: Y Combinator Work at a Startup login/account application flow 2026-04-27; Manual apply verified: YC Work at a Startup login/account required 2026-04-28; Manual apply verified: live YC job posting Apply to role redirects to account.ycombinator.com authentication before Work at a Startup application form 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -5552,7 +5557,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/miguel-chucaralao/",
       "engineerContact": "Animesh Fatehpuria",
       "engineerProfile": "https://www.linkedin.com/in/animesh-fatehpuria-087a51167/",
-      "notes": "LinkedIn invite sent to recruiter Miguel Chucaralao 2026-04-24; LinkedIn invite sent to recruiter Rico Curry 2026-04-25; LinkedIn invite sent to recruiter Cara Fishman 2026-04-25; LinkedIn invite sent to Animesh Fatehpuria (Engineer) 2026-04-26; Blocked on hCaptcha 2026-04-27; Manual apply needed: hCaptcha 2026-04-27; Manual apply verified: hCaptcha present on Lever form 2026-04-28",
+      "notes": "LinkedIn invite sent to recruiter Miguel Chucaralao 2026-04-24; LinkedIn invite sent to recruiter Rico Curry 2026-04-25; LinkedIn invite sent to recruiter Cara Fishman 2026-04-25; LinkedIn invite sent to Animesh Fatehpuria (Engineer) 2026-04-26; Blocked on hCaptcha 2026-04-27; Manual apply needed: hCaptcha 2026-04-27; Manual apply verified: hCaptcha present on Lever form 2026-04-28; Manual apply verified: Lever form filled with tailored resume, contact info, current company, profile links, sponsorship No, prior Plaid employment No, Plaid mission/fintech/product/AI interest selections, AI rating, NY office Yes, and EEO fields; final submit blocked by hCaptcha iframe overlay 2026-04-28",
       "noteLinks": [
         {
           "label": "Miguel Chucaralao",
@@ -5578,6 +5583,7 @@
         "2026-04-26",
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -5725,8 +5731,8 @@
     {
       "company": "Etched",
       "role": "Core Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 7,
       "reachOut": false,
       "referral": "No",
@@ -5741,10 +5747,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: direct Ashby application requires submit-time Google reCAPTCHA 2026-04-28",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: direct Ashby application requires submit-time Google reCAPTCHA 2026-04-28; Application submitted via direct Ashby posting e6416d04-da00-4917-a817-787b77c35650 with tailored resume and source LinkedIn 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -5767,7 +5774,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/shweta-r-mba-cdr/",
       "engineerContact": "Dharshan Tharumia",
       "engineerProfile": "https://www.linkedin.com/in/dharshan-tharumia/",
-      "notes": "LinkedIn invite sent to Shweta R. (Recruiter) 2026-04-26; LinkedIn invite sent to Dharshan Tharumia (Engineer) 2026-04-26; Replaced LinkedIn posting with direct Uber Careers application 2026-04-27; Manual apply needed: Uber Careers account sign-in or account creation 2026-04-27; Manual apply verified: Uber Careers sign-in/create-account gate 2026-04-28",
+      "notes": "LinkedIn invite sent to Shweta R. (Recruiter) 2026-04-26; LinkedIn invite sent to Dharshan Tharumia (Engineer) 2026-04-26; Replaced LinkedIn posting with direct Uber Careers application 2026-04-27; Manual apply needed: Uber Careers account sign-in or account creation 2026-04-27; Manual apply verified: Uber Careers sign-in/create-account gate 2026-04-28; Manual apply verified: role-specific Uber apply flow opened from posting 157787, but application page requires Uber Careers sign-in or account creation before any form fields are available 2026-04-28",
       "noteLinks": [
         {
           "label": "Shweta R.",
@@ -5783,6 +5790,7 @@
         "2026-04-26",
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -5935,11 +5943,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Aurora Careers application 2026-04-27; Manual apply needed: embedded Aurora application form not automation-accessible 2026-04-27; Manual apply verified: custom embedded application flow remains blocker 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Aurora Careers application 2026-04-27; Manual apply needed: embedded Aurora application form not automation-accessible 2026-04-27; Manual apply verified: custom embedded application flow remains blocker 2026-04-28; Manual apply verified: direct Greenhouse form filled with tailored resume, contact info, authorization/sponsorship, Mountain View onsite willingness, recent-grad/project/coding-language answers, LinkedIn source, website, LinkedIn profile, and demographics; submit clicked but page stayed on form with invisible reCAPTCHA/no confirmation 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -5962,7 +5971,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/taylormontello/",
       "engineerContact": "Kartik Prajapati",
       "engineerProfile": "https://www.linkedin.com/in/ktk-pjpt/",
-      "notes": "LinkedIn invite sent to Taylor Montello (Recruiter) 2026-04-26; LinkedIn invite sent to Kartik Prajapati (Engineer) 2026-04-26; Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: required Flexport technical/business challenge free response and reCAPTCHA 2026-04-27; Manual apply verified: required free-response plus reCAPTCHA 2026-04-28",
+      "notes": "LinkedIn invite sent to Taylor Montello (Recruiter) 2026-04-26; LinkedIn invite sent to Kartik Prajapati (Engineer) 2026-04-26; Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: required Flexport technical/business challenge free response and reCAPTCHA 2026-04-27; Manual apply verified: required free-response plus reCAPTCHA 2026-04-28; Manual apply verified: Greenhouse form filled with tailored resume, contact/location, LinkedIn, source LinkedIn, onsite SF willingness, authorization/sponsorship, prior-employment answer, custom technical-project response, and demographics; submit clicked but page stayed on form with reCAPTCHA/no confirmation 2026-04-28",
       "noteLinks": [
         {
           "label": "Taylor Montello",
@@ -5978,6 +5987,7 @@
         "2026-04-26",
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6089,8 +6099,8 @@
     {
       "company": "Tecla",
       "role": "Associate Member of Technical Staff",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 6,
       "reachOut": false,
       "referral": "No",
@@ -6105,10 +6115,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: LinkedIn Easy Apply reached required yearly salary expectation after correcting email and uploading tailored Tecla resume 2026-04-28",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: LinkedIn Easy Apply reached required yearly salary expectation after correcting email and uploading tailored Tecla resume 2026-04-28; Application submitted via LinkedIn Easy Apply with tailored Tecla resume, production/full-stack/AI experience answers (2/3/1 years), salary expectation 115000, and sponsorship No 2026-04-28; Confirmed tracker applied flag normalized after LinkedIn Easy Apply submission 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6195,7 +6207,7 @@
       "company": "Picogrid",
       "role": "Entry Level Software Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 7,
       "reachOut": false,
       "referral": "No",
@@ -6210,10 +6222,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: LinkedIn posting has no apply CTA/appears closed; alternate Built In listing requires account/login 2026-04-28",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: LinkedIn posting has no apply CTA/appears closed; alternate Built In listing requires account/login 2026-04-28; Archived: tracked entry-level software engineer posting is closed on Picogrid careers page and no longer listed on current Ashby board 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6331,8 +6344,8 @@
     {
       "company": "PowerMarket",
       "role": "Full Stack Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": false,
       "referral": "No",
@@ -6347,11 +6360,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with PowerMarket careers page 2026-04-27; Manual apply needed: email application requires cover letter to careers@powermarket.io 2026-04-27; Manual apply verified: login/account gate plus reCAPTCHA/custom fields 2026-04-28",
+      "notes": "Replaced LinkedIn posting with PowerMarket careers page 2026-04-27; Manual apply needed: email application requires cover letter to careers@powermarket.io 2026-04-27; Manual apply verified: login/account gate plus reCAPTCHA/custom fields 2026-04-28; Application submitted by email to careers@powermarket.io with tailored application packet containing resume and required cover letter 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6812,11 +6826,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct SmartRecruiters/Smartr application 2026-04-27; Manual apply needed: Smartr profile/application form error and required profile sections 2026-04-27; Manual apply verified: custom application flow remains blocker 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct SmartRecruiters/Smartr application 2026-04-27; Manual apply needed: Smartr profile/application form error and required profile sections 2026-04-27; Manual apply verified: custom application flow remains blocker 2026-04-28; Manual apply verified: SmartRecruiters/Smartr application filled with tailored resume, parsed experience/education, contact details, postal code, LinkedIn, and website; required fields validated but Next button failed to advance reliably from profile page before final submission 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6839,11 +6854,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Lever application 2026-04-27; Manual apply needed: hCaptcha on Spotify Lever final submit 2026-04-27; Manual apply verified: hCaptcha present on Lever form 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Lever application 2026-04-27; Manual apply needed: hCaptcha on Spotify Lever final submit 2026-04-27; Manual apply verified: hCaptcha present on Lever form 2026-04-28; Manual apply verified: Lever form filled with tailored resume, contact info, current location/company, LinkedIn, GitHub, portfolio, pronoun preference, and demographics; submit clicked but application stayed on form with hCaptcha/no confirmation 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -6893,11 +6909,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct BambooHR application 2026-04-27; Manual apply needed: required desired-pay field and anti-automation honeypot/reCAPTCHA fields 2026-04-27; Manual apply verified: required desired pay plus reCAPTCHA 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct BambooHR application 2026-04-27; Manual apply needed: required desired-pay field and anti-automation honeypot/reCAPTCHA fields 2026-04-27; Manual apply verified: required desired pay plus reCAPTCHA 2026-04-28; Manual apply verified: BambooHR form filled with tailored resume, legal address, Washington state, 2026-05-19 availability, desired pay, links, sponsorship No, work authorization Yes, hybrid NYC comfort Yes, and LinkedIn source; final submit reached 'Almost there! Please confirm you\u2019re not a robot' CAPTCHA gate 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
+        "2026-05-19",
         "2026-04-28"
       ]
     },
@@ -7032,10 +7050,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: Ashby application requires invisible reCAPTCHA and custom Stainless motivation text 2026-04-28",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: Ashby application requires invisible reCAPTCHA and custom Stainless motivation text 2026-04-28; Manual apply verified: direct Ashby form filled with tailored resume, LinkedIn, authorization/onsite Yes, and custom Stainless motivation/customer-developer-support responses; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -7147,8 +7166,8 @@
     {
       "company": "Bilt",
       "role": "Back End Engineer (All Levels)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 5,
       "reachOut": false,
       "referral": "No",
@@ -7163,10 +7182,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: Gem application live but requires custom eligibility answers for 5 days/week Meatpacking NYC office, Java experience, 5+ years full-time programming, and cloud experience 2026-04-28",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: Gem application live but requires custom eligibility answers for 5 days/week Meatpacking NYC office, Java experience, 5+ years full-time programming, and cloud experience 2026-04-28; Application submitted via direct Gem posting am9icG9zdDrhNAIZzLM9OvpaPkquH_AK with tailored resume, NYC in-office comfort Yes, work authorization Yes, prior employment No, sponsorship No, source selections, and Java/experience/cloud responses 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -7301,10 +7321,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: Breezy form live but requires expected salary range answer 2026-04-28",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: Breezy form live but requires expected salary range answer 2026-04-28; Manual apply verified: direct Marex Breezy form filled with tailored resume, contact/address, desired salary, authorization Yes, sponsorship No, salary range, EEO selections, and tailored cover-letter text; submit clicked after validation passed but form stayed open with no confirmation 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -7312,7 +7333,7 @@
       "company": "The Voleon Group",
       "role": "Software Engineer, DevOps",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 7,
       "reachOut": false,
       "referral": "No",
@@ -7327,10 +7348,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Replaced LinkedIn posting with direct Ashby application 2026-04-28; Manual apply verified: invisible reCAPTCHA present on Ashby form 2026-04-28",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Replaced LinkedIn posting with direct Ashby application 2026-04-28; Manual apply verified: invisible reCAPTCHA present on Ashby form 2026-04-28; Archived: direct Voleon Lever posting 9508bdf5-2ab1-44c3-bd80-2a7b58c6a1d0 now returns 404 and Voleon Lever board shows no open postings 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -7464,10 +7486,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: required Palantir free-response questions and AI notetaker consent 2026-04-27; Manual apply verified: required Palantir free-response questions 2026-04-28",
+      "notes": "Manual apply needed: required Palantir free-response questions and AI notetaker consent 2026-04-27; Manual apply verified: required Palantir free-response questions 2026-04-28; Manual apply verified: Lever form filled with tailored resume, profile links, language, offer-deadline/start-date, preferred locations, authorization/sponsorship, university/graduation/source, Palantir free responses, product preferences, AI-notetaker non-consent, veteran/disability fields and signature; final submit blocked by hCaptcha iframe overlay 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -7490,10 +7513,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: required Palantir free-response questions and AI notetaker consent 2026-04-27; Manual apply verified: required Palantir free-response questions 2026-04-28",
+      "notes": "Manual apply needed: required Palantir free-response questions and AI notetaker consent 2026-04-27; Manual apply verified: required Palantir free-response questions 2026-04-28; Manual apply verified: Lever form filled with tailored resume, profile links, language, offer-deadline/start-date, preferred locations, authorization/sponsorship, university/graduation/source, Palantir free responses, product preferences, AI-notetaker non-consent, veteran/disability fields and signature; final submit blocked by hCaptcha iframe overlay 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -7516,10 +7540,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: required Palantir free-response questions and AI notetaker consent 2026-04-27; Manual apply verified: required Palantir free-response questions 2026-04-28",
+      "notes": "Manual apply needed: required Palantir free-response questions and AI notetaker consent 2026-04-27; Manual apply verified: required Palantir free-response questions 2026-04-28; Manual apply verified: Lever form filled with tailored resume, profile links, language, offer-deadline/start-date, preferred locations, authorization/sponsorship, university/graduation/source, Palantir free responses, product preferences, AI-notetaker non-consent, veteran/disability fields and signature; final submit blocked by hCaptcha iframe overlay 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -7569,10 +7594,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27; Manual apply verified: invisible reCAPTCHA present on Ashby application 2026-04-28",
+      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27; Manual apply verified: invisible reCAPTCHA present on Ashby application 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, LinkedIn, phone, sponsorship No, custom forward-deployed/AI workflow note, and New York location; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -7595,10 +7621,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27; Manual apply verified: invisible reCAPTCHA present on Ashby application 2026-04-28",
+      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27; Manual apply verified: invisible reCAPTCHA present on Ashby application 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, LinkedIn, phone, sponsorship No, custom workflow-runner note, and New York location; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
@@ -7621,10 +7648,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27; Manual apply verified: invisible reCAPTCHA present on Ashby application 2026-04-28",
+      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27; Manual apply verified: invisible reCAPTCHA present on Ashby application 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, LinkedIn, phone, sponsorship No, custom fullstack/AI workflow note, and New York location; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28"
       ]
     },
