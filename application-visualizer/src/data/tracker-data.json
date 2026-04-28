@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T19:42:20.180503+00:00",
+  "generatedAt": "2026-04-28T19:48:35.965171+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
@@ -7,8 +7,8 @@
   "stats": {
     "kpis": {
       "total": 245,
-      "applied": 202,
-      "unapplied": 43,
+      "applied": 203,
+      "unapplied": 42,
       "active": 191,
       "rejected": 30,
       "interviewing": 3,
@@ -18,13 +18,13 @@
       "recruiterRows": 62,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 82.4,
-      "rejectionRate": 14.9
+      "applyRate": 82.9,
+      "rejectionRate": 14.8
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 167
+        "value": 168
       },
       {
         "name": "Rejected",
@@ -36,7 +36,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 16
+        "value": 15
       },
       {
         "name": "Interviewing",
@@ -344,7 +344,7 @@
         "date": "2026-04-27",
         "cumulative": 240,
         "added": 75,
-        "applied": 52,
+        "applied": 53,
         "rejected": 0,
         "interviewing": 1
       },
@@ -7039,8 +7039,8 @@
     {
       "company": "Stainless",
       "role": "Support Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 5,
       "reachOut": false,
       "referral": "No",
@@ -7055,10 +7055,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: Ashby application requires invisible reCAPTCHA and custom Stainless motivation text 2026-04-28; Manual apply verified: direct Ashby form filled with tailored resume, LinkedIn, authorization/onsite Yes, and custom Stainless motivation/customer-developer-support responses; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: Ashby application requires invisible reCAPTCHA and custom Stainless motivation text 2026-04-28; Manual apply verified: direct Ashby form filled with tailored resume, LinkedIn, authorization/onsite Yes, and custom Stainless motivation/customer-developer-support responses; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
