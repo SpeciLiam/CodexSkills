@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-04-28T22:01:48.859959+00:00",
+  "generatedAt": "2026-04-28T22:23:50.948153+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
   },
   "stats": {
     "kpis": {
-      "total": 245,
+      "total": 267,
       "applied": 218,
-      "unapplied": 27,
-      "active": 190,
+      "unapplied": 49,
+      "active": 212,
       "rejected": 30,
       "interviewing": 3,
       "assessments": 2,
-      "highFit": 179,
-      "reachOut": 102,
+      "highFit": 183,
+      "reachOut": 104,
       "recruiterRows": 62,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 89.0,
+      "applyRate": 81.6,
       "rejectionRate": 13.8
     },
     "statusCounts": [
@@ -33,6 +33,10 @@
       {
         "name": "Archived",
         "value": 25
+      },
+      {
+        "name": "Resume Tailored",
+        "value": 22
       },
       {
         "name": "Manual Apply Needed",
@@ -50,7 +54,7 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 86
+        "value": 108
       },
       {
         "name": "Ashby",
@@ -116,15 +120,15 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 118
+        "value": 123
       },
       {
         "name": "Bay Area",
-        "value": 77
+        "value": 90
       },
       {
         "name": "Other",
-        "value": 25
+        "value": 29
       },
       {
         "name": "Remote",
@@ -146,7 +150,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 149
+        "value": 153
       },
       {
         "name": "Backend",
@@ -157,19 +161,19 @@
         "value": 25
       },
       {
+        "name": "Forward Deployed",
+        "value": 24
+      },
+      {
         "name": "AI/ML",
         "value": 15
       },
       {
         "name": "Infra/Platform",
-        "value": 10
+        "value": 11
       },
       {
         "name": "Data",
-        "value": 7
-      },
-      {
-        "name": "Forward Deployed",
         "value": 7
       },
       {
@@ -192,11 +196,11 @@
       },
       {
         "score": "4",
-        "count": 4
+        "count": 5
       },
       {
         "score": "5",
-        "count": 12
+        "count": 28
       },
       {
         "score": "6",
@@ -204,19 +208,19 @@
       },
       {
         "score": "7",
-        "count": 25
+        "count": 26
       },
       {
         "score": "8",
-        "count": 80
+        "count": 82
       },
       {
         "score": "9",
-        "count": 37
+        "count": 38
       },
       {
         "score": "10",
-        "count": 62
+        "count": 63
       }
     ],
     "targetCounts": [
@@ -346,8 +350,8 @@
       },
       {
         "date": "2026-04-28",
-        "cumulative": 245,
-        "added": 5,
+        "cumulative": 267,
+        "added": 27,
         "applied": 5,
         "rejected": 0,
         "interviewing": 0
@@ -409,6 +413,12 @@
         "bestFit": 10
       },
       {
+        "company": "Scale AI",
+        "roles": 2,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "Procore Technologies",
         "roles": 2,
         "avgFit": 10.0,
@@ -436,6 +446,12 @@
         "company": "Notion",
         "roles": 2,
         "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
+        "company": "Reevo",
+        "roles": 2,
+        "avgFit": 9.5,
         "bestFit": 10
       },
       {
@@ -482,18 +498,6 @@
       },
       {
         "company": "Warner Bros. Discovery",
-        "roles": 1,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "PermitFlow",
-        "roles": 1,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Reevo",
         "roles": 1,
         "avgFit": 10.0,
         "bestFit": 10
@@ -7825,6 +7829,556 @@
       "noteLinks": [],
       "activityDates": [
         "2026-04-28",
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Reevo",
+      "role": "Builder - Software Engineer (New Grad)",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "Santa Clara, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4333169684/",
+      "postingKey": "4333169684",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Reevo/Builder_Software_Engineer_New_Grad/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Reevo/Builder_Software_Engineer_New_Grad/Liam_Van_Resume_2/Liam_Van_Reevo.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Reevo builder role 2026-04-28; emphasized product-focused execution, B2B SaaS-adjacent full-stack work, React/NestJS, Python/TypeScript, OpenSearch, API integrations, prompt design, and fast ambiguous delivery. Did not claim PostgreSQL or agentic-framework production experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Scale AI",
+      "role": "Software Engineer - New Grad",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "San Francisco Bay Area",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4297642437/",
+      "postingKey": "4297642437",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scale AI/Software_Engineer_New_Grad/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scale AI/Software_Engineer_New_Grad/Liam_Van_Resume_2/Liam_Van_Scale_AI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Scale AI new grad role 2026-04-28; emphasized AI product work, full-stack React/NestJS, Python/TypeScript, API integrations, data-processing workflows, large-scale validation, and RAG-adjacent LLM recommendations. Did not claim MongoDB production experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "NetApp",
+      "role": "NetApp Emerging Talent - Software Engineer (Cloud Storage)",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 7,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "San Jose, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4399975980/",
+      "postingKey": "4399975980",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/NetApp/NetApp_Emerging_Talent_Software_Engineer_Cloud_Storage/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/NetApp/NetApp_Emerging_Talent_Software_Engineer_Cloud_Storage/Liam_Van_Resume/Liam_Van_NetApp.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for NetApp cloud storage role 2026-04-28; emphasized GCP/OCI/AWS cloud integrations, API validation, automated testing, support, documentation, troubleshooting, and storage-adjacent Exascale workflow evidence. Did not claim Kubernetes, Terraform, Jenkins, Linux operations, or AI/ML framework experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Dirac, Inc.",
+      "role": "Forward Deployed Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4401461482/",
+      "postingKey": "4401461482",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Dirac, Inc./Forward_Deployed_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Dirac, Inc./Forward_Deployed_Software_Engineer/Liam_Van_Resume/Liam_Van_Dirac,_Inc..pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Dirac forward-deployed role 2026-04-28; emphasized customer-facing integrations, React/TypeScript full-stack work, APIs, distributed systems, deployment blockers, demos, manufacturing data experience, and AI-assisted workflows. Job poster: Jack Glickstein, Talent @ Dirac. Did not claim Go, CAD, PLM, ERP, or ITAR-specific work.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Plaud",
+      "role": "Software Engineer (Platform)- San Francisco",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4363065258/",
+      "postingKey": "4363065258",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Plaud/Software_Engineer_Platform_San_Francisco/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Plaud/Software_Engineer_Platform_San_Francisco/Liam_Van_Resume/Liam_Van_Plaud.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Plaud platform role 2026-04-28; emphasized backend platform ownership, standardized APIs, developer onboarding, auth/spec parsing, access-safety validation, GCP/OCI/AWS integrations, reliability, and AI product context. Did not claim OAuth 2.0 ownership, SDK production ownership, or multi-tenant architecture ownership beyond supported validation experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Orange Quarter",
+      "role": "Founding Forward Deployed Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4398257479/",
+      "postingKey": "4398257479",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Orange Quarter/Founding_Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Orange Quarter/Founding_Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Orange_Quarter.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Orange Quarter posting for stealth AI supply-chain startup 2026-04-28; emphasized forward-deployed customer ownership, applied AI, product integrations, custom feature delivery, data-processing workflows, technical demos, and high-ambiguity execution. Job poster: Drew Batteria, Seed-Series A Hiring Partner. Did not claim reinforcement-learning model training or supply-chain agent production ownership.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Arcadia",
+      "role": "Founding Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4375892878/",
+      "postingKey": "4375892878",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Arcadia/Founding_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Arcadia/Founding_Engineer/Liam_Van_Resume/Liam_Van_Arcadia.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Arcadia founding engineer role 2026-04-28; emphasized AI-first product engineering, React/TypeScript, Python services, LLM applications, workflow automation, backend integrations, data pipelines, cloud infrastructure, testing discipline, and high-ownership execution. Did not claim healthcare production experience or agent-orchestration framework ownership.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "LangChain",
+      "role": "Deployed Engineer (Los Angeles)",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 4,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "Los Angeles, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4384634511/",
+      "postingKey": "4384634511",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/LangChain/Deployed_Engineer_Los_Angeles/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/LangChain/Deployed_Engineer_Los_Angeles/Liam_Van_Resume/Liam_Van_LangChain.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for LangChain deployed engineer role 2026-04-28; emphasized production-facing AI systems, Python/JavaScript, LLM applications, AI-assisted workflow patterns, technical demos, reusable documentation, cloud/container experience, observability, and on-call ownership. Did not claim LangChain, LangGraph, LangSmith, Kubernetes, guardrail framework, or production agent deployment ownership.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Serval",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4404255604/",
+      "postingKey": "4404255604",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Serval/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Serval/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Serval.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Serval forward deployed engineer role 2026-04-28; emphasized customer-facing AI automation delivery, backend services and APIs, workflow automation, strategic pilots, reusable product capabilities, observability, reliability, and production support. Did not claim production agent deployment ownership or enterprise automation product ownership beyond supported AI-assisted workflow and integration experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Rise Technical",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "San Francisco Bay Area",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4402477578/",
+      "postingKey": "4402477578",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Rise Technical/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Rise Technical/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Rise_Technical.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Rise Technical forward deployed engineer AI infrastructure role 2026-04-28; emphasized customer-facing production readiness, Python and TypeScript, React/NestJS full-stack work, API integrations, AI-assisted testing, observability, reliability, debugging, and reusable deployment/validation tooling. Job poster: Luca Browning. Did not claim FastAPI, Next.js, LangChain, LlamaIndex, or production LLM gateway ownership.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Deepgram",
+      "role": "Forward Deployed Engineer, Deepgram for Restaurants",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4390284190/",
+      "postingKey": "4390284190",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Deepgram/Forward_Deployed_Engineer_Deepgram_for_Restaurants/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Deepgram/Forward_Deployed_Engineer_Deepgram_for_Restaurants/Liam_Van_Resume/Liam_Van_Deepgram.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Deepgram Forward Deployed Engineer, Restaurants role 2026-04-28; emphasized voice-AI-adjacent customer deployments, API integrations, AI-first workflow, production readiness, observability, on-call escalation, reusable validation tooling, documentation, and product feedback loops. Did not claim voice AI, STT/TTS, NLP, SDK, webhook, or restaurant POS integration ownership.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Skale",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4393462263/",
+      "postingKey": "4393462263",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Skale/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Skale/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Skale.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Skale forward deployed engineer role 2026-04-28; emphasized production AI-infrastructure adjacency, GCP/OCI integrations, observability, on-call reliability, AI-assisted API testing, and deployable LLM product experience. Did not claim model deployment, ML pipeline ownership, GPU systems, or inference optimization.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Comulate",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4334556419/",
+      "postingKey": "4334556419",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Comulate/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Comulate/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Comulate.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Comulate forward deployed engineer role 2026-04-28; emphasized customer workflow translation, scalable systems, AI-assisted API testing, Oracle production readiness, Caterpillar API/data workflows, and LLM product delivery. Did not claim insurance accounting, finance domain expertise, or direct enterprise customer ownership.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Bretton AI",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4388521326/",
+      "postingKey": "4388521326",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Bretton AI/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Bretton AI/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Bretton_AI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Bretton AI forward deployed engineer role 2026-04-28; emphasized backend/data integrations, cloud production readiness, API testing automation, regulated-environment care, and truthful LLM application evidence. Did not claim AML/BSA, banking integrations, compliance ownership, or production LLM agent deployment.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "OpenAI",
+      "role": "Forward Deployed Engineer (FDE) - SF",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4278857720/",
+      "postingKey": "4278857720",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OpenAI/Forward_Deployed_Engineer_FDE_SF/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OpenAI/Forward_Deployed_Engineer_FDE_SF/Liam_Van_Resume/Liam_Van_OpenAI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for OpenAI FDE role 2026-04-28; emphasized production-minded AI/full-stack engineering, cloud integrations, observability, AI-assisted API testing, LLM recommendation experience, reusable tooling, and customer/product feedback loops. Did not claim frontier model deployment, formal eval ownership, GRC ownership, or 5+ years experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Storm2",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "San Francisco Bay Area",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4405284190/",
+      "postingKey": "4405284190",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Storm2/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Storm2/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Storm2.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Storm2 forward deployed engineer posting for a YC-backed AI fintech startup 2026-04-28; emphasized production systems, APIs, integrations, debugging, data workflows, AI product evidence, and customer-facing communication. Did not claim fintech, ERP/accounting, billing, invoicing, collections, or Fortune 1000 deployment ownership.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Moment",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4386953210/",
+      "postingKey": "4386953210",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Moment/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Moment/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Moment.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Moment forward deployed engineer role 2026-04-28; emphasized APIs, solution design, demos/POC-adjacent product work, Oracle integration reliability, LLM product delivery, documentation, and repeatable validation. Did not claim trading systems, investment management, senior executive workshop ownership, or GTM ownership.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Mercor",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4405676405/",
+      "postingKey": "4405676405",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Mercor/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Mercor/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Mercor.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Mercor forward deployed engineer role 2026-04-28; emphasized production software engineering, cloud deployments, enterprise integrations, APIs/workflows, AI-assisted testing, observability, and ownership in ambiguous environments. Did not claim Go/Rust, direct enterprise client embedding, or Mercor human-intelligence domain experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "UMATR",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "New York, United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4402457792/",
+      "postingKey": "4402457792",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/UMATR/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/UMATR/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_UMATR.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for UMATR forward deployed engineer posting for unnamed well-funded U.S. startup 2026-04-28; emphasized Oracle/Caterpillar systems integration, APIs, data workflows, production deployments, operational visibility, Robot Framework, and AI-assisted testing. Did not claim aerospace, robotics, autonomy, hardware, Rust, or frequent customer-site deployment ownership.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Tavus",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4407862803/",
+      "postingKey": "4407862803",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tavus/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tavus/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Tavus.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Tavus forward deployed engineer role 2026-04-28; emphasized customer integration debugging, prototype/sample-app adjacent full-stack work, developer experience, docs, AI-assisted API testing, Fantasy Wizard integrations, and Oracle reliability. Did not claim SDK ownership, ML model training, video AI, WebRTC/media infrastructure, or Tavus-specific AI Human experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Acceler8 Talent",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4403705848/",
+      "postingKey": "4403705848",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Acceler8 Talent/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Acceler8 Talent/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Acceler8_Talent.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Acceler8 Talent forward deployed engineer posting for unnamed AI-native company 2026-04-28; emphasized systems integrations, data workflows, AI/product-facing delivery, Oracle production readiness, Caterpillar API work, and observability. Did not claim ML model training, production ML infrastructure, enterprise customer ownership, or real-time data platform ownership.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "Diligent",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4386795911/",
+      "postingKey": "4386795911",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Diligent/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Diligent/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Diligent.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Diligent forward deployed engineer role 2026-04-28; emphasized rapid prototypes, AI/LLM tools, APIs, cloud integrations, React/NestJS/OpenSearch product work, AI-assisted API testing, and business-facing technical clarity. Did not claim GRC domain expertise, formal pre-sales title, C-level presentation ownership, or business development ownership.",
+      "noteLinks": [],
+      "activityDates": [
         "2026-04-28"
       ]
     }
