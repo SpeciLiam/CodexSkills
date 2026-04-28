@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-04-28T05:11:02.692859+00:00",
+  "generatedAt": "2026-04-28T05:40:05.256529+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
   },
   "stats": {
     "kpis": {
-      "total": 240,
-      "applied": 164,
+      "total": 243,
+      "applied": 167,
       "unapplied": 76,
-      "active": 192,
+      "active": 195,
       "rejected": 30,
       "interviewing": 3,
       "assessments": 2,
-      "highFit": 175,
-      "reachOut": 98,
+      "highFit": 178,
+      "reachOut": 101,
       "recruiterRows": 62,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 68.3,
-      "rejectionRate": 18.3
+      "applyRate": 68.7,
+      "rejectionRate": 18.0
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 128
+        "value": 131
       },
       {
         "name": "Manual Apply Needed",
@@ -54,11 +54,11 @@
       },
       {
         "name": "Ashby",
-        "value": 64
+        "value": 65
       },
       {
         "name": "Greenhouse",
-        "value": 29
+        "value": 31
       },
       {
         "name": "Company Site",
@@ -112,7 +112,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 114
+        "value": 117
       },
       {
         "name": "Bay Area",
@@ -142,7 +142,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 148
+        "value": 151
       },
       {
         "name": "Backend",
@@ -204,7 +204,7 @@
       },
       {
         "score": "8",
-        "count": 78
+        "count": 80
       },
       {
         "score": "9",
@@ -212,7 +212,7 @@
       },
       {
         "score": "10",
-        "count": 60
+        "count": 61
       }
     ],
     "targetCounts": [
@@ -334,11 +334,19 @@
       },
       {
         "date": "2026-04-27",
-        "cumulative": 240,
-        "added": 75,
-        "applied": 23,
+        "cumulative": 241,
+        "added": 76,
+        "applied": 24,
         "rejected": 0,
         "interviewing": 1
+      },
+      {
+        "date": "2026-04-28",
+        "cumulative": 243,
+        "added": 2,
+        "applied": 2,
+        "rejected": 0,
+        "interviewing": 0
       }
     ],
     "topCompanies": [
@@ -415,6 +423,12 @@
         "bestFit": 10
       },
       {
+        "company": "Mirage",
+        "roles": 2,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "Notion",
         "roles": 2,
         "avgFit": 10.0,
@@ -476,12 +490,6 @@
       },
       {
         "company": "Reevo",
-        "roles": 1,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "EliseAI",
         "roles": 1,
         "avgFit": 10.0,
         "bestFit": 10
@@ -7527,6 +7535,82 @@
       "engineerContact": "",
       "engineerProfile": "",
       "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-27"
+      ]
+    },
+    {
+      "company": "Mirage",
+      "role": "Software Engineer, Early Career",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "New York, NY",
+      "source": "Ashby",
+      "jobLink": "https://jobs.ashbyhq.com/mirage/cbf278fd-84ec-48d9-8052-b76abb035ac7/application?utm_source=LEbxa7kWm6",
+      "postingKey": "cbf278fd-84ec-48d9-8052-b76abb035ac7",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Mirage/Software_Engineer_Early_Career/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Mirage/Software_Engineer_Early_Career/Liam_Van_Resume_2/Liam_Van_Mirage.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application submitted via Ashby with refreshed tailored resume and routine profile/work authorization answers 2026-04-28. No outreach planned because posting asks applicants not to contact employees directly.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "SeatGeek",
+      "role": "Software Engineer - New Grad",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-04-28",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/embed/job_app?for=seatgeek&gh_src=94e407181&token=7858968",
+      "postingKey": "7858968",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/SeatGeek/Software_Engineer_New_Grad/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/SeatGeek/Software_Engineer_New_Grad/Liam_Van_Resume/Liam_Van_SeatGeek.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Direct Greenhouse URL discovered from LinkedIn 2026-04-28; Application submitted via Greenhouse with tailored resume and tailored cover letter 2026-04-28.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-28",
+        "2026-04-28"
+      ]
+    },
+    {
+      "company": "DV Trading",
+      "role": "Software Developer (New York)",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-04-27",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/dvtrading/jobs/4687462005?gh_src=oqkfn62w5us",
+      "postingKey": "4687462005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DV Trading/Software_Developer_New_York/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DV Trading/Software_Developer_New_York/Liam_Van_Resume/Liam_Van_DV_Trading.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application submitted via Greenhouse with tailored resume and cover letter 2026-04-27.",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27"
