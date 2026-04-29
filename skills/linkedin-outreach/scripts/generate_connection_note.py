@@ -23,8 +23,8 @@ def recruiter_note(target_name: str, company: str, role: str) -> str:
     return (
         f"{greeting} I'm {DEFAULT_CANDIDATE_NAME}, and I have experience at "
         f"{DEFAULT_EXPERIENCE} working on the {DEFAULT_TEAM}. "
-        f"I'd love to connect and learn more about {company}'s {role} "
-        "role. Any insight would be greatly appreciated. Thanks, Liam"
+        f"I'd love to connect and learn more about {company}'s {role} role, "
+        "and I'm also open to other software roles that may be a fit. Thanks, Liam"
     )
 
 
@@ -79,11 +79,11 @@ def shrink_note(note: str, company: str, role: str, variant: str, target_name: s
             lambda: (
                 f"Hi {first_name(target_name)}," if target_name.strip() else "Hi,"
             )
-            + f" I'm Liam Van, with experience at {shorter_experience} on the {shortest_team}. I'd love to connect and learn more about {company}'s {role} role. Thanks, Liam",
+            + f" I'm Liam Van, with experience at {shorter_experience} on the {shortest_team}. I'd love to connect and learn about {company}'s {role} role, and I'm also open to other software roles that may fit. Thanks, Liam",
             lambda: (
                 f"Hi {first_name(target_name)}," if target_name.strip() else "Hi,"
             )
-            + f" I'm Liam Van, with experience at {shorter_experience} on the {shortest_team}. I'd love to learn more about {company}'s {role} role. Thanks, Liam",
+            + f" I'm Liam Van, with experience at {shorter_experience} on the {shortest_team}. I'd love to learn about {company}'s {role} role or other software roles that may fit. Thanks, Liam",
         ],
         "engineer": [
             lambda: (
