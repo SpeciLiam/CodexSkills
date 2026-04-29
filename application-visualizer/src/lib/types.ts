@@ -63,6 +63,7 @@ export type RecruiterBatch = {
   status: string;
   recruiterName: string;
   recruiterProfile: string;
+  recruiterPosition: string;
   route: string;
   connectionNote: string;
   approval: string;

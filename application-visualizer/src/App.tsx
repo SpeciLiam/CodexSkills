@@ -113,7 +113,7 @@ const PIPELINE_MODES = [
   {
     name: "Recruiter Batch",
     command: "python3 skills/linkedin-outreach-batch/scripts/build_recruiter_batch.py",
-    description: "Ask Codex to prepare every company that still needs LinkedIn recruiter outreach before a morning send pass. One action-time approval can cover the current approved batch.",
+    description: "Ask Codex to prepare every company that still needs LinkedIn recruiter outreach before a morning send pass. Add --contact-type engineer for the engineer/alumni lane.",
   },
   {
     name: "Engineer Lane",
@@ -161,13 +161,13 @@ const OPTIMAL_COMMAND_FLOW = [
     step: "5",
     name: "Batch recruiter outreach",
     command: "python3 skills/linkedin-outreach-batch/scripts/build_recruiter_batch.py",
-    note: "Use this before a 7 AM pass. Codex labels every company still missing recruiter outreach, drafts exact notes, and can send the approved batch after one action-time confirmation.",
+    note: "Use this before a 7 AM pass. Codex labels every company still missing recruiter outreach, drafts exact notes, and can send the approved batch after one action-time confirmation. Use --contact-type engineer for the engineer queue.",
   },
   {
     step: "6",
     name: "Send recruiter batch",
     command: "Use linkedin-outreach-batch: show Approved + Not reached out rows, confirm once, then try free InMail before Connect with note",
-    note: "The approval is batch-level, not per recruiter. If no confirmation arrives, Codex leaves the queue ready and does not send from LinkedIn.",
+    note: "The approval is batch-level, not per recruiter. After confirmation, Codex keeps going until the approved queue is done, you stop it, or LinkedIn/browser state blocks progress.",
   },
   {
     step: "7",
@@ -902,11 +902,14 @@ function RecruiterBatchBoard({ rows }: { rows: RecruiterBatch[] }) {
             <div>
               <strong>{row.company}</strong>
               <p>{row.role}</p>
-              <small>{row.recruiterName || "Needs recruiter label"}</small>
+              <small className="batch-contact">
+                {row.recruiterName || "Needs recruiter label"}
+                {row.recruiterPosition && <em>{row.recruiterPosition}</em>}
+              </small>
             </div>
             <BatchState row={row} />
             <b>{row.fitScore || "-"}</b>
-            {row.recruiterProfile ? <a href={row.recruiterProfile} target="_blank" rel="noreferrer"><ArrowUpRight size={17} /></a> : <span />}
+            {row.recruiterProfile ? <a href={row.recruiterProfile} target="_blank" rel="noreferrer" aria-label={`${row.recruiterName || row.company} LinkedIn`}><ArrowUpRight size={17} /></a> : <span />}
           </article>
         ))}
       </div>
@@ -1262,10 +1265,10 @@ function outreachPriority(app: Application, lane: "recruiter" | "engineer") {
 }
 
 function batchPriority(row: RecruiterBatch) {
-  const approvalBoost = row.approval.toLowerCase() === "approved" ? 40 : 0;
-  const labeledBoost = row.recruiterName && row.recruiterProfile ? 20 : 0;
+  const approvalBoost = row.approval.toLowerCase() === "approved" ? 2 : 0;
+  const labeledBoost = row.recruiterName && row.recruiterProfile ? 1 : 0;
   const blockedPenalty = ["skipped", "blocked"].includes(row.outcome.toLowerCase()) ? -80 : 0;
-  return row.fitScore * 10 + approvalBoost + labeledBoost + blockedPenalty;
+  return row.fitScore * 100 + approvalBoost + labeledBoost + blockedPenalty;
 }
 
 function buildOutreachContacts(app: Application, lane: "recruiter" | "engineer", prospects: Prospect[]) {

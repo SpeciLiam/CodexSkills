@@ -848,6 +848,23 @@ select option {
   white-space: nowrap;
 }
 
+.batch-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  color: #95a8bd;
+}
+
+.batch-contact em {
+  overflow: hidden;
+  max-width: 340px;
+  color: #e5edf7;
+  font-style: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .batch-row a {
   display: grid;
   place-items: center;

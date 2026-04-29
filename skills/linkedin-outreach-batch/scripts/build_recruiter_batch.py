@@ -12,26 +12,66 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[3]
 TRACKER_JSON = ROOT / "application-visualizer" / "src" / "data" / "tracker-data.json"
-BATCH_MD = ROOT / "application-trackers" / "linkedin-recruiter-batches.md"
 MAX_NOTE_LENGTH = 300
 
 
-COLUMNS = [
-    "Batch",
-    "Company",
-    "Role",
-    "Posting Key",
-    "Fit Score",
-    "Status",
-    "Recruiter Name",
-    "Recruiter Profile",
-    "Route",
-    "Connection Note",
-    "Approval",
-    "Outcome",
-    "Last Checked",
-    "Notes",
-]
+CONTACT_CONFIG = {
+    "recruiter": {
+        "output": ROOT / "application-trackers" / "linkedin-recruiter-batches.md",
+        "batch_prefix": "recruiter",
+        "title": "LinkedIn Recruiter Batch Tracker",
+        "heading": "Recruiter Batch",
+        "row_label": "recruiter",
+        "ready_label": "Labeled recruiters",
+        "missing_approval": "Needs recruiter",
+        "name_column": "Recruiter Name",
+        "profile_column": "Recruiter Profile",
+        "position_column": "Position",
+        "app_name_field": "recruiterContact",
+        "app_profile_field": "recruiterProfile",
+    },
+    "engineer": {
+        "output": ROOT / "application-trackers" / "linkedin-engineer-batches.md",
+        "batch_prefix": "engineer",
+        "title": "LinkedIn Engineer Batch Tracker",
+        "heading": "Engineer Batch",
+        "row_label": "engineer",
+        "ready_label": "Labeled engineers",
+        "missing_approval": "Needs engineer",
+        "name_column": "Engineer Name",
+        "profile_column": "Engineer Profile",
+        "position_column": "Position",
+        "app_name_field": "engineerContact",
+        "app_profile_field": "engineerProfile",
+    },
+}
+
+
+def columns_for(config: dict[str, str | Path]) -> list[str]:
+    return [
+        "Batch",
+        "Company",
+        "Role",
+        "Posting Key",
+        "Fit Score",
+        "Status",
+        str(config["name_column"]),
+        str(config["profile_column"]),
+        str(config["position_column"]),
+        "Route",
+        "Connection Note",
+        "Approval",
+        "Outcome",
+        "Last Checked",
+        "Notes",
+    ]
+
+
+def display_path(path: Path) -> str:
+    try:
+        return str(path.relative_to(ROOT))
+    except ValueError:
+        return str(path)
 
 
 SKIP_NOTE_PATTERNS = (
@@ -97,20 +137,20 @@ def clean_link_label(value: str) -> str:
     return match.group(1) if match else (value or "").strip()
 
 
-def render_table(rows: list[dict[str, str]]) -> str:
+def render_table(rows: list[dict[str, str]], columns: list[str]) -> str:
     output = [
-        "| " + " | ".join(COLUMNS) + " |",
-        "| " + " | ".join("---" for _ in COLUMNS) + " |",
+        "| " + " | ".join(columns) + " |",
+        "| " + " | ".join("---" for _ in columns) + " |",
     ]
     for row in rows:
-        output.append("| " + " | ".join(escape_cell(row.get(column, "")) for column in COLUMNS) + " |")
+        output.append("| " + " | ".join(escape_cell(row.get(column, "")) for column in columns) + " |")
     return "\n".join(output)
 
 
-def existing_rows(path: Path) -> dict[str, dict[str, str]]:
+def existing_rows(path: Path, heading: str) -> dict[str, dict[str, str]]:
     if not path.exists():
         return {}
-    rows = extract_table(path.read_text(encoding="utf-8"), "Recruiter Batch")
+    rows = extract_table(path.read_text(encoding="utf-8"), heading)
     return {row.get("Posting Key", ""): row for row in rows if row.get("Posting Key")}
 
 
@@ -119,8 +159,8 @@ def load_applications(path: Path) -> list[dict[str, Any]]:
     return payload.get("applications", [])
 
 
-def needs_recruiter(app: dict[str, Any]) -> bool:
-    if app.get("recruiterContact") or app.get("recruiterProfile"):
+def needs_contact(app: dict[str, Any], config: dict[str, str | Path]) -> bool:
+    if app.get(str(config["app_name_field"])) or app.get(str(config["app_profile_field"])):
         return False
     if str(app.get("status", "")).lower() in {"rejected", "archived"}:
         return False
@@ -172,16 +212,25 @@ def generate_note(company: str, role: str, recruiter_name: str) -> str:
     return templates[-1][: MAX_NOTE_LENGTH - 1].rstrip() + "…"
 
 
-def merge_row(app: dict[str, Any], existing: dict[str, str] | None, batch: str) -> dict[str, str]:
+def merge_row(
+    app: dict[str, Any],
+    existing: dict[str, str] | None,
+    batch: str,
+    config: dict[str, str | Path],
+) -> dict[str, str]:
     existing = existing or {}
-    recruiter_name = existing.get("Recruiter Name", "")
-    recruiter_profile = existing.get("Recruiter Profile", "")
+    name_column = str(config["name_column"])
+    profile_column = str(config["profile_column"])
+    position_column = str(config["position_column"])
+    contact_name = existing.get(name_column, "")
+    contact_profile = existing.get(profile_column, "")
+    contact_position = existing.get(position_column, "")
     route = existing.get("Route", "") or "try-free-inmail-then-connect-note"
-    approval = existing.get("Approval", "") or ("Needs approval" if recruiter_name and recruiter_profile else "Needs recruiter")
+    approval = existing.get("Approval", "") or ("Needs approval" if contact_name and contact_profile else str(config["missing_approval"]))
     outcome = existing.get("Outcome", "") or "Not reached out"
     note = existing.get("Connection Note", "")
     if not note or note == "TBD after recruiter is selected":
-        note = generate_note(str(app["company"]), str(app["role"]), recruiter_name) if recruiter_name else "TBD after recruiter is selected"
+        note = generate_note(str(app["company"]), str(app["role"]), contact_name) if contact_name else "TBD after contact is selected"
     return {
         "Batch": existing.get("Batch", "") or batch,
         "Company": str(app["company"]),
@@ -189,8 +238,9 @@ def merge_row(app: dict[str, Any], existing: dict[str, str] | None, batch: str) 
         "Posting Key": str(app["postingKey"]),
         "Fit Score": str(app.get("fitScore", "")),
         "Status": str(app.get("status", "")),
-        "Recruiter Name": recruiter_name,
-        "Recruiter Profile": recruiter_profile,
+        name_column: contact_name,
+        profile_column: contact_profile,
+        position_column: contact_position,
         "Route": route,
         "Connection Note": note,
         "Approval": approval,
@@ -200,56 +250,61 @@ def merge_row(app: dict[str, Any], existing: dict[str, str] | None, batch: str) 
     }
 
 
-def sort_key(row: dict[str, str]) -> tuple[int, int, str, str]:
+def sort_key(row: dict[str, str], config: dict[str, str | Path]) -> tuple[int, int, str, str]:
     fit = int(row["Fit Score"]) if row.get("Fit Score", "").isdigit() else 0
-    ready = 1 if row.get("Recruiter Name") and row.get("Recruiter Profile") else 0
-    return (-ready, -fit, row.get("Company", "").lower(), row.get("Role", "").lower())
+    ready = 1 if row.get(str(config["name_column"])) and row.get(str(config["profile_column"])) else 0
+    return (-fit, -ready, row.get("Company", "").lower(), row.get("Role", "").lower())
 
 
-def render_document(rows: list[dict[str, str]], batch: str) -> str:
-    ready = sum(1 for row in rows if row.get("Recruiter Name") and row.get("Recruiter Profile"))
+def render_document(rows: list[dict[str, str]], batch: str, config: dict[str, str | Path]) -> str:
+    ready = sum(1 for row in rows if row.get(str(config["name_column"])) and row.get(str(config["profile_column"])))
     approved = sum(1 for row in rows if row.get("Approval", "").lower() == "approved")
     sent = sum(1 for row in rows if row.get("Outcome", "").lower() == "sent")
     return "\n\n".join(
         [
-            "# LinkedIn Recruiter Batch Tracker",
+            f"# {config['title']}",
             (
                 f"Generated: {date.today().isoformat()} | Batch: {batch} | "
-                f"Rows: {len(rows)} | Labeled recruiters: {ready} | Approved: {approved} | Sent: {sent}"
+                f"Rows: {len(rows)} | {config['ready_label']}: {ready} | Approved: {approved} | Sent: {sent}"
             ),
-            "## Recruiter Batch",
-            render_table(rows),
+            f"## {config['heading']}",
+            render_table(rows, columns_for(config)),
             "",
         ]
     )
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Build or refresh the LinkedIn recruiter batch tracker.")
+    parser = argparse.ArgumentParser(description="Build or refresh a LinkedIn outreach batch tracker.")
     parser.add_argument("--tracker-json", type=Path, default=TRACKER_JSON)
-    parser.add_argument("--output", type=Path, default=BATCH_MD)
-    parser.add_argument("--batch", default=f"recruiter-{date.today().isoformat()}")
+    parser.add_argument("--output", type=Path)
+    parser.add_argument("--contact-type", choices=sorted(CONTACT_CONFIG), default="recruiter")
+    parser.add_argument("--batch")
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--min-fit", type=int, default=0)
-    parser.add_argument("--ready-only", action="store_true", help="Only keep rows with a recruiter name and profile.")
+    parser.add_argument("--ready-only", action="store_true", help="Only keep rows with a contact name and profile.")
     args = parser.parse_args()
 
-    existing = existing_rows(args.output)
-    apps = [app for app in load_applications(args.tracker_json) if needs_recruiter(app)]
+    config = CONTACT_CONFIG[args.contact_type]
+    output = args.output or Path(config["output"])
+    batch = args.batch or f"{config['batch_prefix']}-{date.today().isoformat()}"
+
+    existing = existing_rows(output, str(config["heading"]))
+    apps = [app for app in load_applications(args.tracker_json) if needs_contact(app, config)]
     apps = [app for app in apps if int(app.get("fitScore") or 0) >= args.min_fit]
     apps.sort(key=lambda app: (int(app.get("fitScore") or 0), str(app.get("company", "")).lower()), reverse=True)
     if args.limit > 0:
         apps = apps[: args.limit]
 
-    rows = [merge_row(app, existing.get(str(app["postingKey"])), args.batch) for app in apps]
+    rows = [merge_row(app, existing.get(str(app["postingKey"])), batch, config) for app in apps]
     if args.ready_only:
-        rows = [row for row in rows if row.get("Recruiter Name") and row.get("Recruiter Profile")]
-    rows.sort(key=sort_key)
+        rows = [row for row in rows if row.get(str(config["name_column"])) and row.get(str(config["profile_column"]))]
+    rows.sort(key=lambda row: sort_key(row, config))
 
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(render_document(rows, args.batch), encoding="utf-8")
-    print(f"Wrote {args.output.relative_to(ROOT)} with {len(rows)} recruiter batch rows.")
-    print(f"Labeled recruiters: {sum(1 for row in rows if row.get('Recruiter Name') and row.get('Recruiter Profile'))}")
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(render_document(rows, batch, config), encoding="utf-8")
+    print(f"Wrote {display_path(output)} with {len(rows)} {config['row_label']} batch rows.")
+    print(f"{config['ready_label']}: {sum(1 for row in rows if row.get(str(config['name_column'])) and row.get(str(config['profile_column'])))}")
     print(f"Approved: {sum(1 for row in rows if row.get('Approval', '').lower() == 'approved')}")
     return 0
 

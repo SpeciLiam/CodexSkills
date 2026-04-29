@@ -146,6 +146,7 @@ def normalize_recruiter_batch(row: dict[str, str]) -> dict[str, Any]:
         "status": clean_text(row.get("Status", "")) or "Unknown",
         "recruiterName": clean_text(row.get("Recruiter Name", "")),
         "recruiterProfile": first_link(row.get("Recruiter Profile", "")) or clean_text(row.get("Recruiter Profile", "")),
+        "recruiterPosition": clean_text(row.get("Position", "")),
         "route": clean_text(row.get("Route", "")),
         "connectionNote": clean_text(row.get("Connection Note", "")),
         "approval": clean_text(row.get("Approval", "")) or "Needs recruiter",
