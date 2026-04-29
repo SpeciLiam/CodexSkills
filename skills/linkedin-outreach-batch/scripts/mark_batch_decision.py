@@ -13,6 +13,9 @@ CONTACT_CONFIG = {
     "recruiter": {
         "path": ROOT / "application-trackers" / "linkedin-recruiter-batches.md",
         "heading": "Recruiter Batch",
+        "verified_heading": "Verified Recruiter Contacts (Needs approval)",
+        "needs_heading": "Needs Recruiter",
+        "needs_approval": "Needs recruiter",
         "name_column": "Recruiter Name",
         "profile_column": "Recruiter Profile",
         "position_column": "Position",
@@ -21,6 +24,9 @@ CONTACT_CONFIG = {
     "engineer": {
         "path": ROOT / "application-trackers" / "linkedin-engineer-batches.md",
         "heading": "Engineer Batch",
+        "verified_heading": "Verified Engineer Contacts (Needs approval)",
+        "needs_heading": "Needs Engineer",
+        "needs_approval": "Needs engineer",
         "name_column": "Engineer Name",
         "profile_column": "Engineer Profile",
         "position_column": "Position",
@@ -62,17 +68,23 @@ def extract_rows(markdown: str, heading: str) -> list[dict[str, str]]:
     lines = markdown.splitlines()
     for index, line in enumerate(lines):
         if line.strip() == f"## {heading}":
-            header_index = index + 1
-            while header_index < len(lines) and not lines[header_index].strip().startswith("|"):
-                header_index += 1
-            headers = split_row(lines[header_index])
-            row_index = header_index + 2
             rows: list[dict[str, str]] = []
-            while row_index < len(lines) and lines[row_index].strip().startswith("|"):
-                cells = split_row(lines[row_index])
-                if len(cells) < len(headers):
-                    cells += [""] * (len(headers) - len(cells))
-                rows.append(dict(zip(headers, cells[: len(headers)])))
+            row_index = index + 1
+            while row_index < len(lines) and not lines[row_index].strip().startswith("## "):
+                if (
+                    lines[row_index].strip().startswith("|")
+                    and row_index + 1 < len(lines)
+                    and re.match(r"^\|\s*:?-{3,}:?", lines[row_index + 1].strip())
+                ):
+                    headers = split_row(lines[row_index])
+                    row_index += 2
+                    while row_index < len(lines) and lines[row_index].strip().startswith("|"):
+                        cells = split_row(lines[row_index])
+                        if len(cells) < len(headers):
+                            cells += [""] * (len(headers) - len(cells))
+                        rows.append(dict(zip(headers, cells[: len(headers)])))
+                        row_index += 1
+                    continue
                 row_index += 1
             return rows
     return []
@@ -94,11 +106,34 @@ def render_table(rows: list[dict[str, str]], columns: list[str]) -> str:
 
 def replace_table(markdown: str, rows: list[dict[str, str]], config: dict[str, object]) -> str:
     heading = str(config["heading"])
-    pattern = re.compile(rf"(## {re.escape(heading)}\n)(?:\n?)(\|.*?(?:\n\|.*?)*)(?:\n\n|$)", re.DOTALL)
-    replacement = "\\1" + render_table(rows, columns_for(config)) + "\n\n"
+    columns = columns_for(config)
+    verified_rows = [row for row in rows if row.get("Approval") == "Needs approval"]
+    needs_rows = [row for row in rows if row.get("Approval") == str(config["needs_approval"])]
+    other_rows = [
+        row
+        for row in rows
+        if row.get("Approval") not in {"Needs approval", str(config["needs_approval"])}
+    ]
+    section_parts = [
+        f"## {heading}",
+        "",
+        f"### {config['verified_heading']}",
+        render_table(verified_rows, columns),
+        "",
+        f"### {config['needs_heading']}",
+        render_table(needs_rows, columns),
+    ]
+    if other_rows:
+        section_parts.extend(["", "### Other Decisions", render_table(other_rows, columns)])
+    replacement = "\n".join(section_parts).rstrip() + "\n"
+
+    pattern = re.compile(
+        rf"## {re.escape(heading)}\n.*?(?=\n## |\Z)",
+        re.DOTALL,
+    )
     if pattern.search(markdown):
         return pattern.sub(replacement, markdown, count=1)
-    return markdown.rstrip() + f"\n\n## {heading}\n" + render_table(rows, columns_for(config)) + "\n"
+    return markdown.rstrip() + "\n\n" + replacement
 
 
 def main() -> int:

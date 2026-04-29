@@ -49,7 +49,7 @@ def extract_tables(markdown: str) -> dict[str, list[dict[str, str]]]:
                     cells += [""] * (len(headers) - len(cells))
                 rows.append(dict(zip(headers, cells[: len(headers)])))
                 i += 1
-            tables[current_heading] = rows
+            tables.setdefault(current_heading, []).extend(rows)
             continue
         i += 1
     return tables
