@@ -569,8 +569,8 @@ function App() {
               <p>Fact-check labeled LinkedIn contacts before approval. Engineer is separate from recruiter.</p>
             </div>
             <div className="batch-board-grid">
-              <EngineerBatchBoard rows={engineerBatch} onOpen={() => setOpenBatchLane("engineer")} />
               <RecruiterBatchBoard rows={recruiterBatch} onOpen={() => setOpenBatchLane("recruiter")} />
+              <EngineerBatchBoard rows={engineerBatch} onOpen={() => setOpenBatchLane("engineer")} />
             </div>
           </section>
           <div className="outreach-lanes">

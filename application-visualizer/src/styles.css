@@ -730,7 +730,7 @@ select option {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .recruiter-list.compact {
@@ -841,6 +841,7 @@ select option {
 
 .recruiter-batch-board {
   display: grid;
+  grid-template-rows: auto 1fr;
   gap: 12px;
   margin-bottom: 14px;
   padding: 14px;
@@ -856,6 +857,10 @@ select option {
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 14px;
   align-items: start;
+}
+
+.recruiter-batch-board .batch-list {
+  align-content: start;
 }
 
 .recruiter-batch-board header span {
