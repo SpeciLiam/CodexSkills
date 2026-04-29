@@ -21,13 +21,13 @@ LinkedIn messages and connection requests are third-party communications from th
 python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 ```
 
-2. Build or refresh the batch tracker:
+2. Build or refresh the batch tracker for every company that still needs recruiter outreach:
 
 ```bash
-python3 skills/linkedin-outreach-batch/scripts/build_recruiter_batch.py --min-fit 8
+python3 skills/linkedin-outreach-batch/scripts/build_recruiter_batch.py
 ```
 
-This writes `application-trackers/linkedin-recruiter-batches.md`. It preserves existing recruiter labels, approval fields, outcomes, and notes while adding newly eligible tracker rows.
+This writes `application-trackers/linkedin-recruiter-batches.md`. It preserves existing recruiter labels, approval fields, outcomes, and notes while adding every non-rejected, non-archived tracker row where recruiter outreach is still open, even when `Reach Out` is false. Fit score is kept for sorting and context, not filtering.
 
 3. Fill recruiter labels in the batch tracker. Prefer current company recruiters, talent acquisition, university recruiters, technical recruiters, or hiring contacts. Use founders/people leads only when there is no recruiter path.
 

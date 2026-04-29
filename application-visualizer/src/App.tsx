@@ -112,8 +112,8 @@ const PIPELINE_MODES = [
   },
   {
     name: "Recruiter Batch",
-    command: "python3 skills/linkedin-outreach-batch/scripts/build_recruiter_batch.py --min-fit 8",
-    description: "Ask Codex to prepare labeled recruiter rows before a morning send pass. One action-time approval can cover the current approved batch.",
+    command: "python3 skills/linkedin-outreach-batch/scripts/build_recruiter_batch.py",
+    description: "Ask Codex to prepare every company that still needs LinkedIn recruiter outreach before a morning send pass. One action-time approval can cover the current approved batch.",
   },
   {
     name: "Engineer Lane",
@@ -160,8 +160,8 @@ const OPTIMAL_COMMAND_FLOW = [
   {
     step: "5",
     name: "Batch recruiter outreach",
-    command: "python3 skills/linkedin-outreach-batch/scripts/build_recruiter_batch.py --min-fit 8",
-    note: "Use this before a 7 AM pass. Codex labels recruiter rows, drafts exact notes, and can send the approved batch after one action-time confirmation.",
+    command: "python3 skills/linkedin-outreach-batch/scripts/build_recruiter_batch.py",
+    note: "Use this before a 7 AM pass. Codex labels every company still missing recruiter outreach, drafts exact notes, and can send the approved batch after one action-time confirmation.",
   },
   {
     step: "6",

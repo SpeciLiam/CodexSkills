@@ -120,8 +120,6 @@ def load_applications(path: Path) -> list[dict[str, Any]]:
 
 
 def needs_recruiter(app: dict[str, Any]) -> bool:
-    if not app.get("reachOut"):
-        return False
     if app.get("recruiterContact") or app.get("recruiterProfile"):
         return False
     if str(app.get("status", "")).lower() in {"rejected", "archived"}:
