@@ -43,7 +43,7 @@ import {
 } from "recharts";
 import rawData from "./data/tracker-data.json";
 import { hostFromUrl, percent, readableDate } from "./lib/format";
-import type { Application, Prospect, RecruiterBatch, TrackerData } from "./lib/types";
+import type { Application, EngineerBatch, Prospect, RecruiterBatch, TrackerData } from "./lib/types";
 
 const data = rawData as TrackerData;
 
@@ -340,6 +340,13 @@ function App() {
         .sort((a, b) => batchPriority(b) - batchPriority(a)),
     [],
   );
+  const engineerBatch = useMemo(
+    () =>
+      (data.engineerBatch || [])
+        .filter((row) => row.outcome.toLowerCase() !== "sent")
+        .sort((a, b) => engineerBatchPriority(b) - engineerBatchPriority(a)),
+    [],
+  );
 
   const radarData = useMemo(
     () => [
@@ -553,6 +560,7 @@ function App() {
         <section id="outreach" className="split tab-panel section-anchor">
         <Panel title="Outreach Flight Deck" icon={<Users />} info={INFO_COPY.recruiters} wide>
           <RecruiterBatchBoard rows={recruiterBatch} />
+          <EngineerBatchBoard rows={engineerBatch} />
           <div className="outreach-lanes">
             <OutreachLane
               lane="recruiter"
@@ -917,6 +925,44 @@ function RecruiterBatchBoard({ rows }: { rows: RecruiterBatch[] }) {
   );
 }
 
+function EngineerBatchBoard({ rows }: { rows: EngineerBatch[] }) {
+  const stats = data.stats.engineerBatch || { total: 0, labeled: 0, approved: 0, sent: 0, notReachedOut: 0, needsEngineer: 0 };
+  if (!rows.length && !stats.total) return null;
+  return (
+    <section className="recruiter-batch-board">
+      <header>
+        <div>
+          <span>Engineer batch</span>
+          <h4>Labeled, Not Reached Out</h4>
+          <p>Pre-run manifest for approved LinkedIn engineer and alumni outreach. Sent rows are recorded separately in the tracker.</p>
+        </div>
+        <div className="batch-counts">
+          <b>{stats.labeled}<small>labeled</small></b>
+          <b>{stats.approved}<small>approved</small></b>
+          <b>{stats.sent}<small>sent</small></b>
+        </div>
+      </header>
+      <div className="batch-list">
+        {rows.slice(0, 10).map((row) => (
+          <article className="batch-row" key={`engineer-batch-${row.postingKey}`}>
+            <div>
+              <strong>{row.company}</strong>
+              <p>{row.role}</p>
+              <small className="batch-contact">
+                <span>{row.engineerName || "Needs engineer label"}</span>
+                {row.engineerPosition && <em>{row.engineerPosition}</em>}
+              </small>
+            </div>
+            <EngineerBatchState row={row} />
+            <b>{row.fitScore || "-"}</b>
+            {row.engineerProfile ? <a href={row.engineerProfile} target="_blank" rel="noreferrer" aria-label={`${row.engineerName || row.company} LinkedIn`}><ArrowUpRight size={17} /></a> : <span />}
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function BatchState({ row }: { row: RecruiterBatch }) {
   const approval = row.approval.toLowerCase();
   const outcome = row.outcome.toLowerCase();
@@ -929,6 +975,24 @@ function BatchState({ row }: { row: RecruiterBatch }) {
     label = "Approved";
     tone = "approved";
   } else if (row.recruiterName && row.recruiterProfile) {
+    label = "Labeled";
+    tone = "labeled";
+  }
+  return <span className={`batch-state ${tone}`}>{label}</span>;
+}
+
+function EngineerBatchState({ row }: { row: EngineerBatch }) {
+  const approval = row.approval.toLowerCase();
+  const outcome = row.outcome.toLowerCase();
+  let label = "Research";
+  let tone = "research";
+  if (outcome === "skipped" || outcome === "blocked") {
+    label = row.outcome;
+    tone = "blocked";
+  } else if (approval === "approved") {
+    label = "Approved";
+    tone = "approved";
+  } else if (row.engineerName && row.engineerProfile) {
     label = "Labeled";
     tone = "labeled";
   }
@@ -1267,6 +1331,13 @@ function outreachPriority(app: Application, lane: "recruiter" | "engineer") {
 function batchPriority(row: RecruiterBatch) {
   const approvalBoost = row.approval.toLowerCase() === "approved" ? 2 : 0;
   const labeledBoost = row.recruiterName && row.recruiterProfile ? 1 : 0;
+  const blockedPenalty = ["skipped", "blocked"].includes(row.outcome.toLowerCase()) ? -80 : 0;
+  return row.fitScore * 100 + approvalBoost + labeledBoost + blockedPenalty;
+}
+
+function engineerBatchPriority(row: EngineerBatch) {
+  const approvalBoost = row.approval.toLowerCase() === "approved" ? 2 : 0;
+  const labeledBoost = row.engineerName && row.engineerProfile ? 1 : 0;
   const blockedPenalty = ["skipped", "blocked"].includes(row.outcome.toLowerCase()) ? -80 : 0;
   return row.fitScore * 100 + approvalBoost + labeledBoost + blockedPenalty;
 }

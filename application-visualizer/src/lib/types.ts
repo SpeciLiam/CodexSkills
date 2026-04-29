@@ -72,12 +72,31 @@ export type RecruiterBatch = {
   notes: string;
 };
 
+export type EngineerBatch = {
+  batch: string;
+  company: string;
+  role: string;
+  postingKey: string;
+  fitScore: number;
+  status: string;
+  engineerName: string;
+  engineerProfile: string;
+  engineerPosition: string;
+  route: string;
+  connectionNote: string;
+  approval: string;
+  outcome: string;
+  lastChecked: string;
+  notes: string;
+};
+
 export type TrackerData = {
   generatedAt: string;
   sourceFiles: {
     applications: string;
     outreach: string;
     recruiterBatch?: string;
+    engineerBatch?: string;
   };
   stats: {
     kpis: Record<string, number>;
@@ -107,9 +126,18 @@ export type TrackerData = {
       notReachedOut: number;
       needsRecruiter: number;
     };
+    engineerBatch?: {
+      total: number;
+      labeled: number;
+      approved: number;
+      sent: number;
+      notReachedOut: number;
+      needsEngineer: number;
+    };
   };
   applications: Application[];
   outreachQueue: OutreachQueue[];
   prospects: Prospect[];
   recruiterBatch?: RecruiterBatch[];
+  engineerBatch?: EngineerBatch[];
 };
