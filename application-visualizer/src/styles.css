@@ -856,6 +856,19 @@ select option {
   color: #95a8bd;
 }
 
+.batch-contact span {
+  overflow: hidden;
+  max-width: 220px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.batch-contact span::after {
+  content: "-";
+  margin-left: 6px;
+  color: #64748b;
+}
+
 .batch-contact em {
   overflow: hidden;
   max-width: 340px;

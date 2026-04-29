@@ -903,7 +903,7 @@ function RecruiterBatchBoard({ rows }: { rows: RecruiterBatch[] }) {
               <strong>{row.company}</strong>
               <p>{row.role}</p>
               <small className="batch-contact">
-                {row.recruiterName || "Needs recruiter label"}
+                <span>{row.recruiterName || "Needs recruiter label"}</span>
                 {row.recruiterPosition && <em>{row.recruiterPosition}</em>}
               </small>
             </div>
