@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 DEFAULT_PROFILE = {
-    "reach_out_threshold": 9,
+    "reach_out_threshold": 1,
     "base_score": 3,
     "weights": {
         "preferred_location": 2,
@@ -153,5 +153,7 @@ def score_application(row: dict[str, str], profile: dict) -> int:
     return max(1, min(10, score))
 
 
-def should_reach_out(score: int, profile: dict) -> bool:
-    return score >= int(profile.get("reach_out_threshold", 8))
+def should_reach_out(score: int, profile: dict, row: dict[str, str] | None = None) -> bool:
+    if row is not None and contains_any(row.get("Status", ""), profile.get("avoid_statuses", [])):
+        return False
+    return score >= int(profile.get("reach_out_threshold", 1))

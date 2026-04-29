@@ -79,6 +79,15 @@ def score(app: dict[str, Any]) -> tuple[int, str]:
     return fit * 10 + urgency, str(app.get("dateAdded", ""))
 
 
+def outreach_score(app: dict[str, Any]) -> tuple[int, str, str, str]:
+    return (
+        int(app.get("fitScore") or 0),
+        str(app.get("dateAdded", "")),
+        str(app.get("company", "")).lower(),
+        str(app.get("role", "")).lower(),
+    )
+
+
 def app_item(app: dict[str, Any], lane: str = "") -> dict[str, Any]:
     item = {
         "company": app.get("company", ""),
@@ -102,6 +111,7 @@ def build_plan(data: dict[str, Any], limit: int, mode: str = "all") -> dict[str,
 
     active_apps = [app for app in apps if active(app)]
     sorted_active = sorted(active_apps, key=score, reverse=True)
+    sorted_outreach = sorted(active_apps, key=outreach_score, reverse=True)
 
     apply_now = [
         app_item(app)
@@ -114,14 +124,14 @@ def build_plan(data: dict[str, Any], limit: int, mode: str = "all") -> dict[str,
 
     recruiter_outreach = [
         app_item(app, "recruiter")
-        for app in sorted_active
-        if app.get("reachOut") and not has_lane(app, "recruiter")
+        for app in sorted_outreach
+        if not has_lane(app, "recruiter")
     ][:limit]
 
     engineer_outreach = [
         app_item(app, "engineer")
-        for app in sorted_active
-        if app.get("reachOut") and not has_lane(app, "engineer")
+        for app in sorted_outreach
+        if not has_lane(app, "engineer")
     ][:limit]
 
     prep = [
@@ -142,7 +152,7 @@ def build_plan(data: dict[str, Any], limit: int, mode: str = "all") -> dict[str,
                 "jobLink": row.get("jobLink", ""),
             }
             for row in queue
-            if row.get("reachOut") and (int(row.get("prospectCount") or 0) < 3 or int(row.get("readyEmails") or 0) == 0)
+            if int(row.get("prospectCount") or 0) < 3 or int(row.get("readyEmails") or 0) == 0
         ],
         key=lambda row: (int(row.get("fitScore") or 0), -int(row.get("prospectCount") or 0)),
         reverse=True,

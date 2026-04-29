@@ -1,11 +1,11 @@
 ---
 name: linkedin-outreach
-description: Find the best LinkedIn person to reach out to for a tracked job application, usually after resume-tailor. Use when a role in application-trackers/applications.md has Reach Out enabled and you want recruiter-first outreach, University of Georgia alumni priority, connection-note drafting, and tracker updates after a LinkedIn invite is sent.
+description: Find the best LinkedIn person to reach out to for a tracked job application, usually after resume-tailor. Use when you want recruiter-first outreach, University of Georgia alumni priority, connection-note drafting, and tracker updates after a LinkedIn invite is sent.
 ---
 
 # LinkedIn Outreach
 
-Use this skill after `resume-tailor` has created or updated a tracker row, especially when `Reach Out` is `Yes`.
+Use this skill after `resume-tailor` has created or updated a tracker row.
 
 For full recruiting sessions, start with `recruiting-pipeline`; it will call this skill separately for recruiter and engineer lanes.
 
@@ -23,9 +23,9 @@ For faster sessions, recruiter outreach and engineer outreach can run as two par
 
 1. Start from the markdown tracker, not memory.
 2. Prioritize rows that:
-   - have `Reach Out` marked
    - are not `Rejected` or `Archived`
    - are missing either the recruiter lane or the engineer lane
+   - have the highest `Fit Score`
 3. For each role, aim for one recruiter contact and one engineer contact:
    - recruiter: role/company recruiter, talent acquisition, university recruiter, hiring contact
    - engineer: UGA alum engineer first, then likely team engineer, then relevant employee
@@ -103,8 +103,8 @@ The default candidate framing matches Liam Van:
 - `liamvanpj@gmail.com`
 - `6784887259`
 - Seattle, Washington
-- SWE at Oracle
-- OCI Google Cloud Integration team
+- experience at Oracle Cloud Infrastructure
+- GCP integration team
 - U.S. citizen
 - does not require sponsorship
 - not a veteran
@@ -165,7 +165,7 @@ This skill pairs naturally with `resume-tailor`:
 
 1. tailor the resume
 2. update the tracker
-3. if `Reach Out` is `Yes`, run this skill for both recruiter and engineer lanes
+3. run this skill for both recruiter and engineer lanes, ordered by `Fit Score`
 4. record every successful invite in the tracker so later Gmail and Notion refreshes do not need to guess
 
 ## Guardrails

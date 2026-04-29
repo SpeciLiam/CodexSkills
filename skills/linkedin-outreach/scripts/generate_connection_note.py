@@ -6,8 +6,8 @@ import argparse
 
 
 DEFAULT_CANDIDATE_NAME = "Liam Van"
-DEFAULT_EMPLOYER = "Oracle"
-DEFAULT_TEAM = "OCI's Google Cloud Integration team"
+DEFAULT_EXPERIENCE = "Oracle Cloud Infrastructure"
+DEFAULT_TEAM = "GCP integration team"
 MAX_LENGTH = 300
 
 
@@ -21,8 +21,9 @@ def first_name(name: str) -> str:
 def recruiter_note(target_name: str, company: str, role: str) -> str:
     greeting = f"Hi {first_name(target_name)}," if target_name.strip() else "Hi,"
     return (
-        f"{greeting} I'm {DEFAULT_CANDIDATE_NAME}, a SWE at {DEFAULT_EMPLOYER} on "
-        f"{DEFAULT_TEAM}. I'd love to connect and learn more about {company}'s {role} "
+        f"{greeting} I'm {DEFAULT_CANDIDATE_NAME}, and I have experience at "
+        f"{DEFAULT_EXPERIENCE} working on the {DEFAULT_TEAM}. "
+        f"I'd love to connect and learn more about {company}'s {role} "
         "role. Any insight would be greatly appreciated. Thanks, Liam"
     )
 
@@ -30,8 +31,9 @@ def recruiter_note(target_name: str, company: str, role: str) -> str:
 def engineer_note(target_name: str, company: str, role: str) -> str:
     greeting = f"Hi {first_name(target_name)}," if target_name.strip() else "Hi,"
     return (
-        f"{greeting} I'm {DEFAULT_CANDIDATE_NAME}, a SWE at {DEFAULT_EMPLOYER} on "
-        f"{DEFAULT_TEAM}. I'd love to connect and learn more about your experience at "
+        f"{greeting} I'm {DEFAULT_CANDIDATE_NAME}, and I have experience at "
+        f"{DEFAULT_EXPERIENCE} working on the {DEFAULT_TEAM}. "
+        f"I'd love to connect and learn more about your experience at "
         f"{company} and the {role} role. Thanks, Liam"
     )
 
@@ -39,8 +41,9 @@ def engineer_note(target_name: str, company: str, role: str) -> str:
 def general_note(target_name: str, company: str, role: str) -> str:
     greeting = f"Hi {first_name(target_name)}," if target_name.strip() else "Hi,"
     return (
-        f"{greeting} I'm {DEFAULT_CANDIDATE_NAME}, a SWE at {DEFAULT_EMPLOYER} on "
-        f"{DEFAULT_TEAM}. I'd love to connect and learn more about {company}'s {role} "
+        f"{greeting} I'm {DEFAULT_CANDIDATE_NAME}, and I have experience at "
+        f"{DEFAULT_EXPERIENCE} working on the {DEFAULT_TEAM}. "
+        f"I'd love to connect and learn more about {company}'s {role} "
         "opportunity. Thanks, Liam"
     )
 
@@ -68,39 +71,39 @@ def shrink_note(note: str, company: str, role: str, variant: str, target_name: s
 
     company, role = compact_company_role(company, role)
 
-    shorter_team = "OCI's Google Cloud Integration team"
-    shortest_team = "OCI"
+    shorter_experience = "OCI"
+    shortest_team = "GCP integration team"
 
     templates = {
         "recruiter": [
             lambda: (
                 f"Hi {first_name(target_name)}," if target_name.strip() else "Hi,"
             )
-            + f" I'm Liam Van, a SWE at Oracle on {shorter_team}. I'd love to connect and learn more about {company}'s {role} role. Thanks, Liam",
+            + f" I'm Liam Van, with experience at {shorter_experience} on the {shortest_team}. I'd love to connect and learn more about {company}'s {role} role. Thanks, Liam",
             lambda: (
                 f"Hi {first_name(target_name)}," if target_name.strip() else "Hi,"
             )
-            + f" I'm Liam Van, a SWE at Oracle on {shortest_team}. I'd love to connect and learn more about {company}'s {role} role. Thanks, Liam",
+            + f" I'm Liam Van, with experience at {shorter_experience} on the {shortest_team}. I'd love to learn more about {company}'s {role} role. Thanks, Liam",
         ],
         "engineer": [
             lambda: (
                 f"Hi {first_name(target_name)}," if target_name.strip() else "Hi,"
             )
-            + f" I'm Liam Van, a SWE at Oracle on {shorter_team}. I'd love to connect and learn more about your experience at {company} and the {role} role. Thanks, Liam",
+            + f" I'm Liam Van, with experience at {shorter_experience} on the {shortest_team}. I'd love to connect and learn more about your experience at {company} and the {role} role. Thanks, Liam",
             lambda: (
                 f"Hi {first_name(target_name)}," if target_name.strip() else "Hi,"
             )
-            + f" I'm Liam Van, a SWE at Oracle on {shortest_team}. I'd love to connect and learn more about your experience at {company} and the {role} role. Thanks, Liam",
+            + f" I'm Liam Van, with experience at {shorter_experience} on the {shortest_team}. I'd love to learn more about your experience at {company} and the {role} role. Thanks, Liam",
         ],
         "general": [
             lambda: (
                 f"Hi {first_name(target_name)}," if target_name.strip() else "Hi,"
             )
-            + f" I'm Liam Van, a SWE at Oracle on {shorter_team}. I'd love to connect and learn more about {company}'s {role} opportunity. Thanks, Liam",
+            + f" I'm Liam Van, with experience at {shorter_experience} on the {shortest_team}. I'd love to connect and learn more about {company}'s {role} opportunity. Thanks, Liam",
             lambda: (
                 f"Hi {first_name(target_name)}," if target_name.strip() else "Hi,"
             )
-            + f" I'm Liam Van, a SWE at Oracle on {shortest_team}. I'd love to connect and learn more about {company}'s {role} opportunity. Thanks, Liam",
+            + f" I'm Liam Van, with experience at {shorter_experience} on the {shortest_team}. I'd love to learn more about {company}'s {role} opportunity. Thanks, Liam",
         ],
     }
 

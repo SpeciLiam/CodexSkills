@@ -285,7 +285,7 @@ def main() -> int:
         new_row["Fit Score"] = str(score_application(new_row, profile))
 
     if not new_row["Reach Out"]:
-        new_row["Reach Out"] = "Yes" if should_reach_out(int(new_row["Fit Score"]), profile) else ""
+        new_row["Reach Out"] = "Yes" if should_reach_out(int(new_row["Fit Score"]), profile, new_row) else ""
 
     updated_rows: list[str] = []
     target_key = row_key(new_row)

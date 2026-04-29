@@ -233,7 +233,7 @@ def build_stats(applications: list[dict[str, Any]], prospects: list[dict[str, An
                 "jobLink": q["jobLink"],
             }
             for q in queues
-            if q["reachOut"] and (q["prospectCount"] < 3 or q["readyEmails"] == 0)
+            if q["prospectCount"] < 3 or q["readyEmails"] == 0
         ),
         key=lambda item: (item["fitScore"], -item["prospectCount"], item["readyEmails"]),
         reverse=True,

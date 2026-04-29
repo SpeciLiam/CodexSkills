@@ -18,7 +18,6 @@ from update_application_tracker import (  # type: ignore
     row_from_cells,
     split_row,
     tracker_path,
-    truthy,
 )
 from tracker_data_cache import load_cached_application_rows  # type: ignore
 
@@ -191,8 +190,6 @@ def main() -> int:
     company_filter = normalize(args.company)
     selected_rows: list[dict[str, str]] = []
     for row in source_rows:
-        if not truthy(row.get("Reach Out", "")):
-            continue
         if normalize(row.get("Status", "")) in EXCLUDED_STATUSES:
             continue
         if company_filter and normalize(row.get("Company", "")) != company_filter:

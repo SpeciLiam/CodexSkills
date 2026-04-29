@@ -19,7 +19,6 @@ from update_application_tracker import (  # type: ignore
     row_from_cells,
     split_row,
     tracker_path,
-    truthy,
 )
 from tracker_data_cache import load_cached_application_rows  # type: ignore
 
@@ -109,8 +108,6 @@ def filter_rows(
         if include_statuses and status not in include_statuses:
             continue
         if status in exclude_statuses:
-            continue
-        if not truthy(row.get("Reach Out", "")):
             continue
         if company_norm and normalize(row.get("Company", "")) != company_norm:
             continue

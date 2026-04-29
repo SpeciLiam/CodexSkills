@@ -50,7 +50,7 @@ def main() -> int:
         score = score_application(row, profile)
         row["Fit Score"] = str(score)
         if not args.respect_manual_reach_out or not row.get("Reach Out", "").strip():
-            row["Reach Out"] = "Yes" if should_reach_out(score, profile) else ""
+            row["Reach Out"] = "Yes" if should_reach_out(score, profile, row) else ""
         updated_rows.append(build_row(row))
 
     tracker.write_text(render_tracker(updated_rows))

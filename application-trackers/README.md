@@ -6,7 +6,7 @@ Current tracker:
 
 - `applications.md`: master tracker for tailored resumes and active job links
 - `notion-config.md`: the configured Notion parent page and database for mirrored tracking
-- `applications.md` should show `Total applications tracked: N` near the top, plus quick summary counts for applied, unapplied, rejected, archived, outreach targets, and high-fit roles
+- `applications.md` should show `Total applications tracked: N` near the top, plus quick summary counts for applied, unapplied, rejected, archived, outreach-eligible active roles, and high-fit roles
 
 Recommended Notion tracker:
 
@@ -18,7 +18,7 @@ Recommended Notion tracker:
 - `Applied` as a checkbox so completed applications show a clear green check
 - `Resume PDF` as a URL property
 - `Job Link` as a URL property
-- `Reach Out` as a checkbox for high-priority recruiter outreach targets
+- `Reach Out` as a checkbox for active roles eligible for recruiter and engineer outreach
 - `Fit Score` as a number property so you can sort or filter the strongest matches
 
 Suggested Notion properties:
@@ -64,7 +64,7 @@ Recommended fields:
 - `Company Resume`: click the company plus role label to open that tailored PDF directly
 - `Referral`: `No`, `Requested`, `Yes`, or the referrer name
 - `Fit Score`: 1 to 10 heuristic for overall fit and desirability
-- `Reach Out`: `Yes` for roles worth proactive recruiter outreach based on fit, geography, and company quality
+- `Reach Out`: `Yes` for active roles eligible for proactive recruiter and engineer outreach; queue priority comes from descending `Fit Score`
 - `Date Added`: when the role was first tracked
 - `Posting Key`: stable role-specific identifier derived from the job link so multiple roles at one company do not collide
 - `Location`: city, state, remote, or hybrid note
@@ -88,4 +88,4 @@ If you want the tracker to become more application-focused later, the most helpf
 - compensation range
 - interview stage notes
 
-Scoring preferences live in [scoring-profile.json](/Users/liamvan/Documents/Repos/CodexSkills/application-trackers/scoring-profile.json). The default profile biases toward New York roles, strong software engineering fit, worthwhile non-agency companies, and a `Reach Out` threshold of 8 out of 10.
+Scoring preferences live in [scoring-profile.json](/Users/liamvan/Documents/Repos/CodexSkills/application-trackers/scoring-profile.json). The default profile biases toward New York roles, strong software engineering fit, and worthwhile non-agency companies. Outreach queues include all active roles and sort them by descending `Fit Score`.
