@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-04-28T23:56:46.374313+00:00",
+  "generatedAt": "2026-04-29T00:44:21.665833+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md"
   },
   "stats": {
     "kpis": {
-      "total": 267,
+      "total": 269,
       "applied": 239,
-      "unapplied": 28,
-      "active": 212,
+      "unapplied": 30,
+      "active": 214,
       "rejected": 30,
       "interviewing": 3,
       "assessments": 2,
       "highFit": 183,
       "reachOut": 104,
-      "recruiterRows": 71,
+      "recruiterRows": 81,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 89.5,
+      "applyRate": 88.8,
       "rejectionRate": 12.6
     },
     "statusCounts": [
@@ -43,12 +43,12 @@
         "value": 3
       },
       {
-        "name": "Online Assessment",
-        "value": 2
+        "name": "Resume Tailored",
+        "value": 3
       },
       {
-        "name": "Resume Tailored",
-        "value": 1
+        "name": "Online Assessment",
+        "value": 2
       }
     ],
     "sourceCounts": [
@@ -74,7 +74,7 @@
       },
       {
         "name": "Lever",
-        "value": 7
+        "value": 9
       },
       {
         "name": "Gem",
@@ -120,7 +120,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 123
+        "value": 125
       },
       {
         "name": "Bay Area",
@@ -150,7 +150,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 153
+        "value": 155
       },
       {
         "name": "Backend",
@@ -188,7 +188,7 @@
       },
       {
         "score": "2",
-        "count": 6
+        "count": 7
       },
       {
         "score": "3",
@@ -196,7 +196,7 @@
       },
       {
         "score": "4",
-        "count": 5
+        "count": 6
       },
       {
         "score": "5",
@@ -353,6 +353,14 @@
         "cumulative": 267,
         "added": 27,
         "applied": 26,
+        "rejected": 0,
+        "interviewing": 0
+      },
+      {
+        "date": "2026-04-29",
+        "cumulative": 269,
+        "added": 2,
+        "applied": 0,
         "rejected": 0,
         "interviewing": 0
       }
@@ -850,7 +858,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/johnstoecker/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Raquel Gonzalez, Cruz Gonzalez, Kristin Jue, Amelia Jones, Febin Bellamy, Matthew Negasi, and John Stoecker 2026-04-25; Replaced closed LinkedIn posting with Greenhouse role 2026-04-27; Manual apply needed: required Clever culture-tenet free response 2026-04-27; Manual apply verified: reCAPTCHA present on application flow 2026-04-28; Manual apply verified: Greenhouse embed form filled with tailored resume, Seattle location, sponsorship No, LinkedIn/source, custom Always a Student culture-tenet response, Kubernetes Yes, and demographic selections; all required fields validated but submit attempt stayed on form with embedded reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28",
+      "notes": "LinkedIn invite sent to Raquel Gonzalez, Cruz Gonzalez, Kristin Jue, Amelia Jones, Febin Bellamy, Matthew Negasi, and John Stoecker 2026-04-25; Replaced closed LinkedIn posting with Greenhouse role 2026-04-27; Manual apply needed: required Clever culture-tenet free response 2026-04-27; Manual apply verified: reCAPTCHA present on application flow 2026-04-28; Manual apply verified: Greenhouse embed form filled with tailored resume, Seattle location, sponsorship No, LinkedIn/source, custom Always a Student culture-tenet response, Kubernetes Yes, and demographic selections; all required fields validated but submit attempt stayed on form with embedded reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28; LinkedIn invite sent to Audrey Cevallos (Recruiter) 2026-04-28",
       "noteLinks": [
         {
           "label": "Raquel Gonzalez",
@@ -879,12 +887,17 @@
         {
           "label": "John Stoecker",
           "url": "https://www.linkedin.com/in/johnstoecker/"
+        },
+        {
+          "label": "Audrey Cevallos",
+          "url": "https://www.linkedin.com/in/audreycevallos/"
         }
       ],
       "activityDates": [
         "2026-04-25",
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28",
         "2026-04-28"
@@ -2487,14 +2500,20 @@
       "postingKey": "3dd97725-4a12-4963-b47a-cb5c562cfd1d",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Kalshi/Software_Engineer_Product/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Kalshi/Software_Engineer_Product/Liam_Van_Resume/Liam_Van_Kalshi.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Ryan Stanford",
+      "recruiterProfile": "https://www.linkedin.com/in/ryan-e-stanford/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-27",
-      "noteLinks": [],
+      "notes": "Application confirmation email received 2026-04-27; LinkedIn invite sent to Ryan Stanford (Recruiter) 2026-04-28",
+      "noteLinks": [
+        {
+          "label": "Ryan Stanford",
+          "url": "https://www.linkedin.com/in/ryan-e-stanford/"
+        }
+      ],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -2563,14 +2582,20 @@
       "postingKey": "073aefc5-5eb1-4e67-9cb3-d4059dd8ce58",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Savvy/Software_Engineer/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Savvy/Software_Engineer/Liam_Van_Resume/Liam_Van_Savvy.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Lauren Cassen",
+      "recruiterProfile": "https://www.linkedin.com/in/laurencassen/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application submitted 2026-04-27",
-      "noteLinks": [],
+      "notes": "Application submitted 2026-04-27; LinkedIn invite sent to Lauren Cassen (Recruiter) 2026-04-28",
+      "noteLinks": [
+        {
+          "label": "Lauren Cassen",
+          "url": "https://www.linkedin.com/in/laurencassen/"
+        }
+      ],
       "activityDates": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ]
     },
     {
@@ -3143,14 +3168,20 @@
       "postingKey": "f14dbcb6-f740-4c95-9634-6dd87ba3f4df",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Match Group/Software_Engineer_Backend/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Match Group/Software_Engineer_Backend/Liam_Van_Resume/Liam_Van_Match_Group.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Caitlin Harrell",
+      "recruiterProfile": "https://www.linkedin.com/in/sarah-caitlin-harrell/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-03",
-      "noteLinks": [],
+      "notes": "Application confirmation email received 2026-04-03; LinkedIn invite sent to Caitlin Harrell (Recruiter) 2026-04-28",
+      "noteLinks": [
+        {
+          "label": "Caitlin Harrell",
+          "url": "https://www.linkedin.com/in/sarah-caitlin-harrell/"
+        }
+      ],
       "activityDates": [
-        "2026-04-03"
+        "2026-04-03",
+        "2026-04-28"
       ]
     },
     {
@@ -5989,15 +6020,21 @@
       "postingKey": "8450213002",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Aurora/Software_Engineer_I_FinOps/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Aurora/Software_Engineer_I_FinOps/Liam_Van_Resume/Liam_Van_Aurora.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Kamal D. Singh",
+      "recruiterProfile": "https://www.linkedin.com/in/kamalds510/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Aurora Careers application 2026-04-27; Manual apply needed: embedded Aurora application form not automation-accessible 2026-04-27; Manual apply verified: custom embedded application flow remains blocker 2026-04-28; Manual apply verified: direct Greenhouse form filled with tailored resume, contact info, authorization/sponsorship, Mountain View onsite willingness, recent-grad/project/coding-language answers, LinkedIn source, website, LinkedIn profile, and demographics; submit clicked but page stayed on form with invisible reCAPTCHA/no confirmation 2026-04-28; Application submitted 2026-04-28",
-      "noteLinks": [],
+      "notes": "Replaced LinkedIn posting with direct Aurora Careers application 2026-04-27; Manual apply needed: embedded Aurora application form not automation-accessible 2026-04-27; Manual apply verified: custom embedded application flow remains blocker 2026-04-28; Manual apply verified: direct Greenhouse form filled with tailored resume, contact info, authorization/sponsorship, Mountain View onsite willingness, recent-grad/project/coding-language answers, LinkedIn source, website, LinkedIn profile, and demographics; submit clicked but page stayed on form with invisible reCAPTCHA/no confirmation 2026-04-28; Application submitted 2026-04-28; LinkedIn invite sent to Kamal D. Singh (Recruiter) 2026-04-28",
+      "noteLinks": [
+        {
+          "label": "Kamal D. Singh",
+          "url": "https://www.linkedin.com/in/kamalds510/"
+        }
+      ],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28",
         "2026-04-28"
@@ -6884,15 +6921,21 @@
       "postingKey": "ee5064af-0116-4ef2-994a-cb8fed580290",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Spotify/Backend_Engineer_Music/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Spotify/Backend_Engineer_Music/Liam_Van_Resume/Liam_Van_Spotify.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Maryem El-Hileh",
+      "recruiterProfile": "https://www.linkedin.com/in/maryem-el-hileh-a84318a5/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Lever application 2026-04-27; Manual apply needed: hCaptcha on Spotify Lever final submit 2026-04-27; Manual apply verified: hCaptcha present on Lever form 2026-04-28; Manual apply verified: Lever form filled with tailored resume, contact info, current location/company, LinkedIn, GitHub, portfolio, pronoun preference, and demographics; submit clicked but application stayed on form with hCaptcha/no confirmation 2026-04-28; Application submitted via Lever with tailored Spotify resume; confirmation page shown 2026-04-28",
-      "noteLinks": [],
+      "notes": "Replaced LinkedIn posting with direct Lever application 2026-04-27; Manual apply needed: hCaptcha on Spotify Lever final submit 2026-04-27; Manual apply verified: hCaptcha present on Lever form 2026-04-28; Manual apply verified: Lever form filled with tailored resume, contact info, current location/company, LinkedIn, GitHub, portfolio, pronoun preference, and demographics; submit clicked but application stayed on form with hCaptcha/no confirmation 2026-04-28; Application submitted via Lever with tailored Spotify resume; confirmation page shown 2026-04-28; LinkedIn invite sent to Maryem El-Hileh (Recruiter) 2026-04-28",
+      "noteLinks": [
+        {
+          "label": "Maryem El-Hileh",
+          "url": "https://www.linkedin.com/in/maryem-el-hileh-a84318a5/"
+        }
+      ],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28",
         "2026-04-28"
@@ -7539,19 +7582,24 @@
       "postingKey": "e1a6c138-98bf-45e2-97f7-2c70371cc38a",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Palantir Technologies/Software_Engineer_New_Grad_Production_Infrastructure/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Palantir Technologies/Software_Engineer_New_Grad_Production_Infrastructure/Liam_Van_Resume/Liam_Van_Palantir_Technologies.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Shelby H.",
+      "recruiterProfile": "https://www.linkedin.com/in/shelby-hudson/",
       "engineerContact": "Stephen Linder",
       "engineerProfile": "https://www.linkedin.com/in/stephen-linder-b93563261/",
-      "notes": "Manual apply needed: required Palantir free-response questions and AI notetaker consent 2026-04-27; Manual apply verified: required Palantir free-response questions 2026-04-28; Manual apply verified: Lever form filled with tailored resume, profile links, language, offer-deadline/start-date, preferred locations, authorization/sponsorship, university/graduation/source, Palantir free responses, product preferences, AI-notetaker non-consent, veteran/disability fields and signature; final submit blocked by hCaptcha iframe overlay 2026-04-28; Application submitted via Lever with tailored Palantir resume and required Palantir responses; confirmation page shown 2026-04-28; LinkedIn invite sent to Stephen Linder (Engineer) 2026-04-28",
+      "notes": "Manual apply needed: required Palantir free-response questions and AI notetaker consent 2026-04-27; Manual apply verified: required Palantir free-response questions 2026-04-28; Manual apply verified: Lever form filled with tailored resume, profile links, language, offer-deadline/start-date, preferred locations, authorization/sponsorship, university/graduation/source, Palantir free responses, product preferences, AI-notetaker non-consent, veteran/disability fields and signature; final submit blocked by hCaptcha iframe overlay 2026-04-28; Application submitted via Lever with tailored Palantir resume and required Palantir responses; confirmation page shown 2026-04-28; LinkedIn invite sent to Stephen Linder (Engineer) 2026-04-28; LinkedIn invite sent to Shelby H. (Recruiter) 2026-04-28",
       "noteLinks": [
         {
           "label": "Stephen Linder",
           "url": "https://www.linkedin.com/in/stephen-linder-b93563261/"
+        },
+        {
+          "label": "Shelby H.",
+          "url": "https://www.linkedin.com/in/shelby-hudson/"
         }
       ],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28",
         "2026-04-28",
@@ -7573,19 +7621,24 @@
       "postingKey": "4abf26b4-795c-420a-bf22-1ab98db268b4",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Palantir Technologies/Software_Engineer_New_Grad_Infrastructure/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Palantir Technologies/Software_Engineer_New_Grad_Infrastructure/Liam_Van_Resume/Liam_Van_Palantir_Technologies.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Shelby H.",
+      "recruiterProfile": "https://www.linkedin.com/in/shelby-hudson/",
       "engineerContact": "Stephen Linder",
       "engineerProfile": "https://www.linkedin.com/in/stephen-linder-b93563261/",
-      "notes": "Manual apply needed: required Palantir free-response questions and AI notetaker consent 2026-04-27; Manual apply verified: required Palantir free-response questions 2026-04-28; Manual apply verified: Lever form filled with tailored resume, profile links, language, offer-deadline/start-date, preferred locations, authorization/sponsorship, university/graduation/source, Palantir free responses, product preferences, AI-notetaker non-consent, veteran/disability fields and signature; final submit blocked by hCaptcha iframe overlay 2026-04-28; Application submitted via Lever with tailored Palantir resume and required Palantir responses; confirmation page shown 2026-04-28; LinkedIn invite sent to Stephen Linder (Engineer) 2026-04-28",
+      "notes": "Manual apply needed: required Palantir free-response questions and AI notetaker consent 2026-04-27; Manual apply verified: required Palantir free-response questions 2026-04-28; Manual apply verified: Lever form filled with tailored resume, profile links, language, offer-deadline/start-date, preferred locations, authorization/sponsorship, university/graduation/source, Palantir free responses, product preferences, AI-notetaker non-consent, veteran/disability fields and signature; final submit blocked by hCaptcha iframe overlay 2026-04-28; Application submitted via Lever with tailored Palantir resume and required Palantir responses; confirmation page shown 2026-04-28; LinkedIn invite sent to Stephen Linder (Engineer) 2026-04-28; LinkedIn invite sent to Shelby H. (Recruiter) 2026-04-28",
       "noteLinks": [
         {
           "label": "Stephen Linder",
           "url": "https://www.linkedin.com/in/stephen-linder-b93563261/"
+        },
+        {
+          "label": "Shelby H.",
+          "url": "https://www.linkedin.com/in/shelby-hudson/"
         }
       ],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28",
         "2026-04-28",
@@ -7607,14 +7660,20 @@
       "postingKey": "94984771-0704-446c-88c6-91ce748f6d92",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Palantir Technologies/Software_Engineer_New_Grad/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Palantir Technologies/Software_Engineer_New_Grad/Liam_Van_Resume/Liam_Van_Palantir_Technologies.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Shelby H.",
+      "recruiterProfile": "https://www.linkedin.com/in/shelby-hudson/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: required Palantir free-response questions and AI notetaker consent 2026-04-27; Manual apply verified: required Palantir free-response questions 2026-04-28; Manual apply verified: Lever form filled with tailored resume, profile links, language, offer-deadline/start-date, preferred locations, authorization/sponsorship, university/graduation/source, Palantir free responses, product preferences, AI-notetaker non-consent, veteran/disability fields and signature; final submit blocked by hCaptcha iframe overlay 2026-04-28; Application submitted via Lever with tailored Palantir resume and required Palantir responses; confirmation page shown 2026-04-28",
-      "noteLinks": [],
+      "notes": "Manual apply needed: required Palantir free-response questions and AI notetaker consent 2026-04-27; Manual apply verified: required Palantir free-response questions 2026-04-28; Manual apply verified: Lever form filled with tailored resume, profile links, language, offer-deadline/start-date, preferred locations, authorization/sponsorship, university/graduation/source, Palantir free responses, product preferences, AI-notetaker non-consent, veteran/disability fields and signature; final submit blocked by hCaptcha iframe overlay 2026-04-28; Application submitted via Lever with tailored Palantir resume and required Palantir responses; confirmation page shown 2026-04-28; LinkedIn invite sent to Shelby H. (Recruiter) 2026-04-28",
+      "noteLinks": [
+        {
+          "label": "Shelby H.",
+          "url": "https://www.linkedin.com/in/shelby-hudson/"
+        }
+      ],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28",
         "2026-04-28"
@@ -7635,14 +7694,20 @@
       "postingKey": "dab396d4-2f14-4796-aac0-0d82883dccf0",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Palantir Technologies/Forward_Deployed_Software_Engineer_New_York/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Palantir Technologies/Forward_Deployed_Software_Engineer_New_York/Liam_Van_Resume/Liam_Van_Palantir_Technologies.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Shelby H.",
+      "recruiterProfile": "https://www.linkedin.com/in/shelby-hudson/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Palantir partner sharing acknowledgement and AI notetaker consent 2026-04-27; Manual apply verified: required Palantir free-response questions 2026-04-28; Manual apply verified: Lever form filled with tailored resume, Palantir free responses, partner sharing set No, AI notetaker consent set No; final submit blocked by hCaptcha overlay 2026-04-28; Application submitted 2026-04-28",
-      "noteLinks": [],
+      "notes": "Manual apply needed: Palantir partner sharing acknowledgement and AI notetaker consent 2026-04-27; Manual apply verified: required Palantir free-response questions 2026-04-28; Manual apply verified: Lever form filled with tailored resume, Palantir free responses, partner sharing set No, AI notetaker consent set No; final submit blocked by hCaptcha overlay 2026-04-28; Application submitted 2026-04-28; LinkedIn invite sent to Shelby H. (Recruiter) 2026-04-28",
+      "noteLinks": [
+        {
+          "label": "Shelby H.",
+          "url": "https://www.linkedin.com/in/shelby-hudson/"
+        }
+      ],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28",
         "2026-04-28"
@@ -7691,14 +7756,20 @@
       "postingKey": "4c29c22e-c6fa-4bde-97ed-79edd5a96cea",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Profound/Software_Engineer_Backend_Workflow_Runner/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Profound/Software_Engineer_Backend_Workflow_Runner/Liam_Van_Resume/Liam_Van_Profound.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Aiveen Pidcock",
+      "recruiterProfile": "https://www.linkedin.com/in/aiveen-pidcock/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27; Manual apply verified: invisible reCAPTCHA present on Ashby application 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, LinkedIn, phone, sponsorship No, custom workflow-runner note, and New York location; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28; Application submitted 2026-04-28",
-      "noteLinks": [],
+      "notes": "Manual apply needed: Ashby reCAPTCHA on application form 2026-04-27; Manual apply verified: invisible reCAPTCHA present on Ashby application 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, LinkedIn, phone, sponsorship No, custom workflow-runner note, and New York location; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28; Application submitted 2026-04-28; LinkedIn invite sent to Aiveen Pidcock (Recruiter) 2026-04-28",
+      "noteLinks": [
+        {
+          "label": "Aiveen Pidcock",
+          "url": "https://www.linkedin.com/in/aiveen-pidcock/"
+        }
+      ],
       "activityDates": [
         "2026-04-27",
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28",
         "2026-04-28"
@@ -8481,6 +8552,56 @@
       "activityDates": [
         "2026-04-28",
         "2026-04-28"
+      ]
+    },
+    {
+      "company": "Match Group",
+      "role": "Android Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 4,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-29",
+      "location": "New York, NY",
+      "source": "Lever",
+      "jobLink": "https://jobs.lever.co/matchgroup/eeb31906-5f8f-4599-a77a-dbee6c2079c9",
+      "postingKey": "eeb31906-5f8f-4599-a77a-dbee6c2079c9",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Match Group/Android_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Match Group/Android_Engineer/Liam_Van_Resume/Liam_Van_Match_Group.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Hinge Android Engineer role 2026-04-29; emphasized Java, Android Studio, product UI delivery, cross-functional collaboration, debugging, code quality, API integrations, testing, and production reliability. Did not claim Kotlin, Jetpack Compose, Google Play publication, or production Android app ownership.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-29"
+      ]
+    },
+    {
+      "company": "Match Group",
+      "role": "iOS Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 2,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-04-29",
+      "location": "New York, NY",
+      "source": "Lever",
+      "jobLink": "https://jobs.lever.co/matchgroup/6d8c0ef7-aa0f-4ea4-8473-6c20ad18745f",
+      "postingKey": "6d8c0ef7-aa0f-4ea4-8473-6c20ad18745f",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Match Group/iOS_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Match Group/iOS_Engineer/Liam_Van_Resume/Liam_Van_Match_Group.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Hinge iOS Engineer role 2026-04-29; emphasized product-minded UI work, consumer product patterns, experimentation-adjacent impact, AI-assisted testing, cross-functional delivery, debugging, and reliability. Did not claim Swift, UIKit, SwiftUI, iOS production app ownership, subscriptions, paywalls, or App Store shipping experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-29"
       ]
     }
   ],
