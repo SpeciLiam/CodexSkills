@@ -111,6 +111,11 @@ const PIPELINE_MODES = [
     description: "Ask Codex for recruiter-only outreach. It focuses on talent, university, and technical recruiter contacts.",
   },
   {
+    name: "Recruiter Batch",
+    command: "python3 skills/linkedin-outreach-batch/scripts/build_recruiter_batch.py --min-fit 8",
+    description: "Ask Codex to prepare labeled recruiter rows before a morning send pass. One action-time approval can cover the current approved batch.",
+  },
+  {
     name: "Engineer Lane",
     command: "python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode engineer",
     description: "Ask Codex for engineer-only outreach. It focuses on UGA alumni, team-aligned engineers, or credible peer contacts.",
@@ -154,36 +159,42 @@ const OPTIMAL_COMMAND_FLOW = [
   },
   {
     step: "5",
-    name: "Recruiter outreach lane",
-    command: "python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type recruiter --limit 20",
-    note: "Ask Codex to run this as its own lane. It finds one recruiter or talent contact per reachable role.",
+    name: "Batch recruiter outreach",
+    command: "python3 skills/linkedin-outreach-batch/scripts/build_recruiter_batch.py --min-fit 8",
+    note: "Use this before a 7 AM pass. Codex labels recruiter rows, drafts exact notes, and can send the approved batch after one action-time confirmation.",
   },
   {
     step: "6",
+    name: "Send recruiter batch",
+    command: "Use linkedin-outreach-batch: show Approved + Not reached out rows, confirm once, then try free InMail before Connect with note",
+    note: "The approval is batch-level, not per recruiter. If no confirmation arrives, Codex leaves the queue ready and does not send from LinkedIn.",
+  },
+  {
+    step: "7",
     name: "Engineer outreach lane",
     command: "python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type engineer --limit 20",
     note: "Ask Codex to run this as a separate lane. It finds one engineer, UGA alum, or relevant employee per role.",
   },
   {
-    step: "7",
+    step: "8",
     name: "Fill prospect gaps",
     command: "python3 skills/company-prospecting/scripts/build_company_prospect_targets.py --limit 20",
     note: "Use this when LinkedIn lanes need deeper company-level people or Apollo-ready email candidates.",
   },
   {
-    step: "8",
+    step: "9",
     name: "Prep hot opportunities",
     command: "python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode prep",
     note: "Pull interviews and online assessments to the top so prep work does not get buried under new applications.",
   },
   {
-    step: "9",
+    step: "10",
     name: "Rebuild dashboard",
     command: "python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py && cd application-visualizer && npm run build",
     note: "Run after tracker or outreach edits so the website reflects the latest markdown data.",
   },
   {
-    step: "10",
+    step: "11",
     name: "Optional Notion mirror",
     command: "python3 skills/notion-application-sync/scripts/sync_applications_to_notion.py --dry-run",
     note: "Keep this outside the fast path. Use the 12-hour automation or run it manually after checking the dry run.",
@@ -233,6 +244,11 @@ const SKILL_CARDS = [
     name: "linkedin-outreach",
     role: "Networking",
     text: "Builds separate recruiter and engineer queues, drafts connection notes, and records each successful invite back into the tracker.",
+  },
+  {
+    name: "linkedin-outreach-batch",
+    role: "Recruiter batch",
+    text: "Prepares recruiter-only batches with exact recipients, routes, and notes. At send time, one confirmation can approve the current batch; paid InMail is skipped in favor of Connect with note.",
   },
   {
     name: "company-prospecting",

@@ -1,17 +1,17 @@
 ---
 name: linkedin-outreach-batch
-description: Build and run pre-approved LinkedIn recruiter outreach batches for Liam Van's application tracker. Use when the user wants to batch-get recruiter contacts, label recruiter prospects before outreach, prepare an approved overnight or morning LinkedIn run, schedule a later outreach pass, or update the recruiting dashboard with recruiter found but not yet reached out states.
+description: Build LinkedIn recruiter outreach batches for Liam Van's application tracker. Use when the user wants to batch-get recruiter contacts, label recruiter prospects before outreach, prepare a sending-ready morning LinkedIn run, schedule a later prep pass, or update the recruiting dashboard with recruiter found but not yet reached out states.
 ---
 
 # LinkedIn Outreach Batch
 
 ## Overview
 
-Create a separate recruiter batch tracker so "recruiter found" and "outreach sent" stay distinct. Use this skill before a scheduled LinkedIn outreach run, especially when the user wants to approve many exact recipients and notes once, then have Codex process the approved batch later.
+Create a separate recruiter batch tracker so "recruiter found" and "outreach sent" stay distinct. Use this skill before a scheduled LinkedIn outreach run, especially when the user wants to prepare exact recipients and notes in advance, then give one batch-level confirmation while present at send time.
 
 ## Core Rule
 
-LinkedIn messages and connection requests are third-party communications from the user's account. Do not send to any recipient that is not explicitly listed and approved in the batch tracker with an exact note. Do not spend InMail credits; check Message first only to see whether it is free, then use Connect with note if the UI shows an InMail credit or paid path.
+LinkedIn messages and connection requests are third-party communications from the user's account. Do not send to any recipient that is not explicitly listed and approved in the batch tracker with an exact note, and do not click final Send unless the user gives action-time confirmation for the current batch. The confirmation may cover multiple approved rows at once; it does not need to be per recruiter. Do not spend InMail credits; check Message first only to see whether it is free, then use Connect with note if the UI shows an InMail credit or paid path.
 
 ## Batch-Get Workflow
 
@@ -41,7 +41,7 @@ The Outreach section will show batch rows as research needed, labeled, approved,
 
 ## Approval Workflow
 
-Before an unattended run, make sure each row to be sent has:
+Before a sending-ready run, make sure each row to be sent has:
 
 - `Recruiter Name`
 - `Recruiter Profile`
@@ -62,6 +62,7 @@ python3 skills/linkedin-outreach-batch/scripts/mark_batch_decision.py \
 
 ## Batch-Run Workflow
 
+0. Present the exact `Approved` and `Not reached out` rows and ask for one action-time confirmation to send that batch. If the user is not present, stop before final sends and leave the dashboard prepared.
 1. Open each approved recruiter profile from `application-trackers/linkedin-recruiter-batches.md`.
 2. Click `Message` first only to inspect whether it is free. If LinkedIn shows `Use 1 of ... InMail credit`, close the composer.
 3. Use `Connect` or `More -> Connect`, add the exact connection note, and send.
@@ -90,4 +91,4 @@ python3 skills/linkedin-outreach-batch/scripts/mark_batch_decision.py \
 
 ## Scheduling Pattern
 
-For a 7 AM run, prepare and approve the batch the night before. Create a thread heartbeat for 7 AM local time that says to use this skill, process only `Approved` and `Not reached out` rows, skip paid InMail, and refresh the dashboard after recording outcomes.
+For a 7 AM run, prepare the batch the night before. Create a thread heartbeat for 7 AM local time that says to use this skill, refresh the batch, show only `Approved` and `Not reached out` rows, ask for one action-time batch confirmation, skip paid InMail, and refresh the dashboard after recording outcomes. If no confirmation arrives, leave the queue ready and do not send.
