@@ -43,7 +43,7 @@ import {
 } from "recharts";
 import rawData from "./data/tracker-data.json";
 import { hostFromUrl, percent, readableDate } from "./lib/format";
-import type { Application, Prospect, TrackerData } from "./lib/types";
+import type { Application, Prospect, RecruiterBatch, TrackerData } from "./lib/types";
 
 const data = rawData as TrackerData;
 
@@ -317,6 +317,13 @@ function App() {
         .sort((a, b) => outreachPriority(b, "engineer") - outreachPriority(a, "engineer")),
     [filtered],
   );
+  const recruiterBatch = useMemo(
+    () =>
+      (data.recruiterBatch || [])
+        .filter((row) => row.outcome.toLowerCase() !== "sent")
+        .sort((a, b) => batchPriority(b) - batchPriority(a)),
+    [],
+  );
 
   const radarData = useMemo(
     () => [
@@ -529,6 +536,7 @@ function App() {
       {activeTab === "outreach" && (
         <section id="outreach" className="split tab-panel section-anchor">
         <Panel title="Outreach Flight Deck" icon={<Users />} info={INFO_COPY.recruiters} wide>
+          <RecruiterBatchBoard rows={recruiterBatch} />
           <div className="outreach-lanes">
             <OutreachLane
               lane="recruiter"
@@ -853,6 +861,59 @@ function OutreachLane({
       </div>
     </section>
   );
+}
+
+function RecruiterBatchBoard({ rows }: { rows: RecruiterBatch[] }) {
+  const stats = data.stats.recruiterBatch || { total: 0, labeled: 0, approved: 0, sent: 0, notReachedOut: 0, needsRecruiter: 0 };
+  if (!rows.length && !stats.total) return null;
+  return (
+    <section className="recruiter-batch-board">
+      <header>
+        <div>
+          <span>Recruiter batch</span>
+          <h4>Labeled, Not Reached Out</h4>
+          <p>Pre-run manifest for approved LinkedIn outreach. Sent rows are recorded separately in the tracker.</p>
+        </div>
+        <div className="batch-counts">
+          <b>{stats.labeled}<small>labeled</small></b>
+          <b>{stats.approved}<small>approved</small></b>
+          <b>{stats.sent}<small>sent</small></b>
+        </div>
+      </header>
+      <div className="batch-list">
+        {rows.slice(0, 10).map((row) => (
+          <article className="batch-row" key={`batch-${row.postingKey}`}>
+            <div>
+              <strong>{row.company}</strong>
+              <p>{row.role}</p>
+              <small>{row.recruiterName || "Needs recruiter label"}</small>
+            </div>
+            <BatchState row={row} />
+            <b>{row.fitScore || "-"}</b>
+            {row.recruiterProfile ? <a href={row.recruiterProfile} target="_blank" rel="noreferrer"><ArrowUpRight size={17} /></a> : <span />}
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function BatchState({ row }: { row: RecruiterBatch }) {
+  const approval = row.approval.toLowerCase();
+  const outcome = row.outcome.toLowerCase();
+  let label = "Research";
+  let tone = "research";
+  if (outcome === "skipped" || outcome === "blocked") {
+    label = row.outcome;
+    tone = "blocked";
+  } else if (approval === "approved") {
+    label = "Approved";
+    tone = "approved";
+  } else if (row.recruiterName && row.recruiterProfile) {
+    label = "Labeled";
+    tone = "labeled";
+  }
+  return <span className={`batch-state ${tone}`}>{label}</span>;
 }
 
 function OutreachModal({
@@ -1182,6 +1243,13 @@ function outreachPriority(app: Application, lane: "recruiter" | "engineer") {
     : Boolean(app.engineerContact || app.engineerProfile);
   const statusBoost = app.status === "Interviewing" ? 20 : app.status.includes("Assessment") ? 16 : app.status === "Applied" ? 8 : 0;
   return app.fitScore * 10 + statusBoost + (app.reachOut ? 6 : 0) + (done ? -100 : 0);
+}
+
+function batchPriority(row: RecruiterBatch) {
+  const approvalBoost = row.approval.toLowerCase() === "approved" ? 40 : 0;
+  const labeledBoost = row.recruiterName && row.recruiterProfile ? 20 : 0;
+  const blockedPenalty = ["skipped", "blocked"].includes(row.outcome.toLowerCase()) ? -80 : 0;
+  return row.fitScore * 10 + approvalBoost + labeledBoost + blockedPenalty;
 }
 
 function buildOutreachContacts(app: Application, lane: "recruiter" | "engineer", prospects: Prospect[]) {

@@ -54,11 +54,29 @@ export type Prospect = {
   notes: string;
 };
 
+export type RecruiterBatch = {
+  batch: string;
+  company: string;
+  role: string;
+  postingKey: string;
+  fitScore: number;
+  status: string;
+  recruiterName: string;
+  recruiterProfile: string;
+  route: string;
+  connectionNote: string;
+  approval: string;
+  outcome: string;
+  lastChecked: string;
+  notes: string;
+};
+
 export type TrackerData = {
   generatedAt: string;
   sourceFiles: {
     applications: string;
     outreach: string;
+    recruiterBatch?: string;
   };
   stats: {
     kpis: Record<string, number>;
@@ -80,8 +98,17 @@ export type TrackerData = {
       readyEmails: number;
       jobLink: string;
     }>;
+    recruiterBatch?: {
+      total: number;
+      labeled: number;
+      approved: number;
+      sent: number;
+      notReachedOut: number;
+      needsRecruiter: number;
+    };
   };
   applications: Application[];
   outreachQueue: OutreachQueue[];
   prospects: Prospect[];
+  recruiterBatch?: RecruiterBatch[];
 };

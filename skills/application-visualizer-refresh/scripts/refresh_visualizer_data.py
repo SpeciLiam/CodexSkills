@@ -13,6 +13,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[3]
 APPLICATIONS_MD = ROOT / "application-trackers" / "applications.md"
 OUTREACH_MD = ROOT / "application-trackers" / "outreach-prospects.md"
+BATCH_MD = ROOT / "application-trackers" / "linkedin-recruiter-batches.md"
 OUTPUT_JSON = ROOT / "application-visualizer" / "src" / "data" / "tracker-data.json"
 
 LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
@@ -131,6 +132,25 @@ def normalize_queue(row: dict[str, str]) -> dict[str, Any]:
         "prospectCount": parse_int(row.get("Prospect Count", "")),
         "readyEmails": parse_int(row.get("Ready Emails", "")),
         "lastUpdated": clean_text(row.get("Last Updated", "")),
+        "notes": clean_text(row.get("Notes", "")),
+    }
+
+
+def normalize_recruiter_batch(row: dict[str, str]) -> dict[str, Any]:
+    return {
+        "batch": clean_text(row.get("Batch", "")),
+        "company": clean_text(row.get("Company", "")),
+        "role": clean_text(row.get("Role", "")),
+        "postingKey": clean_text(row.get("Posting Key", "")),
+        "fitScore": parse_int(row.get("Fit Score", "")),
+        "status": clean_text(row.get("Status", "")) or "Unknown",
+        "recruiterName": clean_text(row.get("Recruiter Name", "")),
+        "recruiterProfile": first_link(row.get("Recruiter Profile", "")) or clean_text(row.get("Recruiter Profile", "")),
+        "route": clean_text(row.get("Route", "")),
+        "connectionNote": clean_text(row.get("Connection Note", "")),
+        "approval": clean_text(row.get("Approval", "")) or "Needs recruiter",
+        "outcome": clean_text(row.get("Outcome", "")) or "Not reached out",
+        "lastChecked": clean_text(row.get("Last Checked", "")),
         "notes": clean_text(row.get("Notes", "")),
     }
 
@@ -269,10 +289,22 @@ def build_stats(applications: list[dict[str, Any]], prospects: list[dict[str, An
     }
 
 
+def recruiter_batch_stats(rows: list[dict[str, Any]]) -> dict[str, int]:
+    return {
+        "total": len(rows),
+        "labeled": sum(1 for row in rows if row["recruiterName"] and row["recruiterProfile"]),
+        "approved": sum(1 for row in rows if row["approval"].lower() == "approved"),
+        "sent": sum(1 for row in rows if row["outcome"].lower() == "sent"),
+        "notReachedOut": sum(1 for row in rows if row["outcome"].lower() == "not reached out"),
+        "needsRecruiter": sum(1 for row in rows if row["approval"].lower() == "needs recruiter"),
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Refresh application visualizer JSON data.")
     parser.add_argument("--applications", type=Path, default=APPLICATIONS_MD)
     parser.add_argument("--outreach", type=Path, default=OUTREACH_MD)
+    parser.add_argument("--recruiter-batch", type=Path, default=BATCH_MD)
     parser.add_argument("--output", type=Path, default=OUTPUT_JSON)
     args = parser.parse_args()
 
@@ -289,25 +321,32 @@ def main() -> None:
 
     app_tables = extract_tables(args.applications.read_text(encoding="utf-8"))
     outreach_tables = extract_tables(args.outreach.read_text(encoding="utf-8")) if args.outreach.exists() else {}
+    batch_tables = extract_tables(args.recruiter_batch.read_text(encoding="utf-8")) if args.recruiter_batch.exists() else {}
 
     applications = [normalize_application(row) for row in app_tables.get("Main", [])]
     queues = [normalize_queue(row) for row in outreach_tables.get("Company Queue", [])]
     prospects = [normalize_prospect(row) for row in outreach_tables.get("Prospect Details", [])]
+    recruiter_batch = [normalize_recruiter_batch(row) for row in batch_tables.get("Recruiter Batch", [])]
 
     applications = [app for app in applications if app["company"] and app["role"]]
     queues = [q for q in queues if q["company"]]
     prospects = [p for p in prospects if p["company"] and p["name"]]
+    recruiter_batch = [row for row in recruiter_batch if row["company"] and row["postingKey"]]
 
+    stats = build_stats(applications, prospects, queues)
+    stats["recruiterBatch"] = recruiter_batch_stats(recruiter_batch)
     payload = {
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "sourceFiles": {
             "applications": str(args.applications.relative_to(ROOT)),
             "outreach": str(args.outreach.relative_to(ROOT)) if args.outreach.exists() else "",
+            "recruiterBatch": str(args.recruiter_batch.relative_to(ROOT)) if args.recruiter_batch.exists() else "",
         },
-        "stats": build_stats(applications, prospects, queues),
+        "stats": stats,
         "applications": applications,
         "outreachQueue": queues,
         "prospects": prospects,
+        "recruiterBatch": recruiter_batch,
     }
 
     args.output.parent.mkdir(parents=True, exist_ok=True)

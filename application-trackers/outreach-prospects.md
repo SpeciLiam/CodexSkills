@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 216
+Companies queued: 220
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -59,6 +59,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | EliseAI | Software Engineer (New Grads 2025-2026) | 1ffbd278-a5fe-443c-984f-521d61a97353 | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/eliseai/1ffbd278-a5fe-443c-984f-521d61a97353?utm_source=LinkedInPaid) |  |  |  |  |
 | Disney | Software Engineer II - Data Transformation | 91303727120 | 10 | Applied | Yes | [Posting](https://www.disneycareers.com/en/job/-/-/391/91303727120?source=LINKEDIN_JOB_SLOTS) |  |  |  |  |
 | Disney | Software Engineer II | 93426467616 | 10 | Applied | Yes | [Posting](https://www.disneycareers.com/en/job/-/-/391/93426467616?source=LINKEDIN_JOB_SLOTS) |  |  |  |  |
+| Compass | Software Engineer I | 4405599153 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4405599153/?trackingId=TdfRLjBOnV8vB8U5Tv%2F8vw%3D%3D&refId=5T2Rb2GlMfL%2FBz2KqJWJrw%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BFsxvxmQZR5K1F9fZ%2BTSCAg%3D%3D) |  |  |  |  |
 | Color Health | New Grad Software Engineer | 6c7f692a-848b-41a4-b79b-4a9bba3aeb6d | 10 | Applied | Yes | [Posting](https://app.careerpuck.com/job-board/color-health/job/6c7f692a-848b-41a4-b79b-4a9bba3aeb6d) |  |  |  |  |
 | Cadence | Software Engineer I | Software-Engineer-I_R53009-1 | 10 | Applied | Yes | [Posting](https://cadence.wd1.myworkdayjobs.com/External_Careers/job/SAN-JOSE/Software-Engineer-I_R53009-1?source=LinkedIn) |  |  |  |  |
 | BlackRock | Associate, Full Stack Engineer | 4380495648 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4380495648/?trackingId=AJW6hfwNSWOSl69I9BEbpA%3D%3D&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BI6XXU%2BGdQIad7YU%2Bc9JYoA%3D%3D) |  |  |  |  |
@@ -122,6 +123,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Astronomer | Software Engineer - Airflow Infrastructure | b9abf88b-946f-4be3-ae74-fb95ee9b7cc8 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/astronomer/b9abf88b-946f-4be3-ae74-fb95ee9b7cc8/application?utm_source=linkedin) |  |  |  |  |
 | Zip | Software Engineer, Backend (All Levels) | d47287f7-97cc-4216-8c34-737a59a1f9c0 | 8 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/zip/d47287f7-97cc-4216-8c34-737a59a1f9c0/application) |  |  |  |  |
 | Voxel | Software Engineer - Platform | f2cca900-58ed-4e14-9e4d-2797626d750e | 8 | Online Assessment | Yes | [Posting](https://jobs.ashbyhq.com/Voxel/f2cca900-58ed-4e14-9e4d-2797626d750e?utm_source=pOxa4Kqo8D) |  |  |  |  |
+| Venture Up | Software Engineer | 4407898952 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4407898952/?trackingId=v8mJtxIqb3xbqXXQPjnurg%3D%3D&refId=tBjUexm30TQ%2F0tU16a0ikg%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BXswBGatqRWSvZiq2ne7KBA%3D%3D) |  |  |  |  |
 | Uphold | Software Engineer - Trading Execution | 773 | 8 | Applied | Yes | [Posting](https://uphold.bamboohr.com/careers/773?source=linkedin) |  |  |  |  |
 | TradeForm | Software Engineer | 4403367885 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4403367885/apply/) |  |  |  |  |
 | The Voleon Group | Software Engineer, DevOps | 4407401640 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4407401640/) |  |  |  |  |
@@ -190,6 +192,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Character.AI | Software Engineer, Monetization | 4310537769 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4310537769/) |  |  |  |  |
 | Chalk | Software Engineer | 4396373128 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4396373128/) |  |  |  |  |
 | Blossom | Software Engineer (All Levels) | 4394990220 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4394990220/) |  |  |  |  |
+| Belvedere Trading | Software Engineer | 2f915976-b1e1-4e3e-81da-1116dcbb2344 | 7 | Resume Tailored | Yes | [Posting](https://jobs.lever.co/belvederetrading/2f915976-b1e1-4e3e-81da-1116dcbb2344/apply?source=LinkedIn) |  |  |  |  |
 | AvicenaTech | Entry Level Software Engineer | 0e1746e5-cfb8-4020-9aef-b978f8b61957 | 7 | Applied | Yes | [Posting](https://ats.rippling.com/general/jobs/0e1746e5-cfb8-4020-9aef-b978f8b61957?src=lnki) |  |  |  |  |
 | Viasat | SW/Agentic Engineer, Early Career | 4407590662 | 6 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4407590662/?trackingId=JFjHJPDGUK0yk%2FjhZZyaVA%3D%3D&refId=5T2Rb2GlMfL%2FBz2KqJWJrw%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3B%2FMurZQRtQLq%2FcN2yVqCNkg%3D%3D) |  |  |  |  |
 | TestSprite | Senior AI Engineer | senior-ai-engineer | 6 | Applied | Yes | [Posting](https://www.testsprite.com/senior-ai-engineer) |  |  |  |  |
@@ -199,6 +202,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Match Group | iOS Engineer | 6d8c0ef7-aa0f-4ea4-8473-6c20ad18745f | 6 | Resume Tailored | Yes | [Posting](https://jobs.lever.co/matchgroup/6d8c0ef7-aa0f-4ea4-8473-6c20ad18745f) |  |  |  |  |
 | Harper | Member of Technical Staff | 0df32e98-1366-4f05-925a-929e77924d82 | 6 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/harperinsure/0df32e98-1366-4f05-925a-929e77924d82/application?utm_source=LinkedInSlot) |  |  |  |  |
 | DV Trading | Software Developer (New York) | 4687462005 | 6 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/dvtrading/jobs/4687462005?gh_src=oqkfn62w5us) |  |  |  |  |
+| Compass | Software Engineer I | 4406906856 | 6 | Resume Tailored |  | [Posting](https://www.linkedin.com/jobs/view/4406906856/?trackingId=JUeK72jL8X4Tu6MiVFuo8A%3D%3D&refId=5T2Rb2GlMfL%2FBz2KqJWJrw%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BUTANzKPlRHOklMmK0Lw4Yw%3D%3D) |  |  |  |  |
 | UMATR | Forward Deployed Engineer | 4402457792 | 5 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4402457792/) |  |  |  |  |
 | Uber | Sales Performance Management Application Developer | careers | 5 | Applied | Yes | [Posting](https://www.uber.com/global/en/careers/) |  |  |  |  |
 | Tavus | Forward Deployed Engineer | 4407862803 | 5 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4407862803/) |  |  |  |  |
