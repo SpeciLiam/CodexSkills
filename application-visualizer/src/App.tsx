@@ -283,6 +283,7 @@ function App() {
   const [status, setStatus] = useState("All");
   const [minFit, setMinFit] = useState(0);
   const [openOutreachLane, setOpenOutreachLane] = useState<"recruiter" | "engineer" | null>(null);
+  const [openBatchLane, setOpenBatchLane] = useState<"recruiter" | "engineer" | null>(null);
   const [selectedOutreach, setSelectedOutreach] = useState<{ app: Application; lane: "recruiter" | "engineer" } | null>(null);
   const [copiedResumePath, setCopiedResumePath] = useState("");
 
@@ -559,8 +560,19 @@ function App() {
       {activeTab === "outreach" && (
         <section id="outreach" className="split tab-panel section-anchor">
         <Panel title="Outreach Flight Deck" icon={<Users />} info={INFO_COPY.recruiters} wide>
-          <RecruiterBatchBoard rows={recruiterBatch} />
-          <EngineerBatchBoard rows={engineerBatch} />
+          <section className="batch-section" aria-label="Need to reach out batches">
+            <div className="batch-section-heading">
+              <div>
+                <span>Need to reach out</span>
+                <h4>Batch Review</h4>
+              </div>
+              <p>Fact-check labeled LinkedIn contacts before approval. Engineer is separate from recruiter.</p>
+            </div>
+            <div className="batch-board-grid">
+              <EngineerBatchBoard rows={engineerBatch} onOpen={() => setOpenBatchLane("engineer")} />
+              <RecruiterBatchBoard rows={recruiterBatch} onOpen={() => setOpenBatchLane("recruiter")} />
+            </div>
+          </section>
           <div className="outreach-lanes">
             <OutreachLane
               lane="recruiter"
@@ -604,6 +616,14 @@ function App() {
           onClose={() => setOpenOutreachLane(null)}
           onInspect={(app) => setSelectedOutreach({ app, lane: openOutreachLane })}
         />
+      )}
+
+      {openBatchLane === "engineer" && (
+        <EngineerBatchModal rows={engineerBatch} onClose={() => setOpenBatchLane(null)} />
+      )}
+
+      {openBatchLane === "recruiter" && (
+        <RecruiterBatchModal rows={recruiterBatch} onClose={() => setOpenBatchLane(null)} />
       )}
 
       {selectedOutreach && (
@@ -887,8 +907,9 @@ function OutreachLane({
   );
 }
 
-function RecruiterBatchBoard({ rows }: { rows: RecruiterBatch[] }) {
+function RecruiterBatchBoard({ rows, onOpen }: { rows: RecruiterBatch[]; onOpen: () => void }) {
   const stats = data.stats.recruiterBatch || { total: 0, labeled: 0, approved: 0, sent: 0, notReachedOut: 0, needsRecruiter: 0 };
+  const labeledRows = rows.filter((row) => row.recruiterName && row.recruiterProfile && row.outcome.toLowerCase() !== "sent");
   if (!rows.length && !stats.total) return null;
   return (
     <section className="recruiter-batch-board">
@@ -898,68 +919,146 @@ function RecruiterBatchBoard({ rows }: { rows: RecruiterBatch[] }) {
           <h4>Labeled, Not Reached Out</h4>
           <p>Pre-run manifest for approved LinkedIn outreach. Sent rows are recorded separately in the tracker.</p>
         </div>
+        <button className="batch-open" type="button" onClick={onOpen}>View all</button>
         <div className="batch-counts">
-          <b>{stats.labeled}<small>labeled</small></b>
+          <b>{labeledRows.length}<small>ready</small></b>
           <b>{stats.approved}<small>approved</small></b>
           <b>{stats.sent}<small>sent</small></b>
         </div>
       </header>
       <div className="batch-list">
-        {rows.slice(0, 10).map((row) => (
-          <article className="batch-row" key={`batch-${row.postingKey}`}>
-            <div>
-              <strong>{row.company}</strong>
-              <p>{row.role}</p>
-              <small className="batch-contact">
-                <span>{row.recruiterName || "Needs recruiter label"}</span>
-                {row.recruiterPosition && <em>{row.recruiterPosition}</em>}
-              </small>
-            </div>
-            <BatchState row={row} />
-            <b>{row.fitScore || "-"}</b>
-            {row.recruiterProfile ? <a href={row.recruiterProfile} target="_blank" rel="noreferrer" aria-label={`${row.recruiterName || row.company} LinkedIn`}><ArrowUpRight size={17} /></a> : <span />}
-          </article>
+        {labeledRows.slice(0, 5).map((row) => (
+          <RecruiterBatchRow row={row} key={`batch-${row.postingKey}`} />
         ))}
+        {!labeledRows.length && <p className="batch-empty">No labeled recruiter rows are ready to review yet.</p>}
       </div>
     </section>
   );
 }
 
-function EngineerBatchBoard({ rows }: { rows: EngineerBatch[] }) {
+function EngineerBatchBoard({ rows, onOpen }: { rows: EngineerBatch[]; onOpen: () => void }) {
   const stats = data.stats.engineerBatch || { total: 0, labeled: 0, approved: 0, sent: 0, notReachedOut: 0, needsEngineer: 0 };
+  const labeledRows = rows.filter((row) => row.engineerName && row.engineerProfile && row.outcome.toLowerCase() !== "sent");
   if (!rows.length && !stats.total) return null;
   return (
-    <section className="recruiter-batch-board">
+    <section className="recruiter-batch-board engineer-batch-board">
       <header>
         <div>
           <span>Engineer batch</span>
           <h4>Labeled, Not Reached Out</h4>
           <p>Pre-run manifest for approved LinkedIn engineer and alumni outreach. Sent rows are recorded separately in the tracker.</p>
         </div>
+        <button className="batch-open" type="button" onClick={onOpen}>View all</button>
         <div className="batch-counts">
-          <b>{stats.labeled}<small>labeled</small></b>
+          <b>{labeledRows.length}<small>ready</small></b>
           <b>{stats.approved}<small>approved</small></b>
           <b>{stats.sent}<small>sent</small></b>
         </div>
       </header>
       <div className="batch-list">
-        {rows.slice(0, 10).map((row) => (
-          <article className="batch-row" key={`engineer-batch-${row.postingKey}`}>
-            <div>
-              <strong>{row.company}</strong>
-              <p>{row.role}</p>
-              <small className="batch-contact">
-                <span>{row.engineerName || "Needs engineer label"}</span>
-                {row.engineerPosition && <em>{row.engineerPosition}</em>}
-              </small>
-            </div>
-            <EngineerBatchState row={row} />
-            <b>{row.fitScore || "-"}</b>
-            {row.engineerProfile ? <a href={row.engineerProfile} target="_blank" rel="noreferrer" aria-label={`${row.engineerName || row.company} LinkedIn`}><ArrowUpRight size={17} /></a> : <span />}
-          </article>
+        {labeledRows.slice(0, 5).map((row) => (
+          <EngineerBatchRow row={row} key={`engineer-batch-${row.postingKey}`} />
         ))}
+        {!labeledRows.length && <p className="batch-empty">No labeled engineer rows are ready to review yet.</p>}
       </div>
     </section>
+  );
+}
+
+function RecruiterBatchRow({ row, detailed = false }: { row: RecruiterBatch; detailed?: boolean }) {
+  return (
+    <article className={`batch-row ${detailed ? "detailed" : ""}`}>
+      <div>
+        <strong>{row.company}</strong>
+        <p>{row.role}</p>
+        <small className="batch-contact">
+          <span>{row.recruiterName || "Needs recruiter label"}</span>
+          {row.recruiterPosition && <em>{row.recruiterPosition}</em>}
+        </small>
+        {detailed && <BatchDetails note={row.connectionNote} notes={row.notes} />}
+      </div>
+      <BatchState row={row} />
+      <b>{row.fitScore || "-"}</b>
+      {row.recruiterProfile ? <a href={row.recruiterProfile} target="_blank" rel="noreferrer" aria-label={`${row.recruiterName || row.company} LinkedIn`}><ArrowUpRight size={17} /></a> : <span />}
+    </article>
+  );
+}
+
+function EngineerBatchRow({ row, detailed = false }: { row: EngineerBatch; detailed?: boolean }) {
+  return (
+    <article className={`batch-row ${detailed ? "detailed" : ""}`}>
+      <div>
+        <strong>{row.company}</strong>
+        <p>{row.role}</p>
+        <small className="batch-contact">
+          <span>{row.engineerName || "Needs engineer label"}</span>
+          {row.engineerPosition && <em>{row.engineerPosition}</em>}
+        </small>
+        {detailed && <BatchDetails note={row.connectionNote} notes={row.notes} />}
+      </div>
+      <EngineerBatchState row={row} />
+      <b>{row.fitScore || "-"}</b>
+      {row.engineerProfile ? <a href={row.engineerProfile} target="_blank" rel="noreferrer" aria-label={`${row.engineerName || row.company} LinkedIn`}><ArrowUpRight size={17} /></a> : <span />}
+    </article>
+  );
+}
+
+function BatchDetails({ note, notes }: { note: string; notes: string }) {
+  return (
+    <dl className="batch-details">
+      <div>
+        <dt>Connection note</dt>
+        <dd>{note || "No note drafted yet"}</dd>
+      </div>
+      {notes && (
+        <div>
+          <dt>Research notes</dt>
+          <dd>{notes}</dd>
+        </div>
+      )}
+    </dl>
+  );
+}
+
+function RecruiterBatchModal({ rows, onClose }: { rows: RecruiterBatch[]; onClose: () => void }) {
+  const labeledRows = rows.filter((row) => row.recruiterName && row.recruiterProfile && row.outcome.toLowerCase() !== "sent");
+  return (
+    <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
+      <section className="outreach-modal batch-modal" role="dialog" aria-modal="true" aria-label="Recruiter batch review" onMouseDown={(event) => event.stopPropagation()}>
+        <header>
+          <div>
+            <p className="eyebrow">Recruiter batch</p>
+            <h2>Labeled, Not Reached Out</h2>
+            <p>{labeledRows.length} recruiter contacts ready for fact-checking.</p>
+          </div>
+          <button onClick={onClose} type="button" aria-label="Close"><X size={18} /></button>
+        </header>
+        <div className="modal-list batch-modal-list">
+          {labeledRows.map((row) => <RecruiterBatchRow row={row} detailed key={`modal-recruiter-batch-${row.postingKey}`} />)}
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function EngineerBatchModal({ rows, onClose }: { rows: EngineerBatch[]; onClose: () => void }) {
+  const labeledRows = rows.filter((row) => row.engineerName && row.engineerProfile && row.outcome.toLowerCase() !== "sent");
+  return (
+    <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
+      <section className="outreach-modal batch-modal" role="dialog" aria-modal="true" aria-label="Engineer batch review" onMouseDown={(event) => event.stopPropagation()}>
+        <header>
+          <div>
+            <p className="eyebrow">Engineer batch</p>
+            <h2>Labeled, Not Reached Out</h2>
+            <p>{labeledRows.length} engineer or alumni contacts ready for fact-checking.</p>
+          </div>
+          <button onClick={onClose} type="button" aria-label="Close"><X size={18} /></button>
+        </header>
+        <div className="modal-list batch-modal-list">
+          {labeledRows.map((row) => <EngineerBatchRow row={row} detailed key={`modal-engineer-batch-${row.postingKey}`} />)}
+        </div>
+      </section>
+    </div>
   );
 }
 
