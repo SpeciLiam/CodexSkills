@@ -138,8 +138,9 @@ For each target lane:
    - UGA alum engineer
    - engineer on the relevant team
    - another employee with a visible `Connect` button
-7. Use a note with the connection request whenever LinkedIn allows it.
-8. If only a follow button or message-only flow is available, skip and move on unless the user asks for a manual fallback.
+7. If search results or list cards only show `Message`, open the full profile anyway. On the profile page, check for a direct `Connect` button first, then try `More` -> `Connect` before deciding the person is blocked.
+8. Use a note with the connection request whenever LinkedIn allows it.
+9. If the full profile still only offers follow or message-only actions, skip and move on unless the user asks for a manual fallback.
 
 ## After a send
 
@@ -171,5 +172,6 @@ This skill pairs naturally with `resume-tailor`:
 
 - Keep outreach truthful and brief.
 - Prefer the user-approved note style over inventing a new voice each time.
+- Treat search-result `Message` buttons as inconclusive until the full profile and `More` menu have been checked for `Connect`.
 - Do not claim an application was submitted unless that is already true.
 - Do not update Notion here unless the user explicitly asks; this skill should keep the markdown tracker authoritative.
