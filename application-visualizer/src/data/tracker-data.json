@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T02:04:26.692902+00:00",
+  "generatedAt": "2026-04-30T02:39:28.412312+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -8,19 +8,19 @@
   },
   "stats": {
     "kpis": {
-      "total": 276,
+      "total": 278,
       "applied": 243,
-      "unapplied": 33,
-      "active": 218,
+      "unapplied": 35,
+      "active": 220,
       "rejected": 33,
       "interviewing": 4,
       "assessments": 3,
-      "highFit": 165,
-      "reachOut": 220,
-      "recruiterRows": 93,
+      "highFit": 166,
+      "reachOut": 222,
+      "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 88.0,
+      "applyRate": 87.4,
       "rejectionRate": 13.6
     },
     "statusCounts": [
@@ -38,7 +38,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 6
+        "value": 8
       },
       {
         "name": "Interviewing",
@@ -117,12 +117,20 @@
       {
         "name": "Airbnb Careers",
         "value": 1
+      },
+      {
+        "name": "Google Careers",
+        "value": 1
+      },
+      {
+        "name": "Meta Careers",
+        "value": 1
       }
     ],
     "locationCounts": [
       {
         "name": "New York",
-        "value": 128
+        "value": 129
       },
       {
         "name": "Bay Area",
@@ -130,7 +138,7 @@
       },
       {
         "name": "Other",
-        "value": 31
+        "value": 32
       },
       {
         "name": "Remote",
@@ -152,7 +160,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 161
+        "value": 163
       },
       {
         "name": "Backend",
@@ -198,7 +206,7 @@
       },
       {
         "score": "4",
-        "count": 2
+        "count": 3
       },
       {
         "score": "5",
@@ -214,7 +222,7 @@
       },
       {
         "score": "8",
-        "count": 52
+        "count": 53
       },
       {
         "score": "9",
@@ -360,8 +368,8 @@
       },
       {
         "date": "2026-04-29",
-        "cumulative": 276,
-        "added": 9,
+        "cumulative": 278,
+        "added": 11,
         "applied": 4,
         "rejected": 0,
         "interviewing": 0
@@ -840,12 +848,12 @@
       }
     ],
     "recruiterBatch": {
-      "total": 130,
-      "labeled": 130,
-      "approved": 15,
-      "sent": 1,
-      "notReachedOut": 14,
-      "needsRecruiter": 0
+      "total": 129,
+      "labeled": 127,
+      "approved": 12,
+      "sent": 5,
+      "notReachedOut": 7,
+      "needsRecruiter": 2
     },
     "engineerBatch": {
       "total": 186,
@@ -3768,15 +3776,21 @@
       "postingKey": "495b5050-0d48-4ff7-ab21-2a6155d62658",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Valon/Software_Engineer/Liam_Van_Resume_2",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Valon/Software_Engineer/Liam_Van_Resume_2/Liam_Van_Valon.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Brianna Flint",
+      "recruiterProfile": "https://www.linkedin.com/in/brianna-flint/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-07; Application confirmation email received 2026-04-24",
-      "noteLinks": [],
+      "notes": "Application confirmation email received 2026-04-07; Application confirmation email received 2026-04-24; LinkedIn invite sent to Brianna Flint (Recruiter) 2026-04-29",
+      "noteLinks": [
+        {
+          "label": "Brianna Flint",
+          "url": "https://www.linkedin.com/in/brianna-flint/"
+        }
+      ],
       "activityDates": [
         "2026-04-07",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-29"
       ]
     },
     {
@@ -6656,16 +6670,22 @@
       "postingKey": "7dbc14c4-0ff0-48c4-9df3-0e6a2357bab9",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Yuzu/Product_Engineer/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Yuzu/Product_Engineer/Liam_Van_Resume/Liam_Van_Yuzu.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Kevin Grice",
+      "recruiterProfile": "https://www.linkedin.com/in/kevin-grice-67938a12",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced tracked Product Engineer posting with Software Engineer (Backend) posting 2026-04-28; role focuses on TypeScript, SvelteKit, NestJS, healthcare data structures, early-employee ownership, and in-person Flatiron NYC work. Manual apply needed: candidate-authored Why Yuzu and hardest-project free responses plus human/honeypot checkbox before submission 2026-04-28; Application submitted 2026-04-28",
-      "noteLinks": [],
+      "notes": "Replaced tracked Product Engineer posting with Software Engineer (Backend) posting 2026-04-28; role focuses on TypeScript, SvelteKit, NestJS, healthcare data structures, early-employee ownership, and in-person Flatiron NYC work. Manual apply needed: candidate-authored Why Yuzu and hardest-project free responses plus human/honeypot checkbox before submission 2026-04-28; Application submitted 2026-04-28; LinkedIn invite sent to Kevin Grice (Recruiter) 2026-04-29",
+      "noteLinks": [
+        {
+          "label": "Kevin Grice",
+          "url": "https://www.linkedin.com/in/kevin-grice-67938a12"
+        }
+      ],
       "activityDates": [
         "2026-04-28",
         "2026-04-28",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ]
     },
     {
@@ -6806,18 +6826,24 @@
       "postingKey": "9aae43bf-3303-468e-aae0-038b7fb395f3",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tennr/Backend_Software_Engineer/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tennr/Backend_Software_Engineer/Liam_Van_Resume/Liam_Van_Tennr.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Jason Siegel",
+      "recruiterProfile": "https://www.linkedin.com/in/jason-siegel",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required salary and proud-product free-response questions 2026-04-27; Manual apply verified: required salary/proud-product free responses plus reCAPTCHA 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, salary, relocation/sponsorship, LinkedIn, referral, and proud-product response; submit attempt returned 'We couldn't submit your application' possible-spam blocker 2026-04-28; Application confirmation email received 2026-04-28",
-      "noteLinks": [],
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required salary and proud-product free-response questions 2026-04-27; Manual apply verified: required salary/proud-product free responses plus reCAPTCHA 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, salary, relocation/sponsorship, LinkedIn, referral, and proud-product response; submit attempt returned 'We couldn't submit your application' possible-spam blocker 2026-04-28; Application confirmation email received 2026-04-28; LinkedIn invite sent to Jason Siegel (Recruiter) 2026-04-29",
+      "noteLinks": [
+        {
+          "label": "Jason Siegel",
+          "url": "https://www.linkedin.com/in/jason-siegel"
+        }
+      ],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
         "2026-04-28",
         "2026-04-28",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ]
     },
     {
@@ -6864,18 +6890,24 @@
       "postingKey": "5691911004",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Figma/Software_Engineer_Full_Stack/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Figma/Software_Engineer_Full_Stack/Liam_Van_Resume/Liam_Van_Figma.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Hannah O'Toole",
+      "recruiterProfile": "https://www.linkedin.com/in/hannahotoole",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: required Figma motivation free-response question 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28; Manual apply verified: live Greenhouse posting 5691911004 filled with tailored resume and custom Figma responses; submit attempt triggered 8-character email verification code sent to liamvanpj@gmail.com 2026-04-28; Application confirmation email received 2026-04-28",
-      "noteLinks": [],
+      "notes": "Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: required Figma motivation free-response question 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28; Manual apply verified: live Greenhouse posting 5691911004 filled with tailored resume and custom Figma responses; submit attempt triggered 8-character email verification code sent to liamvanpj@gmail.com 2026-04-28; Application confirmation email received 2026-04-28; LinkedIn invite sent to Hannah O'Toole (Recruiter) 2026-04-29",
+      "noteLinks": [
+        {
+          "label": "Hannah O'Toole",
+          "url": "https://www.linkedin.com/in/hannahotoole"
+        }
+      ],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
         "2026-04-28",
         "2026-04-28",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ]
     },
     {
@@ -6893,17 +6925,23 @@
       "postingKey": "a906c895-a49e-4961-9b11-7cc23517204a",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Whatnot/Software_Engineer_Data/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Whatnot/Software_Engineer_Data/Liam_Van_Resume/Liam_Van_Whatnot.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Steve DeBear",
+      "recruiterProfile": "https://www.linkedin.com/in/steven-debear",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Application submitted via Ashby with tailored Whatnot resume, Seattle hub, LinkedIn source, work authorization yes/no sponsorship 2026-04-28; Application confirmation email received 2026-04-28",
-      "noteLinks": [],
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Application submitted via Ashby with tailored Whatnot resume, Seattle hub, LinkedIn source, work authorization yes/no sponsorship 2026-04-28; Application confirmation email received 2026-04-28; LinkedIn invite sent to Steve DeBear (Recruiter) 2026-04-29",
+      "noteLinks": [
+        {
+          "label": "Steve DeBear",
+          "url": "https://www.linkedin.com/in/steven-debear"
+        }
+      ],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
         "2026-04-28",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ]
     },
     {
@@ -7014,16 +7052,22 @@
       "postingKey": "41dabf52-d665-4c67-a2ae-31f70df6c470",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Savvy Wealth/Software_Engineer_Applied_AI/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Savvy Wealth/Software_Engineer_Applied_AI/Liam_Van_Resume/Liam_Van_Savvy_Wealth.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Adrian Obeso",
+      "recruiterProfile": "https://www.linkedin.com/in/adrianobeso",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Application submitted via Ashby with tailored Savvy Wealth resume, no sponsorship, U.S. citizen, 4-day Midtown in-office yes, willing to relocate to New York 2026-04-28",
-      "noteLinks": [],
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Application submitted via Ashby with tailored Savvy Wealth resume, no sponsorship, U.S. citizen, 4-day Midtown in-office yes, willing to relocate to New York 2026-04-28; LinkedIn invite sent to Adrian Obeso (Recruiter) 2026-04-29",
+      "noteLinks": [
+        {
+          "label": "Adrian Obeso",
+          "url": "https://www.linkedin.com/in/adrianobeso"
+        }
+      ],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ]
     },
     {
@@ -7099,18 +7143,24 @@
       "postingKey": "1378194800",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/SMBC Group/Software_Engineer_Capital_Markets/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/SMBC Group/Software_Engineer_Capital_Markets/Liam_Van_Resume/Liam_Van_SMBC_Group.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Gregory Pellegrino",
+      "recruiterProfile": "https://www.linkedin.com/in/gspellegrino",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct SMBC Careers application 2026-04-27; Manual apply needed: SMBC careers profile/application flow 2026-04-27; Manual apply verified: company careers profile/application flow remains blocker 2026-04-28; Manual apply verified: live SMBC Apply button redirects to SuccessFactors sign-in/account creation before application form 2026-04-28; Application confirmation email received 2026-04-28",
-      "noteLinks": [],
+      "notes": "Replaced LinkedIn posting with direct SMBC Careers application 2026-04-27; Manual apply needed: SMBC careers profile/application flow 2026-04-27; Manual apply verified: company careers profile/application flow remains blocker 2026-04-28; Manual apply verified: live SMBC Apply button redirects to SuccessFactors sign-in/account creation before application form 2026-04-28; Application confirmation email received 2026-04-28; LinkedIn invite sent to Gregory Pellegrino (Recruiter) 2026-04-29",
+      "noteLinks": [
+        {
+          "label": "Gregory Pellegrino",
+          "url": "https://www.linkedin.com/in/gspellegrino"
+        }
+      ],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
         "2026-04-28",
         "2026-04-28",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ]
     },
     {
@@ -8892,6 +8942,56 @@
       "engineerContact": "",
       "engineerProfile": "",
       "notes": "Tailored for Playbook Sports Full Stack Engineer role 2026-04-29; emphasized Python, object-oriented backend work, full-stack React/NestJS/Spring Boot product features, QA/unit/regression testing, cloud workflows, relational data modeling, AI-assisted tooling, fast delivery, and sports-product project relevance. Did not claim Django experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-29"
+      ]
+    },
+    {
+      "company": "Google",
+      "role": "Strategic Cloud Engineer, Google Public Sector",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 4,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-04-29",
+      "location": "Reston, VA, USA",
+      "source": "Google Careers",
+      "jobLink": "https://www.google.com/about/careers/applications/jobs/results/113311514005250758-strategic-cloud-engineer-google-public-sector?target_level=EARLY&q=software&location=United%20States&page=5#!t=jo&jid=127025001&",
+      "postingKey": "113311514005250758-strategic-cloud-engineer-google-public-sector",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Google/Strategic_Cloud_Engineer_Google_Public_Sector/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Google/Strategic_Cloud_Engineer_Google_Public_Sector/Liam_Van_Resume/Liam_Van_Google.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Google Public Sector Strategic Cloud Engineer role 2026-04-29; emphasized GCP/OCI cloud integration, production readiness, troubleshooting, automation, technical documentation, and AI deployment workflows. Did not claim Kubernetes, Google Cloud certifications, public sector domain experience, or US citizenship beyond the posting requirement.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-29"
+      ]
+    },
+    {
+      "company": "Meta",
+      "role": "Software Engineer, Product",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-04-29",
+      "location": "Sunnyvale, CA / Los Angeles, CA / Bellevue, WA / Menlo Park, CA / Seattle, WA / Burlingame, CA / New York, NY / San Francisco, CA",
+      "source": "Meta Careers",
+      "jobLink": "https://www.metacareers.com/profile/job_details/1079158160340219",
+      "postingKey": "1079158160340219",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Meta/Software_Engineer_Product/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Meta/Software_Engineer_Product/Liam_Van_Resume/Liam_Van_Meta.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Meta Software Engineer, Product role 2026-04-29; emphasized product engineering, reusable components, API quality, performance, scalability, rollout reliability, and AI-assisted workflow improvements. Did not claim Swift, Kotlin, Hack, large-scope technical leadership, or the 6+ years of experience requested in the posting.",
       "noteLinks": [],
       "activityDates": [
         "2026-04-29"
@@ -11818,6 +11918,40 @@
     },
     {
       "batch": "recruiter-2026-04-29",
+      "company": "Meta",
+      "role": "Software Engineer, Product",
+      "postingKey": "1079158160340219",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "recruiterName": "",
+      "recruiterProfile": "",
+      "recruiterPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs recruiter",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
+    },
+    {
+      "batch": "recruiter-2026-04-29",
+      "company": "Google",
+      "role": "Strategic Cloud Engineer, Google Public Sector",
+      "postingKey": "113311514005250758-strategic-cloud-engineer-google-public-sector",
+      "fitScore": 4,
+      "status": "Resume Tailored",
+      "recruiterName": "",
+      "recruiterProfile": "",
+      "recruiterPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs recruiter",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
+    },
+    {
+      "batch": "recruiter-2026-04-29",
       "company": "Automat",
       "role": "Software Engineer (Junior/Intermediate)",
       "postingKey": "a4172515-0353-47ec-9c71-631a294aa137",
@@ -11883,40 +12017,6 @@
       "outcome": "Blocked",
       "lastChecked": "2026-04-29",
       "notes": "Public LinkedIn job poster for this role.; Not independently current-company verified in 2026-04-28 audit; block before approval/outreach.; Blocked during all-labeled cleanup; label retained for completeness, but verify before any outreach."
-    },
-    {
-      "batch": "recruiter-2026-04-29",
-      "company": "Dagster Labs",
-      "role": "Software Engineer - Platform",
-      "postingKey": "7714923003",
-      "fitScore": 9,
-      "status": "Applied",
-      "recruiterName": "Bosmat Eldar",
-      "recruiterProfile": "https://www.linkedin.com/in/bosmateldar",
-      "recruiterPosition": "Head of Engineering at Dagster Labs",
-      "route": "try-free-inmail-then-connect-note",
-      "connectionNote": "Hi Bosmat, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about Dagster Labs's Software Engineer - Platform role, and I'm also open to other software roles that may be a fit. Thanks, Liam",
-      "approval": "Approved",
-      "outcome": "Sent",
-      "lastChecked": "2026-04-29",
-      "notes": "Selected current Dagster Labs Head of Engineering from public LinkedIn, Dagster leadership page, and The Org results; hiring contact for engineering.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note.; Invitation sent through Connect with note (Message required Premium / paid path)."
-    },
-    {
-      "batch": "recruiter-2026-04-28",
-      "company": "Figma",
-      "role": "Software Engineer, Full Stack",
-      "postingKey": "5691911004",
-      "fitScore": 9,
-      "status": "Applied",
-      "recruiterName": "Hannah O'Toole",
-      "recruiterProfile": "https://www.linkedin.com/in/hannahotoole",
-      "recruiterPosition": "Early Career Recruiter",
-      "route": "try-free-inmail-then-connect-note",
-      "connectionNote": "Hi Hannah, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about Figma's Software Engineer, Full Stack role, and I'm also open to other software roles that may be a fit. Thanks, Liam",
-      "approval": "Approved",
-      "outcome": "Not reached out",
-      "lastChecked": "2026-04-29",
-      "notes": "Selected from public LinkedIn result: Figma early career recruiter.; Position normalized during recruiter batch fill pass.; Verified current Figma early career recruiter via public LinkedIn result crawled 3 weeks ago.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note."
     },
     {
       "batch": "recruiter-2026-04-29",
@@ -12016,9 +12116,9 @@
       "route": "try-free-inmail-then-connect-note",
       "connectionNote": "Hi Brendan, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about Maybern's Software Engineer role, and I'm also open to other software roles that may be a fit. Thanks, Liam",
       "approval": "Approved",
-      "outcome": "Not reached out",
+      "outcome": "Skipped",
       "lastChecked": "2026-04-29",
-      "notes": "Verified current Maybern technical recruiter via public LinkedIn result crawled last week.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note."
+      "notes": "Verified current Maybern technical recruiter via public LinkedIn result crawled last week.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note.; Already reached out previously (existing LinkedIn message thread)."
     },
     {
       "batch": "recruiter-2026-04-28",
@@ -12033,9 +12133,9 @@
       "route": "try-free-inmail-then-connect-note",
       "connectionNote": "Hi Miguel, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about Plaid's software engineering roles. Thanks, Liam",
       "approval": "Approved",
-      "outcome": "Not reached out",
+      "outcome": "Skipped",
       "lastChecked": "2026-04-29",
-      "notes": "Verified current Plaid profile via public LinkedIn result crawled last week.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note."
+      "notes": "Verified current Plaid profile via public LinkedIn result crawled last week.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note.; Already shows Pending on LinkedIn (invite previously sent)."
     },
     {
       "batch": "recruiter-2026-04-29",
@@ -12107,23 +12207,6 @@
     },
     {
       "batch": "recruiter-2026-04-29",
-      "company": "Savvy Wealth",
-      "role": "Software Engineer, Applied AI",
-      "postingKey": "41dabf52-d665-4c67-a2ae-31f70df6c470",
-      "fitScore": 9,
-      "status": "Applied",
-      "recruiterName": "Adrian Obeso",
-      "recruiterProfile": "https://www.linkedin.com/in/adrianobeso",
-      "recruiterPosition": "Technical Recruiter / Talent Leader at Savvy Wealth",
-      "route": "try-free-inmail-then-connect-note",
-      "connectionNote": "Hi Adrian, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about Savvy Wealth's Software Engineer, Applied AI role, and I'm also open to other software roles that may be a fit. Thanks, Liam",
-      "approval": "Approved",
-      "outcome": "Not reached out",
-      "lastChecked": "2026-04-29",
-      "notes": "Selected current Savvy Wealth technical recruiter from public LinkedIn result and active Savvy technical recruiting posting.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note."
-    },
-    {
-      "batch": "recruiter-2026-04-29",
       "company": "Slash",
       "role": "Software Engineer, Growth",
       "postingKey": "77521da6-5a0a-44bf-b434-6947f345c970",
@@ -12152,9 +12235,9 @@
       "route": "try-free-inmail-then-connect-note",
       "connectionNote": "Hi Gregory, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about SMBC Group's Software Engineer - Capital Markets role, and I'm also open to other software roles that may be a fit. Thanks, Liam",
       "approval": "Approved",
-      "outcome": "Not reached out",
+      "outcome": "Sent",
       "lastChecked": "2026-04-29",
-      "notes": "Position normalized during recruiter batch fill pass.; Verified current SMBC Group senior technical recruiter via public LinkedIn result crawled 3 weeks ago.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note."
+      "notes": "Position normalized during recruiter batch fill pass.; Verified current SMBC Group senior technical recruiter via public LinkedIn result crawled 3 weeks ago.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note.; Already reached out previously (per user); recorded here; no new invite sent in this run."
     },
     {
       "batch": "recruiter-2026-04-28",
@@ -12169,9 +12252,9 @@
       "route": "try-free-inmail-then-connect-note",
       "connectionNote": "Hi Jason, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about Tennr's Backend Software Engineer role, and I'm also open to other software roles that may be a fit. Thanks, Liam",
       "approval": "Approved",
-      "outcome": "Not reached out",
+      "outcome": "Sent",
       "lastChecked": "2026-04-29",
-      "notes": "Position normalized during recruiter batch fill pass.; Verified current Tennr talent acquisition partner via public LinkedIn result crawled last month.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note."
+      "notes": "Position normalized during recruiter batch fill pass.; Verified current Tennr talent acquisition partner via public LinkedIn result crawled last month.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note.; Invitation sent through Connect with note (Message required Premium/InMail)."
     },
     {
       "batch": "recruiter-2026-04-29",
@@ -12220,9 +12303,9 @@
       "route": "try-free-inmail-then-connect-note",
       "connectionNote": "Hi Brianna, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about Valon's Software Engineer role, and I'm also open to other software roles that may be a fit. Thanks, Liam",
       "approval": "Approved",
-      "outcome": "Not reached out",
+      "outcome": "Sent",
       "lastChecked": "2026-04-29",
-      "notes": "Verified current Valon talent acquisition profile via public LinkedIn result crawled last week.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note."
+      "notes": "Verified current Valon talent acquisition profile via public LinkedIn result crawled last week.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note.; LinkedIn already showed pending invitation; recorded as reached out (no new invite sent)."
     },
     {
       "batch": "recruiter-2026-04-28",
@@ -12237,9 +12320,9 @@
       "route": "try-free-inmail-then-connect-note",
       "connectionNote": "Hi Steve, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about Whatnot's Software Engineer, Data role, and I'm also open to other software roles that may be a fit. Thanks, Liam",
       "approval": "Approved",
-      "outcome": "Not reached out",
+      "outcome": "Sent",
       "lastChecked": "2026-04-29",
-      "notes": "Position normalized during recruiter batch fill pass.; Verified current Whatnot recruiter via public LinkedIn result crawled last week.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note."
+      "notes": "Position normalized during recruiter batch fill pass.; Verified current Whatnot recruiter via public LinkedIn result crawled last week.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note.; Invitation sent through Connect with note (Message required Premium/InMail)."
     },
     {
       "batch": "recruiter-2026-04-28",
@@ -12254,9 +12337,9 @@
       "route": "try-free-inmail-then-connect-note",
       "connectionNote": "Hi Kevin, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about Yuzu's Software Engineer (Backend) role, and I'm also open to other software roles that may be a fit. Thanks, Liam",
       "approval": "Approved",
-      "outcome": "Not reached out",
+      "outcome": "Sent",
       "lastChecked": "2026-04-29",
-      "notes": "Position normalized during recruiter batch fill pass.; Verified current Yuzu recruiting/talent profile via public LinkedIn result crawled 3 weeks ago and LinkedIn directory result.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note."
+      "notes": "Position normalized during recruiter batch fill pass.; Verified current Yuzu recruiting/talent profile via public LinkedIn result crawled 3 weeks ago and LinkedIn directory result.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note.; Invitation sent through Connect with note (Message required Premium/InMail)."
     },
     {
       "batch": "recruiter-2026-04-28",
