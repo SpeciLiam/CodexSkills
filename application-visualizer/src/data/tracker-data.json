@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T04:20:21.254520+00:00",
+  "generatedAt": "2026-04-30T19:46:16.446526+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -8,25 +8,25 @@
   },
   "stats": {
     "kpis": {
-      "total": 279,
-      "applied": 243,
-      "unapplied": 36,
-      "active": 221,
+      "total": 280,
+      "applied": 245,
+      "unapplied": 35,
+      "active": 222,
       "rejected": 33,
       "interviewing": 4,
       "assessments": 3,
-      "highFit": 166,
-      "reachOut": 223,
+      "highFit": 168,
+      "reachOut": 224,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 87.1,
-      "rejectionRate": 13.6
+      "applyRate": 87.5,
+      "rejectionRate": 13.5
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 202
+        "value": 204
       },
       {
         "name": "Rejected",
@@ -38,7 +38,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 9
+        "value": 8
       },
       {
         "name": "Interviewing",
@@ -56,11 +56,11 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 115
+        "value": 114
       },
       {
         "name": "Ashby",
-        "value": 65
+        "value": 66
       },
       {
         "name": "Greenhouse",
@@ -76,7 +76,7 @@
       },
       {
         "name": "Lever",
-        "value": 10
+        "value": 11
       },
       {
         "name": "Gem",
@@ -134,7 +134,7 @@
       },
       {
         "name": "Bay Area",
-        "value": 92
+        "value": 93
       },
       {
         "name": "Other",
@@ -168,11 +168,11 @@
       },
       {
         "name": "Full Stack",
-        "value": 26
+        "value": 27
       },
       {
         "name": "Forward Deployed",
-        "value": 25
+        "value": 24
       },
       {
         "name": "AI/ML",
@@ -188,7 +188,7 @@
       },
       {
         "name": "Frontend",
-        "value": 1
+        "value": 2
       }
     ],
     "fitCounts": [
@@ -210,7 +210,7 @@
       },
       {
         "score": "5",
-        "count": 26
+        "count": 25
       },
       {
         "score": "6",
@@ -222,7 +222,7 @@
       },
       {
         "score": "8",
-        "count": 53
+        "count": 55
       },
       {
         "score": "9",
@@ -370,7 +370,15 @@
         "date": "2026-04-29",
         "cumulative": 279,
         "added": 12,
-        "applied": 4,
+        "applied": 6,
+        "rejected": 0,
+        "interviewing": 0
+      },
+      {
+        "date": "2026-04-30",
+        "cumulative": 280,
+        "added": 1,
+        "applied": 0,
         "rejected": 0,
         "interviewing": 0
       }
@@ -383,13 +391,13 @@
         "bestFit": 10
       },
       {
-        "company": "Intuit",
-        "roles": 3,
-        "avgFit": 9.33,
+        "company": "Spotify",
+        "roles": 4,
+        "avgFit": 9.0,
         "bestFit": 10
       },
       {
-        "company": "Spotify",
+        "company": "Intuit",
         "roles": 3,
         "avgFit": 9.33,
         "bestFit": 10
@@ -884,7 +892,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/johnstoecker/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Raquel Gonzalez, Cruz Gonzalez, Kristin Jue, Amelia Jones, Febin Bellamy, Matthew Negasi, and John Stoecker 2026-04-25; Replaced closed LinkedIn posting with Greenhouse role 2026-04-27; Manual apply needed: required Clever culture-tenet free response 2026-04-27; Manual apply verified: reCAPTCHA present on application flow 2026-04-28; Manual apply verified: Greenhouse embed form filled with tailored resume, Seattle location, sponsorship No, LinkedIn/source, custom Always a Student culture-tenet response, Kubernetes Yes, and demographic selections; all required fields validated but submit attempt stayed on form with embedded reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28; LinkedIn invite sent to Audrey Cevallos (Recruiter) 2026-04-28; Recruiter screen requested 2026-04-29",
+      "notes": "LinkedIn invite sent to Raquel Gonzalez, Cruz Gonzalez, Kristin Jue, Amelia Jones, Febin Bellamy, Matthew Negasi, and John Stoecker 2026-04-25; Replaced closed LinkedIn posting with Greenhouse role 2026-04-27; Manual apply needed: required Clever culture-tenet free response 2026-04-27; Manual apply verified: reCAPTCHA present on application flow 2026-04-28; Manual apply verified: Greenhouse embed form filled with tailored resume, Seattle location, sponsorship No, LinkedIn/source, custom Always a Student culture-tenet response, Kubernetes Yes, and demographic selections; all required fields validated but submit attempt stayed on form with embedded reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28; LinkedIn invite sent to Audrey Cevallos (Recruiter) 2026-04-28; Recruiter screen requested 2026-04-29; Interview availability submitted 2026-04-30",
       "noteLinks": [
         {
           "label": "Raquel Gonzalez",
@@ -927,7 +935,8 @@
         "2026-04-28",
         "2026-04-28",
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ]
     },
     {
@@ -6076,7 +6085,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/kamalds510/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Aurora Careers application 2026-04-27; Manual apply needed: embedded Aurora application form not automation-accessible 2026-04-27; Manual apply verified: custom embedded application flow remains blocker 2026-04-28; Manual apply verified: direct Greenhouse form filled with tailored resume, contact info, authorization/sponsorship, Mountain View onsite willingness, recent-grad/project/coding-language answers, LinkedIn source, website, LinkedIn profile, and demographics; submit clicked but page stayed on form with invisible reCAPTCHA/no confirmation 2026-04-28; Application submitted 2026-04-28; LinkedIn invite sent to Kamal D. Singh (Recruiter) 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Aurora Careers application 2026-04-27; Manual apply needed: embedded Aurora application form not automation-accessible 2026-04-27; Manual apply verified: custom embedded application flow remains blocker 2026-04-28; Manual apply verified: direct Greenhouse form filled with tailored resume, contact info, authorization/sponsorship, Mountain View onsite willingness, recent-grad/project/coding-language answers, LinkedIn source, website, LinkedIn profile, and demographics; submit clicked but page stayed on form with invisible reCAPTCHA/no confirmation 2026-04-28; Application submitted 2026-04-28; LinkedIn invite sent to Kamal D. Singh (Recruiter) 2026-04-28; Application confirmation email received 2026-04-30",
       "noteLinks": [
         {
           "label": "Kamal D. Singh",
@@ -6089,7 +6098,8 @@
         "2026-04-28",
         "2026-04-28",
         "2026-04-28",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-30"
       ]
     },
     {
@@ -8097,7 +8107,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/gwendolyncunningham",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for BlackRock SMA Solutions full-stack platform role 2026-04-28; promoted React, TypeScript, Python, SQL, AWS, APIs, reliability, and product collaboration; did not claim Kubernetes ownership despite posting preference.; Application submitted 2026-04-28; LinkedIn invite sent to Gwendolyn Cunningham (Recruiter) 2026-04-29",
+      "notes": "Tailored for BlackRock SMA Solutions full-stack platform role 2026-04-28; promoted React, TypeScript, Python, SQL, AWS, APIs, reliability, and product collaboration; did not claim Kubernetes ownership despite posting preference.; Application submitted 2026-04-28; LinkedIn invite sent to Gwendolyn Cunningham (Recruiter) 2026-04-29; Application confirmation email received 2026-04-28",
       "noteLinks": [
         {
           "label": "Gwendolyn Cunningham",
@@ -8107,7 +8117,8 @@
       "activityDates": [
         "2026-04-28",
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-28"
       ]
     },
     {
@@ -8975,8 +8986,8 @@
     {
       "company": "Meta",
       "role": "Software Engineer, Product",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -8991,36 +9002,61 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Meta Software Engineer, Product role 2026-04-29; emphasized product engineering, reusable components, API quality, performance, scalability, rollout reliability, and AI-assisted workflow improvements. Did not claim Swift, Kotlin, Hack, large-scope technical leadership, or the 6+ years of experience requested in the posting.",
+      "notes": "Tailored for Meta Software Engineer, Product role 2026-04-29; emphasized product engineering, reusable components, API quality, performance, scalability, rollout reliability, and AI-assisted workflow improvements. Did not claim Swift, Kotlin, Hack, large-scope technical leadership, or the 6+ years of experience requested in the posting.; Application confirmation email received 2026-04-30",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ]
     },
     {
-      "company": "Cleartech Recruiting",
-      "role": "Deployed Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
-      "fitScore": 5,
+      "company": "Cluely",
+      "role": "Founding Engineer (Fullstack TypeScript)",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
       "reachOut": true,
       "referral": "No",
       "dateAdded": "2026-04-29",
-      "location": "Brooklyn, NY (In-Office)",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/4402489021/",
-      "postingKey": "4402489021",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Cleartech Recruiting/Deployed_Engineer/Liam_Van_Resume",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Cleartech Recruiting/Deployed_Engineer/Liam_Van_Resume/Liam_Van_Cleartech_Recruiting.pdf",
+      "location": "San Francisco, CA (On-site)",
+      "source": "Ashby",
+      "jobLink": "https://jobs.ashbyhq.com/cluely/9ed623a7-fc2d-4afc-ab88-a01af977cb9f",
+      "postingKey": "9ed623a7-fc2d-4afc-ab88-a01af977cb9f",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Cluely/Founding_Engineer_Fullstack_TypeScript/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Cluely/Founding_Engineer_Fullstack_TypeScript/Liam_Van_Resume/Liam_Van_Cluely.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Cleartech Recruiting Deployed Engineer role 2026-04-29; emphasized TypeScript-adjacent product engineering, developer experience, API quality, customer-facing technical implementation, and turning field feedback into product improvements. Did not claim 3+ years of experience or direct enterprise CTO advisory work beyond supported cross-team technical communication.",
+      "notes": "Ashby posting: Founding Engineer (Fullstack TypeScript). In-person SF 6 days/week, 10-12 hrs/day; housing provided; strict TypeScript (no any/ts-ignore); Bun + Elysia.; Application submitted 2026-04-30; Application confirmation email received 2026-04-30",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-29"
+        "2026-04-30",
+        "2026-04-30"
       ]
+    },
+    {
+      "company": "Spotify",
+      "role": "Frontend Engineer - Music",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-04-30",
+      "location": "New York, NY",
+      "source": "Lever",
+      "jobLink": "https://jobs.lever.co/spotify/a8606ee6-84b9-4677-af2f-b57f1e71fd91?lever-source=LinkedInJobs",
+      "postingKey": "a8606ee6-84b9-4677-af2f-b57f1e71fd91",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Spotify/Frontend_Engineer_Music/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Spotify/Frontend_Engineer_Music/Liam_Van_Resume/Liam_Van_Spotify.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Spotify Rights Systems frontend role; emphasized React/TypeScript, API integrations, complex workflows, testing, production readiness, and cross-functional product delivery.",
+      "noteLinks": [],
+      "activityDates": []
     }
   ],
   "outreachQueue": [
