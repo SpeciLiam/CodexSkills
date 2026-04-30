@@ -89,20 +89,22 @@ def split_markdown_row(line: str) -> list[str]:
     return [cell.strip().replace("\\|", "|") for cell in line.split("|")]
 
 
-def extract_table(markdown: str, heading: str) -> list[dict[str, str]]:
+def extract_tables(markdown: str, heading: str) -> list[list[dict[str, str]]]:
+    """Return every markdown table under the given ## heading until the next ## heading."""
     lines = markdown.splitlines()
     active_heading = "Main"
+    in_heading = False
     index = 0
+    tables: list[list[dict[str, str]]] = []
     while index < len(lines):
         line = lines[index].strip()
         if line.startswith("## "):
-            active_heading = line.removeprefix("## ").strip()
-        if (
-            active_heading == heading
-            and line.startswith("|")
-            and index + 1 < len(lines)
-            and re.match(r"^\|\s*:?-{3,}:?", lines[index + 1].strip())
-        ):
+            current = line.removeprefix("## ").strip()
+            active_heading = current
+            in_heading = active_heading == heading
+            index += 1
+            continue
+        if in_heading and line.startswith("|") and index + 1 < len(lines) and re.match(r"^\|\s*:?-{3,}:?", lines[index + 1].strip()):
             headers = split_markdown_row(line)
             rows: list[dict[str, str]] = []
             index += 2
@@ -112,9 +114,10 @@ def extract_table(markdown: str, heading: str) -> list[dict[str, str]]:
                     cells += [""] * (len(headers) - len(cells))
                 rows.append(dict(zip(headers, cells[: len(headers)])))
                 index += 1
-            return rows
+            tables.append(rows)
+            continue
         index += 1
-    return []
+    return tables
 
 
 def escape_cell(value: str) -> str:
@@ -150,8 +153,16 @@ def render_table(rows: list[dict[str, str]], columns: list[str]) -> str:
 def existing_rows(path: Path, heading: str) -> dict[str, dict[str, str]]:
     if not path.exists():
         return {}
-    rows = extract_table(path.read_text(encoding="utf-8"), heading)
-    return {row.get("Posting Key", ""): row for row in rows if row.get("Posting Key")}
+    markdown = path.read_text(encoding="utf-8")
+    tables = extract_tables(markdown, heading)
+    merged: dict[str, dict[str, str]] = {}
+    for rows in tables:
+        for row in rows:
+            posting_key = row.get("Posting Key", "")
+            if not posting_key:
+                continue
+            merged[posting_key] = row
+    return merged
 
 
 def load_applications(path: Path) -> list[dict[str, Any]]:

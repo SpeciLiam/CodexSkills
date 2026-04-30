@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T15:38:19.703507+00:00",
+  "generatedAt": "2026-04-30T02:04:26.692902+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -11,26 +11,26 @@
       "total": 276,
       "applied": 243,
       "unapplied": 33,
-      "active": 221,
-      "rejected": 30,
+      "active": 218,
+      "rejected": 33,
       "interviewing": 4,
-      "assessments": 2,
+      "assessments": 3,
       "highFit": 165,
       "reachOut": 220,
-      "recruiterRows": 90,
+      "recruiterRows": 93,
       "prospects": 3,
       "readyEmails": 3,
       "applyRate": 88.0,
-      "rejectionRate": 12.3
+      "rejectionRate": 13.6
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 206
+        "value": 202
       },
       {
         "name": "Rejected",
-        "value": 30
+        "value": 33
       },
       {
         "name": "Archived",
@@ -45,12 +45,12 @@
         "value": 4
       },
       {
-        "name": "Manual Apply Needed",
+        "name": "Online Assessment",
         "value": 3
       },
       {
-        "name": "Online Assessment",
-        "value": 2
+        "name": "Manual Apply Needed",
+        "value": 3
       }
     ],
     "sourceCounts": [
@@ -243,7 +243,7 @@
         "cumulative": 29,
         "added": 29,
         "applied": 27,
-        "rejected": 8,
+        "rejected": 9,
         "interviewing": 1
       },
       {
@@ -347,7 +347,7 @@
         "cumulative": 240,
         "added": 75,
         "applied": 65,
-        "rejected": 0,
+        "rejected": 2,
         "interviewing": 1
       },
       {
@@ -840,11 +840,11 @@
       }
     ],
     "recruiterBatch": {
-      "total": 136,
-      "labeled": 136,
-      "approved": 19,
-      "sent": 2,
-      "notReachedOut": 17,
+      "total": 130,
+      "labeled": 130,
+      "approved": 15,
+      "sent": 1,
+      "notReachedOut": 14,
       "needsRecruiter": 0
     },
     "engineerBatch": {
@@ -3337,14 +3337,20 @@
       "postingKey": "8219795002",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Chime/Software_Engineer_Credit_Line/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Chime/Software_Engineer_Credit_Line/Liam_Van_Resume/Liam_Van_Chime.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Alena Arambula",
+      "recruiterProfile": "https://www.linkedin.com/in/alenaarambula",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-12",
-      "noteLinks": [],
+      "notes": "Application confirmation email received 2026-04-12; LinkedIn invite sent to Alena Arambula (Recruiter) 2026-04-29",
+      "noteLinks": [
+        {
+          "label": "Alena Arambula",
+          "url": "https://www.linkedin.com/in/alenaarambula"
+        }
+      ],
       "activityDates": [
-        "2026-04-12"
+        "2026-04-12",
+        "2026-04-29"
       ]
     },
     {
@@ -5054,7 +5060,7 @@
       "company": "Nuvo",
       "role": "Software Engineer",
       "applied": true,
-      "status": "Applied",
+      "status": "Rejected",
       "fitScore": 8,
       "reachOut": true,
       "referral": "",
@@ -5069,13 +5075,14 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: custom project and technology questions 2026-04-27; Manual apply verified: captcha gates and required custom fields present 2026-04-28; Application submitted via Gem with tailored resume, in-office NYC/SF confirmation Yes, and custom impressive-project plus OpenTelemetry technology responses 2026-04-28; Application confirmation email received 2026-04-28",
+      "notes": "Manual apply needed: custom project and technology questions 2026-04-27; Manual apply verified: captcha gates and required custom fields present 2026-04-28; Application submitted via Gem with tailored resume, in-office NYC/SF confirmation Yes, and custom impressive-project plus OpenTelemetry technology responses 2026-04-28; Application confirmation email received 2026-04-28; Rejection email received 2026-04-29",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-28",
         "2026-04-28",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ]
     },
     {
@@ -6501,7 +6508,7 @@
       "company": "Reval",
       "role": "Founding Software Engineer",
       "applied": true,
-      "status": "Applied",
+      "status": "Online Assessment",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -6516,13 +6523,14 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Reval application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Application submitted via Reval form with tailored resume and routine authorization/location answers 2026-04-28; Application confirmation email received 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Reval application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Application submitted via Reval form with tailored resume and routine authorization/location answers 2026-04-28; Application confirmation email received 2026-04-28; AI-led screen requested 2026-04-29",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
         "2026-04-28",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ]
     },
     {
@@ -6718,7 +6726,7 @@
       "company": "Clay",
       "role": "Software Engineer Backend",
       "applied": true,
-      "status": "Applied",
+      "status": "Rejected",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -6729,17 +6737,24 @@
       "postingKey": "248aa0c7-034f-47d3-a57e-ce16736eeab6",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Clay/Software_Engineer_Backend/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Clay/Software_Engineer_Backend/Liam_Van_Resume/Liam_Van_Clay.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Jen Ayala",
+      "recruiterProfile": "https://www.linkedin.com/in/jenniferecarberry",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Application submitted via Ashby with tailored resume and routine profile/work authorization/location answers 2026-04-28; Application confirmation email received 2026-04-28",
-      "noteLinks": [],
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: final application submission confirmation 2026-04-27; Application submitted via Ashby with tailored resume and routine profile/work authorization/location answers 2026-04-28; Application confirmation email received 2026-04-28; Rejection email received 2026-04-29; LinkedIn invite sent to Jen Ayala (Recruiter) 2026-04-29",
+      "noteLinks": [
+        {
+          "label": "Jen Ayala",
+          "url": "https://www.linkedin.com/in/jenniferecarberry"
+        }
+      ],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
         "2026-04-28",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29",
+        "2026-04-29"
       ]
     },
     {
@@ -7374,18 +7389,24 @@
       "postingKey": "7714923003",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Dagster Labs/Software_Engineer_Platform/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Dagster Labs/Software_Engineer_Platform/Liam_Van_Resume/Liam_Van_Dagster_Labs.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
+      "recruiterContact": "Bosmat Eldar",
+      "recruiterProfile": "https://www.linkedin.com/in/bosmateldar",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: required infrastructure experience-level question and final application submission confirmation 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28; Manual apply verified: Greenhouse form filled with tailored resume, contact info, authorization Yes, and infrastructure experience 2-3 years; all required fields validated but submit attempt stayed on form with embedded reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28",
-      "noteLinks": [],
+      "notes": "Replaced LinkedIn posting with direct Greenhouse application 2026-04-27; Manual apply needed: required infrastructure experience-level question and final application submission confirmation 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28; Manual apply verified: Greenhouse form filled with tailored resume, contact info, authorization Yes, and infrastructure experience 2-3 years; all required fields validated but submit attempt stayed on form with embedded reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28; LinkedIn invite sent to Bosmat Eldar (Recruiter) 2026-04-29",
+      "noteLinks": [
+        {
+          "label": "Bosmat Eldar",
+          "url": "https://www.linkedin.com/in/bosmateldar"
+        }
+      ],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
         "2026-04-28",
         "2026-04-28",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ]
     },
     {
@@ -7421,7 +7442,7 @@
       "company": "Dash0",
       "role": "Platform Engineer",
       "applied": true,
-      "status": "Applied",
+      "status": "Rejected",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -7436,14 +7457,15 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required salary/start-date, skill-rating, and motivation questions 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, start date, salary, sponsorship, English fluency, remote preference, skill ratings, and custom Dash0 motivation response; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct Ashby application 2026-04-27; Manual apply needed: required salary/start-date, skill-rating, and motivation questions 2026-04-27; Manual apply verified: required custom fields plus reCAPTCHA 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, start date, salary, sponsorship, English fluency, remote preference, skill ratings, and custom Dash0 motivation response; all required fields validated but submit attempt stayed on form with hidden reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28; Rejection email received 2026-04-29",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
         "2026-04-28",
         "2026-04-28",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ]
     },
     {
@@ -8815,9 +8837,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Venture Up Python backend software engineer posting 2026-04-29; emphasized Python, GCP/OCI cloud integration, Docker, backend/data workflows, AI-assisted API testing, LLM applications, OpenSearch retrieval, production readiness, on-call debugging, and fast startup-style ownership. Did not claim Terraform, PostgreSQL, Redis, Pub/Sub, FastAPI, RAG, embeddings, quant trading, or competitive programming experience.; Application submitted 2026-04-29.",
+      "notes": "Tailored for Venture Up Python backend software engineer posting 2026-04-29; emphasized Python, GCP/OCI cloud integration, Docker, backend/data workflows, AI-assisted API testing, LLM applications, OpenSearch retrieval, production readiness, on-call debugging, and fast startup-style ownership. Did not claim Terraform, PostgreSQL, Redis, Pub/Sub, FastAPI, RAG, embeddings, quant trading, or competitive programming experience.; Application submitted 2026-04-29.; Application confirmation email received 2026-04-29",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-29",
         "2026-04-29",
         "2026-04-29"
       ]
@@ -8841,9 +8864,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Belvedere Trading Software Engineer role in New Ventures & Investments - RCM on 2026-04-29; emphasized Java/Python/C++, full SDLC ownership, reliable API validation, performance/regression tooling, distributed caching, CI/CD, observability, production support, and cross-team execution. Did not claim trading systems, market-making, finance-domain experience, or production low-latency C++ ownership.; Application submitted 2026-04-29.",
+      "notes": "Tailored for Belvedere Trading Software Engineer role in New Ventures & Investments - RCM on 2026-04-29; emphasized Java/Python/C++, full SDLC ownership, reliable API validation, performance/regression tooling, distributed caching, CI/CD, observability, production support, and cross-team execution. Did not claim trading systems, market-making, finance-domain experience, or production low-latency C++ ownership.; Application submitted 2026-04-29.; Application confirmation email received 2026-04-29",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-29",
         "2026-04-29",
         "2026-04-29"
       ]
@@ -11844,74 +11868,6 @@
       "notes": "Research needed: no confirmed recruiter profile assigned yet; do not approve/send from this row.; Fallback search row is not a verified person. Current-company/role verification required before approval or outreach.; Blocked during all-labeled cleanup; label retained for completeness, but verify before any outreach.; Assigned recruiter owner for completeness; no named recruiter profile was substantiated in tracker evidence, so do not send until a person is verified."
     },
     {
-      "batch": "recruiter-2026-04-28",
-      "company": "Astronomer",
-      "role": "Software Engineer - Airflow Infrastructure",
-      "postingKey": "b9abf88b-946f-4be3-ae74-fb95ee9b7cc8",
-      "fitScore": 9,
-      "status": "Applied",
-      "recruiterName": "Haley Block",
-      "recruiterProfile": "https://www.linkedin.com/in/haleyblock1",
-      "recruiterPosition": "Talent Acquisition",
-      "route": "try-free-inmail-then-connect-note",
-      "connectionNote": "Hi Haley, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about Astronomer's Software Engineer - Airflow Infrastructure role, and I'm also open to other software roles that may be a fit. Thanks, Liam",
-      "approval": "Approved",
-      "outcome": "Sent",
-      "lastChecked": "2026-04-29",
-      "notes": "Selected from public LinkedIn result: Astronomer talent acquisition profile.; Position normalized during recruiter batch fill pass.; Verified current Astronomer talent acquisition via public LinkedIn result crawled 2 weeks ago.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note.; Invitation sent through Connect with note (Message required Premium / paid path)."
-    },
-    {
-      "batch": "recruiter-2026-04-28",
-      "company": "Chicago Trading Company",
-      "role": "Software Engineer - Risk",
-      "postingKey": "4640488005",
-      "fitScore": 9,
-      "status": "Applied",
-      "recruiterName": "Mac Stahr",
-      "recruiterProfile": "https://www.linkedin.com/in/macstahr",
-      "recruiterPosition": "Talent / Technical Recruiter at Chicago Trading Company",
-      "route": "try-free-inmail-then-connect-note",
-      "connectionNote": "Hi Mac, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about Chicago Trading Company's Software Engineer - Risk role, and I'm also open to other software roles that may be a fit. Thanks, Liam",
-      "approval": "Approved",
-      "outcome": "Sent",
-      "lastChecked": "2026-04-29",
-      "notes": "Selected from public recruiter listing: Chicago Trading Company technical recruiter.; Position normalized during recruiter batch fill pass.; Verified current Chicago Trading Company talent/recruiting profile via public LinkedIn result crawled last week plus Wiza/Growjo current-role result.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note.; Invitation sent through Connect with note (Message required Premium / paid path)."
-    },
-    {
-      "batch": "recruiter-2026-04-28",
-      "company": "Chime",
-      "role": "Software Engineer, Credit Line",
-      "postingKey": "8219795002",
-      "fitScore": 9,
-      "status": "Applied",
-      "recruiterName": "Alena Arambula",
-      "recruiterProfile": "https://www.linkedin.com/in/alenaarambula",
-      "recruiterPosition": "Lead Technical Recruiter",
-      "route": "try-free-inmail-then-connect-note",
-      "connectionNote": "Hi Alena, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about Chime's Software Engineer, Credit Line role, and I'm also open to other software roles that may be a fit. Thanks, Liam",
-      "approval": "Approved",
-      "outcome": "Not reached out",
-      "lastChecked": "2026-04-29",
-      "notes": "Selected from public LinkedIn/SignalHire result: Chime Lead Technical Recruiter.; Verified current Chime lead technical recruiter via public SignalHire/The Org result.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note."
-    },
-    {
-      "batch": "recruiter-2026-04-28",
-      "company": "Clay",
-      "role": "Software Engineer Backend",
-      "postingKey": "248aa0c7-034f-47d3-a57e-ce16736eeab6",
-      "fitScore": 9,
-      "status": "Applied",
-      "recruiterName": "Jen Ayala",
-      "recruiterProfile": "https://www.linkedin.com/in/jenniferecarberry",
-      "recruiterPosition": "Recruiter",
-      "route": "try-free-inmail-then-connect-note",
-      "connectionNote": "Hi Jen, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about Clay's Software Engineer Backend role, and I'm also open to other software roles that may be a fit. Thanks, Liam",
-      "approval": "Approved",
-      "outcome": "Not reached out",
-      "lastChecked": "2026-04-29",
-      "notes": "Selected from public LinkedIn job-poster result: recruiting at Clay.; Verified current Clay head of recruiting via The Org and Clay team page.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note."
-    },
-    {
       "batch": "recruiter-2026-04-29",
       "company": "Color",
       "role": "New Grad Software Engineer",
@@ -11941,26 +11897,9 @@
       "route": "try-free-inmail-then-connect-note",
       "connectionNote": "Hi Bosmat, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about Dagster Labs's Software Engineer - Platform role, and I'm also open to other software roles that may be a fit. Thanks, Liam",
       "approval": "Approved",
-      "outcome": "Not reached out",
+      "outcome": "Sent",
       "lastChecked": "2026-04-29",
-      "notes": "Selected current Dagster Labs Head of Engineering from public LinkedIn, Dagster leadership page, and The Org results; hiring contact for engineering.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note."
-    },
-    {
-      "batch": "recruiter-2026-04-28",
-      "company": "Dash0",
-      "role": "Platform Engineer",
-      "postingKey": "c71c1a08-d9ea-4229-b7c9-a3ac9eabc95c",
-      "fitScore": 9,
-      "status": "Applied",
-      "recruiterName": "Jessica Kroll",
-      "recruiterProfile": "https://de.linkedin.com/in/toptalentfinder",
-      "recruiterPosition": "Recruiting / talent acquisition at Dash0",
-      "route": "try-free-inmail-then-connect-note",
-      "connectionNote": "Hi Jessica, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about Dash0's Platform Engineer role, and I'm also open to other software roles that may be a fit. Thanks, Liam",
-      "approval": "Rejected",
-      "outcome": "Blocked",
-      "lastChecked": "2026-04-29",
-      "notes": "do not approve/send from this row.; Filled missing Dash0 recruiter from public LinkedIn result showing Jessica Kroll at Dash0; Dash0 has active technical TA hiring, so verify exact fit before send.; Blocked during no-shaky batch cleanup; needs stronger verification before outreach.; Blocked during all-labeled cleanup; label retained for completeness, but verify before any outreach."
+      "notes": "Selected current Dagster Labs Head of Engineering from public LinkedIn, Dagster leadership page, and The Org results; hiring contact for engineering.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note.; Invitation sent through Connect with note (Message required Premium / paid path)."
     },
     {
       "batch": "recruiter-2026-04-28",
@@ -12138,7 +12077,7 @@
       "role": "Founding Software Engineer",
       "postingKey": "820e461b-cae2-4e13-b9e4-2e17270bd78f",
       "fitScore": 9,
-      "status": "Applied",
+      "status": "Online Assessment",
       "recruiterName": "Reval Recruiting Team",
       "recruiterProfile": "https://www.reval.site/jobs/820e461b-cae2-4e13-b9e4-2e17270bd78f",
       "recruiterPosition": "Recruiting team / hiring contact owner",
@@ -12760,23 +12699,6 @@
       "outcome": "Blocked",
       "lastChecked": "2026-04-29",
       "notes": "Public LinkedIn job poster for this role.; Not independently current-company verified in 2026-04-28 audit; block before approval/outreach.; Blocked during all-labeled cleanup; label retained for completeness, but verify before any outreach."
-    },
-    {
-      "batch": "recruiter-2026-04-29",
-      "company": "Nuvo",
-      "role": "Software Engineer",
-      "postingKey": "am9icG9zdDokPSI5BRzuYHmUj-Ig7JJz",
-      "fitScore": 8,
-      "status": "Applied",
-      "recruiterName": "Nuvo Recruiting Team",
-      "recruiterProfile": "https://jobs.gem.com/nuvo/am9icG9zdDokPSI5BRzuYHmUj-Ig7JJz?src=linkedin",
-      "recruiterPosition": "Recruiting team / hiring contact owner",
-      "route": "try-free-inmail-then-connect-note",
-      "connectionNote": "TBD after a named recruiter profile is selected",
-      "approval": "Rejected",
-      "outcome": "Blocked",
-      "lastChecked": "2026-04-29",
-      "notes": "Research needed: no confirmed recruiter profile assigned yet; do not approve/send from this row.; Fallback search row is not a verified person. Current-company/role verification required before approval or outreach.; Blocked during all-labeled cleanup; label retained for completeness, but verify before any outreach.; Assigned recruiter owner for completeness; no named recruiter profile was substantiated in tracker evidence, so do not send until a person is verified."
     },
     {
       "batch": "recruiter-2026-04-29",
