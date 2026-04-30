@@ -1,4 +1,4 @@
 interface:
   display_name: "Finish Applications"
-  short_description: "Complete ready unapplied job applications"
-  default_prompt: "Use $finish-applications to work through my ready but unapplied job applications and ask me only when blocked."
+  short_description: "Complete ready applications with optional worker lanes"
+  default_prompt: "Use $finish-applications to work through my ready but unapplied job applications with the default Chrome and direct-ATS worker lanes; ask me only when blocked. Use all three lanes if I explicitly ask for Chrome, Safari, and direct ATS."

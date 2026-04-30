@@ -1,6 +1,6 @@
 ---
 name: finish-applications
-description: Complete Liam Van's tracked job applications that have tailored resumes but are not yet applied. Use when the user wants an agent to work through `application-trackers/applications.md` rows with `Applied` blank/false and `Status` like `Resume Tailored`, submit the applications where possible, ask the user only for blocking form answers or consent-sensitive choices, update the markdown tracker, and refresh the recruiting dashboard cache.
+description: Complete Liam Van's tracked job applications that have tailored resumes but are not yet applied. Use when the user wants an agent to work through `application-trackers/applications.md` rows with `Applied` blank/false and `Status` like `Resume Tailored`, optionally delegate chunks to Chrome/Safari/direct-ATS workers when subagents are authorized, submit the applications where possible, ask the user only for blocking form answers or consent-sensitive choices, update the markdown tracker, and refresh the recruiting dashboard cache.
 ---
 
 # Finish Applications
@@ -9,6 +9,8 @@ description: Complete Liam Van's tracked job applications that have tailored res
 
 Use this skill to turn ready tracker rows into submitted applications with minimal user interruption.
 The agent should prioritize high-fit, tailored, unapplied rows; open each posting; submit using the tailored resume already recorded in the tracker; and update the source-of-truth markdown after each confirmed submission.
+
+When Liam authorizes parallel or subagent execution, use the parent/worker model below. Otherwise run the same workflow sequentially in the parent agent.
 
 ## Sources Of Truth
 
@@ -62,6 +64,51 @@ For a longer unattended run, write the queue to `/tmp/application_queue.json` so
 ```bash
 python3 skills/finish-applications/scripts/build_application_queue.py --limit 120 --format json > /tmp/application_queue.json
 ```
+
+## Parallel Worker Mode
+
+Use this mode only when Liam's request authorizes subagents, worker agents, parallel execution, or the named multi-worker mode. The parent agent remains the orchestrator and source-of-truth owner.
+
+### Parent Responsibilities
+
+- Run the start commands, refresh cache, build the queue, and split it into non-overlapping chunks.
+- Assign each row to exactly one worker at a time. Keep an in-run ledger with company, role, posting key, worker, outcome, notes, and confirmation evidence.
+- Own all writes to `application-trackers/applications.md` and `application-visualizer/src/data/tracker-data.json`. Workers must not edit tracker/cache files, run the status updater, commit, or push.
+- Rebuild or refresh the queue before assigning more work after a batch finishes, because Gmail refreshes or worker outcomes may change row status.
+- Commit and push only tracker/cache changes after every 10 confirmed submissions. If work stops before 10, commit and push confirmed tracker/cache updates before ending unless the working tree has unrelated tracker/cache changes that require inspection.
+
+### Worker Lanes
+
+Default parallel mode uses two workers:
+
+- `chrome-worker`: LinkedIn-sourced rows, LinkedIn Easy Apply, LinkedIn-to-ATS discovery, and flows that need Liam's authenticated Chrome profile. Always verify the job/company, email `liamvanpj@gmail.com`, selected resume, and final confirmation.
+- `direct-ats-worker`: Public ATS forms such as Lever, Ashby, Greenhouse, Wellfound, Rippling, SmartRecruiters, or company-hosted forms that do not require Liam's authenticated browser session.
+
+All-three mode adds:
+
+- `safari-worker`: Nuanced or higher-friction rows that benefit from an isolated browser session, such as unusual company portals, forms with fragile upload widgets, or cases where Chrome state is confusing. Use Safari only for rows that do not require Chrome-only authenticated LinkedIn state.
+
+### Chunking
+
+- Give each worker 3-5 rows at a time, sorted by fit score and readiness.
+- Keep chunks source-aware: LinkedIn/auth rows to `chrome-worker`, clear direct ATS rows to `direct-ats-worker`, and odd or nuanced forms to `safari-worker` only when all-three mode is requested.
+- Do not assign Workday rows to workers. Mark them manual according to the normal Workday rule.
+- When a worker finishes or runs low on context, collect its ledger, close or replace that worker, then spawn a fresh worker with the next chunk if more queue remains.
+- Do not duplicate an active row across workers unless a worker explicitly returns it as blocked, abandoned, or reassigned.
+
+### Worker Instructions
+
+Each worker receives only its assigned rows plus the standing answers from this skill. Tell each worker:
+
+- You are not alone in the workspace. Do not revert or overwrite changes from others.
+- Do not edit files, run tracker/cache update scripts, commit, or push.
+- For every row, return one structured result:
+  - `submitted`: include company, role, posting key, submitted date, resume path, ATS URL, confirmation text/page/email evidence, and short note.
+  - `manual`: include the exact blocker and whether any partially completed browser state was left open.
+  - `archived`: include why the posting is closed, expired, or mismatched.
+  - `skipped`: include why it was skipped.
+- Stop and return the row as `manual` for CAPTCHA, 2FA, login/account creation, bot checks, legal signatures, required custom essays, salary/start-date commitments, or consent choices not covered by Liam's standing answers.
+- Do not mark an application submitted unless there is visible confirmation, confirmation email, or portal status evidence.
 
 ## Workflow
 
@@ -128,14 +175,14 @@ python3 skills/gmail-application-refresh/scripts/update_application_status.py \
 
 7. Continue through the queue.
    - Batch user questions when possible instead of interrupting for every small field.
-   - Maintain a short in-run ledger of confirmed submissions, manual blockers, archived/closed postings, and generated cover letters. Use it for the final response and for deciding when the 5-application push threshold has been reached.
+   - Maintain a short in-run ledger of confirmed submissions, manual blockers, archived/closed postings, and generated cover letters. Use it for the final response and for deciding when the 10-application push threshold has been reached.
    - After tracker edits, refresh the visualizer cache:
 
 ```bash
 python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 ```
 
-   - Keep a running count of confirmed applications submitted since the last repository push. After every 5 confirmed applications, stage only the tracker/cache changes for those applications, commit them with a short application-status message, and push `main` so the deployed dashboard can refresh. If work stops before reaching 5, commit and push the confirmed tracker/cache updates before ending the run.
+   - Keep a running count of confirmed applications submitted since the last repository push. After every 10 confirmed applications, stage only the tracker/cache changes for those applications, commit them with a short application-status message, and push `main` so the deployed dashboard can refresh. If work stops before reaching 10, commit and push the confirmed tracker/cache updates before ending the run.
 
 ## Answering Form Questions
 
@@ -242,7 +289,7 @@ Ask instead of guessing for anything not evidenced. If a form has optional demog
 - Preserve recruiter and engineer contact fields.
 - If multiple tracker rows match the same company, pass `--posting-key` to the update script.
 - Refresh the dashboard cache after any tracker update.
-- Commit and push progress to `main` after every 5 confirmed applied jobs, and also before stopping if there are fewer than 5 unpushed confirmed applications. Do not include unrelated files such as generated drafts, writeups, or company artifacts unless they are part of the submitted application record.
+- Commit and push progress to `main` after every 10 confirmed applied jobs, and also before stopping if there are fewer than 10 unpushed confirmed applications. Do not include unrelated files such as generated drafts, writeups, or company artifacts unless they are part of the submitted application record.
 
 ## Final Response
 
