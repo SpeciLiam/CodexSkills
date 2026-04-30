@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T22:32:23.820890+00:00",
+  "generatedAt": "2026-04-30T22:58:44.498488+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,8 +9,8 @@
   "stats": {
     "kpis": {
       "total": 297,
-      "applied": 250,
-      "unapplied": 47,
+      "applied": 258,
+      "unapplied": 39,
       "active": 238,
       "rejected": 34,
       "interviewing": 4,
@@ -20,13 +20,13 @@
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 84.2,
-      "rejectionRate": 13.6
+      "applyRate": 86.9,
+      "rejectionRate": 13.2
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 208
+        "value": 216
       },
       {
         "name": "Rejected",
@@ -38,11 +38,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 13
-      },
-      {
-        "name": "Resume Tailored",
-        "value": 10
+        "value": 12
       },
       {
         "name": "Interviewing",
@@ -50,6 +46,10 @@
       },
       {
         "name": "Online Assessment",
+        "value": 3
+      },
+      {
+        "name": "Resume Tailored",
         "value": 3
       }
     ],
@@ -378,7 +378,7 @@
         "date": "2026-04-30",
         "cumulative": 297,
         "added": 18,
-        "applied": 3,
+        "applied": 11,
         "rejected": 0,
         "interviewing": 0
       }
@@ -9129,8 +9129,8 @@
     {
       "company": "Crossing Hurdles",
       "role": "Software Engineer (New Grad)",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -9145,17 +9145,19 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Crossing Hurdles Software Engineer New Grad remote role 2026-04-30; emphasized JavaScript/TypeScript, React, Node/NestJS, REST APIs, SQL/data modeling, testing, product iteration, and production debugging. Did not claim MongoDB, PostgreSQL, GraphQL, or contract work experience.",
+      "notes": "Tailored for Crossing Hurdles Software Engineer New Grad remote role 2026-04-30; emphasized JavaScript/TypeScript, React, Node/NestJS, REST APIs, SQL/data modeling, testing, product iteration, and production debugging. Did not claim MongoDB, PostgreSQL, GraphQL, or contract work experience.; Application submitted by Liam 2026-04-30; LinkedIn application confirmation email received 2026-04-30",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-30",
+        "2026-04-30",
         "2026-04-30"
       ]
     },
     {
       "company": "Blossom",
       "role": "Software Engineer (All Levels)",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -9170,9 +9172,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Blossom Software Engineer all-levels AI mental healthcare role 2026-04-30; emphasized TypeScript/Python, AI-assisted tooling, React/NestJS product work, REST APIs, data workflows, production readiness, observability, and on-call debugging. Did not claim HIPAA, EHR, clinical workflow, or prior healthcare-domain experience.; Ready for final submission confirmation with proud-accomplishment response filled on Ashby 2026-04-30",
+      "notes": "Tailored for Blossom Software Engineer all-levels AI mental healthcare role 2026-04-30; emphasized TypeScript/Python, AI-assisted tooling, React/NestJS product work, REST APIs, data workflows, production readiness, observability, and on-call debugging. Did not claim HIPAA, EHR, clinical workflow, or prior healthcare-domain experience.; Ready for final submission confirmation with proud-accomplishment response filled on Ashby 2026-04-30; Application confirmation email received 2026-04-30",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-30",
         "2026-04-30",
         "2026-04-30"
       ]
@@ -9180,8 +9183,8 @@
     {
       "company": "Chalk",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -9196,9 +9199,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Chalk Software Engineer data/ML platform role 2026-04-30; emphasized Python, backend/data workflows, REST APIs, SQL/data modeling, OpenSearch, production readiness, observability, and on-call debugging. Did not claim Rust, compiler/query-planner ownership, or direct feature-store/ML infrastructure production ownership.; Ready for final submission confirmation with Chalk motivation filled and honeypot left blank 2026-04-30",
+      "notes": "Tailored for Chalk Software Engineer data/ML platform role 2026-04-30; emphasized Python, backend/data workflows, REST APIs, SQL/data modeling, OpenSearch, production readiness, observability, and on-call debugging. Did not claim Rust, compiler/query-planner ownership, or direct feature-store/ML infrastructure production ownership.; Ready for final submission confirmation with Chalk motivation filled and honeypot left blank 2026-04-30; Application confirmation email received 2026-04-30",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-30",
         "2026-04-30",
         "2026-04-30"
       ]
@@ -9206,8 +9210,8 @@
     {
       "company": "Flip",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -9222,9 +9226,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Flip Software Engineer Voice AI role 2026-04-30; emphasized Python, LLM applications, AI-assisted tooling, REST APIs, React/NestJS product work, API integrations, production readiness, observability, and on-call debugging. Did not claim voice infrastructure, realtime audio systems, telephony, or dialogue-system production ownership.",
+      "notes": "Tailored for Flip Software Engineer Voice AI role 2026-04-30; emphasized Python, LLM applications, AI-assisted tooling, REST APIs, React/NestJS product work, API integrations, production readiness, observability, and on-call debugging. Did not claim voice infrastructure, realtime audio systems, telephony, or dialogue-system production ownership.; Application confirmation email received 2026-04-30",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-30",
         "2026-04-30"
       ]
     },
@@ -9257,8 +9262,8 @@
     {
       "company": "Profound",
       "role": "Software Engineer, Backend, Workflow Runner",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -9273,9 +9278,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Profound Software Engineer, Backend, Workflow Runner LinkedIn posting 2026-04-30; emphasized Python, backend workflow validation, REST APIs, SQL/data modeling, AI-assisted testing, production readiness, observability, release support, and on-call debugging. Did not claim Temporal, durable workflow engine ownership, streaming infrastructure, or idempotent scheduler production ownership.; Ready for final submission confirmation with Profound motivation filled 2026-04-30",
+      "notes": "Tailored for Profound Software Engineer, Backend, Workflow Runner LinkedIn posting 2026-04-30; emphasized Python, backend workflow validation, REST APIs, SQL/data modeling, AI-assisted testing, production readiness, observability, release support, and on-call debugging. Did not claim Temporal, durable workflow engine ownership, streaming infrastructure, or idempotent scheduler production ownership.; Ready for final submission confirmation with Profound motivation filled 2026-04-30; Application submitted on Ashby with confirmation page 2026-04-30",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-30",
         "2026-04-30",
         "2026-04-30"
       ]
@@ -9283,8 +9289,8 @@
     {
       "company": "Paramount",
       "role": "Software Engineer - AI Tooling & Quality Engineering Platforms",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -9299,9 +9305,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Paramount Software Engineer - AI Tooling & Quality Engineering Platforms role 2026-04-30; emphasized Python, Java, AI-assisted testing, LLM applications, Robot Framework, Selenium, CI/CD, internal tooling, REST APIs, Docker, production readiness, and release/on-call support. Did not claim Playwright, JavaFX, DynamoDB, MongoDB, media-domain, or direct Paramount tooling experience.; Manual apply needed: Paramount Careers account creation/sign-in gate 2026-04-30",
+      "notes": "Tailored for Paramount Software Engineer - AI Tooling & Quality Engineering Platforms role 2026-04-30; emphasized Python, Java, AI-assisted testing, LLM applications, Robot Framework, Selenium, CI/CD, internal tooling, REST APIs, Docker, production readiness, and release/on-call support. Did not claim Playwright, JavaFX, DynamoDB, MongoDB, media-domain, or direct Paramount tooling experience.; Manual apply needed: Paramount Careers account creation/sign-in gate 2026-04-30; Application submitted by Liam 2026-04-30",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-30",
         "2026-04-30",
         "2026-04-30"
       ]
@@ -9309,8 +9316,8 @@
     {
       "company": "Kaizen",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -9325,9 +9332,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Kaizen Software Engineer AI-native government services role 2026-04-30; emphasized TypeScript/JavaScript, React/NestJS product work, REST APIs, cloud integrations, AI-assisted testing, LLM applications, production readiness, and stakeholder collaboration. Did not claim Next.js, Prisma, PostgreSQL, Vercel, government-domain, or public-sector procurement experience.; Ready for final submission confirmation with Kaizen motivation, NYC hybrid commitment, authorization, sponsorship, and federal-project openness filled on Ashby 2026-04-30",
+      "notes": "Tailored for Kaizen Software Engineer AI-native government services role 2026-04-30; emphasized TypeScript/JavaScript, React/NestJS product work, REST APIs, cloud integrations, AI-assisted testing, LLM applications, production readiness, and stakeholder collaboration. Did not claim Next.js, Prisma, PostgreSQL, Vercel, government-domain, or public-sector procurement experience.; Application submitted by Liam 2026-04-30; Application confirmation email received 2026-04-30",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-30",
         "2026-04-30",
         "2026-04-30"
       ]
@@ -9464,8 +9472,8 @@
     {
       "company": "Tines",
       "role": "Software Engineer (full-stack)",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -9480,9 +9488,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Tines Software Engineer full-stack role 2026-04-30; emphasized TypeScript/JavaScript, React/NestJS/Node.js product work, REST APIs, customer-facing integrations, AI-assisted tooling, testing, production readiness, observability, and on-call debugging. Did not claim Ruby/Rails, security-product ownership, or Tines-specific tooling experience.; Ready for final submission confirmation on Greenhouse 2026-04-30",
+      "notes": "Tailored for Tines Software Engineer full-stack role 2026-04-30; emphasized TypeScript/JavaScript, React/NestJS/Node.js product work, REST APIs, customer-facing integrations, AI-assisted tooling, testing, production readiness, observability, and on-call debugging. Did not claim Ruby/Rails, security-product ownership, or Tines-specific tooling experience.; Ready for final submission confirmation on Greenhouse 2026-04-30; Application confirmation email received 2026-04-30",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-30",
         "2026-04-30",
         "2026-04-30"
       ]
