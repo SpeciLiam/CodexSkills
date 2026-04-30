@@ -497,7 +497,7 @@ function App() {
               <div className="reachout-pulse">
                 <div className="reachout-heading">
                   <span>Reach-out rhythm</span>
-                  <strong>{dailyApplicationPulse.recruiterTotal} recruiter / {dailyApplicationPulse.engineerTotal} engineer</strong>
+                  <strong>{dailyApplicationPulse.trackedRecruiterTotal} recruiter / {dailyApplicationPulse.trackedEngineerTotal} engineer</strong>
                 </div>
                 <ResponsiveContainer width="100%" height={210}>
                   <ComposedChart data={dailyApplicationPulse.points}>
@@ -512,10 +512,10 @@ function App() {
                   </ComposedChart>
                 </ResponsiveContainer>
                 <div className="pulse-metrics" aria-label="Daily outreach summary">
-                  <MiniMetric label="Reach-outs" value={dailyApplicationPulse.reachOutTotal} />
-                  <MiniMetric label="Peak outreach" value={`${dailyApplicationPulse.reachOutPeakCount} on ${readableDate(dailyApplicationPulse.reachOutPeakDate)}`} />
-                  <MiniMetric label="Avg outreach day" value={dailyApplicationPulse.reachOutAverage.toFixed(1)} />
-                  <MiniMetric label="Unclassified" value={dailyApplicationPulse.otherReachOutTotal} />
+                  <MiniMetric label="Tracked lanes" value={dailyApplicationPulse.trackedReachOutTotal} />
+                  <MiniMetric label="Logged sends" value={dailyApplicationPulse.reachOutTotal} />
+                  <MiniMetric label="Peak send day" value={`${dailyApplicationPulse.reachOutPeakCount} on ${readableDate(dailyApplicationPulse.reachOutPeakDate)}`} />
+                  <MiniMetric label="Avg send day" value={dailyApplicationPulse.reachOutAverage.toFixed(1)} />
                 </div>
               </div>
             </div>
@@ -1581,6 +1581,7 @@ function summarize(apps: Application[]) {
 
 function buildDailyApplicationPulse(timeline: Array<Record<string, number | string>>, apps: Application[]) {
   const reachOutsByDate = buildReachOutsByDate(apps);
+  const outreachCoverage = buildOutreachCoverage(apps);
   const points = timeline.map((point, index, items) => {
     const previous = Number(items[index - 1]?.applied || 0);
     const current = Number(point.applied || 0);
@@ -1622,6 +1623,9 @@ function buildDailyApplicationPulse(timeline: Array<Record<string, number | stri
     engineerTotal,
     otherReachOutTotal,
     reachOutTotal,
+    trackedRecruiterTotal: outreachCoverage.recruiter,
+    trackedEngineerTotal: outreachCoverage.engineer,
+    trackedReachOutTotal: outreachCoverage.recruiter + outreachCoverage.engineer,
     reachOutPeakDate: reachOutPeak.date,
     reachOutPeakCount: reachOutPeak.totalReachOuts,
     reachOutAverage: reachOutTotal / Math.max(outreachDays.length, 1),
@@ -1631,6 +1635,17 @@ function buildDailyApplicationPulse(timeline: Array<Record<string, number | stri
     latestDate: latest.date,
     latestCount: latest.applications,
   };
+}
+
+function buildOutreachCoverage(apps: Application[]) {
+  return apps.reduce(
+    (totals, app) => {
+      if (app.recruiterContact || app.recruiterProfile) totals.recruiter += 1;
+      if (app.engineerContact || app.engineerProfile) totals.engineer += 1;
+      return totals;
+    },
+    { recruiter: 0, engineer: 0 },
+  );
 }
 
 function buildReachOutsByDate(apps: Application[]) {
