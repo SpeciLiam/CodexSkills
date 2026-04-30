@@ -75,7 +75,7 @@ type TabId = (typeof NAV_ITEMS)[number]["id"];
 const INFO_COPY = {
   actions: "A practical action board. Roles are grouped by what to do next: apply, follow up, prepare for interviews or assessments, monitor, or deprioritize closed/rejected roles. Cards are sorted by fit score so the strongest opportunities stay visible.",
   velocity: "Shows how the pipeline grew over time. The filled curve is cumulative tracked roles, while the line highlights applications submitted on each date.",
-  dailyApplications: "Tracks how many applications were submitted each day. Bars show daily volume, while the line smooths the pace across the surrounding days.",
+  dailyApplications: "Tracks how many applications were submitted each day, then pairs it with recruiter and engineer reach-outs logged in tracker notes.",
   status: "Breaks the tracker into current outcomes such as tailored, applied, interviewing, assessment, rejected, or offer.",
   fit: "Counts roles by fit score, making it easy to see whether the pipeline is concentrated around high-fit opportunities.",
   source: "Compares where roles are coming from, so you can see which channels are feeding the most opportunities.",
@@ -361,7 +361,7 @@ function App() {
     ],
     [],
   );
-  const dailyApplicationPulse = useMemo(() => buildDailyApplicationPulse(data.stats.timeline), []);
+  const dailyApplicationPulse = useMemo(() => buildDailyApplicationPulse(data.stats.timeline, data.applications), []);
   const showDataControls = activeTab !== "pipeline";
   const filterBar = (
     <section className="filters">
@@ -493,6 +493,23 @@ function App() {
                 <MiniMetric label="Peak day" value={`${dailyApplicationPulse.peakCount} on ${readableDate(dailyApplicationPulse.peakDate)}`} />
                 <MiniMetric label="Avg active day" value={dailyApplicationPulse.average.toFixed(1)} />
                 <MiniMetric label="Latest day" value={`${dailyApplicationPulse.latestCount} on ${readableDate(dailyApplicationPulse.latestDate)}`} />
+              </div>
+              <div className="reachout-pulse">
+                <div className="reachout-heading">
+                  <span>Reach-out rhythm</span>
+                  <strong>{dailyApplicationPulse.recruiterTotal} recruiter / {dailyApplicationPulse.engineerTotal} engineer</strong>
+                </div>
+                <ResponsiveContainer width="100%" height={210}>
+                  <ComposedChart data={dailyApplicationPulse.points}>
+                    <CartesianGrid stroke="rgba(255,255,255,.08)" vertical={false} />
+                    <XAxis dataKey="date" tickFormatter={readableDate} tick={{ fill: "#94a3b8", fontSize: 12 }} />
+                    <YAxis tick={{ fill: "#94a3b8", fontSize: 12 }} />
+                    <Tooltip content={<ChartTooltip />} />
+                    <Bar dataKey="recruiterReachOuts" name="Recruiter reach-outs" fill="#70a1ff" radius={[8, 8, 0, 0]} />
+                    <Bar dataKey="engineerReachOuts" name="Engineer reach-outs" fill="#b388ff" radius={[8, 8, 0, 0]} />
+                    <Line type="monotone" dataKey="totalReachOuts" name="Total reach-outs" stroke="#f4d35e" strokeWidth={2} dot={{ r: 3 }} />
+                  </ComposedChart>
+                </ResponsiveContainer>
               </div>
             </div>
           </Panel>
@@ -1555,34 +1572,63 @@ function summarize(apps: Application[]) {
   return { applied, avgFit };
 }
 
-function buildDailyApplicationPulse(timeline: Array<Record<string, number | string>>) {
+function buildDailyApplicationPulse(timeline: Array<Record<string, number | string>>, apps: Application[]) {
+  const reachOutsByDate = buildReachOutsByDate(apps);
   const points = timeline.map((point, index, items) => {
     const previous = Number(items[index - 1]?.applied || 0);
     const current = Number(point.applied || 0);
     const next = Number(items[index + 1]?.applied || 0);
+    const date = String(point.date || "");
+    const reachOuts = reachOutsByDate.get(date) || { recruiter: 0, engineer: 0 };
     return {
-      date: String(point.date || ""),
+      date,
       applications: current,
       pace: Number(((previous + current + next) / 3).toFixed(1)),
+      recruiterReachOuts: reachOuts.recruiter,
+      engineerReachOuts: reachOuts.engineer,
+      totalReachOuts: reachOuts.recruiter + reachOuts.engineer,
     };
   });
   const activeDays = points.filter((point) => point.applications > 0);
   const total = points.reduce((sum, point) => sum + point.applications, 0);
+  const recruiterTotal = points.reduce((sum, point) => sum + point.recruiterReachOuts, 0);
+  const engineerTotal = points.reduce((sum, point) => sum + point.engineerReachOuts, 0);
   const peak = points.reduce(
     (best, point) => (point.applications > best.applications ? point : best),
-    points[0] || { date: "", applications: 0, pace: 0 },
+    points[0] || { date: "", applications: 0, pace: 0, recruiterReachOuts: 0, engineerReachOuts: 0, totalReachOuts: 0 },
   );
   const latest = [...points].reverse().find((point) => point.applications > 0) || points[points.length - 1] || peak;
 
   return {
     points,
     total,
+    recruiterTotal,
+    engineerTotal,
     peakDate: peak.date,
     peakCount: peak.applications,
     average: total / Math.max(activeDays.length, 1),
     latestDate: latest.date,
     latestCount: latest.applications,
   };
+}
+
+function buildReachOutsByDate(apps: Application[]) {
+  const counts = new Map<string, { recruiter: number; engineer: number }>();
+  const notePattern = /LinkedIn invite sent[^;]*(20\d{2}-\d{2}-\d{2})/gi;
+
+  apps.forEach((app) => {
+    for (const match of app.notes.matchAll(notePattern)) {
+      const text = match[0].toLowerCase();
+      const date = match[1];
+      const kind = text.includes("(engineer)") ? "engineer" : text.includes("(recruiter)") ? "recruiter" : "";
+      if (!kind) continue;
+      const entry = counts.get(date) || { recruiter: 0, engineer: 0 };
+      entry[kind] += 1;
+      counts.set(date, entry);
+    }
+  });
+
+  return counts;
 }
 
 export default App;
