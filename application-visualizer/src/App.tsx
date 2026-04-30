@@ -507,9 +507,16 @@ function App() {
                     <Tooltip content={<ChartTooltip />} />
                     <Bar dataKey="recruiterReachOuts" name="Recruiter reach-outs" fill="#70a1ff" radius={[8, 8, 0, 0]} />
                     <Bar dataKey="engineerReachOuts" name="Engineer reach-outs" fill="#b388ff" radius={[8, 8, 0, 0]} />
+                    <Bar dataKey="otherReachOuts" name="Unclassified reach-outs" fill="#8dd7cf" radius={[8, 8, 0, 0]} />
                     <Line type="monotone" dataKey="totalReachOuts" name="Total reach-outs" stroke="#f4d35e" strokeWidth={2} dot={{ r: 3 }} />
                   </ComposedChart>
                 </ResponsiveContainer>
+                <div className="pulse-metrics" aria-label="Daily outreach summary">
+                  <MiniMetric label="Reach-outs" value={dailyApplicationPulse.reachOutTotal} />
+                  <MiniMetric label="Peak outreach" value={`${dailyApplicationPulse.reachOutPeakCount} on ${readableDate(dailyApplicationPulse.reachOutPeakDate)}`} />
+                  <MiniMetric label="Avg outreach day" value={dailyApplicationPulse.reachOutAverage.toFixed(1)} />
+                  <MiniMetric label="Unclassified" value={dailyApplicationPulse.otherReachOutTotal} />
+                </div>
               </div>
             </div>
           </Panel>
@@ -1579,23 +1586,32 @@ function buildDailyApplicationPulse(timeline: Array<Record<string, number | stri
     const current = Number(point.applied || 0);
     const next = Number(items[index + 1]?.applied || 0);
     const date = String(point.date || "");
-    const reachOuts = reachOutsByDate.get(date) || { recruiter: 0, engineer: 0 };
+    const reachOuts = reachOutsByDate.get(date) || { recruiter: 0, engineer: 0, other: 0 };
+    const totalReachOuts = reachOuts.recruiter + reachOuts.engineer + reachOuts.other;
     return {
       date,
       applications: current,
       pace: Number(((previous + current + next) / 3).toFixed(1)),
       recruiterReachOuts: reachOuts.recruiter,
       engineerReachOuts: reachOuts.engineer,
-      totalReachOuts: reachOuts.recruiter + reachOuts.engineer,
+      otherReachOuts: reachOuts.other,
+      totalReachOuts,
     };
   });
   const activeDays = points.filter((point) => point.applications > 0);
+  const outreachDays = points.filter((point) => point.totalReachOuts > 0);
   const total = points.reduce((sum, point) => sum + point.applications, 0);
   const recruiterTotal = points.reduce((sum, point) => sum + point.recruiterReachOuts, 0);
   const engineerTotal = points.reduce((sum, point) => sum + point.engineerReachOuts, 0);
+  const otherReachOutTotal = points.reduce((sum, point) => sum + point.otherReachOuts, 0);
+  const reachOutTotal = recruiterTotal + engineerTotal + otherReachOutTotal;
   const peak = points.reduce(
     (best, point) => (point.applications > best.applications ? point : best),
-    points[0] || { date: "", applications: 0, pace: 0, recruiterReachOuts: 0, engineerReachOuts: 0, totalReachOuts: 0 },
+    points[0] || { date: "", applications: 0, pace: 0, recruiterReachOuts: 0, engineerReachOuts: 0, otherReachOuts: 0, totalReachOuts: 0 },
+  );
+  const reachOutPeak = points.reduce(
+    (best, point) => (point.totalReachOuts > best.totalReachOuts ? point : best),
+    points[0] || { date: "", applications: 0, pace: 0, recruiterReachOuts: 0, engineerReachOuts: 0, otherReachOuts: 0, totalReachOuts: 0 },
   );
   const latest = [...points].reverse().find((point) => point.applications > 0) || points[points.length - 1] || peak;
 
@@ -1604,6 +1620,11 @@ function buildDailyApplicationPulse(timeline: Array<Record<string, number | stri
     total,
     recruiterTotal,
     engineerTotal,
+    otherReachOutTotal,
+    reachOutTotal,
+    reachOutPeakDate: reachOutPeak.date,
+    reachOutPeakCount: reachOutPeak.totalReachOuts,
+    reachOutAverage: reachOutTotal / Math.max(outreachDays.length, 1),
     peakDate: peak.date,
     peakCount: peak.applications,
     average: total / Math.max(activeDays.length, 1),
@@ -1613,19 +1634,32 @@ function buildDailyApplicationPulse(timeline: Array<Record<string, number | stri
 }
 
 function buildReachOutsByDate(apps: Application[]) {
-  const counts = new Map<string, { recruiter: number; engineer: number }>();
-  const notePattern = /LinkedIn invite sent[^;]*(20\d{2}-\d{2}-\d{2})/gi;
+  const counts = new Map<string, { recruiter: number; engineer: number; other: number }>();
 
   apps.forEach((app) => {
-    for (const match of app.notes.matchAll(notePattern)) {
-      const text = match[0].toLowerCase();
-      const date = match[1];
-      const kind = text.includes("(engineer)") ? "engineer" : text.includes("(recruiter)") ? "recruiter" : "";
-      if (!kind) continue;
-      const entry = counts.get(date) || { recruiter: 0, engineer: 0 };
-      entry[kind] += 1;
+    app.notes
+      .split(";")
+      .map((note) => note.trim())
+      .filter((note) => /LinkedIn (?:invite|invites|InMail) sent/i.test(note))
+      .forEach((note) => {
+        const date = note.match(/20\d{2}-\d{2}-\d{2}/)?.[0];
+        if (!date) return;
+        const text = note.toLowerCase();
+        const profileCount = Math.max((note.match(/linkedin\.com\/in\//gi) || []).length, 1);
+        const hasEngineerSignal = text.includes("(engineer)") || text.includes(" engineer ");
+        const hasRecruiterSignal = text.includes("(recruiter)") || text.includes(" recruiter ") || text.includes(" talent ") || text.includes(" hiring ");
+        const entry = counts.get(date) || { recruiter: 0, engineer: 0, other: 0 };
+
+        if (hasEngineerSignal && !hasRecruiterSignal) {
+          entry.engineer += profileCount;
+        } else if (hasRecruiterSignal && !hasEngineerSignal) {
+          entry.recruiter += profileCount;
+        } else {
+          entry.other += profileCount;
+        }
+
       counts.set(date, entry);
-    }
+      });
   });
 
   return counts;
