@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T19:46:16.446526+00:00",
+  "generatedAt": "2026-04-30T19:59:57.149271+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -8,29 +8,29 @@
   },
   "stats": {
     "kpis": {
-      "total": 280,
+      "total": 278,
       "applied": 245,
-      "unapplied": 35,
-      "active": 222,
-      "rejected": 33,
+      "unapplied": 33,
+      "active": 219,
+      "rejected": 34,
       "interviewing": 4,
       "assessments": 3,
-      "highFit": 168,
-      "reachOut": 224,
+      "highFit": 165,
+      "reachOut": 221,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 87.5,
-      "rejectionRate": 13.5
+      "applyRate": 88.1,
+      "rejectionRate": 13.9
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 204
+        "value": 203
       },
       {
         "name": "Rejected",
-        "value": 33
+        "value": 34
       },
       {
         "name": "Archived",
@@ -38,7 +38,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 8
+        "value": 6
       },
       {
         "name": "Interviewing",
@@ -60,7 +60,7 @@
       },
       {
         "name": "Ashby",
-        "value": 66
+        "value": 65
       },
       {
         "name": "Greenhouse",
@@ -76,7 +76,7 @@
       },
       {
         "name": "Lever",
-        "value": 11
+        "value": 10
       },
       {
         "name": "Gem",
@@ -130,11 +130,11 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 130
+        "value": 129
       },
       {
         "name": "Bay Area",
-        "value": 93
+        "value": 92
       },
       {
         "name": "Other",
@@ -168,7 +168,7 @@
       },
       {
         "name": "Full Stack",
-        "value": 27
+        "value": 26
       },
       {
         "name": "Forward Deployed",
@@ -188,13 +188,13 @@
       },
       {
         "name": "Frontend",
-        "value": 2
+        "value": 1
       }
     ],
     "fitCounts": [
       {
         "score": "1",
-        "count": 40
+        "count": 41
       },
       {
         "score": "2",
@@ -222,7 +222,7 @@
       },
       {
         "score": "8",
-        "count": 55
+        "count": 53
       },
       {
         "score": "9",
@@ -230,7 +230,7 @@
       },
       {
         "score": "10",
-        "count": 62
+        "count": 61
       }
     ],
     "targetCounts": [
@@ -355,7 +355,7 @@
         "cumulative": 240,
         "added": 75,
         "applied": 65,
-        "rejected": 2,
+        "rejected": 3,
         "interviewing": 1
       },
       {
@@ -368,17 +368,9 @@
       },
       {
         "date": "2026-04-29",
-        "cumulative": 279,
-        "added": 12,
+        "cumulative": 278,
+        "added": 11,
         "applied": 6,
-        "rejected": 0,
-        "interviewing": 0
-      },
-      {
-        "date": "2026-04-30",
-        "cumulative": 280,
-        "added": 1,
-        "applied": 0,
         "rejected": 0,
         "interviewing": 0
       }
@@ -391,13 +383,13 @@
         "bestFit": 10
       },
       {
-        "company": "Spotify",
-        "roles": 4,
-        "avgFit": 9.0,
+        "company": "Intuit",
+        "roles": 3,
+        "avgFit": 9.33,
         "bestFit": 10
       },
       {
-        "company": "Intuit",
+        "company": "Spotify",
         "roles": 3,
         "avgFit": 9.33,
         "bestFit": 10
@@ -892,7 +884,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/johnstoecker/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Raquel Gonzalez, Cruz Gonzalez, Kristin Jue, Amelia Jones, Febin Bellamy, Matthew Negasi, and John Stoecker 2026-04-25; Replaced closed LinkedIn posting with Greenhouse role 2026-04-27; Manual apply needed: required Clever culture-tenet free response 2026-04-27; Manual apply verified: reCAPTCHA present on application flow 2026-04-28; Manual apply verified: Greenhouse embed form filled with tailored resume, Seattle location, sponsorship No, LinkedIn/source, custom Always a Student culture-tenet response, Kubernetes Yes, and demographic selections; all required fields validated but submit attempt stayed on form with embedded reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28; LinkedIn invite sent to Audrey Cevallos (Recruiter) 2026-04-28; Recruiter screen requested 2026-04-29; Interview availability submitted 2026-04-30",
+      "notes": "LinkedIn invite sent to Raquel Gonzalez, Cruz Gonzalez, Kristin Jue, Amelia Jones, Febin Bellamy, Matthew Negasi, and John Stoecker 2026-04-25; Replaced closed LinkedIn posting with Greenhouse role 2026-04-27; Manual apply needed: required Clever culture-tenet free response 2026-04-27; Manual apply verified: reCAPTCHA present on application flow 2026-04-28; Manual apply verified: Greenhouse embed form filled with tailored resume, Seattle location, sponsorship No, LinkedIn/source, custom Always a Student culture-tenet response, Kubernetes Yes, and demographic selections; all required fields validated but submit attempt stayed on form with embedded reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28; LinkedIn invite sent to Audrey Cevallos (Recruiter) 2026-04-28; Recruiter screen requested 2026-04-29",
       "noteLinks": [
         {
           "label": "Raquel Gonzalez",
@@ -935,8 +927,7 @@
         "2026-04-28",
         "2026-04-28",
         "2026-04-28",
-        "2026-04-29",
-        "2026-04-30"
+        "2026-04-29"
       ]
     },
     {
@@ -6070,9 +6061,9 @@
       "company": "Aurora",
       "role": "Software Engineer I, FinOps",
       "applied": true,
-      "status": "Applied",
-      "fitScore": 10,
-      "reachOut": true,
+      "status": "Rejected",
+      "fitScore": 1,
+      "reachOut": false,
       "referral": "No",
       "dateAdded": "2026-04-27",
       "location": "Mountain View, CA",
@@ -6085,7 +6076,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/kamalds510/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct Aurora Careers application 2026-04-27; Manual apply needed: embedded Aurora application form not automation-accessible 2026-04-27; Manual apply verified: custom embedded application flow remains blocker 2026-04-28; Manual apply verified: direct Greenhouse form filled with tailored resume, contact info, authorization/sponsorship, Mountain View onsite willingness, recent-grad/project/coding-language answers, LinkedIn source, website, LinkedIn profile, and demographics; submit clicked but page stayed on form with invisible reCAPTCHA/no confirmation 2026-04-28; Application submitted 2026-04-28; LinkedIn invite sent to Kamal D. Singh (Recruiter) 2026-04-28; Application confirmation email received 2026-04-30",
+      "notes": "Replaced LinkedIn posting with direct Aurora Careers application 2026-04-27; Manual apply needed: embedded Aurora application form not automation-accessible 2026-04-27; Manual apply verified: custom embedded application flow remains blocker 2026-04-28; Manual apply verified: direct Greenhouse form filled with tailored resume, contact info, authorization/sponsorship, Mountain View onsite willingness, recent-grad/project/coding-language answers, LinkedIn source, website, LinkedIn profile, and demographics; submit clicked but page stayed on form with invisible reCAPTCHA/no confirmation 2026-04-28; Application submitted 2026-04-28; LinkedIn invite sent to Kamal D. Singh (Recruiter) 2026-04-28; Rejection email received 2026-04-30",
       "noteLinks": [
         {
           "label": "Kamal D. Singh",
@@ -8107,7 +8098,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/gwendolyncunningham",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for BlackRock SMA Solutions full-stack platform role 2026-04-28; promoted React, TypeScript, Python, SQL, AWS, APIs, reliability, and product collaboration; did not claim Kubernetes ownership despite posting preference.; Application submitted 2026-04-28; LinkedIn invite sent to Gwendolyn Cunningham (Recruiter) 2026-04-29; Application confirmation email received 2026-04-28",
+      "notes": "Tailored for BlackRock SMA Solutions full-stack platform role 2026-04-28; promoted React, TypeScript, Python, SQL, AWS, APIs, reliability, and product collaboration; did not claim Kubernetes ownership despite posting preference.; Application submitted 2026-04-28; LinkedIn invite sent to Gwendolyn Cunningham (Recruiter) 2026-04-29",
       "noteLinks": [
         {
           "label": "Gwendolyn Cunningham",
@@ -8117,8 +8108,7 @@
       "activityDates": [
         "2026-04-28",
         "2026-04-28",
-        "2026-04-29",
-        "2026-04-28"
+        "2026-04-29"
       ]
     },
     {
@@ -8204,9 +8194,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for NetApp cloud storage role 2026-04-28; emphasized GCP/OCI/AWS cloud integrations, API validation, automated testing, support, documentation, troubleshooting, and storage-adjacent Exascale workflow evidence. Did not claim Kubernetes, Terraform, Jenkins, Linux operations, or AI/ML framework experience.; Application submitted 2026-04-28",
+      "notes": "Tailored for NetApp cloud storage role 2026-04-28; emphasized GCP/OCI/AWS cloud integrations, API validation, automated testing, support, documentation, troubleshooting, and storage-adjacent Exascale workflow evidence. Did not claim Kubernetes, Terraform, Jenkins, Linux operations, or AI/ML framework experience.; Application submitted 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -8308,9 +8299,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Arcadia founding engineer role 2026-04-28; emphasized AI-first product engineering, React/TypeScript, Python services, LLM applications, workflow automation, backend integrations, data pipelines, cloud infrastructure, testing discipline, and high-ownership execution. Did not claim healthcare production experience or agent-orchestration framework ownership.; Application submitted 2026-04-28",
+      "notes": "Tailored for Arcadia founding engineer role 2026-04-28; emphasized AI-first product engineering, React/TypeScript, Python services, LLM applications, workflow automation, backend integrations, data pipelines, cloud infrastructure, testing discipline, and high-ownership execution. Did not claim healthcare production experience or agent-orchestration framework ownership.; Application submitted 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -8412,9 +8404,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Deepgram Forward Deployed Engineer, Restaurants role 2026-04-28; emphasized voice-AI-adjacent customer deployments, API integrations, AI-first workflow, production readiness, observability, on-call escalation, reusable validation tooling, documentation, and product feedback loops. Did not claim voice AI, STT/TTS, NLP, SDK, webhook, or restaurant POS integration ownership.; Application submitted 2026-04-28",
+      "notes": "Tailored for Deepgram Forward Deployed Engineer, Restaurants role 2026-04-28; emphasized voice-AI-adjacent customer deployments, API integrations, AI-first workflow, production readiness, observability, on-call escalation, reusable validation tooling, documentation, and product feedback loops. Did not claim voice AI, STT/TTS, NLP, SDK, webhook, or restaurant POS integration ownership.; Application submitted 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -8490,9 +8483,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Bretton AI forward deployed engineer role 2026-04-28; emphasized backend/data integrations, cloud production readiness, API testing automation, regulated-environment care, and truthful LLM application evidence. Did not claim AML/BSA, banking integrations, compliance ownership, or production LLM agent deployment.; Application submitted 2026-04-28",
+      "notes": "Tailored for Bretton AI forward deployed engineer role 2026-04-28; emphasized backend/data integrations, cloud production readiness, API testing automation, regulated-environment care, and truthful LLM application evidence. Did not claim AML/BSA, banking integrations, compliance ownership, or production LLM agent deployment.; Application submitted 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -8645,9 +8639,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Tavus forward deployed engineer role 2026-04-28; emphasized customer integration debugging, prototype/sample-app adjacent full-stack work, developer experience, docs, AI-assisted API testing, Fantasy Wizard integrations, and Oracle reliability. Did not claim SDK ownership, ML model training, video AI, WebRTC/media infrastructure, or Tavus-specific AI Human experience.; Application submitted 2026-04-28",
+      "notes": "Tailored for Tavus forward deployed engineer role 2026-04-28; emphasized customer integration debugging, prototype/sample-app adjacent full-stack work, developer experience, docs, AI-assisted API testing, Fantasy Wizard integrations, and Oracle reliability. Did not claim SDK ownership, ML model training, video AI, WebRTC/media infrastructure, or Tavus-specific AI Human experience.; Application submitted 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -8697,9 +8692,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Diligent forward deployed engineer role 2026-04-28; emphasized rapid prototypes, AI/LLM tools, APIs, cloud integrations, React/NestJS/OpenSearch product work, AI-assisted API testing, and business-facing technical clarity. Did not claim GRC domain expertise, formal pre-sales title, C-level presentation ownership, or business development ownership.; Application submitted 2026-04-28",
+      "notes": "Tailored for Diligent forward deployed engineer role 2026-04-28; emphasized rapid prototypes, AI/LLM tools, APIs, cloud integrations, React/NestJS/OpenSearch product work, AI-assisted API testing, and business-facing technical clarity. Did not claim GRC domain expertise, formal pre-sales title, C-level presentation ownership, or business development ownership.; Application submitted 2026-04-28; Application confirmation email received 2026-04-28",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-28",
         "2026-04-28",
         "2026-04-28"
       ]
@@ -8936,8 +8932,8 @@
     {
       "company": "Playbook Sports",
       "role": "Full Stack Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -8952,10 +8948,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Playbook Sports Full Stack Engineer role 2026-04-29; emphasized Python, object-oriented backend work, full-stack React/NestJS/Spring Boot product features, QA/unit/regression testing, cloud workflows, relational data modeling, AI-assisted tooling, fast delivery, and sports-product project relevance. Did not claim Django experience.",
+      "notes": "Tailored for Playbook Sports Full Stack Engineer role 2026-04-29; emphasized Python, object-oriented backend work, full-stack React/NestJS/Spring Boot product features, QA/unit/regression testing, cloud workflows, relational data modeling, AI-assisted tooling, fast delivery, and sports-product project relevance. Did not claim Django experience.; Application confirmation email received 2026-04-30",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ]
     },
     {
@@ -9002,61 +8999,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Meta Software Engineer, Product role 2026-04-29; emphasized product engineering, reusable components, API quality, performance, scalability, rollout reliability, and AI-assisted workflow improvements. Did not claim Swift, Kotlin, Hack, large-scope technical leadership, or the 6+ years of experience requested in the posting.; Application confirmation email received 2026-04-30",
+      "notes": "Tailored for Meta Software Engineer, Product role 2026-04-29; emphasized product engineering, reusable components, API quality, performance, scalability, rollout reliability, and AI-assisted workflow improvements. Did not claim Swift, Kotlin, Hack, large-scope technical leadership, or the 6+ years of experience requested in the posting.; Application confirmation email received 2026-04-29",
       "noteLinks": [],
       "activityDates": [
         "2026-04-29",
-        "2026-04-30"
+        "2026-04-29"
       ]
-    },
-    {
-      "company": "Cluely",
-      "role": "Founding Engineer (Fullstack TypeScript)",
-      "applied": true,
-      "status": "Applied",
-      "fitScore": 8,
-      "reachOut": true,
-      "referral": "No",
-      "dateAdded": "2026-04-29",
-      "location": "San Francisco, CA (On-site)",
-      "source": "Ashby",
-      "jobLink": "https://jobs.ashbyhq.com/cluely/9ed623a7-fc2d-4afc-ab88-a01af977cb9f",
-      "postingKey": "9ed623a7-fc2d-4afc-ab88-a01af977cb9f",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Cluely/Founding_Engineer_Fullstack_TypeScript/Liam_Van_Resume",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Cluely/Founding_Engineer_Fullstack_TypeScript/Liam_Van_Resume/Liam_Van_Cluely.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
-      "engineerContact": "",
-      "engineerProfile": "",
-      "notes": "Ashby posting: Founding Engineer (Fullstack TypeScript). In-person SF 6 days/week, 10-12 hrs/day; housing provided; strict TypeScript (no any/ts-ignore); Bun + Elysia.; Application submitted 2026-04-30; Application confirmation email received 2026-04-30",
-      "noteLinks": [],
-      "activityDates": [
-        "2026-04-30",
-        "2026-04-30"
-      ]
-    },
-    {
-      "company": "Spotify",
-      "role": "Frontend Engineer - Music",
-      "applied": false,
-      "status": "Resume Tailored",
-      "fitScore": 8,
-      "reachOut": true,
-      "referral": "No",
-      "dateAdded": "2026-04-30",
-      "location": "New York, NY",
-      "source": "Lever",
-      "jobLink": "https://jobs.lever.co/spotify/a8606ee6-84b9-4677-af2f-b57f1e71fd91?lever-source=LinkedInJobs",
-      "postingKey": "a8606ee6-84b9-4677-af2f-b57f1e71fd91",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Spotify/Frontend_Engineer_Music/Liam_Van_Resume",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Spotify/Frontend_Engineer_Music/Liam_Van_Resume/Liam_Van_Spotify.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
-      "engineerContact": "",
-      "engineerProfile": "",
-      "notes": "Tailored for Spotify Rights Systems frontend role; emphasized React/TypeScript, API integrations, complex workflows, testing, production readiness, and cross-functional product delivery.",
-      "noteLinks": [],
-      "activityDates": []
     }
   ],
   "outreachQueue": [
