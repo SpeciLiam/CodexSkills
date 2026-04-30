@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T20:41:02.962348+00:00",
+  "generatedAt": "2026-04-30T20:46:05.313896+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,8 +9,8 @@
   "stats": {
     "kpis": {
       "total": 282,
-      "applied": 249,
-      "unapplied": 33,
+      "applied": 250,
+      "unapplied": 32,
       "active": 223,
       "rejected": 34,
       "interviewing": 4,
@@ -20,13 +20,13 @@
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 88.3,
-      "rejectionRate": 13.7
+      "applyRate": 88.7,
+      "rejectionRate": 13.6
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 207
+        "value": 208
       },
       {
         "name": "Rejected",
@@ -38,7 +38,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 6
+        "value": 5
       },
       {
         "name": "Interviewing",
@@ -378,7 +378,7 @@
         "date": "2026-04-30",
         "cumulative": 282,
         "added": 3,
-        "applied": 2,
+        "applied": 3,
         "rejected": 0,
         "interviewing": 0
       }
@@ -9096,8 +9096,8 @@
     {
       "company": "Aquatic Capital Management",
       "role": "Software Engineer, Early Career",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -9112,9 +9112,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-04-30",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-04-30"
+      ]
     }
   ],
   "outreachQueue": [
