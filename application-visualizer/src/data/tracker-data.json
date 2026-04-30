@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T23:04:06.637846+00:00",
+  "generatedAt": "2026-04-30T23:07:32.197452+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,8 +9,8 @@
   "stats": {
     "kpis": {
       "total": 297,
-      "applied": 259,
-      "unapplied": 38,
+      "applied": 260,
+      "unapplied": 37,
       "active": 238,
       "rejected": 34,
       "interviewing": 4,
@@ -20,13 +20,13 @@
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 87.2,
+      "applyRate": 87.5,
       "rejectionRate": 13.1
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 217
+        "value": 218
       },
       {
         "name": "Rejected",
@@ -38,7 +38,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 11
+        "value": 10
       },
       {
         "name": "Interviewing",
@@ -378,7 +378,7 @@
         "date": "2026-04-30",
         "cumulative": 297,
         "added": 18,
-        "applied": 12,
+        "applied": 13,
         "rejected": 0,
         "interviewing": 0
       }
@@ -9344,8 +9344,8 @@
     {
       "company": "Airbnb",
       "role": "Software Engineer, Trust",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -9360,9 +9360,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Airbnb Software Engineer, Trust role 2026-04-30; emphasized Java/Python, backend APIs, data workflows, production readiness, observability, cross-team execution, AI-assisted testing, LLM applications, and product reliability. Did not claim fraud/risk-domain ownership, ML pipeline production ownership, privacy-policy experience, or Airbnb marketplace-domain experience.; Manual apply needed: Greenhouse reCAPTCHA plus non-compete/non-solicitation question 2026-04-30",
+      "notes": "Tailored for Airbnb Software Engineer, Trust role 2026-04-30; emphasized Java/Python, backend APIs, data workflows, production readiness, observability, cross-team execution, AI-assisted testing, LLM applications, and product reliability. Did not claim fraud/risk-domain ownership, ML pipeline production ownership, privacy-policy experience, or Airbnb marketplace-domain experience.; Manual apply needed: Greenhouse reCAPTCHA plus non-compete/non-solicitation question 2026-04-30; Application submitted by Liam 2026-04-30",
       "noteLinks": [],
       "activityDates": [
+        "2026-04-30",
         "2026-04-30",
         "2026-04-30"
       ]
