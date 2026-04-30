@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T02:39:28.412312+00:00",
+  "generatedAt": "2026-04-30T04:20:21.254520+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -8,19 +8,19 @@
   },
   "stats": {
     "kpis": {
-      "total": 278,
+      "total": 279,
       "applied": 243,
-      "unapplied": 35,
-      "active": 220,
+      "unapplied": 36,
+      "active": 221,
       "rejected": 33,
       "interviewing": 4,
       "assessments": 3,
       "highFit": 166,
-      "reachOut": 222,
+      "reachOut": 223,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 87.4,
+      "applyRate": 87.1,
       "rejectionRate": 13.6
     },
     "statusCounts": [
@@ -38,7 +38,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 8
+        "value": 9
       },
       {
         "name": "Interviewing",
@@ -56,7 +56,7 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 114
+        "value": 115
       },
       {
         "name": "Ashby",
@@ -130,7 +130,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 129
+        "value": 130
       },
       {
         "name": "Bay Area",
@@ -172,7 +172,7 @@
       },
       {
         "name": "Forward Deployed",
-        "value": 24
+        "value": 25
       },
       {
         "name": "AI/ML",
@@ -210,7 +210,7 @@
       },
       {
         "score": "5",
-        "count": 25
+        "count": 26
       },
       {
         "score": "6",
@@ -368,8 +368,8 @@
       },
       {
         "date": "2026-04-29",
-        "cumulative": 278,
-        "added": 11,
+        "cumulative": 279,
+        "added": 12,
         "applied": 4,
         "rejected": 0,
         "interviewing": 0
@@ -852,7 +852,7 @@
       "labeled": 127,
       "approved": 12,
       "sent": 5,
-      "notReachedOut": 7,
+      "notReachedOut": 3,
       "needsRecruiter": 2
     },
     "engineerBatch": {
@@ -8996,6 +8996,31 @@
       "activityDates": [
         "2026-04-29"
       ]
+    },
+    {
+      "company": "Cleartech Recruiting",
+      "role": "Deployed Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-04-29",
+      "location": "Brooklyn, NY (In-Office)",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4402489021/",
+      "postingKey": "4402489021",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Cleartech Recruiting/Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Cleartech Recruiting/Deployed_Engineer/Liam_Van_Resume/Liam_Van_Cleartech_Recruiting.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Cleartech Recruiting Deployed Engineer role 2026-04-29; emphasized TypeScript-adjacent product engineering, developer experience, API quality, customer-facing technical implementation, and turning field feedback into product improvements. Did not claim 3+ years of experience or direct enterprise CTO advisory work beyond supported cross-team technical communication.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-04-29"
+      ]
     }
   ],
   "outreachQueue": [
@@ -12354,9 +12379,9 @@
       "route": "try-free-inmail-then-connect-note",
       "connectionNote": "Hi Lize, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about Albert Bow's Software Engineer, Low Latency Trading role, and I'm also open to other software roles that may be a fit. Thanks, Liam",
       "approval": "Approved",
-      "outcome": "Not reached out",
+      "outcome": "Blocked",
       "lastChecked": "2026-04-29",
-      "notes": "Public LinkedIn job-poster result for Albert Bow software/trading role names Lize Viljoen.; Verified current Albert Bow recruiting profile via public LinkedIn result crawled 3 weeks ago.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note."
+      "notes": "Public LinkedIn job-poster result for Albert Bow software/trading role names Lize Viljoen.; Verified current Albert Bow recruiting profile via public LinkedIn result crawled 3 weeks ago.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note.; LinkedIn blocked outreach: reached weekly connection invitation limit (toast: reached the limit for connection invitations; try again next week)."
     },
     {
       "batch": "recruiter-2026-04-28",
@@ -12371,9 +12396,9 @@
       "route": "try-free-inmail-then-connect-note",
       "connectionNote": "Hi Jonida, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about Alexander Chapman's Founding Full Stack Engineer role, and I'm also open to other software roles that may be a fit. Thanks, Liam",
       "approval": "Approved",
-      "outcome": "Not reached out",
+      "outcome": "Blocked",
       "lastChecked": "2026-04-29",
-      "notes": "Public LinkedIn job poster for this role.; Verified current Alexander Chapman team head via public LinkedIn profile and recent job-poster result.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note."
+      "notes": "Public LinkedIn job poster for this role.; Verified current Alexander Chapman team head via public LinkedIn profile and recent job-poster result.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note.; LinkedIn blocked outreach: reached weekly connection invitation limit (toast: reached the limit for connection invitations; try again next week)."
     },
     {
       "batch": "recruiter-2026-04-29",
@@ -13884,9 +13909,9 @@
       "route": "try-free-inmail-then-connect-note",
       "connectionNote": "Hi Jesse, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about OpenAI's software engineering roles. Thanks, Liam",
       "approval": "Approved",
-      "outcome": "Not reached out",
+      "outcome": "Blocked",
       "lastChecked": "2026-04-29",
-      "notes": "Verified current OpenAI recruiting staff profile via public LinkedIn result crawled last week.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note."
+      "notes": "Verified current OpenAI recruiting staff profile via public LinkedIn result crawled last week.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note.; LinkedIn blocked outreach: reached weekly connection invitation limit (toast: reached the limit for connection invitations; try again next week)."
     },
     {
       "batch": "recruiter-2026-04-28",
@@ -13952,9 +13977,9 @@
       "route": "try-free-inmail-then-connect-note",
       "connectionNote": "Hi Ryan, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about Serval's Forward Deployed Engineer role, and I'm also open to other software roles that may be a fit. Thanks, Liam",
       "approval": "Approved",
-      "outcome": "Not reached out",
+      "outcome": "Blocked",
       "lastChecked": "2026-04-29",
-      "notes": "Verified current Serval technical recruiter via public LinkedIn result crawled last week.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note."
+      "notes": "Verified current Serval technical recruiter via public LinkedIn result crawled last week.; Auto-approved on 2026-04-29: confirmed recruiter name + linkedin.com/in profile + non-TBD note.; LinkedIn blocked outreach: reached weekly connection invitation limit (toast: reached the limit for connection invitations; try again next week)."
     },
     {
       "batch": "recruiter-2026-04-28",
