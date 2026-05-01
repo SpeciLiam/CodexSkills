@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-01T19:58:23.039975+00:00",
+  "generatedAt": "2026-05-01T21:26:17.614476+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -8,29 +8,29 @@
   },
   "stats": {
     "kpis": {
-      "total": 297,
-      "applied": 265,
-      "unapplied": 32,
-      "active": 229,
-      "rejected": 43,
-      "interviewing": 4,
+      "total": 300,
+      "applied": 266,
+      "unapplied": 34,
+      "active": 231,
+      "rejected": 44,
+      "interviewing": 3,
       "assessments": 3,
-      "highFit": 184,
-      "reachOut": 240,
+      "highFit": 187,
+      "reachOut": 243,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 89.2,
-      "rejectionRate": 16.2
+      "applyRate": 88.7,
+      "rejectionRate": 16.5
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 214
+        "value": 215
       },
       {
         "name": "Rejected",
-        "value": 43
+        "value": 44
       },
       {
         "name": "Archived",
@@ -42,7 +42,7 @@
       },
       {
         "name": "Interviewing",
-        "value": 4
+        "value": 3
       },
       {
         "name": "Online Assessment",
@@ -50,13 +50,13 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 1
+        "value": 3
       }
     ],
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 131
+        "value": 132
       },
       {
         "name": "Ashby",
@@ -68,7 +68,7 @@
       },
       {
         "name": "Company Site",
-        "value": 26
+        "value": 28
       },
       {
         "name": "LinkedIn Easy Apply",
@@ -134,7 +134,7 @@
       },
       {
         "name": "Bay Area",
-        "value": 94
+        "value": 95
       },
       {
         "name": "Other",
@@ -142,11 +142,11 @@
       },
       {
         "name": "Remote",
-        "value": 13
+        "value": 14
       },
       {
         "name": "Seattle",
-        "value": 9
+        "value": 10
       },
       {
         "name": "Unknown",
@@ -160,7 +160,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 174
+        "value": 176
       },
       {
         "name": "Backend",
@@ -176,7 +176,7 @@
       },
       {
         "name": "AI/ML",
-        "value": 16
+        "value": 17
       },
       {
         "name": "Infra/Platform",
@@ -222,15 +222,15 @@
       },
       {
         "score": "8",
-        "count": 68
+        "count": 69
       },
       {
         "score": "9",
-        "count": 53
+        "count": 54
       },
       {
         "score": "10",
-        "count": 63
+        "count": 64
       }
     ],
     "targetCounts": [
@@ -251,8 +251,8 @@
         "cumulative": 29,
         "added": 29,
         "applied": 27,
-        "rejected": 9,
-        "interviewing": 1
+        "rejected": 10,
+        "interviewing": 0
       },
       {
         "date": "2026-04-07",
@@ -355,7 +355,7 @@
         "cumulative": 240,
         "added": 75,
         "applied": 65,
-        "rejected": 8,
+        "rejected": 7,
         "interviewing": 1
       },
       {
@@ -381,6 +381,14 @@
         "applied": 17,
         "rejected": 1,
         "interviewing": 0
+      },
+      {
+        "date": "2026-05-01",
+        "cumulative": 300,
+        "added": 3,
+        "applied": 1,
+        "rejected": 1,
+        "interviewing": 0
       }
     ],
     "topCompanies": [
@@ -404,6 +412,12 @@
       },
       {
         "company": "Loop",
+        "roles": 3,
+        "avgFit": 9.33,
+        "bestFit": 10
+      },
+      {
+        "company": "Airbnb",
         "roles": 3,
         "avgFit": 9.33,
         "bestFit": 10
@@ -488,12 +502,6 @@
       },
       {
         "company": "Benchling",
-        "roles": 2,
-        "avgFit": 9.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Airbnb",
         "roles": 2,
         "avgFit": 9.0,
         "bestFit": 10
@@ -864,12 +872,12 @@
       "needsRecruiter": 2
     },
     "engineerBatch": {
-      "total": 187,
-      "labeled": 183,
+      "total": 198,
+      "labeled": 177,
       "approved": 0,
       "sent": 0,
-      "notReachedOut": 187,
-      "needsEngineer": 151
+      "notReachedOut": 198,
+      "needsEngineer": 163
     }
   },
   "applications": [
@@ -5007,7 +5015,7 @@
       "company": "Gecko Robotics",
       "role": "Forward Deployed Engineer",
       "applied": true,
-      "status": "Interviewing",
+      "status": "Rejected",
       "fitScore": 4,
       "reachOut": true,
       "referral": "",
@@ -5022,11 +5030,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Recruiter screen scheduled 2026-04-17 with Carolina Mejia (Gecko Robotics); Technical interview scheduled 2026-04-23 with Kaitlyn Lu (Gecko Robotics)",
+      "notes": "Recruiter screen scheduled 2026-04-17 with Carolina Mejia (Gecko Robotics); Technical interview scheduled 2026-04-23 with Kaitlyn Lu (Gecko Robotics); Rejection email received 2026-04-29",
       "noteLinks": [],
       "activityDates": [
         "2026-04-17",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-29"
       ]
     },
     {
@@ -6589,7 +6598,7 @@
       "company": "Underdog.io",
       "role": "Full Stack Engineer",
       "applied": true,
-      "status": "Rejected",
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -6604,14 +6613,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with Underdog candidate network application 2026-04-27; Manual apply needed: required hiring-network preference profile and non-role-specific application flow 2026-04-27; Manual apply verified: non-role-specific hiring-network preference profile required 2026-04-28; Submitted Underdog.io hiring-network application with tailored resume; confirmation page says check inbox to finish account setup 2026-04-28; Underdog.io network rejection email received 2026-05-01",
+      "notes": "Replaced LinkedIn posting with Underdog candidate network application 2026-04-27; Manual apply needed: required hiring-network preference profile and non-role-specific application flow 2026-04-27; Manual apply verified: non-role-specific hiring-network preference profile required 2026-04-28; Submitted Underdog.io hiring-network application with tailored resume; confirmation page says check inbox to finish account setup 2026-04-28",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-27",
         "2026-04-28",
-        "2026-04-28",
-        "2026-05-01"
+        "2026-04-28"
       ]
     },
     {
@@ -8368,12 +8376,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Serval forward deployed engineer role 2026-04-28; emphasized customer-facing AI automation delivery, backend services and APIs, workflow automation, strategic pilots, reusable product capabilities, observability, reliability, and production support. Did not claim production agent deployment ownership or enterprise automation product ownership beyond supported AI-assisted workflow and integration experience.; Application submitted 2026-04-28; Rejection email received 2026-05-01",
+      "notes": "Tailored for Serval forward deployed engineer role 2026-04-28; emphasized customer-facing AI automation delivery, backend services and APIs, workflow automation, strategic pilots, reusable product capabilities, observability, reliability, and production support. Did not claim production agent deployment ownership or enterprise automation product ownership beyond supported AI-assisted workflow and integration experience.; Application submitted 2026-04-28; Rejection email received 2026-04-30",
       "noteLinks": [],
       "activityDates": [
         "2026-04-28",
         "2026-04-28",
-        "2026-05-01"
+        "2026-04-30"
       ]
     },
     {
@@ -9539,6 +9547,84 @@
       "activityDates": [
         "2026-04-30",
         "2026-04-30"
+      ]
+    },
+    {
+      "company": "Airbnb",
+      "role": "Software Engineer, Airbnb - New Grad",
+      "applied": true,
+      "status": "Rejected",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "San Francisco, CA / Seattle, WA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4409130289/?trackingId=f2l9YH0mROd%2BgEsDwvhXEA%3D%3D&refId=w3dS5nRG%2BA%2FUDQLDxG6jvA%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BxWdl3DKHToqXdOA0UQI4VA%3D%3D",
+      "postingKey": "4409130289",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Airbnb/Software_Engineer_Airbnb_New_Grad/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Airbnb/Software_Engineer_Airbnb_New_Grad/Liam_Van_Resume/Liam_Van_Airbnb.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Airbnb Software Engineer, Airbnb - New Grad posting 2026-05-01; emphasized Java/Python/JavaScript, REST APIs, product components, AI-assisted development, LLM applications, testing, production readiness, cross-functional communication, and product reliability. Did not claim Scala, Ruby/Rails, Swift, Kotlin production ownership, ML model training, recommendation-system production ownership, or Airbnb marketplace-domain experience.; Tailored cover letter generated 2026-05-01; Duplicate LinkedIn posting 4409135057 appears to refer to the same role and was merged into this row 2026-05-01; Application submitted by Liam 2026-05-01; Application confirmation email received 2026-05-01; Rejection email received 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01",
+        "2026-05-01",
+        "2026-05-01",
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Apple",
+      "role": "Software Engineer, Apple Game Services",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Seattle, WA",
+      "source": "Company Site",
+      "jobLink": "https://jobs.apple.com/en-us/details/200659157/software-engineer-apple-game-services",
+      "postingKey": "software-engineer-apple-game-services",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Apple/Software_Engineer_Apple_Game_Services/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Apple/Software_Engineer_Apple_Game_Services/Liam_Van_Resume/Liam_Van_Apple.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "qlaud",
+      "role": "Software Engineer New Grad",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Remote",
+      "source": "Company Site",
+      "jobLink": "https://qlaud.ai/jobs/software-engineer-new-grad",
+      "postingKey": "software-engineer-new-grad",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/qlaud/Software_Engineer_New_Grad/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/qlaud/Software_Engineer_New_Grad/Liam_Van_Resume/Liam_Van_qlaud.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for qlaud Software Engineer New Grad remote role 2026-05-01; emphasized Java/Python/TypeScript, backend systems, REST APIs, production validation, debugging, on-call investigations, fast shipping, and side-project product ownership. Did not claim direct qlaud platform, model-routing infrastructure, or deep LLM serving experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
       ]
     }
   ],
@@ -14708,23 +14794,6 @@
     },
     {
       "batch": "engineer-2026-04-28",
-      "company": "Aurora",
-      "role": "Software Engineer I, FinOps",
-      "postingKey": "8450213002",
-      "fitScore": 10,
-      "status": "Applied",
-      "engineerName": "Bridget Spitznagel",
-      "engineerProfile": "https://www.linkedin.com/in/bridgetspitznagel",
-      "engineerPosition": "Software Engineer at Aurora Innovation",
-      "route": "try-free-inmail-then-connect-note",
-      "connectionNote": "Hi Bridget, I'm Liam Van, and I have experience at Oracle Cloud Infrastructure working on the GCP integration team. I'd love to connect and learn more about engineering at Aurora and the Software Engineer I, FinOps role. Thanks, Liam",
-      "approval": "Needs approval",
-      "outcome": "Not reached out",
-      "lastChecked": "2026-04-28",
-      "notes": "Specific Aurora software engineer from public LinkedIn result; no UGA current-company match found.; Verified current Aurora software engineer via public Wiza result crawled 4 weeks ago."
-    },
-    {
-      "batch": "engineer-2026-04-28",
       "company": "Baselayer",
       "role": "Junior Backend Engineer",
       "postingKey": "4397307930",
@@ -15113,6 +15182,57 @@
       "outcome": "Not reached out",
       "lastChecked": "2026-04-28",
       "notes": "Selected specific Wonderschool technical contact from public LinkedIn result.; Existing source did not prove this is a current engineer at the target company. Current-company engineer verification required before approval or outreach."
+    },
+    {
+      "batch": "engineer-2026-05-01",
+      "company": "Airbnb",
+      "role": "Software Engineer, Airbnb - New Grad",
+      "postingKey": "4409130289",
+      "fitScore": 10,
+      "status": "Applied",
+      "engineerName": "",
+      "engineerProfile": "",
+      "engineerPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs engineer",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
+    },
+    {
+      "batch": "engineer-2026-05-01",
+      "company": "Aquatic Capital Management",
+      "role": "Software Engineer, Early Career",
+      "postingKey": "4409014859",
+      "fitScore": 10,
+      "status": "Applied",
+      "engineerName": "",
+      "engineerProfile": "",
+      "engineerPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs engineer",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
+    },
+    {
+      "batch": "engineer-2026-05-01",
+      "company": "Paramount",
+      "role": "Software Engineer - AI Tooling & Quality Engineering Platforms",
+      "postingKey": "4408291912",
+      "fitScore": 10,
+      "status": "Applied",
+      "engineerName": "",
+      "engineerProfile": "",
+      "engineerPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs engineer",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
     },
     {
       "batch": "engineer-2026-04-28",
@@ -15528,7 +15648,7 @@
       "role": "Full Stack Engineer",
       "postingKey": "4407874068",
       "fitScore": 9,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "engineerName": "Playbook Sports engineer search",
       "engineerProfile": "https://www.linkedin.com/search/results/people/?keywords=Playbook%20Sports%20software%20engineer%20University%20of%20Georgia%20OR%20software%20engineer",
       "engineerPosition": "Engineer search fallback - verify person before approving",
@@ -15555,23 +15675,6 @@
       "outcome": "Not reached out",
       "lastChecked": "2026-04-28",
       "notes": "Specific Polymarket backend engineer from public LinkedIn result; strong markets/backend alignment.; Not independently current-company verified in 2026-04-28 audit; block before approval/outreach."
-    },
-    {
-      "batch": "engineer-2026-04-28",
-      "company": "Profound",
-      "role": "Software Engineer, Backend, Workflow Runner",
-      "postingKey": "4c29c22e-c6fa-4bde-97ed-79edd5a96cea",
-      "fitScore": 9,
-      "status": "Applied",
-      "engineerName": "Nitish Natarajan",
-      "engineerProfile": "https://www.linkedin.com/in/nitish-natarajan/",
-      "engineerPosition": "Engineer / same-company contact",
-      "route": "try-free-inmail-then-connect-note",
-      "connectionNote": "TBD after confirmed engineer is selected",
-      "approval": "Needs engineer",
-      "outcome": "Not reached out",
-      "lastChecked": "2026-04-28",
-      "notes": "Reused same-company engineer contact from application tracker.; Existing source did not prove this is a current engineer at the target company. Current-company engineer verification required before approval or outreach."
     },
     {
       "batch": "engineer-2026-04-28",
@@ -15948,6 +16051,23 @@
       "notes": "Fallback LinkedIn people-search row added to make batch complete; prefer UGA alumni, team-aligned engineers, or credible peer contacts before approving/sending.; Fallback search row is not a verified person. Current-company engineer verification required before approval or outreach."
     },
     {
+      "batch": "engineer-2026-05-01",
+      "company": "Blossom",
+      "role": "Software Engineer (All Levels)",
+      "postingKey": "4408057697",
+      "fitScore": 9,
+      "status": "Applied",
+      "engineerName": "",
+      "engineerProfile": "",
+      "engineerPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs engineer",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
+    },
+    {
       "batch": "engineer-2026-04-28",
       "company": "Albert Bow",
       "role": "Software Engineer, Low Latency Trading",
@@ -16262,23 +16382,6 @@
       "status": "Applied",
       "engineerName": "Justworks engineer search",
       "engineerProfile": "https://www.linkedin.com/search/results/people/?keywords=Justworks%20software%20engineer%20University%20of%20Georgia%20OR%20software%20engineer",
-      "engineerPosition": "Engineer search fallback - verify person before approving",
-      "route": "try-free-inmail-then-connect-note",
-      "connectionNote": "TBD after confirmed engineer is selected",
-      "approval": "Needs engineer",
-      "outcome": "Not reached out",
-      "lastChecked": "2026-04-28",
-      "notes": "Fallback LinkedIn people-search row added to make batch complete; prefer UGA alumni, team-aligned engineers, or credible peer contacts before approving/sending.; Fallback search row is not a verified person. Current-company engineer verification required before approval or outreach."
-    },
-    {
-      "batch": "engineer-2026-04-28",
-      "company": "Kashable",
-      "role": "Software Engineer",
-      "postingKey": "4403975734",
-      "fitScore": 8,
-      "status": "Applied",
-      "engineerName": "Kashable engineer search",
-      "engineerProfile": "https://www.linkedin.com/search/results/people/?keywords=Kashable%20software%20engineer%20University%20of%20Georgia%20OR%20software%20engineer",
       "engineerPosition": "Engineer search fallback - verify person before approving",
       "route": "try-free-inmail-then-connect-note",
       "connectionNote": "TBD after confirmed engineer is selected",
@@ -16616,7 +16719,7 @@
       "role": "Software Engineer",
       "postingKey": "4408057809",
       "fitScore": 8,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "engineerName": "Sofar Ocean engineer search",
       "engineerProfile": "https://www.linkedin.com/search/results/people/?keywords=Sofar%20Ocean%20software%20engineer%20University%20of%20Georgia%20OR%20software%20engineer",
       "engineerPosition": "Engineer search fallback - verify person before approving",
@@ -16798,10 +16901,180 @@
       "notes": "Fallback LinkedIn people-search row added to make batch complete; prefer UGA alumni, team-aligned engineers, or credible peer contacts before approving/sending.; Fallback search row is not a verified person. Current-company engineer verification required before approval or outreach."
     },
     {
+      "batch": "engineer-2026-05-01",
+      "company": "Airbnb",
+      "role": "Software Engineer, Trust",
+      "postingKey": "4408226465",
+      "fitScore": 8,
+      "status": "Applied",
+      "engineerName": "",
+      "engineerProfile": "",
+      "engineerPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs engineer",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
+    },
+    {
+      "batch": "engineer-2026-05-01",
+      "company": "Angi",
+      "role": "Software Engineer",
+      "postingKey": "4408787935",
+      "fitScore": 8,
+      "status": "Applied",
+      "engineerName": "",
+      "engineerProfile": "",
+      "engineerPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs engineer",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
+    },
+    {
+      "batch": "engineer-2026-05-01",
+      "company": "Chalk",
+      "role": "Software Engineer",
+      "postingKey": "4406548495",
+      "fitScore": 8,
+      "status": "Applied",
+      "engineerName": "",
+      "engineerProfile": "",
+      "engineerPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs engineer",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
+    },
+    {
       "batch": "engineer-2026-04-30",
       "company": "Cluely",
       "role": "Founding Engineer (Fullstack TypeScript)",
       "postingKey": "9ed623a7-fc2d-4afc-ab88-a01af977cb9f",
+      "fitScore": 8,
+      "status": "Applied",
+      "engineerName": "",
+      "engineerProfile": "",
+      "engineerPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs engineer",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
+    },
+    {
+      "batch": "engineer-2026-05-01",
+      "company": "Crossing Hurdles",
+      "role": "Software Engineer (New Grad)",
+      "postingKey": "4405984314",
+      "fitScore": 8,
+      "status": "Applied",
+      "engineerName": "",
+      "engineerProfile": "",
+      "engineerPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs engineer",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
+    },
+    {
+      "batch": "engineer-2026-05-01",
+      "company": "Flip",
+      "role": "Software Engineer",
+      "postingKey": "4408758326",
+      "fitScore": 8,
+      "status": "Applied",
+      "engineerName": "",
+      "engineerProfile": "",
+      "engineerPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs engineer",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
+    },
+    {
+      "batch": "engineer-2026-05-01",
+      "company": "Formation Bio",
+      "role": "Software Engineer (Open Level)",
+      "postingKey": "4407534601",
+      "fitScore": 8,
+      "status": "Applied",
+      "engineerName": "",
+      "engineerProfile": "",
+      "engineerPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs engineer",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
+    },
+    {
+      "batch": "engineer-2026-05-01",
+      "company": "Formation Bio",
+      "role": "Software Engineer (Open Level)",
+      "postingKey": "4408715789",
+      "fitScore": 8,
+      "status": "Applied",
+      "engineerName": "",
+      "engineerProfile": "",
+      "engineerPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs engineer",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
+    },
+    {
+      "batch": "engineer-2026-05-01",
+      "company": "Healink",
+      "role": "Full Stack Engineer",
+      "postingKey": "4407016717",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "engineerName": "",
+      "engineerProfile": "",
+      "engineerPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs engineer",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
+    },
+    {
+      "batch": "engineer-2026-05-01",
+      "company": "Healink",
+      "role": "Software Engineer",
+      "postingKey": "4407027169",
+      "fitScore": 8,
+      "status": "Applied",
+      "engineerName": "",
+      "engineerProfile": "",
+      "engineerPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs engineer",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
+    },
+    {
+      "batch": "engineer-2026-05-01",
+      "company": "Kaizen",
+      "role": "Software Engineer",
+      "postingKey": "4406401493",
       "fitScore": 8,
       "status": "Applied",
       "engineerName": "",
@@ -16832,12 +17105,63 @@
       "notes": ""
     },
     {
+      "batch": "engineer-2026-05-01",
+      "company": "Saragossa",
+      "role": "Full Stack Developer - Sports Science Innovation",
+      "postingKey": "4395867531",
+      "fitScore": 8,
+      "status": "Applied",
+      "engineerName": "",
+      "engineerProfile": "",
+      "engineerPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs engineer",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
+    },
+    {
       "batch": "engineer-2026-04-30",
       "company": "Spotify",
       "role": "Frontend Engineer - Music",
       "postingKey": "a8606ee6-84b9-4677-af2f-b57f1e71fd91",
       "fitScore": 8,
-      "status": "Resume Tailored",
+      "status": "Applied",
+      "engineerName": "",
+      "engineerProfile": "",
+      "engineerPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs engineer",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
+    },
+    {
+      "batch": "engineer-2026-05-01",
+      "company": "Tinder",
+      "role": "Software Engineer, Backend",
+      "postingKey": "4328991043",
+      "fitScore": 8,
+      "status": "Applied",
+      "engineerName": "",
+      "engineerProfile": "",
+      "engineerPosition": "",
+      "route": "try-free-inmail-then-connect-note",
+      "connectionNote": "TBD after contact is selected",
+      "approval": "Needs engineer",
+      "outcome": "Not reached out",
+      "lastChecked": "",
+      "notes": ""
+    },
+    {
+      "batch": "engineer-2026-05-01",
+      "company": "Tines",
+      "role": "Software Engineer (full-stack)",
+      "postingKey": "4409062593",
+      "fitScore": 8,
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -17262,7 +17586,7 @@
       "role": "Android Engineer",
       "postingKey": "eeb31906-5f8f-4599-a77a-dbee6c2079c9",
       "fitScore": 6,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "engineerName": "Match Group engineer search",
       "engineerProfile": "https://www.linkedin.com/search/results/people/?keywords=Match%20Group%20software%20engineer%20University%20of%20Georgia%20OR%20software%20engineer",
       "engineerPosition": "Engineer search fallback - verify person before approving",
@@ -17279,7 +17603,7 @@
       "role": "iOS Engineer",
       "postingKey": "6d8c0ef7-aa0f-4ea4-8473-6c20ad18745f",
       "fitScore": 6,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "engineerName": "Match Group engineer search",
       "engineerProfile": "https://www.linkedin.com/search/results/people/?keywords=Match%20Group%20software%20engineer%20University%20of%20Georgia%20OR%20software%20engineer",
       "engineerPosition": "Engineer search fallback - verify person before approving",
@@ -17289,23 +17613,6 @@
       "outcome": "Not reached out",
       "lastChecked": "2026-04-28",
       "notes": "Fallback LinkedIn people-search row added to make batch complete; prefer UGA alumni, team-aligned engineers, or credible peer contacts before approving/sending.; Fallback search row is not a verified person. Current-company engineer verification required before approval or outreach."
-    },
-    {
-      "batch": "engineer-2026-04-28",
-      "company": "Profound",
-      "role": "Forward Deployed Engineer",
-      "postingKey": "b076c997-0ba3-4d3c-9dc9-ad0b3ed49b05",
-      "fitScore": 6,
-      "status": "Applied",
-      "engineerName": "Nitish Natarajan",
-      "engineerProfile": "https://www.linkedin.com/in/nitish-natarajan/",
-      "engineerPosition": "Engineer / same-company contact",
-      "route": "try-free-inmail-then-connect-note",
-      "connectionNote": "TBD after confirmed engineer is selected",
-      "approval": "Needs engineer",
-      "outcome": "Not reached out",
-      "lastChecked": "2026-04-28",
-      "notes": "Reused same-company engineer contact from application tracker.; Existing source did not prove this is a current engineer at the target company. Current-company engineer verification required before approval or outreach."
     },
     {
       "batch": "engineer-2026-04-28",
@@ -17347,7 +17654,7 @@
       "role": "SW/Agentic Engineer, Early Career",
       "postingKey": "4407590662",
       "fitScore": 6,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "engineerName": "Viasat engineer search",
       "engineerProfile": "https://www.linkedin.com/search/results/people/?keywords=Viasat%20software%20engineer%20University%20of%20Georgia%20OR%20software%20engineer",
       "engineerPosition": "Engineer search fallback - verify person before approving",
@@ -17649,23 +17956,6 @@
     },
     {
       "batch": "engineer-2026-04-28",
-      "company": "Serval",
-      "role": "Forward Deployed Engineer",
-      "postingKey": "4404255604",
-      "fitScore": 5,
-      "status": "Applied",
-      "engineerName": "Serval engineer search",
-      "engineerProfile": "https://www.linkedin.com/search/results/people/?keywords=Serval%20software%20engineer%20University%20of%20Georgia%20OR%20software%20engineer",
-      "engineerPosition": "Engineer search fallback - verify person before approving",
-      "route": "try-free-inmail-then-connect-note",
-      "connectionNote": "TBD after confirmed engineer is selected",
-      "approval": "Needs engineer",
-      "outcome": "Not reached out",
-      "lastChecked": "2026-04-28",
-      "notes": "Fallback LinkedIn people-search row added to make batch complete; prefer UGA alumni, team-aligned engineers, or credible peer contacts before approving/sending.; Fallback search row is not a verified person. Current-company engineer verification required before approval or outreach."
-    },
-    {
-      "batch": "engineer-2026-04-28",
       "company": "Skale",
       "role": "Forward Deployed Engineer",
       "postingKey": "4393462263",
@@ -17768,23 +18058,6 @@
     },
     {
       "batch": "engineer-2026-04-28",
-      "company": "Gecko Robotics",
-      "role": "Forward Deployed Engineer",
-      "postingKey": "1ae83c3f-565a-48c9-85f7-55ab1c75593d",
-      "fitScore": 4,
-      "status": "Interviewing",
-      "engineerName": "Gecko Robotics engineer search",
-      "engineerProfile": "https://www.linkedin.com/search/results/people/?keywords=Gecko%20Robotics%20software%20engineer%20University%20of%20Georgia%20OR%20software%20engineer",
-      "engineerPosition": "Engineer search fallback - verify person before approving",
-      "route": "try-free-inmail-then-connect-note",
-      "connectionNote": "TBD after confirmed engineer is selected",
-      "approval": "Needs engineer",
-      "outcome": "Not reached out",
-      "lastChecked": "2026-04-28",
-      "notes": "Fallback LinkedIn people-search row added to make batch complete; prefer UGA alumni, team-aligned engineers, or credible peer contacts before approving/sending.; Fallback search row is not a verified person. Current-company engineer verification required before approval or outreach."
-    },
-    {
-      "batch": "engineer-2026-04-28",
       "company": "LangChain",
       "role": "Deployed Engineer (Los Angeles)",
       "postingKey": "4384634511",
@@ -17806,7 +18079,7 @@
       "role": "Strategic Cloud Engineer, Google Public Sector",
       "postingKey": "113311514005250758-strategic-cloud-engineer-google-public-sector",
       "fitScore": 4,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
