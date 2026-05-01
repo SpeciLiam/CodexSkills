@@ -1,4 +1,4 @@
 interface:
   display_name: "LinkedIn Outreach Batch"
   short_description: "Build and run pre-approved recruiter outreach batches."
-  default_prompt: "Build a labeled recruiter outreach batch from the application tracker, refresh the dashboard, and prepare it for a later approved LinkedIn sending run."
+  default_prompt: "Use $linkedin-outreach-batch to build a labeled recruiter outreach batch from the application tracker, refresh the dashboard, and prepare it for a later approved LinkedIn sending run."
