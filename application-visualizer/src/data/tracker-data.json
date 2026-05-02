@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T23:35:43.785653+00:00",
+  "generatedAt": "2026-05-02T23:48:39.552251+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,10 +21,10 @@
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 42,
+      "intakeJobs": 46,
       "intakeQueued": 7,
       "intakeNew": 8,
-      "intakeManual": 0,
+      "intakeManual": 1,
       "intakeApplied": 0,
       "applyRate": 76.9,
       "rejectionRate": 14.8,
@@ -270,17 +270,25 @@
       },
       {
         "name": "Skipped",
-        "value": 3
+        "value": 4
+      },
+      {
+        "name": "Expired",
+        "value": 2
+      },
+      {
+        "name": "Manual",
+        "value": 1
       }
     ],
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 29
+        "value": 32
       },
       {
         "name": "LinkedIn",
-        "value": 13
+        "value": 14
       }
     ],
     "timeline": [
@@ -11882,6 +11890,62 @@
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Robinhood",
+      "role": "Software Engineer, Credit Cards & Banking Platform",
+      "location": "Bellevue, WA; Menlo Park, CA; New York, NY",
+      "postingKey": "7026784",
+      "jobUrl": "https://job-boards.greenhouse.io/robinhood/jobs/7026784",
+      "discoveredAt": "2026-05-02T23:47:36.414585+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 10,
+      "status": "Expired",
+      "reason": "Greenhouse URL redirects to Robinhood careers with no matching job found 2026-05-02",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Pave",
+      "role": "Software Engineer - Fullstack",
+      "location": "San Francisco, CA & New York, NY",
+      "postingKey": "4641513005",
+      "jobUrl": "https://job-boards.greenhouse.io/paveakatroveinformationtechnologies/jobs/4641513005",
+      "discoveredAt": "2026-05-02T23:47:36.414585+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 10,
+      "status": "Expired",
+      "reason": "Captured posting redirects to Pave board; exact Fullstack role no longer listed 2026-05-02",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "GlossGenius",
+      "role": "Software Engineer, Data Platform",
+      "location": "Hybrid - SF Bay Area, Hybrid - NYC",
+      "postingKey": "7538131003",
+      "jobUrl": "https://job-boards.greenhouse.io/glossgenius/jobs/7538131003",
+      "discoveredAt": "2026-05-02T23:47:36.414585+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 10,
+      "status": "Skipped",
+      "reason": "Low-fit senior data-platform role: asks 5+ years data engineering, lakehouse architecture, Snowflake/Clickhouse depth 2026-05-02",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Giga",
+      "role": "Software Engineer (New Grads)",
+      "location": "New York, NY",
+      "postingKey": "software-engineers-jobs",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineers-jobs",
+      "discoveredAt": "2026-05-02T23:47:36.414585+00:00",
+      "postedAge": "7 hours ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual review needed: degraded LinkedIn capture only has public search page, not exact posting URL; likely duplicate of existing Giga applications 2026-05-02",
+      "trackerPostingKey": ""
+    },
     {
       "source": "Greenhouse",
       "company": "Tebra",

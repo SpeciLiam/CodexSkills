@@ -2,11 +2,15 @@
 
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
-Jobs discovered: 42
-New: 8 | Queued: 17 | Tailored: 14 | Applied: 0 | Manual: 0 | Skipped: 3 | Duplicate: 0 | Expired: 0
+Jobs discovered: 46
+New: 8 | Queued: 7 | Tailored: 24 | Applied: 0 | Manual: 1 | Skipped: 4 | Duplicate: 0 | Expired: 2
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Greenhouse | Robinhood | Software Engineer, Credit Cards & Banking Platform | Bellevue, WA; Menlo Park, CA; New York, NY | 7026784 | https://job-boards.greenhouse.io/robinhood/jobs/7026784 | 2026-05-02T23:47:36.414585+00:00 | crawled today | 10 | Expired | Greenhouse URL redirects to Robinhood careers with no matching job found 2026-05-02 |  |
+| Greenhouse | Pave | Software Engineer - Fullstack | San Francisco, CA & New York, NY | 4641513005 | https://job-boards.greenhouse.io/paveakatroveinformationtechnologies/jobs/4641513005 | 2026-05-02T23:47:36.414585+00:00 | crawled today | 10 | Expired | Captured posting redirects to Pave board; exact Fullstack role no longer listed 2026-05-02 |  |
+| Greenhouse | GlossGenius | Software Engineer, Data Platform | Hybrid - SF Bay Area, Hybrid - NYC | 7538131003 | https://job-boards.greenhouse.io/glossgenius/jobs/7538131003 | 2026-05-02T23:47:36.414585+00:00 | crawled today | 10 | Skipped | Low-fit senior data-platform role: asks 5+ years data engineering, lakehouse architecture, Snowflake/Clickhouse depth 2026-05-02 |  |
+| LinkedIn | Giga | Software Engineer (New Grads) | New York, NY | software-engineers-jobs | https://www.linkedin.com/jobs/software-engineers-jobs | 2026-05-02T23:47:36.414585+00:00 | 7 hours ago | 10 | Manual | Manual review needed: degraded LinkedIn capture only has public search page, not exact posting URL; likely duplicate of existing Giga applications 2026-05-02 |  |
 | Greenhouse | Tebra | Software Engineer III | United States - Remote | 4679086005 | https://job-boards.greenhouse.io/tebra/jobs/4679086005 | 2026-05-02T23:33:24.154518+00:00 | crawled today | 10 | Tailored | SWE-family role, preferred/remote US location | 4679086005 |
 | Greenhouse | Opto Investments | Software Engineer, Backend | New York, New York, United States; San Francisco, California, United States | 7646858003 | https://job-boards.greenhouse.io/optoinvest/jobs/7646858003 | 2026-05-02T23:33:24.154518+00:00 | crawled today | 10 | Tailored | SWE-family role, NYC preference | 7646858003 |
 | Greenhouse | Checkr | Backend Software Engineer II | Denver, Colorado, United States; San Francisco, California, United States | 7438937 | https://job-boards.greenhouse.io/checkr/jobs/7438937 | 2026-05-02T23:33:24.154518+00:00 | crawled today | 10 | Tailored | SWE-family role, early-career signal, SF/Bay Area preference | 7438937 |
