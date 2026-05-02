@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T23:18:43.140059+00:00",
+  "generatedAt": "2026-05-02T23:35:43.785653+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 376,
+      "total": 386,
       "applied": 297,
-      "unapplied": 79,
-      "active": 307,
+      "unapplied": 89,
+      "active": 317,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 259,
-      "reachOut": 319,
+      "highFit": 269,
+      "reachOut": 329,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 30,
+      "intakeJobs": 42,
       "intakeQueued": 7,
       "intakeNew": 8,
       "intakeManual": 0,
       "intakeApplied": 0,
-      "applyRate": 79.0,
+      "applyRate": 76.9,
       "rejectionRate": 14.8,
-      "recruiterWork": 222,
-      "engineerWork": 274,
+      "recruiterWork": 232,
+      "engineerWork": 284,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -47,12 +47,12 @@
         "value": 34
       },
       {
-        "name": "Archived",
-        "value": 25
+        "name": "Resume Tailored",
+        "value": 31
       },
       {
-        "name": "Resume Tailored",
-        "value": 21
+        "name": "Archived",
+        "value": 25
       },
       {
         "name": "Interviewing",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 136
+        "value": 139
       },
       {
         "name": "Greenhouse",
-        "value": 103
+        "value": 110
       },
       {
         "name": "Ashby",
@@ -140,19 +140,19 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 160
+        "value": 164
       },
       {
         "name": "Bay Area",
-        "value": 113
+        "value": 114
       },
       {
         "name": "Other",
-        "value": 53
+        "value": 55
       },
       {
         "name": "Remote",
-        "value": 29
+        "value": 32
       },
       {
         "name": "Seattle",
@@ -170,19 +170,19 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 211
+        "value": 216
       },
       {
         "name": "Backend",
-        "value": 44
+        "value": 47
       },
       {
         "name": "Full Stack",
-        "value": 44
+        "value": 45
       },
       {
         "name": "AI/ML",
-        "value": 25
+        "value": 26
       },
       {
         "name": "Forward Deployed",
@@ -236,11 +236,11 @@
       },
       {
         "score": "9",
-        "count": 68
+        "count": 76
       },
       {
         "score": "10",
-        "count": 109
+        "count": 111
       }
     ],
     "targetCounts": [
@@ -258,7 +258,7 @@
     "intakeStatusCounts": [
       {
         "name": "Tailored",
-        "value": 14
+        "value": 24
       },
       {
         "name": "New",
@@ -270,17 +270,17 @@
       },
       {
         "name": "Skipped",
-        "value": 1
+        "value": 3
       }
     ],
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 20
+        "value": 29
       },
       {
         "name": "LinkedIn",
-        "value": 10
+        "value": 13
       }
     ],
     "timeline": [
@@ -430,8 +430,8 @@
       },
       {
         "date": "2026-05-02",
-        "cumulative": 376,
-        "added": 14,
+        "cumulative": 386,
+        "added": 24,
         "applied": 1,
         "rejected": 0,
         "interviewing": 0
@@ -855,6 +855,15 @@
         "jobLink": "https://jobs.lever.co/palantir/94984771-0704-446c-88c6-91ce748f6d92"
       },
       {
+        "company": "Opto Investments",
+        "role": "Software Engineer, Backend",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/optoinvest/jobs/7646858003"
+      },
+      {
         "company": "Notion",
         "role": "Software Engineer, New Grad",
         "fitScore": 10,
@@ -898,15 +907,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://www.linkedin.com/jobs/view/4386890681/"
-      },
-      {
-        "company": "Mirage",
-        "role": "Software Engineer, Early Career",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://jobs.ashbyhq.com/mirage/cbf278fd-84ec-48d9-8052-b76abb035ac7/application?utm_source=LEbxa7kWm6"
       }
     ],
     "recruiterBatch": {
@@ -11629,9 +11629,301 @@
       "activityDates": [
         "2026-05-02"
       ]
+    },
+    {
+      "company": "Opto Investments",
+      "role": "Software Engineer, Backend",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "New York, New York, United States; San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/optoinvest/jobs/7646858003",
+      "postingKey": "7646858003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Opto Investments/Software_Engineer_Backend/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Opto Investments/Software_Engineer_Backend/Liam_Van_Resume/Liam_Van_Opto_Investments.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized backend financial technology systems, API delivery, data modeling, cloud validation, and production reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Checkr",
+      "role": "Backend Software Engineer II",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "Denver, Colorado, United States; San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/checkr/jobs/7438937",
+      "postingKey": "7438937",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Checkr/Backend_Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Checkr/Backend_Software_Engineer_II/Liam_Van_Resume/Liam_Van_Checkr.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized backend services, Ruby/JavaScript-adjacent API delivery, SQL and NoSQL data workflows, async systems, and reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Tebra",
+      "role": "Software Engineer III",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "United States - Remote",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/tebra/jobs/4679086005",
+      "postingKey": "4679086005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tebra/Software_Engineer_III/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tebra/Software_Engineer_III/Liam_Van_Resume/Liam_Van_Tebra.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized remote healthcare software engineering, subsystem ownership, backend APIs, operational quality, and production support. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Runpod",
+      "role": "Software Engineer (Full-Stack)",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "Remote, USA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/runpod/jobs/4785681008",
+      "postingKey": "4785681008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Runpod/Software_Engineer_Full_Stack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Runpod/Software_Engineer_Full_Stack/Liam_Van_Resume/Liam_Van_Runpod.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized AI infrastructure, Python and TypeScript product systems, APIs, cloud validation, and full-stack delivery. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Canopy Connect",
+      "role": "Backend Engineer - Carrier Integrations Team (Remote)",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "Remote (USA & Canada)",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/canopyconnect/jobs/4076674004",
+      "postingKey": "4076674004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Canopy Connect/Backend_Engineer_Carrier_Integrations_Team_Remote/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Canopy Connect/Backend_Engineer_Carrier_Integrations_Team_Remote/Liam_Van_Resume/Liam_Van_Canopy_Connect.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized backend integration systems, third-party APIs, data aggregation, Node-adjacent service design, AWS reliability, and startup delivery. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Verkada",
+      "role": "Software Engineer - Computer Vision",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "San Mateo, CA United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/verkada/jobs/4128624007",
+      "postingKey": "4128624007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Verkada/Software_Engineer_Computer_Vision/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Verkada/Software_Engineer_Computer_Vision/Liam_Van_Resume/Liam_Van_Verkada.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized applied computer vision, AI-adjacent product systems, scalable backend validation, cloud operations, and production reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Neuralink",
+      "role": "Software Engineer, Implant Manufacturing",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "Austin, Texas, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/neuralink/jobs/6353417003",
+      "postingKey": "6353417003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Neuralink/Software_Engineer_Implant_Manufacturing/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Neuralink/Software_Engineer_Implant_Manufacturing/Liam_Van_Resume/Liam_Van_Neuralink.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized manufacturing software, validation infrastructure, backend services, operational debugging, and hardware-adjacent product delivery. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Agentio",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-at-agentio-4400957231",
+      "postingKey": "software-engineer-at-agentio-4400957231",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Agentio/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Agentio/Software_Engineer/Liam_Van_Resume/Liam_Van_Agentio.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized NYC startup product engineering, full-stack delivery, backend APIs, data workflows, customer-facing iteration, and ownership. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Sesame",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-at-sesame-4403118222",
+      "postingKey": "software-engineer-at-sesame-4403118222",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Sesame/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Sesame/Software_Engineer/Liam_Van_Resume/Liam_Van_Sesame.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized voice-agent backend systems, low-latency product infrastructure, AI workflows, API reliability, and production validation. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Meta",
+      "role": "Software Engineer, AI Native",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ai-native-at-meta-4376617463",
+      "postingKey": "software-engineer-ai-native-at-meta-4376617463",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Meta/Software_Engineer_AI_Native/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Meta/Software_Engineer_AI_Native/Liam_Van_Resume/Liam_Van_Meta.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized AI-native product engineering, LLM applications, experimentation, backend APIs, quality validation, and cross-platform delivery. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Tebra",
+      "role": "Software Engineer III",
+      "location": "United States - Remote",
+      "postingKey": "4679086005",
+      "jobUrl": "https://job-boards.greenhouse.io/tebra/jobs/4679086005",
+      "discoveredAt": "2026-05-02T23:33:24.154518+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": "4679086005"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Opto Investments",
+      "role": "Software Engineer, Backend",
+      "location": "New York, New York, United States; San Francisco, California, United States",
+      "postingKey": "7646858003",
+      "jobUrl": "https://job-boards.greenhouse.io/optoinvest/jobs/7646858003",
+      "discoveredAt": "2026-05-02T23:33:24.154518+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": "7646858003"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Checkr",
+      "role": "Backend Software Engineer II",
+      "location": "Denver, Colorado, United States; San Francisco, California, United States",
+      "postingKey": "7438937",
+      "jobUrl": "https://job-boards.greenhouse.io/checkr/jobs/7438937",
+      "discoveredAt": "2026-05-02T23:33:24.154518+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "SWE-family role, early-career signal, SF/Bay Area preference",
+      "trackerPostingKey": "7438937"
+    },
     {
       "source": "Greenhouse",
       "company": "WithCoverage",
@@ -11844,6 +12136,104 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Verkada",
+      "role": "Software Engineer - Computer Vision",
+      "location": "San Mateo, CA United States",
+      "postingKey": "4128624007",
+      "jobUrl": "https://job-boards.greenhouse.io/verkada/jobs/4128624007",
+      "discoveredAt": "2026-05-02T23:33:24.154518+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 9,
+      "status": "Tailored",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": "4128624007"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Sesame",
+      "role": "Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "software-engineer-at-sesame-4403118222",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-at-sesame-4403118222",
+      "discoveredAt": "2026-05-02T23:33:24.154518+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 9,
+      "status": "Tailored",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": "software-engineer-at-sesame-4403118222"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Runpod",
+      "role": "Software Engineer (Full-Stack)",
+      "location": "Remote, USA",
+      "postingKey": "4785681008",
+      "jobUrl": "https://job-boards.greenhouse.io/runpod/jobs/4785681008",
+      "discoveredAt": "2026-05-02T23:33:24.154518+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 9,
+      "status": "Tailored",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": "4785681008"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Neuralink",
+      "role": "Software Engineer, Implant Manufacturing",
+      "location": "Austin, Texas, United States",
+      "postingKey": "6353417003",
+      "jobUrl": "https://job-boards.greenhouse.io/neuralink/jobs/6353417003",
+      "discoveredAt": "2026-05-02T23:33:24.154518+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 9,
+      "status": "Tailored",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": "6353417003"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Meta",
+      "role": "Software Engineer, AI Native",
+      "location": "New York, NY",
+      "postingKey": "software-engineer-ai-native-at-meta-4376617463",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-ai-native-at-meta-4376617463",
+      "discoveredAt": "2026-05-02T23:33:24.154518+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 9,
+      "status": "Tailored",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": "software-engineer-ai-native-at-meta-4376617463"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Canopy Connect",
+      "role": "Backend Engineer - Carrier Integrations Team (Remote)",
+      "location": "Remote (USA & Canada)",
+      "postingKey": "4076674004",
+      "jobUrl": "https://job-boards.greenhouse.io/canopyconnect/jobs/4076674004",
+      "discoveredAt": "2026-05-02T23:33:24.154518+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 9,
+      "status": "Tailored",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": "4076674004"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Agentio",
+      "role": "Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "software-engineer-at-agentio-4400957231",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-at-agentio-4400957231",
+      "discoveredAt": "2026-05-02T23:33:24.154518+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 9,
+      "status": "Tailored",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": "software-engineer-at-agentio-4400957231"
+    },
+    {
+      "source": "Greenhouse",
       "company": "Vercel",
       "role": "Software Engineer, AI",
       "location": "Remote - United States",
@@ -12050,6 +12440,34 @@
       "fitScore": 6,
       "status": "New",
       "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Govini",
+      "role": "Senior Software Engineer",
+      "location": "Pittsburgh, Pennsylvania, United States",
+      "postingKey": "4068826009",
+      "jobUrl": "https://job-boards.greenhouse.io/govini/jobs/4068826009",
+      "discoveredAt": "2026-05-02T23:33:24.154518+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Otter",
+      "role": "Frontend Engineer - Los Angeles, CA",
+      "location": "Los Angeles, CA",
+      "postingKey": "8038656002",
+      "jobUrl": "https://job-boards.greenhouse.io/otter/jobs/8038656002",
+      "discoveredAt": "2026-05-02T23:33:24.154518+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 3,
+      "status": "Skipped",
+      "reason": "SWE-family role, location needs review",
       "trackerPostingKey": ""
     }
   ],
@@ -12471,6 +12889,19 @@
       "notes": ""
     },
     {
+      "company": "Opto Investments",
+      "role": "Software Engineer, Backend",
+      "postingKey": "7646858003",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/optoinvest/jobs/7646858003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Notion",
       "role": "Software Engineer, New Grad",
       "postingKey": "4406118990",
@@ -12874,6 +13305,19 @@
       "notes": ""
     },
     {
+      "company": "Checkr",
+      "role": "Backend Software Engineer II",
+      "postingKey": "7438937",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/checkr/jobs/7438937",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Cadence",
       "role": "Software Engineer I",
       "postingKey": "Software-Engineer-I_R53009-1",
@@ -13030,6 +13474,19 @@
       "notes": ""
     },
     {
+      "company": "Verkada",
+      "role": "Software Engineer - Computer Vision",
+      "postingKey": "4128624007",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/verkada/jobs/4128624007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Vercel",
       "role": "Software Engineer, AI",
       "postingKey": "5633379004",
@@ -13119,6 +13576,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Tebra",
+      "role": "Software Engineer III",
+      "postingKey": "4679086005",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/tebra/jobs/4679086005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Stripe",
@@ -13212,6 +13682,19 @@
       "notes": ""
     },
     {
+      "company": "Sesame",
+      "role": "Software Engineer",
+      "postingKey": "software-engineer-at-sesame-4403118222",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-at-sesame-4403118222",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Serval",
       "role": "Deployed Software Engineer",
       "postingKey": "37e2985b-a7bf-4c02-bd71-b5d906292814",
@@ -13275,6 +13758,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Runpod",
+      "role": "Software Engineer (Full-Stack)",
+      "postingKey": "4785681008",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/runpod/jobs/4785681008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Reval",
@@ -13407,6 +13903,19 @@
       "notes": ""
     },
     {
+      "company": "Neuralink",
+      "role": "Software Engineer, Implant Manufacturing",
+      "postingKey": "6353417003",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/neuralink/jobs/6353417003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Netic",
       "role": "Software Engineer, New Grad",
       "postingKey": "63c216dc-a082-43df-928c-d71b3ed4f887",
@@ -13431,6 +13940,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Meta",
+      "role": "Software Engineer, AI Native",
+      "postingKey": "software-engineer-ai-native-at-meta-4376617463",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ai-native-at-meta-4376617463",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Maybern",
@@ -13654,6 +14176,19 @@
       "notes": ""
     },
     {
+      "company": "Canopy Connect",
+      "role": "Backend Engineer - Carrier Integrations Team (Remote)",
+      "postingKey": "4076674004",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/canopyconnect/jobs/4076674004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Brellium",
       "role": "Software Engineer AI",
       "postingKey": "c1c54c79-d3cf-41d7-a3d2-a230ec9b6c9e",
@@ -13678,6 +14213,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Agentio",
+      "role": "Software Engineer",
+      "postingKey": "software-engineer-at-agentio-4400957231",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-at-agentio-4400957231",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Zip",
@@ -22022,6 +22570,18 @@
           "contacts": []
         },
         {
+          "key": "7438937",
+          "company": "Checkr",
+          "role": "Backend Software Engineer II",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4401827377",
           "company": "Confido",
           "role": "New Grad Software Engineer",
@@ -22181,6 +22741,18 @@
           "key": "4824126008",
           "company": "Nira Energy",
           "role": "Founding Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7646858003",
+          "company": "Opto Investments",
+          "role": "Software Engineer, Backend",
           "fitScore": 10,
           "status": "Resume Tailored",
           "count": 1,
@@ -22562,6 +23134,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-at-agentio-4400957231",
+          "company": "Agentio",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8505982002",
           "company": "Alarm.com",
           "role": "Software Engineer II",
@@ -22603,6 +23187,18 @@
           "role": "Software Engineer (All Levels)",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4076674004",
+          "company": "Canopy Connect",
+          "role": "Backend Engineer - Carrier Integrations Team (Remote)",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -22742,11 +23338,35 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-ai-native-at-meta-4376617463",
+          "company": "Meta",
+          "role": "Software Engineer, AI Native",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7850913",
           "company": "Mixpanel",
           "role": "Software Engineer, DevInfra",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "6353417003",
+          "company": "Neuralink",
+          "role": "Software Engineer, Implant Manufacturing",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -22814,6 +23434,18 @@
           "contacts": []
         },
         {
+          "key": "4785681008",
+          "company": "Runpod",
+          "role": "Software Engineer (Full-Stack)",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "JR330400-1",
           "company": "Salesforce",
           "role": "Software Engineering AMTS (College Grad)",
@@ -22838,6 +23470,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-at-sesame-4403118222",
+          "company": "Sesame",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "77521da6-5a0a-44bf-b434-6947f345c970",
           "company": "Slash",
           "role": "Software Engineer, Growth",
@@ -22855,6 +23499,18 @@
           "role": "Software Engineer, Full Stack",
           "fitScore": 9,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4679086005",
+          "company": "Tebra",
+          "role": "Software Engineer III",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -22901,6 +23557,18 @@
           "key": "5633379004",
           "company": "Vercel",
           "role": "Software Engineer, AI",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4128624007",
+          "company": "Verkada",
+          "role": "Software Engineer - Computer Vision",
           "fitScore": 9,
           "status": "Resume Tailored",
           "count": 1,
@@ -31704,6 +32372,18 @@
           "contacts": []
         },
         {
+          "key": "7438937",
+          "company": "Checkr",
+          "role": "Backend Software Engineer II",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4401827377",
           "company": "Confido",
           "role": "New Grad Software Engineer",
@@ -31839,6 +32519,18 @@
           "key": "4824126008",
           "company": "Nira Energy",
           "role": "Founding Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7646858003",
+          "company": "Opto Investments",
+          "role": "Software Engineer, Backend",
           "fitScore": 10,
           "status": "Resume Tailored",
           "count": 1,
@@ -32220,6 +32912,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-at-agentio-4400957231",
+          "company": "Agentio",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8505982002",
           "company": "Alarm.com",
           "role": "Software Engineer II",
@@ -32261,6 +32965,18 @@
           "role": "Software Engineer (All Levels)",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4076674004",
+          "company": "Canopy Connect",
+          "role": "Backend Engineer - Carrier Integrations Team (Remote)",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -32316,11 +33032,35 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-ai-native-at-meta-4376617463",
+          "company": "Meta",
+          "role": "Software Engineer, AI Native",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7850913",
           "company": "Mixpanel",
           "role": "Software Engineer, DevInfra",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "6353417003",
+          "company": "Neuralink",
+          "role": "Software Engineer, Implant Manufacturing",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -32340,6 +33080,18 @@
           "contacts": []
         },
         {
+          "key": "4785681008",
+          "company": "Runpod",
+          "role": "Software Engineer (Full-Stack)",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7843972",
           "company": "Schonfeld",
           "role": "Full Stack Engineer",
@@ -32352,11 +33104,35 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-at-sesame-4403118222",
+          "company": "Sesame",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4689411005",
           "company": "Spot & Tango",
           "role": "Software Engineer, Full Stack",
           "fitScore": 9,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4679086005",
+          "company": "Tebra",
+          "role": "Software Engineer III",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -32379,6 +33155,18 @@
           "key": "5633379004",
           "company": "Vercel",
           "role": "Software Engineer, AI",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4128624007",
+          "company": "Verkada",
+          "role": "Software Engineer - Computer Vision",
           "fitScore": 9,
           "status": "Resume Tailored",
           "count": 1,
