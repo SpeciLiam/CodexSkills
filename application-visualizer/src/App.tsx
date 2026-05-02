@@ -1033,6 +1033,13 @@ function ActiveLaneRolesTable({
       </header>
       <div className="role-table-wrap">
         <table className="role-table active-role-table">
+          <colgroup>
+            <col className="role-index-col" />
+            <col className="role-title-col" />
+            <col className="role-person-col" />
+            <col className="role-state-col" />
+            <col className="role-fit-col" />
+          </colgroup>
           <thead>
             <tr>
               <th>#</th>

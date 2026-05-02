@@ -931,12 +931,14 @@ select option {
   display: inline-flex;
   width: max-content;
   max-width: 100%;
-  padding: 5px 8px;
+  min-height: 24px;
+  padding: 0 8px;
   color: #06111e;
   background: #55d6be;
   border-radius: 999px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 950;
+  line-height: 1;
 }
 
 .lane-role-card.engineer header span {
@@ -978,6 +980,30 @@ select option {
   border-collapse: collapse;
 }
 
+.active-role-table {
+  table-layout: fixed;
+}
+
+.active-role-table .role-index-col {
+  width: 44px;
+}
+
+.active-role-table .role-title-col {
+  width: 44%;
+}
+
+.active-role-table .role-person-col {
+  width: 22%;
+}
+
+.active-role-table .role-state-col {
+  width: 23%;
+}
+
+.active-role-table .role-fit-col {
+  width: 48px;
+}
+
 .role-table th,
 .role-table td {
   padding: 12px;
@@ -1006,12 +1032,15 @@ select option {
 
 .role-table strong {
   display: block;
+  overflow-wrap: anywhere;
 }
 
 .role-table small {
   display: block;
   margin-top: 3px;
   color: #95a8bd;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
 }
 
 .role-table b {
@@ -1030,14 +1059,24 @@ select option {
 .state-pills span {
   display: inline-flex;
   align-items: center;
-  min-height: 26px;
-  padding: 0 8px;
+  min-height: 24px;
+  padding: 3px 8px;
   color: #dbeafe;
   background: rgba(112, 161, 255, .2);
   border-radius: 999px;
-  font-size: 12px;
+  font-size: 11px;
   font-style: normal;
   font-weight: 850;
+  line-height: 1.1;
+}
+
+.contact-pills span,
+.contact-pills em {
+  max-width: 150px;
+}
+
+.state-pills span {
+  max-width: 148px;
 }
 
 .state-pills {
