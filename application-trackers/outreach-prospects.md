@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 226
+Companies queued: 227
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -23,6 +23,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | The New York Times | Software Engineer, Scoop Core | 4673616005 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/thenewyorktimes/jobs/4673616005#app) |  |  |  |  |
 | StubHub | Software Engineer I (New Grad) - Consumer Experience | 4825411101 | 10 | Applied | Yes | [Posting](https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4825411101?gh_src=47e65a22teu) |  |  |  |  |
 | Spotify | Backend Engineer, Music | ee5064af-0116-4ef2-994a-cb8fed580290 | 10 | Applied | Yes | [Posting](https://jobs.lever.co/spotify/ee5064af-0116-4ef2-994a-cb8fed580290/apply?lever-source=LinkedInJobs) |  |  |  |  |
+| Smartsheet | Software Engineer I - Secure Platform Operations (Remote Eligible) | 7732551 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/smartsheet/jobs/7732551) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Sigma Computing | Software Engineer (New Grad Program) | 7690411003 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/sigmacomputing/jobs/7690411003) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | SeatGeek | Software Engineer - New Grad | 7858968 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/embed/job_app?for=seatgeek&gh_src=94e407181&token=7858968) |  |  |  |  |
 | Scale AI | Software Engineer - New Grad | 4297642437 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4297642437/) |  |  |  |  |

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T23:01:03.132940+00:00",
+  "generatedAt": "2026-05-02T23:09:39.830000+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 368,
+      "total": 369,
       "applied": 297,
-      "unapplied": 71,
-      "active": 299,
+      "unapplied": 72,
+      "active": 300,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 251,
-      "reachOut": 311,
+      "highFit": 252,
+      "reachOut": 312,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 15,
-      "intakeQueued": 4,
-      "intakeNew": 4,
+      "intakeJobs": 21,
+      "intakeQueued": 7,
+      "intakeNew": 6,
       "intakeManual": 0,
       "intakeApplied": 0,
-      "applyRate": 80.7,
+      "applyRate": 80.5,
       "rejectionRate": 14.8,
-      "recruiterWork": 214,
-      "engineerWork": 266,
+      "recruiterWork": 215,
+      "engineerWork": 267,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 13
+        "value": 14
       },
       {
         "name": "Interviewing",
@@ -70,7 +70,7 @@
       },
       {
         "name": "Greenhouse",
-        "value": 96
+        "value": 97
       },
       {
         "name": "Ashby",
@@ -152,7 +152,7 @@
       },
       {
         "name": "Remote",
-        "value": 27
+        "value": 28
       },
       {
         "name": "Seattle",
@@ -190,7 +190,7 @@
       },
       {
         "name": "Infra/Platform",
-        "value": 16
+        "value": 17
       },
       {
         "name": "Data",
@@ -240,7 +240,7 @@
       },
       {
         "score": "10",
-        "count": 102
+        "count": 103
       }
     ],
     "targetCounts": [
@@ -258,15 +258,15 @@
     "intakeStatusCounts": [
       {
         "name": "Tailored",
-        "value": 6
+        "value": 7
       },
       {
         "name": "Queued",
-        "value": 4
+        "value": 7
       },
       {
         "name": "New",
-        "value": 4
+        "value": 6
       },
       {
         "name": "Skipped",
@@ -276,11 +276,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 9
+        "value": 12
       },
       {
         "name": "LinkedIn",
-        "value": 6
+        "value": 9
       }
     ],
     "timeline": [
@@ -430,8 +430,8 @@
       },
       {
         "date": "2026-05-02",
-        "cumulative": 368,
-        "added": 6,
+        "cumulative": 369,
+        "added": 7,
         "applied": 1,
         "rejected": 0,
         "interviewing": 0
@@ -693,6 +693,15 @@
         "jobLink": "https://jobs.lever.co/spotify/ee5064af-0116-4ef2-994a-cb8fed580290/apply?lever-source=LinkedInJobs"
       },
       {
+        "company": "Smartsheet",
+        "role": "Software Engineer I - Secure Platform Operations (Remote Eligible)",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/smartsheet/jobs/7732551"
+      },
+      {
         "company": "Sigma Computing",
         "role": "Software Engineer (New Grad Program)",
         "fitScore": 10,
@@ -898,15 +907,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://www.linkedin.com/jobs/view/4404859319/"
-      },
-      {
-        "company": "Loop",
-        "role": "2026 New Grad Software Engineer, Full-Stack (New York)",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://www.linkedin.com/jobs/view/4406677608/"
       }
     ],
     "recruiterBatch": {
@@ -11431,9 +11431,74 @@
       "notes": "",
       "noteLinks": [],
       "activityDates": []
+    },
+    {
+      "company": "Smartsheet",
+      "role": "Software Engineer I - Secure Platform Operations (Remote Eligible)",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "Remote, USA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/smartsheet/jobs/7732551",
+      "postingKey": "7732551",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Smartsheet/Software_Engineer_I_Secure_Platform_Operations_Remote_Eligible/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Smartsheet/Software_Engineer_I_Secure_Platform_Operations_Remote_Eligible/Liam_Van_Resume/Liam_Van_Smartsheet.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Smartsheet",
+      "role": "Software Engineer I - Secure Platform Operations (Remote Eligible)",
+      "location": "Remote, USA",
+      "postingKey": "7732551",
+      "jobUrl": "https://job-boards.greenhouse.io/smartsheet/jobs/7732551",
+      "discoveredAt": "2026-05-02T23:06:53.558278+00:00",
+      "postedAge": "new",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": "7732551"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Murj",
+      "role": "Software Engineer I",
+      "location": "Remote - US",
+      "postingKey": "5158417008",
+      "jobUrl": "https://job-boards.greenhouse.io/murj/jobs/5158417008",
+      "discoveredAt": "2026-05-02T23:06:53.558278+00:00",
+      "postedAge": "new",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Arcesium LLC",
+      "role": "Software Engineer - Forward Deployed",
+      "location": "New York; Remote - US",
+      "postingKey": "5057366007",
+      "jobUrl": "https://job-boards.greenhouse.io/arcesiumllc/jobs/5057366007",
+      "discoveredAt": "2026-05-02T23:06:53.558278+00:00",
+      "postedAge": "current",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
     {
       "source": "Greenhouse",
       "company": "Sigma Computing",
@@ -11562,6 +11627,20 @@
     },
     {
       "source": "LinkedIn",
+      "company": "Funnel Leasing",
+      "role": "Software Engineer L1",
+      "location": "United States",
+      "postingKey": "software-engineer-l1-at-funnel-leasing-4368638998",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-l1-at-funnel-leasing-4368638998",
+      "discoveredAt": "2026-05-02T23:06:53.558278+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
       "company": "Twitch",
       "role": "Software Engineer",
       "location": "Seattle, WA",
@@ -11600,6 +11679,34 @@
       "fitScore": 7,
       "status": "New",
       "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "OptiSigns Inc.",
+      "role": "Software Engineer (Entry Level)",
+      "location": "Houston, TX",
+      "postingKey": "software-engineer-entry-level-at-optisigns-inc-4402070379",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-entry-level-at-optisigns-inc-4402070379",
+      "discoveredAt": "2026-05-02T23:06:53.558278+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, early-career signal, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "BeaconFire Inc.",
+      "role": "Back End Developer",
+      "location": "New Jersey, United States",
+      "postingKey": "back-end-developer-at-beaconfire-inc-4398822173",
+      "jobUrl": "https://www.linkedin.com/jobs/view/back-end-developer-at-beaconfire-inc-4398822173",
+      "discoveredAt": "2026-05-02T23:06:53.558278+00:00",
+      "postedAge": "2 hours ago",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
       "trackerPostingKey": ""
     },
     {
@@ -11827,6 +11934,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Smartsheet",
+      "role": "Software Engineer I - Secure Platform Operations (Remote Eligible)",
+      "postingKey": "7732551",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/smartsheet/jobs/7732551",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Sigma Computing",
@@ -21810,6 +21930,18 @@
           "contacts": []
         },
         {
+          "key": "7732551",
+          "company": "Smartsheet",
+          "role": "Software Engineer I - Secure Platform Operations (Remote Eligible)",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4844947101",
           "company": "StubHub",
           "role": "Software Engineer II - AI Enablement",
@@ -31363,6 +31495,18 @@
           "key": "7690411003",
           "company": "Sigma Computing",
           "role": "Software Engineer (New Grad Program)",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7732551",
+          "company": "Smartsheet",
+          "role": "Software Engineer I - Secure Platform Operations (Remote Eligible)",
           "fitScore": 10,
           "status": "Resume Tailored",
           "count": 1,
