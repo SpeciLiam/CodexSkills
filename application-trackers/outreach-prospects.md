@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 224
+Companies queued: 226
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -23,6 +23,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | The New York Times | Software Engineer, Scoop Core | 4673616005 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/thenewyorktimes/jobs/4673616005#app) |  |  |  |  |
 | StubHub | Software Engineer I (New Grad) - Consumer Experience | 4825411101 | 10 | Applied | Yes | [Posting](https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4825411101?gh_src=47e65a22teu) |  |  |  |  |
 | Spotify | Backend Engineer, Music | ee5064af-0116-4ef2-994a-cb8fed580290 | 10 | Applied | Yes | [Posting](https://jobs.lever.co/spotify/ee5064af-0116-4ef2-994a-cb8fed580290/apply?lever-source=LinkedInJobs) |  |  |  |  |
+| Sigma Computing | Software Engineer (New Grad Program) | 7690411003 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/sigmacomputing/jobs/7690411003) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | SeatGeek | Software Engineer - New Grad | 7858968 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/embed/job_app?for=seatgeek&gh_src=94e407181&token=7858968) |  |  |  |  |
 | Scale AI | Software Engineer - New Grad | 4297642437 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4297642437/) |  |  |  |  |
 | Scale AI | Software Engineer - New Grad | 4605996005 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/scaleai/jobs/4605996005?gh_src=acad35425us) |  |  |  |  |
@@ -55,6 +56,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Handshake | Software Engineer II | 9d7bdbac-2672-4717-99c0-90cf37aa48c1 | 10 | Applied | Yes | [Posting](https://joinhandshake.com/careers/job/?ashby_jid=9d7bdbac-2672-4717-99c0-90cf37aa48c1&utm_source=4xDZ2XYAXn) |  |  |  |  |
 | Giga | Software Engineer (New Grads) - San Francisco | cb74c445-322b-47fc-804c-b0565e18ca3a | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/GigaML/cb74c445-322b-47fc-804c-b0565e18ca3a/application?utm_source=6p28rgeQLE) |  |  |  |  |
 | Giga | Software Engineer I / II | ba9b543d-e85c-4bd1-978b-f838d7a4062f | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/GigaML/ba9b543d-e85c-4bd1-978b-f838d7a4062f/application?utm_source=6p28rgeQLE) |  |  |  |  |
+| Garner Health | Software Engineer II | software-engineer-ii-at-garner-health-4379614164 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-at-garner-health-4379614164) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Flexport | Software Engineer I, Autonomous Freight Systems | 7839298 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/flexport/jobs/7839298?gh_jid=7839298) |  |  |  |  |
 | Fanatics Betting & Gaming | Fullstack, Software Engineer II, Sportsbook - FBG | 4216147009 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/fanaticsfbg/jobs/4216147009?gh_src=k819kf909us) |  |  |  |  |
 | EliseAI | Software Engineer (New Grads 2025-2026) | 1ffbd278-a5fe-443c-984f-521d61a97353 | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/eliseai/1ffbd278-a5fe-443c-984f-521d61a97353?utm_source=LinkedInPaid) |  |  |  |  |

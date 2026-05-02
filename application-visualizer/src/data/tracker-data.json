@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T22:43:51.391255+00:00",
+  "generatedAt": "2026-05-02T23:01:03.132940+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 366,
+      "total": 368,
       "applied": 297,
-      "unapplied": 69,
-      "active": 297,
+      "unapplied": 71,
+      "active": 299,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 249,
-      "reachOut": 309,
+      "highFit": 251,
+      "reachOut": 311,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 7,
-      "intakeQueued": 3,
-      "intakeNew": 0,
+      "intakeJobs": 15,
+      "intakeQueued": 4,
+      "intakeNew": 4,
       "intakeManual": 0,
       "intakeApplied": 0,
-      "applyRate": 81.1,
+      "applyRate": 80.7,
       "rejectionRate": 14.8,
-      "recruiterWork": 212,
-      "engineerWork": 264,
+      "recruiterWork": 214,
+      "engineerWork": 266,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 11
+        "value": 13
       },
       {
         "name": "Interviewing",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 134
+        "value": 135
       },
       {
         "name": "Greenhouse",
-        "value": 95
+        "value": 96
       },
       {
         "name": "Ashby",
@@ -140,7 +140,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 154
+        "value": 156
       },
       {
         "name": "Bay Area",
@@ -170,7 +170,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 205
+        "value": 207
       },
       {
         "name": "Backend",
@@ -240,7 +240,7 @@
       },
       {
         "score": "10",
-        "count": 100
+        "count": 102
       }
     ],
     "targetCounts": [
@@ -258,21 +258,29 @@
     "intakeStatusCounts": [
       {
         "name": "Tailored",
-        "value": 4
+        "value": 6
       },
       {
         "name": "Queued",
-        "value": 3
+        "value": 4
+      },
+      {
+        "name": "New",
+        "value": 4
+      },
+      {
+        "name": "Skipped",
+        "value": 1
       }
     ],
     "intakeSourceCounts": [
       {
-        "name": "LinkedIn",
-        "value": 4
+        "name": "Greenhouse",
+        "value": 9
       },
       {
-        "name": "Greenhouse",
-        "value": 3
+        "name": "LinkedIn",
+        "value": 6
       }
     ],
     "timeline": [
@@ -422,8 +430,8 @@
       },
       {
         "date": "2026-05-02",
-        "cumulative": 366,
-        "added": 4,
+        "cumulative": 368,
+        "added": 6,
         "applied": 1,
         "rejected": 0,
         "interviewing": 0
@@ -685,6 +693,15 @@
         "jobLink": "https://jobs.lever.co/spotify/ee5064af-0116-4ef2-994a-cb8fed580290/apply?lever-source=LinkedInJobs"
       },
       {
+        "company": "Sigma Computing",
+        "role": "Software Engineer (New Grad Program)",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/sigmacomputing/jobs/7690411003"
+      },
+      {
         "company": "SeatGeek",
         "role": "Software Engineer - New Grad",
         "fitScore": 10,
@@ -890,15 +907,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://www.linkedin.com/jobs/view/4406677608/"
-      },
-      {
-        "company": "Lindy",
-        "role": "Full Stack Software Engineer (Early Career)",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://jobs.ashbyhq.com/lindy/a5100dbe-d851-4544-bb4c-0428d77940eb/application?utm_source=1pRbG7KbX6"
       }
     ],
     "recruiterBatch": {
@@ -11377,9 +11385,97 @@
       "activityDates": [
         "2026-05-02"
       ]
+    },
+    {
+      "company": "Sigma Computing",
+      "role": "Software Engineer (New Grad Program)",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "San Francisco, CA and New York City, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/sigmacomputing/jobs/7690411003",
+      "postingKey": "7690411003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Sigma Computing/Software_Engineer_New_Grad_Program/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Sigma Computing/Software_Engineer_New_Grad_Program/Liam_Van_Resume/Liam_Van_Sigma_Computing.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Garner Health",
+      "role": "Software Engineer II",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-garner-health-4379614164",
+      "postingKey": "software-engineer-ii-at-garner-health-4379614164",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Garner Health/Software_Engineer_II/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Garner Health/Software_Engineer_II/Liam_Van_Resume_2/Liam_Van_Garner_Health.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Sigma Computing",
+      "role": "Software Engineer (New Grad Program)",
+      "location": "San Francisco, CA and New York City, NY",
+      "postingKey": "7690411003",
+      "jobUrl": "https://job-boards.greenhouse.io/sigmacomputing/jobs/7690411003",
+      "discoveredAt": "2026-05-02T22:57:58.203484+00:00",
+      "postedAge": "yesterday",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": "7690411003"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Garner Health",
+      "role": "Software Engineer II",
+      "location": "New York, NY",
+      "postingKey": "4379614164",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-garner-health-4379614164",
+      "discoveredAt": "2026-05-02T22:57:58.203484+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": "software-engineer-ii-at-garner-health-4379614164"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "CoreWeave",
+      "role": "Software Engineer II",
+      "location": "New York, NY",
+      "postingKey": "4337973554",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-coreweave-4337973554",
+      "discoveredAt": "2026-05-02T22:57:58.203484+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
     {
       "source": "LinkedIn",
       "company": "Uber",
@@ -11421,6 +11517,20 @@
       "status": "Tailored",
       "reason": "SWE-family role, early-career signal, NYC preference",
       "trackerPostingKey": "4401827377"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Amplitude",
+      "role": "Engineering: Forward Deploy Engineer II",
+      "location": "San Francisco, CA",
+      "postingKey": "8532139002",
+      "jobUrl": "https://job-boards.greenhouse.io/amplitude/jobs/8532139002",
+      "discoveredAt": "2026-05-02T22:57:58.203484+00:00",
+      "postedAge": "today",
+      "fitScore": 9,
+      "status": "Skipped",
+      "reason": "early-career signal, SF/Bay Area preference",
+      "trackerPostingKey": ""
     },
     {
       "source": "Greenhouse",
@@ -11476,6 +11586,62 @@
       "fitScore": 8,
       "status": "Queued",
       "reason": "SWE-family role, early-career signal, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Anthropic",
+      "role": "Forward Deployed Engineer, Federal Civilian",
+      "location": "San Francisco, CA / New York City, NY / Washington, DC",
+      "postingKey": "5079562008",
+      "jobUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5079562008",
+      "discoveredAt": "2026-05-02T22:57:58.203484+00:00",
+      "postedAge": "yesterday",
+      "fitScore": 7,
+      "status": "New",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Labelbox",
+      "role": "Forward Deployed Engineer, RL Environments",
+      "location": "San Francisco Bay Area",
+      "postingKey": "5101187007",
+      "jobUrl": "https://job-boards.greenhouse.io/labelbox/jobs/5101187007",
+      "discoveredAt": "2026-05-02T22:57:58.203484+00:00",
+      "postedAge": "yesterday",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Glean",
+      "role": "Founding Forward Deployed Engineer",
+      "location": "Remote - US",
+      "postingKey": "4651991005",
+      "jobUrl": "https://job-boards.greenhouse.io/gleanwork/jobs/4651991005",
+      "discoveredAt": "2026-05-02T22:57:58.203484+00:00",
+      "postedAge": "yesterday",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "DevRev",
+      "role": "Forward Deployed Engineer",
+      "location": "Austin, Texas, United States",
+      "postingKey": "5668875004",
+      "jobUrl": "https://job-boards.greenhouse.io/devrev/jobs/5668875004",
+      "discoveredAt": "2026-05-02T22:57:58.203484+00:00",
+      "postedAge": "yesterday",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
       "trackerPostingKey": ""
     }
   ],
@@ -11661,6 +11827,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Sigma Computing",
+      "role": "Software Engineer (New Grad Program)",
+      "postingKey": "7690411003",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/sigmacomputing/jobs/7690411003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "SeatGeek",
@@ -12077,6 +12256,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Garner Health",
+      "role": "Software Engineer II",
+      "postingKey": "software-engineer-ii-at-garner-health-4379614164",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-garner-health-4379614164",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Flexport",
@@ -21354,6 +21546,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-ii-at-garner-health-4379614164",
+          "company": "Garner Health",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4006734005",
           "company": "Glean",
           "role": "Software Engineer, Fullstack",
@@ -21587,6 +21791,18 @@
           "role": "Software Engineer, Gen AI",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7690411003",
+          "company": "Sigma Computing",
+          "role": "Software Engineer (New Grad Program)",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -30916,6 +31132,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-ii-at-garner-health-4379614164",
+          "company": "Garner Health",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4006734005",
           "company": "Glean",
           "role": "Software Engineer, Fullstack",
@@ -31125,6 +31353,18 @@
           "role": "Software Engineer, Gen AI",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7690411003",
+          "company": "Sigma Computing",
+          "role": "Software Engineer (New Grad Program)",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
