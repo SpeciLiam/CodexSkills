@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T02:13:51.143456+00:00",
+  "generatedAt": "2026-05-02T02:48:02.770615+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -8,37 +8,37 @@
   },
   "stats": {
     "kpis": {
-      "total": 331,
-      "applied": 285,
-      "unapplied": 46,
-      "active": 262,
+      "total": 341,
+      "applied": 288,
+      "unapplied": 53,
+      "active": 272,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 214,
-      "reachOut": 274,
+      "highFit": 224,
+      "reachOut": 284,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 86.1,
-      "rejectionRate": 15.4
+      "applyRate": 84.5,
+      "rejectionRate": 15.3
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 234
+        "value": 237
       },
       {
         "name": "Rejected",
         "value": 44
       },
       {
-        "name": "Archived",
-        "value": 25
+        "name": "Manual Apply Needed",
+        "value": 28
       },
       {
-        "name": "Manual Apply Needed",
-        "value": 21
+        "name": "Archived",
+        "value": 25
       },
       {
         "name": "Interviewing",
@@ -59,12 +59,12 @@
         "value": 132
       },
       {
-        "name": "Ashby",
-        "value": 66
+        "name": "Greenhouse",
+        "value": 72
       },
       {
-        "name": "Greenhouse",
-        "value": 62
+        "name": "Ashby",
+        "value": 66
       },
       {
         "name": "Company Site",
@@ -130,15 +130,15 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 147
+        "value": 151
       },
       {
         "name": "Bay Area",
-        "value": 102
+        "value": 105
       },
       {
         "name": "Other",
-        "value": 45
+        "value": 46
       },
       {
         "name": "Remote",
@@ -146,7 +146,7 @@
       },
       {
         "name": "Seattle",
-        "value": 11
+        "value": 13
       },
       {
         "name": "Unknown",
@@ -160,15 +160,15 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 186
+        "value": 191
       },
       {
         "name": "Full Stack",
-        "value": 41
+        "value": 42
       },
       {
         "name": "Backend",
-        "value": 35
+        "value": 37
       },
       {
         "name": "Forward Deployed",
@@ -176,7 +176,7 @@
       },
       {
         "name": "AI/ML",
-        "value": 21
+        "value": 23
       },
       {
         "name": "Infra/Platform",
@@ -226,11 +226,11 @@
       },
       {
         "score": "9",
-        "count": 59
+        "count": 62
       },
       {
         "score": "10",
-        "count": 74
+        "count": 81
       }
     ],
     "targetCounts": [
@@ -384,14 +384,32 @@
       },
       {
         "date": "2026-05-01",
-        "cumulative": 331,
-        "added": 34,
-        "applied": 20,
+        "cumulative": 341,
+        "added": 44,
+        "applied": 23,
         "rejected": 1,
         "interviewing": 0
       }
     ],
     "topCompanies": [
+      {
+        "company": "Scale AI",
+        "roles": 7,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
+        "company": "Twitch",
+        "roles": 6,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
+        "company": "StubHub",
+        "roles": 5,
+        "avgFit": 8.6,
+        "bestFit": 10
+      },
       {
         "company": "Palantir Technologies",
         "roles": 5,
@@ -399,27 +417,9 @@
         "bestFit": 10
       },
       {
-        "company": "Scale AI",
-        "roles": 4,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
         "company": "Spotify",
         "roles": 4,
         "avgFit": 9.0,
-        "bestFit": 10
-      },
-      {
-        "company": "StubHub",
-        "roles": 4,
-        "avgFit": 8.25,
-        "bestFit": 10
-      },
-      {
-        "company": "Twitch",
-        "roles": 3,
-        "avgFit": 10.0,
         "bestFit": 10
       },
       {
@@ -525,15 +525,15 @@
         "bestFit": 10
       },
       {
-        "company": "Benchling",
+        "company": "Mixpanel",
         "roles": 2,
-        "avgFit": 9.0,
+        "avgFit": 9.5,
         "bestFit": 10
       },
       {
-        "company": "Compass",
+        "company": "Benchling",
         "roles": 2,
-        "avgFit": 8.0,
+        "avgFit": 9.0,
         "bestFit": 10
       }
     ],
@@ -10440,6 +10440,266 @@
       "engineerContact": "",
       "engineerProfile": "",
       "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required salary expectation and active security clearance/Security+ qualification fields; not submitted 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Twitch",
+      "role": "Software Engineer I, Commerce Engineering",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Seattle, WA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/twitch/jobs/8459320002",
+      "postingKey": "8459320002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Twitch/Software_Engineer_I_Commerce_Engineering/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Twitch/Software_Engineer_I_Commerce_Engineering/Liam_Van_Resume/Liam_Van_Twitch.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized consumer-facing commerce, scalable applications, React/TypeScript, AWS-adjacent backend systems, schema design, and product reliability. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: required expected base pay compensation field 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Twitch",
+      "role": "Software Engineer II, Safety",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/twitch/jobs/8499608002",
+      "postingKey": "8499608002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Twitch/Software_Engineer_II_Safety/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Twitch/Software_Engineer_II_Safety/Liam_Van_Resume/Liam_Van_Twitch.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend safety systems, service reliability, API workflows, debugging, observability, and cross-team execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: required expected base pay compensation field 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Twitch",
+      "role": "Software Engineer I, Streamer Monetization Experience",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Seattle, WA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/twitch/jobs/8470752002",
+      "postingKey": "8470752002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Twitch/Software_Engineer_I_Streamer_Monetization_Experience/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Twitch/Software_Engineer_I_Streamer_Monetization_Experience/Liam_Van_Resume/Liam_Van_Twitch.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, streamer monetization workflows, React/TypeScript, REST APIs, testing, and production readiness. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: required expected base pay compensation field 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "StubHub",
+      "role": "Software Engineer II - Open Distribution (Backend)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Los Angeles, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4825352101",
+      "postingKey": "4825352101",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/StubHub/Software_Engineer_II_Open_Distribution_Backend/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/StubHub/Software_Engineer_II_Open_Distribution_Backend/Liam_Van_Resume/Liam_Van_StubHub.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend distribution systems, REST APIs, data modeling, reliability, distributed workflows, and operational debugging. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: Greenhouse email security code required after submit attempt 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Scale AI",
+      "role": "Software Engineer, ARC Team",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/scaleai/jobs/4673771005",
+      "postingKey": "4673771005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scale AI/Software_Engineer_ARC_Team/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scale AI/Software_Engineer_ARC_Team/Liam_Van_Resume/Liam_Van_Scale_AI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI product infrastructure, Python/TypeScript systems, LLM applications, data workflows, production validation, and fast execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: required active security clearance question 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Scale AI",
+      "role": "Software Engineer, Frontier AI Infrastructure",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "San Francisco, CA; St. Louis, MO; New York, NY; Washington, DC",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/scaleai/jobs/4363623005",
+      "postingKey": "4363623005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scale AI/Software_Engineer_Frontier_AI_Infrastructure/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scale AI/Software_Engineer_Frontier_AI_Infrastructure/Liam_Van_Resume/Liam_Van_Scale_AI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI infrastructure, backend/platform systems, distributed workflows, observability, reliability, and production readiness. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: required active security clearance question 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Scale AI",
+      "role": "Software Engineer, Gen AI",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "San Francisco, CA; New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/scaleai/jobs/4591300005",
+      "postingKey": "4591300005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scale AI/Software_Engineer_Gen_AI/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scale AI/Software_Engineer_Gen_AI/Liam_Van_Resume/Liam_Van_Scale_AI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized generative AI product engineering, LLM applications, Python/TypeScript, REST APIs, data workflows, and cross-functional delivery. Did not claim direct company-specific domain ownership or unlisted framework experience.; Applied via Greenhouse confirmation page 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Mixpanel",
+      "role": "Software Engineer, DevInfra",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "San Francisco, US (Hybrid)",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/mixpanel/jobs/7850913",
+      "postingKey": "7850913",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Mixpanel/Software_Engineer_DevInfra/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Mixpanel/Software_Engineer_DevInfra/Liam_Van_Resume/Liam_Van_Mixpanel.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized developer infrastructure, CI/CD, backend tooling, observability, release validation, and reliable engineering workflows. Did not claim direct company-specific domain ownership or unlisted framework experience.; Applied via Greenhouse confirmation page 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Grow Therapy",
+      "role": "Software Engineer - Full Stack",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "New York, NY, San Francisco, CA, Seattle, WA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/growtherapy/jobs/4678587005",
+      "postingKey": "4678587005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Grow Therapy/Software_Engineer_Full_Stack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Grow Therapy/Software_Engineer_Full_Stack/Liam_Van_Resume/Liam_Van_Grow_Therapy.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, React/TypeScript, backend APIs, product workflows, testing, reliability, and customer-facing execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: Greenhouse email security code required after submit attempt 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Glean",
+      "role": "Software Engineer, Backend",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "San Francisco Bay Area",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/gleanwork/jobs/4581643005",
+      "postingKey": "4581643005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Glean/Software_Engineer_Backend/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Glean/Software_Engineer_Backend/Liam_Van_Resume/Liam_Van_Glean.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend search and AI product systems, REST APIs, data workflows, distributed services, observability, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.; Applied via Greenhouse confirmation page 2026-05-01",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
