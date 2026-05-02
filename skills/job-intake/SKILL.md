@@ -86,17 +86,28 @@ The listener queues new jobs; Codex should then:
 - LinkedIn is Chrome-first: use Chrome through Computer Use by default because logged-in state and partially completed application tabs usually matter there.
 - Greenhouse/MyGreenhouse can use the logged-in browser lane separately and does not need to be mentally bundled with the LinkedIn workflow.
 
+## Browser Access Resilience
+
+- Before downgrading to public web capture, run a Computer Use preflight with `list_apps`.
+- Try Chrome by friendly name and bundle ID: `Google Chrome`, then `com.google.Chrome`.
+- If Computer Use returns `approval denied via MCP elicitation`, treat that as a transient app-control state first: wait briefly, retry once, then try Firefox by friendly name and bundle ID.
+- Only mark the logged-in browser lane blocked after the delayed retries for both Chrome and Firefox fail in the same run.
+- If a later retry succeeds, resume the logged-in browser flow and avoid relying on degraded public captures for LinkedIn or MyGreenhouse.
+
 ## LinkedIn Default Filters
 
-- Start LinkedIn from Liam's usual Chrome chip set: `Jobs` and `Past 24 hours`.
+- Start LinkedIn from Liam's canonical Chrome search URL:
+  `https://www.linkedin.com/jobs/search-results/?currentJobId=4400292789&eBP=CwEAAAGd6u1jSK23rzKlUdzYHyYIIbcTVOivd5S25NrTwHVaZOwNwd3EcPCQmJ_Ny6nsbw_XmNvVYheV58TIhXnRychp_rxSKANvUB7TAZ8gTTxhCpN4yphOnfelv1OCGtW2UwA79t46pBZ4aKzF4Jqq1TS80Y2bYqvriXCr5RqiXdF7tFRJRXoQAzGPqoswFO34ImwzeKqgpr3lab10LriyeKKDZLwcdTlAVI8-88vXxL5Ba1_HGdCE7FZnyJ5lqDNinCESgFksWu_tCN-Xur3-F1Zemd5FYkNl_sc4Ffh4KHqdVBHNxiAvVAgf8nqiJO2iOE3u3adaDhW1BcLugFGOrZvBTaMRz_kvzujHHmoz-Kh6b_WgA4r935sN3o5Ua_CaXf8ou4psuNkig-CjcQH2nVS74irm69mLf3DWLRRMLn4u0twwMag9jABdIBuXXWL3UbluR42A7vl8v4HBfM3tKL80zvdpj4xesaWfbySlz3bft5Zmjg&refId=AUjJDLTHkZScYb1FSzsqVw%3D%3D&trackingId=e6HrO7i0kUWRFB0ly%2BtKSQ%3D%3D&keywords=software%20engineer&origin=JOB_SEARCH_PAGE_JOB_FILTER&referralSearchId=hlmyA6eoWkxptRpZcrt5Ng%3D%3D&geoId=103644278&distance=0.0&f_TPR=r86400`
 - When available in the saved LinkedIn view, also use the chips that commonly appear in Liam's workflow such as `Remote`, `Frontend`, `Gaming`, `Web`, `Java`, `Easy Apply`, `Employment type`, `Company`, `Under 10 applicants`, and `In my network`.
 - Do not require the `Entry-level` chip. Judge fit from the actual title and posting, favoring roles like Software Engineer, SWE I, SWE II, founding engineer, generalist, forward-deployed, backend, full-stack, platform, and applied AI.
 - Treat these extra chips as targeting and ranking helpers, not hard exclusions, when they would otherwise hide strong plausible SWE roles that fit Liam well.
 
 ## Capture Depth
 
-- For LinkedIn last-24-hours searches, keep paging while results remain fresh and plausibly in Liam's target role family.
+- For LinkedIn last-24-hours searches, keep paging from the canonical search URL while results remain fresh and plausibly in Liam's target role family.
 - Do not stop after 1-2 pages when additional fresh, relevant roles still appear.
+- Stop only when the search has been exhausted for the current pass, the remaining results are no longer fresh or reasonably aligned, or a clear saturation pattern appears, such as a substantial consecutive stretch of already-tracked, already-seen-in-this-run, closed, or clearly low-fit roles.
+- Liam should not need to intervene just to make the automation continue paging; the agent should infer from the result pattern when further pages are no longer worth scanning.
 - For Greenhouse/MyGreenhouse, continue beyond the first page when more fresh, target-aligned roles are still being surfaced.
 - Bias toward over-capturing reasonable fresh roles and filtering later rather than stopping early and missing good openings.
 
@@ -106,3 +117,4 @@ The listener queues new jobs; Codex should then:
 - Do not mark a job applied from intake alone.
 - Do not invent job details that were not captured.
 - Keep LinkedIn intake source-first unless a routine application flow is available after tailoring.
+- When committing automation progress, treat DNS failures to `github.com` as transient first: verify local resolution, wait briefly, retry `git push origin main` at least twice, and report a push blocker only if retries still fail.
