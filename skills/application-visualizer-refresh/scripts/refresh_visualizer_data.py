@@ -19,6 +19,14 @@ OUTPUT_JSON = ROOT / "application-visualizer" / "src" / "data" / "tracker-data.j
 
 LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 DATE_RE = re.compile(r"\b(20\d{2}-\d{2}-\d{2})\b")
+LINKEDIN_INVITE_RE = re.compile(
+    r"LinkedIn invite sent to\s+"
+    r"(?:(recruiter|engineer)\s+)?"
+    r"([^;]+?)"
+    r"(?:\s+\((Engineer|Recruiter)\))?"
+    r"\s+(20\d{2}-\d{2}-\d{2})",
+    re.IGNORECASE,
+)
 
 
 def split_markdown_row(line: str) -> list[str]:
@@ -381,6 +389,8 @@ def outreach_contact(row: dict[str, Any], lane: str) -> dict[str, Any]:
         "outcome": row["outcome"],
         "route": row["route"],
         "connectionNote": row["connectionNote"],
+        "sentDate": row.get("sentDate", "") or row["lastChecked"],
+        "source": row.get("source", "batch"),
         "lastChecked": row["lastChecked"],
         "notes": row["notes"],
     }
@@ -425,15 +435,102 @@ def build_outreach_role_buckets(rows: list[dict[str, Any]], lane: str, sent: boo
     )
 
 
-def build_outreach_buckets(recruiter_rows: list[dict[str, Any]], engineer_rows: list[dict[str, Any]]) -> dict[str, Any]:
+def infer_invite_lane(app: dict[str, Any], role_word: str, paren_label: str, name: str) -> str:
+    role_word = (role_word or "").lower()
+    paren_label = (paren_label or "").lower()
+    if role_word == "recruiter" or paren_label == "recruiter":
+        return "recruiter"
+    if role_word == "engineer" or paren_label == "engineer":
+        return "engineer"
+    normalized_name = clean_text(name).lower()
+    if app["recruiterContact"] and (
+        app["recruiterContact"].lower() in normalized_name or normalized_name in app["recruiterContact"].lower()
+    ):
+        return "recruiter"
+    if app["engineerContact"] and (
+        app["engineerContact"].lower() in normalized_name or normalized_name in app["engineerContact"].lower()
+    ):
+        return "engineer"
+    return ""
+
+
+def profile_for_invite(app: dict[str, Any], lane: str, name: str) -> str:
+    normalized_name = clean_text(name).lower()
+    if lane == "recruiter" and app["recruiterContact"] and (
+        app["recruiterContact"].lower() in normalized_name or normalized_name in app["recruiterContact"].lower()
+    ):
+        return app["recruiterProfile"]
+    if lane == "engineer" and app["engineerContact"] and (
+        app["engineerContact"].lower() in normalized_name or normalized_name in app["engineerContact"].lower()
+    ):
+        return app["engineerProfile"]
+    return ""
+
+
+def build_application_note_send_rows(applications: list[dict[str, Any]], lane: str) -> list[dict[str, Any]]:
+    rows = []
+    for app in applications:
+        for match in LINKEDIN_INVITE_RE.finditer(app["notes"]):
+            role_word, name, paren_label, sent_date = match.groups()
+            inferred_lane = infer_invite_lane(app, role_word or "", paren_label or "", name)
+            if inferred_lane != lane:
+                continue
+            rows.append(
+                {
+                    "batch": "application-notes",
+                    "company": app["company"],
+                    "role": app["role"],
+                    "postingKey": app["postingKey"],
+                    "fitScore": app["fitScore"],
+                    "status": app["status"],
+                    "recruiterName": clean_text(name) if lane == "recruiter" else "",
+                    "recruiterProfile": profile_for_invite(app, lane, name) if lane == "recruiter" else "",
+                    "recruiterPosition": "Recorded in application notes" if lane == "recruiter" else "",
+                    "engineerName": clean_text(name) if lane == "engineer" else "",
+                    "engineerProfile": profile_for_invite(app, lane, name) if lane == "engineer" else "",
+                    "engineerPosition": "Recorded in application notes" if lane == "engineer" else "",
+                    "route": "application-note",
+                    "connectionNote": "",
+                    "approval": "Approved",
+                    "outcome": "Sent",
+                    "sentDate": sent_date,
+                    "source": "application-notes",
+                    "lastChecked": sent_date,
+                    "notes": f"LinkedIn invite recorded in application tracker notes on {sent_date}.",
+                }
+            )
+    return rows
+
+
+def dedupe_sent_role_buckets(groups: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    for group in groups:
+        seen = set()
+        unique_contacts = []
+        for contact in group["contacts"]:
+            key = (
+                contact["lane"],
+                ((contact["profile"] or "").lower() or contact["name"].lower()),
+            )
+            if key in seen:
+                continue
+            seen.add(key)
+            unique_contacts.append(contact)
+        group["contacts"] = unique_contacts
+        group["count"] = len(unique_contacts)
+    return [group for group in groups if group["contacts"]]
+
+
+def build_outreach_buckets(recruiter_rows: list[dict[str, Any]], engineer_rows: list[dict[str, Any]], applications: list[dict[str, Any]]) -> dict[str, Any]:
+    recruiter_note_rows = build_application_note_send_rows(applications, "recruiter")
+    engineer_note_rows = build_application_note_send_rows(applications, "engineer")
     return {
         "recruiter": {
             "activeRoles": build_outreach_role_buckets(recruiter_rows, "recruiter", sent=False),
-            "sentRoles": build_outreach_role_buckets(recruiter_rows, "recruiter", sent=True),
+            "sentRoles": dedupe_sent_role_buckets(build_outreach_role_buckets(recruiter_rows + recruiter_note_rows, "recruiter", sent=True)),
         },
         "engineer": {
             "activeRoles": build_outreach_role_buckets(engineer_rows, "engineer", sent=False),
-            "sentRoles": build_outreach_role_buckets(engineer_rows, "engineer", sent=True),
+            "sentRoles": dedupe_sent_role_buckets(build_outreach_role_buckets(engineer_rows + engineer_note_rows, "engineer", sent=True)),
         },
     }
 
@@ -492,7 +589,7 @@ def main() -> None:
         "prospects": prospects,
         "recruiterBatch": recruiter_batch,
         "engineerBatch": engineer_batch,
-        "outreachBuckets": build_outreach_buckets(recruiter_batch, engineer_batch),
+        "outreachBuckets": build_outreach_buckets(recruiter_batch, engineer_batch, applications),
     }
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
