@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T03:43:51.703700+00:00",
+  "generatedAt": "2026-05-02T03:48:47.006472+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -8,19 +8,19 @@
   },
   "stats": {
     "kpis": {
-      "total": 351,
+      "total": 361,
       "applied": 295,
-      "unapplied": 56,
-      "active": 282,
+      "unapplied": 66,
+      "active": 292,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 234,
-      "reachOut": 294,
+      "highFit": 244,
+      "reachOut": 304,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 84.0,
+      "applyRate": 81.7,
       "rejectionRate": 14.9
     },
     "statusCounts": [
@@ -34,11 +34,15 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 31
+        "value": 33
       },
       {
         "name": "Archived",
         "value": 25
+      },
+      {
+        "name": "Resume Tailored",
+        "value": 9
       },
       {
         "name": "Interviewing",
@@ -47,10 +51,6 @@
       {
         "name": "Online Assessment",
         "value": 3
-      },
-      {
-        "name": "Resume Tailored",
-        "value": 1
       }
     ],
     "sourceCounts": [
@@ -60,7 +60,7 @@
       },
       {
         "name": "Greenhouse",
-        "value": 82
+        "value": 92
       },
       {
         "name": "Ashby",
@@ -130,19 +130,19 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 152
+        "value": 153
       },
       {
         "name": "Bay Area",
-        "value": 107
+        "value": 110
       },
       {
         "name": "Other",
-        "value": 47
+        "value": 52
       },
       {
         "name": "Remote",
-        "value": 26
+        "value": 27
       },
       {
         "name": "Seattle",
@@ -160,15 +160,15 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 196
-      },
-      {
-        "name": "Full Stack",
-        "value": 42
+        "value": 201
       },
       {
         "name": "Backend",
-        "value": 40
+        "value": 43
+      },
+      {
+        "name": "Full Stack",
+        "value": 43
       },
       {
         "name": "AI/ML",
@@ -180,7 +180,7 @@
       },
       {
         "name": "Infra/Platform",
-        "value": 15
+        "value": 16
       },
       {
         "name": "Data",
@@ -226,11 +226,11 @@
       },
       {
         "score": "9",
-        "count": 62
+        "count": 65
       },
       {
         "score": "10",
-        "count": 91
+        "count": 98
       }
     ],
     "targetCounts": [
@@ -384,8 +384,8 @@
       },
       {
         "date": "2026-05-01",
-        "cumulative": 351,
-        "added": 54,
+        "cumulative": 361,
+        "added": 64,
         "applied": 30,
         "rejected": 1,
         "interviewing": 0
@@ -444,6 +444,12 @@
         "company": "Airbnb",
         "roles": 3,
         "avgFit": 9.33,
+        "bestFit": 10
+      },
+      {
+        "company": "Glean",
+        "roles": 3,
+        "avgFit": 8.67,
         "bestFit": 10
       },
       {
@@ -526,12 +532,6 @@
       },
       {
         "company": "Nectar Social",
-        "roles": 2,
-        "avgFit": 9.5,
-        "bestFit": 10
-      },
-      {
-        "company": "Maybern",
         "roles": 2,
         "avgFit": 9.5,
         "bestFit": 10
@@ -10963,6 +10963,258 @@
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "AssetWatch",
+      "role": "Backend Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/assetwatch/jobs/4658890005",
+      "postingKey": "4658890005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/AssetWatch/Backend_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/AssetWatch/Backend_Engineer/Liam_Van_Resume/Liam_Van_AssetWatch.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend data services, scalable APIs, serverless workflows, database operations, ingestion pipelines, and production reliability. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: custom written prompts require review before employer submission on 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Mattermost",
+      "role": "Software Engineer II",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/mattermost/jobs/4821266008",
+      "postingKey": "4821266008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Mattermost/Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Mattermost/Software_Engineer_II/Liam_Van_Resume/Liam_Van_Mattermost.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized secure collaboration products, React and backend delivery, workflow reliability, customer-focused execution, and open-source-style engineering. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: Greenhouse says job is no longer open on 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "SupplyHouse.com",
+      "role": "Backend Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Remote, Remote, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/supplyhouse/jobs/5616318004",
+      "postingKey": "5616318004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/SupplyHouse.com/Backend_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/SupplyHouse.com/Backend_Engineer/Liam_Van_Resume/Liam_Van_SupplyHouse.com.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend ecommerce systems, APIs, internal operations, full-stack collaboration, testing, and scalable service delivery. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Genies",
+      "role": "Backend Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Los Angeles, California, United States; San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/genies/jobs/7029957003",
+      "postingKey": "7029957003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Genies/Backend_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Genies/Backend_Engineer/Liam_Van_Resume/Liam_Van_Genies.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI platform backend systems, scalable services, data workflows, API reliability, and cross-functional product execution. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "ngrok",
+      "role": "Software Engineer II/III/Senior, Gateway",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/ngrokinc/jobs/5789584004",
+      "postingKey": "5789584004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/ngrok/Software_Engineer_II_III_Senior_Gateway/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/ngrok/Software_Engineer_II_III_Senior_Gateway/Liam_Van_Resume/Liam_Van_ngrok.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized gateway infrastructure, API delivery, backend reliability, distributed systems, operational debugging, and developer-product workflows. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Sumo Logic",
+      "role": "Software Engineer II - Core Platform",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/sumologic/jobs/7485892",
+      "postingKey": "7485892",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Sumo Logic/Software_Engineer_II_Core_Platform/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Sumo Logic/Software_Engineer_II_Core_Platform/Liam_Van_Resume/Liam_Van_Sumo_Logic.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized core platform services, scalable cloud microservices, on-call ownership, reliability, APIs, and distributed system validation. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Lynx Analytics",
+      "role": "Software Engineer (US)",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/lynxanalytics/jobs/8395412002",
+      "postingKey": "8395412002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Lynx Analytics/Software_Engineer_US/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Lynx Analytics/Software_Engineer_US/Liam_Van_Resume/Liam_Van_Lynx_Analytics.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized Python software platforms, AI and analytics solutions, cloud deployments, containerization, cross-functional delivery, and production operations. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Beacon Software",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "New York City, New York, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/beaconsoftware/jobs/4974798008",
+      "postingKey": "4974798008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Beacon Software/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Beacon Software/Software_Engineer/Liam_Van_Resume/Liam_Van_Beacon_Software.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, AI-enabled modernization, portfolio software systems, product collaboration, and rapid delivery. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Glean",
+      "role": "Software Engineer, Fullstack",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "San Francisco Bay Area",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/gleanwork/jobs/4006734005",
+      "postingKey": "4006734005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Glean/Software_Engineer_Fullstack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Glean/Software_Engineer_Fullstack/Liam_Van_Resume/Liam_Van_Glean.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI product workflows, enterprise search, full-stack systems, backend APIs, data workflows, and customer-facing product execution. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Anduril Industries",
+      "role": "Software Engineer II, Manufacturing Test",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Costa Mesa, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/andurilindustries/jobs/5003658007?gh_jid=5003658007",
+      "postingKey": "5003658007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Anduril Industries/Software_Engineer_II_Manufacturing_Test/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Anduril Industries/Software_Engineer_II_Manufacturing_Test/Liam_Van_Resume/Liam_Van_Anduril_Industries.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized manufacturing test software, validation infrastructure, production reliability, automated testing, operational debugging, and hardware-adjacent workflows. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "noteLinks": [],
+      "activityDates": [
         "2026-05-01"
       ]
     }
