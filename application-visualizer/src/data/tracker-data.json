@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T01:19:53.564078+00:00",
+  "generatedAt": "2026-05-02T01:26:05.884136+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -8,19 +8,19 @@
   },
   "stats": {
     "kpis": {
-      "total": 321,
+      "total": 331,
       "applied": 279,
-      "unapplied": 42,
-      "active": 252,
+      "unapplied": 52,
+      "active": 262,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 207,
-      "reachOut": 264,
+      "highFit": 214,
+      "reachOut": 274,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 86.9,
+      "applyRate": 84.3,
       "rejectionRate": 15.8
     },
     "statusCounts": [
@@ -38,11 +38,11 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 13
+        "value": 14
       },
       {
         "name": "Resume Tailored",
-        "value": 5
+        "value": 14
       },
       {
         "name": "Interviewing",
@@ -64,7 +64,7 @@
       },
       {
         "name": "Greenhouse",
-        "value": 52
+        "value": 62
       },
       {
         "name": "Company Site",
@@ -134,15 +134,15 @@
       },
       {
         "name": "Bay Area",
-        "value": 99
+        "value": 102
       },
       {
         "name": "Other",
-        "value": 39
+        "value": 45
       },
       {
         "name": "Remote",
-        "value": 19
+        "value": 20
       },
       {
         "name": "Seattle",
@@ -160,15 +160,15 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 185
+        "value": 186
       },
       {
         "name": "Full Stack",
-        "value": 36
+        "value": 41
       },
       {
         "name": "Backend",
-        "value": 33
+        "value": 35
       },
       {
         "name": "Forward Deployed",
@@ -180,7 +180,7 @@
       },
       {
         "name": "Infra/Platform",
-        "value": 12
+        "value": 14
       },
       {
         "name": "Data",
@@ -218,11 +218,11 @@
       },
       {
         "score": "7",
-        "count": 22
+        "count": 25
       },
       {
         "score": "8",
-        "count": 74
+        "count": 81
       },
       {
         "score": "9",
@@ -384,8 +384,8 @@
       },
       {
         "date": "2026-05-01",
-        "cumulative": 321,
-        "added": 24,
+        "cumulative": 331,
+        "added": 34,
         "applied": 14,
         "rejected": 1,
         "interviewing": 0
@@ -10160,7 +10160,7 @@
       "company": "Personalis, Inc",
       "role": "Software Engineer 2",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -10171,6 +10171,257 @@
       "postingKey": "7587255003",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Personalis, Inc/Software_Engineer_2/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Personalis, Inc/Software_Engineer_2/Liam_Van_Resume/Liam_Van_Personalis,_Inc.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: original posting closed; replacement Software Engineer 2 posting 7718791003 requires exact start date, desired compensation, and SF Bay Area hybrid/no-relocation answer 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Clarity Innovations",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Herndon, VA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/clarityinnovates/jobs/5125081007?gh_src=my.greenhouse.search",
+      "postingKey": "5125081007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Clarity Innovations/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Clarity Innovations/Software_Engineer/Liam_Van_Resume/Liam_Van_Clarity_Innovations.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Apptronik",
+      "role": "Software Engineer - Platform",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Austin, TX",
+      "source": "Greenhouse",
+      "jobLink": "https://boards.greenhouse.io/apptronik/jobs/5985625004?gh_jid=5985625004&gh_src=my.greenhouse.search",
+      "postingKey": "5985625004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Apptronik/Software_Engineer_Platform/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Apptronik/Software_Engineer_Platform/Liam_Van_Resume/Liam_Van_Apptronik.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Apptronik",
+      "role": "Software Engineer - Controls Infrastructure",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 7,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Austin, TX",
+      "source": "Greenhouse",
+      "jobLink": "https://boards.greenhouse.io/apptronik/jobs/5985982004?gh_jid=5985982004&gh_src=my.greenhouse.search",
+      "postingKey": "5985982004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Apptronik/Software_Engineer_Controls_Infrastructure/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Apptronik/Software_Engineer_Controls_Infrastructure/Liam_Van_Resume/Liam_Van_Apptronik.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Next Insurance",
+      "role": "Backend Engineer - DevEx Team",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Waltham, MA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/nextinsurance66/jobs/7719281003?gh_src=my.greenhouse.search",
+      "postingKey": "7719281003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Next Insurance/Backend_Engineer_DevEx_Team/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Next Insurance/Backend_Engineer_DevEx_Team/Liam_Van_Resume/Liam_Van_Next_Insurance.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "xAI",
+      "role": "Backend Engineer - API",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 7,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Palo Alto, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/xai/jobs/5119111007?gh_src=my.greenhouse.search",
+      "postingKey": "5119111007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/xAI/Backend_Engineer_API/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/xAI/Backend_Engineer_API/Liam_Van_Resume/Liam_Van_xAI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Divergent",
+      "role": "Full Stack Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Los Angeles, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/divergent/jobs/5207177008?gh_src=my.greenhouse.search",
+      "postingKey": "5207177008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Divergent/Full_Stack_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Divergent/Full_Stack_Software_Engineer/Liam_Van_Resume/Liam_Van_Divergent.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Whop",
+      "role": "Full Stack Engineer, Ad Networks",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Palo Alto, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://careers.whop.com/?gh_jid=5124207007&gh_src=my.greenhouse.search",
+      "postingKey": "5124207007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Whop/Full_Stack_Engineer_Ad_Networks/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Whop/Full_Stack_Engineer_Ad_Networks/Liam_Van_Resume/Liam_Van_Whop.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Formic",
+      "role": "Full Stack Software Engineer - Robotics",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "San Francisco, CA; Oakland, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/formic/jobs/4677397006?gh_src=my.greenhouse.search",
+      "postingKey": "4677397006",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Formic/Full_Stack_Software_Engineer_Robotics/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Formic/Full_Stack_Software_Engineer_Robotics/Liam_Van_Resume/Liam_Van_Formic.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Empower Pharmacy",
+      "role": "Full Stack Developer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Remote - Houston, TX",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/empowerpharmacy/jobs/4234731009?gh_src=my.greenhouse.search",
+      "postingKey": "4234731009",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Empower Pharmacy/Full_Stack_Developer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Empower Pharmacy/Full_Stack_Developer/Liam_Van_Resume/Liam_Van_Empower_Pharmacy.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Revolutional, LLC",
+      "role": "Full Stack .NET Developer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 7,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Arlington, VA; Baltimore, MD",
+      "source": "Greenhouse",
+      "jobLink": "https://revolutional.com/job-openings/?gh_jid=7720736003&gh_src=my.greenhouse.search",
+      "postingKey": "7720736003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Revolutional, LLC/Full_Stack_NET_Developer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Revolutional, LLC/Full_Stack_NET_Developer/Liam_Van_Resume/Liam_Van_Revolutional,_LLC.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
