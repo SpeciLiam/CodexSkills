@@ -456,6 +456,10 @@ def infer_invite_lane(app: dict[str, Any], role_word: str, paren_label: str, nam
 
 def profile_for_invite(app: dict[str, Any], lane: str, name: str) -> str:
     normalized_name = clean_text(name).lower()
+    for link in app["noteLinks"]:
+        label = clean_text(link["label"]).lower()
+        if label and (label in normalized_name or normalized_name in label):
+            return link["url"]
     if lane == "recruiter" and app["recruiterContact"] and (
         app["recruiterContact"].lower() in normalized_name or normalized_name in app["recruiterContact"].lower()
     ):
