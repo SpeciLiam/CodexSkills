@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T23:09:39.830000+00:00",
+  "generatedAt": "2026-05-02T23:18:43.140059+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 369,
+      "total": 376,
       "applied": 297,
-      "unapplied": 72,
-      "active": 300,
+      "unapplied": 79,
+      "active": 307,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 252,
-      "reachOut": 312,
+      "highFit": 259,
+      "reachOut": 319,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 21,
+      "intakeJobs": 30,
       "intakeQueued": 7,
-      "intakeNew": 6,
+      "intakeNew": 8,
       "intakeManual": 0,
       "intakeApplied": 0,
-      "applyRate": 80.5,
+      "applyRate": 79.0,
       "rejectionRate": 14.8,
-      "recruiterWork": 215,
-      "engineerWork": 267,
+      "recruiterWork": 222,
+      "engineerWork": 274,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 14
+        "value": 21
       },
       {
         "name": "Interviewing",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 135
+        "value": 136
       },
       {
         "name": "Greenhouse",
-        "value": 97
+        "value": 103
       },
       {
         "name": "Ashby",
@@ -140,11 +140,11 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 156
+        "value": 160
       },
       {
         "name": "Bay Area",
-        "value": 112
+        "value": 113
       },
       {
         "name": "Other",
@@ -152,7 +152,7 @@
       },
       {
         "name": "Remote",
-        "value": 28
+        "value": 29
       },
       {
         "name": "Seattle",
@@ -164,13 +164,13 @@
       },
       {
         "name": "Georgia",
-        "value": 1
+        "value": 2
       }
     ],
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 207
+        "value": 211
       },
       {
         "name": "Backend",
@@ -178,11 +178,11 @@
       },
       {
         "name": "Full Stack",
-        "value": 43
+        "value": 44
       },
       {
         "name": "AI/ML",
-        "value": 24
+        "value": 25
       },
       {
         "name": "Forward Deployed",
@@ -190,7 +190,7 @@
       },
       {
         "name": "Infra/Platform",
-        "value": 17
+        "value": 18
       },
       {
         "name": "Data",
@@ -236,11 +236,11 @@
       },
       {
         "score": "9",
-        "count": 67
+        "count": 68
       },
       {
         "score": "10",
-        "count": 103
+        "count": 109
       }
     ],
     "targetCounts": [
@@ -258,15 +258,15 @@
     "intakeStatusCounts": [
       {
         "name": "Tailored",
-        "value": 7
+        "value": 14
+      },
+      {
+        "name": "New",
+        "value": 8
       },
       {
         "name": "Queued",
         "value": 7
-      },
-      {
-        "name": "New",
-        "value": 6
       },
       {
         "name": "Skipped",
@@ -276,11 +276,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 12
+        "value": 20
       },
       {
         "name": "LinkedIn",
-        "value": 9
+        "value": 10
       }
     ],
     "timeline": [
@@ -430,8 +430,8 @@
       },
       {
         "date": "2026-05-02",
-        "cumulative": 369,
-        "added": 7,
+        "cumulative": 376,
+        "added": 14,
         "applied": 1,
         "rejected": 0,
         "interviewing": 0
@@ -469,6 +469,12 @@
         "bestFit": 10
       },
       {
+        "company": "Loop",
+        "roles": 4,
+        "avgFit": 9.5,
+        "bestFit": 10
+      },
+      {
         "company": "Spotify",
         "roles": 4,
         "avgFit": 9.0,
@@ -482,12 +488,6 @@
       },
       {
         "company": "Intuit",
-        "roles": 3,
-        "avgFit": 9.33,
-        "bestFit": 10
-      },
-      {
-        "company": "Loop",
         "roles": 3,
         "avgFit": 9.33,
         "bestFit": 10
@@ -508,6 +508,12 @@
         "company": "Disney",
         "roles": 3,
         "avgFit": 8.33,
+        "bestFit": 10
+      },
+      {
+        "company": "Warner Bros. Discovery",
+        "roles": 2,
+        "avgFit": 10.0,
         "bestFit": 10
       },
       {
@@ -575,12 +581,6 @@
         "roles": 2,
         "avgFit": 9.5,
         "bestFit": 10
-      },
-      {
-        "company": "Nectar Social",
-        "roles": 2,
-        "avgFit": 9.5,
-        "bestFit": 10
       }
     ],
     "outreachGaps": [
@@ -601,6 +601,24 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://www.linkedin.com/jobs/view/4406127370/"
+      },
+      {
+        "company": "WithCoverage",
+        "role": "Software Engineer",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/withcoverage/jobs/4828873008"
+      },
+      {
+        "company": "Warner Bros. Discovery",
+        "role": "Software Engineer II",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-warner-bros-discovery-4374141586"
       },
       {
         "company": "Uber",
@@ -673,6 +691,15 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4673616005#app"
+      },
+      {
+        "company": "Superblocks",
+        "role": "Software Engineer, Cloud Infrastructure",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/superblocks/jobs/4507226005"
       },
       {
         "company": "StubHub",
@@ -846,6 +873,15 @@
         "jobLink": "https://jobs.ashbyhq.com/notion/f7399542-9122-481a-bf64-43bf8093748b"
       },
       {
+        "company": "Nira Energy",
+        "role": "Founding Software Engineer",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/niraenergy/jobs/4824126008"
+      },
+      {
         "company": "Nectar Social",
         "role": "Software Engineer, Early Career",
         "fitScore": 10,
@@ -871,42 +907,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://jobs.ashbyhq.com/mirage/cbf278fd-84ec-48d9-8052-b76abb035ac7/application?utm_source=LEbxa7kWm6"
-      },
-      {
-        "company": "Mirage",
-        "role": "Software Engineer, Early Career",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://jobs.ashbyhq.com/mirage/1c4a937b-894e-402a-b2fd-93435b86657f/application?utm_source=LEbxa7kWm6"
-      },
-      {
-        "company": "Microsoft",
-        "role": "Software Engineer II",
-        "fitScore": 10,
-        "status": "Manual Apply Needed",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://apply.careers.microsoft.com/careers/job/1970393556643571?utm_source=linkedin&domain=microsoft.com&src=LinkedIn"
-      },
-      {
-        "company": "Maybern",
-        "role": "Software Engineer, New Grad",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://jobs.ashbyhq.com/maybern/90f7a0d4-4e6c-43e0-a444-06301faa4058"
-      },
-      {
-        "company": "Loop",
-        "role": "2026 New Grad Software Engineer, Full-Stack",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://www.linkedin.com/jobs/view/4404859319/"
       }
     ],
     "recruiterBatch": {
@@ -11454,9 +11454,268 @@
       "notes": "",
       "noteLinks": [],
       "activityDates": []
+    },
+    {
+      "company": "WithCoverage",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/withcoverage/jobs/4828873008",
+      "postingKey": "4828873008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/WithCoverage/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/WithCoverage/Software_Engineer/Liam_Van_Resume/Liam_Van_WithCoverage.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized backend product systems, API delivery, data modeling, cloud validation, production reliability, and fast product iteration. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Superblocks",
+      "role": "Software Engineer, Cloud Infrastructure",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/superblocks/jobs/4507226005",
+      "postingKey": "4507226005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Superblocks/Software_Engineer_Cloud_Infrastructure/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Superblocks/Software_Engineer_Cloud_Infrastructure/Liam_Van_Resume/Liam_Van_Superblocks.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized cloud infrastructure, developer tooling, API reliability, distributed services, operational debugging, and platform validation. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Nira Energy",
+      "role": "Founding Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/niraenergy/jobs/4824126008",
+      "postingKey": "4824126008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Nira Energy/Founding_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Nira Energy/Founding_Software_Engineer/Liam_Van_Resume/Liam_Van_Nira_Energy.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized founding full-stack product engineering, backend APIs, data workflows, customer-facing delivery, and rapid product iteration. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Loop",
+      "role": "2026 New Grad - Software Engineer, Full-Stack",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/loop/jobs/5780582004",
+      "postingKey": "5780582004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Loop/2026_New_Grad_Software_Engineer_Full_Stack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Loop/2026_New_Grad_Software_Engineer_Full_Stack/Liam_Van_Resume/Liam_Van_Loop.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized new-grad full-stack engineering, AI logistics workflows, backend APIs, React product surfaces, data processing, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Flex",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "New York City, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/flex/jobs/5633923004",
+      "postingKey": "5633923004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Flex/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Flex/Software_Engineer/Liam_Van_Resume/Liam_Van_Flex.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized financial technology systems, backend services, API workflows, data validation, reliability, and product collaboration. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Vercel",
+      "role": "Software Engineer, AI",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "Remote - United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5633379004",
+      "postingKey": "5633379004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Vercel/Software_Engineer_AI/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Vercel/Software_Engineer_AI/Liam_Van_Resume/Liam_Van_Vercel.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized AI product engineering, developer experience, LLM applications, TypeScript and Python systems, APIs, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Warner Bros. Discovery",
+      "role": "Software Engineer II",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "Atlanta, GA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-warner-bros-discovery-4374141586",
+      "postingKey": "software-engineer-ii-at-warner-bros-discovery-4374141586",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Warner Bros. Discovery/Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Warner Bros. Discovery/Software_Engineer_II/Liam_Van_Resume/Liam_Van_Warner_Bros._Discovery.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized software engineering II delivery, backend services, API reliability, cloud validation, testing, and cross-functional product execution. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "WithCoverage",
+      "role": "Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "4828873008",
+      "jobUrl": "https://job-boards.greenhouse.io/withcoverage/jobs/4828873008",
+      "discoveredAt": "2026-05-02T23:16:14.069860+00:00",
+      "postedAge": "current",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": "4828873008"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Warner Bros. Discovery",
+      "role": "Software Engineer II",
+      "location": "Atlanta, GA",
+      "postingKey": "software-engineer-ii-at-warner-bros-discovery-4374141586",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-warner-bros-discovery-4374141586",
+      "discoveredAt": "2026-05-02T23:16:14.069860+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "SWE-family role, early-career signal, location needs review",
+      "trackerPostingKey": "software-engineer-ii-at-warner-bros-discovery-4374141586"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Superblocks",
+      "role": "Software Engineer, Cloud Infrastructure",
+      "location": "New York, NY",
+      "postingKey": "4507226005",
+      "jobUrl": "https://job-boards.greenhouse.io/superblocks/jobs/4507226005",
+      "discoveredAt": "2026-05-02T23:16:14.069860+00:00",
+      "postedAge": "current",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": "4507226005"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Nira Energy",
+      "role": "Founding Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "4824126008",
+      "jobUrl": "https://job-boards.greenhouse.io/niraenergy/jobs/4824126008",
+      "discoveredAt": "2026-05-02T23:16:14.069860+00:00",
+      "postedAge": "current",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": "4824126008"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Loop",
+      "role": "2026 New Grad - Software Engineer, Full-Stack",
+      "location": "San Francisco, CA",
+      "postingKey": "5780582004",
+      "jobUrl": "https://job-boards.greenhouse.io/loop/jobs/5780582004",
+      "discoveredAt": "2026-05-02T23:16:14.069860+00:00",
+      "postedAge": "2 days ago",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "SWE-family role, early-career signal, SF/Bay Area preference",
+      "trackerPostingKey": "5780582004"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Flex",
+      "role": "Software Engineer",
+      "location": "New York City, NY",
+      "postingKey": "5633923004",
+      "jobUrl": "https://job-boards.greenhouse.io/flex/jobs/5633923004",
+      "discoveredAt": "2026-05-02T23:16:14.069860+00:00",
+      "postedAge": "current",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": "5633923004"
+    },
     {
       "source": "Greenhouse",
       "company": "Smartsheet",
@@ -11585,6 +11844,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Vercel",
+      "role": "Software Engineer, AI",
+      "location": "Remote - United States",
+      "postingKey": "5633379004",
+      "jobUrl": "https://job-boards.greenhouse.io/vercel/jobs/5633379004",
+      "discoveredAt": "2026-05-02T23:16:14.069860+00:00",
+      "postedAge": "current",
+      "fitScore": 9,
+      "status": "Tailored",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": "5633379004"
+    },
+    {
+      "source": "Greenhouse",
       "company": "Amplitude",
       "role": "Engineering: Forward Deploy Engineer II",
       "location": "San Francisco, CA",
@@ -11669,6 +11942,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Droit",
+      "role": "Forward Deployed Engineer",
+      "location": "New York, NY",
+      "postingKey": "4834324008",
+      "jobUrl": "https://job-boards.greenhouse.io/droit/jobs/4834324008",
+      "discoveredAt": "2026-05-02T23:16:14.069860+00:00",
+      "postedAge": "current",
+      "fitScore": 7,
+      "status": "New",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Anthropic",
       "role": "Forward Deployed Engineer, Federal Civilian",
       "location": "San Francisco, CA / New York City, NY / Washington, DC",
@@ -11679,6 +11966,20 @@
       "fitScore": 7,
       "status": "New",
       "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Gradial",
+      "role": "Forward Deployed Engineer",
+      "location": "Seattle, WA",
+      "postingKey": "4236186009",
+      "jobUrl": "https://job-boards.greenhouse.io/gradial/jobs/4236186009",
+      "discoveredAt": "2026-05-02T23:13:25.285557+00:00",
+      "postedAge": "2 days ago",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
       "trackerPostingKey": ""
     },
     {
@@ -11780,6 +12081,19 @@
       "notes": ""
     },
     {
+      "company": "WithCoverage",
+      "role": "Software Engineer",
+      "postingKey": "4828873008",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/withcoverage/jobs/4828873008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Warp",
       "role": "Software Engineer",
       "postingKey": "4324888004",
@@ -11804,6 +12118,19 @@
       "readyEmails": 1,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Warner Bros. Discovery",
+      "role": "Software Engineer II",
+      "postingKey": "software-engineer-ii-at-warner-bros-discovery-4374141586",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-warner-bros-discovery-4374141586",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Uber",
@@ -11908,6 +12235,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Superblocks",
+      "role": "Software Engineer, Cloud Infrastructure",
+      "postingKey": "4507226005",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/superblocks/jobs/4507226005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "StubHub",
@@ -12157,6 +12497,19 @@
       "notes": ""
     },
     {
+      "company": "Nira Energy",
+      "role": "Founding Software Engineer",
+      "postingKey": "4824126008",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/niraenergy/jobs/4824126008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Nectar Social",
       "role": "Software Engineer, Early Career",
       "postingKey": "606df770-4167-4066-bbfd-d7464b28d9b2",
@@ -12259,6 +12612,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Loop",
+      "role": "2026 New Grad - Software Engineer, Full-Stack",
+      "postingKey": "5780582004",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/loop/jobs/5780582004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Lindy",
@@ -12402,6 +12768,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Flex",
+      "role": "Software Engineer",
+      "postingKey": "5633923004",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/flex/jobs/5633923004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Fanatics Betting & Gaming",
@@ -12649,6 +13028,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Vercel",
+      "role": "Software Engineer, AI",
+      "postingKey": "5633379004",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5633379004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Valon",
@@ -21654,6 +22046,18 @@
           "contacts": []
         },
         {
+          "key": "5633923004",
+          "company": "Flex",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7839346",
           "company": "Flexport",
           "role": "Software Engineer II, Autonomous Freight Systems",
@@ -21714,6 +22118,18 @@
           "contacts": []
         },
         {
+          "key": "5780582004",
+          "company": "Loop",
+          "role": "2026 New Grad - Software Engineer, Full-Stack",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8395412002",
           "company": "Lynx Analytics",
           "role": "Software Engineer (US)",
@@ -21755,6 +22171,18 @@
           "role": "Software Engineer, Growth (New Grad)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4824126008",
+          "company": "Nira Energy",
+          "role": "Founding Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -21990,6 +22418,18 @@
           "contacts": []
         },
         {
+          "key": "4507226005",
+          "company": "Superblocks",
+          "role": "Software Engineer, Cloud Infrastructure",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5616318004",
           "company": "SupplyHouse.com",
           "role": "Backend Engineer",
@@ -22077,6 +22517,30 @@
           "key": "4403550427",
           "company": "Uber",
           "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-ii-at-warner-bros-discovery-4374141586",
+          "company": "Warner Bros. Discovery",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4828873008",
+          "company": "WithCoverage",
+          "role": "Software Engineer",
           "fitScore": 10,
           "status": "Resume Tailored",
           "count": 1,
@@ -22427,6 +22891,18 @@
           "role": "Full Stack Engineer",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5633379004",
+          "company": "Vercel",
+          "role": "Software Engineer, AI",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -31252,6 +31728,18 @@
           "contacts": []
         },
         {
+          "key": "5633923004",
+          "company": "Flex",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7839346",
           "company": "Flexport",
           "role": "Software Engineer II, Autonomous Freight Systems",
@@ -31279,6 +31767,18 @@
           "key": "4006734005",
           "company": "Glean",
           "role": "Software Engineer, Fullstack",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5780582004",
+          "company": "Loop",
+          "role": "2026 New Grad - Software Engineer, Full-Stack",
           "fitScore": 10,
           "status": "Resume Tailored",
           "count": 1,
@@ -31329,6 +31829,18 @@
           "role": "Software Engineer, Growth (New Grad)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4824126008",
+          "company": "Nira Energy",
+          "role": "Founding Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -31564,6 +32076,18 @@
           "contacts": []
         },
         {
+          "key": "4507226005",
+          "company": "Superblocks",
+          "role": "Software Engineer, Cloud Infrastructure",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5616318004",
           "company": "SupplyHouse.com",
           "role": "Backend Engineer",
@@ -31651,6 +32175,30 @@
           "key": "4403550427",
           "company": "Uber",
           "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-ii-at-warner-bros-discovery-4374141586",
+          "company": "Warner Bros. Discovery",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4828873008",
+          "company": "WithCoverage",
+          "role": "Software Engineer",
           "fitScore": 10,
           "status": "Resume Tailored",
           "count": 1,
@@ -31821,6 +32369,18 @@
           "role": "Software Engineer - Person Matching",
           "fitScore": 9,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5633379004",
+          "company": "Vercel",
+          "role": "Software Engineer, AI",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
