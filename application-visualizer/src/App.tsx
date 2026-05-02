@@ -1428,9 +1428,9 @@ function ActiveRoleQueueRow({
   const primaryContact = group.contacts[0];
   const label = lane === "recruiter" ? "Needs recruiter label" : "Needs engineer label";
   return (
-    <article className="batch-row detailed indexed">
+    <article className="batch-row active-role-row indexed">
       <span className="batch-index">{displayIndex}</span>
-      <div>
+      <div className="active-role-main">
         <strong>{group.company}</strong>
         <p>{group.role}</p>
         <small className="batch-contact">
@@ -1438,10 +1438,7 @@ function ActiveRoleQueueRow({
           {primaryContact?.position && <em>{primaryContact.position}</em>}
           {group.contacts.length > 1 && <em>+{group.contacts.length - 1} more</em>}
         </small>
-        <BatchDetails
-          note={primaryContact?.connectionNote || ""}
-          notes={primaryContact?.notes || `Active ${lane} outreach role from the application tracker.`}
-        />
+        {primaryContact?.notes && <small className="active-role-note">{primaryContact.notes}</small>}
       </div>
       <WorkStatePills states={group.states} />
       <b>{group.fitScore || "-"}</b>
