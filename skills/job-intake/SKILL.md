@@ -85,6 +85,12 @@ The listener queues new jobs; Codex should then:
 - LinkedIn is Chrome-first: use Chrome through Computer Use by default because logged-in state and partially completed application tabs usually matter there.
 - Greenhouse/MyGreenhouse can use the logged-in browser lane separately and does not need to be mentally bundled with the LinkedIn workflow.
 
+## LinkedIn Default Filters
+
+- Start LinkedIn from Liam's usual Chrome chip set: `Jobs`, `Past 24 hours`, and `Entry-level`.
+- When available in the saved LinkedIn view, also use the chips that commonly appear in Liam's workflow such as `Remote`, `Frontend`, `Gaming`, `Web`, `Java`, `Easy Apply`, `Employment type`, `Company`, `Under 10 applicants`, and `In my network`.
+- Treat these extra chips as targeting and ranking helpers, not hard exclusions, when they would otherwise hide strong early-career SWE roles that fit Liam well.
+
 ## Capture Depth
 
 - For LinkedIn last-24-hours searches, keep paging while results remain fresh and plausibly in Liam's target role family.
