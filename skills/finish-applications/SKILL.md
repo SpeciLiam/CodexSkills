@@ -168,6 +168,7 @@ Each worker receives only its assigned rows plus the standing answers from this 
    - Do not guess at questions that could materially affect eligibility or legal consent.
 
 6. Record the result immediately after a confirmed submission.
+   - After confirmation is captured, close the successful application tab so the browser is left in a clean state for the next role.
    Use:
 
 ```bash
