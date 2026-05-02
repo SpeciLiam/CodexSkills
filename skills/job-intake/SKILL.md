@@ -1,6 +1,6 @@
 ---
 name: job-intake
-description: Run scheduled LinkedIn and Greenhouse job intake, dedupe fresh early-career software roles against Liam Van's tracker, rank them with NYC/SF preferences, and queue the best roles for tailoring/apply follow-through.
+description: Run scheduled LinkedIn and Greenhouse job intake, dedupe fresh software engineering roles Liam is realistically qualified for against Liam Van's tracker, rank them with NYC/SF preferences, and queue the best roles for tailoring/apply follow-through.
 ---
 
 # Job Intake
@@ -61,7 +61,8 @@ python3 skills/job-intake/scripts/run_job_listener.py --dry-run --linkedin-input
 
 ## Ranking Defaults
 
-- Strongly prefer early-career, new-grad, university grad, associate, junior, SWE I, SWE II, backend, full-stack, platform, product engineer, generalist, founding engineer, forward-deployed, and applied AI roles.
+- Strongly prefer roles Liam is realistically qualified for, especially Software Engineer, SWE I, SWE II, backend, full-stack, platform, product engineer, generalist, founding engineer, forward-deployed, and applied AI roles.
+- New-grad, university grad, associate, and junior roles are still strong targets, but do not require an explicit early-career label if the actual responsibilities and requirements still fit Liam well.
 - Be open to most U.S. locations.
 - Use location as ranking, not a hard filter: NYC first, SF/Bay Area second, then remote/Seattle/DC, then other U.S. roles.
 - Skip senior/staff/principal/manager/intern/sales/recruiter/support roles unless explicitly overridden.
@@ -87,9 +88,10 @@ The listener queues new jobs; Codex should then:
 
 ## LinkedIn Default Filters
 
-- Start LinkedIn from Liam's usual Chrome chip set: `Jobs`, `Past 24 hours`, and `Entry-level`.
+- Start LinkedIn from Liam's usual Chrome chip set: `Jobs` and `Past 24 hours`.
 - When available in the saved LinkedIn view, also use the chips that commonly appear in Liam's workflow such as `Remote`, `Frontend`, `Gaming`, `Web`, `Java`, `Easy Apply`, `Employment type`, `Company`, `Under 10 applicants`, and `In my network`.
-- Treat these extra chips as targeting and ranking helpers, not hard exclusions, when they would otherwise hide strong early-career SWE roles that fit Liam well.
+- Do not require the `Entry-level` chip. Judge fit from the actual title and posting, favoring roles like Software Engineer, SWE I, SWE II, founding engineer, generalist, forward-deployed, backend, full-stack, platform, and applied AI.
+- Treat these extra chips as targeting and ranking helpers, not hard exclusions, when they would otherwise hide strong plausible SWE roles that fit Liam well.
 
 ## Capture Depth
 
