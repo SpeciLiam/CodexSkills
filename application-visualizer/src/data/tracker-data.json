@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T02:00:57.855372+00:00",
+  "generatedAt": "2026-05-02T02:13:51.143456+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,8 +9,8 @@
   "stats": {
     "kpis": {
       "total": 331,
-      "applied": 283,
-      "unapplied": 48,
+      "applied": 285,
+      "unapplied": 46,
       "active": 262,
       "rejected": 44,
       "interviewing": 3,
@@ -20,13 +20,13 @@
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 85.5,
-      "rejectionRate": 15.5
+      "applyRate": 86.1,
+      "rejectionRate": 15.4
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 232
+        "value": 234
       },
       {
         "name": "Rejected",
@@ -38,11 +38,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 20
-      },
-      {
-        "name": "Resume Tailored",
-        "value": 4
+        "value": 21
       },
       {
         "name": "Interviewing",
@@ -51,6 +47,10 @@
       {
         "name": "Online Assessment",
         "value": 3
+      },
+      {
+        "name": "Resume Tailored",
+        "value": 1
       }
     ],
     "sourceCounts": [
@@ -386,7 +386,7 @@
         "date": "2026-05-01",
         "cumulative": 331,
         "added": 34,
-        "applied": 18,
+        "applied": 20,
         "rejected": 1,
         "interviewing": 0
       }
@@ -9583,7 +9583,7 @@
       "company": "Apple",
       "role": "Software Engineer, Apple Game Services",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -9598,15 +9598,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: Apple Account sign-in required before application form 2026-05-01",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-01"
+      ]
     },
     {
       "company": "qlaud",
       "role": "Software Engineer New Grad",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -9621,17 +9623,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for qlaud Software Engineer New Grad remote role 2026-05-01; emphasized Java/Python/TypeScript, backend systems, REST APIs, production validation, debugging, on-call investigations, fast shipping, and side-project product ownership. Did not claim direct qlaud platform, model-routing infrastructure, or deep LLM serving experience.",
+      "notes": "Tailored for qlaud Software Engineer New Grad remote role 2026-05-01; emphasized Java/Python/TypeScript, backend systems, REST APIs, production validation, debugging, on-call investigations, fast shipping, and side-project product ownership. Did not claim direct qlaud platform, model-routing infrastructure, or deep LLM serving experience.; Application submitted 2026-05-01; qlaud confirmation page displayed and confirmation email sent",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-01",
         "2026-05-01"
       ]
     },
     {
       "company": "Affirm",
       "role": "Software Engineer I, Full-Stack (Home and Search Experience)",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -9646,9 +9649,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Affirm Software Engineer I full-stack Home and Search Experience role 2026-05-01; emphasized Python, backend/API systems, search and discovery, OpenSearch, React/NestJS, reliability, testing, and cross-functional product execution. Did not claim Kotlin or Kubernetes experience.",
+      "notes": "Tailored for Affirm Software Engineer I full-stack Home and Search Experience role 2026-05-01; emphasized Python, backend/API systems, search and discovery, OpenSearch, React/NestJS, reliability, testing, and cross-functional product execution. Did not claim Kotlin or Kubernetes experience.; Application submitted 2026-05-01; Greenhouse confirmation page displayed",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-01",
         "2026-05-01"
       ]
     },
