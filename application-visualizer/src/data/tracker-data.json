@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T01:36:57.240415+00:00",
+  "generatedAt": "2026-05-02T02:00:57.855372+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,8 +9,8 @@
   "stats": {
     "kpis": {
       "total": 331,
-      "applied": 279,
-      "unapplied": 52,
+      "applied": 283,
+      "unapplied": 48,
       "active": 262,
       "rejected": 44,
       "interviewing": 3,
@@ -20,13 +20,13 @@
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 84.3,
-      "rejectionRate": 15.8
+      "applyRate": 85.5,
+      "rejectionRate": 15.5
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 228
+        "value": 232
       },
       {
         "name": "Rejected",
@@ -38,11 +38,11 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 17
+        "value": 20
       },
       {
         "name": "Resume Tailored",
-        "value": 11
+        "value": 4
       },
       {
         "name": "Interviewing",
@@ -386,7 +386,7 @@
         "date": "2026-05-01",
         "cumulative": 331,
         "added": 34,
-        "applied": 14,
+        "applied": 18,
         "rejected": 1,
         "interviewing": 0
       }
@@ -10263,8 +10263,8 @@
     {
       "company": "Next Insurance",
       "role": "Backend Engineer - DevEx Team",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -10279,17 +10279,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01; Greenhouse confirmation page displayed",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-01",
         "2026-05-01"
       ]
     },
     {
       "company": "xAI",
       "role": "Backend Engineer - API",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 7,
       "reachOut": true,
       "referral": "No",
@@ -10304,17 +10305,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01 with tailored resume and resume-grounded exceptional-work response; Greenhouse confirmation page displayed",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-01",
         "2026-05-01"
       ]
     },
     {
       "company": "Divergent",
       "role": "Full Stack Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -10329,9 +10331,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01; Greenhouse confirmation page displayed",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-01",
         "2026-05-01"
       ]
     },
@@ -10339,7 +10342,7 @@
       "company": "Whop",
       "role": "Full Stack Engineer, Ad Networks",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -10354,9 +10357,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required custom personal project and LLM/social profile responses; not submitted 2026-05-01",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-01",
         "2026-05-01"
       ]
     },
@@ -10364,7 +10368,7 @@
       "company": "Formic",
       "role": "Full Stack Software Engineer - Robotics",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -10379,17 +10383,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required custom robotics/edge, observability, and distributed-systems experience responses; not submitted 2026-05-01",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-01",
         "2026-05-01"
       ]
     },
     {
       "company": "Empower Pharmacy",
       "role": "Full Stack Developer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -10404,9 +10409,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01; Greenhouse confirmation page displayed",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-01",
         "2026-05-01"
       ]
     },
@@ -10414,7 +10420,7 @@
       "company": "Revolutional, LLC",
       "role": "Full Stack .NET Developer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 7,
       "reachOut": true,
       "referral": "No",
@@ -10429,9 +10435,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required salary expectation and active security clearance/Security+ qualification fields; not submitted 2026-05-01",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-01",
         "2026-05-01"
       ]
     }
