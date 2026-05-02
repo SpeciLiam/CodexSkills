@@ -333,6 +333,91 @@ def engineer_batch_stats(rows: list[dict[str, Any]]) -> dict[str, int]:
     }
 
 
+def role_bucket_key(row: dict[str, Any]) -> str:
+    return row["postingKey"] or f"{row['company'].strip().lower()}|{row['role'].strip().lower()}"
+
+
+def is_active_outreach_row(row: dict[str, Any]) -> bool:
+    outcome = row["outcome"].lower()
+    return outcome not in {"sent", "skipped", "blocked"}
+
+
+def outreach_state(row: dict[str, Any], lane: str) -> str:
+    name_key = "recruiterName" if lane == "recruiter" else "engineerName"
+    profile_key = "recruiterProfile" if lane == "recruiter" else "engineerProfile"
+    has_contact = bool(row[name_key] or row[profile_key])
+    if not has_contact:
+        return "Needs label"
+    if row["approval"].lower() == "approved":
+        return "Approved, not sent"
+    return "Labeled, needs approval"
+
+
+def outreach_contact(row: dict[str, Any], lane: str) -> dict[str, Any]:
+    name_key = "recruiterName" if lane == "recruiter" else "engineerName"
+    profile_key = "recruiterProfile" if lane == "recruiter" else "engineerProfile"
+    position_key = "recruiterPosition" if lane == "recruiter" else "engineerPosition"
+    return {
+        "lane": lane,
+        "name": row[name_key],
+        "profile": row[profile_key],
+        "position": row[position_key],
+        "approval": row["approval"],
+        "outcome": row["outcome"],
+        "route": row["route"],
+        "connectionNote": row["connectionNote"],
+        "lastChecked": row["lastChecked"],
+        "notes": row["notes"],
+    }
+
+
+def build_outreach_role_buckets(rows: list[dict[str, Any]], lane: str, sent: bool) -> list[dict[str, Any]]:
+    groups: dict[str, dict[str, Any]] = {}
+    selected_rows = [row for row in rows if (row["outcome"].lower() == "sent") == sent]
+    if not sent:
+        selected_rows = [row for row in selected_rows if is_active_outreach_row(row)]
+
+    for row in selected_rows:
+        key = role_bucket_key(row)
+        group = groups.setdefault(
+            key,
+            {
+                "key": key,
+                "company": row["company"],
+                "role": row["role"],
+                "fitScore": row["fitScore"],
+                "status": row["status"],
+                "count": 0,
+                "states": [],
+                "contacts": [],
+            },
+        )
+        group["fitScore"] = max(group["fitScore"], row["fitScore"])
+        group["count"] += 1
+        contact = outreach_contact(row, lane)
+        if contact["name"] or contact["profile"]:
+            group["contacts"].append(contact)
+        if not sent:
+            state = outreach_state(row, lane)
+            if state not in group["states"]:
+                group["states"].append(state)
+
+    return sorted(groups.values(), key=lambda item: (item["fitScore"], item["count"], item["company"]), reverse=True)
+
+
+def build_outreach_buckets(recruiter_rows: list[dict[str, Any]], engineer_rows: list[dict[str, Any]]) -> dict[str, Any]:
+    return {
+        "recruiter": {
+            "activeRoles": build_outreach_role_buckets(recruiter_rows, "recruiter", sent=False),
+            "sentRoles": build_outreach_role_buckets(recruiter_rows, "recruiter", sent=True),
+        },
+        "engineer": {
+            "activeRoles": build_outreach_role_buckets(engineer_rows, "engineer", sent=False),
+            "sentRoles": build_outreach_role_buckets(engineer_rows, "engineer", sent=True),
+        },
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Refresh application visualizer JSON data.")
     parser.add_argument("--applications", type=Path, default=APPLICATIONS_MD)
@@ -387,6 +472,7 @@ def main() -> None:
         "prospects": prospects,
         "recruiterBatch": recruiter_batch,
         "engineerBatch": engineer_batch,
+        "outreachBuckets": build_outreach_buckets(recruiter_batch, engineer_batch),
     }
 
     args.output.parent.mkdir(parents=True, exist_ok=True)

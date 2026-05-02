@@ -1092,23 +1092,66 @@ select option {
   margin-top: 2px;
 }
 
-.reached-out-table tr.expanded td {
-  background: rgba(85, 214, 190, .06);
+.batch-section-heading.compact button {
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  color: #e5edf7;
+  border-radius: 8px;
+  font-weight: 800;
 }
 
-.reached-out-details td {
-  padding: 0;
-  background: rgba(3, 7, 18, .34);
+.sent-modal-list {
+  display: grid;
+  gap: 12px;
 }
 
-.reached-out-details td > div {
+.sent-role-group {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid rgba(255,255,255,.09);
+  background: rgba(3, 7, 18, .24);
+  border-radius: 8px;
+}
+
+.sent-role-group > header {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr) 34px;
+  gap: 10px;
+  align-items: start;
+}
+
+.sent-role-group > header > span {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  min-height: 32px;
+  color: #06111e;
+  background: #8dd7cf;
+  border-radius: 8px;
+  font-weight: 950;
+}
+
+.sent-role-group p {
+  margin-top: 3px;
+  color: #95a8bd;
+  font-size: 13px;
+}
+
+.sent-role-group b {
+  color: #f7b267;
+  font-size: 20px;
+}
+
+.reached-out-contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 10px;
-  padding: 12px;
 }
 
-.reached-out-details article {
+.reached-out-contact-grid article {
   display: grid;
   gap: 6px;
   padding: 12px;
@@ -1117,7 +1160,7 @@ select option {
   border-radius: 8px;
 }
 
-.reached-out-details article > span {
+.reached-out-contact-grid article > span {
   width: max-content;
   padding: 4px 7px;
   color: #06111e;
@@ -1128,7 +1171,7 @@ select option {
   text-transform: capitalize;
 }
 
-.reached-out-details a {
+.reached-out-contact-grid a {
   display: inline-flex;
   align-items: center;
   gap: 6px;

@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import {
   Activity,
   ArrowUpRight,
@@ -44,7 +44,7 @@ import {
 } from "recharts";
 import rawData from "./data/tracker-data.json";
 import { hostFromUrl, percent, readableDate } from "./lib/format";
-import type { Application, EngineerBatch, Prospect, RecruiterBatch, TrackerData } from "./lib/types";
+import type { Application, EngineerBatch, OutreachRoleBucket, Prospect, RecruiterBatch, TrackerData } from "./lib/types";
 
 const data = rawData as TrackerData;
 
@@ -288,7 +288,8 @@ function App() {
   const [openOutreachLane, setOpenOutreachLane] = useState<"recruiter" | "engineer" | null>(null);
   const [openBatchLane, setOpenBatchLane] = useState<"recruiter" | "engineer" | null>(null);
   const [selectedOutreach, setSelectedOutreach] = useState<{ app: Application; lane: "recruiter" | "engineer" } | null>(null);
-  const [openReachedOutRole, setOpenReachedOutRole] = useState("");
+  const [selectedReachedOutRole, setSelectedReachedOutRole] = useState<{ lane: "recruiter" | "engineer"; group: OutreachRoleBucket } | null>(null);
+  const [openReachedOutLane, setOpenReachedOutLane] = useState<"recruiter" | "engineer" | null>(null);
   const [copiedResumePath, setCopiedResumePath] = useState("");
   const [ignoredBatchContacts, setIgnoredBatchContacts] = useState<Set<string>>(() => readIgnoredBatchContacts());
 
@@ -367,10 +368,17 @@ function App() {
   );
   const reachedOutRoleGroups = useMemo(
     () => ({
-      recruiter: buildReachedOutRoleGroups(data.recruiterBatch || [], "recruiter"),
-      engineer: buildReachedOutRoleGroups(data.engineerBatch || [], "engineer"),
+      recruiter: data.outreachBuckets?.recruiter.sentRoles || buildReachedOutRoleGroups(data.recruiterBatch || [], "recruiter"),
+      engineer: data.outreachBuckets?.engineer.sentRoles || buildReachedOutRoleGroups(data.engineerBatch || [], "engineer"),
     }),
     [],
+  );
+  const activeRoleGroups = useMemo(
+    () => ({
+      recruiter: data.outreachBuckets?.recruiter.activeRoles || buildActiveRoleGroups(recruiterBatch, "recruiter", ignoredBatchContacts),
+      engineer: data.outreachBuckets?.engineer.activeRoles || buildActiveRoleGroups(engineerBatch, "engineer", ignoredBatchContacts),
+    }),
+    [recruiterBatch, engineerBatch, ignoredBatchContacts],
   );
 
   const radarData = useMemo(
@@ -639,22 +647,22 @@ function App() {
               <p>Fact-check labeled LinkedIn contacts before approval. Engineer is separate from recruiter.</p>
             </div>
             <div className="lane-role-grid">
-              <ActiveLaneRolesTable lane="recruiter" rows={recruiterBatch} ignoredContacts={ignoredBatchContacts} onOpenLane={setOpenBatchLane} />
-              <ActiveLaneRolesTable lane="engineer" rows={engineerBatch} ignoredContacts={ignoredBatchContacts} onOpenLane={setOpenBatchLane} />
+              <ActiveLaneRolesTable lane="recruiter" groups={filterIgnoredRoleBuckets(activeRoleGroups.recruiter, ignoredBatchContacts, "recruiter")} onOpenLane={setOpenBatchLane} />
+              <ActiveLaneRolesTable lane="engineer" groups={filterIgnoredRoleBuckets(activeRoleGroups.engineer, ignoredBatchContacts, "engineer")} onOpenLane={setOpenBatchLane} />
             </div>
           </section>
           <div className="lane-role-grid reached-out-grid">
             <ReachedOutRolesTable
               lane="recruiter"
               groups={reachedOutRoleGroups.recruiter}
-              openKey={openReachedOutRole}
-              onToggle={(key) => setOpenReachedOutRole((current) => current === key ? "" : key)}
+              onOpenLane={setOpenReachedOutLane}
+              onOpenRole={(group) => setSelectedReachedOutRole({ lane: "recruiter", group })}
             />
             <ReachedOutRolesTable
               lane="engineer"
               groups={reachedOutRoleGroups.engineer}
-              openKey={openReachedOutRole}
-              onToggle={(key) => setOpenReachedOutRole((current) => current === key ? "" : key)}
+              onOpenLane={setOpenReachedOutLane}
+              onOpenRole={(group) => setSelectedReachedOutRole({ lane: "engineer", group })}
             />
           </div>
         </Panel>
@@ -690,6 +698,22 @@ function App() {
 
       {openBatchLane === "recruiter" && (
         <RecruiterBatchModal rows={recruiterBatch} ignoredContacts={ignoredBatchContacts} onClose={() => setOpenBatchLane(null)} onIgnore={ignoreBatchContact} />
+      )}
+
+      {openReachedOutLane && (
+        <ReachedOutLaneModal
+          lane={openReachedOutLane}
+          groups={openReachedOutLane === "recruiter" ? reachedOutRoleGroups.recruiter : reachedOutRoleGroups.engineer}
+          onClose={() => setOpenReachedOutLane(null)}
+        />
+      )}
+
+      {selectedReachedOutRole && (
+        <ReachedOutRoleModal
+          lane={selectedReachedOutRole.lane}
+          group={selectedReachedOutRole.group}
+          onClose={() => setSelectedReachedOutRole(null)}
+        />
       )}
 
       {selectedOutreach && (
@@ -975,16 +999,13 @@ function OutreachLane({
 
 function ActiveLaneRolesTable({
   lane,
-  rows,
-  ignoredContacts,
+  groups,
   onOpenLane,
 }: {
   lane: "recruiter" | "engineer";
-  rows: Array<RecruiterBatch | EngineerBatch>;
-  ignoredContacts: Set<string>;
+  groups: OutreachRoleBucket[];
   onOpenLane: (lane: "recruiter" | "engineer") => void;
 }) {
-  const groups = buildActiveRoleGroups(rows, lane, ignoredContacts);
   const labels = lane === "recruiter"
     ? { eyebrow: "Recruiters", title: "Recruiter work", person: "Recruiter" }
     : { eyebrow: "Engineers", title: "Engineer work", person: "Engineer" };
@@ -1037,13 +1058,13 @@ function ActiveLaneRolesTable({
 function ReachedOutRolesTable({
   lane,
   groups,
-  openKey,
-  onToggle,
+  onOpenLane,
+  onOpenRole,
 }: {
   lane: "recruiter" | "engineer";
-  groups: ReachedOutRoleGroup[];
-  openKey: string;
-  onToggle: (key: string) => void;
+  groups: OutreachRoleBucket[];
+  onOpenLane: (lane: "recruiter" | "engineer") => void;
+  onOpenRole: (group: OutreachRoleBucket) => void;
 }) {
   const labels = lane === "recruiter"
     ? { eyebrow: "Recruiters sent", title: "Recruiter sent history", empty: "No recruiter sends are recorded yet." }
@@ -1055,7 +1076,7 @@ function ReachedOutRolesTable({
           <span>{labels.eyebrow}</span>
           <h4>{labels.title}</h4>
         </div>
-        <p>Click a role to see every contact already logged as sent.</p>
+        <button type="button" onClick={() => onOpenLane(lane)}>View all</button>
       </div>
       <div className="role-table-wrap">
         <table className="role-table reached-out-table">
@@ -1069,39 +1090,18 @@ function ReachedOutRolesTable({
             </tr>
           </thead>
           <tbody>
-            {groups.map((group, index) => {
-              const isOpen = openKey === group.key;
-              return (
-                <Fragment key={group.key}>
-                  <tr className={isOpen ? "expanded" : ""}>
-                    <td>{index + 1}</td>
-                    <td>
-                      <strong>{group.company}</strong>
-                      <small>{group.role}</small>
-                    </td>
-                    <td><b>{group.contacts.length}</b></td>
-                    <td><ContactPillList contacts={group.contacts.map((contact) => contact.name)} empty="None" /></td>
-                    <td><button type="button" onClick={() => onToggle(group.key)}>{isOpen ? "Hide" : "View"}</button></td>
-                  </tr>
-                  {isOpen && (
-                    <tr className="reached-out-details">
-                      <td colSpan={5}>
-                        <div>
-                          {group.contacts.map((contact) => (
-                            <article key={`${contact.lane}-${contact.name}-${contact.profile}`}>
-                              <span>{contact.lane}</span>
-                              <strong>{contact.name}</strong>
-                              <small>{contact.position || "No title recorded"}</small>
-                              {contact.profile && <a href={contact.profile} target="_blank" rel="noreferrer"><ArrowUpRight size={15} /> LinkedIn</a>}
-                            </article>
-                          ))}
-                        </div>
-                      </td>
-                    </tr>
-                  )}
-                </Fragment>
-              );
-            })}
+            {groups.map((group, index) => (
+              <tr key={group.key}>
+                <td>{index + 1}</td>
+                <td>
+                  <strong>{group.company}</strong>
+                  <small>{group.role}</small>
+                </td>
+                <td><b>{group.contacts.length}</b></td>
+                <td><ContactPillList contacts={group.contacts.map((contact) => contact.name)} empty="None" /></td>
+                <td><button type="button" onClick={() => onOpenRole(group)}>View</button></td>
+              </tr>
+            ))}
             {!groups.length && (
               <tr>
                 <td colSpan={5}>{labels.empty}</td>
@@ -1384,6 +1384,90 @@ function EngineerBatchModal({
   );
 }
 
+function ReachedOutLaneModal({
+  lane,
+  groups,
+  onClose,
+}: {
+  lane: "recruiter" | "engineer";
+  groups: OutreachRoleBucket[];
+  onClose: () => void;
+}) {
+  const title = lane === "recruiter" ? "Recruiter Sent History" : "Engineer Sent History";
+  return (
+    <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
+      <section className="outreach-modal batch-modal" role="dialog" aria-modal="true" aria-label={title} onMouseDown={(event) => event.stopPropagation()}>
+        <header>
+          <div>
+            <p className="eyebrow">{lane === "recruiter" ? "Recruiters sent" : "Engineers sent"}</p>
+            <h2>{title}</h2>
+            <p>{groups.reduce((sum, group) => sum + group.contacts.length, 0)} contacts across {groups.length} roles.</p>
+          </div>
+          <button onClick={onClose} type="button" aria-label="Close"><X size={18} /></button>
+        </header>
+        <div className="modal-list sent-modal-list">
+          {groups.map((group, index) => (
+            <section className="sent-role-group" key={group.key}>
+              <header>
+                <span>{index + 1}</span>
+                <div>
+                  <strong>{group.company}</strong>
+                  <p>{group.role}</p>
+                </div>
+                <b>{group.contacts.length}</b>
+              </header>
+              <ReachedOutContactGrid contacts={group.contacts} />
+            </section>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function ReachedOutRoleModal({
+  lane,
+  group,
+  onClose,
+}: {
+  lane: "recruiter" | "engineer";
+  group: OutreachRoleBucket;
+  onClose: () => void;
+}) {
+  return (
+    <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
+      <section className="outreach-modal batch-modal" role="dialog" aria-modal="true" aria-label={`${group.company} sent ${lane} contacts`} onMouseDown={(event) => event.stopPropagation()}>
+        <header>
+          <div>
+            <p className="eyebrow">{lane === "recruiter" ? "Recruiters sent" : "Engineers sent"}</p>
+            <h2>{group.company}</h2>
+            <p>{group.role}</p>
+          </div>
+          <button onClick={onClose} type="button" aria-label="Close"><X size={18} /></button>
+        </header>
+        <div className="modal-list sent-modal-list">
+          <ReachedOutContactGrid contacts={group.contacts} />
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function ReachedOutContactGrid({ contacts }: { contacts: OutreachRoleBucket["contacts"] }) {
+  return (
+    <div className="reached-out-contact-grid">
+      {contacts.map((contact) => (
+        <article key={`${contact.lane}-${contact.name}-${contact.profile}`}>
+          <span>{contact.lane}</span>
+          <strong>{contact.name}</strong>
+          <small>{contact.position || "No title recorded"}</small>
+          {contact.profile && <a href={contact.profile} target="_blank" rel="noreferrer"><ArrowUpRight size={15} /> LinkedIn</a>}
+        </article>
+      ))}
+    </div>
+  );
+}
+
 function BatchModalControls({
   total,
   visible,
@@ -1645,27 +1729,6 @@ type ActionLane = {
   apps: Application[];
 };
 
-type ActiveRoleGroup = {
-  key: string;
-  company: string;
-  role: string;
-  fitScore: number;
-  contacts: Array<{ name: string; profile: string }>;
-  states: string[];
-};
-
-type ReachedOutRoleGroup = {
-  key: string;
-  company: string;
-  role: string;
-  contacts: Array<{
-    lane: "recruiter" | "engineer";
-    name: string;
-    position: string;
-    profile: string;
-  }>;
-};
-
 function ActionMatrix({ apps }: { apps: Application[] }) {
   const lanes = useMemo(() => buildActionLanes(apps), [apps]);
   return (
@@ -1842,18 +1905,20 @@ function roleGroupKey(row: { postingKey: string; company: string; role: string }
   return row.postingKey || `${normalizeKey(row.company)}|${normalizeKey(row.role)}`;
 }
 
-function ensureActiveGroup(groups: Map<string, ActiveRoleGroup>, row: { postingKey: string; company: string; role: string; fitScore: number }) {
+function ensureActiveGroup(groups: Map<string, OutreachRoleBucket>, row: { postingKey: string; company: string; role: string; fitScore: number; status: string }) {
   const key = roleGroupKey(row);
   const current = groups.get(key);
   if (current) {
     current.fitScore = Math.max(current.fitScore, row.fitScore || 0);
     return current;
   }
-  const next: ActiveRoleGroup = {
+  const next: OutreachRoleBucket = {
     key,
     company: row.company,
     role: row.role,
     fitScore: row.fitScore || 0,
+    status: row.status,
+    count: 0,
     contacts: [],
     states: [],
   };
@@ -1862,27 +1927,42 @@ function ensureActiveGroup(groups: Map<string, ActiveRoleGroup>, row: { postingK
 }
 
 function buildActiveRoleGroups(rows: Array<RecruiterBatch | EngineerBatch>, lane: "recruiter" | "engineer", ignoredContacts: Set<string>) {
-  const groups = new Map<string, ActiveRoleGroup>();
+  const groups = new Map<string, OutreachRoleBucket>();
   rows
     .filter((row) => isActiveBatchWork(row) && !ignoredContacts.has(lane === "recruiter" ? recruiterBatchIgnoreKey(row as RecruiterBatch) : engineerBatchIgnoreKey(row as EngineerBatch)))
     .forEach((row) => {
       const group = ensureActiveGroup(groups, row);
       const name = lane === "recruiter" ? (row as RecruiterBatch).recruiterName : (row as EngineerBatch).engineerName;
       const profile = lane === "recruiter" ? (row as RecruiterBatch).recruiterProfile : (row as EngineerBatch).engineerProfile;
+      const position = lane === "recruiter" ? (row as RecruiterBatch).recruiterPosition : (row as EngineerBatch).engineerPosition;
       const state = activeBatchState(row, lane);
-      if (name || profile) group.contacts.push({ name: name || "Unnamed contact", profile });
+      group.count += 1;
+      if (name || profile) {
+        group.contacts.push({
+          lane,
+          name: name || "Unnamed contact",
+          profile,
+          position,
+          approval: row.approval,
+          outcome: row.outcome,
+          route: row.route,
+          connectionNote: row.connectionNote,
+          lastChecked: row.lastChecked,
+          notes: row.notes,
+        });
+      }
       if (!group.states.includes(state)) group.states.push(state);
     });
   return [...groups.values()].sort((a, b) => b.fitScore - a.fitScore || a.company.localeCompare(b.company));
 }
 
 function buildReachedOutRoleGroups(rows: Array<RecruiterBatch | EngineerBatch>, lane: "recruiter" | "engineer") {
-  const groups = new Map<string, ReachedOutRoleGroup>();
+  const groups = new Map<string, OutreachRoleBucket>();
   const ensure = (row: { postingKey: string; company: string; role: string }) => {
     const key = `${lane}|${roleGroupKey(row)}`;
     const current = groups.get(key);
     if (current) return current;
-    const next: ReachedOutRoleGroup = { key, company: row.company, role: row.role, contacts: [] };
+    const next: OutreachRoleBucket = { key, company: row.company, role: row.role, fitScore: 0, status: "", count: 0, states: [], contacts: [] };
     groups.set(key, next);
     return next;
   };
@@ -1892,14 +1972,33 @@ function buildReachedOutRoleGroups(rows: Array<RecruiterBatch | EngineerBatch>, 
       const name = lane === "recruiter" ? (row as RecruiterBatch).recruiterName : (row as EngineerBatch).engineerName;
       const position = lane === "recruiter" ? (row as RecruiterBatch).recruiterPosition : (row as EngineerBatch).engineerPosition;
       const profile = lane === "recruiter" ? (row as RecruiterBatch).recruiterProfile : (row as EngineerBatch).engineerProfile;
-      ensure(row).contacts.push({
+      const group = ensure(row);
+      group.fitScore = Math.max(group.fitScore, row.fitScore || 0);
+      group.status = row.status;
+      group.count += 1;
+      group.contacts.push({
         lane,
         name: name || (lane === "recruiter" ? "Recruiter" : "Engineer"),
         position,
         profile,
+        approval: row.approval,
+        outcome: row.outcome,
+        route: row.route,
+        connectionNote: row.connectionNote,
+        lastChecked: row.lastChecked,
+        notes: row.notes,
       });
     });
   return [...groups.values()].sort((a, b) => b.contacts.length - a.contacts.length || a.company.localeCompare(b.company));
+}
+
+function filterIgnoredRoleBuckets(groups: OutreachRoleBucket[], ignoredContacts: Set<string>, lane: "recruiter" | "engineer") {
+  return groups
+    .map((group) => {
+      const contacts = group.contacts.filter((contact) => !ignoredContacts.has(batchIgnoreKey(lane, group.key, contact.name, contact.profile)));
+      return { ...group, contacts };
+    })
+    .filter((group) => group.contacts.length || group.states.includes("Needs label"));
 }
 
 function isActiveBatchWork(row: RecruiterBatch | EngineerBatch) {

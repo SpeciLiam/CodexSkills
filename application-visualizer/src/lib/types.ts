@@ -90,6 +90,41 @@ export type EngineerBatch = {
   notes: string;
 };
 
+export type OutreachContactSummary = {
+  lane: "recruiter" | "engineer";
+  name: string;
+  profile: string;
+  position: string;
+  approval: string;
+  outcome: string;
+  route: string;
+  connectionNote: string;
+  lastChecked: string;
+  notes: string;
+};
+
+export type OutreachRoleBucket = {
+  key: string;
+  company: string;
+  role: string;
+  fitScore: number;
+  status: string;
+  count: number;
+  states: string[];
+  contacts: OutreachContactSummary[];
+};
+
+export type OutreachBuckets = {
+  recruiter: {
+    activeRoles: OutreachRoleBucket[];
+    sentRoles: OutreachRoleBucket[];
+  };
+  engineer: {
+    activeRoles: OutreachRoleBucket[];
+    sentRoles: OutreachRoleBucket[];
+  };
+};
+
 export type TrackerData = {
   generatedAt: string;
   sourceFiles: {
@@ -140,4 +175,5 @@ export type TrackerData = {
   prospects: Prospect[];
   recruiterBatch?: RecruiterBatch[];
   engineerBatch?: EngineerBatch[];
+  outreachBuckets?: OutreachBuckets;
 };
