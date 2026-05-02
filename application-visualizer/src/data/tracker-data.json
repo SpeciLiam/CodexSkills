@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T00:20:11.363355+00:00",
+  "generatedAt": "2026-05-02T01:02:47.069615+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -8,25 +8,25 @@
   },
   "stats": {
     "kpis": {
-      "total": 311,
-      "applied": 276,
-      "unapplied": 35,
-      "active": 242,
+      "total": 321,
+      "applied": 278,
+      "unapplied": 43,
+      "active": 252,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 198,
-      "reachOut": 254,
+      "highFit": 207,
+      "reachOut": 264,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 88.7,
-      "rejectionRate": 15.9
+      "applyRate": 86.6,
+      "rejectionRate": 15.8
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 225
+        "value": 227
       },
       {
         "name": "Rejected",
@@ -37,12 +37,12 @@
         "value": 25
       },
       {
-        "name": "Manual Apply Needed",
-        "value": 7
+        "name": "Resume Tailored",
+        "value": 10
       },
       {
-        "name": "Resume Tailored",
-        "value": 4
+        "name": "Manual Apply Needed",
+        "value": 9
       },
       {
         "name": "Interviewing",
@@ -64,7 +64,7 @@
       },
       {
         "name": "Greenhouse",
-        "value": 42
+        "value": 52
       },
       {
         "name": "Company Site",
@@ -130,19 +130,19 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 144
+        "value": 147
       },
       {
         "name": "Bay Area",
-        "value": 98
+        "value": 99
       },
       {
         "name": "Other",
-        "value": 35
+        "value": 39
       },
       {
         "name": "Remote",
-        "value": 17
+        "value": 19
       },
       {
         "name": "Seattle",
@@ -160,15 +160,15 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 181
+        "value": 185
+      },
+      {
+        "name": "Full Stack",
+        "value": 36
       },
       {
         "name": "Backend",
         "value": 33
-      },
-      {
-        "name": "Full Stack",
-        "value": 32
       },
       {
         "name": "Forward Deployed",
@@ -176,11 +176,11 @@
       },
       {
         "name": "AI/ML",
-        "value": 20
+        "value": 21
       },
       {
         "name": "Infra/Platform",
-        "value": 11
+        "value": 12
       },
       {
         "name": "Data",
@@ -218,15 +218,15 @@
       },
       {
         "score": "7",
-        "count": 21
+        "count": 22
       },
       {
         "score": "8",
-        "count": 69
+        "count": 74
       },
       {
         "score": "9",
-        "count": 55
+        "count": 59
       },
       {
         "score": "10",
@@ -384,9 +384,9 @@
       },
       {
         "date": "2026-05-01",
-        "cumulative": 311,
-        "added": 14,
-        "applied": 11,
+        "cumulative": 321,
+        "added": 24,
+        "applied": 13,
         "rejected": 1,
         "interviewing": 0
       }
@@ -9919,6 +9919,260 @@
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Schonfeld",
+      "role": "Full Stack Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/schonfeld/jobs/7843972?gh_src=my.greenhouse.search",
+      "postingKey": "7843972",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Schonfeld/Full_Stack_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Schonfeld/Full_Stack_Engineer/Liam_Van_Resume/Liam_Van_Schonfeld.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Alarm.com",
+      "role": "Software Engineer II",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Centennial, CO",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/alarmcom/jobs/8505982002?gh_src=my.greenhouse.search",
+      "postingKey": "8505982002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Alarm.com/Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Alarm.com/Software_Engineer_II/Liam_Van_Resume/Liam_Van_Alarm.com.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Conga",
+      "role": "Software Engineer II - Full Stack",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Houston, TX",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/conga/jobs/5116390007?gh_src=my.greenhouse.search",
+      "postingKey": "5116390007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Conga/Software_Engineer_II_Full_Stack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Conga/Software_Engineer_II_Full_Stack/Liam_Van_Resume/Liam_Van_Conga.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required desired salary field; not submitted 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Parsec Automation Corp.",
+      "role": "Software Engineer II (AI Focus)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Anaheim, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/parsecautomationcorp/jobs/5199253008?gh_src=my.greenhouse.search",
+      "postingKey": "5199253008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Parsec Automation Corp./Software_Engineer_II_AI_Focus/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Parsec Automation Corp./Software_Engineer_II_AI_Focus/Liam_Van_Resume/Liam_Van_Parsec_Automation_Corp..pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required compensation-expectations alignment question; not submitted 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Kapitus",
+      "role": "Software Engineer II",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Remote - US",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/kapitus/jobs/4231980009?gh_src=my.greenhouse.search",
+      "postingKey": "4231980009",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Kapitus/Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Kapitus/Software_Engineer_II/Liam_Van_Resume/Liam_Van_Kapitus.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Future",
+      "role": "Infrastructure Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Remote",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/future/jobs/4685899005?gh_src=my.greenhouse.search",
+      "postingKey": "4685899005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Future/Infrastructure_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Future/Infrastructure_Engineer/Liam_Van_Resume/Liam_Van_Future.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Mill",
+      "role": "Software Development Engineer - Test",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 7,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "San Bruno, CA; San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/mill/jobs/4691800005?gh_src=my.greenhouse.search",
+      "postingKey": "4691800005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Mill/Software_Development_Engineer_Test/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Mill/Software_Development_Engineer_Test/Liam_Van_Resume/Liam_Van_Mill.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Rent the Runway",
+      "role": "Software Engineer III - Full Stack",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Brooklyn, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/renttherunway/jobs/7863495?gh_src=my.greenhouse.search",
+      "postingKey": "7863495",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Rent the Runway/Software_Engineer_III_Full_Stack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Rent the Runway/Software_Engineer_III_Full_Stack/Liam_Van_Resume/Liam_Van_Rent_the_Runway.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Spot & Tango",
+      "role": "Software Engineer, Full Stack",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://spotandtango.com/careers?gh_jid=4689411005&gh_src=my.greenhouse.search",
+      "postingKey": "4689411005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Spot & Tango/Software_Engineer_Full_Stack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Spot & Tango/Software_Engineer_Full_Stack/Liam_Van_Resume/Liam_Van_Spot_&_Tango.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Personalis, Inc",
+      "role": "Software Engineer 2",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Fremont, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/personalisinc/jobs/7587255003",
+      "postingKey": "7587255003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Personalis, Inc/Software_Engineer_2/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Personalis, Inc/Software_Engineer_2/Liam_Van_Resume/Liam_Van_Personalis,_Inc.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
         "2026-05-01"
       ]
     }
