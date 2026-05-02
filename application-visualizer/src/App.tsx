@@ -366,7 +366,10 @@ function App() {
     [],
   );
   const reachedOutRoleGroups = useMemo(
-    () => buildReachedOutRoleGroups(data.recruiterBatch || [], data.engineerBatch || []),
+    () => ({
+      recruiter: buildReachedOutRoleGroups(data.recruiterBatch || [], "recruiter"),
+      engineer: buildReachedOutRoleGroups(data.engineerBatch || [], "engineer"),
+    }),
     [],
   );
 
@@ -635,18 +638,25 @@ function App() {
               </div>
               <p>Fact-check labeled LinkedIn contacts before approval. Engineer is separate from recruiter.</p>
             </div>
-            <LabeledRolesTable
-              recruiterRows={recruiterBatch}
-              engineerRows={engineerBatch}
-              ignoredContacts={ignoredBatchContacts}
-              onOpenLane={setOpenBatchLane}
-            />
+            <div className="lane-role-grid">
+              <ActiveLaneRolesTable lane="recruiter" rows={recruiterBatch} ignoredContacts={ignoredBatchContacts} onOpenLane={setOpenBatchLane} />
+              <ActiveLaneRolesTable lane="engineer" rows={engineerBatch} ignoredContacts={ignoredBatchContacts} onOpenLane={setOpenBatchLane} />
+            </div>
           </section>
-          <ReachedOutRolesTable
-            groups={reachedOutRoleGroups}
-            openKey={openReachedOutRole}
-            onToggle={(key) => setOpenReachedOutRole((current) => current === key ? "" : key)}
-          />
+          <div className="lane-role-grid reached-out-grid">
+            <ReachedOutRolesTable
+              lane="recruiter"
+              groups={reachedOutRoleGroups.recruiter}
+              openKey={openReachedOutRole}
+              onToggle={(key) => setOpenReachedOutRole((current) => current === key ? "" : key)}
+            />
+            <ReachedOutRolesTable
+              lane="engineer"
+              groups={reachedOutRoleGroups.engineer}
+              openKey={openReachedOutRole}
+              onToggle={(key) => setOpenReachedOutRole((current) => current === key ? "" : key)}
+            />
+          </div>
         </Panel>
         <Panel title="Outreach Gaps" icon={<MailCheck />} info={INFO_COPY.gaps}>
           <div className="gap-list">
@@ -963,78 +973,89 @@ function OutreachLane({
   );
 }
 
-function LabeledRolesTable({
-  recruiterRows,
-  engineerRows,
+function ActiveLaneRolesTable({
+  lane,
+  rows,
   ignoredContacts,
   onOpenLane,
 }: {
-  recruiterRows: RecruiterBatch[];
-  engineerRows: EngineerBatch[];
+  lane: "recruiter" | "engineer";
+  rows: Array<RecruiterBatch | EngineerBatch>;
   ignoredContacts: Set<string>;
   onOpenLane: (lane: "recruiter" | "engineer") => void;
 }) {
-  const groups = buildLabeledRoleGroups(recruiterRows, engineerRows, ignoredContacts);
+  const groups = buildActiveRoleGroups(rows, lane, ignoredContacts);
+  const labels = lane === "recruiter"
+    ? { eyebrow: "Recruiters", title: "Recruiter work", person: "Recruiter" }
+    : { eyebrow: "Engineers", title: "Engineer work", person: "Engineer" };
   return (
-    <div className="role-table-wrap">
-      <table className="role-table">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Role</th>
-            <th>Recruiter labels</th>
-            <th>Engineer labels</th>
-            <th>Fit</th>
-            <th>Open</th>
-          </tr>
-        </thead>
-        <tbody>
-          {groups.map((group, index) => (
-            <tr key={group.key}>
-              <td>{index + 1}</td>
-              <td>
-                <strong>{group.company}</strong>
-                <small>{group.role}</small>
-              </td>
-              <td><ContactPillList contacts={group.recruiters.map((row) => row.recruiterName)} empty="None" /></td>
-              <td><ContactPillList contacts={group.engineers.map((row) => row.engineerName)} empty="None" /></td>
-              <td><b>{group.fitScore || "-"}</b></td>
-              <td>
-                <div className="role-table-actions">
-                  {group.recruiters.length > 0 && <button type="button" onClick={() => onOpenLane("recruiter")}>Recruiters</button>}
-                  {group.engineers.length > 0 && <button type="button" onClick={() => onOpenLane("engineer")}>Engineers</button>}
-                </div>
-              </td>
-            </tr>
-          ))}
-          {!groups.length && (
+    <section className={`lane-role-card ${lane}`}>
+      <header>
+        <div>
+          <span>{labels.eyebrow}</span>
+          <h4>{labels.title}</h4>
+          <p>Needs label, labeled but not approved, or approved but not sent.</p>
+        </div>
+        <button type="button" onClick={() => onOpenLane(lane)}>View all</button>
+      </header>
+      <div className="role-table-wrap">
+        <table className="role-table active-role-table">
+          <thead>
             <tr>
-              <td colSpan={6}>No labeled contacts are ready to review yet.</td>
+              <th>#</th>
+              <th>Role</th>
+              <th>{labels.person}</th>
+              <th>State</th>
+              <th>Fit</th>
             </tr>
-          )}
-        </tbody>
-      </table>
-    </div>
+          </thead>
+          <tbody>
+            {groups.map((group, index) => (
+              <tr key={group.key}>
+                <td>{index + 1}</td>
+                <td>
+                  <strong>{group.company}</strong>
+                  <small>{group.role}</small>
+                </td>
+                <td><ContactPillList contacts={group.contacts.map((contact) => contact.name)} empty="Needs label" /></td>
+                <td><WorkStatePills states={group.states} /></td>
+                <td><b>{group.fitScore || "-"}</b></td>
+              </tr>
+            ))}
+            {!groups.length && (
+              <tr>
+                <td colSpan={5}>No active {lane} rows need review.</td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
+    </section>
   );
 }
 
 function ReachedOutRolesTable({
+  lane,
   groups,
   openKey,
   onToggle,
 }: {
+  lane: "recruiter" | "engineer";
   groups: ReachedOutRoleGroup[];
   openKey: string;
   onToggle: (key: string) => void;
 }) {
+  const labels = lane === "recruiter"
+    ? { eyebrow: "Recruiters sent", title: "Recruiter sent history", empty: "No recruiter sends are recorded yet." }
+    : { eyebrow: "Engineers sent", title: "Engineer sent history", empty: "No engineer sends are recorded yet." };
   return (
-    <section className="reached-out-section">
+    <section className={`reached-out-section lane-role-card ${lane}`}>
       <div className="batch-section-heading compact">
         <div>
-          <span>Already messaged</span>
-          <h4>Reached Out by Role</h4>
+          <span>{labels.eyebrow}</span>
+          <h4>{labels.title}</h4>
         </div>
-        <p>Click a role to see every recruiter and engineer contact already logged as sent.</p>
+        <p>Click a role to see every contact already logged as sent.</p>
       </div>
       <div className="role-table-wrap">
         <table className="role-table reached-out-table">
@@ -1042,9 +1063,8 @@ function ReachedOutRolesTable({
             <tr>
               <th>#</th>
               <th>Role</th>
-              <th>Recruiters</th>
-              <th>Engineers</th>
-              <th>Total</th>
+              <th>Sent</th>
+              <th>Latest contact</th>
               <th>View</th>
             </tr>
           </thead>
@@ -1059,14 +1079,13 @@ function ReachedOutRolesTable({
                       <strong>{group.company}</strong>
                       <small>{group.role}</small>
                     </td>
-                    <td>{group.contacts.filter((contact) => contact.lane === "recruiter").length}</td>
-                    <td>{group.contacts.filter((contact) => contact.lane === "engineer").length}</td>
                     <td><b>{group.contacts.length}</b></td>
+                    <td><ContactPillList contacts={group.contacts.map((contact) => contact.name)} empty="None" /></td>
                     <td><button type="button" onClick={() => onToggle(group.key)}>{isOpen ? "Hide" : "View"}</button></td>
                   </tr>
                   {isOpen && (
                     <tr className="reached-out-details">
-                      <td colSpan={6}>
+                      <td colSpan={5}>
                         <div>
                           {group.contacts.map((contact) => (
                             <article key={`${contact.lane}-${contact.name}-${contact.profile}`}>
@@ -1085,7 +1104,7 @@ function ReachedOutRolesTable({
             })}
             {!groups.length && (
               <tr>
-                <td colSpan={6}>No sent outreach is recorded yet.</td>
+                <td colSpan={5}>{labels.empty}</td>
               </tr>
             )}
           </tbody>
@@ -1102,6 +1121,14 @@ function ContactPillList({ contacts, empty }: { contacts: string[]; empty: strin
     <div className="contact-pills">
       {visible.slice(0, 3).map((contact) => <span key={contact}>{contact}</span>)}
       {visible.length > 3 && <em>+{visible.length - 3}</em>}
+    </div>
+  );
+}
+
+function WorkStatePills({ states }: { states: string[] }) {
+  return (
+    <div className="state-pills">
+      {states.map((state) => <span className={stateTone(state)} key={state}>{state}</span>)}
     </div>
   );
 }
@@ -1266,8 +1293,8 @@ function RecruiterBatchModal({
 }) {
   const [startIndex, setStartIndex] = useState(1);
   const [endIndex, setEndIndex] = useState("");
-  const labeledRows = rows.filter((row) => row.recruiterName && row.recruiterProfile && row.outcome.toLowerCase() !== "sent");
-  const availableRows = labeledRows.filter((row) => !ignoredContacts.has(recruiterBatchIgnoreKey(row)));
+  const activeRows = rows.filter((row) => isActiveBatchWork(row));
+  const availableRows = activeRows.filter((row) => !ignoredContacts.has(recruiterBatchIgnoreKey(row)));
   const visibleRows = sliceByOneBasedRange(availableRows, startIndex, endIndex);
   const firstVisibleIndex = oneBasedRangeStart(availableRows.length, startIndex);
   return (
@@ -1276,8 +1303,8 @@ function RecruiterBatchModal({
         <header>
           <div>
             <p className="eyebrow">Recruiter batch</p>
-            <h2>Labeled, Not Reached Out</h2>
-            <p>{availableRows.length} recruiter contacts ready for fact-checking. {labeledRows.length - availableRows.length} hidden locally.</p>
+            <h2>Recruiter Work Queue</h2>
+            <p>{availableRows.length} recruiter rows need label, approval, or send. {activeRows.length - availableRows.length} hidden locally.</p>
           </div>
           <button onClick={onClose} type="button" aria-label="Close"><X size={18} /></button>
         </header>
@@ -1318,8 +1345,8 @@ function EngineerBatchModal({
 }) {
   const [startIndex, setStartIndex] = useState(1);
   const [endIndex, setEndIndex] = useState("");
-  const labeledRows = rows.filter((row) => row.engineerName && row.engineerProfile && row.outcome.toLowerCase() !== "sent");
-  const availableRows = labeledRows.filter((row) => !ignoredContacts.has(engineerBatchIgnoreKey(row)));
+  const activeRows = rows.filter((row) => isActiveBatchWork(row));
+  const availableRows = activeRows.filter((row) => !ignoredContacts.has(engineerBatchIgnoreKey(row)));
   const visibleRows = sliceByOneBasedRange(availableRows, startIndex, endIndex);
   const firstVisibleIndex = oneBasedRangeStart(availableRows.length, startIndex);
   return (
@@ -1328,8 +1355,8 @@ function EngineerBatchModal({
         <header>
           <div>
             <p className="eyebrow">Engineer batch</p>
-            <h2>Labeled, Not Reached Out</h2>
-            <p>{availableRows.length} engineer or alumni contacts ready for fact-checking. {labeledRows.length - availableRows.length} hidden locally.</p>
+            <h2>Engineer Work Queue</h2>
+            <p>{availableRows.length} engineer or alumni rows need label, approval, or send. {activeRows.length - availableRows.length} hidden locally.</p>
           </div>
           <button onClick={onClose} type="button" aria-label="Close"><X size={18} /></button>
         </header>
@@ -1618,13 +1645,13 @@ type ActionLane = {
   apps: Application[];
 };
 
-type LabeledRoleGroup = {
+type ActiveRoleGroup = {
   key: string;
   company: string;
   role: string;
   fitScore: number;
-  recruiters: RecruiterBatch[];
-  engineers: EngineerBatch[];
+  contacts: Array<{ name: string; profile: string }>;
+  states: string[];
 };
 
 type ReachedOutRoleGroup = {
@@ -1815,67 +1842,85 @@ function roleGroupKey(row: { postingKey: string; company: string; role: string }
   return row.postingKey || `${normalizeKey(row.company)}|${normalizeKey(row.role)}`;
 }
 
-function ensureLabeledGroup(groups: Map<string, LabeledRoleGroup>, row: { postingKey: string; company: string; role: string; fitScore: number }) {
+function ensureActiveGroup(groups: Map<string, ActiveRoleGroup>, row: { postingKey: string; company: string; role: string; fitScore: number }) {
   const key = roleGroupKey(row);
   const current = groups.get(key);
   if (current) {
     current.fitScore = Math.max(current.fitScore, row.fitScore || 0);
     return current;
   }
-  const next: LabeledRoleGroup = {
+  const next: ActiveRoleGroup = {
     key,
     company: row.company,
     role: row.role,
     fitScore: row.fitScore || 0,
-    recruiters: [],
-    engineers: [],
+    contacts: [],
+    states: [],
   };
   groups.set(key, next);
   return next;
 }
 
-function buildLabeledRoleGroups(recruiterRows: RecruiterBatch[], engineerRows: EngineerBatch[], ignoredContacts: Set<string>) {
-  const groups = new Map<string, LabeledRoleGroup>();
-  recruiterRows
-    .filter((row) => row.recruiterName && row.recruiterProfile && !ignoredContacts.has(recruiterBatchIgnoreKey(row)))
-    .forEach((row) => ensureLabeledGroup(groups, row).recruiters.push(row));
-  engineerRows
-    .filter((row) => row.engineerName && row.engineerProfile && !ignoredContacts.has(engineerBatchIgnoreKey(row)))
-    .forEach((row) => ensureLabeledGroup(groups, row).engineers.push(row));
+function buildActiveRoleGroups(rows: Array<RecruiterBatch | EngineerBatch>, lane: "recruiter" | "engineer", ignoredContacts: Set<string>) {
+  const groups = new Map<string, ActiveRoleGroup>();
+  rows
+    .filter((row) => isActiveBatchWork(row) && !ignoredContacts.has(lane === "recruiter" ? recruiterBatchIgnoreKey(row as RecruiterBatch) : engineerBatchIgnoreKey(row as EngineerBatch)))
+    .forEach((row) => {
+      const group = ensureActiveGroup(groups, row);
+      const name = lane === "recruiter" ? (row as RecruiterBatch).recruiterName : (row as EngineerBatch).engineerName;
+      const profile = lane === "recruiter" ? (row as RecruiterBatch).recruiterProfile : (row as EngineerBatch).engineerProfile;
+      const state = activeBatchState(row, lane);
+      if (name || profile) group.contacts.push({ name: name || "Unnamed contact", profile });
+      if (!group.states.includes(state)) group.states.push(state);
+    });
   return [...groups.values()].sort((a, b) => b.fitScore - a.fitScore || a.company.localeCompare(b.company));
 }
 
-function buildReachedOutRoleGroups(recruiterRows: RecruiterBatch[], engineerRows: EngineerBatch[]) {
+function buildReachedOutRoleGroups(rows: Array<RecruiterBatch | EngineerBatch>, lane: "recruiter" | "engineer") {
   const groups = new Map<string, ReachedOutRoleGroup>();
   const ensure = (row: { postingKey: string; company: string; role: string }) => {
-    const key = roleGroupKey(row);
+    const key = `${lane}|${roleGroupKey(row)}`;
     const current = groups.get(key);
     if (current) return current;
     const next: ReachedOutRoleGroup = { key, company: row.company, role: row.role, contacts: [] };
     groups.set(key, next);
     return next;
   };
-  recruiterRows
+  rows
     .filter((row) => row.outcome.toLowerCase() === "sent")
     .forEach((row) => {
+      const name = lane === "recruiter" ? (row as RecruiterBatch).recruiterName : (row as EngineerBatch).engineerName;
+      const position = lane === "recruiter" ? (row as RecruiterBatch).recruiterPosition : (row as EngineerBatch).engineerPosition;
+      const profile = lane === "recruiter" ? (row as RecruiterBatch).recruiterProfile : (row as EngineerBatch).engineerProfile;
       ensure(row).contacts.push({
-        lane: "recruiter",
-        name: row.recruiterName || "Recruiter",
-        position: row.recruiterPosition,
-        profile: row.recruiterProfile,
-      });
-    });
-  engineerRows
-    .filter((row) => row.outcome.toLowerCase() === "sent")
-    .forEach((row) => {
-      ensure(row).contacts.push({
-        lane: "engineer",
-        name: row.engineerName || "Engineer",
-        position: row.engineerPosition,
-        profile: row.engineerProfile,
+        lane,
+        name: name || (lane === "recruiter" ? "Recruiter" : "Engineer"),
+        position,
+        profile,
       });
     });
   return [...groups.values()].sort((a, b) => b.contacts.length - a.contacts.length || a.company.localeCompare(b.company));
+}
+
+function isActiveBatchWork(row: RecruiterBatch | EngineerBatch) {
+  const outcome = row.outcome.toLowerCase();
+  return outcome !== "sent" && outcome !== "skipped" && outcome !== "blocked";
+}
+
+function activeBatchState(row: RecruiterBatch | EngineerBatch, lane: "recruiter" | "engineer") {
+  const approval = row.approval.toLowerCase();
+  const hasContact = lane === "recruiter"
+    ? Boolean((row as RecruiterBatch).recruiterName || (row as RecruiterBatch).recruiterProfile)
+    : Boolean((row as EngineerBatch).engineerName || (row as EngineerBatch).engineerProfile);
+  if (!hasContact) return "Needs label";
+  if (approval === "approved") return "Approved, not sent";
+  return "Labeled, needs approval";
+}
+
+function stateTone(state: string) {
+  if (state.startsWith("Approved")) return "approved";
+  if (state.startsWith("Labeled")) return "labeled";
+  return "research";
 }
 
 function oneBasedRangeStart(total: number, startIndex: number) {

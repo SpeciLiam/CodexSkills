@@ -897,6 +897,73 @@ select option {
   gap: 14px;
 }
 
+.lane-role-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.lane-role-card {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(3, 7, 18, .28);
+  border-radius: 8px;
+}
+
+.lane-role-card.engineer {
+  background:
+    linear-gradient(135deg, rgba(112, 161, 255, .1), transparent),
+    rgba(3, 7, 18, .28);
+}
+
+.lane-role-card > header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: start;
+}
+
+.lane-role-card header span {
+  display: inline-flex;
+  width: max-content;
+  max-width: 100%;
+  padding: 5px 8px;
+  color: #06111e;
+  background: #55d6be;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 950;
+}
+
+.lane-role-card.engineer header span {
+  background: #a7c7ff;
+}
+
+.lane-role-card h4 {
+  margin: 8px 0 0;
+  font-size: 18px;
+}
+
+.lane-role-card p {
+  margin-top: 5px;
+  color: #aebed0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.lane-role-card > header button {
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  color: #e5edf7;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
 .role-table-wrap {
   overflow-x: auto;
   border: 1px solid rgba(255,255,255,.1);
@@ -906,7 +973,7 @@ select option {
 
 .role-table {
   width: 100%;
-  min-width: 760px;
+  min-width: 620px;
   border-collapse: collapse;
 }
 
@@ -958,7 +1025,8 @@ select option {
 }
 
 .contact-pills span,
-.contact-pills em {
+.contact-pills em,
+.state-pills span {
   display: inline-flex;
   align-items: center;
   min-height: 26px;
@@ -969,6 +1037,25 @@ select option {
   font-size: 12px;
   font-style: normal;
   font-weight: 850;
+}
+
+.state-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.state-pills span.research {
+  background: rgba(247, 178, 103, .2);
+}
+
+.state-pills span.labeled {
+  background: rgba(85, 214, 190, .2);
+}
+
+.state-pills span.approved {
+  color: #251005;
+  background: #f7b267;
 }
 
 .empty-cell {
@@ -995,6 +1082,9 @@ select option {
 .reached-out-section {
   display: grid;
   gap: 12px;
+}
+
+.reached-out-grid {
   margin-top: 18px;
 }
 
@@ -1237,6 +1327,7 @@ select option {
 }
 
 @media (max-width: 920px) {
+  .lane-role-grid,
   .batch-board-grid,
   .batch-section-heading {
     display: grid;
