@@ -79,6 +79,7 @@ Use this mode only when Liam's request authorizes subagents, worker agents, para
 - Own all writes to `application-trackers/applications.md` and `application-visualizer/src/data/tracker-data.json`. Workers must not edit tracker/cache files, run the status updater, commit, or push.
 - Rebuild or refresh the queue before assigning more work after a batch finishes, because Gmail refreshes or worker outcomes may change row status.
 - Commit and push only tracker/cache changes after every 10 confirmed submissions. If work stops before 10, commit and push confirmed tracker/cache updates before ending unless the working tree has unrelated tracker/cache changes that require inspection.
+- If a run reaches a real manual blocker after making partial progress, still commit and push the safe completed tracker/cache updates before returning control so Liam can resume from the saved state instead of losing deployable progress.
 
 ### Worker Lanes
 
@@ -195,6 +196,7 @@ python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 ```
 
    - Keep a running count of confirmed applications submitted since the last repository push. After every 10 confirmed applications, stage only the tracker/cache changes for those applications, commit them with a short application-status message, and push `main` so the deployed dashboard can refresh. If work stops before reaching 10, commit and push the confirmed tracker/cache updates before ending the run.
+   - When Liam helps clear a blocker mid-batch, treat the resumed work as a continuation from the last pushed state and make another commit/push once the newly unblocked applications or tracker updates are complete.
 
 ## Answering Form Questions
 

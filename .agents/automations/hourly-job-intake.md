@@ -38,7 +38,8 @@ Workflow:
 10. Stop for interactive CAPTCHA challenges, login/2FA, account creation, legal signature, unusual consent, high-risk personal essays, or salary/start-date ambiguity. Do not stop just because an application requires an emailed verification code that can be retrieved from Gmail.
 11. After each submission, confirm using visible confirmation page, confirmation email, or portal status evidence; close the confirmed application tab; update `applications.md`; and use Gmail both for evidence and for routine emailed verification codes when needed.
 12. Run `python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py` and `cd application-visualizer && npm run build` after tracker/intake edits.
-13. Commit and push to `origin main` when tracker/cache/resume/intake changes were made. Stage only related files; leave unrelated untracked files alone.
+13. Commit and push to `origin main` whenever the run has made tracker/cache/resume/intake progress that is safe to save, even if some remaining roles are blocked and need Liam's help. Stage only related files; leave unrelated untracked files alone.
+14. If Liam helps clear a blocker later in the same overall batch, continue from the saved state, finish the newly unblocked work, and make a follow-up commit/push for the additional completed applications or tracker updates instead of waiting for a perfect all-clear batch.
 
 Report:
 - New jobs captured
@@ -48,6 +49,7 @@ Report:
 - Roles moved to manual with exact blocker
 - Manual blockers
 - Whether commit/push happened
+- Whether a follow-up push remains after Liam-assisted unblock
 ```
 
 Notes:
