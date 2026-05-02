@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T22:19:51.565979+00:00",
+  "generatedAt": "2026-05-02T22:43:51.391255+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 366,
-      "applied": 296,
-      "unapplied": 70,
+      "applied": 297,
+      "unapplied": 69,
       "active": 297,
       "rejected": 44,
       "interviewing": 3,
@@ -26,8 +26,8 @@
       "intakeNew": 0,
       "intakeManual": 0,
       "intakeApplied": 0,
-      "applyRate": 80.9,
-      "rejectionRate": 14.9,
+      "applyRate": 81.1,
+      "rejectionRate": 14.8,
       "recruiterWork": 212,
       "engineerWork": 264,
       "recruiterReachedOut": 93,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 245
+        "value": 246
       },
       {
         "name": "Rejected",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 33
+        "value": 34
       },
       {
         "name": "Archived",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 13
+        "value": 11
       },
       {
         "name": "Interviewing",
@@ -424,7 +424,7 @@
         "date": "2026-05-02",
         "cumulative": 366,
         "added": 4,
-        "applied": 0,
+        "applied": 1,
         "rejected": 0,
         "interviewing": 0
       }
@@ -11331,8 +11331,8 @@
     {
       "company": "Merge API",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -11347,15 +11347,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-05-02; Greenhouse confirmation page shown",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-02"
+      ]
     },
     {
       "company": "Truveta",
       "role": "Software Engineer - Person Matching",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -11370,9 +11372,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed: Greenhouse work-authorization select failed to commit and relocation field still validated after Seattle-area answer 2026-05-02",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-02"
+      ]
     }
   ],
   "jobIntake": [
@@ -21918,7 +21922,7 @@
           "company": "Merge API",
           "role": "Software Engineer",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -22062,7 +22066,7 @@
           "company": "Truveta",
           "role": "Software Engineer - Person Matching",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -31372,7 +31376,7 @@
           "company": "Merge API",
           "role": "Software Engineer",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -31432,7 +31436,7 @@
           "company": "Truveta",
           "role": "Software Engineer - Person Matching",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
