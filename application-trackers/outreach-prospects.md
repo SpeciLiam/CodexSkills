@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 221
+Companies queued: 224
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -15,6 +15,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Warner Bros. Discovery | Software Engineer I | Software-Engineer-I | 10 | Applied | Yes | [Posting](https://careers.wbd.com/global/en/job/R000103732/Software-Engineer-I) | 1 | 1 |  |  |
 | Uber | Software Engineer | 157787 | 10 | Applied | Yes | [Posting](https://www.uber.com/careers/apply/form/157787?uclick_id=0da90020-fd3f-4bee-86e2-95a6160bf384) |  |  |  |  |
 | Uber | Software Engineer II | 156932 | 10 | Applied | Yes | [Posting](https://www.uber.com/global/en/careers/list/156932/?uclick_id=c3eed852-3739-4c33-ba86-8487c6d2f43b) |  |  |  |  |
+| Uber | Software Engineer I | 4403550427 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4403550427/) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Twitch | Software Engineer I - Ads Demand Enablement | 8162197002 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/twitch/jobs/8162197002?gh_src=0c4ebc182) |  |  |  |  |
 | Trexquant Investment LP | Software Engineer - Early Career (USA) | 4297854738 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4297854738/) |  |  |  |  |
 | Trexquant Investment LP | Software Engineer - Early Career (USA) | 4330689211 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4330689211/) |  |  |  |  |
@@ -59,6 +60,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | EliseAI | Software Engineer (New Grads 2025-2026) | 1ffbd278-a5fe-443c-984f-521d61a97353 | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/eliseai/1ffbd278-a5fe-443c-984f-521d61a97353?utm_source=LinkedInPaid) |  |  |  |  |
 | Disney | Software Engineer II - Data Transformation | 91303727120 | 10 | Applied | Yes | [Posting](https://www.disneycareers.com/en/job/-/-/391/91303727120?source=LINKEDIN_JOB_SLOTS) |  |  |  |  |
 | Disney | Software Engineer II | 93426467616 | 10 | Applied | Yes | [Posting](https://www.disneycareers.com/en/job/-/-/391/93426467616?source=LINKEDIN_JOB_SLOTS) |  |  |  |  |
+| Confido | New Grad Software Engineer | 4401827377 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4401827377/) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Compass | Software Engineer I | 4405599153 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4405599153/?trackingId=TdfRLjBOnV8vB8U5Tv%2F8vw%3D%3D&refId=5T2Rb2GlMfL%2FBz2KqJWJrw%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BFsxvxmQZR5K1F9fZ%2BTSCAg%3D%3D) |  |  |  |  |
 | Color Health | New Grad Software Engineer | 6c7f692a-848b-41a4-b79b-4a9bba3aeb6d | 10 | Applied | Yes | [Posting](https://app.careerpuck.com/job-board/color-health/job/6c7f692a-848b-41a4-b79b-4a9bba3aeb6d) |  |  |  |  |
 | Cadence | Software Engineer I | Software-Engineer-I_R53009-1 | 10 | Applied | Yes | [Posting](https://cadence.wd1.myworkdayjobs.com/External_Careers/job/SAN-JOSE/Software-Engineer-I_R53009-1?source=LinkedIn) |  |  |  |  |
@@ -76,6 +78,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Valon | Software Engineer | 580ec8b6-c894-497e-9769-270e6e21efbe | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/Valon/580ec8b6-c894-497e-9769-270e6e21efbe) |  |  |  |  |
 | Valon | Software Engineer | 495b5050-0d48-4ff7-ab21-2a6155d62658 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/Valon/495b5050-0d48-4ff7-ab21-2a6155d62658) |  |  |  |  |
 | Underdog.io | Full Stack Engineer | candidates-apply | 9 | Applied | Yes | [Posting](https://underdog.io/candidates/apply) |  |  |  |  |
+| Truveta | Software Engineer - Person Matching | 5817190004 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/truveta/jobs/5817190004) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Traba | Software Engineer | 529eef66-1b80-4bda-a385-9501033a1053 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/traba/529eef66-1b80-4bda-a385-9501033a1053/application?src=LinkedIn) |  |  |  |  |
 | Tennr | Backend Software Engineer | 9aae43bf-3303-468e-aae0-038b7fb395f3 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/tennr/9aae43bf-3303-468e-aae0-038b7fb395f3/application?utm_source=2Lb815XAxX) |  |  |  |  |
 | Stripe | Backend Engineer, Payments and Risk | 7232592 | 9 | Applied | Yes | [Posting](https://stripe.com/jobs/listing/backend-engineer-payments-and-risk/7232592?gh_src=73vnei) |  |  |  |  |

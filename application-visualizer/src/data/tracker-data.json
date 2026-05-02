@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T22:10:13.162996+00:00",
+  "generatedAt": "2026-05-02T22:19:51.565979+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 362,
+      "total": 366,
       "applied": 296,
-      "unapplied": 66,
-      "active": 293,
+      "unapplied": 70,
+      "active": 297,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 245,
-      "reachOut": 305,
+      "highFit": 249,
+      "reachOut": 309,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 0,
-      "intakeQueued": 0,
+      "intakeJobs": 7,
+      "intakeQueued": 3,
       "intakeNew": 0,
       "intakeManual": 0,
       "intakeApplied": 0,
-      "applyRate": 81.8,
+      "applyRate": 80.9,
       "rejectionRate": 14.9,
-      "recruiterWork": 208,
-      "engineerWork": 260,
+      "recruiterWork": 212,
+      "engineerWork": 264,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 9
+        "value": 13
       },
       {
         "name": "Interviewing",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 132
+        "value": 134
       },
       {
         "name": "Greenhouse",
-        "value": 93
+        "value": 95
       },
       {
         "name": "Ashby",
@@ -140,11 +140,11 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 153
+        "value": 154
       },
       {
         "name": "Bay Area",
-        "value": 110
+        "value": 112
       },
       {
         "name": "Other",
@@ -156,7 +156,7 @@
       },
       {
         "name": "Seattle",
-        "value": 13
+        "value": 14
       },
       {
         "name": "Unknown",
@@ -170,7 +170,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 201
+        "value": 205
       },
       {
         "name": "Backend",
@@ -236,11 +236,11 @@
       },
       {
         "score": "9",
-        "count": 65
+        "count": 67
       },
       {
         "score": "10",
-        "count": 98
+        "count": 100
       }
     ],
     "targetCounts": [
@@ -255,8 +255,26 @@
         "value": 3
       }
     ],
-    "intakeStatusCounts": [],
-    "intakeSourceCounts": [],
+    "intakeStatusCounts": [
+      {
+        "name": "Tailored",
+        "value": 4
+      },
+      {
+        "name": "Queued",
+        "value": 3
+      }
+    ],
+    "intakeSourceCounts": [
+      {
+        "name": "LinkedIn",
+        "value": 4
+      },
+      {
+        "name": "Greenhouse",
+        "value": 3
+      }
+    ],
     "timeline": [
       {
         "date": "2026-04-06",
@@ -401,6 +419,14 @@
         "applied": 31,
         "rejected": 1,
         "interviewing": 0
+      },
+      {
+        "date": "2026-05-02",
+        "cumulative": 366,
+        "added": 4,
+        "applied": 0,
+        "rejected": 0,
+        "interviewing": 0
       }
     ],
     "topCompanies": [
@@ -441,6 +467,12 @@
         "bestFit": 10
       },
       {
+        "company": "Uber",
+        "roles": 4,
+        "avgFit": 8.75,
+        "bestFit": 10
+      },
+      {
         "company": "Intuit",
         "roles": 3,
         "avgFit": 9.33,
@@ -466,12 +498,6 @@
       },
       {
         "company": "Disney",
-        "roles": 3,
-        "avgFit": 8.33,
-        "bestFit": 10
-      },
-      {
-        "company": "Uber",
         "roles": 3,
         "avgFit": 8.33,
         "bestFit": 10
@@ -585,6 +611,15 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://www.uber.com/global/en/careers/list/156932/?uclick_id=c3eed852-3739-4c33-ba86-8487c6d2f43b"
+      },
+      {
+        "company": "Uber",
+        "role": "Software Engineer I",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://www.linkedin.com/jobs/view/4403550427/"
       },
       {
         "company": "Twitch",
@@ -864,15 +899,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://jobs.ashbyhq.com/lindy/a5100dbe-d851-4544-bb4c-0428d77940eb/application?utm_source=1pRbG7KbX6"
-      },
-      {
-        "company": "Julius AI",
-        "role": "Software Engineer - Product (New Grad)",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://jobs.ashbyhq.com/julius/83d88b90-1b7f-476c-a0e8-10b1cb71639e/application?utm_source=R7w09vvYr1"
       }
     ],
     "recruiterBatch": {
@@ -11255,9 +11281,200 @@
       "activityDates": [
         "2026-05-01"
       ]
+    },
+    {
+      "company": "Uber",
+      "role": "Software Engineer I",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4403550427/",
+      "postingKey": "4403550427",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Uber/Software_Engineer_I/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Uber/Software_Engineer_I/Liam_Van_Resume/Liam_Van_Uber.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Confido",
+      "role": "New Grad Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4401827377/",
+      "postingKey": "4401827377",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Confido/New_Grad_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Confido/New_Grad_Software_Engineer/Liam_Van_Resume/Liam_Van_Confido.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Merge API",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/merge/jobs/5592469004",
+      "postingKey": "5592469004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Merge API/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Merge API/Software_Engineer/Liam_Van_Resume/Liam_Van_Merge_API.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Truveta",
+      "role": "Software Engineer - Person Matching",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "Seattle, WA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/truveta/jobs/5817190004",
+      "postingKey": "5817190004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Truveta/Software_Engineer_Person_Matching/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Truveta/Software_Engineer_Person_Matching/Liam_Van_Resume/Liam_Van_Truveta.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
     }
   ],
-  "jobIntake": [],
+  "jobIntake": [
+    {
+      "source": "LinkedIn",
+      "company": "Uber",
+      "role": "Software Engineer I",
+      "location": "San Francisco, CA",
+      "postingKey": "4403550427",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4403550427/",
+      "discoveredAt": "2026-05-02T22:16:26.875141+00:00",
+      "postedAge": "20 hours ago",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "SWE-family role, early-career signal, SF/Bay Area preference",
+      "trackerPostingKey": "4403550427"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Truveta",
+      "role": "Software Engineer - Person Matching",
+      "location": "Seattle, WA",
+      "postingKey": "5817190004",
+      "jobUrl": "https://job-boards.greenhouse.io/truveta/jobs/5817190004",
+      "discoveredAt": "2026-05-02T22:16:26.875141+00:00",
+      "postedAge": "2 days ago",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": "5817190004"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Confido",
+      "role": "New Grad Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "4401827377",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4401827377/",
+      "discoveredAt": "2026-05-02T22:16:26.875141+00:00",
+      "postedAge": "20 hours ago",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": "4401827377"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Truveta",
+      "role": "Software Engineer - Data Fulfillment",
+      "location": "Seattle, WA",
+      "postingKey": "5978337004",
+      "jobUrl": "https://job-boards.greenhouse.io/truveta/jobs/5978337004",
+      "discoveredAt": "2026-05-02T22:16:26.875141+00:00",
+      "postedAge": "today",
+      "fitScore": 9,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Merge API",
+      "role": "Software Engineer",
+      "location": "San Francisco, CA",
+      "postingKey": "5592469004",
+      "jobUrl": "https://job-boards.greenhouse.io/merge/jobs/5592469004",
+      "discoveredAt": "2026-05-02T22:16:26.875141+00:00",
+      "postedAge": "today",
+      "fitScore": 9,
+      "status": "Tailored",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": "5592469004"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Twitch",
+      "role": "Software Engineer",
+      "location": "Seattle, WA",
+      "postingKey": "4306008159",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4306008159/",
+      "discoveredAt": "2026-05-02T22:16:26.875141+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Nuro",
+      "role": "Software Engineer, AI Platform - New Grad",
+      "location": "Mountain View, CA",
+      "postingKey": "4317707969",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4317707969/",
+      "discoveredAt": "2026-05-02T22:16:26.875141+00:00",
+      "postedAge": "4 days ago",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, location needs review",
+      "trackerPostingKey": ""
+    }
+  ],
   "outreachQueue": [
     {
       "company": "Zettabyte",
@@ -11336,6 +11553,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Uber",
+      "role": "Software Engineer I",
+      "postingKey": "4403550427",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4403550427/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Twitch",
@@ -11910,6 +12140,19 @@
       "notes": ""
     },
     {
+      "company": "Confido",
+      "role": "New Grad Software Engineer",
+      "postingKey": "4401827377",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4401827377/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Compass",
       "role": "Software Engineer I",
       "postingKey": "4405599153",
@@ -12129,6 +12372,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Truveta",
+      "role": "Software Engineer - Person Matching",
+      "postingKey": "5817190004",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/truveta/jobs/5817190004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Traba",
@@ -21058,6 +21314,18 @@
           "contacts": []
         },
         {
+          "key": "4401827377",
+          "company": "Confido",
+          "role": "New Grad Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4209984009",
           "company": "Fanatics Betting & Gaming",
           "role": "Software Engineer II, iCasino - US",
@@ -21454,6 +21722,18 @@
           "contacts": []
         },
         {
+          "key": "4403550427",
+          "company": "Uber",
+          "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7685236003",
           "company": "Affirm",
           "role": "Software Engineer I, Full-Stack (Home and Search Experience)",
@@ -21634,6 +21914,18 @@
           "contacts": []
         },
         {
+          "key": "5592469004",
+          "company": "Merge API",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7850913",
           "company": "Mixpanel",
           "role": "Software Engineer, DevInfra",
@@ -21759,6 +22051,18 @@
           "role": "Software Engineer",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5817190004",
+          "company": "Truveta",
+          "role": "Software Engineer - Person Matching",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -30572,6 +30876,18 @@
           "contacts": []
         },
         {
+          "key": "4401827377",
+          "company": "Confido",
+          "role": "New Grad Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4209984009",
           "company": "Fanatics Betting & Gaming",
           "role": "Software Engineer II, iCasino - US",
@@ -30944,6 +31260,18 @@
           "contacts": []
         },
         {
+          "key": "4403550427",
+          "company": "Uber",
+          "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7685236003",
           "company": "Affirm",
           "role": "Software Engineer I, Full-Stack (Home and Search Experience)",
@@ -31040,6 +31368,18 @@
           "contacts": []
         },
         {
+          "key": "5592469004",
+          "company": "Merge API",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7850913",
           "company": "Mixpanel",
           "role": "Software Engineer, DevInfra",
@@ -31081,6 +31421,18 @@
           "role": "Software Engineer, Full Stack",
           "fitScore": 9,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5817190004",
+          "company": "Truveta",
+          "role": "Software Engineer - Person Matching",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
