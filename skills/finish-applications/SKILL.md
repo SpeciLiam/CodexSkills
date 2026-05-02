@@ -139,7 +139,7 @@ Each worker receives only its assigned rows plus the standing answers from this 
    - Use existing factual profile information from `generic-resume/README.md` and the tailored resume when answering routine application fields.
    - If the form has a required cover letter field or upload, generate a tailored cover letter first using the `resume-tailor` skill's cover-letter workflow in the same company-specific resume folder, then upload or paste it as requested. Base the letter on the tailored resume, the job posting, and Liam's saved profile context; keep it truthful, concise, and role-specific.
    - If the cover letter field is optional and the form can be submitted without it, skip it unless the job posting explicitly asks for one or Liam has provided company-specific cover letter instructions.
-   - Keep one browser tab focused on the active application. If a role becomes manual, leave the tab open only when Liam needs the partially completed state; otherwise record the blocker and move on.
+   - Keep one browser tab focused on the active application. If a role becomes manual or stops short of submit because confidence is not high enough, leave the tab open when Liam may need the partially completed state for handoff; otherwise record the blocker and move on.
    - For LinkedIn-sourced rows marked `Manual apply needed: LinkedIn login`, first retry through the authenticated Chrome session:
      1. Open the LinkedIn job URL in Chrome.
      2. Verify Liam is signed in and the job is the same company/role.
@@ -166,9 +166,11 @@ Each worker receives only its assigned rows plus the standing answers from this 
    - Treat an invisible reCAPTCHA badge or similar passive anti-bot notice as normal. Only stop when a real challenge widget or enforced verification wall appears.
    - Do not submit if the posting redirects to a different role or company unless the user approves.
    - Do not guess at questions that could materially affect eligibility or legal consent.
+   - If confidence is not high enough to submit safely, stop at the best clean pre-submit state, leave the application tab open when practical for Liam to review from his laptop, and record the exact reason submission was not completed.
 
 6. Record the result immediately after a confirmed submission.
    - After confirmation is captured, close the successful application tab so the browser is left in a clean state for the next role.
+   - Do not close tabs for unfinished low-confidence or handoff-needed applications unless the page is unusable or Liam no longer needs that browser state.
    Use:
 
 ```bash
