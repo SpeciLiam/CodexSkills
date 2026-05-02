@@ -15,6 +15,7 @@ APPLICATIONS_MD = ROOT / "application-trackers" / "applications.md"
 OUTREACH_MD = ROOT / "application-trackers" / "outreach-prospects.md"
 BATCH_MD = ROOT / "application-trackers" / "linkedin-recruiter-batches.md"
 ENGINEER_BATCH_MD = ROOT / "application-trackers" / "linkedin-engineer-batches.md"
+INTAKE_MD = ROOT / "application-trackers" / "job-intake.md"
 OUTPUT_JSON = ROOT / "application-visualizer" / "src" / "data" / "tracker-data.json"
 
 LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
@@ -145,6 +146,23 @@ def normalize_queue(row: dict[str, str]) -> dict[str, Any]:
     }
 
 
+def normalize_intake(row: dict[str, str]) -> dict[str, Any]:
+    return {
+        "source": clean_text(row.get("Source", "")),
+        "company": clean_text(row.get("Company", "")),
+        "role": clean_text(row.get("Role", "")),
+        "location": clean_text(row.get("Location", "")) or "Unknown",
+        "postingKey": clean_text(row.get("Posting Key", "")),
+        "jobUrl": clean_text(row.get("Job URL", "")),
+        "discoveredAt": clean_text(row.get("Discovered At", "")),
+        "postedAge": clean_text(row.get("Posted Age", "")),
+        "fitScore": parse_int(row.get("Fit Score", "")),
+        "status": clean_text(row.get("Status", "")) or "New",
+        "reason": clean_text(row.get("Reason", "")),
+        "trackerPostingKey": clean_text(row.get("Tracker Posting Key", "")),
+    }
+
+
 def normalize_recruiter_batch(row: dict[str, str]) -> dict[str, Any]:
     return {
         "batch": clean_text(row.get("Batch", "")),
@@ -221,7 +239,13 @@ def role_family(role: str) -> str:
     return "General SWE"
 
 
-def build_stats(applications: list[dict[str, Any]], prospects: list[dict[str, Any]], queues: list[dict[str, Any]]) -> dict[str, Any]:
+def build_stats(
+    applications: list[dict[str, Any]],
+    prospects: list[dict[str, Any]],
+    queues: list[dict[str, Any]],
+    intake: list[dict[str, Any]] | None = None,
+) -> dict[str, Any]:
+    intake = intake or []
     total = len(applications)
     applied = sum(1 for app in applications if app["applied"])
     rejected = sum(1 for app in applications if app["status"].lower() == "rejected")
@@ -240,6 +264,8 @@ def build_stats(applications: list[dict[str, Any]], prospects: list[dict[str, An
     fit_counts = Counter(str(app["fitScore"]) for app in applications if app["fitScore"])
     target_counts = Counter(p["targetType"] for p in prospects)
     email_counts = Counter(p["emailStatus"] for p in prospects)
+    intake_counts = Counter(row["status"] for row in intake)
+    intake_source_counts = Counter(row["source"] for row in intake)
 
     by_date: dict[str, dict[str, int]] = defaultdict(lambda: {"added": 0, "applied": 0, "rejected": 0, "interviewing": 0})
     for app in applications:
@@ -303,6 +329,11 @@ def build_stats(applications: list[dict[str, Any]], prospects: list[dict[str, An
             "recruiterRows": recruiter_rows,
             "prospects": len(prospects),
             "readyEmails": ready_emails,
+            "intakeJobs": len(intake),
+            "intakeQueued": intake_counts.get("Queued", 0),
+            "intakeNew": intake_counts.get("New", 0),
+            "intakeManual": intake_counts.get("Manual", 0),
+            "intakeApplied": intake_counts.get("Applied", 0),
             "applyRate": round(applied / total * 100, 1) if total else 0,
             "rejectionRate": round(rejected / applied * 100, 1) if applied else 0,
         },
@@ -313,6 +344,8 @@ def build_stats(applications: list[dict[str, Any]], prospects: list[dict[str, An
         "fitCounts": [{"score": k, "count": v} for k, v in sorted(fit_counts.items(), key=lambda kv: int(kv[0]))],
         "targetCounts": [{"name": k, "value": v} for k, v in target_counts.most_common()],
         "emailCounts": [{"name": k, "value": v} for k, v in email_counts.most_common()],
+        "intakeStatusCounts": [{"name": k, "value": v} for k, v in intake_counts.most_common()],
+        "intakeSourceCounts": [{"name": k, "value": v} for k, v in intake_source_counts.most_common()],
         "timeline": timeline,
         "topCompanies": top_companies,
         "outreachGaps": outreach_gaps,
@@ -629,21 +662,24 @@ def main() -> None:
     outreach_tables = extract_tables(args.outreach.read_text(encoding="utf-8")) if args.outreach.exists() else {}
     batch_tables = extract_tables(args.recruiter_batch.read_text(encoding="utf-8")) if args.recruiter_batch.exists() else {}
     engineer_batch_tables = extract_tables(args.engineer_batch.read_text(encoding="utf-8")) if args.engineer_batch.exists() else {}
+    intake_tables = extract_tables(INTAKE_MD.read_text(encoding="utf-8")) if INTAKE_MD.exists() else {}
 
     applications = [normalize_application(row) for row in app_tables.get("Main", [])]
     queues = [normalize_queue(row) for row in outreach_tables.get("Company Queue", [])]
     prospects = [normalize_prospect(row) for row in outreach_tables.get("Prospect Details", [])]
     recruiter_batch = [normalize_recruiter_batch(row) for row in batch_tables.get("Recruiter Batch", [])]
     engineer_batch = [normalize_engineer_batch(row) for row in engineer_batch_tables.get("Engineer Batch", [])]
+    intake = [normalize_intake(row) for row in intake_tables.get("Main", [])]
 
     applications = [app for app in applications if app["company"] and app["role"]]
     queues = [q for q in queues if q["company"]]
     prospects = [p for p in prospects if p["company"] and p["name"]]
     recruiter_batch = [row for row in recruiter_batch if row["company"] and row["postingKey"]]
     engineer_batch = [row for row in engineer_batch if row["company"] and row["postingKey"]]
+    intake = [row for row in intake if row["company"] and row["role"]]
 
     outreach_buckets = build_outreach_buckets(recruiter_batch, engineer_batch, applications)
-    stats = build_stats(applications, prospects, queues)
+    stats = build_stats(applications, prospects, queues, intake)
     stats["kpis"]["recruiterWork"] = len(outreach_buckets["recruiter"]["activeRoles"])
     stats["kpis"]["engineerWork"] = len(outreach_buckets["engineer"]["activeRoles"])
     stats["kpis"]["recruiterReachedOut"] = len(outreach_buckets["recruiter"]["sentRoles"])
@@ -657,9 +693,11 @@ def main() -> None:
             "outreach": str(args.outreach.relative_to(ROOT)) if args.outreach.exists() else "",
             "recruiterBatch": str(args.recruiter_batch.relative_to(ROOT)) if args.recruiter_batch.exists() else "",
             "engineerBatch": str(args.engineer_batch.relative_to(ROOT)) if args.engineer_batch.exists() else "",
+            "intake": str(INTAKE_MD.relative_to(ROOT)) if INTAKE_MD.exists() else "",
         },
         "stats": stats,
         "applications": applications,
+        "jobIntake": intake,
         "outreachQueue": queues,
         "prospects": prospects,
         "recruiterBatch": recruiter_batch,
@@ -669,7 +707,10 @@ def main() -> None:
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, indent=2), encoding="utf-8")
-    print(f"Wrote {args.output.relative_to(ROOT)} with {len(applications)} applications, {len(queues)} outreach rows, {len(prospects)} prospects.")
+    print(
+        f"Wrote {args.output.relative_to(ROOT)} with {len(applications)} applications, "
+        f"{len(queues)} outreach rows, {len(prospects)} prospects, {len(intake)} intake rows."
+    )
 
 
 if __name__ == "__main__":

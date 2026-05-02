@@ -54,6 +54,21 @@ export type Prospect = {
   notes: string;
 };
 
+export type JobIntake = {
+  source: string;
+  company: string;
+  role: string;
+  location: string;
+  postingKey: string;
+  jobUrl: string;
+  discoveredAt: string;
+  postedAge: string;
+  fitScore: number;
+  status: string;
+  reason: string;
+  trackerPostingKey: string;
+};
+
 export type RecruiterBatch = {
   batch: string;
   company: string;
@@ -130,6 +145,7 @@ export type TrackerData = {
   sourceFiles: {
     applications: string;
     outreach: string;
+    intake?: string;
     recruiterBatch?: string;
     engineerBatch?: string;
   };
@@ -142,6 +158,8 @@ export type TrackerData = {
     fitCounts: Array<{ score: string; count: number }>;
     targetCounts: CountDatum[];
     emailCounts: CountDatum[];
+    intakeStatusCounts?: CountDatum[];
+    intakeSourceCounts?: CountDatum[];
     timeline: Array<Record<string, number | string>>;
     topCompanies: Array<{ company: string; roles: number; avgFit: number; bestFit: number }>;
     outreachGaps: Array<{
@@ -171,6 +189,7 @@ export type TrackerData = {
     };
   };
   applications: Application[];
+  jobIntake?: JobIntake[];
   outreachQueue: OutreachQueue[];
   prospects: Prospect[];
   recruiterBatch?: RecruiterBatch[];

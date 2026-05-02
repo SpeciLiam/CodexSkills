@@ -44,7 +44,7 @@ import {
 } from "recharts";
 import rawData from "./data/tracker-data.json";
 import { hostFromUrl, percent, readableDate } from "./lib/format";
-import type { Application, EngineerBatch, OutreachRoleBucket, Prospect, RecruiterBatch, TrackerData } from "./lib/types";
+import type { Application, EngineerBatch, JobIntake, OutreachRoleBucket, Prospect, RecruiterBatch, TrackerData } from "./lib/types";
 
 const data = rawData as TrackerData;
 
@@ -67,6 +67,7 @@ const NAV_ITEMS = [
   { id: "overview", label: "Overview" },
   { id: "actions", label: "Actions" },
   { id: "trends", label: "Trends" },
+  { id: "intake", label: "Intake" },
   { id: "outreach", label: "Outreach" },
   { id: "browser", label: "Browser" },
   { id: "pipeline", label: "Pipeline" },
@@ -84,11 +85,17 @@ const INFO_COPY = {
   role: "Plots visible applications by fit score and status. It is useful for spotting high-fit roles that are still only tailored or need action.",
   radar: "Summarizes campaign health across applied rate, high-fit share, reach-out coverage, recruiter coverage, and active share.",
   recruiters: "Lists applications with a known recruiter or LinkedIn path, sorted toward stronger fit so outreach targets are easy to open.",
+  intake: "Shows fresh LinkedIn and Greenhouse jobs discovered by the hourly intake listener before they become tailored application rows.",
   gaps: "Highlights high-fit reach-out rows that still need more prospects or ready email addresses.",
   pipeline: "Explains which Codex skills to ask Codex to run. The commands are the deterministic scripts behind those skills, but the intended workflow is that Codex runs them and updates the tracker for you.",
 } as const;
 
 const PIPELINE_MODES = [
+  {
+    name: "Job Intake Listener",
+    command: "Codex Automation: .agents/automations/hourly-job-intake.md",
+    description: "Schedule this hourly in Codex Automations for fresh LinkedIn and Greenhouse jobs. Codex captures browser results, then uses job-intake to dedupe and queue the strongest early-career roles.",
+  },
   {
     name: "Full Pipeline",
     command: "python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py",
@@ -383,6 +390,14 @@ function App() {
   );
   const visibleRecruiterWork = filterIgnoredRoleBuckets(activeRoleGroups.recruiter, ignoredBatchContacts, "recruiter");
   const visibleEngineerWork = filterIgnoredRoleBuckets(activeRoleGroups.engineer, ignoredBatchContacts, "engineer");
+  const jobIntake = useMemo(
+    () =>
+      (data.jobIntake || [])
+        .slice()
+        .sort((a, b) => b.fitScore - a.fitScore || b.discoveredAt.localeCompare(a.discoveredAt) || a.company.localeCompare(b.company)),
+    [],
+  );
+  const queuedIntake = jobIntake.filter((job) => ["Queued", "New"].includes(job.status)).slice(0, 24);
 
   const radarData = useMemo(
     () => [
@@ -491,6 +506,7 @@ function App() {
               <Kpi icon={<Target />} label="Interview/OA" value={data.stats.kpis.interviewing + data.stats.kpis.assessments} sub="warm leads" />
               <Kpi icon={<Send />} label="Recruiter work" value={data.stats.kpis.recruiterWork || visibleRecruiterWork.length} sub="not reached out" />
               <Kpi icon={<MailCheck />} label="Engineer work" value={data.stats.kpis.engineerWork || visibleEngineerWork.length} sub="not reached out" />
+              <Kpi icon={<Radar />} label="Fresh jobs" value={data.stats.kpis.intakeQueued || queuedIntake.length} sub="queued intake" />
             </div>
           </section>
 
@@ -634,6 +650,43 @@ function App() {
                 <Tooltip content={<ChartTooltip />} />
               </RadarChart>
             </ResponsiveContainer>
+          </Panel>
+        </section>
+      )}
+
+      {activeTab === "intake" && (
+        <section id="intake" className="dashboard-grid tab-panel section-anchor">
+          <Panel title="Job Intake" icon={<Radar />} info={INFO_COPY.intake} wide>
+            <div className="intake-summary">
+              <MiniMetric label="Discovered" value={data.stats.kpis.intakeJobs || jobIntake.length} />
+              <MiniMetric label="Queued" value={data.stats.kpis.intakeQueued || 0} />
+              <MiniMetric label="New" value={data.stats.kpis.intakeNew || 0} />
+              <MiniMetric label="Manual" value={data.stats.kpis.intakeManual || 0} />
+            </div>
+            <div className="role-table-wrap intake-table-wrap">
+              <table className="role-table intake-table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Role</th>
+                    <th>Source</th>
+                    <th>Status</th>
+                    <th>Fit</th>
+                    <th>Open</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {queuedIntake.map((job, index) => (
+                    <IntakeRow job={job} index={index + 1} key={`${job.source}-${job.postingKey}-${job.jobUrl}`} />
+                  ))}
+                  {!queuedIntake.length && (
+                    <tr>
+                      <td colSpan={6}>No fresh queued intake jobs yet.</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
           </Panel>
         </section>
       )}
@@ -1150,6 +1203,31 @@ function WorkStatePills({ states }: { states: string[] }) {
     <div className="state-pills">
       {states.map((state) => <span className={stateTone(state)} key={state}>{state}</span>)}
     </div>
+  );
+}
+
+function IntakeRow({ job, index }: { job: JobIntake; index: number }) {
+  return (
+    <tr>
+      <td>{index}</td>
+      <td>
+        <strong>{job.company}</strong>
+        <small>{job.role}</small>
+        <small>{job.location}</small>
+      </td>
+      <td>
+        <span className="intake-source">{job.source}</span>
+        <small>{job.postedAge || readableDate(job.discoveredAt)}</small>
+      </td>
+      <td>
+        <span className={`intake-status ${normalizeKey(job.status)}`}>{job.status}</span>
+        <small>{job.reason}</small>
+      </td>
+      <td><b>{job.fitScore || "-"}</b></td>
+      <td>
+        {job.jobUrl ? <a className="row-icon-link" href={job.jobUrl} target="_blank" rel="noreferrer" aria-label={`${job.company} posting`}><ArrowUpRight size={16} /></a> : <span />}
+      </td>
+    </tr>
   );
 }
 

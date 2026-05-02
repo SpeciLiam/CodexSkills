@@ -16,6 +16,7 @@ OUTREACH_RE = re.compile(r"linkedin (?:invite|inmail|message).*?\((recruiter|eng
 MODE_CHOICES = (
     "all",
     "status",
+    "intake",
     "resume",
     "apply",
     "linkedin",
@@ -105,6 +106,11 @@ def app_item(app: dict[str, Any], lane: str = "") -> dict[str, Any]:
     return item
 
 
+def summary_int(plan_data: dict[str, Any], key: str) -> int:
+    value = plan_data.get("stats", {}).get("kpis", {}).get(key, 0)
+    return int(value or 0)
+
+
 def build_plan(data: dict[str, Any], limit: int, mode: str = "all") -> dict[str, Any]:
     apps = [app for app in data.get("applications", []) if isinstance(app, dict)]
     queue = [row for row in data.get("outreachQueue", []) if isinstance(row, dict)]
@@ -159,6 +165,12 @@ def build_plan(data: dict[str, Any], limit: int, mode: str = "all") -> dict[str,
     )[:limit]
 
     steps_by_key = {
+        "intake": {
+            "name": "Fresh job intake listener",
+            "command": "Codex Automation: .agents/automations/hourly-job-intake.md",
+            "why": "Catch new LinkedIn and Greenhouse roles early with Codex browser capture, then dedupe and queue high-fit early-career jobs before tailoring.",
+            "count": summary_int(plan_data=data, key="intakeQueued"),
+        },
         "status": {
             "name": "Refresh inbox statuses",
             "command": "python3 skills/gmail-application-refresh/scripts/build_refresh_targets.py --limit 20",
@@ -211,7 +223,8 @@ def build_plan(data: dict[str, Any], limit: int, mode: str = "all") -> dict[str,
     }
 
     mode_steps = {
-        "all": ["status", "resume", "apply", "recruiter", "engineer", "prospecting", "prep", "dashboard"],
+        "all": ["status", "intake", "resume", "apply", "recruiter", "engineer", "prospecting", "prep", "dashboard"],
+        "intake": ["status", "intake", "resume", "apply", "dashboard"],
         "status": ["status", "prep", "dashboard"],
         "resume": ["status", "resume", "apply", "recruiter", "engineer", "dashboard"],
         "apply": ["status", "apply", "recruiter", "engineer", "dashboard"],

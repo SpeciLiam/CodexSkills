@@ -65,6 +65,10 @@ STRETCH_TERMS = [
 ]
 
 DEFAULT_ALLOWED_LOCATION_TERMS = [
+    "united states",
+    "usa",
+    "u.s.",
+    "us ",
     "remote",
     "washington, dc",
     "washington dc",
@@ -84,6 +88,13 @@ DEFAULT_ALLOWED_LOCATION_TERMS = [
     "oakland",
     "berkeley",
     "seattle",
+    "california",
+    "texas",
+    "massachusetts",
+    "georgia",
+    "illinois",
+    "colorado",
+    "virginia",
 ]
 
 SKIP_TERMS = [
@@ -349,6 +360,13 @@ def evaluate(job: dict[str, str], include_stretch: bool, profile: dict) -> dict[
         "Referral": "",
     }
     score = score_application(row, profile)
+    location_text = normalize(job["location"])
+    if "new york" in location_text or "nyc" in location_text:
+        score += 2
+        reasons.append("NYC preference")
+    elif "san francisco" in location_text or "bay area" in location_text:
+        score += 1
+        reasons.append("SF/Bay Area preference")
     score += 1 if reasons else 0
     score -= 3 if penalties else 0
     score = max(1, min(10, score))

@@ -1120,6 +1120,58 @@ select option {
   font-weight: 900;
 }
 
+.intake-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(120px, 1fr));
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.intake-table-wrap {
+  max-height: 620px;
+}
+
+.intake-source,
+.intake-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 0 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.intake-source {
+  color: #06111e;
+  background: #8dd7cf;
+}
+
+.intake-status {
+  color: #dbeafe;
+  background: rgba(112, 161, 255, .2);
+}
+
+.intake-status.queued {
+  color: #022c22;
+  background: #55d6be;
+}
+
+.intake-status.manual {
+  color: #251005;
+  background: #f7b267;
+}
+
+.row-icon-link {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  color: #06111e;
+  background: #55d6be;
+  border-radius: 8px;
+}
+
 .reached-out-section {
   display: grid;
   gap: 12px;

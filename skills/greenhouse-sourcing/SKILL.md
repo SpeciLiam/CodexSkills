@@ -38,7 +38,7 @@ Maximize volume, but only queue roles that plausibly fit Liam's profile:
 - Usually skip: senior/staff/principal/manager, internships, unpaid roles, contractor-only roles, cleared-only roles, embedded-only roles when the resume has no strong match, roles requiring 4+ years unless the rest is unusually flexible.
 - Hard skip: jobs already tracked, closed/unavailable postings, roles outside the United States unless remote-US is explicit, non-engineering sales/recruiting/support roles unless Liam explicitly asks.
 
-Default allowed locations are Washington DC, Bay Area, Seattle, remote, and NYC. The queue builder enforces those by default; use repeated `--allowed-location` flags to override for a specific run, or `--no-location-filter` only when Liam explicitly widens the search.
+Default location behavior is broad for U.S. roles. Treat location as ranking, not exclusion: NYC first, SF/Bay Area second, then remote/Seattle/DC, while other U.S. locations are still allowed when the role is strong. Use repeated `--allowed-location` flags only for a deliberately narrow run.
 
 If a role is a stretch but plausible, keep it in the queue with a note rather than silently discarding it.
 
@@ -99,7 +99,7 @@ python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode resume
 ```
 
-2. Capture Greenhouse jobs from the logged-in browser and save them to `/tmp/greenhouse_jobs.json`.
+2. Capture Greenhouse jobs from the logged-in browser and save them to `/tmp/greenhouse_jobs.json`, or run the job-intake listener with `--greenhouse-input`.
 3. Run the queue builder and take the top 10 strong matches:
 
 ```bash
@@ -136,6 +136,7 @@ For a mass pass:
 - Work in strict batches of 10: source 10, tailor 10, apply 10, update tracker/cache, commit, and push.
 - Keep the queue file for resume-tailor follow-through; do not lose skipped roles.
 - If fewer than 10 strong Greenhouse roles are available in the current search, widen the search window or add compatible queries such as `backend engineer`, `full stack engineer`, `new grad software engineer`, `founding engineer`, `platform engineer`, and `forward deployed engineer` until the batch has 10 or the available pool is exhausted.
+- Prefer early-career/new-grad/associate/SWE I/SWE II roles whenever possible.
 - If time is short, prioritize direct Greenhouse apply forms with autofill over roles that redirect to Workday or require account creation.
 - Minimize approvals by batching them. The agent may source, tailor, fill routine fields, update local tracker files, commit, and push within the batch flow; final submission to employers still needs the grouped batch review when required by Codex action policy.
 

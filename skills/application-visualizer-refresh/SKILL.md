@@ -13,6 +13,7 @@ For full recruiting sessions, start with `recruiting-pipeline`; it uses this ski
 
 - Application tracker: `application-trackers/applications.md`
 - Outreach tracker: `application-trackers/outreach-prospects.md`
+- Job intake tracker: `application-trackers/job-intake.md`
 - Website data output: `application-visualizer/src/data/tracker-data.json`
 
 ## Default Command

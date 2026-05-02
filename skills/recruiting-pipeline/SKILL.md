@@ -14,8 +14,9 @@ This is the coordinator skill. It does not replace the specialized skills; it se
 Use these in order:
 
 1. Markdown tracker: `application-trackers/applications.md`
-2. Outreach prospect tracker: `application-trackers/outreach-prospects.md`
-3. Generated cache: `application-visualizer/src/data/tracker-data.json`
+2. Job intake tracker: `application-trackers/job-intake.md`
+3. Outreach prospect tracker: `application-trackers/outreach-prospects.md`
+4. Generated cache: `application-visualizer/src/data/tracker-data.json`
 
 Markdown stays authoritative. The generated cache is the fast read model for dashboards and target builders.
 Notion is a separate optional mirror handled by `notion-application-sync`; do not include it in normal recruiting runs.
@@ -58,6 +59,7 @@ python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode
 python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode prospecting
 python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode prep
 python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode status
+python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode intake
 python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode dashboard
 python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode notion
 ```
@@ -72,6 +74,7 @@ Mode behavior:
 - `prospecting`: find company-level people/email gaps and surface related LinkedIn lanes.
 - `prep`: focus on interviews and online assessments.
 - `status`: focus on Gmail/application status changes.
+- `intake`: run fresh LinkedIn and Greenhouse job intake, then surface resume/apply follow-through.
 - `dashboard`: only rebuild visualizer data/site output.
 - `notion`: refresh website data and preview the optional Notion mirror.
 
@@ -92,18 +95,25 @@ Follow this sequence unless the user asks for a specific step:
    - Run `gmail-application-refresh` when statuses may have changed.
    - Refresh visualizer data after tracker edits.
 
-2. **Add or tailor new roles**
+2. **Listen for fresh jobs**
+   - Use the Codex automation in `.agents/automations/hourly-job-intake.md` for hourly LinkedIn and Greenhouse/MyGreenhouse discovery.
+   - Use `job-intake` as the deterministic ledger/scoring helper after Codex captures browser results.
+   - Prefer early-career SWE-family roles.
+   - Treat location as ranking, not exclusion: NYC first, SF/Bay Area second, remote/Seattle/DC next, and other U.S. locations allowed for strong roles.
+   - Dedupe against both `applications.md` and `job-intake.md`.
+
+3. **Add or tailor new roles**
    - Use `resume-tailor` for new job links.
    - Render and verify the one-page PDF.
    - Update `application-trackers/applications.md`.
    - Let fit score and `Reach Out` be set by the tracker helper unless the user overrides.
 
-3. **Submit applications**
+4. **Submit applications**
    - Use `finish-applications` for ready tailored rows.
    - Prioritize high-fit `Resume Tailored` rows that are not applied.
    - After applying, use `gmail-application-refresh` or the status helper to mark `Applied`.
 
-4. **Do LinkedIn outreach**
+5. **Do LinkedIn outreach**
    - Use `linkedin-outreach`.
    - Treat recruiter and engineer as separate lanes.
    - For each `Reach Out` row, try to complete both:
@@ -112,21 +122,21 @@ Follow this sequence unless the user asks for a specific step:
    - Recording recruiter outreach must not mark engineer outreach complete, and vice versa.
    - When speed matters, run recruiter and engineer outreach as two parallel Codex workstreams from the same refreshed cache snapshot.
 
-5. **Build deeper prospect lists**
+6. **Build deeper prospect lists**
    - Use `company-prospecting` for companies that need more than LinkedIn invites.
    - Each company should have at least one recruiter and one engineer prospect when possible.
    - Export Apollo queue only after real names are selected.
 
-6. **Monitor responses**
+7. **Monitor responses**
    - Use `gmail-application-refresh` to detect confirmations, rejections, assessments, and interviews.
    - High-confidence changes update markdown. Notion sync is separate and optional.
    - Ambiguous messages should be reported, not guessed.
 
-7. **Prepare interviews and assessments**
+8. **Prepare interviews and assessments**
    - Prioritize `Interviewing` and `Online Assessment` rows from the daily plan.
    - Keep factual notes in the tracker after each scheduling or prep event.
 
-8. **Refresh dashboard**
+9. **Refresh dashboard**
    - Run the visualizer refresh.
    - Build the site before deploy:
 
@@ -139,6 +149,7 @@ cd application-visualizer && npm run build
 - User asks for a whole recruiting session: run `--mode all`.
 - User asks for only one recruiting lane: run the closest focused mode first.
 - New job link or pasted posting: use `resume-tailor`.
+- Fresh LinkedIn/Greenhouse sourcing: use `job-intake`.
 - Ready tailored rows need submission: use `finish-applications`.
 - Need next LinkedIn people: use `linkedin-outreach`.
 - Need company-level people plus emails: use `company-prospecting`.
