@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T02:48:02.770615+00:00",
+  "generatedAt": "2026-05-02T03:43:51.703700+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -8,25 +8,25 @@
   },
   "stats": {
     "kpis": {
-      "total": 341,
-      "applied": 288,
-      "unapplied": 53,
-      "active": 272,
+      "total": 351,
+      "applied": 295,
+      "unapplied": 56,
+      "active": 282,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 224,
-      "reachOut": 284,
+      "highFit": 234,
+      "reachOut": 294,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 84.5,
-      "rejectionRate": 15.3
+      "applyRate": 84.0,
+      "rejectionRate": 14.9
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 237
+        "value": 244
       },
       {
         "name": "Rejected",
@@ -34,7 +34,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 28
+        "value": 31
       },
       {
         "name": "Archived",
@@ -60,7 +60,7 @@
       },
       {
         "name": "Greenhouse",
-        "value": 72
+        "value": 82
       },
       {
         "name": "Ashby",
@@ -130,19 +130,19 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 151
+        "value": 152
       },
       {
         "name": "Bay Area",
-        "value": 105
+        "value": 107
       },
       {
         "name": "Other",
-        "value": 46
+        "value": 47
       },
       {
         "name": "Remote",
-        "value": 20
+        "value": 26
       },
       {
         "name": "Seattle",
@@ -160,7 +160,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 191
+        "value": 196
       },
       {
         "name": "Full Stack",
@@ -168,19 +168,19 @@
       },
       {
         "name": "Backend",
-        "value": 37
+        "value": 40
+      },
+      {
+        "name": "AI/ML",
+        "value": 24
       },
       {
         "name": "Forward Deployed",
         "value": 24
       },
       {
-        "name": "AI/ML",
-        "value": 23
-      },
-      {
         "name": "Infra/Platform",
-        "value": 14
+        "value": 15
       },
       {
         "name": "Data",
@@ -230,7 +230,7 @@
       },
       {
         "score": "10",
-        "count": 81
+        "count": 91
       }
     ],
     "targetCounts": [
@@ -384,14 +384,20 @@
       },
       {
         "date": "2026-05-01",
-        "cumulative": 341,
-        "added": 44,
-        "applied": 23,
+        "cumulative": 351,
+        "added": 54,
+        "applied": 30,
         "rejected": 1,
         "interviewing": 0
       }
     ],
     "topCompanies": [
+      {
+        "company": "Pinterest",
+        "roles": 8,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
       {
         "company": "Scale AI",
         "roles": 7,
@@ -459,19 +465,25 @@
         "bestFit": 10
       },
       {
-        "company": "Pinterest",
-        "roles": 2,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
         "company": "Procore Technologies",
         "roles": 2,
         "avgFit": 10.0,
         "bestFit": 10
       },
       {
+        "company": "Fanatics Betting & Gaming",
+        "roles": 2,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "Trexquant Investment LP",
+        "roles": 2,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
+        "company": "Attentive",
         "roles": 2,
         "avgFit": 10.0,
         "bestFit": 10
@@ -501,6 +513,12 @@
         "bestFit": 10
       },
       {
+        "company": "Flexport",
+        "roles": 2,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "Reevo",
         "roles": 2,
         "avgFit": 9.5,
@@ -516,24 +534,6 @@
         "company": "Maybern",
         "roles": 2,
         "avgFit": 9.5,
-        "bestFit": 10
-      },
-      {
-        "company": "Plaid",
-        "roles": 2,
-        "avgFit": 9.5,
-        "bestFit": 10
-      },
-      {
-        "company": "Mixpanel",
-        "roles": 2,
-        "avgFit": 9.5,
-        "bestFit": 10
-      },
-      {
-        "company": "Benchling",
-        "roles": 2,
-        "avgFit": 9.0,
         "bestFit": 10
       }
     ],
@@ -10700,6 +10700,266 @@
       "engineerContact": "",
       "engineerProfile": "",
       "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend search and AI product systems, REST APIs, data workflows, distributed services, observability, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.; Applied via Greenhouse confirmation page 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Pinterest",
+      "role": "Security Software Engineer II, Detection and Response",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "San Francisco, CA, US; Remote, US",
+      "source": "Greenhouse",
+      "jobLink": "https://www.pinterestcareers.com/jobs/?gh_jid=7770914",
+      "postingKey": "7770914",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Pinterest/Security_Software_Engineer_II_Detection_and_Response/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Pinterest/Security_Software_Engineer_II_Detection_and_Response/Liam_Van_Resume/Liam_Van_Pinterest.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized security-adjacent backend systems, incident response habits, observability, CI/CD, APIs, and production operations. Did not claim direct company-specific domain ownership or unlisted framework experience.; Applied via Greenhouse confirmation page 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Pinterest",
+      "role": "Security Software Engineer II, Internal Identity & Access Management",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Seattle, WA, US; Remote, US",
+      "source": "Greenhouse",
+      "jobLink": "https://www.pinterestcareers.com/jobs/?gh_jid=7770900",
+      "postingKey": "7770900",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Pinterest/Security_Software_Engineer_II_Internal_Identity_Access_Management/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Pinterest/Security_Software_Engineer_II_Internal_Identity_Access_Management/Liam_Van_Resume/Liam_Van_Pinterest.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized identity-adjacent backend workflows, reliable APIs, cloud validation, operational ownership, and cross-team execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: Pinterest/Greenhouse says job is no longer open on 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Pinterest",
+      "role": "Software Engineer II, Backend",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "San Francisco, CA, US; Seattle, WA, US",
+      "source": "Greenhouse",
+      "jobLink": "https://www.pinterestcareers.com/jobs/?gh_jid=4813946",
+      "postingKey": "4813946",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Pinterest/Software_Engineer_II_Backend/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Pinterest/Software_Engineer_II_Backend/Liam_Van_Resume/Liam_Van_Pinterest.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend APIs, distributed service validation, data workflows, reliability, and production readiness. Did not claim direct company-specific domain ownership or unlisted framework experience.; Applied via Greenhouse confirmation page 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Pinterest",
+      "role": "Software Engineer II, Backend, tvScientific",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "San Francisco, CA, US; Remote, US",
+      "source": "Greenhouse",
+      "jobLink": "https://www.pinterestcareers.com/jobs/?gh_jid=7782552",
+      "postingKey": "7782552",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Pinterest/Software_Engineer_II_Backend_tvScientific/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Pinterest/Software_Engineer_II_Backend_tvScientific/Liam_Van_Resume/Liam_Van_Pinterest.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend product systems, APIs, data modeling, high-throughput validation, and operational reliability. Did not claim direct company-specific domain ownership or unlisted framework experience.; Applied via Greenhouse confirmation page 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Pinterest",
+      "role": "Software Engineer II, ML Platform, tvScientific",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "San Francisco, CA, US; Remote, US",
+      "source": "Greenhouse",
+      "jobLink": "https://www.pinterestcareers.com/jobs/?gh_jid=7782571",
+      "postingKey": "7782571",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Pinterest/Software_Engineer_II_ML_Platform_tvScientific/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Pinterest/Software_Engineer_II_ML_Platform_tvScientific/Liam_Van_Resume/Liam_Van_Pinterest.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized ML platform-adjacent backend systems, AI product workflows, APIs, data pipelines, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.; Applied via Greenhouse confirmation page 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Pinterest",
+      "role": "Software Engineer II, Simulation, tvScientific",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "San Francisco, CA, US; Remote, US",
+      "source": "Greenhouse",
+      "jobLink": "https://www.pinterestcareers.com/jobs/?gh_jid=7642265",
+      "postingKey": "7642265",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Pinterest/Software_Engineer_II_Simulation_tvScientific/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Pinterest/Software_Engineer_II_Simulation_tvScientific/Liam_Van_Resume/Liam_Van_Pinterest.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized simulation-adjacent platform workflows, validation tooling, distributed systems, observability, and release safety. Did not claim direct company-specific domain ownership or unlisted framework experience.; Applied via Greenhouse confirmation page 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Flexport",
+      "role": "Software Engineer II, Autonomous Freight Systems",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://boards.greenhouse.io/flexport/jobs/7839346?gh_jid=7839346",
+      "postingKey": "7839346",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Flexport/Software_Engineer_II_Autonomous_Freight_Systems/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Flexport/Software_Engineer_II_Autonomous_Freight_Systems/Liam_Van_Resume/Liam_Van_Flexport.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend logistics workflows, distributed APIs, data modeling, reliability, and operational debugging. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual answer needed: Flexport asks to confirm 5 days/week onsite in San Francisco and minimum 2 years post-college SWE experience on 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Fanatics Betting & Gaming",
+      "role": "Software Engineer II, iCasino - US",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "New York, NY, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/fanaticsfbg/jobs/4209984009",
+      "postingKey": "4209984009",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Fanatics Betting & Gaming/Software_Engineer_II_iCasino_US/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Fanatics Betting & Gaming/Software_Engineer_II_iCasino_US/Liam_Van_Resume/Liam_Van_Fanatics_Betting_&_Gaming.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend product engineering, high-reliability APIs, cloud operations, testing, and cross-functional delivery. Did not claim direct company-specific domain ownership or unlisted framework experience.; Applied via Greenhouse confirmation page 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Attentive",
+      "role": "Software Engineer II, BI Tooling and Platform",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/attentive/jobs/4224514009",
+      "postingKey": "4224514009",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Attentive/Software_Engineer_II_BI_Tooling_and_Platform/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Attentive/Software_Engineer_II_BI_Tooling_and_Platform/Liam_Van_Resume/Liam_Van_Attentive.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized BI tooling, platform reliability, backend data workflows, CI/CD, observability, and developer productivity. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual email verification code needed after Greenhouse submit on 2026-05-01",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    {
+      "company": "Affirm",
+      "role": "Software Engineer I, Backend (Purchasing Power Experience)",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-01",
+      "location": "Remote US",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/affirm/jobs/7673126003",
+      "postingKey": "7673126003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Affirm/Software_Engineer_I_Backend_Purchasing_Power_Experience/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Affirm/Software_Engineer_I_Backend_Purchasing_Power_Experience/Liam_Van_Resume/Liam_Van_Affirm.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend product APIs, financial-product reliability, data workflows, validation, and cross-team execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Applied via Greenhouse confirmation page 2026-05-01",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
