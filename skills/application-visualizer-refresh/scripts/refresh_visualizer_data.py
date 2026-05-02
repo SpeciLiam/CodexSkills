@@ -362,11 +362,11 @@ def outreach_state(row: dict[str, Any], lane: str) -> str:
 
 
 def outreach_state_rank(state: str) -> int:
-    if state.startswith("Needs label"):
+    if state.startswith("Approved"):
         return 0
     if state.startswith("Labeled"):
         return 1
-    if state.startswith("Approved"):
+    if state.startswith("Needs label"):
         return 2
     return 3
 
@@ -433,6 +433,60 @@ def build_outreach_role_buckets(rows: list[dict[str, Any]], lane: str, sent: boo
         groups.values(),
         key=lambda item: (outreach_state_rank(primary_outreach_state(item)), -item["fitScore"], item["company"]),
     )
+
+
+def application_needs_outreach(app: dict[str, Any]) -> bool:
+    if not app.get("reachOut"):
+        return False
+    if app.get("status", "").lower() in {"rejected", "archived"}:
+        return False
+    return True
+
+
+def synthetic_outreach_row(app: dict[str, Any], lane: str) -> dict[str, Any]:
+    name_key = "recruiterContact" if lane == "recruiter" else "engineerContact"
+    profile_key = "recruiterProfile" if lane == "recruiter" else "engineerProfile"
+    has_contact = bool(app.get(name_key) or app.get(profile_key))
+    return {
+        "batch": "application-tracker",
+        "company": app["company"],
+        "role": app["role"],
+        "postingKey": app["postingKey"],
+        "fitScore": app["fitScore"],
+        "status": app["status"],
+        "recruiterName": app["recruiterContact"] if lane == "recruiter" else "",
+        "recruiterProfile": app["recruiterProfile"] if lane == "recruiter" else "",
+        "recruiterPosition": "Saved on application row" if lane == "recruiter" and has_contact else "",
+        "engineerName": app["engineerContact"] if lane == "engineer" else "",
+        "engineerProfile": app["engineerProfile"] if lane == "engineer" else "",
+        "engineerPosition": "Saved on application row" if lane == "engineer" and has_contact else "",
+        "route": "application-tracker",
+        "connectionNote": "",
+        "approval": "" if has_contact else ("Needs recruiter" if lane == "recruiter" else "Needs engineer"),
+        "outcome": "Not reached out",
+        "source": "application-tracker",
+        "lastChecked": app["dateAdded"],
+        "notes": f"Active application needs {lane} outreach.",
+    }
+
+
+def build_application_lane_work(
+    applications: list[dict[str, Any]],
+    active_rows: list[dict[str, Any]],
+    sent_rows: list[dict[str, Any]],
+    lane: str,
+) -> list[dict[str, Any]]:
+    active_keys = {role_bucket_key(row) for row in active_rows if is_active_outreach_row(row)}
+    sent_keys = {role_bucket_key(row) for row in sent_rows if row["outcome"].lower() == "sent"}
+    synthesized = []
+    for app in applications:
+        if not application_needs_outreach(app):
+            continue
+        key = role_bucket_key(app)
+        if key in active_keys or key in sent_keys:
+            continue
+        synthesized.append(synthetic_outreach_row(app, lane))
+    return active_rows + synthesized
 
 
 def infer_invite_lane(app: dict[str, Any], role_word: str, paren_label: str, name: str) -> str:
@@ -527,13 +581,25 @@ def dedupe_sent_role_buckets(groups: list[dict[str, Any]]) -> list[dict[str, Any
 def build_outreach_buckets(recruiter_rows: list[dict[str, Any]], engineer_rows: list[dict[str, Any]], applications: list[dict[str, Any]]) -> dict[str, Any]:
     recruiter_note_rows = build_application_note_send_rows(applications, "recruiter")
     engineer_note_rows = build_application_note_send_rows(applications, "engineer")
+    recruiter_active_rows = build_application_lane_work(
+        applications,
+        recruiter_rows,
+        recruiter_rows + recruiter_note_rows,
+        "recruiter",
+    )
+    engineer_active_rows = build_application_lane_work(
+        applications,
+        engineer_rows,
+        engineer_rows + engineer_note_rows,
+        "engineer",
+    )
     return {
         "recruiter": {
-            "activeRoles": build_outreach_role_buckets(recruiter_rows, "recruiter", sent=False),
+            "activeRoles": build_outreach_role_buckets(recruiter_active_rows, "recruiter", sent=False),
             "sentRoles": dedupe_sent_role_buckets(build_outreach_role_buckets(recruiter_rows + recruiter_note_rows, "recruiter", sent=True)),
         },
         "engineer": {
-            "activeRoles": build_outreach_role_buckets(engineer_rows, "engineer", sent=False),
+            "activeRoles": build_outreach_role_buckets(engineer_active_rows, "engineer", sent=False),
             "sentRoles": dedupe_sent_role_buckets(build_outreach_role_buckets(engineer_rows + engineer_note_rows, "engineer", sent=True)),
         },
     }
@@ -576,7 +642,12 @@ def main() -> None:
     recruiter_batch = [row for row in recruiter_batch if row["company"] and row["postingKey"]]
     engineer_batch = [row for row in engineer_batch if row["company"] and row["postingKey"]]
 
+    outreach_buckets = build_outreach_buckets(recruiter_batch, engineer_batch, applications)
     stats = build_stats(applications, prospects, queues)
+    stats["kpis"]["recruiterWork"] = len(outreach_buckets["recruiter"]["activeRoles"])
+    stats["kpis"]["engineerWork"] = len(outreach_buckets["engineer"]["activeRoles"])
+    stats["kpis"]["recruiterReachedOut"] = len(outreach_buckets["recruiter"]["sentRoles"])
+    stats["kpis"]["engineerReachedOut"] = len(outreach_buckets["engineer"]["sentRoles"])
     stats["recruiterBatch"] = recruiter_batch_stats(recruiter_batch)
     stats["engineerBatch"] = engineer_batch_stats(engineer_batch)
     payload = {
@@ -593,7 +664,7 @@ def main() -> None:
         "prospects": prospects,
         "recruiterBatch": recruiter_batch,
         "engineerBatch": engineer_batch,
-        "outreachBuckets": build_outreach_buckets(recruiter_batch, engineer_batch, applications),
+        "outreachBuckets": outreach_buckets,
     }
 
     args.output.parent.mkdir(parents=True, exist_ok=True)

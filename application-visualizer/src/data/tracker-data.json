@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T04:33:39.856162+00:00",
+  "generatedAt": "2026-05-02T04:45:09.655078+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,7 +21,11 @@
       "prospects": 3,
       "readyEmails": 3,
       "applyRate": 81.8,
-      "rejectionRate": 14.9
+      "rejectionRate": 14.9,
+      "recruiterWork": 208,
+      "engineerWork": 263,
+      "recruiterReachedOut": 93,
+      "engineerReachedOut": 37
     },
     "statusCounts": [
       {
@@ -898,9 +902,9 @@
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Clever/Software_Engineer_Infrastructure/Liam_Van_Resume/Liam_Van_Clever.pdf",
       "recruiterContact": "John Stoecker",
       "recruiterProfile": "https://www.linkedin.com/in/johnstoecker/",
-      "engineerContact": "",
-      "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Raquel Gonzalez, Cruz Gonzalez, Kristin Jue, Amelia Jones, Febin Bellamy, Matthew Negasi, and John Stoecker 2026-04-25; Replaced closed LinkedIn posting with Greenhouse role 2026-04-27; Manual apply needed: required Clever culture-tenet free response 2026-04-27; Manual apply verified: reCAPTCHA present on application flow 2026-04-28; Manual apply verified: Greenhouse embed form filled with tailored resume, Seattle location, sponsorship No, LinkedIn/source, custom Always a Student culture-tenet response, Kubernetes Yes, and demographic selections; all required fields validated but submit attempt stayed on form with embedded reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28; LinkedIn invite sent to Audrey Cevallos (Recruiter) 2026-04-28; Recruiter screen requested 2026-04-29; Interview availability submitted 2026-04-29",
+      "engineerContact": "Raquel Gonzalez",
+      "engineerProfile": "https://www.linkedin.com/in/raquel-gr/",
+      "notes": "LinkedIn invite sent to Raquel Gonzalez, Cruz Gonzalez, Kristin Jue, Amelia Jones, Febin Bellamy, Matthew Negasi, and John Stoecker 2026-04-25; Corrected Raquel Gonzalez as engineer contact, not recruiter 2026-05-01; Replaced closed LinkedIn posting with Greenhouse role 2026-04-27; Manual apply needed: required Clever culture-tenet free response 2026-04-27; Manual apply verified: reCAPTCHA present on application flow 2026-04-28; Manual apply verified: Greenhouse embed form filled with tailored resume, Seattle location, sponsorship No, LinkedIn/source, custom Always a Student culture-tenet response, Kubernetes Yes, and demographic selections; all required fields validated but submit attempt stayed on form with embedded reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28; LinkedIn invite sent to Audrey Cevallos (Recruiter) 2026-04-28; Recruiter screen requested 2026-04-29; Interview availability submitted 2026-04-29",
       "noteLinks": [
         {
           "label": "Raquel Gonzalez",
@@ -937,6 +941,7 @@
       ],
       "activityDates": [
         "2026-04-25",
+        "2026-05-01",
         "2026-04-27",
         "2026-04-27",
         "2026-04-28",
@@ -12884,6 +12889,19 @@
       "notes": ""
     },
     {
+      "company": "Robinhood",
+      "role": "Software Engineer, Backend",
+      "postingKey": "7263578",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/robinhood/jobs/7263578?t=gh_src%3D&gh_jid=7263578&gh_src=ed898e781us",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-01",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Rise Technical",
       "role": "Software Engineer (Model Evaluation & Benchmarking)",
       "postingKey": "4395968677",
@@ -16925,15 +16943,15 @@
       "postingKey": "7437730",
       "fitScore": 9,
       "status": "Interviewing",
-      "engineerName": "Amelia Jones",
-      "engineerProfile": "https://www.linkedin.com/in/ameliajonessoftwareengineer/",
-      "engineerPosition": "Software Engineer at Clever",
+      "engineerName": "Raquel Gonzalez",
+      "engineerProfile": "https://www.linkedin.com/in/raquel-gr/",
+      "engineerPosition": "Engineer at Clever",
       "route": "try-free-inmail-then-connect-note",
       "connectionNote": "TBD after confirmed engineer is selected",
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "2026-04-28",
-      "notes": "Specific Clever engineer already discovered in application notes; selected as existing company-aligned engineering contact.; Existing source did not prove this is a current engineer at the target company. Current-company engineer verification required before approval or outreach."
+      "notes": "Corrected from recruiter list: Raquel Gonzalez is an engineer contact, not a recruiter.; Current-company engineer verification required before approval or outreach."
     },
     {
       "batch": "engineer-2026-04-28",
@@ -19711,28 +19729,166 @@
     "recruiter": {
       "activeRoles": [
         {
-          "key": "1079158160340219",
-          "company": "Meta",
-          "role": "Software Engineer, Product",
-          "fitScore": 8,
-          "status": "Resume Tailored",
+          "key": "4397307930",
+          "company": "Baselayer",
+          "role": "Junior Backend Engineer",
+          "fitScore": 10,
+          "status": "Applied",
           "count": 1,
           "states": [
-            "Needs label"
+            "Labeled, needs approval"
           ],
-          "contacts": []
+          "contacts": [
+            {
+              "lane": "recruiter",
+              "name": "Ehab Abdalla",
+              "profile": "https://www.linkedin.com/in/ehab-abdalla-04ab411b3/",
+              "position": "Saved on application row",
+              "approval": "",
+              "outcome": "Not reached out",
+              "route": "application-tracker",
+              "connectionNote": "",
+              "sentDate": "2026-04-06",
+              "source": "application-tracker",
+              "lastChecked": "2026-04-06",
+              "notes": "Active application needs recruiter outreach."
+            }
+          ]
         },
         {
-          "key": "113311514005250758-strategic-cloud-engineer-google-public-sector",
-          "company": "Google",
-          "role": "Strategic Cloud Engineer, Google Public Sector",
-          "fitScore": 4,
-          "status": "Resume Tailored",
+          "key": "4406112904",
+          "company": "Handshake",
+          "role": "Associate Software Engineer, RLE",
+          "fitScore": 10,
+          "status": "Applied",
           "count": 1,
           "states": [
-            "Needs label"
+            "Labeled, needs approval"
           ],
-          "contacts": []
+          "contacts": [
+            {
+              "lane": "recruiter",
+              "name": "Ramiro Molina",
+              "profile": "https://www.linkedin.com/in/ramiro-molina-6b2416153/",
+              "position": "Saved on application row",
+              "approval": "",
+              "outcome": "Not reached out",
+              "route": "application-tracker",
+              "connectionNote": "",
+              "sentDate": "2026-04-24",
+              "source": "application-tracker",
+              "lastChecked": "2026-04-24",
+              "notes": "Active application needs recruiter outreach."
+            }
+          ]
+        },
+        {
+          "key": "f7399542-9122-481a-bf64-43bf8093748b",
+          "company": "Notion",
+          "role": "Software Engineer, Fullstack, Early Career",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Labeled, needs approval"
+          ],
+          "contacts": [
+            {
+              "lane": "recruiter",
+              "name": "Angela Ching",
+              "profile": "https://www.linkedin.com/in/angela-ching-1536a9a0/",
+              "position": "Saved on application row",
+              "approval": "",
+              "outcome": "Not reached out",
+              "route": "application-tracker",
+              "connectionNote": "",
+              "sentDate": "2026-04-06",
+              "source": "application-tracker",
+              "lastChecked": "2026-04-06",
+              "notes": "Active application needs recruiter outreach."
+            }
+          ]
+        },
+        {
+          "key": "4381193384",
+          "company": "Spotify",
+          "role": "Backend Engineer - Platform Developer Experience",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Labeled, needs approval"
+          ],
+          "contacts": [
+            {
+              "lane": "recruiter",
+              "name": "Mehul Varma",
+              "profile": "https://www.linkedin.com/in/mehul-varma/",
+              "position": "Saved on application row",
+              "approval": "",
+              "outcome": "Not reached out",
+              "route": "application-tracker",
+              "connectionNote": "",
+              "sentDate": "2026-04-07",
+              "source": "application-tracker",
+              "lastChecked": "2026-04-07",
+              "notes": "Active application needs recruiter outreach."
+            }
+          ]
+        },
+        {
+          "key": "19c5ea15-6f4d-425a-911c-c3f0ae086f8f",
+          "company": "Spotify",
+          "role": "Backend Engineer - Music Mission",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Labeled, needs approval"
+          ],
+          "contacts": [
+            {
+              "lane": "recruiter",
+              "name": "Mehul Varma",
+              "profile": "https://www.linkedin.com/in/mehul-varma/",
+              "position": "Saved on application row",
+              "approval": "",
+              "outcome": "Not reached out",
+              "route": "application-tracker",
+              "connectionNote": "",
+              "sentDate": "2026-04-06",
+              "source": "application-tracker",
+              "lastChecked": "2026-04-06",
+              "notes": "Active application needs recruiter outreach."
+            }
+          ]
+        },
+        {
+          "key": "41c56e31-5515-48d7-a872-e775ee5c682e",
+          "company": "Stainless",
+          "role": "Software Engineer, Generalist",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Labeled, needs approval"
+          ],
+          "contacts": [
+            {
+              "lane": "recruiter",
+              "name": "Jeremy Galossi",
+              "profile": "https://www.linkedin.com/in/jeremygalossi/",
+              "position": "Saved on application row",
+              "approval": "",
+              "outcome": "Not reached out",
+              "route": "application-tracker",
+              "connectionNote": "",
+              "sentDate": "2026-04-15",
+              "source": "application-tracker",
+              "lastChecked": "2026-04-15",
+              "notes": "Active application needs recruiter outreach."
+            }
+          ]
         },
         {
           "key": "e729560e-a2dd-4949-8dc5-031312a9b2e2",
@@ -19760,6 +19916,2433 @@
               "notes": "Verified current Benchling Head of Talent via public LinkedIn result crawled last week and The Org current profile."
             }
           ]
+        },
+        {
+          "key": "91296",
+          "company": "SalesPatriot",
+          "role": "Full Stack Engineer (San Francisco)",
+          "fitScore": 7,
+          "status": "Interviewing",
+          "count": 1,
+          "states": [
+            "Labeled, needs approval"
+          ],
+          "contacts": [
+            {
+              "lane": "recruiter",
+              "name": "Sophia Morse",
+              "profile": "",
+              "position": "Saved on application row",
+              "approval": "",
+              "outcome": "Not reached out",
+              "route": "application-tracker",
+              "connectionNote": "",
+              "sentDate": "2026-04-27",
+              "source": "application-tracker",
+              "lastChecked": "2026-04-27",
+              "notes": "Active application needs recruiter outreach."
+            }
+          ]
+        },
+        {
+          "key": "7673126003",
+          "company": "Affirm",
+          "role": "Software Engineer I, Backend (Purchasing Power Experience)",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8530635002",
+          "company": "Amplitude",
+          "role": "Software Engineer II, Data Warehouse",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4409014859",
+          "company": "Aquatic Capital Management",
+          "role": "Software Engineer, Early Career",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4658890005",
+          "company": "AssetWatch",
+          "role": "Backend Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4224514009",
+          "company": "Attentive",
+          "role": "Software Engineer II, BI Tooling and Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "a4172515-0353-47ec-9c71-631a294aa137",
+          "company": "Automat",
+          "role": "Software Engineer (Junior/Intermediate)",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4974798008",
+          "company": "Beacon Software",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4209984009",
+          "company": "Fanatics Betting & Gaming",
+          "role": "Software Engineer II, iCasino - US",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7839346",
+          "company": "Flexport",
+          "role": "Software Engineer II, Autonomous Freight Systems",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4006734005",
+          "company": "Glean",
+          "role": "Software Engineer, Fullstack",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4404859319",
+          "company": "Loop",
+          "role": "2026 New Grad Software Engineer, Full-Stack",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4406677608",
+          "company": "Loop",
+          "role": "2026 New Grad Software Engineer, Full-Stack (New York)",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8395412002",
+          "company": "Lynx Analytics",
+          "role": "Software Engineer (US)",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4821266008",
+          "company": "Mattermost",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "cbf278fd-84ec-48d9-8052-b76abb035ac7",
+          "company": "Mirage",
+          "role": "Software Engineer, Early Career",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7773373",
+          "company": "Mixpanel",
+          "role": "Software Engineer, Growth (New Grad)",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4408291912",
+          "company": "Paramount",
+          "role": "Software Engineer - AI Tooling & Quality Engineering Platforms",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7494666",
+          "company": "Pinterest",
+          "role": "Security Software Engineer II, Corporate Security",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7770914",
+          "company": "Pinterest",
+          "role": "Security Software Engineer II, Detection and Response",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7770900",
+          "company": "Pinterest",
+          "role": "Security Software Engineer II, Internal Identity & Access Management",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4813946",
+          "company": "Pinterest",
+          "role": "Software Engineer II, Backend",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7782552",
+          "company": "Pinterest",
+          "role": "Software Engineer II, Backend, tvScientific",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7782571",
+          "company": "Pinterest",
+          "role": "Software Engineer II, ML Platform, tvScientific",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7642265",
+          "company": "Pinterest",
+          "role": "Software Engineer II, Simulation, tvScientific",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4665557005",
+          "company": "Scale AI",
+          "role": "Infrastructure Software Engineer, Enterprise GenAI",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4481921005",
+          "company": "Scale AI",
+          "role": "Mission Software Engineer, Public Sector",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4673771005",
+          "company": "Scale AI",
+          "role": "Software Engineer, ARC Team",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4363623005",
+          "company": "Scale AI",
+          "role": "Software Engineer, Frontier AI Infrastructure",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4591300005",
+          "company": "Scale AI",
+          "role": "Software Engineer, Gen AI",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4844947101",
+          "company": "StubHub",
+          "role": "Software Engineer II - AI Enablement",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4856003101",
+          "company": "StubHub",
+          "role": "Software Engineer II - AI Enablement",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4825352101",
+          "company": "StubHub",
+          "role": "Software Engineer II - Open Distribution (Backend)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7485892",
+          "company": "Sumo Logic",
+          "role": "Software Engineer II - Core Platform",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5616318004",
+          "company": "SupplyHouse.com",
+          "role": "Backend Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5043258007",
+          "company": "The Trade Desk",
+          "role": "Full Stack Software Engineer II",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8367602002",
+          "company": "Twitch",
+          "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8519628002",
+          "company": "Twitch",
+          "role": "Software Engineer I, Ad Supply Experiences",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8459320002",
+          "company": "Twitch",
+          "role": "Software Engineer I, Commerce Engineering",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8499608002",
+          "company": "Twitch",
+          "role": "Software Engineer II, Safety",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8470752002",
+          "company": "Twitch",
+          "role": "Software Engineer I, Streamer Monetization Experience",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7685236003",
+          "company": "Affirm",
+          "role": "Software Engineer I, Full-Stack (Home and Search Experience)",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8505982002",
+          "company": "Alarm.com",
+          "role": "Software Engineer II",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5003658007",
+          "company": "Anduril Industries",
+          "role": "Software Engineer II, Manufacturing Test",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-apple-game-services",
+          "company": "Apple",
+          "role": "Software Engineer, Apple Game Services",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4408057697",
+          "company": "Blossom",
+          "role": "Software Engineer (All Levels)",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4397683013",
+          "company": "Color",
+          "role": "New Grad Software Engineer",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "fdb3fcb7-2575-4fb2-b5d8-945a7aeab427",
+          "company": "First Resonance",
+          "role": "Forward Deployed Software Engineer",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4398854319",
+          "company": "Foxglove",
+          "role": "Software Engineer, New Grad",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "f4018670-2c66-4da9-acac-2aa0af432abb",
+          "company": "Garage",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7029957003",
+          "company": "Genies",
+          "role": "Backend Engineer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4581643005",
+          "company": "Glean",
+          "role": "Software Engineer, Backend",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "767a3a59-53d6-4306-afae-6b05a265ba82",
+          "company": "Glimpse",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4678586005",
+          "company": "Grow Therapy",
+          "role": "Software Engineer, Backend",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4678587005",
+          "company": "Grow Therapy",
+          "role": "Software Engineer - Full Stack",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "0e6d43a6-a5f9-44fb-be3e-78a160a8fb11",
+          "company": "Maybern",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7850913",
+          "company": "Mixpanel",
+          "role": "Software Engineer, DevInfra",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5199253008",
+          "company": "Parsec Automation Corp.",
+          "role": "Software Engineer II (AI Focus)",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4243684882",
+          "company": "Plaid",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "e158152c-c34f-47bd-995b-3fedaeab09cf",
+          "company": "Plaud",
+          "role": "Founding Backend Engineer",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4407874068",
+          "company": "Playbook Sports",
+          "role": "Full Stack Engineer",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "820e461b-cae2-4e13-b9e4-2e17270bd78f",
+          "company": "Reval",
+          "role": "Founding Software Engineer",
+          "fitScore": 9,
+          "status": "Online Assessment",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "JR330400-1",
+          "company": "Salesforce",
+          "role": "Software Engineering AMTS (College Grad)",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7843972",
+          "company": "Schonfeld",
+          "role": "Full Stack Engineer",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "77521da6-5a0a-44bf-b434-6947f345c970",
+          "company": "Slash",
+          "role": "Software Engineer, Growth",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4689411005",
+          "company": "Spot & Tango",
+          "role": "Software Engineer, Full Stack",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "529eef66-1b80-4bda-a385-9501033a1053",
+          "company": "Traba",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "candidates-apply",
+          "company": "Underdog.io",
+          "role": "Full Stack Engineer",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5789584004",
+          "company": "ngrok",
+          "role": "Software Engineer II/III/Senior, Gateway",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4408226465",
+          "company": "Airbnb",
+          "role": "Software Engineer, Trust",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "MjI2MDItaHRxZWJ3YTRoa281aDY2ZQ==",
+          "company": "Albert Bow",
+          "role": "Software Engineer, Low Latency Trading",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4407459453",
+          "company": "Alexander Chapman",
+          "role": "Founding Full Stack Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4408787935",
+          "company": "Angi",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5985625004",
+          "company": "Apptronik",
+          "role": "Software Engineer - Platform",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4404700618",
+          "company": "Asha Health",
+          "role": "Software Engineer, AI x Healthcare",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "64876579-05a2-40b6-a772-d1ce8b0ac8c4",
+          "company": "Assort Health",
+          "role": "Agent Engineer (New Grad, Summer 2026)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4395721402",
+          "company": "Bamboo X",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4406548495",
+          "company": "Chalk",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5125081007",
+          "company": "Clarity Innovations",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "9ed623a7-fc2d-4afc-ab88-a01af977cb9f",
+          "company": "Cluely",
+          "role": "Founding Engineer (Fullstack TypeScript)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4d5a3632-2812-4ab0-b3ad-ca6cf6083348",
+          "company": "Comulate",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "JbodeMW-new-grad-software-engineer",
+          "company": "Confido",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5116390007",
+          "company": "Conga",
+          "role": "Software Engineer II - Full Stack",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4382410515",
+          "company": "Crossing Hurdles",
+          "role": "Full Stack Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4405984314",
+          "company": "Crossing Hurdles",
+          "role": "Software Engineer (New Grad)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4406142475",
+          "company": "Cruzader Advanced Recruiting Solutions",
+          "role": "Software Engineer Backend Platform",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4407442306",
+          "company": "DW SISTERS LLC",
+          "role": "Full Stack Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4401461482",
+          "company": "Dirac, Inc.",
+          "role": "Forward Deployed Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5207177008",
+          "company": "Divergent",
+          "role": "Full Stack Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "e0eca13d-889e-4efb-962e-fdf387875fe3",
+          "company": "Edra",
+          "role": "Software Engineer - Back End (New York)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4234731009",
+          "company": "Empower Pharmacy",
+          "role": "Full Stack Developer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4394678938",
+          "company": "Epic Placements",
+          "role": "Agent Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4408758326",
+          "company": "Flip",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4407534601",
+          "company": "Formation Bio",
+          "role": "Software Engineer (Open Level)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4408715789",
+          "company": "Formation Bio",
+          "role": "Software Engineer (Open Level)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4677397006",
+          "company": "Formic",
+          "role": "Full Stack Software Engineer - Robotics",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4685899005",
+          "company": "Future",
+          "role": "Infrastructure Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "637a49f0-7244-4bca-8093-232cb27b42c0",
+          "company": "Grid",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4407027169",
+          "company": "Healink",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4407016717",
+          "company": "Healink",
+          "role": "Full Stack Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4546885007",
+          "company": "HeyGen",
+          "role": "Software Engineer, University Graduate",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4402469688",
+          "company": "Initi8 Recruitment",
+          "role": "Software Engineer (Founding Team / 0-3 Years Experience)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4401328323",
+          "company": "Intuit",
+          "role": "Center of Money Software Engineer 1",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4378040567",
+          "company": "Justworks",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4406401493",
+          "company": "Kaizen",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4231980009",
+          "company": "Kapitus",
+          "role": "Software Engineer II",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4391881641",
+          "company": "LinkedIn",
+          "role": "Software Engineer - Applications",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4398089710",
+          "company": "Loop",
+          "role": "Software Engineer, Full-Stack",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "am9icG9zdDodtsh6pWUJjQgE8lXoaEJi",
+          "company": "Luma Labs AI",
+          "role": "Software Engineer - Product",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "1079158160340219",
+          "company": "Meta",
+          "role": "Software Engineer, Product",
+          "fitScore": 8,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4380380329",
+          "company": "Monarch Recruiters",
+          "role": "Full Stack Engineer (New Grad)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "744000122271016",
+          "company": "NBCUniversal",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "am9icG9zdDqbMRleJT0YrlocLLBQmE5p",
+          "company": "Narmi",
+          "role": "Software Engineer, New Grad",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4402056168",
+          "company": "NexTech Capital",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7719281003",
+          "company": "Next Insurance",
+          "role": "Backend Engineer - DevEx Team",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4353111144",
+          "company": "Overland AI",
+          "role": "Software Engineer, Perception (All levels)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7587255003",
+          "company": "Personalis, Inc",
+          "role": "Software Engineer 2",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4363065258",
+          "company": "Plaud",
+          "role": "Software Engineer (Platform)- San Francisco",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "powermarket-careers-full-stack-engineer",
+          "company": "PowerMarket",
+          "role": "Full Stack Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "2a30fc37de478109a6eae140ffc6263a",
+          "company": "Prism Data",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "043bb5b3-3f78-45d8-a115-fb10f4ed3b09",
+          "company": "Profound",
+          "role": "Software Engineer, Backend",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "27543ebd-9a5e-4192-b738-bf475d597551",
+          "company": "Quantcast",
+          "role": "Software Engineer (Audience Platform)",
+          "fitScore": 8,
+          "status": "Online Assessment",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4393489834",
+          "company": "Quantcast",
+          "role": "Software Engineer (Big Data)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4407470141",
+          "company": "Radley James",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7863495",
+          "company": "Rent the Runway",
+          "role": "Software Engineer III - Full Stack",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4395968677",
+          "company": "Rise Technical",
+          "role": "Software Engineer (Model Evaluation & Benchmarking)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7263578",
+          "company": "Robinhood",
+          "role": "Software Engineer, Backend",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4402165922",
+          "company": "Rokt",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Interviewing",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4405909745",
+          "company": "Ruli",
+          "role": "Software Engineer, AI",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4395867531",
+          "company": "Saragossa",
+          "role": "Full Stack Developer - Sports Science Innovation",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4408057809",
+          "company": "Sofar Ocean",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4398591026",
+          "company": "Speakeasy",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "a8606ee6-84b9-4677-af2f-b57f1e71fd91",
+          "company": "Spotify",
+          "role": "Frontend Engineer - Music",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4404464189",
+          "company": "Stott and May",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "am9icG9zdDokLY-gOKYyi4f5JNIx755l",
+          "company": "Supio",
+          "role": "Software Engineer, Full Stack",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4391812149",
+          "company": "TechKareer",
+          "role": "Software Engineer (SF / NYC)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4407401640",
+          "company": "The Voleon Group",
+          "role": "Software Engineer, DevOps",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4328991043",
+          "company": "Tinder",
+          "role": "Software Engineer, Backend",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4409062593",
+          "company": "Tines",
+          "role": "Software Engineer (full-stack)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4403367885",
+          "company": "TradeForm",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "773",
+          "company": "Uphold",
+          "role": "Software Engineer - Trading Execution",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4407898952",
+          "company": "Venture Up",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "f2cca900-58ed-4e14-9e4d-2797626d750e",
+          "company": "Voxel",
+          "role": "Software Engineer - Platform",
+          "fitScore": 8,
+          "status": "Online Assessment",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5124207007",
+          "company": "Whop",
+          "role": "Full Stack Engineer, Ad Networks",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "d47287f7-97cc-4216-8c34-737a59a1f9c0",
+          "company": "Zip",
+          "role": "Software Engineer, Backend (All Levels)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-new-grad",
+          "company": "qlaud",
+          "role": "Software Engineer New Grad",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5985982004",
+          "company": "Apptronik",
+          "role": "Software Engineer - Controls Infrastructure",
+          "fitScore": 7,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "0e1746e5-cfb8-4020-9aef-b978f8b61957",
+          "company": "AvicenaTech",
+          "role": "Entry Level Software Engineer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "2f915976-b1e1-4e3e-81da-1116dcbb2344",
+          "company": "Belvedere Trading",
+          "role": "Software Engineer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4394990220",
+          "company": "Blossom",
+          "role": "Software Engineer (All Levels)",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4396373128",
+          "company": "Chalk",
+          "role": "Software Engineer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4310537769",
+          "company": "Character.AI",
+          "role": "Software Engineer, Monetization",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4372088330",
+          "company": "Crossing Hurdles",
+          "role": "Staff-Software Engineer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4385381877",
+          "company": "Etched",
+          "role": "Core Software Engineer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4638008005",
+          "company": "Glean",
+          "role": "Software Engineer, Context Platform",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4377604624",
+          "company": "Goldman Sachs",
+          "role": "Asset & Wealth Management - Data Engineer - Associate - New York",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4383132488",
+          "company": "JKB Advisors",
+          "role": "Full Stack Engineer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4394227079",
+          "company": "Magnite",
+          "role": "Engineer I, Automation and Custom Applications",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4691800005",
+          "company": "Mill",
+          "role": "Software Development Engineer - Test",
+          "fitScore": 7,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4380393957",
+          "company": "Monarch Recruiters",
+          "role": "Full Stack Engineer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4399975980",
+          "company": "NetApp",
+          "role": "NetApp Emerging Talent - Software Engineer (Cloud Storage)",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5092337007",
+          "company": "Pattern Data",
+          "role": "Software Engineer (Entry)",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7720736003",
+          "company": "Revolutional, LLC",
+          "role": "Full Stack .NET Developer",
+          "fitScore": 7,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4367074328",
+          "company": "Rillet",
+          "role": "Software Engineer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4392487592",
+          "company": "Roblox",
+          "role": "Software Engineer, User Sharing",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4377471128",
+          "company": "SideShift",
+          "role": "Software Engineer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4405926747",
+          "company": "SynergisticIT",
+          "role": "Junior Java Spring boot developer/Data Scientist",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4366508876",
+          "company": "Valon",
+          "role": "Software Engineer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4153477552",
+          "company": "Zip",
+          "role": "Software Engineer, Identity",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5119111007",
+          "company": "xAI",
+          "role": "Backend Engineer - API",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4687462005",
+          "company": "DV Trading",
+          "role": "Software Developer (New York)",
+          "fitScore": 6,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "0df32e98-1366-4f05-925a-929e77924d82",
+          "company": "Harper",
+          "role": "Member of Technical Staff",
+          "fitScore": 6,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "eeb31906-5f8f-4599-a77a-dbee6c2079c9",
+          "company": "Match Group",
+          "role": "Android Engineer",
+          "fitScore": 6,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "6d8c0ef7-aa0f-4ea4-8473-6c20ad18745f",
+          "company": "Match Group",
+          "role": "iOS Engineer",
+          "fitScore": 6,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4404904624",
+          "company": "Tecla",
+          "role": "Associate Member of Technical Staff",
+          "fitScore": 6,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "senior-ai-engineer",
+          "company": "TestSprite",
+          "role": "Senior AI Engineer",
+          "fitScore": 6,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4407590662",
+          "company": "Viasat",
+          "role": "SW/Agentic Engineer, Early Career",
+          "fitScore": 6,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4403705848",
+          "company": "Acceler8 Talent",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4397622949",
+          "company": "Adobe",
+          "role": "Software Development Engineer",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4375892878",
+          "company": "Arcadia",
+          "role": "Founding Engineer",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4397753575",
+          "company": "Bilt",
+          "role": "Back End Engineer (All Levels)",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4388521326",
+          "company": "Bretton AI",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4334556419",
+          "company": "Comulate",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4386795911",
+          "company": "Diligent",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4158283450",
+          "company": "DoorDash",
+          "role": "Application Engineer - GTMT",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4399330438",
+          "company": "Jobot",
+          "role": "Frontend Engineer",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4377071101",
+          "company": "Marex",
+          "role": "Software Developer - Onboarding",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4405676405",
+          "company": "Mercor",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 5,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4386953210",
+          "company": "Moment",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4278857720",
+          "company": "OpenAI",
+          "role": "Forward Deployed Engineer (FDE) - SF",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4398257479",
+          "company": "Orange Quarter",
+          "role": "Founding Forward Deployed Engineer",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4407101107",
+          "company": "Prismera",
+          "role": "Founding Design Engineer",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4402477578",
+          "company": "Rise Technical",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4393462263",
+          "company": "Skale",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4315977938",
+          "company": "Stainless",
+          "role": "Support Engineer",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4405284190",
+          "company": "Storm2",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4407862803",
+          "company": "Tavus",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4402457792",
+          "company": "UMATR",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "careers",
+          "company": "Uber",
+          "role": "Sales Performance Management Application Developer",
+          "fitScore": 5,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "113311514005250758-strategic-cloud-engineer-google-public-sector",
+          "company": "Google",
+          "role": "Strategic Cloud Engineer, Google Public Sector",
+          "fitScore": 4,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4384634511",
+          "company": "LangChain",
+          "role": "Deployed Engineer (Los Angeles)",
+          "fitScore": 4,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
         }
       ],
       "sentRoles": [
@@ -22163,258 +24746,6 @@
     "engineer": {
       "activeRoles": [
         {
-          "key": "4409130289",
-          "company": "Airbnb",
-          "role": "Software Engineer, Airbnb - New Grad",
-          "fitScore": 10,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4409014859",
-          "company": "Aquatic Capital Management",
-          "role": "Software Engineer, Early Career",
-          "fitScore": 10,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4408291912",
-          "company": "Paramount",
-          "role": "Software Engineer - AI Tooling & Quality Engineering Platforms",
-          "fitScore": 10,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4408057697",
-          "company": "Blossom",
-          "role": "Software Engineer (All Levels)",
-          "fitScore": 9,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4408226465",
-          "company": "Airbnb",
-          "role": "Software Engineer, Trust",
-          "fitScore": 8,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4408787935",
-          "company": "Angi",
-          "role": "Software Engineer",
-          "fitScore": 8,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4406548495",
-          "company": "Chalk",
-          "role": "Software Engineer",
-          "fitScore": 8,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "9ed623a7-fc2d-4afc-ab88-a01af977cb9f",
-          "company": "Cluely",
-          "role": "Founding Engineer (Fullstack TypeScript)",
-          "fitScore": 8,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4405984314",
-          "company": "Crossing Hurdles",
-          "role": "Software Engineer (New Grad)",
-          "fitScore": 8,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4408758326",
-          "company": "Flip",
-          "role": "Software Engineer",
-          "fitScore": 8,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4407534601",
-          "company": "Formation Bio",
-          "role": "Software Engineer (Open Level)",
-          "fitScore": 8,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4408715789",
-          "company": "Formation Bio",
-          "role": "Software Engineer (Open Level)",
-          "fitScore": 8,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4407016717",
-          "company": "Healink",
-          "role": "Full Stack Engineer",
-          "fitScore": 8,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4407027169",
-          "company": "Healink",
-          "role": "Software Engineer",
-          "fitScore": 8,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4406401493",
-          "company": "Kaizen",
-          "role": "Software Engineer",
-          "fitScore": 8,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "1079158160340219",
-          "company": "Meta",
-          "role": "Software Engineer, Product",
-          "fitScore": 8,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4395867531",
-          "company": "Saragossa",
-          "role": "Full Stack Developer - Sports Science Innovation",
-          "fitScore": 8,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "a8606ee6-84b9-4677-af2f-b57f1e71fd91",
-          "company": "Spotify",
-          "role": "Frontend Engineer - Music",
-          "fitScore": 8,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4328991043",
-          "company": "Tinder",
-          "role": "Software Engineer, Backend",
-          "fitScore": 8,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4409062593",
-          "company": "Tines",
-          "role": "Software Engineer (full-stack)",
-          "fitScore": 8,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "113311514005250758-strategic-cloud-engineer-google-public-sector",
-          "company": "Google",
-          "role": "Strategic Cloud Engineer, Google Public Sector",
-          "fitScore": 4,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "7859317",
           "company": "Airbnb",
           "role": "iOS Software Engineer, Airbnb - New Grad",
@@ -23264,9 +25595,9 @@
           "contacts": [
             {
               "lane": "engineer",
-              "name": "Amelia Jones",
-              "profile": "https://www.linkedin.com/in/ameliajonessoftwareengineer/",
-              "position": "Software Engineer at Clever",
+              "name": "Raquel Gonzalez",
+              "profile": "https://www.linkedin.com/in/raquel-gr/",
+              "position": "Engineer at Clever",
               "approval": "Needs engineer",
               "outcome": "Not reached out",
               "route": "try-free-inmail-then-connect-note",
@@ -23274,7 +25605,7 @@
               "sentDate": "2026-04-28",
               "source": "batch",
               "lastChecked": "2026-04-28",
-              "notes": "Specific Clever engineer already discovered in application notes; selected as existing company-aligned engineering contact.; Existing source did not prove this is a current engineer at the target company. Current-company engineer verification required before approval or outreach."
+              "notes": "Corrected from recruiter list: Raquel Gonzalez is an engineer contact, not a recruiter.; Current-company engineer verification required before approval or outreach."
             }
           ]
         },
@@ -27192,6 +29523,1038 @@
               "notes": "Fallback LinkedIn people-search row added to make batch complete; prefer UGA alumni, team-aligned engineers, or credible peer contacts before approving/sending.; Fallback search row is not a verified person. Current-company engineer verification required before approval or outreach."
             }
           ]
+        },
+        {
+          "key": "7673126003",
+          "company": "Affirm",
+          "role": "Software Engineer I, Backend (Purchasing Power Experience)",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4409130289",
+          "company": "Airbnb",
+          "role": "Software Engineer, Airbnb - New Grad",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8530635002",
+          "company": "Amplitude",
+          "role": "Software Engineer II, Data Warehouse",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4409014859",
+          "company": "Aquatic Capital Management",
+          "role": "Software Engineer, Early Career",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4658890005",
+          "company": "AssetWatch",
+          "role": "Backend Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4224514009",
+          "company": "Attentive",
+          "role": "Software Engineer II, BI Tooling and Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4974798008",
+          "company": "Beacon Software",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4209984009",
+          "company": "Fanatics Betting & Gaming",
+          "role": "Software Engineer II, iCasino - US",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7839346",
+          "company": "Flexport",
+          "role": "Software Engineer II, Autonomous Freight Systems",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4006734005",
+          "company": "Glean",
+          "role": "Software Engineer, Fullstack",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8395412002",
+          "company": "Lynx Analytics",
+          "role": "Software Engineer (US)",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4821266008",
+          "company": "Mattermost",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "cbf278fd-84ec-48d9-8052-b76abb035ac7",
+          "company": "Mirage",
+          "role": "Software Engineer, Early Career",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7773373",
+          "company": "Mixpanel",
+          "role": "Software Engineer, Growth (New Grad)",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4408291912",
+          "company": "Paramount",
+          "role": "Software Engineer - AI Tooling & Quality Engineering Platforms",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7494666",
+          "company": "Pinterest",
+          "role": "Security Software Engineer II, Corporate Security",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7770914",
+          "company": "Pinterest",
+          "role": "Security Software Engineer II, Detection and Response",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7770900",
+          "company": "Pinterest",
+          "role": "Security Software Engineer II, Internal Identity & Access Management",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4813946",
+          "company": "Pinterest",
+          "role": "Software Engineer II, Backend",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7782552",
+          "company": "Pinterest",
+          "role": "Software Engineer II, Backend, tvScientific",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7782571",
+          "company": "Pinterest",
+          "role": "Software Engineer II, ML Platform, tvScientific",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7642265",
+          "company": "Pinterest",
+          "role": "Software Engineer II, Simulation, tvScientific",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4665557005",
+          "company": "Scale AI",
+          "role": "Infrastructure Software Engineer, Enterprise GenAI",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4481921005",
+          "company": "Scale AI",
+          "role": "Mission Software Engineer, Public Sector",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4673771005",
+          "company": "Scale AI",
+          "role": "Software Engineer, ARC Team",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4363623005",
+          "company": "Scale AI",
+          "role": "Software Engineer, Frontier AI Infrastructure",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4591300005",
+          "company": "Scale AI",
+          "role": "Software Engineer, Gen AI",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4844947101",
+          "company": "StubHub",
+          "role": "Software Engineer II - AI Enablement",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4856003101",
+          "company": "StubHub",
+          "role": "Software Engineer II - AI Enablement",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4825352101",
+          "company": "StubHub",
+          "role": "Software Engineer II - Open Distribution (Backend)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7485892",
+          "company": "Sumo Logic",
+          "role": "Software Engineer II - Core Platform",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5616318004",
+          "company": "SupplyHouse.com",
+          "role": "Backend Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5043258007",
+          "company": "The Trade Desk",
+          "role": "Full Stack Software Engineer II",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8367602002",
+          "company": "Twitch",
+          "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8519628002",
+          "company": "Twitch",
+          "role": "Software Engineer I, Ad Supply Experiences",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8459320002",
+          "company": "Twitch",
+          "role": "Software Engineer I, Commerce Engineering",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8499608002",
+          "company": "Twitch",
+          "role": "Software Engineer II, Safety",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8470752002",
+          "company": "Twitch",
+          "role": "Software Engineer I, Streamer Monetization Experience",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7685236003",
+          "company": "Affirm",
+          "role": "Software Engineer I, Full-Stack (Home and Search Experience)",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8505982002",
+          "company": "Alarm.com",
+          "role": "Software Engineer II",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5003658007",
+          "company": "Anduril Industries",
+          "role": "Software Engineer II, Manufacturing Test",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-apple-game-services",
+          "company": "Apple",
+          "role": "Software Engineer, Apple Game Services",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4408057697",
+          "company": "Blossom",
+          "role": "Software Engineer (All Levels)",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7029957003",
+          "company": "Genies",
+          "role": "Backend Engineer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4581643005",
+          "company": "Glean",
+          "role": "Software Engineer, Backend",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4678587005",
+          "company": "Grow Therapy",
+          "role": "Software Engineer - Full Stack",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7850913",
+          "company": "Mixpanel",
+          "role": "Software Engineer, DevInfra",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5199253008",
+          "company": "Parsec Automation Corp.",
+          "role": "Software Engineer II (AI Focus)",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7843972",
+          "company": "Schonfeld",
+          "role": "Full Stack Engineer",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4689411005",
+          "company": "Spot & Tango",
+          "role": "Software Engineer, Full Stack",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5789584004",
+          "company": "ngrok",
+          "role": "Software Engineer II/III/Senior, Gateway",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4408226465",
+          "company": "Airbnb",
+          "role": "Software Engineer, Trust",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4408787935",
+          "company": "Angi",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5985625004",
+          "company": "Apptronik",
+          "role": "Software Engineer - Platform",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4406548495",
+          "company": "Chalk",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5125081007",
+          "company": "Clarity Innovations",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "9ed623a7-fc2d-4afc-ab88-a01af977cb9f",
+          "company": "Cluely",
+          "role": "Founding Engineer (Fullstack TypeScript)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5116390007",
+          "company": "Conga",
+          "role": "Software Engineer II - Full Stack",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4405984314",
+          "company": "Crossing Hurdles",
+          "role": "Software Engineer (New Grad)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5207177008",
+          "company": "Divergent",
+          "role": "Full Stack Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4234731009",
+          "company": "Empower Pharmacy",
+          "role": "Full Stack Developer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4408758326",
+          "company": "Flip",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4407534601",
+          "company": "Formation Bio",
+          "role": "Software Engineer (Open Level)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4408715789",
+          "company": "Formation Bio",
+          "role": "Software Engineer (Open Level)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4677397006",
+          "company": "Formic",
+          "role": "Full Stack Software Engineer - Robotics",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4685899005",
+          "company": "Future",
+          "role": "Infrastructure Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4407016717",
+          "company": "Healink",
+          "role": "Full Stack Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4407027169",
+          "company": "Healink",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4406401493",
+          "company": "Kaizen",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4231980009",
+          "company": "Kapitus",
+          "role": "Software Engineer II",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "1079158160340219",
+          "company": "Meta",
+          "role": "Software Engineer, Product",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7719281003",
+          "company": "Next Insurance",
+          "role": "Backend Engineer - DevEx Team",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7587255003",
+          "company": "Personalis, Inc",
+          "role": "Software Engineer 2",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7863495",
+          "company": "Rent the Runway",
+          "role": "Software Engineer III - Full Stack",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7263578",
+          "company": "Robinhood",
+          "role": "Software Engineer, Backend",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4395867531",
+          "company": "Saragossa",
+          "role": "Full Stack Developer - Sports Science Innovation",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "a8606ee6-84b9-4677-af2f-b57f1e71fd91",
+          "company": "Spotify",
+          "role": "Frontend Engineer - Music",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4328991043",
+          "company": "Tinder",
+          "role": "Software Engineer, Backend",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4409062593",
+          "company": "Tines",
+          "role": "Software Engineer (full-stack)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5124207007",
+          "company": "Whop",
+          "role": "Full Stack Engineer, Ad Networks",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-new-grad",
+          "company": "qlaud",
+          "role": "Software Engineer New Grad",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5985982004",
+          "company": "Apptronik",
+          "role": "Software Engineer - Controls Infrastructure",
+          "fitScore": 7,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4691800005",
+          "company": "Mill",
+          "role": "Software Development Engineer - Test",
+          "fitScore": 7,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7720736003",
+          "company": "Revolutional, LLC",
+          "role": "Full Stack .NET Developer",
+          "fitScore": 7,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5119111007",
+          "company": "xAI",
+          "role": "Backend Engineer - API",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "113311514005250758-strategic-cloud-engineer-google-public-sector",
+          "company": "Google",
+          "role": "Strategic Cloud Engineer, Google Public Sector",
+          "fitScore": 4,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
         }
       ],
       "sentRoles": [

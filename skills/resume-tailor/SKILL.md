@@ -120,6 +120,7 @@ The tracker also supports a configurable fit score and recruiter outreach flag:
 - `Fit Score` is a 1 to 10 heuristic based on role, location, company, source, and current status
 - `Reach Out` should default to `Yes` when the score is at or above the configured threshold
 - use `--fit-score` or `--reach-out` only when you need to override the defaults for a specific role
+- when `Reach Out` is enabled, `update_application_tracker.py` also upserts the role into `application-trackers/outreach-prospects.md` so recruiter and engineer queue views include the new tailored application immediately
 
 To backfill or recompute those values across the full tracker, run:
 

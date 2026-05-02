@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 220
+Companies queued: 221
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -135,6 +135,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Sartre Group | Founding Software Engineer, NYC (onsite), AI-native consumer insurance | 4407183931 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4407183931/) |  |  |  |  |
 | Ruli | Software Engineer, AI | 4405909745 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4405909745/) |  |  |  |  |
 | Rokt | Software Engineer | 4402165922 | 8 | Interviewing | Yes | [Posting](https://www.linkedin.com/jobs/view/4402165922) |  |  |  |  |
+| Robinhood | Software Engineer, Backend | 7263578 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/robinhood/jobs/7263578?t=gh_src%3D&gh_jid=7263578&gh_src=ed898e781us) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Rise Technical | Software Engineer (Model Evaluation & Benchmarking) | 4395968677 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4395968677/) |  |  |  |  |
 | Radley James | Software Engineer | 4407470141 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4407470141/apply/) |  |  |  |  |
 | Quantcast | Software Engineer (Audience Platform) | 27543ebd-9a5e-4192-b738-bf475d597551 | 8 | Online Assessment | Yes | [Posting](https://jobs.lever.co/quantcast/27543ebd-9a5e-4192-b738-bf475d597551) |  |  |  |  |

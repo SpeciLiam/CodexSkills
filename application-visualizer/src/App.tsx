@@ -381,6 +381,8 @@ function App() {
     }),
     [recruiterBatch, engineerBatch, ignoredBatchContacts],
   );
+  const visibleRecruiterWork = filterIgnoredRoleBuckets(activeRoleGroups.recruiter, ignoredBatchContacts, "recruiter");
+  const visibleEngineerWork = filterIgnoredRoleBuckets(activeRoleGroups.engineer, ignoredBatchContacts, "engineer");
 
   const radarData = useMemo(
     () => [
@@ -418,8 +420,8 @@ function App() {
       <MiniMetric label="Visible roles" value={filtered.length} />
       <MiniMetric label="Visible applied" value={filteredStats.applied} />
       <MiniMetric label="Avg fit" value={filteredStats.avgFit.toFixed(1)} />
-      <MiniMetric label="Recruiter lanes" value={laneDoneCount(recruiterApps, "recruiter")} />
-      <MiniMetric label="Engineer lanes" value={laneDoneCount(engineerApps, "engineer")} />
+      <MiniMetric label="Recruiter work" value={visibleRecruiterWork.length} />
+      <MiniMetric label="Engineer work" value={visibleEngineerWork.length} />
     </section>
   );
 
@@ -487,8 +489,8 @@ function App() {
             <div className="kpi-grid">
               <Kpi icon={<BriefcaseBusiness />} label="Applied" value={data.stats.kpis.applied} sub={percent(data.stats.kpis.applyRate)} />
               <Kpi icon={<Target />} label="Interview/OA" value={data.stats.kpis.interviewing + data.stats.kpis.assessments} sub="warm leads" />
-              <Kpi icon={<Send />} label="Reach out" value={data.stats.kpis.reachOut} sub="queued targets" />
-              <Kpi icon={<MailCheck />} label="Ready emails" value={data.stats.kpis.readyEmails} sub={`${data.stats.kpis.prospects} prospects`} />
+              <Kpi icon={<Send />} label="Recruiter work" value={data.stats.kpis.recruiterWork || visibleRecruiterWork.length} sub="not reached out" />
+              <Kpi icon={<MailCheck />} label="Engineer work" value={data.stats.kpis.engineerWork || visibleEngineerWork.length} sub="not reached out" />
             </div>
           </section>
 
@@ -648,8 +650,8 @@ function App() {
               <p>Fact-check labeled LinkedIn contacts before approval. Engineer is separate from recruiter.</p>
             </div>
             <div className="lane-role-grid">
-              <ActiveLaneRolesTable lane="recruiter" groups={filterIgnoredRoleBuckets(activeRoleGroups.recruiter, ignoredBatchContacts, "recruiter")} onOpenLane={setOpenBatchLane} />
-              <ActiveLaneRolesTable lane="engineer" groups={filterIgnoredRoleBuckets(activeRoleGroups.engineer, ignoredBatchContacts, "engineer")} onOpenLane={setOpenBatchLane} />
+              <ActiveLaneRolesTable lane="recruiter" groups={visibleRecruiterWork} onOpenLane={setOpenBatchLane} />
+              <ActiveLaneRolesTable lane="engineer" groups={visibleEngineerWork} onOpenLane={setOpenBatchLane} />
             </div>
           </section>
           <div className="lane-role-grid reached-out-grid">
@@ -694,11 +696,19 @@ function App() {
       )}
 
       {openBatchLane === "engineer" && (
-        <EngineerBatchModal rows={engineerBatch} ignoredContacts={ignoredBatchContacts} onClose={() => setOpenBatchLane(null)} onIgnore={ignoreBatchContact} />
+        <ActiveRoleQueueModal
+          lane="engineer"
+          groups={visibleEngineerWork}
+          onClose={() => setOpenBatchLane(null)}
+        />
       )}
 
       {openBatchLane === "recruiter" && (
-        <RecruiterBatchModal rows={recruiterBatch} ignoredContacts={ignoredBatchContacts} onClose={() => setOpenBatchLane(null)} onIgnore={ignoreBatchContact} />
+        <ActiveRoleQueueModal
+          lane="recruiter"
+          groups={visibleRecruiterWork}
+          onClose={() => setOpenBatchLane(null)}
+        />
       )}
 
       {openReachedOutLane && (
@@ -1334,6 +1344,102 @@ function RecruiterBatchModal({
         </div>
       </section>
     </div>
+  );
+}
+
+function ActiveRoleQueueModal({
+  lane,
+  groups,
+  onClose,
+}: {
+  lane: "recruiter" | "engineer";
+  groups: OutreachRoleBucket[];
+  onClose: () => void;
+}) {
+  const [startIndex, setStartIndex] = useState(1);
+  const [endIndex, setEndIndex] = useState("");
+  const sortedGroups = sortActiveRoleBuckets(groups);
+  const visibleGroups = sliceByOneBasedRange(sortedGroups, startIndex, endIndex);
+  const firstVisibleIndex = oneBasedRangeStart(sortedGroups.length, startIndex);
+  const labels = lane === "recruiter"
+    ? {
+      eyebrow: "Recruiter batch",
+      title: "Recruiter Work Queue",
+      description: "recruiter roles need label, approval, or send",
+      empty: "No active recruiter roles need review.",
+    }
+    : {
+      eyebrow: "Engineer batch",
+      title: "Engineer Work Queue",
+      description: "engineer or alumni roles need label, approval, or send",
+      empty: "No active engineer roles need review.",
+    };
+  return (
+    <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
+      <section className="outreach-modal batch-modal" role="dialog" aria-modal="true" aria-label={`${labels.title} review`} onMouseDown={(event) => event.stopPropagation()}>
+        <header>
+          <div>
+            <p className="eyebrow">{labels.eyebrow}</p>
+            <h2>{labels.title}</h2>
+            <p>{sortedGroups.length} {labels.description}.</p>
+          </div>
+          <button onClick={onClose} type="button" aria-label="Close"><X size={18} /></button>
+        </header>
+        <BatchModalControls
+          total={sortedGroups.length}
+          visible={visibleGroups.length}
+          startIndex={startIndex}
+          endIndex={endIndex}
+          onStartIndex={setStartIndex}
+          onEndIndex={setEndIndex}
+        />
+        <div className="modal-list batch-modal-list">
+          {visibleGroups.map((group, index) => (
+            <ActiveRoleQueueRow
+              lane={lane}
+              group={group}
+              displayIndex={firstVisibleIndex + index}
+              key={`active-role-${lane}-${group.key}`}
+            />
+          ))}
+          {!visibleGroups.length && <p className="batch-empty">{labels.empty}</p>}
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function ActiveRoleQueueRow({
+  lane,
+  group,
+  displayIndex,
+}: {
+  lane: "recruiter" | "engineer";
+  group: OutreachRoleBucket;
+  displayIndex: number;
+}) {
+  const primaryContact = group.contacts[0];
+  const label = lane === "recruiter" ? "Needs recruiter label" : "Needs engineer label";
+  return (
+    <article className="batch-row detailed indexed">
+      <span className="batch-index">{displayIndex}</span>
+      <div>
+        <strong>{group.company}</strong>
+        <p>{group.role}</p>
+        <small className="batch-contact">
+          <span>{primaryContact?.name || label}</span>
+          {primaryContact?.position && <em>{primaryContact.position}</em>}
+          {group.contacts.length > 1 && <em>+{group.contacts.length - 1} more</em>}
+        </small>
+        <BatchDetails
+          note={primaryContact?.connectionNote || ""}
+          notes={primaryContact?.notes || `Active ${lane} outreach role from the application tracker.`}
+        />
+      </div>
+      <WorkStatePills states={group.states} />
+      <b>{group.fitScore || "-"}</b>
+      {primaryContact?.profile ? <a href={primaryContact.profile} target="_blank" rel="noreferrer" aria-label={`${primaryContact.name || group.company} LinkedIn`}><ArrowUpRight size={17} /></a> : <span />}
+    </article>
   );
 }
 
@@ -2030,9 +2136,9 @@ function stateTone(state: string) {
 }
 
 function stateRank(state: string) {
-  if (state.startsWith("Needs label")) return 0;
+  if (state.startsWith("Approved")) return 0;
   if (state.startsWith("Labeled")) return 1;
-  if (state.startsWith("Approved")) return 2;
+  if (state.startsWith("Needs label")) return 2;
   return 3;
 }
 

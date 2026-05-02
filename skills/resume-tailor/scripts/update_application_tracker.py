@@ -56,6 +56,31 @@ LEGACY_COLUMNS = [
 ]
 
 DEFAULT_COLUMNS = CURRENT_COLUMNS
+OUTREACH_QUEUE_COLUMNS = [
+    "Company",
+    "Role",
+    "Posting Key",
+    "Fit Score",
+    "Status",
+    "Reach Out",
+    "Job Link",
+    "Prospect Count",
+    "Ready Emails",
+    "Last Updated",
+    "Notes",
+]
+OUTREACH_PROSPECT_COLUMNS = [
+    "Company",
+    "Posting Key",
+    "Priority",
+    "Target Type",
+    "Name",
+    "Title",
+    "LinkedIn",
+    "Apollo Email",
+    "Email Status",
+    "Notes",
+]
 
 TITLE_LINE = "# Application Tracker"
 DESCRIPTION_LINE = (
@@ -103,6 +128,10 @@ def repo_root_from_args(root: str | None) -> Path:
 
 def tracker_path(repo_root: Path) -> Path:
     return repo_root / "application-trackers" / "applications.md"
+
+
+def outreach_tracker_path(repo_root: Path) -> Path:
+    return repo_root / "application-trackers" / "outreach-prospects.md"
 
 
 def escape_cell(value: str) -> str:
@@ -226,6 +255,145 @@ def build_row(data: dict[str, str]) -> str:
     return "| " + " | ".join(escape_cell(data[column]) for column in DEFAULT_COLUMNS) + " |"
 
 
+def build_table_row(columns: list[str], data: dict[str, str]) -> str:
+    return "| " + " | ".join(escape_cell(data.get(column, "")) for column in columns) + " |"
+
+
+def merge_existing_application_row(existing: dict[str, str], incoming: dict[str, str]) -> dict[str, str]:
+    merged = dict(incoming)
+
+    if truthy(existing.get("Applied", "")) and not truthy(incoming.get("Applied", "")):
+        merged["Applied"] = existing["Applied"]
+    if (
+        normalize(incoming.get("Status", "")) == "resume tailored"
+        and normalize(existing.get("Status", "")) not in {"", "resume tailored"}
+    ):
+        merged["Status"] = existing["Status"]
+
+    for field in ("Recruiter Contact", "Recruiter Profile", "Engineer Contact", "Engineer Profile"):
+        if not merged.get(field) and existing.get(field):
+            merged[field] = existing[field]
+
+    existing_notes = existing.get("Notes", "").strip()
+    incoming_notes = incoming.get("Notes", "").strip()
+    if existing_notes and incoming_notes and incoming_notes not in existing_notes:
+        merged["Notes"] = f"{existing_notes}; {incoming_notes}"
+    elif existing_notes and not incoming_notes:
+        merged["Notes"] = existing_notes
+
+    return merged
+
+
+def outreach_queue_key(row: dict[str, str]) -> tuple[str, str]:
+    return normalize(row.get("Company", "")), normalize(row.get("Posting Key", ""))
+
+
+def parse_outreach_sections(lines: list[str]) -> tuple[list[dict[str, str]], list[dict[str, str]]]:
+    queue_rows: list[dict[str, str]] = []
+    prospect_rows: list[dict[str, str]] = []
+    section = ""
+
+    for line in lines:
+        if line.strip() == "## Company Queue":
+            section = "queue"
+            continue
+        if line.strip() == "## Prospect Details":
+            section = "prospects"
+            continue
+        if not line.startswith("| "):
+            continue
+        if "Company" in line and "Posting Key" in line:
+            continue
+        if set(line.replace("|", "").replace("-", "").strip()) == set():
+            continue
+
+        cells = split_row(line)
+        if section == "queue" and len(cells) == len(OUTREACH_QUEUE_COLUMNS):
+            queue_rows.append(dict(zip(OUTREACH_QUEUE_COLUMNS, cells)))
+        elif section == "prospects" and len(cells) == len(OUTREACH_PROSPECT_COLUMNS):
+            prospect_rows.append(dict(zip(OUTREACH_PROSPECT_COLUMNS, cells)))
+
+    return queue_rows, prospect_rows
+
+
+def render_outreach_tracker(queue_rows: list[dict[str, str]], prospect_rows: list[dict[str, str]]) -> str:
+    ready_emails = sum(1 for row in prospect_rows if normalize(row.get("Email Status", "")) == "ready")
+    pending_apollo = sum(1 for row in prospect_rows if normalize(row.get("Email Status", "")) in {"", "needs apollo"})
+    parts = [
+        "# Outreach Prospect Tracker",
+        "",
+        "This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.",
+        "",
+        f"Companies queued: {len(queue_rows)}",
+        f"Prospects recorded: {len(prospect_rows)} | Ready emails: {ready_emails} | Pending Apollo: {pending_apollo}",
+        "",
+        "## Company Queue",
+        "",
+        "| " + " | ".join(OUTREACH_QUEUE_COLUMNS) + " |",
+        "| " + " | ".join(["---"] * len(OUTREACH_QUEUE_COLUMNS)) + " |",
+    ]
+    parts.extend(build_table_row(OUTREACH_QUEUE_COLUMNS, row) for row in queue_rows)
+    parts.extend(
+        [
+            "",
+            "## Prospect Details",
+            "",
+            "| " + " | ".join(OUTREACH_PROSPECT_COLUMNS) + " |",
+            "| " + " | ".join(["---"] * len(OUTREACH_PROSPECT_COLUMNS)) + " |",
+        ]
+    )
+    parts.extend(build_table_row(OUTREACH_PROSPECT_COLUMNS, row) for row in prospect_rows)
+    return "\n".join(parts) + "\n"
+
+
+def upsert_outreach_queue(repo_root: Path, application_row: dict[str, str]) -> None:
+    if not truthy(application_row.get("Reach Out", "")):
+        return
+    if normalize(application_row.get("Status", "")) in {"rejected", "archived"}:
+        return
+
+    target_path = outreach_tracker_path(repo_root)
+    if target_path.exists():
+        queue_rows, prospect_rows = parse_outreach_sections(target_path.read_text().splitlines())
+    else:
+        target_path.parent.mkdir(parents=True, exist_ok=True)
+        queue_rows, prospect_rows = [], []
+
+    key = outreach_queue_key(application_row)
+    replacement = {
+        "Company": application_row["Company"],
+        "Role": application_row["Role"],
+        "Posting Key": application_row["Posting Key"],
+        "Fit Score": application_row["Fit Score"],
+        "Status": application_row["Status"],
+        "Reach Out": application_row["Reach Out"],
+        "Job Link": application_row["Job Link"],
+        "Prospect Count": "",
+        "Ready Emails": "",
+        "Last Updated": application_row["Date Added"],
+        "Notes": "Queued by resume-tailor after tailored resume update.",
+    }
+    updated: list[dict[str, str]] = []
+    replaced = False
+    for row in queue_rows:
+        if outreach_queue_key(row) == key:
+            updated.append({**replacement, **{field: row.get(field, "") for field in ("Prospect Count", "Ready Emails", "Last Updated", "Notes")}})
+            replaced = True
+        else:
+            updated.append(row)
+    if not replaced:
+        updated.append(replacement)
+
+    updated.sort(
+        key=lambda row: (
+            int(row["Fit Score"]) if row.get("Fit Score", "").isdigit() else -1,
+            row.get("Company", "").lower(),
+        ),
+        reverse=True,
+    )
+    target_path.write_text(render_outreach_tracker(updated, prospect_rows))
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Create or update the markdown application tracker.")
     parser.add_argument("--company", required=True, help="Company name")
@@ -289,6 +457,7 @@ def main() -> int:
 
     updated_rows: list[str] = []
     target_key = row_key(new_row)
+    tracker_row = new_row
     replaced = False
 
     for row_line in rows:
@@ -299,7 +468,8 @@ def main() -> int:
             continue
 
         if row_key(row) == target_key:
-            updated_rows.append(build_row(new_row))
+            tracker_row = merge_existing_application_row(row, new_row)
+            updated_rows.append(build_row(tracker_row))
             replaced = True
         else:
             updated_rows.append(build_row(row))
@@ -308,6 +478,7 @@ def main() -> int:
         updated_rows.append(build_row(new_row))
 
     tracker.write_text(render_tracker(updated_rows))
+    upsert_outreach_queue(repo_root, tracker_row)
 
     if args.sync_notion:
         from notion_sync import sync_tracker_to_notion, token_from_env
