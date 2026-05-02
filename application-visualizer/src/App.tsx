@@ -60,6 +60,7 @@ const STATUS_TONE: Record<string, string> = {
 
 const MANUAL_STATUS = "Manual Apply Needed";
 const NOT_APPLIED_FILTER = "Not Applied";
+const BATCH_IGNORE_STORAGE_KEY = "application-visualizer-ignored-batch-contacts";
 
 const NAV_ITEMS = [
   { id: "overview", label: "Overview" },
@@ -288,12 +289,25 @@ function App() {
   const [openBatchLane, setOpenBatchLane] = useState<"recruiter" | "engineer" | null>(null);
   const [selectedOutreach, setSelectedOutreach] = useState<{ app: Application; lane: "recruiter" | "engineer" } | null>(null);
   const [copiedResumePath, setCopiedResumePath] = useState("");
+  const [ignoredBatchContacts, setIgnoredBatchContacts] = useState<Set<string>>(() => readIgnoredBatchContacts());
 
   useEffect(() => {
     const syncHash = () => setActiveTab(tabFromHash(window.location.hash));
     window.addEventListener("hashchange", syncHash);
     return () => window.removeEventListener("hashchange", syncHash);
   }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem(BATCH_IGNORE_STORAGE_KEY, JSON.stringify([...ignoredBatchContacts]));
+  }, [ignoredBatchContacts]);
+
+  const ignoreBatchContact = (key: string) => {
+    setIgnoredBatchContacts((current) => {
+      const next = new Set(current);
+      next.add(key);
+      return next;
+    });
+  };
 
   const selectTab = (tab: TabId) => {
     setActiveTab(tab);
@@ -617,8 +631,8 @@ function App() {
               <p>Fact-check labeled LinkedIn contacts before approval. Engineer is separate from recruiter.</p>
             </div>
             <div className="batch-board-grid">
-              <RecruiterBatchBoard rows={recruiterBatch} onOpen={() => setOpenBatchLane("recruiter")} />
-              <EngineerBatchBoard rows={engineerBatch} onOpen={() => setOpenBatchLane("engineer")} />
+              <RecruiterBatchBoard rows={recruiterBatch} ignoredContacts={ignoredBatchContacts} onOpen={() => setOpenBatchLane("recruiter")} />
+              <EngineerBatchBoard rows={engineerBatch} ignoredContacts={ignoredBatchContacts} onOpen={() => setOpenBatchLane("engineer")} />
             </div>
           </section>
           <div className="outreach-lanes">
@@ -667,11 +681,11 @@ function App() {
       )}
 
       {openBatchLane === "engineer" && (
-        <EngineerBatchModal rows={engineerBatch} onClose={() => setOpenBatchLane(null)} />
+        <EngineerBatchModal rows={engineerBatch} ignoredContacts={ignoredBatchContacts} onClose={() => setOpenBatchLane(null)} onIgnore={ignoreBatchContact} />
       )}
 
       {openBatchLane === "recruiter" && (
-        <RecruiterBatchModal rows={recruiterBatch} onClose={() => setOpenBatchLane(null)} />
+        <RecruiterBatchModal rows={recruiterBatch} ignoredContacts={ignoredBatchContacts} onClose={() => setOpenBatchLane(null)} onIgnore={ignoreBatchContact} />
       )}
 
       {selectedOutreach && (
@@ -955,9 +969,9 @@ function OutreachLane({
   );
 }
 
-function RecruiterBatchBoard({ rows, onOpen }: { rows: RecruiterBatch[]; onOpen: () => void }) {
+function RecruiterBatchBoard({ rows, ignoredContacts, onOpen }: { rows: RecruiterBatch[]; ignoredContacts: Set<string>; onOpen: () => void }) {
   const stats = data.stats.recruiterBatch || { total: 0, labeled: 0, approved: 0, sent: 0, notReachedOut: 0, needsRecruiter: 0 };
-  const labeledRows = rows.filter((row) => row.recruiterName && row.recruiterProfile && row.outcome.toLowerCase() !== "sent");
+  const labeledRows = rows.filter((row) => row.recruiterName && row.recruiterProfile && row.outcome.toLowerCase() !== "sent" && !ignoredContacts.has(recruiterBatchIgnoreKey(row)));
   if (!rows.length && !stats.total) return null;
   return (
     <section className="recruiter-batch-board">
@@ -984,9 +998,9 @@ function RecruiterBatchBoard({ rows, onOpen }: { rows: RecruiterBatch[]; onOpen:
   );
 }
 
-function EngineerBatchBoard({ rows, onOpen }: { rows: EngineerBatch[]; onOpen: () => void }) {
+function EngineerBatchBoard({ rows, ignoredContacts, onOpen }: { rows: EngineerBatch[]; ignoredContacts: Set<string>; onOpen: () => void }) {
   const stats = data.stats.engineerBatch || { total: 0, labeled: 0, approved: 0, sent: 0, notReachedOut: 0, needsEngineer: 0 };
-  const labeledRows = rows.filter((row) => row.engineerName && row.engineerProfile && row.outcome.toLowerCase() !== "sent");
+  const labeledRows = rows.filter((row) => row.engineerName && row.engineerProfile && row.outcome.toLowerCase() !== "sent" && !ignoredContacts.has(engineerBatchIgnoreKey(row)));
   if (!rows.length && !stats.total) return null;
   return (
     <section className="recruiter-batch-board engineer-batch-board">
@@ -1013,7 +1027,8 @@ function EngineerBatchBoard({ rows, onOpen }: { rows: EngineerBatch[]; onOpen: (
   );
 }
 
-function RecruiterBatchRow({ row, detailed = false }: { row: RecruiterBatch; detailed?: boolean }) {
+function RecruiterBatchRow({ row, detailed = false, onIgnore }: { row: RecruiterBatch; detailed?: boolean; onIgnore?: (key: string) => void }) {
+  const ignoreKey = recruiterBatchIgnoreKey(row);
   return (
     <article className={`batch-row ${detailed ? "detailed" : ""}`}>
       <div>
@@ -1028,11 +1043,17 @@ function RecruiterBatchRow({ row, detailed = false }: { row: RecruiterBatch; det
       <BatchState row={row} />
       <b>{row.fitScore || "-"}</b>
       {row.recruiterProfile ? <a href={row.recruiterProfile} target="_blank" rel="noreferrer" aria-label={`${row.recruiterName || row.company} LinkedIn`}><ArrowUpRight size={17} /></a> : <span />}
+      {onIgnore && (
+        <button className="batch-ignore" type="button" onClick={() => onIgnore(ignoreKey)} aria-label={`Ignore ${row.recruiterName || row.company} for ${row.company}`}>
+          <X size={16} />
+        </button>
+      )}
     </article>
   );
 }
 
-function EngineerBatchRow({ row, detailed = false }: { row: EngineerBatch; detailed?: boolean }) {
+function EngineerBatchRow({ row, detailed = false, onIgnore }: { row: EngineerBatch; detailed?: boolean; onIgnore?: (key: string) => void }) {
+  const ignoreKey = engineerBatchIgnoreKey(row);
   return (
     <article className={`batch-row ${detailed ? "detailed" : ""}`}>
       <div>
@@ -1047,6 +1068,11 @@ function EngineerBatchRow({ row, detailed = false }: { row: EngineerBatch; detai
       <EngineerBatchState row={row} />
       <b>{row.fitScore || "-"}</b>
       {row.engineerProfile ? <a href={row.engineerProfile} target="_blank" rel="noreferrer" aria-label={`${row.engineerName || row.company} LinkedIn`}><ArrowUpRight size={17} /></a> : <span />}
+      {onIgnore && (
+        <button className="batch-ignore" type="button" onClick={() => onIgnore(ignoreKey)} aria-label={`Ignore ${row.engineerName || row.company} for ${row.company}`}>
+          <X size={16} />
+        </button>
+      )}
     </article>
   );
 }
@@ -1068,8 +1094,22 @@ function BatchDetails({ note, notes }: { note: string; notes: string }) {
   );
 }
 
-function RecruiterBatchModal({ rows, onClose }: { rows: RecruiterBatch[]; onClose: () => void }) {
+function RecruiterBatchModal({
+  rows,
+  ignoredContacts,
+  onClose,
+  onIgnore,
+}: {
+  rows: RecruiterBatch[];
+  ignoredContacts: Set<string>;
+  onClose: () => void;
+  onIgnore: (key: string) => void;
+}) {
+  const [startIndex, setStartIndex] = useState(1);
+  const [endIndex, setEndIndex] = useState("");
   const labeledRows = rows.filter((row) => row.recruiterName && row.recruiterProfile && row.outcome.toLowerCase() !== "sent");
+  const availableRows = labeledRows.filter((row) => !ignoredContacts.has(recruiterBatchIgnoreKey(row)));
+  const visibleRows = sliceByOneBasedRange(availableRows, startIndex, endIndex);
   return (
     <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
       <section className="outreach-modal batch-modal" role="dialog" aria-modal="true" aria-label="Recruiter batch review" onMouseDown={(event) => event.stopPropagation()}>
@@ -1077,20 +1117,42 @@ function RecruiterBatchModal({ rows, onClose }: { rows: RecruiterBatch[]; onClos
           <div>
             <p className="eyebrow">Recruiter batch</p>
             <h2>Labeled, Not Reached Out</h2>
-            <p>{labeledRows.length} recruiter contacts ready for fact-checking.</p>
+            <p>{availableRows.length} recruiter contacts ready for fact-checking. {labeledRows.length - availableRows.length} hidden locally.</p>
           </div>
           <button onClick={onClose} type="button" aria-label="Close"><X size={18} /></button>
         </header>
+        <BatchModalControls
+          total={availableRows.length}
+          visible={visibleRows.length}
+          startIndex={startIndex}
+          endIndex={endIndex}
+          onStartIndex={setStartIndex}
+          onEndIndex={setEndIndex}
+        />
         <div className="modal-list batch-modal-list">
-          {labeledRows.map((row) => <RecruiterBatchRow row={row} detailed key={`modal-recruiter-batch-${row.postingKey}`} />)}
+          {visibleRows.map((row) => <RecruiterBatchRow row={row} detailed onIgnore={onIgnore} key={`modal-recruiter-batch-${row.postingKey}`} />)}
         </div>
       </section>
     </div>
   );
 }
 
-function EngineerBatchModal({ rows, onClose }: { rows: EngineerBatch[]; onClose: () => void }) {
+function EngineerBatchModal({
+  rows,
+  ignoredContacts,
+  onClose,
+  onIgnore,
+}: {
+  rows: EngineerBatch[];
+  ignoredContacts: Set<string>;
+  onClose: () => void;
+  onIgnore: (key: string) => void;
+}) {
+  const [startIndex, setStartIndex] = useState(1);
+  const [endIndex, setEndIndex] = useState("");
   const labeledRows = rows.filter((row) => row.engineerName && row.engineerProfile && row.outcome.toLowerCase() !== "sent");
+  const availableRows = labeledRows.filter((row) => !ignoredContacts.has(engineerBatchIgnoreKey(row)));
+  const visibleRows = sliceByOneBasedRange(availableRows, startIndex, endIndex);
   return (
     <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
       <section className="outreach-modal batch-modal" role="dialog" aria-modal="true" aria-label="Engineer batch review" onMouseDown={(event) => event.stopPropagation()}>
@@ -1098,14 +1160,52 @@ function EngineerBatchModal({ rows, onClose }: { rows: EngineerBatch[]; onClose:
           <div>
             <p className="eyebrow">Engineer batch</p>
             <h2>Labeled, Not Reached Out</h2>
-            <p>{labeledRows.length} engineer or alumni contacts ready for fact-checking.</p>
+            <p>{availableRows.length} engineer or alumni contacts ready for fact-checking. {labeledRows.length - availableRows.length} hidden locally.</p>
           </div>
           <button onClick={onClose} type="button" aria-label="Close"><X size={18} /></button>
         </header>
+        <BatchModalControls
+          total={availableRows.length}
+          visible={visibleRows.length}
+          startIndex={startIndex}
+          endIndex={endIndex}
+          onStartIndex={setStartIndex}
+          onEndIndex={setEndIndex}
+        />
         <div className="modal-list batch-modal-list">
-          {labeledRows.map((row) => <EngineerBatchRow row={row} detailed key={`modal-engineer-batch-${row.postingKey}`} />)}
+          {visibleRows.map((row) => <EngineerBatchRow row={row} detailed onIgnore={onIgnore} key={`modal-engineer-batch-${row.postingKey}`} />)}
         </div>
       </section>
+    </div>
+  );
+}
+
+function BatchModalControls({
+  total,
+  visible,
+  startIndex,
+  endIndex,
+  onStartIndex,
+  onEndIndex,
+}: {
+  total: number;
+  visible: number;
+  startIndex: number;
+  endIndex: string;
+  onStartIndex: (value: number) => void;
+  onEndIndex: (value: string) => void;
+}) {
+  return (
+    <div className="batch-modal-controls">
+      <label>
+        Start index
+        <input min="1" max={Math.max(total, 1)} type="number" value={startIndex} onChange={(event) => onStartIndex(Number(event.target.value) || 1)} />
+      </label>
+      <label>
+        End index
+        <input min="1" max={Math.max(total, 1)} type="number" value={endIndex} onChange={(event) => onEndIndex(event.target.value)} placeholder={`${total}`} />
+      </label>
+      <span>{visible} shown of {total}</span>
     </div>
   );
 }
@@ -1487,6 +1587,37 @@ function engineerBatchPriority(row: EngineerBatch) {
   const labeledBoost = row.engineerName && row.engineerProfile ? 1 : 0;
   const blockedPenalty = ["skipped", "blocked"].includes(row.outcome.toLowerCase()) ? -80 : 0;
   return row.fitScore * 100 + approvalBoost + labeledBoost + blockedPenalty;
+}
+
+function readIgnoredBatchContacts() {
+  try {
+    const stored = window.localStorage.getItem(BATCH_IGNORE_STORAGE_KEY);
+    if (!stored) return new Set<string>();
+    const values = JSON.parse(stored);
+    if (!Array.isArray(values)) return new Set<string>();
+    return new Set(values.filter((value): value is string => typeof value === "string"));
+  } catch {
+    return new Set<string>();
+  }
+}
+
+function batchIgnoreKey(lane: "recruiter" | "engineer", postingKey: string, name: string, profile: string) {
+  return [lane, postingKey, name, profile].map((value) => value.trim().toLowerCase()).join("|");
+}
+
+function recruiterBatchIgnoreKey(row: RecruiterBatch) {
+  return batchIgnoreKey("recruiter", row.postingKey, row.recruiterName, row.recruiterProfile);
+}
+
+function engineerBatchIgnoreKey(row: EngineerBatch) {
+  return batchIgnoreKey("engineer", row.postingKey, row.engineerName, row.engineerProfile);
+}
+
+function sliceByOneBasedRange<T>(rows: T[], startIndex: number, endIndex: string) {
+  const start = Math.min(Math.max(startIndex || 1, 1), Math.max(rows.length, 1)) - 1;
+  const parsedEnd = Number(endIndex);
+  const end = endIndex.trim() ? Math.min(Math.max(parsedEnd || rows.length, 1), rows.length) : rows.length;
+  return rows.slice(start, end);
 }
 
 function buildOutreachContacts(app: Application, lane: "recruiter" | "engineer", prospects: Prospect[]) {

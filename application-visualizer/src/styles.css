@@ -992,6 +992,7 @@ select option {
 
 .batch-row.detailed {
   align-items: start;
+  grid-template-columns: minmax(0, 1fr) auto 38px 34px 34px;
 }
 
 .batch-row p {
@@ -1060,6 +1061,7 @@ select option {
 
 .batch-modal-list {
   gap: 10px;
+  max-height: calc(min(780px, 100vh - 44px) - 160px);
 }
 
 @media (max-width: 920px) {
@@ -1083,6 +1085,66 @@ select option {
   color: #06111e;
   background: #f7b267;
   border-radius: 8px;
+}
+
+.batch-ignore {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  min-height: 34px;
+  padding: 0;
+  border: 1px solid rgba(242, 95, 92, .36);
+  color: #fee2e2;
+  background: rgba(242, 95, 92, .16);
+  border-radius: 8px;
+}
+
+.batch-ignore:hover,
+.batch-ignore:focus-visible {
+  border-color: rgba(242, 95, 92, .7);
+  background: rgba(242, 95, 92, .26);
+  outline: 0;
+}
+
+.batch-modal-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 10px;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  background: rgba(255,255,255,.035);
+}
+
+.batch-modal-controls label {
+  display: grid;
+  gap: 5px;
+  color: #95a8bd;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.batch-modal-controls input {
+  width: 118px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid rgba(255,255,255,.14);
+  color: #e8f3ff;
+  background: rgba(3, 7, 18, .45);
+  border-radius: 8px;
+  outline: 0;
+}
+
+.batch-modal-controls input:focus {
+  border-color: rgba(85, 214, 190, .62);
+}
+
+.batch-modal-controls span {
+  margin-left: auto;
+  color: #cbd5e1;
+  font-size: 13px;
+  font-weight: 850;
 }
 
 .batch-state {
