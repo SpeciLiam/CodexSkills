@@ -353,6 +353,21 @@ def outreach_state(row: dict[str, Any], lane: str) -> str:
     return "Labeled, needs approval"
 
 
+def outreach_state_rank(state: str) -> int:
+    if state.startswith("Needs label"):
+        return 0
+    if state.startswith("Labeled"):
+        return 1
+    if state.startswith("Approved"):
+        return 2
+    return 3
+
+
+def primary_outreach_state(group: dict[str, Any]) -> str:
+    states = sorted(group["states"], key=outreach_state_rank)
+    return states[0] if states else ""
+
+
 def outreach_contact(row: dict[str, Any], lane: str) -> dict[str, Any]:
     name_key = "recruiterName" if lane == "recruiter" else "engineerName"
     profile_key = "recruiterProfile" if lane == "recruiter" else "engineerProfile"
@@ -402,7 +417,12 @@ def build_outreach_role_buckets(rows: list[dict[str, Any]], lane: str, sent: boo
             if state not in group["states"]:
                 group["states"].append(state)
 
-    return sorted(groups.values(), key=lambda item: (item["fitScore"], item["count"], item["company"]), reverse=True)
+    if sent:
+        return sorted(groups.values(), key=lambda item: (item["fitScore"], item["count"], item["company"]), reverse=True)
+    return sorted(
+        groups.values(),
+        key=lambda item: (outreach_state_rank(primary_outreach_state(item)), -item["fitScore"], item["company"]),
+    )
 
 
 def build_outreach_buckets(recruiter_rows: list[dict[str, Any]], engineer_rows: list[dict[str, Any]]) -> dict[str, Any]:

@@ -61,6 +61,7 @@ const STATUS_TONE: Record<string, string> = {
 const MANUAL_STATUS = "Manual Apply Needed";
 const NOT_APPLIED_FILTER = "Not Applied";
 const BATCH_IGNORE_STORAGE_KEY = "application-visualizer-ignored-batch-contacts";
+const OUTREACH_TABLE_PREVIEW_LIMIT = 10;
 
 const NAV_ITEMS = [
   { id: "overview", label: "Overview" },
@@ -1006,6 +1007,7 @@ function ActiveLaneRolesTable({
   groups: OutreachRoleBucket[];
   onOpenLane: (lane: "recruiter" | "engineer") => void;
 }) {
+  const visibleGroups = sortActiveRoleBuckets(groups).slice(0, OUTREACH_TABLE_PREVIEW_LIMIT);
   const labels = lane === "recruiter"
     ? { eyebrow: "Recruiters", title: "Recruiter work", person: "Recruiter" }
     : { eyebrow: "Engineers", title: "Engineer work", person: "Engineer" };
@@ -1031,7 +1033,7 @@ function ActiveLaneRolesTable({
             </tr>
           </thead>
           <tbody>
-            {groups.map((group, index) => (
+            {visibleGroups.map((group, index) => (
               <tr key={group.key}>
                 <td>{index + 1}</td>
                 <td>
@@ -1066,6 +1068,7 @@ function ReachedOutRolesTable({
   onOpenLane: (lane: "recruiter" | "engineer") => void;
   onOpenRole: (group: OutreachRoleBucket) => void;
 }) {
+  const visibleGroups = groups.slice(0, OUTREACH_TABLE_PREVIEW_LIMIT);
   const labels = lane === "recruiter"
     ? { eyebrow: "Recruiters sent", title: "Recruiter sent history", empty: "No recruiter sends are recorded yet." }
     : { eyebrow: "Engineers sent", title: "Engineer sent history", empty: "No engineer sends are recorded yet." };
@@ -1090,7 +1093,7 @@ function ReachedOutRolesTable({
             </tr>
           </thead>
           <tbody>
-            {groups.map((group, index) => (
+            {visibleGroups.map((group, index) => (
               <tr key={group.key}>
                 <td>{index + 1}</td>
                 <td>
@@ -1293,7 +1296,9 @@ function RecruiterBatchModal({
 }) {
   const [startIndex, setStartIndex] = useState(1);
   const [endIndex, setEndIndex] = useState("");
-  const activeRows = rows.filter((row) => isActiveBatchWork(row));
+  const activeRows = rows
+    .filter((row) => isActiveBatchWork(row))
+    .sort((a, b) => stateRank(activeBatchState(a, "recruiter")) - stateRank(activeBatchState(b, "recruiter")) || batchPriority(b) - batchPriority(a));
   const availableRows = activeRows.filter((row) => !ignoredContacts.has(recruiterBatchIgnoreKey(row)));
   const visibleRows = sliceByOneBasedRange(availableRows, startIndex, endIndex);
   const firstVisibleIndex = oneBasedRangeStart(availableRows.length, startIndex);
@@ -1345,7 +1350,9 @@ function EngineerBatchModal({
 }) {
   const [startIndex, setStartIndex] = useState(1);
   const [endIndex, setEndIndex] = useState("");
-  const activeRows = rows.filter((row) => isActiveBatchWork(row));
+  const activeRows = rows
+    .filter((row) => isActiveBatchWork(row))
+    .sort((a, b) => stateRank(activeBatchState(a, "engineer")) - stateRank(activeBatchState(b, "engineer")) || engineerBatchPriority(b) - engineerBatchPriority(a));
   const availableRows = activeRows.filter((row) => !ignoredContacts.has(engineerBatchIgnoreKey(row)));
   const visibleRows = sliceByOneBasedRange(availableRows, startIndex, endIndex);
   const firstVisibleIndex = oneBasedRangeStart(availableRows.length, startIndex);
@@ -1953,7 +1960,7 @@ function buildActiveRoleGroups(rows: Array<RecruiterBatch | EngineerBatch>, lane
       }
       if (!group.states.includes(state)) group.states.push(state);
     });
-  return [...groups.values()].sort((a, b) => b.fitScore - a.fitScore || a.company.localeCompare(b.company));
+  return sortActiveRoleBuckets([...groups.values()]);
 }
 
 function buildReachedOutRoleGroups(rows: Array<RecruiterBatch | EngineerBatch>, lane: "recruiter" | "engineer") {
@@ -1993,12 +2000,12 @@ function buildReachedOutRoleGroups(rows: Array<RecruiterBatch | EngineerBatch>, 
 }
 
 function filterIgnoredRoleBuckets(groups: OutreachRoleBucket[], ignoredContacts: Set<string>, lane: "recruiter" | "engineer") {
-  return groups
+  return sortActiveRoleBuckets(groups
     .map((group) => {
       const contacts = group.contacts.filter((contact) => !ignoredContacts.has(batchIgnoreKey(lane, group.key, contact.name, contact.profile)));
       return { ...group, contacts };
     })
-    .filter((group) => group.contacts.length || group.states.includes("Needs label"));
+    .filter((group) => group.contacts.length || group.states.includes("Needs label")));
 }
 
 function isActiveBatchWork(row: RecruiterBatch | EngineerBatch) {
@@ -2020,6 +2027,25 @@ function stateTone(state: string) {
   if (state.startsWith("Approved")) return "approved";
   if (state.startsWith("Labeled")) return "labeled";
   return "research";
+}
+
+function stateRank(state: string) {
+  if (state.startsWith("Needs label")) return 0;
+  if (state.startsWith("Labeled")) return 1;
+  if (state.startsWith("Approved")) return 2;
+  return 3;
+}
+
+function primaryState(group: OutreachRoleBucket) {
+  return [...group.states].sort((a, b) => stateRank(a) - stateRank(b))[0] || "";
+}
+
+function sortActiveRoleBuckets(groups: OutreachRoleBucket[]) {
+  return [...groups].sort((a, b) =>
+    stateRank(primaryState(a)) - stateRank(primaryState(b)) ||
+    b.fitScore - a.fitScore ||
+    a.company.localeCompare(b.company),
+  );
 }
 
 function oneBasedRangeStart(total: number, startIndex: number) {
