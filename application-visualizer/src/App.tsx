@@ -1365,7 +1365,8 @@ function ActiveRoleQueueModal({
 }) {
   const [startIndex, setStartIndex] = useState(1);
   const [endIndex, setEndIndex] = useState("");
-  const sortedGroups = sortActiveRoleBuckets(groups);
+  const [skippedKeys, setSkippedKeys] = useState<Set<string>>(() => new Set());
+  const sortedGroups = sortActiveRoleBuckets(groups).filter((group) => !skippedKeys.has(activeRoleSkipKey(lane, group)));
   const visibleGroups = sliceByOneBasedRange(sortedGroups, startIndex, endIndex);
   const firstVisibleIndex = oneBasedRangeStart(sortedGroups.length, startIndex);
   const labels = lane === "recruiter"
@@ -1406,6 +1407,7 @@ function ActiveRoleQueueModal({
               lane={lane}
               group={group}
               displayIndex={firstVisibleIndex + index}
+              onSkip={() => setSkippedKeys((current) => new Set(current).add(activeRoleSkipKey(lane, group)))}
               key={`active-role-${lane}-${group.key}`}
             />
           ))}
@@ -1420,10 +1422,12 @@ function ActiveRoleQueueRow({
   lane,
   group,
   displayIndex,
+  onSkip,
 }: {
   lane: "recruiter" | "engineer";
   group: OutreachRoleBucket;
   displayIndex: number;
+  onSkip: () => void;
 }) {
   const primaryContact = group.contacts[0];
   const label = lane === "recruiter" ? "Needs recruiter label" : "Needs engineer label";
@@ -1438,11 +1442,14 @@ function ActiveRoleQueueRow({
           {primaryContact?.position && <em>{primaryContact.position}</em>}
           {group.contacts.length > 1 && <em>+{group.contacts.length - 1} more</em>}
         </small>
-        {primaryContact?.notes && <small className="active-role-note">{primaryContact.notes}</small>}
+        {primaryContact?.notes && group.contacts.length > 0 && <small className="active-role-note">{primaryContact.notes}</small>}
       </div>
       <WorkStatePills states={group.states} />
       <b>{group.fitScore || "-"}</b>
       {primaryContact?.profile ? <a href={primaryContact.profile} target="_blank" rel="noreferrer" aria-label={`${primaryContact.name || group.company} LinkedIn`}><ArrowUpRight size={17} /></a> : <span />}
+      <button className="batch-ignore" type="button" onClick={onSkip} aria-label={`Skip ${primaryContact?.name || group.company}; find a new ${lane}`}>
+        <X size={16} />
+      </button>
     </article>
   );
 }
@@ -2016,6 +2023,11 @@ function recruiterBatchIgnoreKey(row: RecruiterBatch) {
 
 function engineerBatchIgnoreKey(row: EngineerBatch) {
   return batchIgnoreKey("engineer", row.postingKey, row.engineerName, row.engineerProfile);
+}
+
+function activeRoleSkipKey(lane: "recruiter" | "engineer", group: OutreachRoleBucket) {
+  const primaryContact = group.contacts[0];
+  return batchIgnoreKey(lane, group.key, primaryContact?.name || "", primaryContact?.profile || "");
 }
 
 function roleGroupKey(row: { postingKey: string; company: string; role: string }) {

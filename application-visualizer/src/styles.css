@@ -1330,14 +1330,17 @@ select option {
 }
 
 .batch-row.active-role-row {
-  grid-template-columns: 46px minmax(0, 1fr) 148px 42px 34px;
-  align-items: center;
-  min-height: 76px;
-  padding: 14px 16px;
+  grid-template-columns: 46px minmax(0, 1fr) 148px 42px 34px 34px;
+  align-items: start;
+  min-height: 92px;
+  padding: 18px 16px;
 }
 
 .active-role-main {
   min-width: 0;
+  display: grid;
+  align-content: start;
+  gap: 5px;
 }
 
 .active-role-main strong,
@@ -1347,19 +1350,23 @@ select option {
 }
 
 .active-role-main p {
+  margin: 0;
+  overflow: visible;
+  text-overflow: clip;
   white-space: normal;
 }
 
 .active-role-note {
   display: block;
-  margin-top: 6px;
+  margin-top: 2px;
   color: #95a8bd;
   font-size: 12px;
   line-height: 1.25;
+  white-space: normal;
 }
 
 .active-role-row .batch-contact {
-  margin-top: 5px;
+  margin-top: 0;
 }
 
 .active-role-row .batch-contact span::after {
@@ -1369,10 +1376,18 @@ select option {
 
 .active-role-row .state-pills {
   justify-content: flex-start;
+  align-self: center;
 }
 
 .active-role-row .state-pills span {
   max-width: 136px;
+}
+
+.active-role-row > b,
+.active-role-row > a,
+.active-role-row > span,
+.active-role-row > button {
+  align-self: center;
 }
 
 .batch-index {
