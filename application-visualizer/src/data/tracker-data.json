@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T01:02:47.069615+00:00",
+  "generatedAt": "2026-05-02T01:19:53.564078+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,8 +9,8 @@
   "stats": {
     "kpis": {
       "total": 321,
-      "applied": 278,
-      "unapplied": 43,
+      "applied": 279,
+      "unapplied": 42,
       "active": 252,
       "rejected": 44,
       "interviewing": 3,
@@ -20,13 +20,13 @@
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "applyRate": 86.6,
+      "applyRate": 86.9,
       "rejectionRate": 15.8
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 227
+        "value": 228
       },
       {
         "name": "Rejected",
@@ -37,12 +37,12 @@
         "value": 25
       },
       {
-        "name": "Resume Tailored",
-        "value": 10
+        "name": "Manual Apply Needed",
+        "value": 13
       },
       {
-        "name": "Manual Apply Needed",
-        "value": 9
+        "name": "Resume Tailored",
+        "value": 5
       },
       {
         "name": "Interviewing",
@@ -386,7 +386,7 @@
         "date": "2026-05-01",
         "cumulative": 321,
         "added": 24,
-        "applied": 13,
+        "applied": 14,
         "rejected": 1,
         "interviewing": 0
       }
@@ -10030,7 +10030,7 @@
       "company": "Kapitus",
       "role": "Software Engineer II",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -10045,17 +10045,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required desired salary field; not submitted 2026-05-01",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-01",
         "2026-05-01"
       ]
     },
     {
       "company": "Future",
       "role": "Infrastructure Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -10070,9 +10071,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-01",
         "2026-05-01"
       ]
     },
@@ -10080,7 +10082,7 @@
       "company": "Mill",
       "role": "Software Development Engineer - Test",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 7,
       "reachOut": true,
       "referral": "No",
@@ -10095,9 +10097,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: Greenhouse email security code verification after submit 2026-05-01",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-01",
         "2026-05-01"
       ]
     },
@@ -10105,7 +10108,7 @@
       "company": "Rent the Runway",
       "role": "Software Engineer III - Full Stack",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -10120,9 +10123,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: Greenhouse email security code verification after submit 2026-05-01",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-01",
         "2026-05-01"
       ]
     },
@@ -10130,7 +10134,7 @@
       "company": "Spot & Tango",
       "role": "Software Engineer, Full Stack",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -10145,9 +10149,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: requires exact earliest available start date 2026-05-01",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-01",
         "2026-05-01"
       ]
     },
