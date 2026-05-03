@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 252
+Companies queued: 257
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -16,6 +16,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Warp | Software Engineer | 4324888004 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/warp/jobs/4324888004?gh_src=4qxzq4jk4us) | 1 | 1 |  |  |
 | Warner Bros. Discovery | Software Engineer I | Software-Engineer-I | 10 | Applied | Yes | [Posting](https://careers.wbd.com/global/en/job/R000103732/Software-Engineer-I) | 1 | 1 |  |  |
 | Warner Bros. Discovery | Software Engineer II | software-engineer-ii-at-warner-bros-discovery-4374141586 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-at-warner-bros-discovery-4374141586) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
+| Udio | Software Engineer (New Grad) | software-engineer-new-grad-at-udio-4377876604 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-new-grad-at-udio-4377876604) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Uber | Software Engineer | 157787 | 10 | Applied | Yes | [Posting](https://www.uber.com/careers/apply/form/157787?uclick_id=0da90020-fd3f-4bee-86e2-95a6160bf384) |  |  |  |  |
 | Uber | Software Engineer II | 156932 | 10 | Applied | Yes | [Posting](https://www.uber.com/global/en/careers/list/156932/?uclick_id=c3eed852-3739-4c33-ba86-8487c6d2f43b) |  |  |  |  |
 | Uber | Software Engineer I | 4403550427 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4403550427/) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
@@ -27,6 +28,8 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | TEGNA Inc. | Software Engineer | 4744576007 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/tegnainc/jobs/4744576007?gh_jid=4744576007) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Superblocks | Software Engineer, Cloud Infrastructure | 4507226005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/superblocks/jobs/4507226005) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | StubHub | Software Engineer I (New Grad) - Consumer Experience | 4825411101 | 10 | Applied | Yes | [Posting](https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4825411101?gh_src=47e65a22teu) |  |  |  |  |
+| StubHub | Software Engineer II – Consumer Experience (Full-Stack) | 4792613101 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4792613101) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
+| StubHub | Software Engineer II - (Fullstack / Product Engineering) | 4790893101 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4790893101) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Spotify | Backend Engineer, Music | ee5064af-0116-4ef2-994a-cb8fed580290 | 10 | Applied | Yes | [Posting](https://jobs.lever.co/spotify/ee5064af-0116-4ef2-994a-cb8fed580290/apply?lever-source=LinkedInJobs) |  |  |  |  |
 | Smartsheet | Software Engineer I - Secure Platform Operations (Remote Eligible) | 7732551 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/smartsheet/jobs/7732551) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Sigma Computing | Software Engineer (New Grad Program) | 7690411003 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/sigmacomputing/jobs/7690411003) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
@@ -208,11 +211,13 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Zip | Software Engineer, Identity | 4153477552 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4153477552/) |  |  |  |  |
 | Valon | Software Engineer | 4366508876 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4366508876/) |  |  |  |  |
 | SynergisticIT | Junior Java Spring boot developer/Data Scientist | 4405926747 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4405926747/?trackingId=hi%2Bn2Ucbw1mLqWOdxrEyVg%3D%3D&refId=ynHDPB5ZgeFfDqqpeBArmA%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BW1X4lUcFS9qe7REf8W07BQ%3D%3D) |  |  |  |  |
+| Superblocks | Forward Deployed Engineer | 4534781005 | 7 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/superblocks/jobs/4534781005) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | SideShift | Software Engineer | 4377471128 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4377471128/) |  |  |  |  |
 | SalesPatriot | Full Stack Engineer (San Francisco) | 91296 | 7 | Interviewing | Yes | [Posting](https://www.workatastartup.com/jobs/91296) |  |  |  |  |
 | Roblox | Software Engineer, User Sharing | 4392487592 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4392487592/?trackingId=5PBV%2F81M7DhWdD%2BlEEpLpA%3D%3D&refId=tt1hXB%2BF7BLNNKKHeaoexg%3D%3D) |  |  |  |  |
 | Rillet | Software Engineer | 4367074328 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4367074328) |  |  |  |  |
 | Pattern Data | Software Engineer (Entry) | 5092337007 | 7 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/patterndata/jobs/5092337007) |  |  |  |  |
+| Nira Energy | Forward Deployed Engineer | 4964468008 | 7 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/niraenergy/jobs/4964468008) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | NetApp | NetApp Emerging Talent - Software Engineer (Cloud Storage) | 4399975980 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4399975980/) |  |  |  |  |
 | Monarch Recruiters | Full Stack Engineer | 4380393957 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4380393957/) |  |  |  |  |
 | Magnite | Engineer I, Automation and Custom Applications | 4394227079 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4394227079/) |  |  |  |  |
