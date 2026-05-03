@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T01:21:55.548388+00:00",
+  "generatedAt": "2026-05-03T01:27:35.451462+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,9 +10,9 @@
   "stats": {
     "kpis": {
       "total": 399,
-      "applied": 309,
-      "unapplied": 90,
-      "active": 322,
+      "applied": 314,
+      "unapplied": 85,
+      "active": 320,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
@@ -26,33 +26,33 @@
       "intakeNew": 8,
       "intakeManual": 2,
       "intakeApplied": 0,
-      "applyRate": 77.4,
-      "rejectionRate": 14.2,
-      "recruiterWork": 237,
-      "engineerWork": 290,
+      "applyRate": 78.7,
+      "rejectionRate": 14.0,
+      "recruiterWork": 235,
+      "engineerWork": 289,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 258
+        "value": 263
       },
       {
         "name": "Rejected",
         "value": 44
       },
       {
-        "name": "Manual Apply Needed",
-        "value": 34
+        "name": "Archived",
+        "value": 35
       },
       {
-        "name": "Archived",
+        "name": "Manual Apply Needed",
         "value": 33
       },
       {
         "name": "Resume Tailored",
-        "value": 24
+        "value": 18
       },
       {
         "name": "Interviewing",
@@ -436,7 +436,7 @@
         "date": "2026-05-01",
         "cumulative": 362,
         "added": 65,
-        "applied": 36,
+        "applied": 39,
         "rejected": 1,
         "interviewing": 0
       },
@@ -444,7 +444,7 @@
         "date": "2026-05-02",
         "cumulative": 399,
         "added": 37,
-        "applied": 8,
+        "applied": 10,
         "rejected": 0,
         "interviewing": 0
       }
@@ -10717,8 +10717,8 @@
     {
       "company": "Grow Therapy",
       "role": "Software Engineer - Full Stack",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -10733,11 +10733,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, React/TypeScript, backend APIs, product workflows, testing, reliability, and customer-facing execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: Greenhouse email security code required after submit attempt 2026-05-01",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, React/TypeScript, backend APIs, product workflows, testing, reliability, and customer-facing execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: Greenhouse email security code required after submit attempt 2026-05-01; Application submitted via Greenhouse browser flow on 2026-05-02; uploaded tailored resume and answered sponsorship/hybrid location questions with high confidence.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ]
     },
     {
@@ -11108,7 +11109,7 @@
       "company": "Genies",
       "role": "Backend Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -11123,17 +11124,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI platform backend systems, scalable services, data workflows, API reliability, and cross-functional product execution. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI platform backend systems, scalable services, data workflows, API reliability, and cross-functional product execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Tracked Greenhouse posting returned 404/unavailable; archived on 2026-05-02.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ]
     },
     {
       "company": "ngrok",
       "role": "Software Engineer II/III/Senior, Gateway",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -11148,10 +11150,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized gateway infrastructure, API delivery, backend reliability, distributed systems, operational debugging, and developer-product workflows. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized gateway infrastructure, API delivery, backend reliability, distributed systems, operational debugging, and developer-product workflows. Did not claim direct company-specific domain ownership or unlisted framework experience.; Application submitted via Greenhouse browser flow on 2026-05-02; uploaded tailored resume and answered routine work-authorization/source/LinkedIn questions truthfully.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ]
     },
     {
@@ -11261,8 +11264,8 @@
     {
       "company": "Anduril Industries",
       "role": "Software Engineer II, Manufacturing Test",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -11277,10 +11280,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized manufacturing test software, validation infrastructure, production reliability, automated testing, operational debugging, and hardware-adjacent workflows. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized manufacturing test software, validation infrastructure, production reliability, automated testing, operational debugging, and hardware-adjacent workflows. Did not claim direct company-specific domain ownership or unlisted framework experience.; Application submitted via Greenhouse browser flow on 2026-05-02; uploaded tailored resume and answered export-control/work-authorization/history/source fields truthfully with high confidence.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ]
     },
     {
@@ -11611,7 +11615,7 @@
       "company": "Vercel",
       "role": "Software Engineer, AI",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -11626,9 +11630,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized AI product engineering, developer experience, LLM applications, TypeScript and Python systems, APIs, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized AI product engineering, developer experience, LLM applications, TypeScript and Python systems, APIs, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.; Tracked Greenhouse job URL now routes to the Vercel job board without the Software Engineer, AI posting; archived on 2026-05-02.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-02",
         "2026-05-02"
       ]
     },
@@ -11737,8 +11742,8 @@
     {
       "company": "Runpod",
       "role": "Software Engineer (Full-Stack)",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -11753,9 +11758,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized AI infrastructure, Python and TypeScript product systems, APIs, cloud validation, and full-stack delivery. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized AI infrastructure, Python and TypeScript product systems, APIs, cloud validation, and full-stack delivery. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Application submitted via Greenhouse browser flow on 2026-05-02; uploaded tailored resume, answered sponsorship, and supplied a concise truthful AI-infrastructure motivation response.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-02",
         "2026-05-02"
       ]
     },
@@ -11788,8 +11794,8 @@
     {
       "company": "Verkada",
       "role": "Software Engineer - Computer Vision",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -11804,9 +11810,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized applied computer vision, AI-adjacent product systems, scalable backend validation, cloud operations, and production reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized applied computer vision, AI-adjacent product systems, scalable backend validation, cloud operations, and production reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: Greenhouse requires demographic/EEO attributes not covered by standing answers; browser submit rejected with missing gender/race/veteran/disability attributes on 2026-05-02.; Application submitted via Greenhouse browser flow on 2026-05-02; uploaded tailored resume, answered onsite/experience/language fields truthfully, and included saved EEO standing answers.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-02",
+        "2026-05-02",
         "2026-05-02"
       ]
     },
@@ -23961,7 +23969,7 @@
           "company": "Anduril Industries",
           "role": "Software Engineer II, Manufacturing Test",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -24053,18 +24061,6 @@
           "contacts": []
         },
         {
-          "key": "7029957003",
-          "company": "Genies",
-          "role": "Backend Engineer",
-          "fitScore": 9,
-          "status": "Resume Tailored",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "4581643005",
           "company": "Glean",
           "role": "Software Engineer, Backend",
@@ -24105,7 +24101,7 @@
           "company": "Grow Therapy",
           "role": "Software Engineer - Full Stack",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -24249,7 +24245,7 @@
           "company": "Runpod",
           "role": "Software Engineer (Full-Stack)",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -24365,23 +24361,11 @@
           "contacts": []
         },
         {
-          "key": "5633379004",
-          "company": "Vercel",
-          "role": "Software Engineer, AI",
-          "fitScore": 9,
-          "status": "Resume Tailored",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "4128624007",
           "company": "Verkada",
           "role": "Software Engineer - Computer Vision",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -24393,7 +24377,7 @@
           "company": "ngrok",
           "role": "Software Engineer II/III/Senior, Gateway",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -33967,7 +33951,7 @@
           "company": "Runpod",
           "role": "Software Engineer (Full-Stack)",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -34035,23 +34019,11 @@
           "contacts": []
         },
         {
-          "key": "5633379004",
-          "company": "Vercel",
-          "role": "Software Engineer, AI",
-          "fitScore": 9,
-          "status": "Resume Tailored",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "4128624007",
           "company": "Verkada",
           "role": "Software Engineer - Computer Vision",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
