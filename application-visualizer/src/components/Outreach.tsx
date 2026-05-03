@@ -136,6 +136,7 @@ export function OutreachRow({
   });
   const canApprove = isLabeledNotReached(row);
   const approveText = `Approve ${row.lane} outreach: ${row.company} - ${row.role} - ${row.contactName || "contact"}`;
+  const researchNotes = meaningfulResearchNotes(row.notes);
 
   const approve = () => {
     void navigator.clipboard.writeText(approveText);
@@ -159,21 +160,23 @@ export function OutreachRow({
             {flags.map((flag) => <span className={flag.passed ? "pass" : "fail"} key={flag.id}>{flag.label}</span>)}
           </div>
         )}
-        <BatchDetails note={row.connectionNote} notes={row.notes} />
+        <BatchDetails note={row.connectionNote} notes={researchNotes} />
       </div>
       <WorkStatePills states={row.states} />
       <b>{row.fitScore || "-"}</b>
-      {canApprove && (
-        <button className="approve-inline" type="button" onClick={approve} aria-label={approveText}>
-          {approved ? <ClipboardCheck size={16} /> : <Check size={16} />}
-        </button>
-      )}
-      {row.profile ? <a href={row.profile} target="_blank" rel="noreferrer" aria-label={`${row.contactName || row.company} LinkedIn`}><ArrowUpRight size={17} /></a> : <span />}
-      {onSkip && (
-        <button className="batch-ignore" type="button" onClick={() => onSkip(row)} aria-label={`Skip ${row.contactName || row.company}; find a new ${row.lane}`}>
-          <X size={16} />
-        </button>
-      )}
+      <div className="outreach-row-actions">
+        {canApprove ? (
+          <button className="approve-inline" type="button" onClick={approve} aria-label={approveText}>
+            {approved ? <ClipboardCheck size={16} /> : <Check size={16} />}
+          </button>
+        ) : <span className="action-slot" />}
+        {row.profile ? <a href={row.profile} target="_blank" rel="noreferrer" aria-label={`${row.contactName || row.company} LinkedIn`}><ArrowUpRight size={17} /></a> : <span className="action-slot" />}
+        {onSkip ? (
+          <button className="batch-ignore" type="button" onClick={() => onSkip(row)} aria-label={`Skip ${row.contactName || row.company}; find a new ${row.lane}`}>
+            <X size={16} />
+          </button>
+        ) : <span className="action-slot" />}
+      </div>
     </article>
   );
 }
@@ -259,6 +262,13 @@ function seniorityLabel(seniority: string) {
 
 function isLabeledNotReached(row: OutreachRowData) {
   return Boolean(row.contactName || row.profile) && row.outcome.toLowerCase() === "not reached out" && row.approval.toLowerCase() !== "approved";
+}
+
+function meaningfulResearchNotes(notes: string) {
+  const value = notes.trim();
+  if (!value) return "";
+  if (/^active application needs \w+ outreach\.?$/i.test(value)) return "";
+  return value;
 }
 
 function applyOutreachFilters(rows: OutreachRowData[], lane: OutreachLane, filters: Set<FilterId>, sortMode: SortMode) {
