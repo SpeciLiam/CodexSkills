@@ -183,7 +183,7 @@ def build_plan(data: dict[str, Any], limit: int, mode: str = "all") -> dict[str,
         },
         "apply": {
             "name": "Apply now",
-            "command": "python3 skills/finish-applications/scripts/build_application_queue.py --limit 10",
+            "command": "python3 skills/finish-applications/scripts/build_application_queue.py",
             "count": len(apply_now),
             "items": apply_now,
         },

@@ -4,13 +4,15 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[3]
 CACHE = ROOT / "application-visualizer" / "src" / "data" / "tracker-data.json"
+DEFAULT_RUN_STATE = Path("/tmp/fa_run_state.json")
+OPERATING_CARD = ROOT / "skills" / "finish-applications" / "OPERATING_CARD.md"
 ACTIVE_SKIP_STATUSES = {"applied", "rejected", "archived", "online assessment", "interviewing", "offer"}
 MANUAL_STATUS = "manual apply needed"
 READY_STATUS = "resume tailored"
@@ -261,6 +263,122 @@ def build_queues(data: dict[str, Any], limit: int, min_fit: int, include_low_fit
     }
 
 
+def row_key(item: dict[str, Any]) -> str:
+    posting_key = str(item.get("postingKey") or "").strip()
+    if posting_key:
+        return posting_key
+    return " | ".join(str(item.get(field) or "").strip() for field in ("company", "role", "jobLink"))
+
+
+def load_run_state(path: Path) -> dict[str, Any]:
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise SystemExit(f"Invalid run state JSON at {path}: {exc}") from exc
+
+
+def build_run_state(
+    existing: dict[str, Any],
+    queues: dict[str, list[dict[str, Any]]],
+    root: Path,
+    limit: int,
+    min_fit: int,
+    include_low_fit: bool,
+) -> dict[str, Any]:
+    now = datetime.now(timezone.utc).isoformat()
+    agent_queue = queues["ready"] + queues["retry"]
+    existing_items = {
+        str(item.get("key") or ""): item
+        for item in existing.get("items", [])
+        if isinstance(item, dict)
+    }
+    done_states = {"submitted", "manual", "archived", "skipped"}
+    items: list[dict[str, Any]] = []
+    current_keys: set[str] = set()
+
+    for index, queue_entry in enumerate(agent_queue, start=1):
+        key = row_key(queue_entry)
+        current_keys.add(key)
+        previous = existing_items.get(key, {})
+        previous_state = str(previous.get("state") or "queued")
+        item = {
+            "key": key,
+            "state": previous_state if previous_state in done_states else "queued",
+            "queueIndex": index,
+            "company": queue_entry.get("company", ""),
+            "role": queue_entry.get("role", ""),
+            "postingKey": queue_entry.get("postingKey", ""),
+            "fitScore": queue_entry.get("fitScore", 0),
+            "source": queue_entry.get("source", ""),
+            "jobLink": queue_entry.get("jobLink", ""),
+            "resumePdf": queue_entry.get("resumePdf", ""),
+            "action": queue_entry.get("action", ""),
+            "confidenceScore": queue_entry.get("confidenceScore", 0),
+            "confidenceBand": queue_entry.get("confidenceBand", "low"),
+            "manualReason": queue_entry.get("manualReason", ""),
+            "result": previous.get("result", ""),
+            "confirmationEvidence": previous.get("confirmationEvidence", ""),
+            "notes": previous.get("notes", ""),
+            "updatedAt": previous.get("updatedAt", ""),
+        }
+        items.append(item)
+
+    for key, previous in existing_items.items():
+        if key in current_keys or str(previous.get("state") or "") not in done_states:
+            continue
+        preserved = dict(previous)
+        preserved["queueIndex"] = None
+        items.append(preserved)
+
+    completed = sum(1 for item in items if item["state"] in done_states)
+    pending = sum(1 for item in items if item["state"] == "queued")
+    return {
+        "schemaVersion": 1,
+        "mode": "autonomous",
+        "runPolicy": {
+            "automationMode": "ON",
+            "confirmationGate": "OFF",
+            "submissionGate": "confidenceBand == high",
+            "askOnlyForTrueBlockers": True,
+            "preferredExecution": "parent-orchestrated fresh worker per row or small chunk",
+            "parentOwns": ["run state", "tracker updates", "cache refresh", "commits"],
+        },
+        "createdAt": existing.get("createdAt") or now,
+        "updatedAt": now,
+        "repoRoot": str(root),
+        "operatingCardPath": str(OPERATING_CARD),
+        "queueSource": str(CACHE),
+        "queueArgs": {
+            "limit": limit,
+            "minFit": min_fit,
+            "includeLowFit": include_low_fit,
+        },
+        "standingInstruction": (
+            "Re-read this file before each row. Submit high-confidence routine applications without asking; "
+            "record submitted/manual/archived/skipped outcomes here immediately after each row."
+        ),
+        "summary": {
+            "agentQueue": len(agent_queue),
+            "completed": completed,
+            "pending": pending,
+            "manualQueue": len(queues["manual"]),
+            "manualWorkday": len(queues["manualWorkday"]),
+        },
+        "items": items,
+        "manual": queues["manual"],
+        "manualWorkday": queues["manualWorkday"],
+    }
+
+
+def write_run_state(path: Path, state: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(json.dumps(state, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    tmp.replace(path)
+
+
 def append_note(existing: str, new_note: str) -> str:
     existing = existing.strip()
     if not existing:
@@ -333,10 +451,16 @@ def print_text(queues: dict[str, list[dict[str, Any]]]) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Build a queue of tailored, unapplied applications.")
     parser.add_argument("--root", default=None, help="Optional repo root override")
-    parser.add_argument("--limit", type=int, default=10, help="Maximum applications to list")
+    parser.add_argument("--limit", type=int, default=120, help="Maximum applications to list")
     parser.add_argument("--min-fit", type=int, default=8, help="Minimum fit score unless --include-low-fit is set")
     parser.add_argument("--include-low-fit", action="store_true", help="Include fit scores below --min-fit")
     parser.add_argument("--format", choices=("text", "json"), default="text")
+    parser.add_argument(
+        "--state-file",
+        default=str(DEFAULT_RUN_STATE),
+        help="Path for durable automation run state; default: /tmp/fa_run_state.json",
+    )
+    parser.add_argument("--no-state", action="store_true", help="Do not write durable run state")
     parser.add_argument(
         "--mark-workday-manual",
         action="store_true",
@@ -347,6 +471,17 @@ def main() -> int:
 
     root = Path(args.root).expanduser().resolve() if args.root else ROOT
     queues = build_queues(load_cache(root), args.limit, args.min_fit, args.include_low_fit)
+    state_path = Path(args.state_file).expanduser()
+    if not args.no_state:
+        state = build_run_state(
+            load_run_state(state_path),
+            queues,
+            root=root,
+            limit=args.limit,
+            min_fit=args.min_fit,
+            include_low_fit=args.include_low_fit,
+        )
+        write_run_state(state_path, state)
     marked = []
     if args.mark_workday_manual:
         marked = mark_manual_workday(root, queues["manualWorkday"], args.date)
@@ -354,8 +489,21 @@ def main() -> int:
             print(f"Marked {len(marked)} Workday row(s) for manual application.")
             print("")
     if args.format == "json":
-        print(json.dumps({**queues, "markedManualWorkday": marked}, indent=2))
+        print(
+            json.dumps(
+                {
+                    **queues,
+                    "markedManualWorkday": marked,
+                    "runState": None if args.no_state else str(state_path),
+                },
+                indent=2,
+            )
+        )
     else:
+        if not args.no_state:
+            print(f"Run state: {state_path}")
+            print(f"Operating card: {OPERATING_CARD}")
+            print("")
         print_text(queues)
     return 0
 

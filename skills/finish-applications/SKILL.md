@@ -5,6 +5,17 @@ description: Complete Liam Van's tracked job applications that have tailored res
 
 # Finish Applications
 
+## Automation Mode: Read First
+
+Before every row, re-read `skills/finish-applications/OPERATING_CARD.md`. That file is the authoritative short-form rule set. Everything below is the full reference; the operating card wins in any conflict. The short version:
+
+- A tailored resume is Liam's standing approval to attempt and complete routine applications.
+- Submit high-confidence routine applications without asking for a final double-check.
+- Ask only for true blockers: login/account creation, 2FA, interactive CAPTCHA, legal signature/attestation beyond routine privacy acknowledgement, salary/start-date commitments, unsupported eligibility answers, or unusual custom essays.
+- Re-read `/tmp/fa_run_state.json` before each row and update it after each outcome so queue, progress, confidence, and blockers survive context compression.
+- When Liam authorizes agents/subagents/parallel work, use the parent/worker model by default: parent owns state/tracker/cache, fresh workers handle one row or a small chunk and return structured outcomes.
+- Keep draining the queue until every reasonable row is submitted, archived, or has a precise manual blocker.
+
 ## Overview
 
 Use this skill to turn ready tracker rows into submitted applications with minimal user interruption.
@@ -32,6 +43,8 @@ Use these files and scripts:
 - Markdown tracker: `application-trackers/applications.md`
 - Generated cache: `application-visualizer/src/data/tracker-data.json`
 - Queue builder: `skills/finish-applications/scripts/build_application_queue.py`
+- Operating card: `skills/finish-applications/OPERATING_CARD.md`
+- Durable run state: `/tmp/fa_run_state.json`
 - Status updater: `skills/gmail-application-refresh/scripts/update_application_status.py`
 - Dashboard refresh: `skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py`
 
@@ -54,13 +67,13 @@ Refresh the cache first when it may be stale:
 python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 ```
 
-Then build the application queue. The queue intentionally includes both `Resume Tailored` rows and `Manual Apply Needed` rows; only rows with concrete blockers should remain manual, while stale/generic manual rows should be retried:
+Then build the application queue and durable run state. The queue intentionally includes both `Resume Tailored` rows and `Manual Apply Needed` rows; only rows with concrete blockers should remain manual, while stale/generic manual rows should be retried:
 
 ```bash
-python3 skills/finish-applications/scripts/build_application_queue.py --limit 10
+python3 skills/finish-applications/scripts/build_application_queue.py
 ```
 
-The `--limit 10` command is a convenient starting slice for interactive work, not a hard stop for the automation. For unattended automation runs, continue rebuilding and draining the queue until there are no more high-confidence reasonable roles left from the current intake batch or a true blocker interrupts progress.
+The queue builder writes `/tmp/fa_run_state.json` by default. Re-read that file before each row, update it after each outcome, and rebuild it after tracker/cache changes. For unattended automation runs, continue rebuilding and draining the queue until there are no more high-confidence reasonable roles left from the current intake batch or a true blocker interrupts progress.
 
 To mark Workday rows in the tracker for Liam:
 
@@ -68,26 +81,30 @@ To mark Workday rows in the tracker for Liam:
 python3 skills/finish-applications/scripts/build_application_queue.py --mark-workday-manual
 ```
 
-For JSON output:
+The script preserves completed row states from the existing state file when rebuilding, so confirmed submissions remain visible for the 5-submission commit/push threshold even after the tracker marks them applied.
 
-```bash
-python3 skills/finish-applications/scripts/build_application_queue.py --limit 10 --format json
-```
+## Run State File
 
-For a longer unattended run, write the queue to `/tmp/application_queue.json` so progress can be resumed without re-reading the whole tracker:
+The queue script always writes `/tmp/fa_run_state.json` unless `--no-state` is passed. This file is the run memory across context compression.
 
-```bash
-python3 skills/finish-applications/scripts/build_application_queue.py --limit 120 --format json > /tmp/application_queue.json
-```
+- `runPolicy` records automation mode, confirmation gate, submission gate, and parent/worker ownership.
+- `items[]` contains queued and preserved completed rows in priority order.
+- `items[i].state` is `queued`, `submitted`, `manual`, `archived`, or `skipped`.
+- `items[i].key` is a stable row identifier, usually posting key, falling back to company/role/link.
+- `items[i].confidenceBand` is `high`, `medium`, or `low`.
+- `standingInstruction` embeds the one-sentence autonomy rule.
+
+Before each row, read the file and process the first item where `state == "queued"`. After each row, update that item's `state`, `result`, `confirmationEvidence`, `notes`, and `updatedAt`, then write the file back. Do not hold the full queue only in conversation memory.
 
 ## Parallel Worker Mode
 
-Use this mode only when Liam's request authorizes subagents, worker agents, parallel execution, or the named multi-worker mode. The parent agent remains the orchestrator and source-of-truth owner.
+Use this mode when Liam's request authorizes subagents, worker agents, parallel execution, per-row workers, or the named multi-worker mode. For long automation runs, prefer this over doing every browser flow in the parent. The parent agent remains the orchestrator and source-of-truth owner.
 
 ### Parent Responsibilities
 
-- Run the start commands, refresh cache, build the queue, and split it into non-overlapping chunks.
-- Assign each row to exactly one worker at a time. Keep an in-run ledger with company, role, posting key, worker, outcome, notes, and confirmation evidence.
+- Run the start commands, refresh cache, build the queue, and keep `/tmp/fa_run_state.json` as the durable ledger.
+- Assign each row to exactly one worker at a time. Prefer one row per worker for high-friction browser flows; use small chunks only for clearly routine direct ATS rows.
+- Re-read `/tmp/fa_run_state.json` before assigning each row, and write the worker outcome back immediately after completion.
 - Own all writes to `application-trackers/applications.md` and `application-visualizer/src/data/tracker-data.json`. Workers must not edit tracker/cache files, run the status updater, commit, or push.
 - Rebuild or refresh the queue before assigning more work after a batch finishes, because Gmail refreshes or worker outcomes may change row status.
 - Commit and push only tracker/cache changes after every 5 confirmed submissions. If work stops before 5, commit and push confirmed tracker/cache updates before ending unless the working tree has unrelated tracker/cache changes that require inspection.
@@ -106,7 +123,8 @@ All-three mode adds:
 
 ### Chunking
 
-- Give each worker 3-5 rows at a time, sorted by fit score and readiness.
+- Default to one row per worker for accuracy and fresh context.
+- Give a worker 2-3 rows only when the rows are routine, source-similar, and unlikely to require logged-in browser state.
 - Keep chunks source-aware: LinkedIn/auth rows to `chrome-worker`, clear direct ATS rows to `direct-ats-worker`, and odd or nuanced forms to `safari-worker` only when all-three mode is requested.
 - Do not assign Workday rows to workers. Mark them manual according to the normal Workday rule.
 - When a worker finishes or runs low on context, collect its ledger, close or replace that worker, then spawn a fresh worker with the next chunk if more queue remains.
