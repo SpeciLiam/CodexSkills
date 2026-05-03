@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T22:34:18.994090+00:00",
+  "generatedAt": "2026-05-03T23:07:31.492058+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,34 +9,34 @@
   },
   "stats": {
     "kpis": {
-      "total": 478,
-      "applied": 330,
-      "unapplied": 148,
-      "active": 334,
+      "total": 483,
+      "applied": 332,
+      "unapplied": 151,
+      "active": 339,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 358,
-      "reachOut": 420,
+      "highFit": 363,
+      "reachOut": 425,
       "recruiterRows": 101,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 195,
+      "intakeJobs": 203,
       "intakeQueued": 30,
-      "intakeNew": 34,
+      "intakeNew": 37,
       "intakeManual": 20,
       "intakeApplied": 0,
-      "applyRate": 69.0,
+      "applyRate": 68.7,
       "rejectionRate": 13.3,
-      "recruiterWork": 248,
-      "engineerWork": 322,
+      "recruiterWork": 253,
+      "engineerWork": 327,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 279
+        "value": 281
       },
       {
         "name": "Archived",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 48
+        "value": 51
       },
       {
         "name": "Rejected",
@@ -65,12 +65,12 @@
     ],
     "sourceCounts": [
       {
-        "name": "LinkedIn",
-        "value": 172
+        "name": "Greenhouse",
+        "value": 173
       },
       {
-        "name": "Greenhouse",
-        "value": 168
+        "name": "LinkedIn",
+        "value": 172
       },
       {
         "name": "Ashby",
@@ -144,7 +144,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 217
+        "value": 218
       },
       {
         "name": "Bay Area",
@@ -152,7 +152,7 @@
       },
       {
         "name": "Other",
-        "value": 65
+        "value": 69
       },
       {
         "name": "Remote",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 268
+        "value": 273
       },
       {
         "name": "Backend",
@@ -240,11 +240,11 @@
       },
       {
         "score": "9",
-        "count": 88
+        "count": 90
       },
       {
         "score": "10",
-        "count": 178
+        "count": 181
       }
     ],
     "targetCounts": [
@@ -262,11 +262,11 @@
     "intakeStatusCounts": [
       {
         "name": "Tailored",
-        "value": 93
+        "value": 98
       },
       {
         "name": "New",
-        "value": 34
+        "value": 37
       },
       {
         "name": "Queued",
@@ -292,7 +292,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 131
+        "value": 139
       },
       {
         "name": "LinkedIn",
@@ -448,21 +448,21 @@
         "date": "2026-05-02",
         "cumulative": 414,
         "added": 52,
-        "applied": 15,
+        "applied": 16,
         "rejected": 0,
         "interviewing": 0
       },
       {
         "date": "2026-05-03",
-        "cumulative": 477,
-        "added": 63,
-        "applied": 4,
+        "cumulative": 482,
+        "added": 68,
+        "applied": 5,
         "rejected": 0,
         "interviewing": 0
       },
       {
         "date": "Frontend](/Users/liamvan/Documents/Repos/CodexSkills/companies/Ramp/Software_Engineer_Frontend/Liam_Van_Resume/Liam_Van_Ramp.pdf)",
-        "cumulative": 478,
+        "cumulative": 483,
         "added": 1,
         "applied": 0,
         "rejected": 0,
@@ -543,6 +543,12 @@
         "bestFit": 10
       },
       {
+        "company": "Applied Intuition",
+        "roles": 3,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "Intuit",
         "roles": 3,
         "avgFit": 9.33,
@@ -604,12 +610,6 @@
       },
       {
         "company": "Mirage",
-        "roles": 2,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "The Trade Desk",
         "roles": 2,
         "avgFit": 10.0,
         "bestFit": 10
@@ -10666,11 +10666,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI product infrastructure, Python/TypeScript systems, LLM applications, data workflows, production validation, and fast execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: required active security clearance question 2026-05-01; Manual apply needed: required government employment/restrictions responses 2026-05-03; Manual apply needed 2026-05-03: browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI product infrastructure, Python/TypeScript systems, LLM applications, data workflows, production validation, and fast execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: required active security clearance question 2026-05-01; Manual apply needed: required government employment/restrictions responses 2026-05-03; Manual apply needed 2026-05-03: browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Application form filled 2026-05-03 with tailored resume; not submitted per FRQ/free-response instruction. Role requires active secret clearance; answered no active clearance truthfully.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
+        "2026-05-03",
         "2026-05-03",
         "2026-05-03"
       ]
@@ -10694,11 +10695,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI infrastructure, backend/platform systems, distributed workflows, observability, reliability, and production readiness. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: required active security clearance question 2026-05-01; Manual apply needed: required government employment/restrictions responses 2026-05-03; Manual apply needed 2026-05-03: browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI infrastructure, backend/platform systems, distributed workflows, observability, reliability, and production readiness. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: required active security clearance question 2026-05-01; Manual apply needed: required government employment/restrictions responses 2026-05-03; Manual apply needed 2026-05-03: browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Application form filled 2026-05-03 with tailored resume; not submitted per FRQ/free-response instruction. Role requires active secret clearance; answered no active clearance truthfully.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
+        "2026-05-03",
         "2026-05-03",
         "2026-05-03"
       ]
@@ -11774,8 +11776,8 @@
     {
       "company": "Tebra",
       "role": "Software Engineer III",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -11790,11 +11792,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized remote healthcare software engineering, subsystem ownership, backend APIs, operational quality, and production support. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: Greenhouse form requires desired total annual compensation answer; live form opened and left open 2026-05-02.; Manual apply needed: required desired compensation and experience self-ratings 2026-05-03; Manual apply needed 2026-05-03: browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized remote healthcare software engineering, subsystem ownership, backend APIs, operational quality, and production support. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: Greenhouse form requires desired total annual compensation answer; live form opened and left open 2026-05-02.; Manual apply needed: required desired compensation and experience self-ratings 2026-05-03; Manual apply needed 2026-05-03: browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Submitted via Greenhouse on 2026-05-03 with tailored resume. Desired total annual compensation entered as midpoint of posted Zone 1 range: ,000. Confirmation page: Thank you for applying to Tebra.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-02",
         "2026-05-02",
+        "2026-05-03",
         "2026-05-03",
         "2026-05-03"
       ]
@@ -13993,8 +13996,8 @@
     {
       "company": "Pario",
       "role": "Founding Engineer (Backend)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -14009,9 +14012,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-03 pass; tailored SWE/backend resume rendered and verified one page; emphasized backend healthcare product services, REST APIs, cloud release validation, testing, and startup ownership. Browser-based submission blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-03 pass; tailored SWE/backend resume rendered and verified one page; emphasized backend healthcare product services, REST APIs, cloud release validation, testing, and startup ownership. Browser-based submission blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Submitted via Greenhouse on 2026-05-03 with tailored resume. Confirmation page: Thank you for applying; application has been received.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-03",
         "2026-05-03"
       ]
     },
@@ -14373,9 +14377,181 @@
         "2026-05-03",
         "2026-05-03"
       ]
+    },
+    {
+      "company": "Perpay",
+      "role": "Software Engineer, New Grad",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "Philadelphia, Pennsylvania, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/perpay/jobs/4034578007",
+      "postingKey": "4034578007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Perpay/Software_Engineer_New_Grad/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Perpay/Software_Engineer_New_Grad/Liam_Van_Resume/Liam_Van_Perpay.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-03 23:00Z; tailored SWE resume rendered and verified one page; emphasized new-grad fintech product engineering, full-stack customer workflows, React interfaces, backend APIs, data-backed validation, testing, and production-quality delivery. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03",
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Applied Intuition",
+      "role": "Software Engineer - New Grad",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "Sunnyvale, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/appliedintuition/jobs/4592025005?gh_jid=4592025005",
+      "postingKey": "4592025005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Applied Intuition/Software_Engineer_New_Grad/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Applied Intuition/Software_Engineer_New_Grad/Liam_Van_Resume/Liam_Van_Applied_Intuition.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-03 23:00Z; tailored SWE resume rendered and verified one page; emphasized new-grad autonomy software, full-stack and infrastructure engineering, product ownership, testing, C++/Python-adjacent systems, and reliable engineering for physical AI platforms. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03",
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Applied Intuition",
+      "role": "Software Engineer - New Grad",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "Ann Arbor, Michigan, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/appliedintuition/jobs/4600028005",
+      "postingKey": "4600028005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Applied Intuition/Software_Engineer_New_Grad/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Applied Intuition/Software_Engineer_New_Grad/Liam_Van_Resume_2/Liam_Van_Applied_Intuition.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-03 23:00Z; tailored SWE resume rendered and verified one page; emphasized new-grad autonomy software, full-stack and infrastructure engineering, product ownership, testing, C++/Python-adjacent systems, and reliable engineering for physical AI platforms. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03",
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Toshiba Global Commerce Solutions",
+      "role": "Associate Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "Frisco, TX",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/toshibaglobalcommercesolutions/jobs/5103776007",
+      "postingKey": "5103776007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Toshiba Global Commerce Solutions/Associate_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Toshiba Global Commerce Solutions/Associate_Software_Engineer/Liam_Van_Resume/Liam_Van_Toshiba_Global_Commerce_Solutions.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-03 23:00Z; tailored SWE resume rendered and verified one page; emphasized associate software quality engineering, AI-assisted defect diagnosis, validation, test automation, production bug fixing, and reliable release workflows. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03",
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Metron",
+      "role": "Associate Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "Reston, VA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/metron/jobs/4959097007",
+      "postingKey": "4959097007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Metron/Associate_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Metron/Associate_Software_Engineer/Liam_Van_Resume/Liam_Van_Metron.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-03 23:00Z; tailored SWE resume rendered and verified one page; emphasized associate backend and frontend engineering, simulation-oriented software, mathematical systems, APIs, web applications, testing, and production-quality tooling. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03",
+        "2026-05-03"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Perpay",
+      "role": "Software Engineer, New Grad",
+      "location": "Philadelphia, Pennsylvania, United States",
+      "postingKey": "4034578007",
+      "jobUrl": "https://job-boards.greenhouse.io/perpay/jobs/4034578007",
+      "discoveredAt": "2026-05-03T23:05:30.630479+00:00",
+      "postedAge": "Greenhouse public result crawled last month; page open with apply form 2026-05-03",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized new-grad fintech product engineering, full-stack customer workflows, React interfaces, backend APIs, data-backed validation, testing, and production-quality delivery",
+      "trackerPostingKey": "4034578007"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Applied Intuition",
+      "role": "Software Engineer - New Grad",
+      "location": "Sunnyvale, California, United States",
+      "postingKey": "4592025005",
+      "jobUrl": "https://job-boards.greenhouse.io/appliedintuition/jobs/4592025005?gh_jid=4592025005",
+      "discoveredAt": "2026-05-03T23:05:30.630479+00:00",
+      "postedAge": "Greenhouse public result crawled last month; page visible in search 2026-05-03",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized new-grad autonomy software, full-stack and infrastructure engineering, product ownership, testing, C++/Python-adjacent systems, and reliable engineering for physical AI platforms",
+      "trackerPostingKey": "4592025005"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Applied Intuition",
+      "role": "Software Engineer - New Grad",
+      "location": "Ann Arbor, Michigan, United States",
+      "postingKey": "4600028005",
+      "jobUrl": "https://job-boards.greenhouse.io/appliedintuition/jobs/4600028005",
+      "discoveredAt": "2026-05-03T23:05:30.630479+00:00",
+      "postedAge": "Greenhouse public result crawled 2 months ago; page visible in search 2026-05-03",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized new-grad autonomy software, full-stack and infrastructure engineering, product ownership, testing, C++/Python-adjacent systems, and reliable engineering for physical AI platforms",
+      "trackerPostingKey": "4600028005"
+    },
     {
       "source": "Greenhouse",
       "company": "Starburst",
@@ -15960,6 +16136,34 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Toshiba Global Commerce Solutions",
+      "role": "Associate Software Engineer",
+      "location": "Frisco, TX",
+      "postingKey": "5103776007",
+      "jobUrl": "https://job-boards.greenhouse.io/toshibaglobalcommercesolutions/jobs/5103776007",
+      "discoveredAt": "2026-05-03T23:05:30.630479+00:00",
+      "postedAge": "Greenhouse public result crawled 6 days ago; page open with apply form 2026-05-03",
+      "fitScore": 9,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized associate software quality engineering, AI-assisted defect diagnosis, validation, test automation, production bug fixing, and reliable release workflows",
+      "trackerPostingKey": "5103776007"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Metron",
+      "role": "Associate Software Engineer",
+      "location": "Reston, VA",
+      "postingKey": "4959097007",
+      "jobUrl": "https://job-boards.greenhouse.io/metron/jobs/4959097007",
+      "discoveredAt": "2026-05-03T23:05:30.630479+00:00",
+      "postedAge": "Greenhouse public result crawled 2 months ago; page visible in search 2026-05-03",
+      "fitScore": 9,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized associate backend and frontend engineering, simulation-oriented software, mathematical systems, APIs, web applications, testing, and production-quality tooling",
+      "trackerPostingKey": "4959097007"
+    },
+    {
+      "source": "Greenhouse",
       "company": "Greenhouse",
       "role": "Full Stack Software Engineer",
       "location": "Anywhere in the United States",
@@ -16740,6 +16944,48 @@
       "fitScore": 7,
       "status": "New",
       "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Vercel",
+      "role": "Forward Deployed Engineer, v0",
+      "location": "Remote - United States",
+      "postingKey": "5872425004",
+      "jobUrl": "https://job-boards.greenhouse.io/vercel/jobs/5872425004",
+      "discoveredAt": "2026-05-03T23:05:30.630479+00:00",
+      "postedAge": "Greenhouse public result crawled 3 weeks ago; page open with apply form 2026-05-03",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Huntress",
+      "role": "Forward Deployed Engineer",
+      "location": "Remote US",
+      "postingKey": "7711271003",
+      "jobUrl": "https://job-boards.greenhouse.io/huntress/jobs/7711271003",
+      "discoveredAt": "2026-05-03T23:05:30.630479+00:00",
+      "postedAge": "Greenhouse page marked New; public result crawled 5 days ago; page open with apply form 2026-05-03",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Fractal Portfolio",
+      "role": "Founding Engineer",
+      "location": "United States",
+      "postingKey": "4124494004",
+      "jobUrl": "https://job-boards.greenhouse.io/fractalportfolio/jobs/4124494004",
+      "discoveredAt": "2026-05-03T23:05:30.630479+00:00",
+      "postedAge": "Greenhouse public result crawled last month; page open with apply form 2026-05-03",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
       "trackerPostingKey": ""
     },
     {
@@ -17811,6 +18057,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Perpay",
+      "role": "Software Engineer, New Grad",
+      "postingKey": "4034578007",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/perpay/jobs/4034578007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "PermitFlow",
       "role": "Fullstack Software Engineer, New Grad",
       "postingKey": "78b1fccf-2ed9-4485-bd40-4a5aea3907d4",
@@ -18864,6 +19123,32 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Applied Intuition",
+      "role": "Software Engineer - New Grad",
+      "postingKey": "4592025005",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/appliedintuition/jobs/4592025005?gh_jid=4592025005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Applied Intuition",
+      "role": "Software Engineer - New Grad",
+      "postingKey": "4600028005",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/appliedintuition/jobs/4600028005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Anrok",
       "role": "Software Engineer (Early Career)",
       "postingKey": "874deeb1-750a-4b2d-818d-99e7eb409892",
@@ -19083,6 +19368,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Toshiba Global Commerce Solutions",
+      "role": "Associate Software Engineer",
+      "postingKey": "5103776007",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/toshibaglobalcommercesolutions/jobs/5103776007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Tennr",
@@ -19499,6 +19797,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Metron",
+      "role": "Associate Software Engineer",
+      "postingKey": "4959097007",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/metron/jobs/4959097007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Meta",
@@ -31952,6 +32263,30 @@
           "contacts": []
         },
         {
+          "key": "4592025005",
+          "company": "Applied Intuition",
+          "role": "Software Engineer - New Grad",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4600028005",
+          "company": "Applied Intuition",
+          "role": "Software Engineer - New Grad",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4409014859",
           "company": "Aquatic Capital Management",
           "role": "Software Engineer, Early Career",
@@ -32291,6 +32626,18 @@
           "key": "4784339004",
           "company": "Pario",
           "role": "Founding Engineer (Backend)",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4034578007",
+          "company": "Perpay",
+          "role": "Software Engineer, New Grad",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -32888,6 +33235,18 @@
           "contacts": []
         },
         {
+          "key": "4959097007",
+          "company": "Metron",
+          "role": "Associate Software Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7850913",
           "company": "Mixpanel",
           "role": "Software Engineer, DevInfra",
@@ -33047,6 +33406,18 @@
           "key": "4679086005",
           "company": "Tebra",
           "role": "Software Engineer III",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5103776007",
+          "company": "Toshiba Global Commerce Solutions",
+          "role": "Associate Software Engineer",
           "fitScore": 9,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -43673,6 +44044,30 @@
           "contacts": []
         },
         {
+          "key": "4592025005",
+          "company": "Applied Intuition",
+          "role": "Software Engineer - New Grad",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4600028005",
+          "company": "Applied Intuition",
+          "role": "Software Engineer - New Grad",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4409014859",
           "company": "Aquatic Capital Management",
           "role": "Software Engineer, Early Career",
@@ -44120,6 +44515,18 @@
           "key": "4784339004",
           "company": "Pario",
           "role": "Founding Engineer (Backend)",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4034578007",
+          "company": "Perpay",
+          "role": "Software Engineer, New Grad",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -44729,6 +45136,18 @@
           "contacts": []
         },
         {
+          "key": "4959097007",
+          "company": "Metron",
+          "role": "Associate Software Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7850913",
           "company": "Mixpanel",
           "role": "Software Engineer, DevInfra",
@@ -44816,6 +45235,18 @@
           "key": "4679086005",
           "company": "Tebra",
           "role": "Software Engineer III",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5103776007",
+          "company": "Toshiba Global Commerce Solutions",
+          "role": "Associate Software Engineer",
           "fitScore": 9,
           "status": "Manual Apply Needed",
           "count": 1,
