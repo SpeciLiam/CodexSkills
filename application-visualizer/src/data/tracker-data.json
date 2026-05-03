@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T05:17:18.938977+00:00",
+  "generatedAt": "2026-05-03T06:07:56.125664+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 418,
+      "total": 421,
       "applied": 323,
-      "unapplied": 95,
-      "active": 320,
+      "unapplied": 98,
+      "active": 323,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 299,
-      "reachOut": 361,
+      "highFit": 302,
+      "reachOut": 364,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 94,
+      "intakeJobs": 95,
       "intakeQueued": 7,
       "intakeNew": 17,
-      "intakeManual": 7,
+      "intakeManual": 9,
       "intakeApplied": 0,
-      "applyRate": 77.3,
+      "applyRate": 76.7,
       "rejectionRate": 13.6,
-      "recruiterWork": 235,
-      "engineerWork": 293,
+      "recruiterWork": 238,
+      "engineerWork": 296,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -48,11 +48,11 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 35
+        "value": 37
       },
       {
         "name": "Resume Tailored",
-        "value": 7
+        "value": 8
       },
       {
         "name": "Interviewing",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 148
+        "value": 149
       },
       {
         "name": "Greenhouse",
-        "value": 133
+        "value": 135
       },
       {
         "name": "Ashby",
@@ -140,11 +140,11 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 187
+        "value": 188
       },
       {
         "name": "Bay Area",
-        "value": 117
+        "value": 118
       },
       {
         "name": "Other",
@@ -152,7 +152,7 @@
       },
       {
         "name": "Remote",
-        "value": 38
+        "value": 39
       },
       {
         "name": "Seattle",
@@ -170,11 +170,11 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 229
+        "value": 231
       },
       {
         "name": "Backend",
-        "value": 50
+        "value": 51
       },
       {
         "name": "Full Stack",
@@ -232,7 +232,7 @@
       },
       {
         "score": "8",
-        "count": 86
+        "count": 87
       },
       {
         "score": "9",
@@ -240,7 +240,7 @@
       },
       {
         "score": "10",
-        "count": 135
+        "count": 137
       }
     ],
     "targetCounts": [
@@ -266,7 +266,7 @@
       },
       {
         "name": "Manual",
-        "value": 7
+        "value": 9
       },
       {
         "name": "Queued",
@@ -277,22 +277,22 @@
         "value": 6
       },
       {
-        "name": "10",
-        "value": 2
-      },
-      {
         "name": "Expired",
         "value": 2
       },
       {
         "name": "Duplicate",
         "value": 1
+      },
+      {
+        "name": "10",
+        "value": 1
       }
     ],
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 59
+        "value": 60
       },
       {
         "name": "LinkedIn",
@@ -454,8 +454,8 @@
       },
       {
         "date": "2026-05-03",
-        "cumulative": 418,
-        "added": 4,
+        "cumulative": 421,
+        "added": 7,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -517,6 +517,12 @@
         "bestFit": 10
       },
       {
+        "company": "Attentive",
+        "roles": 3,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "Flex",
         "roles": 3,
         "avgFit": 10.0,
@@ -566,12 +572,6 @@
       },
       {
         "company": "Trexquant Investment LP",
-        "roles": 2,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Attentive",
         "roles": 2,
         "avgFit": 10.0,
         "bestFit": 10
@@ -1032,7 +1032,7 @@
       "jobLink": "https://www.linkedin.com/jobs/collections/recommended/?currentJobId=4395721402",
       "postingKey": "4395721402",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Bamboo X/Software_Engineer/Liam_Van_Resume",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Bamboo X/Software_Engineer/Liam_Van_Resume/Liam_Van_Bamboo X.pdf",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Bamboo X/Software_Engineer/Liam_Van_Resume/Liam_Van_Bamboo_X.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
@@ -12783,9 +12783,114 @@
         "2026-05-03",
         "2026-05-03"
       ]
+    },
+    {
+      "company": "OneStream",
+      "role": "Software Engineer I",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "Remote, USA",
+      "source": "LinkedIn",
+      "jobLink": "https://recruiting.ultipro.com/ONE1018ONSO/JobBoard/1955ffa6-bda6-4c95-8412-2c731d693ab2/OpportunityDetail?opportunityId=d9517f18-7f9f-4f13-83e8-feb078e8792d&source=LinkedIn",
+      "postingKey": "d9517f18-7f9f-4f13-83e8-feb078e8792d",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OneStream/Software_Engineer_I/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OneStream/Software_Engineer_I/Liam_Van_Resume/Liam_Van_OneStream.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-03; emphasized enterprise SaaS engineering, C\\#/object-oriented fundamentals, REST APIs, UI frameworks, JSON/data modeling, AI-assisted testing, unit coverage, and release reliability for OneStream's CPM platform.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Alchemy",
+      "role": "Software Engineer (Backend) - Distributed Systems",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "New York, NY, San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/alchemy/jobs/4648515005",
+      "postingKey": "4648515005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Alchemy/Software_Engineer_Backend_Distributed_Systems/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Alchemy/Software_Engineer_Backend_Distributed_Systems/Liam_Van_Resume/Liam_Van_Alchemy.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 06:00Z pass; tailored SWE resume rendered and verified one page; emphasized backend distributed systems, scalable developer infrastructure, API reliability, cloud services, product-minded engineering, and production debugging. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: browser application attempt blocked because Computer Use access to Chrome and Firefox was denied during 2026-05-03 06:00Z automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03",
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Attentive",
+      "role": "Software Engineer I",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/attentive/jobs/4121843009?gh_jid=4121843009",
+      "postingKey": "4121843009",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Attentive/Software_Engineer_I/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Attentive/Software_Engineer_I/Liam_Van_Resume/Liam_Van_Attentive.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 06:00Z pass; tailored SWE resume rendered and verified one page; emphasized early-career full-stack product engineering, AI-powered customer messaging, backend services, React/TypeScript surfaces, testing, and reliable delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: browser application attempt blocked because Computer Use access to Chrome and Firefox was denied during 2026-05-03 06:00Z automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03",
+        "2026-05-03"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Attentive",
+      "role": "Software Engineer I",
+      "location": "San Francisco, CA",
+      "postingKey": "4121843009",
+      "jobUrl": "https://job-boards.greenhouse.io/attentive/jobs/4121843009?gh_jid=4121843009",
+      "discoveredAt": "2026-05-03T06:03:53.180176+00:00",
+      "postedAge": "public Greenhouse degraded search capture",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome and Firefox was denied",
+      "trackerPostingKey": "4121843009"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Alchemy",
+      "role": "Software Engineer (Backend) - Distributed Systems",
+      "location": "New York, NY, San Francisco, CA",
+      "postingKey": "4648515005",
+      "jobUrl": "https://job-boards.greenhouse.io/alchemy/jobs/4648515005",
+      "discoveredAt": "2026-05-03T06:03:53.180176+00:00",
+      "postedAge": "public Greenhouse degraded search capture",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome and Firefox was denied",
+      "trackerPostingKey": "4648515005"
+    },
     {
       "source": "Greenhouse",
       "company": "StubHub",
@@ -12827,20 +12932,6 @@
       "status": "Manual",
       "reason": "Tailored 2026-05-03; manual apply needed: browser application attempt blocked because Computer Use access to Chrome and Firefox was denied during automation preflight",
       "trackerPostingKey": "5072543007"
-    },
-    {
-      "source": "Greenhouse",
-      "company": "Loop",
-      "role": "2026 New Grad \\",
-      "location": "Software Engineer, Full-Stack (New York)",
-      "postingKey": "New York, NY",
-      "jobUrl": "5981828004",
-      "discoveredAt": "https://job-boards.greenhouse.io/loop/jobs/5981828004",
-      "postedAge": "2026-05-03T05:05:23.718833+00:00",
-      "fitScore": 0,
-      "status": "10",
-      "reason": "Skipped",
-      "trackerPostingKey": "Skipped 2026-05-03: exact Greenhouse page appears duplicative of already-applied Loop New York new-grad/full-stack rows"
     },
     {
       "source": "Greenhouse",
@@ -15314,6 +15405,19 @@
       "notes": ""
     },
     {
+      "company": "Attentive",
+      "role": "Software Engineer I",
+      "postingKey": "4121843009",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/attentive/jobs/4121843009?gh_jid=4121843009",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "AppLovin",
       "role": "Backend Engineer, New Grad",
       "postingKey": "4451556006",
@@ -15338,6 +15442,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Alchemy",
+      "role": "Software Engineer (Backend) - Distributed Systems",
+      "postingKey": "4648515005",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/alchemy/jobs/4648515005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Airbnb",
@@ -16534,6 +16651,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "OneStream",
+      "role": "Software Engineer I",
+      "postingKey": "d9517f18-7f9f-4f13-83e8-feb078e8792d",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://recruiting.ultipro.com/ONE1018ONSO/JobBoard/1955ffa6-bda6-4c95-8412-2c731d693ab2/OpportunityDetail?opportunityId=d9517f18-7f9f-4f13-83e8-feb078e8792d&source=LinkedIn",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Nuvo",
@@ -24558,6 +24688,18 @@
           "contacts": []
         },
         {
+          "key": "4648515005",
+          "company": "Alchemy",
+          "role": "Software Engineer (Backend) - Distributed Systems",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8530635002",
           "company": "Amplitude",
           "role": "Software Engineer II, Data Warehouse",
@@ -24599,6 +24741,18 @@
           "role": "Software Engineer II, BI Tooling and Platform",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4121843009",
+          "company": "Attentive",
+          "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -26219,6 +26373,18 @@
           "role": "Backend Engineer - DevEx Team",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "d9517f18-7f9f-4f13-83e8-feb078e8792d",
+          "company": "OneStream",
+          "role": "Software Engineer I",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -34408,6 +34574,18 @@
           "contacts": []
         },
         {
+          "key": "4648515005",
+          "company": "Alchemy",
+          "role": "Software Engineer (Backend) - Distributed Systems",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8530635002",
           "company": "Amplitude",
           "role": "Software Engineer II, Data Warehouse",
@@ -34447,6 +34625,18 @@
           "key": "4224514009",
           "company": "Attentive",
           "role": "Software Engineer II, BI Tooling and Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4121843009",
+          "company": "Attentive",
+          "role": "Software Engineer I",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -35601,6 +35791,18 @@
           "role": "Backend Engineer - DevEx Team",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "d9517f18-7f9f-4f13-83e8-feb078e8792d",
+          "company": "OneStream",
+          "role": "Software Engineer I",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
