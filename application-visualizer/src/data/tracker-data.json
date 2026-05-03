@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T01:16:33.790373+00:00",
+  "generatedAt": "2026-05-03T01:21:55.548388+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,9 +10,9 @@
   "stats": {
     "kpis": {
       "total": 399,
-      "applied": 304,
-      "unapplied": 95,
-      "active": 323,
+      "applied": 309,
+      "unapplied": 90,
+      "active": 322,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
@@ -26,9 +26,9 @@
       "intakeNew": 8,
       "intakeManual": 2,
       "intakeApplied": 0,
-      "applyRate": 76.2,
-      "rejectionRate": 14.5,
-      "recruiterWork": 238,
+      "applyRate": 77.4,
+      "rejectionRate": 14.2,
+      "recruiterWork": 237,
       "engineerWork": 290,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 253
+        "value": 258
       },
       {
         "name": "Rejected",
@@ -44,15 +44,15 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 35
+        "value": 34
       },
       {
         "name": "Archived",
-        "value": 32
+        "value": 33
       },
       {
         "name": "Resume Tailored",
-        "value": 29
+        "value": 24
       },
       {
         "name": "Interviewing",
@@ -436,7 +436,7 @@
         "date": "2026-05-01",
         "cumulative": 362,
         "added": 65,
-        "applied": 32,
+        "applied": 36,
         "rejected": 1,
         "interviewing": 0
       },
@@ -444,7 +444,7 @@
         "date": "2026-05-02",
         "cumulative": 399,
         "added": 37,
-        "applied": 7,
+        "applied": 8,
         "rejected": 0,
         "interviewing": 0
       }
@@ -10586,8 +10586,8 @@
     {
       "company": "StubHub",
       "role": "Software Engineer II - Open Distribution (Backend)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -10602,11 +10602,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend distribution systems, REST APIs, data modeling, reliability, distributed workflows, and operational debugging. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: Greenhouse email security code required after submit attempt 2026-05-01",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend distribution systems, REST APIs, data modeling, reliability, distributed workflows, and operational debugging. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: Greenhouse email security code required after submit attempt 2026-05-01; Application submitted via Greenhouse browser flow on 2026-05-02; uploaded tailored resume and answered routine sponsorship/hybrid/accuracy affirmation fields with high confidence.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ]
     },
     {
@@ -11081,7 +11082,7 @@
       "company": "SupplyHouse.com",
       "role": "Backend Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -11096,10 +11097,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend ecommerce systems, APIs, internal operations, full-stack collaboration, testing, and scalable service delivery. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend ecommerce systems, APIs, internal operations, full-stack collaboration, testing, and scalable service delivery. Did not claim direct company-specific domain ownership or unlisted framework experience.; Tracked Greenhouse link redirected to generic SupplyHouse careers page instead of the Backend Engineer posting; archived on 2026-05-02.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ]
     },
     {
@@ -11181,8 +11183,8 @@
     {
       "company": "Lynx Analytics",
       "role": "Software Engineer (US)",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -11197,17 +11199,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized Python software platforms, AI and analytics solutions, cloud deployments, containerization, cross-functional delivery, and production operations. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized Python software platforms, AI and analytics solutions, cloud deployments, containerization, cross-functional delivery, and production operations. Did not claim direct company-specific domain ownership or unlisted framework experience.; Application submitted via Greenhouse browser flow on 2026-05-02; uploaded tailored resume, entered standard 2-week notice period, and acknowledged data transfer with high confidence.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ]
     },
     {
       "company": "Beacon Software",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -11222,17 +11225,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, AI-enabled modernization, portfolio software systems, product collaboration, and rapid delivery. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, AI-enabled modernization, portfolio software systems, product collaboration, and rapid delivery. Did not claim direct company-specific domain ownership or unlisted framework experience.; Application submitted via Greenhouse browser flow on 2026-05-02; uploaded tailored resume and included LinkedIn profile with high confidence.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ]
     },
     {
       "company": "Glean",
       "role": "Software Engineer, Fullstack",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -11247,10 +11251,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI product workflows, enterprise search, full-stack systems, backend APIs, data workflows, and customer-facing product execution. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI product workflows, enterprise search, full-stack systems, backend APIs, data workflows, and customer-facing product execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Application submitted via Greenhouse browser flow on 2026-05-02; uploaded tailored resume and answered hybrid/source/AI-tools fields truthfully with high confidence.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ]
     },
     {
@@ -11757,8 +11762,8 @@
     {
       "company": "Canopy Connect",
       "role": "Backend Engineer - Carrier Integrations Team (Remote)",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -11773,9 +11778,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized backend integration systems, third-party APIs, data aggregation, Node-adjacent service design, AWS reliability, and startup delivery. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized backend integration systems, third-party APIs, data aggregation, Node-adjacent service design, AWS reliability, and startup delivery. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Application submitted via Greenhouse browser flow on 2026-05-02; uploaded tailored resume, answered work-authorization/location questions, and completed emailed security-code verification.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-02",
         "2026-05-02"
       ]
     },
@@ -23379,7 +23385,7 @@
           "company": "Beacon Software",
           "role": "Software Engineer",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -23451,7 +23457,7 @@
           "company": "Glean",
           "role": "Software Engineer, Fullstack",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -23499,7 +23505,7 @@
           "company": "Lynx Analytics",
           "role": "Software Engineer (US)",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -23763,7 +23769,7 @@
           "company": "StubHub",
           "role": "Software Engineer II - Open Distribution (Backend)",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -23800,18 +23806,6 @@
           "role": "Software Engineer II - Core Platform",
           "fitScore": 10,
           "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "5616318004",
-          "company": "SupplyHouse.com",
-          "role": "Backend Engineer",
-          "fitScore": 10,
-          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -24003,7 +23997,7 @@
           "company": "Canopy Connect",
           "role": "Backend Engineer - Carrier Integrations Team (Remote)",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -33853,7 +33847,7 @@
           "company": "Canopy Connect",
           "role": "Backend Engineer - Carrier Integrations Team (Remote)",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
