@@ -1515,7 +1515,7 @@ select option {
 }
 
 .batch-modal {
-  width: min(1120px, 100%);
+  width: min(1240px, calc(100vw - 32px));
 }
 
 .batch-modal-list {
@@ -1664,7 +1664,8 @@ select option {
   grid-template-columns: 42px minmax(0, 1fr) minmax(118px, 132px) 34px minmax(100px, auto);
   align-items: start;
   column-gap: 12px;
-  min-height: 132px;
+  min-height: 156px;
+  padding: 18px;
 }
 
 .outreach-shared-row.copied {
@@ -1673,7 +1674,7 @@ select option {
 }
 
 .outreach-shared-row .active-role-main {
-  gap: 7px;
+  gap: 8px;
   overflow: visible;
 }
 
@@ -1700,9 +1701,10 @@ select option {
 }
 
 .outreach-shared-row .batch-details {
+  width: min(100%, 660px);
   max-width: 100%;
   margin-top: 2px;
-  padding: 8px 10px;
+  padding: 10px 12px;
   overflow: hidden;
   border: 1px solid rgba(255,255,255,.08);
   background: rgba(255,255,255,.035);
@@ -1710,17 +1712,23 @@ select option {
 }
 
 .outreach-shared-row:has(.batch-details) {
-  min-height: 238px;
+  min-height: 388px;
 }
 
 .outreach-shared-row .batch-details dd {
-  display: -webkit-box;
-  overflow: hidden;
+  display: block;
+  overflow: visible;
   color: #cbd5e1;
   line-height: 1.35;
   overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.outreach-shared-row .batch-detail-block.research dd {
+  display: -webkit-box;
+  overflow: hidden;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
 }
 
 .outreach-shared-row .state-pills {

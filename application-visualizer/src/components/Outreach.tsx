@@ -186,13 +186,13 @@ export function BatchDetails({ note, notes }: { note: string; notes: string }) {
   return (
     <dl className="batch-details">
       {note && (
-        <div>
+        <div className="batch-detail-block note">
           <dt>Connection note</dt>
           <dd>{note}</dd>
         </div>
       )}
       {notes && (
-        <div>
+        <div className="batch-detail-block research">
           <dt>Research notes</dt>
           <dd>{notes}</dd>
         </div>
