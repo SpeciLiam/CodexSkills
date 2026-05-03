@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T05:08:01.819921+00:00",
+  "generatedAt": "2026-05-03T05:17:18.938977+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 418,
-      "applied": 322,
-      "unapplied": 96,
+      "applied": 323,
+      "unapplied": 95,
       "active": 320,
       "rejected": 44,
       "interviewing": 3,
@@ -26,8 +26,8 @@
       "intakeNew": 17,
       "intakeManual": 7,
       "intakeApplied": 0,
-      "applyRate": 77.0,
-      "rejectionRate": 13.7,
+      "applyRate": 77.3,
+      "rejectionRate": 13.6,
       "recruiterWork": 235,
       "engineerWork": 293,
       "recruiterReachedOut": 93,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 271
+        "value": 272
       },
       {
         "name": "Archived",
@@ -48,7 +48,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 36
+        "value": 35
       },
       {
         "name": "Resume Tailored",
@@ -448,7 +448,7 @@
         "date": "2026-05-02",
         "cumulative": 414,
         "added": 52,
-        "applied": 14,
+        "applied": 15,
         "rejected": 0,
         "interviewing": 0
       },
@@ -12088,8 +12088,8 @@
     {
       "company": "Sift",
       "role": "Software Engineer, Full Stack",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -12104,9 +12104,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized full-stack observability systems, telemetry products, startup ownership, backend APIs, React product surfaces, and reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: Ashby form requires current U.S. work authorization/U.S. Person eligibility for ITAR/EAR plus office-commute confirmation; live form opened and left open 2026-05-02.; Application form filled with tailored resume and routine standing answers; left open at final submit pending action-time confirmation 2026-05-02.",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized full-stack observability systems, telemetry products, startup ownership, backend APIs, React product surfaces, and reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: Ashby form requires current U.S. work authorization/U.S. Person eligibility for ITAR/EAR plus office-commute confirmation; live form opened and left open 2026-05-02.; Application form filled with tailored resume and routine standing answers; left open at final submit pending action-time confirmation 2026-05-02.; Application submitted 2026-05-02 via Ashby after Liam review.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-02",
         "2026-05-02",
         "2026-05-02",
         "2026-05-02"
@@ -26397,7 +26398,7 @@
           "company": "Sift",
           "role": "Software Engineer, Full Stack",
           "fitScore": 8,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -35659,7 +35660,7 @@
           "company": "Sift",
           "role": "Software Engineer, Full Stack",
           "fitScore": 8,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
