@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 321
+Companies queued: 335
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -25,6 +25,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Uber | Software Engineer | 157787 | 10 | Applied | Yes | [Posting](https://www.uber.com/careers/apply/form/157787?uclick_id=0da90020-fd3f-4bee-86e2-95a6160bf384) |  |  |  |  |
 | Uber | Software Engineer II | 156932 | 10 | Applied | Yes | [Posting](https://www.uber.com/global/en/careers/list/156932/?uclick_id=c3eed852-3739-4c33-ba86-8487c6d2f43b) |  |  |  |  |
 | Uber | Software Engineer I | 4403550427 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4403550427/) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
+| Two Dots | Software Engineer | 4318551773 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4318551773/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Twitch | Software Engineer I - Ads Demand Enablement | 8162197002 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/twitch/jobs/8162197002?gh_src=0c4ebc182) |  |  |  |  |
 | Trexquant Investment LP | Software Engineer - Early Career (USA) | 4297854738 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4297854738/) |  |  |  |  |
 | Trexquant Investment LP | Software Engineer - Early Career (USA) | 4330689211 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4330689211/) |  |  |  |  |
@@ -41,6 +42,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | StubHub | Software Engineer II - Platform Runtime & Services | 4683779101 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/stubhubinc/jobs/4683779101) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | StubHub | Software Engineer I - Marketplace Operations (New Grad) | 4763976101 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/stubhubinc/jobs/4763976101) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | StubHub | Software Engineer II, Backend | 6847037003 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/stubhubinc/jobs/6847037003) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
+| Starburst | Software Engineer II | 4947916008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/starburst/jobs/4947916008) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Spotify | Backend Engineer, Music | ee5064af-0116-4ef2-994a-cb8fed580290 | 10 | Applied | Yes | [Posting](https://jobs.lever.co/spotify/ee5064af-0116-4ef2-994a-cb8fed580290/apply?lever-source=LinkedInJobs) |  |  |  |  |
 | Smartsheet | Software Engineer I - Secure Platform Operations (Remote Eligible) | 7732551 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/smartsheet/jobs/7732551) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Sigma Computing | Software Engineer (New Grad Program) | 7690411003 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/sigmacomputing/jobs/7690411003) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
@@ -56,6 +58,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Procore Technologies | Software Engineer I (Datagrid) | 4406148082 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4406148082/) |  |  |  |  |
 | Procore Technologies | Software Engineer I (Datagrid) | 4400230667 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4400230667/) |  |  |  |  |
 | Point72 | Software Engineer, Commodities Technology | 8180667002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/point72/jobs/8180667002) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
+| Point72 | Software Engineer - 2026 Grad | 8202068002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/point72/jobs/8202068002?gh_jid=8202068002) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Plaid | Software Engineer | 49139a62-a9bc-4400-ae89-789818b34cb8 | 10 | Applied | Yes | [Posting](https://jobs.lever.co/plaid/49139a62-a9bc-4400-ae89-789818b34cb8/apply?lever-origin=applied&lever-source=LinkedInPaid) |  |  |  |  |
 | Pinterest | Software Engineer I, Backend | 6816337 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/embed/job_app?for=pinterest&token=6816337) |  |  |  |  |
 | PhysicsX | Forward Deployed Software Engineer | 4644850101 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/physicsx/jobs/4644850101) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
@@ -115,6 +118,8 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Disney | Software Engineer II - Data Transformation | 91303727120 | 10 | Applied | Yes | [Posting](https://www.disneycareers.com/en/job/-/-/391/91303727120?source=LINKEDIN_JOB_SLOTS) |  |  |  |  |
 | Disney | Software Engineer II | 93426467616 | 10 | Applied | Yes | [Posting](https://www.disneycareers.com/en/job/-/-/391/93426467616?source=LINKEDIN_JOB_SLOTS) |  |  |  |  |
 | Dandy | Software Engineer II, Product Lines Engineer (Full Stack) | software-engineer-ii-product-lines-engineer-full-stack-at-dandy-4364041463 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-product-lines-engineer-full-stack-at-dandy-4364041463) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
+| Crunchyroll | Software Engineer II - LRX Core | 7569508 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/crunchyroll/jobs/7569508) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
+| Crunchyroll | Software Engineer II, Frontend | 7262899 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/crunchyroll/jobs/7262899) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | CoreWeave | Software Engineer II - Artifact Management | software-engineer-ii-artifact-management-at-coreweave-4347281231 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-artifact-management-at-coreweave-4347281231) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Confido | New Grad Software Engineer | 4401827377 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4401827377/) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Compass | Software Engineer I | 4405599153 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4405599153/?trackingId=TdfRLjBOnV8vB8U5Tv%2F8vw%3D%3D&refId=5T2Rb2GlMfL%2FBz2KqJWJrw%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BFsxvxmQZR5K1F9fZ%2BTSCAg%3D%3D) |  |  |  |  |
@@ -192,9 +197,11 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Meltwater | Software Engineer - Machine Learning | software-engineer-machine-learning-at-meltwater-4377382456 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-machine-learning-at-meltwater-4377382456) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Maybern | Software Engineer | 0e6d43a6-a5f9-44fb-be3e-78a160a8fb11 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/maybern/0e6d43a6-a5f9-44fb-be3e-78a160a8fb11) |  |  |  |  |
 | Match Group | Software Engineer, Backend | f14dbcb6-f740-4c95-9634-6dd87ba3f4df | 9 | Applied | Yes | [Posting](https://jobs.lever.co/matchgroup/f14dbcb6-f740-4c95-9634-6dd87ba3f4df) |  |  |  |  |
+| Lead | Software Engineer II | 4354352768 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4354352768/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Known | Software Engineer | 8515531002 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/known/jobs/8515531002) |  |  |  |  |
 | Kalshi | Software Engineer, Product | 3dd97725-4a12-4963-b47a-cb5c562cfd1d | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/kalshi/3dd97725-4a12-4963-b47a-cb5c562cfd1d/application) |  |  |  |  |
 | Grow Therapy | Software Engineer, Backend | 4678586005 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/growtherapy/jobs/4678586005?gh_src=8d47tscl5us) |  |  |  |  |
+| Greenhouse | Full Stack Software Engineer | 7296545 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/greenhouse/jobs/7296545) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Glimpse | Software Engineer | 767a3a59-53d6-4306-afae-6b05a265ba82 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/glimpse/767a3a59-53d6-4306-afae-6b05a265ba82/application?utm_source=4M0PNbwNk7&src=linkedin) |  |  |  |  |
 | GLG | Software Engineer | software-engineer-at-glg-4319502743 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-at-glg-4319502743) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Garage | Software Engineer | f4018670-2c66-4da9-acac-2aa0af432abb | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/garage/f4018670-2c66-4da9-acac-2aa0af432abb) |  |  |  |  |
@@ -202,6 +209,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Foxglove | Software Engineer, New Grad | 4398854319 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4398854319/) |  |  |  |  |
 | First Resonance | Forward Deployed Software Engineer | fdb3fcb7-2575-4fb2-b5d8-945a7aeab427 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/first-resonance/fdb3fcb7-2575-4fb2-b5d8-945a7aeab427/application) |  |  |  |  |
 | Figma | Software Engineer, Full Stack | 5691911004 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/figma/jobs/5691911004?gh_jid=5691911004&gh_src=28109e334us&source=LinkedIn) |  |  |  |  |
+| Ema | Software Engineer, Backend | 4409831521 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4409831521/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Dash0 | Platform Engineer | c71c1a08-d9ea-4229-b7c9-a3ac9eabc95c | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/dash0/c71c1a08-d9ea-4229-b7c9-a3ac9eabc95c/application?utm_source=LinkedIn) |  |  |  |  |
 | Dagster Labs | Software Engineer - Platform | 7714923003 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/dagsterlabs/jobs/7714923003?gh_src=ojd9d6tp3us) |  |  |  |  |
 | Color | New Grad Software Engineer | 4397683013 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4397683013/) |  |  |  |  |
@@ -209,6 +217,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Clay | Software Engineer Backend | 248aa0c7-034f-47d3-a57e-ce16736eeab6 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/claylabs/248aa0c7-034f-47d3-a57e-ce16736eeab6/application?src=LinkedInJobSlot) |  |  |  |  |
 | Chime | Software Engineer, Credit Line | 8219795002 | 9 | Applied | Yes | [Posting](https://boards.greenhouse.io/chime/jobs/8219795002?gh_jid=8219795002) |  |  |  |  |
 | Chicago Trading Company | Software Engineer - Risk | 4640488005 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/embed/job_app?for=chicagotrading&token=4640488005&gh_src=2ca2e12e5us&b=https://chicagotrading.com/posting?req=4640488005-NewYork-Chicago) |  |  |  |  |
+| Checkr | Software Engineer II | 7296759 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/checkr/jobs/7296759) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Canopy Connect | Backend Engineer - Carrier Integrations Team (Remote) | 4076674004 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/canopyconnect/jobs/4076674004) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Brellium | Software Engineer AI | c1c54c79-d3cf-41d7-a3d2-a230ec9b6c9e | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/brellium/c1c54c79-d3cf-41d7-a3d2-a230ec9b6c9e?source=LinkedIn) |  |  |  |  |
 | Betterment | Software Engineer, Backend | software-engineer-backend-at-betterment-4293940011 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-backend-at-betterment-4293940011) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
@@ -222,6 +231,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | The Voleon Group | Software Engineer, DevOps | 4407401640 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4407401640/) |  |  |  |  |
 | TechKareer | Software Engineer (SF / NYC) | 4391812149 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4391812149/apply/) |  |  |  |  |
 | Supio | Software Engineer, Full Stack | am9icG9zdDokLY-gOKYyi4f5JNIx755l | 8 | Applied | Yes | [Posting](https://jobs.gem.com/supio/am9icG9zdDokLY-gOKYyi4f5JNIx755l?src=Linkedin) |  |  |  |  |
+| Sundayy | Software Developer, Jr. (Python, API) | 4409851680 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4409851680/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Stott and May | Software Engineer | 4404464189 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4404464189/apply/) |  |  |  |  |
 | Speakeasy | Software Engineer | 4398591026 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4398591026) |  |  |  |  |
 | Sofar Ocean | Software Engineer | 4408057809 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4408057809/?trackingId=DwG%2BdHl0SSCkj8VHOFgNGA%3D%3D&refId=5T2Rb2GlMfL%2FBz2KqJWJrw%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BnQ3WrNZISgWjPS5etG6bWg%3D%3D) |  |  |  |  |
@@ -250,6 +260,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Luma Labs AI | Software Engineer - Product | am9icG9zdDodtsh6pWUJjQgE8lXoaEJi | 8 | Applied | Yes | [Posting](https://jobs.gem.com/lumalabs-ai/am9icG9zdDodtsh6pWUJjQgE8lXoaEJi?src=LinkedIn+Paid) |  |  |  |  |
 | Loop | Software Engineer, Full-Stack | 4398089710 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4398089710) |  |  |  |  |
 | LinkedIn | Software Engineer - Applications | 4391881641 | 8 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/4391881641/) |  |  |  |  |
+| Lila Sciences | Software Engineer I, Instrument Software | 4388586015 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4388586015/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Kashable | Software Engineer | 4403975734 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4403975734/apply/) |  |  |  |  |
 | Justworks | Software Engineer | 4378040567 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/collections/recommended/?currentJobId=4378040567) |  |  |  |  |
 | Intuit | Center of Money Software Engineer 1 | 4401328323 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4401328323/) |  |  |  |  |
@@ -266,10 +277,13 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Crossing Hurdles | Full Stack Software Engineer | 4382410515 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4382410515/apply/) |  |  |  |  |
 | Confido | Software Engineer | JbodeMW-new-grad-software-engineer | 8 | Manual Apply Needed | Yes | [Posting](https://www.ycombinator.com/companies/confido/jobs/JbodeMW-new-grad-software-engineer?utm_source=syn_li) |  |  |  |  |
 | Comulate | Software Engineer | 4d5a3632-2812-4ab0-b3ad-ca6cf6083348 | 8 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/comulate/4d5a3632-2812-4ab0-b3ad-ca6cf6083348/application?utm_source=PyDKyZpboQ) |  |  |  |  |
+| Cadence | Software Engineer ll (New College Grad 2026) | 4377975350 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4377975350/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Benchling | Software Engineer, Backend (Infrastructure Engineering) | e729560e-a2dd-4949-8dc5-031312a9b2e2 | 8 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/benchling/e729560e-a2dd-4949-8dc5-031312a9b2e2/application?utm_source=JobWrapping) |  |  |  |  |
 | Bamboo X | Software Engineer | 4395721402 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/collections/recommended/?currentJobId=4395721402) |  |  |  |  |
 | Assort Health | Agent Engineer (New Grad, Summer 2026) | 64876579-05a2-40b6-a772-d1ce8b0ac8c4 | 8 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/assorthealth/64876579-05a2-40b6-a772-d1ce8b0ac8c4/application?utm_source=3Z7Kvr2enk) |  |  |  |  |
 | Asha Health | Software Engineer, AI x Healthcare | 4404700618 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4404700618/apply/) |  |  |  |  |
+| Ampcus Inc | Software Dev Engineer I | 4408366927 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4408366927/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
+| Ampcus Inc | Software Dev Engineer II | 4408367883 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4408367883/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Alexander Chapman | Founding Full Stack Engineer | 4407459453 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4407459453/apply/) |  |  |  |  |
 | Albert Bow | Software Engineer, Low Latency Trading | MjI2MDItaHRxZWJ3YTRoa281aDY2ZQ== | 8 | Applied | Yes | [Posting](https://app.loxo.co/job/MjI2MDItaHRxZWJ3YTRoa281aDY2ZQ==?source=LinkedIn) |  |  |  |  |
 | Zip | Software Engineer, Identity | 4153477552 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4153477552/) |  |  |  |  |

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T20:53:07.733973+00:00",
+  "generatedAt": "2026-05-03T21:07:11.224095+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 464,
+      "total": 478,
       "applied": 325,
-      "unapplied": 139,
-      "active": 343,
+      "unapplied": 153,
+      "active": 357,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 344,
-      "reachOut": 406,
+      "highFit": 358,
+      "reachOut": 420,
       "recruiterRows": 101,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 189,
+      "intakeJobs": 195,
       "intakeQueued": 30,
       "intakeNew": 34,
-      "intakeManual": 14,
+      "intakeManual": 20,
       "intakeApplied": 0,
-      "applyRate": 70.0,
+      "applyRate": 68.0,
       "rejectionRate": 13.5,
-      "recruiterWork": 257,
-      "engineerWork": 310,
+      "recruiterWork": 271,
+      "engineerWork": 324,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -43,16 +43,16 @@
         "value": 77
       },
       {
+        "name": "Manual Apply Needed",
+        "value": 46
+      },
+      {
         "name": "Rejected",
         "value": 44
       },
       {
-        "name": "Manual Apply Needed",
-        "value": 40
-      },
-      {
         "name": "Resume Tailored",
-        "value": 22
+        "value": 30
       },
       {
         "name": "Interviewing",
@@ -70,11 +70,11 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 164
+        "value": 172
       },
       {
         "name": "Greenhouse",
-        "value": 162
+        "value": 168
       },
       {
         "name": "Ashby",
@@ -148,15 +148,15 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 215
+        "value": 217
       },
       {
         "name": "Bay Area",
-        "value": 119
+        "value": 125
       },
       {
         "name": "Other",
-        "value": 61
+        "value": 65
       },
       {
         "name": "Remote",
@@ -164,7 +164,7 @@
       },
       {
         "name": "Seattle",
-        "value": 14
+        "value": 16
       },
       {
         "name": "Unknown",
@@ -178,15 +178,15 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 257
+        "value": 268
       },
       {
         "name": "Backend",
-        "value": 57
+        "value": 58
       },
       {
         "name": "Full Stack",
-        "value": 54
+        "value": 55
       },
       {
         "name": "Forward Deployed",
@@ -206,7 +206,7 @@
       },
       {
         "name": "Frontend",
-        "value": 5
+        "value": 6
       }
     ],
     "fitCounts": [
@@ -240,15 +240,15 @@
       },
       {
         "score": "8",
-        "count": 87
+        "count": 92
       },
       {
         "score": "9",
-        "count": 84
+        "count": 88
       },
       {
         "score": "10",
-        "count": 173
+        "count": 178
       }
     ],
     "targetCounts": [
@@ -277,12 +277,12 @@
         "value": 30
       },
       {
-        "name": "Skipped",
-        "value": 15
+        "name": "Manual",
+        "value": 20
       },
       {
-        "name": "Manual",
-        "value": 14
+        "name": "Skipped",
+        "value": 15
       },
       {
         "name": "Expired",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 125
+        "value": 131
       },
       {
         "name": "LinkedIn",
@@ -458,15 +458,15 @@
       },
       {
         "date": "2026-05-03",
-        "cumulative": 463,
-        "added": 49,
+        "cumulative": 477,
+        "added": 63,
         "applied": 2,
         "rejected": 0,
         "interviewing": 0
       },
       {
         "date": "Frontend](/Users/liamvan/Documents/Repos/CodexSkills/companies/Ramp/Software_Engineer_Frontend/Liam_Van_Resume/Liam_Van_Ramp.pdf)",
-        "cumulative": 464,
+        "cumulative": 478,
         "added": 1,
         "applied": 0,
         "rejected": 0,
@@ -747,6 +747,15 @@
         "jobLink": "https://www.linkedin.com/jobs/view/4403550427/"
       },
       {
+        "company": "Two Dots",
+        "role": "Software Engineer",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://www.linkedin.com/jobs/view/4318551773/"
+      },
+      {
         "company": "Twitch",
         "role": "Software Engineer I - Ads Demand Enablement",
         "fitScore": 10,
@@ -891,6 +900,15 @@
         "jobLink": "https://job-boards.greenhouse.io/stubhubinc/jobs/6847037003"
       },
       {
+        "company": "Starburst",
+        "role": "Software Engineer II",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/starburst/jobs/4947916008"
+      },
+      {
         "company": "Spotify",
         "role": "Backend Engineer, Music",
         "fitScore": 10,
@@ -925,24 +943,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/embed/job_app?for=seatgeek&gh_src=94e407181&token=7858968"
-      },
-      {
-        "company": "Scale AI",
-        "role": "Software Engineer - New Grad",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://www.linkedin.com/jobs/view/4297642437/"
-      },
-      {
-        "company": "Scale AI",
-        "role": "Software Engineer - New Grad",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://job-boards.greenhouse.io/scaleai/jobs/4605996005?gh_src=acad35425us"
       }
     ],
     "recruiterBatch": {
@@ -2662,16 +2662,17 @@
       "source": "LinkedIn",
       "jobLink": "https://www.linkedin.com/jobs/view/4353111144",
       "postingKey": "4353111144",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Overland AI/Software_Engineer_Perception_All_levels/Liam_Van_Resume",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Overland AI/Software_Engineer_Perception_All_levels/Liam_Van_Resume/Liam_Van_Overland_AI.pdf",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Overland AI/Software_Engineer_Perception_All_Levels/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Overland AI/Software_Engineer_Perception_All_Levels/Liam_Van_Resume_2/Liam_Van_Overland_AI.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-11",
+      "notes": "Application confirmation email received 2026-04-11; refreshed perception/autonomy resume 2026-05-03",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-11"
+        "2026-04-11",
+        "2026-05-03"
       ]
     },
     {
@@ -13987,9 +13988,419 @@
       "activityDates": [
         "2026-05-03"
       ]
+    },
+    {
+      "company": "Two Dots",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4318551773/",
+      "postingKey": "4318551773",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Two Dots/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Two Dots/Software_Engineer/Liam_Van_Resume/Liam_Van_Two_Dots.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Ampcus Inc",
+      "role": "Software Dev Engineer I",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "Seattle, WA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4408366927/",
+      "postingKey": "4408366927",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ampcus Inc/Software_Dev_Engineer_I/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ampcus Inc/Software_Dev_Engineer_I/Liam_Van_Resume/Liam_Van_Ampcus_Inc.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Cadence",
+      "role": "Software Engineer ll (New College Grad 2026)",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "San Jose, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4377975350/",
+      "postingKey": "4377975350",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Cadence/Software_Engineer_ll_New_College_Grad_2026/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Cadence/Software_Engineer_ll_New_College_Grad_2026/Liam_Van_Resume/Liam_Van_Cadence.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Lila Sciences",
+      "role": "Software Engineer I, Instrument Software",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "Cambridge, MA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4388586015/",
+      "postingKey": "4388586015",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Lila Sciences/Software_Engineer_I_Instrument_Software/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Lila Sciences/Software_Engineer_I_Instrument_Software/Liam_Van_Resume/Liam_Van_Lila_Sciences.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Ampcus Inc",
+      "role": "Software Dev Engineer II",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "Seattle, WA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4408367883/",
+      "postingKey": "4408367883",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ampcus Inc/Software_Dev_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ampcus Inc/Software_Dev_Engineer_II/Liam_Van_Resume/Liam_Van_Ampcus_Inc.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Sundayy",
+      "role": "Software Developer, Jr. (Python, API)",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4409851680/",
+      "postingKey": "4409851680",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Sundayy/Software_Developer_Jr_Python_API/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Sundayy/Software_Developer_Jr_Python_API/Liam_Van_Resume/Liam_Van_Sundayy.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Ema",
+      "role": "Software Engineer, Backend",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "Mountain View, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4409831521/",
+      "postingKey": "4409831521",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ema/Software_Engineer_Backend/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ema/Software_Engineer_Backend/Liam_Van_Resume/Liam_Van_Ema.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Lead",
+      "role": "Software Engineer II",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "San Francisco Bay Area",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4354352768/",
+      "postingKey": "4354352768",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Lead/Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Lead/Software_Engineer_II/Liam_Van_Resume/Liam_Van_Lead.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Point72",
+      "role": "Software Engineer - 2026 Grad",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/point72/jobs/8202068002?gh_jid=8202068002",
+      "postingKey": "8202068002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Point72/Software_Engineer_2026_Grad/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Point72/Software_Engineer_2026_Grad/Liam_Van_Resume/Liam_Van_Point72.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-03 21:00Z; tailored SWE resume rendered and verified one page; emphasized NYC early-career trading-technology software, backend applications, data-analysis tools, cloud-oriented engineering, code review, and production-quality delivery. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome and Firefox was denied after required retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03",
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Crunchyroll",
+      "role": "Software Engineer II - LRX Core",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "San Francisco, CA, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/crunchyroll/jobs/7569508",
+      "postingKey": "7569508",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Crunchyroll/Software_Engineer_II_LRX_Core/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Crunchyroll/Software_Engineer_II_LRX_Core/Liam_Van_Resume/Liam_Van_Crunchyroll.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-03 21:00Z; tailored SWE resume rendered and verified one page; emphasized SF SW2 web/client engineering, JavaScript, TypeScript, React-adjacent UI delivery, API integration, testing, and reliable streaming product experiences. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome and Firefox was denied after required retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03",
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Crunchyroll",
+      "role": "Software Engineer II, Frontend",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "San Francisco, CA, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/crunchyroll/jobs/7262899",
+      "postingKey": "7262899",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Crunchyroll/Software_Engineer_II_Frontend/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Crunchyroll/Software_Engineer_II_Frontend/Liam_Van_Resume/Liam_Van_Crunchyroll.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-03 21:00Z; tailored SWE resume rendered and verified one page; emphasized SF frontend and full-stack product engineering, React interfaces, checkout/acquisition workflows, API collaboration, testing, performance, and customer-facing delivery. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome and Firefox was denied after required retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03",
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Starburst",
+      "role": "Software Engineer II",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/starburst/jobs/4947916008",
+      "postingKey": "4947916008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Starburst/Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Starburst/Software_Engineer_II/Liam_Van_Resume/Liam_Van_Starburst.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-03 21:00Z; tailored SWE resume rendered and verified one page; emphasized SF platform engineering, SaaS reliability, scalable infrastructure, data-platform systems, cloud operations, testing, and service ownership. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome and Firefox was denied after required retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03",
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Checkr",
+      "role": "Software Engineer II",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "Denver, Colorado, United States; San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/checkr/jobs/7296759",
+      "postingKey": "7296759",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Checkr/Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Checkr/Software_Engineer_II/Liam_Van_Resume/Liam_Van_Checkr.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-03 21:00Z; tailored SWE resume rendered and verified one page; emphasized backend and full-stack data-platform engineering, reliable services, JavaScript/Ruby-adjacent product workflows, SQL/NoSQL data systems, async processing, testing, and production quality. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome and Firefox was denied after required retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03",
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Greenhouse",
+      "role": "Full Stack Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "Anywhere in the United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/greenhouse/jobs/7296545",
+      "postingKey": "7296545",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Greenhouse/Full_Stack_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Greenhouse/Full_Stack_Software_Engineer/Liam_Van_Resume/Liam_Van_Greenhouse.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-03 21:00Z; tailored SWE resume rendered and verified one page; emphasized remote US full-stack SaaS engineering, clean production code, React product surfaces, backend APIs, refactoring, testing, and fast platform delivery. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome and Firefox was denied after required retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03",
+        "2026-05-03"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Starburst",
+      "role": "Software Engineer II",
+      "location": "San Francisco, CA",
+      "postingKey": "4947916008",
+      "jobUrl": "https://job-boards.greenhouse.io/starburst/jobs/4947916008",
+      "discoveredAt": "2026-05-03T21:04:42.222794+00:00",
+      "postedAge": "public Greenhouse result; crawled 2 months ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome and Firefox was denied after required retry preflight",
+      "trackerPostingKey": "4947916008"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Point72",
+      "role": "Software Engineer - 2026 Grad",
+      "location": "New York, NY",
+      "postingKey": "8202068002",
+      "jobUrl": "https://job-boards.greenhouse.io/point72/jobs/8202068002?gh_jid=8202068002",
+      "discoveredAt": "2026-05-03T21:04:42.222794+00:00",
+      "postedAge": "public Greenhouse result; crawled 4 months ago; page still visible in search as 2026 grad role",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome and Firefox was denied after required retry preflight",
+      "trackerPostingKey": "8202068002"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Crunchyroll",
+      "role": "Software Engineer II - LRX Core",
+      "location": "San Francisco, CA, United States",
+      "postingKey": "7569508",
+      "jobUrl": "https://job-boards.greenhouse.io/crunchyroll/jobs/7569508",
+      "discoveredAt": "2026-05-03T21:04:42.222794+00:00",
+      "postedAge": "public Greenhouse result; page marked New; crawled 3 months ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome and Firefox was denied after required retry preflight",
+      "trackerPostingKey": "7569508"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Crunchyroll",
+      "role": "Software Engineer II, Frontend",
+      "location": "San Francisco, CA, United States",
+      "postingKey": "7262899",
+      "jobUrl": "https://job-boards.greenhouse.io/crunchyroll/jobs/7262899",
+      "discoveredAt": "2026-05-03T21:04:42.222794+00:00",
+      "postedAge": "public Greenhouse result; crawled 2 months ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome and Firefox was denied after required retry preflight",
+      "trackerPostingKey": "7262899"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Checkr",
+      "role": "Software Engineer II",
+      "location": "Denver, Colorado, United States; San Francisco, California, United States",
+      "postingKey": "7296759",
+      "jobUrl": "https://job-boards.greenhouse.io/checkr/jobs/7296759",
+      "discoveredAt": "2026-05-03T21:04:42.222794+00:00",
+      "postedAge": "public Greenhouse result; crawled 4 months ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome and Firefox was denied after required retry preflight",
+      "trackerPostingKey": "7296759"
+    },
     {
       "source": "LinkedIn",
       "company": "Twitch",
@@ -15504,6 +15915,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Greenhouse",
+      "role": "Full Stack Software Engineer",
+      "location": "Anywhere in the United States",
+      "postingKey": "7296545",
+      "jobUrl": "https://job-boards.greenhouse.io/greenhouse/jobs/7296545",
+      "discoveredAt": "2026-05-03T21:04:42.222794+00:00",
+      "postedAge": "public Greenhouse result; crawled 4 months ago; redirected to Greenhouse careers page but search result includes full posting text",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome and Firefox was denied after required retry preflight",
+      "trackerPostingKey": "7296545"
+    },
+    {
+      "source": "Greenhouse",
       "company": "WingWork",
       "role": "Founding Software Engineer",
       "location": "Remote / Seattle",
@@ -16330,6 +16755,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Develo",
+      "role": "Founding Engineer",
+      "location": "Remote / PST",
+      "postingKey": "4594416004",
+      "jobUrl": "https://job-boards.greenhouse.io/applytodevelo/jobs/4594416004",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled last week",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Verkada",
       "role": "Software Engineer, Backend",
       "location": "San Mateo, CA",
@@ -16621,20 +17060,6 @@
       "status": "Skipped",
       "reason": "SWE-family role, location needs review",
       "trackerPostingKey": ""
-    },
-    {
-      "source": "Greenhouse",
-      "company": "Develo",
-      "role": "Founding Engineer",
-      "location": "Remote / PST",
-      "postingKey": "4594416004",
-      "jobUrl": "https://job-boards.greenhouse.io/applytodevelo/jobs/4594416004",
-      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
-      "postedAge": "public Greenhouse result; crawled last week",
-      "fitScore": 6,
-      "status": "New",
-      "reason": "SWE-family role, preferred/remote US location",
-      "trackerPostingKey": ""
     }
   ],
   "outreachQueue": [
@@ -16847,6 +17272,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Two Dots",
+      "role": "Software Engineer",
+      "postingKey": "4318551773",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4318551773/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Twitch",
       "role": "Software Engineer I - Ads Demand Enablement",
       "postingKey": "8162197002",
@@ -17055,6 +17493,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Starburst",
+      "role": "Software Engineer II",
+      "postingKey": "4947916008",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/starburst/jobs/4947916008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Spotify",
       "role": "Backend Engineer, Music",
       "postingKey": "ee5064af-0116-4ef2-994a-cb8fed580290",
@@ -17244,6 +17695,19 @@
       "status": "Resume Tailored",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/point72/jobs/8180667002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Point72",
+      "role": "Software Engineer - 2026 Grad",
+      "postingKey": "8202068002",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/point72/jobs/8202068002?gh_jid=8202068002",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
@@ -18011,6 +18475,32 @@
       "status": "Resume Tailored",
       "reachOut": true,
       "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-product-lines-engineer-full-stack-at-dandy-4364041463",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Crunchyroll",
+      "role": "Software Engineer II - LRX Core",
+      "postingKey": "7569508",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/crunchyroll/jobs/7569508",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Crunchyroll",
+      "role": "Software Engineer II, Frontend",
+      "postingKey": "7262899",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/crunchyroll/jobs/7262899",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
@@ -19018,6 +19508,19 @@
       "notes": ""
     },
     {
+      "company": "Lead",
+      "role": "Software Engineer II",
+      "postingKey": "4354352768",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4354352768/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Known",
       "role": "Software Engineer",
       "postingKey": "8515531002",
@@ -19055,6 +19558,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Greenhouse",
+      "role": "Full Stack Software Engineer",
+      "postingKey": "7296545",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/greenhouse/jobs/7296545",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Glimpse",
@@ -19148,6 +19664,19 @@
       "notes": ""
     },
     {
+      "company": "Ema",
+      "role": "Software Engineer, Backend",
+      "postingKey": "4409831521",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4409831521/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Dash0",
       "role": "Platform Engineer",
       "postingKey": "c71c1a08-d9ea-4229-b7c9-a3ac9eabc95c",
@@ -19237,6 +19766,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Checkr",
+      "role": "Software Engineer II",
+      "postingKey": "7296759",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/checkr/jobs/7296759",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Canopy Connect",
@@ -19406,6 +19948,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Sundayy",
+      "role": "Software Developer, Jr. (Python, API)",
+      "postingKey": "4409851680",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4409851680/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Stott and May",
@@ -19772,6 +20327,19 @@
       "notes": ""
     },
     {
+      "company": "Lila Sciences",
+      "role": "Software Engineer I, Instrument Software",
+      "postingKey": "4388586015",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4388586015/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Kashable",
       "role": "Software Engineer",
       "postingKey": "4403975734",
@@ -19980,6 +20548,19 @@
       "notes": ""
     },
     {
+      "company": "Cadence",
+      "role": "Software Engineer ll (New College Grad 2026)",
+      "postingKey": "4377975350",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4377975350/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Benchling",
       "role": "Software Engineer, Backend (Infrastructure Engineering)",
       "postingKey": "e729560e-a2dd-4949-8dc5-031312a9b2e2",
@@ -20030,6 +20611,32 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Ampcus Inc",
+      "role": "Software Dev Engineer I",
+      "postingKey": "4408366927",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4408366927/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Ampcus Inc",
+      "role": "Software Dev Engineer II",
+      "postingKey": "4408367883",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4408367883/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Alexander Chapman",
@@ -31480,6 +32087,30 @@
           "contacts": []
         },
         {
+          "key": "7569508",
+          "company": "Crunchyroll",
+          "role": "Software Engineer II - LRX Core",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7262899",
+          "company": "Crunchyroll",
+          "role": "Software Engineer II, Frontend",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-ii-product-lines-engineer-full-stack-at-dandy-4364041463",
           "company": "Dandy",
           "role": "Software Engineer II, Product Lines Engineer (Full Stack)",
@@ -31864,6 +32495,18 @@
           "contacts": []
         },
         {
+          "key": "8202068002",
+          "company": "Point72",
+          "role": "Software Engineer - 2026 Grad",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4596829007",
           "company": "Runway",
           "role": "Software Engineer, Applied AI",
@@ -31977,6 +32620,18 @@
           "role": "Software Engineer I - Secure Platform Operations (Remote Eligible)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4947916008",
+          "company": "Starburst",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -32152,6 +32807,18 @@
           "contacts": []
         },
         {
+          "key": "4318551773",
+          "company": "Two Dots",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-new-grad-at-udio-4377876604",
           "company": "Udio",
           "role": "Software Engineer (New Grad)",
@@ -32284,11 +32951,35 @@
           "contacts": []
         },
         {
+          "key": "7296759",
+          "company": "Checkr",
+          "role": "Software Engineer II",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4397683013",
           "company": "Color",
           "role": "New Grad Software Engineer",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4409831521",
+          "company": "Ema",
+          "role": "Software Engineer, Backend",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -32356,6 +33047,18 @@
           "contacts": []
         },
         {
+          "key": "7296545",
+          "company": "Greenhouse",
+          "role": "Full Stack Software Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4678586005",
           "company": "Grow Therapy",
           "role": "Software Engineer, Backend",
@@ -32373,6 +33076,18 @@
           "role": "Software Engineer - Full Stack",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4354352768",
+          "company": "Lead",
+          "role": "Software Engineer II",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -32680,6 +33395,30 @@
           "contacts": []
         },
         {
+          "key": "4408366927",
+          "company": "Ampcus Inc",
+          "role": "Software Dev Engineer I",
+          "fitScore": 8,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4408367883",
+          "company": "Ampcus Inc",
+          "role": "Software Dev Engineer II",
+          "fitScore": 8,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4408787935",
           "company": "Angi",
           "role": "Software Engineer",
@@ -32733,6 +33472,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4377975350",
+          "company": "Cadence",
+          "role": "Software Engineer ll (New College Grad 2026)",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -33100,6 +33851,18 @@
           "contacts": []
         },
         {
+          "key": "4388586015",
+          "company": "Lila Sciences",
+          "role": "Software Engineer I, Instrument Software",
+          "fitScore": 8,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4391881641",
           "company": "LinkedIn",
           "role": "Software Engineer - Applications",
@@ -33441,6 +34204,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4409851680",
+          "company": "Sundayy",
+          "role": "Software Developer, Jr. (Python, API)",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -43285,6 +44060,30 @@
           "contacts": []
         },
         {
+          "key": "7569508",
+          "company": "Crunchyroll",
+          "role": "Software Engineer II - LRX Core",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7262899",
+          "company": "Crunchyroll",
+          "role": "Software Engineer II, Frontend",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-ii-product-lines-engineer-full-stack-at-dandy-4364041463",
           "company": "Dandy",
           "role": "Software Engineer II, Product Lines Engineer (Full Stack)",
@@ -43645,6 +44444,18 @@
           "contacts": []
         },
         {
+          "key": "8202068002",
+          "company": "Point72",
+          "role": "Software Engineer - 2026 Grad",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4596829007",
           "company": "Runway",
           "role": "Software Engineer, Applied AI",
@@ -43758,6 +44569,18 @@
           "role": "Software Engineer I - Secure Platform Operations (Remote Eligible)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4947916008",
+          "company": "Starburst",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -43933,6 +44756,18 @@
           "contacts": []
         },
         {
+          "key": "4318551773",
+          "company": "Two Dots",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-new-grad-at-udio-4377876604",
           "company": "Udio",
           "role": "Software Engineer (New Grad)",
@@ -44065,6 +44900,30 @@
           "contacts": []
         },
         {
+          "key": "7296759",
+          "company": "Checkr",
+          "role": "Software Engineer II",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4409831521",
+          "company": "Ema",
+          "role": "Software Engineer, Backend",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4581643005",
           "company": "Glean",
           "role": "Software Engineer, Backend",
@@ -44077,11 +44936,35 @@
           "contacts": []
         },
         {
+          "key": "7296545",
+          "company": "Greenhouse",
+          "role": "Full Stack Software Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4678587005",
           "company": "Grow Therapy",
           "role": "Software Engineer - Full Stack",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4354352768",
+          "company": "Lead",
+          "role": "Software Engineer II",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -44257,6 +45140,30 @@
           "contacts": []
         },
         {
+          "key": "4408366927",
+          "company": "Ampcus Inc",
+          "role": "Software Dev Engineer I",
+          "fitScore": 8,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4408367883",
+          "company": "Ampcus Inc",
+          "role": "Software Dev Engineer II",
+          "fitScore": 8,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4408787935",
           "company": "Angi",
           "role": "Software Engineer",
@@ -44274,6 +45181,18 @@
           "role": "Software Engineer - Platform",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4377975350",
+          "company": "Cadence",
+          "role": "Software Engineer ll (New College Grad 2026)",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -44485,6 +45404,18 @@
           "contacts": []
         },
         {
+          "key": "4388586015",
+          "company": "Lila Sciences",
+          "role": "Software Engineer I, Instrument Software",
+          "fitScore": 8,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "1079158160340219",
           "company": "Meta",
           "role": "Software Engineer, Product",
@@ -44574,6 +45505,18 @@
           "role": "Frontend Engineer - Music",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4409851680",
+          "company": "Sundayy",
+          "role": "Software Developer, Jr. (Python, API)",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
