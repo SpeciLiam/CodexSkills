@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T20:05:55.389339+00:00",
+  "generatedAt": "2026-05-03T20:44:23.225620+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,9 +21,9 @@
       "recruiterRows": 101,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 159,
-      "intakeQueued": 8,
-      "intakeNew": 26,
+      "intakeJobs": 182,
+      "intakeQueued": 24,
+      "intakeNew": 32,
       "intakeManual": 14,
       "intakeApplied": 0,
       "applyRate": 70.0,
@@ -270,7 +270,11 @@
       },
       {
         "name": "New",
-        "value": 26
+        "value": 32
+      },
+      {
+        "name": "Queued",
+        "value": 24
       },
       {
         "name": "Skipped",
@@ -281,22 +285,22 @@
         "value": 14
       },
       {
-        "name": "Queued",
-        "value": 8
-      },
-      {
         "name": "Expired",
         "value": 2
       },
       {
         "name": "Duplicate",
         "value": 1
+      },
+      {
+        "name": "6",
+        "value": 1
       }
     ],
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 102
+        "value": 125
       },
       {
         "name": "LinkedIn",
@@ -13992,6 +13996,188 @@
   "jobIntake": [
     {
       "source": "Greenhouse",
+      "company": "Virtu Financial",
+      "role": "Software Engineer - Client Trading Infrastructure (Java/Python)",
+      "location": "New York",
+      "postingKey": "6072565002",
+      "jobUrl": "https://job-boards.greenhouse.io/virtu/jobs/6072565002",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled yesterday",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Thesis",
+      "role": "Full Stack Engineer",
+      "location": "New York",
+      "postingKey": "5082367008",
+      "jobUrl": "https://job-boards.greenhouse.io/trovohealth/jobs/5082367008",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled yesterday",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "StubHub",
+      "role": "Platform Engineer - Core Compute Platform",
+      "location": "New York, New York, United States",
+      "postingKey": "4850341101",
+      "jobUrl": "https://job-boards.greenhouse.io/stubhubinc/jobs/4850341101",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled 5 days ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Schrodinger",
+      "role": "Machine Learning Platform Engineer",
+      "location": "New York",
+      "postingKey": "7655026003",
+      "jobUrl": "https://job-boards.greenhouse.io/schrdinger/jobs/7655026003",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled yesterday",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Lightning AI",
+      "role": "Fullstack Engineer",
+      "location": "London, England, United Kingdom; New York, New York, United States; San Francisco, California, United States; Seattle, Washington, United States",
+      "postingKey": "4652064003",
+      "jobUrl": "https://job-boards.greenhouse.io/lightningai/jobs/4652064003",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled 2 days ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Judi Health",
+      "role": "Platform Developer",
+      "location": "New York, New York, United States / Remote",
+      "postingKey": "4759425008",
+      "jobUrl": "https://job-boards.greenhouse.io/capitalrx/jobs/4759425008",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled today",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Grow Therapy",
+      "role": "Frontend Platform Engineer",
+      "location": "New York City, San Francisco, or Seattle",
+      "postingKey": "4678555005",
+      "jobUrl": "https://job-boards.greenhouse.io/growtherapy/jobs/4678555005",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled 2 days ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "EnergyHub",
+      "role": "Software Engineer II, EV",
+      "location": "Remote - United States",
+      "postingKey": "8237857002",
+      "jobUrl": "https://job-boards.greenhouse.io/energyhub/jobs/8237857002?gh_src=f230d6562us",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled last week",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Dagster Labs",
+      "role": "Software Engineer - Enterprise Readiness",
+      "location": "Remote with offices in San Francisco, CA / New York, NY / Minneapolis, MN",
+      "postingKey": "7602468003",
+      "jobUrl": "https://job-boards.greenhouse.io/dagsterlabs/jobs/7602468003",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled yesterday",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Coast",
+      "role": "Product Engineer, Foundations Team",
+      "location": "New York, NY",
+      "postingKey": "5973821004",
+      "jobUrl": "https://job-boards.greenhouse.io/coast/jobs/5973821004",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled yesterday",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Breadboard",
+      "role": "Founding Engineer (Full Stack)",
+      "location": "New York, NY (Remote Flexible)",
+      "postingKey": "4379970004",
+      "jobUrl": "https://job-boards.greenhouse.io/applytobreadboard/jobs/4379970004",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled 2 weeks ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Axon",
+      "role": "Software Engineer I",
+      "location": "Washington, United States",
+      "postingKey": "7576927003",
+      "jobUrl": "https://job-boards.greenhouse.io/axon/jobs/7576927003",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled last week",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Addepar",
+      "role": "Software Engineer - Trading (OMS)",
+      "location": "New York, NY",
+      "postingKey": "8505555002",
+      "jobUrl": "https://job-boards.greenhouse.io/addepar1/jobs/8505555002",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled 2 days ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Pario",
       "role": "Founding Engineer (Backend)",
       "location": "New York, NY",
@@ -15279,6 +15465,48 @@
       "trackerPostingKey": "4401827377"
     },
     {
+      "source": "Greenhouse",
+      "company": "WingWork",
+      "role": "Founding Software Engineer",
+      "location": "Remote / Seattle",
+      "postingKey": "4813580004",
+      "jobUrl": "https://job-boards.greenhouse.io/applytowingwork/jobs/4813580004",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled 3 days ago",
+      "fitScore": 9,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Nex",
+      "role": "Fullstack Engineer (Marketing)",
+      "location": "Remote (USA & Canada only)",
+      "postingKey": "5155107008",
+      "jobUrl": "https://job-boards.greenhouse.io/nex/jobs/5155107008",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled today",
+      "fitScore": 9,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Addepar",
+      "role": "Frontend Software Engineer",
+      "location": "Remote, USA",
+      "postingKey": "8526593002",
+      "jobUrl": "https://job-boards.greenhouse.io/addepar1/jobs/8526593002",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled 2 days ago",
+      "fitScore": 9,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "LinkedIn",
       "company": "Ramp",
       "role": "Software Engineer - Frontend",
@@ -15756,6 +15984,34 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Snorkel AI",
+      "role": "Forward Deployed Engineer - Data-as-a-Service",
+      "location": "New York City, NY; Redwood City, CA; San Francisco, CA",
+      "postingKey": "5689470004",
+      "jobUrl": "https://job-boards.greenhouse.io/snorkelai/jobs/5689470004",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled 2 weeks ago",
+      "fitScore": 7,
+      "status": "New",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Parloa",
+      "role": "Forward Deployed Engineer, VoIP",
+      "location": "New York Office; Remotely in the USA",
+      "postingKey": "4799672101",
+      "jobUrl": "https://job-boards.greenhouse.io/parloa/jobs/4799672101",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled last week",
+      "fitScore": 7,
+      "status": "New",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Roivant Sciences",
       "role": "Founding Engineer, Roivant Health",
       "location": "New York, NY",
@@ -15921,6 +16177,76 @@
       "status": "New",
       "reason": "SWE-family role, NYC preference",
       "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "TrueBuilt",
+      "role": "Founding Engineer",
+      "location": "Remote - US based",
+      "postingKey": "4588866004",
+      "jobUrl": "https://job-boards.greenhouse.io/applytotruebuilt/jobs/4588866004",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled 2 weeks ago",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Tailscale",
+      "role": "Security Infrastructure Engineer",
+      "location": "Remote (United States)",
+      "postingKey": "4648933005",
+      "jobUrl": "https://job-boards.greenhouse.io/tailscale/jobs/4648933005",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled 3 days ago",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Ref",
+      "role": "Founding Engineer",
+      "location": "Remote",
+      "postingKey": "4121989008",
+      "jobUrl": "https://job-boards.greenhouse.io/ref/jobs/4121989008",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled last week",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Kipsi",
+      "role": "Founding Engineer",
+      "location": "San Francisco Bay Area",
+      "postingKey": "4605034004",
+      "jobUrl": "https://job-boards.greenhouse.io/applytokipsi/jobs/4605034004",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled last week",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Develo",
+      "role": "Founding Engineer",
+      "location": "Remote \\",
+      "postingKey": "PST",
+      "jobUrl": "4594416004",
+      "discoveredAt": "https://job-boards.greenhouse.io/applytodevelo/jobs/4594416004",
+      "postedAge": "2026-05-03T20:44:16.320127+00:00",
+      "fitScore": 0,
+      "status": "6",
+      "reason": "New",
+      "trackerPostingKey": "SWE-family role, preferred/remote US location"
     },
     {
       "source": "Greenhouse",
