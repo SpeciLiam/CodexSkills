@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T00:05:04.684183+00:00",
+  "generatedAt": "2026-05-03T00:10:48.068007+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,9 +10,9 @@
   "stats": {
     "kpis": {
       "total": 394,
-      "applied": 297,
-      "unapplied": 97,
-      "active": 325,
+      "applied": 298,
+      "unapplied": 96,
+      "active": 319,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
@@ -26,33 +26,33 @@
       "intakeNew": 8,
       "intakeManual": 2,
       "intakeApplied": 0,
-      "applyRate": 75.4,
+      "applyRate": 75.6,
       "rejectionRate": 14.8,
-      "recruiterWork": 240,
-      "engineerWork": 292,
+      "recruiterWork": 234,
+      "engineerWork": 286,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 246
+        "value": 247
       },
       {
         "name": "Rejected",
         "value": 44
       },
       {
-        "name": "Resume Tailored",
-        "value": 39
-      },
-      {
         "name": "Manual Apply Needed",
         "value": 34
       },
       {
+        "name": "Resume Tailored",
+        "value": 32
+      },
+      {
         "name": "Archived",
-        "value": 25
+        "value": 31
       },
       {
         "name": "Interviewing",
@@ -440,7 +440,7 @@
         "date": "2026-05-02",
         "cumulative": 394,
         "added": 32,
-        "applied": 1,
+        "applied": 2,
         "rejected": 0,
         "interviewing": 0
       }
@@ -11443,8 +11443,8 @@
     {
       "company": "Smartsheet",
       "role": "Software Engineer I - Secure Platform Operations (Remote Eligible)",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -11459,15 +11459,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-05-02",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-02"
+      ]
     },
     {
       "company": "WithCoverage",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -11482,9 +11484,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized backend product systems, API delivery, data modeling, cloud validation, production reliability, and fast product iteration. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized backend product systems, API delivery, data modeling, cloud validation, production reliability, and fast product iteration. Did not claim direct company-specific domain ownership or unlisted framework experience.; Posting closed/unavailable 2026-05-02",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-02",
         "2026-05-02"
       ]
     },
@@ -11492,7 +11495,7 @@
       "company": "Superblocks",
       "role": "Software Engineer, Cloud Infrastructure",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -11507,9 +11510,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized cloud infrastructure, developer tooling, API reliability, distributed services, operational debugging, and platform validation. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized cloud infrastructure, developer tooling, API reliability, distributed services, operational debugging, and platform validation. Did not claim direct company-specific domain ownership or unlisted framework experience.; Posting returned 404 2026-05-02",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-02",
         "2026-05-02"
       ]
     },
@@ -11517,7 +11521,7 @@
       "company": "Nira Energy",
       "role": "Founding Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -11532,9 +11536,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized founding full-stack product engineering, backend APIs, data workflows, customer-facing delivery, and rapid product iteration. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized founding full-stack product engineering, backend APIs, data workflows, customer-facing delivery, and rapid product iteration. Did not claim direct company-specific domain ownership or unlisted framework experience.; Posting closed/unavailable 2026-05-02",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-02",
         "2026-05-02"
       ]
     },
@@ -11567,7 +11572,7 @@
       "company": "Flex",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -11582,9 +11587,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized financial technology systems, backend services, API workflows, data validation, reliability, and product collaboration. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized financial technology systems, backend services, API workflows, data validation, reliability, and product collaboration. Did not claim direct company-specific domain ownership or unlisted framework experience.; Posting closed/unavailable 2026-05-02",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-02",
         "2026-05-02"
       ]
     },
@@ -11892,7 +11898,7 @@
       "company": "Yext",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -11907,9 +11913,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC product engineering, AI-search platform services, backend APIs, data workflows, and production reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC product engineering, AI-search platform services, backend APIs, data workflows, and production reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Posting closed/unavailable 2026-05-02",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-02",
         "2026-05-02"
       ]
     },
@@ -11917,7 +11924,7 @@
       "company": "TEGNA Inc.",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -11932,9 +11939,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized real-time software systems, microservices, Java/Python/Go-adjacent backend delivery, event-driven workflows, and reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized real-time software systems, microservices, Java/Python/Go-adjacent backend delivery, event-driven workflows, and reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Posting closed/unavailable 2026-05-02",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-02",
         "2026-05-02"
       ]
     },
@@ -23100,18 +23108,6 @@
           "contacts": []
         },
         {
-          "key": "5633923004",
-          "company": "Flex",
-          "role": "Software Engineer",
-          "fitScore": 10,
-          "status": "Resume Tailored",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "7839346",
           "company": "Flexport",
           "role": "Software Engineer II, Autonomous Freight Systems",
@@ -23237,18 +23233,6 @@
           "role": "Software Engineer, Growth (New Grad)",
           "fitScore": 10,
           "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4824126008",
-          "company": "Nira Energy",
-          "role": "Founding Software Engineer",
-          "fitScore": 10,
-          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -23440,7 +23424,7 @@
           "company": "Smartsheet",
           "role": "Software Engineer I - Secure Platform Operations (Remote Eligible)",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -23496,33 +23480,9 @@
           "contacts": []
         },
         {
-          "key": "4507226005",
-          "company": "Superblocks",
-          "role": "Software Engineer, Cloud Infrastructure",
-          "fitScore": 10,
-          "status": "Resume Tailored",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "5616318004",
           "company": "SupplyHouse.com",
           "role": "Backend Engineer",
-          "fitScore": 10,
-          "status": "Resume Tailored",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4744576007",
-          "company": "TEGNA Inc.",
-          "role": "Software Engineer",
           "fitScore": 10,
           "status": "Resume Tailored",
           "count": 1,
@@ -23619,30 +23579,6 @@
           "key": "software-engineer-ii-at-warner-bros-discovery-4374141586",
           "company": "Warner Bros. Discovery",
           "role": "Software Engineer II",
-          "fitScore": 10,
-          "status": "Resume Tailored",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4828873008",
-          "company": "WithCoverage",
-          "role": "Software Engineer",
-          "fitScore": 10,
-          "status": "Resume Tailored",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "7085149",
-          "company": "Yext",
-          "role": "Software Engineer",
           "fitScore": 10,
           "status": "Resume Tailored",
           "count": 1,
@@ -32998,18 +32934,6 @@
           "contacts": []
         },
         {
-          "key": "5633923004",
-          "company": "Flex",
-          "role": "Software Engineer",
-          "fitScore": 10,
-          "status": "Resume Tailored",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "7839346",
           "company": "Flexport",
           "role": "Software Engineer II, Autonomous Freight Systems",
@@ -33111,18 +33035,6 @@
           "role": "Software Engineer, Growth (New Grad)",
           "fitScore": 10,
           "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4824126008",
-          "company": "Nira Energy",
-          "role": "Founding Software Engineer",
-          "fitScore": 10,
-          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -33314,7 +33226,7 @@
           "company": "Smartsheet",
           "role": "Software Engineer I - Secure Platform Operations (Remote Eligible)",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -33370,33 +33282,9 @@
           "contacts": []
         },
         {
-          "key": "4507226005",
-          "company": "Superblocks",
-          "role": "Software Engineer, Cloud Infrastructure",
-          "fitScore": 10,
-          "status": "Resume Tailored",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "5616318004",
           "company": "SupplyHouse.com",
           "role": "Backend Engineer",
-          "fitScore": 10,
-          "status": "Resume Tailored",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4744576007",
-          "company": "TEGNA Inc.",
-          "role": "Software Engineer",
           "fitScore": 10,
           "status": "Resume Tailored",
           "count": 1,
@@ -33493,30 +33381,6 @@
           "key": "software-engineer-ii-at-warner-bros-discovery-4374141586",
           "company": "Warner Bros. Discovery",
           "role": "Software Engineer II",
-          "fitScore": 10,
-          "status": "Resume Tailored",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4828873008",
-          "company": "WithCoverage",
-          "role": "Software Engineer",
-          "fitScore": 10,
-          "status": "Resume Tailored",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "7085149",
-          "company": "Yext",
-          "role": "Software Engineer",
           "fitScore": 10,
           "status": "Resume Tailored",
           "count": 1,

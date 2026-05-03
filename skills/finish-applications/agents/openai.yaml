@@ -2,3 +2,9 @@ interface:
   display_name: "Finish Applications"
   short_description: "Complete ready applications with optional worker lanes"
   default_prompt: "Use $finish-applications to work through my ready but unapplied job applications with the default Chrome and direct-ATS worker lanes; ask me only when blocked. Use all three lanes if I explicitly ask for Chrome, Safari, and direct ATS."
+candidate_profile:
+  gender: "male"
+  transgender: false
+  standing_submit_intent: "Attempt and complete routine applications for rows with tailored resumes; only stop for true blockers."
+browser_form_handling:
+  filtered_selects: "Open/filter the dropdown and select the real option; do not leave typeahead text unselected."

@@ -24,13 +24,10 @@ TRUE_MANUAL_BLOCKERS = (
     "bot",
     "captcha",
     "custom",
-    "cover letter",
     "declaration",
     "embedded",
     "email application",
     "experience-level",
-    "final application submission confirmation",
-    "final submit confirmation",
     "free response",
     "free-response",
     "hcaptcha",
@@ -53,6 +50,9 @@ TRUE_MANUAL_BLOCKERS = (
     "workday",
 )
 RETRYABLE_MANUAL_BLOCKERS = (
+    "cover letter",
+    "final application submission confirmation",
+    "final submit confirmation",
     "linkedin login",
 )
 RESUME_TAILOR_SCRIPTS = ROOT / "skills" / "resume-tailor" / "scripts"
@@ -163,10 +163,52 @@ def score(app: dict[str, Any]) -> tuple[int, int, str, str]:
     return fit, reach + source_boost, str(app.get("dateAdded") or ""), str(app.get("company") or "")
 
 
+def confidence_score(app: dict[str, Any], resume_exists: bool, manual_reason: str) -> int:
+    """Estimate how likely this row is to be safely agent-submittable after review."""
+    if app.get("applied") or is_workday(app):
+        return 0
+    source = norm(app.get("source"))
+    status = norm(app.get("status"))
+    notes = norm(app.get("notes"))
+    value = 30
+
+    if status == READY_STATUS:
+        value += 25
+    elif status == MANUAL_STATUS and not manual_reason:
+        value += 15
+    elif manual_reason:
+        value -= 25
+
+    if resume_exists:
+        value += 20
+    else:
+        value -= 30
+
+    if source in {"ashby", "greenhouse", "lever", "company site"}:
+        value += 10
+    if source in {"workday"} or "myworkdayjobs" in notes:
+        value -= 50
+    if any(term in notes for term in ("captcha", "hcaptcha", "recaptcha", "2fa", "otp", "account creation", "signature")):
+        value -= 30
+    if any(term in notes for term in RETRYABLE_MANUAL_BLOCKERS):
+        value += 10
+
+    return max(0, min(100, value))
+
+
+def confidence_band(value: int) -> str:
+    if value >= 80:
+        return "high"
+    if value >= 55:
+        return "medium"
+    return "low"
+
+
 def queue_item(app: dict[str, Any]) -> dict[str, Any]:
     resume_pdf = app.get("resumePdf") or ""
     resume_exists = bool(resume_pdf and Path(resume_pdf).expanduser().exists())
     manual_reason = true_manual_reason(app) if norm(app.get("status", "")) == MANUAL_STATUS else ""
+    confidence = confidence_score(app, resume_exists=resume_exists, manual_reason=manual_reason)
     if norm(app.get("status", "")) == READY_STATUS:
         action = "apply"
     elif manual_reason:
@@ -189,6 +231,8 @@ def queue_item(app: dict[str, Any]) -> dict[str, Any]:
         "notes": app.get("notes", ""),
         "action": action,
         "manualReason": manual_reason,
+        "confidenceScore": confidence,
+        "confidenceBand": confidence_band(confidence),
     }
 
 
@@ -265,7 +309,8 @@ def print_section(title: str, items: list[dict[str, Any]]) -> None:
         exists = "yes" if item["resumeExists"] else "missing"
         print(
             f"{index}. {item['company']} | {item['role']} | "
-            f"Fit {item['fitScore']} | {item['source']} | Action: {item.get('action', 'apply')} | Resume: {exists}"
+            f"Fit {item['fitScore']} | {item['source']} | Action: {item.get('action', 'apply')} | "
+            f"Confidence: {item.get('confidenceScore', 0)} {item.get('confidenceBand', 'low')} | Resume: {exists}"
         )
         if item.get("manualReason"):
             print(f"   Manual reason: {item['manualReason']}")
