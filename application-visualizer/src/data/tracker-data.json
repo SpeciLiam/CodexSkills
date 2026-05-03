@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T19:01:50.899868+00:00",
+  "generatedAt": "2026-05-03T19:31:13.744125+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,7 +21,7 @@
       "recruiterRows": 101,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 156,
+      "intakeJobs": 155,
       "intakeQueued": 8,
       "intakeNew": 24,
       "intakeManual": 12,
@@ -266,7 +266,7 @@
     "intakeStatusCounts": [
       {
         "name": "Tailored",
-        "value": 92
+        "value": 93
       },
       {
         "name": "New",
@@ -289,10 +289,6 @@
         "value": 2
       },
       {
-        "name": "9",
-        "value": 2
-      },
-      {
         "name": "Duplicate",
         "value": 1
       }
@@ -304,7 +300,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 58
+        "value": 57
       }
     ],
     "timeline": [
@@ -15207,16 +15203,16 @@
     {
       "source": "LinkedIn",
       "company": "Ramp",
-      "role": "Software Engineer \\",
-      "location": "Frontend",
-      "postingKey": "New York, NY",
-      "jobUrl": "linkedin-public-ramp-frontend-ny-2026-05-03",
-      "discoveredAt": "https://www.linkedin.com/jobs/search-results/?keywords=software%20engineer&geoId=103644278&f_TPR=r86400",
-      "postedAge": "2026-05-03T18:25:07.251531+00:00",
-      "fitScore": 0,
-      "status": "9",
-      "reason": "Queued",
-      "trackerPostingKey": "SWE-family role, NYC preference"
+      "role": "Software Engineer - Frontend",
+      "location": "New York, NY",
+      "postingKey": "linkedin-public-ramp-frontend-ny-2026-05-03",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=software%20engineer&geoId=103644278&f_TPR=r86400",
+      "discoveredAt": "2026-05-03T18:25:07.251531+00:00",
+      "postedAge": "LinkedIn public/search-visible result; within 24h query window",
+      "fitScore": 9,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized NYC fintech frontend engineering, React and TypeScript product surfaces, backend API collaboration, testing, accessibility, and production reliability",
+      "trackerPostingKey": "linkedin-public-ramp-frontend-ny-2026-05-03"
     },
     {
       "source": "Greenhouse",
@@ -16113,20 +16109,6 @@
       "status": "Skipped",
       "reason": "SWE-family role, location needs review",
       "trackerPostingKey": ""
-    },
-    {
-      "source": "LinkedIn",
-      "company": "Ramp",
-      "role": "Software Engineer \\",
-      "location": "Frontend",
-      "postingKey": "New York, NY",
-      "jobUrl": "linkedin-public-ramp-frontend-ny-2026-05-03",
-      "discoveredAt": "https://www.linkedin.com/jobs/search-results/?keywords=software%20engineer&geoId=103644278&f_TPR=r86400",
-      "postedAge": "2026-05-03T18:24:49.970754+00:00",
-      "fitScore": 0,
-      "status": "9",
-      "reason": "Queued",
-      "trackerPostingKey": "SWE-family role, NYC preference"
     }
   ],
   "outreachQueue": [
