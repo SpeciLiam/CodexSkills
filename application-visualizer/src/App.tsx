@@ -1353,7 +1353,7 @@ function RecruiterBatchBoard({ rows, ignoredContacts, onOpen }: { rows: Recruite
       </header>
       <div className="batch-list">
         {labeledRows.slice(0, 5).map((row) => (
-          <RecruiterBatchRow row={row} key={`batch-${row.postingKey}`} />
+          <SharedOutreachRow row={outreachRowDataFromRecruiterBatch(row)} key={`batch-${row.postingKey}`} />
         ))}
         {!labeledRows.length && <p className="batch-empty">No labeled recruiter rows are ready to review yet.</p>}
       </div>
@@ -1382,7 +1382,7 @@ function EngineerBatchBoard({ rows, ignoredContacts, onOpen }: { rows: EngineerB
       </header>
       <div className="batch-list">
         {labeledRows.slice(0, 5).map((row) => (
-          <EngineerBatchRow row={row} key={`engineer-batch-${row.postingKey}`} />
+          <SharedOutreachRow row={outreachRowDataFromEngineerBatch(row)} key={`engineer-batch-${row.postingKey}`} />
         ))}
         {!labeledRows.length && <p className="batch-empty">No labeled engineer rows are ready to review yet.</p>}
       </div>
@@ -1490,46 +1490,17 @@ function RecruiterBatchModal({
   onClose: () => void;
   onIgnore: (key: string) => void;
 }) {
-  const [startIndex, setStartIndex] = useState(1);
-  const [endIndex, setEndIndex] = useState("");
-  const activeRows = rows
+  const availableRows = rows
     .filter((row) => isActiveBatchWork(row))
-    .sort((a, b) => stateRank(activeBatchState(a, "recruiter")) - stateRank(activeBatchState(b, "recruiter")) || batchPriority(b) - batchPriority(a));
-  const availableRows = activeRows.filter((row) => !ignoredContacts.has(recruiterBatchIgnoreKey(row)));
-  const visibleRows = sliceByOneBasedRange(availableRows, startIndex, endIndex);
-  const firstVisibleIndex = oneBasedRangeStart(availableRows.length, startIndex);
+    .filter((row) => !ignoredContacts.has(recruiterBatchIgnoreKey(row)))
+    .map(outreachRowDataFromRecruiterBatch);
   return (
-    <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
-      <section className="outreach-modal batch-modal" role="dialog" aria-modal="true" aria-label="Recruiter batch review" onMouseDown={(event) => event.stopPropagation()}>
-        <header>
-          <div>
-            <p className="eyebrow">Recruiter batch</p>
-            <h2>Recruiter Work Queue</h2>
-            <p>{availableRows.length} recruiter rows need label, approval, or send. {activeRows.length - availableRows.length} hidden locally.</p>
-          </div>
-          <button onClick={onClose} type="button" aria-label="Close"><X size={18} /></button>
-        </header>
-        <BatchModalControls
-          total={availableRows.length}
-          visible={visibleRows.length}
-          startIndex={startIndex}
-          endIndex={endIndex}
-          onStartIndex={setStartIndex}
-          onEndIndex={setEndIndex}
-        />
-        <div className="modal-list batch-modal-list">
-          {visibleRows.map((row, index) => (
-            <RecruiterBatchRow
-              row={row}
-              detailed
-              displayIndex={firstVisibleIndex + index}
-              onIgnore={onIgnore}
-              key={`modal-${recruiterBatchIgnoreKey(row)}`}
-            />
-          ))}
-        </div>
-      </section>
-    </div>
+    <SharedOutreachModal
+      lane="recruiter"
+      rows={availableRows}
+      onClose={onClose}
+      onSkip={(row) => onIgnore(row.key)}
+    />
   );
 }
 
@@ -1581,46 +1552,17 @@ function EngineerBatchModal({
   onClose: () => void;
   onIgnore: (key: string) => void;
 }) {
-  const [startIndex, setStartIndex] = useState(1);
-  const [endIndex, setEndIndex] = useState("");
-  const activeRows = rows
+  const availableRows = rows
     .filter((row) => isActiveBatchWork(row))
-    .sort((a, b) => stateRank(activeBatchState(a, "engineer")) - stateRank(activeBatchState(b, "engineer")) || engineerBatchPriority(b) - engineerBatchPriority(a));
-  const availableRows = activeRows.filter((row) => !ignoredContacts.has(engineerBatchIgnoreKey(row)));
-  const visibleRows = sliceByOneBasedRange(availableRows, startIndex, endIndex);
-  const firstVisibleIndex = oneBasedRangeStart(availableRows.length, startIndex);
+    .filter((row) => !ignoredContacts.has(engineerBatchIgnoreKey(row)))
+    .map(outreachRowDataFromEngineerBatch);
   return (
-    <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
-      <section className="outreach-modal batch-modal" role="dialog" aria-modal="true" aria-label="Engineer batch review" onMouseDown={(event) => event.stopPropagation()}>
-        <header>
-          <div>
-            <p className="eyebrow">Engineer batch</p>
-            <h2>Engineer Work Queue</h2>
-            <p>{availableRows.length} engineer or alumni rows need label, approval, or send. {activeRows.length - availableRows.length} hidden locally.</p>
-          </div>
-          <button onClick={onClose} type="button" aria-label="Close"><X size={18} /></button>
-        </header>
-        <BatchModalControls
-          total={availableRows.length}
-          visible={visibleRows.length}
-          startIndex={startIndex}
-          endIndex={endIndex}
-          onStartIndex={setStartIndex}
-          onEndIndex={setEndIndex}
-        />
-        <div className="modal-list batch-modal-list">
-          {visibleRows.map((row, index) => (
-            <EngineerBatchRow
-              row={row}
-              detailed
-              displayIndex={firstVisibleIndex + index}
-              onIgnore={onIgnore}
-              key={`modal-${engineerBatchIgnoreKey(row)}`}
-            />
-          ))}
-        </div>
-      </section>
-    </div>
+    <SharedOutreachModal
+      lane="engineer"
+      rows={availableRows}
+      onClose={onClose}
+      onSkip={(row) => onIgnore(row.key)}
+    />
   );
 }
 
@@ -2144,6 +2086,63 @@ function engineerBatchIgnoreKey(row: EngineerBatch) {
 function activeRoleSkipKey(lane: "recruiter" | "engineer", group: OutreachRoleBucket) {
   const primaryContact = group.contacts[0];
   return batchIgnoreKey(lane, group.key, primaryContact?.name || "", primaryContact?.profile || "");
+}
+
+function batchStateLabel(approval: string, outcome: string, hasContact: boolean): string {
+  const a = approval.toLowerCase();
+  const o = outcome.toLowerCase();
+  if (o === "skipped" || o === "blocked") return outcome || "Blocked";
+  if (a === "approved") return "Approved";
+  if (hasContact) return "Labeled";
+  return "Research";
+}
+
+function outreachRowDataFromRecruiterBatch(row: RecruiterBatch): OutreachRowData {
+  const hasContact = Boolean(row.recruiterName && row.recruiterProfile);
+  return {
+    key: recruiterBatchIgnoreKey(row),
+    lane: "recruiter",
+    company: row.company,
+    role: row.role,
+    postingKey: row.postingKey,
+    fitScore: row.fitScore,
+    status: row.status,
+    contactName: row.recruiterName || "",
+    profile: row.recruiterProfile || "",
+    position: row.recruiterPosition || "",
+    approval: row.approval || "",
+    outcome: row.outcome || "Not reached out",
+    route: row.route || "",
+    connectionNote: row.connectionNote || "",
+    lastChecked: row.lastChecked || "",
+    notes: row.notes || "",
+    states: [batchStateLabel(row.approval, row.outcome, hasContact)],
+    recruiterSignal: row.recruiterSignal,
+  };
+}
+
+function outreachRowDataFromEngineerBatch(row: EngineerBatch): OutreachRowData {
+  const hasContact = Boolean(row.engineerName && row.engineerProfile);
+  return {
+    key: engineerBatchIgnoreKey(row),
+    lane: "engineer",
+    company: row.company,
+    role: row.role,
+    postingKey: row.postingKey,
+    fitScore: row.fitScore,
+    status: row.status,
+    contactName: row.engineerName || "",
+    profile: row.engineerProfile || "",
+    position: row.engineerPosition || "",
+    approval: row.approval || "",
+    outcome: row.outcome || "Not reached out",
+    route: row.route || "",
+    connectionNote: row.connectionNote || "",
+    lastChecked: row.lastChecked || "",
+    notes: row.notes || "",
+    states: [batchStateLabel(row.approval, row.outcome, hasContact)],
+    engineerSignal: row.engineerSignal,
+  };
 }
 
 function outreachRowDataFromGroup(lane: "recruiter" | "engineer", group: OutreachRoleBucket): OutreachRowData {
