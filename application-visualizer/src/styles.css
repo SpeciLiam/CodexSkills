@@ -1661,11 +1661,15 @@ select option {
 }
 
 .outreach-shared-row {
-  grid-template-columns: 42px minmax(0, 1fr) minmax(118px, 132px) 34px minmax(100px, auto);
+  grid-template-columns: 42px minmax(0, 1fr) minmax(112px, 128px) 34px 98px;
   align-items: start;
-  column-gap: 12px;
+  column-gap: 10px;
   min-height: 156px;
   padding: 18px;
+}
+
+.outreach-shared-row.lane-recruiter:not(:has(.batch-details)) {
+  min-height: 178px;
 }
 
 .outreach-shared-row.copied {
@@ -1745,6 +1749,9 @@ select option {
   grid-template-columns: repeat(3, 30px);
   gap: 5px;
   align-items: center;
+  justify-self: end;
+  margin-right: 4px;
+  width: 100px;
 }
 
 .outreach-row-actions a,
@@ -1766,6 +1773,12 @@ select option {
   gap: 6px;
   margin-top: 4px;
   min-width: 0;
+  max-width: 100%;
+}
+
+.outreach-shared-row.lane-recruiter .signal-strip {
+  padding-top: 2px;
+  row-gap: 7px;
 }
 
 .signal-chip,
@@ -1785,6 +1798,11 @@ select option {
   text-overflow: ellipsis;
   text-transform: capitalize;
   white-space: nowrap;
+}
+
+.outreach-shared-row.lane-recruiter .signal-chip {
+  min-height: 24px;
+  padding-inline: 8px;
 }
 
 .signal-chip {

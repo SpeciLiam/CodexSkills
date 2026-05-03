@@ -145,7 +145,7 @@ export function OutreachRow({
   };
 
   return (
-    <article className={`batch-row active-role-row outreach-shared-row indexed ${approved ? "copied" : ""}`}>
+    <article className={`batch-row active-role-row outreach-shared-row indexed lane-${row.lane} ${approved ? "copied" : ""}`}>
       {displayIndex && <span className="batch-index">{displayIndex}</span>}
       <div className="active-role-main">
         <strong>{row.company}</strong>
