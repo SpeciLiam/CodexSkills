@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import subprocess
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
@@ -128,6 +129,10 @@ def repo_root_from_args(root: str | None) -> Path:
 
 def tracker_path(repo_root: Path) -> Path:
     return repo_root / "application-trackers" / "applications.md"
+
+
+def refresh_sqlite_mirror(repo_root: Path) -> None:
+    subprocess.run(["python3", "scripts/mirror_to_sqlite.py"], cwd=repo_root, check=False)
 
 
 def outreach_tracker_path(repo_root: Path) -> Path:
@@ -479,6 +484,7 @@ def main() -> int:
 
     tracker.write_text(render_tracker(updated_rows))
     upsert_outreach_queue(repo_root, tracker_row)
+    refresh_sqlite_mirror(repo_root)
 
     if args.sync_notion:
         from notion_sync import sync_tracker_to_notion, token_from_env

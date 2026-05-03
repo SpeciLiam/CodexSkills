@@ -1613,6 +1613,177 @@ select option {
   font-weight: 850;
 }
 
+.outreach-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 10px;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  background: rgba(255,255,255,.035);
+}
+
+.outreach-toolbar label {
+  display: grid;
+  gap: 5px;
+  color: #95a8bd;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.outreach-toolbar select {
+  min-width: 156px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid rgba(255,255,255,.14);
+  color: #e8f3ff;
+  background: rgba(3, 7, 18, .45);
+  border-radius: 8px;
+}
+
+.outreach-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.outreach-filter-chips button {
+  min-height: 30px;
+  padding: 0 9px;
+  color: #cbd5e1;
+  background: rgba(255,255,255,.055);
+}
+
+.outreach-filter-chips button.active {
+  color: #06111e;
+  background: #8dd7cf;
+}
+
+.outreach-shared-row {
+  grid-template-columns: 42px minmax(0, 1fr) minmax(116px, auto) 42px 34px 34px 34px;
+}
+
+.outreach-shared-row.copied {
+  border-color: rgba(85, 214, 190, .55);
+  box-shadow: inset 0 0 0 1px rgba(85, 214, 190, .22);
+}
+
+.signal-strip,
+.note-quality {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.signal-chip,
+.note-quality span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  width: max-content;
+  max-width: 100%;
+  min-height: 22px;
+  padding: 0 7px;
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 950;
+  text-transform: capitalize;
+}
+
+.signal-chip {
+  color: #dbeafe;
+  background: rgba(148, 163, 184, .25);
+}
+
+.signal-chip.alumni,
+.signal-chip.seniority-senior,
+.signal-chip.seniority-staff,
+.signal-chip.seniority-principal,
+.signal-chip.team-exact,
+.signal-chip.owns-role {
+  color: #022c22;
+  background: #55d6be;
+}
+
+.signal-chip.seniority-mid,
+.signal-chip.team-adjacent,
+.signal-chip.recruiter-technical {
+  color: #06111e;
+  background: #a7c7ff;
+}
+
+.signal-chip.seniority-manager,
+.signal-chip.seniority-director,
+.signal-chip.recruiter-talent,
+.signal-chip.recruiter-in_house {
+  color: #251005;
+  background: #f7b267;
+}
+
+.signal-chip.seniority-vp {
+  color: #1f1147;
+  background: #b388ff;
+}
+
+.signal-chip.team-mismatch,
+.signal-chip.recruiter-agency {
+  color: #fee2e2;
+  background: rgba(242, 95, 92, .38);
+}
+
+.signal-chip.why {
+  max-width: min(100%, 360px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: none;
+  white-space: nowrap;
+}
+
+.note-quality span.pass {
+  color: #022c22;
+  background: rgba(85, 214, 190, .9);
+}
+
+.note-quality span.fail {
+  color: #fee2e2;
+  background: rgba(242, 95, 92, .28);
+}
+
+.approve-inline {
+  width: 34px;
+  min-height: 34px;
+  padding: 0;
+  color: #022c22;
+  background: #55d6be;
+}
+
+.outreach-empty-state {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid rgba(255,255,255,.09);
+  background: rgba(3, 7, 18, .32);
+  border-radius: 8px;
+}
+
+.outreach-empty-state p {
+  grid-column: 1 / -1;
+  color: #cbd5e1;
+}
+
+.outreach-empty-state code {
+  overflow: auto;
+  padding: 9px 10px;
+  color: #dbeafe;
+  background: rgba(0, 0, 0, .26);
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
 .batch-state {
   display: inline-flex;
   width: max-content;
@@ -1831,6 +2002,94 @@ select option {
   color: #dbeafe;
   font-size: 13px;
   font-weight: 900;
+}
+
+.pipeline-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  padding: 0 18px 18px;
+}
+
+.chart-card {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(3, 7, 18, .28);
+  border-radius: 8px;
+}
+
+.chart-card.wide {
+  grid-column: 1 / -1;
+}
+
+.card-heading {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.card-heading h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card-heading span {
+  color: #95a8bd;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.blocker-table,
+.health-list {
+  display: grid;
+  gap: 10px;
+}
+
+.blocker-table div,
+.health-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  min-height: 42px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.045);
+  border-radius: 8px;
+}
+
+.blocker-table span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #cbd5e1;
+}
+
+.health-row {
+  grid-template-columns: auto minmax(0, .8fr) minmax(0, 1fr) auto;
+}
+
+.health-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #f25f5c;
+}
+
+.health-dot.good {
+  background: #55d6be;
+}
+
+.health-dot.warn {
+  background: #f7b267;
+}
+
+.health-row span:not(.health-dot) {
+  color: #95a8bd;
+  font-size: 13px;
 }
 
 .command-flow, .parallel-flow {

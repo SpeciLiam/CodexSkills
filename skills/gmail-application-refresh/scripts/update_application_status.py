@@ -3,7 +3,9 @@
 from __future__ import annotations
 
 import argparse
+import json
 from pathlib import Path
+import subprocess
 import sys
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -24,6 +26,69 @@ from update_application_tracker import (
     split_row,
     tracker_path,
 )
+
+
+def refresh_sqlite_mirror(repo_root: Path) -> None:
+    subprocess.run(["python3", "scripts/mirror_to_sqlite.py"], cwd=repo_root, check=False)
+
+
+def outcome_for_status(status: str | None) -> str | None:
+    normalized = normalize(status or "")
+    return {
+        "applied": "submitted",
+        "manual apply needed": "manual",
+        "archived": "archived",
+        "rejected": "rejected_after_apply",
+        "online assessment": "oa",
+        "interviewing": "interview",
+        "offer": "offer",
+    }.get(normalized)
+
+
+def predicted_confidence(posting_key: str) -> int:
+    for path in (Path("/tmp/apply_pipeline/run_state.json"), Path("/tmp/fa_run_state.json")):
+        if not path.exists():
+            continue
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        for item in data.get("items", []):
+            if not isinstance(item, dict):
+                continue
+            if normalize(item.get("postingKey", "")) == normalize(posting_key):
+                try:
+                    return int(item.get("confidenceScore") or 0)
+                except (TypeError, ValueError):
+                    return 0
+    return 0
+
+
+def log_outcome(repo_root: Path, row: dict[str, str], status: str | None) -> None:
+    outcome = outcome_for_status(status)
+    posting_key = row.get("Posting Key", "").strip()
+    if not outcome or not posting_key:
+        return
+    subprocess.run(
+        [
+            "python3",
+            "scripts/log_outcome.py",
+            "--posting-key",
+            posting_key,
+            "--company",
+            row.get("Company", ""),
+            "--role",
+            row.get("Role", ""),
+            "--source",
+            row.get("Source", ""),
+            "--predicted-confidence-score",
+            str(predicted_confidence(posting_key)),
+            "--outcome",
+            outcome,
+        ],
+        cwd=repo_root,
+        check=False,
+    )
 
 
 def append_note(existing: str, new_note: str) -> str:
@@ -83,6 +148,7 @@ def main() -> int:
 
     updated_rows: list[str] = []
     matched = False
+    outcome_row: dict[str, str] | None = None
 
     for row_line in rows:
         cells = split_row(row_line)
@@ -108,6 +174,7 @@ def main() -> int:
                     row["Notes"] = args.notes.strip()
                 else:
                     row["Notes"] = append_note(row.get("Notes", ""), args.notes)
+            outcome_row = dict(row)
             updated_rows.append(build_row(row))
         else:
             updated_rows.append(build_row(row))
@@ -117,6 +184,9 @@ def main() -> int:
         raise SystemExit(f"Could not find existing tracker row for {key_hint}")
 
     tracker.write_text(render_tracker(updated_rows))
+    if outcome_row is not None:
+        log_outcome(repo_root, outcome_row, args.status)
+    refresh_sqlite_mirror(repo_root)
     print(tracker)
     return 0
 

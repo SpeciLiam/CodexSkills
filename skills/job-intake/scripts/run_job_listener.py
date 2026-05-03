@@ -6,6 +6,7 @@ import csv
 import json
 import os
 import re
+import subprocess
 import sys
 import time
 from collections import Counter
@@ -496,6 +497,7 @@ def main() -> int:
             if not args.dry_run and new_rows:
                 INTAKE_MD.parent.mkdir(parents=True, exist_ok=True)
                 INTAKE_MD.write_text(render_intake(combined), encoding="utf-8")
+                subprocess.run(["python3", "scripts/mirror_to_sqlite.py"], cwd=ROOT, check=False)
                 wrote = True
             if args.duration_minutes <= 0 or time.time() >= deadline:
                 break

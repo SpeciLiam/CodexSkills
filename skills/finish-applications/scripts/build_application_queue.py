@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 import sys
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -379,6 +380,10 @@ def write_run_state(path: Path, state: dict[str, Any]) -> None:
     tmp.replace(path)
 
 
+def refresh_sqlite_mirror(root: Path) -> None:
+    subprocess.run(["python3", "scripts/mirror_to_sqlite.py"], cwd=root, check=False)
+
+
 def append_note(existing: str, new_note: str) -> str:
     existing = existing.strip()
     if not existing:
@@ -413,6 +418,7 @@ def mark_manual_workday(root: Path, items: list[dict[str, Any]], note_date: str)
         updated_rows.append(build_row(row))
 
     tracker.write_text(render_tracker(updated_rows), encoding="utf-8")
+    refresh_sqlite_mirror(root)
     return marked
 
 

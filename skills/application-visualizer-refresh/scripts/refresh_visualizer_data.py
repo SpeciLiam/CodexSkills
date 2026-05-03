@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import subprocess
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -88,6 +89,76 @@ def parse_int(value: str, default: int = 0) -> int:
         return default
 
 
+def infer_alumni_match(*values: str) -> bool:
+    text = " ".join(clean_text(value).lower() for value in values)
+    return bool(re.search(r"\b(university of georgia|uga|georgia alum|georgia alumni|dawgs?)\b", text))
+
+
+def infer_seniority(position: str) -> str:
+    text = clean_text(position).lower()
+    if re.search(r"\b(vp|vice president)\b", text):
+        return "vp"
+    if re.search(r"\b(director|head of)\b", text):
+        return "director"
+    if re.search(r"\b(manager|lead|engineering manager|recruiting manager)\b", text):
+        return "manager"
+    if re.search(r"\b(principal)\b", text):
+        return "principal"
+    if re.search(r"\b(staff)\b", text):
+        return "staff"
+    if re.search(r"\b(sr\.?|senior|swe iii|software engineer iii)\b", text):
+        return "senior"
+    if re.search(r"\b(junior|jr\.?|associate|new grad|university)\b", text):
+        return "junior"
+    if re.search(r"\b(engineer|recruiter|talent|software|swe)\b", text):
+        return "mid"
+    return "unknown"
+
+
+def infer_recruiter_type(position: str, notes: str = "") -> str:
+    text = f"{clean_text(position)} {clean_text(notes)}".lower()
+    if re.search(r"\b(university|campus|early career|new grad)\s+recruit", text):
+        return "university"
+    if re.search(r"\btechnical\s+recruit|tech\s+recruit", text):
+        return "technical"
+    if re.search(r"\b(talent partner|talent acquisition|talent)\b", text):
+        return "talent"
+    if re.search(r"\b(agency|search firm|staffing|headhunter|recruiting agency)\b", text):
+        return "agency"
+    if re.search(r"\brecruit(er|ing)?\b", text):
+        return "in_house"
+    return "unknown"
+
+
+def contact_signal(position: str, notes: str = "") -> dict[str, Any]:
+    return {
+        "alumniMatch": infer_alumni_match(position, notes),
+        "seniority": infer_seniority(position),
+        "whyThisPerson": "",
+    }
+
+
+def engineer_signal(position: str, notes: str = "") -> dict[str, Any]:
+    return {
+        **contact_signal(position, notes),
+        "teamMatch": "unknown",
+    }
+
+
+def recruiter_signal(position: str, notes: str = "") -> dict[str, Any]:
+    owns_role: bool | None = None
+    lowered_notes = clean_text(notes).lower()
+    if re.search(r"\b(owns role|owns posting|named on posting|hiring partner|role owner)\b", lowered_notes):
+        owns_role = True
+    elif re.search(r"\b(does not own|not the owner|not on posting|doesn't own)\b", lowered_notes):
+        owns_role = False
+    return {
+        **contact_signal(position, notes),
+        "recruiterType": infer_recruiter_type(position, notes),
+        "ownsRole": owns_role,
+    }
+
+
 def normalize_application(row: dict[str, str]) -> dict[str, Any]:
     notes = clean_text(row.get("Notes", ""))
     return {
@@ -164,6 +235,8 @@ def normalize_intake(row: dict[str, str]) -> dict[str, Any]:
 
 
 def normalize_recruiter_batch(row: dict[str, str]) -> dict[str, Any]:
+    position = clean_text(row.get("Position", ""))
+    notes = clean_text(row.get("Notes", ""))
     return {
         "batch": clean_text(row.get("Batch", "")),
         "company": clean_text(row.get("Company", "")),
@@ -173,17 +246,20 @@ def normalize_recruiter_batch(row: dict[str, str]) -> dict[str, Any]:
         "status": clean_text(row.get("Status", "")) or "Unknown",
         "recruiterName": clean_text(row.get("Recruiter Name", "")),
         "recruiterProfile": first_link(row.get("Recruiter Profile", "")) or clean_text(row.get("Recruiter Profile", "")),
-        "recruiterPosition": clean_text(row.get("Position", "")),
+        "recruiterPosition": position,
         "route": clean_text(row.get("Route", "")),
         "connectionNote": clean_text(row.get("Connection Note", "")),
         "approval": clean_text(row.get("Approval", "")) or "Needs recruiter",
         "outcome": clean_text(row.get("Outcome", "")) or "Not reached out",
         "lastChecked": clean_text(row.get("Last Checked", "")),
-        "notes": clean_text(row.get("Notes", "")),
+        "notes": notes,
+        "recruiterSignal": recruiter_signal(position, notes),
     }
 
 
 def normalize_engineer_batch(row: dict[str, str]) -> dict[str, Any]:
+    position = clean_text(row.get("Position", ""))
+    notes = clean_text(row.get("Notes", ""))
     return {
         "batch": clean_text(row.get("Batch", "")),
         "company": clean_text(row.get("Company", "")),
@@ -193,13 +269,14 @@ def normalize_engineer_batch(row: dict[str, str]) -> dict[str, Any]:
         "status": clean_text(row.get("Status", "")) or "Unknown",
         "engineerName": clean_text(row.get("Engineer Name", "")),
         "engineerProfile": first_link(row.get("Engineer Profile", "")) or clean_text(row.get("Engineer Profile", "")),
-        "engineerPosition": clean_text(row.get("Position", "")),
+        "engineerPosition": position,
         "route": clean_text(row.get("Route", "")),
         "connectionNote": clean_text(row.get("Connection Note", "")),
         "approval": clean_text(row.get("Approval", "")) or "Needs engineer",
         "outcome": clean_text(row.get("Outcome", "")) or "Not reached out",
         "lastChecked": clean_text(row.get("Last Checked", "")),
-        "notes": clean_text(row.get("Notes", "")),
+        "notes": notes,
+        "engineerSignal": engineer_signal(position, notes),
     }
 
 
@@ -413,7 +490,7 @@ def outreach_contact(row: dict[str, Any], lane: str) -> dict[str, Any]:
     name_key = "recruiterName" if lane == "recruiter" else "engineerName"
     profile_key = "recruiterProfile" if lane == "recruiter" else "engineerProfile"
     position_key = "recruiterPosition" if lane == "recruiter" else "engineerPosition"
-    return {
+    contact = {
         "lane": lane,
         "name": row[name_key],
         "profile": row[profile_key],
@@ -427,6 +504,11 @@ def outreach_contact(row: dict[str, Any], lane: str) -> dict[str, Any]:
         "lastChecked": row["lastChecked"],
         "notes": row["notes"],
     }
+    if lane == "recruiter":
+        contact["recruiterSignal"] = row.get("recruiterSignal") or recruiter_signal(row[position_key], row["notes"])
+    if lane == "engineer":
+        contact["engineerSignal"] = row.get("engineerSignal") or engineer_signal(row[position_key], row["notes"])
+    return contact
 
 
 def build_outreach_role_buckets(rows: list[dict[str, Any]], lane: str, sent: bool) -> list[dict[str, Any]]:
@@ -480,7 +562,9 @@ def synthetic_outreach_row(app: dict[str, Any], lane: str) -> dict[str, Any]:
     name_key = "recruiterContact" if lane == "recruiter" else "engineerContact"
     profile_key = "recruiterProfile" if lane == "recruiter" else "engineerProfile"
     has_contact = bool(app.get(name_key) or app.get(profile_key))
-    return {
+    position = "Saved on application row" if has_contact else ""
+    notes = f"Active application needs {lane} outreach."
+    row = {
         "batch": "application-tracker",
         "company": app["company"],
         "role": app["role"],
@@ -489,18 +573,23 @@ def synthetic_outreach_row(app: dict[str, Any], lane: str) -> dict[str, Any]:
         "status": app["status"],
         "recruiterName": app["recruiterContact"] if lane == "recruiter" else "",
         "recruiterProfile": app["recruiterProfile"] if lane == "recruiter" else "",
-        "recruiterPosition": "Saved on application row" if lane == "recruiter" and has_contact else "",
+        "recruiterPosition": position if lane == "recruiter" else "",
         "engineerName": app["engineerContact"] if lane == "engineer" else "",
         "engineerProfile": app["engineerProfile"] if lane == "engineer" else "",
-        "engineerPosition": "Saved on application row" if lane == "engineer" and has_contact else "",
+        "engineerPosition": position if lane == "engineer" else "",
         "route": "application-tracker",
         "connectionNote": "",
         "approval": "" if has_contact else ("Needs recruiter" if lane == "recruiter" else "Needs engineer"),
         "outcome": "Not reached out",
         "source": "application-tracker",
         "lastChecked": app["dateAdded"],
-        "notes": f"Active application needs {lane} outreach.",
+        "notes": notes,
     }
+    if lane == "recruiter":
+        row["recruiterSignal"] = recruiter_signal(position, notes)
+    if lane == "engineer":
+        row["engineerSignal"] = engineer_signal(position, notes)
+    return row
 
 
 def build_application_lane_work(
@@ -588,6 +677,8 @@ def build_application_note_send_rows(applications: list[dict[str, Any]], lane: s
                     "source": "application-notes",
                     "lastChecked": sent_date,
                     "notes": f"LinkedIn invite recorded in application tracker notes on {sent_date}.",
+                    "recruiterSignal": recruiter_signal("Recorded in application notes", app["notes"]) if lane == "recruiter" else None,
+                    "engineerSignal": engineer_signal("Recorded in application notes", app["notes"]) if lane == "engineer" else None,
                 }
             )
     return rows
@@ -711,6 +802,7 @@ def main() -> None:
         f"Wrote {args.output.relative_to(ROOT)} with {len(applications)} applications, "
         f"{len(queues)} outreach rows, {len(prospects)} prospects, {len(intake)} intake rows."
     )
+    subprocess.run(["python3", "scripts/build_pipeline_metrics.py"], cwd=ROOT, check=False)
 
 
 if __name__ == "__main__":

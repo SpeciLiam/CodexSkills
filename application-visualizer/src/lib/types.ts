@@ -69,6 +69,23 @@ export type JobIntake = {
   trackerPostingKey: string;
 };
 
+export type OutreachLane = "recruiter" | "engineer";
+
+export type ContactSignal = {
+  alumniMatch: boolean;
+  seniority: "junior" | "mid" | "senior" | "staff" | "principal" | "manager" | "director" | "vp" | "unknown";
+  whyThisPerson: string;
+};
+
+export type EngineerSignal = ContactSignal & {
+  teamMatch: "exact" | "adjacent" | "unknown" | "mismatch";
+};
+
+export type RecruiterSignal = ContactSignal & {
+  recruiterType: "talent" | "technical" | "university" | "agency" | "in_house" | "unknown";
+  ownsRole: boolean | null;
+};
+
 export type RecruiterBatch = {
   batch: string;
   company: string;
@@ -85,6 +102,7 @@ export type RecruiterBatch = {
   outcome: string;
   lastChecked: string;
   notes: string;
+  recruiterSignal?: RecruiterSignal;
 };
 
 export type EngineerBatch = {
@@ -103,10 +121,11 @@ export type EngineerBatch = {
   outcome: string;
   lastChecked: string;
   notes: string;
+  engineerSignal?: EngineerSignal;
 };
 
 export type OutreachContactSummary = {
-  lane: "recruiter" | "engineer";
+  lane: OutreachLane;
   name: string;
   profile: string;
   position: string;
@@ -116,6 +135,8 @@ export type OutreachContactSummary = {
   connectionNote: string;
   lastChecked: string;
   notes: string;
+  recruiterSignal?: RecruiterSignal;
+  engineerSignal?: EngineerSignal;
 };
 
 export type OutreachRoleBucket = {
@@ -195,4 +216,26 @@ export type TrackerData = {
   recruiterBatch?: RecruiterBatch[];
   engineerBatch?: EngineerBatch[];
   outreachBuckets?: OutreachBuckets;
+};
+
+export type PipelineMetrics = {
+  generatedAt: string;
+  windowDays: number;
+  applicationsPerDay: Array<{ date: string; submitted: number; manual: number; archived: number }>;
+  submitSuccessRate: { submitted: number; manual: number; archived: number };
+  avgConfidenceBySource: Array<{ source: string; avgScore: number; band: string }>;
+  topBlockers: Array<{ reason: string; count: number }>;
+  queueDepth: {
+    readyToApply: number;
+    resumeTailored: number;
+    manualApplyNeeded: number;
+    intakeUnprocessed: number;
+  };
+  intakeHealth: {
+    linkedinLastRun: string;
+    greenhouseLastRun: string;
+    linkedinCapturedToday: number;
+    greenhouseCapturedToday: number;
+    linkedinCacheHitRate: number;
+  };
 };

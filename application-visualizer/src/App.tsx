@@ -43,10 +43,13 @@ import {
   YAxis,
 } from "recharts";
 import rawData from "./data/tracker-data.json";
+import rawPipelineMetrics from "./data/pipeline-metrics.json";
+import { OutreachModal as SharedOutreachModal, OutreachRow as SharedOutreachRow, type OutreachRowData } from "./components/Outreach";
 import { hostFromUrl, percent, readableDate } from "./lib/format";
-import type { Application, EngineerBatch, JobIntake, OutreachRoleBucket, Prospect, RecruiterBatch, TrackerData } from "./lib/types";
+import type { Application, EngineerBatch, JobIntake, OutreachRoleBucket, PipelineMetrics, Prospect, RecruiterBatch, TrackerData } from "./lib/types";
 
 const data = rawData as TrackerData;
+const pipelineMetrics = rawPipelineMetrics as PipelineMetrics;
 
 const COLORS = ["#55d6be", "#f7b267", "#f25f5c", "#70a1ff", "#b388ff", "#f4d35e", "#8dd7cf", "#ff8fab"];
 const STATUS_TONE: Record<string, string> = {
@@ -87,7 +90,7 @@ const INFO_COPY = {
   recruiters: "Lists applications with a known recruiter or LinkedIn path, sorted toward stronger fit so outreach targets are easy to open.",
   intake: "Shows fresh LinkedIn and Greenhouse jobs discovered by the hourly intake listener before they become tailored application rows.",
   gaps: "Highlights high-fit reach-out rows that still need more prospects or ready email addresses.",
-  pipeline: "Explains which Codex skills to ask Codex to run. The commands are the deterministic scripts behind those skills, but the intended workflow is that Codex runs them and updates the tracker for you.",
+  pipeline: "Shows recent intake and application health from outcomes, the SQLite mirror, and capture cache, then keeps the skill runbook close by.",
 } as const;
 
 const PIPELINE_MODES = [
@@ -410,6 +413,14 @@ function App() {
     [],
   );
   const dailyApplicationPulse = useMemo(() => buildDailyApplicationPulse(data.stats.timeline, data.applications), []);
+  const successDonut = useMemo(
+    () => [
+      { name: "Submitted", value: pipelineMetrics.submitSuccessRate.submitted },
+      { name: "Manual", value: pipelineMetrics.submitSuccessRate.manual },
+      { name: "Archived", value: pipelineMetrics.submitSuccessRate.archived },
+    ],
+    [],
+  );
   const showDataControls = activeTab !== "pipeline";
   const filterBar = (
     <section className="filters">
@@ -892,17 +903,94 @@ function App() {
 
         <div className="pipeline-hero">
           <div>
-            <h3>Ask Codex to run the whole machine, or just one lane.</h3>
+            <h3>Pipeline health for the last {pipelineMetrics.windowDays} days.</h3>
             <p>
-              A Codex skill is a local workflow Codex can follow with scripts, tracker rules, and guardrails. You can ask Codex to run a skill by name,
-              or ask for the outcome in plain English. The commands shown here are the underlying scripts Codex runs when it needs deterministic data.
+              Outcomes come from the append-only log, queue depth comes from the read-only SQLite mirror, and intake freshness comes from the capture cache.
             </p>
           </div>
           <div className="pipeline-flow" aria-label="Recommended recruiting flow">
-            {["Refresh", "Tailor", "Apply", "Recruiter", "Engineer", "Prospect", "Prep", "Visualize"].map((step) => (
-              <span key={step}>{step}</span>
-            ))}
+            <span>Ready {pipelineMetrics.queueDepth.readyToApply}</span>
+            <span>Tailored {pipelineMetrics.queueDepth.resumeTailored}</span>
+            <span>Manual {pipelineMetrics.queueDepth.manualApplyNeeded}</span>
+            <span>Intake {pipelineMetrics.queueDepth.intakeUnprocessed}</span>
           </div>
+        </div>
+
+        <div className="pipeline-metrics-grid">
+          <article className="chart-card wide">
+            <div className="card-heading">
+              <h3>Applications Per Day</h3>
+              <span>{readableDate(pipelineMetrics.generatedAt)}</span>
+            </div>
+            <ResponsiveContainer width="100%" height={260}>
+              <ComposedChart data={pipelineMetrics.applicationsPerDay}>
+                <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,.12)" />
+                <XAxis dataKey="date" tickFormatter={readableDate} />
+                <YAxis allowDecimals={false} />
+                <Tooltip />
+                <Bar dataKey="manual" stackId="a" fill="#f7b267" />
+                <Bar dataKey="archived" stackId="a" fill="#f25f5c" />
+                <Line type="monotone" dataKey="submitted" stroke="#55d6be" strokeWidth={3} />
+              </ComposedChart>
+            </ResponsiveContainer>
+          </article>
+
+          <article className="chart-card">
+            <div className="card-heading">
+              <h3>Outcome Mix</h3>
+              <span>{Math.round(pipelineMetrics.submitSuccessRate.submitted * 100)}% submitted</span>
+            </div>
+            <ResponsiveContainer width="100%" height={260}>
+              <PieChart>
+                <Pie data={successDonut} dataKey="value" nameKey="name" innerRadius={58} outerRadius={92} paddingAngle={4}>
+                  {successDonut.map((entry, index) => <Cell key={entry.name} fill={COLORS[index]} />)}
+                </Pie>
+                <Tooltip formatter={(value: number) => `${Math.round(value * 100)}%`} />
+              </PieChart>
+            </ResponsiveContainer>
+          </article>
+
+          <article className="chart-card">
+            <div className="card-heading">
+              <h3>Confidence By Source</h3>
+              <span>{pipelineMetrics.avgConfidenceBySource.length} sources</span>
+            </div>
+            <ResponsiveContainer width="100%" height={260}>
+              <BarChart data={pipelineMetrics.avgConfidenceBySource}>
+                <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,.12)" />
+                <XAxis dataKey="source" />
+                <YAxis domain={[0, 100]} />
+                <Tooltip />
+                <Bar dataKey="avgScore" fill="#70a1ff" />
+              </BarChart>
+            </ResponsiveContainer>
+          </article>
+
+          <article className="chart-card">
+            <div className="card-heading">
+              <h3>Top Blockers</h3>
+              <span>{pipelineMetrics.topBlockers.length || 0} tracked</span>
+            </div>
+            <div className="blocker-table">
+              {(pipelineMetrics.topBlockers.length ? pipelineMetrics.topBlockers : [{ reason: "No manual blockers logged", count: 0 }]).map((blocker) => (
+                <div key={blocker.reason}>
+                  <span>{blocker.reason}</span>
+                  <b>{blocker.count}</b>
+                </div>
+              ))}
+            </div>
+          </article>
+
+          <article className="chart-card">
+            <div className="card-heading">
+              <h3>Intake Health</h3>
+              <span>{Math.round(pipelineMetrics.intakeHealth.linkedinCacheHitRate * 100)}% cache hit</span>
+            </div>
+            <div className="health-list">
+              <HealthRow label="LinkedIn" timestamp={pipelineMetrics.intakeHealth.linkedinLastRun} count={pipelineMetrics.intakeHealth.linkedinCapturedToday} />
+              <HealthRow label="Greenhouse" timestamp={pipelineMetrics.intakeHealth.greenhouseLastRun} count={pipelineMetrics.intakeHealth.greenhouseCapturedToday} />
+            </div>
+          </article>
         </div>
 
         <div className="command-flow">
@@ -976,6 +1064,19 @@ function Kpi({ icon, label, value, sub }: { icon: ReactNode; label: string; valu
       <b>{value}</b>
       <p>{label}</p>
       <small>{sub}</small>
+    </div>
+  );
+}
+
+function HealthRow({ label, timestamp, count }: { label: string; timestamp: string; count: number }) {
+  const ageHours = timestamp ? (Date.now() - new Date(timestamp).getTime()) / 36e5 : Infinity;
+  const tone = ageHours <= 2 ? "good" : ageHours <= 8 ? "warn" : "bad";
+  return (
+    <div className="health-row">
+      <span className={`health-dot ${tone}`} />
+      <strong>{label}</strong>
+      <span>{timestamp ? readableDate(timestamp) : "No run"}</span>
+      <b>{count} today</b>
     </div>
   );
 }
@@ -1441,58 +1542,17 @@ function ActiveRoleQueueModal({
   groups: OutreachRoleBucket[];
   onClose: () => void;
 }) {
-  const [startIndex, setStartIndex] = useState(1);
-  const [endIndex, setEndIndex] = useState("");
   const [skippedKeys, setSkippedKeys] = useState<Set<string>>(() => new Set());
-  const sortedGroups = sortActiveRoleBuckets(groups).filter((group) => !skippedKeys.has(activeRoleSkipKey(lane, group)));
-  const visibleGroups = sliceByOneBasedRange(sortedGroups, startIndex, endIndex);
-  const firstVisibleIndex = oneBasedRangeStart(sortedGroups.length, startIndex);
-  const labels = lane === "recruiter"
-    ? {
-      eyebrow: "Recruiter batch",
-      title: "Recruiter Work Queue",
-      description: "recruiter roles need label, approval, or send",
-      empty: "No active recruiter roles need review.",
-    }
-    : {
-      eyebrow: "Engineer batch",
-      title: "Engineer Work Queue",
-      description: "engineer or alumni roles need label, approval, or send",
-      empty: "No active engineer roles need review.",
-    };
+  const rows = sortActiveRoleBuckets(groups)
+    .filter((group) => !skippedKeys.has(activeRoleSkipKey(lane, group)))
+    .map((group) => outreachRowDataFromGroup(lane, group));
   return (
-    <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
-      <section className="outreach-modal batch-modal" role="dialog" aria-modal="true" aria-label={`${labels.title} review`} onMouseDown={(event) => event.stopPropagation()}>
-        <header>
-          <div>
-            <p className="eyebrow">{labels.eyebrow}</p>
-            <h2>{labels.title}</h2>
-            <p>{sortedGroups.length} {labels.description}.</p>
-          </div>
-          <button onClick={onClose} type="button" aria-label="Close"><X size={18} /></button>
-        </header>
-        <BatchModalControls
-          total={sortedGroups.length}
-          visible={visibleGroups.length}
-          startIndex={startIndex}
-          endIndex={endIndex}
-          onStartIndex={setStartIndex}
-          onEndIndex={setEndIndex}
-        />
-        <div className="modal-list batch-modal-list">
-          {visibleGroups.map((group, index) => (
-            <ActiveRoleQueueRow
-              lane={lane}
-              group={group}
-              displayIndex={firstVisibleIndex + index}
-              onSkip={() => setSkippedKeys((current) => new Set(current).add(activeRoleSkipKey(lane, group)))}
-              key={`active-role-${lane}-${group.key}`}
-            />
-          ))}
-          {!visibleGroups.length && <p className="batch-empty">{labels.empty}</p>}
-        </div>
-      </section>
-    </div>
+    <SharedOutreachModal
+      lane={lane}
+      rows={rows}
+      onClose={onClose}
+      onSkip={(row) => setSkippedKeys((current) => new Set(current).add(row.key))}
+    />
   );
 }
 
@@ -1507,29 +1567,7 @@ function ActiveRoleQueueRow({
   displayIndex: number;
   onSkip: () => void;
 }) {
-  const primaryContact = group.contacts[0];
-  const label = lane === "recruiter" ? "Needs recruiter label" : "Needs engineer label";
-  return (
-    <article className="batch-row active-role-row indexed">
-      <span className="batch-index">{displayIndex}</span>
-      <div className="active-role-main">
-        <strong>{group.company}</strong>
-        <p>{group.role}</p>
-        <small className="batch-contact">
-          <span>{primaryContact?.name || label}</span>
-          {primaryContact?.position && <em>{primaryContact.position}</em>}
-          {group.contacts.length > 1 && <em>+{group.contacts.length - 1} more</em>}
-        </small>
-        {primaryContact?.notes && group.contacts.length > 0 && <small className="active-role-note">{primaryContact.notes}</small>}
-      </div>
-      <WorkStatePills states={group.states} />
-      <b>{group.fitScore || "-"}</b>
-      {primaryContact?.profile ? <a href={primaryContact.profile} target="_blank" rel="noreferrer" aria-label={`${primaryContact.name || group.company} LinkedIn`}><ArrowUpRight size={17} /></a> : <span />}
-      <button className="batch-ignore" type="button" onClick={onSkip} aria-label={`Skip ${primaryContact?.name || group.company}; find a new ${lane}`}>
-        <X size={16} />
-      </button>
-    </article>
-  );
+  return <SharedOutreachRow row={outreachRowDataFromGroup(lane, group)} displayIndex={displayIndex} onSkip={() => onSkip()} />;
 }
 
 function EngineerBatchModal({
@@ -2108,6 +2146,31 @@ function activeRoleSkipKey(lane: "recruiter" | "engineer", group: OutreachRoleBu
   return batchIgnoreKey(lane, group.key, primaryContact?.name || "", primaryContact?.profile || "");
 }
 
+function outreachRowDataFromGroup(lane: "recruiter" | "engineer", group: OutreachRoleBucket): OutreachRowData {
+  const primaryContact = group.contacts[0];
+  return {
+    key: activeRoleSkipKey(lane, group),
+    lane,
+    company: group.company,
+    role: group.role,
+    postingKey: group.key,
+    fitScore: group.fitScore,
+    status: group.status,
+    contactName: primaryContact?.name || "",
+    profile: primaryContact?.profile || "",
+    position: primaryContact?.position || "",
+    approval: primaryContact?.approval || "",
+    outcome: primaryContact?.outcome || "Not reached out",
+    route: primaryContact?.route || "",
+    connectionNote: primaryContact?.connectionNote || "",
+    lastChecked: primaryContact?.lastChecked || "",
+    notes: primaryContact?.notes || "",
+    states: group.states,
+    recruiterSignal: primaryContact?.recruiterSignal,
+    engineerSignal: primaryContact?.engineerSignal,
+  };
+}
+
 function roleGroupKey(row: { postingKey: string; company: string; role: string }) {
   return row.postingKey || `${normalizeKey(row.company)}|${normalizeKey(row.role)}`;
 }
@@ -2156,6 +2219,8 @@ function buildActiveRoleGroups(rows: Array<RecruiterBatch | EngineerBatch>, lane
           connectionNote: row.connectionNote,
           lastChecked: row.lastChecked,
           notes: row.notes,
+          recruiterSignal: (row as RecruiterBatch).recruiterSignal,
+          engineerSignal: (row as EngineerBatch).engineerSignal,
         });
       }
       if (!group.states.includes(state)) group.states.push(state);
@@ -2194,6 +2259,8 @@ function buildReachedOutRoleGroups(rows: Array<RecruiterBatch | EngineerBatch>, 
         connectionNote: row.connectionNote,
         lastChecked: row.lastChecked,
         notes: row.notes,
+        recruiterSignal: (row as RecruiterBatch).recruiterSignal,
+        engineerSignal: (row as EngineerBatch).engineerSignal,
       });
     });
   return [...groups.values()].sort((a, b) => b.contacts.length - a.contacts.length || a.company.localeCompare(b.company));

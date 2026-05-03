@@ -3,6 +3,10 @@ name: gmail-application-refresh
 description: Review Gmail for application-related emails, infer status changes such as applied, online assessment, interview, rejection, or offer, and update the markdown application tracker without creating duplicate or low-confidence changes. Notion mirroring is handled separately by notion-application-sync.
 ---
 
+## Operating Card
+
+Before every batch item, re-read `skills/gmail-application-refresh/OPERATING_CARD.md`. The card wins in any conflict with prose below.
+
 # Gmail Application Refresh
 
 Use this skill when the user wants to refresh application statuses from Gmail.

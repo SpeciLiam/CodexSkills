@@ -3,6 +3,10 @@ name: linkedin-outreach
 description: Find the best LinkedIn person to reach out to for a tracked job application, usually after resume-tailor. Use when you want recruiter-first outreach, University of Georgia alumni priority, connection-note drafting, and tracker updates after a LinkedIn invite is sent.
 ---
 
+## Operating Card
+
+Before every batch item, re-read `skills/linkedin-outreach/OPERATING_CARD.md`. The card wins in any conflict with prose below.
+
 # LinkedIn Outreach
 
 Use this skill after `resume-tailor` has created or updated a tracker row.

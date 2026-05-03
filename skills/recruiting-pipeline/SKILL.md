@@ -3,6 +3,10 @@ name: recruiting-pipeline
 description: Orchestrate Liam Van's full recruiting workflow across resume tailoring, application tracking, Gmail status refreshes, LinkedIn recruiter and engineer outreach, company prospecting, Apollo email lookup, and the Vercel visualizer, with optional routing to the separate Notion mirror skill only when requested.
 ---
 
+## Operating Card
+
+Before every batch item, re-read `skills/recruiting-pipeline/OPERATING_CARD.md`. The card wins in any conflict with prose below.
+
 # Recruiting Pipeline
 
 Use this skill when the user wants the best end-to-end recruiting workflow, a daily recruiting plan, or help deciding which recruiting skill to run next.
