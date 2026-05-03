@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T02:47:52.466043+00:00",
+  "generatedAt": "2026-05-03T03:05:36.450016+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 405,
+      "total": 407,
       "applied": 317,
-      "unapplied": 88,
-      "active": 309,
+      "unapplied": 90,
+      "active": 310,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 286,
-      "reachOut": 348,
+      "highFit": 288,
+      "reachOut": 350,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 73,
+      "intakeJobs": 80,
       "intakeQueued": 7,
-      "intakeNew": 12,
+      "intakeNew": 17,
       "intakeManual": 2,
       "intakeApplied": 0,
-      "applyRate": 78.3,
+      "applyRate": 77.9,
       "rejectionRate": 13.9,
-      "recruiterWork": 224,
-      "engineerWork": 281,
+      "recruiterWork": 225,
+      "engineerWork": 283,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Archived",
-        "value": 52
+        "value": 53
       },
       {
         "name": "Rejected",
@@ -60,13 +60,13 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 1
+        "value": 2
       }
     ],
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 145
+        "value": 147
       },
       {
         "name": "Greenhouse",
@@ -140,7 +140,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 176
+        "value": 178
       },
       {
         "name": "Bay Area",
@@ -170,7 +170,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 223
+        "value": 225
       },
       {
         "name": "Full Stack",
@@ -240,7 +240,7 @@
       },
       {
         "score": "10",
-        "count": 123
+        "count": 125
       }
     ],
     "targetCounts": [
@@ -258,11 +258,11 @@
     "intakeStatusCounts": [
       {
         "name": "Tailored",
-        "value": 43
+        "value": 45
       },
       {
         "name": "New",
-        "value": 12
+        "value": 17
       },
       {
         "name": "Queued",
@@ -288,11 +288,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 46
+        "value": 48
       },
       {
         "name": "LinkedIn",
-        "value": 27
+        "value": 32
       }
     ],
     "timeline": [
@@ -442,8 +442,8 @@
       },
       {
         "date": "2026-05-02",
-        "cumulative": 405,
-        "added": 43,
+        "cumulative": 407,
+        "added": 45,
         "applied": 12,
         "rejected": 0,
         "interviewing": 0
@@ -840,6 +840,15 @@
         "jobLink": "https://job-boards.greenhouse.io/scaleai/jobs/4605996005?gh_src=acad35425us"
       },
       {
+        "company": "S&P Global",
+        "role": "Software Engineer II",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-s-p-global-4402306070"
+      },
+      {
         "company": "Remitly",
         "role": "Software Development Engineer II - Trust Decisioning Platform",
         "fitScore": 10,
@@ -910,15 +919,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://jobs.lever.co/palantir/e1a6c138-98bf-45e2-97f7-2c70371cc38a"
-      },
-      {
-        "company": "Palantir Technologies",
-        "role": "Software Engineer, New Grad - Infrastructure",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://jobs.lever.co/palantir/4abf26b4-795c-420a-bf22-1ab98db268b4"
       }
     ],
     "recruiterBatch": {
@@ -8659,7 +8659,7 @@
       "company": "Mercor",
       "role": "Forward Deployed Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 5,
       "reachOut": true,
       "referral": "No",
@@ -8674,10 +8674,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Mercor forward deployed engineer role 2026-04-28; emphasized production software engineering, cloud deployments, enterprise integrations, APIs/workflows, AI-assisted testing, observability, and ownership in ambiguous environments. Did not claim Go/Rust, direct enterprise client embedding, or Mercor human-intelligence domain experience.",
+      "notes": "Tailored for Mercor forward deployed engineer role 2026-04-28; emphasized production software engineering, cloud deployments, enterprise integrations, APIs/workflows, AI-assisted testing, observability, and ownership in ambiguous environments. Did not claim Go/Rust, direct enterprise client embedding, or Mercor human-intelligence domain experience.; LinkedIn job ID now displays Software Engineer, Applied AI instead of the tracked/tailored Forward Deployed Engineer role; archived without role substitution 2026-05-02.",
       "noteLinks": [],
       "activityDates": [
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-02"
       ]
     },
     {
@@ -12432,9 +12433,87 @@
         "2026-05-02",
         "2026-05-02"
       ]
+    },
+    {
+      "company": "S&P Global",
+      "role": "Software Engineer II",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-s-p-global-4402306070",
+      "postingKey": "software-engineer-ii-at-s-p-global-4402306070",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/S&P Global/Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/S&P Global/Software_Engineer_II/Liam_Van_Resume/Liam_Van_S&P_Global.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized Kensho AI product engineering, generative AI agents, data retrieval APIs, NLP workflows, production reliability, and backend validation. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Brex",
+      "role": "Software Engineer II, Product",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-product-at-brex-4341255828",
+      "postingKey": "software-engineer-ii-product-at-brex-4341255828",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Brex/Software_Engineer_II_Product/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Brex/Software_Engineer_II_Product/Liam_Van_Resume/Liam_Van_Brex.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC product engineering for financial workflows, full-stack delivery, backend APIs, React surfaces, reliability, and cross-functional execution. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "LinkedIn",
+      "company": "S&P Global",
+      "role": "Software Engineer II",
+      "location": "New York, NY",
+      "postingKey": "software-engineer-ii-at-s-p-global-4402306070",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-s-p-global-4402306070",
+      "discoveredAt": "2026-05-03T03:04:19.937890+00:00",
+      "postedAge": "2 days ago; public LinkedIn degraded capture",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-02; resume rendered and verified one page; emphasized Kensho AI product engineering, generative AI agents, data retrieval APIs, NLP workflows, production reliability, and backend validation",
+      "trackerPostingKey": "software-engineer-ii-at-s-p-global-4402306070"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Brex",
+      "role": "Software Engineer II, Product",
+      "location": "New York, NY",
+      "postingKey": "software-engineer-ii-product-at-brex-4341255828",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-ii-product-at-brex-4341255828",
+      "discoveredAt": "2026-05-03T03:04:19.937890+00:00",
+      "postedAge": "2 days ago; public LinkedIn degraded capture",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-02; resume rendered and verified one page; emphasized NYC product engineering for financial workflows, full-stack delivery, backend APIs, React surfaces, reliability, and cross-functional execution",
+      "trackerPostingKey": "software-engineer-ii-product-at-brex-4341255828"
+    },
     {
       "source": "Greenhouse",
       "company": "StubHub",
@@ -13207,6 +13286,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Valon",
+      "role": "Forward Deployed Engineer",
+      "location": "New York, New York, United States; San Francisco, California, United States",
+      "postingKey": "4589062006",
+      "jobUrl": "https://job-boards.greenhouse.io/valon/jobs/4589062006",
+      "discoveredAt": "2026-05-03T03:04:19.937890+00:00",
+      "postedAge": "public Greenhouse degraded capture",
+      "fitScore": 7,
+      "status": "New",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Superblocks",
       "role": "Forward Deployed Engineer",
       "location": "New York, NY / Remote",
@@ -13259,6 +13352,62 @@
       "fitScore": 7,
       "status": "New",
       "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Glover Labs",
+      "role": "Forward Deployed Engineer",
+      "location": "New York, NY",
+      "postingKey": "forward-deployed-engineer-at-glover-labs-4383450136",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-glover-labs-4383450136",
+      "discoveredAt": "2026-05-03T03:04:19.937890+00:00",
+      "postedAge": "1 day ago; public LinkedIn degraded capture",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "David Joseph & Company",
+      "role": "Forward Deployed Engineer",
+      "location": "New York, NY",
+      "postingKey": "forward-deployed-engineer-at-david-joseph-company-4402133622",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-david-joseph-company-4402133622",
+      "discoveredAt": "2026-05-03T03:04:19.937890+00:00",
+      "postedAge": "1 day ago; public LinkedIn degraded capture",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Axion",
+      "role": "Forward Deployed Engineer",
+      "location": "New York, NY",
+      "postingKey": "forward-deployed-engineer-at-axion-4403538792",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-axion-4403538792",
+      "discoveredAt": "2026-05-03T03:04:19.937890+00:00",
+      "postedAge": "1 day ago; public LinkedIn degraded capture",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Addepar",
+      "role": "Forward Deployed Engineer",
+      "location": "Remote, USA",
+      "postingKey": "7760220002",
+      "jobUrl": "https://job-boards.greenhouse.io/addepar1/jobs/7760220002?source=remote.com",
+      "discoveredAt": "2026-05-03T03:04:19.937890+00:00",
+      "postedAge": "public Greenhouse degraded capture",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
       "trackerPostingKey": ""
     },
     {
@@ -13835,6 +13984,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "S&P Global",
+      "role": "Software Engineer II",
+      "postingKey": "software-engineer-ii-at-s-p-global-4402306070",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-s-p-global-4402306070",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Remitly",
@@ -14446,6 +14608,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Brex",
+      "role": "Software Engineer II, Product",
+      "postingKey": "software-engineer-ii-product-at-brex-4341255828",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-product-at-brex-4341255828",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "BlackRock",
@@ -23804,6 +23979,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-ii-product-at-brex-4341255828",
+          "company": "Brex",
+          "role": "Software Engineer II, Product",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7438937",
           "company": "Checkr",
           "role": "Backend Software Engineer II",
@@ -24049,6 +24236,18 @@
           "role": "Software Engineer II, Simulation, tvScientific",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-ii-at-s-p-global-4402306070",
+          "company": "S&P Global",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -26137,18 +26336,6 @@
           "role": "Software Developer - Onboarding",
           "fitScore": 5,
           "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4405676405",
-          "company": "Mercor",
-          "role": "Forward Deployed Engineer",
-          "fitScore": 5,
-          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -33510,6 +33697,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-ii-product-at-brex-4341255828",
+          "company": "Brex",
+          "role": "Software Engineer II, Product",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7438937",
           "company": "Checkr",
           "role": "Backend Software Engineer II",
@@ -33755,6 +33954,18 @@
           "role": "Software Engineer II, Simulation, tvScientific",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-ii-at-s-p-global-4402306070",
+          "company": "S&P Global",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"

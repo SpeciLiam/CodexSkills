@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 263
+Companies queued: 265
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -38,6 +38,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | SeatGeek | Software Engineer - New Grad | 7858968 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/embed/job_app?for=seatgeek&gh_src=94e407181&token=7858968) |  |  |  |  |
 | Scale AI | Software Engineer - New Grad | 4297642437 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4297642437/) |  |  |  |  |
 | Scale AI | Software Engineer - New Grad | 4605996005 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/scaleai/jobs/4605996005?gh_src=acad35425us) |  |  |  |  |
+| S&P Global | Software Engineer II | software-engineer-ii-at-s-p-global-4402306070 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-at-s-p-global-4402306070) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Remitly | Software Development Engineer II - Trust Decisioning Platform | R_104873 | 10 | Applied | Yes | [Posting](https://careers.remitly.com/) |  |  |  |  |
 | Reevo | Builder - Software Engineer (New Grad) | 2ea4d267-cd80-4481-9965-216ecd469e7e | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/reevo/2ea4d267-cd80-4481-9965-216ecd469e7e/application?utm_source=r98Re8YmoY) |  |  |  |  |
 | Procore Technologies | Software Engineer I (Datagrid) | 4406148082 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4406148082/) |  |  |  |  |
@@ -85,6 +86,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Color Health | New Grad Software Engineer | 6c7f692a-848b-41a4-b79b-4a9bba3aeb6d | 10 | Applied | Yes | [Posting](https://app.careerpuck.com/job-board/color-health/job/6c7f692a-848b-41a4-b79b-4a9bba3aeb6d) |  |  |  |  |
 | Checkr | Backend Software Engineer II | 7438937 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/checkr/jobs/7438937) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Cadence | Software Engineer I | Software-Engineer-I_R53009-1 | 10 | Applied | Yes | [Posting](https://cadence.wd1.myworkdayjobs.com/External_Careers/job/SAN-JOSE/Software-Engineer-I_R53009-1?source=LinkedIn) |  |  |  |  |
+| Brex | Software Engineer II, Product | software-engineer-ii-product-at-brex-4341255828 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-product-at-brex-4341255828) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | BlackRock | Associate, Full Stack Engineer | 4380495648 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4380495648/?trackingId=AJW6hfwNSWOSl69I9BEbpA%3D%3D&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BI6XXU%2BGdQIad7YU%2Bc9JYoA%3D%3D) |  |  |  |  |
 | Benchling | Software Engineer, New Grad (2026) | b3c9b312-6e2b-4dbc-9b15-0b0310d75a7f | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/benchling/b3c9b312-6e2b-4dbc-9b15-0b0310d75a7f/application?utm_source=JobWrapping) |  |  |  |  |
 | Baselayer | Junior Backend Engineer | 4397307930 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4397307930) |  |  |  |  |
