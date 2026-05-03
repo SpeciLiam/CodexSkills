@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T04:00:33.466086+00:00",
+  "generatedAt": "2026-05-03T04:07:38.688344+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 407,
+      "total": 414,
       "applied": 322,
-      "unapplied": 85,
-      "active": 309,
+      "unapplied": 92,
+      "active": 316,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 288,
-      "reachOut": 350,
+      "highFit": 295,
+      "reachOut": 357,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 80,
+      "intakeJobs": 88,
       "intakeQueued": 7,
       "intakeNew": 17,
       "intakeManual": 2,
       "intakeApplied": 0,
-      "applyRate": 79.1,
+      "applyRate": 77.8,
       "rejectionRate": 13.7,
-      "recruiterWork": 224,
-      "engineerWork": 282,
+      "recruiterWork": 231,
+      "engineerWork": 289,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -51,6 +51,10 @@
         "value": 32
       },
       {
+        "name": "Resume Tailored",
+        "value": 7
+      },
+      {
         "name": "Interviewing",
         "value": 3
       },
@@ -62,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 147
+        "value": 148
       },
       {
         "name": "Greenhouse",
-        "value": 123
+        "value": 129
       },
       {
         "name": "Ashby",
@@ -136,7 +140,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 178
+        "value": 183
       },
       {
         "name": "Bay Area",
@@ -148,7 +152,7 @@
       },
       {
         "name": "Remote",
-        "value": 36
+        "value": 38
       },
       {
         "name": "Seattle",
@@ -166,7 +170,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 225
+        "value": 228
       },
       {
         "name": "Full Stack",
@@ -177,11 +181,11 @@
         "value": 48
       },
       {
-        "name": "AI/ML",
-        "value": 27
+        "name": "Forward Deployed",
+        "value": 30
       },
       {
-        "name": "Forward Deployed",
+        "name": "AI/ML",
         "value": 27
       },
       {
@@ -194,7 +198,7 @@
       },
       {
         "name": "Frontend",
-        "value": 2
+        "value": 3
       }
     ],
     "fitCounts": [
@@ -232,11 +236,11 @@
       },
       {
         "score": "9",
-        "count": 77
+        "count": 78
       },
       {
         "score": "10",
-        "count": 125
+        "count": 131
       }
     ],
     "targetCounts": [
@@ -254,7 +258,7 @@
     "intakeStatusCounts": [
       {
         "name": "Tailored",
-        "value": 45
+        "value": 52
       },
       {
         "name": "New",
@@ -277,6 +281,10 @@
         "value": 2
       },
       {
+        "name": "Duplicate",
+        "value": 1
+      },
+      {
         "name": "10",
         "value": 1
       }
@@ -284,11 +292,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 48
+        "value": 54
       },
       {
         "name": "LinkedIn",
-        "value": 32
+        "value": 34
       }
     ],
     "timeline": [
@@ -438,8 +446,8 @@
       },
       {
         "date": "2026-05-02",
-        "cumulative": 407,
-        "added": 45,
+        "cumulative": 414,
+        "added": 52,
         "applied": 14,
         "rejected": 0,
         "interviewing": 0
@@ -495,6 +503,18 @@
         "bestFit": 10
       },
       {
+        "company": "Fanatics Betting & Gaming",
+        "roles": 3,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
+        "company": "Flex",
+        "roles": 3,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "Intuit",
         "roles": 3,
         "avgFit": 9.33,
@@ -537,12 +557,6 @@
         "bestFit": 10
       },
       {
-        "company": "Fanatics Betting & Gaming",
-        "roles": 2,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
         "company": "Trexquant Investment LP",
         "roles": 2,
         "avgFit": 10.0,
@@ -580,12 +594,6 @@
       },
       {
         "company": "Flexport",
-        "roles": 2,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Flex",
         "roles": 2,
         "avgFit": 10.0,
         "bestFit": 10
@@ -899,6 +907,15 @@
         "jobLink": "https://job-boards.greenhouse.io/embed/job_app?for=pinterest&token=6816337"
       },
       {
+        "company": "PhysicsX",
+        "role": "Forward Deployed Software Engineer",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/physicsx/jobs/4644850101"
+      },
+      {
         "company": "PermitFlow",
         "role": "Fullstack Software Engineer, New Grad",
         "fitScore": 10,
@@ -906,15 +923,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://jobs.ashbyhq.com/permitflow/78b1fccf-2ed9-4485-bd40-4a5aea3907d4?utm_source=LinkedInPaid"
-      },
-      {
-        "company": "Palantir Technologies",
-        "role": "Software Engineer, New Grad - Production Infrastructure",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://jobs.lever.co/palantir/e1a6c138-98bf-45e2-97f7-2c70371cc38a"
       }
     ],
     "recruiterBatch": {
@@ -12487,9 +12495,268 @@
         "2026-05-02",
         "2026-05-02"
       ]
+    },
+    {
+      "company": "PhysicsX",
+      "role": "Forward Deployed Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "New York, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/physicsx/jobs/4644850101",
+      "postingKey": "4644850101",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/PhysicsX/Forward_Deployed_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/PhysicsX/Forward_Deployed_Software_Engineer/Liam_Van_Resume/Liam_Van_PhysicsX.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized forward-deployed AI applications, simulation software, customer-facing engineering, Python and TypeScript product systems, backend APIs, and production validation. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Invisible Technologies",
+      "role": "Software Engineer - Forward Deployed",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "New York - Hybrid; San Francisco Bay Area - Hybrid; Washington DC-Baltimore - Hybrid",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/invisibletech/jobs/4697599101",
+      "postingKey": "4697599101",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Invisible Technologies/Software_Engineer_Forward_Deployed/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Invisible Technologies/Software_Engineer_Forward_Deployed/Liam_Van_Resume/Liam_Van_Invisible_Technologies.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized forward-deployed AI workflows, backend systems, customer-facing delivery, cloud operations, LLM tooling, and production reliability. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Forge Global",
+      "role": "Software Engineer II, Marketplace Middleware Engineering",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "New York, New York, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/forgeglobal/jobs/5971240004",
+      "postingKey": "5971240004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Forge Global/Software_Engineer_II_Marketplace_Middleware_Engineering/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Forge Global/Software_Engineer_II_Marketplace_Middleware_Engineering/Liam_Van_Resume/Liam_Van_Forge_Global.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized fintech marketplace middleware, backend APIs, SQL data workflows, server-side delivery, CI/CD, reliability, and financial-services product execution. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Flex",
+      "role": "Software Engineer II, Frontend, Mobile and Web",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "New York, New York, United States; Remote (U.S.); San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/flex/jobs/4642708005?gh_jid=4642708005",
+      "postingKey": "4642708005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Flex/Software_Engineer_II_Frontend_Mobile_and_Web/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Flex/Software_Engineer_II_Frontend_Mobile_and_Web/Liam_Van_Resume/Liam_Van_Flex.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized frontend and mobile-web fintech product engineering, React/NestJS surfaces, backend integrations, customer-facing reliability, and cross-functional delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Fanatics Betting & Gaming",
+      "role": "Software Engineer II",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "New York, NY, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/fanaticsfbg/jobs/4209810009",
+      "postingKey": "4209810009",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Fanatics Betting & Gaming/Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Fanatics Betting & Gaming/Software_Engineer_II/Liam_Van_Resume/Liam_Van_Fanatics_Betting_&_Gaming.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized backend sports-platform services, data handling, real-time operational tooling, API reliability, testing, and production support. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "Civis Analytics",
+      "role": "Applied Software Engineer II",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "Chicago, IL (Remote); eligible states include New York, DC, Texas, Virginia, Washington",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/civisanalytics/jobs/7392088",
+      "postingKey": "7392088",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Civis Analytics/Applied_Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Civis Analytics/Applied_Software_Engineer_II/Liam_Van_Resume/Liam_Van_Civis_Analytics.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized applied data software, mission-driven product workflows, Python/Java backend systems, analytics tooling, APIs, and cross-functional delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
+    },
+    {
+      "company": "OpenAI",
+      "role": "Forward Deployed Software Engineer - NYC",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-02",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-software-engineer-nyc-at-openai-4349516535",
+      "postingKey": "forward-deployed-software-engineer-nyc-at-openai-4349516535",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OpenAI/Forward_Deployed_Software_Engineer_NYC/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OpenAI/Forward_Deployed_Software_Engineer_NYC/Liam_Van_Resume/Liam_Van_OpenAI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized forward-deployed OpenAI API solutions, full-stack prototypes, customer-facing technical delivery, LLM product systems, and production-quality abstractions. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-02"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "PhysicsX",
+      "role": "Forward Deployed Software Engineer",
+      "location": "New York, United States",
+      "postingKey": "4644850101",
+      "jobUrl": "https://job-boards.greenhouse.io/physicsx/jobs/4644850101",
+      "discoveredAt": "2026-05-03T04:04:00.730349+00:00",
+      "postedAge": "public Greenhouse degraded capture",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-02; resume rendered and verified one page; emphasized forward-deployed AI applications, simulation software, customer-facing engineering, Python and TypeScript product systems, backend APIs, and production validation",
+      "trackerPostingKey": "4644850101"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Invisible Technologies",
+      "role": "Software Engineer - Forward Deployed",
+      "location": "New York - Hybrid; San Francisco Bay Area - Hybrid; Washington DC-Baltimore - Hybrid",
+      "postingKey": "4697599101",
+      "jobUrl": "https://job-boards.greenhouse.io/invisibletech/jobs/4697599101",
+      "discoveredAt": "2026-05-03T04:04:00.730349+00:00",
+      "postedAge": "public Greenhouse degraded capture",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-02; resume rendered and verified one page; emphasized forward-deployed AI workflows, backend systems, customer-facing delivery, cloud operations, LLM tooling, and production reliability",
+      "trackerPostingKey": "4697599101"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Forge Global",
+      "role": "Software Engineer II, Marketplace Middleware Engineering",
+      "location": "New York, New York, United States",
+      "postingKey": "5971240004",
+      "jobUrl": "https://job-boards.greenhouse.io/forgeglobal/jobs/5971240004",
+      "discoveredAt": "2026-05-03T04:04:00.730349+00:00",
+      "postedAge": "public Greenhouse degraded capture; crawled last week",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-02; resume rendered and verified one page; emphasized fintech marketplace middleware, backend APIs, SQL data workflows, server-side delivery, CI/CD, reliability, and financial-services product execution",
+      "trackerPostingKey": "5971240004"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Flex",
+      "role": "Software Engineer II, Frontend, Mobile and Web",
+      "location": "New York, New York, United States; Remote (U.S.); San Francisco, California, United States",
+      "postingKey": "4642708005",
+      "jobUrl": "https://job-boards.greenhouse.io/flex/jobs/4642708005?gh_jid=4642708005",
+      "discoveredAt": "2026-05-03T04:04:00.730349+00:00",
+      "postedAge": "public Greenhouse degraded capture; crawled last month",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-02; resume rendered and verified one page; emphasized frontend and mobile-web fintech product engineering, React/NestJS surfaces, backend integrations, customer-facing reliability, and cross-functional delivery",
+      "trackerPostingKey": "4642708005"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Fanatics Betting & Gaming",
+      "role": "Software Engineer II",
+      "location": "New York, NY, United States",
+      "postingKey": "4209810009",
+      "jobUrl": "https://job-boards.greenhouse.io/fanaticsfbg/jobs/4209810009",
+      "discoveredAt": "2026-05-03T04:04:00.730349+00:00",
+      "postedAge": "public Greenhouse degraded capture; crawled 3 weeks ago",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-02; resume rendered and verified one page; emphasized backend sports-platform services, data handling, real-time operational tooling, API reliability, testing, and production support",
+      "trackerPostingKey": "4209810009"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Civis Analytics",
+      "role": "Applied Software Engineer II",
+      "location": "Chicago, IL (Remote); eligible states include New York, DC, Texas, Virginia, Washington",
+      "postingKey": "7392088",
+      "jobUrl": "https://job-boards.greenhouse.io/civisanalytics/jobs/7392088",
+      "discoveredAt": "2026-05-03T04:04:00.730349+00:00",
+      "postedAge": "public Greenhouse degraded capture",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-02; resume rendered and verified one page; emphasized applied data software, mission-driven product workflows, Python/Java backend systems, analytics tooling, APIs, and cross-functional delivery",
+      "trackerPostingKey": "7392088"
+    },
     {
       "source": "LinkedIn",
       "company": "S&P Global",
@@ -13035,6 +13302,34 @@
       "status": "Tailored",
       "reason": "SWE-family role, early-career signal, NYC preference",
       "trackerPostingKey": "4401827377"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "OpenAI",
+      "role": "Forward Deployed Software Engineer - NYC",
+      "location": "New York, NY",
+      "postingKey": "forward-deployed-software-engineer-nyc-at-openai-4349516535",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-software-engineer-nyc-at-openai-4349516535",
+      "discoveredAt": "2026-05-03T04:04:00.730349+00:00",
+      "postedAge": "1 day ago; public LinkedIn degraded capture",
+      "fitScore": 9,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-02; resume rendered and verified one page; emphasized forward-deployed OpenAI API solutions, full-stack prototypes, customer-facing technical delivery, LLM product systems, and production-quality abstractions",
+      "trackerPostingKey": "forward-deployed-software-engineer-nyc-at-openai-4349516535"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Invisible Technologies",
+      "role": "Software Engineer, Forward Deployed",
+      "location": "New York, United States",
+      "postingKey": "software-engineer-forward-deployed-at-invisible-technologies-4353100829",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-forward-deployed-at-invisible-technologies-4353100829",
+      "discoveredAt": "2026-05-03T04:04:00.730349+00:00",
+      "postedAge": "17 hours ago; public LinkedIn degraded capture",
+      "fitScore": 9,
+      "status": "Duplicate",
+      "reason": "Duplicate 2026-05-02: same Invisible forward-deployed role was tailored from exact Greenhouse posting 4697599101",
+      "trackerPostingKey": "4697599101"
     },
     {
       "source": "LinkedIn",
@@ -14081,6 +14376,19 @@
       "notes": ""
     },
     {
+      "company": "PhysicsX",
+      "role": "Forward Deployed Software Engineer",
+      "postingKey": "4644850101",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/physicsx/jobs/4644850101",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "PermitFlow",
       "role": "Fullstack Software Engineer, New Grad",
       "postingKey": "78b1fccf-2ed9-4485-bd40-4a5aea3907d4",
@@ -14354,6 +14662,19 @@
       "notes": ""
     },
     {
+      "company": "Invisible Technologies",
+      "role": "Software Engineer - Forward Deployed",
+      "postingKey": "4697599101",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/invisibletech/jobs/4697599101",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Intuit",
       "role": "Center of Money Software Engineer 1",
       "postingKey": "87369448720",
@@ -14458,6 +14779,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Forge Global",
+      "role": "Software Engineer II, Marketplace Middleware Engineering",
+      "postingKey": "5971240004",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/forgeglobal/jobs/5971240004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Flexport",
       "role": "Software Engineer I, Autonomous Freight Systems",
       "postingKey": "7839298",
@@ -14497,6 +14831,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Flex",
+      "role": "Software Engineer II, Frontend, Mobile and Web",
+      "postingKey": "4642708005",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/flex/jobs/4642708005?gh_jid=4642708005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Fanatics Betting & Gaming",
       "role": "Fullstack, Software Engineer II, Sportsbook - FBG",
       "postingKey": "4216147009",
@@ -14508,6 +14855,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Fanatics Betting & Gaming",
+      "role": "Software Engineer II",
+      "postingKey": "4209810009",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/fanaticsfbg/jobs/4209810009",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "EliseAI",
@@ -14586,6 +14946,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Civis Analytics",
+      "role": "Applied Software Engineer II",
+      "postingKey": "7392088",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/civisanalytics/jobs/7392088",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Checkr",
@@ -15210,6 +15583,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "OpenAI",
+      "role": "Forward Deployed Software Engineer - NYC",
+      "postingKey": "forward-deployed-software-engineer-nyc-at-openai-4349516535",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-software-engineer-nyc-at-openai-4349516535",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Nue",
@@ -23995,6 +24381,18 @@
           "contacts": []
         },
         {
+          "key": "7392088",
+          "company": "Civis Analytics",
+          "role": "Applied Software Engineer II",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4401827377",
           "company": "Confido",
           "role": "New Grad Software Engineer",
@@ -24019,11 +24417,47 @@
           "contacts": []
         },
         {
+          "key": "4209810009",
+          "company": "Fanatics Betting & Gaming",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4642708005",
+          "company": "Flex",
+          "role": "Software Engineer II, Frontend, Mobile and Web",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7839346",
           "company": "Flexport",
           "role": "Software Engineer II, Autonomous Freight Systems",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5971240004",
+          "company": "Forge Global",
+          "role": "Software Engineer II, Marketplace Middleware Engineering",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -24048,6 +24482,18 @@
           "role": "Software Engineer, Fullstack",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4697599101",
+          "company": "Invisible Technologies",
+          "role": "Software Engineer - Forward Deployed",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -24156,6 +24602,18 @@
           "role": "Software Engineer - AI Tooling & Quality Engineering Platforms",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4644850101",
+          "company": "PhysicsX",
+          "role": "Forward Deployed Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -24696,6 +25154,18 @@
           "role": "Software Engineer, Implant Manufacturing",
           "fitScore": 9,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "forward-deployed-software-engineer-nyc-at-openai-4349516535",
+          "company": "OpenAI",
+          "role": "Forward Deployed Software Engineer - NYC",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -33701,6 +34171,18 @@
           "contacts": []
         },
         {
+          "key": "7392088",
+          "company": "Civis Analytics",
+          "role": "Applied Software Engineer II",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4401827377",
           "company": "Confido",
           "role": "New Grad Software Engineer",
@@ -33725,11 +34207,47 @@
           "contacts": []
         },
         {
+          "key": "4209810009",
+          "company": "Fanatics Betting & Gaming",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4642708005",
+          "company": "Flex",
+          "role": "Software Engineer II, Frontend, Mobile and Web",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7839346",
           "company": "Flexport",
           "role": "Software Engineer II, Autonomous Freight Systems",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5971240004",
+          "company": "Forge Global",
+          "role": "Software Engineer II, Marketplace Middleware Engineering",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -33752,6 +34270,18 @@
           "key": "4006734005",
           "company": "Glean",
           "role": "Software Engineer, Fullstack",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4697599101",
+          "company": "Invisible Technologies",
+          "role": "Software Engineer - Forward Deployed",
           "fitScore": 10,
           "status": "Resume Tailored",
           "count": 1,
@@ -33850,6 +34380,18 @@
           "role": "Software Engineer - AI Tooling & Quality Engineering Platforms",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4644850101",
+          "company": "PhysicsX",
+          "role": "Forward Deployed Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -34342,6 +34884,18 @@
           "role": "Software Engineer, Implant Manufacturing",
           "fitScore": 9,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "forward-deployed-software-engineer-nyc-at-openai-4349516535",
+          "company": "OpenAI",
+          "role": "Forward Deployed Software Engineer - NYC",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"

@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 265
+Companies queued: 272
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -45,6 +45,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Procore Technologies | Software Engineer I (Datagrid) | 4400230667 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4400230667/) |  |  |  |  |
 | Plaid | Software Engineer | 49139a62-a9bc-4400-ae89-789818b34cb8 | 10 | Applied | Yes | [Posting](https://jobs.lever.co/plaid/49139a62-a9bc-4400-ae89-789818b34cb8/apply?lever-origin=applied&lever-source=LinkedInPaid) |  |  |  |  |
 | Pinterest | Software Engineer I, Backend | 6816337 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/embed/job_app?for=pinterest&token=6816337) |  |  |  |  |
+| PhysicsX | Forward Deployed Software Engineer | 4644850101 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/physicsx/jobs/4644850101) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | PermitFlow | Fullstack Software Engineer, New Grad | 78b1fccf-2ed9-4485-bd40-4a5aea3907d4 | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/permitflow/78b1fccf-2ed9-4485-bd40-4a5aea3907d4?utm_source=LinkedInPaid) |  |  |  |  |
 | Palantir Technologies | Software Engineer, New Grad - Production Infrastructure | e1a6c138-98bf-45e2-97f7-2c70371cc38a | 10 | Applied | Yes | [Posting](https://jobs.lever.co/palantir/e1a6c138-98bf-45e2-97f7-2c70371cc38a) |  |  |  |  |
 | Palantir Technologies | Software Engineer, New Grad - Infrastructure | 4abf26b4-795c-420a-bf22-1ab98db268b4 | 10 | Applied | Yes | [Posting](https://jobs.lever.co/palantir/4abf26b4-795c-420a-bf22-1ab98db268b4) |  |  |  |  |
@@ -66,6 +67,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Lindy | Full Stack Software Engineer (Early Career) | a5100dbe-d851-4544-bb4c-0428d77940eb | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/lindy/a5100dbe-d851-4544-bb4c-0428d77940eb/application?utm_source=1pRbG7KbX6) |  |  |  |  |
 | Julius AI | Software Engineer - Product (New Grad) | 83d88b90-1b7f-476c-a0e8-10b1cb71639e | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/julius/83d88b90-1b7f-476c-a0e8-10b1cb71639e/application?utm_source=R7w09vvYr1) |  |  |  |  |
 | Iterable | Software Engineer II | 7783095 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/iterable/jobs/7783095) |  |  |  |  |
+| Invisible Technologies | Software Engineer - Forward Deployed | 4697599101 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/invisibletech/jobs/4697599101) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Intuit | Center of Money Software Engineer 1 | 87369448720 | 10 | Applied | Yes | [Posting](https://jobs.intuit.com/job/-/-/27595/87369448720?cid=pjob_li_click_us_swe-other-fy26_cn_text_job_int-tm&p_sid=nYDXj0b&p_uid=fS3fiu8oN1&ss=paid&utm_campaign=&utm_content=pj_board&utm_medium=jobad&utm_source=linkedin+slots+(intuit) |  |  |  |  |
 | Intuit | Software Engineering 1 - Backend | 93806367216 | 10 | Applied | Yes | [Posting](https://jobs.intuit.com/job/-/-/27595/93806367216?cid=pjob_li_click_us_swe-be-fy26_cn_text_job_int-tm&p_sid=1jWmUQb&p_uid=mngm9ltam7&ss=paid&utm_campaign=&utm_content=pj_board&utm_medium=jobad&utm_source=linkedin+slots+(intuit) |  |  |  |  |
 | Handshake | Associate Software Engineer, RLE | 4406112904 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4406112904/) |  |  |  |  |
@@ -74,16 +76,20 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Giga | Software Engineer I / II | ba9b543d-e85c-4bd1-978b-f838d7a4062f | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/GigaML/ba9b543d-e85c-4bd1-978b-f838d7a4062f/application?utm_source=6p28rgeQLE) |  |  |  |  |
 | Garner Health | Software Engineer II | software-engineer-ii-at-garner-health-4379614164 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-at-garner-health-4379614164) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Fortune | Full Stack Software Engineer Next.js | 5424161004 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/fortune/jobs/5424161004) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
+| Forge Global | Software Engineer II, Marketplace Middleware Engineering | 5971240004 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/forgeglobal/jobs/5971240004) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Flexport | Software Engineer I, Autonomous Freight Systems | 7839298 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/flexport/jobs/7839298?gh_jid=7839298) |  |  |  |  |
 | Flex | Software Engineer | 5633923004 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/flex/jobs/5633923004) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Flex | Software Engineer II, Backend | 4652834005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/flex/jobs/4652834005?gh_src=Nfeutp) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
+| Flex | Software Engineer II, Frontend, Mobile and Web | 4642708005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/flex/jobs/4642708005?gh_jid=4642708005) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Fanatics Betting & Gaming | Fullstack, Software Engineer II, Sportsbook - FBG | 4216147009 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/fanaticsfbg/jobs/4216147009?gh_src=k819kf909us) |  |  |  |  |
+| Fanatics Betting & Gaming | Software Engineer II | 4209810009 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/fanaticsfbg/jobs/4209810009) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | EliseAI | Software Engineer (New Grads 2025-2026) | 1ffbd278-a5fe-443c-984f-521d61a97353 | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/eliseai/1ffbd278-a5fe-443c-984f-521d61a97353?utm_source=LinkedInPaid) |  |  |  |  |
 | Disney | Software Engineer II - Data Transformation | 91303727120 | 10 | Applied | Yes | [Posting](https://www.disneycareers.com/en/job/-/-/391/91303727120?source=LINKEDIN_JOB_SLOTS) |  |  |  |  |
 | Disney | Software Engineer II | 93426467616 | 10 | Applied | Yes | [Posting](https://www.disneycareers.com/en/job/-/-/391/93426467616?source=LINKEDIN_JOB_SLOTS) |  |  |  |  |
 | Confido | New Grad Software Engineer | 4401827377 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4401827377/) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Compass | Software Engineer I | 4405599153 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4405599153/?trackingId=TdfRLjBOnV8vB8U5Tv%2F8vw%3D%3D&refId=5T2Rb2GlMfL%2FBz2KqJWJrw%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BFsxvxmQZR5K1F9fZ%2BTSCAg%3D%3D) |  |  |  |  |
 | Color Health | New Grad Software Engineer | 6c7f692a-848b-41a4-b79b-4a9bba3aeb6d | 10 | Applied | Yes | [Posting](https://app.careerpuck.com/job-board/color-health/job/6c7f692a-848b-41a4-b79b-4a9bba3aeb6d) |  |  |  |  |
+| Civis Analytics | Applied Software Engineer II | 7392088 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/civisanalytics/jobs/7392088) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Checkr | Backend Software Engineer II | 7438937 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/checkr/jobs/7438937) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Cadence | Software Engineer I | Software-Engineer-I_R53009-1 | 10 | Applied | Yes | [Posting](https://cadence.wd1.myworkdayjobs.com/External_Careers/job/SAN-JOSE/Software-Engineer-I_R53009-1?source=LinkedIn) |  |  |  |  |
 | Brex | Software Engineer II, Product | software-engineer-ii-product-at-brex-4341255828 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-product-at-brex-4341255828) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
@@ -132,6 +138,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Plaid | Software Engineer | 4243684882 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4243684882/) |  |  |  |  |
 | Palantir Technologies | Forward Deployed Software Engineer (New York) | dab396d4-2f14-4796-aac0-0d82883dccf0 | 9 | Applied | Yes | [Posting](https://jobs.lever.co/palantir/dab396d4-2f14-4796-aac0-0d82883dccf0) |  |  |  |  |
 | OpenAI | Software Engineer, Codex Cloud | 130a5389-83e1-493f-9205-542d3ff53afb | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/openai/130a5389-83e1-493f-9205-542d3ff53afb/application) |  |  |  |  |
+| OpenAI | Forward Deployed Software Engineer - NYC | forward-deployed-software-engineer-nyc-at-openai-4349516535 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/forward-deployed-software-engineer-nyc-at-openai-4349516535) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Nue | Full-Stack Software Engineer (New Grad) | am9icG9zdDob7-dG2QGrMQovdiXJRx7P | 9 | Applied | Yes | [Posting](https://jobs.gem.com/nue/am9icG9zdDob7-dG2QGrMQovdiXJRx7P) |  |  |  |  |
 | Neuralink | Software Engineer, Implant Manufacturing | 6353417003 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/neuralink/jobs/6353417003) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Netic | Software Engineer, New Grad | 63c216dc-a082-43df-928c-d71b3ed4f887 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/netic/63c216dc-a082-43df-928c-d71b3ed4f887) |  |  |  |  |
