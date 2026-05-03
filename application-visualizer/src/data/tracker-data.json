@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T04:07:38.688344+00:00",
+  "generatedAt": "2026-05-03T05:08:01.819921+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 414,
+      "total": 418,
       "applied": 322,
-      "unapplied": 92,
-      "active": 316,
+      "unapplied": 96,
+      "active": 320,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 295,
-      "reachOut": 357,
+      "highFit": 299,
+      "reachOut": 361,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 88,
+      "intakeJobs": 94,
       "intakeQueued": 7,
       "intakeNew": 17,
-      "intakeManual": 2,
+      "intakeManual": 7,
       "intakeApplied": 0,
-      "applyRate": 77.8,
+      "applyRate": 77.0,
       "rejectionRate": 13.7,
-      "recruiterWork": 231,
-      "engineerWork": 289,
+      "recruiterWork": 235,
+      "engineerWork": 293,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -48,7 +48,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 32
+        "value": 36
       },
       {
         "name": "Resume Tailored",
@@ -70,7 +70,7 @@
       },
       {
         "name": "Greenhouse",
-        "value": 129
+        "value": 133
       },
       {
         "name": "Ashby",
@@ -140,7 +140,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 183
+        "value": 187
       },
       {
         "name": "Bay Area",
@@ -170,15 +170,15 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 228
+        "value": 229
+      },
+      {
+        "name": "Backend",
+        "value": 50
       },
       {
         "name": "Full Stack",
         "value": 50
-      },
-      {
-        "name": "Backend",
-        "value": 48
       },
       {
         "name": "Forward Deployed",
@@ -186,7 +186,7 @@
       },
       {
         "name": "AI/ML",
-        "value": 27
+        "value": 28
       },
       {
         "name": "Infra/Platform",
@@ -240,7 +240,7 @@
       },
       {
         "score": "10",
-        "count": 131
+        "count": 135
       }
     ],
     "targetCounts": [
@@ -265,6 +265,10 @@
         "value": 17
       },
       {
+        "name": "Manual",
+        "value": 7
+      },
+      {
         "name": "Queued",
         "value": 7
       },
@@ -273,7 +277,7 @@
         "value": 6
       },
       {
-        "name": "Manual",
+        "name": "10",
         "value": 2
       },
       {
@@ -283,20 +287,16 @@
       {
         "name": "Duplicate",
         "value": 1
-      },
-      {
-        "name": "10",
-        "value": 1
       }
     ],
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 54
+        "value": 59
       },
       {
         "name": "LinkedIn",
-        "value": 34
+        "value": 35
       }
     ],
     "timeline": [
@@ -451,13 +451,21 @@
         "applied": 14,
         "rejected": 0,
         "interviewing": 0
+      },
+      {
+        "date": "2026-05-03",
+        "cumulative": 418,
+        "added": 4,
+        "applied": 0,
+        "rejected": 0,
+        "interviewing": 0
       }
     ],
     "topCompanies": [
       {
         "company": "StubHub",
-        "roles": 9,
-        "avgFit": 9.22,
+        "roles": 10,
+        "avgFit": 9.3,
         "bestFit": 10
       },
       {
@@ -790,6 +798,15 @@
         "jobLink": "https://job-boards.greenhouse.io/stubhubinc/jobs/4683779101"
       },
       {
+        "company": "StubHub",
+        "role": "Software Engineer I - Marketplace Operations (New Grad)",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/stubhubinc/jobs/4763976101"
+      },
+      {
         "company": "Spotify",
         "role": "Backend Engineer, Music",
         "fitScore": 10,
@@ -914,15 +931,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/physicsx/jobs/4644850101"
-      },
-      {
-        "company": "PermitFlow",
-        "role": "Fullstack Software Engineer, New Grad",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://jobs.ashbyhq.com/permitflow/78b1fccf-2ed9-4485-bd40-4a5aea3907d4?utm_source=LinkedInPaid"
       }
     ],
     "recruiterBatch": {
@@ -12670,9 +12678,197 @@
       "activityDates": [
         "2026-05-02"
       ]
+    },
+    {
+      "company": "StubHub",
+      "role": "Software Engineer I - Marketplace Operations (New Grad)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "New York, New York, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/stubhubinc/jobs/4763976101",
+      "postingKey": "4763976101",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/StubHub/Software_Engineer_I_Marketplace_Operations_New_Grad/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/StubHub/Software_Engineer_I_Marketplace_Operations_New_Grad/Liam_Van_Resume/Liam_Van_StubHub.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 degraded public-search pass; tailored SWE resume rendered and verified one page; emphasized new-grad marketplace operations, customer-facing ticketing workflows, full-stack systems, AI-assisted development, production reliability, and testing. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: browser application attempt blocked because Computer Use access to Chrome and Firefox was denied during automation preflight 2026-05-03",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03",
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Pallet",
+      "role": "Forward Deployed Software Engineer (AI Agents)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "New York City",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/pallet/jobs/5072543007",
+      "postingKey": "5072543007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Pallet/Forward_Deployed_Software_Engineer_AI_Agents/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Pallet/Forward_Deployed_Software_Engineer_AI_Agents/Liam_Van_Resume/Liam_Van_Pallet.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 degraded public-search pass; tailored SWE resume rendered and verified one page; emphasized forward-deployed AI agents, logistics workflows, customer-facing engineering, backend APIs, full-stack delivery, and production validation. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: browser application attempt blocked because Computer Use access to Chrome and Firefox was denied during automation preflight 2026-05-03",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03",
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Clear Street",
+      "role": "Backend Software Engineer - Reference Data Services",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/clearstreet/jobs/6675504",
+      "postingKey": "6675504",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Clear Street/Backend_Software_Engineer_Reference_Data_Services/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Clear Street/Backend_Software_Engineer_Reference_Data_Services/Liam_Van_Resume/Liam_Van_Clear_Street.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 degraded public-search pass; tailored SWE resume rendered and verified one page; emphasized backend financial data services, authoritative datasets, API reliability, data modeling, cloud validation, and production operations. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: browser application attempt blocked because Computer Use access to Chrome and Firefox was denied during automation preflight 2026-05-03",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03",
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Addepar",
+      "role": "Backend Software Engineer - Investor Solutions",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/addepar1/jobs/8387694002",
+      "postingKey": "8387694002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Addepar/Backend_Software_Engineer_Investor_Solutions/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Addepar/Backend_Software_Engineer_Investor_Solutions/Liam_Van_Resume/Liam_Van_Addepar.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 degraded public-search pass; tailored SWE resume rendered and verified one page; emphasized backend investor-solutions systems, financial data workflows, API services, platform reliability, data validation, and cross-functional delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: browser application attempt blocked because Computer Use access to Chrome and Firefox was denied during automation preflight 2026-05-03",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03",
+        "2026-05-03"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "StubHub",
+      "role": "Software Engineer I - Marketplace Operations (New Grad)",
+      "location": "New York, New York, United States",
+      "postingKey": "4763976101",
+      "jobUrl": "https://job-boards.greenhouse.io/stubhubinc/jobs/4763976101",
+      "discoveredAt": "2026-05-03T05:05:23.718833+00:00",
+      "postedAge": "public Greenhouse degraded search capture",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-03; manual apply needed: browser application attempt blocked because Computer Use access to Chrome and Firefox was denied during automation preflight",
+      "trackerPostingKey": "4763976101"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Rokt",
+      "role": "Junior Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "entry-level-software-engineer-jobs-new-york-ny",
+      "jobUrl": "https://www.linkedin.com/jobs/entry-level-software-engineer-jobs-new-york-ny",
+      "discoveredAt": "2026-05-03T05:05:23.718833+00:00",
+      "postedAge": "4 hours ago; public LinkedIn degraded search result, exact posting URL unavailable",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual review needed 2026-05-03: degraded LinkedIn capture exposed only the public entry-level search page, not the exact posting URL",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Pallet",
+      "role": "Forward Deployed Software Engineer (AI Agents)",
+      "location": "New York City",
+      "postingKey": "5072543007",
+      "jobUrl": "https://job-boards.greenhouse.io/pallet/jobs/5072543007",
+      "discoveredAt": "2026-05-03T05:05:23.718833+00:00",
+      "postedAge": "New; public Greenhouse degraded search capture",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-03; manual apply needed: browser application attempt blocked because Computer Use access to Chrome and Firefox was denied during automation preflight",
+      "trackerPostingKey": "5072543007"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Loop",
+      "role": "2026 New Grad \\",
+      "location": "Software Engineer, Full-Stack (New York)",
+      "postingKey": "New York, NY",
+      "jobUrl": "5981828004",
+      "discoveredAt": "https://job-boards.greenhouse.io/loop/jobs/5981828004",
+      "postedAge": "2026-05-03T05:05:23.718833+00:00",
+      "fitScore": 0,
+      "status": "10",
+      "reason": "Skipped",
+      "trackerPostingKey": "Skipped 2026-05-03: exact Greenhouse page appears duplicative of already-applied Loop New York new-grad/full-stack rows"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Clear Street",
+      "role": "Backend Software Engineer - Reference Data Services",
+      "location": "New York, NY",
+      "postingKey": "6675504",
+      "jobUrl": "https://job-boards.greenhouse.io/clearstreet/jobs/6675504",
+      "discoveredAt": "2026-05-03T05:05:23.718833+00:00",
+      "postedAge": "public Greenhouse degraded search capture",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-03; manual apply needed: browser application attempt blocked because Computer Use access to Chrome and Firefox was denied during automation preflight",
+      "trackerPostingKey": "6675504"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Addepar",
+      "role": "Backend Software Engineer - Investor Solutions",
+      "location": "New York, NY",
+      "postingKey": "8387694002",
+      "jobUrl": "https://job-boards.greenhouse.io/addepar1/jobs/8387694002",
+      "discoveredAt": "2026-05-03T05:05:23.718833+00:00",
+      "postedAge": "public Greenhouse degraded search capture",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-03; manual apply needed: browser application attempt blocked because Computer Use access to Chrome and Firefox was denied during automation preflight",
+      "trackerPostingKey": "8387694002"
+    },
     {
       "source": "Greenhouse",
       "company": "PhysicsX",
@@ -14207,6 +14403,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "StubHub",
+      "role": "Software Engineer I - Marketplace Operations (New Grad)",
+      "postingKey": "4763976101",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/stubhubinc/jobs/4763976101",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Spotify",
       "role": "Backend Engineer, Music",
       "postingKey": "ee5064af-0116-4ef2-994a-cb8fed580290",
@@ -14400,6 +14609,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Pallet",
+      "role": "Forward Deployed Software Engineer (AI Agents)",
+      "postingKey": "5072543007",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/pallet/jobs/5072543007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Palantir Technologies",
@@ -14948,6 +15170,19 @@
       "notes": ""
     },
     {
+      "company": "Clear Street",
+      "role": "Backend Software Engineer - Reference Data Services",
+      "postingKey": "6675504",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/clearstreet/jobs/6675504",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Civis Analytics",
       "role": "Applied Software Engineer II",
       "postingKey": "7392088",
@@ -15140,6 +15375,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Addepar",
+      "role": "Backend Software Engineer - Investor Solutions",
+      "postingKey": "8387694002",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/addepar1/jobs/8387694002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -24285,6 +24533,18 @@
           ]
         },
         {
+          "key": "8387694002",
+          "company": "Addepar",
+          "role": "Backend Software Engineer - Investor Solutions",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7673126003",
           "company": "Affirm",
           "role": "Software Engineer I, Backend (Purchasing Power Experience)",
@@ -24386,6 +24646,18 @@
           "role": "Applied Software Engineer II",
           "fitScore": 10,
           "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "6675504",
+          "company": "Clear Street",
+          "role": "Backend Software Engineer - Reference Data Services",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -24590,6 +24862,18 @@
           "role": "Software Engineer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5072543007",
+          "company": "Pallet",
+          "role": "Forward Deployed Software Engineer (AI Agents)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -24842,6 +25126,18 @@
           "role": "Software Engineer II - (Fullstack / Product Engineering)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4763976101",
+          "company": "StubHub",
+          "role": "Software Engineer I - Marketplace Operations (New Grad)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -34087,6 +34383,18 @@
           ]
         },
         {
+          "key": "8387694002",
+          "company": "Addepar",
+          "role": "Backend Software Engineer - Investor Solutions",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7673126003",
           "company": "Affirm",
           "role": "Software Engineer I, Backend (Purchasing Power Experience)",
@@ -34176,6 +34484,18 @@
           "role": "Applied Software Engineer II",
           "fitScore": 10,
           "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "6675504",
+          "company": "Clear Street",
+          "role": "Backend Software Engineer - Reference Data Services",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -34368,6 +34688,18 @@
           "role": "Software Engineer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5072543007",
+          "company": "Pallet",
+          "role": "Forward Deployed Software Engineer (AI Agents)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -34632,6 +34964,18 @@
           "role": "Software Engineer II - (Fullstack / Product Engineering)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4763976101",
+          "company": "StubHub",
+          "role": "Software Engineer I - Marketplace Operations (New Grad)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
