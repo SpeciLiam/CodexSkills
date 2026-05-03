@@ -23,6 +23,7 @@ from update_application_tracker import (  # type: ignore
 from tracker_data_cache import load_cached_application_rows  # type: ignore
 
 
+LANES_PATH = SCRIPT_DIR.parent / "config" / "lanes.json"
 DEFAULT_EXCLUDED_STATUSES = {"rejected", "archived"}
 OUTREACH_MARKERS = (
     "linkedin invite sent",
@@ -33,7 +34,20 @@ OUTREACH_MARKERS = (
     "connect request sent",
     "connect requests sent",
 )
-CONTACT_TYPES = ("recruiter", "engineer")
+DEFAULT_CONTACT_TYPES = ("recruiter", "engineer")
+
+
+def load_lanes() -> dict[str, dict[str, object]]:
+    payload = json.loads(LANES_PATH.read_text(encoding="utf-8"))
+    return {str(lane["id"]): lane for lane in payload.get("lanes", [])}
+
+
+def known_lane_message(contact_type: str, lanes: dict[str, dict[str, object]]) -> str:
+    return f"Unknown lane '{contact_type}'. Known lanes: {', '.join(sorted(lanes))}"
+
+
+def tracker_columns(lane: dict[str, object]) -> dict[str, str]:
+    return {key: str(value) for key, value in dict(lane.get("trackerColumns", {})).items()}
 
 
 def load_rows(repo_root: Path) -> list[dict[str, str]]:
@@ -53,33 +67,24 @@ def load_rows(repo_root: Path) -> list[dict[str, str]]:
     return parsed_rows
 
 
-def has_contact_type_record(row: dict[str, str], contact_type: str) -> bool:
+def has_contact_type_record(row: dict[str, str], contact_type: str, lanes: dict[str, dict[str, object]]) -> bool:
     notes = normalize(row.get("Notes", ""))
-    if contact_type == "recruiter":
-        if row.get("Recruiter Contact", "").strip():
+    lane = lanes.get(contact_type)
+    if lane:
+        columns = tracker_columns(lane)
+        if row.get(columns.get("name", ""), "").strip():
             return True
-        if row.get("Recruiter Profile", "").strip():
+        if row.get(columns.get("profile", ""), "").strip():
             return True
-        return any(marker in notes and "recruiter" in notes for marker in OUTREACH_MARKERS)
+        return any(marker in notes and contact_type.replace("_", " ") in notes for marker in OUTREACH_MARKERS)
 
-    if contact_type == "engineer":
-        if row.get("Engineer Contact", "").strip():
-            return True
-        if row.get("Engineer Profile", "").strip():
-            return True
-        return any(marker in notes and "engineer" in notes for marker in OUTREACH_MARKERS)
-
-    if any(marker in notes for marker in OUTREACH_MARKERS):
-        return True
-    if row.get("Recruiter Contact", "").strip() or row.get("Recruiter Profile", "").strip():
-        return True
-    if row.get("Engineer Contact", "").strip() or row.get("Engineer Profile", "").strip():
+    if contact_type == "general" and any(marker in notes for marker in OUTREACH_MARKERS):
         return True
     return False
 
 
-def has_outreach_record(row: dict[str, str]) -> bool:
-    return any(has_contact_type_record(row, contact_type) for contact_type in CONTACT_TYPES)
+def has_outreach_record(row: dict[str, str], lanes: dict[str, dict[str, object]]) -> bool:
+    return any(has_contact_type_record(row, contact_type, lanes) for contact_type in DEFAULT_CONTACT_TYPES)
 
 
 def fit_score_value(row: dict[str, str]) -> int:
@@ -98,6 +103,7 @@ def filter_rows(
     exclude_statuses: set[str],
     include_contacted: bool,
     contact_types: tuple[str, ...],
+    lanes: dict[str, dict[str, object]],
 ) -> list[dict[str, str]]:
     filtered: list[dict[str, str]] = []
     company_norm = normalize(company)
@@ -114,12 +120,12 @@ def filter_rows(
         if posting_key_norm and normalize(row.get("Posting Key", "")) != posting_key_norm:
             continue
         for contact_type in contact_types:
-            if not include_contacted and has_contact_type_record(row, contact_type):
+            if not include_contacted and has_contact_type_record(row, contact_type, lanes):
                 continue
             target = row.copy()
             target["Contact Type"] = contact_type
-            target["Recruiter Done"] = "Yes" if has_contact_type_record(row, "recruiter") else ""
-            target["Engineer Done"] = "Yes" if has_contact_type_record(row, "engineer") else ""
+            target["Recruiter Done"] = "Yes" if has_contact_type_record(row, "recruiter", lanes) else ""
+            target["Engineer Done"] = "Yes" if has_contact_type_record(row, "engineer", lanes) else ""
             filtered.append(target)
 
     filtered.sort(
@@ -200,9 +206,8 @@ def main() -> int:
     )
     parser.add_argument(
         "--contact-type",
-        choices=("both", "recruiter", "engineer"),
         default="both",
-        help="Which outreach lane to emit. Default emits one recruiter and one engineer lane where missing.",
+        help="Which outreach lane to emit. Default emits recruiter and engineer lanes where missing.",
     )
     parser.add_argument(
         "--limit",
@@ -218,13 +223,17 @@ def main() -> int:
     )
     args = parser.parse_args()
 
+    lanes = load_lanes()
+    if args.contact_type != "both" and args.contact_type not in lanes:
+        raise SystemExit(known_lane_message(args.contact_type, lanes))
+
     repo_root = repo_root_from_args(args.root)
     rows = load_rows(repo_root)
     include_statuses = {normalize(value) for value in args.include_status if value.strip()}
     exclude_statuses = DEFAULT_EXCLUDED_STATUSES | {
         normalize(value) for value in args.exclude_status if value.strip()
     }
-    contact_types = CONTACT_TYPES if args.contact_type == "both" else (args.contact_type,)
+    contact_types = DEFAULT_CONTACT_TYPES if args.contact_type == "both" else (args.contact_type,)
 
     filtered = filter_rows(
         rows,
@@ -234,6 +243,7 @@ def main() -> int:
         exclude_statuses=exclude_statuses,
         include_contacted=args.include_contacted,
         contact_types=contact_types,
+        lanes=lanes,
     )
 
     if args.limit > 0:

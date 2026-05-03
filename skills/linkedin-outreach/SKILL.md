@@ -1,66 +1,72 @@
 ---
 name: linkedin-outreach
-description: Find the best LinkedIn person to reach out to for a tracked job application, usually after resume-tailor. Use when you want recruiter-first outreach, University of Georgia alumni priority, connection-note drafting, and tracker updates after a LinkedIn invite is sent.
+description: Build, draft, and record LinkedIn outreach for any contact lane (recruiter, engineer, alumni, hiring manager, founder, peer) tied to Liam Van's tracked applications. Uses standing rules and per-lane signals to draft notes, queue approved rows, and update the tracker after each send.
 ---
-
-## Operating Card
-
-Before every batch item, re-read `skills/linkedin-outreach/OPERATING_CARD.md`. The card wins in any conflict with prose below.
 
 # LinkedIn Outreach
 
-Use this skill after `resume-tailor` has created or updated a tracker row.
+Use this skill for any LinkedIn outreach lane tied to the application tracker. The skill is lane-agnostic -- the same workflow applies whether the target is a recruiter, an engineer on the team, an alum, a hiring manager, or any other contact type. Lane is just a value passed to the build/update scripts.
 
-For full recruiting sessions, start with `recruiting-pipeline`; it will call this skill separately for recruiter and engineer lanes.
+## Operating Card
 
-When the user wants to focus on LinkedIn outreach only, run the focused planner first so the recruiter and engineer lanes stay in order:
+Before every contact, re-read `skills/linkedin-outreach/OPERATING_CARD.md`. The card's rules win in any conflict with the prose below.
 
-```bash
-python3 skills/recruiting-pipeline/scripts/build_daily_recruiting_plan.py --mode linkedin
+## Lanes
+
+The skill operates on a `lane` parameter, currently one of: `recruiter`, `engineer`, `alumni`, `hiring_manager`, `founder`, `peer`. New lanes can be added by extending the lane registry without changing the workflow.
+
+Each lane defines:
+- The tracker columns it writes to (e.g., recruiter writes `Recruiter Contact`/`Recruiter Profile`; engineer writes `Engineer Contact`/`Engineer Profile`; future lanes follow the same `<Lane> Name`/`<Lane> Profile`/`<Lane> Note` pattern where tracker columns exist).
+- Its drafting hook (what makes a strong note for this lane -- e.g., engineer = team/project specificity, recruiter = role ownership reference, alumni = shared school).
+- Its accept/skip heuristics (e.g., recruiter prefers in-house and role-owning over generic university; engineer prefers senior+ on the matching team).
+
+The build, draft, send, and record steps are the same across lanes. Pass `--contact-type <lane>` to all scripts.
+
+## Workflow
+
+1. **Build targets:** `python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type <lane> --limit <N>`.
+2. **Label the contact:** add name, profile URL, position, plus the lane signal fields (seniority, alumni-match, lane-specific signal). Codex agent or manual.
+3. **Draft the note:** lane-specific hook + <=300 chars + personal hook. The drafting prompt lives in `skills/linkedin-outreach/prompts/<lane>_note.md`.
+4. **Approve the row:** via the visualizer Approve button or by status edit.
+5. **Send via Chrome:** use logged-in Chrome through Computer Use. Do not bypass LinkedIn's rate limits or invite gating.
+6. **Record outcome:** `python3 skills/linkedin-outreach/scripts/update_outreach_status.py --contact-type <lane> --posting-key <key> --outcome <sent|connected|replied|declined>`.
+
+## Lane Registry
+
+The lane registry lives in `skills/linkedin-outreach/config/lanes.json`. Each entry:
+
+```json
+{
+  "id": "engineer",
+  "label": "Engineer",
+  "trackerColumns": {
+    "name": "Engineer Contact",
+    "profile": "Engineer Profile",
+    "position": "Engineer Position",
+    "note": "Engineer Note"
+  },
+  "signalFields": ["alumniMatch", "seniority", "teamMatch", "whyThisPerson"],
+  "draftPrompt": "prompts/engineer_note.md",
+  "preferenceRules": [
+    "Senior+ on the team Liam applied to is best.",
+    "Adjacent team plus alumni is acceptable.",
+    "Mismatched team or unknown team without alumni link should be skipped."
+  ]
+}
 ```
 
-Use `--mode recruiter` or `--mode engineer` when the user names only one lane.
+Adding a new lane = adding an entry to `lanes.json` plus a draft prompt file. No code changes.
 
-For faster sessions, recruiter outreach and engineer outreach can run as two parallel Codex workstreams. Use the same refreshed tracker cache, split by `--contact-type recruiter` and `--contact-type engineer`, then record all sends through `update_outreach_tracker.py` so the two lanes merge safely.
+## Tracker Helpers
 
-## Default strategy
-
-1. Start from the markdown tracker, not memory.
-2. Prioritize rows that:
-   - are not `Rejected` or `Archived`
-   - are missing either the recruiter lane or the engineer lane
-   - have the highest `Fit Score`
-3. For each role, aim for one recruiter contact and one engineer contact:
-   - recruiter: role/company recruiter, talent acquisition, university recruiter, hiring contact
-   - engineer: UGA alum engineer first, then likely team engineer, then relevant employee
-4. Search LinkedIn for the best contact in this order:
-   - recruiter for the role or company
-   - University of Georgia alumni at the company
-   - engineer on the likely hiring team
-   - another relevant employee if the cleaner options are unavailable
-5. Prefer a LinkedIn `Connect` request with a note.
-6. Avoid `InMail` unless the user explicitly wants to spend it.
-7. Recording recruiter outreach should not mark engineer outreach as complete, and recording engineer outreach should not mark recruiter outreach as complete.
-
-## Tracker helpers
-
-Build the next outreach queue from the organized tracker data when available, with markdown fallback:
+Build the next outreach queue from normalized tracker data when available, with markdown fallback:
 
 ```bash
-python3 skills/linkedin-outreach/scripts/build_outreach_targets.py
+python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type recruiter --limit 20
+python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type engineer --limit 20
+python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type alumni --limit 20
+python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type recruiter --format json
 ```
-
-Useful filters:
-
-```bash
-python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --limit 10
-python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --company "Navan"
-python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type recruiter
-python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type engineer
-python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --format json
-```
-
-The script reads `application-visualizer/src/data/tracker-data.json` first because it has normalized links, booleans, fit scores, and recruiter fields. If that generated cache is missing, it falls back to `application-trackers/applications.md`.
 
 Refresh the cache before a large outreach pass:
 
@@ -68,26 +74,7 @@ Refresh the cache before a large outreach pass:
 python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 ```
 
-The script emits separate recruiter and engineer lanes for each application. A role can appear twice if both are still missing. The `contact_type`, `recruiter_done`, and `engineer_done` fields in JSON output tell the agent which lane to work.
-
-## Parallel lane pattern
-
-Use this when the user wants LinkedIn outreach done faster:
-
-```bash
-python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
-python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type recruiter --limit 20 --format json
-python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type engineer --limit 20 --format json
-```
-
-Then split work:
-
-- recruiter workstream: recruiter/talent/university/hiring contacts only
-- engineer workstream: engineer, UGA alum, team-aligned employee, or peer contact only
-
-Both workstreams must record sends with `update_outreach_tracker.py` and the correct `--contact-type`. Do not manually edit the markdown table from parallel workstreams.
-
-## Connection note helper
+## Connection Notes
 
 Generate a short connection note before sending:
 
@@ -99,7 +86,9 @@ python3 skills/linkedin-outreach/scripts/generate_connection_note.py \
   --variant recruiter
 ```
 
-Use `--variant engineer` when the note should be aimed at an engineer instead of a recruiter.
+Use the lane prompt from `lanes.json` when drafting manually or with an agent. The note must be 300 characters or fewer, include a personal hook, and include a lane-relevant hook.
+
+## Candidate Framing
 
 The default candidate framing matches Liam Van:
 
@@ -116,61 +105,6 @@ The default candidate framing matches Liam Van:
 - preference for New York City, also open to hybrid and in-office roles
 
 Only include identity or work authorization details when they help answer a form or a recruiter question. Do not stuff them into the connection note.
-
-## LinkedIn search workflow
-
-For each target lane:
-
-1. Open the job posting or company page on LinkedIn.
-2. Go to `People` or search LinkedIn people for the company.
-3. If the lane is `recruiter`, check titles like:
-   - recruiter
-   - talent acquisition
-   - technical recruiter
-   - university recruiter
-   - hiring
-4. If the lane is `engineer`, check for:
-   - University of Georgia alumni
-   - engineers on the likely product/platform/backend/frontend/data team
-   - engineers in the same office or city
-5. If several people fit, prioritize in this order:
-   - University of Georgia alumni
-   - role-aligned recruiter
-   - recruiter in the same city or office
-   - engineer close to the role team or stack
-6. If there is no clean recruiter connect path, fall back to:
-   - UGA alum engineer
-   - engineer on the relevant team
-   - another employee with a visible `Connect` button
-7. If search results or list cards only show `Message`, open the full profile anyway. On the profile page, check for a direct `Connect` button first, then try `More` -> `Connect` before deciding the person is blocked.
-8. Use a note with the connection request whenever LinkedIn allows it.
-9. If the full profile still only offers follow or message-only actions, skip and move on unless the user asks for a manual fallback.
-
-## After a send
-
-Record the contact immediately in the markdown tracker:
-
-```bash
-python3 skills/linkedin-outreach/scripts/update_outreach_tracker.py \
-  --company "Navan" \
-  --posting-key "4401351489" \
-  --contact-name "Jane Smith" \
-  --profile-url "https://www.linkedin.com/in/jane-smith/" \
-  --contact-type recruiter \
-  --date 2026-04-25
-```
-
-Use `--contact-type engineer` for engineer outreach. Recruiter sends also populate `Recruiter Contact` and `Recruiter Profile` when those fields are empty.
-Engineer sends populate `Engineer Contact` and `Engineer Profile` when those fields are empty.
-
-## Coordination with resume-tailor
-
-This skill pairs naturally with `resume-tailor`:
-
-1. tailor the resume
-2. update the tracker
-3. run this skill for both recruiter and engineer lanes, ordered by `Fit Score`
-4. record every successful invite in the tracker so later Gmail and Notion refreshes do not need to guess
 
 ## Guardrails
 

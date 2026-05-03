@@ -126,8 +126,8 @@ const PIPELINE_MODES = [
   },
   {
     name: "Recruiter Batch",
-    command: "python3 skills/linkedin-outreach-batch/scripts/build_recruiter_batch.py",
-    description: "Ask Codex to prepare every company that still needs LinkedIn recruiter outreach before a morning send pass. Add --contact-type engineer for the engineer/alumni lane.",
+    command: "python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type recruiter --limit 20",
+    description: "Ask Codex to prepare recruiter outreach through the generalized LinkedIn lane workflow.",
   },
   {
     name: "Engineer Lane",
@@ -174,13 +174,13 @@ const OPTIMAL_COMMAND_FLOW = [
   {
     step: "5",
     name: "Batch recruiter outreach",
-    command: "python3 skills/linkedin-outreach-batch/scripts/build_recruiter_batch.py",
-    note: "Use this before a 7 AM pass. Codex labels every company still missing recruiter outreach, drafts exact notes, and can send the approved batch after one action-time confirmation. Use --contact-type engineer for the engineer queue.",
+    command: "python3 skills/linkedin-outreach/scripts/build_outreach_targets.py --contact-type recruiter --limit 20",
+    note: "Use this before a send pass. Codex labels recruiter rows, drafts exact notes, and can send the approved batch after one action-time confirmation.",
   },
   {
     step: "6",
     name: "Send recruiter batch",
-    command: "Use linkedin-outreach-batch: show Approved + Not reached out rows, confirm once, then try free InMail before Connect with note",
+    command: "Use linkedin-outreach: show Approved + Not reached out recruiter rows, confirm once, then Connect with note",
     note: "The approval is batch-level, not per recruiter. After confirmation, Codex keeps going until the approved queue is done, you stop it, or LinkedIn/browser state blocks progress.",
   },
   {
@@ -257,12 +257,12 @@ const SKILL_CARDS = [
   {
     name: "linkedin-outreach",
     role: "Networking",
-    text: "Builds separate recruiter and engineer queues, drafts connection notes, and records each successful invite back into the tracker.",
+    text: "Builds lane-aware outreach queues, drafts connection notes, and records each successful invite back into the tracker.",
   },
   {
     name: "linkedin-outreach-batch",
-    role: "Recruiter batch",
-    text: "Prepares recruiter-only batches with exact recipients, routes, and notes. At send time, one confirmation can approve the current batch; paid InMail is skipped in favor of Connect with note.",
+    role: "Compatibility",
+    text: "Thin wrapper kept for existing batch markdown manifests while linkedin-outreach owns the generalized lane workflow.",
   },
   {
     name: "company-prospecting",

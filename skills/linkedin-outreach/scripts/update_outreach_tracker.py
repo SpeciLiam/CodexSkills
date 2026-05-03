@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 from pathlib import Path
 import sys
 
@@ -21,6 +22,21 @@ from update_application_tracker import (  # type: ignore
     split_row,
     tracker_path,
 )
+
+LANES_PATH = SCRIPT_DIR.parent / "config" / "lanes.json"
+
+
+def load_lanes() -> dict[str, dict[str, object]]:
+    payload = json.loads(LANES_PATH.read_text(encoding="utf-8"))
+    return {str(lane["id"]): lane for lane in payload.get("lanes", [])}
+
+
+def tracker_columns(lane: dict[str, object]) -> dict[str, str]:
+    return {key: str(value) for key, value in dict(lane.get("trackerColumns", {})).items()}
+
+
+def known_lane_message(contact_type: str, lanes: dict[str, dict[str, object]]) -> str:
+    return f"Unknown lane '{contact_type}'. Known lanes: {', '.join(sorted(lanes))}"
 
 
 def format_contact(name: str, profile_url: str) -> str:
@@ -74,13 +90,16 @@ def main() -> int:
     parser.add_argument("--profile-url", default="", help="LinkedIn profile URL")
     parser.add_argument(
         "--contact-type",
-        choices=("recruiter", "engineer", "general"),
         default="recruiter",
         help="Type of contact that was reached out to",
     )
     parser.add_argument("--date", required=True, help="Date outreach was sent, in YYYY-MM-DD")
     parser.add_argument("--root", default=None, help="Optional repo root override")
     args = parser.parse_args()
+
+    lanes = load_lanes()
+    if args.contact_type != "general" and args.contact_type not in lanes:
+        raise SystemExit(known_lane_message(args.contact_type, lanes))
 
     repo_root = repo_root_from_args(args.root)
     tracker = tracker_path(repo_root)
@@ -107,16 +126,15 @@ def main() -> int:
 
     row["Notes"] = append_note(row.get("Notes", ""), addition)
 
-    if args.contact_type == "recruiter":
-        if not row.get("Recruiter Contact", "").strip():
-            row["Recruiter Contact"] = args.contact_name
-        if args.profile_url.strip() and not row.get("Recruiter Profile", "").strip():
-            row["Recruiter Profile"] = f"[Profile]({args.profile_url})"
-    elif args.contact_type == "engineer":
-        if not row.get("Engineer Contact", "").strip():
-            row["Engineer Contact"] = args.contact_name
-        if args.profile_url.strip() and not row.get("Engineer Profile", "").strip():
-            row["Engineer Profile"] = f"[Profile]({args.profile_url})"
+    lane = lanes.get(args.contact_type)
+    if lane:
+        columns = tracker_columns(lane)
+        name_column = columns.get("name", "")
+        profile_column = columns.get("profile", "")
+        if name_column in DEFAULT_COLUMNS and not row.get(name_column, "").strip():
+            row[name_column] = args.contact_name
+        if profile_column in DEFAULT_COLUMNS and args.profile_url.strip() and not row.get(profile_column, "").strip():
+            row[profile_column] = f"[Profile]({args.profile_url})"
 
     new_lines = [build_row(row) for row in rows]
     tracker.write_text(render_tracker(new_lines))

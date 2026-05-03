@@ -1,0 +1,174 @@
+{
+  "lanes": [
+    {
+      "id": "recruiter",
+      "label": "Recruiter",
+      "trackerColumns": {
+        "name": "Recruiter Contact",
+        "profile": "Recruiter Profile",
+        "position": "Recruiter Position",
+        "note": "Recruiter Note"
+      },
+      "batchColumns": {
+        "name": "Recruiter Name",
+        "profile": "Recruiter Profile",
+        "position": "Position",
+        "approval": "Needs recruiter"
+      },
+      "appFields": {
+        "name": "recruiterContact",
+        "profile": "recruiterProfile"
+      },
+      "batchOutput": "application-trackers/linkedin-recruiter-batches.md",
+      "batchHeading": "Recruiter Batch",
+      "signalFields": ["alumniMatch", "seniority", "recruiterType", "ownsRole", "whyThisPerson"],
+      "draftPrompt": "prompts/recruiter_note.md",
+      "preferenceRules": [
+        "Role-owning in-house or technical recruiters are best.",
+        "Talent partners at the company are acceptable.",
+        "Generic university or agency recruiters are lower priority unless they clearly own the role."
+      ]
+    },
+    {
+      "id": "engineer",
+      "label": "Engineer",
+      "trackerColumns": {
+        "name": "Engineer Contact",
+        "profile": "Engineer Profile",
+        "position": "Engineer Position",
+        "note": "Engineer Note"
+      },
+      "batchColumns": {
+        "name": "Engineer Name",
+        "profile": "Engineer Profile",
+        "position": "Position",
+        "approval": "Needs engineer"
+      },
+      "appFields": {
+        "name": "engineerContact",
+        "profile": "engineerProfile"
+      },
+      "batchOutput": "application-trackers/linkedin-engineer-batches.md",
+      "batchHeading": "Engineer Batch",
+      "signalFields": ["alumniMatch", "seniority", "teamMatch", "whyThisPerson"],
+      "draftPrompt": "prompts/engineer_note.md",
+      "preferenceRules": [
+        "Senior+ on the team Liam applied to is best.",
+        "Adjacent team plus alumni is acceptable.",
+        "Mismatched team or unknown team without alumni link should be skipped."
+      ]
+    },
+    {
+      "id": "alumni",
+      "label": "Alumni",
+      "trackerColumns": {
+        "name": "Alumni Name",
+        "profile": "Alumni Profile",
+        "position": "Alumni Position",
+        "note": "Alumni Note"
+      },
+      "batchColumns": {
+        "name": "Alumni Name",
+        "profile": "Alumni Profile",
+        "position": "Position",
+        "approval": "Needs alumni"
+      },
+      "appFields": {
+        "name": "alumniContact",
+        "profile": "alumniProfile"
+      },
+      "batchOutput": "application-trackers/linkedin-alumni-batches.md",
+      "batchHeading": "Alumni Batch",
+      "signalFields": ["alumniMatch", "seniority", "whyThisPerson"],
+      "draftPrompt": "prompts/alumni_note.md",
+      "preferenceRules": [
+        "Shared University of Georgia context is required.",
+        "Prefer current employees in software, product, or the target office."
+      ]
+    },
+    {
+      "id": "hiring_manager",
+      "label": "Hiring Manager",
+      "trackerColumns": {
+        "name": "Hiring Manager Name",
+        "profile": "Hiring Manager Profile",
+        "position": "Hiring Manager Position",
+        "note": "Hiring Manager Note"
+      },
+      "batchColumns": {
+        "name": "Hiring Manager Name",
+        "profile": "Hiring Manager Profile",
+        "position": "Position",
+        "approval": "Needs hiring manager"
+      },
+      "appFields": {
+        "name": "hiringManagerContact",
+        "profile": "hiringManagerProfile"
+      },
+      "batchOutput": "application-trackers/linkedin-hiring-manager-batches.md",
+      "batchHeading": "Hiring Manager Batch",
+      "signalFields": ["alumniMatch", "seniority", "whyThisPerson"],
+      "draftPrompt": "prompts/hiring_manager_note.md",
+      "preferenceRules": [
+        "Prefer likely direct managers for the posted team.",
+        "Skip if the profile does not show current company and engineering leadership."
+      ]
+    },
+    {
+      "id": "founder",
+      "label": "Founder",
+      "trackerColumns": {
+        "name": "Founder Name",
+        "profile": "Founder Profile",
+        "position": "Founder Position",
+        "note": "Founder Note"
+      },
+      "batchColumns": {
+        "name": "Founder Name",
+        "profile": "Founder Profile",
+        "position": "Position",
+        "approval": "Needs founder"
+      },
+      "appFields": {
+        "name": "founderContact",
+        "profile": "founderProfile"
+      },
+      "batchOutput": "application-trackers/linkedin-founder-batches.md",
+      "batchHeading": "Founder Batch",
+      "signalFields": ["alumniMatch", "seniority", "whyThisPerson"],
+      "draftPrompt": "prompts/founder_note.md",
+      "preferenceRules": [
+        "Use for small teams where founder-led recruiting is plausible.",
+        "Reference product/company specificity, not generic job interest."
+      ]
+    },
+    {
+      "id": "peer",
+      "label": "Peer",
+      "trackerColumns": {
+        "name": "Peer Name",
+        "profile": "Peer Profile",
+        "position": "Peer Position",
+        "note": "Peer Note"
+      },
+      "batchColumns": {
+        "name": "Peer Name",
+        "profile": "Peer Profile",
+        "position": "Position",
+        "approval": "Needs peer"
+      },
+      "appFields": {
+        "name": "peerContact",
+        "profile": "peerProfile"
+      },
+      "batchOutput": "application-trackers/linkedin-peer-batches.md",
+      "batchHeading": "Peer Batch",
+      "signalFields": ["alumniMatch", "seniority", "whyThisPerson"],
+      "draftPrompt": "prompts/peer_note.md",
+      "preferenceRules": [
+        "Prefer peers close to the role team or office.",
+        "Skip generic employees with no shared hook or team relevance."
+      ]
+    }
+  ]
+}
