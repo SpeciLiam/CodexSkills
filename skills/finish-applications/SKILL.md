@@ -17,7 +17,9 @@ Future runs should preserve the clarified intent from Liam's May 2026 applicatio
 
 - Attempt every reasonable unapplied row with a tailored resume. Do not leave `Resume Tailored` rows untouched merely because the form might have a final submit button.
 - Treat the tailored resume as pre-approval to fill routine fields, upload the tailored resume, generate/upload a required cover letter, use saved demographic answers, submit high-confidence applications, close successful tabs, update the tracker, refresh the cache, and continue.
+- Treat confidence, not the mere presence of a submit button, as the submission gate. Attempt all reasonable ready rows; submit when the live form review is high-confidence, and only hand off or mark manual when a real blocker or low-confidence answer remains.
 - Use a confidence decision on each live form. Submit and close the tab when confidence is high. When confidence is medium or low, fill every safe field, upload safe required artifacts, leave the tab open at the cleanest handoff point when useful, record the exact blocker, and continue to the next row without stopping the run.
+- When an ATS such as Greenhouse sends an application verification code or magic link to `liamvanpj@gmail.com`, use available Gmail access to retrieve it and continue the same high-confidence application. Treat it as a continuation of submission, not a manual blocker, unless the email flow itself becomes unavailable, ambiguous, or escalates into a true 2FA/login challenge.
 - Archive stale postings immediately when the tracked role is closed, unavailable, 404, or redirected to a board without the same role. Do not apply to a nearby or similar replacement role unless Liam explicitly approves that role substitution.
 - Commit and push after every 5 confirmed submissions, and also before ending when fewer than 5 confirmed tracker/cache changes are pending.
 

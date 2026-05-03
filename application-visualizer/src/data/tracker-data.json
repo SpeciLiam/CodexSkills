@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T00:10:48.068007+00:00",
+  "generatedAt": "2026-05-03T00:46:10.953182+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 394,
-      "applied": 298,
-      "unapplied": 96,
+      "applied": 299,
+      "unapplied": 95,
       "active": 319,
       "rejected": 44,
       "interviewing": 3,
@@ -26,8 +26,8 @@
       "intakeNew": 8,
       "intakeManual": 2,
       "intakeApplied": 0,
-      "applyRate": 75.6,
-      "rejectionRate": 14.8,
+      "applyRate": 75.9,
+      "rejectionRate": 14.7,
       "recruiterWork": 234,
       "engineerWork": 286,
       "recruiterReachedOut": 93,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 247
+        "value": 248
       },
       {
         "name": "Rejected",
@@ -47,11 +47,11 @@
         "value": 34
       },
       {
-        "name": "Resume Tailored",
-        "value": 32
+        "name": "Archived",
+        "value": 31
       },
       {
-        "name": "Archived",
+        "name": "Resume Tailored",
         "value": 31
       },
       {
@@ -440,7 +440,7 @@
         "date": "2026-05-02",
         "cumulative": 394,
         "added": 32,
-        "applied": 2,
+        "applied": 3,
         "rejected": 0,
         "interviewing": 0
       }
@@ -11397,8 +11397,8 @@
     {
       "company": "Sigma Computing",
       "role": "Software Engineer (New Grad Program)",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -11413,9 +11413,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted via Greenhouse confirmation page on 2026-05-02.",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-02"
+      ]
     },
     {
       "company": "Garner Health",
@@ -23412,7 +23414,7 @@
           "company": "Sigma Computing",
           "role": "Software Engineer (New Grad Program)",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -33214,7 +33216,7 @@
           "company": "Sigma Computing",
           "role": "Software Engineer (New Grad Program)",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
