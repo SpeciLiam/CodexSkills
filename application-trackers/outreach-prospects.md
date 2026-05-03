@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 319
+Companies queued: 321
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -61,12 +61,14 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | PhysicsX | Forward Deployed Software Engineer | 4644850101 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/physicsx/jobs/4644850101) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Persona | Software Engineer, Backend | 6360867003 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/persona/jobs/6360867003) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | PermitFlow | Fullstack Software Engineer, New Grad | 78b1fccf-2ed9-4485-bd40-4a5aea3907d4 | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/permitflow/78b1fccf-2ed9-4485-bd40-4a5aea3907d4?utm_source=LinkedInPaid) |  |  |  |  |
+| Pario | Founding Engineer (Backend) | 4784339004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/applytopario/jobs/4784339004) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Pallet | Forward Deployed Software Engineer (AI Agents) | 5072543007 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/pallet/jobs/5072543007) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Palantir Technologies | Software Engineer, New Grad - Production Infrastructure | e1a6c138-98bf-45e2-97f7-2c70371cc38a | 10 | Applied | Yes | [Posting](https://jobs.lever.co/palantir/e1a6c138-98bf-45e2-97f7-2c70371cc38a) |  |  |  |  |
 | Palantir Technologies | Software Engineer, New Grad - Infrastructure | 4abf26b4-795c-420a-bf22-1ab98db268b4 | 10 | Applied | Yes | [Posting](https://jobs.lever.co/palantir/4abf26b4-795c-420a-bf22-1ab98db268b4) |  |  |  |  |
 | Palantir Technologies | Software Engineer, New Grad | 94984771-0704-446c-88c6-91ce748f6d92 | 10 | Applied | Yes | [Posting](https://jobs.lever.co/palantir/94984771-0704-446c-88c6-91ce748f6d92) |  |  |  |  |
 | Ounce of Care | Software Engineer | 5091148007 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/ounceofcare/jobs/5091148007) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Opto Investments | Software Engineer, Backend | 7646858003 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/optoinvest/jobs/7646858003) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
+| OpenSesame | Software Engineer | 7600588 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/opensesame/jobs/7600588) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Notion | Software Engineer, New Grad | 4406118990 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4406118990/) |  |  |  |  |
 | Notion | Software Engineer, Fullstack, Early Career | f7399542-9122-481a-bf64-43bf8093748b | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/notion/f7399542-9122-481a-bf64-43bf8093748b) |  |  |  |  |
 | Nira Energy | Founding Software Engineer | 4824126008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/niraenergy/jobs/4824126008) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
