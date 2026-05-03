@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T01:08:39.425937+00:00",
+  "generatedAt": "2026-05-03T01:16:33.790373+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 399,
-      "applied": 302,
-      "unapplied": 97,
+      "applied": 304,
+      "unapplied": 95,
       "active": 323,
       "rejected": 44,
       "interviewing": 3,
@@ -26,8 +26,8 @@
       "intakeNew": 8,
       "intakeManual": 2,
       "intakeApplied": 0,
-      "applyRate": 75.7,
-      "rejectionRate": 14.6,
+      "applyRate": 76.2,
+      "rejectionRate": 14.5,
       "recruiterWork": 238,
       "engineerWork": 290,
       "recruiterReachedOut": 93,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 251
+        "value": 253
       },
       {
         "name": "Rejected",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 31
+        "value": 29
       },
       {
         "name": "Interviewing",
@@ -444,7 +444,7 @@
         "date": "2026-05-02",
         "cumulative": 399,
         "added": 37,
-        "applied": 5,
+        "applied": 7,
         "rejected": 0,
         "interviewing": 0
       }
@@ -12135,8 +12135,8 @@
     {
       "company": "StubHub",
       "role": "Software Engineer II \u2013 Consumer Experience (Full-Stack)",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -12151,17 +12151,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC full-stack consumer product engineering, high-traffic web and mobile surfaces, APIs, experimentation, reliability, and cross-functional delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC full-stack consumer product engineering, high-traffic web and mobile surfaces, APIs, experimentation, reliability, and cross-functional delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Application submitted via Greenhouse browser flow on 2026-05-02; uploaded tailored resume and answered routine sponsorship/hybrid/accuracy affirmation fields with high confidence.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-02",
         "2026-05-02"
       ]
     },
     {
       "company": "StubHub",
       "role": "Software Engineer II - (Fullstack / Product Engineering)",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -12176,9 +12177,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC full-stack product engineering, user-facing features, backend APIs, AI-assisted delivery, testing, and production reliability. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC full-stack product engineering, user-facing features, backend APIs, AI-assisted delivery, testing, and production reliability. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Application submitted via Greenhouse browser flow on 2026-05-02; uploaded tailored resume and answered routine sponsorship/hybrid/accuracy affirmation fields with high confidence.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-02",
         "2026-05-02"
       ]
     },
@@ -23773,7 +23775,7 @@
           "company": "StubHub",
           "role": "Software Engineer II \u2013 Consumer Experience (Full-Stack)",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -23785,7 +23787,7 @@
           "company": "StubHub",
           "role": "Software Engineer II - (Fullstack / Product Engineering)",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -33623,7 +33625,7 @@
           "company": "StubHub",
           "role": "Software Engineer II \u2013 Consumer Experience (Full-Stack)",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -33635,7 +33637,7 @@
           "company": "StubHub",
           "role": "Software Engineer II - (Fullstack / Product Engineering)",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
