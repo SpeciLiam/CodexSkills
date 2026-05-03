@@ -1661,10 +1661,10 @@ select option {
 }
 
 .outreach-shared-row {
-  grid-template-columns: 42px minmax(0, 1fr) minmax(128px, auto) 42px auto;
+  grid-template-columns: 42px minmax(0, 1fr) minmax(118px, 132px) 34px minmax(100px, auto);
   align-items: start;
   column-gap: 12px;
-  min-height: 124px;
+  min-height: 132px;
 }
 
 .outreach-shared-row.copied {
@@ -1674,7 +1674,7 @@ select option {
 
 .outreach-shared-row .active-role-main {
   gap: 7px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .outreach-shared-row .active-role-main strong {
@@ -1703,13 +1703,14 @@ select option {
   max-width: 100%;
   margin-top: 2px;
   padding: 8px 10px;
+  overflow: hidden;
   border: 1px solid rgba(255,255,255,.08);
   background: rgba(255,255,255,.035);
   border-radius: 8px;
 }
 
 .outreach-shared-row:has(.batch-details) {
-  min-height: 168px;
+  min-height: 238px;
 }
 
 .outreach-shared-row .batch-details dd {
@@ -1723,11 +1724,11 @@ select option {
 }
 
 .outreach-shared-row .state-pills {
-  min-width: 128px;
+  min-width: 0;
 }
 
 .outreach-shared-row .state-pills span {
-  max-width: 128px;
+  max-width: 132px;
   white-space: normal;
 }
 
@@ -1756,6 +1757,7 @@ select option {
   flex-wrap: wrap;
   gap: 6px;
   margin-top: 4px;
+  min-width: 0;
 }
 
 .signal-chip,
@@ -1767,10 +1769,14 @@ select option {
   max-width: 100%;
   min-height: 22px;
   padding: 0 7px;
+  overflow: hidden;
   border-radius: 999px;
   font-size: 10.5px;
   font-weight: 950;
+  line-height: 1.1;
+  text-overflow: ellipsis;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 
 .signal-chip {
