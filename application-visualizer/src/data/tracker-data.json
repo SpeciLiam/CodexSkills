@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T20:44:23.225620+00:00",
+  "generatedAt": "2026-05-03T20:53:07.733973+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,9 +21,9 @@
       "recruiterRows": 101,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 182,
-      "intakeQueued": 24,
-      "intakeNew": 32,
+      "intakeJobs": 189,
+      "intakeQueued": 30,
+      "intakeNew": 34,
       "intakeManual": 14,
       "intakeApplied": 0,
       "applyRate": 70.0,
@@ -270,11 +270,11 @@
       },
       {
         "name": "New",
-        "value": 32
+        "value": 34
       },
       {
         "name": "Queued",
-        "value": 24
+        "value": 30
       },
       {
         "name": "Skipped",
@@ -291,10 +291,6 @@
       {
         "name": "Duplicate",
         "value": 1
-      },
-      {
-        "name": "6",
-        "value": 1
       }
     ],
     "intakeSourceCounts": [
@@ -304,7 +300,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 57
+        "value": 64
       }
     ],
     "timeline": [
@@ -13995,6 +13991,48 @@
   ],
   "jobIntake": [
     {
+      "source": "LinkedIn",
+      "company": "Twitch",
+      "role": "Software Engineer I, Twitch Chat",
+      "location": "San Francisco, CA",
+      "postingKey": "4381062426",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-i-twitch-chat-at-twitch-4381062426",
+      "discoveredAt": "2026-05-03T20:52:41.269787+00:00",
+      "postedAge": "LinkedIn public result; 2 weeks ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Plaid",
+      "role": "Software Engineer - Platform",
+      "location": "San Francisco, CA",
+      "postingKey": "4392017988",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-platform-at-plaid-4392017988",
+      "discoveredAt": "2026-05-03T20:52:41.269787+00:00",
+      "postedAge": "LinkedIn public result; 1 week ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Intuit",
+      "role": "Software Engineer 1",
+      "location": "New York, NY",
+      "postingKey": "4344719814",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-1-at-intuit-4344719814",
+      "discoveredAt": "2026-05-03T20:52:41.269787+00:00",
+      "postedAge": "LinkedIn public result; 1 week ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "Greenhouse",
       "company": "Virtu Financial",
       "role": "Software Engineer - Client Trading Infrastructure (Java/Python)",
@@ -15900,6 +15938,48 @@
     },
     {
       "source": "LinkedIn",
+      "company": "Vannevar",
+      "role": "Software Engineer, Backend (Collection Fingerprinting)",
+      "location": "United States",
+      "postingKey": "4390653551",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-backend-collection-fingerprinting-at-vannevar-4390653551",
+      "discoveredAt": "2026-05-03T20:52:41.269787+00:00",
+      "postedAge": "LinkedIn public result; 1 hour ago",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Bretton AI",
+      "role": "Software Engineer, Platform",
+      "location": "San Francisco, CA",
+      "postingKey": "4388509791",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-platform-at-bretton-ai-4388509791",
+      "discoveredAt": "2026-05-03T20:52:41.269787+00:00",
+      "postedAge": "LinkedIn public result; 4 weeks ago",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Anthropic",
+      "role": "Software Engineer, Platform",
+      "location": "San Francisco, CA",
+      "postingKey": "4396359568",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-platform-at-anthropic-4396359568",
+      "discoveredAt": "2026-05-03T20:52:41.269787+00:00",
+      "postedAge": "LinkedIn public result; 2 days ago",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
       "company": "Sift",
       "role": "Software Engineer, Full Stack",
       "location": "San Francisco, CA",
@@ -15980,6 +16060,20 @@
       "fitScore": 8,
       "status": "Queued",
       "reason": "SWE-family role, early-career signal, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "LinkedIn",
+      "role": "Software Engineer - Frontend (DPX)",
+      "location": "Mountain View, CA",
+      "postingKey": "4375061855",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-frontend-dpx-at-linkedin-4375061855",
+      "discoveredAt": "2026-05-03T20:52:41.269787+00:00",
+      "postedAge": "LinkedIn public result; 1 month ago",
+      "fitScore": 7,
+      "status": "New",
+      "reason": "SWE-family role, location needs review",
       "trackerPostingKey": ""
     },
     {
@@ -16233,20 +16327,6 @@
       "status": "New",
       "reason": "SWE-family role, SF/Bay Area preference",
       "trackerPostingKey": ""
-    },
-    {
-      "source": "Greenhouse",
-      "company": "Develo",
-      "role": "Founding Engineer",
-      "location": "Remote \\",
-      "postingKey": "PST",
-      "jobUrl": "4594416004",
-      "discoveredAt": "https://job-boards.greenhouse.io/applytodevelo/jobs/4594416004",
-      "postedAge": "2026-05-03T20:44:16.320127+00:00",
-      "fitScore": 0,
-      "status": "6",
-      "reason": "New",
-      "trackerPostingKey": "SWE-family role, preferred/remote US location"
     },
     {
       "source": "Greenhouse",
@@ -16540,6 +16620,20 @@
       "fitScore": 3,
       "status": "Skipped",
       "reason": "SWE-family role, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Develo",
+      "role": "Founding Engineer",
+      "location": "Remote / PST",
+      "postingKey": "4594416004",
+      "jobUrl": "https://job-boards.greenhouse.io/applytodevelo/jobs/4594416004",
+      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
+      "postedAge": "public Greenhouse result; crawled last week",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
       "trackerPostingKey": ""
     }
   ],
