@@ -97,9 +97,10 @@ Lanes never share state: separate runbooks (`hourly-linkedin-intake.md`, `hourly
 ## LinkedIn Default Filters
 
 - Start LinkedIn from Liam's canonical Chrome search URL:
-  `https://www.linkedin.com/jobs/search-results/?currentJobId=4400292789&eBP=CwEAAAGd6u1jSK23rzKlUdzYHyYIIbcTVOivd5S25NrTwHVaZOwNwd3EcPCQmJ_Ny6nsbw_XmNvVYheV58TIhXnRychp_rxSKANvUB7TAZ8gTTxhCpN4yphOnfelv1OCGtW2UwA79t46pBZ4aKzF4Jqq1TS80Y2bYqvriXCr5RqiXdF7tFRJRXoQAzGPqoswFO34ImwzeKqgpr3lab10LriyeKKDZLwcdTlAVI8-88vXxL5Ba1_HGdCE7FZnyJ5lqDNinCESgFksWu_tCN-Xur3-F1Zemd5FYkNl_sc4Ffh4KHqdVBHNxiAvVAgf8nqiJO2iOE3u3adaDhW1BcLugFGOrZvBTaMRz_kvzujHHmoz-Kh6b_WgA4r935sN3o5Ua_CaXf8ou4psuNkig-CjcQH2nVS74irm69mLf3DWLRRMLn4u0twwMag9jABdIBuXXWL3UbluR42A7vl8v4HBfM3tKL80zvdpj4xesaWfbySlz3bft5Zmjg&refId=AUjJDLTHkZScYb1FSzsqVw%3D%3D&trackingId=e6HrO7i0kUWRFB0ly%2BtKSQ%3D%3D&keywords=software%20engineer&origin=JOB_SEARCH_PAGE_JOB_FILTER&referralSearchId=hlmyA6eoWkxptRpZcrt5Ng%3D%3D&geoId=103644278&distance=0.0&f_TPR=r86400`
+  `https://www.linkedin.com/jobs/search/?keywords=software%20engineer&geoId=103644278&location=United%20States&f_TPR=r86400&f_E=2&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON`
+- Keep the `Entry level` experience filter applied (`f_E=2`) for the default fresh LinkedIn pass; this is Liam's early-career filter.
 - When available in the saved LinkedIn view, also use the chips that commonly appear in Liam's workflow such as `Remote`, `Frontend`, `Gaming`, `Web`, `Java`, `Easy Apply`, `Employment type`, `Company`, `Under 10 applicants`, and `In my network`.
-- Do not require the `Entry-level` chip. Judge fit from the actual title and posting, favoring roles like Software Engineer, SWE I, SWE II, founding engineer, generalist, forward-deployed, backend, full-stack, platform, and applied AI.
+- Still judge fit from the actual title and posting, favoring roles like Software Engineer, SWE I, SWE II, founding engineer, generalist, forward-deployed, backend, full-stack, platform, and applied AI.
 - Treat these extra chips as targeting and ranking helpers, not hard exclusions, when they would otherwise hide strong plausible SWE roles that fit Liam well.
 
 ## Guardrails
