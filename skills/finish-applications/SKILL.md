@@ -11,6 +11,16 @@ Use this skill to turn ready tracker rows into submitted applications with minim
 The agent should prioritize high-fit, tailored, unapplied rows; open each posting; submit using the tailored resume already recorded in the tracker; and update the source-of-truth markdown after each confirmed submission.
 Default behavior should be persistence, not caution drift: keep working through the queue and submit whenever the application is routine and confidence is high, only handing control back for real blockers that require Liam. Treat rows with a tailored resume as Liam's standing approval to attempt the application, fill routine fields, upload the tailored resume, generate a required cover letter when needed, and proceed through the ATS until a true blocker appears.
 
+## Durable Operating Interpretation
+
+Future runs should preserve the clarified intent from Liam's May 2026 application sessions:
+
+- Attempt every reasonable unapplied row with a tailored resume. Do not leave `Resume Tailored` rows untouched merely because the form might have a final submit button.
+- Treat the tailored resume as pre-approval to fill routine fields, upload the tailored resume, generate/upload a required cover letter, use saved demographic answers, submit high-confidence applications, close successful tabs, update the tracker, refresh the cache, and continue.
+- Use a confidence decision on each live form. Submit and close the tab when confidence is high. When confidence is medium or low, fill every safe field, upload safe required artifacts, leave the tab open at the cleanest handoff point when useful, record the exact blocker, and continue to the next row without stopping the run.
+- Archive stale postings immediately when the tracked role is closed, unavailable, 404, or redirected to a board without the same role. Do not apply to a nearby or similar replacement role unless Liam explicitly approves that role substitution.
+- Commit and push after every 5 confirmed submissions, and also before ending when fewer than 5 confirmed tracker/cache changes are pending.
+
 When Liam authorizes parallel or subagent execution, use the parent/worker model below. Otherwise run the same workflow sequentially in the parent agent.
 
 ## Sources Of Truth
@@ -250,6 +260,7 @@ Fill every required factual field that can be answered from Liam's profile, resu
 - For filtered dropdowns, combo boxes, typeahead selects, and multi-select fields, do not merely type the desired answer and leave focus in the field. Open the menu, filter if helpful, then click or keyboard-select the actual option so the form records a real selection token/chip/value.
 - After selecting an option, verify the rendered value or chip appears in the field before moving on. This matters especially for Greenhouse demographic fields, location fields, school/degree fields, and "how did you hear about us" selects.
 - For multi-select demographic fields, select every matching standing answer that the form offers. If an exact label is unavailable, choose the closest truthful available option; otherwise use a decline/choose-not-to-answer option only for that specific unsupported field.
+- Some Greenhouse forms leave old red `This field is required` validation text visible after a typeahead option is correctly selected. Do not clear/retype blindly just because stale validation text remains. Verify the chip/rendered selected option exists, continue selecting the rest of the real options, and use a submit/revalidation attempt to confirm whether the error is still active.
 
 ### Cover Letters
 
