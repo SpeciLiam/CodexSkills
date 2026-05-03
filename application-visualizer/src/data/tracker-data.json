@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T18:24:24.049912+00:00",
+  "generatedAt": "2026-05-03T19:01:50.899868+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 447,
+      "total": 462,
       "applied": 325,
-      "unapplied": 122,
-      "active": 326,
+      "unapplied": 137,
+      "active": 341,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 328,
-      "reachOut": 390,
-      "recruiterRows": 100,
+      "highFit": 342,
+      "reachOut": 404,
+      "recruiterRows": 101,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 143,
-      "intakeQueued": 14,
-      "intakeNew": 22,
+      "intakeJobs": 156,
+      "intakeQueued": 8,
+      "intakeNew": 24,
       "intakeManual": 12,
       "intakeApplied": 0,
-      "applyRate": 72.7,
+      "applyRate": 70.3,
       "rejectionRate": 13.5,
-      "recruiterWork": 241,
-      "engineerWork": 299,
+      "recruiterWork": 255,
+      "engineerWork": 313,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 8
+        "value": 22
       },
       {
         "name": "Interviewing",
@@ -61,16 +61,20 @@
       {
         "name": "Online Assessment",
         "value": 3
+      },
+      {
+        "name": "Unknown",
+        "value": 1
       }
     ],
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 160
+        "value": 164
       },
       {
         "name": "Greenhouse",
-        "value": 150
+        "value": 160
       },
       {
         "name": "Ashby",
@@ -135,24 +139,28 @@
       {
         "name": "Meta Careers",
         "value": 1
+      },
+      {
+        "name": "2026-05-03",
+        "value": 1
       }
     ],
     "locationCounts": [
       {
         "name": "New York",
-        "value": 203
+        "value": 214
       },
       {
         "name": "Bay Area",
-        "value": 118
+        "value": 119
       },
       {
         "name": "Other",
-        "value": 60
+        "value": 61
       },
       {
         "name": "Remote",
-        "value": 45
+        "value": 47
       },
       {
         "name": "Seattle",
@@ -170,23 +178,23 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 248
+        "value": 256
       },
       {
         "name": "Backend",
-        "value": 54
+        "value": 56
       },
       {
         "name": "Full Stack",
-        "value": 53
+        "value": 54
       },
       {
         "name": "Forward Deployed",
-        "value": 30
+        "value": 31
       },
       {
         "name": "AI/ML",
-        "value": 28
+        "value": 30
       },
       {
         "name": "Infra/Platform",
@@ -198,7 +206,7 @@
       },
       {
         "name": "Frontend",
-        "value": 4
+        "value": 5
       }
     ],
     "fitCounts": [
@@ -240,7 +248,7 @@
       },
       {
         "score": "10",
-        "count": 157
+        "count": 171
       }
     ],
     "targetCounts": [
@@ -258,26 +266,30 @@
     "intakeStatusCounts": [
       {
         "name": "Tailored",
-        "value": 78
+        "value": 92
       },
       {
         "name": "New",
-        "value": 22
-      },
-      {
-        "name": "Queued",
-        "value": 14
+        "value": 24
       },
       {
         "name": "Skipped",
-        "value": 14
+        "value": 15
       },
       {
         "name": "Manual",
         "value": 12
       },
       {
+        "name": "Queued",
+        "value": 8
+      },
+      {
         "name": "Expired",
+        "value": 2
+      },
+      {
+        "name": "9",
         "value": 2
       },
       {
@@ -288,11 +300,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 88
+        "value": 98
       },
       {
         "name": "LinkedIn",
-        "value": 55
+        "value": 58
       }
     ],
     "timeline": [
@@ -450,9 +462,17 @@
       },
       {
         "date": "2026-05-03",
-        "cumulative": 447,
-        "added": 33,
+        "cumulative": 461,
+        "added": 47,
         "applied": 2,
+        "rejected": 0,
+        "interviewing": 0
+      },
+      {
+        "date": "Frontend](/Users/liamvan/Documents/Repos/CodexSkills/companies/Ramp/Software_Engineer_Frontend/Liam_Van_Resume/Liam_Van_Ramp.pdf)",
+        "cumulative": 462,
+        "added": 1,
+        "applied": 0,
         "rejected": 0,
         "interviewing": 0
       }
@@ -460,8 +480,8 @@
     "topCompanies": [
       {
         "company": "StubHub",
-        "roles": 10,
-        "avgFit": 9.3,
+        "roles": 11,
+        "avgFit": 9.36,
         "bestFit": 10
       },
       {
@@ -472,7 +492,7 @@
       },
       {
         "company": "Scale AI",
-        "roles": 7,
+        "roles": 8,
         "avgFit": 10.0,
         "bestFit": 10
       },
@@ -483,15 +503,15 @@
         "bestFit": 10
       },
       {
-        "company": "Palantir Technologies",
+        "company": "Attentive",
         "roles": 5,
-        "avgFit": 8.0,
+        "avgFit": 10.0,
         "bestFit": 10
       },
       {
-        "company": "Attentive",
-        "roles": 4,
-        "avgFit": 10.0,
+        "company": "Palantir Technologies",
+        "roles": 5,
+        "avgFit": 8.0,
         "bestFit": 10
       },
       {
@@ -520,6 +540,12 @@
       },
       {
         "company": "Fanatics Betting & Gaming",
+        "roles": 3,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
+        "company": "Clear Street",
         "roles": 3,
         "avgFit": 10.0,
         "bestFit": 10
@@ -595,12 +621,6 @@
         "roles": 2,
         "avgFit": 10.0,
         "bestFit": 10
-      },
-      {
-        "company": "Notion",
-        "roles": 2,
-        "avgFit": 10.0,
-        "bestFit": 10
       }
     ],
     "outreachGaps": [
@@ -650,6 +670,15 @@
         "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-identity-weights-biases-at-weights-biases-4341979511"
       },
       {
+        "company": "Watershed",
+        "role": "Software Engineer, Product",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/watershed/jobs/5600411003"
+      },
+      {
         "company": "Warner Bros. Discovery",
         "role": "Software Engineer II",
         "fitScore": 10,
@@ -675,6 +704,15 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-verifications-decisioning-at-upstart-4374834468"
+      },
+      {
+        "company": "Upside",
+        "role": "Software Engineer II",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-upside-4307067658"
       },
       {
         "company": "Udio",
@@ -848,6 +886,15 @@
         "jobLink": "https://job-boards.greenhouse.io/stubhubinc/jobs/4763976101"
       },
       {
+        "company": "StubHub",
+        "role": "Software Engineer II, Backend",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/stubhubinc/jobs/6847037003"
+      },
+      {
         "company": "Spotify",
         "role": "Backend Engineer, Music",
         "fitScore": 10,
@@ -900,33 +947,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/scaleai/jobs/4605996005?gh_src=acad35425us"
-      },
-      {
-        "company": "S&P Global",
-        "role": "Software Engineer II",
-        "fitScore": 10,
-        "status": "Resume Tailored",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-s-p-global-4402306070"
-      },
-      {
-        "company": "Rippling",
-        "role": "Software Engineer II, Backend Full Stack - Financial Product",
-        "fitScore": 10,
-        "status": "Resume Tailored",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-backend-full-stack-financial-product-at-rippling-4366714932"
-      },
-      {
-        "company": "Remitly",
-        "role": "Software Development Engineer II - Trust Decisioning Platform",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://careers.remitly.com/"
       }
     ],
     "recruiterBatch": {
@@ -13548,9 +13568,508 @@
       "activityDates": [
         "2026-05-03"
       ]
+    },
+    {
+      "company": "Upside",
+      "role": "Software Engineer II",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-upside-4307067658",
+      "postingKey": "software-engineer-ii-at-upside-4307067658",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Upside/Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Upside/Software_Engineer_II/Liam_Van_Resume/Liam_Van_Upside.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 1100 PT; tailored SWE resume rendered and verified one page; emphasized NYC marketplace and fintech-adjacent backend systems, product APIs, experimentation, data-backed workflows, testing, and production reliability. Applications were not submitted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Metronome",
+      "role": "Software Engineer, Product",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "New York City; Remote; San Francisco Bay Area",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/metronome/jobs/4425245008?gh_src=b17e39cd8us&src=levels.fyi",
+      "postingKey": "4425245008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Metronome/Software_Engineer_Product/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Metronome/Software_Engineer_Product/Liam_Van_Resume/Liam_Van_Metronome.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 1100 PT; tailored SWE resume rendered and verified one page; emphasized usage-based billing product engineering, full-stack customer workflows, React interfaces, backend APIs, integrations, testing, and fast product iteration. Applications were not submitted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "CoreWeave",
+      "role": "Software Engineer II - Artifact Management",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-artifact-management-at-coreweave-4347281231",
+      "postingKey": "software-engineer-ii-artifact-management-at-coreweave-4347281231",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CoreWeave/Software_Engineer_II_Artifact_Management/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CoreWeave/Software_Engineer_II_Artifact_Management/Liam_Van_Resume/Liam_Van_CoreWeave.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 1100 PT; tailored SWE resume rendered and verified one page; emphasized NYC platform engineering, artifact and developer workflows, cloud services, CI/CD, reliable APIs, testing, and operational ownership. Applications were not submitted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Clear Street",
+      "role": "Software Engineer, Front End- Execution Management System",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "New York",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/clearstreet/jobs/4956908?gh_src=Blind",
+      "postingKey": "4956908",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Clear Street/Software_Engineer_Front_End_Execution_Management_System/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Clear Street/Software_Engineer_Front_End_Execution_Management_System/Liam_Van_Resume/Liam_Van_Clear_Street.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 1100 PT; tailored SWE resume rendered and verified one page; emphasized NYC fintech frontend and full-stack execution workflows, React product surfaces, backend API collaboration, testing, observability, and reliable delivery. Applications were not submitted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Attentive",
+      "role": "Software Engineer II, Intelligent Messaging",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-intelligent-messaging-at-attentive-4347650789",
+      "postingKey": "software-engineer-ii-intelligent-messaging-at-attentive-4347650789",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Attentive/Software_Engineer_II_Intelligent_Messaging/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Attentive/Software_Engineer_II_Intelligent_Messaging/Liam_Van_Resume/Liam_Van_Attentive.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 1100 PT; tailored SWE resume rendered and verified one page; emphasized NYC intelligent messaging systems, AI-assisted product workflows, backend APIs, experimentation, customer-facing reliability, and high-quality full-stack delivery. Applications were not submitted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Watershed",
+      "role": "Software Engineer, Product",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "New York, NY / San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/watershed/jobs/5600411003",
+      "postingKey": "5600411003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Watershed/Software_Engineer_Product/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Watershed/Software_Engineer_Product/Liam_Van_Resume/Liam_Van_Watershed.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 1200 PT; tailored SWE resume rendered and verified one page; emphasized NYC/SF climate product engineering, full-stack customer workflows, React product surfaces, backend APIs, data-heavy workflows, testing, and production reliability. Applications were not submitted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Scale AI",
+      "role": "Software Engineer, AI Applications",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ai-applications-at-scale-ai-4400292789",
+      "postingKey": "software-engineer-ai-applications-at-scale-ai-4400292789",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scale AI/Software_Engineer_AI_Applications/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scale AI/Software_Engineer_AI_Applications/Liam_Van_Resume/Liam_Van_Scale_AI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 1200 PT; tailored SWE resume rendered and verified one page; emphasized applied AI product engineering, LLM-integrated workflows, backend APIs, full-stack delivery, evaluation-minded testing, and fast customer-facing iteration. Applications were not submitted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Persona",
+      "role": "Software Engineer, Backend",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "San Francisco, CA / New York, NY / Remote US",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/persona/jobs/6360867003",
+      "postingKey": "6360867003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Persona/Software_Engineer_Backend/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Persona/Software_Engineer_Backend/Liam_Van_Resume/Liam_Van_Persona.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 1200 PT; tailored SWE resume rendered and verified one page; emphasized identity infrastructure backend engineering, reliable APIs, data validation workflows, security-minded product systems, testing, and production ownership. Applications were not submitted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Hebbia",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/hebbia/jobs/4377217007",
+      "postingKey": "4377217007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Hebbia/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Hebbia/Software_Engineer/Liam_Van_Resume/Liam_Van_Hebbia.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 1200 PT; tailored SWE resume rendered and verified one page; emphasized NYC AI product engineering, knowledge-work automation, LLM-backed workflows, React and backend APIs, data pipelines, testing, and customer-facing reliability. Applications were not submitted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Ramp",
+      "role": "Software Engineer \\",
+      "applied": false,
+      "status": "Unknown",
+      "fitScore": 0,
+      "reachOut": false,
+      "referral": "[Ramp - Software Engineer \\",
+      "dateAdded": "Frontend](/Users/liamvan/Documents/Repos/CodexSkills/companies/Ramp/Software_Engineer_Frontend/Liam_Van_Resume/Liam_Van_Ramp.pdf)",
+      "location": "No",
+      "source": "2026-05-03",
+      "jobLink": "",
+      "postingKey": "LinkedIn",
+      "resumeFolder": "https://www.linkedin.com/jobs/search-results/?keywords=software%20engineer&geoId=103644278&f_TPR=r86400",
+      "resumePdf": "",
+      "recruiterContact": "Folder",
+      "recruiterProfile": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ramp/Software_Engineer_Frontend/Liam_Van_Resume/Liam_Van_Ramp.pdf",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "StubHub",
+      "role": "Software Engineer II, Backend",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/stubhubinc/jobs/6847037003",
+      "postingKey": "6847037003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/StubHub/Software_Engineer_II_Backend/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/StubHub/Software_Engineer_II_Backend/Liam_Van_Resume/Liam_Van_StubHub.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 1230 PT; tailored SWE resume rendered and verified one page; emphasized NYC backend marketplace engineering, API design, event-driven product workflows, testing, observability, and reliable high-traffic systems. Applications were not submitted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Runway",
+      "role": "Software Engineer, Applied AI",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/runwayml/jobs/4596829007",
+      "postingKey": "4596829007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Runway/Software_Engineer_Applied_AI/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Runway/Software_Engineer_Applied_AI/Liam_Van_Resume/Liam_Van_Runway.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 1230 PT; tailored SWE resume rendered and verified one page; emphasized NYC applied AI product engineering, model-backed workflows, backend APIs, full-stack prototyping, evaluation-minded testing, and fast production delivery. Applications were not submitted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Narmi",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/narmi/jobs/4542082007",
+      "postingKey": "4542082007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Narmi/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Narmi/Software_Engineer/Liam_Van_Resume/Liam_Van_Narmi.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 1230 PT; tailored SWE resume rendered and verified one page; emphasized NYC fintech full-stack engineering, digital banking workflows, React product surfaces, backend APIs, integrations, testing, and production reliability. Applications were not submitted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Hebbia",
+      "role": "Forward Deployed Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/hebbia/jobs/4058030008",
+      "postingKey": "4058030008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Hebbia/Forward_Deployed_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Hebbia/Forward_Deployed_Software_Engineer/Liam_Van_Resume/Liam_Van_Hebbia.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 1230 PT; tailored SWE resume rendered and verified one page; emphasized NYC forward-deployed AI engineering, customer-facing workflows, LLM-backed product systems, backend APIs, demos, validation, and reliable delivery. Applications were not submitted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03"
+      ]
+    },
+    {
+      "company": "Abridge",
+      "role": "Software Engineer, Full Stack",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "San Francisco, CA or New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/abridge/jobs/4518531007",
+      "postingKey": "4518531007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Abridge/Software_Engineer_Full_Stack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Abridge/Software_Engineer_Full_Stack/Liam_Van_Resume/Liam_Van_Abridge.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-03 1230 PT; tailored SWE resume rendered and verified one page; emphasized NYC/SF healthcare AI full-stack engineering, React product surfaces, backend APIs, data-heavy workflows, testing, and production-quality clinical tooling. Applications were not submitted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-03"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "StubHub",
+      "role": "Software Engineer II, Backend",
+      "location": "New York, NY",
+      "postingKey": "6847037003",
+      "jobUrl": "https://job-boards.greenhouse.io/stubhubinc/jobs/6847037003",
+      "discoveredAt": "2026-05-03T18:25:07.251531+00:00",
+      "postedAge": "public Greenhouse result; visible in current search",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized NYC backend marketplace engineering, API design, event-driven product workflows, testing, observability, and reliable high-traffic systems",
+      "trackerPostingKey": "6847037003"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Runway",
+      "role": "Software Engineer, Applied AI",
+      "location": "New York, NY",
+      "postingKey": "4596829007",
+      "jobUrl": "https://job-boards.greenhouse.io/runwayml/jobs/4596829007",
+      "discoveredAt": "2026-05-03T18:25:07.251531+00:00",
+      "postedAge": "public Greenhouse result; visible in current search",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized NYC applied AI product engineering, model-backed workflows, backend APIs, full-stack prototyping, evaluation-minded testing, and fast production delivery",
+      "trackerPostingKey": "4596829007"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Narmi",
+      "role": "Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "4542082007",
+      "jobUrl": "https://job-boards.greenhouse.io/narmi/jobs/4542082007",
+      "discoveredAt": "2026-05-03T18:25:07.251531+00:00",
+      "postedAge": "public Greenhouse result; visible in current search",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized NYC fintech full-stack engineering, digital banking workflows, React product surfaces, backend APIs, integrations, testing, and production reliability",
+      "trackerPostingKey": "4542082007"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Hebbia",
+      "role": "Forward Deployed Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "4058030008",
+      "jobUrl": "https://job-boards.greenhouse.io/hebbia/jobs/4058030008",
+      "discoveredAt": "2026-05-03T18:25:07.251531+00:00",
+      "postedAge": "public Greenhouse result; visible in current search",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized NYC forward-deployed AI engineering, customer-facing workflows, LLM-backed product systems, backend APIs, demos, validation, and reliable delivery",
+      "trackerPostingKey": "4058030008"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Abridge",
+      "role": "Software Engineer, Full Stack",
+      "location": "San Francisco, CA or New York, NY",
+      "postingKey": "4518531007",
+      "jobUrl": "https://job-boards.greenhouse.io/abridge/jobs/4518531007",
+      "discoveredAt": "2026-05-03T18:25:07.251531+00:00",
+      "postedAge": "public Greenhouse result; visible in current search",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized NYC/SF healthcare AI full-stack engineering, React product surfaces, backend APIs, data-heavy workflows, testing, and production-quality clinical tooling",
+      "trackerPostingKey": "4518531007"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Watershed",
+      "role": "Software Engineer, Product",
+      "location": "New York, NY / San Francisco, CA",
+      "postingKey": "5600411003",
+      "jobUrl": "https://job-boards.greenhouse.io/watershed/jobs/5600411003",
+      "discoveredAt": "2026-05-03T18:24:49.970754+00:00",
+      "postedAge": "public Greenhouse search result",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized NYC/SF climate product engineering, full-stack customer workflows, React product surfaces, backend APIs, data-heavy workflows, testing, and production reliability",
+      "trackerPostingKey": "5600411003"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Scale AI",
+      "role": "Software Engineer, AI Applications",
+      "location": "San Francisco, CA",
+      "postingKey": "4400292789",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-ai-applications-at-scale-ai-4400292789",
+      "discoveredAt": "2026-05-03T18:24:49.970754+00:00",
+      "postedAge": "LinkedIn canonical search result; within 24h filter",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized applied AI product engineering, LLM-integrated workflows, backend APIs, full-stack delivery, evaluation-minded testing, and fast customer-facing iteration",
+      "trackerPostingKey": "4400292789"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Persona",
+      "role": "Software Engineer, Backend",
+      "location": "San Francisco, CA / New York, NY / Remote US",
+      "postingKey": "6360867003",
+      "jobUrl": "https://job-boards.greenhouse.io/persona/jobs/6360867003",
+      "discoveredAt": "2026-05-03T18:24:49.970754+00:00",
+      "postedAge": "public Greenhouse search result",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized identity infrastructure backend engineering, reliable APIs, data validation workflows, security-minded product systems, testing, and production ownership",
+      "trackerPostingKey": "6360867003"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Hebbia",
+      "role": "Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "4377217007",
+      "jobUrl": "https://job-boards.greenhouse.io/hebbia/jobs/4377217007",
+      "discoveredAt": "2026-05-03T18:24:49.970754+00:00",
+      "postedAge": "public Greenhouse search result",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized NYC AI product engineering, knowledge-work automation, LLM-backed workflows, React and backend APIs, data pipelines, testing, and customer-facing reliability",
+      "trackerPostingKey": "4377217007"
+    },
     {
       "source": "LinkedIn",
       "company": "Upside",
@@ -13561,9 +14080,9 @@
       "discoveredAt": "2026-05-03T18:16:06.686035+00:00",
       "postedAge": "2 weeks ago; public LinkedIn degraded capture",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized NYC marketplace and fintech-adjacent backend systems, product APIs, experimentation, data-backed workflows, testing, and production reliability",
+      "trackerPostingKey": "software-engineer-ii-at-upside-4307067658"
     },
     {
       "source": "Greenhouse",
@@ -13575,9 +14094,9 @@
       "discoveredAt": "2026-05-03T18:16:06.686035+00:00",
       "postedAge": "web-visible Greenhouse result",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized usage-based billing product engineering, full-stack customer workflows, React interfaces, backend APIs, integrations, testing, and fast product iteration",
+      "trackerPostingKey": "4425245008"
     },
     {
       "source": "LinkedIn",
@@ -13589,9 +14108,9 @@
       "discoveredAt": "2026-05-03T18:16:06.686035+00:00",
       "postedAge": "2 weeks ago; public LinkedIn degraded capture",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized NYC platform engineering, artifact and developer workflows, cloud services, CI/CD, reliable APIs, testing, and operational ownership",
+      "trackerPostingKey": "software-engineer-ii-artifact-management-at-coreweave-4347281231"
     },
     {
       "source": "Greenhouse",
@@ -13603,9 +14122,9 @@
       "discoveredAt": "2026-05-03T18:16:06.686035+00:00",
       "postedAge": "web-visible Greenhouse result",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized NYC fintech frontend and full-stack execution workflows, React product surfaces, backend API collaboration, testing, observability, and reliable delivery",
+      "trackerPostingKey": "4956908"
     },
     {
       "source": "LinkedIn",
@@ -13617,9 +14136,9 @@
       "discoveredAt": "2026-05-03T18:16:06.686035+00:00",
       "postedAge": "1 week ago; public LinkedIn degraded capture",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized NYC intelligent messaging systems, AI-assisted product workflows, backend APIs, experimentation, customer-facing reliability, and high-quality full-stack delivery",
+      "trackerPostingKey": "software-engineer-ii-intelligent-messaging-at-attentive-4347650789"
     },
     {
       "source": "Greenhouse",
@@ -14686,6 +15205,20 @@
       "trackerPostingKey": "4401827377"
     },
     {
+      "source": "LinkedIn",
+      "company": "Ramp",
+      "role": "Software Engineer \\",
+      "location": "Frontend",
+      "postingKey": "New York, NY",
+      "jobUrl": "linkedin-public-ramp-frontend-ny-2026-05-03",
+      "discoveredAt": "https://www.linkedin.com/jobs/search-results/?keywords=software%20engineer&geoId=103644278&f_TPR=r86400",
+      "postedAge": "2026-05-03T18:25:07.251531+00:00",
+      "fitScore": 0,
+      "status": "9",
+      "reason": "Queued",
+      "trackerPostingKey": "SWE-family role, NYC preference"
+    },
+    {
       "source": "Greenhouse",
       "company": "AlphaSense",
       "role": "Software Engineer II (Search Team)",
@@ -14694,6 +15227,20 @@
       "jobUrl": "https://job-boards.greenhouse.io/alphasense/jobs/8160077002",
       "discoveredAt": "2026-05-03T18:16:06.686035+00:00",
       "postedAge": "web-visible Greenhouse result",
+      "fitScore": 9,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-03; Delhi-based role is outside the preferred U.S. location set for this intake pass",
+      "trackerPostingKey": "8160077002"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Loop",
+      "role": "2026 New Grad - Software Engineer, Full-Stack (Chicago)",
+      "location": "Chicago, IL",
+      "postingKey": "5981831004",
+      "jobUrl": "https://job-boards.greenhouse.io/loop/jobs/5981831004",
+      "discoveredAt": "2026-05-03T17:10:59.415715+00:00",
+      "postedAge": "public Greenhouse result; crawled last week",
       "fitScore": 9,
       "status": "Queued",
       "reason": "SWE-family role, early-career signal, location needs review",
@@ -15135,6 +15682,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Abridge",
+      "role": "Forward Deployed Engineer",
+      "location": "New York, NY / San Francisco, CA / Remote US",
+      "postingKey": "4596052007",
+      "jobUrl": "https://job-boards.greenhouse.io/abridge/jobs/4596052007",
+      "discoveredAt": "2026-05-03T18:24:49.970754+00:00",
+      "postedAge": "public Greenhouse search result",
+      "fitScore": 7,
+      "status": "New",
+      "reason": "Held 2026-05-03; fit score 7 after public Greenhouse capture, revisit if Liam wants forward-deployed healthcare AI roles prioritized",
+      "trackerPostingKey": "4596052007"
+    },
+    {
+      "source": "Greenhouse",
       "company": "Workato",
       "role": "Forward Deployed Engineer",
       "location": "Boston, MA; New York, NY; Palo Alto, CA",
@@ -15257,6 +15818,20 @@
       "fitScore": 7,
       "status": "New",
       "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Verkada",
+      "role": "Software Engineer, Backend",
+      "location": "San Mateo, CA",
+      "postingKey": "4669056007",
+      "jobUrl": "https://job-boards.greenhouse.io/verkada/jobs/4669056007",
+      "discoveredAt": "2026-05-03T18:25:07.251531+00:00",
+      "postedAge": "public Greenhouse result; visible in current search",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, location needs review",
       "trackerPostingKey": ""
     },
     {
@@ -15540,18 +16115,18 @@
       "trackerPostingKey": ""
     },
     {
-      "source": "Greenhouse",
-      "company": "Loop",
-      "role": "2026 New Grad - Software Engineer, Full-Stack (Chicago)",
-      "location": "Chicago, IL",
-      "postingKey": "5981831004",
-      "jobUrl": "https://job-boards.greenhouse.io/loop/jobs/5981831004",
-      "discoveredAt": "2026-05-03T17:10:59.415715+00:00",
-      "postedAge": "public Greenhouse result; crawled last week",
-      "fitScore": 9,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, location needs review",
-      "trackerPostingKey": ""
+      "source": "LinkedIn",
+      "company": "Ramp",
+      "role": "Software Engineer \\",
+      "location": "Frontend",
+      "postingKey": "New York, NY",
+      "jobUrl": "linkedin-public-ramp-frontend-ny-2026-05-03",
+      "discoveredAt": "https://www.linkedin.com/jobs/search-results/?keywords=software%20engineer&geoId=103644278&f_TPR=r86400",
+      "postedAge": "2026-05-03T18:24:49.970754+00:00",
+      "fitScore": 0,
+      "status": "9",
+      "reason": "Queued",
+      "trackerPostingKey": "SWE-family role, NYC preference"
     }
   ],
   "outreachQueue": [
@@ -15621,6 +16196,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Watershed",
+      "role": "Software Engineer, Product",
+      "postingKey": "5600411003",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/watershed/jobs/5600411003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Warp",
       "role": "Software Engineer",
       "postingKey": "4324888004",
@@ -15680,6 +16268,19 @@
       "status": "Resume Tailored",
       "reachOut": true,
       "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-verifications-decisioning-at-upstart-4374834468",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Upside",
+      "role": "Software Engineer II",
+      "postingKey": "software-engineer-ii-at-upside-4307067658",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-upside-4307067658",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
@@ -15933,6 +16534,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "StubHub",
+      "role": "Software Engineer II, Backend",
+      "postingKey": "6847037003",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/stubhubinc/jobs/6847037003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Spotify",
       "role": "Backend Engineer, Music",
       "postingKey": "ee5064af-0116-4ef2-994a-cb8fed580290",
@@ -16011,6 +16625,19 @@
       "notes": ""
     },
     {
+      "company": "Scale AI",
+      "role": "Software Engineer, AI Applications",
+      "postingKey": "software-engineer-ai-applications-at-scale-ai-4400292789",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ai-applications-at-scale-ai-4400292789",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "S&P Global",
       "role": "Software Engineer II",
       "postingKey": "software-engineer-ii-at-s-p-global-4402306070",
@@ -16021,6 +16648,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Runway",
+      "role": "Software Engineer, Applied AI",
+      "postingKey": "4596829007",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/runwayml/jobs/4596829007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -16138,6 +16778,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Persona",
+      "role": "Software Engineer, Backend",
+      "postingKey": "6360867003",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/persona/jobs/6360867003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -16284,6 +16937,19 @@
       "notes": ""
     },
     {
+      "company": "Narmi",
+      "role": "Software Engineer",
+      "postingKey": "4542082007",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/narmi/jobs/4542082007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Morgan Stanley",
       "role": "Associate Software Engineer",
       "postingKey": "4386890681",
@@ -16334,6 +17000,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Metronome",
+      "role": "Software Engineer, Product",
+      "postingKey": "4425245008",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/metronome/jobs/4425245008?gh_src=b17e39cd8us&src=levels.fyi",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Memorial Sloan Kettering Cancer Center",
@@ -16503,6 +17182,32 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Hebbia",
+      "role": "Software Engineer",
+      "postingKey": "4377217007",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/hebbia/jobs/4377217007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Hebbia",
+      "role": "Forward Deployed Software Engineer",
+      "postingKey": "4058030008",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/hebbia/jobs/4058030008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Handshake",
@@ -16778,6 +17483,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "CoreWeave",
+      "role": "Software Engineer II - Artifact Management",
+      "postingKey": "software-engineer-ii-artifact-management-at-coreweave-4347281231",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-artifact-management-at-coreweave-4347281231",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Confido",
       "role": "New Grad Software Engineer",
       "postingKey": "4401827377",
@@ -16837,6 +17555,19 @@
       "status": "Resume Tailored",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/clearstreet/jobs/7535167",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Clear Street",
+      "role": "Software Engineer, Front End- Execution Management System",
+      "postingKey": "4956908",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/clearstreet/jobs/4956908?gh_src=Blind",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
@@ -17012,6 +17743,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Attentive",
+      "role": "Software Engineer II, Intelligent Messaging",
+      "postingKey": "software-engineer-ii-intelligent-messaging-at-attentive-4347650789",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-intelligent-messaging-at-attentive-4347650789",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Arena Physica",
       "role": "Software Engineer",
       "postingKey": "4593097101",
@@ -17123,6 +17867,19 @@
       "status": "Resume Tailored",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/addepar1/jobs/8387694002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Abridge",
+      "role": "Software Engineer, Full Stack",
+      "postingKey": "4518531007",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/abridge/jobs/4518531007",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
@@ -28869,6 +29626,18 @@
           ]
         },
         {
+          "key": "4518531007",
+          "company": "Abridge",
+          "role": "Software Engineer, Full Stack",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8387694002",
           "company": "Addepar",
           "role": "Backend Software Engineer - Investor Solutions",
@@ -28965,6 +29734,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-ii-intelligent-messaging-at-attentive-4347650789",
+          "company": "Attentive",
+          "role": "Software Engineer II, Intelligent Messaging",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "a4172515-0353-47ec-9c71-631a294aa137",
           "company": "Automat",
           "role": "Software Engineer (Junior/Intermediate)",
@@ -29025,11 +29806,35 @@
           "contacts": []
         },
         {
+          "key": "4956908",
+          "company": "Clear Street",
+          "role": "Software Engineer, Front End- Execution Management System",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4401827377",
           "company": "Confido",
           "role": "New Grad Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-ii-artifact-management-at-coreweave-4347281231",
+          "company": "CoreWeave",
+          "role": "Software Engineer II - Artifact Management",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -29145,6 +29950,30 @@
           "contacts": []
         },
         {
+          "key": "4377217007",
+          "company": "Hebbia",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4058030008",
+          "company": "Hebbia",
+          "role": "Forward Deployed Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4404859319",
           "company": "Loop",
           "role": "2026 New Grad Software Engineer, Full-Stack",
@@ -29193,6 +30022,18 @@
           "contacts": []
         },
         {
+          "key": "4425245008",
+          "company": "Metronome",
+          "role": "Software Engineer, Product",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "cbf278fd-84ec-48d9-8052-b76abb035ac7",
           "company": "Mirage",
           "role": "Software Engineer, Early Career",
@@ -29210,6 +30051,18 @@
           "role": "Software Engineer, Growth (New Grad)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4542082007",
+          "company": "Narmi",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -29258,6 +30111,18 @@
           "role": "Software Engineer - AI Tooling & Quality Engineering Platforms",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "6360867003",
+          "company": "Persona",
+          "role": "Software Engineer, Backend",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -29337,6 +30202,18 @@
           "contacts": []
         },
         {
+          "key": "4596829007",
+          "company": "Runway",
+          "role": "Software Engineer, Applied AI",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-ii-at-s-p-global-4402306070",
           "company": "S&P Global",
           "role": "Software Engineer II",
@@ -29402,6 +30279,18 @@
           "role": "Software Engineer, Gen AI",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-ai-applications-at-scale-ai-4400292789",
+          "company": "Scale AI",
+          "role": "Software Engineer, AI Applications",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -29486,6 +30375,18 @@
           "role": "Software Engineer II - (Fullstack / Product Engineering)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "6847037003",
+          "company": "StubHub",
+          "role": "Software Engineer II, Backend",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -29601,9 +30502,33 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-ii-at-upside-4307067658",
+          "company": "Upside",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4593081008",
           "company": "Versaterm",
           "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5600411003",
+          "company": "Watershed",
+          "role": "Software Engineer, Product",
           "fitScore": 10,
           "status": "Resume Tailored",
           "count": 1,
@@ -40527,6 +41452,18 @@
           ]
         },
         {
+          "key": "4518531007",
+          "company": "Abridge",
+          "role": "Software Engineer, Full Stack",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8387694002",
           "company": "Addepar",
           "role": "Backend Software Engineer - Investor Solutions",
@@ -40623,6 +41560,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-ii-intelligent-messaging-at-attentive-4347650789",
+          "company": "Attentive",
+          "role": "Software Engineer II, Intelligent Messaging",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4974798008",
           "company": "Beacon Software",
           "role": "Software Engineer",
@@ -40671,11 +41620,35 @@
           "contacts": []
         },
         {
+          "key": "4956908",
+          "company": "Clear Street",
+          "role": "Software Engineer, Front End- Execution Management System",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4401827377",
           "company": "Confido",
           "role": "New Grad Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-ii-artifact-management-at-coreweave-4347281231",
+          "company": "CoreWeave",
+          "role": "Software Engineer II - Artifact Management",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -40791,6 +41764,30 @@
           "contacts": []
         },
         {
+          "key": "4377217007",
+          "company": "Hebbia",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4058030008",
+          "company": "Hebbia",
+          "role": "Forward Deployed Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5780582004",
           "company": "Loop",
           "role": "2026 New Grad - Software Engineer, Full-Stack",
@@ -40827,6 +41824,18 @@
           "contacts": []
         },
         {
+          "key": "4425245008",
+          "company": "Metronome",
+          "role": "Software Engineer, Product",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "cbf278fd-84ec-48d9-8052-b76abb035ac7",
           "company": "Mirage",
           "role": "Software Engineer, Early Career",
@@ -40844,6 +41853,18 @@
           "role": "Software Engineer, Growth (New Grad)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4542082007",
+          "company": "Narmi",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -40892,6 +41913,18 @@
           "role": "Software Engineer - AI Tooling & Quality Engineering Platforms",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "6360867003",
+          "company": "Persona",
+          "role": "Software Engineer, Backend",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -40983,6 +42016,18 @@
           "contacts": []
         },
         {
+          "key": "4596829007",
+          "company": "Runway",
+          "role": "Software Engineer, Applied AI",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-ii-at-s-p-global-4402306070",
           "company": "S&P Global",
           "role": "Software Engineer II",
@@ -41048,6 +42093,18 @@
           "role": "Software Engineer, Gen AI",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-ai-applications-at-scale-ai-4400292789",
+          "company": "Scale AI",
+          "role": "Software Engineer, AI Applications",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -41132,6 +42189,18 @@
           "role": "Software Engineer II - (Fullstack / Product Engineering)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "6847037003",
+          "company": "StubHub",
+          "role": "Software Engineer II, Backend",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -41259,9 +42328,33 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-ii-at-upside-4307067658",
+          "company": "Upside",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4593081008",
           "company": "Versaterm",
           "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5600411003",
+          "company": "Watershed",
+          "role": "Software Engineer, Product",
           "fitScore": 10,
           "status": "Resume Tailored",
           "count": 1,
