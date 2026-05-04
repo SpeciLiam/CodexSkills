@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 404
+Companies queued: 407
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -72,6 +72,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Point72 | Software Engineer, Commodities Technology | 8180667002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/point72/jobs/8180667002) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Point72 | Software Engineer - 2026 Grad | 8202068002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/point72/jobs/8202068002?gh_jid=8202068002) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Plaid | Software Engineer | 49139a62-a9bc-4400-ae89-789818b34cb8 | 10 | Applied | Yes | [Posting](https://jobs.lever.co/plaid/49139a62-a9bc-4400-ae89-789818b34cb8/apply?lever-origin=applied&lever-source=LinkedInPaid) |  |  |  |  |
+| Piramidal | Forward Deployed Engineer | 4212486009 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/piramidalinc/jobs/4212486009?gh_src=Blind) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Pinterest | Software Engineer I, Backend | 6816337 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/embed/job_app?for=pinterest&token=6816337) |  |  |  |  |
 | Pinterest | Security Software Engineer II, Detection and Response | 7770914 | 10 | Applied | Yes | [Posting](https://www.pinterestcareers.com/jobs/?gh_jid=7770914) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Pinterest | Software Engineer II, Backend | 4813946 | 10 | Applied | Yes | [Posting](https://www.pinterestcareers.com/jobs/?gh_jid=4813946) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
@@ -236,6 +237,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Palantir Technologies | Forward Deployed Software Engineer (New York) | dab396d4-2f14-4796-aac0-0d82883dccf0 | 9 | Applied | Yes | [Posting](https://jobs.lever.co/palantir/dab396d4-2f14-4796-aac0-0d82883dccf0) |  |  |  |  |
 | OpenAI | Software Engineer, Codex Cloud | 130a5389-83e1-493f-9205-542d3ff53afb | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/openai/130a5389-83e1-493f-9205-542d3ff53afb/application) |  |  |  |  |
 | OpenAI | Forward Deployed Software Engineer - NYC | forward-deployed-software-engineer-nyc-at-openai-4349516535 | 9 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/forward-deployed-software-engineer-nyc-at-openai-4349516535) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
+| Omniva-Corp | Software Engineer I | omnivacorpsandbox | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/omnivacorpsandbox) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Nue | Full-Stack Software Engineer (New Grad) | am9icG9zdDob7-dG2QGrMQovdiXJRx7P | 9 | Applied | Yes | [Posting](https://jobs.gem.com/nue/am9icG9zdDob7-dG2QGrMQovdiXJRx7P) |  |  |  |  |
 | ngrok | Software Engineer II/III/Senior, Gateway | 5789584004 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/ngrokinc/jobs/5789584004) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Neuralink | Software Engineer, Implant Manufacturing | 6353417003 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/neuralink/jobs/6353417003) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
@@ -261,6 +263,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Foxglove | Software Engineer, New Grad | 4398854319 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4398854319/) |  |  |  |  |
 | First Resonance | Forward Deployed Software Engineer | fdb3fcb7-2575-4fb2-b5d8-945a7aeab427 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/first-resonance/fdb3fcb7-2575-4fb2-b5d8-945a7aeab427/application) |  |  |  |  |
 | Figma | Software Engineer, Full Stack | 5691911004 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/figma/jobs/5691911004?gh_jid=5691911004&gh_src=28109e334us&source=LinkedIn) |  |  |  |  |
+| Ever | Software Engineer | 5064724008 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/ever/jobs/5064724008) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Ema | Software Engineer, Backend | 4409831521 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4409831521/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Dash0 | Platform Engineer | c71c1a08-d9ea-4229-b7c9-a3ac9eabc95c | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/dash0/c71c1a08-d9ea-4229-b7c9-a3ac9eabc95c/application?utm_source=LinkedIn) |  |  |  |  |
 | Dagster Labs | Software Engineer - Platform | 7714923003 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/dagsterlabs/jobs/7714923003?gh_src=ojd9d6tp3us) |  |  |  |  |
