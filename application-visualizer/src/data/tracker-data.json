@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T21:06:36.785138+00:00",
+  "generatedAt": "2026-05-04T22:07:13.492978+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,34 +9,34 @@
   },
   "stats": {
     "kpis": {
-      "total": 498,
-      "applied": 336,
-      "unapplied": 162,
-      "active": 346,
+      "total": 505,
+      "applied": 337,
+      "unapplied": 168,
+      "active": 353,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 379,
-      "reachOut": 436,
+      "highFit": 386,
+      "reachOut": 443,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 218,
+      "intakeJobs": 225,
       "intakeQueued": 30,
       "intakeNew": 37,
-      "intakeManual": 22,
+      "intakeManual": 29,
       "intakeApplied": 0,
-      "applyRate": 67.5,
+      "applyRate": 66.7,
       "rejectionRate": 13.1,
-      "recruiterWork": 258,
-      "engineerWork": 316,
+      "recruiterWork": 265,
+      "engineerWork": 323,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 285
+        "value": 286
       },
       {
         "name": "Archived",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 54
+        "value": 61
       },
       {
         "name": "Rejected",
@@ -57,16 +57,12 @@
       {
         "name": "Online Assessment",
         "value": 3
-      },
-      {
-        "name": "Resume Tailored",
-        "value": 1
       }
     ],
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 188
+        "value": 195
       },
       {
         "name": "LinkedIn",
@@ -140,7 +136,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 230
+        "value": 231
       },
       {
         "name": "Bay Area",
@@ -148,11 +144,11 @@
       },
       {
         "name": "Other",
-        "value": 68
+        "value": 69
       },
       {
         "name": "Remote",
-        "value": 52
+        "value": 57
       },
       {
         "name": "Seattle",
@@ -170,15 +166,15 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 278
-      },
-      {
-        "name": "Backend",
-        "value": 62
+        "value": 279
       },
       {
         "name": "Full Stack",
-        "value": 59
+        "value": 64
+      },
+      {
+        "name": "Backend",
+        "value": 63
       },
       {
         "name": "Forward Deployed",
@@ -232,7 +228,7 @@
       },
       {
         "score": "8",
-        "count": 92
+        "count": 96
       },
       {
         "score": "9",
@@ -240,7 +236,7 @@
       },
       {
         "score": "10",
-        "count": 194
+        "count": 197
       }
     ],
     "targetCounts": [
@@ -270,7 +266,7 @@
       },
       {
         "name": "Manual",
-        "value": 22
+        "value": 29
       },
       {
         "name": "Skipped",
@@ -288,7 +284,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 154
+        "value": 161
       },
       {
         "name": "LinkedIn",
@@ -452,14 +448,14 @@
         "date": "2026-05-03",
         "cumulative": 484,
         "added": 70,
-        "applied": 7,
+        "applied": 8,
         "rejected": 0,
         "interviewing": 0
       },
       {
         "date": "2026-05-04",
-        "cumulative": 498,
-        "added": 14,
+        "cumulative": 505,
+        "added": 21,
         "applied": 1,
         "rejected": 0,
         "interviewing": 0
@@ -509,6 +505,12 @@
         "bestFit": 10
       },
       {
+        "company": "Clear Street",
+        "roles": 4,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "Loop",
         "roles": 4,
         "avgFit": 9.5,
@@ -528,12 +530,6 @@
       },
       {
         "company": "Fanatics Betting & Gaming",
-        "roles": 3,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Clear Street",
         "roles": 3,
         "avgFit": 10.0,
         "bestFit": 10
@@ -10022,12 +10018,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized ai. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized ai. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Location (City)*; Are you currently authorized to work in the United States? *",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10049,12 +10046,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you over 18 years of age?; Do you have unlimited and unrestricted authorization to work in the United States (or, if the position is not based in the United States., do you have unlimited and unrestricted authorization to work in the country where the position is located)?",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10076,12 +10074,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required desired salary field; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required desired salary field; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Street Address; City",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10103,13 +10102,14 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required compensation-expectations alignment question; not submitted 2026-05-01; Manual apply needed: required salary alignment question 2026-05-03; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized ai. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required compensation-expectations alignment question; not submitted 2026-05-01; Manual apply needed: required salary alignment question 2026-05-03; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized ai. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you legally authorized to work in the United States?; Do you currently reside in California?",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
         "2026-05-03",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10131,12 +10131,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required desired salary field; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required desired salary field; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: page error",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10158,12 +10159,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized infra. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized infra. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Compensation & Benefits; Location (City)*",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10185,12 +10187,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: Greenhouse email security code verification after submit 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized test. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: Greenhouse email security code verification after submit 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized test. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Onsite in San Bruno required",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10212,14 +10215,15 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: Greenhouse email security code verification after submit 2026-05-01; Greenhouse form staged with tailored resume and routine answers; left open at final Submit application button pending action-time confirmation; May 1 code wsiuxZPD found in Gmail but may be stale 2026-05-02.; Application submitted via Greenhouse confirmation page 2026-05-02; verification code completed from Gmail.; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: Greenhouse email security code verification after submit 2026-05-01; Greenhouse form staged with tailored resume and routine answers; left open at final Submit application button pending action-time confirmation; May 1 code wsiuxZPD found in Gmail but may be stale 2026-05-02.; Application submitted via Greenhouse confirmation page 2026-05-02; verification code completed from Gmail.; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Location (City)*; Rent the Runway currently operates on an office-centric model, with employees working from our Brooklyn office 4-days per week, and working flexibly on Fridays. Can you meet this requirement?*",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
         "2026-05-02",
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10241,12 +10245,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: requires exact earliest available start date 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: requires exact earliest available start date 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume reapply attempt 2026-05-04 stopped on blocker: Clean regenerated resume uploaded where possible; submit stopped on validation/blocker: GET STARTED Shop Blog UnKibble Careers Privacy Policy Terms of Use Media Inquiries Affiliate Inquiries Refer a Friend Contact Us Sign Up for Pet Tips & More SIGN UP",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10295,14 +10300,15 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: Greenhouse email security code verification after submit attempt 2026-05-01; tailored cover letter generated and uploaded before blocker; Greenhouse form staged with tailored resume, cover letter, profile, education, website, and truthful Clearable current-clearance answer; left open at final Submit application button pending action-time confirmation 2026-05-02.; Application submitted via Greenhouse confirmation page 2026-05-02; verification code completed from Gmail.; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: Greenhouse email security code verification after submit attempt 2026-05-01; tailored cover letter generated and uploaded before blocker; Greenhouse form staged with tailored resume, cover letter, profile, education, website, and truthful Clearable current-clearance answer; left open at final Submit application button pending action-time confirmation 2026-05-02.; Application submitted via Greenhouse confirmation page 2026-05-02; verification code completed from Gmail.; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Current clearance level",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
         "2026-05-02",
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10324,13 +10330,14 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required export-control/legal history attestations beyond standing answers; not submitted 2026-05-01; Application submitted via Greenhouse browser flow on 2026-05-02; uploaded tailored resume and answered work-authorization/export-control questions with high confidence.; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized platform. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required export-control/legal history attestations beyond standing answers; not submitted 2026-05-01; Application submitted via Greenhouse browser flow on 2026-05-02; uploaded tailored resume and answered work-authorization/export-control questions with high confidence.; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized platform. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you legally authorized to work in the United States? *; 1. Please confirm that you are either: (a) a U.S. citizen; (b) lawful permanent resident of the U.S. (green card holder); or (3) protected individual as defined by 8 U.S.C. 1324b(a)(3).",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10352,12 +10359,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: Apptronik form requires export-control/legal history attestations beyond standing answers; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized platform. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: Apptronik form requires export-control/legal history attestations beyond standing answers; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized platform. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you legally authorized to work in the United States? *; 1. Please confirm that you are either: (a) a U.S. citizen; (b) lawful permanent resident of the U.S. (green card holder); or (3) protected individual as defined by 8 U.S.C. 1324b(a)(3).",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10379,12 +10387,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01; Greenhouse confirmation page displayed; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01; Greenhouse confirmation page displayed; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Location: Waltham, MA (hybrid- 3 days In-Office)",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10406,12 +10415,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01 with tailored resume and resume-grounded exceptional-work response; Greenhouse confirmation page displayed; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01 with tailored resume and resume-grounded exceptional-work response; Greenhouse confirmation page displayed; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: COMPENSATION AND BENEFITS; Full Legal Name*",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10433,12 +10443,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01; Greenhouse confirmation page displayed; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01; Greenhouse confirmation page displayed; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: This position requires access to information and technology that is subject to US export controls. Are you any of the following \u201cprotected individuals\u201d as defined in the Immigration and Naturalization Act, 8 USC 1324b(a)(3)?; Have you worked for the U.S. Department of Defense (DoD) within the past two (2) years in a role that may be subject to post-government employment restrictions (Sec. 847 30-day letter)? If you have not worked for the DoD in the past two (2) years, please select \u201cNo.\u201d Otherw",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10460,12 +10471,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required custom personal project and LLM/social profile responses; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required custom personal project and LLM/social profile responses; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume reapply attempt 2026-05-04 stopped on blocker: Clean regenerated resume uploaded where possible; submit stopped on validation/blocker:",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10487,12 +10499,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required custom robotics/edge, observability, and distributed-systems experience responses; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required custom robotics/edge, observability, and distributed-systems experience responses; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: How did you find out about this opportunity?; Are you located in and legally authorized to work in the United States?",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10514,12 +10527,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01; Greenhouse confirmation page displayed; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01; Greenhouse confirmation page displayed; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Documentation Practices: Maintain clear and accurate technical documentation to support knowledge sharing and compliance readiness.; Are you legally authorized to work in the United States? *",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10541,12 +10555,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required salary expectation and active security clearance/Security+ qualification fields; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized dotnet. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required salary expectation and active security clearance/Security+ qualification fields; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized dotnet. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume reapply attempt 2026-05-04 stopped on blocker: Clean regenerated resume uploaded where possible; submit stopped on validation/blocker: What We Do Who We Serve Contract Vehicles Our Perspective Who We Are Join Our Team Connect with Us Home Job Openings Job Openings Looking to become part of our Revolutional team? Check out open positions below. Revolut",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10568,10 +10583,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized consumer-facing commerce, scalable applications, React/TypeScript, AWS-adjacent backend systems, schema design, and product reliability. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized consumer-facing commerce, scalable applications, React/TypeScript, AWS-adjacent backend systems, schema design, and product reliability. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Location (City)*; Are you open to relocation? *",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10593,10 +10609,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend safety systems, service reliability, API workflows, debugging, observability, and cross-team execution. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend safety systems, service reliability, API workflows, debugging, observability, and cross-team execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Location (City)*; Are you open to relocation? *",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10618,10 +10635,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, streamer monetization workflows, React/TypeScript, REST APIs, testing, and production readiness. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, streamer monetization workflows, React/TypeScript, REST APIs, testing, and production readiness. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Willingness to learn new things and work with a diverse group of people; Location (City)*",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10643,10 +10661,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend distribution systems, REST APIs, data modeling, reliability, distributed workflows, and operational debugging. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend distribution systems, REST APIs, data modeling, reliability, distributed workflows, and operational debugging. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Location: Hybrid (3 days in office/2 days remote) \u2013 Century City, CA; Salary Range",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10668,10 +10687,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI product infrastructure, Python/TypeScript systems, LLM applications, data workflows, production validation, and fast execution. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI product infrastructure, Python/TypeScript systems, LLM applications, data workflows, production validation, and fast execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Do you have a security clearance?; Are you a current or former civilian or military employee of the United States Government? (If yes, when/where were you last employed and what was your highest grade/rank and title?)",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10693,10 +10713,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI infrastructure, backend/platform systems, distributed workflows, observability, reliability, and production readiness. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI infrastructure, backend/platform systems, distributed workflows, observability, reliability, and production readiness. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Do you have a security clearance?; Are you a current or former civilian or military employee of the United States Government? (If yes, when/where were you last employed and what was your highest grade/rank and title?)",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10718,10 +10739,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized generative AI product engineering, LLM applications, Python/TypeScript, REST APIs, data workflows, and cross-functional delivery. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized generative AI product engineering, LLM applications, Python/TypeScript, REST APIs, data workflows, and cross-functional delivery. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Please reference the job posting's subtitle for where this position will be located. For pay transparency purposes, the base salary range for this full-time position in the locations of San Francisco, New York, Seattle is:; Are you open to working in person in our San Francisco or New York office 3 times a week?",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10743,10 +10765,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized developer infrastructure, CI/CD, backend tooling, observability, release validation, and reliable engineering workflows. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized developer infrastructure, CI/CD, backend tooling, observability, release validation, and reliable engineering workflows. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Compensation; Location (City)",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10768,10 +10791,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, React/TypeScript, backend APIs, product workflows, testing, reliability, and customer-facing execution. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, React/TypeScript, backend APIs, product workflows, testing, reliability, and customer-facing execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Will you now or in the future require sponsorship to work in the United States?*; Can you work hybrid ( 3 days in office) in one of our in hub locations (SF, NY, Seattle)?*",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10793,10 +10817,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend search and AI product systems, REST APIs, data workflows, distributed services, observability, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend search and AI product systems, REST APIs, data workflows, distributed services, observability, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Compensation & Benefits:; Are you willing and able to commit to the hybrid policy if hired?*",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10818,10 +10843,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized security-adjacent backend systems, incident response habits, observability, CI/CD, APIs, and production operations. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized security-adjacent backend systems, incident response habits, observability, CI/CD, APIs, and production operations. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume reapply attempt 2026-05-04 stopped on blocker: Clean regenerated resume uploaded where possible; submit stopped on validation/blocker: Sorry, you have been blocked You are unable to access happydance.website Why have I been blocked? This website is using a security service to protect itself from online attacks. The action you just performed triggered t",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10870,10 +10896,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend APIs, distributed service validation, data workflows, reliability, and production readiness. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend APIs, distributed service validation, data workflows, reliability, and production readiness. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume reapply attempt 2026-05-04 stopped on blocker: Clean regenerated resume uploaded where possible; submit stopped on validation/blocker: Sorry, you have been blocked You are unable to access happydance.website Why have I been blocked? This website is using a security service to protect itself from online attacks. The action you just performed triggered t",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10895,10 +10922,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend product systems, APIs, data modeling, high-throughput validation, and operational reliability. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend product systems, APIs, data modeling, high-throughput validation, and operational reliability. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume reapply attempt 2026-05-04 stopped on blocker: Clean regenerated resume uploaded where possible; submit stopped on validation/blocker: Sorry, you have been blocked You are unable to access happydance.website Why have I been blocked? This website is using a security service to protect itself from online attacks. The action you just performed triggered t",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10920,10 +10948,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized ML platform-adjacent backend systems, AI product workflows, APIs, data pipelines, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized ML platform-adjacent backend systems, AI product workflows, APIs, data pipelines, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume reapply attempt 2026-05-04 stopped on blocker: Clean regenerated resume uploaded where possible; submit stopped on validation/blocker: Sorry, you have been blocked You are unable to access happydance.website Why have I been blocked? This website is using a security service to protect itself from online attacks. The action you just performed triggered t",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10945,10 +10974,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized simulation-adjacent platform workflows, validation tooling, distributed systems, observability, and release safety. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized simulation-adjacent platform workflows, validation tooling, distributed systems, observability, and release safety. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume reapply attempt 2026-05-04 stopped on blocker: Clean regenerated resume uploaded where possible; submit stopped on validation/blocker: Sorry, you have been blocked You are unable to access happydance.website Why have I been blocked? This website is using a security service to protect itself from online attacks. The action you just performed triggered t",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10970,10 +11000,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend logistics workflows, distributed APIs, data modeling, reliability, and operational debugging. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend logistics workflows, distributed APIs, data modeling, reliability, and operational debugging. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Current / Most Recent Company; Current / Most Recent Job Title",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -10995,11 +11026,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend product engineering, high-reliability APIs, cloud operations, testing, and cross-functional delivery. Did not claim direct company-specific domain ownership or unlisted framework experience.; Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized fault-tolerant gaming platform services, backend integrations, high-volume transaction workflows, API validation, and production reliability. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend product engineering, high-reliability APIs, cloud operations, testing, and cross-functional delivery. Did not claim direct company-specific domain ownership or unlisted framework experience.; Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized fault-tolerant gaming platform services, backend integrations, high-volume transaction workflows, API validation, and production reliability. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Salary Range; Location (City)*",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -11021,10 +11053,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized BI tooling, platform reliability, backend data workflows, CI/CD, observability, and developer productivity. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized BI tooling, platform reliability, backend data workflows, CI/CD, observability, and developer productivity. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume uploaded 2026-05-04; final re-submit blocked by Greenhouse email verification code sent to liamvanpj@gmail.com.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -11046,10 +11079,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend product APIs, financial-product reliability, data workflows, validation, and cross-team execution. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend product APIs, financial-product reliability, data workflows, validation, and cross-team execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you legally authorized to work in the United States?; Which U.S. State or Canadian Province do you reside in?",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -11071,10 +11105,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend data services, scalable APIs, serverless workflows, database operations, ingestion pipelines, and production reliability. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend data services, scalable APIs, serverless workflows, database operations, ingestion pipelines, and production reliability. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: While this role is remote, AssetWatch values opportunities to connect in person. Are you able to travel domestically a couple times a year?; Which of our core values connects most to how you work? Walk us through a specific example that shows it in action.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -11175,10 +11210,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized gateway infrastructure, API delivery, backend reliability, distributed systems, operational debugging, and developer-product workflows. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized gateway infrastructure, API delivery, backend reliability, distributed systems, operational debugging, and developer-product workflows. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Compensation; Where did you hear about ngrok?*",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -11200,10 +11236,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized core platform services, scalable cloud microservices, on-call ownership, reliability, APIs, and distributed system validation. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized core platform services, scalable cloud microservices, on-call ownership, reliability, APIs, and distributed system validation. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: How did you hear about this job?; 1) Are you authorized to work in the United States?*",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -11225,10 +11262,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized Python software platforms, AI and analytics solutions, cloud deployments, containerization, cross-functional delivery, and production operations. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized Python software platforms, AI and analytics solutions, cloud deployments, containerization, cross-functional delivery, and production operations. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Expected Salary",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -11250,10 +11288,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, AI-enabled modernization, portfolio software systems, product collaboration, and rapid delivery. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, AI-enabled modernization, portfolio software systems, product collaboration, and rapid delivery. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume uploaded 2026-05-04; final re-submit blocked by Greenhouse email verification code sent to liamvanpj@gmail.com.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -11275,10 +11314,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI product workflows, enterprise search, full-stack systems, backend APIs, data workflows, and customer-facing product execution. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI product workflows, enterprise search, full-stack systems, backend APIs, data workflows, and customer-facing product execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Compensation & Benefits:; Are you willing and able to commit to the hybrid policy if hired?*",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -11300,10 +11340,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized manufacturing test software, validation infrastructure, production reliability, automated testing, operational debugging, and hardware-adjacent workflows. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized manufacturing test software, validation infrastructure, production reliability, automated testing, operational debugging, and hardware-adjacent workflows. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: EXPORT CONTROLS - This position requires access to information and technology that is subject to U.S. export controls. Your responses to the questions below will be used solely to determine your eligibility under U.S. law to receive information and materials subject to U.S. export controls.; HISTORY WITH ANDURIL",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ]
     },
     {
@@ -11605,10 +11646,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized new-grad full-stack engineering, AI logistics workflows, backend APIs, React product surfaces, data processing, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.",
+      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized new-grad full-stack engineering, AI logistics workflows, backend APIs, React product surfaces, data processing, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: What is your spike? What is your biggest accomplishment to date?",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -11708,10 +11750,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized backend financial technology systems, API delivery, data modeling, cloud validation, and production reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized backend financial technology systems, API delivery, data modeling, cloud validation, and production reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Compensation and Benefits; Do you live in (or have willingness to relocate to) the New York City or San Fransisco areas and are you willing to work primarily onsite at one of these office locations?*",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -11733,10 +11776,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized backend services, Ruby/JavaScript-adjacent API delivery, SQL and NoSQL data workflows, async systems, and reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized backend services, Ruby/JavaScript-adjacent API delivery, SQL and NoSQL data workflows, async systems, and reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you able and willing to join us in the office (San Francisco or Denver) 3 days/week?; Are you legally authorized to work in the United States?",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -11758,10 +11802,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized remote healthcare software engineering, subsystem ownership, backend APIs, operational quality, and production support. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized remote healthcare software engineering, subsystem ownership, backend APIs, operational quality, and production support. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Location (City)*; Are you authorized to work lawfully in the United States for Tebra?*",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -11783,10 +11828,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized AI infrastructure, Python and TypeScript product systems, APIs, cloud validation, and full-stack delivery. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized AI infrastructure, Python and TypeScript product systems, APIs, cloud validation, and full-stack delivery. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Location (City)*; Why are you interested in Runpod? *",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -11808,10 +11854,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized backend integration systems, third-party APIs, data aggregation, Node-adjacent service design, AWS reliability, and startup delivery. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized backend integration systems, third-party APIs, data aggregation, Node-adjacent service design, AWS reliability, and startup delivery. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Where are you located?",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -11833,10 +11880,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized applied computer vision, AI-adjacent product systems, scalable backend validation, cloud operations, and production reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized applied computer vision, AI-adjacent product systems, scalable backend validation, cloud operations, and production reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Location (City)*; Our HQ is in San Mateo and this role is not remote. Are you able to come onsite as required for this role?*",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -11858,10 +11906,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized manufacturing software, validation infrastructure, backend services, operational debugging, and hardware-adjacent product delivery. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized manufacturing software, validation infrastructure, backend services, operational debugging, and hardware-adjacent product delivery. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Please provide three examples of accomplishments that highlight your exceptional ability. Provide quantitative details and metrics to describe your impact. First example:; Second example:",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -12091,14 +12140,15 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized full-stack observability systems, telemetry products, startup ownership, backend APIs, React product surfaces, and reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: Ashby form requires current U.S. work authorization/U.S. Person eligibility for ITAR/EAR plus office-commute confirmation; live form opened and left open 2026-05-02.; Application form filled with tailored resume and routine standing answers; left open at final submit pending action-time confirmation 2026-05-02.; Application submitted 2026-05-02 via Ashby after Liam review.; Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized full-stack observability systems, telemetry products, startup ownership, backend APIs, React product surfaces, and reliability. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized full-stack observability systems, telemetry products, startup ownership, backend APIs, React product surfaces, and reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: Ashby form requires current U.S. work authorization/U.S. Person eligibility for ITAR/EAR plus office-commute confirmation; live form opened and left open 2026-05-02.; Application form filled with tailored resume and routine standing answers; left open at final submit pending action-time confirmation 2026-05-02.; Application submitted 2026-05-02 via Ashby after Liam review.; Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized full-stack observability systems, telemetry products, startup ownership, backend APIs, React product surfaces, and reliability. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04 after bad-resume fix; row was already applied, so reapply attempt still needs manual/source-specific flow if desired.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-02",
         "2026-05-02",
         "2026-05-02",
         "2026-05-02",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -12146,12 +12196,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized general software engineering, full-stack implementation, backend services, testing, and production support. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: Taleo personal information page requires desired salary before submission; tailored resume uploaded and form left open 2026-05-02.; Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized general software engineering, full-stack implementation, backend services, testing, and production support. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized general software engineering, full-stack implementation, backend services, testing, and production support. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: Taleo personal information page requires desired salary before submission; tailored resume uploaded and form left open 2026-05-02.; Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized general software engineering, full-stack implementation, backend services, testing, and production support. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via LinkedIn flow because it was outside the completed automated Greenhouse submit batch.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-02",
         "2026-05-02",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -12173,10 +12224,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC new-grad AI product engineering, full-stack development, scalable application code, testing, and creative technology domain alignment. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC new-grad AI product engineering, full-stack development, scalable application code, testing, and creative technology domain alignment. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04 after bad-resume fix; row was already applied, so reapply attempt still needs manual/source-specific flow if desired.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -12198,10 +12250,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC full-stack consumer product engineering, high-traffic web and mobile surfaces, APIs, experimentation, reliability, and cross-functional delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC full-stack consumer product engineering, high-traffic web and mobile surfaces, APIs, experimentation, reliability, and cross-functional delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Location: Hybrid (3 days in office/2 days remote) \u2013 New York, NY or Century City, CA; Salary Range",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -12223,10 +12276,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC full-stack product engineering, user-facing features, backend APIs, AI-assisted delivery, testing, and production reliability. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC full-stack product engineering, user-facing features, backend APIs, AI-assisted delivery, testing, and production reliability. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Location: Hybrid (3 days in office/2 days remote) \u2013 New York, NY; Salary Range",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -12274,10 +12328,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized climate software, forward-deployed user workflows, production shipping, Python/TypeScript product systems, ambiguity, and fast customer validation. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized climate software, forward-deployed user workflows, production shipping, Python/TypeScript product systems, ambiguity, and fast customer validation. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Compensation:",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -12351,10 +12406,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC full-stack community-health product engineering, data and platform workflows, customer-facing reporting, automation, and stakeholder collaboration. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC full-stack community-health product engineering, data and platform workflows, customer-facing reporting, automation, and stakeholder collaboration. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Location: able to commute to NYC weekly is required.; Salary Range: $130K \u2013 $160K and competitive equity given the company\u2019s stage.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -12454,10 +12510,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized Kensho AI product engineering, generative AI agents, data retrieval APIs, NLP workflows, production reliability, and backend validation. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized Kensho AI product engineering, generative AI agents, data retrieval APIs, NLP workflows, production reliability, and backend validation. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via LinkedIn flow because it was outside the completed automated Greenhouse submit batch.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -12557,10 +12614,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized fintech marketplace middleware, backend APIs, SQL data workflows, server-side delivery, CI/CD, reliability, and financial-services product execution. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized fintech marketplace middleware, backend APIs, SQL data workflows, server-side delivery, CI/CD, reliability, and financial-services product execution. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Location: This role requires 2-3 days a week in office in Soho, NY; Are you legally authorized to work in the United States?*",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -12660,10 +12718,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized forward-deployed OpenAI API solutions, full-stack prototypes, customer-facing technical delivery, LLM product systems, and production-quality abstractions. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized forward-deployed OpenAI API solutions, full-stack prototypes, customer-facing technical delivery, LLM product systems, and production-quality abstractions. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via LinkedIn flow because it was outside the completed automated Greenhouse submit batch.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ]
     },
     {
@@ -12712,10 +12771,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-03 degraded public-search pass; tailored SWE resume rendered and verified one page; emphasized forward-deployed AI agents, logistics workflows, customer-facing engineering, backend APIs, full-stack delivery, and production validation. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-03 degraded public-search pass; tailored SWE resume rendered and verified one page; emphasized forward-deployed AI agents, logistics workflows, customer-facing engineering, backend APIs, full-stack delivery, and production validation. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you willing to work out of our office in San Francisco or New York City office?; Are you comfortable moving forward with the salary range posted?",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ]
     },
     {
@@ -12737,10 +12797,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-03 degraded public-search pass; tailored SWE resume rendered and verified one page; emphasized backend financial data services, authoritative datasets, API reliability, data modeling, cloud validation, and production operations. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-03 degraded public-search pass; tailored SWE resume rendered and verified one page; emphasized backend financial data services, authoritative datasets, API reliability, data modeling, cloud validation, and production operations. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: What is the minimum annual salary desired (in USD)?; If sponsorship is needed, please explain your current visa type and status.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ]
     },
     {
@@ -12762,10 +12823,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-03 degraded public-search pass; tailored SWE resume rendered and verified one page; emphasized backend investor-solutions systems, financial data workflows, API services, platform reliability, data validation, and cross-functional delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-03 degraded public-search pass; tailored SWE resume rendered and verified one page; emphasized backend investor-solutions systems, financial data workflows, API services, platform reliability, data validation, and cross-functional delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you 18 years of age or older?; Are you currently employed by a client, partner, or competitor of Addepar?",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ]
     },
     {
@@ -12893,12 +12955,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-03 07:00Z degraded capture; tailored SWE resume rendered and verified one page; emphasized NYC cloud infrastructure, Python services, data engineering, AWS-style deployment ownership, and reproducible investment research systems.; Application submitted 2026-05-03; Hourly intake 2026-05-03 07:00Z degraded capture; tailored SWE resume rendered and verified one page; emphasized NYC cloud infrastructure, Python services, data engineering, AWS-style deployment ownership, and reproducible investment research systems. Applications were left ready for retry; do not treat temporary browser-control issues as role-level manual blockers.",
+      "notes": "Hourly intake 2026-05-03 07:00Z degraded capture; tailored SWE resume rendered and verified one page; emphasized NYC cloud infrastructure, Python services, data engineering, AWS-style deployment ownership, and reproducible investment research systems.; Application submitted 2026-05-03; Hourly intake 2026-05-03 07:00Z degraded capture; tailored SWE resume rendered and verified one page; emphasized NYC cloud infrastructure, Python services, data engineering, AWS-style deployment ownership, and reproducible investment research systems. Applications were left ready for retry; do not treat temporary browser-control issues as role-level manual blockers.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Location (City)*",
       "noteLinks": [],
       "activityDates": [
         "2026-05-03",
         "2026-05-03",
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ]
     },
     {
@@ -12998,12 +13061,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-03 07:00Z degraded capture; tailored SWE resume rendered and verified one page; emphasized NYC AI product engineering, backend APIs, applied physics-adjacent systems, data-driven validation, and fast startup ownership.; Application submitted 2026-05-03; Hourly intake 2026-05-03 07:00Z degraded capture; tailored SWE resume rendered and verified one page; emphasized NYC AI product engineering, backend APIs, applied physics-adjacent systems, data-driven validation, and fast startup ownership. Applications were left ready for retry; do not treat temporary browser-control issues as role-level manual blockers.",
+      "notes": "Hourly intake 2026-05-03 07:00Z degraded capture; tailored SWE resume rendered and verified one page; emphasized NYC AI product engineering, backend APIs, applied physics-adjacent systems, data-driven validation, and fast startup ownership.; Application submitted 2026-05-03; Hourly intake 2026-05-03 07:00Z degraded capture; tailored SWE resume rendered and verified one page; emphasized NYC AI product engineering, backend APIs, applied physics-adjacent systems, data-driven validation, and fast startup ownership. Applications were left ready for retry; do not treat temporary browser-control issues as role-level manual blockers.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you willing to travel internationally to work with our enterprise customers (with the proper accommodations under ADA if required)?",
       "noteLinks": [],
       "activityDates": [
         "2026-05-03",
         "2026-05-03",
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ]
     },
     {
@@ -13051,12 +13115,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-03 07:00Z degraded capture; tailored SWE resume rendered and verified one page; emphasized NYC full-stack product engineering, React/NestJS interfaces, backend APIs, customer-facing digital-adoption workflows, and reliable delivery.; Manual apply needed: desired salary field 2026-05-03; Hourly intake 2026-05-03 07:00Z degraded capture; tailored SWE resume rendered and verified one page; emphasized NYC full-stack product engineering, React/NestJS interfaces, backend APIs, customer-facing digital-adoption workflows, and reliable delivery. Applications were left ready for retry; do not treat temporary browser-control issues as role-level manual blockers.",
+      "notes": "Hourly intake 2026-05-03 07:00Z degraded capture; tailored SWE resume rendered and verified one page; emphasized NYC full-stack product engineering, React/NestJS interfaces, backend APIs, customer-facing digital-adoption workflows, and reliable delivery.; Manual apply needed: desired salary field 2026-05-03; Hourly intake 2026-05-03 07:00Z degraded capture; tailored SWE resume rendered and verified one page; emphasized NYC full-stack product engineering, React/NestJS interfaces, backend APIs, customer-facing digital-adoption workflows, and reliable delivery. Applications were left ready for retry; do not treat temporary browser-control issues as role-level manual blockers.; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via LinkedIn flow because it was outside the completed automated Greenhouse submit batch.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-03",
         "2026-05-03",
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ]
     },
     {
@@ -13390,10 +13455,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-03 1000 PT; tailored SWE resume rendered and verified one page; emphasized NYC/remote full-stack product engineering, scalable SaaS systems, AI-powered workflow modernization, React/NestJS product surfaces, backend APIs, testing, and operator-focused delivery. Sourced from degraded browser fallback because Computer Use app-state was denied.",
+      "notes": "Hourly intake 2026-05-03 1000 PT; tailored SWE resume rendered and verified one page; emphasized NYC/remote full-stack product engineering, scalable SaaS systems, AI-powered workflow modernization, React/NestJS product surfaces, backend APIs, testing, and operator-focused delivery. Sourced from degraded browser fallback because Computer Use app-state was denied.; Clean regenerated resume uploaded 2026-05-04; final re-submit blocked by Greenhouse email verification code sent to liamvanpj@gmail.com.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ]
     },
     {
@@ -13764,7 +13830,7 @@
       "company": "Ramp",
       "role": "Software Engineer | Frontend",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -13779,10 +13845,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-03 1200 PT; tailored SWE resume rendered and verified one page; emphasized NYC fintech frontend engineering, React and TypeScript product surfaces, backend API collaboration, testing, accessibility, and production reliability. Applications were not submitted because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly intake 2026-05-03 1200 PT; tailored SWE resume rendered and verified one page; emphasized NYC fintech frontend engineering, React and TypeScript product surfaces, backend API collaboration, testing, accessibility, and production reliability. Applications were not submitted because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via LinkedIn flow because it was outside the completed automated Greenhouse submit batch.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ]
     },
     {
@@ -13918,8 +13985,8 @@
     {
       "company": "OpenSesame",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -13934,10 +14001,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-03 pass; tailored SWE/full-stack resume rendered and verified one page; emphasized core platform services, identity/commerce workflows, React/NestJS product surfaces, backend APIs, testing, and reliable product delivery. Browser-based submission blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Regenerated clean resume from fixed generic source 2026-05-04 after LaTeX escape corruption; rendered and verified one page.; Clean regenerated resume uploaded and Greenhouse form completed 2026-05-04; final submit blocked on 8-character email verification code sent to liamvanpj@gmail.com.",
+      "notes": "Hourly intake 2026-05-03 pass; tailored SWE/full-stack resume rendered and verified one page; emphasized core platform services, identity/commerce workflows, React/NestJS product surfaces, backend APIs, testing, and reliable product delivery. Browser-based submission blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Regenerated clean resume from fixed generic source 2026-05-04 after LaTeX escape corruption; rendered and verified one page.; Clean regenerated resume uploaded and Greenhouse form completed 2026-05-04; final submit blocked on 8-character email verification code sent to liamvanpj@gmail.com.; Application re-submitted 2026-05-04 with clean regenerated resume; confirmation page displayed.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-03",
+        "2026-05-04",
         "2026-05-04",
         "2026-05-04"
       ]
@@ -13961,11 +14029,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-03 pass; tailored SWE/backend resume rendered and verified one page; emphasized backend healthcare product services, REST APIs, cloud release validation, testing, and startup ownership. Browser-based submission blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Submitted via Greenhouse on 2026-05-03 with tailored resume. Confirmation page: Thank you for applying; application has been received.; Regenerated clean resume from fixed generic source 2026-05-04 after LaTeX escape corruption; rendered and verified one page.",
+      "notes": "Hourly intake 2026-05-03 pass; tailored SWE/backend resume rendered and verified one page; emphasized backend healthcare product services, REST APIs, cloud release validation, testing, and startup ownership. Browser-based submission blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Submitted via Greenhouse on 2026-05-03 with tailored resume. Confirmation page: Thank you for applying; application has been received.; Regenerated clean resume from fixed generic source 2026-05-04 after LaTeX escape corruption; rendered and verified one page.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Willingness to learn and work on the frontend as needed (e.g., Typescript/Javascript, React, etc.); Salary: $140k - $180k",
       "noteLinks": [],
       "activityDates": [
         "2026-05-03",
         "2026-05-03",
+        "2026-05-04",
         "2026-05-04"
       ]
     },
@@ -14243,10 +14312,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-03 21:00Z; tailored SWE resume rendered and verified one page; emphasized SF frontend and full-stack product engineering, React interfaces, checkout/acquisition workflows, API collaboration, testing, performance, and customer-facing delivery. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.",
+      "notes": "Hourly Greenhouse intake 2026-05-03 21:00Z; tailored SWE resume rendered and verified one page; emphasized SF frontend and full-stack product engineering, React interfaces, checkout/acquisition workflows, API collaboration, testing, performance, and customer-facing delivery. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Clean regenerated resume reapply attempt 2026-05-04 stopped on blocker: Clean regenerated resume uploaded where possible; submit stopped on validation/blocker: www.crunchyroll.com Performing security verification This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot. Ray ID: 9f6a83def85f9982",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ]
     },
     {
@@ -14295,10 +14365,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-03 21:00Z; tailored SWE resume rendered and verified one page; emphasized backend and full-stack data-platform engineering, reliable services, JavaScript/Ruby-adjacent product workflows, SQL/NoSQL data systems, async processing, testing, and production quality. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.",
+      "notes": "Hourly Greenhouse intake 2026-05-03 21:00Z; tailored SWE resume rendered and verified one page; emphasized backend and full-stack data-platform engineering, reliable services, JavaScript/Ruby-adjacent product workflows, SQL/NoSQL data systems, async processing, testing, and production quality. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you able and willing to join us in the office 3 days/week?; Are you legally authorized to work in the United States?",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ]
     },
     {
@@ -14320,10 +14391,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-03 21:00Z; tailored SWE resume rendered and verified one page; emphasized remote US full-stack SaaS engineering, clean production code, React product surfaces, backend APIs, refactoring, testing, and fast platform delivery. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.",
+      "notes": "Hourly Greenhouse intake 2026-05-03 21:00Z; tailored SWE resume rendered and verified one page; emphasized remote US full-stack SaaS engineering, clean production code, React product surfaces, backend APIs, refactoring, testing, and fast platform delivery. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Clean regenerated resume reapply attempt 2026-05-04 stopped on blocker: Clean regenerated resume uploaded where possible; submit stopped on validation/blocker: Skip to Content Greenhouse Home Link Platform Open menu for Platform Only in Greenhouse Solutions AI recruiting Talent sourcing Candidate experience Scalable workflows Interviewing & decision-making Talent matching Onbo",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ]
     },
     {
@@ -14345,10 +14417,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-03 23:00Z; tailored SWE resume rendered and verified one page; emphasized new-grad fintech product engineering, full-stack customer workflows, React interfaces, backend APIs, data-backed validation, testing, and production-quality delivery. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.",
+      "notes": "Hourly Greenhouse intake 2026-05-03 23:00Z; tailored SWE resume rendered and verified one page; emphasized new-grad fintech product engineering, full-stack customer workflows, React interfaces, backend APIs, data-backed validation, testing, and production-quality delivery. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: How did you hear about us?*; Describe a situation and your response to it that shows how you demonstrate a high level of grit.*",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ]
     },
     {
@@ -14424,10 +14497,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-03 23:00Z; tailored SWE resume rendered and verified one page; emphasized associate software quality engineering, AI-assisted defect diagnosis, validation, test automation, production bug fixing, and reliable release workflows. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.",
+      "notes": "Hourly Greenhouse intake 2026-05-03 23:00Z; tailored SWE resume rendered and verified one page; emphasized associate software quality engineering, AI-assisted defect diagnosis, validation, test automation, production bug fixing, and reliable release workflows. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you 18 years of age or older?; Upon employment, can you submit verification of your legal right to work for Toshiba in the United States?",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ]
     },
     {
@@ -14528,9 +14602,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-04 13:00 PT; tailored SWE resume rendered and verified one page; emphasized remote AI-enabled product engineering, real-time audience insights, backend APIs, full-stack delivery, data-backed workflows, testing, and scalable product systems. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly Greenhouse intake 2026-05-04 13:00 PT; tailored SWE resume rendered and verified one page; emphasized remote AI-enabled product engineering, real-time audience insights, backend APIs, full-stack delivery, data-backed workflows, testing, and scalable product systems. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: If I asked your siblings or close friends to write your Twitter bio, (or another social media bio) what would they write?; What is a question that you have always wanted to know the answer to, but haven't been able to figure out the answer to?",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-04",
         "2026-05-04"
       ]
     },
@@ -14553,9 +14628,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-04 13:00 PT; tailored SWE resume rendered and verified one page; emphasized NYC full-stack and backend product engineering, APIs, data services, React product surfaces, performance marketing workflows, testing, and startup ownership. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly Greenhouse intake 2026-05-04 13:00 PT; tailored SWE resume rendered and verified one page; emphasized NYC full-stack and backend product engineering, APIs, data services, React product surfaces, performance marketing workflows, testing, and startup ownership. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Salary Range; Are you able to work from the office in Manhattan Tuesday - Thursday?*",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-04",
         "2026-05-04"
       ]
     },
@@ -14632,9 +14708,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-04 13:00 PT; tailored SWE resume rendered and verified one page; emphasized associate full-stack fintech SaaS engineering, React product workflows, backend APIs, cloud delivery, architecture collaboration, testing, and maintainable enterprise software. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly Greenhouse intake 2026-05-04 13:00 PT; tailored SWE resume rendered and verified one page; emphasized associate full-stack fintech SaaS engineering, React product workflows, backend APIs, cloud delivery, architecture collaboration, testing, and maintainable enterprise software. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Full Legal Name; Are you legally eligible to work in the country where this role is located?",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-04",
         "2026-05-04"
       ]
     },
@@ -14657,9 +14734,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-04 13:00 PT; tailored SWE resume rendered and verified one page; emphasized NYC fintech backend engineering, secure product systems, scalable APIs, advisor workflow tooling, testing, and production-quality delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly Greenhouse intake 2026-05-04 13:00 PT; tailored SWE resume rendered and verified one page; emphasized NYC fintech backend engineering, secure product systems, scalable APIs, advisor workflow tooling, testing, and production-quality delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: 1. Are you legally authorized to work in the United States?; 3. Are you at least 18 years of age?",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-04",
         "2026-05-04"
       ]
     },
@@ -14709,9 +14787,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-04 13:00 PT; tailored SWE resume rendered and verified one page; emphasized remote networking product engineering, backend services, infrastructure reliability, open-source-adjacent systems, production ownership, testing, and developer-focused tooling. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly Greenhouse intake 2026-05-04 13:00 PT; tailored SWE resume rendered and verified one page; emphasized remote networking product engineering, backend services, infrastructure reliability, open-source-adjacent systems, production ownership, testing, and developer-focused tooling. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you located in or willing to relocate to the United States?; Why are you interested in joining Tailscale? Thoughtful responses are encouraged.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-04",
         "2026-05-04"
       ]
     },
@@ -14734,9 +14813,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-04 13:00 PT; tailored SWE resume rendered and verified one page; emphasized remote security software engineering, privacy-minded product features, backend services, defense-in-depth, testing, automation, and reliable infrastructure delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.",
+      "notes": "Hourly Greenhouse intake 2026-05-04 13:00 PT; tailored SWE resume rendered and verified one page; emphasized remote security software engineering, privacy-minded product features, backend services, defense-in-depth, testing, automation, and reliable infrastructure delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you located in or willing to relocate to the United States?; Why are you interested in joining Tailscale? Thoughtful responses are encouraged.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-04",
         "2026-05-04"
       ]
     },
@@ -14759,9 +14839,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-04 14:00 PT; tailored SWE resume rendered and verified one page; emphasized remote new-grad product engineering, full-stack feature delivery, reusable UI systems, object-oriented foundations, testing, and fast consumer product iteration. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "notes": "Hourly Greenhouse intake 2026-05-04 14:00 PT; tailored SWE resume rendered and verified one page; emphasized remote new-grad product engineering, full-stack feature delivery, reusable UI systems, object-oriented foundations, testing, and fast consumer product iteration. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via Greenhouse flow because it was outside the completed automated Greenhouse submit batch.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-04",
         "2026-05-04",
         "2026-05-04"
       ]
@@ -14785,9 +14866,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-04 14:00 PT; tailored SWE resume rendered and verified one page; emphasized AI inference deployment infrastructure, release automation, validation systems, production reliability, cloud platform workflows, testing, and safe rollout tooling. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "notes": "Hourly Greenhouse intake 2026-05-04 14:00 PT; tailored SWE resume rendered and verified one page; emphasized AI inference deployment infrastructure, release automation, validation systems, production reliability, cloud platform workflows, testing, and safe rollout tooling. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via Greenhouse flow because it was outside the completed automated Greenhouse submit batch.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-04",
         "2026-05-04",
         "2026-05-04"
       ]
@@ -14811,9 +14893,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-04 14:00 PT; tailored SWE resume rendered and verified one page; emphasized AI safety product engineering, monitoring systems, enforcement workflows, internal dashboards, backend APIs, production validation, and reliability-minded delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "notes": "Hourly Greenhouse intake 2026-05-04 14:00 PT; tailored SWE resume rendered and verified one page; emphasized AI safety product engineering, monitoring systems, enforcement workflows, internal dashboards, backend APIs, production validation, and reliability-minded delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via Greenhouse flow because it was outside the completed automated Greenhouse submit batch.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-04",
         "2026-05-04",
         "2026-05-04"
       ]
@@ -14837,7 +14920,190 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-04 14:00 PT; tailored SWE resume rendered and verified one page; emphasized NYC AI healthcare full-stack engineering, agentic workflow infrastructure, React and TypeScript product surfaces, backend services, testing, and startup ownership. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "notes": "Hourly Greenhouse intake 2026-05-04 14:00 PT; tailored SWE resume rendered and verified one page; emphasized NYC AI healthcare full-stack engineering, agentic workflow infrastructure, React and TypeScript product surfaces, backend services, testing, and startup ownership. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via Greenhouse flow because it was outside the completed automated Greenhouse submit batch.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-04",
+        "2026-05-04",
+        "2026-05-04"
+      ]
+    },
+    {
+      "company": "InStride Health",
+      "role": "Junior Fullstack Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-04",
+      "location": "Remote, US",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/instridehealth/jobs/4670604005",
+      "postingKey": "4670604005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/InStride Health/Junior_Fullstack_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/InStride Health/Junior_Fullstack_Engineer/Liam_Van_Resume/Liam_Van_InStride_Health.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-04 15:00 PT; tailored SWE resume rendered and verified one page; emphasized remote junior full-stack healthcare product engineering, patient onboarding workflows, React product surfaces, backend APIs, data-backed care outcomes, testing, and reliable delivery. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-04",
+        "2026-05-04"
+      ]
+    },
+    {
+      "company": "FlowFuse",
+      "role": "FlowFuse Full Stack Developer (AI-focused)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-04",
+      "location": "Remote - US",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/flowfuse/jobs/5744138004",
+      "postingKey": "5744138004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/FlowFuse/FlowFuse_Full_Stack_Developer_AI_focused/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/FlowFuse/FlowFuse_Full_Stack_Developer_AI_focused/Liam_Van_Resume/Liam_Van_FlowFuse.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-04 15:00 PT; tailored SWE resume rendered and verified one page; emphasized remote applied-AI full-stack product engineering, LLM-powered user workflows, automation, backend APIs, observability, testing, and secure production delivery. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-04",
+        "2026-05-04"
+      ]
+    },
+    {
+      "company": "Clear Street",
+      "role": "Software Engineer - Low Touch Desk",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-04",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/clearstreet/jobs/7466108",
+      "postingKey": "7466108",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Clear Street/Software_Engineer_Low_Touch_Desk/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Clear Street/Software_Engineer_Low_Touch_Desk/Liam_Van_Resume/Liam_Van_Clear_Street.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-04 15:00 PT; tailored SWE resume rendered and verified one page; emphasized NYC trading-systems engineering, backend services, full-stack support tools, algorithmic execution workflows, testing, deployment, and production reliability. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-04",
+        "2026-05-04"
+      ]
+    },
+    {
+      "company": "Tailscale",
+      "role": "Backend Engineer, Control Plane",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-04",
+      "location": "Remote (United States)",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/tailscale/jobs/4653722005",
+      "postingKey": "4653722005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tailscale/Backend_Engineer_Control_Plane/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tailscale/Backend_Engineer_Control_Plane/Liam_Van_Resume/Liam_Van_Tailscale.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-04 15:00 PT; tailored SWE resume rendered and verified one page; emphasized remote backend control-plane engineering, product lifecycle ownership, API services, infrastructure reliability, testing, and developer-focused systems. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-04",
+        "2026-05-04"
+      ]
+    },
+    {
+      "company": "Nooks",
+      "role": "Fullstack Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-04",
+      "location": "Remote",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/nooks/jobs/4031018009",
+      "postingKey": "4031018009",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Nooks/Fullstack_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Nooks/Fullstack_Engineer/Liam_Van_Resume/Liam_Van_Nooks.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-04 15:00 PT; tailored SWE resume rendered and verified one page; emphasized remote full-stack secure infrastructure engineering, mission-critical product services, backend APIs, React product surfaces, testing, and startup ownership. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-04",
+        "2026-05-04"
+      ]
+    },
+    {
+      "company": "Nex",
+      "role": "Fullstack Engineer (Digital Experience)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-04",
+      "location": "Remote (USA & Canada only)",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/nex/jobs/5155205008",
+      "postingKey": "5155205008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Nex/Fullstack_Engineer_Digital_Experience/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Nex/Fullstack_Engineer_Digital_Experience/Liam_Van_Resume/Liam_Van_Nex.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-04 15:00 PT; tailored SWE resume rendered and verified one page; emphasized remote digital-experience full-stack engineering, consumer product workflows, React interfaces, backend APIs, privacy-minded delivery, testing, and product iteration. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-04",
+        "2026-05-04"
+      ]
+    },
+    {
+      "company": "Altium",
+      "role": "Full Stack Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-04",
+      "location": "Los Angeles, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/altium/jobs/4656473006",
+      "postingKey": "4656473006",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Altium/Full_Stack_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Altium/Full_Stack_Engineer/Liam_Van_Resume/Liam_Van_Altium.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-04 15:00 PT; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering for hardware design workflows, frontend interfaces, backend architecture, API delivery, testing, and autonomous cross-functional execution. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
       "noteLinks": [],
       "activityDates": [
         "2026-05-04",
@@ -14846,6 +15112,48 @@
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "InStride Health",
+      "role": "Junior Fullstack Engineer",
+      "location": "Remote, US",
+      "postingKey": "4670604005",
+      "jobUrl": "https://job-boards.greenhouse.io/instridehealth/jobs/4670604005",
+      "discoveredAt": "2026-05-04T22:05:18.963094+00:00",
+      "postedAge": "Greenhouse public result marked New; crawled last month; still visible 2026-05-04",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "trackerPostingKey": "4670604005"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "FlowFuse",
+      "role": "FlowFuse Full Stack Developer (AI-focused)",
+      "location": "Remote - US",
+      "postingKey": "5744138004",
+      "jobUrl": "https://job-boards.greenhouse.io/flowfuse/jobs/5744138004",
+      "discoveredAt": "2026-05-04T22:05:18.963094+00:00",
+      "postedAge": "Greenhouse public result crawled 2 months ago; still visible 2026-05-04",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "trackerPostingKey": "5744138004"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Clear Street",
+      "role": "Software Engineer - Low Touch Desk",
+      "location": "New York, NY",
+      "postingKey": "7466108",
+      "jobUrl": "https://job-boards.greenhouse.io/clearstreet/jobs/7466108",
+      "discoveredAt": "2026-05-04T22:05:18.963094+00:00",
+      "postedAge": "Greenhouse public result crawled 3 months ago; still visible 2026-05-04",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "trackerPostingKey": "7466108"
+    },
     {
       "source": "Greenhouse",
       "company": "Underdog",
@@ -17143,6 +17451,62 @@
       "trackerPostingKey": "5592469004"
     },
     {
+      "source": "Greenhouse",
+      "company": "Tailscale",
+      "role": "Backend Engineer, Control Plane",
+      "location": "Remote (United States)",
+      "postingKey": "4653722005",
+      "jobUrl": "https://job-boards.greenhouse.io/tailscale/jobs/4653722005",
+      "discoveredAt": "2026-05-04T22:05:18.963094+00:00",
+      "postedAge": "Greenhouse public result crawled 2 months ago; still visible 2026-05-04",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "trackerPostingKey": "4653722005"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Nooks",
+      "role": "Fullstack Engineer",
+      "location": "Remote",
+      "postingKey": "4031018009",
+      "jobUrl": "https://job-boards.greenhouse.io/nooks/jobs/4031018009",
+      "discoveredAt": "2026-05-04T22:05:18.963094+00:00",
+      "postedAge": "Greenhouse public result marked New; crawled 6 months ago; still visible 2026-05-04",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "trackerPostingKey": "4031018009"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Nex",
+      "role": "Fullstack Engineer (Digital Experience)",
+      "location": "Remote (USA & Canada only)",
+      "postingKey": "5155205008",
+      "jobUrl": "https://job-boards.greenhouse.io/nex/jobs/5155205008",
+      "discoveredAt": "2026-05-04T22:05:18.963094+00:00",
+      "postedAge": "Greenhouse public result crawled 2 weeks ago; still visible 2026-05-04",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "trackerPostingKey": "5155205008"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Altium",
+      "role": "Full Stack Engineer",
+      "location": "Los Angeles, California, United States",
+      "postingKey": "4656473006",
+      "jobUrl": "https://job-boards.greenhouse.io/altium/jobs/4656473006",
+      "discoveredAt": "2026-05-04T22:05:18.963094+00:00",
+      "postedAge": "Greenhouse public result crawled last month; still visible 2026-05-04",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "trackerPostingKey": "4656473006"
+    },
+    {
       "source": "LinkedIn",
       "company": "Vannevar",
       "role": "Software Engineer, Backend (Collection Fingerprinting)",
@@ -19305,6 +19669,19 @@
       "notes": ""
     },
     {
+      "company": "InStride Health",
+      "role": "Junior Fullstack Engineer",
+      "postingKey": "4670604005",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/instridehealth/jobs/4670604005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-04",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "iCapital",
       "role": "Full Stack Engineer - Ruby and React - Associate",
       "postingKey": "8452428002",
@@ -19458,6 +19835,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "FlowFuse",
+      "role": "FlowFuse Full Stack Developer (AI-focused)",
+      "postingKey": "5744138004",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/flowfuse/jobs/5744138004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-04",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -19783,6 +20173,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Clear Street",
+      "role": "Software Engineer - Low Touch Desk",
+      "postingKey": "7466108",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/clearstreet/jobs/7466108",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-04",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -21450,6 +21853,19 @@
       "notes": ""
     },
     {
+      "company": "Tailscale",
+      "role": "Backend Engineer, Control Plane",
+      "postingKey": "4653722005",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/tailscale/jobs/4653722005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-04",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Supio",
       "role": "Software Engineer, Full Stack",
       "postingKey": "am9icG9zdDokLY-gOKYyi4f5JNIx755l",
@@ -21749,6 +22165,19 @@
       "notes": ""
     },
     {
+      "company": "Nooks",
+      "role": "Fullstack Engineer",
+      "postingKey": "4031018009",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/nooks/jobs/4031018009",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-04",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "NinjaTrader",
       "role": "Software Engineer III (Fullstack)",
       "postingKey": "4535655006",
@@ -21785,6 +22214,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-01",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Nex",
+      "role": "Fullstack Engineer (Digital Experience)",
+      "postingKey": "5155205008",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/nex/jobs/5155205008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-04",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -22279,6 +22721,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Altium",
+      "role": "Full Stack Engineer",
+      "postingKey": "4656473006",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/altium/jobs/4656473006",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-04",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -35066,6 +35521,18 @@
           "contacts": []
         },
         {
+          "key": "7466108",
+          "company": "Clear Street",
+          "role": "Software Engineer - Low Touch Desk",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4401827377",
           "company": "Confido",
           "role": "New Grad Software Engineer",
@@ -35114,6 +35581,18 @@
           "contacts": []
         },
         {
+          "key": "5744138004",
+          "company": "FlowFuse",
+          "role": "FlowFuse Full Stack Developer (AI-focused)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5971240004",
           "company": "Forge Global",
           "role": "Software Engineer II, Marketplace Middleware Engineering",
@@ -35141,6 +35620,18 @@
           "key": "4169702004",
           "company": "GreenSpark",
           "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4670604005",
+          "company": "InStride Health",
+          "role": "Junior Fullstack Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -35910,7 +36401,7 @@
           "company": "Ramp",
           "role": "Software Engineer | Frontend",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -36139,6 +36630,18 @@
           "role": "Founding Full Stack Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4656473006",
+          "company": "Altium",
+          "role": "Full Stack Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -36698,6 +37201,18 @@
           "contacts": []
         },
         {
+          "key": "5155205008",
+          "company": "Nex",
+          "role": "Fullstack Engineer (Digital Experience)",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4402056168",
           "company": "NexTech Capital",
           "role": "Software Engineer",
@@ -36715,6 +37230,18 @@
           "role": "Backend Engineer - DevEx Team",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4031018009",
+          "company": "Nooks",
+          "role": "Fullstack Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -36979,6 +37506,18 @@
           "role": "Software Engineer, Full Stack",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4653722005",
+          "company": "Tailscale",
+          "role": "Backend Engineer, Control Plane",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -46232,6 +46771,18 @@
           "contacts": []
         },
         {
+          "key": "7466108",
+          "company": "Clear Street",
+          "role": "Software Engineer - Low Touch Desk",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "6c7f692a-848b-41a4-b79b-4a9bba3aeb6d",
           "company": "Color Health",
           "role": "New Grad Software Engineer",
@@ -46316,6 +46867,18 @@
           "contacts": []
         },
         {
+          "key": "5744138004",
+          "company": "FlowFuse",
+          "role": "FlowFuse Full Stack Developer (AI-focused)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5971240004",
           "company": "Forge Global",
           "role": "Software Engineer II, Marketplace Middleware Engineering",
@@ -46355,6 +46918,18 @@
           "key": "4169702004",
           "company": "GreenSpark",
           "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4670604005",
+          "company": "InStride Health",
+          "role": "Junior Fullstack Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -47244,7 +47819,7 @@
           "company": "Ramp",
           "role": "Software Engineer | Frontend",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -47413,6 +47988,18 @@
           "role": "Software Engineer, Trust",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4656473006",
+          "company": "Altium",
+          "role": "Full Stack Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -47708,11 +48295,35 @@
           "contacts": []
         },
         {
+          "key": "5155205008",
+          "company": "Nex",
+          "role": "Fullstack Engineer (Digital Experience)",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7719281003",
           "company": "Next Insurance",
           "role": "Backend Engineer - DevEx Team",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4031018009",
+          "company": "Nooks",
+          "role": "Fullstack Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -47795,6 +48406,18 @@
           "key": "4409851680",
           "company": "Sundayy",
           "role": "Software Developer, Jr. (Python, API)",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4653722005",
+          "company": "Tailscale",
+          "role": "Backend Engineer, Control Plane",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
