@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T23:07:31.492058+00:00",
+  "generatedAt": "2026-05-04T03:28:00.742088+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 483,
-      "applied": 332,
-      "unapplied": 151,
-      "active": 339,
+      "total": 484,
+      "applied": 334,
+      "unapplied": 150,
+      "active": 338,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 363,
-      "reachOut": 425,
+      "highFit": 364,
+      "reachOut": 426,
       "recruiterRows": 101,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,25 +26,25 @@
       "intakeNew": 37,
       "intakeManual": 20,
       "intakeApplied": 0,
-      "applyRate": 68.7,
-      "rejectionRate": 13.3,
-      "recruiterWork": 253,
-      "engineerWork": 327,
+      "applyRate": 69.0,
+      "rejectionRate": 13.2,
+      "recruiterWork": 252,
+      "engineerWork": 326,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 281
+        "value": 283
       },
       {
         "name": "Archived",
-        "value": 100
+        "value": 102
       },
       {
         "name": "Manual Apply Needed",
-        "value": 51
+        "value": 47
       },
       {
         "name": "Rejected",
@@ -61,12 +61,16 @@
       {
         "name": "Unknown",
         "value": 1
+      },
+      {
+        "name": "Resume Tailored",
+        "value": 1
       }
     ],
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 173
+        "value": 174
       },
       {
         "name": "LinkedIn",
@@ -144,7 +148,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 218
+        "value": 219
       },
       {
         "name": "Bay Area",
@@ -202,7 +206,7 @@
       },
       {
         "name": "Frontend",
-        "value": 6
+        "value": 7
       }
     ],
     "fitCounts": [
@@ -244,7 +248,7 @@
       },
       {
         "score": "10",
-        "count": 181
+        "count": 182
       }
     ],
     "targetCounts": [
@@ -448,21 +452,21 @@
         "date": "2026-05-02",
         "cumulative": 414,
         "added": 52,
-        "applied": 16,
+        "applied": 17,
         "rejected": 0,
         "interviewing": 0
       },
       {
         "date": "2026-05-03",
-        "cumulative": 482,
-        "added": 68,
-        "applied": 5,
+        "cumulative": 483,
+        "added": 69,
+        "applied": 6,
         "rejected": 0,
         "interviewing": 0
       },
       {
         "date": "Frontend](/Users/liamvan/Documents/Repos/CodexSkills/companies/Ramp/Software_Engineer_Frontend/Liam_Van_Resume/Liam_Van_Ramp.pdf)",
-        "cumulative": 483,
+        "cumulative": 484,
         "added": 1,
         "applied": 0,
         "rejected": 0,
@@ -603,13 +607,13 @@
         "bestFit": 10
       },
       {
-        "company": "Handshake",
+        "company": "The New York Times",
         "roles": 2,
         "avgFit": 10.0,
         "bestFit": 10
       },
       {
-        "company": "Mirage",
+        "company": "Handshake",
         "roles": 2,
         "avgFit": 10.0,
         "bestFit": 10
@@ -806,6 +810,15 @@
         "jobLink": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4673616005#app"
       },
       {
+        "company": "The New York Times",
+        "role": "Software Engineer AI Platforms and Products Frontend",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4680447005"
+      },
+      {
         "company": "Tekmerion Capital",
         "role": "Software Engineer",
         "fitScore": 10,
@@ -930,15 +943,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/sigmacomputing/jobs/7690411003"
-      },
-      {
-        "company": "SeatGeek",
-        "role": "Software Engineer - New Grad",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://job-boards.greenhouse.io/embed/job_app?for=seatgeek&gh_src=94e407181&token=7858968"
       }
     ],
     "recruiterBatch": {
@@ -12590,8 +12594,8 @@
     {
       "company": "Forge Global",
       "role": "Software Engineer II, Marketplace Middleware Engineering",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -12606,10 +12610,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized fintech marketplace middleware, backend APIs, SQL data workflows, server-side delivery, CI/CD, reliability, and financial-services product execution. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: required soonest start date field 2026-05-03",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized fintech marketplace middleware, backend APIs, SQL data workflows, server-side delivery, CI/CD, reliability, and financial-services product execution. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: required soonest start date field 2026-05-03; Submitted via Greenhouse on 2026-05-03 with tailored resume. Start date entered as May 18, 2026. Salary midpoint from posted New York range (,000-,000) is ,500 if discussed. Confirmation page: Thank you for applying to Forge; your application has been received and Recruiting will get back if there is a fit.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-02",
+        "2026-05-03",
         "2026-05-03"
       ]
     },
@@ -14381,8 +14386,8 @@
     {
       "company": "Perpay",
       "role": "Software Engineer, New Grad",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -14397,9 +14402,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-03 23:00Z; tailored SWE resume rendered and verified one page; emphasized new-grad fintech product engineering, full-stack customer workflows, React interfaces, backend APIs, data-backed validation, testing, and production-quality delivery. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-03 23:00Z; tailored SWE resume rendered and verified one page; emphasized new-grad fintech product engineering, full-stack customer workflows, React interfaces, backend APIs, data-backed validation, testing, and production-quality delivery. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.; Filled Greenhouse form with tailored resume on 2026-05-03, including required custom free-response answers. Not submitted per Liam's FRQ review instruction; tab left open at final submit.; Application submitted 2026-05-03",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-03",
+        "2026-05-03",
         "2026-05-03",
         "2026-05-03"
       ]
@@ -14408,7 +14415,7 @@
       "company": "Applied Intuition",
       "role": "Software Engineer - New Grad",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -14423,9 +14430,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-03 23:00Z; tailored SWE resume rendered and verified one page; emphasized new-grad autonomy software, full-stack and infrastructure engineering, product ownership, testing, C++/Python-adjacent systems, and reliable engineering for physical AI platforms. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-03 23:00Z; tailored SWE resume rendered and verified one page; emphasized new-grad autonomy software, full-stack and infrastructure engineering, product ownership, testing, C++/Python-adjacent systems, and reliable engineering for physical AI platforms. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.; Posting unavailable 2026-05-03: direct Greenhouse URL redirects to Applied Intuition careers page; careers search shows no matching Software Engineer - New Grad opening.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-03",
         "2026-05-03",
         "2026-05-03"
       ]
@@ -14434,7 +14442,7 @@
       "company": "Applied Intuition",
       "role": "Software Engineer - New Grad",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -14449,9 +14457,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-03 23:00Z; tailored SWE resume rendered and verified one page; emphasized new-grad autonomy software, full-stack and infrastructure engineering, product ownership, testing, C++/Python-adjacent systems, and reliable engineering for physical AI platforms. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-03 23:00Z; tailored SWE resume rendered and verified one page; emphasized new-grad autonomy software, full-stack and infrastructure engineering, product ownership, testing, C++/Python-adjacent systems, and reliable engineering for physical AI platforms. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-03: tailored resume rendered and verified one page, but browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.; Posting unavailable 2026-05-03: direct Greenhouse URL redirects to Applied Intuition careers page; careers search shows no matching Software Engineer - New Grad opening.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-03",
         "2026-05-03",
         "2026-05-03"
       ]
@@ -14507,6 +14516,29 @@
         "2026-05-03",
         "2026-05-03"
       ]
+    },
+    {
+      "company": "The New York Times",
+      "role": "Software Engineer AI Platforms and Products Frontend",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-03",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4680447005",
+      "postingKey": "4680447005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/The New York Times/Software_Engineer_AI_Platforms_and_Products_Frontend/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/The New York Times/Software_Engineer_AI_Platforms_and_Products_Frontend/Liam_Van_Resume/Liam_Van_The_New_York_Times.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
     }
   ],
   "jobIntake": [
@@ -17652,6 +17684,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "The New York Times",
+      "role": "Software Engineer AI Platforms and Products Frontend",
+      "postingKey": "4680447005",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4680447005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Tekmerion Capital",
@@ -32263,30 +32308,6 @@
           "contacts": []
         },
         {
-          "key": "4592025005",
-          "company": "Applied Intuition",
-          "role": "Software Engineer - New Grad",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4600028005",
-          "company": "Applied Intuition",
-          "role": "Software Engineer - New Grad",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "4409014859",
           "company": "Aquatic Capital Management",
           "role": "Software Engineer, Early Career",
@@ -32447,7 +32468,7 @@
           "company": "Forge Global",
           "role": "Software Engineer II, Marketplace Middleware Engineering",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -32639,7 +32660,7 @@
           "company": "Perpay",
           "role": "Software Engineer, New Grad",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -32892,6 +32913,18 @@
           "role": "Software Engineer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4680447005",
+          "company": "The New York Times",
+          "role": "Software Engineer AI Platforms and Products Frontend",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -44044,30 +44077,6 @@
           "contacts": []
         },
         {
-          "key": "4592025005",
-          "company": "Applied Intuition",
-          "role": "Software Engineer - New Grad",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4600028005",
-          "company": "Applied Intuition",
-          "role": "Software Engineer - New Grad",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "4409014859",
           "company": "Aquatic Capital Management",
           "role": "Software Engineer, Early Career",
@@ -44528,7 +44537,7 @@
           "company": "Perpay",
           "role": "Software Engineer, New Grad",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -44829,6 +44838,18 @@
           "role": "Software Engineer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4680447005",
+          "company": "The New York Times",
+          "role": "Software Engineer AI Platforms and Products Frontend",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
