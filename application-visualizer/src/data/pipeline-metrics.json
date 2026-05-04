@@ -45,13 +45,13 @@
     {
       "archived": 0,
       "date": "2026-05-04",
-      "manual": 0,
+      "manual": 11,
       "submitted": 1
     }
   ],
   "avgConfidenceBySource": [
     {
-      "avgScore": 63.8,
+      "avgScore": 56.1,
       "band": "medium",
       "source": "Greenhouse"
     },
@@ -61,7 +61,7 @@
       "source": "LinkedIn"
     }
   ],
-  "generatedAt": "2026-05-04T03:28:00.804448+00:00",
+  "generatedAt": "2026-05-04T20:06:31.886719+00:00",
   "intakeHealth": {
     "greenhouseCapturedToday": 0,
     "greenhouseLastRun": "",
@@ -71,18 +71,18 @@
   },
   "queueDepth": {
     "intakeUnprocessed": 67,
-    "manualApplyNeeded": 46,
+    "manualApplyNeeded": 57,
     "readyToApply": 0,
-    "resumeTailored": 2
+    "resumeTailored": 1
   },
   "submitSuccessRate": {
-    "archived": 0.5,
-    "manual": 0.385,
-    "submitted": 0.115
+    "archived": 0.449,
+    "manual": 0.449,
+    "submitted": 0.103
   },
   "topBlockers": [
     {
-      "count": 37,
+      "count": 48,
       "reason": "unspecified"
     }
   ],
