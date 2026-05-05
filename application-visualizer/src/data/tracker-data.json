@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-05T01:12:01.711781+00:00",
+  "generatedAt": "2026-05-05T02:30:19.458706+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 508,
-      "applied": 341,
-      "unapplied": 167,
+      "applied": 345,
+      "unapplied": 163,
       "active": 352,
       "rejected": 44,
       "interviewing": 3,
@@ -26,8 +26,8 @@
       "intakeNew": 37,
       "intakeManual": 32,
       "intakeApplied": 0,
-      "applyRate": 67.1,
-      "rejectionRate": 12.9,
+      "applyRate": 67.9,
+      "rejectionRate": 12.8,
       "recruiterWork": 265,
       "engineerWork": 323,
       "recruiterReachedOut": 93,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 290
+        "value": 294
       },
       {
         "name": "Archived",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 56
+        "value": 52
       },
       {
         "name": "Rejected",
@@ -432,7 +432,7 @@
         "date": "2026-05-01",
         "cumulative": 361,
         "added": 64,
-        "applied": 47,
+        "applied": 48,
         "rejected": 1,
         "interviewing": 0
       },
@@ -448,7 +448,7 @@
         "date": "2026-05-03",
         "cumulative": 484,
         "added": 70,
-        "applied": 9,
+        "applied": 11,
         "rejected": 0,
         "interviewing": 0
       },
@@ -456,7 +456,7 @@
         "date": "2026-05-04",
         "cumulative": 508,
         "added": 24,
-        "applied": 1,
+        "applied": 2,
         "rejected": 0,
         "interviewing": 0
       }
@@ -10175,8 +10175,8 @@
     {
       "company": "Mill",
       "role": "Software Development Engineer - Test",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 7,
       "reachOut": false,
       "referral": "No",
@@ -10191,14 +10191,15 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: Greenhouse email security code verification after submit 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized test. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Onsite in San Bruno required; Manual apply needed 2026-05-04: Greenhouse form was staged with tailored resume, MyGreenhouse profile data, LinkedIn/website, demographic selections, and onsite San Bruno acknowledgement; final submission blocked by 8-character email security code sent to liamvanpj@gmail.com.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: Greenhouse email security code verification after submit 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized test. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Onsite in San Bruno required; Manual apply needed 2026-05-04: Greenhouse form was staged with tailored resume, MyGreenhouse profile data, LinkedIn/website, demographic selections, and onsite San Bruno acknowledgement; final submission blocked by 8-character email security code sent to liamvanpj@gmail.com.; Application submitted 2026-05-05 via Greenhouse with tailored resume; confirmation page displayed.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
         "2026-05-01",
         "2026-05-04",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-05"
       ]
     },
     {
@@ -10697,11 +10698,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI product infrastructure, Python/TypeScript systems, LLM applications, data workflows, production validation, and fast execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Do you have a security clearance?; Are you a current or former civilian or military employee of the United States Government? (If yes, when/where were you last employed and what was your highest grade/rank and title?)",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI product infrastructure, Python/TypeScript systems, LLM applications, data workflows, production validation, and fast execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Do you have a security clearance?; Are you a current or former civilian or military employee of the United States Government? (If yes, when/where were you last employed and what was your highest grade/rank and title?); Manual apply still needed 2026-05-05: live Greenhouse posting requires at least active Secret clearance and says candidates without at least Secret clearance will not be considered; not submitted.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-05"
       ]
     },
     {
@@ -12790,18 +12792,19 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-03 degraded public-search pass; tailored SWE resume rendered and verified one page; emphasized forward-deployed AI agents, logistics workflows, customer-facing engineering, backend APIs, full-stack delivery, and production validation. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you willing to work out of our office in San Francisco or New York City office?; Are you comfortable moving forward with the salary range posted?",
+      "notes": "Hourly intake 2026-05-03 degraded public-search pass; tailored SWE resume rendered and verified one page; emphasized forward-deployed AI agents, logistics workflows, customer-facing engineering, backend APIs, full-stack delivery, and production validation. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you willing to work out of our office in San Francisco or New York City office?; Are you comfortable moving forward with the salary range posted?; Manual apply needed 2026-05-05: live Greenhouse form requires written role-specific customer-facing engineering responses: direct external-customer/client experience and why forward-deployed customer-facing engineering instead of internal platform/ML; routine office, salary, travel, authorization, and sponsorship fields are otherwise answerable.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-03",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-05"
       ]
     },
     {
       "company": "Clear Street",
       "role": "Backend Software Engineer - Reference Data Services",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -12816,18 +12819,19 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-03 degraded public-search pass; tailored SWE resume rendered and verified one page; emphasized backend financial data services, authoritative datasets, API reliability, data modeling, cloud validation, and production operations. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: What is the minimum annual salary desired (in USD)?; If sponsorship is needed, please explain your current visa type and status.",
+      "notes": "Hourly intake 2026-05-03 degraded public-search pass; tailored SWE resume rendered and verified one page; emphasized backend financial data services, authoritative datasets, API reliability, data modeling, cloud validation, and production operations. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: What is the minimum annual salary desired (in USD)?; If sponsorship is needed, please explain your current visa type and status.; Application submitted 2026-05-05 via Greenhouse with tailored resume; confirmation page displayed.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-03",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-05"
       ]
     },
     {
       "company": "Addepar",
       "role": "Backend Software Engineer - Investor Solutions",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -12842,11 +12846,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-03 degraded public-search pass; tailored SWE resume rendered and verified one page; emphasized backend investor-solutions systems, financial data workflows, API services, platform reliability, data validation, and cross-functional delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you 18 years of age or older?; Are you currently employed by a client, partner, or competitor of Addepar?",
+      "notes": "Hourly intake 2026-05-03 degraded public-search pass; tailored SWE resume rendered and verified one page; emphasized backend investor-solutions systems, financial data workflows, API services, platform reliability, data validation, and cross-functional delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you 18 years of age or older?; Are you currently employed by a client, partner, or competitor of Addepar?; Application submitted 2026-05-05 via Greenhouse with tailored resume; confirmation page displayed.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-03",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-05"
       ]
     },
     {
@@ -14715,8 +14720,8 @@
     {
       "company": "iCapital",
       "role": "Full Stack Engineer - Ruby and React - Associate",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -14731,11 +14736,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-04 13:00 PT; tailored SWE resume rendered and verified one page; emphasized associate full-stack fintech SaaS engineering, React product workflows, backend APIs, cloud delivery, architecture collaboration, testing, and maintainable enterprise software. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Full Legal Name; Are you legally eligible to work in the country where this role is located?",
+      "notes": "Hourly Greenhouse intake 2026-05-04 13:00 PT; tailored SWE resume rendered and verified one page; emphasized associate full-stack fintech SaaS engineering, React product workflows, backend APIs, cloud delivery, architecture collaboration, testing, and maintainable enterprise software. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Full Legal Name; Are you legally eligible to work in the country where this role is located?; Manual apply needed 2026-05-05: Greenhouse form staged with tailored resume and routine fields; final submission blocked by 8-character email verification code sent to liamvanpj@gmail.com.; Application submitted 2026-05-05 via Greenhouse with tailored resume; confirmation page displayed.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-04",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-05",
+        "2026-05-05"
       ]
     },
     {
@@ -36270,7 +36277,7 @@
           "company": "iCapital",
           "role": "Full Stack Engineer - Ruby and React - Associate",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -47784,7 +47791,7 @@
           "company": "iCapital",
           "role": "Full Stack Engineer - Ruby and React - Associate",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
