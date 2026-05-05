@@ -1,50 +1,113 @@
 {
-  "reach_out_threshold": 1,
+  "reach_out_threshold": 8,
   "base_score": 3,
   "weights": {
-    "preferred_location": 1,
-    "acceptable_location": 1,
-    "strong_role": 3,
-    "level_fit": 2,
+    "nyc_location": 3,
+    "sf_bay_location": 2,
+    "remote_us_location": 1,
+    "early_career": 3,
+    "one_to_two_yoe": 2,
+    "swe_family": 2,
+    "backend_fullstack_platform": 2,
+    "product_or_generalist": 1,
+    "stack_match": 2,
     "worthwhile_company": 2,
-    "avoid_company": -1,
     "preferred_source": 1,
-    "avoid_status": -8,
-    "referral": 1
+    "referral": 1,
+    "three_to_four_yoe": -2,
+    "five_plus_yoe": -4,
+    "senior_title": -3,
+    "staff_principal_manager": -5,
+    "non_swe_role": -4,
+    "avoid_company": -3,
+    "clearance_or_hard_gate": -3,
+    "avoid_status": -8
   },
-  "preferred_location_terms": [
+  "nyc_location_terms": [
     "new york",
     "new york city",
     "nyc",
     "brooklyn",
     "manhattan"
   ],
-  "acceptable_location_terms": [
+  "sf_bay_location_terms": [
+    "san francisco",
+    "bay area",
+    "palo alto",
+    "redwood city",
+    "mountain view",
+    "san mateo",
+    "san jose"
+  ],
+  "remote_us_location_terms": [
     "hybrid",
     "remote",
     "united states",
     "seattle",
-    "san francisco",
-    "bay area",
-    "palo alto",
-    "new york"
+    "washington, dc",
+    "district of columbia"
   ],
-  "strong_role_terms": [
+  "swe_family_terms": [
     "software engineer",
+    "software developer",
+    "developer",
+    "forward deployed engineer",
+    "applications developer"
+  ],
+  "backend_fullstack_platform_terms": [
     "backend",
     "full stack",
     "fullstack",
     "platform",
-    "product engineer",
-    "generalist"
+    "infrastructure",
+    "api",
+    "cloud"
   ],
-  "level_fit_terms": [
+  "product_or_generalist_terms": [
+    "product engineer",
+    "generalist",
+    "founding engineer"
+  ],
+  "early_career_terms": [
     "early career",
     "new grad",
+    "new graduate",
     "junior",
     "associate",
     "engineer i",
-    "software engineer i"
+    "software engineer i",
+    "entry level",
+    "university grad"
+  ],
+  "one_to_two_yoe_terms": [
+    "0-1 years",
+    "0-2 years",
+    "1+ years",
+    "1 year",
+    "1-2 years",
+    "2+ years",
+    "2 years"
+  ],
+  "stack_match_terms": [
+    "java",
+    "python",
+    "typescript",
+    "javascript",
+    "react",
+    "node",
+    "nestjs",
+    "spring boot",
+    "sql",
+    "mysql",
+    "rest api",
+    "restful",
+    "aws",
+    "gcp",
+    "oci",
+    "docker",
+    "ci/cd",
+    "distributed systems",
+    "cloud"
   ],
   "worthwhile_company_terms": [
     "plaid",
@@ -73,6 +136,36 @@
     "talent acquisition",
     "advisors",
     "staffing"
+  ],
+  "senior_title_terms": [
+    "senior software engineer",
+    "software engineer iii",
+    "engineer iii",
+    "lead software engineer"
+  ],
+  "staff_principal_manager_terms": [
+    "staff",
+    "principal",
+    "manager",
+    "director",
+    "architect"
+  ],
+  "non_swe_role_terms": [
+    "sales",
+    "account executive",
+    "customer success",
+    "recruiter",
+    "talent",
+    "data analyst",
+    "business analyst"
+  ],
+  "clearance_or_hard_gate_terms": [
+    "security clearance",
+    "active clearance",
+    "top secret",
+    "ts/sci",
+    "us citizen",
+    "u.s. citizen"
   ],
   "preferred_sources": [
     "ashby",
