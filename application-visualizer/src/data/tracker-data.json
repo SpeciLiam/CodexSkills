@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-05T21:19:21.371701+00:00",
+  "generatedAt": "2026-05-05T22:08:16.268325+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 513,
+      "total": 519,
       "applied": 350,
-      "unapplied": 163,
-      "active": 352,
+      "unapplied": 169,
+      "active": 358,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 394,
-      "reachOut": 451,
+      "highFit": 400,
+      "reachOut": 457,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 235,
+      "intakeJobs": 242,
       "intakeQueued": 30,
       "intakeNew": 37,
-      "intakeManual": 37,
+      "intakeManual": 43,
       "intakeApplied": 0,
-      "applyRate": 68.2,
+      "applyRate": 67.4,
       "rejectionRate": 12.6,
-      "recruiterWork": 265,
-      "engineerWork": 319,
+      "recruiterWork": 271,
+      "engineerWork": 325,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 47
+        "value": 53
       },
       {
         "name": "Rejected",
@@ -62,11 +62,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 203
+        "value": 207
       },
       {
         "name": "LinkedIn",
-        "value": 173
+        "value": 175
       },
       {
         "name": "Ashby",
@@ -136,7 +136,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 233
+        "value": 235
       },
       {
         "name": "Bay Area",
@@ -144,11 +144,11 @@
       },
       {
         "name": "Other",
-        "value": 70
+        "value": 72
       },
       {
         "name": "Remote",
-        "value": 59
+        "value": 61
       },
       {
         "name": "Seattle",
@@ -166,19 +166,19 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 283
-      },
-      {
-        "name": "Full Stack",
-        "value": 65
+        "value": 285
       },
       {
         "name": "Backend",
-        "value": 64
+        "value": 66
+      },
+      {
+        "name": "Full Stack",
+        "value": 66
       },
       {
         "name": "Forward Deployed",
-        "value": 32
+        "value": 33
       },
       {
         "name": "AI/ML",
@@ -228,7 +228,7 @@
       },
       {
         "score": "8",
-        "count": 98
+        "count": 99
       },
       {
         "score": "9",
@@ -236,7 +236,7 @@
       },
       {
         "score": "10",
-        "count": 200
+        "count": 205
       }
     ],
     "targetCounts": [
@@ -258,7 +258,7 @@
       },
       {
         "name": "Manual",
-        "value": 37
+        "value": 43
       },
       {
         "name": "New",
@@ -270,7 +270,7 @@
       },
       {
         "name": "Skipped",
-        "value": 18
+        "value": 19
       },
       {
         "name": "Expired",
@@ -284,11 +284,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 171
+        "value": 175
       },
       {
         "name": "LinkedIn",
-        "value": 64
+        "value": 67
       }
     ],
     "timeline": [
@@ -462,8 +462,8 @@
       },
       {
         "date": "2026-05-05",
-        "cumulative": 513,
-        "added": 5,
+        "cumulative": 519,
+        "added": 11,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -531,9 +531,21 @@
         "bestFit": 10
       },
       {
+        "company": "Valon",
+        "roles": 4,
+        "avgFit": 8.75,
+        "bestFit": 10
+      },
+      {
         "company": "Uber",
         "roles": 4,
         "avgFit": 8.75,
+        "bestFit": 10
+      },
+      {
+        "company": "Robinhood",
+        "roles": 4,
+        "avgFit": 5.0,
         "bestFit": 10
       },
       {
@@ -598,18 +610,6 @@
       },
       {
         "company": "Giga",
-        "roles": 2,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Procore Technologies",
-        "roles": 2,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Trexquant Investment LP",
         "roles": 2,
         "avgFit": 10.0,
         "bestFit": 10
@@ -687,6 +687,15 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/versaterm/jobs/4593081008"
+      },
+      {
+        "company": "Valon",
+        "role": "Software Engineer - New Grad",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/valon/jobs/4409152006"
       },
       {
         "company": "Upstart",
@@ -930,15 +939,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/stubhubinc/jobs/4740072101"
-      },
-      {
-        "company": "StubHub",
-        "role": "Software Engineer II - Platform Runtime & Services",
-        "fitScore": 10,
-        "status": "Resume Tailored",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://job-boards.greenhouse.io/stubhubinc/jobs/4683779101"
       }
     ],
     "recruiterBatch": {
@@ -3263,13 +3263,13 @@
       "source": "Greenhouse",
       "jobLink": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4673616005#app",
       "postingKey": "4673616005",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/The New York Times/Software_Engineer_Scoop_Core/Liam_Van_Resume",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/The New York Times/Software_Engineer_Scoop_Core/Liam_Van_Resume/Liam_Van_The_New_York_Times.pdf",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/The New York Times/Software_Engineer_Scoop_Core/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/The New York Times/Software_Engineer_Scoop_Core/Liam_Van_Resume_2/Liam_Van_The_New_York_Times.pdf",
       "recruiterContact": "Nadia Tiwari",
       "recruiterProfile": "https://www.linkedin.com/in/nadia-tiwari-28b1a5151/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Nadia Tiwari (Recruiter) 2026-04-25; Replaced company posting with direct Greenhouse application 2026-04-27; Manual apply needed: desired salary and final application submission confirmation 2026-04-27; Application submitted via Greenhouse with tailored NYTimes resume and provided salary/source answers 2026-04-28",
+      "notes": "LinkedIn invite sent to Nadia Tiwari (Recruiter) 2026-04-25; Replaced company posting with direct Greenhouse application 2026-04-27; Manual apply needed: desired salary and final application submission confirmation 2026-04-27; Application submitted via Greenhouse with tailored NYTimes resume and provided salary/source answers 2026-04-28; Refreshed tailored resume 2026-05-05 for current Scoop Core posting; emphasized backend platform services, API validation, cloud services on GCP/AWS, unit and integration testing, documentation, onboarding, observability, and cross-functional release communication.",
       "noteLinks": [
         {
           "label": "Nadia Tiwari",
@@ -3280,7 +3280,8 @@
         "2026-04-25",
         "2026-04-27",
         "2026-04-27",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-05"
       ]
     },
     {
@@ -15378,9 +15379,235 @@
         "2026-05-05",
         "2026-05-05"
       ]
+    },
+    {
+      "company": "Valon",
+      "role": "Software Engineer - New Grad",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "New York, NY; San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/valon/jobs/4409152006",
+      "postingKey": "4409152006",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Valon/Software_Engineer_New_Grad/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Valon/Software_Engineer_New_Grad/Liam_Van_Resume/Liam_Van_Valon.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly LinkedIn/Greenhouse intake 2026-05-05 15:00 PT; tailored SWE resume rendered and verified one page; emphasized NYC/SF new-grad backend and product engineering for AI-native regulated finance, APIs, data workflows, testing, and reliable platform delivery. Public capture used because Computer Use access to Chrome and Firefox was denied after required preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-05",
+        "2026-05-05"
+      ]
+    },
+    {
+      "company": "Robinhood",
+      "role": "Software Backend Engineer, Credit Cards & Banking Platform",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "Bellevue, WA; Menlo Park, CA; New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/robinhood/jobs/7022255?gh_jid=7022255&t=gh_src%3D",
+      "postingKey": "7022255",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Robinhood/Software_Backend_Engineer_Credit_Cards_Banking_Platform/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Robinhood/Software_Backend_Engineer_Credit_Cards_Banking_Platform/Liam_Van_Resume/Liam_Van_Robinhood.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly LinkedIn/Greenhouse intake 2026-05-05 15:00 PT; tailored SWE resume rendered and verified one page; emphasized NYC fintech backend engineering, credit-card and banking platform services, APIs, distributed systems, testing, and production reliability. Public capture used because Computer Use access to Chrome and Firefox was denied after required preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-05",
+        "2026-05-05"
+      ]
+    },
+    {
+      "company": "Microsoft",
+      "role": "Software Engineer II - CTJ - Poly",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineering-ic3-at-microsoft-4342545143",
+      "postingKey": "software-engineering-ic3-at-microsoft-4342545143",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Microsoft/Software_Engineer_II_CTJ_Poly/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Microsoft/Software_Engineer_II_CTJ_Poly/Liam_Van_Resume/Liam_Van_Microsoft.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly LinkedIn/Greenhouse intake 2026-05-05 15:00 PT; tailored SWE resume rendered and verified one page; emphasized security-focused Software Engineer II work, cloud services, secure backend systems, testing, observability, and scalable production delivery. Public capture used because Computer Use access to Chrome and Firefox was denied after required preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-05",
+        "2026-05-05"
+      ]
+    },
+    {
+      "company": "Included Health",
+      "role": "Software Engineer II, Fullstack",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-fullstack-at-included-health-4252399531",
+      "postingKey": "software-engineer-ii-fullstack-at-included-health-4252399531",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Included Health/Software_Engineer_II_Fullstack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Included Health/Software_Engineer_II_Fullstack/Liam_Van_Resume/Liam_Van_Included_Health.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly LinkedIn/Greenhouse intake 2026-05-05 15:00 PT; tailored SWE resume rendered and verified one page; emphasized full-stack healthcare product engineering, accessible frontend workflows, backend APIs, product/design collaboration, testing, and clean data flow. Public capture used because Computer Use access to Chrome and Firefox was denied after required preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-05",
+        "2026-05-05"
+      ]
+    },
+    {
+      "company": "Databento",
+      "role": "Backend Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "Remote / San Francisco / New York / Salt Lake City",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/databento/jobs/7421561?gh_src=8sb20jx21us",
+      "postingKey": "7421561",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Databento/Backend_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Databento/Backend_Engineer/Liam_Van_Resume/Liam_Van_Databento.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly LinkedIn/Greenhouse intake 2026-05-05 15:00 PT; tailored SWE resume rendered and verified one page; emphasized backend product engineering for financial-data APIs, Python/TypeScript services, data pipelines, testing, and startup ownership across NYC/SF/remote teams. Public capture used because Computer Use access to Chrome and Firefox was denied after required preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-05",
+        "2026-05-05"
+      ]
+    },
+    {
+      "company": "Govini",
+      "role": "Forward Deployed Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "Arlington, VA; Pittsburgh, PA; Remote",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/govini/jobs/4068889009",
+      "postingKey": "4068889009",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Govini/Forward_Deployed_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Govini/Forward_Deployed_Software_Engineer/Liam_Van_Resume/Liam_Van_Govini.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly LinkedIn/Greenhouse intake 2026-05-05 15:00 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed defense software engineering, customer-facing 0-to-1 delivery, AI-enabled applications, backend services, testing, and deployment reliability. Public capture used because Computer Use access to Chrome and Firefox was denied after required preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-05",
+        "2026-05-05"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Valon",
+      "role": "Software Engineer - New Grad",
+      "location": "New York, NY; San Francisco, CA",
+      "postingKey": "4409152006",
+      "jobUrl": "https://job-boards.greenhouse.io/valon/jobs/4409152006",
+      "discoveredAt": "2026-05-05T22:04:15.642911+00:00",
+      "postedAge": "Crawled 7 months ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "trackerPostingKey": "4409152006"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Robinhood",
+      "role": "Software Backend Engineer, Credit Cards & Banking Platform",
+      "location": "Bellevue, WA; Menlo Park, CA; New York, NY",
+      "postingKey": "7022255",
+      "jobUrl": "https://job-boards.greenhouse.io/robinhood/jobs/7022255?gh_jid=7022255&t=gh_src%3D",
+      "discoveredAt": "2026-05-05T22:04:15.642911+00:00",
+      "postedAge": "Crawled 4 weeks ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "trackerPostingKey": "7022255"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Microsoft",
+      "role": "Software Engineer II - CTJ - Poly",
+      "location": "United States",
+      "postingKey": "4342545143",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineering-ic3-at-microsoft-4342545143",
+      "discoveredAt": "2026-05-05T22:04:15.642911+00:00",
+      "postedAge": "16 hours ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "trackerPostingKey": "4342545143"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Included Health",
+      "role": "Software Engineer II, Fullstack",
+      "location": "United States",
+      "postingKey": "4252399531",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-ii-fullstack-at-included-health-4252399531",
+      "discoveredAt": "2026-05-05T22:04:15.642911+00:00",
+      "postedAge": "2 hours ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "trackerPostingKey": "4252399531"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Databento",
+      "role": "Backend Engineer",
+      "location": "Remote / San Francisco / New York / Salt Lake City",
+      "postingKey": "7421561",
+      "jobUrl": "https://job-boards.greenhouse.io/databento/jobs/7421561?gh_src=8sb20jx21us",
+      "discoveredAt": "2026-05-05T22:04:15.642911+00:00",
+      "postedAge": "Crawled 3 months ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "trackerPostingKey": "7421561"
+    },
     {
       "source": "Greenhouse",
       "company": "Constrafor",
@@ -17819,6 +18046,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Govini",
+      "role": "Forward Deployed Software Engineer",
+      "location": "Arlington, VA; Pittsburgh, PA; Remote",
+      "postingKey": "4068889009",
+      "jobUrl": "https://job-boards.greenhouse.io/govini/jobs/4068889009",
+      "discoveredAt": "2026-05-05T22:04:15.642911+00:00",
+      "postedAge": "Crawled 4 days ago",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "trackerPostingKey": "4068889009"
+    },
+    {
+      "source": "Greenhouse",
       "company": "Reddit",
       "role": "iOS Software Engineer, Contributions",
       "location": "Remote - United States",
@@ -18617,6 +18858,20 @@
     },
     {
       "source": "LinkedIn",
+      "company": "Govini",
+      "role": "Forward Deployed Software Engineer",
+      "location": "Pittsburgh, PA",
+      "postingKey": "4346650197",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-software-engineer-at-govini-4346650197",
+      "discoveredAt": "2026-05-05T22:04:15.642911+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-05: duplicate/low-fit LinkedIn capture; Greenhouse Govini posting 4068889009 was tailored and moved to manual apply needed",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
       "company": "TriEdge Investments",
       "role": "Staff Forward Deployed Software Engineer",
       "location": "New York, NY",
@@ -18801,6 +19056,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Valon",
+      "role": "Software Engineer - New Grad",
+      "postingKey": "4409152006",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/valon/jobs/4409152006",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-05",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -19376,6 +19644,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Robinhood",
+      "role": "Software Backend Engineer, Credit Cards & Banking Platform",
+      "postingKey": "7022255",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/robinhood/jobs/7022255?gh_jid=7022255&t=gh_src%3D",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-05",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Rippling",
       "role": "Software Engineer II, Backend Full Stack - Financial Product",
       "postingKey": "software-engineer-ii-backend-full-stack-financial-product-at-rippling-4366714932",
@@ -19870,6 +20151,19 @@
       "notes": ""
     },
     {
+      "company": "Microsoft",
+      "role": "Software Engineer II - CTJ - Poly",
+      "postingKey": "software-engineering-ic3-at-microsoft-4342545143",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineering-ic3-at-microsoft-4342545143",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-05",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Metronome",
       "role": "Software Engineer, Product",
       "postingKey": "4425245008",
@@ -20101,6 +20395,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-04",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Included Health",
+      "role": "Software Engineer II, Fullstack",
+      "postingKey": "software-engineer-ii-fullstack-at-included-health-4252399531",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-fullstack-at-included-health-4252399531",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-05",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -20466,6 +20773,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Databento",
+      "role": "Backend Engineer",
+      "postingKey": "7421561",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/databento/jobs/7421561?gh_src=8sb20jx21us",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-05",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Dandy",
@@ -22923,6 +23243,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Govini",
+      "role": "Forward Deployed Software Engineer",
+      "postingKey": "4068889009",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/govini/jobs/4068889009",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-05",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "GitLab",
@@ -36644,6 +36977,18 @@
           "contacts": []
         },
         {
+          "key": "7421561",
+          "company": "Databento",
+          "role": "Backend Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4209984009",
           "company": "Fanatics Betting & Gaming",
           "role": "Software Engineer II, iCasino - US",
@@ -36716,6 +37061,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-ii-fullstack-at-included-health-4252399531",
+          "company": "Included Health",
+          "role": "Software Engineer II, Fullstack",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5780582004",
           "company": "Loop",
           "role": "2026 New Grad - Software Engineer, Full-Stack",
@@ -36757,6 +37114,18 @@
           "role": "Software Engineer (US)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineering-ic3-at-microsoft-4342545143",
+          "company": "Microsoft",
+          "role": "Software Engineer II - CTJ - Poly",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -36899,6 +37268,18 @@
           "key": "8450776002",
           "company": "Remesh",
           "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7022255",
+          "company": "Robinhood",
+          "role": "Software Backend Engineer, Credit Cards & Banking Platform",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -37139,6 +37520,18 @@
           "key": "4647374005",
           "company": "Underdog",
           "role": "Associate Software Engineer, 2026 New Grad",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4409152006",
+          "company": "Valon",
+          "role": "Software Engineer - New Grad",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -38087,6 +38480,18 @@
           "key": "8437754002",
           "company": "GitLab",
           "role": "Backend Engineer, Knowledge Graph (Rust)",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4068889009",
+          "company": "Govini",
+          "role": "Forward Deployed Software Engineer",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -47918,6 +48323,18 @@
           "contacts": []
         },
         {
+          "key": "7421561",
+          "company": "Databento",
+          "role": "Backend Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4209984009",
           "company": "Fanatics Betting & Gaming",
           "role": "Software Engineer II, iCasino - US",
@@ -48002,6 +48419,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-ii-fullstack-at-included-health-4252399531",
+          "company": "Included Health",
+          "role": "Software Engineer II, Fullstack",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5780582004",
           "company": "Loop",
           "role": "2026 New Grad - Software Engineer, Full-Stack",
@@ -48029,6 +48458,18 @@
           "key": "1970393556643571",
           "company": "Microsoft",
           "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineering-ic3-at-microsoft-4342545143",
+          "company": "Microsoft",
+          "role": "Software Engineer II - CTJ - Poly",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -48295,6 +48736,18 @@
           "role": "Software Development Engineer II - Trust Decisioning Platform",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7022255",
+          "company": "Robinhood",
+          "role": "Software Backend Engineer, Credit Cards & Banking Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -48617,6 +49070,18 @@
           "key": "4647374005",
           "company": "Underdog",
           "role": "Associate Software Engineer, 2026 New Grad",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4409152006",
+          "company": "Valon",
+          "role": "Software Engineer - New Grad",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -49277,6 +49742,18 @@
           "key": "8437754002",
           "company": "GitLab",
           "role": "Backend Engineer, Knowledge Graph (Rust)",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4068889009",
+          "company": "Govini",
+          "role": "Forward Deployed Software Engineer",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
