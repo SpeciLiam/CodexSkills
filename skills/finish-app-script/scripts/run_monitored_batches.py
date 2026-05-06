@@ -126,6 +126,7 @@ def main() -> int:
 
         cmd = [
             "python3",
+            "-u",
             "skills/finish-app-script/scripts/run_batches.py",
             "--batch-size",
             str(args.batch_size),
