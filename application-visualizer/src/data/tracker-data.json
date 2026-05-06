@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T05:48:28.282521+00:00",
+  "generatedAt": "2026-05-06T05:51:40.660699+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 551,
+      "total": 553,
       "applied": 356,
-      "unapplied": 195,
-      "active": 390,
+      "unapplied": 197,
+      "active": 392,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 429,
-      "reachOut": 487,
+      "highFit": 431,
+      "reachOut": 489,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,10 +26,10 @@
       "intakeNew": 38,
       "intakeManual": 53,
       "intakeApplied": 0,
-      "applyRate": 64.6,
+      "applyRate": 64.4,
       "rejectionRate": 12.4,
-      "recruiterWork": 301,
-      "engineerWork": 355,
+      "recruiterWork": 303,
+      "engineerWork": 357,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 17
+        "value": 19
       },
       {
         "name": "Interviewing",
@@ -70,7 +70,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 200
+        "value": 202
       },
       {
         "name": "Ashby",
@@ -140,11 +140,11 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 249
+        "value": 250
       },
       {
         "name": "Bay Area",
-        "value": 129
+        "value": 130
       },
       {
         "name": "Other",
@@ -170,7 +170,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 306
+        "value": 307
       },
       {
         "name": "Full Stack",
@@ -186,7 +186,7 @@
       },
       {
         "name": "AI/ML",
-        "value": 32
+        "value": 33
       },
       {
         "name": "Infra/Platform",
@@ -232,11 +232,11 @@
       },
       {
         "score": "8",
-        "count": 107
+        "count": 108
       },
       {
         "score": "9",
-        "count": 101
+        "count": 102
       },
       {
         "score": "10",
@@ -474,8 +474,8 @@
       },
       {
         "date": "2026-05-06",
-        "cumulative": 551,
-        "added": 10,
+        "cumulative": 553,
+        "added": 12,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -597,6 +597,12 @@
         "bestFit": 10
       },
       {
+        "company": "Chime",
+        "roles": 3,
+        "avgFit": 9.0,
+        "bestFit": 10
+      },
+      {
         "company": "Superblocks",
         "roles": 3,
         "avgFit": 9.0,
@@ -618,12 +624,6 @@
         "company": "Anthropic",
         "roles": 3,
         "avgFit": 7.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Rippling",
-        "roles": 3,
-        "avgFit": 4.33,
         "bestFit": 10
       }
     ],
@@ -14186,10 +14186,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-03: browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "notes": "Manual apply needed 2026-05-03: browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Manual apply needed 2026-05-05: correct Lila Sciences resume selected in LinkedIn Easy Apply and advanced to additional questions, but not submitted because custom motivation answer plus Cambridge/work-location or relocation question need Liam review.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-05"
       ]
     },
     {
@@ -16333,6 +16334,52 @@
       "postingKey": "4410936090",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Airbnb/Software_Engineer_Infrastructure/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Airbnb/Software_Engineer_Infrastructure/Liam_Van_Resume/Liam_Van_Airbnb.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Campana & Schott",
+      "role": "AI Solutions Analyst",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4410558870/",
+      "postingKey": "4410558870",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Campana & Schott/AI_Solutions_Analyst/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Campana & Schott/AI_Solutions_Analyst/Liam_Van_Resume/Liam_Van_Campana_&_Schott.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Chime",
+      "role": "Product Security Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4307589021/",
+      "postingKey": "4307589021",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Chime/Product_Security_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Chime/Product_Security_Engineer/Liam_Van_Resume/Liam_Van_Chime.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
@@ -23796,6 +23843,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Campana & Schott",
+      "role": "AI Solutions Analyst",
+      "postingKey": "4410558870",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4410558870/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Brellium",
       "role": "Software Engineer AI",
       "postingKey": "c1c54c79-d3cf-41d7-a3d2-a230ec9b6c9e",
@@ -24885,6 +24945,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-01",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Chime",
+      "role": "Product Security Engineer",
+      "postingKey": "4307589021",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4307589021/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -39278,6 +39351,18 @@
           "contacts": []
         },
         {
+          "key": "4410558870",
+          "company": "Campana & Schott",
+          "role": "AI Solutions Analyst",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4076674004",
           "company": "Canopy Connect",
           "role": "Backend Engineer - Carrier Integrations Team (Remote)",
@@ -39979,6 +40064,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4307589021",
+          "company": "Chime",
+          "role": "Product Security Engineer",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -51224,6 +51321,18 @@
           "contacts": []
         },
         {
+          "key": "4410558870",
+          "company": "Campana & Schott",
+          "role": "AI Solutions Analyst",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4076674004",
           "company": "Canopy Connect",
           "role": "Backend Engineer - Carrier Integrations Team (Remote)",
@@ -51697,6 +51806,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4307589021",
+          "company": "Chime",
+          "role": "Product Security Engineer",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
