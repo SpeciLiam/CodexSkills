@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T06:15:52.835505+00:00",
+  "generatedAt": "2026-05-06T06:28:59.914795+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 559,
-      "applied": 357,
-      "unapplied": 202,
+      "applied": 364,
+      "unapplied": 195,
       "active": 395,
       "rejected": 44,
       "interviewing": 3,
@@ -26,8 +26,8 @@
       "intakeNew": 38,
       "intakeManual": 54,
       "intakeApplied": 0,
-      "applyRate": 63.9,
-      "rejectionRate": 12.3,
+      "applyRate": 65.1,
+      "rejectionRate": 12.1,
       "recruiterWork": 304,
       "engineerWork": 360,
       "recruiterReachedOut": 93,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 306
+        "value": 313
       },
       {
         "name": "Archived",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 59
+        "value": 52
       },
       {
         "name": "Rejected",
@@ -436,7 +436,7 @@
         "date": "2026-05-01",
         "cumulative": 361,
         "added": 64,
-        "applied": 48,
+        "applied": 49,
         "rejected": 1,
         "interviewing": 0
       },
@@ -452,7 +452,7 @@
         "date": "2026-05-03",
         "cumulative": 484,
         "added": 70,
-        "applied": 14,
+        "applied": 16,
         "rejected": 0,
         "interviewing": 0
       },
@@ -460,7 +460,7 @@
         "date": "2026-05-04",
         "cumulative": 508,
         "added": 24,
-        "applied": 7,
+        "applied": 9,
         "rejected": 0,
         "interviewing": 0
       },
@@ -468,7 +468,7 @@
         "date": "2026-05-05",
         "cumulative": 542,
         "added": 34,
-        "applied": 3,
+        "applied": 5,
         "rejected": 0,
         "interviewing": 0
       },
@@ -10516,8 +10516,8 @@
     {
       "company": "Formic",
       "role": "Full Stack Software Engineer - Robotics",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -10532,7 +10532,7 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required custom robotics/edge, observability, and distributed-systems experience responses; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: How did you find out about this opportunity?; Are you located in and legally authorized to work in the United States?; Manual apply needed 2026-05-04: Greenhouse form requires three custom technical written responses about robotics/edge devices, observability, and distributed systems, plus a live reCAPTCHA container.; Manual apply needed 2026-05-05: filled safe Greenhouse fields and uploaded Formic resume, but not submitted because confidence is low: 5+ years, robotics/edge, observability, distributed systems, and hybrid Oakland/SF require Liam review.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required custom robotics/edge, observability, and distributed-systems experience responses; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: How did you find out about this opportunity?; Are you located in and legally authorized to work in the United States?; Manual apply needed 2026-05-04: Greenhouse form requires three custom technical written responses about robotics/edge devices, observability, and distributed systems, plus a live reCAPTCHA container.; Manual apply needed 2026-05-05: filled safe Greenhouse fields and uploaded Formic resume, but not submitted because confidence is low: 5+ years, robotics/edge, observability, distributed systems, and hybrid Oakland/SF require Liam review.; Application confirmation email received 2026-05-06.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
@@ -10540,7 +10540,8 @@
         "2026-05-01",
         "2026-05-04",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ]
     },
     {
@@ -14174,8 +14175,8 @@
     {
       "company": "Lila Sciences",
       "role": "Software Engineer I, Instrument Software",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -14190,11 +14191,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-03: browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Manual apply needed 2026-05-05: correct Lila Sciences resume selected in LinkedIn Easy Apply and advanced to additional questions, but not submitted because custom motivation answer plus Cambridge/work-location or relocation question need Liam review.",
+      "notes": "Manual apply needed 2026-05-03: browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Manual apply needed 2026-05-05: correct Lila Sciences resume selected in LinkedIn Easy Apply and advanced to additional questions, but not submitted because custom motivation answer plus Cambridge/work-location or relocation question need Liam review.; Application confirmation email received 2026-05-06.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-03",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ]
     },
     {
@@ -14544,8 +14546,8 @@
     {
       "company": "Toshiba Global Commerce Solutions",
       "role": "Associate Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -14560,13 +14562,14 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-03 23:00Z; tailored SWE resume rendered and verified one page; emphasized associate software quality engineering, AI-assisted defect diagnosis, validation, test automation, production bug fixing, and reliable release workflows. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you 18 years of age or older?; Upon employment, can you submit verification of your legal right to work for Toshiba in the United States?; Manual apply needed: Greenhouse form requires full-name legal certification/verification authorization plus restrictive-agreement, ability-to-perform, salary, and address fields before submission 2026-05-04.; Manual apply needed 2026-05-05: live Greenhouse posting is reachable but states candidates must be local to the Frisco, TX area and this hybrid role is at least 3-4 days per week in person; not submitted because Liam's current address is Seattle and the local-only requirement needs review.",
+      "notes": "Hourly Greenhouse intake 2026-05-03 23:00Z; tailored SWE resume rendered and verified one page; emphasized associate software quality engineering, AI-assisted defect diagnosis, validation, test automation, production bug fixing, and reliable release workflows. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you 18 years of age or older?; Upon employment, can you submit verification of your legal right to work for Toshiba in the United States?; Manual apply needed: Greenhouse form requires full-name legal certification/verification authorization plus restrictive-agreement, ability-to-perform, salary, and address fields before submission 2026-05-04.; Manual apply needed 2026-05-05: live Greenhouse posting is reachable but states candidates must be local to the Frisco, TX area and this hybrid role is at least 3-4 days per week in person; not submitted because Liam's current address is Seattle and the local-only requirement needs review.; Application confirmation email received 2026-05-06.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-03",
         "2026-05-04",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ]
     },
     {
@@ -14787,8 +14790,8 @@
     {
       "company": "Flourish",
       "role": "Backend Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -14803,12 +14806,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-04 13:00 PT; tailored SWE resume rendered and verified one page; emphasized NYC fintech backend engineering, secure product systems, scalable APIs, advisor workflow tooling, testing, and production-quality delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: 1. Are you legally authorized to work in the United States?; 3. Are you at least 18 years of age?; Manual apply needed: Greenhouse form requires legal attestations/consents including application accuracy, at-will employment, future IP/confidentiality agreements, conflict-of-interest, and regulatory disclosure statements before submission 2026-05-04",
+      "notes": "Hourly Greenhouse intake 2026-05-04 13:00 PT; tailored SWE resume rendered and verified one page; emphasized NYC fintech backend engineering, secure product systems, scalable APIs, advisor workflow tooling, testing, and production-quality delivery. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: 1. Are you legally authorized to work in the United States?; 3. Are you at least 18 years of age?; Manual apply needed: Greenhouse form requires legal attestations/consents including application accuracy, at-will employment, future IP/confidentiality agreements, conflict-of-interest, and regulatory disclosure statements before submission 2026-05-04; Application confirmation email received 2026-05-06.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-04",
         "2026-05-04",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-06"
       ]
     },
     {
@@ -15147,8 +15151,8 @@
     {
       "company": "Nex",
       "role": "Fullstack Engineer (Digital Experience)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -15163,12 +15167,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-04 15:00 PT; tailored SWE resume rendered and verified one page; emphasized remote digital-experience full-stack engineering, consumer product workflows, React interfaces, backend APIs, privacy-minded delivery, testing, and product iteration. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Manual apply needed 2026-05-05: live Greenhouse form is reachable, but asks whether Liam is open to starting as a contract position before potential full-time conversion, plus a concise role-specific motivation and salary requirements; not submitted.",
+      "notes": "Hourly Greenhouse intake 2026-05-04 15:00 PT; tailored SWE resume rendered and verified one page; emphasized remote digital-experience full-stack engineering, consumer product workflows, React interfaces, backend APIs, privacy-minded delivery, testing, and product iteration. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Manual apply needed 2026-05-05: live Greenhouse form is reachable, but asks whether Liam is open to starting as a contract position before potential full-time conversion, plus a concise role-specific motivation and salary requirements; not submitted.; Application confirmation email received 2026-05-06.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-04",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ]
     },
     {
@@ -15282,8 +15287,8 @@
     {
       "company": "Constrafor",
       "role": "Full Stack Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -15298,11 +15303,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-05 14:00 PT; tailored SWE resume rendered and verified one page; emphasized NYC full-stack SaaS and fintech product engineering, React product surfaces, backend APIs, scalable platform workflows, testing, and close product collaboration. LinkedIn and browser-based apply were blocked because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-05: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-05 14:00 PT; tailored SWE resume rendered and verified one page; emphasized NYC full-stack SaaS and fintech product engineering, React product surfaces, backend APIs, scalable platform workflows, testing, and close product collaboration. LinkedIn and browser-based apply were blocked because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-05: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.; Application confirmation email received 2026-05-06.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-05",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ]
     },
     {
@@ -15544,8 +15550,8 @@
     {
       "company": "Govini",
       "role": "Forward Deployed Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -15560,11 +15566,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly LinkedIn/Greenhouse intake 2026-05-05 15:00 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed defense software engineering, customer-facing 0-to-1 delivery, AI-enabled applications, backend services, testing, and deployment reliability. Public capture used because Computer Use access to Chrome and Firefox was denied after required preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "notes": "Hourly LinkedIn/Greenhouse intake 2026-05-05 15:00 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed defense software engineering, customer-facing 0-to-1 delivery, AI-enabled applications, backend services, testing, and deployment reliability. Public capture used because Computer Use access to Chrome and Firefox was denied after required preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05; Application confirmation email received 2026-05-06.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-05",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ]
     },
     {
@@ -38690,7 +38697,7 @@
           "company": "Constrafor",
           "role": "Full Stack Software Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -38750,7 +38757,7 @@
           "company": "Flourish",
           "role": "Backend Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -40550,7 +40557,7 @@
           "company": "Govini",
           "role": "Forward Deployed Software Engineer",
           "fitScore": 8,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -40814,7 +40821,7 @@
           "company": "Nex",
           "role": "Fullstack Engineer (Digital Experience)",
           "fitScore": 8,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -50432,7 +50439,7 @@
           "company": "Constrafor",
           "role": "Full Stack Software Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -52232,7 +52239,7 @@
           "company": "Govini",
           "role": "Forward Deployed Software Engineer",
           "fitScore": 8,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
