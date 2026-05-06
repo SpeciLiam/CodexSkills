@@ -104,8 +104,8 @@ def append_note(existing: str, new_note: str) -> str:
 
 
 def row_matches(row: dict[str, str], posting_key: str, company: str, role: str) -> bool:
-    if posting_key and normalize(row.get("Posting Key", "")) == normalize(posting_key):
-        return True
+    if posting_key:
+        return normalize(row.get("Posting Key", "")) == normalize(posting_key)
     return (
         normalize(row.get("Company", "")) == normalize(company)
         and normalize(row.get("Role", "")) == normalize(role)

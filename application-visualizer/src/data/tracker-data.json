@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T05:57:12.560611+00:00",
+  "generatedAt": "2026-05-06T05:58:10.681252+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 556,
+      "total": 557,
       "applied": 356,
-      "unapplied": 200,
-      "active": 392,
+      "unapplied": 201,
+      "active": 394,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 432,
-      "reachOut": 490,
+      "highFit": 433,
+      "reachOut": 491,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,10 +26,10 @@
       "intakeNew": 38,
       "intakeManual": 53,
       "intakeApplied": 0,
-      "applyRate": 64.0,
+      "applyRate": 63.9,
       "rejectionRate": 12.4,
-      "recruiterWork": 302,
-      "engineerWork": 357,
+      "recruiterWork": 304,
+      "engineerWork": 359,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Archived",
-        "value": 120
+        "value": 119
       },
       {
         "name": "Manual Apply Needed",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 21
+        "value": 23
       },
       {
         "name": "Interviewing",
@@ -70,7 +70,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 205
+        "value": 206
       },
       {
         "name": "Ashby",
@@ -140,7 +140,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 251
+        "value": 252
       },
       {
         "name": "Bay Area",
@@ -170,7 +170,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 309
+        "value": 310
       },
       {
         "name": "Full Stack",
@@ -236,7 +236,7 @@
       },
       {
         "score": "9",
-        "count": 102
+        "count": 103
       },
       {
         "score": "10",
@@ -474,8 +474,8 @@
       },
       {
         "date": "2026-05-06",
-        "cumulative": 556,
-        "added": 15,
+        "cumulative": 557,
+        "added": 16,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -16443,7 +16443,7 @@
       "company": "Ampcus Inc",
       "role": "Software Dev Engineer II",
       "applied": false,
-      "status": "Archived",
+      "status": "Resume Tailored",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -16458,11 +16458,32 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn posting opened to WorkSourceWA Job ID 293384831 for Ampcus Software Dev Engineer II. Likely related to prior Ampcus SDE II posting 4408367883; tailored separately because posting key is distinct. Emphasized QA/release support, automation, monitoring/debugging, metrics, Java/C/C++/SQL, and documentation; did not claim Perl, Mason, Perl CGI, Oracle SQL specifically, or Unix/Linux administration.; Archived 2026-05-05: JobDiva candidate portal says this posting is no longer available.",
+      "notes": "LinkedIn posting opened to WorkSourceWA Job ID 293384831 for Ampcus Software Dev Engineer II. Likely related to prior Ampcus SDE II posting 4408367883; tailored separately because posting key is distinct. Emphasized QA/release support, automation, monitoring/debugging, metrics, Java/C/C++/SQL, and documentation; did not claim Perl, Mason, Perl CGI, Oracle SQL specifically, or Unix/Linux administration.",
       "noteLinks": [],
-      "activityDates": [
-        "2026-05-05"
-      ]
+      "activityDates": []
+    },
+    {
+      "company": "Northwestern Mutual",
+      "role": "DevSecOps Engineer I",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4410761485/",
+      "postingKey": "4410761485",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Northwestern Mutual/DevSecOps_Engineer_I/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Northwestern Mutual/DevSecOps_Engineer_I/Liam_Van_Resume/Liam_Van_Northwestern_Mutual.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for entry-level DevSecOps/AppSec role; emphasized vulnerability-oriented validation, AI-assisted testing, scripting, CI/CD, cloud operations, metrics/reporting, API coverage, documentation, and cross-functional risk communication. Did not claim formal vulnerability management platform ownership, deep networking administration, PowerShell/Bash, cryptography implementation, or regulatory data-security ownership.",
+      "noteLinks": [],
+      "activityDates": []
     }
   ],
   "jobIntake": [
@@ -23449,6 +23470,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Northwestern Mutual",
+      "role": "DevSecOps Engineer I",
+      "postingKey": "4410761485",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4410761485/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "ngrok",
@@ -39692,6 +39726,18 @@
           "contacts": []
         },
         {
+          "key": "4410761485",
+          "company": "Northwestern Mutual",
+          "role": "DevSecOps Engineer I",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "omnivacorpsandbox",
           "company": "Omniva-Corp",
           "role": "Software Engineer I",
@@ -40045,6 +40091,18 @@
           "role": "Software Dev Engineer I",
           "fitScore": 8,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4410745133",
+          "company": "Ampcus Inc",
+          "role": "Software Dev Engineer II",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -51542,6 +51600,18 @@
           "contacts": []
         },
         {
+          "key": "4410761485",
+          "company": "Northwestern Mutual",
+          "role": "DevSecOps Engineer I",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "omnivacorpsandbox",
           "company": "Omniva-Corp",
           "role": "Software Engineer I",
@@ -51823,6 +51893,18 @@
           "role": "Software Dev Engineer II",
           "fitScore": 8,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4410745133",
+          "company": "Ampcus Inc",
+          "role": "Software Dev Engineer II",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
