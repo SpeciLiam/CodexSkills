@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T05:30:05.530636+00:00",
+  "generatedAt": "2026-05-06T05:37:04.390413+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 542,
+      "total": 545,
       "applied": 356,
-      "unapplied": 186,
-      "active": 381,
+      "unapplied": 189,
+      "active": 384,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 421,
-      "reachOut": 478,
+      "highFit": 424,
+      "reachOut": 481,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,10 +26,10 @@
       "intakeNew": 38,
       "intakeManual": 53,
       "intakeApplied": 0,
-      "applyRate": 65.7,
+      "applyRate": 65.3,
       "rejectionRate": 12.4,
-      "recruiterWork": 292,
-      "engineerWork": 346,
+      "recruiterWork": 295,
+      "engineerWork": 349,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 8
+        "value": 11
       },
       {
         "name": "Interviewing",
@@ -70,7 +70,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 191
+        "value": 194
       },
       {
         "name": "Ashby",
@@ -140,7 +140,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 248
+        "value": 249
       },
       {
         "name": "Bay Area",
@@ -148,7 +148,7 @@
       },
       {
         "name": "Other",
-        "value": 79
+        "value": 81
       },
       {
         "name": "Remote",
@@ -170,7 +170,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 299
+        "value": 302
       },
       {
         "name": "Full Stack",
@@ -232,11 +232,11 @@
       },
       {
         "score": "8",
-        "count": 103
+        "count": 104
       },
       {
         "score": "9",
-        "count": 97
+        "count": 99
       },
       {
         "score": "10",
@@ -474,8 +474,8 @@
       },
       {
         "date": "2026-05-06",
-        "cumulative": 542,
-        "added": 1,
+        "cumulative": 545,
+        "added": 4,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -15097,11 +15097,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-04 15:00 PT; tailored SWE resume rendered and verified one page; emphasized remote backend control-plane engineering, product lifecycle ownership, API services, infrastructure reliability, testing, and developer-focused systems. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Manual apply needed 2026-05-05: live Greenhouse form is reachable, but requires cover letter, custom Why Tailscale response, personal Tailscale usage answer, and privacy/AI-guidelines acknowledgement before submission; not submitted.",
+      "notes": "Hourly Greenhouse intake 2026-05-04 15:00 PT; tailored SWE resume rendered and verified one page; emphasized remote backend control-plane engineering, product lifecycle ownership, API services, infrastructure reliability, testing, and developer-focused systems. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Manual apply needed 2026-05-05: live Greenhouse form is reachable, but requires cover letter, custom Why Tailscale response, personal Tailscale usage answer, and privacy/AI-guidelines acknowledgement before submission; not submitted.; Manual apply needed 2026-05-05: live Greenhouse form staged with resume, cover letter, routine fields, and custom answers; not submitted because required Candidate Privacy Policy and AI Guidelines acknowledgement needs Liam review.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-04",
         "2026-05-04",
+        "2026-05-05",
         "2026-05-05"
       ]
     },
@@ -16127,6 +16128,75 @@
       "engineerContact": "",
       "engineerProfile": "",
       "notes": "Tailored for entry-level software development role in law-firm business systems; emphasized JavaScript/SQL, React/Angular/HTML/CSS UI work, REST APIs, enterprise integrations, Git/Azure DevOps workflow, testing/QA, troubleshooting, documentation, and client-facing requirements. Posting says no immigration sponsorship is available.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "MITRE",
+      "role": "Early Career Software Developer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "McLean, VA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4410726576/",
+      "postingKey": "4410726576",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/MITRE/Early_Career_Software_Developer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/MITRE/Early_Career_Software_Developer/Liam_Van_Resume/Liam_Van_MITRE.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for MITRE early-career mission software role; emphasized Python/Java/TypeScript, React/Angular/HTML/CSS, wireframes and user-centered design, cloud/DevSecOps, CI/CD, Git/Azure DevOps, REST APIs, databases, AI-assisted testing, documentation, and secure integration delivery. Posting requires ability to obtain/maintain U.S. government security clearance, U.S. citizenship for clearance consideration, and minimum 50% hybrid on-site.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Alvarez & Marsal",
+      "role": "Software Engineer, Innovation Team",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4409714242/",
+      "postingKey": "4409714242",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Alvarez & Marsal/Software_Engineer_Innovation_Team/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Alvarez & Marsal/Software_Engineer_Innovation_Team/Liam_Van_Resume/Liam_Van_Alvarez_&_Marsal.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Alvarez & Marsal Innovation Team full-stack/front-end role; emphasized TypeScript/JavaScript, React single-page apps, Figma-to-product implementation, REST APIs, Docker/data modeling, Git/CI-style workflows, unit testing, documentation, and translating business requirements into UI/API workflows. Did not claim Django, Jira, GitHub Actions, Linux/WSL2, or finance domain experience.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Deltek",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4394474747/",
+      "postingKey": "4394474747",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Deltek/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Deltek/Software_Engineer/Liam_Van_Resume/Liam_Van_Deltek.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Deltek AI-powered full-stack software engineer role; emphasized Python, TypeScript/React, REST APIs, Docker/cloud, AI-assisted API testing, prompt engineering, RAG concepts, OpenSearch retrieval, SQL metadata workflows, CI-style validation, Git/code review, and production debugging. Did not claim FastAPI, Next.js, Pydantic, SQLAlchemy, Alembic, PostgreSQL, pytest, LangChain/LangGraph, GitHub Actions, Kubernetes, OpenTelemetry, or MCP server generation production experience.",
       "noteLinks": [],
       "activityDates": []
     }
@@ -23169,6 +23239,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "MITRE",
+      "role": "Early Career Software Developer",
+      "postingKey": "4410726576",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4410726576/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Metron",
       "role": "Associate Software Engineer",
       "postingKey": "4959097007",
@@ -23608,6 +23691,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-01",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Alvarez & Marsal",
+      "role": "Software Engineer, Innovation Team",
+      "postingKey": "4409714242",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4409714242/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -24519,6 +24615,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Deltek",
+      "role": "Software Engineer",
+      "postingKey": "4394474747",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4394474747/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Cruzader Advanced Recruiting Solutions",
@@ -38890,6 +38999,18 @@
           "contacts": []
         },
         {
+          "key": "4409714242",
+          "company": "Alvarez & Marsal",
+          "role": "Software Engineer, Innovation Team",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5003658007",
           "company": "Anduril Industries",
           "role": "Software Engineer II, Manufacturing Test",
@@ -39087,6 +39208,18 @@
           "role": "Software Engineer II",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4410726576",
+          "company": "MITRE",
+          "role": "Early Career Software Developer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -39699,6 +39832,18 @@
           "role": "Full Stack Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4394474747",
+          "company": "Deltek",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -50728,6 +50873,18 @@
           "contacts": []
         },
         {
+          "key": "4409714242",
+          "company": "Alvarez & Marsal",
+          "role": "Software Engineer, Innovation Team",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5003658007",
           "company": "Anduril Industries",
           "role": "Software Engineer II, Manufacturing Test",
@@ -50841,6 +50998,18 @@
           "role": "Software Engineer II",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4410726576",
+          "company": "MITRE",
+          "role": "Early Career Software Developer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -51247,6 +51416,18 @@
           "key": "4410724675",
           "company": "DLA Piper",
           "role": "Software Development Engineer I",
+          "fitScore": 8,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4394474747",
+          "company": "Deltek",
+          "role": "Software Engineer",
           "fitScore": 8,
           "status": "Resume Tailored",
           "count": 1,
