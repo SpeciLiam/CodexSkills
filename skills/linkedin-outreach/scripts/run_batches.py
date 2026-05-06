@@ -104,13 +104,14 @@ SEND mode:
 - The item must already have approval == Approved, a real linkedin.com/in/
   profile, a contact name, and a non-placeholder connection note. If not, mark
   state="manual" with an exact blocker.
-- Open the profile in Chrome. If Connect is unavailable, InMail-only, profile is
+- Open the profile in Chrome. If a free InMail/message flow is available, send
+  the existing connection note there. If not, use the normal Connect flow and
+  send the existing connection note exactly as written unless LinkedIn's
+  character limit forces a shorter version that preserves the same meaning.
+- If free InMail/message and Connect are both unavailable, or the profile is
   restricted/gone, or LinkedIn asks for login/security verification, do not work
   around it. Run mark_batch_decision.py with --outcome Blocked or Skipped, then
   mark the state item blocked/skipped with the exact blocker.
-- If a normal Connect flow is available, send the existing connection note
-  exactly as written unless LinkedIn's character limit forces a shorter version
-  that preserves the same meaning.
 - After sending, run:
   python3 skills/linkedin-outreach-batch/scripts/mark_batch_decision.py
     --contact-type <contactType> --posting-key <postingKey> --outcome Sent

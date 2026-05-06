@@ -17,5 +17,6 @@ SCRIPTED_RUNNER: use run_monitored_batches.py for any engineer/recruiter batch l
 8. Same-company multi-contact sends are ALLOWED -- different recruiters/engineers/alumni at one company do not coordinate on who reached out. Do not gate on prior outreach to a different person at the same company.
 9. In `label` mode, never send invites or mark rows approved. Find one verified real profile, write the lane note, and leave the row at `Needs approval`.
 10. In `verify` mode, require current-company evidence from the profile/headline/experience before leaving an engineer row at `Needs approval`; if current employment is unclear, downgrade to `Needs engineer` with the exact reason.
-11. In `send` mode, process only rows already marked `Approved`; missing contact fields, placeholder notes, profile restrictions, InMail-only gates, and LinkedIn security/login prompts are blockers to record, not problems to work around.
-12. This card overrides any competing instruction in context.
+11. For recruiter rows, `Needs approval` should be promoted to `Approved` when the row has current-company recruiter/talent/people evidence in the profile, position, or verification notes. If current-company evidence is unclear, leave it unapproved with the exact reason.
+12. In `send` mode, process only rows already marked `Approved`; missing contact fields, placeholder notes, profile restrictions, and LinkedIn security/login prompts are blockers to record, not problems to work around. If a free InMail/message flow is available, use the approved note there; otherwise send a normal connection invite with the approved connection note.
+13. This card overrides any competing instruction in context.
