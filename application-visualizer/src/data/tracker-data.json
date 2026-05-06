@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T06:03:50.166173+00:00",
+  "generatedAt": "2026-05-06T06:15:52.835505+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 559,
-      "applied": 356,
-      "unapplied": 203,
+      "applied": 357,
+      "unapplied": 202,
       "active": 395,
       "rejected": 44,
       "interviewing": 3,
@@ -26,8 +26,8 @@
       "intakeNew": 38,
       "intakeManual": 54,
       "intakeApplied": 0,
-      "applyRate": 63.7,
-      "rejectionRate": 12.4,
+      "applyRate": 63.9,
+      "rejectionRate": 12.3,
       "recruiterWork": 304,
       "engineerWork": 360,
       "recruiterReachedOut": 93,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 305
+        "value": 306
       },
       {
         "name": "Archived",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 60
+        "value": 59
       },
       {
         "name": "Rejected",
@@ -444,7 +444,7 @@
         "date": "2026-05-02",
         "cumulative": 414,
         "added": 53,
-        "applied": 19,
+        "applied": 20,
         "rejected": 0,
         "interviewing": 0
       },
@@ -11931,8 +11931,8 @@
     {
       "company": "Neuralink",
       "role": "Software Engineer, Implant Manufacturing",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -11947,13 +11947,14 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized manufacturing software, validation infrastructure, backend services, operational debugging, and hardware-adjacent product delivery. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Please provide three examples of accomplishments that highlight your exceptional ability. Provide quantitative details and metrics to describe your impact. First example:; Second example:; Manual apply needed: Greenhouse form requires three custom quantified accomplishment examples before submission 2026-05-04.; Manual apply needed 2026-05-05: live Greenhouse form is reachable, but requires three custom exceptional-ability accomplishment responses with quantitative impact, plus on-site/relocation/start-date fields; not submitted.",
+      "notes": "Hourly intake 2026-05-02 late pass; tailored SWE resume rendered and verified one page; emphasized manufacturing software, validation infrastructure, backend services, operational debugging, and hardware-adjacent product delivery. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Please provide three examples of accomplishments that highlight your exceptional ability. Provide quantitative details and metrics to describe your impact. First example:; Second example:; Manual apply needed: Greenhouse form requires three custom quantified accomplishment examples before submission 2026-05-04.; Manual apply needed 2026-05-05: live Greenhouse form is reachable, but requires three custom exceptional-ability accomplishment responses with quantitative impact, plus on-site/relocation/start-date fields; not submitted.; Application submitted 2026-05-06: rewrote all three exceptional-ability examples from tailored resume evidence; answered on-site Yes and relocation Yes; Greenhouse confirmation received.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-02",
         "2026-05-04",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ]
     },
     {
