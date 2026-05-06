@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T05:46:29.306898+00:00",
+  "generatedAt": "2026-05-06T05:48:28.282521+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 550,
+      "total": 551,
       "applied": 356,
-      "unapplied": 194,
-      "active": 389,
+      "unapplied": 195,
+      "active": 390,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 428,
-      "reachOut": 486,
+      "highFit": 429,
+      "reachOut": 487,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,10 +26,10 @@
       "intakeNew": 38,
       "intakeManual": 53,
       "intakeApplied": 0,
-      "applyRate": 64.7,
+      "applyRate": 64.6,
       "rejectionRate": 12.4,
-      "recruiterWork": 300,
-      "engineerWork": 354,
+      "recruiterWork": 301,
+      "engineerWork": 355,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 16
+        "value": 17
       },
       {
         "name": "Interviewing",
@@ -70,7 +70,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 199
+        "value": 200
       },
       {
         "name": "Ashby",
@@ -152,7 +152,7 @@
       },
       {
         "name": "Remote",
-        "value": 62
+        "value": 63
       },
       {
         "name": "Seattle",
@@ -190,7 +190,7 @@
       },
       {
         "name": "Infra/Platform",
-        "value": 22
+        "value": 23
       },
       {
         "name": "Data",
@@ -232,7 +232,7 @@
       },
       {
         "score": "8",
-        "count": 106
+        "count": 107
       },
       {
         "score": "9",
@@ -474,8 +474,8 @@
       },
       {
         "date": "2026-05-06",
-        "cumulative": 550,
-        "added": 9,
+        "cumulative": 551,
+        "added": 10,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -555,6 +555,12 @@
         "bestFit": 10
       },
       {
+        "company": "Airbnb",
+        "roles": 4,
+        "avgFit": 9.0,
+        "bestFit": 10
+      },
+      {
         "company": "Valon",
         "roles": 4,
         "avgFit": 8.75,
@@ -588,12 +594,6 @@
         "company": "Applied Intuition",
         "roles": 3,
         "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Airbnb",
-        "roles": 3,
-        "avgFit": 9.33,
         "bestFit": 10
       },
       {
@@ -10096,14 +10096,15 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required desired salary field; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Street Address; City; Manual apply needed 2026-05-04: Greenhouse form requires Houston, TX relocation willingness, desired salary, and years-of-relevant-experience selection before submission.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required desired salary field; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Street Address; City; Manual apply needed 2026-05-04: Greenhouse form requires Houston, TX relocation willingness, desired salary, and years-of-relevant-experience selection before submission.; Manual apply needed 2026-05-05: filled safe Greenhouse fields and uploaded correct Conga resume, but not submitted because required data-processing consent, Houston relocation, desired salary, and years-of-experience selections need Liam review.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
         "2026-05-01",
         "2026-05-04",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-05"
       ]
     },
     {
@@ -16309,6 +16310,29 @@
       "postingKey": "4353111076",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Snyk/Associate_Product_Engineer/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Snyk/Associate_Product_Engineer/Liam_Van_Resume/Liam_Van_Snyk.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Airbnb",
+      "role": "Software Engineer, Infrastructure",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "Remote, United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4410936090/",
+      "postingKey": "4410936090",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Airbnb/Software_Engineer_Infrastructure/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Airbnb/Software_Engineer_Infrastructure/Liam_Van_Resume/Liam_Van_Airbnb.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
@@ -25018,6 +25042,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Airbnb",
+      "role": "Software Engineer, Infrastructure",
+      "postingKey": "4410936090",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4410936090/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Zip",
@@ -39793,6 +39830,18 @@
           "contacts": []
         },
         {
+          "key": "4410936090",
+          "company": "Airbnb",
+          "role": "Software Engineer, Infrastructure",
+          "fitScore": 8,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "MjI2MDItaHRxZWJ3YTRoa281aDY2ZQ==",
           "company": "Albert Bow",
           "role": "Software Engineer, Low Latency Trading",
@@ -51552,6 +51601,18 @@
           "role": "Software Engineer, Trust",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4410936090",
+          "company": "Airbnb",
+          "role": "Software Engineer, Infrastructure",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
