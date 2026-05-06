@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T09:08:47.939809+00:00",
+  "generatedAt": "2026-05-06T16:38:48.725570+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,34 +9,34 @@
   },
   "stats": {
     "kpis": {
-      "total": 578,
-      "applied": 369,
-      "unapplied": 209,
-      "active": 414,
+      "total": 585,
+      "applied": 370,
+      "unapplied": 215,
+      "active": 421,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 452,
-      "reachOut": 510,
+      "highFit": 459,
+      "reachOut": 517,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 280,
-      "intakeQueued": 29,
+      "intakeJobs": 294,
+      "intakeQueued": 36,
       "intakeNew": 38,
-      "intakeManual": 73,
+      "intakeManual": 80,
       "intakeApplied": 0,
-      "applyRate": 63.8,
+      "applyRate": 63.2,
       "rejectionRate": 11.9,
-      "recruiterWork": 323,
-      "engineerWork": 379,
+      "recruiterWork": 330,
+      "engineerWork": 386,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 318
+        "value": 319
       },
       {
         "name": "Archived",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 71
+        "value": 77
       },
       {
         "name": "Rejected",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 224
+        "value": 228
       },
       {
         "name": "LinkedIn",
-        "value": 217
+        "value": 220
       },
       {
         "name": "Ashby",
@@ -140,7 +140,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 265
+        "value": 268
       },
       {
         "name": "Bay Area",
@@ -148,11 +148,11 @@
       },
       {
         "name": "Other",
-        "value": 91
+        "value": 94
       },
       {
         "name": "Remote",
-        "value": 66
+        "value": 67
       },
       {
         "name": "Seattle",
@@ -170,7 +170,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 320
+        "value": 326
       },
       {
         "name": "Full Stack",
@@ -198,7 +198,7 @@
       },
       {
         "name": "Frontend",
-        "value": 8
+        "value": 9
       }
     ],
     "fitCounts": [
@@ -236,11 +236,11 @@
       },
       {
         "score": "9",
-        "count": 104
+        "count": 105
       },
       {
         "score": "10",
-        "count": 237
+        "count": 243
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
       },
       {
         "name": "Manual",
-        "value": 73
+        "value": 80
       },
       {
         "name": "New",
@@ -270,7 +270,7 @@
       },
       {
         "name": "Queued",
-        "value": 29
+        "value": 36
       },
       {
         "name": "Skipped",
@@ -288,11 +288,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 194
+        "value": 204
       },
       {
         "name": "LinkedIn",
-        "value": 86
+        "value": 90
       }
     ],
     "timeline": [
@@ -468,14 +468,14 @@
         "date": "2026-05-05",
         "cumulative": 542,
         "added": 34,
-        "applied": 7,
+        "applied": 8,
         "rejected": 0,
         "interviewing": 0
       },
       {
         "date": "2026-05-06",
-        "cumulative": 578,
-        "added": 36,
+        "cumulative": 585,
+        "added": 43,
         "applied": 3,
         "rejected": 0,
         "interviewing": 0
@@ -501,14 +501,14 @@
         "bestFit": 10
       },
       {
-        "company": "Twitch",
+        "company": "Attentive",
         "roles": 6,
         "avgFit": 10.0,
         "bestFit": 10
       },
       {
-        "company": "Attentive",
-        "roles": 5,
+        "company": "Twitch",
+        "roles": 6,
         "avgFit": 10.0,
         "bestFit": 10
       },
@@ -591,6 +591,12 @@
         "bestFit": 10
       },
       {
+        "company": "Flexport",
+        "roles": 3,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "Applied Intuition",
         "roles": 3,
         "avgFit": 10.0,
@@ -618,12 +624,6 @@
         "company": "Disney",
         "roles": 3,
         "avgFit": 8.33,
-        "bestFit": 10
-      },
-      {
-        "company": "Rippling",
-        "roles": 3,
-        "avgFit": 4.33,
         "bestFit": 10
       }
     ],
@@ -15760,8 +15760,8 @@
     {
       "company": "Pallet",
       "role": "Software Engineer, Product",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -15776,11 +15776,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-05 1905 PT; tailored SWE resume rendered and verified one page; emphasized NYC product engineering for AI agents, logistics workflows, React and TypeScript surfaces, backend APIs, customer feedback loops, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-05.",
+      "notes": "Hourly intake 2026-05-05 1905 PT; tailored SWE resume rendered and verified one page; emphasized NYC product engineering for AI agents, logistics workflows, React and TypeScript surfaces, backend APIs, customer feedback loops, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-05.; Application submitted 2026-05-06 via Greenhouse; confirmation page displayed: Thank you for applying.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-05",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ]
     },
     {
@@ -17027,9 +17028,338 @@
       "activityDates": [
         "2026-05-06"
       ]
+    },
+    {
+      "company": "Attentive",
+      "role": "Frontend Software Engineer II, Messaging Platform",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/attentive/jobs/4121615009",
+      "postingKey": "4121615009",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Attentive/Frontend_Software_Engineer_II_Messaging_Platform/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Attentive/Frontend_Software_Engineer_II_Messaging_Platform/Liam_Van_Resume_2/Liam_Van_Attentive.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Renaissance Learning North America",
+      "role": "Software Engineer I",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "Remote - US",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/renaissancelearning-nam/jobs/5018110008?gh_src=z3ilbxha8us",
+      "postingKey": "5018110008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Renaissance Learning North America/Software_Engineer_I/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Renaissance Learning North America/Software_Engineer_I/Liam_Van_Resume/Liam_Van_Renaissance_Learning_North_America.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Flexport",
+      "role": "Software Engineer I (Generalist)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "Bellevue, Washington, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/flexport/jobs/7580661?gh_jid=7580661",
+      "postingKey": "7580661",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Flexport/Software_Engineer_I_Generalist/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Flexport/Software_Engineer_I_Generalist/Liam_Van_Resume/Liam_Van_Flexport.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "TechTree",
+      "role": "Founding Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/founding-engineer-at-techtree-4306357660",
+      "postingKey": "founding-engineer-at-techtree-4306357660",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/TechTree/Founding_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/TechTree/Founding_Engineer/Liam_Van_Resume/Liam_Van_TechTree.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "PointOne",
+      "role": "New Grad Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/new-grad-software-engineer-at-pointone-4400038260",
+      "postingKey": "new-grad-software-engineer-at-pointone-4400038260",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/PointOne/New_Grad_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/PointOne/New_Grad_Software_Engineer/Liam_Van_Resume/Liam_Van_PointOne.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "OPIA Associates",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "New York, United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/founding-engineer-at-opia-associates-4354638985",
+      "postingKey": "founding-engineer-at-opia-associates-4354638985",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OPIA Associates/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OPIA Associates/Software_Engineer/Liam_Van_Resume/Liam_Van_OPIA_Associates.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Axon",
+      "role": "Software Engineer II",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "Boston, Massachusetts, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/axon/jobs/7508518003",
+      "postingKey": "7508518003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Axon/Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Axon/Software_Engineer_II/Liam_Van_Resume/Liam_Van_Axon.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Trace3",
+      "role": "Software Engineer II",
+      "location": "Colorado Springs, Colorado",
+      "postingKey": "7752983",
+      "jobUrl": "https://job-boards.greenhouse.io/trace3/jobs/7752983",
+      "discoveredAt": "2026-05-06T16:38:41.098273+00:00",
+      "postedAge": "Crawled 2 weeks ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, other US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "iCapital",
+      "role": "Full Stack Engineer, Ruby and React - Assistant Vice President",
+      "location": "New York, New York, United States",
+      "postingKey": "8452434002",
+      "jobUrl": "https://job-boards.greenhouse.io/icapitalnetwork/jobs/8452434002",
+      "discoveredAt": "2026-05-06T16:38:41.098273+00:00",
+      "postedAge": "Crawled last week",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Axon",
+      "role": "Software Engineer II, Cloud Engineering",
+      "location": "Sterling, Virginia, United States",
+      "postingKey": "7577009003",
+      "jobUrl": "https://job-boards.greenhouse.io/axon/jobs/7577009003",
+      "discoveredAt": "2026-05-06T16:38:41.098273+00:00",
+      "postedAge": "Crawled 2 weeks ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "StubHub",
+      "role": "Software Engineer II - Web Foundations",
+      "location": "New York, New York, United States",
+      "postingKey": "4782722101",
+      "jobUrl": "https://job-boards.greenhouse.io/stubhubinc/jobs/4782722101",
+      "discoveredAt": "2026-05-06T16:37:28.116158+00:00",
+      "postedAge": "public Greenhouse result crawled last month; captured 2026-05-06",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Intuit",
+      "role": "Software Engineer 1 - Fullstack",
+      "location": "New York, NY",
+      "postingKey": "linkedin-public-intuit-swe-1-fullstack-ny-2026-05-06-0935",
+      "jobUrl": "https://www.linkedin.com/jobs/software-development-engineer-jobs",
+      "discoveredAt": "2026-05-06T16:37:28.116158+00:00",
+      "postedAge": "1 day ago in public LinkedIn search result; captured 2026-05-06",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "PointOne",
+      "role": "New Grad Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "4400038260",
+      "jobUrl": "https://www.linkedin.com/jobs/view/new-grad-software-engineer-at-pointone-4400038260",
+      "discoveredAt": "2026-05-06T16:35:28.904102+00:00",
+      "postedAge": "2 days ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight",
+      "trackerPostingKey": "4400038260"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "OPIA Associates",
+      "role": "Software Engineer",
+      "location": "New York, United States",
+      "postingKey": "4354638985",
+      "jobUrl": "https://www.linkedin.com/jobs/view/founding-engineer-at-opia-associates-4354638985",
+      "discoveredAt": "2026-05-06T16:35:28.904102+00:00",
+      "postedAge": "3 days ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight",
+      "trackerPostingKey": "4354638985"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Axon",
+      "role": "Software Engineer II",
+      "location": "Boston, Massachusetts, United States",
+      "postingKey": "7508518003",
+      "jobUrl": "https://job-boards.greenhouse.io/axon/jobs/7508518003",
+      "discoveredAt": "2026-05-06T16:35:28.904102+00:00",
+      "postedAge": "New",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight",
+      "trackerPostingKey": "7508518003"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Renaissance Learning North America",
+      "role": "Software Engineer I",
+      "location": "Remote - US",
+      "postingKey": "5018110008",
+      "jobUrl": "https://job-boards.greenhouse.io/renaissancelearning-nam/jobs/5018110008?gh_src=z3ilbxha8us",
+      "discoveredAt": "2026-05-06T16:35:08.180065+00:00",
+      "postedAge": "web result crawled 2 months ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "trackerPostingKey": "5018110008"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Flexport",
+      "role": "Software Engineer I (Generalist)",
+      "location": "Bellevue, Washington, United States",
+      "postingKey": "7580661",
+      "jobUrl": "https://job-boards.greenhouse.io/flexport/jobs/7580661?gh_jid=7580661",
+      "discoveredAt": "2026-05-06T16:35:08.180065+00:00",
+      "postedAge": "web result crawled last month",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "trackerPostingKey": "7580661"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Attentive",
+      "role": "Frontend Software Engineer II, Messaging Platform",
+      "location": "United States",
+      "postingKey": "4121615009",
+      "jobUrl": "https://job-boards.greenhouse.io/attentive/jobs/4121615009",
+      "discoveredAt": "2026-05-06T16:35:08.180065+00:00",
+      "postedAge": "web result crawled 2 months ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "trackerPostingKey": "4121615009"
+    },
     {
       "source": "Greenhouse",
       "company": "Octane",
@@ -19381,6 +19711,48 @@
       "status": "Tailored",
       "reason": "SWE-family role, early-career signal, NYC preference",
       "trackerPostingKey": "4401827377"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Xometry",
+      "role": "Software Engineer II",
+      "location": "Waltham, MA",
+      "postingKey": "5064293007",
+      "jobUrl": "https://job-boards.greenhouse.io/xometry/jobs/5064293007",
+      "discoveredAt": "2026-05-06T16:38:41.098273+00:00",
+      "postedAge": "Crawled 2 weeks ago",
+      "fitScore": 9,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Uare.ai",
+      "role": "Software Engineer (Early Career)",
+      "location": "Los Altos, CA",
+      "postingKey": "4036519009",
+      "jobUrl": "https://job-boards.greenhouse.io/uareai/jobs/4036519009",
+      "discoveredAt": "2026-05-06T16:37:28.116158+00:00",
+      "postedAge": "public Greenhouse result crawled 4 days ago; captured 2026-05-06",
+      "fitScore": 9,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "TechTree",
+      "role": "Founding Engineer",
+      "location": "New York, NY",
+      "postingKey": "4306357660",
+      "jobUrl": "https://www.linkedin.com/jobs/view/founding-engineer-at-techtree-4306357660",
+      "discoveredAt": "2026-05-06T16:35:28.904102+00:00",
+      "postedAge": "3 days ago",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight",
+      "trackerPostingKey": "4306357660"
     },
     {
       "source": "Greenhouse",
@@ -21785,6 +22157,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Renaissance Learning North America",
+      "role": "Software Engineer I",
+      "postingKey": "5018110008",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/renaissancelearning-nam/jobs/5018110008?gh_src=z3ilbxha8us",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Remitly",
       "role": "Software Development Engineer II - Trust Decisioning Platform",
       "postingKey": "R_104873",
@@ -21861,6 +22246,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "PointOne",
+      "role": "New Grad Software Engineer",
+      "postingKey": "new-grad-software-engineer-at-pointone-4400038260",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/new-grad-software-engineer-at-pointone-4400038260",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Point72",
@@ -22172,6 +22570,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "OPIA Associates",
+      "role": "Software Engineer",
+      "postingKey": "founding-engineer-at-opia-associates-4354638985",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/founding-engineer-at-opia-associates-4354638985",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -22942,6 +23353,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Flexport",
+      "role": "Software Engineer I (Generalist)",
+      "postingKey": "7580661",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/flexport/jobs/7580661?gh_jid=7580661",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Flex",
       "role": "Software Engineer",
       "postingKey": "5633923004",
@@ -23488,6 +23912,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Axon",
+      "role": "Software Engineer II",
+      "postingKey": "7508518003",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/axon/jobs/7508518003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Avoca",
       "role": "Forward Deployed Engineer",
       "postingKey": "forward-deployed-engineer-at-avoca-4295417569",
@@ -23589,6 +24026,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-01",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Attentive",
+      "role": "Frontend Software Engineer II, Messaging Platform",
+      "postingKey": "4121615009",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/attentive/jobs/4121615009",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -39655,6 +40105,18 @@
           "contacts": []
         },
         {
+          "key": "4121615009",
+          "company": "Attentive",
+          "role": "Frontend Software Engineer II, Messaging Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "a4172515-0353-47ec-9c71-631a294aa137",
           "company": "Automat",
           "role": "Software Engineer (Junior/Intermediate)",
@@ -39682,6 +40144,18 @@
           "key": "7662648003",
           "company": "Axon",
           "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7508518003",
+          "company": "Axon",
+          "role": "Software Engineer II",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -39838,6 +40312,18 @@
           "key": "7839346",
           "company": "Flexport",
           "role": "Software Engineer II, Autonomous Freight Systems",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7580661",
+          "company": "Flexport",
+          "role": "Software Engineer I (Generalist)",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -40099,6 +40585,18 @@
           "contacts": []
         },
         {
+          "key": "founding-engineer-at-opia-associates-4354638985",
+          "company": "OPIA Associates",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7416833003",
           "company": "Octane",
           "role": "Software Engineer II, Autos",
@@ -40151,7 +40649,7 @@
           "company": "Pallet",
           "role": "Software Engineer, Product",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -40279,6 +40777,18 @@
           "contacts": []
         },
         {
+          "key": "new-grad-software-engineer-at-pointone-4400038260",
+          "company": "PointOne",
+          "role": "New Grad Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4408146891",
           "company": "Redfin",
           "role": "Software Developer I - Digit",
@@ -40296,6 +40806,18 @@
           "role": "Software Engineer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5018110008",
+          "company": "Renaissance Learning North America",
+          "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -41220,6 +41742,18 @@
           "role": "Software Engineer III",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "founding-engineer-at-techtree-4306357660",
+          "company": "TechTree",
+          "role": "Founding Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -51601,6 +52135,18 @@
           "contacts": []
         },
         {
+          "key": "4121615009",
+          "company": "Attentive",
+          "role": "Frontend Software Engineer II, Messaging Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "forward-deployed-engineer-at-avoca-4295417569",
           "company": "Avoca",
           "role": "Forward Deployed Engineer",
@@ -51616,6 +52162,18 @@
           "key": "7662648003",
           "company": "Axon",
           "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7508518003",
+          "company": "Axon",
+          "role": "Software Engineer II",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -51820,6 +52378,18 @@
           "key": "7839346",
           "company": "Flexport",
           "role": "Software Engineer II, Autonomous Freight Systems",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7580661",
+          "company": "Flexport",
+          "role": "Software Engineer I (Generalist)",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -52105,6 +52675,18 @@
           "contacts": []
         },
         {
+          "key": "founding-engineer-at-opia-associates-4354638985",
+          "company": "OPIA Associates",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7416833003",
           "company": "Octane",
           "role": "Software Engineer II, Autos",
@@ -52205,7 +52787,7 @@
           "company": "Pallet",
           "role": "Software Engineer, Product",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -52369,6 +52951,18 @@
           "contacts": []
         },
         {
+          "key": "new-grad-software-engineer-at-pointone-4400038260",
+          "company": "PointOne",
+          "role": "New Grad Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4408146891",
           "company": "Redfin",
           "role": "Software Developer I - Digit",
@@ -52398,6 +52992,18 @@
           "role": "Software Development Engineer II - Trust Decisioning Platform",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5018110008",
+          "company": "Renaissance Learning North America",
+          "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -53298,6 +53904,18 @@
           "role": "Software Engineer III",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "founding-engineer-at-techtree-4306357660",
+          "company": "TechTree",
+          "role": "Founding Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
