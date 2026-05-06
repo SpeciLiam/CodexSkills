@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T07:35:55.515753+00:00",
+  "generatedAt": "2026-05-06T07:53:48.561613+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 559,
-      "applied": 365,
-      "unapplied": 194,
+      "applied": 366,
+      "unapplied": 193,
       "active": 395,
       "rejected": 44,
       "interviewing": 3,
@@ -26,8 +26,8 @@
       "intakeNew": 38,
       "intakeManual": 54,
       "intakeApplied": 0,
-      "applyRate": 65.3,
-      "rejectionRate": 12.1,
+      "applyRate": 65.5,
+      "rejectionRate": 12.0,
       "recruiterWork": 304,
       "engineerWork": 360,
       "recruiterReachedOut": 93,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 314
+        "value": 315
       },
       {
         "name": "Archived",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 23
+        "value": 22
       },
       {
         "name": "Interviewing",
@@ -476,7 +476,7 @@
         "date": "2026-05-06",
         "cumulative": 559,
         "added": 17,
-        "applied": 0,
+        "applied": 1,
         "rejected": 0,
         "interviewing": 0
       }
@@ -16154,8 +16154,8 @@
     {
       "company": "MITRE",
       "role": "Early Career Software Developer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -16170,9 +16170,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for MITRE early-career mission software role; emphasized Python/Java/TypeScript, React/Angular/HTML/CSS, wireframes and user-centered design, cloud/DevSecOps, CI/CD, Git/Azure DevOps, REST APIs, databases, AI-assisted testing, documentation, and secure integration delivery. Posting requires ability to obtain/maintain U.S. government security clearance, U.S. citizenship for clearance consideration, and minimum 50% hybrid on-site.",
+      "notes": "Tailored for MITRE early-career mission software role; emphasized Python/Java/TypeScript, React/Angular/HTML/CSS, wireframes and user-centered design, cloud/DevSecOps, CI/CD, Git/Azure DevOps, REST APIs, databases, AI-assisted testing, documentation, and secure integration delivery. Posting requires ability to obtain/maintain U.S. government security clearance, U.S. citizenship for clearance consideration, and minimum 50% hybrid on-site.; Application submitted 2026-05-06",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-06"
+      ]
     },
     {
       "company": "Alvarez & Marsal",
@@ -39731,7 +39733,7 @@
           "company": "MITRE",
           "role": "Early Career Software Developer",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -51641,7 +51643,7 @@
           "company": "MITRE",
           "role": "Early Career Software Developer",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
