@@ -9,6 +9,36 @@ Use this skill when Liam wants one continuous LinkedIn sourcing-to-application p
 
 This is an orchestrator skill. Reuse the existing specialized skills and scripts; do not fork their logic.
 
+## Default Invocation
+
+When Liam asks to run this skill from chat, especially for an overnight drain,
+the chat should act as the monitor and launch the small-work CLI orchestrator:
+
+```bash
+python3 skills/linkedin-full-pipeline/scripts/run_monitored_batches.py
+```
+
+Use this monitored runner by default for live LinkedIn/browser work. It refreshes
+the tracker cache, writes `/tmp/linkedin_full_pipeline_state.json`, then launches
+fresh `codex exec` parent processes for small batches. The chat watches terminal
+output and intervenes only for real blockers.
+
+Resume an interrupted run with:
+
+```bash
+python3 skills/linkedin-full-pipeline/scripts/run_monitored_batches.py --resume
+```
+
+Useful flags:
+
+- `--max-jobs N` controls the total durable job outcomes for the run.
+- `--batch-size N` controls jobs per fresh Codex CLI parent process; default `1`.
+- `--max-batches N` is for testing a short slice.
+- `--dry-run` prints spawned commands without launching children.
+
+Do not make the chat itself carry the whole overnight browser context. The chat
+monitors; the CLI children do the short live-browser work and write state.
+
 ## Operating Card
 
 Before each job, re-read `skills/linkedin-full-pipeline/OPERATING_CARD.md`. The card wins over the prose below.
@@ -123,6 +153,10 @@ python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 
 Default batch size is small: 1 to 3 LinkedIn jobs per run. Increase only when Liam explicitly asks for a longer drain.
 
+In monitored CLI mode, default `--batch-size 1` is preferred because each job may
+include sourcing, resume tailoring, outreach, and application work. Use `2` only
+when the browser is stable and prior batches are clean.
+
 For an overnight or long unattended run:
 
 - Keep processing until the fresh early-career search and broadened fallback search are saturated with duplicates, stale roles, wrong locations, poor fits, or true application blockers.
@@ -143,6 +177,42 @@ For each job, the required durable checkpoints are:
 - visualizer cache refreshed after writes
 
 If context becomes crowded, stop after the current job reaches a durable outcome and leave a concise handoff.
+
+## Monitored CLI Architecture
+
+The live overnight path mirrors `finish-app-script`:
+
+```text
+run_monitored_batches.py (chat-facing monitor)
+  ├── refreshes visualizer cache
+  ├── builds /tmp/linkedin_full_pipeline_state.json
+  └── runs/restarts run_batches.py while jobs remain
+
+run_batches.py (outer CLI orchestrator)
+  └── launches fresh codex exec parents for small batches
+
+fresh Codex parent
+  ├── reads OPERATING_CARD.md and /tmp/linkedin_full_pipeline_state.json
+  ├── processes 1-2 LinkedIn jobs in Chrome
+  ├── writes each durable outcome to state
+  └── exits
+```
+
+State file:
+
+```text
+/tmp/linkedin_full_pipeline_state.json
+```
+
+Important state fields:
+
+- `runPolicy.outreachMode`: `active` or `throttled`; once throttled, children must not send more invites.
+- `search.phase`: `early-career` or `broad-fallback`.
+- `search.stopRequested`: true when both searches are saturated or a systemic stop condition exists.
+- `items[]`: durable job outcomes; each item should include company, role, job URL, resume PDF, outreach state, application confidence, final state, blocker/confirmation evidence, and timestamp.
+
+The monitor owns restarts and progress checks. Child processes must not commit
+or push; they only update tracker/cache/outreach state and the `/tmp` run state.
 
 ## Suggestions And Defaults
 
