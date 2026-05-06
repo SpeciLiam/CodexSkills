@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T05:37:04.390413+00:00",
+  "generatedAt": "2026-05-06T05:42:01.687126+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 545,
+      "total": 548,
       "applied": 356,
-      "unapplied": 189,
-      "active": 384,
+      "unapplied": 192,
+      "active": 387,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 424,
-      "reachOut": 481,
+      "highFit": 426,
+      "reachOut": 484,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,10 +26,10 @@
       "intakeNew": 38,
       "intakeManual": 53,
       "intakeApplied": 0,
-      "applyRate": 65.3,
+      "applyRate": 65.0,
       "rejectionRate": 12.4,
-      "recruiterWork": 295,
-      "engineerWork": 349,
+      "recruiterWork": 298,
+      "engineerWork": 352,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 11
+        "value": 14
       },
       {
         "name": "Interviewing",
@@ -70,7 +70,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 194
+        "value": 197
       },
       {
         "name": "Ashby",
@@ -148,7 +148,7 @@
       },
       {
         "name": "Other",
-        "value": 81
+        "value": 84
       },
       {
         "name": "Remote",
@@ -170,11 +170,11 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 302
+        "value": 304
       },
       {
         "name": "Full Stack",
-        "value": 70
+        "value": 71
       },
       {
         "name": "Backend",
@@ -228,15 +228,15 @@
       },
       {
         "score": "7",
-        "count": 28
+        "count": 29
       },
       {
         "score": "8",
-        "count": 104
+        "count": 105
       },
       {
         "score": "9",
-        "count": 99
+        "count": 100
       },
       {
         "score": "10",
@@ -474,8 +474,8 @@
       },
       {
         "date": "2026-05-06",
-        "cumulative": 545,
-        "added": 4,
+        "cumulative": 548,
+        "added": 7,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -10501,14 +10501,15 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required custom personal project and LLM/social profile responses; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume reapply attempt 2026-05-04 stopped on blocker: Clean regenerated resume uploaded where possible; submit stopped on validation/blocker:; Manual apply still needed 2026-05-04: live Greenhouse embed has reCAPTCHA, plus required custom personal/LLM response fields for this Whop role.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required custom personal project and LLM/social profile responses; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume reapply attempt 2026-05-04 stopped on blocker: Clean regenerated resume uploaded where possible; submit stopped on validation/blocker:; Manual apply still needed 2026-05-04: live Greenhouse embed has reCAPTCHA, plus required custom personal/LLM response fields for this Whop role.; Manual apply needed 2026-05-05: live Greenhouse embed staged with resume/education, but not submitted because role requires Palo Alto office 5 days/week, minimum 5 years experience, and custom required LLM-prompt response for Liam review.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
         "2026-05-01",
         "2026-05-04",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-05"
       ]
     },
     {
@@ -16197,6 +16198,75 @@
       "engineerContact": "",
       "engineerProfile": "",
       "notes": "Tailored for Deltek AI-powered full-stack software engineer role; emphasized Python, TypeScript/React, REST APIs, Docker/cloud, AI-assisted API testing, prompt engineering, RAG concepts, OpenSearch retrieval, SQL metadata workflows, CI-style validation, Git/code review, and production debugging. Did not claim FastAPI, Next.js, Pydantic, SQLAlchemy, Alembic, PostgreSQL, pytest, LangChain/LangGraph, GitHub Actions, Kubernetes, OpenTelemetry, or MCP server generation production experience.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "CloudInnTech",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 7,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4410729638/",
+      "postingKey": "4410729638",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CloudInnTech/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CloudInnTech/Software_Engineer/Liam_Van_Resume/Liam_Van_CloudInnTech.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for CloudInnTech associate software engineer role; emphasized Java/Python/JavaScript, OOP-style backend work, REST APIs, Spring Boot, MySQL/OpenSearch, Git, CI/CD, Docker/cloud exposure, React/Angular/Node.js, debugging, testing, and scalable application delivery. Did not claim MongoDB, Django, Kubernetes, or formal Agile/Scrum experience.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Alvarez & Marsal",
+      "role": "Software Engineer, Innovation Team",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4410767902/",
+      "postingKey": "4410767902",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Alvarez & Marsal/Software_Engineer_Innovation_Team/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Alvarez & Marsal/Software_Engineer_Innovation_Team/Liam_Van_Resume_2/Liam_Van_Alvarez_&_Marsal.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for second Alvarez & Marsal Innovation Team full-stack/front-end posting; emphasized TypeScript/JavaScript, React single-page apps, Figma-to-product implementation, REST APIs, Docker/data modeling, Git/CI-style workflows, unit testing, documentation, and translating business requirements into UI/API workflows. Did not claim Django, Jira, GitHub Actions, Linux/WSL2, or finance domain experience.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Booz Allen Hamilton",
+      "role": "Full Stack Developer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "Washington, DC",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4410949238/",
+      "postingKey": "4410949238",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Booz Allen Hamilton/Full_Stack_Developer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Booz Allen Hamilton/Full_Stack_Developer/Liam_Van_Resume/Liam_Van_Booz_Allen_Hamilton.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Booz Allen Full Stack Developer requisition R0239385 supporting Digital Twin / modeling and simulation platforms; emphasized React/Angular UI work, JavaScript/TypeScript, Python/SQL, REST APIs, Java/C# OOP, modular cloud-integrated services, UI/UX prototypes, DevSecOps-style validation, debugging, and documentation. Did not claim Unity/Unreal/Omniverse, XR, DoD/federal environment, SDK ownership, real-time systems, or formal Agile/Scrum experience. Posting includes biometric identity verification and candidate AI-use restrictions for interviews/assessments.",
       "noteLinks": [],
       "activityDates": []
     }
@@ -23707,6 +23777,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Alvarez & Marsal",
+      "role": "Software Engineer, Innovation Team",
+      "postingKey": "4410767902",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4410767902/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Alarm.com",
       "role": "Software Engineer II",
       "postingKey": "8505982002",
@@ -24721,6 +24804,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Booz Allen Hamilton",
+      "role": "Full Stack Developer",
+      "postingKey": "4410949238",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4410949238/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Benchling",
       "role": "Software Engineer, Backend (Infrastructure Engineering)",
       "postingKey": "e729560e-a2dd-4949-8dc5-031312a9b2e2",
@@ -25083,6 +25179,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "CloudInnTech",
+      "role": "Software Engineer",
+      "postingKey": "4410729638",
+      "fitScore": 7,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4410729638/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Character.AI",
@@ -39011,6 +39120,18 @@
           "contacts": []
         },
         {
+          "key": "4410767902",
+          "company": "Alvarez & Marsal",
+          "role": "Software Engineer, Innovation Team",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5003658007",
           "company": "Anduril Industries",
           "role": "Software Engineer II, Manufacturing Test",
@@ -39688,6 +39809,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4410949238",
+          "company": "Booz Allen Hamilton",
+          "role": "Full Stack Developer",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -40756,6 +40889,18 @@
           "role": "Software Engineer, Monetization",
           "fitScore": 7,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4410729638",
+          "company": "CloudInnTech",
+          "role": "Software Engineer",
+          "fitScore": 7,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -50885,6 +51030,18 @@
           "contacts": []
         },
         {
+          "key": "4410767902",
+          "company": "Alvarez & Marsal",
+          "role": "Software Engineer, Innovation Team",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5003658007",
           "company": "Anduril Industries",
           "role": "Software Engineer II, Manufacturing Test",
@@ -51334,6 +51491,18 @@
           "role": "Software Engineer - Platform",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4410949238",
+          "company": "Booz Allen Hamilton",
+          "role": "Full Stack Developer",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -51850,6 +52019,18 @@
           "role": "Software Engineer - Controls Infrastructure",
           "fitScore": 7,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4410729638",
+          "company": "CloudInnTech",
+          "role": "Software Engineer",
+          "fitScore": 7,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
