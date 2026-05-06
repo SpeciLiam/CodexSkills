@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T07:17:33.909965+00:00",
+  "generatedAt": "2026-05-06T07:35:55.515753+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 559,
-      "applied": 364,
-      "unapplied": 195,
+      "applied": 365,
+      "unapplied": 194,
       "active": 395,
       "rejected": 44,
       "interviewing": 3,
@@ -26,7 +26,7 @@
       "intakeNew": 38,
       "intakeManual": 54,
       "intakeApplied": 0,
-      "applyRate": 65.1,
+      "applyRate": 65.3,
       "rejectionRate": 12.1,
       "recruiterWork": 304,
       "engineerWork": 360,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 313
+        "value": 314
       },
       {
         "name": "Archived",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 24
+        "value": 23
       },
       {
         "name": "Interviewing",
@@ -468,7 +468,7 @@
         "date": "2026-05-05",
         "cumulative": 542,
         "added": 34,
-        "applied": 5,
+        "applied": 6,
         "rejected": 0,
         "interviewing": 0
       },
@@ -16083,8 +16083,8 @@
     {
       "company": "Intuit",
       "role": "Software Engineer 1",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -16099,9 +16099,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for broad entry-level Software Engineer 1 posting; emphasized React/Angular/Node, Java/Python, REST APIs, MySQL/OpenSearch, cloud/SaaS integrations, Git/CI workflows, testing/debugging, and GenAI awareness. Did not claim React Native, Flutter, Django, Express, PostgreSQL, MongoDB, Jenkins, or Travis production experience.",
+      "notes": "Tailored for broad entry-level Software Engineer 1 posting; emphasized React/Angular/Node, Java/Python, REST APIs, MySQL/OpenSearch, cloud/SaaS integrations, Git/CI workflows, testing/debugging, and GenAI awareness. Did not claim React Native, Flutter, Django, Express, PostgreSQL, MongoDB, Jenkins, or Travis production experience.; Application confirmed in Intuit portal 2026-05-06; portal lists application date 15-04-2026.",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-06"
+      ]
     },
     {
       "company": "InterScripts, Inc.",
@@ -38841,7 +38843,7 @@
           "company": "Intuit",
           "role": "Software Engineer 1",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -50607,7 +50609,7 @@
           "company": "Intuit",
           "role": "Software Engineer 1",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
