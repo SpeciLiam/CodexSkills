@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T08:10:36.624689+00:00",
+  "generatedAt": "2026-05-06T09:08:47.939809+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,34 +9,34 @@
   },
   "stats": {
     "kpis": {
-      "total": 573,
-      "applied": 367,
-      "unapplied": 206,
-      "active": 409,
+      "total": 578,
+      "applied": 369,
+      "unapplied": 209,
+      "active": 414,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 447,
-      "reachOut": 505,
+      "highFit": 452,
+      "reachOut": 510,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 275,
+      "intakeJobs": 280,
       "intakeQueued": 29,
       "intakeNew": 38,
-      "intakeManual": 68,
+      "intakeManual": 73,
       "intakeApplied": 0,
-      "applyRate": 64.0,
-      "rejectionRate": 12.0,
-      "recruiterWork": 318,
-      "engineerWork": 374,
+      "applyRate": 63.8,
+      "rejectionRate": 11.9,
+      "recruiterWork": 323,
+      "engineerWork": 379,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 316
+        "value": 318
       },
       {
         "name": "Archived",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 66
+        "value": 71
       },
       {
         "name": "Rejected",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 21
+        "value": 19
       },
       {
         "name": "Interviewing",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 221
+        "value": 224
       },
       {
         "name": "LinkedIn",
-        "value": 215
+        "value": 217
       },
       {
         "name": "Ashby",
@@ -140,7 +140,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 263
+        "value": 265
       },
       {
         "name": "Bay Area",
@@ -148,11 +148,11 @@
       },
       {
         "name": "Other",
-        "value": 89
+        "value": 91
       },
       {
         "name": "Remote",
-        "value": 65
+        "value": 66
       },
       {
         "name": "Seattle",
@@ -170,11 +170,11 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 317
+        "value": 320
       },
       {
         "name": "Full Stack",
-        "value": 73
+        "value": 75
       },
       {
         "name": "Backend",
@@ -232,15 +232,15 @@
       },
       {
         "score": "8",
-        "count": 110
+        "count": 111
       },
       {
         "score": "9",
-        "count": 103
+        "count": 104
       },
       {
         "score": "10",
-        "count": 234
+        "count": 237
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
       },
       {
         "name": "Manual",
-        "value": 68
+        "value": 73
       },
       {
         "name": "New",
@@ -288,11 +288,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 191
+        "value": 194
       },
       {
         "name": "LinkedIn",
-        "value": 84
+        "value": 86
       }
     ],
     "timeline": [
@@ -468,15 +468,15 @@
         "date": "2026-05-05",
         "cumulative": 542,
         "added": 34,
-        "applied": 6,
+        "applied": 7,
         "rejected": 0,
         "interviewing": 0
       },
       {
         "date": "2026-05-06",
-        "cumulative": 573,
-        "added": 31,
-        "applied": 2,
+        "cumulative": 578,
+        "added": 36,
+        "applied": 3,
         "rejected": 0,
         "interviewing": 0
       }
@@ -16108,8 +16108,8 @@
     {
       "company": "InterScripts, Inc.",
       "role": "Software Engineer I (Full Stack) - Immediate Joiners",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -16124,9 +16124,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Software Engineer I full-stack immediate-joiner role; emphasized TypeScript/React, REST APIs, backend services, Docker/cloud exposure, Git workflows, testing/debugging, secure integration work, and healthcare-adjacent cloud systems. Did not claim Next.js, PostgreSQL, SQL Server, OAuth, FHIR, or HL7 production experience.",
+      "notes": "Tailored for Software Engineer I full-stack immediate-joiner role; emphasized TypeScript/React, REST APIs, backend services, Docker/cloud exposure, Git workflows, testing/debugging, secure integration work, and healthcare-adjacent cloud systems. Did not claim Next.js, PostgreSQL, SQL Server, OAuth, FHIR, or HL7 production experience.; Application submitted 2026-05-06",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-06"
+      ]
     },
     {
       "company": "DLA Piper",
@@ -16340,8 +16342,8 @@
     {
       "company": "Airbnb",
       "role": "Software Engineer, Infrastructure",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -16356,9 +16358,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-05-06",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-06"
+      ]
     },
     {
       "company": "Campana & Schott",
@@ -16898,9 +16902,176 @@
       "activityDates": [
         "2026-05-06"
       ]
+    },
+    {
+      "company": "Alchemy",
+      "role": "Software Engineer - Solutions",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "New York, New York, United States; San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/alchemy/jobs/4538329005",
+      "postingKey": "4538329005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Alchemy/Software_Engineer_Solutions/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Alchemy/Software_Engineer_Solutions/Liam_Van_Resume/Liam_Van_Alchemy.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Greenhouse Software Engineer - Solutions developer-platform role; emphasized TypeScript/JavaScript, REST APIs, React/NestJS, product integrations, cloud tooling, and cross-team production readiness. Did not claim web3-specific experience. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-06.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Octane",
+      "role": "Software Engineer II, Autos",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "Irving, Texas, United States; New York, New York, United States; Remote",
+      "source": "Greenhouse",
+      "jobLink": "https://boards.greenhouse.io/embed/job_app?token=7416833003",
+      "postingKey": "7416833003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Octane/Software_Engineer_II_Autos/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Octane/Software_Engineer_II_Autos/Liam_Van_Resume/Liam_Van_Octane.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Greenhouse Software Engineer II, Autos full-stack role; emphasized TypeScript/React, REST APIs, Spring Boot, customer-facing workflows, cloud/data reliability, and production validation. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-06.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Cisco",
+      "role": "Software Engineer I (Full Time) - United States",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "San Jose, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-i-full-time-united-states-at-cisco-4367615242",
+      "postingKey": "4367615242",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Cisco/Software_Engineer_I_Full_Time_United_States/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Cisco/Software_Engineer_I_Full_Time_United_States/Liam_Van_Resume/Liam_Van_Cisco.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for LinkedIn Software Engineer I cloud/software posting; emphasized Java/Python, cloud backend APIs, GCP/OCI/AWS tooling, AI-assisted testing, release validation, and product engineering. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-06.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "CLEAR - Corporate",
+      "role": "iOS Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "New York, New York, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/clear/jobs/7819202",
+      "postingKey": "7819202",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CLEAR - Corporate/iOS_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CLEAR - Corporate/iOS_Engineer/Liam_Van_Resume/Liam_Van_CLEAR_-_Corporate.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Greenhouse iOS Engineer / product engineering posting; emphasized user-facing product flows, React/Angular/NestJS, REST APIs, backend integrations, testing, and release readiness. Did not claim Swift, SwiftUI, or native iOS production experience. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-06.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Raytheon",
+      "role": "2026 Raytheon Full Time Software Engineer I - RDPL - Onsite (CA)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "Fullerton, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/2026-raytheon-full-time-software-engineer-i-rdpl-onsite-ca-at-raytheon-4403169313",
+      "postingKey": "4403169313",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Raytheon/2026_Raytheon_Full_Time_Software_Engineer_I_RDPL_Onsite_CA/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Raytheon/2026_Raytheon_Full_Time_Software_Engineer_I_RDPL_Onsite_CA/Liam_Van_Resume/Liam_Van_Raytheon.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for LinkedIn Software Engineer I RDPL posting; emphasized Java/Python/C++/C#, disciplined validation, data processing, APIs, debugging, documentation, and release operations. Posting likely requires citizenship/security-clearance review. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-06.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Octane",
+      "role": "Software Engineer II, Autos",
+      "location": "Irving, Texas, United States; New York, New York, United States; Remote",
+      "postingKey": "7416833003",
+      "jobUrl": "https://boards.greenhouse.io/embed/job_app?token=7416833003",
+      "discoveredAt": "2026-05-06T09:03:29.099277+00:00",
+      "postedAge": "public result crawled 6 months ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight",
+      "trackerPostingKey": "7416833003"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Cisco",
+      "role": "Software Engineer I (Full Time) - United States",
+      "location": "San Jose, CA",
+      "postingKey": "4367615242",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-i-full-time-united-states-at-cisco-4367615242",
+      "discoveredAt": "2026-05-06T09:03:29.099277+00:00",
+      "postedAge": "1 month ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight",
+      "trackerPostingKey": "4367615242"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Alchemy",
+      "role": "Software Engineer - Solutions",
+      "location": "New York, New York, United States; San Francisco, California, United States",
+      "postingKey": "4538329005",
+      "jobUrl": "https://job-boards.greenhouse.io/alchemy/jobs/4538329005",
+      "discoveredAt": "2026-05-06T09:03:29.099277+00:00",
+      "postedAge": "public result crawled last month",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight",
+      "trackerPostingKey": "4538329005"
+    },
     {
       "source": "Greenhouse",
       "company": "Temelio",
@@ -19213,6 +19384,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "CLEAR - Corporate",
+      "role": "iOS Engineer",
+      "location": "New York, New York, United States",
+      "postingKey": "7819202",
+      "jobUrl": "https://job-boards.greenhouse.io/clear/jobs/7819202",
+      "discoveredAt": "2026-05-06T09:03:29.099277+00:00",
+      "postedAge": "public result crawled 2 days ago",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; did not claim native iOS/Swift experience",
+      "trackerPostingKey": "7819202"
+    },
+    {
+      "source": "Greenhouse",
       "company": "Reddit",
       "role": "Software Engineer",
       "location": "San Francisco, CA",
@@ -19756,6 +19941,20 @@
       "status": "Tailored",
       "reason": "SWE-family role, SF/Bay Area preference",
       "trackerPostingKey": "5592469004"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Raytheon",
+      "role": "2026 Raytheon Full Time Software Engineer I - RDPL - Onsite (CA)",
+      "location": "Fullerton, CA",
+      "postingKey": "4403169313",
+      "jobUrl": "https://www.linkedin.com/jobs/view/2026-raytheon-full-time-software-engineer-i-rdpl-onsite-ca-at-raytheon-4403169313",
+      "discoveredAt": "2026-05-06T09:03:29.099277+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; citizenship/security-clearance eligibility needs review",
+      "trackerPostingKey": "4403169313"
     },
     {
       "source": "Greenhouse",
@@ -22015,6 +22214,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Octane",
+      "role": "Software Engineer II, Autos",
+      "postingKey": "7416833003",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://boards.greenhouse.io/embed/job_app?token=7416833003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Notion",
       "role": "Software Engineer, New Grad",
       "postingKey": "4406118990",
@@ -23120,6 +23332,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Cisco",
+      "role": "Software Engineer I (Full Time) - United States",
+      "postingKey": "4367615242",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-i-full-time-united-states-at-cisco-4367615242",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Chime",
       "role": "Software Engineer, Financial Platform",
       "postingKey": "8183064002",
@@ -23520,6 +23745,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Alchemy",
+      "role": "Software Engineer - Solutions",
+      "postingKey": "4538329005",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/alchemy/jobs/4538329005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -24680,6 +24918,19 @@
       "notes": ""
     },
     {
+      "company": "CLEAR - Corporate",
+      "role": "iOS Engineer",
+      "postingKey": "7819202",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/clear/jobs/7819202",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Clay",
       "role": "Software Engineer Backend",
       "postingKey": "248aa0c7-034f-47d3-a57e-ce16736eeab6",
@@ -25158,6 +25409,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-05",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Raytheon",
+      "role": "2026 Raytheon Full Time Software Engineer I - RDPL - Onsite (CA)",
+      "postingKey": "4403169313",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/2026-raytheon-full-time-software-engineer-i-rdpl-onsite-ca-at-raytheon-4403169313",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -39319,6 +39583,18 @@
           ]
         },
         {
+          "key": "4538329005",
+          "company": "Alchemy",
+          "role": "Software Engineer - Solutions",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "associate-software-engineer-software-engineer-at-applied-systems-4400119719",
           "company": "Applied Systems",
           "role": "Associate Software Engineer / Software Engineer",
@@ -39432,6 +39708,18 @@
           "role": "Software Engineer, Financial Platform",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4367615242",
+          "company": "Cisco",
+          "role": "Software Engineer I (Full Time) - United States",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -39804,6 +40092,18 @@
           "role": "Full Stack Engineer, Backend",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7416833003",
+          "company": "Octane",
+          "role": "Software Engineer II, Autos",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -40435,6 +40735,18 @@
           "contacts": []
         },
         {
+          "key": "7819202",
+          "company": "CLEAR - Corporate",
+          "role": "iOS Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4410558870",
           "company": "Campana & Schott",
           "role": "AI Solutions Analyst",
@@ -41015,7 +41327,7 @@
           "company": "Airbnb",
           "role": "Software Engineer, Infrastructure",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -41555,7 +41867,7 @@
           "company": "InterScripts, Inc.",
           "role": "Software Engineer I (Full Stack) - Immediate Joiners",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -41868,6 +42180,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4403169313",
+          "company": "Raytheon",
+          "role": "2026 Raytheon Full Time Software Engineer I - RDPL - Onsite (CA)",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -51157,6 +51481,18 @@
           "contacts": []
         },
         {
+          "key": "4538329005",
+          "company": "Alchemy",
+          "role": "Software Engineer - Solutions",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8530635002",
           "company": "Amplitude",
           "role": "Software Engineer II, Data Warehouse",
@@ -51330,6 +51666,18 @@
           "role": "Software Engineer, Financial Platform",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4367615242",
+          "company": "Cisco",
+          "role": "Software Engineer I (Full Time) - United States",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -51750,6 +52098,18 @@
           "role": "Full Stack Engineer, Backend",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7416833003",
+          "company": "Octane",
+          "role": "Software Engineer II, Autos",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -52597,6 +52957,18 @@
           "contacts": []
         },
         {
+          "key": "7819202",
+          "company": "CLEAR - Corporate",
+          "role": "iOS Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4410558870",
           "company": "Campana & Schott",
           "role": "AI Solutions Analyst",
@@ -53009,7 +53381,7 @@
           "company": "Airbnb",
           "role": "Software Engineer, Infrastructure",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -53369,7 +53741,7 @@
           "company": "InterScripts, Inc.",
           "role": "Software Engineer I (Full Stack) - Immediate Joiners",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -53476,6 +53848,18 @@
           "key": "linkedin-public-pinwheel-full-stack-engineer-fe-leaning-ny-2026-05-06",
           "company": "Pinwheel",
           "role": "Full-stack Engineer (FE-leaning)",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4403169313",
+          "company": "Raytheon",
+          "role": "2026 Raytheon Full Time Software Engineer I - RDPL - Onsite (CA)",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
