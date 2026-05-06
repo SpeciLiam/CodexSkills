@@ -152,6 +152,7 @@ cd application-visualizer && npm run build
 
 - User asks for a whole recruiting session: run `--mode all`.
 - User asks for only one recruiting lane: run the closest focused mode first.
+- User asks for all-in-one LinkedIn sourcing, resume tailoring, recruiter outreach, and application attempts from a LinkedIn search: use `linkedin-full-pipeline`.
 - New job link or pasted posting: use `resume-tailor`.
 - Fresh LinkedIn/Greenhouse sourcing: use `job-intake`.
 - Ready tailored rows need submission: use `finish-applications`.
