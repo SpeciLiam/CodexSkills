@@ -32,6 +32,28 @@ Do not pass `--no-commit` or `--no-push` unless the user explicitly asks.
 submissions. Use the legacy `run_queue.py` only if the user explicitly asks for
 per-row mode.
 
+## Tab Confidence Grouping
+
+During live browser runs, keep open application tabs organized by perceived
+handoff confidence:
+
+- **High Confidence / Ready Submit**: fully completed tabs where every required
+  answer is covered by standing answers, critical rendered answers are verified,
+  and only final submission/confirmation remains.
+- **Needs Review**: tabs with one or more medium-confidence answers, free
+  response drafts, eligibility/location/salary uncertainty, or required choices
+  that Liam should inspect.
+- **Hard Blocker**: Workday, login/account creation, SMS/authenticator 2FA,
+  CAPTCHA, legal signature/attestation, AI-deterrent verification, or other true
+  blockers.
+- **Submitted / Archived**: confirmation tabs, already-submitted portals, closed
+  postings, mismatched redirects, and not-found pages.
+
+If Chrome tab groups are available through UI automation, place tabs into those
+groups. If tab groups are not scriptable from the current environment, use the
+closest non-destructive fallback: reorder tabs into the same sequence and keep a
+short written map in the run notes or final response.
+
 ## How To Run
 
 ```bash

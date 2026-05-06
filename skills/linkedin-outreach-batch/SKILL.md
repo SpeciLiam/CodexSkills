@@ -21,3 +21,14 @@ python3 skills/linkedin-outreach-batch/scripts/build_recruiter_batch.py --contac
 ```
 
 Before sending, re-read `skills/linkedin-outreach/OPERATING_CARD.md`. It is the source of truth for approval gates, send behavior, and outcome recording.
+
+For large engineer or recruiter batches, use the monitored runner from the
+generalized skill instead of keeping one long Codex context alive:
+
+```bash
+python3 skills/linkedin-outreach/scripts/run_monitored_batches.py --contact-type engineer --mode label
+python3 skills/linkedin-outreach/scripts/run_monitored_batches.py --contact-type engineer --mode send
+```
+
+`label` finds and verifies missing contacts, then leaves them at `Needs
+approval`. `send` only processes rows already marked `Approved`.

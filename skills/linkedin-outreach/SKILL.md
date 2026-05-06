@@ -11,6 +11,67 @@ Use this skill for any LinkedIn outreach lane tied to the application tracker. T
 
 Before every contact, re-read `skills/linkedin-outreach/OPERATING_CARD.md`. The card's rules win in any conflict with the prose below.
 
+## Scripted Orchestrator
+
+For larger engineer/recruiter passes, prefer the finish-app-script-style runner
+so each Codex process gets a small, explicit batch and records durable state in
+`/tmp/linkedin_outreach_run_state.json`.
+
+Default engineer labeling pass:
+
+```bash
+python3 skills/linkedin-outreach/scripts/run_monitored_batches.py --contact-type engineer --mode label
+```
+
+Default approved-send pass:
+
+```bash
+python3 skills/linkedin-outreach/scripts/run_monitored_batches.py --contact-type engineer --mode send
+python3 skills/linkedin-outreach/scripts/run_monitored_batches.py --contact-type recruiter --mode send
+```
+
+Default engineer verification pass:
+
+```bash
+python3 skills/linkedin-outreach/scripts/run_monitored_batches.py --contact-type engineer --mode verify
+```
+
+Use `--resume` if the assistant turn is interrupted or the shell session
+disappears:
+
+```bash
+python3 skills/linkedin-outreach/scripts/run_monitored_batches.py --resume
+```
+
+Modes:
+
+- `label` reads the legacy batch tracker, finds rows like `Needs engineer` or
+  `Needs recruiter`, asks each fresh Codex parent to verify one real LinkedIn
+  profile at a time, writes a <=300 character connection note, and marks the
+  row `Needs approval`. It never sends.
+- `verify` audits existing named engineer contacts and leaves rows at `Needs
+  approval` only when the person's current profile shows they work at the target
+  company in a relevant technical role; otherwise it downgrades the row back to
+  `Needs engineer`.
+- `send` reads approved rows only, sends normal LinkedIn connection invites when
+  the profile and note are already approved, then records the outcome in both
+  the batch tracker and application tracker.
+
+Important flags:
+
+- `--batch-size N` controls rows per fresh Codex process (default `3`).
+- `--limit N` limits the initial state build.
+- `--max-batches N` is useful for testing one small chunk.
+- `--dry-run` prints the child Codex command without launching it.
+- `--no-commit` or `--no-push` should only be used when explicitly requested.
+
+The lower-level commands are:
+
+```bash
+python3 skills/linkedin-outreach/scripts/build_script_state.py --contact-type engineer --mode label
+python3 skills/linkedin-outreach/scripts/run_batches.py
+```
+
 ## Lanes
 
 The skill operates on a `lane` parameter, currently one of: `recruiter`, `engineer`, `alumni`, `hiring_manager`, `founder`, `peer`. New lanes can be added by extending the lane registry without changing the workflow.

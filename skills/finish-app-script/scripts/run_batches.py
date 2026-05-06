@@ -47,8 +47,9 @@ Read skills/finish-app-script/OPERATING_CARD.md before starting. Follow the
 standing answers and submission rules strictly, with this batch override:
 
 You are a fresh parent application agent, not a per-row subagent. Use Codex
-Computer Use directly for Chrome in this process. Do not spawn subagents or
-parallel browser workers.
+Computer Use directly for Google Chrome in this process. Use app name
+"Google Chrome" or bundle id "com.google.Chrome"; do not use bare "Chrome".
+Do not spawn subagents or parallel browser workers.
 
 Process up to {batch_size} queued application rows from
 /tmp/fa_script_run_state.json, then exit cleanly. Before each row, reread the
@@ -59,6 +60,10 @@ For each row:
 - Always open a brand-new Chrome tab before navigating to the jobLink, including
   the first row in this batch. Never navigate over an existing application,
   email, search, or handoff tab.
+- Keep tabs organized by perceived confidence when possible: High Confidence /
+  Ready Submit, Needs Review, Hard Blocker, and Submitted / Archived. If Chrome
+  tab groups are not scriptable, leave tabs ordered in that bucket sequence and
+  make the outcome note clear enough for Liam to identify the bucket.
 - Complete the live application with the row's resumePdf. During file upload,
   the macOS file picker may default to the previous application's file; before
   confirming any upload, verify the selected path exactly matches the current
@@ -69,6 +74,22 @@ For each row:
   the final Submit/Submit application button, wait for a confirmation page or
   confirmation text, capture it in confirmationEvidence, and set state to
   "submitted". Do not leave a high-confidence application staged.
+- Before clicking final Submit, make a short explicit decision: "submit is safe
+  because <reason>". If you cannot make that decision confidently within one
+  minute, or if the submit button is adjacent to unchecked acknowledgements,
+  certifications, legal text, custom free-response answers, work authorization
+  ambiguity, salary/location uncertainty, or anything not covered by standing
+  answers, do not click Submit. Mark the row manual with the exact item Liam
+  needs to review and leave the tab open.
+- Treat these rendered answers as guardrails before final submit: authorized to
+  work in the United States = Yes; now/future sponsorship required = No;
+  comfortable working onsite/hybrid/in-office in NYC or San Francisco, including
+  San Francisco 5 days/week = Yes. If any present answer differs, correct it. If
+  you cannot correct it, mark manual and leave the tab open.
+- Do not stall on a final-submit decision. Once the form is as complete as it
+  safely can be, either submit with confirmation evidence or mark manual and
+  exit/continue. Never hover at a staged final form waiting for confidence to
+  improve.
 - If submitted successfully and confirmation evidence is captured, close that
   application tab before starting the next row.
 - For medium confidence, fill every safe field, leave the tab at the cleanest
@@ -229,11 +250,21 @@ def commit_and_push(*, push: bool, message: str) -> bool:
         return False
     print(f"  committed: {message}")
     if push:
-        pushed = subprocess.run(["git", "-C", str(ROOT), "push", "origin", "main"], capture_output=True, text=True)
+        branch = subprocess.run(
+            ["git", "-C", str(ROOT), "branch", "--show-current"],
+            capture_output=True,
+            text=True,
+        )
+        branch_name = branch.stdout.strip() or "HEAD"
+        pushed = subprocess.run(
+            ["git", "-C", str(ROOT), "push", "origin", branch_name],
+            capture_output=True,
+            text=True,
+        )
         if pushed.returncode != 0:
             print(f"  git push failed: {pushed.stderr.strip()}")
             return False
-        print("  pushed origin/main")
+        print(f"  pushed origin/{branch_name}")
     return True
 
 
