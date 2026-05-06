@@ -1,0 +1,33 @@
+interface:
+  display_name: "Finish App Script"
+  short_description: "Per-row orchestrator: spawns fresh codex exec per application"
+  default_prompt: "Use $finish-app-script to drain my application queue. Run skills/finish-app-script/scripts/build_queue.py first if /tmp/fa_script_run_state.json is missing or stale, then run skills/finish-app-script/scripts/run_queue.py and report the summary."
+
+execution:
+  mode: "orchestrator"
+  spawn_command: "codex exec"
+  sandbox: "workspace-write"
+  default_model: "gpt-5.5"
+  per_row_timeout_seconds: 360
+  circuit_breaker_consecutive_manual: 3
+  commit_every_n_submissions: 5
+
+candidate_profile:
+  full_name: "Liam Van"
+  email: "liamvanpj@gmail.com"
+  phone: "678-488-7259"
+  location_current: "Seattle, WA"
+  location_legal: "1421 Harvard Avenue, Seattle, WA 98122"
+  work_authorization: "U.S. citizen"
+  sponsorship_required: false
+  gender: "male"
+  transgender: false
+  race_ethnicity: ["Hispanic / Latino", "Two or More Races"]
+  disability: false
+  veteran: false
+  standing_submit_intent: "Attempt and complete routine applications for rows with tailored resumes; only stop for true blockers."
+
+browser_form_handling:
+  use_codex_computer_use: true
+  filtered_selects: "Open the menu, click the actual option, verify the rendered chip. Never leave typed text in a typeahead unselected."
+  fill_and_leave_open: "For FRQ or medium-confidence fields: fill all safe fields, generate best-effort answer from profile, leave tab open, mark state=manual with exact blocker, continue queue."
