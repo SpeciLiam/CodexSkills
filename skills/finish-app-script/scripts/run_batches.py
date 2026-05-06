@@ -63,7 +63,12 @@ For each row:
   the macOS file picker may default to the previous application's file; before
   confirming any upload, verify the selected path exactly matches the current
   row's resumePdf from /tmp/fa_script_run_state.json.
-- Submit high-confidence routine applications.
+- Submit high-confidence routine applications. High confidence means every
+  required field is filled from standing answers or obvious profile facts, the
+  correct resume is uploaded, and no blocker below applies. In that case, click
+  the final Submit/Submit application button, wait for a confirmation page or
+  confirmation text, capture it in confirmationEvidence, and set state to
+  "submitted". Do not leave a high-confidence application staged.
 - If submitted successfully and confirmation evidence is captured, close that
   application tab before starting the next row.
 - For medium confidence, fill every safe field, leave the tab at the cleanest
