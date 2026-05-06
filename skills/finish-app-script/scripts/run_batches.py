@@ -73,6 +73,10 @@ For each row:
   interactive CAPTCHA, Workday, legal signature/attestation, AI-deterrent
   verification), mark manual with the exact blocker and leave any useful
   partially completed tab open for Liam.
+- Do not check legal acknowledgements, arbitration agreements, applicant
+  certifications, true-and-complete attestations, or signature-equivalent boxes.
+  If one is required, stop before checking it, mark manual, and leave the tab
+  open for Liam review.
 - For closed/404/mismatched postings, mark archived.
 - After any outcome, continue the next row from a brand-new tab when batch
   capacity remains. Do not reuse a submitted, partially completed, or handoff
