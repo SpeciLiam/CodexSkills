@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 478
+Companies queued: 479
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -250,6 +250,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Traba | Software Engineer | 529eef66-1b80-4bda-a385-9501033a1053 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/traba/529eef66-1b80-4bda-a385-9501033a1053/application?src=LinkedIn) |  |  |  |  |
 | Toshiba Global Commerce Solutions | Associate Software Engineer | 5103776007 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/toshibaglobalcommercesolutions/jobs/5103776007) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Tennr | Backend Software Engineer | 9aae43bf-3303-468e-aae0-038b7fb395f3 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/tennr/9aae43bf-3303-468e-aae0-038b7fb395f3/application?utm_source=2Lb815XAxX) |  |  |  |  |
+| TechTree | Founding Engineer | founding-engineer-at-techtree-4306357660 | 9 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/founding-engineer-at-techtree-4306357660) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Tebra | Software Engineer III | 4679086005 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/tebra/jobs/4679086005) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Tailscale | Software Engineer, Networking | 4525230005 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/tailscale/jobs/4525230005) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Tailscale | Security Software Engineer | 4648916005 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/tailscale/jobs/4648916005) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
