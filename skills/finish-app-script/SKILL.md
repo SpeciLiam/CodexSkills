@@ -81,13 +81,20 @@ Notes carried from tracker: {notes}
 Use Codex Computer Use for the browser. Dropdowns/typeaheads: open menu →
 click option → verify chip rendered. Never just type and move on.
 
+Email 2FA / verification codes / magic links to liamvanpj@gmail.com are NOT
+blockers. Use gmail@openai-curated MCP to read the code or click the link in
+Chrome (already signed in), then continue. Only escalate if the email never
+arrives, expires, or the verification switches to SMS / authenticator-app 2FA.
+
 Confidence decision after final review:
-- HIGH (every required field covered, no blocker): click submit, capture
-  confirmation, run update_application_status.py, set state="submitted".
+- HIGH (every required field covered, no blocker): click submit, retrieve any
+  emailed verification code via Gmail MCP, capture confirmation,
+  run update_application_status.py, set state="submitted".
 - MEDIUM (FRQ/one uncertain field): fill all safe fields, generate best-effort
   answer from profile, leave tab open, set state="manual" with
   blocker like "FRQ review: <question>".
-- HARD blocker (login/2FA/CAPTCHA/Workday/account creation/legal signature):
+- HARD blocker (account creation, fresh login when unauthenticated, SMS/
+  authenticator-app 2FA, interactive CAPTCHA, Workday, legal signature):
   set state="manual" with exact blocker.
 - Posting closed/404/redirected: set state="archived".
 
