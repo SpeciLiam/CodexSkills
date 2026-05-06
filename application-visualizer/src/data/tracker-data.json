@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T04:06:44.192620+00:00",
+  "generatedAt": "2026-05-06T05:04:46.867889+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 534,
-      "applied": 353,
-      "unapplied": 181,
+      "applied": 354,
+      "unapplied": 180,
       "active": 373,
       "rejected": 44,
       "interviewing": 3,
@@ -26,8 +26,8 @@
       "intakeNew": 38,
       "intakeManual": 53,
       "intakeApplied": 0,
-      "applyRate": 66.1,
-      "rejectionRate": 12.5,
+      "applyRate": 66.3,
+      "rejectionRate": 12.4,
       "recruiterWork": 285,
       "engineerWork": 339,
       "recruiterReachedOut": 93,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 302
+        "value": 303
       },
       {
         "name": "Archived",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 65
+        "value": 64
       },
       {
         "name": "Rejected",
@@ -448,7 +448,7 @@
         "date": "2026-05-03",
         "cumulative": 484,
         "added": 70,
-        "applied": 13,
+        "applied": 14,
         "rejected": 0,
         "interviewing": 0
       },
@@ -13135,8 +13135,8 @@
     {
       "company": "WalkMe",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -13151,13 +13151,14 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-03 07:00Z degraded capture; tailored SWE resume rendered and verified one page; emphasized NYC full-stack product engineering, React/NestJS interfaces, backend APIs, customer-facing digital-adoption workflows, and reliable delivery.; Manual apply needed: desired salary field 2026-05-03; Hourly intake 2026-05-03 07:00Z degraded capture; tailored SWE resume rendered and verified one page; emphasized NYC full-stack product engineering, React/NestJS interfaces, backend APIs, customer-facing digital-adoption workflows, and reliable delivery. Applications were left ready for retry; do not treat temporary browser-control issues as role-level manual blockers.; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via LinkedIn flow because it was outside the completed automated Greenhouse submit batch.",
+      "notes": "Hourly intake 2026-05-03 07:00Z degraded capture; tailored SWE resume rendered and verified one page; emphasized NYC full-stack product engineering, React/NestJS interfaces, backend APIs, customer-facing digital-adoption workflows, and reliable delivery.; Manual apply needed: desired salary field 2026-05-03; Hourly intake 2026-05-03 07:00Z degraded capture; tailored SWE resume rendered and verified one page; emphasized NYC full-stack product engineering, React/NestJS interfaces, backend APIs, customer-facing digital-adoption workflows, and reliable delivery. Applications were left ready for retry; do not treat temporary browser-control issues as role-level manual blockers.; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via LinkedIn flow because it was outside the completed automated Greenhouse submit batch.; Application submitted/already received 2026-05-06",
       "noteLinks": [],
       "activityDates": [
         "2026-05-03",
         "2026-05-03",
         "2026-05-03",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-06"
       ]
     },
     {
