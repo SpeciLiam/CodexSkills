@@ -24,8 +24,8 @@ Use Codex/ChatGPT Automations as the scheduler. The automation runbooks live at:
 .agents/automations/hourly-greenhouse-intake.md
 ```
 
-The automation owns browser capture only. Deterministic scripts own schema validation, paging decisions, dedupe, finalization, and downstream intake handoff.
-Treat LinkedIn as a Chrome-via-Computer-Use lane: Liam's logged-in session is required for fresh LinkedIn results, Easy Apply, accurate filters, and later tab handoff.
+The automation owns capture only. Deterministic scripts own schema validation, paging decisions, dedupe, finalization, and downstream intake handoff.
+Prefer Apify capture for LinkedIn when configured because LinkedIn is hostile to browser automation. Keep Chrome-via-Computer-Use as the fallback when Apify is not configured or fails for routine, non-bypass reasons. Liam's logged-in Chrome session is still required for Easy Apply and later tab handoff.
 
 Use this schedule:
 
@@ -61,6 +61,34 @@ Dry-run before writing:
 python3 skills/job-intake/scripts/run_job_listener.py --dry-run --linkedin-input /tmp/linkedin_jobs.json
 ```
 
+## Apify Capture
+
+Use Apify as the preferred capture layer for LinkedIn and any public ATS source it can reliably gather. The intake skill still owns canonicalization, dedupe, fit scoring, and tracker updates.
+
+Set `APIFY_TOKEN`, then configure either Apify Tasks or direct Actor runs:
+
+```bash
+export APIFY_TOKEN=...
+export APIFY_LINKEDIN_TASK_ID=...
+export APIFY_GREENHOUSE_TASK_ID=...
+python3 skills/job-intake/scripts/apify_capture.py --sources linkedin greenhouse
+```
+
+For direct Actor runs, put actor-specific input JSON in local files and point the helper at them:
+
+```bash
+export APIFY_LINKEDIN_ACTOR_ID=...
+export APIFY_LINKEDIN_INPUT_JSON=/path/to/linkedin_actor_input.json
+python3 skills/job-intake/scripts/apify_capture.py --sources linkedin
+```
+
+The helper writes listener-compatible files to:
+
+- `/tmp/codexskills-job-intake/linkedin_jobs.json`
+- `/tmp/codexskills-job-intake/greenhouse_jobs.json`
+
+Then it runs `run_job_listener.py` unless `--no-listener` is passed. Use `--dry-run-listener` to test without writing `application-trackers/job-intake.md`.
+
 ## Ranking Defaults
 
 - Strongly prefer roles Liam is realistically qualified for, especially Software Engineer, SWE I, SWE II, backend, full-stack, platform, product engineer, generalist, founding engineer, forward-deployed, and applied AI roles.
@@ -90,7 +118,7 @@ The hourly automations are deterministic-script-driven. The agent only does brow
 3. `should_continue_paging.py` - emits `CONTINUE` / `STOP: saturated` / `STOP: empty`
 4. `finalize_capture.py` - merge captures into listener input, update intake, optionally tailor/promote when those scripts exist, and clean up
 
-LinkedIn lane is Chrome-via-Computer-Use only. Greenhouse lane prefers logged-in browser but can fall back to public boards.
+LinkedIn lane prefers Apify capture when configured; otherwise use Chrome-via-Computer-Use. Greenhouse lane can use Apify, logged-in browser, or public boards.
 
 Lanes never share state: separate runbooks (`hourly-linkedin-intake.md`, `hourly-greenhouse-intake.md`), separate capture files, 30-minute schedule offset, separate commits.
 
@@ -105,7 +133,7 @@ Lanes never share state: separate runbooks (`hourly-linkedin-intake.md`, `hourly
 
 ## Guardrails
 
-- Do not bypass LinkedIn, Greenhouse, CAPTCHA, bot checks, login gates, or platform restrictions.
+- Do not bypass LinkedIn, Greenhouse, CAPTCHA, bot checks, login gates, or platform restrictions. Apify may be used as a capture vendor, but do not add custom circumvention logic in this repo.
 - Do not mark a job applied from intake alone.
 - Do not invent job details that were not captured.
 - Keep LinkedIn intake source-first unless a routine application flow is available after tailoring.

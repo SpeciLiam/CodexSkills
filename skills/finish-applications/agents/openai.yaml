@@ -1,7 +1,7 @@
 interface:
   display_name: "Finish Applications"
-  short_description: "Complete ready applications with optional worker lanes"
-  default_prompt: "Use $finish-applications to work through my ready but unapplied job applications with the default Chrome and direct-ATS worker lanes; ask me only when blocked. Use all three lanes if I explicitly ask for Chrome, Safari, and direct ATS."
+  short_description: "Complete ready applications in one Chrome-driven agent"
+  default_prompt: "Use $finish-applications to work through my ready but unapplied job applications in the current agent. Use Chrome directly for live application flows, ask me only when blocked, update the tracker/cache yourself, and use a concise file-based handoff only if context gets overloaded."
 candidate_profile:
   gender: "male"
   transgender: false

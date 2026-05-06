@@ -42,21 +42,23 @@ TRUE_MANUAL_BLOCKERS = (
     "not automation-accessible",
     "otp",
     "partner sharing",
-    "preference",
     "profile",
     "recaptcha",
     "repeat application limit",
-    "salary",
     "signature",
-    "start date",
     "verification",
     "workday",
 )
 RETRYABLE_MANUAL_BLOCKERS = (
+    "bad-resume fix",
+    "clean regenerated resume",
     "cover letter",
+    "desired salary",
     "final application submission confirmation",
     "final submit confirmation",
     "linkedin login",
+    "reapply needed",
+    "start date",
 )
 RESUME_TAILOR_SCRIPTS = ROOT / "skills" / "resume-tailor" / "scripts"
 if str(RESUME_TAILOR_SCRIPTS) not in sys.path:
@@ -132,10 +134,11 @@ def true_manual_reason(app: dict[str, Any]) -> str:
         return "Workday posting; Liam should submit manually."
     reason = manual_reason_from_notes(str(app.get("notes") or ""))
     normalized = norm(reason)
+    notes = norm(app.get("notes") or "")
+    if is_retryable_manual(app) or "bad-resume fix" in notes or "clean regenerated resume" in notes:
+        return ""
     if not reason:
         return "Manual follow-up required; no specific reason recorded yet."
-    if is_retryable_manual(app):
-        return ""
     if any(blocker in normalized for blocker in TRUE_MANUAL_BLOCKERS):
         return reason.replace("Manual apply needed:", "").strip()
     return ""
@@ -343,8 +346,10 @@ def build_run_state(
             "confirmationGate": "OFF",
             "submissionGate": "confidenceBand == high",
             "askOnlyForTrueBlockers": True,
-            "preferredExecution": "parent-orchestrated fresh worker per row or small chunk",
-            "parentOwns": ["run state", "tracker updates", "cache refresh", "commits"],
+            "preferredExecution": "single Codex agent using Chrome Computer Use directly",
+            "contextHandoff": "when context is crowded, checkpoint files and rerun finish-applications from fresh context",
+            "defaultBrowser": "Chrome Computer Use",
+            "agentOwns": ["browser flow", "run state", "tracker updates", "cache refresh", "commits"],
         },
         "createdAt": existing.get("createdAt") or now,
         "updatedAt": now,
@@ -358,7 +363,9 @@ def build_run_state(
         },
         "standingInstruction": (
             "Re-read this file before each row. Submit high-confidence routine applications without asking; "
-            "record submitted/manual/archived/skipped outcomes here immediately after each row."
+            "use single-agent Chrome Computer Use directly with no subagents; record "
+            "submitted/manual/archived/skipped outcomes here immediately after each row. "
+            "If context is crowded, checkpoint files and rerun finish-applications from a fresh parent."
         ),
         "summary": {
             "agentQueue": len(agent_queue),

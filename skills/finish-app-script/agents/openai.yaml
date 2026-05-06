@@ -1,14 +1,15 @@
 interface:
   display_name: "Finish App Script"
-  short_description: "Per-row orchestrator: spawns fresh codex exec per application"
-  default_prompt: "Use $finish-app-script to drain my application queue. Run skills/finish-app-script/scripts/build_queue.py first if /tmp/fa_script_run_state.json is missing or stale, then run skills/finish-app-script/scripts/run_queue.py and report the summary."
+  short_description: "Rotating batch application runner with fresh Codex CLI parents"
+  default_prompt: "Use $finish-app-script to drain my application queue from chat. Refresh the visualizer cache, run skills/finish-app-script/scripts/build_queue.py, then run skills/finish-app-script/scripts/run_batches.py. Use the rotating parent batch mode by default, not legacy per-row mode, and report the summary."
 
 execution:
-  mode: "orchestrator"
+  mode: "rotating-parent-orchestrator"
   spawn_command: "codex exec"
-  sandbox: "workspace-write"
+  sandbox: "danger-full-access"
   default_model: "gpt-5.5"
-  per_row_timeout_seconds: 360
+  batch_size: 2
+  per_batch_timeout_seconds: 1800
   circuit_breaker_consecutive_manual: 3
   commit_every_n_submissions: 5
 

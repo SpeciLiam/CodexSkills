@@ -246,7 +246,28 @@ def parse_rows(lines: list[str]) -> tuple[int, list[str]]:
 
 
 def split_row(line: str) -> list[str]:
-    return [cell.strip() for cell in line.strip().strip("|").split("|")]
+    cells: list[str] = []
+    current: list[str] = []
+    pending_backslash = False
+    for char in line.strip().strip("|"):
+        if pending_backslash:
+            if char != "|":
+                current.append("\\")
+            current.append(char)
+            pending_backslash = False
+            continue
+        if char == "\\":
+            pending_backslash = True
+            continue
+        if char == "|":
+            cells.append("".join(current).strip())
+            current = []
+            continue
+        current.append(char)
+    if pending_backslash:
+        current.append("\\")
+    cells.append("".join(current).strip())
+    return cells
 
 
 def row_key(row: dict[str, str]) -> tuple[str, str]:

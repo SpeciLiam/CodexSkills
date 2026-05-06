@@ -143,6 +143,7 @@ def main() -> int:
     parser.add_argument("--contact-name", default=None)
     parser.add_argument("--contact-profile", default=None)
     parser.add_argument("--contact-position", default=None)
+    parser.add_argument("--connection-note", default=None)
     parser.add_argument("--recruiter-name", default=None)
     parser.add_argument("--recruiter-profile", default=None)
     parser.add_argument("--approval", choices=("Needs recruiter", "Needs engineer", "Needs approval", "Approved", "Rejected"), default=None)
@@ -167,6 +168,8 @@ def main() -> int:
             row[str(config["profile_column"])] = contact_profile
         if args.contact_position is not None:
             row[str(config["position_column"])] = args.contact_position
+        if args.connection_note is not None:
+            row["Connection Note"] = args.connection_note
         if args.approval is not None:
             row["Approval"] = args.approval
         if args.outcome is not None:

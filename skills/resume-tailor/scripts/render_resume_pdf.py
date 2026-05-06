@@ -88,6 +88,24 @@ def build_pdf(resume_dir: Path, engine: list[str]) -> Path:
     return output
 
 
+def validate_resume_source(resume_tex: Path) -> None:
+    source = resume_tex.read_text(encoding="utf-8")
+    problems: list[str] = []
+    if "\r" + "es" in source:
+        problems.append("contains carriage-return escape damage before resume commands")
+    if "\t" + "ex" in source:
+        problems.append("contains tab escape damage before text commands")
+    for command in ("resumeItem", "resumeSubheading", "resumeItemListStart", "textbf"):
+        bare = source.count(command)
+        escaped = source.count(f"\\{command}")
+        if bare != escaped:
+            problems.append(f"{command} appears without a LaTeX backslash")
+
+    if problems:
+        detail = "; ".join(problems)
+        raise SystemExit(f"Refusing to render malformed LaTeX source: {resume_tex} ({detail})")
+
+
 def cleanup_generated_files(resume_dir: Path, final_pdf: Path) -> None:
     for path in resume_dir.iterdir():
         if path == final_pdf or path.name == "resume.tex":
@@ -121,6 +139,7 @@ def main() -> int:
     resume_tex = resume_dir / "resume.tex"
     if not resume_tex.exists():
         raise SystemExit(f"resume.tex not found in {resume_dir}")
+    validate_resume_source(resume_tex)
 
     company_name = infer_company_name(resume_dir)
     candidate_name = load_candidate_name(resume_dir)

@@ -42,6 +42,7 @@ If a link is provided, open it and extract:
 - The primary resume source file should usually be `generic-resume/resume.tex`
 - Candidate metadata lives in `generic-resume/README.md`
 - The canonical personal website is `liamvan.dev`; every tailored resume header should preserve `\href{https://liamvan.dev}{liamvan.dev}`
+- The canonical Fantasy Wizard project URL is `https://fantasysportwizard.com`; when including the project, prefer linking the project title as `\href{https://fantasysportwizard.com}{Fantasy Wizard}` when space and formatting allow
 - Set `candidate_name: Your Name` in that README so the scripts can name output folders and PDFs
 - Treat `generic-resume/README.md` as the richer candidate profile and evidence source, not just naming metadata
 - Treat the generic resume and README as the context bank; they can be richer than one page because the tailored output is what must be compressed to one page
@@ -50,6 +51,14 @@ If a link is provided, open it and extract:
 - Fall back to `companies/<Company Name>/<Candidate_Name>_Resume/` only when the role is unknown
 - Application tracking lives in `application-trackers/applications.md`
 - Optional Notion mirroring is handled by the separate `notion-application-sync` skill and should not run during normal resume tailoring.
+
+Batch tailoring jobs live in `skills/resume-tailor/config/tailor_jobs.json`, and reusable profile text lives in `skills/resume-tailor/config/skill_profiles.json`. For sourced batches, append a job record to that manifest and run:
+
+```bash
+python3 scripts/tailor.py --batch "tailor_intake_YYYY_MM_DD"
+```
+
+Use `python3 scripts/tailor.py --list-batches` to see available batch ids and `python3 scripts/tailor.py --validate-manifest` to check generated resume folder/PDF paths recorded in the manifest.
 
 Before editing, prepare the output directory with:
 

@@ -27,6 +27,13 @@ MODE: SINGLE_ROW (one application per agent invocation)
 
 The orchestrator depends on this. If you exit without writing, the row is treated as failed and the circuit breaker may stop the run.
 
+## Browser Tab Hygiene
+
+- If an application is submitted successfully and confirmation evidence is captured, close that application tab before moving to the next row.
+- If an application is not submitted because confidence is medium/low, an FRQ needs review, or a manual blocker leaves useful partially completed state, leave that tab open at the cleanest review point.
+- After leaving a manual/low-confidence tab open, continue the next row from a new tab when running in batch mode. Do not reuse the partially completed tab for a different application.
+- If the process is about to exit after a batch, still leave useful manual handoff tabs open; process exit is fine, but do not close the browser state Liam may need to review.
+
 ## Confirmed-Submission Workflow
 
 After submitting, before exiting:

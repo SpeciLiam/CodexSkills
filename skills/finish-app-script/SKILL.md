@@ -1,21 +1,77 @@
 ---
 name: finish-app-script
-description: Per-row orchestrator for completing tracked job applications. Spawns one fresh `codex exec` per ready row so each agent gets a clean context, no accumulated browser history, and the submission rule embedded directly in its prompt. Use when the user wants to drain the application queue without context overflow, single-agent drift, or one-row-at-a-time stalls.
+description: Drain Liam's tailored-resume application queue from a phone-friendly command. Build `/tmp/fa_script_run_state.json`, then run the rotating batch orchestrator that launches fresh Codex CLI parent processes for small Chrome/Computer Use batches, closes submitted tabs, leaves low-confidence handoff tabs open, updates tracker/cache, and commits confirmed submissions. Use when the user says `$finish-app-script`, "run finish app script", "drain my application queue", or wants applications completed without context overflow.
 ---
 
 # Finish-App-Script
 
-A reliability-focused parallel of `finish-applications`. Same goal — submit ready tracker rows — but uses an orchestrator that spawns one fresh `codex exec` per row instead of a single long-running agent.
+A reliability-focused parallel of `finish-applications`. Same goal — submit ready tracker rows — but uses an outer orchestrator to rotate fresh Codex CLI parent processes through small batches.
+
+## Default Invocation
+
+When the user invokes `$finish-app-script` or asks to run this skill from chat,
+do this without asking for extra confirmation:
+
+```bash
+python3 skills/finish-app-script/scripts/run_monitored_batches.py
+```
+
+Use `run_monitored_batches.py` by default for live browser work. It refreshes
+the tracker cache, builds `/tmp/fa_script_run_state.json`, runs `run_batches.py`,
+and restarts the batch runner if it stops while queued rows remain. Monitor its
+terminal output while it runs. If the assistant turn is interrupted or the shell
+session disappears, inspect `/tmp/fa_script_run_state.json`; when queued rows
+remain and no `run_batches.py`/`codex exec` process is active, resume with:
+
+```bash
+python3 skills/finish-app-script/scripts/run_monitored_batches.py --resume
+```
+
+Do not pass `--no-commit` or `--no-push` unless the user explicitly asks.
+`run_batches.py` owns commits and pushes, including final commits for confirmed
+submissions. Use the legacy `run_queue.py` only if the user explicitly asks for
+per-row mode.
 
 ## How To Run
 
 ```bash
+# Refresh the tracker cache
+python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
+
 # Build the queue (writes /tmp/fa_script_run_state.json)
 python3 skills/finish-app-script/scripts/build_queue.py
 
-# Drain it
+# Preferred for live browser application work: rotate a fresh parent Codex CLI
+# process through two applications at a time, restarting if the runner stops.
+python3 skills/finish-app-script/scripts/run_monitored_batches.py
+
+# Resume an existing run state without rebuilding the queue.
+python3 skills/finish-app-script/scripts/run_monitored_batches.py --resume
+
+# Lower-level batch runner used by the monitor.
+python3 skills/finish-app-script/scripts/run_batches.py
+
+# Legacy per-row mode: one child codex exec per application row.
 python3 skills/finish-app-script/scripts/run_queue.py
 ```
+
+`run_batches.py` flags:
+
+- `--batch-size N` — rows per fresh Codex process (default `2`)
+- `--max-batches N` — stop after N fresh Codex processes (testing)
+- `--model MODEL` — override default `gpt-5.5`
+- `--timeout SECONDS` — per-batch timeout (default 1800s = 30 min)
+- `--child-sandbox MODE` — sandbox for each fresh Codex process (default `danger-full-access`)
+- `--no-commit` — skip auto-commit every 5 confirmed submissions
+- `--no-push` — commit but don't push
+- `--dry-run` — print what would be spawned without invoking `codex exec`
+
+`run_monitored_batches.py` flags:
+
+- `--resume` — skip refresh/build and continue `/tmp/fa_script_run_state.json`
+- `--max-restarts N` — retry stopped runs with queued rows remaining (default `3`)
+- `--restart-sleep SECONDS` — wait before retrying (default `10`)
+- all normal `run_batches.py` flags above are forwarded
 
 `run_queue.py` flags:
 
@@ -27,6 +83,29 @@ python3 skills/finish-app-script/scripts/run_queue.py
 - `--dry-run` — print what would be spawned without invoking `codex exec`
 
 ## Architecture
+
+### Rotating Parent Mode (`run_batches.py`)
+
+```
+run_batches.py (outer orchestrator)
+  ├── reads /tmp/fa_script_run_state.json
+  └── while queued rows remain:
+        ├── previews the next N queued rows (default 2)
+        ├── spawns a fresh parent Codex CLI process:
+        │     codex exec --ephemeral --cd $REPO --sandbox danger-full-access
+        │       -m gpt-5.5 -o /tmp/fa_script_batch_outputs/batch_NNN.txt "<prompt>"
+        ├── that fresh parent owns Chrome/Computer Use directly
+        ├── parent processes up to N rows, writes outcomes to state, exits
+        ├── outer orchestrator re-reads state and summarizes progress
+        └── commits + pushes every 5 confirmed submissions
+```
+
+This is the preferred live-browser mode. It keeps the context-reset benefit,
+but avoids making every individual application a tiny GUI worker. Each fresh
+Codex process behaves like a short `$finish-applications` run: it owns the
+browser, processes one row at a time, and stops after a small batch.
+
+### Legacy Per-Row Mode (`run_queue.py`)
 
 ```
 run_queue.py (orchestrator)
@@ -47,8 +126,8 @@ Each spawned agent is a fresh process with no context history. It reads `OPERATI
 
 | Pain point | Why this fixes it |
 |---|---|
-| Context overflow | Each agent only sees one application; context can never fill |
-| Computer Use flakiness | Fresh browser state per agent; one failure doesn't cascade |
+| Context overflow | Rotating parent mode sees only a small batch before the CLI process exits |
+| Computer Use flakiness | The browser is owned by a fresh parent process for a short batch, instead of a separate GUI worker per row |
 | FRQ blocking the queue | Fill-and-leave-open enforced per row; orchestrator continues |
 | Single-agent drift | The submission rule lives in the prompt itself, can't degrade |
 

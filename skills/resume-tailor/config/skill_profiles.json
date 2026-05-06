@@ -1,0 +1,112 @@
+{
+  "profiles": {
+    "fullstack": {
+      "skills": "     \\textbf{Languages}{: Java, TypeScript, JavaScript, Python, SQL, C\\#, C++, PHP, C} \\\\\n     \\textbf{Backend / Cloud}{: REST APIs, Spring Boot, MySQL, OpenSearch, Docker, AWS, GCP, OCI, microservices} \\\\\n     \\textbf{Frontend / Product}{: React, NestJS, Angular, Node.js, Figma-to-product implementation, product integrations} \\\\\n     \\textbf{Testing / Operations}{: CI/CD, Robot Framework, Selenium, Grafana, Azure DevOps, release support, on-call response} \\\\",
+      "role_bullets": [
+        "Implemented React and NestJS product surfaces from Figma designs, using PHP and SQL metadata pipelines to support search, recommendations, and model inputs",
+        "Drove GA readiness for OCI database services on GCP by validating API, CLI, console, backup, restore, and Data Guard workflows across partner-owned product surfaces",
+        "Built reusable GCloud and OCI scripting workflows plus regression utilities, improving local validation and scaling end-to-end coverage for BaseDB and ADBS releases"
+      ],
+      "source": {
+        "skills_source": "tailor_greenhouse_batch6.py",
+        "bullets_source": "tailor_greenhouse_batch6.py"
+      }
+    },
+    "backend": {
+      "skills": "     \\textbf{Languages}{: Java, Python, TypeScript, JavaScript, SQL, C++, C\\#, PHP, C} \\\\\n     \\textbf{Backend / APIs}{: REST APIs, Spring Boot, MySQL, OpenSearch, Docker, distributed caching, data modeling} \\\\\n     \\textbf{Cloud / Reliability}{: AWS, GCP, OCI, CI/CD, Grafana, T2, canary validation, release support, on-call response} \\\\\n     \\textbf{Frontend / Product}{: React, NestJS, Angular, Node.js, technical documentation, cross-team product delivery} \\\\",
+      "role_bullets": [
+        "Drove GA readiness for BaseDB and Exadata DB workflows on GCP, validating API-driven create, restore, backup, and Data Guard scenarios across distributed service boundaries",
+        "Built reusable GCloud and OCI scripting workflows plus performance and regression utilities, improving local testing efficiency for backend release validation",
+        "Implemented Exascale Storage Vault dry-run support, improving preflight validation and reaching over 90\\% unit test coverage across BaseDB and Exadata Infrastructure components"
+      ],
+      "source": {
+        "skills_source": "tailor_greenhouse_batch6.py",
+        "bullets_source": "tailor_greenhouse_batch6.py"
+      }
+    },
+    "infra": {
+      "skills": "     \\textbf{Languages}{: Python, Java, TypeScript, JavaScript, SQL, C++, C\\#, PHP, C} \\\\\n     \\textbf{Cloud / Infrastructure}{: AWS, GCP, OCI, Docker, REST APIs, GCloud CLI, OCI CLI, CI/CD, cloud integrations} \\\\\n     \\textbf{Reliability / Operations}{: Grafana, T2, Robot Framework, release support, on-call response, incident investigation} \\\\\n     \\textbf{Backend / Product}{: Spring Boot, MySQL, OpenSearch, React, NestJS, technical documentation, API validation} \\\\",
+      "role_bullets": [
+        "Drove GA readiness for OCI database services on GCP, validating cloud workflows across API, CLI, console, backup, restore, and Data Guard paths",
+        "Served as primary on-call for Oasis releases, leading Sev2 investigations and resolving Sev3 and Sev4 issues through log analysis, Grafana, T2 metrics, and alarm tuning",
+        "Built reusable GCloud and OCI automation plus regression utilities, improving release validation for BaseDB, ADBS, and Exadata workflows"
+      ],
+      "source": {
+        "skills_source": "tailor_greenhouse_batch2.py",
+        "bullets_source": "tailor_greenhouse_batch2.py"
+      }
+    },
+    "ai": {
+      "skills": "     \\textbf{Languages}{: Python, Java, TypeScript, JavaScript, SQL, C++, C\\#, PHP, C} \\\\\n     \\textbf{AI / Product}{: LLM applications, AI-assisted tooling, REST APIs, React, NestJS, OpenSearch, data workflows} \\\\\n     \\textbf{Backend / Cloud}{: Spring Boot, MySQL, Docker, AWS, GCP, OCI, distributed systems, production validation} \\\\\n     \\textbf{Testing / Operations}{: CI/CD, Robot Framework, Selenium, Grafana, Azure DevOps, release support, on-call response} \\\\",
+      "role_bullets": [
+        "Built an LLM-powered recommendation experience for Oracle University and OCI learning content, helping customers discover tailored OCI information and course paths",
+        "Drove GA readiness for OCI database services on GCP by validating API, CLI, console, backup, restore, and Data Guard workflows across product surfaces",
+        "Built reusable GCloud and OCI scripting workflows plus regression utilities, improving local validation and scaling end-to-end coverage for BaseDB and ADBS releases"
+      ],
+      "source": {
+        "skills_source": "tailor_greenhouse_batch6.py",
+        "bullets_source": "tailor_greenhouse_batch6.py"
+      }
+    },
+    "test": {
+      "skills": "     \\textbf{Languages}{: Java, Python, TypeScript, JavaScript, SQL, C++, C\\#, PHP, C} \\\\\n     \\textbf{Testing / Quality}{: Robot Framework, Selenium, CI/CD, unit testing, regression testing, Azure DevOps, release validation} \\\\\n     \\textbf{Backend / Cloud}{: REST APIs, Spring Boot, MySQL, OpenSearch, Docker, AWS, GCP, OCI, API validation} \\\\\n     \\textbf{Frontend / Product}{: React, NestJS, Angular, Node.js, technical documentation, cross-team delivery} \\\\",
+      "role_bullets": [
+        "Built AI-assisted blackbox API testing for Oasis services by designing prompting strategy, Robot Framework setup, onboarding docs, and auth/spec parsing scripts",
+        "Drove GA readiness for BaseDB and Exadata DB workflows by validating create, restore, backup, and Data Guard scenarios across console, CLI, and API-driven flows",
+        "Built reusable GCloud and OCI scripting workflows plus performance and regression utilities, improving local testing efficiency and release confidence"
+      ],
+      "source": {
+        "skills_source": "tailor_greenhouse_batch2.py",
+        "bullets_source": "tailor_greenhouse_batch2.py"
+      }
+    },
+    "platform": {
+      "skills": "     \\textbf{Languages}{: Java, Python, TypeScript, JavaScript, SQL, C++, C\\#, PHP, C} \\\\\n     \\textbf{Platform / APIs}{: REST APIs, Spring Boot, MySQL, OpenSearch, Docker, distributed systems, data modeling} \\\\\n     \\textbf{Cloud / Reliability}{: AWS, GCP, OCI, CI/CD, Grafana, T2, canary validation, release support, on-call response} \\\\\n     \\textbf{Tooling / Product}{: React, NestJS, Angular, Node.js, technical documentation, developer workflows} \\\\",
+      "role_bullets": [
+        "Drove GA readiness for OCI database services on GCP, validating cloud workflows across API, CLI, console, backup, restore, and Data Guard paths",
+        "Served as primary on-call for Oasis releases, leading Sev2 investigations and resolving Sev3 and Sev4 issues through log analysis, Grafana, T2 metrics, and alarm tuning",
+        "Built reusable GCloud and OCI automation plus regression utilities, improving release validation for BaseDB, ADBS, and Exadata workflows"
+      ],
+      "source": {
+        "skills_source": "tailor_greenhouse_batch6.py",
+        "bullets_source": "tailor_greenhouse_batch6.py"
+      }
+    },
+    "dotnet": {
+      "skills": "     \\textbf{Languages}{: C\\#, Java, TypeScript, JavaScript, Python, SQL, C++, PHP, C} \\\\\n     \\textbf{Backend / APIs}{: REST APIs, Spring Boot, MySQL, OpenSearch, Docker, distributed caching, data modeling} \\\\\n     \\textbf{Cloud / Reliability}{: AWS, GCP, OCI, CI/CD, Grafana, T2, canary validation, release support, on-call response} \\\\\n     \\textbf{Frontend / Product}{: React, NestJS, Angular, Node.js, technical documentation, cross-team delivery} \\\\",
+      "role_bullets": [
+        "Built production-facing Oracle University search and recommendation features across React and NestJS surfaces, integrating OpenSearch retrieval with PHP and SQL metadata pipelines",
+        "Drove GA readiness for BaseDB and Exadata DB workflows by validating API-driven create, restore, backup, and Data Guard scenarios across distributed service boundaries",
+        "Implemented Exascale Storage Vault dry-run support, improving preflight validation and reaching over 90\\% unit test coverage across BaseDB and Exadata Infrastructure components"
+      ],
+      "source": {
+        "skills_source": "tailor_greenhouse_batch3.py",
+        "bullets_source": "tailor_greenhouse_batch3.py"
+      }
+    },
+    "security": {
+      "skills": "     \\textbf{Languages}{: Java, Python, TypeScript, JavaScript, SQL, C++, C\\#, PHP, C} \\\\\n     \\textbf{Backend / APIs}{: REST APIs, Spring Boot, MySQL, OpenSearch, Docker, distributed systems, data modeling} \\\\\n     \\textbf{Reliability / Operations}{: CI/CD, Grafana, T2, canary validation, release support, on-call response, Selenium} \\\\\n     \\textbf{Cloud / Product}{: AWS, GCP, OCI, React, NestJS, Angular, Node.js, technical documentation} \\\\",
+      "role_bullets": [
+        "Drove GA readiness for OCI database services on GCP by validating security-sensitive API, CLI, console, backup, restore, and Data Guard workflows across product surfaces",
+        "Served as primary on-call for Oasis releases, leading Sev2 investigations and resolving Sev3 and Sev4 issues through log analysis, Grafana, T2 metrics, and alarm tuning",
+        "Implemented Exascale Storage Vault dry-run support, improving preflight validation and reaching over 90\\% unit test coverage across BaseDB and Exadata Infrastructure components"
+      ],
+      "source": {
+        "skills_source": "tailor_greenhouse_batch5.py",
+        "bullets_source": "tailor_greenhouse_batch5.py"
+      }
+    },
+    "mobile_fullstack": {
+      "skills": "     \\textbf{Languages}{: Java, TypeScript, JavaScript, Python, SQL, C\\#, C++, PHP, C} \\\\\n     \\textbf{Backend / Cloud}{: REST APIs, Spring Boot, MySQL, OpenSearch, Docker, AWS, GCP, OCI, microservices} \\\\\n     \\textbf{Frontend / Mobile}{: React, NestJS, Angular, Node.js, Android Studio, product integrations} \\\\\n     \\textbf{Testing / Operations}{: CI/CD, Robot Framework, Selenium, Grafana, Azure DevOps, release support, on-call response} \\\\",
+      "role_bullets": [
+        "Drove GA readiness for OCI database services on GCP by validating API, CLI, console, backup, restore, and Data Guard workflows across partner-owned product surfaces",
+        "Built reusable GCloud and OCI scripting workflows plus regression utilities, improving local validation and scaling end-to-end coverage for BaseDB and ADBS releases",
+        "Implemented React and NestJS product surfaces from Figma designs, using PHP and SQL metadata pipelines to support search, recommendations, and model inputs"
+      ],
+      "source": {
+        "skills_source": "tailor_greenhouse_batch5.py",
+        "bullets_source": "tailor_greenhouse_batch5.py"
+      }
+    }
+  }
+}

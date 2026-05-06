@@ -1,11 +1,17 @@
 ---
 name: gmail-application-refresh
-description: Review Gmail for application-related emails, infer status changes such as applied, online assessment, interview, rejection, or offer, and update the markdown and Notion application trackers without creating duplicate or low-confidence changes.
+description: Review Gmail for application-related emails, infer status changes such as applied, online assessment, interview, rejection, or offer, and update the markdown application tracker without creating duplicate or low-confidence changes. Notion mirroring is handled separately by notion-application-sync.
 ---
+
+## Operating Card
+
+Before every batch item, re-read `skills/gmail-application-refresh/OPERATING_CARD.md`. The card wins in any conflict with prose below.
 
 # Gmail Application Refresh
 
 Use this skill when the user wants to refresh application statuses from Gmail.
+
+For full recruiting sessions, start with `recruiting-pipeline`; it runs Gmail/status refresh before outbound work so stale rows do not waste outreach time.
 
 This skill is designed for safe updates:
 
@@ -23,8 +29,7 @@ That is the recommended default:
 1. scan recent Gmail messages
 2. infer meaningful application changes
 3. update the markdown tracker
-4. update the matching Notion row
-5. summarize what changed and what still needs review
+4. summarize what changed and what still needs review
 
 If the user later wants this on a schedule, this skill can be used inside an automation.
 
@@ -33,10 +38,18 @@ If the user later wants this on a schedule, this skill can be used inside an aut
 Gather these first:
 
 1. the markdown tracker in `application-trackers/applications.md`
-2. the Notion config in `application-trackers/notion-config.md`
-3. recent Gmail messages likely related to jobs
+   or the generated tracker cache in `application-visualizer/src/data/tracker-data.json`
+2. recent Gmail messages likely related to jobs
 
 Start from the tracker, not from the inbox.
+
+For target building, prefer the generated cache when available because it has normalized application rows. Refresh it with:
+
+```bash
+python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
+```
+
+If the cache is missing, use the markdown tracker directly.
 
 The preferred refresh flow is:
 
@@ -110,7 +123,6 @@ Avoid copying full email text into the tracker.
 ## Files
 
 - Markdown tracker: `application-trackers/applications.md`
-- Notion config: `application-trackers/notion-config.md`
 - Target builder: `skills/gmail-application-refresh/scripts/build_refresh_targets.py`
 - Status helper: `skills/gmail-application-refresh/scripts/update_application_status.py`
 
@@ -156,25 +168,6 @@ This script:
 - preserves the rest of the row
 - refreshes the markdown header count
 
-## Notion Update Flow
-
-If `application-trackers/notion-config.md` exists, mirror the same change in Notion.
-
-Recommended property mapping:
-
-- `Status`
-- `Applied`
-- `Referral` if relevant
-- `Notes`
-
-Search Notion by company first, then confirm the row using:
-
-- `Posting Key`
-- `Role`
-- `Job Link`
-
-If multiple rows exist for the same company, do not guess. Match by posting key or leave it for review.
-
 ## Confidence Rules
 
 Update automatically only when confidence is high.
@@ -212,8 +205,9 @@ For low-confidence cases:
    - short note to append
    - confidence level
 6. Apply only high-confidence updates to markdown
-7. Mirror the same changes into Notion
-8. Summarize:
+7. Refresh the visualizer cache when tracker rows changed
+8. If the user explicitly wants Notion updated, hand off to `notion-application-sync`
+9. Summarize:
    - updated rows
    - skipped ambiguous emails
    - any sender patterns worth using next time
@@ -225,9 +219,10 @@ The final response should include:
 1. what changed
 2. which tracker rows were updated
 3. any ambiguous emails that were skipped
-4. whether markdown and Notion stayed in sync
+4. whether the visualizer cache should be refreshed
 
 ## Notes
 
 - This skill is better as a manual refresh than a perpetual listener by default.
 - If the user wants it on a schedule later, use this skill inside an automation instead of trying to build a permanent listener.
+- Notion is intentionally outside this skill so Gmail refreshes stay fast.

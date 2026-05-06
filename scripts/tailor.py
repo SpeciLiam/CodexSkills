@@ -31,9 +31,10 @@ def write_json(path: Path, data: dict[str, Any]) -> None:
 
 
 def build_note(batch: dict[str, Any], job: dict[str, Any]) -> str:
+    focus = job.get("focus") or job.get("kind", "role-relevant experience")
     return (
         f"{batch['note_prefix']}; tailored SWE resume rendered and verified one page; "
-        f"emphasized {job['focus']}. {batch['note_suffix']}"
+        f"emphasized {focus}. {batch['note_suffix']}"
     )
 
 
@@ -67,14 +68,14 @@ def tailor_tex(path: Path, kind: str, profiles: dict[str, Any]) -> None:
     text = path.read_text(encoding="utf-8")
     text = re.sub(
         r"     \\textbf\{Languages\}\{:[\s\S]*?     \\textbf\{(?:Frontend / Product|Product / Tooling|Tooling / Product|Testing / Operations|Backend / Product|Cloud / Product|Frontend / Mobile)\}\{:[^\n]+\} \\\\\n",
-        profile["skills"] + "\n",
+        lambda _: profile["skills"] + "\n",
         text,
     )
 
     bullets = profile["role_bullets"]
     text = re.sub(
         r"    \\resumeItem\{Drove GA readiness[\s\S]*?    \\resumeItem\{Built reusable GCloud[\s\S]*?\n    \\resumeItem\{(?:Implemented and merged dry-run support|Implemented Exascale Storage Vault dry-run support)[\s\S]*?\n",
-        "".join(f"    \\resumeItem{{{bullet}}}\n" for bullet in bullets),
+        lambda _: "".join(f"    \\resumeItem{{{bullet}}}\n" for bullet in bullets),
         text,
     )
 

@@ -37,7 +37,28 @@ def split_markdown_row(line: str) -> list[str]:
         line = line[1:]
     if line.endswith("|"):
         line = line[:-1]
-    return [cell.strip() for cell in line.split("|")]
+    cells: list[str] = []
+    current: list[str] = []
+    pending_backslash = False
+    for char in line:
+        if pending_backslash:
+            if char != "|":
+                current.append("\\")
+            current.append(char)
+            pending_backslash = False
+            continue
+        if char == "\\":
+            pending_backslash = True
+            continue
+        if char == "|":
+            cells.append("".join(current).strip())
+            current = []
+            continue
+        current.append(char)
+    if pending_backslash:
+        current.append("\\")
+    cells.append("".join(current).strip())
+    return cells
 
 
 def extract_tables(markdown: str) -> dict[str, list[dict[str, str]]]:
