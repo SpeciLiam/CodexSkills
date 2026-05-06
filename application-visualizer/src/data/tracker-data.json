@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T05:58:10.681252+00:00",
+  "generatedAt": "2026-05-06T06:03:50.166173+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,10 +9,10 @@
   },
   "stats": {
     "kpis": {
-      "total": 557,
+      "total": 559,
       "applied": 356,
-      "unapplied": 201,
-      "active": 394,
+      "unapplied": 203,
+      "active": 395,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
@@ -22,14 +22,14 @@
       "prospects": 3,
       "readyEmails": 3,
       "intakeJobs": 261,
-      "intakeQueued": 30,
+      "intakeQueued": 29,
       "intakeNew": 38,
-      "intakeManual": 53,
+      "intakeManual": 54,
       "intakeApplied": 0,
-      "applyRate": 63.9,
+      "applyRate": 63.7,
       "rejectionRate": 12.4,
       "recruiterWork": 304,
-      "engineerWork": 359,
+      "engineerWork": 360,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Archived",
-        "value": 119
+        "value": 120
       },
       {
         "name": "Manual Apply Needed",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 23
+        "value": 24
       },
       {
         "name": "Interviewing",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 214
+        "value": 215
       },
       {
         "name": "LinkedIn",
-        "value": 206
+        "value": 207
       },
       {
         "name": "Ashby",
@@ -148,11 +148,11 @@
       },
       {
         "name": "Other",
-        "value": 86
+        "value": 87
       },
       {
         "name": "Remote",
-        "value": 63
+        "value": 64
       },
       {
         "name": "Seattle",
@@ -170,11 +170,11 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 310
+        "value": 311
       },
       {
         "name": "Full Stack",
-        "value": 71
+        "value": 72
       },
       {
         "name": "Backend",
@@ -204,7 +204,7 @@
     "fitCounts": [
       {
         "score": "1",
-        "count": 41
+        "count": 42
       },
       {
         "score": "2",
@@ -228,7 +228,7 @@
       },
       {
         "score": "7",
-        "count": 29
+        "count": 30
       },
       {
         "score": "8",
@@ -262,7 +262,7 @@
       },
       {
         "name": "Manual",
-        "value": 53
+        "value": 54
       },
       {
         "name": "New",
@@ -270,7 +270,7 @@
       },
       {
         "name": "Queued",
-        "value": 30
+        "value": 29
       },
       {
         "name": "Skipped",
@@ -466,16 +466,16 @@
       },
       {
         "date": "2026-05-05",
-        "cumulative": 541,
-        "added": 33,
+        "cumulative": 542,
+        "added": 34,
         "applied": 3,
         "rejected": 0,
         "interviewing": 0
       },
       {
         "date": "2026-05-06",
-        "cumulative": 557,
-        "added": 16,
+        "cumulative": 559,
+        "added": 17,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -621,9 +621,9 @@
         "bestFit": 10
       },
       {
-        "company": "Anthropic",
+        "company": "Rippling",
         "roles": 3,
-        "avgFit": 7.0,
+        "avgFit": 4.33,
         "bestFit": 10
       }
     ],
@@ -14925,9 +14925,9 @@
       "company": "Anthropic",
       "role": "Software Engineer, Inference Deployment",
       "applied": false,
-      "status": "Manual Apply Needed",
-      "fitScore": 10,
-      "reachOut": true,
+      "status": "Archived",
+      "fitScore": 1,
+      "reachOut": false,
       "referral": "No",
       "dateAdded": "2026-05-04",
       "location": "San Francisco, CA | New York City, NY | Seattle, WA",
@@ -14940,14 +14940,15 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-04 14:00 PT; tailored SWE resume rendered and verified one page; emphasized AI inference deployment infrastructure, release automation, validation systems, production reliability, cloud platform workflows, testing, and safe rollout tooling. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via Greenhouse flow because it was outside the completed automated Greenhouse submit batch.; Manual apply needed: Greenhouse form requires AI policy acknowledgement and company-specific Why Anthropic response before submission 2026-05-04; Manual apply needed 2026-05-05: live Greenhouse form partly filled, but not submitted because posting is Staff + Sr., asks for 5+ years plus large-scale deployment/release infrastructure ownership, and requires relocation/deployment-infra answers for Liam review.",
+      "notes": "Hourly Greenhouse intake 2026-05-04 14:00 PT; tailored SWE resume rendered and verified one page; emphasized AI inference deployment infrastructure, release automation, validation systems, production reliability, cloud platform workflows, testing, and safe rollout tooling. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via Greenhouse flow because it was outside the completed automated Greenhouse submit batch.; Manual apply needed: Greenhouse form requires AI policy acknowledgement and company-specific Why Anthropic response before submission 2026-05-04; Manual apply needed 2026-05-05: live Greenhouse form partly filled, but not submitted because posting is Staff + Sr., asks for 5+ years plus large-scale deployment/release infrastructure ownership, and requires relocation/deployment-infra answers for Liam review.; Archived 2026-05-06: removed from active pipeline after Liam review because live posting is Staff + Sr. Software Engineer, Inference Deployment and is far above target level: asks for 5+ years plus large-scale deployment/release infrastructure ownership.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-04",
         "2026-05-04",
         "2026-05-04",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ]
     },
     {
@@ -16484,6 +16485,55 @@
       "notes": "Tailored for entry-level DevSecOps/AppSec role; emphasized vulnerability-oriented validation, AI-assisted testing, scripting, CI/CD, cloud operations, metrics/reporting, API coverage, documentation, and cross-functional risk communication. Did not claim formal vulnerability management platform ownership, deep networking administration, PowerShell/Bash, cryptography implementation, or regulatory data-security ownership.",
       "noteLinks": [],
       "activityDates": []
+    },
+    {
+      "company": "Sundayy",
+      "role": "Full Stack Developer, Jr.",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 7,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "Remote, United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4410557552/",
+      "postingKey": "4410557552",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Sundayy/Full_Stack_Developer_Jr/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Sundayy/Full_Stack_Developer_Jr/Liam_Van_Resume/Liam_Van_Sundayy.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored as a distinct Sundayy/Cutsforth full-stack posting after prior Sundayy Python/API row was archived; emphasized Python, React, REST APIs, AI/LLM tooling, data workflows, cloud delivery, testing, and documentation. Did not claim .NET Core, Go, XJS, energy-sector delivery, AI/ML model ownership, or 2-5 years full-stack production ownership.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Axon",
+      "role": "Software Engineer I",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "Washington, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/axon/jobs/7662648003",
+      "postingKey": "7662648003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Axon/Software_Engineer_I/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Axon/Software_Engineer_I/Liam_Van_Resume/Liam_Van_Axon.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-05 23:00 PT; tailored SWE resume rendered and verified one page; emphasized Software Engineer I mission-critical software, Java/Python/TypeScript, REST APIs, cloud release readiness, testing, and AI-assisted development workflows. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-05.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-05",
+        "2026-05-05"
+      ]
     }
   ],
   "jobIntake": [
@@ -17290,14 +17340,14 @@
       "company": "Axon",
       "role": "Software Engineer I",
       "location": "Washington, United States",
-      "postingKey": "7576927003",
-      "jobUrl": "https://job-boards.greenhouse.io/axon/jobs/7576927003",
-      "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
-      "postedAge": "public Greenhouse result; crawled last week",
+      "postingKey": "7662648003",
+      "jobUrl": "https://job-boards.greenhouse.io/axon/jobs/7662648003",
+      "discoveredAt": "2026-05-06T04:03:58.040835+00:00",
+      "postedAge": "New in Greenhouse page snippet; captured 2026-05-06T04:03:54.498Z",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, preferred/remote US location",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Tailored 2026-05-05; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight",
+      "trackerPostingKey": "7662648003"
     },
     {
       "source": "Greenhouse",
@@ -22508,6 +22558,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Axon",
+      "role": "Software Engineer I",
+      "postingKey": "7662648003",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/axon/jobs/7662648003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-05",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Automat",
@@ -38514,18 +38577,6 @@
           ]
         },
         {
-          "key": "5111745008",
-          "company": "Anthropic",
-          "role": "Software Engineer, Inference Deployment",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "4409014859",
           "company": "Aquatic Capital Management",
           "role": "Software Engineer, Early Career",
@@ -38567,6 +38618,18 @@
           "role": "Software Engineer (Junior/Intermediate)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7662648003",
+          "company": "Axon",
+          "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -50261,6 +50324,18 @@
           "role": "Software Engineer II, BI Tooling and Platform",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7662648003",
+          "company": "Axon",
+          "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
