@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T21:16:05.096868+00:00",
+  "generatedAt": "2026-05-06T23:09:20.918983+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 599,
+      "total": 602,
       "applied": 372,
-      "unapplied": 227,
-      "active": 435,
+      "unapplied": 230,
+      "active": 438,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 473,
-      "reachOut": 531,
+      "highFit": 476,
+      "reachOut": 534,
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 298,
+      "intakeJobs": 302,
       "intakeQueued": 30,
       "intakeNew": 38,
-      "intakeManual": 90,
+      "intakeManual": 93,
       "intakeApplied": 0,
-      "applyRate": 62.1,
+      "applyRate": 61.8,
       "rejectionRate": 11.8,
-      "recruiterWork": 322,
-      "engineerWork": 402,
+      "recruiterWork": 325,
+      "engineerWork": 405,
       "recruiterReachedOut": 115,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 85
+        "value": 88
       },
       {
         "name": "Rejected",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 235
+        "value": 237
       },
       {
         "name": "LinkedIn",
-        "value": 227
+        "value": 228
       },
       {
         "name": "Ashby",
@@ -144,7 +144,7 @@
       },
       {
         "name": "Bay Area",
-        "value": 132
+        "value": 134
       },
       {
         "name": "Other",
@@ -164,13 +164,13 @@
       },
       {
         "name": "Georgia",
-        "value": 2
+        "value": 3
       }
     ],
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 334
+        "value": 337
       },
       {
         "name": "Full Stack",
@@ -232,11 +232,11 @@
       },
       {
         "score": "8",
-        "count": 112
+        "count": 113
       },
       {
         "score": "9",
-        "count": 106
+        "count": 108
       },
       {
         "score": "10",
@@ -262,7 +262,7 @@
       },
       {
         "name": "Manual",
-        "value": 90
+        "value": 93
       },
       {
         "name": "New",
@@ -274,7 +274,7 @@
       },
       {
         "name": "Skipped",
-        "value": 22
+        "value": 23
       },
       {
         "name": "Expired",
@@ -288,11 +288,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 206
+        "value": 208
       },
       {
         "name": "LinkedIn",
-        "value": 92
+        "value": 94
       }
     ],
     "timeline": [
@@ -474,8 +474,8 @@
       },
       {
         "date": "2026-05-06",
-        "cumulative": 599,
-        "added": 57,
+        "cumulative": 602,
+        "added": 60,
         "applied": 5,
         "rejected": 0,
         "interviewing": 0
@@ -579,6 +579,12 @@
         "bestFit": 10
       },
       {
+        "company": "Glean",
+        "roles": 4,
+        "avgFit": 8.75,
+        "bestFit": 10
+      },
+      {
         "company": "Giga",
         "roles": 3,
         "avgFit": 10.0,
@@ -618,12 +624,6 @@
         "company": "Superblocks",
         "roles": 3,
         "avgFit": 9.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Glean",
-        "roles": 3,
-        "avgFit": 8.67,
         "bestFit": 10
       }
     ],
@@ -17691,6 +17691,81 @@
       "activityDates": [
         "2026-05-06"
       ]
+    },
+    {
+      "company": "Glean",
+      "role": "Software Engineer, Agentic Runtime",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "San Francisco Bay Area",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/gleanwork/jobs/4616929005",
+      "postingKey": "4616929005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Glean/Software_Engineer_Agentic_Runtime/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Glean/Software_Engineer_Agentic_Runtime/Liam_Van_Resume/Liam_Van_Glean.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Pilot.com",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/pilothq/jobs/8516101002",
+      "postingKey": "8516101002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Pilot.com/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Pilot.com/Software_Engineer/Liam_Van_Resume/Liam_Van_Pilot.com.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "CNN",
+      "role": "Software Engineer I",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "Atlanta, GA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/computer-science-engineer-jobs",
+      "postingKey": "computer-science-engineer-jobs",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CNN/Software_Engineer_I/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CNN/Software_Engineer_I/Liam_Van_Resume/Liam_Van_CNN.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06; LinkedIn public capture did not expose the exact job-view URL",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
     }
   ],
   "jobIntake": [
@@ -20258,6 +20333,48 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Pilot.com",
+      "role": "Software Engineer",
+      "location": "San Francisco, CA",
+      "postingKey": "greenhouse-pilothq-8516101002",
+      "jobUrl": "https://job-boards.greenhouse.io/pilothq/jobs/8516101002",
+      "discoveredAt": "2026-05-06T23:03:45.688836+00:00",
+      "postedAge": "crawled last week",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "trackerPostingKey": "8516101002"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Labcorp",
+      "role": "Software Development Engineer I",
+      "location": "North Carolina, United States",
+      "postingKey": "linkedin-4365659843",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-development-engineer-i-at-labcorp-4365659843",
+      "discoveredAt": "2026-05-06T23:03:45.688836+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 9,
+      "status": "Skipped",
+      "reason": "early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Glean",
+      "role": "Software Engineer, Agentic Runtime",
+      "location": "San Francisco Bay Area",
+      "postingKey": "greenhouse-gleanwork-4616929005",
+      "jobUrl": "https://job-boards.greenhouse.io/gleanwork/jobs/4616929005",
+      "discoveredAt": "2026-05-06T23:03:45.688836+00:00",
+      "postedAge": "crawled 5 days ago",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "trackerPostingKey": "4616929005"
+    },
+    {
+      "source": "Greenhouse",
       "company": "Xometry",
       "role": "Software Engineer II",
       "location": "Waltham, MA",
@@ -20857,6 +20974,20 @@
       "status": "Tailored",
       "reason": "SWE-family role, SF/Bay Area preference",
       "trackerPostingKey": "5592469004"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "CNN",
+      "role": "Software Engineer I",
+      "location": "Atlanta, GA",
+      "postingKey": "linkedin-cnn-swe-i-atlanta-2026-05-06",
+      "jobUrl": "https://www.linkedin.com/jobs/computer-science-engineer-jobs",
+      "discoveredAt": "2026-05-06T23:03:45.688836+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight; LinkedIn public capture did not expose the exact job-view URL",
+      "trackerPostingKey": "computer-science-engineer-jobs"
     },
     {
       "source": "LinkedIn",
@@ -25600,6 +25731,19 @@
       "notes": ""
     },
     {
+      "company": "Pilot.com",
+      "role": "Software Engineer",
+      "postingKey": "8516101002",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/pilothq/jobs/8516101002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Parsec Automation Corp.",
       "role": "Software Engineer II (AI Focus)",
       "postingKey": "5199253008",
@@ -25948,6 +26092,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-01",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Glean",
+      "role": "Software Engineer, Agentic Runtime",
+      "postingKey": "4616929005",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/gleanwork/jobs/4616929005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -27288,6 +27445,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "CNN",
+      "role": "Software Engineer I",
+      "postingKey": "computer-science-engineer-jobs",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/computer-science-engineer-jobs",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Clarity Innovations",
@@ -43534,6 +43704,18 @@
           "contacts": []
         },
         {
+          "key": "4616929005",
+          "company": "Glean",
+          "role": "Software Engineer, Agentic Runtime",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "767a3a59-53d6-4306-afae-6b05a265ba82",
           "company": "Glimpse",
           "role": "Software Engineer",
@@ -43705,6 +43887,18 @@
           "key": "5199253008",
           "company": "Parsec Automation Corp.",
           "role": "Software Engineer II (AI Focus)",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8516101002",
+          "company": "Pilot.com",
+          "role": "Software Engineer",
           "fitScore": 9,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -44139,6 +44333,18 @@
           "role": "Full Stack Developer",
           "fitScore": 8,
           "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "computer-science-engineer-jobs",
+          "company": "CNN",
+          "role": "Software Engineer I",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -56640,6 +56846,18 @@
           "contacts": []
         },
         {
+          "key": "4616929005",
+          "company": "Glean",
+          "role": "Software Engineer, Agentic Runtime",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4678587005",
           "company": "Grow Therapy",
           "role": "Software Engineer - Full Stack",
@@ -56763,6 +56981,18 @@
           "key": "5199253008",
           "company": "Parsec Automation Corp.",
           "role": "Software Engineer II (AI Focus)",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8516101002",
+          "company": "Pilot.com",
+          "role": "Software Engineer",
           "fitScore": 9,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -57075,6 +57305,18 @@
           "key": "4400775698",
           "company": "CDW",
           "role": "Software Engineer I - Backend",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "computer-science-engineer-jobs",
+          "company": "CNN",
+          "role": "Software Engineer I",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,

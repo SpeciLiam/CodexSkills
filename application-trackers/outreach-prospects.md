@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 493
+Companies queued: 496
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -296,6 +296,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Polymarket | Software Engineer Markets | e353d1bc-9b67-476f-846c-961e1db8c49b | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/polymarket/e353d1bc-9b67-476f-846c-961e1db8c49b?src=LinkedIn) |  |  |  |  |
 | Plaud | Founding Backend Engineer | e158152c-c34f-47bd-995b-3fedaeab09cf | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/Plaud/e158152c-c34f-47bd-995b-3fedaeab09cf/application?utm_source=gZLE667dqO) |  |  |  |  |
 | Plaid | Software Engineer | 4243684882 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4243684882/) |  |  |  |  |
+| Pilot.com | Software Engineer | 8516101002 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/pilothq/jobs/8516101002) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Parsec Automation Corp. | Software Engineer II (AI Focus) | 5199253008 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/parsecautomationcorp/jobs/5199253008?gh_src=my.greenhouse.search) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Palantir Technologies | Forward Deployed Software Engineer (New York) | dab396d4-2f14-4796-aac0-0d82883dccf0 | 9 | Applied | Yes | [Posting](https://jobs.lever.co/palantir/dab396d4-2f14-4796-aac0-0d82883dccf0) |  |  |  |  |
 | OpenAI | Software Engineer, Codex Cloud | 130a5389-83e1-493f-9205-542d3ff53afb | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/openai/130a5389-83e1-493f-9205-542d3ff53afb/application) |  |  |  |  |
@@ -323,6 +324,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Glimpse | Software Engineer | 767a3a59-53d6-4306-afae-6b05a265ba82 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/glimpse/767a3a59-53d6-4306-afae-6b05a265ba82/application?utm_source=4M0PNbwNk7&src=linkedin) |  |  |  |  |
 | GLG | Software Engineer | software-engineer-at-glg-4319502743 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-at-glg-4319502743) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Glean | Software Engineer, Backend | 4581643005 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/gleanwork/jobs/4581643005) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
+| Glean | Software Engineer, Agentic Runtime | 4616929005 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/gleanwork/jobs/4616929005) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Garage | Software Engineer | f4018670-2c66-4da9-acac-2aa0af432abb | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/garage/f4018670-2c66-4da9-acac-2aa0af432abb) |  |  |  |  |
 | Freeform | Software Engineer, C++ (New Grad Summer 2026) | 7551045003 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/freeformfuturecorp/jobs/7551045003?gh_src=utse74533us) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Foxglove | Software Engineer, New Grad | 4398854319 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4398854319/) |  |  |  |  |
@@ -426,6 +428,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Conga | Software Engineer II - Full Stack | 5116390007 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/conga/jobs/5116390007?gh_src=my.greenhouse.search) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Confido | Software Engineer | JbodeMW-new-grad-software-engineer | 8 | Manual Apply Needed | Yes | [Posting](https://www.ycombinator.com/companies/confido/jobs/JbodeMW-new-grad-software-engineer?utm_source=syn_li) |  |  |  |  |
 | Comulate | Software Engineer | 4d5a3632-2812-4ab0-b3ad-ca6cf6083348 | 8 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/comulate/4d5a3632-2812-4ab0-b3ad-ca6cf6083348/application?utm_source=PyDKyZpboQ) |  |  |  |  |
+| CNN | Software Engineer I | computer-science-engineer-jobs | 8 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/computer-science-engineer-jobs) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Clarity Innovations | Software Engineer | 5125081007 | 8 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/clarityinnovates/jobs/5125081007?gh_src=my.greenhouse.search) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Chime | Product Security Engineer | 4307589021 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4307589021/) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | CDW | Software Engineer I - Backend | 4400775698 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4400775698/) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
