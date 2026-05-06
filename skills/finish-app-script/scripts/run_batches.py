@@ -59,7 +59,10 @@ For each row:
 - Always open a brand-new Chrome tab before navigating to the jobLink, including
   the first row in this batch. Never navigate over an existing application,
   email, search, or handoff tab.
-- Complete the live application with the row's resumePdf.
+- Complete the live application with the row's resumePdf. During file upload,
+  the macOS file picker may default to the previous application's file; before
+  confirming any upload, verify the selected path exactly matches the current
+  row's resumePdf from /tmp/fa_script_run_state.json.
 - Submit high-confidence routine applications.
 - If submitted successfully and confirmation evidence is captured, close that
   application tab before starting the next row.
