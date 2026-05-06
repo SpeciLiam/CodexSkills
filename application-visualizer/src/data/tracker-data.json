@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T07:53:48.561613+00:00",
+  "generatedAt": "2026-05-06T08:10:36.624689+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,34 +9,34 @@
   },
   "stats": {
     "kpis": {
-      "total": 559,
-      "applied": 366,
-      "unapplied": 193,
-      "active": 395,
+      "total": 573,
+      "applied": 367,
+      "unapplied": 206,
+      "active": 409,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 433,
-      "reachOut": 491,
+      "highFit": 447,
+      "reachOut": 505,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 261,
+      "intakeJobs": 275,
       "intakeQueued": 29,
       "intakeNew": 38,
-      "intakeManual": 54,
+      "intakeManual": 68,
       "intakeApplied": 0,
-      "applyRate": 65.5,
+      "applyRate": 64.0,
       "rejectionRate": 12.0,
-      "recruiterWork": 304,
-      "engineerWork": 360,
+      "recruiterWork": 318,
+      "engineerWork": 374,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 315
+        "value": 316
       },
       {
         "name": "Archived",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 52
+        "value": 66
       },
       {
         "name": "Rejected",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 22
+        "value": 21
       },
       {
         "name": "Interviewing",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 215
+        "value": 221
       },
       {
         "name": "LinkedIn",
-        "value": 207
+        "value": 215
       },
       {
         "name": "Ashby",
@@ -140,7 +140,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 252
+        "value": 263
       },
       {
         "name": "Bay Area",
@@ -148,11 +148,11 @@
       },
       {
         "name": "Other",
-        "value": 87
+        "value": 89
       },
       {
         "name": "Remote",
-        "value": 64
+        "value": 65
       },
       {
         "name": "Seattle",
@@ -170,11 +170,11 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 311
+        "value": 317
       },
       {
         "name": "Full Stack",
-        "value": 72
+        "value": 73
       },
       {
         "name": "Backend",
@@ -182,11 +182,11 @@
       },
       {
         "name": "Forward Deployed",
-        "value": 35
+        "value": 41
       },
       {
         "name": "AI/ML",
-        "value": 34
+        "value": 35
       },
       {
         "name": "Infra/Platform",
@@ -232,7 +232,7 @@
       },
       {
         "score": "8",
-        "count": 109
+        "count": 110
       },
       {
         "score": "9",
@@ -240,7 +240,7 @@
       },
       {
         "score": "10",
-        "count": 221
+        "count": 234
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
       },
       {
         "name": "Manual",
-        "value": 54
+        "value": 68
       },
       {
         "name": "New",
@@ -288,11 +288,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 185
+        "value": 191
       },
       {
         "name": "LinkedIn",
-        "value": 76
+        "value": 84
       }
     ],
     "timeline": [
@@ -474,9 +474,9 @@
       },
       {
         "date": "2026-05-06",
-        "cumulative": 559,
-        "added": 17,
-        "applied": 1,
+        "cumulative": 573,
+        "added": 31,
+        "applied": 2,
         "rejected": 0,
         "interviewing": 0
       }
@@ -510,6 +510,12 @@
         "company": "Attentive",
         "roles": 5,
         "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
+        "company": "OpenAI",
+        "roles": 5,
+        "avgFit": 8.6,
         "bestFit": 10
       },
       {
@@ -570,12 +576,6 @@
         "company": "Uber",
         "roles": 4,
         "avgFit": 8.75,
-        "bestFit": 10
-      },
-      {
-        "company": "OpenAI",
-        "roles": 4,
-        "avgFit": 8.25,
         "bestFit": 10
       },
       {
@@ -881,6 +881,15 @@
         "jobLink": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4680447005"
       },
       {
+        "company": "Temelio",
+        "role": "Founding Engineer",
+        "fitScore": 10,
+        "status": "Manual Apply Needed",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/applytotemelio/jobs/4604909004"
+      },
+      {
         "company": "Teladoc Health",
         "role": "Junior Software Engineering Program - Engineer Associate",
         "fitScore": 10,
@@ -942,15 +951,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4825411101?gh_src=47e65a22teu"
-      },
-      {
-        "company": "StubHub",
-        "role": "Software Engineer II \u2013 Consumer Experience (Full-Stack)",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4792613101"
       }
     ],
     "recruiterBatch": {
@@ -16363,8 +16363,8 @@
     {
       "company": "Campana & Schott",
       "role": "AI Solutions Analyst",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -16379,9 +16379,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-05-06",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-06"
+      ]
     },
     {
       "company": "Chime",
@@ -16546,9 +16548,541 @@
         "2026-05-05",
         "2026-05-05"
       ]
+    },
+    {
+      "company": "Temelio",
+      "role": "Founding Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "New York City, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/applytotemelio/jobs/4604909004",
+      "postingKey": "4604909004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Temelio/Founding_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Temelio/Founding_Engineer/Liam_Van_Resume/Liam_Van_Temelio.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Scaled Cognition",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "New York City Metropolitan Area",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-scaled-cognition-4392389111",
+      "postingKey": "forward-deployed-engineer-at-scaled-cognition-4392389111",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scaled Cognition/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scaled Cognition/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Scaled_Cognition.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "PlayStation Global",
+      "role": "Software Engineer I",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "United States, Madison, WI",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/sonyinteractiveentertainmentglobal/jobs/5840954004",
+      "postingKey": "5840954004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/PlayStation Global/Software_Engineer_I/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/PlayStation Global/Software_Engineer_I/Liam_Van_Resume/Liam_Van_PlayStation_Global.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "OpenAI",
+      "role": "Forward Deployed Engineer (FDE) - NYC",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-nyc-at-openai-4334774578",
+      "postingKey": "forward-deployed-engineer-nyc-at-openai-4334774578",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OpenAI/Forward_Deployed_Engineer_FDE_NYC/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OpenAI/Forward_Deployed_Engineer_FDE_NYC/Liam_Van_Resume/Liam_Van_OpenAI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "JPMorganChase",
+      "role": "Software Engineer II - Fullstack - Python/React",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-fullstack-python-react-at-jpmorganchase-4397428728",
+      "postingKey": "software-engineer-ii-fullstack-python-react-at-jpmorganchase-4397428728",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/JPMorganChase/Software_Engineer_II_Fullstack_Python_React/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/JPMorganChase/Software_Engineer_II_Fullstack_Python_React/Liam_Van_Resume/Liam_Van_JPMorganChase.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Glazier",
+      "role": "Founding Engineer (Glazier)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "Greater New York City Area",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/applytoglazier/jobs/4502530004",
+      "postingKey": "4502530004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Glazier/Founding_Engineer_Glazier/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Glazier/Founding_Engineer_Glazier/Liam_Van_Resume/Liam_Van_Glazier.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Fortue",
+      "role": "Founding Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/applytofortue/jobs/4664203004",
+      "postingKey": "4664203004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Fortue/Founding_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Fortue/Founding_Engineer/Liam_Van_Resume/Liam_Van_Fortue.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Figma",
+      "role": "Early Career, Software Engineer (2026)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "San Francisco, CA; New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/figma/jobs/5616603004",
+      "postingKey": "5616603004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Figma/Early_Career_Software_Engineer_2026/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Figma/Early_Career_Software_Engineer_2026/Liam_Van_Resume/Liam_Van_Figma.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "CoreWeave",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-coreweave-4373404097",
+      "postingKey": "forward-deployed-engineer-at-coreweave-4373404097",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CoreWeave/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CoreWeave/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_CoreWeave.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Colgate-Palmolive",
+      "role": "AI Engineer/ Forward Deployed Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/ai-engineer-forward-deployed-engineer-at-colgate-palmolive-4377208045",
+      "postingKey": "ai-engineer-forward-deployed-engineer-at-colgate-palmolive-4377208045",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Colgate-Palmolive/AI_Engineer_Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Colgate-Palmolive/AI_Engineer_Forward_Deployed_Engineer/Liam_Van_Colgate-Palmolive.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Avoca",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-avoca-4295417569",
+      "postingKey": "forward-deployed-engineer-at-avoca-4295417569",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Avoca/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Avoca/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Avoca.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Ascertain",
+      "role": "Forward Deployed Engineer - NYC",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-nyc-at-ascertain-4367631462",
+      "postingKey": "forward-deployed-engineer-nyc-at-ascertain-4367631462",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ascertain/Forward_Deployed_Engineer_NYC/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ascertain/Forward_Deployed_Engineer_NYC/Liam_Van_Resume/Liam_Van_Ascertain.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Applied Systems",
+      "role": "Associate Software Engineer / Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/associate-software-engineer-software-engineer-at-applied-systems-4400119719",
+      "postingKey": "associate-software-engineer-software-engineer-at-applied-systems-4400119719",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Applied Systems/Associate_Software_Engineer_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Applied Systems/Associate_Software_Engineer_Software_Engineer/Liam_Van_Resume/Liam_Van_Applied_Systems.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "FloVision Solutions",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "U.S. - Remote",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/flovisionsolutions/jobs/5149067008",
+      "postingKey": "5149067008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/FloVision Solutions/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/FloVision Solutions/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_FloVision_Solutions.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Temelio",
+      "role": "Founding Engineer",
+      "location": "New York City, NY",
+      "postingKey": "4604909004",
+      "jobUrl": "https://job-boards.greenhouse.io/applytotemelio/jobs/4604909004",
+      "discoveredAt": "2026-05-06T08:04:07.591977+00:00",
+      "postedAge": "last month",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "trackerPostingKey": "4604909004"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Scaled Cognition",
+      "role": "Forward Deployed Engineer",
+      "location": "New York City Metropolitan Area",
+      "postingKey": "4392389111",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-scaled-cognition-4392389111",
+      "discoveredAt": "2026-05-06T08:04:07.591977+00:00",
+      "postedAge": "1 week ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "trackerPostingKey": "4392389111"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "PlayStation Global",
+      "role": "Software Engineer I",
+      "location": "United States, Madison, WI",
+      "postingKey": "5840954004",
+      "jobUrl": "https://job-boards.greenhouse.io/sonyinteractiveentertainmentglobal/jobs/5840954004",
+      "discoveredAt": "2026-05-06T08:04:07.591977+00:00",
+      "postedAge": "last month",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "trackerPostingKey": "5840954004"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "OpenAI",
+      "role": "Forward Deployed Engineer (FDE) - NYC",
+      "location": "New York, NY",
+      "postingKey": "4334774578",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-nyc-at-openai-4334774578",
+      "discoveredAt": "2026-05-06T08:04:07.591977+00:00",
+      "postedAge": "1 week ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "trackerPostingKey": "4334774578"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "JPMorganChase",
+      "role": "Software Engineer II - Fullstack - Python/React",
+      "location": "New York, NY",
+      "postingKey": "4397428728",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-ii-fullstack-python-react-at-jpmorganchase-4397428728",
+      "discoveredAt": "2026-05-06T08:04:07.591977+00:00",
+      "postedAge": "1 week ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "trackerPostingKey": "4397428728"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Glazier",
+      "role": "Founding Engineer (Glazier)",
+      "location": "Greater New York City Area",
+      "postingKey": "4502530004",
+      "jobUrl": "https://job-boards.greenhouse.io/applytoglazier/jobs/4502530004",
+      "discoveredAt": "2026-05-06T08:04:07.591977+00:00",
+      "postedAge": "3 weeks ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "trackerPostingKey": "4502530004"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Fortue",
+      "role": "Founding Engineer",
+      "location": "New York, NY",
+      "postingKey": "4664203004",
+      "jobUrl": "https://job-boards.greenhouse.io/applytofortue/jobs/4664203004",
+      "discoveredAt": "2026-05-06T08:04:07.591977+00:00",
+      "postedAge": "2 months ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "trackerPostingKey": "4664203004"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Figma",
+      "role": "Early Career, Software Engineer (2026)",
+      "location": "San Francisco, CA; New York, NY",
+      "postingKey": "5616603004",
+      "jobUrl": "https://job-boards.greenhouse.io/figma/jobs/5616603004",
+      "discoveredAt": "2026-05-06T08:04:07.591977+00:00",
+      "postedAge": "3 months ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "trackerPostingKey": "5616603004"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "CoreWeave",
+      "role": "Forward Deployed Engineer",
+      "location": "New York, NY",
+      "postingKey": "4373404097",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-coreweave-4373404097",
+      "discoveredAt": "2026-05-06T08:04:07.591977+00:00",
+      "postedAge": "1 week ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "trackerPostingKey": "4373404097"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Colgate-Palmolive",
+      "role": "AI Engineer/ Forward Deployed Engineer",
+      "location": "New York, NY",
+      "postingKey": "4377208045",
+      "jobUrl": "https://www.linkedin.com/jobs/view/ai-engineer-forward-deployed-engineer-at-colgate-palmolive-4377208045",
+      "discoveredAt": "2026-05-06T08:04:07.591977+00:00",
+      "postedAge": "1 week ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "trackerPostingKey": "4377208045"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Avoca",
+      "role": "Forward Deployed Engineer",
+      "location": "New York, NY",
+      "postingKey": "4295417569",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-avoca-4295417569",
+      "discoveredAt": "2026-05-06T08:04:07.591977+00:00",
+      "postedAge": "1 week ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "trackerPostingKey": "4295417569"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Ascertain",
+      "role": "Forward Deployed Engineer - NYC",
+      "location": "New York, NY",
+      "postingKey": "4367631462",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-nyc-at-ascertain-4367631462",
+      "discoveredAt": "2026-05-06T08:04:07.591977+00:00",
+      "postedAge": "1 week ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "trackerPostingKey": "4367631462"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Applied Systems",
+      "role": "Associate Software Engineer / Software Engineer",
+      "location": "United States",
+      "postingKey": "4400119719",
+      "jobUrl": "https://www.linkedin.com/jobs/view/associate-software-engineer-software-engineer-at-applied-systems-4400119719",
+      "discoveredAt": "2026-05-06T08:04:07.591977+00:00",
+      "postedAge": "2 days ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "trackerPostingKey": "4400119719"
+    },
     {
       "source": "LinkedIn",
       "company": "Stripe",
@@ -16604,6 +17138,34 @@
       "status": "Tailored",
       "reason": "Tailored 2026-05-05; resume rendered and verified one page; emphasized NYC early-career full-stack product engineering, React and TypeScript surfaces, backend APIs, data workflows, testing, and startup delivery",
       "trackerPostingKey": "linkedin-public-giga-software-engineer-i-ii-ny-2026-05-06"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Axon",
+      "role": "Software Engineer I",
+      "location": "Washington, United States",
+      "postingKey": "7662648003",
+      "jobUrl": "https://job-boards.greenhouse.io/axon/jobs/7662648003",
+      "discoveredAt": "2026-05-06T04:03:58.040835+00:00",
+      "postedAge": "New in Greenhouse page snippet; captured 2026-05-06T04:03:54.498Z",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-05; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight",
+      "trackerPostingKey": "7662648003"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Mesa",
+      "role": "Software Engineer - University Grad",
+      "location": "New York, NY; San Francisco, CA; Austin, TX",
+      "postingKey": "4967098008",
+      "jobUrl": "https://job-boards.greenhouse.io/mesamember/jobs/4967098008",
+      "discoveredAt": "2026-05-06T03:09:55.472497+00:00",
+      "postedAge": "Greenhouse result crawled recently; captured 2026-05-06T03:09:52.670Z",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "trackerPostingKey": "4967098008"
     },
     {
       "source": "LinkedIn",
@@ -17346,20 +17908,6 @@
       "status": "Queued",
       "reason": "SWE-family role, NYC preference",
       "trackerPostingKey": ""
-    },
-    {
-      "source": "Greenhouse",
-      "company": "Axon",
-      "role": "Software Engineer I",
-      "location": "Washington, United States",
-      "postingKey": "7662648003",
-      "jobUrl": "https://job-boards.greenhouse.io/axon/jobs/7662648003",
-      "discoveredAt": "2026-05-06T04:03:58.040835+00:00",
-      "postedAge": "New in Greenhouse page snippet; captured 2026-05-06T04:03:54.498Z",
-      "fitScore": 10,
-      "status": "Manual",
-      "reason": "Tailored 2026-05-05; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight",
-      "trackerPostingKey": "7662648003"
     },
     {
       "source": "Greenhouse",
@@ -19210,6 +19758,20 @@
       "trackerPostingKey": "5592469004"
     },
     {
+      "source": "Greenhouse",
+      "company": "FloVision Solutions",
+      "role": "Forward Deployed Engineer",
+      "location": "U.S. - Remote",
+      "postingKey": "5149067008",
+      "jobUrl": "https://job-boards.greenhouse.io/flovisionsolutions/jobs/5149067008",
+      "discoveredAt": "2026-05-06T08:04:07.591977+00:00",
+      "postedAge": "2 weeks ago",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "trackerPostingKey": "5149067008"
+    },
+    {
       "source": "LinkedIn",
       "company": "Pinwheel",
       "role": "Full-stack Engineer (FE-leaning)",
@@ -20188,20 +20750,6 @@
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, preferred/remote US location",
       "trackerPostingKey": ""
-    },
-    {
-      "source": "Greenhouse",
-      "company": "Mesa",
-      "role": "Software Engineer - University Grad",
-      "location": "New York, NY; San Francisco, CA; Austin, TX",
-      "postingKey": "4967098008",
-      "jobUrl": "https://job-boards.greenhouse.io/mesamember/jobs/4967098008",
-      "discoveredAt": "2026-05-06T03:09:55.472497+00:00",
-      "postedAge": "Greenhouse result crawled recently; captured 2026-05-06T03:09:52.670Z",
-      "fitScore": 10,
-      "status": "Manual",
-      "reason": "Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
-      "trackerPostingKey": "4967098008"
     }
   ],
   "outreachQueue": [
@@ -20596,6 +21144,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Temelio",
+      "role": "Founding Engineer",
+      "postingKey": "4604909004",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/applytotemelio/jobs/4604909004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Teladoc Health",
       "role": "Junior Software Engineering Program - Engineer Associate",
       "postingKey": "4410910044",
@@ -20869,6 +21430,19 @@
       "notes": ""
     },
     {
+      "company": "Scaled Cognition",
+      "role": "Forward Deployed Engineer",
+      "postingKey": "forward-deployed-engineer-at-scaled-cognition-4392389111",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-scaled-cognition-4392389111",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Scale AI",
       "role": "Software Engineer - New Grad",
       "postingKey": "4297642437",
@@ -21113,6 +21687,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "PlayStation Global",
+      "role": "Software Engineer I",
+      "postingKey": "5840954004",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/sonyinteractiveentertainmentglobal/jobs/5840954004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -21412,6 +21999,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-05",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "OpenAI",
+      "role": "Forward Deployed Engineer (FDE) - NYC",
+      "postingKey": "forward-deployed-engineer-nyc-at-openai-4334774578",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-nyc-at-openai-4334774578",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -21766,6 +22366,19 @@
       "notes": ""
     },
     {
+      "company": "JPMorganChase",
+      "role": "Software Engineer II - Fullstack - Python/React",
+      "postingKey": "software-engineer-ii-fullstack-python-react-at-jpmorganchase-4397428728",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-fullstack-python-react-at-jpmorganchase-4397428728",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Iterable",
       "role": "Software Engineer II",
       "postingKey": "7783095",
@@ -21948,6 +22561,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Glazier",
+      "role": "Founding Engineer (Glazier)",
+      "postingKey": "4502530004",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/applytoglazier/jobs/4502530004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "GitHub",
       "role": "Software Engineer II",
       "postingKey": "software-engineer-ii-at-github-4402311691",
@@ -22023,6 +22649,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Fortue",
+      "role": "Founding Engineer",
+      "postingKey": "4664203004",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/applytofortue/jobs/4664203004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -22140,6 +22779,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Figma",
+      "role": "Early Career, Software Engineer (2026)",
+      "postingKey": "5616603004",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/figma/jobs/5616603004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -22312,6 +22964,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "CoreWeave",
+      "role": "Forward Deployed Engineer",
+      "postingKey": "forward-deployed-engineer-at-coreweave-4373404097",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-coreweave-4373404097",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "CookUnity",
       "role": "AI-Native Software Engineer",
       "postingKey": "6747347003",
@@ -22375,6 +23040,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Colgate-Palmolive",
+      "role": "AI Engineer/ Forward Deployed Engineer",
+      "postingKey": "ai-engineer-forward-deployed-engineer-at-colgate-palmolive-4377208045",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/ai-engineer-forward-deployed-engineer-at-colgate-palmolive-4377208045",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Clear Street",
@@ -22585,6 +23263,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Avoca",
+      "role": "Forward Deployed Engineer",
+      "postingKey": "forward-deployed-engineer-at-avoca-4295417569",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-avoca-4295417569",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Automat",
       "role": "Software Engineer (Junior/Intermediate)",
       "postingKey": "a4172515-0353-47ec-9c71-631a294aa137",
@@ -22689,6 +23380,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Ascertain",
+      "role": "Forward Deployed Engineer - NYC",
+      "postingKey": "forward-deployed-engineer-nyc-at-ascertain-4367631462",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-nyc-at-ascertain-4367631462",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Arena Physica",
       "role": "Software Engineer",
       "postingKey": "4593097101",
@@ -22713,6 +23417,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Applied Systems",
+      "role": "Associate Software Engineer / Software Engineer",
+      "postingKey": "associate-software-engineer-software-engineer-at-applied-systems-4400119719",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/associate-software-engineer-software-engineer-at-applied-systems-4400119719",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Applied Intuition",
@@ -24935,6 +25652,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-01",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "FloVision Solutions",
+      "role": "Forward Deployed Engineer",
+      "postingKey": "5149067008",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/flovisionsolutions/jobs/5149067008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -38589,6 +39319,18 @@
           ]
         },
         {
+          "key": "associate-software-engineer-software-engineer-at-applied-systems-4400119719",
+          "company": "Applied Systems",
+          "role": "Associate Software Engineer / Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4409014859",
           "company": "Aquatic Capital Management",
           "role": "Software Engineer, Early Career",
@@ -38613,6 +39355,18 @@
           "contacts": []
         },
         {
+          "key": "forward-deployed-engineer-nyc-at-ascertain-4367631462",
+          "company": "Ascertain",
+          "role": "Forward Deployed Engineer - NYC",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4658890005",
           "company": "AssetWatch",
           "role": "Backend Engineer",
@@ -38630,6 +39384,18 @@
           "role": "Software Engineer (Junior/Intermediate)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "forward-deployed-engineer-at-avoca-4295417569",
+          "company": "Avoca",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -38685,6 +39451,18 @@
           "contacts": []
         },
         {
+          "key": "ai-engineer-forward-deployed-engineer-at-colgate-palmolive-4377208045",
+          "company": "Colgate-Palmolive",
+          "role": "AI Engineer/ Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4401827377",
           "company": "Confido",
           "role": "New Grad Software Engineer",
@@ -38721,6 +39499,18 @@
           "contacts": []
         },
         {
+          "key": "forward-deployed-engineer-at-coreweave-4373404097",
+          "company": "CoreWeave",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7421561",
           "company": "Databento",
           "role": "Backend Engineer",
@@ -38738,6 +39528,18 @@
           "role": "Software Engineer II, iCasino - US",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5616603004",
+          "company": "Figma",
+          "role": "Early Career, Software Engineer (2026)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -38781,6 +39583,18 @@
           "contacts": []
         },
         {
+          "key": "4664203004",
+          "company": "Fortue",
+          "role": "Founding Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-ii-at-garner-health-4379614164",
           "company": "Garner Health",
           "role": "Software Engineer II",
@@ -38808,6 +39622,18 @@
           "key": "software-engineer-ii-at-github-4402311691",
           "company": "GitHub",
           "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4502530004",
+          "company": "Glazier",
+          "role": "Founding Engineer (Glazier)",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -38846,6 +39672,18 @@
           "role": "Software Engineer 1",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-ii-fullstack-python-react-at-jpmorganchase-4397428728",
+          "company": "JPMorganChase",
+          "role": "Software Engineer II - Fullstack - Python/React",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -38976,6 +39814,18 @@
           "key": "full-stack-software-engineer-growth-at-openai-4307261950",
           "company": "OpenAI",
           "role": "Full Stack Software Engineer, Growth",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "forward-deployed-engineer-nyc-at-openai-4334774578",
+          "company": "OpenAI",
+          "role": "Forward Deployed Engineer (FDE) - NYC",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -39117,6 +39967,18 @@
           "contacts": []
         },
         {
+          "key": "5840954004",
+          "company": "PlayStation Global",
+          "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4408146891",
           "company": "Redfin",
           "role": "Software Developer I - Digit",
@@ -39237,6 +40099,18 @@
           "contacts": []
         },
         {
+          "key": "forward-deployed-engineer-at-scaled-cognition-4392389111",
+          "company": "Scaled Cognition",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7690411003",
           "company": "Sigma Computing",
           "role": "Software Engineer (New Grad Program)",
@@ -39314,6 +40188,18 @@
           "role": "Junior Software Engineering Program - Engineer Associate",
           "fitScore": 10,
           "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4604909004",
+          "company": "Temelio",
+          "role": "Founding Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -39553,7 +40439,7 @@
           "company": "Campana & Schott",
           "role": "AI Solutions Analyst",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -40490,6 +41376,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5149067008",
+          "company": "FloVision Solutions",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -50283,6 +51181,18 @@
           "contacts": []
         },
         {
+          "key": "associate-software-engineer-software-engineer-at-applied-systems-4400119719",
+          "company": "Applied Systems",
+          "role": "Associate Software Engineer / Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4409014859",
           "company": "Aquatic Capital Management",
           "role": "Software Engineer, Early Career",
@@ -50300,6 +51210,18 @@
           "role": "Software Engineer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "forward-deployed-engineer-nyc-at-ascertain-4367631462",
+          "company": "Ascertain",
+          "role": "Forward Deployed Engineer - NYC",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -50336,6 +51258,18 @@
           "role": "Software Engineer II, BI Tooling and Platform",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "forward-deployed-engineer-at-avoca-4295417569",
+          "company": "Avoca",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -50415,6 +51349,18 @@
           "contacts": []
         },
         {
+          "key": "ai-engineer-forward-deployed-engineer-at-colgate-palmolive-4377208045",
+          "company": "Colgate-Palmolive",
+          "role": "AI Engineer/ Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "6c7f692a-848b-41a4-b79b-4a9bba3aeb6d",
           "company": "Color Health",
           "role": "New Grad Software Engineer",
@@ -50463,6 +51409,18 @@
           "contacts": []
         },
         {
+          "key": "forward-deployed-engineer-at-coreweave-4373404097",
+          "company": "CoreWeave",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7262899",
           "company": "Crunchyroll",
           "role": "Software Engineer II, Frontend",
@@ -50492,6 +51450,18 @@
           "role": "Software Engineer II, iCasino - US",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5616603004",
+          "company": "Figma",
+          "role": "Early Career, Software Engineer (2026)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -50535,6 +51505,18 @@
           "contacts": []
         },
         {
+          "key": "4664203004",
+          "company": "Fortue",
+          "role": "Founding Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-ii-at-garner-health-4379614164",
           "company": "Garner Health",
           "role": "Software Engineer II",
@@ -50562,6 +51544,18 @@
           "key": "software-engineer-ii-at-github-4402311691",
           "company": "GitHub",
           "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4502530004",
+          "company": "Glazier",
+          "role": "Founding Engineer (Glazier)",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -50612,6 +51606,18 @@
           "role": "Software Engineer 1",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-ii-fullstack-python-react-at-jpmorganchase-4397428728",
+          "company": "JPMorganChase",
+          "role": "Software Engineer II - Fullstack - Python/React",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -50754,6 +51760,18 @@
           "key": "full-stack-software-engineer-growth-at-openai-4307261950",
           "company": "OpenAI",
           "role": "Full Stack Software Engineer, Growth",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "forward-deployed-engineer-nyc-at-openai-4334774578",
+          "company": "OpenAI",
+          "role": "Forward Deployed Engineer (FDE) - NYC",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -50979,6 +51997,18 @@
           "contacts": []
         },
         {
+          "key": "5840954004",
+          "company": "PlayStation Global",
+          "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4408146891",
           "company": "Redfin",
           "role": "Software Developer I - Digit",
@@ -51104,6 +52134,18 @@
           "role": "Software Engineer, Gen AI",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "forward-deployed-engineer-at-scaled-cognition-4392389111",
+          "company": "Scaled Cognition",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -51260,6 +52302,18 @@
           "role": "Junior Software Engineering Program - Engineer Associate",
           "fitScore": 10,
           "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4604909004",
+          "company": "Temelio",
+          "role": "Founding Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -51547,7 +52601,7 @@
           "company": "Campana & Schott",
           "role": "AI Solutions Analyst",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -52172,6 +53226,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5149067008",
+          "company": "FloVision Solutions",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
