@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-05T22:08:16.268325+00:00",
+  "generatedAt": "2026-05-06T00:52:43.683828+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,34 +9,34 @@
   },
   "stats": {
     "kpis": {
-      "total": 519,
-      "applied": 350,
-      "unapplied": 169,
-      "active": 358,
+      "total": 523,
+      "applied": 352,
+      "unapplied": 171,
+      "active": 362,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 400,
-      "reachOut": 457,
+      "highFit": 403,
+      "reachOut": 460,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 242,
+      "intakeJobs": 246,
       "intakeQueued": 30,
       "intakeNew": 37,
-      "intakeManual": 43,
+      "intakeManual": 47,
       "intakeApplied": 0,
-      "applyRate": 67.4,
-      "rejectionRate": 12.6,
-      "recruiterWork": 271,
-      "engineerWork": 325,
+      "applyRate": 67.3,
+      "rejectionRate": 12.5,
+      "recruiterWork": 274,
+      "engineerWork": 328,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 299
+        "value": 301
       },
       {
         "name": "Archived",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 53
+        "value": 55
       },
       {
         "name": "Rejected",
@@ -62,11 +62,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 207
+        "value": 209
       },
       {
         "name": "LinkedIn",
-        "value": 175
+        "value": 177
       },
       {
         "name": "Ashby",
@@ -140,15 +140,15 @@
       },
       {
         "name": "Bay Area",
-        "value": 128
+        "value": 129
       },
       {
         "name": "Other",
-        "value": 72
+        "value": 74
       },
       {
         "name": "Remote",
-        "value": 61
+        "value": 62
       },
       {
         "name": "Seattle",
@@ -166,19 +166,19 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 285
+        "value": 286
+      },
+      {
+        "name": "Full Stack",
+        "value": 67
       },
       {
         "name": "Backend",
         "value": 66
       },
       {
-        "name": "Full Stack",
-        "value": 66
-      },
-      {
         "name": "Forward Deployed",
-        "value": 33
+        "value": 35
       },
       {
         "name": "AI/ML",
@@ -220,7 +220,7 @@
       },
       {
         "score": "6",
-        "count": 9
+        "count": 10
       },
       {
         "score": "7",
@@ -228,7 +228,7 @@
       },
       {
         "score": "8",
-        "count": 99
+        "count": 100
       },
       {
         "score": "9",
@@ -236,7 +236,7 @@
       },
       {
         "score": "10",
-        "count": 205
+        "count": 207
       }
     ],
     "targetCounts": [
@@ -258,7 +258,7 @@
       },
       {
         "name": "Manual",
-        "value": 43
+        "value": 47
       },
       {
         "name": "New",
@@ -284,11 +284,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 175
+        "value": 177
       },
       {
         "name": "LinkedIn",
-        "value": 67
+        "value": 69
       }
     ],
     "timeline": [
@@ -456,14 +456,14 @@
         "date": "2026-05-04",
         "cumulative": 508,
         "added": 24,
-        "applied": 5,
+        "applied": 7,
         "rejected": 0,
         "interviewing": 0
       },
       {
         "date": "2026-05-05",
-        "cumulative": 519,
-        "added": 11,
+        "cumulative": 523,
+        "added": 15,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -543,6 +543,12 @@
         "bestFit": 10
       },
       {
+        "company": "OpenAI",
+        "roles": 4,
+        "avgFit": 8.25,
+        "bestFit": 10
+      },
+      {
         "company": "Robinhood",
         "roles": 4,
         "avgFit": 5.0,
@@ -604,12 +610,6 @@
       },
       {
         "company": "Warner Bros. Discovery",
-        "roles": 2,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Giga",
         "roles": 2,
         "avgFit": 10.0,
         "bestFit": 10
@@ -14629,8 +14629,8 @@
     {
       "company": "Remesh",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -14645,11 +14645,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-04 13:00 PT; tailored SWE resume rendered and verified one page; emphasized remote AI-enabled product engineering, real-time audience insights, backend APIs, full-stack delivery, data-backed workflows, testing, and scalable product systems. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: If I asked your siblings or close friends to write your Twitter bio, (or another social media bio) what would they write?; What is a question that you have always wanted to know the answer to, but haven't been able to figure out the answer to?",
+      "notes": "Hourly Greenhouse intake 2026-05-04 13:00 PT; tailored SWE resume rendered and verified one page; emphasized remote AI-enabled product engineering, real-time audience insights, backend APIs, full-stack delivery, data-backed workflows, testing, and scalable product systems. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: If I asked your siblings or close friends to write your Twitter bio, (or another social media bio) what would they write?; What is a question that you have always wanted to know the answer to, but haven't been able to figure out the answer to?; Application submitted 2026-05-05; confirmation email received; used user-edited custom sample answers",
       "noteLinks": [],
       "activityDates": [
         "2026-05-04",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-05"
       ]
     },
     {
@@ -14871,8 +14872,8 @@
     {
       "company": "Underdog",
       "role": "Associate Software Engineer, 2026 New Grad",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -14887,13 +14888,15 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-04 14:00 PT; tailored SWE resume rendered and verified one page; emphasized remote new-grad product engineering, full-stack feature delivery, reusable UI systems, object-oriented foundations, testing, and fast consumer product iteration. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via Greenhouse flow because it was outside the completed automated Greenhouse submit batch.; Manual apply needed: Greenhouse form requires personal sports/fantasy-sports interest, custom achievement/background prompts, and existing personal-account restriction acknowledgement before submission 2026-05-04",
+      "notes": "Hourly Greenhouse intake 2026-05-04 14:00 PT; tailored SWE resume rendered and verified one page; emphasized remote new-grad product engineering, full-stack feature delivery, reusable UI systems, object-oriented foundations, testing, and fast consumer product iteration. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via Greenhouse flow because it was outside the completed automated Greenhouse submit batch.; Manual apply needed: Greenhouse form requires personal sports/fantasy-sports interest, custom achievement/background prompts, and existing personal-account restriction acknowledgement before submission 2026-05-04; Manual apply needed: required personal sports-interest prompt 2026-05-05; Application submitted 2026-05-05; used Fantasy Wizard multi-sport project sample answer",
       "noteLinks": [],
       "activityDates": [
         "2026-05-04",
         "2026-05-04",
         "2026-05-04",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-05",
+        "2026-05-05"
       ]
     },
     {
@@ -15535,9 +15538,141 @@
         "2026-05-05",
         "2026-05-05"
       ]
+    },
+    {
+      "company": "OpenAI",
+      "role": "Full Stack Software Engineer, Growth",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/full-stack-software-engineer-growth-at-openai-4307261950",
+      "postingKey": "full-stack-software-engineer-growth-at-openai-4307261950",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OpenAI/Full_Stack_Software_Engineer_Growth/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OpenAI/Full_Stack_Software_Engineer_Growth/Liam_Van_Resume/Liam_Van_OpenAI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-05 17:00 PT; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, experimentation, backend APIs, and AI product growth work. Captured through degraded public lane after Computer Use approval was denied for Chrome and Firefox.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-05",
+        "2026-05-05"
+      ]
+    },
+    {
+      "company": "GitHub",
+      "role": "Software Engineer II",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "Remote, United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-github-4402311691",
+      "postingKey": "software-engineer-ii-at-github-4402311691",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/GitHub/Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/GitHub/Software_Engineer_II/Liam_Van_Resume/Liam_Van_GitHub.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-05 17:00 PT; tailored SWE resume rendered and verified one page; emphasized secure software tooling, backend systems, testing, and platform reliability. Captured through degraded public lane after Computer Use approval was denied for Chrome and Firefox.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-05",
+        "2026-05-05"
+      ]
+    },
+    {
+      "company": "Lazarus",
+      "role": "Software Engineer (Forward Deployed)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/lazarusenterprises/jobs/5089480007",
+      "postingKey": "5089480007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Lazarus/Software_Engineer_Forward_Deployed/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Lazarus/Software_Engineer_Forward_Deployed/Liam_Van_Resume/Liam_Van_Lazarus.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-05 17:00 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed AI systems, client-facing delivery, backend integrations, and reliable production workflows. Captured through degraded public lane after Computer Use approval was denied for Chrome and Firefox.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-05",
+        "2026-05-05"
+      ]
+    },
+    {
+      "company": "Inorsa",
+      "role": "Forward Deployed Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 6,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "Austin, TX",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/inorsa/jobs/4931692008",
+      "postingKey": "4931692008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Inorsa/Forward_Deployed_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Inorsa/Forward_Deployed_Software_Engineer/Liam_Van_Resume/Liam_Van_Inorsa.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-05 17:00 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed AI automation, integrations, customer workflows, and full-stack delivery. Captured through degraded public lane after Computer Use approval was denied for Chrome and Firefox.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-05",
+        "2026-05-05"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "LinkedIn",
+      "company": "OpenAI",
+      "role": "Full Stack Software Engineer, Growth",
+      "location": "San Francisco, CA",
+      "postingKey": "full-stack-software-engineer-growth-at-openai-4307261950",
+      "jobUrl": "https://www.linkedin.com/jobs/view/full-stack-software-engineer-growth-at-openai-4307261950",
+      "discoveredAt": "2026-05-06T00:05:57.521413+00:00",
+      "postedAge": "4 hours ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "trackerPostingKey": "full-stack-software-engineer-growth-at-openai-4307261950"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "GitHub",
+      "role": "Software Engineer II",
+      "location": "Remote, United States",
+      "postingKey": "software-engineer-ii-at-github-4402311691",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-github-4402311691",
+      "discoveredAt": "2026-05-06T00:05:57.521413+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "trackerPostingKey": "software-engineer-ii-at-github-4402311691"
+    },
     {
       "source": "Greenhouse",
       "company": "Valon",
@@ -18046,6 +18181,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Lazarus",
+      "role": "Software Engineer (Forward Deployed)",
+      "location": "United States",
+      "postingKey": "5089480007",
+      "jobUrl": "https://job-boards.greenhouse.io/lazarusenterprises/jobs/5089480007",
+      "discoveredAt": "2026-05-06T00:05:57.521413+00:00",
+      "postedAge": "last week",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "trackerPostingKey": "5089480007"
+    },
+    {
+      "source": "Greenhouse",
       "company": "Govini",
       "role": "Forward Deployed Software Engineer",
       "location": "Arlington, VA; Pittsburgh, PA; Remote",
@@ -18827,6 +18976,20 @@
       "status": "New",
       "reason": "SWE-family role, preferred/remote US location",
       "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Inorsa",
+      "role": "Forward Deployed Software Engineer",
+      "location": "Austin, TX",
+      "postingKey": "4931692008",
+      "jobUrl": "https://job-boards.greenhouse.io/inorsa/jobs/4931692008",
+      "discoveredAt": "2026-05-06T00:05:57.521413+00:00",
+      "postedAge": "4 days ago",
+      "fitScore": 5,
+      "status": "Manual",
+      "reason": "Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "trackerPostingKey": "4931692008"
     },
     {
       "source": "Greenhouse",
@@ -20021,6 +20184,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "OpenAI",
+      "role": "Full Stack Software Engineer, Growth",
+      "postingKey": "full-stack-software-engineer-growth-at-openai-4307261950",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/full-stack-software-engineer-growth-at-openai-4307261950",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-05",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Notion",
       "role": "Software Engineer, New Grad",
       "postingKey": "4406118990",
@@ -20499,6 +20675,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-01",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "GitHub",
+      "role": "Software Engineer II",
+      "postingKey": "software-engineer-ii-at-github-4402311691",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-github-4402311691",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-05",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -23138,6 +23327,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Lazarus",
+      "role": "Software Engineer (Forward Deployed)",
+      "postingKey": "5089480007",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/lazarusenterprises/jobs/5089480007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-05",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -37049,6 +37251,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-ii-at-github-4402311691",
+          "company": "GitHub",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4169702004",
           "company": "GreenSpark",
           "role": "Software Engineer",
@@ -37150,6 +37364,18 @@
           "role": "Full Stack Engineer, Backend",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "full-stack-software-engineer-growth-at-openai-4307261950",
+          "company": "OpenAI",
+          "role": "Full Stack Software Engineer, Growth",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -37269,7 +37495,7 @@
           "company": "Remesh",
           "role": "Software Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -37521,7 +37747,7 @@
           "company": "Underdog",
           "role": "Associate Software Engineer, 2026 New Grad",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -38612,6 +38838,18 @@
           "key": "4231980009",
           "company": "Kapitus",
           "role": "Software Engineer II",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5089480007",
+          "company": "Lazarus",
+          "role": "Software Engineer (Forward Deployed)",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -48395,6 +48633,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-ii-at-github-4402311691",
+          "company": "GitHub",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4006734005",
           "company": "Glean",
           "role": "Software Engineer, Fullstack",
@@ -48520,6 +48770,18 @@
           "role": "Full Stack Engineer, Backend",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "full-stack-software-engineer-growth-at-openai-4307261950",
+          "company": "OpenAI",
+          "role": "Full Stack Software Engineer, Growth",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -49816,6 +50078,18 @@
           "role": "Software Engineer II",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5089480007",
+          "company": "Lazarus",
+          "role": "Software Engineer (Forward Deployed)",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
