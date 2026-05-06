@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T05:04:46.867889+00:00",
+  "generatedAt": "2026-05-06T05:30:05.530636+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 534,
-      "applied": 354,
-      "unapplied": 180,
-      "active": 373,
+      "total": 542,
+      "applied": 356,
+      "unapplied": 186,
+      "active": 381,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 414,
-      "reachOut": 471,
+      "highFit": 421,
+      "reachOut": 478,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,17 +26,17 @@
       "intakeNew": 38,
       "intakeManual": 53,
       "intakeApplied": 0,
-      "applyRate": 66.3,
+      "applyRate": 65.7,
       "rejectionRate": 12.4,
-      "recruiterWork": 285,
-      "engineerWork": 339,
+      "recruiterWork": 292,
+      "engineerWork": 346,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 303
+        "value": 305
       },
       {
         "name": "Archived",
@@ -44,11 +44,15 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 64
+        "value": 62
       },
       {
         "name": "Rejected",
         "value": 44
+      },
+      {
+        "name": "Resume Tailored",
+        "value": 8
       },
       {
         "name": "Interviewing",
@@ -66,7 +70,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 183
+        "value": 191
       },
       {
         "name": "Ashby",
@@ -136,7 +140,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 245
+        "value": 248
       },
       {
         "name": "Bay Area",
@@ -144,7 +148,7 @@
       },
       {
         "name": "Other",
-        "value": 75
+        "value": 79
       },
       {
         "name": "Remote",
@@ -152,7 +156,7 @@
       },
       {
         "name": "Seattle",
-        "value": 16
+        "value": 17
       },
       {
         "name": "Unknown",
@@ -166,11 +170,11 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 292
+        "value": 299
       },
       {
         "name": "Full Stack",
-        "value": 69
+        "value": 70
       },
       {
         "name": "Backend",
@@ -224,19 +228,19 @@
       },
       {
         "score": "7",
-        "count": 27
+        "count": 28
       },
       {
         "score": "8",
-        "count": 101
+        "count": 103
       },
       {
         "score": "9",
-        "count": 96
+        "count": 97
       },
       {
         "score": "10",
-        "count": 217
+        "count": 221
       }
     ],
     "targetCounts": [
@@ -462,9 +466,17 @@
       },
       {
         "date": "2026-05-05",
-        "cumulative": 534,
-        "added": 26,
-        "applied": 1,
+        "cumulative": 541,
+        "added": 33,
+        "applied": 3,
+        "rejected": 0,
+        "interviewing": 0
+      },
+      {
+        "date": "2026-05-06",
+        "cumulative": 542,
+        "added": 1,
+        "applied": 0,
         "rejected": 0,
         "interviewing": 0
       }
@@ -525,6 +537,12 @@
         "bestFit": 10
       },
       {
+        "company": "Intuit",
+        "roles": 4,
+        "avgFit": 9.5,
+        "bestFit": 10
+      },
+      {
         "company": "Loop",
         "roles": 4,
         "avgFit": 9.5,
@@ -570,12 +588,6 @@
         "company": "Applied Intuition",
         "roles": 3,
         "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Intuit",
-        "roles": 3,
-        "avgFit": 9.33,
         "bestFit": 10
       },
       {
@@ -869,6 +881,15 @@
         "jobLink": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4680447005"
       },
       {
+        "company": "Teladoc Health",
+        "role": "Junior Software Engineering Program - Engineer Associate",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://www.linkedin.com/jobs/view/4410910044/"
+      },
+      {
         "company": "Tekmerion Capital",
         "role": "Software Engineer",
         "fitScore": 10,
@@ -930,15 +951,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4792613101"
-      },
-      {
-        "company": "StubHub",
-        "role": "Software Engineer II - (Fullstack / Product Engineering)",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4790893101"
       }
     ],
     "recruiterBatch": {
@@ -14919,13 +14931,14 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-04 14:00 PT; tailored SWE resume rendered and verified one page; emphasized AI inference deployment infrastructure, release automation, validation systems, production reliability, cloud platform workflows, testing, and safe rollout tooling. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via Greenhouse flow because it was outside the completed automated Greenhouse submit batch.; Manual apply needed: Greenhouse form requires AI policy acknowledgement and company-specific Why Anthropic response before submission 2026-05-04",
+      "notes": "Hourly Greenhouse intake 2026-05-04 14:00 PT; tailored SWE resume rendered and verified one page; emphasized AI inference deployment infrastructure, release automation, validation systems, production reliability, cloud platform workflows, testing, and safe rollout tooling. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed 2026-05-04: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via Greenhouse flow because it was outside the completed automated Greenhouse submit batch.; Manual apply needed: Greenhouse form requires AI policy acknowledgement and company-specific Why Anthropic response before submission 2026-05-04; Manual apply needed 2026-05-05: live Greenhouse form partly filled, but not submitted because posting is Staff + Sr., asks for 5+ years plus large-scale deployment/release infrastructure ownership, and requires relocation/deployment-infra answers for Liam review.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-04",
         "2026-05-04",
         "2026-05-04",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-05"
       ]
     },
     {
@@ -15362,8 +15375,8 @@
     {
       "company": "GitLab",
       "role": "Backend Engineer, Knowledge Graph (Rust)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -15378,9 +15391,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-05 14:00 PT; tailored SWE resume rendered and verified one page; emphasized remote backend knowledge-graph engineering, Rust-adjacent services, AI agent infrastructure, MCP endpoints, data indexing, observability, and reliable distributed systems. LinkedIn and browser-based apply were blocked because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-05: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-05 14:00 PT; tailored SWE resume rendered and verified one page; emphasized remote backend knowledge-graph engineering, Rust-adjacent services, AI agent infrastructure, MCP endpoints, data indexing, observability, and reliable distributed systems. LinkedIn and browser-based apply were blocked because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-05: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.; Application submitted 2026-05-05 via Greenhouse after email verification; confirmation page displayed: Thank you for applying to GitLab!",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-05",
         "2026-05-05",
         "2026-05-05"
       ]
@@ -15596,8 +15610,8 @@
     {
       "company": "Lazarus",
       "role": "Software Engineer (Forward Deployed)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -15612,9 +15626,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-05 17:00 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed AI systems, client-facing delivery, backend integrations, and reliable production workflows. Captured through degraded public lane after Computer Use approval was denied for Chrome and Firefox.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "notes": "Hourly intake 2026-05-05 17:00 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed AI systems, client-facing delivery, backend integrations, and reliable production workflows. Captured through degraded public lane after Computer Use approval was denied for Chrome and Firefox.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05; Application submitted 2026-05-05 via Greenhouse.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-05",
         "2026-05-05",
         "2026-05-05"
       ]
@@ -15930,6 +15945,190 @@
         "2026-05-05",
         "2026-05-05"
       ]
+    },
+    {
+      "company": "Jobaify.io B.V",
+      "role": "Entry Level Software Developer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 7,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4408486104/",
+      "postingKey": "4408486104",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Jobaify.io B.V/Entry_Level_Software_Developer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Jobaify.io B.V/Entry_Level_Software_Developer/Liam_Van_Resume/Liam_Van_Jobaify.io_B.V.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for entry-level software developer role; emphasized Java/Python/JavaScript, REST APIs, SQL, debugging, testing, documentation, and portfolio project evidence.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Teladoc Health",
+      "role": "Junior Software Engineering Program - Engineer Associate",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "New York, United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4410910044/",
+      "postingKey": "4410910044",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Teladoc Health/Junior_Software_Engineering_Program_Engineer_Associate/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Teladoc Health/Junior_Software_Engineering_Program_Engineer_Associate/Liam_Van_Resume/Liam_Van_Teladoc_Health.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for junior software engineering program; emphasized CS fundamentals, clean tested code, Git/team workflows, debugging, documentation, mentorship readiness, and healthcare product collaboration.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Sony Interactive Entertainment",
+      "role": "Software Engineer I",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "Los Angeles Metropolitan Area",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4408454973/",
+      "postingKey": "4408454973",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Sony Interactive Entertainment/Software_Engineer_I/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Sony Interactive Entertainment/Software_Engineer_I/Liam_Van_Resume/Liam_Van_Sony_Interactive_Entertainment.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Software Engineer I full-stack telemetry role; emphasized TypeScript/JavaScript, React/NestJS product surfaces, server-side/cloud integration, data pipelines, maintainable tests, documentation, and scalable user experiences.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Redfin",
+      "role": "Software Developer I - Digit",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "Seattle, WA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4408146891/",
+      "postingKey": "4408146891",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Redfin/Software_Developer_I_Digit/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Redfin/Software_Developer_I_Digit/Liam_Van_Resume/Liam_Van_Redfin.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Software Developer I - Digit data ingestion role; emphasized Python/Java/SQL, data pipelines, Apache Parquet, OpenSearch, cloud database integrations, reliability monitoring, internal tooling, and large-scale backend systems. Did not claim Spark or Airflow production experience.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Spot & Tango",
+      "role": "Jr Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4401537802/",
+      "postingKey": "4401537802",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Spot & Tango/Jr_Software_Engineer/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Spot & Tango/Jr_Software_Engineer/Liam_Van_Resume_2/Liam_Van_Spot_&_Tango.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Jr Software Engineer LinkedIn posting; emphasized React, TypeScript, responsive web apps, Python/SQL/API support, AWS/cloud integrations, QA/testing, debugging, documentation, and DTC e-commerce startup delivery. Did not claim Next.js, React Native, or Django production experience.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Intuit",
+      "role": "Software Engineer 1",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4401727507/",
+      "postingKey": "4401727507",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Intuit/Software_Engineer_1/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Intuit/Software_Engineer_1/Liam_Van_Resume/Liam_Van_Intuit.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for broad entry-level Software Engineer 1 posting; emphasized React/Angular/Node, Java/Python, REST APIs, MySQL/OpenSearch, cloud/SaaS integrations, Git/CI workflows, testing/debugging, and GenAI awareness. Did not claim React Native, Flutter, Django, Express, PostgreSQL, MongoDB, Jenkins, or Travis production experience.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "InterScripts, Inc.",
+      "role": "Software Engineer I (Full Stack) - Immediate Joiners",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "Daly City, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4410753471/",
+      "postingKey": "4410753471",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/InterScripts, Inc./Software_Engineer_I_Full_Stack_Immediate_Joiners/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/InterScripts, Inc./Software_Engineer_I_Full_Stack_Immediate_Joiners/Liam_Van_Resume/Liam_Van_InterScripts,_Inc..pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Software Engineer I full-stack immediate-joiner role; emphasized TypeScript/React, REST APIs, backend services, Docker/cloud exposure, Git workflows, testing/debugging, secure integration work, and healthcare-adjacent cloud systems. Did not claim Next.js, PostgreSQL, SQL Server, OAuth, FHIR, or HL7 production experience.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "DLA Piper",
+      "role": "Software Development Engineer I",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "Washington DC-Baltimore Area",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4410724675/",
+      "postingKey": "4410724675",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DLA Piper/Software_Development_Engineer_I/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DLA Piper/Software_Development_Engineer_I/Liam_Van_Resume/Liam_Van_DLA_Piper.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for entry-level software development role in law-firm business systems; emphasized JavaScript/SQL, React/Angular/HTML/CSS UI work, REST APIs, enterprise integrations, Git/Azure DevOps workflow, testing/QA, troubleshooting, documentation, and client-facing requirements. Posting says no immigration sponsorship is available.",
+      "noteLinks": [],
+      "activityDates": []
     }
   ],
   "jobIntake": [
@@ -19980,6 +20179,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Teladoc Health",
+      "role": "Junior Software Engineering Program - Engineer Associate",
+      "postingKey": "4410910044",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4410910044/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-05",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Tekmerion Capital",
       "role": "Software Engineer",
       "postingKey": "7643023",
@@ -20186,6 +20398,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Sony Interactive Entertainment",
+      "role": "Software Engineer I",
+      "postingKey": "4408454973",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4408454973/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-05",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Smartsheet",
@@ -20407,6 +20632,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Redfin",
+      "role": "Software Developer I - Digit",
+      "postingKey": "4408146891",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4408146891/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-05",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Procore Technologies",
@@ -21161,6 +21399,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Intuit",
+      "role": "Software Engineer 1",
+      "postingKey": "4401727507",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4401727507/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-05",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "InStride Health",
@@ -22499,6 +22750,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-01",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Spot & Tango",
+      "role": "Jr Software Engineer",
+      "postingKey": "4401537802",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4401537802/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-05",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -24036,6 +24300,19 @@
       "notes": ""
     },
     {
+      "company": "InterScripts, Inc.",
+      "role": "Software Engineer I (Full Stack) - Immediate Joiners",
+      "postingKey": "4410753471",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4410753471/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-05",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Initi8 Recruitment",
       "role": "Software Engineer (Founding Team / 0-3 Years Experience)",
       "postingKey": "4402469688",
@@ -24203,6 +24480,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "DLA Piper",
+      "role": "Software Development Engineer I",
+      "postingKey": "4410724675",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4410724675/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Divergent",
@@ -37952,6 +38242,18 @@
           "contacts": []
         },
         {
+          "key": "4401727507",
+          "company": "Intuit",
+          "role": "Software Engineer 1",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5780582004",
           "company": "Loop",
           "role": "2026 New Grad - Software Engineer, Full-Stack",
@@ -38216,6 +38518,18 @@
           "contacts": []
         },
         {
+          "key": "4408146891",
+          "company": "Redfin",
+          "role": "Software Developer I - Digit",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8450776002",
           "company": "Remesh",
           "role": "Software Engineer",
@@ -38348,6 +38662,18 @@
           "contacts": []
         },
         {
+          "key": "4408454973",
+          "company": "Sony Interactive Entertainment",
+          "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "linkedin-public-stripe-backend-engineer-core-technology-ny-2026-05-06",
           "company": "Stripe",
           "role": "Backend Engineer, Core Technology",
@@ -38377,6 +38703,18 @@
           "role": "Software Engineer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4410910044",
+          "company": "Teladoc Health",
+          "role": "Junior Software Engineering Program - Engineer Associate",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -38972,6 +39310,18 @@
           "contacts": []
         },
         {
+          "key": "4401537802",
+          "company": "Spot & Tango",
+          "role": "Jr Software Engineer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4525230005",
           "company": "Tailscale",
           "role": "Software Engineer, Networking",
@@ -39332,6 +39682,18 @@
           "contacts": []
         },
         {
+          "key": "4410724675",
+          "company": "DLA Piper",
+          "role": "Software Development Engineer I",
+          "fitScore": 8,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4407442306",
           "company": "DW SISTERS LLC",
           "role": "Full Stack Engineer",
@@ -39468,7 +39830,7 @@
           "company": "GitLab",
           "role": "Backend Engineer, Knowledge Graph (Rust)",
           "fitScore": 8,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -39560,6 +39922,18 @@
           "contacts": []
         },
         {
+          "key": "4410753471",
+          "company": "InterScripts, Inc.",
+          "role": "Software Engineer I (Full Stack) - Immediate Joiners",
+          "fitScore": 8,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4401328323",
           "company": "Intuit",
           "role": "Center of Money Software Engineer 1",
@@ -39612,7 +39986,7 @@
           "company": "Lazarus",
           "role": "Software Engineer (Forward Deployed)",
           "fitScore": 8,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -49478,6 +49852,18 @@
           "contacts": []
         },
         {
+          "key": "4401727507",
+          "company": "Intuit",
+          "role": "Software Engineer 1",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5780582004",
           "company": "Loop",
           "role": "2026 New Grad - Software Engineer, Full-Stack",
@@ -49838,6 +50224,18 @@
           "contacts": []
         },
         {
+          "key": "4408146891",
+          "company": "Redfin",
+          "role": "Software Developer I - Digit",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8450776002",
           "company": "Remesh",
           "role": "Software Engineer",
@@ -49982,6 +50380,18 @@
           "contacts": []
         },
         {
+          "key": "4408454973",
+          "company": "Sony Interactive Entertainment",
+          "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "ee5064af-0116-4ef2-994a-cb8fed580290",
           "company": "Spotify",
           "role": "Backend Engineer, Music",
@@ -50083,6 +50493,18 @@
           "role": "Software Engineer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4410910044",
+          "company": "Teladoc Health",
+          "role": "Junior Software Engineering Program - Engineer Associate",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -50558,6 +50980,18 @@
           "contacts": []
         },
         {
+          "key": "4401537802",
+          "company": "Spot & Tango",
+          "role": "Jr Software Engineer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "19c5ea15-6f4d-425a-911c-c3f0ae086f8f",
           "company": "Spotify",
           "role": "Backend Engineer - Music Mission",
@@ -50810,6 +51244,18 @@
           "contacts": []
         },
         {
+          "key": "4410724675",
+          "company": "DLA Piper",
+          "role": "Software Development Engineer I",
+          "fitScore": 8,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5207177008",
           "company": "Divergent",
           "role": "Full Stack Software Engineer",
@@ -50898,7 +51344,7 @@
           "company": "GitLab",
           "role": "Backend Engineer, Knowledge Graph (Rust)",
           "fitScore": 8,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -50954,6 +51400,18 @@
           "contacts": []
         },
         {
+          "key": "4410753471",
+          "company": "InterScripts, Inc.",
+          "role": "Software Engineer I (Full Stack) - Immediate Joiners",
+          "fitScore": 8,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4406401493",
           "company": "Kaizen",
           "role": "Software Engineer",
@@ -50982,7 +51440,7 @@
           "company": "Lazarus",
           "role": "Software Engineer (Forward Deployed)",
           "fitScore": 8,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
