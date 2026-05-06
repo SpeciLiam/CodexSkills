@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T16:38:48.725570+00:00",
+  "generatedAt": "2026-05-06T16:42:15.738826+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 585,
+      "total": 591,
       "applied": 370,
-      "unapplied": 215,
-      "active": 421,
+      "unapplied": 221,
+      "active": 427,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 459,
-      "reachOut": 517,
+      "highFit": 465,
+      "reachOut": 523,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
       "intakeJobs": 294,
-      "intakeQueued": 36,
+      "intakeQueued": 30,
       "intakeNew": 38,
-      "intakeManual": 80,
+      "intakeManual": 86,
       "intakeApplied": 0,
-      "applyRate": 63.2,
+      "applyRate": 62.6,
       "rejectionRate": 11.9,
-      "recruiterWork": 330,
-      "engineerWork": 386,
+      "recruiterWork": 336,
+      "engineerWork": 392,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 77
+        "value": 83
       },
       {
         "name": "Rejected",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 228
+        "value": 233
       },
       {
         "name": "LinkedIn",
-        "value": 220
+        "value": 221
       },
       {
         "name": "Ashby",
@@ -140,7 +140,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 268
+        "value": 271
       },
       {
         "name": "Bay Area",
@@ -148,7 +148,7 @@
       },
       {
         "name": "Other",
-        "value": 94
+        "value": 97
       },
       {
         "name": "Remote",
@@ -170,11 +170,11 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 326
+        "value": 330
       },
       {
         "name": "Full Stack",
-        "value": 75
+        "value": 77
       },
       {
         "name": "Backend",
@@ -236,11 +236,11 @@
       },
       {
         "score": "9",
-        "count": 105
+        "count": 106
       },
       {
         "score": "10",
-        "count": 243
+        "count": 248
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
       },
       {
         "name": "Manual",
-        "value": 80
+        "value": 86
       },
       {
         "name": "New",
@@ -270,7 +270,7 @@
       },
       {
         "name": "Queued",
-        "value": 36
+        "value": 30
       },
       {
         "name": "Skipped",
@@ -474,8 +474,8 @@
       },
       {
         "date": "2026-05-06",
-        "cumulative": 585,
-        "added": 43,
+        "cumulative": 591,
+        "added": 49,
         "applied": 3,
         "rejected": 0,
         "interviewing": 0
@@ -484,8 +484,8 @@
     "topCompanies": [
       {
         "company": "StubHub",
-        "roles": 11,
-        "avgFit": 9.36,
+        "roles": 12,
+        "avgFit": 9.42,
         "bestFit": 10
       },
       {
@@ -510,6 +510,12 @@
         "company": "Twitch",
         "roles": 6,
         "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
+        "company": "Intuit",
+        "roles": 5,
+        "avgFit": 9.6,
         "bestFit": 10
       },
       {
@@ -540,12 +546,6 @@
         "company": "Clear Street",
         "roles": 4,
         "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Intuit",
-        "roles": 4,
-        "avgFit": 9.5,
         "bestFit": 10
       },
       {
@@ -603,6 +603,12 @@
         "bestFit": 10
       },
       {
+        "company": "Axon",
+        "roles": 3,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "Chime",
         "roles": 3,
         "avgFit": 9.0,
@@ -618,12 +624,6 @@
         "company": "Glean",
         "roles": 3,
         "avgFit": 8.67,
-        "bestFit": 10
-      },
-      {
-        "company": "Disney",
-        "roles": 3,
-        "avgFit": 8.33,
         "bestFit": 10
       }
     ],
@@ -854,6 +854,15 @@
         "jobLink": "https://job-boards.greenhouse.io/translucent/jobs/4038826009"
       },
       {
+        "company": "Trace3",
+        "role": "Software Engineer II",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/trace3/jobs/7752983"
+      },
+      {
         "company": "The Trade Desk",
         "role": "Software Engineer II",
         "fitScore": 10,
@@ -942,15 +951,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/sumologic/jobs/7485892"
-      },
-      {
-        "company": "StubHub",
-        "role": "Software Engineer I (New Grad) - Consumer Experience",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4825411101?gh_src=47e65a22teu"
       }
     ],
     "recruiterBatch": {
@@ -17042,15 +17042,17 @@
       "source": "Greenhouse",
       "jobLink": "https://job-boards.greenhouse.io/attentive/jobs/4121615009",
       "postingKey": "4121615009",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Attentive/Frontend_Software_Engineer_II_Messaging_Platform/Liam_Van_Resume_2",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Attentive/Frontend_Software_Engineer_II_Messaging_Platform/Liam_Van_Resume_2/Liam_Van_Attentive.pdf",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Attentive/Frontend_Software_Engineer_II_Messaging_Platform/Liam_Van_Resume_3",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Attentive/Frontend_Software_Engineer_II_Messaging_Platform/Liam_Van_Resume_3/Liam_Van_Attentive.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight; Hourly Greenhouse intake 2026-05-06 09:35 PT; tailored frontend SWE resume rendered and verified one page; emphasized React/TypeScript product surfaces, NestJS/API collaboration, Figma-to-product implementation, testing, observability, and production messaging workflows. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-06.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-06",
+        "2026-05-06",
         "2026-05-06"
       ]
     },
@@ -17117,15 +17119,17 @@
       "source": "LinkedIn",
       "jobLink": "https://www.linkedin.com/jobs/view/founding-engineer-at-techtree-4306357660",
       "postingKey": "founding-engineer-at-techtree-4306357660",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/TechTree/Founding_Engineer/Liam_Van_Resume",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/TechTree/Founding_Engineer/Liam_Van_Resume/Liam_Van_TechTree.pdf",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/TechTree/Founding_Engineer/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/TechTree/Founding_Engineer/Liam_Van_Resume_2/Liam_Van_TechTree.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight.",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight.; Hourly intake 2026-05-06 09:35 PT; tailored SWE resume rendered and verified one page; emphasized founding/startup execution, React and TypeScript interfaces, backend APIs, AI-assisted testing, cloud validation, and end-to-end ownership. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-06.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-06",
+        "2026-05-06",
         "2026-05-06"
       ]
     },
@@ -17203,6 +17207,157 @@
       "activityDates": [
         "2026-05-06"
       ]
+    },
+    {
+      "company": "Uare.ai",
+      "role": "Software Engineer (Early Career)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "Los Altos, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/uareai/jobs/4036519009",
+      "postingKey": "4036519009",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Uare.ai/Software_Engineer_Early_Career/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Uare.ai/Software_Engineer_Early_Career/Liam_Van_Resume/Liam_Van_Uare.ai.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "StubHub",
+      "role": "Software Engineer II - Web Foundations",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "New York, New York, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/stubhubinc/jobs/4782722101",
+      "postingKey": "4782722101",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/StubHub/Software_Engineer_II_Web_Foundations/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/StubHub/Software_Engineer_II_Web_Foundations/Liam_Van_Resume_2/Liam_Van_StubHub.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight; Manual apply needed 2026-05-06: tailored resume rendered and verified one page; application not attempted because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06",
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Intuit",
+      "role": "Software Engineer 1 - Fullstack",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/linkedin-public-intuit-swe-1-fullstack-ny-2026-05-06-0935/",
+      "postingKey": "linkedin-public-intuit-swe-1-fullstack-ny-2026-05-06-0935",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Intuit/Software_Engineer_1_Fullstack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Intuit/Software_Engineer_1_Fullstack/Liam_Van_Resume/Liam_Van_Intuit.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Trace3",
+      "role": "Software Engineer II",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "Colorado Springs, Colorado",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/trace3/jobs/7752983",
+      "postingKey": "7752983",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Trace3/Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Trace3/Software_Engineer_II/Liam_Van_Resume/Liam_Van_Trace3.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-06: tailored resume rendered and verified one page; application not attempted because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "iCapital",
+      "role": "Full Stack Engineer, Ruby and React - Assistant Vice President",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "New York, New York, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/icapitalnetwork/jobs/8452434002",
+      "postingKey": "8452434002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/iCapital/Full_Stack_Engineer_Ruby_and_React_Assistant_Vice_President/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/iCapital/Full_Stack_Engineer_Ruby_and_React_Assistant_Vice_President/Liam_Van_Resume/Liam_Van_iCapital.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-06: tailored resume rendered and verified one page; application not attempted because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Axon",
+      "role": "Software Engineer II, Cloud Engineering",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "Sterling, Virginia, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/axon/jobs/7577009003",
+      "postingKey": "7577009003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Axon/Software_Engineer_II_Cloud_Engineering/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Axon/Software_Engineer_II_Cloud_Engineering/Liam_Van_Resume/Liam_Van_Axon.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-06: tailored resume rendered and verified one page; application not attempted because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06"
+      ]
     }
   ],
   "jobIntake": [
@@ -17216,9 +17371,9 @@
       "discoveredAt": "2026-05-06T16:38:41.098273+00:00",
       "postedAge": "Crawled 2 weeks ago",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, other US location",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "trackerPostingKey": "7752983"
     },
     {
       "source": "Greenhouse",
@@ -17230,9 +17385,9 @@
       "discoveredAt": "2026-05-06T16:38:41.098273+00:00",
       "postedAge": "Crawled last week",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "trackerPostingKey": "8452434002"
     },
     {
       "source": "Greenhouse",
@@ -17244,9 +17399,9 @@
       "discoveredAt": "2026-05-06T16:38:41.098273+00:00",
       "postedAge": "Crawled 2 weeks ago",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, preferred/remote US location",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "trackerPostingKey": "7577009003"
     },
     {
       "source": "Greenhouse",
@@ -17258,9 +17413,9 @@
       "discoveredAt": "2026-05-06T16:37:28.116158+00:00",
       "postedAge": "public Greenhouse result crawled last month; captured 2026-05-06",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "trackerPostingKey": "4782722101"
     },
     {
       "source": "LinkedIn",
@@ -17272,9 +17427,9 @@
       "discoveredAt": "2026-05-06T16:37:28.116158+00:00",
       "postedAge": "1 day ago in public LinkedIn search result; captured 2026-05-06",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "trackerPostingKey": "linkedin-public-intuit-swe-1-fullstack-ny-2026-05-06-0935"
     },
     {
       "source": "LinkedIn",
@@ -17329,7 +17484,7 @@
       "postedAge": "web result crawled 2 months ago",
       "fitScore": 10,
       "status": "Manual",
-      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight",
       "trackerPostingKey": "5018110008"
     },
     {
@@ -17343,7 +17498,7 @@
       "postedAge": "web result crawled last month",
       "fitScore": 10,
       "status": "Manual",
-      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight",
       "trackerPostingKey": "7580661"
     },
     {
@@ -17357,7 +17512,7 @@
       "postedAge": "web result crawled 2 months ago",
       "fitScore": 10,
       "status": "Manual",
-      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight",
       "trackerPostingKey": "4121615009"
     },
     {
@@ -19736,9 +19891,9 @@
       "discoveredAt": "2026-05-06T16:37:28.116158+00:00",
       "postedAge": "public Greenhouse result crawled 4 days ago; captured 2026-05-06",
       "fitScore": 9,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, location needs review",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "trackerPostingKey": "4036519009"
     },
     {
       "source": "LinkedIn",
@@ -21676,6 +21831,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Trace3",
+      "role": "Software Engineer II",
+      "postingKey": "7752983",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/trace3/jobs/7752983",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "The Trade Desk",
       "role": "Software Engineer II",
       "postingKey": "5102422007",
@@ -21907,6 +22075,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-01",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "StubHub",
+      "role": "Software Engineer II - Web Foundations",
+      "postingKey": "4782722101",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/stubhubinc/jobs/4782722101",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -23067,6 +23248,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Intuit",
+      "role": "Software Engineer 1 - Fullstack",
+      "postingKey": "linkedin-public-intuit-swe-1-fullstack-ny-2026-05-06-0935",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/linkedin-public-intuit-swe-1-fullstack-ny-2026-05-06-0935/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "InStride Health",
       "role": "Junior Fullstack Engineer",
       "postingKey": "4670604005",
@@ -23103,6 +23297,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-04",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "iCapital",
+      "role": "Full Stack Engineer, Ruby and React - Assistant Vice President",
+      "postingKey": "8452434002",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/icapitalnetwork/jobs/8452434002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -23925,6 +24132,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Axon",
+      "role": "Software Engineer II, Cloud Engineering",
+      "postingKey": "7577009003",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/axon/jobs/7577009003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Avoca",
       "role": "Forward Deployed Engineer",
       "postingKey": "forward-deployed-engineer-at-avoca-4295417569",
@@ -24406,6 +24626,19 @@
       "notes": ""
     },
     {
+      "company": "Uare.ai",
+      "role": "Software Engineer (Early Career)",
+      "postingKey": "4036519009",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/uareai/jobs/4036519009",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Truveta",
       "role": "Software Engineer - Person Matching",
       "postingKey": "5817190004",
@@ -24456,6 +24689,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "TechTree",
+      "role": "Founding Engineer",
+      "postingKey": "founding-engineer-at-techtree-4306357660",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/founding-engineer-at-techtree-4306357660",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Tebra",
@@ -40165,6 +40411,18 @@
           "contacts": []
         },
         {
+          "key": "7577009003",
+          "company": "Axon",
+          "role": "Software Engineer II, Cloud Engineering",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4974798008",
           "company": "Beacon Software",
           "role": "Software Engineer",
@@ -40446,6 +40704,18 @@
           "role": "Software Engineer 1",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "linkedin-public-intuit-swe-1-fullstack-ny-2026-05-06-0935",
+          "company": "Intuit",
+          "role": "Software Engineer 1 - Fullstack",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -40981,6 +41251,18 @@
           "contacts": []
         },
         {
+          "key": "4782722101",
+          "company": "StubHub",
+          "role": "Software Engineer II - Web Foundations",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7485892",
           "company": "Sumo Logic",
           "role": "Software Engineer II - Core Platform",
@@ -41046,6 +41328,18 @@
           "role": "Full Stack Software Engineer II",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7752983",
+          "company": "Trace3",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -41178,6 +41472,18 @@
           "role": "Full Stack Engineer - Ruby and React - Associate",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8452434002",
+          "company": "iCapital",
+          "role": "Full Stack Engineer, Ruby and React - Assistant Vice President",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -41790,6 +42096,18 @@
           "role": "Software Engineer - Person Matching",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4036519009",
+          "company": "Uare.ai",
+          "role": "Software Engineer (Early Career)",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -52183,6 +52501,18 @@
           "contacts": []
         },
         {
+          "key": "7577009003",
+          "company": "Axon",
+          "role": "Software Engineer II, Cloud Engineering",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4974798008",
           "company": "Beacon Software",
           "role": "Software Engineer",
@@ -52524,6 +52854,18 @@
           "role": "Software Engineer 1",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "linkedin-public-intuit-swe-1-fullstack-ny-2026-05-06-0935",
+          "company": "Intuit",
+          "role": "Software Engineer 1 - Fullstack",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -53239,6 +53581,18 @@
           "contacts": []
         },
         {
+          "key": "4782722101",
+          "company": "StubHub",
+          "role": "Software Engineer II - Web Foundations",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7485892",
           "company": "Sumo Logic",
           "role": "Software Engineer II - Core Platform",
@@ -53316,6 +53670,18 @@
           "role": "Full Stack Software Engineer II",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7752983",
+          "company": "Trace3",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -53472,6 +53838,18 @@
           "role": "Full Stack Engineer - Ruby and React - Associate",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8452434002",
+          "company": "iCapital",
+          "role": "Full Stack Engineer, Ruby and React - Assistant Vice President",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -53940,6 +54318,18 @@
           "role": "Software Engineer - Person Matching",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4036519009",
+          "company": "Uare.ai",
+          "role": "Software Engineer (Early Career)",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
