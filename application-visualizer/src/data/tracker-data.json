@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T05:52:00.545866+00:00",
+  "generatedAt": "2026-05-06T05:57:12.560611+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 553,
+      "total": 556,
       "applied": 356,
-      "unapplied": 197,
-      "active": 391,
+      "unapplied": 200,
+      "active": 392,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 431,
-      "reachOut": 489,
+      "highFit": 432,
+      "reachOut": 490,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,9 +26,9 @@
       "intakeNew": 38,
       "intakeManual": 53,
       "intakeApplied": 0,
-      "applyRate": 64.4,
+      "applyRate": 64.0,
       "rejectionRate": 12.4,
-      "recruiterWork": 303,
+      "recruiterWork": 302,
       "engineerWork": 357,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
@@ -40,11 +40,11 @@
       },
       {
         "name": "Archived",
-        "value": 118
+        "value": 120
       },
       {
         "name": "Manual Apply Needed",
-        "value": 61
+        "value": 60
       },
       {
         "name": "Rejected",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 19
+        "value": 21
       },
       {
         "name": "Interviewing",
@@ -70,7 +70,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 202
+        "value": 205
       },
       {
         "name": "Ashby",
@@ -140,11 +140,11 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 250
+        "value": 251
       },
       {
         "name": "Bay Area",
-        "value": 130
+        "value": 131
       },
       {
         "name": "Other",
@@ -156,7 +156,7 @@
       },
       {
         "name": "Seattle",
-        "value": 17
+        "value": 18
       },
       {
         "name": "Unknown",
@@ -170,7 +170,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 307
+        "value": 309
       },
       {
         "name": "Full Stack",
@@ -186,7 +186,7 @@
       },
       {
         "name": "AI/ML",
-        "value": 33
+        "value": 34
       },
       {
         "name": "Infra/Platform",
@@ -216,11 +216,11 @@
       },
       {
         "score": "4",
-        "count": 3
+        "count": 4
       },
       {
         "score": "5",
-        "count": 25
+        "count": 26
       },
       {
         "score": "6",
@@ -232,7 +232,7 @@
       },
       {
         "score": "8",
-        "count": 108
+        "count": 109
       },
       {
         "score": "9",
@@ -474,8 +474,8 @@
       },
       {
         "date": "2026-05-06",
-        "cumulative": 553,
-        "added": 12,
+        "cumulative": 556,
+        "added": 15,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -12239,7 +12239,7 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized general software engineering, full-stack implementation, backend services, testing, and production support. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: Taleo personal information page requires desired salary before submission; tailored resume uploaded and form left open 2026-05-02.; Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized general software engineering, full-stack implementation, backend services, testing, and production support. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via LinkedIn flow because it was outside the completed automated Greenhouse submit batch.; Clean regenerated resume reapply attempted 2026-05-04 via LinkedIn to HDR Taleo; guest apply blocked because liamvanpj@gmail.com already exists and Taleo requires username/password setup or account recovery email before continuing.; Manual apply needed 2026-05-04: LinkedIn redirects to HDR Taleo; guest apply is blocked because liamvanpj@gmail.com already exists and Taleo requires username/password setup or account recovery before continuing.",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized general software engineering, full-stack implementation, backend services, testing, and production support. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Manual apply needed: Taleo personal information page requires desired salary before submission; tailored resume uploaded and form left open 2026-05-02.; Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized general software engineering, full-stack implementation, backend services, testing, and production support. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via LinkedIn flow because it was outside the completed automated Greenhouse submit batch.; Clean regenerated resume reapply attempted 2026-05-04 via LinkedIn to HDR Taleo; guest apply blocked because liamvanpj@gmail.com already exists and Taleo requires username/password setup or account recovery email before continuing.; Manual apply needed 2026-05-04: LinkedIn redirects to HDR Taleo; guest apply is blocked because liamvanpj@gmail.com already exists and Taleo requires username/password setup or account recovery before continuing.; Manual apply needed 2026-05-05: HDR Taleo guest apply blocks liamvanpj@gmail.com because an existing record requires username/password setup or account recovery email before continuing.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-02",
@@ -12247,7 +12247,8 @@
         "2026-05-02",
         "2026-05-04",
         "2026-05-04",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-05"
       ]
     },
     {
@@ -14136,10 +14137,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-03: browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "notes": "Manual apply needed 2026-05-03: browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Manual apply needed 2026-05-05: LinkedIn routed to WorkSourceWA/JobDiva external application; apply path was flaky/unreachable in the automated retry window and needs Liam review.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-05"
       ]
     },
     {
@@ -14161,10 +14163,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-03: browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "notes": "Manual apply needed 2026-05-03: browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Manual apply needed 2026-05-05: LinkedIn apply routes to Cadence Workday, which is outside the automated submit flow.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-05"
       ]
     },
     {
@@ -14197,7 +14200,7 @@
       "company": "Ampcus Inc",
       "role": "Software Dev Engineer II",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -14212,10 +14215,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-03: browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight",
+      "notes": "Manual apply needed 2026-05-03: browser application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight; Archived 2026-05-05: JobDiva candidate portal says this posting is no longer available.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-05"
       ]
     },
     {
@@ -16388,6 +16392,77 @@
       "notes": "",
       "noteLinks": [],
       "activityDates": []
+    },
+    {
+      "company": "Virtusa",
+      "role": "AI Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 4,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4397978359/",
+      "postingKey": "4397978359",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Virtusa/AI_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Virtusa/AI_Engineer/Liam_Van_Resume/Liam_Van_Virtusa.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored despite hard eligibility risk: posting says 2025 Master's graduates with AI/ML/Data Science specialization required; Liam profile has BS Computer Science Dec 2024. Did not claim deep learning, fine-tuning, small language model ownership, or ML model optimization experience.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Treinetic",
+      "role": "Associate Software Engineer - Mobile iOS",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4409318701/",
+      "postingKey": "4409318701",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Treinetic/Associate_Software_Engineer_Mobile_iOS/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Treinetic/Associate_Software_Engineer_Mobile_iOS/Liam_Van_Resume/Liam_Van_Treinetic.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored toward product UI, REST/JSON integrations, testing, debugging, and delivery overlap. Core role asks for Swift, Xcode, SwiftUI/UIKit, MVVM/MVC, SDKs, and App Store/mobile delivery; Liam profile does not provide direct iOS evidence, so outreach disabled.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Ampcus Inc",
+      "role": "Software Dev Engineer II",
+      "applied": false,
+      "status": "Archived",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "Seattle, WA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4410745133/",
+      "postingKey": "4410745133",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ampcus Inc/Software_Dev_Engineer_II/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ampcus Inc/Software_Dev_Engineer_II/Liam_Van_Resume_2/Liam_Van_Ampcus_Inc.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn posting opened to WorkSourceWA Job ID 293384831 for Ampcus Software Dev Engineer II. Likely related to prior Ampcus SDE II posting 4408367883; tailored separately because posting key is distinct. Emphasized QA/release support, automation, monitoring/debugging, metrics, Java/C/C++/SQL, and documentation; did not claim Perl, Mason, Perl CGI, Oracle SQL specifically, or Unix/Linux administration.; Archived 2026-05-05: JobDiva candidate portal says this posting is no longer available.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-05"
+      ]
     }
   ],
   "jobIntake": [
@@ -25076,6 +25151,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Ampcus Inc",
+      "role": "Software Dev Engineer II",
+      "postingKey": "4410745133",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4410745133/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -39955,18 +40043,6 @@
           "key": "4408366927",
           "company": "Ampcus Inc",
           "role": "Software Dev Engineer I",
-          "fitScore": 8,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4408367883",
-          "company": "Ampcus Inc",
-          "role": "Software Dev Engineer II",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
