@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T05:42:01.687126+00:00",
+  "generatedAt": "2026-05-06T05:46:29.306898+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 548,
+      "total": 550,
       "applied": 356,
-      "unapplied": 192,
-      "active": 387,
+      "unapplied": 194,
+      "active": 389,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 426,
-      "reachOut": 484,
+      "highFit": 428,
+      "reachOut": 486,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,10 +26,10 @@
       "intakeNew": 38,
       "intakeManual": 53,
       "intakeApplied": 0,
-      "applyRate": 65.0,
+      "applyRate": 64.7,
       "rejectionRate": 12.4,
-      "recruiterWork": 298,
-      "engineerWork": 352,
+      "recruiterWork": 300,
+      "engineerWork": 354,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 14
+        "value": 16
       },
       {
         "name": "Interviewing",
@@ -70,7 +70,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 197
+        "value": 199
       },
       {
         "name": "Ashby",
@@ -148,7 +148,7 @@
       },
       {
         "name": "Other",
-        "value": 84
+        "value": 86
       },
       {
         "name": "Remote",
@@ -170,7 +170,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 304
+        "value": 306
       },
       {
         "name": "Full Stack",
@@ -232,11 +232,11 @@
       },
       {
         "score": "8",
-        "count": 105
+        "count": 106
       },
       {
         "score": "9",
-        "count": 100
+        "count": 101
       },
       {
         "score": "10",
@@ -474,8 +474,8 @@
       },
       {
         "date": "2026-05-06",
-        "cumulative": 548,
-        "added": 7,
+        "cumulative": 550,
+        "added": 9,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -10531,14 +10531,15 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required custom robotics/edge, observability, and distributed-systems experience responses; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: How did you find out about this opportunity?; Are you located in and legally authorized to work in the United States?; Manual apply needed 2026-05-04: Greenhouse form requires three custom technical written responses about robotics/edge devices, observability, and distributed systems, plus a live reCAPTCHA container.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required custom robotics/edge, observability, and distributed-systems experience responses; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: How did you find out about this opportunity?; Are you located in and legally authorized to work in the United States?; Manual apply needed 2026-05-04: Greenhouse form requires three custom technical written responses about robotics/edge devices, observability, and distributed systems, plus a live reCAPTCHA container.; Manual apply needed 2026-05-05: filled safe Greenhouse fields and uploaded Formic resume, but not submitted because confidence is low: 5+ years, robotics/edge, observability, distributed systems, and hybrid Oakland/SF require Liam review.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
         "2026-05-01",
         "2026-05-04",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-05"
       ]
     },
     {
@@ -16267,6 +16268,52 @@
       "engineerContact": "",
       "engineerProfile": "",
       "notes": "Tailored for Booz Allen Full Stack Developer requisition R0239385 supporting Digital Twin / modeling and simulation platforms; emphasized React/Angular UI work, JavaScript/TypeScript, Python/SQL, REST APIs, Java/C# OOP, modular cloud-integrated services, UI/UX prototypes, DevSecOps-style validation, debugging, and documentation. Did not claim Unity/Unreal/Omniverse, XR, DoD/federal environment, SDK ownership, real-time systems, or formal Agile/Scrum experience. Posting includes biometric identity verification and candidate AI-use restrictions for interviews/assessments.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Infinite Convergence Solutions",
+      "role": "Jr. Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "Chicago, IL",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4409373481/",
+      "postingKey": "4409373481",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Infinite Convergence Solutions/Jr_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Infinite Convergence Solutions/Jr_Software_Engineer/Liam_Van_Resume/Liam_Van_Infinite_Convergence_Solutions.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Infinite Convergence Solutions Jr. Software Engineer backend/server role; emphasized Java/C++/Python fundamentals, REST APIs, Spring Boot, data structures/database concepts, server-side debugging, CI-style validation, testing, documentation, PHP/JavaScript/HTML/CSS, and messaging-scale reliability. Did not claim Perl, Objective-C, Linux administration/network configuration, or real-time media ownership. Posting requires eligibility to work in the US without sponsorship.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Snyk",
+      "role": "Associate Product Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-06",
+      "location": "Boston, MA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4353111076/",
+      "postingKey": "4353111076",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Snyk/Associate_Product_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Snyk/Associate_Product_Engineer/Liam_Van_Resume/Liam_Van_Snyk.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
       "noteLinks": [],
       "activityDates": []
     }
@@ -22906,6 +22953,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Snyk",
+      "role": "Associate Product Engineer",
+      "postingKey": "4353111076",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4353111076/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "SMBC Group",
       "role": "Software Engineer - Capital Markets",
       "postingKey": "1378194800",
@@ -24503,6 +24563,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Infinite Convergence Solutions",
+      "role": "Jr. Software Engineer",
+      "postingKey": "4409373481",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4409373481/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "HeyGen",
@@ -39552,6 +39625,18 @@
           "contacts": []
         },
         {
+          "key": "4353111076",
+          "company": "Snyk",
+          "role": "Associate Product Engineer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4689411005",
           "company": "Spot & Tango",
           "role": "Software Engineer, Full Stack",
@@ -40181,6 +40266,18 @@
           "role": "Software Engineer, University Graduate",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4409373481",
+          "company": "Infinite Convergence Solutions",
+          "role": "Jr. Software Engineer",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -51294,6 +51391,18 @@
           "contacts": []
         },
         {
+          "key": "4353111076",
+          "company": "Snyk",
+          "role": "Associate Product Engineer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4689411005",
           "company": "Spot & Tango",
           "role": "Software Engineer, Full Stack",
@@ -51743,6 +51852,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4409373481",
+          "company": "Infinite Convergence Solutions",
+          "role": "Jr. Software Engineer",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
