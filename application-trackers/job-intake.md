@@ -2,11 +2,12 @@
 
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
-Jobs discovered: 253
-New: 37 | Queued: 35 | Tailored: 105 | Applied: 0 | Manual: 52 | Skipped: 21 | Duplicate: 1 | Expired: 2
+Jobs discovered: 254
+New: 37 | Queued: 30 | Tailored: 110 | Applied: 0 | Manual: 53 | Skipped: 21 | Duplicate: 1 | Expired: 2
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Greenhouse | Mesa | Software Engineer - University Grad | New York, NY \| San Francisco, CA \| Austin, TX | 4967098008 | https://job-boards.greenhouse.io/mesamember/jobs/4967098008 | 2026-05-06T03:09:55.472497+00:00 | Greenhouse result crawled recently; captured 2026-05-06T03:09:52.670Z | 10 | Manual | Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05 | 4967098008 |
 | LinkedIn | Wheels Up | Software Engineer II | United States | 4402765311 | https://www.linkedin.com/jobs/view/software-engineer-ii-at-wheels-up-4402765311 | 2026-05-06T02:05:09.633867+00:00 | 1 day ago; public LinkedIn result crawled 2026-05-06 | 10 | Manual | Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05 | 4402765311 |
 | Greenhouse | PhysicsX | Software Engineer, Libraries | New York, United States | 4673447101 | https://job-boards.greenhouse.io/physicsx/jobs/4673447101 | 2026-05-06T02:05:09.633867+00:00 | Greenhouse board result still visible 2026-05-06 | 10 | Manual | Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05 | 4673447101 |
 | Greenhouse | Pallet | Software Engineer, Product | New York City | 5072549007 | https://job-boards.greenhouse.io/pallet/jobs/5072549007 | 2026-05-06T02:05:09.633867+00:00 | Greenhouse public result crawled 3 days ago; still visible 2026-05-06 | 10 | Manual | Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05 | 5072549007 |

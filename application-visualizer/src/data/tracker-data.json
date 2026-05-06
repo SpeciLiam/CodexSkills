@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T02:08:42.724153+00:00",
+  "generatedAt": "2026-05-06T03:11:10.024914+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 528,
+      "total": 529,
       "applied": 353,
-      "unapplied": 175,
-      "active": 367,
+      "unapplied": 176,
+      "active": 368,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 408,
-      "reachOut": 465,
+      "highFit": 409,
+      "reachOut": 466,
       "recruiterRows": 100,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 253,
+      "intakeJobs": 254,
       "intakeQueued": 30,
       "intakeNew": 37,
-      "intakeManual": 52,
+      "intakeManual": 53,
       "intakeApplied": 0,
-      "applyRate": 66.9,
+      "applyRate": 66.7,
       "rejectionRate": 12.5,
-      "recruiterWork": 279,
-      "engineerWork": 333,
+      "recruiterWork": 280,
+      "engineerWork": 334,
       "recruiterReachedOut": 93,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 59
+        "value": 60
       },
       {
         "name": "Rejected",
@@ -62,7 +62,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 212
+        "value": 213
       },
       {
         "name": "LinkedIn",
@@ -136,7 +136,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 239
+        "value": 240
       },
       {
         "name": "Bay Area",
@@ -166,7 +166,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 290
+        "value": 291
       },
       {
         "name": "Full Stack",
@@ -236,7 +236,7 @@
       },
       {
         "score": "10",
-        "count": 212
+        "count": 213
       }
     ],
     "targetCounts": [
@@ -258,7 +258,7 @@
       },
       {
         "name": "Manual",
-        "value": 52
+        "value": 53
       },
       {
         "name": "New",
@@ -284,7 +284,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 182
+        "value": 183
       },
       {
         "name": "LinkedIn",
@@ -462,8 +462,8 @@
       },
       {
         "date": "2026-05-05",
-        "cumulative": 528,
-        "added": 20,
+        "cumulative": 529,
+        "added": 21,
         "applied": 1,
         "rejected": 0,
         "interviewing": 0
@@ -15773,9 +15773,49 @@
         "2026-05-05",
         "2026-05-05"
       ]
+    },
+    {
+      "company": "Mesa",
+      "role": "Software Engineer - University Grad",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-05",
+      "location": "New York, NY | San Francisco, CA | Austin, TX",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/mesamember/jobs/4967098008",
+      "postingKey": "4967098008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Mesa/Software_Engineer_University_Grad/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Mesa/Software_Engineer_University_Grad/Liam_Van_Resume/Liam_Van_Mesa.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-06 03:00Z; tailored SWE resume rendered and verified one page; emphasized early-career fintech full-stack product engineering, React and TypeScript product surfaces, backend APIs, cloud integration, testing, and fast shipping in ambiguous product areas. Public Greenhouse capture used because Computer Use access to Chrome and Firefox was denied.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-05",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06",
+        "2026-05-05"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Mesa",
+      "role": "Software Engineer - University Grad",
+      "location": "New York, NY | San Francisco, CA | Austin, TX",
+      "postingKey": "4967098008",
+      "jobUrl": "https://job-boards.greenhouse.io/mesamember/jobs/4967098008",
+      "discoveredAt": "2026-05-06T03:09:55.472497+00:00",
+      "postedAge": "Greenhouse result crawled recently; captured 2026-05-06T03:09:52.670Z",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "trackerPostingKey": "4967098008"
+    },
     {
       "source": "LinkedIn",
       "company": "Wheels Up",
@@ -20631,6 +20671,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Mesa",
+      "role": "Software Engineer - University Grad",
+      "postingKey": "4967098008",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/mesamember/jobs/4967098008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-05",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -37641,6 +37694,18 @@
           "contacts": []
         },
         {
+          "key": "4967098008",
+          "company": "Mesa",
+          "role": "Software Engineer - University Grad",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineering-ic3-at-microsoft-4342545143",
           "company": "Microsoft",
           "role": "Software Engineer II - CTJ - Poly",
@@ -49064,6 +49129,18 @@
           "role": "Software Engineer (US)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4967098008",
+          "company": "Mesa",
+          "role": "Software Engineer - University Grad",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
