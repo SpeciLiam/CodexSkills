@@ -93,6 +93,8 @@ def should_queue(row: dict[str, str], *, mode: str, config: dict[str, object]) -
         today_marker = f"verified current {norm(row.get('Company', ''))}"
         if today_marker in notes and date.today().isoformat() in row.get("Notes", ""):
             return False
+        if "verification failed:" in notes and date.today().isoformat() in row.get("Last Checked", ""):
+            return False
         if "current-company engineer verification required" in notes:
             return True
         if "verified current" not in notes and "not a verified person" not in notes:
