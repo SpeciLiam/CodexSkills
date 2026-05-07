@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T18:02:59.563050+00:00",
+  "generatedAt": "2026-05-07T18:46:50.978067+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,10 +21,10 @@
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 432,
+      "intakeJobs": 436,
       "intakeQueued": 30,
-      "intakeNew": 39,
-      "intakeManual": 210,
+      "intakeNew": 40,
+      "intakeManual": 213,
       "intakeApplied": 0,
       "applyRate": 64.0,
       "rejectionRate": 11.3,
@@ -258,7 +258,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 210
+        "value": 213
       },
       {
         "name": "Tailored",
@@ -266,7 +266,7 @@
       },
       {
         "name": "New",
-        "value": 39
+        "value": 40
       },
       {
         "name": "Skipped",
@@ -288,7 +288,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 280
+        "value": 284
       },
       {
         "name": "LinkedIn",
@@ -18024,6 +18024,34 @@
   "jobIntake": [
     {
       "source": "Greenhouse",
+      "company": "Roivant Sciences",
+      "role": "Founding Engineer, AI Product",
+      "location": "New York, New York",
+      "postingKey": "8151443002",
+      "jobUrl": "https://job-boards.greenhouse.io/roivantsciences/jobs/8151443002",
+      "discoveredAt": "2026-05-07T18:38:54.092341+00:00",
+      "postedAge": "Crawled 6 days ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so resume-tailor could not prepare a verified role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Pario",
+      "role": "Backend Engineer",
+      "location": "New York, New York",
+      "postingKey": "4869665008",
+      "jobUrl": "https://job-boards.greenhouse.io/pario/jobs/4869665008",
+      "discoveredAt": "2026-05-07T18:38:54.092341+00:00",
+      "postedAge": "Crawled last week",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so resume-tailor could not prepare a verified role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Sixth Street",
       "role": "Software Engineer Associate - Data Platform Team",
       "location": "New York, NY or Austin, TX",
@@ -21412,6 +21440,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Pario",
+      "role": "Frontend Engineer",
+      "location": "New York, New York",
+      "postingKey": "4871628008",
+      "jobUrl": "https://job-boards.greenhouse.io/pario/jobs/4871628008",
+      "discoveredAt": "2026-05-07T18:38:54.092341+00:00",
+      "postedAge": "Crawled yesterday",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so resume-tailor could not prepare a verified role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Moment",
       "role": "Front End Engineer",
       "location": "New York, New York, United States",
@@ -23662,6 +23704,20 @@
       "fitScore": 6,
       "status": "New",
       "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Inorsa",
+      "role": "Software Engineer, Full-Stack",
+      "location": "Austin, TX",
+      "postingKey": "4887247008",
+      "jobUrl": "https://job-boards.greenhouse.io/inorsa/jobs/4887247008",
+      "discoveredAt": "2026-05-07T18:38:54.092341+00:00",
+      "postedAge": "Crawled 5 days ago",
+      "fitScore": 5,
+      "status": "New",
+      "reason": "SWE-family role, location needs review",
       "trackerPostingKey": ""
     },
     {
