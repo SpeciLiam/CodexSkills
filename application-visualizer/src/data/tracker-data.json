@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T22:33:07.293299+00:00",
+  "generatedAt": "2026-05-07T23:11:03.383135+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,38 +9,38 @@
   },
   "stats": {
     "kpis": {
-      "total": 611,
-      "applied": 394,
+      "total": 613,
+      "applied": 396,
       "unapplied": 217,
-      "active": 436,
+      "active": 435,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 482,
-      "reachOut": 540,
+      "highFit": 483,
+      "reachOut": 542,
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 440,
+      "intakeJobs": 442,
       "intakeQueued": 30,
       "intakeNew": 40,
-      "intakeManual": 217,
+      "intakeManual": 219,
       "intakeApplied": 0,
-      "applyRate": 64.5,
-      "rejectionRate": 11.2,
-      "recruiterWork": 321,
-      "engineerWork": 414,
+      "applyRate": 64.6,
+      "rejectionRate": 11.1,
+      "recruiterWork": 320,
+      "engineerWork": 416,
       "recruiterReachedOut": 115,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 343
+        "value": 345
       },
       {
         "name": "Archived",
-        "value": 131
+        "value": 134
       },
       {
         "name": "Manual Apply Needed",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 18
+        "value": 15
       },
       {
         "name": "Interviewing",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 238
+        "value": 240
       },
       {
         "name": "LinkedIn",
@@ -140,11 +140,11 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 276
+        "value": 277
       },
       {
         "name": "Bay Area",
-        "value": 134
+        "value": 135
       },
       {
         "name": "Other",
@@ -182,7 +182,7 @@
       },
       {
         "name": "Forward Deployed",
-        "value": 41
+        "value": 42
       },
       {
         "name": "AI/ML",
@@ -190,7 +190,7 @@
       },
       {
         "name": "Infra/Platform",
-        "value": 23
+        "value": 24
       },
       {
         "name": "Data",
@@ -228,7 +228,7 @@
       },
       {
         "score": "7",
-        "count": 33
+        "count": 34
       },
       {
         "score": "8",
@@ -240,7 +240,7 @@
       },
       {
         "score": "10",
-        "count": 256
+        "count": 257
       }
     ],
     "targetCounts": [
@@ -258,7 +258,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 217
+        "value": 219
       },
       {
         "name": "Tailored",
@@ -288,7 +288,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 288
+        "value": 290
       },
       {
         "name": "LinkedIn",
@@ -476,7 +476,15 @@
         "date": "2026-05-06",
         "cumulative": 611,
         "added": 69,
-        "applied": 16,
+        "applied": 18,
+        "rejected": 0,
+        "interviewing": 0
+      },
+      {
+        "date": "2026-05-07",
+        "cumulative": 613,
+        "added": 2,
+        "applied": 0,
         "rejected": 0,
         "interviewing": 0
       }
@@ -866,7 +874,7 @@
         "company": "Trace3",
         "role": "Software Engineer II",
         "fitScore": 10,
-        "status": "Resume Tailored",
+        "status": "Archived",
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/trace3/jobs/7752983"
@@ -16320,8 +16328,8 @@
     {
       "company": "Alvarez & Marsal",
       "role": "Software Engineer, Innovation Team",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -16336,9 +16344,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Alvarez & Marsal Innovation Team full-stack/front-end role; emphasized TypeScript/JavaScript, React single-page apps, Figma-to-product implementation, REST APIs, Docker/data modeling, Git/CI-style workflows, unit testing, documentation, and translating business requirements into UI/API workflows. Did not claim Django, Jira, GitHub Actions, Linux/WSL2, or finance domain experience.",
+      "notes": "Tailored for Alvarez & Marsal Innovation Team full-stack/front-end role; emphasized TypeScript/JavaScript, React single-page apps, Figma-to-product implementation, REST APIs, Docker/data modeling, Git/CI-style workflows, unit testing, documentation, and translating business requirements into UI/API workflows. Did not claim Django, Jira, GitHub Actions, Linux/WSL2, or finance domain experience.; Application submitted 2026-05-07 via A&M Talemetry confirmation page.",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-07"
+      ]
     },
     {
       "company": "Deltek",
@@ -16533,8 +16543,8 @@
     {
       "company": "Chime",
       "role": "Product Security Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -16549,9 +16559,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-05-07 via Greenhouse confirmation page for job-boards.greenhouse.io/chime/jobs/8141068002/confirmation.",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-07"
+      ]
     },
     {
       "company": "Virtusa",
@@ -16603,7 +16615,7 @@
       "company": "Ampcus Inc",
       "role": "Software Dev Engineer II",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -16618,9 +16630,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn posting opened to WorkSourceWA Job ID 293384831 for Ampcus Software Dev Engineer II. Likely related to prior Ampcus SDE II posting 4408367883; tailored separately because posting key is distinct. Emphasized QA/release support, automation, monitoring/debugging, metrics, Java/C/C++/SQL, and documentation; did not claim Perl, Mason, Perl CGI, Oracle SQL specifically, or Unix/Linux administration.",
+      "notes": "LinkedIn posting opened to WorkSourceWA Job ID 293384831 for Ampcus Software Dev Engineer II. Likely related to prior Ampcus SDE II posting 4408367883; tailored separately because posting key is distinct. Emphasized QA/release support, automation/debugging, metrics, Java/C/C++/SQL, and documentation; did not claim Perl, Mason, Perl CGI, Oracle SQL specifically, or Unix/Linux administration. Archived 2026-05-07: LinkedIn URL resolves to mismatched MarketSmart Fullstack Software Engineer posting and shows no longer accepting applications.",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-07"
+      ]
     },
     {
       "company": "Northwestern Mutual",
@@ -17079,7 +17093,7 @@
       "company": "Octane",
       "role": "Software Engineer II, Autos",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -17094,10 +17108,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Greenhouse Software Engineer II, Autos full-stack role; emphasized TypeScript/React, REST APIs, Spring Boot, customer-facing workflows, cloud/data reliability, and production validation. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-06.",
+      "notes": "Tailored for Greenhouse Software Engineer II, Autos full-stack role; emphasized TypeScript/React, REST APIs, Spring Boot, customer-facing workflows, cloud/data reliability, and production validation. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-06. Archived 2026-05-07: Greenhouse embed page displays \"Sorry, but we can't find that page.\"",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-07"
       ]
     },
     {
@@ -17438,7 +17453,7 @@
       "company": "Trace3",
       "role": "Software Engineer II",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -17453,10 +17468,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-06: tailored resume rendered and verified one page; application not attempted because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight.",
+      "notes": "Manual apply needed 2026-05-06: tailored resume rendered and verified one page; application not attempted because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight. Archived 2026-05-07: Greenhouse page says the job is no longer open.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-07"
       ]
     },
     {
@@ -18035,9 +18051,73 @@
         "2026-05-06",
         "2026-05-06"
       ]
+    },
+    {
+      "company": "CLEAR - Corporate",
+      "role": "Software Engineer, Infrastructure",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-07",
+      "location": "New York, New York, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/clear/jobs/7901600",
+      "postingKey": "7901600",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CLEAR - Corporate/Software_Engineer_Infrastructure/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CLEAR - Corporate/Software_Engineer_Infrastructure/Liam_Van_Resume/Liam_Van_CLEAR_-_Corporate.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-07 for CLEAR Infrastructure SWE; emphasized cloud infrastructure, OCI/GCP release validation, service APIs, regression tooling, on-call triage, and production readiness. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight, so Greenhouse submission could not be safely completed.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-07"
+      ]
+    },
+    {
+      "company": "Nanonets",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 7,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-07",
+      "location": "Palo Alto, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/nanonets/jobs/5162218008",
+      "postingKey": "5162218008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Nanonets/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Nanonets/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Nanonets.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-07 for Nanonets FDE; emphasized workflow automation, customer-facing APIs, LLM tooling, cloud validation, release/debugging, and production ownership. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight, so Greenhouse submission could not be safely completed.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-07"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "CLEAR - Corporate",
+      "role": "Software Engineer, Infrastructure",
+      "location": "New York, New York, United States",
+      "postingKey": "7901600",
+      "jobUrl": "https://job-boards.greenhouse.io/clear/jobs/7901600",
+      "discoveredAt": "2026-05-07T23:03:42.775648+00:00",
+      "postedAge": "today",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-07; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "trackerPostingKey": "7901600"
+    },
     {
       "source": "Greenhouse",
       "company": "LivePerson",
@@ -22982,6 +23062,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Nanonets",
+      "role": "Forward Deployed Engineer",
+      "location": "Palo Alto, CA",
+      "postingKey": "5162218008",
+      "jobUrl": "https://job-boards.greenhouse.io/nanonets/jobs/5162218008",
+      "discoveredAt": "2026-05-07T23:03:42.775648+00:00",
+      "postedAge": "6 days ago",
+      "fitScore": 7,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-07; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "trackerPostingKey": "5162218008"
+    },
+    {
+      "source": "Greenhouse",
       "company": "Evolver",
       "role": "Forward Deployed Engineer",
       "location": "Palo Alto, CA",
@@ -24569,13 +24663,13 @@
       "role": "Software Engineer II",
       "postingKey": "7752983",
       "fitScore": 10,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/trace3/jobs/7752983",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Archived 2026-05-07: Greenhouse page says the job is no longer open."
     },
     {
       "company": "The Trade Desk",
@@ -25583,13 +25677,13 @@
       "role": "Software Engineer II, Autos",
       "postingKey": "7416833003",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "reachOut": true,
       "jobLink": "https://boards.greenhouse.io/embed/job_app?token=7416833003",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Archived 2026-05-07: Greenhouse embed page displays \"Sorry, but we can't find that page.\""
     },
     {
       "company": "Notion",
@@ -26733,6 +26827,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-04",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "CLEAR - Corporate",
+      "role": "Software Engineer, Infrastructure",
+      "postingKey": "7901600",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/clear/jobs/7901600",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-07",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -28664,13 +28771,13 @@
       "role": "Software Engineer, Innovation Team",
       "postingKey": "4409714242",
       "fitScore": 9,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://www.linkedin.com/jobs/view/4409714242/",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-07 via A&M Talemetry confirmation page."
     },
     {
       "company": "Alvarez & Marsal",
@@ -29756,13 +29863,13 @@
       "role": "Product Security Engineer",
       "postingKey": "4307589021",
       "fitScore": 8,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://www.linkedin.com/jobs/view/4307589021/",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-07 via Greenhouse confirmation page for job-boards.greenhouse.io/chime/jobs/8141068002/confirmation."
     },
     {
       "company": "CDW",
@@ -29899,13 +30006,13 @@
       "role": "Software Dev Engineer II",
       "postingKey": "4410745133",
       "fitScore": 8,
-      "status": "Resume Tailored",
+      "status": "Archived",
       "reachOut": true,
       "jobLink": "https://www.linkedin.com/jobs/view/4410745133/",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Archived 2026-05-07: LinkedIn URL resolves to mismatched MarketSmart Fullstack Software Engineer posting and shows no longer accepting applications."
     },
     {
       "company": "Altium",
@@ -30101,6 +30208,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Nanonets",
+      "role": "Forward Deployed Engineer",
+      "postingKey": "5162218008",
+      "fitScore": 7,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/nanonets/jobs/5162218008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-07",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Monarch Recruiters",
@@ -45007,6 +45127,18 @@
           "contacts": []
         },
         {
+          "key": "7901600",
+          "company": "CLEAR - Corporate",
+          "role": "Software Engineer, Infrastructure",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8183064002",
           "company": "Chime",
           "role": "Software Engineer, Financial Platform",
@@ -45406,18 +45538,6 @@
           "key": "founding-engineer-at-opia-associates-4354638985",
           "company": "OPIA Associates",
           "role": "Software Engineer",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "7416833003",
-          "company": "Octane",
-          "role": "Software Engineer II, Autos",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -45895,18 +46015,6 @@
           "contacts": []
         },
         {
-          "key": "7752983",
-          "company": "Trace3",
-          "role": "Software Engineer II",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "8367602002",
           "company": "Twitch",
           "role": "Software Engineer I",
@@ -46055,7 +46163,7 @@
           "company": "Alvarez & Marsal",
           "role": "Software Engineer, Innovation Team",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -46843,18 +46951,6 @@
           "contacts": []
         },
         {
-          "key": "4410745133",
-          "company": "Ampcus Inc",
-          "role": "Software Dev Engineer II",
-          "fitScore": 8,
-          "status": "Resume Tailored",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "4408787935",
           "company": "Angi",
           "role": "Software Engineer",
@@ -46967,7 +47063,7 @@
           "company": "Chime",
           "role": "Product Security Engineer",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -48156,6 +48252,18 @@
           "role": "Full Stack Engineer",
           "fitScore": 7,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5162218008",
+          "company": "Nanonets",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 7,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -57909,6 +58017,18 @@
           "contacts": []
         },
         {
+          "key": "7901600",
+          "company": "CLEAR - Corporate",
+          "role": "Software Engineer, Infrastructure",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7438937",
           "company": "Checkr",
           "role": "Backend Software Engineer II",
@@ -60614,6 +60734,18 @@
           "role": "Software Development Engineer - Test",
           "fitScore": 7,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5162218008",
+          "company": "Nanonets",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 7,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
