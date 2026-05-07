@@ -158,7 +158,24 @@ def split_markdown_row(line: str) -> list[str]:
         line = line[1:]
     if line.endswith("|"):
         line = line[:-1]
-    return [cell.strip().replace("\\|", "|") for cell in line.split("|")]
+    cells: list[str] = []
+    current: list[str] = []
+    escaped = False
+    for char in line:
+        if escaped:
+            current.append(char)
+            escaped = False
+        elif char == "\\":
+            escaped = True
+        elif char == "|":
+            cells.append("".join(current).strip())
+            current = []
+        else:
+            current.append(char)
+    if escaped:
+        current.append("\\")
+    cells.append("".join(current).strip())
+    return cells
 
 
 def markdown_row(row: dict[str, str]) -> str:
