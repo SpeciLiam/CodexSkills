@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T02:06:28.452216+00:00",
+  "generatedAt": "2026-05-07T02:20:08.094561+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 611,
-      "applied": 372,
-      "unapplied": 239,
+      "applied": 374,
+      "unapplied": 237,
       "active": 447,
       "rejected": 44,
       "interviewing": 3,
@@ -26,7 +26,7 @@
       "intakeNew": 39,
       "intakeManual": 105,
       "intakeApplied": 0,
-      "applyRate": 60.9,
+      "applyRate": 61.2,
       "rejectionRate": 11.8,
       "recruiterWork": 331,
       "engineerWork": 411,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 321
+        "value": 323
       },
       {
         "name": "Archived",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 23
+        "value": 21
       },
       {
         "name": "Interviewing",
@@ -476,7 +476,7 @@
         "date": "2026-05-06",
         "cumulative": 611,
         "added": 69,
-        "applied": 5,
+        "applied": 7,
         "rejected": 0,
         "interviewing": 0
       }
@@ -17620,8 +17620,8 @@
     {
       "company": "ResortPass",
       "role": "Software Engineer - Full Stack",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -17636,9 +17636,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06",
+      "notes": "Manual apply needed: Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06; Application submitted 2026-05-06",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-06",
         "2026-05-06"
       ]
     },
@@ -17670,8 +17671,8 @@
     {
       "company": "Moxxi Digital",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -17686,9 +17687,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06",
+      "notes": "Manual apply needed: Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06; Application submitted 2026-05-06",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-06",
         "2026-05-06"
       ]
     },
@@ -43370,7 +43372,7 @@
           "company": "Moxxi Digital",
           "role": "Software Engineer",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -43646,7 +43648,7 @@
           "company": "ResortPass",
           "role": "Software Engineer - Full Stack",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -56416,7 +56418,7 @@
           "company": "Moxxi Digital",
           "role": "Software Engineer",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -56788,7 +56790,7 @@
           "company": "ResortPass",
           "role": "Software Engineer - Full Stack",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
