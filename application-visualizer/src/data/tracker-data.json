@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T02:20:08.094561+00:00",
+  "generatedAt": "2026-05-07T04:14:08.042272+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 611,
-      "applied": 374,
-      "unapplied": 237,
+      "applied": 377,
+      "unapplied": 234,
       "active": 447,
       "rejected": 44,
       "interviewing": 3,
@@ -21,13 +21,13 @@
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 319,
+      "intakeJobs": 364,
       "intakeQueued": 30,
       "intakeNew": 39,
-      "intakeManual": 105,
+      "intakeManual": 146,
       "intakeApplied": 0,
-      "applyRate": 61.2,
-      "rejectionRate": 11.8,
+      "applyRate": 61.7,
+      "rejectionRate": 11.7,
       "recruiterWork": 331,
       "engineerWork": 411,
       "recruiterReachedOut": 115,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 323
+        "value": 326
       },
       {
         "name": "Archived",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 97
+        "value": 94
       },
       {
         "name": "Rejected",
@@ -257,24 +257,24 @@
     ],
     "intakeStatusCounts": [
       {
-        "name": "Tailored",
-        "value": 115
+        "name": "Manual",
+        "value": 146
       },
       {
-        "name": "Manual",
-        "value": 105
+        "name": "Tailored",
+        "value": 115
       },
       {
         "name": "New",
         "value": 39
       },
       {
-        "name": "Queued",
-        "value": 30
+        "name": "Skipped",
+        "value": 31
       },
       {
-        "name": "Skipped",
-        "value": 27
+        "name": "Queued",
+        "value": 30
       },
       {
         "name": "Expired",
@@ -288,11 +288,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 215
+        "value": 231
       },
       {
         "name": "LinkedIn",
-        "value": 104
+        "value": 133
       }
     ],
     "timeline": [
@@ -436,7 +436,7 @@
         "date": "2026-05-01",
         "cumulative": 361,
         "added": 64,
-        "applied": 49,
+        "applied": 51,
         "rejected": 1,
         "interviewing": 0
       },
@@ -476,7 +476,7 @@
         "date": "2026-05-06",
         "cumulative": 611,
         "added": 69,
-        "applied": 7,
+        "applied": 8,
         "rejected": 0,
         "interviewing": 0
       }
@@ -10116,8 +10116,8 @@
     {
       "company": "Conga",
       "role": "Software Engineer II - Full Stack",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -10132,7 +10132,7 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required desired salary field; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Street Address; City; Manual apply needed 2026-05-04: Greenhouse form requires Houston, TX relocation willingness, desired salary, and years-of-relevant-experience selection before submission.; Manual apply needed 2026-05-05: filled safe Greenhouse fields and uploaded correct Conga resume, but not submitted because required data-processing consent, Houston relocation, desired salary, and years-of-experience selections need Liam review.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required desired salary field; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Street Address; City; Manual apply needed 2026-05-04: Greenhouse form requires Houston, TX relocation willingness, desired salary, and years-of-relevant-experience selection before submission.; Manual apply needed 2026-05-05: filled safe Greenhouse fields and uploaded correct Conga resume, but not submitted because required data-processing consent, Houston relocation, desired salary, and years-of-experience selections need Liam review.; Application submitted 2026-05-07 via Greenhouse confirmation page.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
@@ -10140,14 +10140,15 @@
         "2026-05-01",
         "2026-05-04",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-07"
       ]
     },
     {
       "company": "Parsec Automation Corp.",
       "role": "Software Engineer II (AI Focus)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -10162,7 +10163,7 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required compensation-expectations alignment question; not submitted 2026-05-01; Manual apply needed: required salary alignment question 2026-05-03; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized ai. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you legally authorized to work in the United States?; Do you currently reside in California?; Manual apply still needed 2026-05-05: live Greenhouse form requires Anaheim, CA hybrid commute/relocation willingness; current standing profile is Seattle with NYC/SF openness, so not submitted. Salary alignment otherwise answerable.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required compensation-expectations alignment question; not submitted 2026-05-01; Manual apply needed: required salary alignment question 2026-05-03; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized ai. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you legally authorized to work in the United States?; Do you currently reside in California?; Manual apply still needed 2026-05-05: live Greenhouse form requires Anaheim, CA hybrid commute/relocation willingness; current standing profile is Seattle with NYC/SF openness, so not submitted. Salary alignment otherwise answerable.; Application submitted 2026-05-06",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
@@ -10170,7 +10171,8 @@
         "2026-05-03",
         "2026-05-01",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ]
     },
     {
@@ -17432,8 +17434,8 @@
     {
       "company": "iCapital",
       "role": "Full Stack Engineer, Ruby and React - Assistant Vice President",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -17448,9 +17450,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-06: tailored resume rendered and verified one page; application not attempted because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight.",
+      "notes": "Manual apply needed 2026-05-06: tailored resume rendered and verified one page; application not attempted because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight.; Application submitted 2026-05-06 via Greenhouse confirmation page.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-06",
         "2026-05-06"
       ]
     },
@@ -18005,6 +18008,244 @@
     }
   ],
   "jobIntake": [
+    {
+      "source": "LinkedIn",
+      "company": "Wanderlog",
+      "role": "Full-Stack Software Engineer (New graduates: United States)",
+      "location": "United States",
+      "postingKey": "linkedin-public-wanderlog-new-grad-full-stack-us-2026-05-07-0415",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-backend-jobs",
+      "discoveredAt": "2026-05-07T04:04:05.304224+00:00",
+      "postedAge": "20 hours ago in public LinkedIn search result; captured 2026-05-07T04:15:00.000Z",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Sony Interactive Entertainment",
+      "role": "Software Engineer I & II",
+      "location": "United States",
+      "postingKey": "linkedin-public-sony-software-engineer-i-ii-us-2026-05-07-0415",
+      "jobUrl": "https://www.linkedin.com/jobs/software-analyst-jobs",
+      "discoveredAt": "2026-05-07T04:04:05.304224+00:00",
+      "postedAge": "2 days ago in public LinkedIn search result; captured 2026-05-07T04:15:00.000Z",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Point72",
+      "role": "Software Developer",
+      "location": "New York, United States",
+      "postingKey": "linkedin-public-point72-software-developer-ny-2026-05-07-0415",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-backend-jobs",
+      "discoveredAt": "2026-05-07T04:04:05.304224+00:00",
+      "postedAge": "1 day ago in public LinkedIn search result; captured 2026-05-07T04:15:00.000Z",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Interclypse",
+      "role": "Junior Full Stack Software Engineer (JAVA)",
+      "location": "Annapolis Junction, MD",
+      "postingKey": "linkedin-public-interclypse-junior-full-stack-java-md-2026-05-07-0415",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineering-jobs",
+      "discoveredAt": "2026-05-07T04:04:05.304224+00:00",
+      "postedAge": "13 hours ago in public LinkedIn search result; captured 2026-05-07T04:15:00.000Z",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Etsy",
+      "role": "Software Engineer I, Core Data",
+      "location": "Brooklyn, NY",
+      "postingKey": "linkedin-public-etsy-software-engineer-i-core-data-brooklyn-2026-05-07-0415",
+      "jobUrl": "https://www.linkedin.com/jobs/software-analyst-jobs",
+      "discoveredAt": "2026-05-07T04:04:05.304224+00:00",
+      "postedAge": "3 days ago in public LinkedIn search result; captured 2026-05-07T04:15:00.000Z",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "CLEAR",
+      "role": "Software Engineer, New Grad, Backend",
+      "location": "New York, NY",
+      "postingKey": "linkedin-public-clear-new-grad-backend-software-engineer-ny-2026-05-07-0415",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-backend-jobs",
+      "discoveredAt": "2026-05-07T04:04:05.304224+00:00",
+      "postedAge": "5 hours ago in public LinkedIn search result; captured 2026-05-07T04:15:00.000Z",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Tactiq",
+      "role": "Junior Software Engineer",
+      "location": "Remote, United States",
+      "postingKey": "linkedin-public-tactiq-junior-software-engineer-remote-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=junior%20software%20engineer%20remote&geoId=103644278&f_TPR=r86400",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "19 hours ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Ranger",
+      "role": "Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "linkedin-public-ranger-software-engineer-ny-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=software%20engineer&location=New%20York&f_TPR=r86400",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "5 hours ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Ping Identity",
+      "role": "Software Engineer I - Backend",
+      "location": "United States",
+      "postingKey": "linkedin-public-ping-identity-software-engineer-i-backend-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=software%20engineer%20i%20backend&geoId=103644278&f_TPR=r86400",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Nayya",
+      "role": "Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "linkedin-public-nayya-software-engineer-ny-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=software%20engineer&location=New%20York&f_TPR=r86400",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "6 hours ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Monad Labs",
+      "role": "Software Engineer, Backend",
+      "location": "New York, NY",
+      "postingKey": "linkedin-public-monad-labs-backend-engineer-ny-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=software%20engineer%20backend&location=New%20York&f_TPR=r86400",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Metropolis",
+      "role": "Software Engineer II",
+      "location": "United States",
+      "postingKey": "4578585007",
+      "jobUrl": "https://job-boards.greenhouse.io/metropolis/jobs/4578585007",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "public greenhouse result",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Durlston Partners",
+      "role": "Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "linkedin-public-durlston-partners-software-engineer-ny-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=software%20engineer&location=New%20York&f_TPR=r86400",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "7 hours ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Coast",
+      "role": "Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "8099151002",
+      "jobUrl": "https://job-boards.greenhouse.io/coast/jobs/8099151002",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "public greenhouse result",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Altitude Solutions",
+      "role": "Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "linkedin-public-altitude-solutions-software-engineer-ny-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=software%20engineer&location=New%20York&f_TPR=r86400",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "19 hours ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Akkodis",
+      "role": "Full Stack Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "linkedin-public-akkodis-full-stack-software-engineer-ny-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=full%20stack%20software%20engineer&location=New%20York&f_TPR=r86400",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "3 hours ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Air",
+      "role": "Software Engineer, Product",
+      "location": "New York, NY",
+      "postingKey": "linkedin-public-air-product-software-engineer-ny-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=product%20software%20engineer&location=New%20York&f_TPR=r86400",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
     {
       "source": "Greenhouse",
       "company": "Amplitude",
@@ -20624,6 +20865,62 @@
       "trackerPostingKey": "4401827377"
     },
     {
+      "source": "Greenhouse",
+      "company": "True Anomaly",
+      "role": "Software Engineer I, QA",
+      "location": "Denver, CO or Long Beach, CA",
+      "postingKey": "4992321007",
+      "jobUrl": "https://job-boards.greenhouse.io/trueanomalyinc/jobs/4992321007",
+      "discoveredAt": "2026-05-07T04:04:05.304224+00:00",
+      "postedAge": "Greenhouse result crawled 4 months ago; captured 2026-05-07T04:15:00.000Z",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Microsoft",
+      "role": "Software Engineer",
+      "location": "United States",
+      "postingKey": "linkedin-public-microsoft-software-engineer-us-2026-05-07-0415",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineering-jobs",
+      "discoveredAt": "2026-05-07T04:04:05.304224+00:00",
+      "postedAge": "1 hour ago in public LinkedIn search result; captured 2026-05-07T04:15:00.000Z",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Inworld AI",
+      "role": "Software Engineer, Backend",
+      "location": "United States",
+      "postingKey": "linkedin-public-inworld-ai-backend-software-engineer-us-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=backend%20software%20engineer%20ai&geoId=103644278&f_TPR=r86400",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Fortune",
+      "role": "Frontend Engineer",
+      "location": "New York, NY",
+      "postingKey": "4783877007",
+      "jobUrl": "https://job-boards.greenhouse.io/fortune/jobs/4783877007",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "public greenhouse result",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "LinkedIn",
       "company": "Jobs via Dice",
       "role": "Software Engineer (Python & Go) | $80/hr Remote",
@@ -21325,6 +21622,118 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Visiting Media",
+      "role": "Full Stack Engineer",
+      "location": "Remote, United States",
+      "postingKey": "4602090006",
+      "jobUrl": "https://job-boards.greenhouse.io/visitingmedia/jobs/4602090006",
+      "discoveredAt": "2026-05-07T04:04:05.304224+00:00",
+      "postedAge": "Greenhouse result crawled 7 months ago; captured 2026-05-07T04:15:00.000Z",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "SupplyHouse.com",
+      "role": "Full Stack Engineer",
+      "location": "Remote, Remote, United States",
+      "postingKey": "5584590004",
+      "jobUrl": "https://job-boards.greenhouse.io/supplyhouse/jobs/5584590004?gh_jid=5584590004",
+      "discoveredAt": "2026-05-07T04:04:05.304224+00:00",
+      "postedAge": "Greenhouse result crawled 5 months ago; captured 2026-05-07T04:15:00.000Z",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "PayPal",
+      "role": "Software Engineer, Backend",
+      "location": "San Jose, CA",
+      "postingKey": "linkedin-public-paypal-backend-software-engineer-san-jose-2026-05-07-0415",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineering-jobs",
+      "discoveredAt": "2026-05-07T04:04:05.304224+00:00",
+      "postedAge": "1 day ago in public LinkedIn search result; captured 2026-05-07T04:15:00.000Z",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Meshy",
+      "role": "Full Stack Engineer",
+      "location": "Sunnyvale, CA (Hybrid) or US Remote",
+      "postingKey": "5015219008",
+      "jobUrl": "https://job-boards.greenhouse.io/meshy/jobs/5015219008",
+      "discoveredAt": "2026-05-07T04:04:05.304224+00:00",
+      "postedAge": "Greenhouse result crawled 3 months ago; captured 2026-05-07T04:15:00.000Z",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Adapter",
+      "role": "Full Stack Engineer",
+      "location": "United States - Remote",
+      "postingKey": "4415084008",
+      "jobUrl": "https://job-boards.greenhouse.io/adapter/jobs/4415084008",
+      "discoveredAt": "2026-05-07T04:04:05.304224+00:00",
+      "postedAge": "Greenhouse result crawled 2 weeks ago; captured 2026-05-07T04:15:00.000Z",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Roots Automation",
+      "role": "Jr. Software Engineer",
+      "location": "United States",
+      "postingKey": "linkedin-public-roots-automation-jr-software-engineer-us-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=junior%20software%20engineer&geoId=103644278&f_TPR=r86400",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Oracle",
+      "role": "Software Developer 1",
+      "location": "United States",
+      "postingKey": "linkedin-public-oracle-software-developer-1-us-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=software%20developer%201&geoId=103644278&f_TPR=r86400",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Atomic Semi",
+      "role": "Software Engineer",
+      "location": "San Francisco Bay Area",
+      "postingKey": "linkedin-public-atomic-semi-software-engineer-bay-area-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=software%20engineer&location=San%20Francisco%20Bay%20Area&f_TPR=r86400",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "SingleStore-LinkedIn",
       "role": "Forward Deployment Engineer- Greater NYC",
       "location": "United States",
@@ -21632,6 +22041,76 @@
       "trackerPostingKey": ""
     },
     {
+      "source": "LinkedIn",
+      "company": "Reddit",
+      "role": "Software Engineer, Ads",
+      "location": "United States",
+      "postingKey": "linkedin-public-reddit-software-engineer-ads-us-2026-05-07-0415",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-backend-jobs",
+      "discoveredAt": "2026-05-07T04:04:05.304224+00:00",
+      "postedAge": "1 day ago in public LinkedIn search result; captured 2026-05-07T04:15:00.000Z",
+      "fitScore": 7,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "MEMX",
+      "role": "Backend Software Engineer",
+      "location": "Jersey City, NJ",
+      "postingKey": "4938931008",
+      "jobUrl": "https://job-boards.greenhouse.io/memx/jobs/4938931008",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "public greenhouse result",
+      "fitScore": 7,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "FurtherAI",
+      "role": "AI Product Engineer",
+      "location": "San Francisco, CA",
+      "postingKey": "linkedin-public-furtherai-ai-product-engineer-sf-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=ai%20product%20engineer&location=San%20Francisco&f_TPR=r86400",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 7,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Fastbreak AI",
+      "role": "Forward Deployed Engineer",
+      "location": "United States",
+      "postingKey": "linkedin-public-fastbreak-ai-forward-deployed-engineer-us-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=forward%20deployed%20engineer&geoId=103644278&f_TPR=r86400",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 7,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "CommandBar",
+      "role": "Product Engineer",
+      "location": "San Francisco Bay Area",
+      "postingKey": "linkedin-public-commandbar-product-engineer-bay-area-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=product%20engineer&location=San%20Francisco%20Bay%20Area&f_TPR=r86400",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 7,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "Greenhouse",
       "company": "Trace3",
       "role": "Software Engineer - I | Secret Clearance Required | On-site Colorado Springs, CO",
@@ -21923,6 +22402,34 @@
       "fitScore": 7,
       "status": "New",
       "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Finite State",
+      "role": "Full-Stack Engineer, AI Native GTM Systems",
+      "location": "Remote, U.S.-based",
+      "postingKey": "5971222004",
+      "jobUrl": "https://job-boards.greenhouse.io/finitestate/jobs/5971222004",
+      "discoveredAt": "2026-05-07T04:04:05.304224+00:00",
+      "postedAge": "Greenhouse result crawled 2 weeks ago; captured 2026-05-07T04:15:00.000Z",
+      "fitScore": 6,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Cimulate AI",
+      "role": "Full Stack Software Engineer",
+      "location": "Boston, MA",
+      "postingKey": "linkedin-public-cimulate-ai-full-stack-software-engineer-boston-2026-05-07-0415",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineering-jobs",
+      "discoveredAt": "2026-05-07T04:04:05.304224+00:00",
+      "postedAge": "1 day ago in public LinkedIn search result; captured 2026-05-07T04:15:00.000Z",
+      "fitScore": 6,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
       "trackerPostingKey": ""
     },
     {
@@ -22263,6 +22770,76 @@
     },
     {
       "source": "Greenhouse",
+      "company": "True Anomaly",
+      "role": "Software Engineer",
+      "location": "Denver, CO",
+      "postingKey": "5654744004",
+      "jobUrl": "https://job-boards.greenhouse.io/trueanomaly/jobs/5654744004",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "public greenhouse result",
+      "fitScore": 5,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "MEMX",
+      "role": "UI Software Engineer",
+      "location": "Jersey City, NJ",
+      "postingKey": "4938937008",
+      "jobUrl": "https://job-boards.greenhouse.io/memx/jobs/4938937008",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "public greenhouse result",
+      "fitScore": 5,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Markforged",
+      "role": "Software Engineer",
+      "location": "Waltham, MA",
+      "postingKey": "6330073003",
+      "jobUrl": "https://job-boards.greenhouse.io/markforged/jobs/6330073003",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "public greenhouse result",
+      "fitScore": 5,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Everlaw",
+      "role": "Software Engineer",
+      "location": "Oakland, CA",
+      "postingKey": "5573971",
+      "jobUrl": "https://job-boards.greenhouse.io/everlaw/jobs/5573971",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "public greenhouse result",
+      "fitScore": 5,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Divergent",
+      "role": "Software Engineer, Physics Simulations",
+      "location": "Torrance, CA",
+      "postingKey": "6680942003",
+      "jobUrl": "https://job-boards.greenhouse.io/divergent/jobs/6680942003",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "public greenhouse result",
+      "fitScore": 5,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Greenhouse",
       "role": "Software Engineer, Inbound Sourcing",
       "location": "Ontario",
@@ -22329,6 +22906,48 @@
       "fitScore": 5,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "PayPal",
+      "role": "Software Engineer",
+      "location": "Austin, TX",
+      "postingKey": "linkedin-public-paypal-software-engineer-austin-2026-05-07-0415",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineering-jobs",
+      "discoveredAt": "2026-05-07T04:04:05.304224+00:00",
+      "postedAge": "19 hours ago in public LinkedIn search result; captured 2026-05-07T04:15:00.000Z",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "SWE-family role, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Logical Buildings",
+      "role": "Software Engineer",
+      "location": "Livingston, NJ",
+      "postingKey": "linkedin-public-logical-buildings-software-engineer-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=software%20engineer&location=New%20York%20City%20Metropolitan%20Area&f_TPR=r86400",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "13 hours ago",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "SWE-family role, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "LinusBio",
+      "role": "Software Engineer",
+      "location": "North Brunswick, NJ",
+      "postingKey": "linkedin-public-linusbio-software-engineer-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=software%20engineer&f_TPR=r86400&geoId=103644278",
+      "discoveredAt": "2026-05-07T03:04:51.004007+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "SWE-family role, location needs review",
       "trackerPostingKey": ""
     },
     {
@@ -22427,6 +23046,20 @@
       "fitScore": 2,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Steer",
+      "role": "Principal Full Stack Engineer",
+      "location": "United States (Remote)",
+      "postingKey": "5130219007",
+      "jobUrl": "https://job-boards.greenhouse.io/steercrm/jobs/5130219007",
+      "discoveredAt": "2026-05-07T04:04:05.304224+00:00",
+      "postedAge": "Greenhouse result crawled today; captured 2026-05-07T04:15:00.000Z",
+      "fitScore": 1,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, preferred/remote US location",
       "trackerPostingKey": ""
     },
     {
@@ -44056,7 +44689,7 @@
           "company": "iCapital",
           "role": "Full Stack Engineer, Ruby and React - Assistant Vice President",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
