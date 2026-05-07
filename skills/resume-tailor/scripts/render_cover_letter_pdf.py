@@ -27,7 +27,7 @@ def load_candidate_name(target_dir: Path) -> str:
         generic = read_candidate_name(ancestor / "generic-resume" / "README.md")
         if generic:
             return generic
-    return "Candidate Name"
+    return "Liam Van"
 
 
 def token(value: str) -> str:

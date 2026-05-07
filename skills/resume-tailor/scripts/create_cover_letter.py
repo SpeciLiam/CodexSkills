@@ -9,13 +9,13 @@ from pathlib import Path
 
 def read_candidate_name(readme_path: Path) -> str:
     if not readme_path.exists():
-        return "Candidate Name"
+        return "Liam Van"
     for line in readme_path.read_text().splitlines():
         if line.lower().startswith("candidate_name:"):
             value = line.split(":", 1)[1].strip()
             if value:
                 return value
-    return "Candidate Name"
+    return "Liam Van"
 
 
 def infer_candidate_name(target_dir: Path) -> str:
@@ -26,7 +26,7 @@ def infer_candidate_name(target_dir: Path) -> str:
         generic = ancestor / "generic-resume" / "README.md"
         if generic.exists():
             return read_candidate_name(generic)
-    return "Candidate Name"
+    return "Liam Van"
 
 
 def latex_escape(text: str) -> str:

@@ -16,7 +16,7 @@ STATE_PATH = Path("/tmp/linkedin_full_pipeline_state.json")
 OUTPUT_DIR = Path("/tmp/linkedin_full_pipeline_batch_outputs")
 DEFAULT_MODEL = "gpt-5.5"
 DEFAULT_TIMEOUT_S = 2700
-DONE_STATES = {"applied", "manual", "archived", "skipped", "duplicate"}
+DONE_STATES = {"applied", "manual", "manual_apply_needed", "archived", "skipped", "duplicate"}
 SYSTEMIC_BLOCKER_TERMS = (
     "chrome computer use unavailable",
     "computer use access denied",
@@ -46,29 +46,39 @@ Before starting and before each job, reread the state file. Respect:
 For each job:
 1. Open the early-career LinkedIn search URL from state unless search.phase is
    already "broad-fallback".
-2. Pick one fresh realistic SWE job in a cared-about location. Dedupe against
+2. If state.items already contains an item with state="in_progress", continue
+   that exact job to a durable application outcome before selecting a new job.
+   Apply the current runPolicy fields to it, including coverLetterPolicy.
+3. Pick one fresh realistic SWE job in a cared-about location. Dedupe against
    application-trackers/applications.md, application-trackers/job-intake.md, and
    state.items[].jobUrl. If duplicate, append a state item with state="duplicate"
    and continue only if batch capacity remains.
-3. Tailor the resume with resume-tailor, render/verify the PDF, and update the
+4. Tailor the resume with resume-tailor, render/verify the PDF, and update the
    markdown tracker. Refresh visualizer cache after tracker edits.
-4. Recruiter outreach: verify only current in-house recruiter/talent profiles at
+5. Recruiter outreach: verify only current in-house recruiter/talent profiles at
    the target company. If outreachMode is active and LinkedIn allows Connect,
    send the <=300 char note and record it. If LinkedIn reports too many
    connection requests / weekly limit / invitations restricted, set
    runPolicy.outreachMode="throttled", record the event, and do not attempt any
    more connection sends in this run.
-5. Attempt the application with the tailored resume. Submit high-confidence
-   routine applications with confirmation evidence. For low confidence, fill safe
-   fields, leave the tab open at a clean review point, group/reorder Chrome tabs
-   into High confidence / Low confidence when practical, and record the exact
-   blocker. Do not submit Workday, CAPTCHA, account creation, SMS/authenticator
-   2FA, legal signature, or unsupported eligibility/salary commitments.
-6. Append or update one item in the state file with:
+6. Attempt the application with the tailored resume. If the application offers
+   an optional cover letter upload or text field, tailor a concise role-specific
+   cover letter from the job description and Liam's resume, include it, and
+   record whether it was uploaded or pasted. The cover letter content must use
+   Liam Van's real name, and uploaded PDFs must be named
+   Liam_Van_<Company>_Cover_Letter.pdf, never Candidate_Name_... . Missing cover
+   letter fields are not blockers. Submit high-confidence routine applications
+   with confirmation evidence. For low confidence, fill safe fields, leave the
+   tab open at a clean review point, group/reorder Chrome tabs into High
+   confidence / Low confidence when practical, and record the exact blocker. Do
+   not submit Workday, CAPTCHA, account creation, SMS/authenticator 2FA, legal
+   signature, or unsupported eligibility/salary commitments.
+7. Append or update one item in the state file with:
    key, company, role, jobUrl, location, source, resumePdf, recruiterName,
-   recruiterProfile, outreachState, applicationConfidence, state, result,
-   blocker, confirmationEvidence, updatedAt.
-7. If no more usable jobs remain in both search phases, set
+   recruiterProfile, outreachState, coverLetterState, coverLetterPath,
+   applicationConfidence, state, result, blocker, confirmationEvidence,
+   updatedAt.
+8. If no more usable jobs remain in both search phases, set
    search.stopRequested=true with search.saturationReason.
 
 After each durable outcome, write the state file immediately. Exit after

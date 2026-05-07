@@ -24,7 +24,7 @@ def load_state() -> dict[str, Any]:
 
 
 def done_count(state: dict[str, Any]) -> int:
-    done_states = {"applied", "manual", "archived", "skipped", "duplicate"}
+    done_states = {"applied", "manual", "manual_apply_needed", "archived", "skipped", "duplicate"}
     return sum(1 for item in state.get("items", []) if item.get("state") in done_states)
 
 

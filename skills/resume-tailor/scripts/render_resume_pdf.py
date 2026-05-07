@@ -38,7 +38,7 @@ def load_candidate_name(resume_dir: Path) -> str:
         repo_value = read_candidate_name(ancestor / "generic-resume" / "README.md")
         if repo_value:
             return repo_value
-    return "Candidate Name"
+    return "Liam Van"
 
 
 def candidate_token(value: str) -> str:

@@ -120,6 +120,7 @@ python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 6. **Attempt the application**
    - Use `finish-applications` guardrails.
    - Prefer the tailored resume recorded in the tracker.
+   - If the application offers an optional cover letter upload or text field, tailor a concise role-specific cover letter from the job description and Liam's resume, include it, and record whether it was uploaded or pasted. The cover letter content must use Liam Van's real name, and uploaded PDFs must be named `Liam_Van_<Company>_Cover_Letter.pdf`, never `Candidate_Name_...`. Do not treat the absence of a cover letter option as a blocker.
    - For LinkedIn Easy Apply, verify contact email is `liamvanpj@gmail.com` before submission.
    - For external apply, follow the ATS URL and submit routine applications when confidence is high.
    - Classify the live application as `high confidence` or `low confidence` after required fields, uploads, and review state are visible.
@@ -173,6 +174,7 @@ For each job, the required durable checkpoints are:
 - resume rendered and verified
 - tracker row updated
 - recruiter profile verified, outreach sent, or outreach throttle/blocker recorded
+- optional cover letter tailored and included when the application offers a cover letter field or upload
 - application submitted, manual, archived, or skipped with evidence
 - visualizer cache refreshed after writes
 
@@ -209,7 +211,7 @@ Important state fields:
 - `runPolicy.outreachMode`: `active` or `throttled`; once throttled, children must not send more invites.
 - `search.phase`: `early-career` or `broad-fallback`.
 - `search.stopRequested`: true when both searches are saturated or a systemic stop condition exists.
-- `items[]`: durable job outcomes; each item should include company, role, job URL, resume PDF, outreach state, application confidence, final state, blocker/confirmation evidence, and timestamp.
+- `items[]`: durable job outcomes; each item should include company, role, job URL, resume PDF, optional cover letter state/path, outreach state, application confidence, final state, blocker/confirmation evidence, and timestamp.
 
 The monitor owns restarts and progress checks. Child processes must not commit
 or push; they only update tracker/cache/outreach state and the `/tmp` run state.

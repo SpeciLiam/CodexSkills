@@ -25,14 +25,14 @@ IGNORED_SUFFIXES = {
 def load_candidate_name(generic_resume_dir: Path) -> str:
     readme_path = generic_resume_dir / "README.md"
     if not readme_path.exists():
-        return "Candidate Name"
+        return "Liam Van"
 
     for line in readme_path.read_text().splitlines():
         if line.lower().startswith("candidate_name:"):
             value = line.split(":", 1)[1].strip()
             if value:
                 return value
-    return "Candidate Name"
+    return "Liam Van"
 
 
 def safe_path_component(value: str, fallback: str) -> str:

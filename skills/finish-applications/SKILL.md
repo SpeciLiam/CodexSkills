@@ -286,7 +286,7 @@ Fill every required factual field that can be answered from Liam's profile, resu
 
 ### Cover Letters
 
-When an application requires a cover letter upload or cover letter text:
+When an application has a required or optional cover letter upload or cover letter text field:
 
 1. Use the existing `Resume Folder` from the tracker row and the cover-letter commands documented in `skills/resume-tailor/SKILL.md`.
 2. Create the letter in that folder with:
@@ -307,10 +307,10 @@ python3 skills/resume-tailor/scripts/render_cover_letter_pdf.py \
   --dir "<company resume folder>"
 ```
 
-4. Upload the resulting PDF named `Liam_Van_<Company>_Cover_Letter.pdf` to the cover letter field when the form requests a file, or paste the generated letter text when the form requests text.
+4. Upload the resulting PDF named `Liam_Van_<Company>_Cover_Letter.pdf` to the cover letter field when the form requests a file, or paste the generated letter text when the form requests text. Never upload a `Candidate_Name_...` cover letter artifact.
 5. Record in the tracker note that a tailored cover letter was submitted.
 
-Do not generate a cover letter for optional fields when the application accepts a resume-only submission, unless Liam has specifically asked for one for that company or role.
+Generate and include a tailored cover letter for optional fields too.
 If no cover letter field exists, skip this step and continue the application as normal.
 
 ### Manual Apply Criteria
