@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T15:34:21.598520+00:00",
+  "generatedAt": "2026-05-07T16:25:09.834095+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,9 +21,9 @@
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 412,
-      "intakeQueued": 30,
-      "intakeNew": 39,
+      "intakeJobs": 421,
+      "intakeQueued": 37,
+      "intakeNew": 40,
       "intakeManual": 194,
       "intakeApplied": 0,
       "applyRate": 62.5,
@@ -266,15 +266,15 @@
       },
       {
         "name": "New",
-        "value": 39
-      },
-      {
-        "name": "Skipped",
-        "value": 31
+        "value": 40
       },
       {
         "name": "Queued",
-        "value": 30
+        "value": 37
+      },
+      {
+        "name": "Skipped",
+        "value": 32
       },
       {
         "name": "Expired",
@@ -288,11 +288,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 267
+        "value": 271
       },
       {
         "name": "LinkedIn",
-        "value": 145
+        "value": 150
       }
     ],
     "timeline": [
@@ -18014,6 +18014,104 @@
   ],
   "jobIntake": [
     {
+      "source": "LinkedIn",
+      "company": "Phia",
+      "role": "Full Stack Engineer",
+      "location": "New York, NY",
+      "postingKey": "full-stack-engineer-at-phia-4380177833",
+      "jobUrl": "https://www.linkedin.com/jobs/view/full-stack-engineer-at-phia-4380177833",
+      "discoveredAt": "2026-05-07T16:24:13.747004+00:00",
+      "postedAge": "",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Perplexity AI",
+      "role": "Full Stack Software Engineer",
+      "location": "New York City; San Francisco",
+      "postingKey": "4147686007",
+      "jobUrl": "https://job-boards.greenhouse.io/perplexityai/jobs/4147686007?gh_src=4ef372ec7us",
+      "discoveredAt": "2026-05-07T16:24:13.747004+00:00",
+      "postedAge": "",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Kontakt.io",
+      "role": "Full Stack Engineer",
+      "location": "New York, NY",
+      "postingKey": "full-stack-engineer-at-kontakt-io-4338431630",
+      "jobUrl": "https://www.linkedin.com/jobs/view/full-stack-engineer-at-kontakt-io-4338431630",
+      "discoveredAt": "2026-05-07T16:24:13.747004+00:00",
+      "postedAge": "",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Bioverse",
+      "role": "Full Stack Engineer (Full-Time) - BIOVERSE",
+      "location": "New York, United States",
+      "postingKey": "full-stack-engineer-full-time-%E2%80%94-bioverse-at-bioverse-4366637207",
+      "jobUrl": "https://www.linkedin.com/jobs/view/full-stack-engineer-full-time-%E2%80%94-bioverse-at-bioverse-4366637207",
+      "discoveredAt": "2026-05-07T16:24:13.747004+00:00",
+      "postedAge": "",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Auctor",
+      "role": "Forward Deployed Engineer",
+      "location": "New York, NY",
+      "postingKey": "forward-deployed-engineer-at-auctor-4344711780",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-auctor-4344711780",
+      "discoveredAt": "2026-05-07T16:24:13.747004+00:00",
+      "postedAge": "",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Altium",
+      "role": "Developer, Backend",
+      "location": "Frisco, Texas, United States; La Jolla, California, United States",
+      "postingKey": "4652000006",
+      "jobUrl": "https://job-boards.greenhouse.io/altium/jobs/4652000006",
+      "discoveredAt": "2026-05-07T16:24:13.747004+00:00",
+      "postedAge": "",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Airtable",
+      "role": "Software Engineer, New Grad (2026)",
+      "location": "New York, NY",
+      "postingKey": "software-engineer-new-grad-2026-at-airtable-4370480668",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-new-grad-2026-at-airtable-4370480668",
+      "discoveredAt": "2026-05-07T16:24:13.747004+00:00",
+      "postedAge": "",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "Greenhouse",
       "company": "The Browser Company",
       "role": "Software Engineer, Product",
@@ -23433,6 +23531,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Greenhouse",
+      "role": "Software Engineer, Governance",
+      "location": "Ontario",
+      "postingKey": "7091352",
+      "jobUrl": "https://job-boards.greenhouse.io/greenhouse/jobs/7091352?gh_jid=7091352",
+      "discoveredAt": "2026-05-07T16:24:13.747004+00:00",
+      "postedAge": "",
+      "fitScore": 5,
+      "status": "New",
+      "reason": "SWE-family role, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Mattermost",
       "role": "Forward Deployed Engineer",
       "location": "Honolulu, HI",
@@ -23723,6 +23835,20 @@
       "fitScore": 2,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Greenhouse",
+      "role": "Senior Software Engineer, Data Experience",
+      "location": "Anywhere in the United States",
+      "postingKey": "7087705",
+      "jobUrl": "https://job-boards.greenhouse.io/greenhouse/jobs/7087705?gh_jid=7087705",
+      "discoveredAt": "2026-05-07T16:24:13.747004+00:00",
+      "postedAge": "",
+      "fitScore": 1,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, preferred/remote US location",
       "trackerPostingKey": ""
     },
     {
