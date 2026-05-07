@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 496
+Companies queued: 502
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -230,6 +230,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Attentive | Frontend Software Engineer II, Messaging Platform | 4121615009 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/attentive/jobs/4121615009) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Atoms | Software Engineer - New Grad - New York, NY | 4409955386 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4409955386/) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Atoms | Software Engineer - New Grad - Seattle, WA | 4409947975 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4409947975/) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
+| Assurant | Associate Software Engineer (.NET) | associate-software-engineer-net-at-assurant-4344223933 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/associate-software-engineer-net-at-assurant-4344223933) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | AssetWatch | Backend Engineer | 4658890005 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/assetwatch/jobs/4658890005) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Ascertain | Forward Deployed Engineer - NYC | forward-deployed-engineer-nyc-at-ascertain-4367631462 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/forward-deployed-engineer-nyc-at-ascertain-4367631462) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Arena Physica | Software Engineer | 4593097101 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/arenaphysica/jobs/4593097101) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
@@ -318,6 +319,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Lead | Software Engineer II | 4354352768 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4354352768/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Known | Software Engineer | 8515531002 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/known/jobs/8515531002) |  |  |  |  |
 | Kalshi | Software Engineer, Product | 3dd97725-4a12-4963-b47a-cb5c562cfd1d | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/kalshi/3dd97725-4a12-4963-b47a-cb5c562cfd1d/application) |  |  |  |  |
+| Jobs via Dice | Software Engineer (Python & Go) \| $80/hr Remote | software-engineer-python-go-%2480-hr-remote-at-jobs-via-dice-4402385969 | 9 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-python-go-%2480-hr-remote-at-jobs-via-dice-4402385969) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Grow Therapy | Software Engineer, Backend | 4678586005 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/growtherapy/jobs/4678586005?gh_src=8d47tscl5us) |  |  |  |  |
 | Grow Therapy | Software Engineer - Full Stack | 4678587005 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/growtherapy/jobs/4678587005) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Greenhouse | Full Stack Software Engineer | 7296545 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/greenhouse/jobs/7296545) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
@@ -334,6 +336,9 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Ema | Software Engineer, Backend | 4409831521 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4409831521/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Dash0 | Platform Engineer | c71c1a08-d9ea-4229-b7c9-a3ac9eabc95c | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/dash0/c71c1a08-d9ea-4229-b7c9-a3ac9eabc95c/application?utm_source=LinkedIn) |  |  |  |  |
 | Dagster Labs | Software Engineer - Platform | 7714923003 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/dagsterlabs/jobs/7714923003?gh_src=ojd9d6tp3us) |  |  |  |  |
+| Crossing Hurdles | Backend Software Engineer \| Remote | backend-software-engineer-remote-at-crossing-hurdles-4399162068 | 9 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/backend-software-engineer-remote-at-crossing-hurdles-4399162068) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
+| Crossing Hurdles | Full Stack Software Engineer \| Remote | full-stack-software-engineer-remote-at-crossing-hurdles-4399604454 | 9 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/full-stack-software-engineer-remote-at-crossing-hurdles-4399604454) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
+| Crossing Hurdles | Software Engineer - TypeScript & Go \| $80/hr Remote | software-engineer-typescript-go-%2480-hr-remote-at-crossing-hurdles-4400713087 | 9 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-typescript-go-%2480-hr-remote-at-crossing-hurdles-4400713087) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Color | New Grad Software Engineer | 4397683013 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4397683013/) |  |  |  |  |
 | Clever | Software Engineer, Infrastructure | 7437730 | 9 | Applied | Yes | [Posting](https://www.clever.com/about/careers?gh_jid=7437730&gh_src=auac04yc1us) |  |  |  |  |
 | CLEAR - Corporate | iOS Engineer | 7819202 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/clear/jobs/7819202) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
@@ -365,6 +370,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Stott and May | Software Engineer | 4404464189 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4404464189/apply/) |  |  |  |  |
 | Speakeasy | Software Engineer | 4398591026 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4398591026) |  |  |  |  |
 | Sofar Ocean | Software Engineer | 4408057809 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4408057809/?trackingId=DwG%2BdHl0SSCkj8VHOFgNGA%3D%3D&refId=5T2Rb2GlMfL%2FBz2KqJWJrw%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BnQ3WrNZISgWjPS5etG6bWg%3D%3D) |  |  |  |  |
+| SingleStore-LinkedIn | Forward Deployment Engineer- Greater NYC | 7793896 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/singlestore-linkedin/jobs/7793896) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Sift | Software Engineer, Full Stack | software-engineer-full-stack-at-sift-4253102305 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-full-stack-at-sift-4253102305) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Sartre Group | Founding Software Engineer, NYC (onsite), AI-native consumer insurance | 4407183931 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4407183931/) |  |  |  |  |
 | Salient | Forward Deployed Software Engineer | forward-deployed-software-engineer-at-salient-4337004844 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/forward-deployed-software-engineer-at-salient-4337004844) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T23:09:20.918983+00:00",
+  "generatedAt": "2026-05-07T00:07:23.891176+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 602,
+      "total": 611,
       "applied": 372,
-      "unapplied": 230,
-      "active": 438,
+      "unapplied": 239,
+      "active": 447,
       "rejected": 44,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 476,
-      "reachOut": 534,
+      "highFit": 482,
+      "reachOut": 540,
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 302,
+      "intakeJobs": 315,
       "intakeQueued": 30,
       "intakeNew": 38,
-      "intakeManual": 93,
+      "intakeManual": 102,
       "intakeApplied": 0,
-      "applyRate": 61.8,
+      "applyRate": 60.9,
       "rejectionRate": 11.8,
-      "recruiterWork": 325,
-      "engineerWork": 405,
+      "recruiterWork": 331,
+      "engineerWork": 411,
       "recruiterReachedOut": 115,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 88
+        "value": 97
       },
       {
         "name": "Rejected",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 237
+        "value": 238
       },
       {
         "name": "LinkedIn",
-        "value": 228
+        "value": 236
       },
       {
         "name": "Ashby",
@@ -148,7 +148,7 @@
       },
       {
         "name": "Other",
-        "value": 97
+        "value": 106
       },
       {
         "name": "Remote",
@@ -170,15 +170,15 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 337
+        "value": 344
       },
       {
         "name": "Full Stack",
-        "value": 80
+        "value": 81
       },
       {
         "name": "Backend",
-        "value": 68
+        "value": 69
       },
       {
         "name": "Forward Deployed",
@@ -228,19 +228,19 @@
       },
       {
         "score": "7",
-        "count": 30
+        "count": 33
       },
       {
         "score": "8",
-        "count": 113
+        "count": 114
       },
       {
         "score": "9",
-        "count": 108
+        "count": 112
       },
       {
         "score": "10",
-        "count": 255
+        "count": 256
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
       },
       {
         "name": "Manual",
-        "value": 93
+        "value": 102
       },
       {
         "name": "New",
@@ -274,7 +274,7 @@
       },
       {
         "name": "Skipped",
-        "value": 23
+        "value": 27
       },
       {
         "name": "Expired",
@@ -288,11 +288,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 208
+        "value": 211
       },
       {
         "name": "LinkedIn",
-        "value": 94
+        "value": 104
       }
     ],
     "timeline": [
@@ -474,8 +474,8 @@
       },
       {
         "date": "2026-05-06",
-        "cumulative": 602,
-        "added": 60,
+        "cumulative": 611,
+        "added": 69,
         "applied": 5,
         "rejected": 0,
         "interviewing": 0
@@ -17766,9 +17766,257 @@
       "activityDates": [
         "2026-05-06"
       ]
+    },
+    {
+      "company": "Assurant",
+      "role": "Associate Software Engineer (.NET)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/associate-software-engineer-net-at-assurant-4344223933",
+      "postingKey": "associate-software-engineer-net-at-assurant-4344223933",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Assurant/Associate_Software_Engineer___NET_/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Assurant/Associate_Software_Engineer___NET_/Liam_Van_Resume/Liam_Van_Assurant.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06 from adjacent verified template because generic-resume is absent locally; emphasized associate .NET software engineering, C# services, APIs, databases, Azure-adjacent backend development, Git workflows, and early-career production delivery. Manual apply needed: Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06",
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Jobs via Dice",
+      "role": "Software Engineer (Python & Go) | $80/hr Remote",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-python-go-%2480-hr-remote-at-jobs-via-dice-4402385969",
+      "postingKey": "software-engineer-python-go-%2480-hr-remote-at-jobs-via-dice-4402385969",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Jobs via Dice/Software_Engineer__Python___Go_____80_hr_Remote/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Jobs via Dice/Software_Engineer__Python___Go_____80_hr_Remote/Liam_Van_Resume/Liam_Van_Jobs_via_Dice.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06 from adjacent verified template because generic-resume is absent locally; emphasized remote Python and Go backend software engineering, AI training infrastructure, APIs, automation, production reliability, and testing. Manual apply needed: Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06",
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Crossing Hurdles",
+      "role": "Backend Software Engineer | Remote",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/backend-software-engineer-remote-at-crossing-hurdles-4399162068",
+      "postingKey": "backend-software-engineer-remote-at-crossing-hurdles-4399162068",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Crossing Hurdles/Backend_Software_Engineer___Remote/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Crossing Hurdles/Backend_Software_Engineer___Remote/Liam_Van_Resume/Liam_Van_Crossing_Hurdles.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06 from adjacent verified template because generic-resume is absent locally; emphasized remote backend engineering, server-side APIs, scalable services, data workflows, production debugging, and testing. Manual apply needed: Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06",
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Crossing Hurdles",
+      "role": "Full Stack Software Engineer | Remote",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/full-stack-software-engineer-remote-at-crossing-hurdles-4399604454",
+      "postingKey": "full-stack-software-engineer-remote-at-crossing-hurdles-4399604454",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Crossing Hurdles/Full_Stack_Software_Engineer___Remote/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Crossing Hurdles/Full_Stack_Software_Engineer___Remote/Liam_Van_Resume/Liam_Van_Crossing_Hurdles.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06 from adjacent verified template because generic-resume is absent locally; emphasized remote full-stack engineering with Python, Node.js, React, Go, AWS, AI agent product surfaces, APIs, and testing. Manual apply needed: Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06",
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Crossing Hurdles",
+      "role": "Software Engineer - TypeScript & Go | $80/hr Remote",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-typescript-go-%2480-hr-remote-at-crossing-hurdles-4400713087",
+      "postingKey": "software-engineer-typescript-go-%2480-hr-remote-at-crossing-hurdles-4400713087",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Crossing Hurdles/Software_Engineer___TypeScript___Go____80_hr_Remote/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Crossing Hurdles/Software_Engineer___TypeScript___Go____80_hr_Remote/Liam_Van_Resume/Liam_Van_Crossing_Hurdles.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06 from adjacent verified template because generic-resume is absent locally; emphasized TypeScript and Go software engineering, APIs, microservices, web applications, cloud deployment, and maintainable production systems. Manual apply needed: Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06",
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "SingleStore-LinkedIn",
+      "role": "Forward Deployment Engineer- Greater NYC",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/singlestore-linkedin/jobs/7793896",
+      "postingKey": "7793896",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/SingleStore-LinkedIn/Forward_Deployment_Engineer__Greater_NYC/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/SingleStore-LinkedIn/Forward_Deployment_Engineer__Greater_NYC/Liam_Van_Resume/Liam_Van_SingleStore-LinkedIn.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06 from adjacent verified template because generic-resume is absent locally; emphasized forward deployed engineering, customer-facing technical delivery, real-time data systems, solution architecture, integrations, and hands-on implementation. Manual apply needed: Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06",
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Jobs via Dice",
+      "role": "Software Engineer - Remote",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 7,
+      "reachOut": false,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-remote-at-jobs-via-dice-4381066029",
+      "postingKey": "software-engineer-remote-at-jobs-via-dice-4381066029",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Jobs via Dice/Software_Engineer___Remote/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Jobs via Dice/Software_Engineer___Remote/Liam_Van_Resume/Liam_Van_Jobs_via_Dice.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06 from adjacent verified template because generic-resume is absent locally; emphasized remote software engineering, TypeScript, Python/Node, cloud applications, LLM-enabled products, APIs, and production ownership. Manual apply needed: Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06",
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Jobs via Dice",
+      "role": "Software Engineer (Code Review & Quality) | $80/hr Remote",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 7,
+      "reachOut": false,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-code-review-quality-%2480-hr-remote-at-jobs-via-dice-4401442356",
+      "postingKey": "software-engineer-code-review-quality-%2480-hr-remote-at-jobs-via-dice-4401442356",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Jobs via Dice/Software_Engineer__Code_Review___Quality_____80_hr_Remote/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Jobs via Dice/Software_Engineer__Code_Review___Quality_____80_hr_Remote/Liam_Van_Resume/Liam_Van_Jobs_via_Dice.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06 from adjacent verified template because generic-resume is absent locally; emphasized code review, software quality, Python, JavaScript/TypeScript, Go, testing, maintainability, and production engineering standards. Manual apply needed: Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06",
+        "2026-05-06"
+      ]
+    },
+    {
+      "company": "Assurant",
+      "role": ".NET Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 7,
+      "reachOut": false,
+      "referral": "",
+      "dateAdded": "2026-05-06",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/net-software-engineer-at-assurant-4344124661",
+      "postingKey": "net-software-engineer-at-assurant-4344124661",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Assurant/_NET_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Assurant/_NET_Software_Engineer/Liam_Van_Resume/Liam_Van_Assurant.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-06 from adjacent verified template because generic-resume is absent locally; emphasized .NET software engineering, C# backend services, REST APIs, SQL Server-style database work, Azure services, feature ownership, and maintainability. Manual apply needed: Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-06",
+        "2026-05-06"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "LinkedIn",
+      "company": "Assurant",
+      "role": "Associate Software Engineer (.NET)",
+      "location": "United States",
+      "postingKey": "associate-software-engineer-net-at-assurant-4344223933",
+      "jobUrl": "https://www.linkedin.com/jobs/view/associate-software-engineer-net-at-assurant-4344223933",
+      "discoveredAt": "2026-05-07T00:05:02.474347+00:00",
+      "postedAge": "2 days ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "associate-software-engineer-net-at-assurant-4344223933"
+    },
     {
       "source": "Greenhouse",
       "company": "ResortPass",
@@ -20332,6 +20580,62 @@
       "trackerPostingKey": "4401827377"
     },
     {
+      "source": "LinkedIn",
+      "company": "Jobs via Dice",
+      "role": "Software Engineer (Python & Go) | $80/hr Remote",
+      "location": "United States",
+      "postingKey": "software-engineer-python-go-%2480-hr-remote-at-jobs-via-dice-4402385969",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-python-go-%2480-hr-remote-at-jobs-via-dice-4402385969",
+      "discoveredAt": "2026-05-07T00:05:02.474347+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "software-engineer-python-go-%2480-hr-remote-at-jobs-via-dice-4402385969"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Crossing Hurdles",
+      "role": "Backend Software Engineer | Remote",
+      "location": "United States",
+      "postingKey": "backend-software-engineer-remote-at-crossing-hurdles-4399162068",
+      "jobUrl": "https://www.linkedin.com/jobs/view/backend-software-engineer-remote-at-crossing-hurdles-4399162068",
+      "discoveredAt": "2026-05-07T00:05:02.474347+00:00",
+      "postedAge": "9 hours ago",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "backend-software-engineer-remote-at-crossing-hurdles-4399162068"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Crossing Hurdles",
+      "role": "Full Stack Software Engineer | Remote",
+      "location": "United States",
+      "postingKey": "full-stack-software-engineer-remote-at-crossing-hurdles-4399604454",
+      "jobUrl": "https://www.linkedin.com/jobs/view/full-stack-software-engineer-remote-at-crossing-hurdles-4399604454",
+      "discoveredAt": "2026-05-07T00:05:02.474347+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "full-stack-software-engineer-remote-at-crossing-hurdles-4399604454"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Crossing Hurdles",
+      "role": "Software Engineer - TypeScript & Go | $80/hr Remote",
+      "location": "United States",
+      "postingKey": "software-engineer-typescript-go-%2480-hr-remote-at-crossing-hurdles-4400713087",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-typescript-go-%2480-hr-remote-at-crossing-hurdles-4400713087",
+      "discoveredAt": "2026-05-07T00:05:02.474347+00:00",
+      "postedAge": "3 days ago",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "software-engineer-typescript-go-%2480-hr-remote-at-crossing-hurdles-4400713087"
+    },
+    {
       "source": "Greenhouse",
       "company": "Pilot.com",
       "role": "Software Engineer",
@@ -20976,6 +21280,20 @@
       "trackerPostingKey": "5592469004"
     },
     {
+      "source": "Greenhouse",
+      "company": "SingleStore-LinkedIn",
+      "role": "Forward Deployment Engineer- Greater NYC",
+      "location": "United States",
+      "postingKey": "7793896",
+      "jobUrl": "https://job-boards.greenhouse.io/singlestore-linkedin/jobs/7793896",
+      "discoveredAt": "2026-05-07T00:05:02.474347+00:00",
+      "postedAge": "3 weeks ago",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "7793896"
+    },
+    {
       "source": "LinkedIn",
       "company": "CNN",
       "role": "Software Engineer I",
@@ -21268,6 +21586,76 @@
       "status": "Queued",
       "reason": "SWE-family role, early-career signal, location needs review",
       "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Trace3",
+      "role": "Software Engineer - I | Secret Clearance Required | On-site Colorado Springs, CO",
+      "location": "Colorado Springs, Colorado",
+      "postingKey": "7558411",
+      "jobUrl": "https://job-boards.greenhouse.io/trace3/jobs/7558411",
+      "discoveredAt": "2026-05-07T00:05:02.474347+00:00",
+      "postedAge": "last month",
+      "fitScore": 7,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-06: posting requires active Secret Clearance and on-site Colorado Springs; not a routine automation target.",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Jobs via Dice",
+      "role": "Software Engineer - Remote",
+      "location": "United States",
+      "postingKey": "software-engineer-remote-at-jobs-via-dice-4381066029",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-remote-at-jobs-via-dice-4381066029",
+      "discoveredAt": "2026-05-07T00:05:02.474347+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 7,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "software-engineer-remote-at-jobs-via-dice-4381066029"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Jobs via Dice",
+      "role": "Software Engineer (Code Review & Quality) | $80/hr Remote",
+      "location": "United States",
+      "postingKey": "software-engineer-code-review-quality-%2480-hr-remote-at-jobs-via-dice-4401442356",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-code-review-quality-%2480-hr-remote-at-jobs-via-dice-4401442356",
+      "discoveredAt": "2026-05-07T00:05:02.474347+00:00",
+      "postedAge": "2 days ago",
+      "fitScore": 7,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "software-engineer-code-review-quality-%2480-hr-remote-at-jobs-via-dice-4401442356"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Crossing Hurdles",
+      "role": "Software Engineer (iOS) | Remote",
+      "location": "United States",
+      "postingKey": "software-engineer-ios-remote-at-crossing-hurdles-4395407081",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-ios-remote-at-crossing-hurdles-4395407081",
+      "discoveredAt": "2026-05-07T00:05:02.474347+00:00",
+      "postedAge": "6 days ago",
+      "fitScore": 7,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-06: iOS-specific Swift/Objective-C role is lower fit than Liam current backend/full-stack/platform target.",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Assurant",
+      "role": ".NET Software Engineer",
+      "location": "United States",
+      "postingKey": "net-software-engineer-at-assurant-4344124661",
+      "jobUrl": "https://www.linkedin.com/jobs/view/net-software-engineer-at-assurant-4344124661",
+      "discoveredAt": "2026-05-07T00:05:02.474347+00:00",
+      "postedAge": "1 week ago",
+      "fitScore": 7,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "net-software-engineer-at-assurant-4344124661"
     },
     {
       "source": "Greenhouse",
@@ -21981,6 +22369,34 @@
       "fitScore": 2,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Turing",
+      "role": "Staff Forward Deployed Engineer",
+      "location": "New York, New York, United States; San Francisco, California, United States",
+      "postingKey": "5609732004",
+      "jobUrl": "https://job-boards.greenhouse.io/turing/jobs/5609732004",
+      "discoveredAt": "2026-05-07T00:05:02.474347+00:00",
+      "postedAge": "last month",
+      "fitScore": 1,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Storm3",
+      "role": "Staff Software Engineer",
+      "location": "United States",
+      "postingKey": "staff-software-engineer-at-storm3-4342231060",
+      "jobUrl": "https://www.linkedin.com/jobs/view/staff-software-engineer-at-storm3-4342231060",
+      "discoveredAt": "2026-05-07T00:05:02.474347+00:00",
+      "postedAge": "5 days ago",
+      "fitScore": 1,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, preferred/remote US location",
       "trackerPostingKey": ""
     },
     {
@@ -24873,6 +25289,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Assurant",
+      "role": "Associate Software Engineer (.NET)",
+      "postingKey": "associate-software-engineer-net-at-assurant-4344223933",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/associate-software-engineer-net-at-assurant-4344223933",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "AssetWatch",
       "role": "Backend Engineer",
       "postingKey": "4658890005",
@@ -26017,6 +26446,19 @@
       "notes": ""
     },
     {
+      "company": "Jobs via Dice",
+      "role": "Software Engineer (Python & Go) | $80/hr Remote",
+      "postingKey": "software-engineer-python-go-%2480-hr-remote-at-jobs-via-dice-4402385969",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-python-go-%2480-hr-remote-at-jobs-via-dice-4402385969",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Grow Therapy",
       "role": "Software Engineer, Backend",
       "postingKey": "4678586005",
@@ -26223,6 +26665,45 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Crossing Hurdles",
+      "role": "Backend Software Engineer | Remote",
+      "postingKey": "backend-software-engineer-remote-at-crossing-hurdles-4399162068",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/backend-software-engineer-remote-at-crossing-hurdles-4399162068",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Crossing Hurdles",
+      "role": "Full Stack Software Engineer | Remote",
+      "postingKey": "full-stack-software-engineer-remote-at-crossing-hurdles-4399604454",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/full-stack-software-engineer-remote-at-crossing-hurdles-4399604454",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Crossing Hurdles",
+      "role": "Software Engineer - TypeScript & Go | $80/hr Remote",
+      "postingKey": "software-engineer-typescript-go-%2480-hr-remote-at-crossing-hurdles-4400713087",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-typescript-go-%2480-hr-remote-at-crossing-hurdles-4400713087",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Color",
@@ -26626,6 +27107,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "SingleStore-LinkedIn",
+      "role": "Forward Deployment Engineer- Greater NYC",
+      "postingKey": "7793896",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/singlestore-linkedin/jobs/7793896",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Sift",
@@ -42300,6 +42794,18 @@
           "contacts": []
         },
         {
+          "key": "associate-software-engineer-net-at-assurant-4344223933",
+          "company": "Assurant",
+          "role": "Associate Software Engineer (.NET)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4121615009",
           "company": "Attentive",
           "role": "Frontend Software Engineer II, Messaging Platform",
@@ -43632,6 +44138,42 @@
           "contacts": []
         },
         {
+          "key": "backend-software-engineer-remote-at-crossing-hurdles-4399162068",
+          "company": "Crossing Hurdles",
+          "role": "Backend Software Engineer | Remote",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "full-stack-software-engineer-remote-at-crossing-hurdles-4399604454",
+          "company": "Crossing Hurdles",
+          "role": "Full Stack Software Engineer | Remote",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-typescript-go-%2480-hr-remote-at-crossing-hurdles-4400713087",
+          "company": "Crossing Hurdles",
+          "role": "Software Engineer - TypeScript & Go | $80/hr Remote",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4409831521",
           "company": "Ema",
           "role": "Software Engineer, Backend",
@@ -43757,6 +44299,18 @@
           "role": "Software Engineer, Backend",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-python-go-%2480-hr-remote-at-jobs-via-dice-4402385969",
+          "company": "Jobs via Dice",
+          "role": "Software Engineer (Python & Go) | $80/hr Remote",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -45185,6 +45739,18 @@
           "role": "Software Engineer, Full Stack",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7793896",
+          "company": "SingleStore-LinkedIn",
+          "role": "Forward Deployment Engineer- Greater NYC",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -55166,6 +55732,18 @@
           "contacts": []
         },
         {
+          "key": "associate-software-engineer-net-at-assurant-4344223933",
+          "company": "Assurant",
+          "role": "Associate Software Engineer (.NET)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4409955386",
           "company": "Atoms",
           "role": "Software Engineer - New Grad - New York, NY",
@@ -56810,6 +57388,42 @@
           "contacts": []
         },
         {
+          "key": "backend-software-engineer-remote-at-crossing-hurdles-4399162068",
+          "company": "Crossing Hurdles",
+          "role": "Backend Software Engineer | Remote",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "full-stack-software-engineer-remote-at-crossing-hurdles-4399604454",
+          "company": "Crossing Hurdles",
+          "role": "Full Stack Software Engineer | Remote",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-typescript-go-%2480-hr-remote-at-crossing-hurdles-4400713087",
+          "company": "Crossing Hurdles",
+          "role": "Software Engineer - TypeScript & Go | $80/hr Remote",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4409831521",
           "company": "Ema",
           "role": "Software Engineer, Backend",
@@ -56863,6 +57477,18 @@
           "role": "Software Engineer - Full Stack",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-python-go-%2480-hr-remote-at-jobs-via-dice-4402385969",
+          "company": "Jobs via Dice",
+          "role": "Software Engineer (Python & Go) | $80/hr Remote",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -57787,6 +58413,18 @@
           "role": "Software Engineer, Full Stack",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7793896",
+          "company": "SingleStore-LinkedIn",
+          "role": "Forward Deployment Engineer- Greater NYC",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
