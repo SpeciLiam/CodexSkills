@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T16:25:45.657284+00:00",
+  "generatedAt": "2026-05-07T16:37:05.988010+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,10 +21,10 @@
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 421,
+      "intakeJobs": 428,
       "intakeQueued": 30,
       "intakeNew": 39,
-      "intakeManual": 202,
+      "intakeManual": 206,
       "intakeApplied": 0,
       "applyRate": 62.5,
       "rejectionRate": 11.5,
@@ -258,7 +258,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 202
+        "value": 206
       },
       {
         "name": "Tailored",
@@ -270,7 +270,7 @@
       },
       {
         "name": "Skipped",
-        "value": 32
+        "value": 35
       },
       {
         "name": "Queued",
@@ -288,7 +288,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 271
+        "value": 278
       },
       {
         "name": "LinkedIn",
@@ -18014,6 +18014,62 @@
   ],
   "jobIntake": [
     {
+      "source": "Greenhouse",
+      "company": "Figma",
+      "role": "Software Engineer, AI Platforms",
+      "location": "San Francisco, CA; New York, NY; United States",
+      "postingKey": "5551669004",
+      "jobUrl": "https://job-boards.greenhouse.io/figma/jobs/5551669004?gh_jid=5551669004",
+      "discoveredAt": "2026-05-07T16:26:19.465548+00:00",
+      "postedAge": "current Figma careers listing captured 2026-05-07",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Figma",
+      "role": "Software Engineer, AI Product",
+      "location": "San Francisco, CA; New York, NY; United States",
+      "postingKey": "5551730004",
+      "jobUrl": "https://job-boards.greenhouse.io/figma/jobs/5551730004?gh_jid=5551730004",
+      "discoveredAt": "2026-05-07T16:26:19.465548+00:00",
+      "postedAge": "current Figma careers listing captured 2026-05-07",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Figma",
+      "role": "Software Engineer, Growth & Monetization",
+      "location": "San Francisco, CA; New York, NY; United States",
+      "postingKey": "5552560004",
+      "jobUrl": "https://job-boards.greenhouse.io/figma/jobs/5552560004?gh_jid=5552560004",
+      "discoveredAt": "2026-05-07T16:26:19.465548+00:00",
+      "postedAge": "current Figma careers listing captured 2026-05-07",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Figma",
+      "role": "Software Engineer, Distributed Systems",
+      "location": "San Francisco, CA; New York, NY; United States",
+      "postingKey": "5552549004",
+      "jobUrl": "https://job-boards.greenhouse.io/figma/jobs/5552549004?gh_jid=5552549004",
+      "discoveredAt": "2026-05-07T16:26:19.465548+00:00",
+      "postedAge": "current Figma careers listing captured 2026-05-07",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "LinkedIn",
       "company": "Phia",
       "role": "Full Stack Engineer",
@@ -22144,6 +22200,20 @@
       "trackerPostingKey": "5592469004"
     },
     {
+      "source": "Greenhouse",
+      "company": "Parloa",
+      "role": "Forward Deployed Engineer",
+      "location": "Berlin Office; Munich Office; Remotely in Germany",
+      "postingKey": "4656966101",
+      "jobUrl": "https://job-boards.greenhouse.io/parloa/jobs/4656966101",
+      "discoveredAt": "2026-05-07T16:26:02.284229+00:00",
+      "postedAge": "",
+      "fitScore": 8,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-07: non-US location (Berlin/Munich/remote Germany), outside this intake's US-location target",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "LinkedIn",
       "company": "Scalr",
       "role": "Software Engineer",
@@ -23835,6 +23905,34 @@
       "fitScore": 2,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Ridgeline",
+      "role": "Staff Forward Deployed Engineer",
+      "location": "Reno, NV",
+      "postingKey": "6539956003",
+      "jobUrl": "https://job-boards.greenhouse.io/ridgeline/jobs/6539956003",
+      "discoveredAt": "2026-05-07T16:26:02.284229+00:00",
+      "postedAge": "",
+      "fitScore": 1,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "NinjaTrader",
+      "role": "Staff Software Engineer, FCM",
+      "location": "Chicago or Remote",
+      "postingKey": "4658366006",
+      "jobUrl": "https://job-boards.greenhouse.io/ninjatrader/jobs/4658366006",
+      "discoveredAt": "2026-05-07T16:26:02.284229+00:00",
+      "postedAge": "",
+      "fitScore": 1,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, preferred/remote US location",
       "trackerPostingKey": ""
     },
     {
