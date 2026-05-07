@@ -82,7 +82,12 @@ def run_and_tee(cmd: list[str], log_path: Path) -> int:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Monitor and restart finish-app-script batches.")
     parser.add_argument("--resume", action="store_true", help="Use the existing state file; skip refresh/build")
-    parser.add_argument("--max-restarts", type=int, default=3, help="Retries after a stopped run with queued rows")
+    parser.add_argument(
+        "--max-restarts",
+        type=int,
+        default=0,
+        help="Retries after a stopped run with queued rows; 0 means keep trying",
+    )
     parser.add_argument("--restart-sleep", type=int, default=10, help="Seconds to wait before retrying")
     parser.add_argument("--batch-size", type=int, default=2, help="Rows per fresh Codex process")
     parser.add_argument("--max-batches", type=int, default=0, help="Forwarded to run_batches.py")
@@ -170,10 +175,11 @@ def main() -> int:
             continue
 
         restarts += 1
-        if restarts > args.max_restarts:
+        if args.max_restarts and restarts > args.max_restarts:
             print(f"\nStopped after {args.max_restarts} restart attempt(s) without enough progress.")
             return rc or 1
-        print(f"\nRunner stopped with queued rows remaining; retry {restarts}/{args.max_restarts} in {args.restart_sleep}s.")
+        retry_label = f"{restarts}/{args.max_restarts}" if args.max_restarts else f"{restarts}/unlimited"
+        print(f"\nRunner stopped with queued rows remaining; retry {retry_label} in {args.restart_sleep}s.")
         time.sleep(args.restart_sleep)
 
 

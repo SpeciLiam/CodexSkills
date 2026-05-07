@@ -187,6 +187,25 @@ def is_systemic_blocker(item: dict[str, Any]) -> bool:
     return any(term in haystack for term in SYSTEMIC_BLOCKER_TERMS)
 
 
+def mark_manual(item: dict[str, Any], blocker: str) -> None:
+    state = load_state()
+    key = str(item.get("key") or "")
+    changed = False
+    for row in state.get("items", []):
+        if str(row.get("key") or "") != key:
+            continue
+        if row.get("state") in DONE_STATES:
+            return
+        row["state"] = "manual"
+        row["blocker"] = blocker
+        row["result"] = f"Manual: {blocker}"
+        row["updatedAt"] = now_iso()
+        changed = True
+        break
+    if changed:
+        STATE_PATH.write_text(json.dumps(state, indent=2) + "\n", encoding="utf-8")
+
+
 def safe_filename(value: str) -> str:
     return re.sub(r"[^A-Za-z0-9_.-]+", "_", value)[:80] or "batch"
 
@@ -374,11 +393,20 @@ def main() -> int:
                 print("  last output:")
                 for line in tail:
                     print(f"    {line}")
-            break
+            if batch_preview:
+                blocker = "Batch made no state progress; manual review required, runner continuing"
+                print(f"  marking current row manual: {batch_preview[0].get('company')} | {blocker}")
+                mark_manual(batch_preview[0], blocker)
+                after = load_state()
+                after_counts = state_counts(after)
+                after_done = completed_keys(after)
+                newly_done = after_done - before_done
+            else:
+                continue
 
         if rc != 0:
-            print("  child exited non-zero; stopping for inspection.")
-            break
+            print("  child exited non-zero; treating as a per-row/batch blocker and continuing.")
+            continue
 
         if not args.no_commit and terminal_success_since_commit >= 5:
             today = dt.date.today().isoformat()

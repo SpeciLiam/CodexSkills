@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T21:05:36.091152+00:00",
+  "generatedAt": "2026-05-07T21:57:11.799590+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 611,
-      "applied": 393,
-      "unapplied": 218,
+      "applied": 394,
+      "unapplied": 217,
       "active": 447,
       "rejected": 44,
       "interviewing": 3,
@@ -26,7 +26,7 @@
       "intakeNew": 40,
       "intakeManual": 216,
       "intakeApplied": 0,
-      "applyRate": 64.3,
+      "applyRate": 64.5,
       "rejectionRate": 11.2,
       "recruiterWork": 331,
       "engineerWork": 414,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 342
+        "value": 343
       },
       {
         "name": "Archived",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 19
+        "value": 18
       },
       {
         "name": "Interviewing",
@@ -476,7 +476,7 @@
         "date": "2026-05-06",
         "cumulative": 611,
         "added": 69,
-        "applied": 15,
+        "applied": 16,
         "rejected": 0,
         "interviewing": 0
       }
@@ -16336,8 +16336,8 @@
     {
       "company": "Deltek",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -16352,9 +16352,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Deltek AI-powered full-stack software engineer role; emphasized Python, TypeScript/React, REST APIs, Docker/cloud, AI-assisted API testing, prompt engineering, RAG concepts, OpenSearch retrieval, SQL metadata workflows, CI-style validation, Git/code review, and production debugging. Did not claim FastAPI, Next.js, Pydantic, SQLAlchemy, Alembic, PostgreSQL, pytest, LangChain/LangGraph, GitHub Actions, Kubernetes, OpenTelemetry, or MCP server generation production experience.",
+      "notes": "Tailored for Deltek AI-powered full-stack software engineer role; emphasized Python, TypeScript/React, REST APIs, Docker/cloud, AI-assisted API testing, prompt engineering, RAG concepts, OpenSearch retrieval, SQL metadata workflows, CI-style validation, Git/code review, and production debugging. Did not claim FastAPI, Next.js, Pydantic, SQLAlchemy, Alembic, PostgreSQL, pytest, LangChain/LangGraph, GitHub Actions, Kubernetes, OpenTelemetry, or MCP server generation production experience.; Application submitted 2026-05-07 via LinkedIn Easy Apply",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-07"
+      ]
     },
     {
       "company": "CloudInnTech",
@@ -47192,7 +47194,7 @@
           "company": "Deltek",
           "role": "Software Engineer",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
