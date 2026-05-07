@@ -3,7 +3,7 @@
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
 Jobs discovered: 428
-New: 39 | Queued: 35 | Tailored: 115 | Applied: 0 | Manual: 202 | Skipped: 34 | Duplicate: 1 | Expired: 2
+New: 39 | Queued: 30 | Tailored: 115 | Applied: 0 | Manual: 206 | Skipped: 35 | Duplicate: 1 | Expired: 2
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
