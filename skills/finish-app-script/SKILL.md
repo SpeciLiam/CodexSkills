@@ -1,6 +1,6 @@
 ---
 name: finish-app-script
-description: Drain Liam's tailored-resume application queue from a phone-friendly command. Build `/tmp/fa_script_run_state.json`, then run the rotating batch orchestrator that launches fresh Codex CLI parent processes for small Chrome/Computer Use batches, closes submitted tabs, leaves low-confidence handoff tabs open, updates tracker/cache, and commits confirmed submissions. Use when the user says `$finish-app-script`, "run finish app script", "drain my application queue", or wants applications completed without context overflow.
+description: Drain Liam's tailored-resume application queue from a phone-friendly command. Build `/tmp/fa_script_run_state.json`, then run the rotating batch orchestrator that launches fresh Codex CLI parent processes for small Chrome/Computer Use batches, closes submitted tabs, leaves medium/low-confidence handoff tabs open, updates tracker/cache, and commits confirmed submissions. Use when the user says `$finish-app-script`, "run finish app script", "drain my application queue", or wants applications completed without context overflow.
 ---
 
 # Finish-App-Script
@@ -211,7 +211,19 @@ Exit when done.
 
 ## Liam's Standing Answers
 
-Detailed in `OPERATING_CARD.md` rule 4. The condensed list is in the per-row prompt only as a reference — the agent re-reads the operating card on every run.
+Detailed in `OPERATING_CARD.md` rule 5. The condensed list is in the per-row prompt only as a reference — the agent re-reads the operating card on every run.
+
+## Factual Resume Context
+
+Every spawned agent must use Liam's real work history as the factual basis for
+FRQs, cover-letter interest text, values answers, achievement examples, and
+project examples. The row's tailored `resume.tex` next to `resumePdf` is the
+immediate source of truth. If `generic-resume/README.md` or
+`generic-resume/resume.tex` exists, the agent must read those too and treat them
+as the broader evidence bank. Never invent employers, internships, tools,
+projects, metrics, dates, credentials, or responsibilities. If a requested
+answer cannot be grounded in the resume/profile/tracker evidence, the agent
+should use a supported adjacent example or leave the tab open for review.
 
 ## Cover Letters
 

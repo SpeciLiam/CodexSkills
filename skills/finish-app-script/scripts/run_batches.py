@@ -60,6 +60,16 @@ For each row:
 - Always open a brand-new Chrome tab before navigating to the jobLink, including
   the first row in this batch. Never navigate over an existing application,
   email, search, or handoff tab.
+- Before drafting any FRQ, cover-letter interest sentence, "why us" answer,
+  values answer, achievement example, or project example, load Liam's factual
+  context. Read the row's tailored resume source at <resume directory>/resume.tex
+  when available, where <resume directory> is the directory containing resumePdf.
+  Also read generic-resume/README.md and generic-resume/resume.tex when those
+  files exist in the repo; they are the broader evidence bank. Use only Liam's
+  actual resume/profile/project/tracker evidence. Never invent employers,
+  internships, projects, tools, metrics, dates, credentials, or responsibilities.
+  If a required answer cannot be grounded in those sources, use a supported
+  adjacent example or mark the row manual for Liam review.
 - Keep tabs organized by perceived confidence when possible: High Confidence /
   Ready Submit, Needs Review, Hard Blocker, and Submitted / Archived. If Chrome
   tab groups are not scriptable, leave tabs ordered in that bucket sequence and
@@ -82,41 +92,43 @@ For each row:
 - If an exact resume or cover-letter PDF cannot be attached after one retry,
   leave the tab open, mark the row manual with blocker
   "Document upload failed; manual attach required", and continue.
-- Submit high and medium confidence applications when every required field is
-  filled truthfully from standing answers, obvious profile facts, resume,
-  projects, or concise FRQ/custom written drafts. Click the final Submit/Submit
-  application button, wait for a confirmation page or confirmation text,
-  capture it in confirmationEvidence, and set state to "submitted". Do not
-  leave a high/medium confidence application staged.
+- Submit high-confidence applications when every required field is filled
+  truthfully from standing answers, obvious profile facts, resume/profile
+  evidence, projects, or concise FRQ/custom written drafts. Click the final Submit/Submit application
+  button, wait for a confirmation page or confirmation text, capture it in
+  confirmationEvidence, and set state to "submitted". Do not leave a
+  high-confidence application staged.
 - Before clicking final Submit, make a short explicit decision: "submit is safe
-  because <reason>". Base the decision on the row's confidence score: high and
-  medium may submit after truthful completion; low must not submit. If a low
-  confidence row has unanswered or uncertain items, mark the row manual with the
-  exact item Liam needs to review and leave the tab open.
+  because <reason>". Base the decision on the row's confidence score: only high
+  confidence may submit after truthful completion. Medium and low confidence
+  rows must not submit; fill every safe field and all answerable FRQs, mark the
+  row manual with the exact item Liam needs to review, and leave the tab open.
 - Treat these rendered answers as guardrails before final submit: authorized to
   work in the United States = Yes; now/future sponsorship required = No;
   comfortable working onsite/hybrid/in-office in NYC or San Francisco, including
   San Francisco 5 days/week = Yes. If any present answer differs, correct it. If
   you cannot correct it, mark manual and leave the tab open.
-- Medium confidence FRQ/custom written prompts are submit-capable when they can
-  be answered truthfully from Liam's profile, resume, projects, and standing
-  answers. Draft concise, specific, truthful answers, review them for factual
-  accuracy, and submit if the only remaining uncertainty is phrasing quality.
-- Low confidence rows must not be submitted. Fill safe fields, upload the
-  correct resume when possible, leave the tab open at the cleanest review point,
-  mark manual with the exact blocker, and continue to the next row.
+- FRQ/custom written prompts should be completed whenever they can be answered
+  truthfully from Liam's profile, resume, projects, standing answers, tracker
+  notes, and the posting. Draft concise, specific, truthful answers and review
+  them against the resume/profile evidence before final submit. Submit only if
+  the row is high confidence; otherwise leave the tab open at the cleanest
+  review point, mark manual with the exact FRQ/review item, and continue to the
+  next row.
+- Medium and low confidence rows must not be submitted. Fill safe fields,
+  upload the correct resume when possible, complete answerable FRQs, leave the
+  tab open at the cleanest review point, mark manual with the exact blocker or
+  review item, and continue to the next row.
 - Do not stall on a final-submit decision. Once the form is as complete as it
   safely can be, either submit with confirmation evidence or mark manual and
   exit/continue. Never hover at a staged final form waiting for confidence to
   improve.
 - If submitted successfully and confirmation evidence is captured, close that
   application tab before starting the next row.
-- For medium confidence, submit when the only issue is a truthful FRQ/custom
-  answer that you can draft accurately. If a medium row has a factual,
-  eligibility, legal, location, salary, or experience uncertainty outside
-  standing answers, leave the tab at the cleanest review point and mark manual
-  with an exact blocker. Keep that handoff tab open even if this Codex process
-  is about to exit.
+- For medium confidence, do not submit. Fill all safe fields and answerable
+  FRQs, leave the tab at the cleanest review point, and mark manual with an
+  exact review item. Keep that handoff tab open even if this Codex process is
+  about to exit.
 - For account creation, login, SMS/authenticator 2FA, interactive CAPTCHA,
   Workday, AI-deterrent verification, or other impossible-to-complete steps,
   mark manual with the exact blocker, leave any useful partially completed tab

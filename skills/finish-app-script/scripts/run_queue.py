@@ -58,13 +58,24 @@ Notes carried from tracker: {notes}
 
 Use Codex Computer Use (computer-use@openai-bundled) for the live browser flow.
 
+Before drafting any FRQ, cover-letter interest sentence, "why us" answer, values
+answer, achievement example, or project example, load Liam's factual context.
+Read the row's tailored resume source at <resume directory>/resume.tex when
+available, where <resume directory> is the directory containing Resume PDF. Also
+read generic-resume/README.md and generic-resume/resume.tex when those files
+exist in the repo; they are the broader evidence bank. Use only Liam's actual
+resume/profile/project/tracker evidence. Never invent employers, internships,
+projects, tools, metrics, dates, credentials, or responsibilities. If a required
+answer cannot be grounded in those sources, use a supported adjacent example or
+mark the row manual for Liam review.
+
 Dropdowns / typeahead / combo boxes / multi-select: open the menu, click the actual option, verify the rendered chip/value. Never just type into a typeahead and move on — the field will be silently rejected.
 
 Email 2FA / verification codes / magic links sent to liamvanpj@gmail.com are NOT blockers. Use the gmail@openai-curated MCP to read the inbox, extract the code or click the magic link in Chrome (already signed in), and continue. Only escalate to manual if the email never arrives, expires, or the verification switches to SMS / authenticator-app 2FA.
 
 Confidence decision after final review:
 - HIGH (every required field covered, no blocker): click submit. If a verification code is emailed, retrieve it via Gmail MCP and complete. Capture confirmation evidence. Run skills/gmail-application-refresh/scripts/update_application_status.py with --status Applied --applied Yes. Set state="submitted".
-- MEDIUM (FRQ or one uncertain field): fill all safe fields, generate best-effort answer from Liam's profile, leave the tab open at the cleanest review point, set state="manual" with blocker like "FRQ review: <question>".
+- MEDIUM (FRQ or one uncertain field): fill all safe fields, generate best-effort answer from Liam's profile and resume evidence, leave the tab open at the cleanest review point, set state="manual" with blocker like "FRQ review: <question>".
 - HARD blocker (account creation, fresh login when not authenticated, SMS/authenticator-app 2FA, interactive CAPTCHA, Workday, legal signature, AI-deterrent verification): set state="manual" with the exact blocker.
 - Posting closed/404/redirected to a different role: set state="archived".
 
