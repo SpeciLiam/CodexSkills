@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T11:53:22.713833+00:00",
+  "generatedAt": "2026-05-07T12:59:21.412183+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,10 +21,10 @@
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 378,
+      "intakeJobs": 386,
       "intakeQueued": 30,
       "intakeNew": 39,
-      "intakeManual": 160,
+      "intakeManual": 168,
       "intakeApplied": 0,
       "applyRate": 62.2,
       "rejectionRate": 11.6,
@@ -258,7 +258,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 160
+        "value": 168
       },
       {
         "name": "Tailored",
@@ -288,11 +288,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 243
+        "value": 248
       },
       {
         "name": "LinkedIn",
-        "value": 135
+        "value": 138
       }
     ],
     "timeline": [
@@ -20939,6 +20939,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "RadixArk",
+      "role": "Full Stack Engineer",
+      "location": "Palo Alto, CA / Remote (U.S.)",
+      "postingKey": "4130434009",
+      "jobUrl": "https://job-boards.greenhouse.io/radixark/jobs/4130434009",
+      "discoveredAt": "2026-05-07T11:54:35.300304+00:00",
+      "postedAge": "crawled 6 days ago",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "General Matter",
       "role": "Software Engineer (New Grad)",
       "location": "Los Angeles, CA",
@@ -21722,6 +21736,76 @@
       "trackerPostingKey": "5592469004"
     },
     {
+      "source": "LinkedIn",
+      "company": "Smile Sync AI",
+      "role": "Founding Engineer, Full Stack",
+      "location": "United States",
+      "postingKey": "4326502601",
+      "jobUrl": "https://www.linkedin.com/jobs/view/founding-engineer-full-stack-at-smile-sync-ai-4326502601",
+      "discoveredAt": "2026-05-07T11:54:35.300304+00:00",
+      "postedAge": "2 days ago",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Seesaw",
+      "role": "Full Stack Engineer",
+      "location": "Remote - US",
+      "postingKey": "4669246006",
+      "jobUrl": "https://job-boards.greenhouse.io/seesaw/jobs/4669246006",
+      "discoveredAt": "2026-05-07T11:54:35.300304+00:00",
+      "postedAge": "crawled 2 weeks ago",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "LeoLabs, Inc.",
+      "role": "Full Stack Engineer",
+      "location": "Remote",
+      "postingKey": "4100790009",
+      "jobUrl": "https://job-boards.greenhouse.io/leolabsinc/jobs/4100790009",
+      "discoveredAt": "2026-05-07T11:54:35.300304+00:00",
+      "postedAge": "crawled last month",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "DistantJob",
+      "role": "Full Stack Engineer",
+      "location": "Remote",
+      "postingKey": "8173222002",
+      "jobUrl": "https://job-boards.greenhouse.io/distantjob/jobs/8173222002",
+      "discoveredAt": "2026-05-07T11:54:35.300304+00:00",
+      "postedAge": "crawled 2 days ago",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Dante",
+      "role": "Full Stack Engineer",
+      "location": "Remote - DC, VA, MD, CA, OR, WA, TX, CO, MT, KS",
+      "postingKey": "4318813007",
+      "jobUrl": "https://job-boards.greenhouse.io/dante/jobs/4318813007",
+      "discoveredAt": "2026-05-07T11:54:35.300304+00:00",
+      "postedAge": "crawled last month",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "Greenhouse",
       "company": "Horace Mann",
       "role": "Software Engineer",
@@ -22227,6 +22311,20 @@
     },
     {
       "source": "LinkedIn",
+      "company": "SageReport",
+      "role": "Founding Software Engineer",
+      "location": "United States",
+      "postingKey": "4345625977",
+      "jobUrl": "https://www.linkedin.com/jobs/view/founding-software-engineer-at-sagereport-4345625977",
+      "discoveredAt": "2026-05-07T11:54:35.300304+00:00",
+      "postedAge": "4 days ago",
+      "fitScore": 7,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: plausible founding SWE role from public capture, but generic-resume directory is missing locally and browser application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
       "company": "Reddit",
       "role": "Software Engineer, Ads",
       "location": "United States",
@@ -22587,6 +22685,20 @@
       "fitScore": 7,
       "status": "New",
       "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Talia Healthcare",
+      "role": "Founding Engineer (Remote)",
+      "location": "United States",
+      "postingKey": "4402731785",
+      "jobUrl": "https://www.linkedin.com/jobs/view/founding-engineer-remote-at-talia-healthcare-4402731785",
+      "discoveredAt": "2026-05-07T11:54:35.300304+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 6,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: plausible founding SWE role from public capture, but generic-resume directory is missing locally and browser application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
       "trackerPostingKey": ""
     },
     {
