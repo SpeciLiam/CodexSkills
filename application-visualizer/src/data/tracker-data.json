@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T21:57:11.799590+00:00",
+  "generatedAt": "2026-05-07T22:05:49.251209+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,10 +21,10 @@
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 439,
+      "intakeJobs": 440,
       "intakeQueued": 30,
       "intakeNew": 40,
-      "intakeManual": 216,
+      "intakeManual": 217,
       "intakeApplied": 0,
       "applyRate": 64.5,
       "rejectionRate": 11.2,
@@ -258,7 +258,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 216
+        "value": 217
       },
       {
         "name": "Tailored",
@@ -288,7 +288,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 287
+        "value": 288
       },
       {
         "name": "LinkedIn",
@@ -18027,6 +18027,20 @@
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "LivePerson",
+      "role": "Java Backend Engineer- SDE II",
+      "location": "Remote- USA",
+      "postingKey": "7700331",
+      "jobUrl": "https://job-boards.greenhouse.io/liveperson/jobs/7700331",
+      "discoveredAt": "2026-05-07T22:05:13.653542+00:00",
+      "postedAge": "Search crawled 2 days ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so resume-tailor could not prepare a verified role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
     {
       "source": "Greenhouse",
       "company": "Flexport",

@@ -2,11 +2,12 @@
 
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
-Jobs discovered: 439
-New: 40 | Queued: 30 | Tailored: 115 | Applied: 0 | Manual: 216 | Skipped: 35 | Duplicate: 1 | Expired: 2
+Jobs discovered: 440
+New: 40 | Queued: 30 | Tailored: 115 | Applied: 0 | Manual: 217 | Skipped: 35 | Duplicate: 1 | Expired: 2
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Greenhouse | LivePerson | Java Backend Engineer- SDE II | Remote- USA | 7700331 | https://job-boards.greenhouse.io/liveperson/jobs/7700331 | 2026-05-07T22:05:13.653542+00:00 | Search crawled 2 days ago | 10 | Manual | Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so resume-tailor could not prepare a verified role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight |  |
 | Greenhouse | Flexport | Software Engineer I, Finance | San Francisco, California, United States | 7354795 | https://job-boards.greenhouse.io/flexport/jobs/7354795 | 2026-05-07T21:04:00.718458+00:00 | Search crawled last month | 10 | Manual | Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so resume-tailor could not prepare a verified role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight |  |
 | Greenhouse | DLH | Software Engineer I | San Diego, California | 5063962007 | https://job-boards.greenhouse.io/dlhcorporation/jobs/5063962007 | 2026-05-07T21:04:00.718458+00:00 | Search crawled today | 10 | Manual | Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so resume-tailor could not prepare a verified role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight |  |
 | Greenhouse | Attentive | Software Engineer II, Segment Personalization | United States | 4240472009 | https://job-boards.greenhouse.io/attentive/jobs/4240472009 | 2026-05-07T21:04:00.718458+00:00 | Search crawled today | 10 | Manual | Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so resume-tailor could not prepare a verified role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight |  |
