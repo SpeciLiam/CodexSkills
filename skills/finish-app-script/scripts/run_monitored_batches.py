@@ -163,8 +163,7 @@ def main() -> int:
             print("\nStopped because --max-batches was set.")
             return rc
         if has_systemic_blocker():
-            print("\nSystemic browser/Computer Use blocker detected; leaving queued rows untouched.")
-            return rc or 2
+            print("\nSystemic browser/Computer Use blocker recorded as a per-row outcome; continuing.")
         if after["queued"] < before["queued"] and rc == 0:
             restarts = 0
             print("\nProgress made and queued rows remain; continuing.")

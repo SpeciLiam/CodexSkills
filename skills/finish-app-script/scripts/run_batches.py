@@ -68,41 +68,58 @@ For each row:
   the macOS file picker may default to the previous application's file; before
   confirming any upload, verify the selected path exactly matches the current
   row's resumePdf from /tmp/fa_script_run_state.json.
-- Submit high-confidence routine applications. High confidence means every
-  required field is filled from standing answers or obvious profile facts, the
-  correct resume is uploaded, and no blocker below applies. In that case, click
-  the final Submit/Submit application button, wait for a confirmation page or
-  confirmation text, capture it in confirmationEvidence, and set state to
-  "submitted". Do not leave a high-confidence application staged.
+- Resume/CV and Cover Letter fields are file-upload only. Never click
+  "Enter manually", never paste resume or cover-letter text into an ATS form,
+  and never submit with manually entered document text.
+- If a Cover Letter field is present, attach a cover-letter PDF too. Look in
+  the same directory as resumePdf for Liam_Van_<Company>_Cover_Letter.pdf. If
+  it is missing, generate and render it before upload:
+  python3 skills/resume-tailor/scripts/create_cover_letter.py --dir "<resume directory>" --company "<Company>" --role "<Role>" --why-interest "<2-3 truthful sentences grounded in the posting and Liam's projects>"
+  python3 skills/resume-tailor/scripts/render_cover_letter_pdf.py --dir "<resume directory>"
+  Upload the rendered cover-letter PDF by file picker, never manual text.
+- If an exact resume or cover-letter PDF cannot be attached after one retry,
+  leave the tab open, mark the row manual with blocker
+  "Document upload failed; manual attach required", and continue.
+- Submit high and medium confidence applications when every required field is
+  filled truthfully from standing answers, obvious profile facts, resume,
+  projects, or concise FRQ/custom written drafts. Click the final Submit/Submit
+  application button, wait for a confirmation page or confirmation text,
+  capture it in confirmationEvidence, and set state to "submitted". Do not
+  leave a high/medium confidence application staged.
 - Before clicking final Submit, make a short explicit decision: "submit is safe
-  because <reason>". If you cannot make that decision confidently within one
-  minute, or if the submit button is adjacent to unchecked acknowledgements,
-  certifications, legal text, custom free-response answers, work authorization
-  ambiguity, salary/location uncertainty, or anything not covered by standing
-  answers, do not click Submit. Mark the row manual with the exact item Liam
-  needs to review and leave the tab open.
+  because <reason>". Base the decision on the row's confidence score: high and
+  medium may submit after truthful completion; low must not submit. If a low
+  confidence row has unanswered or uncertain items, mark the row manual with the
+  exact item Liam needs to review and leave the tab open.
 - Treat these rendered answers as guardrails before final submit: authorized to
   work in the United States = Yes; now/future sponsorship required = No;
   comfortable working onsite/hybrid/in-office in NYC or San Francisco, including
   San Francisco 5 days/week = Yes. If any present answer differs, correct it. If
   you cannot correct it, mark manual and leave the tab open.
+- Medium confidence FRQ/custom written prompts are submit-capable when they can
+  be answered truthfully from Liam's profile, resume, projects, and standing
+  answers. Draft concise, specific, truthful answers, review them for factual
+  accuracy, and submit if the only remaining uncertainty is phrasing quality.
+- Low confidence rows must not be submitted. Fill safe fields, upload the
+  correct resume when possible, leave the tab open at the cleanest review point,
+  mark manual with the exact blocker, and continue to the next row.
 - Do not stall on a final-submit decision. Once the form is as complete as it
   safely can be, either submit with confirmation evidence or mark manual and
   exit/continue. Never hover at a staged final form waiting for confidence to
   improve.
 - If submitted successfully and confirmation evidence is captured, close that
   application tab before starting the next row.
-- For medium confidence, fill every safe field, leave the tab at the cleanest
-  review point, and mark manual with an exact blocker. Keep that handoff tab
-  open even if this Codex process is about to exit.
-- For hard blockers (account creation, login, SMS/authenticator 2FA,
-  interactive CAPTCHA, Workday, legal signature/attestation, AI-deterrent
-  verification), mark manual with the exact blocker and leave any useful
-  partially completed tab open for Liam.
-- Do not check legal acknowledgements, arbitration agreements, applicant
-  certifications, true-and-complete attestations, or signature-equivalent boxes.
-  If one is required, stop before checking it, mark manual, and leave the tab
-  open for Liam review.
+- For medium confidence, submit when the only issue is a truthful FRQ/custom
+  answer that you can draft accurately. If a medium row has a factual,
+  eligibility, legal, location, salary, or experience uncertainty outside
+  standing answers, leave the tab at the cleanest review point and mark manual
+  with an exact blocker. Keep that handoff tab open even if this Codex process
+  is about to exit.
+- For account creation, login, SMS/authenticator 2FA, interactive CAPTCHA,
+  Workday, AI-deterrent verification, or other impossible-to-complete steps,
+  mark manual with the exact blocker, leave any useful partially completed tab
+  open for Liam, and continue to the next queued row. These are per-row outcomes,
+  not hard stops for the batch.
 - For closed/404/mismatched postings, mark archived.
 - After any outcome, continue the next row from a brand-new tab when batch
   capacity remains. Do not reuse a submitted, partially completed, or handoff
@@ -116,13 +133,13 @@ For each row:
   short application-submitted note; then refresh the visualizer cache with:
   python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 
-Stop early if Chrome/Computer Use itself is unavailable, because that is a
-systemic runner blocker. In that case, mark only the current row manual with the
-exact browser-access blocker, then exit so the outer runner can stop safely.
+If Chrome/Computer Use itself is unavailable for a row, mark only the current
+row manual with the exact browser-access blocker, then continue when possible.
+Do not stop the whole batch solely because one row cannot be automated.
 
 Do not commit or push. The outer orchestrator owns commits.
 
-Exit after {batch_size} row outcomes or after a systemic blocker.
+Exit after {batch_size} row outcomes.
 """
 
 
@@ -230,7 +247,9 @@ def run_codex_batch(
 def commit_and_push(*, push: bool, message: str) -> bool:
     paths = [
         "application-trackers/applications.md",
+        "application-trackers/outcomes.jsonl",
         "application-visualizer/src/data/tracker-data.json",
+        "application-visualizer/src/data/pipeline-metrics.json",
     ]
     add = subprocess.run(["git", "-C", str(ROOT), "add", *paths], capture_output=True, text=True)
     if add.returncode != 0:
@@ -280,7 +299,7 @@ def main() -> int:
         default=DEFAULT_CHILD_SANDBOX,
         help=f"Sandbox for each fresh Codex process (default: {DEFAULT_CHILD_SANDBOX})",
     )
-    parser.add_argument("--no-commit", action="store_true", help="Skip auto-commit every 5 confirmed submissions")
+    parser.add_argument("--no-commit", action="store_true", help="Skip auto-commit every 5 submitted/archived outcomes")
     parser.add_argument("--no-push", action="store_true", help="Commit but do not push")
     parser.add_argument("--dry-run", action="store_true", help="Print the batches without invoking codex exec")
     args = parser.parse_args()
@@ -297,7 +316,7 @@ def main() -> int:
     )
 
     batch_number = 0
-    submitted_since_commit = 0
+    terminal_success_since_commit = 0
     summary: list[str] = []
 
     while True:
@@ -317,7 +336,7 @@ def main() -> int:
             print(f"  - {item.get('company')} | {item.get('role')} | {item.get('key')}")
 
         before_done = completed_keys(before)
-        before_submitted = state_counts(before)["submitted"]
+        before_counts = state_counts(before)
         started = time.time()
         rc, output, output_file = run_codex_batch(
             batch_number=batch_number,
@@ -332,13 +351,13 @@ def main() -> int:
         after_counts = state_counts(after)
         after_done = completed_keys(after)
         newly_done = after_done - before_done
-        new_submitted = max(0, after_counts["submitted"] - before_submitted)
-        submitted_since_commit += new_submitted
+        new_submitted = max(0, after_counts["submitted"] - before_counts["submitted"])
+        new_archived = max(0, after_counts["archived"] - before_counts["archived"])
+        terminal_success_since_commit += new_submitted + new_archived
 
         print(f"  exit rc={rc} after {elapsed:.0f}s | output: {output_file}")
         if newly_done:
             by_key = {str(item.get("key") or ""): item for item in after.get("items", [])}
-            systemic_blocked = False
             for key in sorted(newly_done):
                 item = by_key.get(key, {})
                 state_value = item.get("state")
@@ -348,10 +367,6 @@ def main() -> int:
                     line += f" | {blocker}"
                 summary.append(line)
                 print(f"  {line}")
-                systemic_blocked = systemic_blocked or is_systemic_blocker(item)
-            if systemic_blocked:
-                print("  systemic browser/Computer Use blocker detected; stopping before launching another batch.")
-                break
         else:
             tail = output.strip().splitlines()[-3:]
             print("  no state progress detected")
@@ -365,21 +380,21 @@ def main() -> int:
             print("  child exited non-zero; stopping for inspection.")
             break
 
-        if not args.no_commit and submitted_since_commit >= 5:
+        if not args.no_commit and terminal_success_since_commit >= 5:
             today = dt.date.today().isoformat()
-            print(f"\nCommitting {submitted_since_commit} submitted application update(s)...")
+            print(f"\nCommitting {terminal_success_since_commit} submitted/archived application outcome(s)...")
             commit_and_push(
                 push=not args.no_push,
-                message=f"Apply: {submitted_since_commit} confirmed submissions {today}",
+                message=f"Apply: {terminal_success_since_commit} submitted or archived outcomes {today}",
             )
-            submitted_since_commit = 0
+            terminal_success_since_commit = 0
 
-    if not args.no_commit and submitted_since_commit:
+    if not args.no_commit and terminal_success_since_commit:
         today = dt.date.today().isoformat()
-        print(f"\nFinal commit for {submitted_since_commit} submitted application update(s)...")
+        print(f"\nFinal commit for {terminal_success_since_commit} submitted/archived application outcome(s)...")
         commit_and_push(
             push=not args.no_push,
-            message=f"Apply: {submitted_since_commit} confirmed submissions {today}",
+            message=f"Apply: {terminal_success_since_commit} submitted or archived outcomes {today}",
         )
 
     final_counts = state_counts(load_state())

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T20:04:01.981815+00:00",
+  "generatedAt": "2026-05-07T21:05:36.091152+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 611,
-      "applied": 391,
-      "unapplied": 220,
+      "applied": 393,
+      "unapplied": 218,
       "active": 447,
       "rejected": 44,
       "interviewing": 3,
@@ -21,13 +21,13 @@
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 436,
+      "intakeJobs": 439,
       "intakeQueued": 30,
       "intakeNew": 40,
-      "intakeManual": 213,
+      "intakeManual": 216,
       "intakeApplied": 0,
-      "applyRate": 64.0,
-      "rejectionRate": 11.3,
+      "applyRate": 64.3,
+      "rejectionRate": 11.2,
       "recruiterWork": 331,
       "engineerWork": 414,
       "recruiterReachedOut": 115,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 340
+        "value": 342
       },
       {
         "name": "Archived",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 21
+        "value": 19
       },
       {
         "name": "Interviewing",
@@ -258,7 +258,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 213
+        "value": 216
       },
       {
         "name": "Tailored",
@@ -288,7 +288,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 284
+        "value": 287
       },
       {
         "name": "LinkedIn",
@@ -468,7 +468,7 @@
         "date": "2026-05-05",
         "cumulative": 542,
         "added": 34,
-        "applied": 11,
+        "applied": 12,
         "rejected": 0,
         "interviewing": 0
       },
@@ -476,7 +476,7 @@
         "date": "2026-05-06",
         "cumulative": 611,
         "added": 69,
-        "applied": 14,
+        "applied": 15,
         "rejected": 0,
         "interviewing": 0
       }
@@ -16144,8 +16144,8 @@
     {
       "company": "Sony Interactive Entertainment",
       "role": "Software Engineer I",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -16160,9 +16160,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Software Engineer I full-stack telemetry role; emphasized TypeScript/JavaScript, React/NestJS product surfaces, server-side/cloud integration, data pipelines, maintainable tests, documentation, and scalable user experiences.",
+      "notes": "Tailored for Software Engineer I full-stack telemetry role; emphasized TypeScript/JavaScript, React/NestJS product surfaces, server-side/cloud integration, data pipelines, maintainable tests, documentation, and scalable user experiences.; Application submitted 2026-05-07 via Greenhouse",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-07"
+      ]
     },
     {
       "company": "Redfin",
@@ -17612,8 +17614,8 @@
     {
       "company": "Palantir Technologies",
       "role": "Full Stack Software Engineer - Application Development",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -17628,10 +17630,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06",
+      "notes": "Manual apply needed: Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06; Application already received by Palantir Lever; prior submission receipt shown on 2026-05-07 for May 6, 2026.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-07"
       ]
     },
     {
@@ -18022,6 +18025,48 @@
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Flexport",
+      "role": "Software Engineer I, Finance",
+      "location": "San Francisco, California, United States",
+      "postingKey": "7354795",
+      "jobUrl": "https://job-boards.greenhouse.io/flexport/jobs/7354795",
+      "discoveredAt": "2026-05-07T21:04:00.718458+00:00",
+      "postedAge": "Search crawled last month",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so resume-tailor could not prepare a verified role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "DLH",
+      "role": "Software Engineer I",
+      "location": "San Diego, California",
+      "postingKey": "5063962007",
+      "jobUrl": "https://job-boards.greenhouse.io/dlhcorporation/jobs/5063962007",
+      "discoveredAt": "2026-05-07T21:04:00.718458+00:00",
+      "postedAge": "Search crawled today",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so resume-tailor could not prepare a verified role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Attentive",
+      "role": "Software Engineer II, Segment Personalization",
+      "location": "United States",
+      "postingKey": "4240472009",
+      "jobUrl": "https://job-boards.greenhouse.io/attentive/jobs/4240472009",
+      "discoveredAt": "2026-05-07T21:04:00.718458+00:00",
+      "postedAge": "Search crawled today",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so resume-tailor could not prepare a verified role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
     {
       "source": "Greenhouse",
       "company": "Roivant Sciences",
@@ -45467,7 +45512,7 @@
           "company": "Palantir Technologies",
           "role": "Full Stack Software Engineer - Application Development",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -45815,7 +45860,7 @@
           "company": "Sony Interactive Entertainment",
           "role": "Software Engineer I",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
