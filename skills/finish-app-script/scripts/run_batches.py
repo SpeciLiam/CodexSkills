@@ -70,7 +70,9 @@ For each row:
   row's resumePdf from /tmp/fa_script_run_state.json.
 - Resume/CV and Cover Letter fields are file-upload only. Never click
   "Enter manually", never paste resume or cover-letter text into an ATS form,
-  and never submit with manually entered document text.
+  and never submit with manually entered document text. This applies equally
+  to cover letters: if the ATS offers a cover-letter text box, manual-entry
+  option, or paste area, do not use it.
 - If a Cover Letter field is present, attach a cover-letter PDF too. Look in
   the same directory as resumePdf for Liam_Van_<Company>_Cover_Letter.pdf. If
   it is missing, generate and render it before upload:
