@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T17:19:30.324409+00:00",
+  "generatedAt": "2026-05-07T18:02:59.563050+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 611,
-      "applied": 382,
-      "unapplied": 229,
+      "applied": 391,
+      "unapplied": 220,
       "active": 447,
       "rejected": 44,
       "interviewing": 3,
@@ -21,13 +21,13 @@
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 428,
+      "intakeJobs": 432,
       "intakeQueued": 30,
       "intakeNew": 39,
-      "intakeManual": 206,
+      "intakeManual": 210,
       "intakeApplied": 0,
-      "applyRate": 62.5,
-      "rejectionRate": 11.5,
+      "applyRate": 64.0,
+      "rejectionRate": 11.3,
       "recruiterWork": 331,
       "engineerWork": 412,
       "recruiterReachedOut": 115,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 331
+        "value": 340
       },
       {
         "name": "Archived",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 89
+        "value": 80
       },
       {
         "name": "Rejected",
@@ -258,7 +258,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 206
+        "value": 210
       },
       {
         "name": "Tailored",
@@ -288,11 +288,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 278
+        "value": 280
       },
       {
         "name": "LinkedIn",
-        "value": 150
+        "value": 152
       }
     ],
     "timeline": [
@@ -436,7 +436,7 @@
         "date": "2026-05-01",
         "cumulative": 361,
         "added": 64,
-        "applied": 51,
+        "applied": 54,
         "rejected": 1,
         "interviewing": 0
       },
@@ -468,7 +468,7 @@
         "date": "2026-05-05",
         "cumulative": 542,
         "added": 34,
-        "applied": 8,
+        "applied": 11,
         "rejected": 0,
         "interviewing": 0
       },
@@ -476,7 +476,7 @@
         "date": "2026-05-06",
         "cumulative": 611,
         "added": 69,
-        "applied": 11,
+        "applied": 14,
         "rejected": 0,
         "interviewing": 0
       }
@@ -10752,8 +10752,8 @@
     {
       "company": "Scale AI",
       "role": "Software Engineer, ARC Team",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -10768,19 +10768,20 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI product infrastructure, Python/TypeScript systems, LLM applications, data workflows, production validation, and fast execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Do you have a security clearance?; Are you a current or former civilian or military employee of the United States Government? (If yes, when/where were you last employed and what was your highest grade/rank and title?); Manual apply still needed 2026-05-05: live Greenhouse posting requires at least active Secret clearance and says candidates without at least Secret clearance will not be considered; not submitted.",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI product infrastructure, Python/TypeScript systems, LLM applications, data workflows, production validation, and fast execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Do you have a security clearance?; Are you a current or former civilian or military employee of the United States Government? (If yes, when/where were you last employed and what was your highest grade/rank and title?); Manual apply still needed 2026-05-05: live Greenhouse posting requires at least active Secret clearance and says candidates without at least Secret clearance will not be considered; not submitted.; Application submitted 2026-05-06 via Greenhouse confirmation page observed in Chrome history fallback",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ]
     },
     {
       "company": "Scale AI",
       "role": "Software Engineer, Frontier AI Infrastructure",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -10795,11 +10796,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI infrastructure, backend/platform systems, distributed workflows, observability, reliability, and production readiness. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Do you have a security clearance?; Are you a current or former civilian or military employee of the United States Government? (If yes, when/where were you last employed and what was your highest grade/rank and title?)",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized AI infrastructure, backend/platform systems, distributed workflows, observability, reliability, and production readiness. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Do you have a security clearance?; Are you a current or former civilian or military employee of the United States Government? (If yes, when/where were you last employed and what was your highest grade/rank and title?); Application submitted 2026-05-06 via Greenhouse confirmation page observed in Chrome history fallback",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-06"
       ]
     },
     {
@@ -11072,8 +11074,8 @@
     {
       "company": "Flexport",
       "role": "Software Engineer II, Autonomous Freight Systems",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -11088,11 +11090,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend logistics workflows, distributed APIs, data modeling, reliability, and operational debugging. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Current / Most Recent Company; Current / Most Recent Job Title",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend logistics workflows, distributed APIs, data modeling, reliability, and operational debugging. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Current / Most Recent Company; Current / Most Recent Job Title; Application submitted 2026-05-06 via Greenhouse confirmation page observed in Chrome history fallback",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-06"
       ]
     },
     {
@@ -15465,8 +15468,8 @@
     {
       "company": "Reddit",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -15481,9 +15484,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-05 14:00 PT; tailored SWE resume rendered and verified one page; emphasized SF ads product engineering, backend services, full-stack feature delivery, Kubernetes-adjacent systems, observability, testing, and cross-functional execution. LinkedIn and browser-based apply were blocked because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-05: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-05 14:00 PT; tailored SWE resume rendered and verified one page; emphasized SF ads product engineering, backend services, full-stack feature delivery, Kubernetes-adjacent systems, observability, testing, and cross-functional execution. LinkedIn and browser-based apply were blocked because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-05: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.; Application submitted 2026-05-05 via Greenhouse confirmation page observed in Chrome history fallback",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-05",
         "2026-05-05",
         "2026-05-05"
       ]
@@ -15491,8 +15495,8 @@
     {
       "company": "Reddit",
       "role": "iOS Software Engineer, Contributions",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -15507,9 +15511,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-05 14:00 PT; tailored SWE resume rendered and verified one page; emphasized remote product engineering for high-traffic contribution workflows, API design, frontend collaboration, testing, product iteration, and user-facing feature delivery. LinkedIn and browser-based apply were blocked because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-05: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-05 14:00 PT; tailored SWE resume rendered and verified one page; emphasized remote product engineering for high-traffic contribution workflows, API design, frontend collaboration, testing, product iteration, and user-facing feature delivery. LinkedIn and browser-based apply were blocked because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-05: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.; Application submitted 2026-05-05 via Greenhouse confirmation page observed in Chrome history fallback",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-05",
         "2026-05-05",
         "2026-05-05"
       ]
@@ -16655,8 +16660,8 @@
     {
       "company": "Axon",
       "role": "Software Engineer I",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -16671,11 +16676,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-05 23:00 PT; tailored SWE resume rendered and verified one page; emphasized Software Engineer I mission-critical software, Java/Python/TypeScript, REST APIs, cloud release readiness, testing, and AI-assisted development workflows. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-05.",
+      "notes": "Hourly Greenhouse intake 2026-05-05 23:00 PT; tailored SWE resume rendered and verified one page; emphasized Software Engineer I mission-critical software, Java/Python/TypeScript, REST APIs, cloud release readiness, testing, and AI-assisted development workflows. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-05.; Application submitted 2026-05-06 via Greenhouse confirmation page observed in Chrome history fallback",
       "noteLinks": [],
       "activityDates": [
         "2026-05-05",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ]
     },
     {
@@ -16732,8 +16738,8 @@
     {
       "company": "PlayStation Global",
       "role": "Software Engineer I",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -16748,9 +16754,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight; Application submitted 2026-05-06 via Greenhouse confirmation page observed in Chrome history fallback",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-06",
         "2026-05-06"
       ]
     },
@@ -17363,8 +17370,8 @@
     {
       "company": "StubHub",
       "role": "Software Engineer II - Web Foundations",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -17379,9 +17386,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight; Manual apply needed 2026-05-06: tailored resume rendered and verified one page; application not attempted because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight.",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight; Manual apply needed 2026-05-06: tailored resume rendered and verified one page; application not attempted because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight.; Application submitted 2026-05-06 via Greenhouse confirmation page observed in Chrome history fallback",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-06",
         "2026-05-06",
         "2026-05-06"
       ]
@@ -17465,8 +17473,8 @@
     {
       "company": "Axon",
       "role": "Software Engineer II, Cloud Engineering",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -17481,9 +17489,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-06: tailored resume rendered and verified one page; application not attempted because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight.",
+      "notes": "Manual apply needed 2026-05-06: tailored resume rendered and verified one page; application not attempted because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight.; Application submitted 2026-05-06 via Greenhouse confirmation page observed in Chrome history fallback",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-06",
         "2026-05-06"
       ]
     },
@@ -18013,6 +18022,48 @@
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Sixth Street",
+      "role": "Software Engineer Associate - Data Platform Team",
+      "location": "New York, NY or Austin, TX",
+      "postingKey": "7685480003",
+      "jobUrl": "https://job-boards.greenhouse.io/sixthstreet/jobs/7685480003",
+      "discoveredAt": "2026-05-07T17:56:12.705225+00:00",
+      "postedAge": "Crawled last month",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so resume-tailor could not prepare a verified resume; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Dagster Labs",
+      "role": "Software Engineer - Product Development (Backend or Full-Stack)",
+      "location": "Remote with offices in San Francisco, CA / New York, NY / Minneapolis, MN",
+      "postingKey": "7680413003",
+      "jobUrl": "https://job-boards.greenhouse.io/dagsterlabs/jobs/7680413003",
+      "discoveredAt": "2026-05-07T17:56:12.705225+00:00",
+      "postedAge": "Crawled 2 days ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so resume-tailor could not prepare a verified resume; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "CDW",
+      "role": "Software Engineer I - Frontend",
+      "location": "Illinois, United States",
+      "postingKey": "4400780706",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-i-frontend-at-cdw-4400780706",
+      "discoveredAt": "2026-05-07T17:56:12.705225+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so resume-tailor could not prepare a verified resume; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
     {
       "source": "Greenhouse",
       "company": "Figma",
@@ -22198,6 +22249,20 @@
       "status": "Tailored",
       "reason": "SWE-family role, SF/Bay Area preference",
       "trackerPostingKey": "5592469004"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Nike",
+      "role": "Software Engineer I",
+      "location": "Beaverton, OR",
+      "postingKey": "linkedin-nike-software-engineer-i-beaverton-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/software-developer-i-jobs",
+      "discoveredAt": "2026-05-07T17:56:12.705225+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so resume-tailor could not prepare a verified resume; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
     },
     {
       "source": "Greenhouse",
@@ -44438,7 +44503,7 @@
           "company": "Axon",
           "role": "Software Engineer I",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -44462,7 +44527,7 @@
           "company": "Axon",
           "role": "Software Engineer II, Cloud Engineering",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -45122,7 +45187,7 @@
           "company": "PlayStation Global",
           "role": "Software Engineer I",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -45362,7 +45427,7 @@
           "company": "StubHub",
           "role": "Software Engineer II - Web Foundations",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -46094,7 +46159,7 @@
           "company": "Reddit",
           "role": "Software Engineer",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -47246,7 +47311,7 @@
           "company": "Reddit",
           "role": "iOS Software Engineer, Contributions",
           "fitScore": 8,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
