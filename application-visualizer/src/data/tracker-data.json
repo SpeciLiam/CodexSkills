@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T00:07:23.891176+00:00",
+  "generatedAt": "2026-05-07T02:06:28.452216+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,10 +21,10 @@
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 315,
+      "intakeJobs": 319,
       "intakeQueued": 30,
-      "intakeNew": 38,
-      "intakeManual": 102,
+      "intakeNew": 39,
+      "intakeManual": 105,
       "intakeApplied": 0,
       "applyRate": 60.9,
       "rejectionRate": 11.8,
@@ -262,11 +262,11 @@
       },
       {
         "name": "Manual",
-        "value": 102
+        "value": 105
       },
       {
         "name": "New",
-        "value": 38
+        "value": 39
       },
       {
         "name": "Queued",
@@ -288,7 +288,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 211
+        "value": 215
       },
       {
         "name": "LinkedIn",
@@ -18004,6 +18004,48 @@
   ],
   "jobIntake": [
     {
+      "source": "Greenhouse",
+      "company": "Amplitude",
+      "role": "Software Engineer I, Query",
+      "location": "San Francisco, CA",
+      "postingKey": "7985930002-query",
+      "jobUrl": "https://job-boards.greenhouse.io/amplitude/jobs/7985930002",
+      "discoveredAt": "2026-05-07T02:04:29.492339+00:00",
+      "postedAge": "public Greenhouse board result; captured 2026-05-07T02:04:26.760Z",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Amplitude",
+      "role": "Software Engineer II, Growth Platform",
+      "location": "San Francisco, CA",
+      "postingKey": "8015028002-growth-platform",
+      "jobUrl": "https://job-boards.greenhouse.io/amplitude/jobs/8015028002",
+      "discoveredAt": "2026-05-07T02:04:29.492339+00:00",
+      "postedAge": "public Greenhouse board result marked New; captured 2026-05-07T02:04:26.760Z",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Amplitude",
+      "role": "Platform Engineer II",
+      "location": "San Francisco, CA",
+      "postingKey": "7985930002-platform-engineer-ii",
+      "jobUrl": "https://job-boards.greenhouse.io/amplitude/jobs/7985930002",
+      "discoveredAt": "2026-05-07T02:04:29.492339+00:00",
+      "postedAge": "public Greenhouse board result; captured 2026-05-07T02:04:26.760Z",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "LinkedIn",
       "company": "Assurant",
       "role": "Associate Software Engineer (.NET)",
@@ -22215,6 +22257,20 @@
       "fitScore": 6,
       "status": "New",
       "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Greenhouse",
+      "role": "Software Engineer, Inbound Sourcing",
+      "location": "Ontario",
+      "postingKey": "7296548",
+      "jobUrl": "https://boards.greenhouse.io/embed/job_app?token=7296548",
+      "discoveredAt": "2026-05-07T02:04:29.492339+00:00",
+      "postedAge": "public Greenhouse embed result; captured 2026-05-07T02:04:26.760Z",
+      "fitScore": 5,
+      "status": "New",
+      "reason": "SWE-family role, location needs review",
       "trackerPostingKey": ""
     },
     {
