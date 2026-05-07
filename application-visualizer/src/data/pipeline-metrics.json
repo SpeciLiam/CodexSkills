@@ -46,7 +46,7 @@
       "archived": 0,
       "date": "2026-05-07",
       "manual": 0,
-      "submitted": 9
+      "submitted": 11
     }
   ],
   "avgConfidenceBySource": [
@@ -56,7 +56,7 @@
       "source": "Google Careers"
     },
     {
-      "avgScore": 34.6,
+      "avgScore": 35.2,
       "band": "low",
       "source": "Greenhouse"
     },
@@ -66,24 +66,24 @@
       "source": "LinkedIn"
     }
   ],
-  "generatedAt": "2026-05-07T12:59:21.575290+00:00",
+  "generatedAt": "2026-05-07T15:13:58.683685+00:00",
   "intakeHealth": {
-    "greenhouseCapturedToday": 0,
+    "greenhouseCapturedToday": 14,
     "greenhouseLastRun": "",
-    "linkedinCacheHitRate": 0,
+    "linkedinCacheHitRate": 0.571,
     "linkedinCapturedToday": 0,
-    "linkedinLastRun": ""
+    "linkedinLastRun": "2026-05-07T13:00:51.390807+00:00"
   },
   "queueDepth": {
-    "intakeUnprocessed": 77,
-    "manualApplyNeeded": 90,
+    "intakeUnprocessed": 92,
+    "manualApplyNeeded": 88,
     "readyToApply": 0,
     "resumeTailored": 21
   },
   "submitSuccessRate": {
-    "archived": 0.289,
-    "manual": 0.452,
-    "submitted": 0.259
+    "archived": 0.287,
+    "manual": 0.448,
+    "submitted": 0.265
   },
   "topBlockers": [
     {
