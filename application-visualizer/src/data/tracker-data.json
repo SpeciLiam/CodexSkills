@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T00:01:28.040918+00:00",
+  "generatedAt": "2026-05-08T00:05:02.340139+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,10 +21,10 @@
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 442,
+      "intakeJobs": 444,
       "intakeQueued": 30,
       "intakeNew": 40,
-      "intakeManual": 219,
+      "intakeManual": 221,
       "intakeApplied": 0,
       "applyRate": 65.6,
       "rejectionRate": 10.9,
@@ -258,7 +258,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 219
+        "value": 221
       },
       {
         "name": "Tailored",
@@ -292,7 +292,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 152
+        "value": 154
       }
     ],
     "timeline": [
@@ -22452,6 +22452,34 @@
       "status": "Tailored",
       "reason": "SWE-family role, SF/Bay Area preference",
       "trackerPostingKey": "5592469004"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Raytheon",
+      "role": "Software Engineer I, Onsite",
+      "location": "Fullerton, CA",
+      "postingKey": "4372702819",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-i-onsite-at-raytheon-4372702819",
+      "discoveredAt": "2026-05-08T00:03:36.072648+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; citizenship/security-clearance eligibility needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Raytheon",
+      "role": "2026 Full-time - Software Engineer I - Onsite (IN)",
+      "location": "Indianapolis, IN",
+      "postingKey": "4368829642",
+      "jobUrl": "https://www.linkedin.com/jobs/view/2026-full-time-software-engineer-i-onsite-in-at-raytheon-4368829642",
+      "discoveredAt": "2026-05-08T00:03:36.072648+00:00",
+      "postedAge": "18 hours ago",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; citizenship/security-clearance eligibility needs review",
+      "trackerPostingKey": ""
     },
     {
       "source": "LinkedIn",
