@@ -16,6 +16,7 @@ from update_application_tracker import (  # type: ignore
     DEFAULT_COLUMNS,
     normalize,
     parse_rows,
+    refresh_visualizer_data,
     render_tracker,
     repo_root_from_args,
     row_from_cells,
@@ -138,6 +139,7 @@ def main() -> int:
 
     new_lines = [build_row(row) for row in rows]
     tracker.write_text(render_tracker(new_lines))
+    refresh_visualizer_data(repo_root)
 
     print(
         f"Updated tracker for {row['Company']} | {row['Role']} with "

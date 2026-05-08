@@ -12,6 +12,7 @@ from update_application_tracker import (
     escape_cell,
     normalize,
     parse_rows,
+    refresh_visualizer_data,
     render_tracker,
     repo_root_from_args,
     row_from_cells,
@@ -115,6 +116,7 @@ def main() -> int:
 
     output = render_sorted(rows, column, descending)
     path.write_text(output)
+    refresh_visualizer_data(repo_root)
 
     direction = "desc" if descending else "asc"
     print(f"Sorted {len(rows)} rows by '{column}' ({direction}) → {path}")

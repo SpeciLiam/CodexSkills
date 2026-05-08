@@ -10,6 +10,7 @@ from update_application_tracker import (
     build_row,
     ensure_tracker,
     parse_rows,
+    refresh_visualizer_data,
     render_tracker,
     repo_root_from_args,
     row_from_cells,
@@ -54,6 +55,7 @@ def main() -> int:
         updated_rows.append(build_row(row))
 
     tracker.write_text(render_tracker(updated_rows))
+    refresh_visualizer_data(repo_root)
 
     if args.sync_notion:
         token = token_from_env(args.notion_token_env)

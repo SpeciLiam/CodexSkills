@@ -24,7 +24,7 @@ RESUME_SCRIPTS = ROOT / "skills" / "resume-tailor" / "scripts"
 sys.path.insert(0, str(RESUME_SCRIPTS))
 
 from application_fit import load_profile, score_application  # noqa: E402
-from update_application_tracker import parse_rows, row_from_cells, split_row  # noqa: E402
+from update_application_tracker import parse_rows, refresh_visualizer_data, row_from_cells, split_row  # noqa: E402
 
 
 INTAKE_COLUMNS = [
@@ -515,6 +515,7 @@ def main() -> int:
                 INTAKE_MD.parent.mkdir(parents=True, exist_ok=True)
                 INTAKE_MD.write_text(render_intake(combined), encoding="utf-8")
                 subprocess.run(["python3", "scripts/mirror_to_sqlite.py"], cwd=ROOT, check=False)
+                refresh_visualizer_data(ROOT)
                 wrote = True
             if args.duration_minutes <= 0 or time.time() >= deadline:
                 break

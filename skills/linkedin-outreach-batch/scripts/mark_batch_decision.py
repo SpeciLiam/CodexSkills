@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import subprocess
 from datetime import date
 from pathlib import Path
 
@@ -33,6 +34,14 @@ CONTACT_CONFIG = {
         "approval_choices": ("Needs engineer", "Needs approval", "Approved", "Rejected"),
     },
 }
+
+
+def refresh_visualizer_data() -> None:
+    subprocess.run(
+        ["python3", "skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py"],
+        cwd=ROOT,
+        check=False,
+    )
 
 
 def columns_for(config: dict[str, object]) -> list[str]:
@@ -183,6 +192,7 @@ def main() -> int:
         raise SystemExit(f"No batch row found for posting key {args.posting_key}")
 
     path.write_text(replace_table(markdown, rows, config), encoding="utf-8")
+    refresh_visualizer_data()
     print(f"Updated batch row {args.posting_key}.")
     return 0
 

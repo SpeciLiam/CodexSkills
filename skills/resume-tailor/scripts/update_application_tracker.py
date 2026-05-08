@@ -135,6 +135,14 @@ def refresh_sqlite_mirror(repo_root: Path) -> None:
     subprocess.run(["python3", "scripts/mirror_to_sqlite.py"], cwd=repo_root, check=False)
 
 
+def refresh_visualizer_data(repo_root: Path) -> None:
+    subprocess.run(
+        ["python3", "skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py"],
+        cwd=repo_root,
+        check=False,
+    )
+
+
 def outreach_tracker_path(repo_root: Path) -> Path:
     return repo_root / "application-trackers" / "outreach-prospects.md"
 
@@ -506,6 +514,7 @@ def main() -> int:
     tracker.write_text(render_tracker(updated_rows))
     upsert_outreach_queue(repo_root, tracker_row)
     refresh_sqlite_mirror(repo_root)
+    refresh_visualizer_data(repo_root)
 
     if args.sync_notion:
         from notion_sync import sync_tracker_to_notion, token_from_env

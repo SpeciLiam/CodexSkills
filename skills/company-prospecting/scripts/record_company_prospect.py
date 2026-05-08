@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 from pathlib import Path
+import subprocess
 import sys
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -40,6 +41,14 @@ def update_counts(queue_rows: list[dict[str, str]], prospect_rows: list[dict[str
         queue_row["Prospect Count"] = str(len(matching)) if matching else ""
         ready = sum(1 for row in matching if normalize(row.get("Email Status", "")) == "ready")
         queue_row["Ready Emails"] = str(ready) if ready else ""
+
+
+def refresh_visualizer_data(repo_root: Path) -> None:
+    subprocess.run(
+        ["python3", "skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py"],
+        cwd=repo_root,
+        check=False,
+    )
 
 
 def main() -> int:
@@ -116,6 +125,7 @@ def main() -> int:
     )
     update_counts(queue_rows, prospect_rows)
     tracker.write_text(render_tracker(queue_rows, prospect_rows))
+    refresh_visualizer_data(repo_root)
     print(f"Recorded prospect {args.name} for {args.company} ({args.posting_key}).")
     return 0
 

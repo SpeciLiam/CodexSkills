@@ -107,6 +107,7 @@ from update_application_tracker import (
     build_row,
     ensure_tracker,
     parse_rows,
+    refresh_visualizer_data,
     render_tracker,
     row_from_cells,
     split_row,
@@ -463,6 +464,7 @@ def mark_manual_workday(root: Path, items: list[dict[str, Any]], note_date: str)
 
     tracker.write_text(render_tracker(updated_rows), encoding="utf-8")
     refresh_sqlite_mirror(root)
+    refresh_visualizer_data(root)
     return marked
 
 

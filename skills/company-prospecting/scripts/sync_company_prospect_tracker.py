@@ -14,6 +14,7 @@ if str(RESUME_TAILOR_SCRIPTS) not in sys.path:
 from update_application_tracker import (  # type: ignore
     normalize,
     parse_rows,
+    refresh_visualizer_data,
     repo_root_from_args,
     row_from_cells,
     split_row,
@@ -242,6 +243,7 @@ def main() -> int:
     )
 
     target_path.write_text(render_tracker(queue_rows, existing_prospects))
+    refresh_visualizer_data(repo_root)
     print(f"Wrote {target_path} with {len(queue_rows)} queued companies and {len(existing_prospects)} prospects.")
     return 0
 

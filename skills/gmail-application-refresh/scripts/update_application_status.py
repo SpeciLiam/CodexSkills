@@ -19,6 +19,7 @@ from update_application_tracker import (
     ensure_tracker,
     normalize,
     parse_rows,
+    refresh_visualizer_data,
     posting_key as build_posting_key,
     render_tracker,
     repo_root_from_args,
@@ -187,6 +188,7 @@ def main() -> int:
     if outcome_row is not None:
         log_outcome(repo_root, outcome_row, args.status)
     refresh_sqlite_mirror(repo_root)
+    refresh_visualizer_data(repo_root)
     print(tracker)
     return 0
 
