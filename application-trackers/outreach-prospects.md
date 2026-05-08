@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 504
+Companies queued: 505
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -321,6 +321,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Known | Software Engineer | 8515531002 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/known/jobs/8515531002) |  |  |  |  |
 | Kalshi | Software Engineer, Product | 3dd97725-4a12-4963-b47a-cb5c562cfd1d | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/kalshi/3dd97725-4a12-4963-b47a-cb5c562cfd1d/application) |  |  |  |  |
 | Jobs via Dice | Software Engineer (Python & Go) \| $80/hr Remote | software-engineer-python-go-%2480-hr-remote-at-jobs-via-dice-4402385969 | 9 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-python-go-%2480-hr-remote-at-jobs-via-dice-4402385969) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
+| HealthLeap | Full Stack Engineer | c68a437b-dd8a-4e14-9b4e-d6229951d0aa | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/healthleap/c68a437b-dd8a-4e14-9b4e-d6229951d0aa) |  |  | 2026-05-07 | Queued by resume-tailor after tailored resume update. |
 | Grow Therapy | Software Engineer, Backend | 4678586005 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/growtherapy/jobs/4678586005?gh_src=8d47tscl5us) |  |  |  |  |
 | Grow Therapy | Software Engineer - Full Stack | 4678587005 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/growtherapy/jobs/4678587005) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Greenhouse | Full Stack Software Engineer | 7296545 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/greenhouse/jobs/7296545) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T00:28:04.587630+00:00",
+  "generatedAt": "2026-05-08T00:45:24.733205+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 613,
-      "applied": 405,
+      "total": 614,
+      "applied": 406,
       "unapplied": 208,
-      "active": 434,
+      "active": 435,
       "rejected": 45,
       "interviewing": 2,
       "assessments": 3,
-      "highFit": 483,
-      "reachOut": 542,
+      "highFit": 484,
+      "reachOut": 543,
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
@@ -28,15 +28,15 @@
       "intakeApplied": 0,
       "applyRate": 66.1,
       "rejectionRate": 11.1,
-      "recruiterWork": 320,
-      "engineerWork": 415,
+      "recruiterWork": 321,
+      "engineerWork": 416,
       "recruiterReachedOut": 115,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 354
+        "value": 355
       },
       {
         "name": "Archived",
@@ -74,7 +74,7 @@
       },
       {
         "name": "Ashby",
-        "value": 66
+        "value": 67
       },
       {
         "name": "Company Site",
@@ -144,7 +144,7 @@
       },
       {
         "name": "Bay Area",
-        "value": 135
+        "value": 136
       },
       {
         "name": "Other",
@@ -174,7 +174,7 @@
       },
       {
         "name": "Full Stack",
-        "value": 81
+        "value": 82
       },
       {
         "name": "Backend",
@@ -236,7 +236,7 @@
       },
       {
         "score": "9",
-        "count": 112
+        "count": 113
       },
       {
         "score": "10",
@@ -482,9 +482,9 @@
       },
       {
         "date": "2026-05-07",
-        "cumulative": 613,
-        "added": 2,
-        "applied": 0,
+        "cumulative": 614,
+        "added": 3,
+        "applied": 1,
         "rejected": 0,
         "interviewing": 0
       }
@@ -18117,6 +18117,31 @@
       "activityDates": [
         "2026-05-07"
       ]
+    },
+    {
+      "company": "HealthLeap",
+      "role": "Full Stack Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-07",
+      "location": "San Francisco, CA",
+      "source": "Ashby",
+      "jobLink": "https://jobs.ashbyhq.com/healthleap/c68a437b-dd8a-4e14-9b4e-d6229951d0aa",
+      "postingKey": "c68a437b-dd8a-4e14-9b4e-d6229951d0aa",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/HealthLeap/Full_Stack_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/HealthLeap/Full_Stack_Engineer/Liam_Van_Resume/Liam_Van_HealthLeap.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application submitted 2026-05-07 via Ashby",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-07"
+      ]
     }
   ],
   "jobIntake": [
@@ -28392,6 +28417,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "HealthLeap",
+      "role": "Full Stack Engineer",
+      "postingKey": "c68a437b-dd8a-4e14-9b4e-d6229951d0aa",
+      "fitScore": 9,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://jobs.ashbyhq.com/healthleap/c68a437b-dd8a-4e14-9b4e-d6229951d0aa",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-07",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -46491,6 +46529,18 @@
           "contacts": []
         },
         {
+          "key": "c68a437b-dd8a-4e14-9b4e-d6229951d0aa",
+          "company": "HealthLeap",
+          "role": "Full Stack Engineer",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-python-go-%2480-hr-remote-at-jobs-via-dice-4402385969",
           "company": "Jobs via Dice",
           "role": "Software Engineer (Python & Go) | $80/hr Remote",
@@ -59639,6 +59689,18 @@
           "key": "4678587005",
           "company": "Grow Therapy",
           "role": "Software Engineer - Full Stack",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "c68a437b-dd8a-4e14-9b4e-d6229951d0aa",
+          "company": "HealthLeap",
+          "role": "Full Stack Engineer",
           "fitScore": 9,
           "status": "Applied",
           "count": 1,

@@ -46,10 +46,15 @@
       "archived": 0,
       "date": "2026-05-08",
       "manual": 0,
-      "submitted": 3
+      "submitted": 4
     }
   ],
   "avgConfidenceBySource": [
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "Ashby"
+    },
     {
       "avgScore": 65.0,
       "band": "medium",
@@ -66,7 +71,7 @@
       "source": "LinkedIn"
     }
   ],
-  "generatedAt": "2026-05-08T00:28:04.641895+00:00",
+  "generatedAt": "2026-05-08T00:45:24.857242+00:00",
   "intakeHealth": {
     "greenhouseCapturedToday": 0,
     "greenhouseLastRun": "2026-05-07T23:03:42.727473+00:00",
@@ -81,9 +86,9 @@
     "resumeTailored": 9
   },
   "submitSuccessRate": {
-    "archived": 0.291,
-    "manual": 0.395,
-    "submitted": 0.314
+    "archived": 0.29,
+    "manual": 0.393,
+    "submitted": 0.317
   },
   "topBlockers": [
     {
