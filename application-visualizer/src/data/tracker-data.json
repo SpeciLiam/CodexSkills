@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T01:39:11.191310+00:00",
+  "generatedAt": "2026-05-08T02:06:38.599054+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,10 +21,10 @@
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 445,
+      "intakeJobs": 450,
       "intakeQueued": 30,
       "intakeNew": 40,
-      "intakeManual": 222,
+      "intakeManual": 227,
       "intakeApplied": 0,
       "applyRate": 66.1,
       "rejectionRate": 11.1,
@@ -258,7 +258,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 222
+        "value": 227
       },
       {
         "name": "Tailored",
@@ -288,11 +288,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 291
+        "value": 293
       },
       {
         "name": "LinkedIn",
-        "value": 154
+        "value": 157
       }
     ],
     "timeline": [
@@ -18147,6 +18147,34 @@
   "jobIntake": [
     {
       "source": "Greenhouse",
+      "company": "Thinking Machines Lab",
+      "role": "Software Engineer, Full Stack",
+      "location": "San Francisco",
+      "postingKey": "5013911008",
+      "jobUrl": "https://job-boards.greenhouse.io/thinkingmachines/jobs/5013911008",
+      "discoveredAt": "2026-05-08T02:05:33.181348+00:00",
+      "postedAge": "crawled 6 days ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: strong SF full-stack AI role, but generic-resume directory is missing locally so resume-tailor cannot prepare a verified role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Remi",
+      "role": "Software Engineer I/II | SF",
+      "location": "San Francisco, CA",
+      "postingKey": "linkedin-remi-software-engineer-i-ii-sf-2026-05-07",
+      "jobUrl": "https://www.linkedin.com/jobs/search/?keywords=software%20engineer&geoId=103644278&location=United%20States&f_TPR=r86400",
+      "discoveredAt": "2026-05-08T02:05:33.181348+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: strong SF early-career SWE role, but direct LinkedIn job URL is hidden by public capture, generic-resume directory is missing locally so resume-tailor cannot prepare a verified role folder, and authenticated LinkedIn/browser application attempt is blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Flourish",
       "role": "Full Stack Engineer",
       "location": "New York",
@@ -22501,6 +22529,20 @@
     },
     {
       "source": "LinkedIn",
+      "company": "Remi",
+      "role": "Software Engineer I/II",
+      "location": "Lehi, UT",
+      "postingKey": "4264249437",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-i-ii-at-remi-4264249437",
+      "discoveredAt": "2026-05-08T02:05:33.181348+00:00",
+      "postedAge": "1 day ago in LinkedIn aggregate result; direct page crawled older",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: plausible early-career SWE role, but generic-resume directory is missing locally so resume-tailor cannot prepare a verified role folder; authenticated LinkedIn/browser application attempt is also blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
       "company": "Raytheon",
       "role": "Software Engineer I, Onsite",
       "location": "Fullerton, CA",
@@ -23145,6 +23187,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Chime Financial, Inc",
+      "role": "Full-Stack Engineer, Cards Success",
+      "location": "San Francisco, CA",
+      "postingKey": "8350779002",
+      "jobUrl": "https://job-boards.greenhouse.io/chime/jobs/8350779002?gh_jid=8350779002",
+      "discoveredAt": "2026-05-08T02:05:33.181348+00:00",
+      "postedAge": "crawled 2 months ago",
+      "fitScore": 7,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: plausible SF full-stack role, but generic-resume directory is missing locally so resume-tailor cannot prepare a verified role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Nanonets",
       "role": "Forward Deployed Engineer",
       "location": "Palo Alto, CA",
@@ -23547,6 +23603,20 @@
       "fitScore": 7,
       "status": "New",
       "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Intrinsic",
+      "role": "Software Engineer, Vision-Guided Robotics",
+      "location": "Mountain View, CA",
+      "postingKey": "4345986745",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-vision-guided-robotics-at-intrinsic-4345986745",
+      "discoveredAt": "2026-05-08T02:05:33.181348+00:00",
+      "postedAge": "1 day ago in LinkedIn aggregate result; direct page crawled older",
+      "fitScore": 6,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: plausible robotics software role, but generic-resume directory is missing locally so resume-tailor cannot prepare a verified role folder; authenticated LinkedIn/browser application attempt is also blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
       "trackerPostingKey": ""
     },
     {
