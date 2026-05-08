@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T05:07:12.060018+00:00",
+  "generatedAt": "2026-05-08T05:15:52.631394+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 614,
-      "applied": 407,
-      "unapplied": 207,
+      "applied": 408,
+      "unapplied": 206,
       "active": 435,
       "rejected": 45,
       "interviewing": 2,
@@ -26,8 +26,8 @@
       "intakeNew": 40,
       "intakeManual": 232,
       "intakeApplied": 0,
-      "applyRate": 66.3,
-      "rejectionRate": 11.1,
+      "applyRate": 66.4,
+      "rejectionRate": 11.0,
       "recruiterWork": 321,
       "engineerWork": 416,
       "recruiterReachedOut": 115,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 356
+        "value": 357
       },
       {
         "name": "Archived",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 65
+        "value": 64
       },
       {
         "name": "Rejected",
@@ -476,7 +476,7 @@
         "date": "2026-05-06",
         "cumulative": 611,
         "added": 69,
-        "applied": 24,
+        "applied": 25,
         "rejected": 0,
         "interviewing": 0
       },
@@ -17609,8 +17609,8 @@
     {
       "company": "CDW",
       "role": "Software Engineer I - Backend",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -17625,7 +17625,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/bncwana/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Bafana Ncwana (Recruiter) 2026-05-06; Manual apply needed: Talemetry/CDW required typed-name ITAR/export-control acknowledgement and desired compensation with no posted range before final application review 2026-05-06; Manual apply still needed 2026-05-08: Safari/CDW Talemetry staged at Applicant Consents; tailored resume uploaded successfully; contact/address/work history/education parsed; disability/veteran/job questions filled; ITAR acknowledgement typed Liam Van; desired compensation $120,000; start date 2026-05-08. Applicant Consents visible with consent checkbox checked, gender Male and race Hispanic or Latino selected. Left for Liam final I ACCEPT/submit; no final submit clicked.",
+      "notes": "LinkedIn invite sent to Bafana Ncwana (Recruiter) 2026-05-06; Manual apply needed: Talemetry/CDW required typed-name ITAR/export-control acknowledgement and desired compensation with no posted range before final application review 2026-05-06; Manual apply still needed 2026-05-08: Safari/CDW Talemetry staged at Applicant Consents; tailored resume uploaded successfully; contact/address/work history/education parsed; disability/veteran/job questions filled; ITAR acknowledgement typed Liam Van; desired compensation $120,000; start date 2026-05-08. Applicant Consents visible with consent checkbox checked, gender Male and race Hispanic or Latino selected. Left for Liam final I ACCEPT/submit; no final submit clicked.; Application submitted by Liam 2026-05-08 via CDW Talemetry for Software Engineer I - Backend.",
       "noteLinks": [
         {
           "label": "Bafana Ncwana",
@@ -17635,6 +17635,7 @@
       "activityDates": [
         "2026-05-06",
         "2026-05-06",
+        "2026-05-08",
         "2026-05-08",
         "2026-05-08"
       ]
@@ -52586,7 +52587,7 @@
           "company": "CDW",
           "role": "Software Engineer I - Backend",
           "fitScore": 8,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [],
           "contacts": [
