@@ -58,13 +58,11 @@ TRUE_MANUAL_BLOCKERS = (
     "legal signature",
     "login",
     "non-compete",
-    "otp",
     "partner sharing",
     "profile",
     "recaptcha",
     "repeat application limit",
     "signature",
-    "verification",
     "workday",
 )
 
@@ -78,9 +76,17 @@ RETRYABLE_MANUAL_BLOCKERS = (
     "final application submission confirmation",
     "final submit confirmation",
     "linkedin login",
+    "email verification",
+    "email security code",
+    "emailed code",
+    "gmail verification",
+    "greenhouse email verification",
+    "magic link",
     "not automation-accessible",
+    "one-time code",
     "reapply needed",
     "start date",
+    "verification code sent to liamvanpj@gmail.com",
 )
 
 # Confidence reducers: signal that the form has FRQ / custom prompts. Don't
@@ -166,7 +172,27 @@ def manual_reason_from_notes(notes: str) -> str:
 
 def is_retryable_manual(app: dict[str, Any]) -> bool:
     reason = norm(manual_reason_from_notes(str(app.get("notes") or "")))
+    if is_email_verification_reason(reason):
+        return True
     return any(blocker in reason for blocker in RETRYABLE_MANUAL_BLOCKERS)
+
+
+def is_email_verification_reason(reason: str) -> bool:
+    """Email/Gmail verification is automation-accessible, unlike SMS/authenticator."""
+    if any(term in reason for term in ("sms", "authenticator", "authy")):
+        return False
+    email_markers = (
+        "email verification",
+        "email security code",
+        "emailed code",
+        "gmail",
+        "greenhouse code",
+        "magic link",
+        "one-time code",
+        "verification code",
+        "liamvanpj@gmail.com",
+    )
+    return any(marker in reason for marker in email_markers)
 
 
 def true_manual_reason(app: dict[str, Any]) -> str:
@@ -339,7 +365,18 @@ def build_run_state(
     include_low_fit: bool,
 ) -> dict[str, Any]:
     now = datetime.now(timezone.utc).isoformat()
-    agent_queue = queues["ready"] + queues["retry"]
+    # Default skill behavior kept true-manual rows out of the live browser
+    # runner. For a full drain, include them as low-confidence queued attempts:
+    # the batch prompt still treats account/login/Workday/signature/CAPTCHA as
+    # manual blockers and only submits high-confidence completed forms.
+    agent_queue = []
+    seen_queue_keys: set[str] = set()
+    for queue_entry in queues["ready"] + queues["retry"] + queues["manual"] + queues["manualWorkday"]:
+        key = row_key(queue_entry)
+        if key in seen_queue_keys:
+            continue
+        seen_queue_keys.add(key)
+        agent_queue.append(queue_entry)
     existing_items = {
         str(item.get("key") or ""): item
         for item in existing.get("items", [])

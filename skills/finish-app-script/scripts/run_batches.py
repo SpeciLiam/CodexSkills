@@ -17,6 +17,7 @@ import argparse
 import datetime as dt
 import json
 import re
+import select
 import subprocess
 import time
 from pathlib import Path
@@ -33,11 +34,16 @@ DEFAULT_CHILD_SANDBOX = "danger-full-access"
 DONE_STATES = {"submitted", "manual", "archived", "skipped"}
 SYSTEMIC_BLOCKER_TERMS = (
     "apple event error -1743",
+    "apple event error -10005",
     "browser access blocker",
     "chrome computer use unavailable",
+    "chrome/computer use timeout",
     "computer use access denied",
     "computer use approval denied",
     "computer use itself is unavailable",
+    "google chrome/com.google.chrome",
+    "timeout for google chrome",
+    "timeoutreached",
     "appnotfound(\"chrome\")",
 )
 
@@ -47,9 +53,20 @@ Read skills/finish-app-script/OPERATING_CARD.md before starting. Follow the
 standing answers and submission rules strictly, with this batch override:
 
 You are a fresh parent application agent, not a per-row subagent. Use Codex
-Computer Use directly for Google Chrome in this process. Use app name
-"Google Chrome" or bundle id "com.google.Chrome"; do not use bare "Chrome".
-Do not spawn subagents or parallel browser workers.
+Computer Use directly in this process. Prefer Google Chrome when it is
+responsive, using app name "Google Chrome" or bundle id "com.google.Chrome";
+if Chrome/Computer Use times out, immediately switch to Firefox using app name
+"Firefox" or bundle id "org.mozilla.firefox". If Firefox's native file picker
+shows the exact existing PDF selected but keeps Open disabled, treat that as a
+browser-specific upload failure and retry the same public ATS form in Safari
+using app name "Safari" or bundle id "com.apple.Safari". Do not use bare
+"Chrome". Do not spawn subagents or parallel browser workers.
+
+Rows whose notes, result, or blocker mention "upload-error redo", "Document
+upload failed", or "Firefox picker" are known document-upload retries. For
+those rows, use Safari for the ATS form from the start of the document-upload
+step. Do not mark a known upload retry manual for a disabled Firefox Open
+button; only mark manual if Safari also cannot attach the exact PDF.
 
 Process up to {batch_size} queued application rows from
 /tmp/fa_script_run_state.json, then exit cleanly. Before each row, reread the
@@ -57,7 +74,7 @@ state file and pick the first items[] entry with state == "queued". Keep one
 browser flow active at a time.
 
 For each row:
-- Always open a brand-new Chrome tab before navigating to the jobLink, including
+- Always open a brand-new browser tab before navigating to the jobLink, including
   the first row in this batch. Never navigate over an existing application,
   email, search, or handoff tab.
 - Before drafting any FRQ, cover-letter interest sentence, "why us" answer,
@@ -70,7 +87,7 @@ For each row:
   internships, projects, tools, metrics, dates, credentials, or responsibilities.
   If a required answer cannot be grounded in those sources, use a supported
   adjacent example or mark the row manual for Liam review.
-- Keep tabs organized by perceived confidence when possible: High Confidence /
+- Keep browser tabs organized by perceived confidence when possible: High Confidence /
   Ready Submit, Needs Review, Hard Blocker, and Submitted / Archived. If Chrome
   tab groups are not scriptable, leave tabs ordered in that bucket sequence and
   make the outcome note clear enough for Liam to identify the bucket.
@@ -78,6 +95,27 @@ For each row:
   the macOS file picker may default to the previous application's file; before
   confirming any upload, verify the selected path exactly matches the current
   row's resumePdf from /tmp/fa_script_run_state.json.
+- Known upload-retry rows: if the row notes, result, or blocker mention
+  "upload-error redo", "Document upload failed", or "Firefox picker", open the
+  application URL in Safari before uploading documents and perform the upload
+  there. This path has been verified on Uare.ai Greenhouse for both resume and
+  cover letter. Do not spend the retry on Firefox unless Safari itself is
+  unavailable.
+- Robust file-picker method: when a native macOS file picker opens, do not
+  navigate by clicking folders. Press Cmd+Shift+G, paste the exact absolute PDF
+  path from /tmp/fa_script_run_state.json, press Return, then press Return/Open.
+  If the file path contains spaces, still paste the raw absolute path. After the
+  dialog closes, verify the rendered attached filename matches the current row's
+  exact PDF filename. If the wrong prior resume remains attached, remove it and
+  retry once with Cmd+Shift+G. If Firefox leaves Open disabled after pasting a
+  full existing PDF path, press Escape, open the same application URL in Safari,
+  and repeat the exact nested Browse/Cmd+Shift+G upload flow there before
+  declaring the row manual.
+- On Greenhouse-style upload widgets, click the nested "Browse..." button
+  inside the Resume/CV or Cover Letter control, not the outer "Attach" tab or
+  label. The outer Attach control can open a picker state where a selected PDF
+  still leaves Open disabled. Use "Browse..." first, then the Cmd+Shift+G exact
+  path flow.
 - Resume/CV and Cover Letter fields are file-upload only. Never click
   "Enter manually", never paste resume or cover-letter text into an ATS form,
   and never submit with manually entered document text. This applies equally
@@ -108,6 +146,11 @@ For each row:
   comfortable working onsite/hybrid/in-office in NYC or San Francisco, including
   San Francisco 5 days/week = Yes. If any present answer differs, correct it. If
   you cannot correct it, mark manual and leave the tab open.
+- Email 2FA, emailed verification codes, and magic links sent to
+  liamvanpj@gmail.com are not blockers. Use Gmail access to retrieve the code
+  or click the magic link, then continue the application. Escalate only if the
+  email never arrives, expires, or the flow switches to SMS/authenticator-app
+  verification.
 - FRQ/custom written prompts should be completed whenever they can be answered
   truthfully from Liam's profile, resume, projects, standing answers, tracker
   notes, and the posting. Draft concise, specific, truthful answers and review
@@ -148,8 +191,9 @@ For each row:
   python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 
 If Chrome/Computer Use itself is unavailable for a row, mark only the current
-row manual with the exact browser-access blocker, then continue when possible.
-Do not stop the whole batch solely because one row cannot be automated.
+row manual with the exact browser-access blocker, then exit the batch cleanly.
+Do not continue burning queued rows when the browser automation layer is
+systemically unavailable.
 
 Do not commit or push. The outer orchestrator owns commits.
 
@@ -257,24 +301,53 @@ def run_codex_batch(
         print("  dry run command:")
         print("  " + " ".join(cmd[:10]) + " ...")
         return 0, "dry-run", output_file
+    process = subprocess.Popen(
+        cmd,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        text=True,
+        bufsize=1,
+    )
+    assert process.stdout is not None
+    chunks: list[str] = []
+    started = time.time()
+    last_heartbeat = started
     try:
-        result = subprocess.run(cmd, timeout=timeout_s, capture_output=True, text=True)
-        combined = (result.stdout or "") + (result.stderr or "")
-        if combined and not output_file.exists():
-            output_file.write_text(combined, encoding="utf-8")
-        elif combined:
-            with output_file.open("a", encoding="utf-8") as handle:
-                handle.write("\n\n--- codex exec stdout/stderr ---\n")
-                handle.write(combined)
-        return result.returncode, combined, output_file
-    except subprocess.TimeoutExpired as exc:
-        message = f"timeout after {timeout_s}s"
-        if exc.stdout:
-            message += f"\n{exc.stdout}"
-        if exc.stderr:
-            message += f"\n{exc.stderr}"
-        output_file.write_text(message, encoding="utf-8")
-        return -1, message, output_file
+        while True:
+            now = time.time()
+            if now - started > timeout_s:
+                process.kill()
+                message = f"timeout after {timeout_s}s"
+                chunks.append(message)
+                output_file.write_text("\n".join(chunks) + "\n", encoding="utf-8")
+                return -1, "\n".join(chunks), output_file
+
+            ready, _, _ = select.select([process.stdout], [], [], 1)
+            if ready:
+                line = process.stdout.readline()
+                if line:
+                    chunks.append(line)
+            rc = process.poll()
+            if rc is not None:
+                remainder = process.stdout.read()
+                if remainder:
+                    chunks.append(remainder)
+                combined = "".join(chunks)
+                if combined and not output_file.exists():
+                    output_file.write_text(combined, encoding="utf-8")
+                elif combined:
+                    with output_file.open("a", encoding="utf-8") as handle:
+                        handle.write("\n\n--- codex exec stdout/stderr ---\n")
+                        handle.write(combined)
+                return rc, combined, output_file
+
+            if now - last_heartbeat >= 30:
+                elapsed = int(now - started)
+                print(f"  child still running after {elapsed}s | output: {output_file}", flush=True)
+                last_heartbeat = now
+    finally:
+        if process.poll() is None:
+            process.kill()
 
 
 def commit_and_push(*, push: bool, message: str) -> bool:

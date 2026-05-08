@@ -23,11 +23,16 @@ STATE_PATH = Path("/tmp/fa_script_run_state.json")
 LOG_DIR = Path("/tmp/fa_script_monitor_logs")
 SYSTEMIC_BLOCKER_TERMS = (
     "apple event error -1743",
+    "apple event error -10005",
     "browser access blocker",
     "chrome computer use unavailable",
+    "chrome/computer use timeout",
     "computer use access denied",
     "computer use approval denied",
     "computer use itself is unavailable",
+    "google chrome/com.google.chrome",
+    "timeout for google chrome",
+    "timeoutreached",
     "appnotfound(\"chrome\")",
 )
 
@@ -168,7 +173,8 @@ def main() -> int:
             print("\nStopped because --max-batches was set.")
             return rc
         if has_systemic_blocker():
-            print("\nSystemic browser/Computer Use blocker recorded as a per-row outcome; continuing.")
+            print("\nSystemic browser/Computer Use blocker recorded; stopping before more rows are mislabeled.")
+            return rc or 1
         if after["queued"] < before["queued"] and rc == 0:
             restarts = 0
             print("\nProgress made and queued rows remain; continuing.")

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T04:05:50.750401+00:00",
+  "generatedAt": "2026-05-08T04:22:04.822302+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 614,
-      "applied": 406,
-      "unapplied": 208,
+      "applied": 407,
+      "unapplied": 207,
       "active": 435,
       "rejected": 45,
       "interviewing": 2,
@@ -26,7 +26,7 @@
       "intakeNew": 40,
       "intakeManual": 231,
       "intakeApplied": 0,
-      "applyRate": 66.1,
+      "applyRate": 66.3,
       "rejectionRate": 11.1,
       "recruiterWork": 321,
       "engineerWork": 416,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 355
+        "value": 356
       },
       {
         "name": "Archived",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 66
+        "value": 65
       },
       {
         "name": "Rejected",
@@ -436,7 +436,7 @@
         "date": "2026-05-01",
         "cumulative": 361,
         "added": 64,
-        "applied": 55,
+        "applied": 56,
         "rejected": 1,
         "interviewing": 0
       },
@@ -10533,8 +10533,8 @@
     {
       "company": "Whop",
       "role": "Full Stack Engineer, Ad Networks",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -10549,7 +10549,7 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required custom personal project and LLM/social profile responses; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume reapply attempt 2026-05-04 stopped on blocker: Clean regenerated resume uploaded where possible; submit stopped on validation/blocker:; Manual apply still needed 2026-05-04: live Greenhouse embed has reCAPTCHA, plus required custom personal/LLM response fields for this Whop role.; Manual apply needed 2026-05-05: live Greenhouse embed staged with resume/education, but not submitted because role requires Palo Alto office 5 days/week, minimum 5 years experience, and custom required LLM-prompt response for Liam review.; Manual apply still needed 2026-05-08: full manual-row retry preserved prior blocker; required custom personal project/LLM/social-profile responses plus onsite/experience concerns need Liam review before any submit.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required custom personal project and LLM/social profile responses; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume reapply attempt 2026-05-04 stopped on blocker: Clean regenerated resume uploaded where possible; submit stopped on validation/blocker:; Manual apply still needed 2026-05-04: live Greenhouse embed has reCAPTCHA, plus required custom personal/LLM response fields for this Whop role.; Manual apply needed 2026-05-05: live Greenhouse embed staged with resume/education, but not submitted because role requires Palo Alto office 5 days/week, minimum 5 years experience, and custom required LLM-prompt response for Liam review.; Manual apply still needed 2026-05-08: full manual-row retry preserved prior blocker; required custom personal project/LLM/social-profile responses plus onsite/experience concerns need Liam review before any submit.; Application submitted via Greenhouse confirmation page 2026-05-08 after Safari manual fill; uploaded tailored Liam_Van_Whop.pdf and filled education, work authorization, onsite, LinkedIn, and custom LLM/free-response answers.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
@@ -10558,6 +10558,7 @@
         "2026-05-04",
         "2026-05-04",
         "2026-05-05",
+        "2026-05-08",
         "2026-05-08"
       ]
     },
@@ -17624,7 +17625,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/bncwana/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Bafana Ncwana (Recruiter) 2026-05-06; Manual apply needed: Talemetry/CDW required typed-name ITAR/export-control acknowledgement and desired compensation with no posted range before final application review 2026-05-06; Manual apply still needed 2026-05-08: Safari/CDW Talemetry flow was reopened during full manual-row retry; blocker remains typed-name ITAR/export-control acknowledgement and desired compensation before final review. Do not auto-submit.",
+      "notes": "LinkedIn invite sent to Bafana Ncwana (Recruiter) 2026-05-06; Manual apply needed: Talemetry/CDW required typed-name ITAR/export-control acknowledgement and desired compensation with no posted range before final application review 2026-05-06; Manual apply still needed 2026-05-08: Safari/CDW Talemetry staged at Applicant Consents; tailored resume uploaded successfully; contact/address/work history/education parsed; disability/veteran/job questions filled; ITAR acknowledgement typed Liam Van; desired compensation $120,000; start date 2026-05-08. Applicant Consents visible with consent checkbox checked, gender Male and race Hispanic or Latino selected. Left for Liam final I ACCEPT/submit; no final submit clicked.",
       "noteLinks": [
         {
           "label": "Bafana Ncwana",
@@ -17634,6 +17635,7 @@
       "activityDates": [
         "2026-05-06",
         "2026-05-06",
+        "2026-05-08",
         "2026-05-08"
       ]
     },

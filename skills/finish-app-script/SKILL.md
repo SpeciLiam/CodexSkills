@@ -32,6 +32,36 @@ Do not pass `--no-commit` or `--no-push` unless the user explicitly asks.
 submissions. Use the legacy `run_queue.py` only if the user explicitly asks for
 per-row mode.
 
+Default queue behavior includes all not-applied rows that pass the script's
+basic filters, including rows previously labeled true manual or Workday. Those
+rows are queued as low-confidence live-browser attempts so the agent can fill
+safe fields and answerable FRQs, then leave the tab open with a precise blocker
+or review note. Final submission is still allowed only for high-confidence rows.
+If Chrome/Computer Use times out or is unavailable, stop the run as a systemic
+browser blocker instead of marking the rest of the queue manual. If Firefox is
+responsive through Computer Use, future batches may use Firefox as the fallback
+browser so the queue can continue without losing the high-confidence-only
+submission gate.
+Email 2FA, verification codes, and magic links sent to liamvanpj@gmail.com are
+not blockers; the batch agent should use Gmail access to retrieve the code or
+open the link and continue. Only SMS/authenticator-app 2FA, missing/expired
+emails, or account-creation/legal gates should become manual blockers.
+For native macOS file uploads, use Cmd+Shift+G with the exact absolute PDF path
+from the row state, then Return/Open, and verify the rendered attached filename.
+Do not trust folder-click navigation when the picker remembers a previous
+application's directory or stale file.
+For Greenhouse upload widgets, click the nested `Browse...` button inside the
+Resume/CV or Cover Letter field rather than the outer `Attach` control; the
+outer control can leave `Open` disabled even when a PDF is selected.
+If Firefox selects the exact existing PDF but leaves the native picker `Open`
+button disabled, treat that as a Firefox upload bug, not a missing-file blocker:
+retry the same public ATS form in Safari using the same nested `Browse...` and
+Cmd+Shift+G exact-path flow before marking the row manual.
+For known upload-redo rows whose notes or blocker mention `Document upload
+failed`, `upload-error redo`, or `Firefox picker`, start the document upload in
+Safari instead of spending the retry on Firefox. Safari has been verified on
+Uare.ai Greenhouse for both resume and cover-letter PDFs.
+
 ## Tab Confidence Grouping
 
 During live browser runs, keep open application tabs organized by perceived
