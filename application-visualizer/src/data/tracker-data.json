@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T04:22:04.822302+00:00",
+  "generatedAt": "2026-05-08T05:07:12.060018+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,10 +21,10 @@
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 454,
+      "intakeJobs": 455,
       "intakeQueued": 30,
       "intakeNew": 40,
-      "intakeManual": 231,
+      "intakeManual": 232,
       "intakeApplied": 0,
       "applyRate": 66.3,
       "rejectionRate": 11.1,
@@ -258,7 +258,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 231
+        "value": 232
       },
       {
         "name": "Tailored",
@@ -288,7 +288,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 294
+        "value": 295
       },
       {
         "name": "LinkedIn",
@@ -18157,6 +18157,20 @@
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Flex",
+      "role": "Software Engineer I, Backend (New Grad - 2025)",
+      "location": "Remote (U.S.)",
+      "postingKey": "4632053005",
+      "jobUrl": "https://job-boards.greenhouse.io/flex/jobs/4632053005?gh_src=Nfeutp",
+      "discoveredAt": "2026-05-08T05:05:55.960004+00:00",
+      "postedAge": "4 months ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-08: strong remote U.S. backend new-grad role, but `generic-resume/` is missing locally so resume-tailor cannot prepare and verify a role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
     {
       "source": "LinkedIn",
       "company": "Notion",
