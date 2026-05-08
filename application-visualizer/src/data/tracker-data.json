@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T00:45:24.733205+00:00",
+  "generatedAt": "2026-05-08T01:04:00.208470+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,10 +21,10 @@
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 444,
+      "intakeJobs": 445,
       "intakeQueued": 30,
       "intakeNew": 40,
-      "intakeManual": 221,
+      "intakeManual": 222,
       "intakeApplied": 0,
       "applyRate": 66.1,
       "rejectionRate": 11.1,
@@ -258,7 +258,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 221
+        "value": 222
       },
       {
         "name": "Tailored",
@@ -288,7 +288,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 290
+        "value": 291
       },
       {
         "name": "LinkedIn",
@@ -18145,6 +18145,20 @@
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Flourish",
+      "role": "Full Stack Engineer",
+      "location": "New York",
+      "postingKey": "5525289004",
+      "jobUrl": "https://job-boards.greenhouse.io/flourish/jobs/5525289004",
+      "discoveredAt": "2026-05-08T01:03:14.094083+00:00",
+      "postedAge": "public Greenhouse result crawled 2 weeks ago; captured 2026-05-08T01:03:14.002179+00:00",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-07: strong NYC full-stack role, but generic-resume directory is missing locally so resume-tailor cannot prepare a verified role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
     {
       "source": "Greenhouse",
       "company": "CLEAR - Corporate",

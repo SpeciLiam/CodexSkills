@@ -2,11 +2,12 @@
 
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
-Jobs discovered: 444
-New: 40 | Queued: 30 | Tailored: 115 | Applied: 0 | Manual: 221 | Skipped: 35 | Duplicate: 1 | Expired: 2
+Jobs discovered: 445
+New: 40 | Queued: 30 | Tailored: 115 | Applied: 0 | Manual: 222 | Skipped: 35 | Duplicate: 1 | Expired: 2
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Greenhouse | Flourish | Full Stack Engineer | New York | 5525289004 | https://job-boards.greenhouse.io/flourish/jobs/5525289004 | 2026-05-08T01:03:14.094083+00:00 | public Greenhouse result crawled 2 weeks ago; captured 2026-05-08T01:03:14.002179+00:00 | 10 | Manual | Manual tailoring/apply needed 2026-05-07: strong NYC full-stack role, but generic-resume directory is missing locally so resume-tailor cannot prepare a verified role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight |  |
 | Greenhouse | CLEAR - Corporate | Software Engineer, Infrastructure | New York, New York, United States | 7901600 | https://job-boards.greenhouse.io/clear/jobs/7901600 | 2026-05-07T23:03:42.775648+00:00 | today | 10 | Manual | Tailored 2026-05-07; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight | 7901600 |
 | Greenhouse | LivePerson | Java Backend Engineer- SDE II | Remote- USA | 7700331 | https://job-boards.greenhouse.io/liveperson/jobs/7700331 | 2026-05-07T22:05:13.653542+00:00 | Search crawled 2 days ago | 10 | Manual | Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so resume-tailor could not prepare a verified role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight |  |
 | Greenhouse | Flexport | Software Engineer I, Finance | San Francisco, California, United States | 7354795 | https://job-boards.greenhouse.io/flexport/jobs/7354795 | 2026-05-07T21:04:00.718458+00:00 | Search crawled last month | 10 | Manual | Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so resume-tailor could not prepare a verified role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight |  |
