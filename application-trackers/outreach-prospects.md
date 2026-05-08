@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 530
+Companies queued: 534
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -344,6 +344,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Garage | Software Engineer | f4018670-2c66-4da9-acac-2aa0af432abb | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/garage/f4018670-2c66-4da9-acac-2aa0af432abb) |  |  |  |  |
 | Freeform | Software Engineer, C++ (New Grad Summer 2026) | 7551045003 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/freeformfuturecorp/jobs/7551045003?gh_src=utse74533us) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Foxglove | Software Engineer, New Grad | 4398854319 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4398854319/) |  |  |  |  |
+| Flatiron Health | Software Engineer | 4412171567 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4412171567/?trackingId=5uL9K5GIkkfzhJuXKR0kOQ%3D%3D&refId=sAUo7dxL6I%2B7EJ8zBaNrKQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3Bejpn7Zy6TRqyCem%2B54VQvw%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | First Resonance | Forward Deployed Software Engineer | fdb3fcb7-2575-4fb2-b5d8-945a7aeab427 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/first-resonance/fdb3fcb7-2575-4fb2-b5d8-945a7aeab427/application) |  |  |  |  |
 | Figma | Software Engineer, Full Stack | 5691911004 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/figma/jobs/5691911004?gh_jid=5691911004&gh_src=28109e334us&source=LinkedIn) |  |  |  |  |
 | Ever | Software Engineer | 5064724008 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/ever/jobs/5064724008) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
@@ -501,6 +502,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | CloudInnTech | Software Engineer | 4410729638 | 7 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4410729638/) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Character.AI | Software Engineer, Monetization | 4310537769 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4310537769/) |  |  |  |  |
 | Chalk | Software Engineer | 4396373128 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4396373128/) |  |  |  |  |
+| Box | Associate Solutions Engineer | 7819362 | 7 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/boxinc/jobs/7819362?gh_src=hpgt7yuj1us) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | Blossom | Software Engineer (All Levels) | 4394990220 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4394990220/) |  |  |  |  |
 | Belvedere Trading | Software Engineer | 2f915976-b1e1-4e3e-81da-1116dcbb2344 | 7 | Resume Tailored | Yes | [Posting](https://jobs.lever.co/belvederetrading/2f915976-b1e1-4e3e-81da-1116dcbb2344/apply?source=LinkedIn) |  |  |  |  |
 | AvicenaTech | Entry Level Software Engineer | 0e1746e5-cfb8-4020-9aef-b978f8b61957 | 7 | Applied | Yes | [Posting](https://ats.rippling.com/general/jobs/0e1746e5-cfb8-4020-9aef-b978f8b61957?src=lnki) |  |  |  |  |
@@ -513,6 +515,8 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Harper | Member of Technical Staff | 0df32e98-1366-4f05-925a-929e77924d82 | 6 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/harperinsure/0df32e98-1366-4f05-925a-929e77924d82/application?utm_source=LinkedInSlot) |  |  |  |  |
 | DV Trading | Software Developer (New York) | 4687462005 | 6 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/dvtrading/jobs/4687462005?gh_src=oqkfn62w5us) |  |  |  |  |
 | Compass | Software Engineer I | 4406906856 | 6 | Resume Tailored |  | [Posting](https://www.linkedin.com/jobs/view/4406906856/?trackingId=JUeK72jL8X4Tu6MiVFuo8A%3D%3D&refId=5T2Rb2GlMfL%2FBz2KqJWJrw%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BUTANzKPlRHOklMmK0Lw4Yw%3D%3D) |  |  |  |  |
+| Box | SMB Solutions Engineer | 4411230125 | 6 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4411230125/) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
+| Box | Developer Relations Engineer | 4396594817 | 6 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4396594817/) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | UMATR | Forward Deployed Engineer | 4402457792 | 5 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4402457792/) |  |  |  |  |
 | Uber | Sales Performance Management Application Developer | careers | 5 | Applied | Yes | [Posting](https://www.uber.com/global/en/careers/) |  |  |  |  |
 | Tavus | Forward Deployed Engineer | 4407862803 | 5 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4407862803/) |  |  |  |  |

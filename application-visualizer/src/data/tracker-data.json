@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T23:20:15.250234+00:00",
+  "generatedAt": "2026-05-08T23:31:23.840843+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 643,
-      "applied": 439,
-      "unapplied": 204,
-      "active": 456,
+      "total": 647,
+      "applied": 442,
+      "unapplied": 205,
+      "active": 460,
       "rejected": 51,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 507,
-      "reachOut": 568,
+      "highFit": 508,
+      "reachOut": 572,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
@@ -27,16 +27,16 @@
       "intakeManual": 252,
       "intakeApplied": 0,
       "applyRate": 68.3,
-      "rejectionRate": 11.6,
-      "recruiterWork": 340,
-      "engineerWork": 418,
+      "rejectionRate": 11.5,
+      "recruiterWork": 344,
+      "engineerWork": 422,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 381
+        "value": 384
       },
       {
         "name": "Archived",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 16
+        "value": 17
       },
       {
         "name": "Online Assessment",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 256
+        "value": 259
       },
       {
         "name": "Greenhouse",
-        "value": 242
+        "value": 243
       },
       {
         "name": "Ashby",
@@ -144,15 +144,15 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 290
+        "value": 292
       },
       {
         "name": "Bay Area",
-        "value": 141
+        "value": 142
       },
       {
         "name": "Other",
-        "value": 116
+        "value": 117
       },
       {
         "name": "Remote",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 359
+        "value": 363
       },
       {
         "name": "Full Stack",
@@ -228,11 +228,11 @@
       },
       {
         "score": "6",
-        "count": 11
+        "count": 13
       },
       {
         "score": "7",
-        "count": 37
+        "count": 38
       },
       {
         "score": "8",
@@ -240,7 +240,7 @@
       },
       {
         "score": "9",
-        "count": 118
+        "count": 119
       },
       {
         "score": "10",
@@ -498,9 +498,9 @@
       },
       {
         "date": "2026-05-08",
-        "cumulative": 643,
-        "added": 30,
-        "applied": 22,
+        "cumulative": 647,
+        "added": 34,
+        "applied": 25,
         "rejected": 0,
         "interviewing": 1
       }
@@ -18937,6 +18937,109 @@
         "2026-05-08",
         "2026-05-08"
       ]
+    },
+    {
+      "company": "Flatiron Health",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-08",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4412171567/?trackingId=5uL9K5GIkkfzhJuXKR0kOQ%3D%3D&refId=sAUo7dxL6I%2B7EJ8zBaNrKQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3Bejpn7Zy6TRqyCem%2B54VQvw%3D%3D",
+      "postingKey": "4412171567",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Flatiron Health/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Flatiron Health/Software_Engineer/Liam_Van_Resume/Liam_Van_Flatiron_Health.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-08 from general source for Flatiron Health Software Engineer role; emphasized Python/Java/C++/C#, SQL/MySQL, cloud platforms, REST APIs, end-to-end product features, AI-assisted testing/coding judgment, root-cause debugging, automated validation, code review, technical documentation, and customer-facing reliability. Did not claim healthcare standards such as HL7, Snowflake production datasets, direct oncology domain ownership, Azure, or Docker production deployment beyond supported resume evidence.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-08"
+      ]
+    },
+    {
+      "company": "Box",
+      "role": "SMB Solutions Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 6,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-08",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4411230125/",
+      "postingKey": "4411230125",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Box/SMB_Solutions_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Box/SMB_Solutions_Engineer/Liam_Van_Resume/Liam_Van_Box.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-08 from general source for Box SMB Solutions Engineer role; emphasized customer-facing technical discovery, product demos, SaaS/platform integrations, Box AI-adjacent LLM and prompt-design fluency, REST APIs, secure API validation, product documentation, stakeholder communication, troubleshooting, and React/NestJS product surfaces. Fit score reduced because this is a sales/solutions engineering role asking for 3+ years customer-facing SaaS/ECM experience; did not claim sales quota ownership, formal presales ownership, ECM domain experience, or Box platform administration beyond supported resume evidence.; Application submitted by Liam 2026-05-08.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-08",
+        "2026-05-08"
+      ]
+    },
+    {
+      "company": "Box",
+      "role": "Developer Relations Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 6,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-08",
+      "location": "Redwood City, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4396594817/",
+      "postingKey": "4396594817",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Box/Developer_Relations_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Box/Developer_Relations_Engineer/Liam_Van_Resume/Liam_Van_Box.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-08 from general source for Box Developer Relations Engineer role; emphasized developer experience, technical documentation, onboarding docs, demos, AI application work, prompt design, REST APIs, product integrations, customer-facing workflows, stakeholder updates, and public product storytelling through Fantasy Wizard. Fit score reduced because the posting asks for prior developer relations, public speaking, community building, and established AI ecosystem presence; did not claim formal DevRel ownership, conference speaking, open-source community leadership, sales pipeline ownership, or Box platform administration beyond supported resume evidence.; Application submitted by Liam 2026-05-08.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-08",
+        "2026-05-08"
+      ]
+    },
+    {
+      "company": "Box",
+      "role": "Associate Solutions Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 7,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-08",
+      "location": "San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/boxinc/jobs/7819362?gh_src=hpgt7yuj1us",
+      "postingKey": "7819362",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Box/Associate_Solutions_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Box/Associate_Solutions_Engineer/Liam_Van_Resume/Liam_Van_Box.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-08 from early-career source for Box Associate Solutions Engineer role; emphasized customer-facing workflows, product demos, technical discovery, Box API-adjacent platform validation, AI/LLM application work, prompt design, technical documentation, stakeholder updates, SaaS collaboration tools, and public product storytelling through Fantasy Wizard. Fit score reflects strong early-career technical/customer-facing alignment but a pivot toward technical sales; did not claim formal sales quota ownership, Box platform administration, Box AI Agent hands-on experience, or presales ownership beyond supported resume evidence.; Application submitted by Liam 2026-05-08.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-08",
+        "2026-05-08"
+      ]
     }
   ],
   "jobIntake": [
@@ -30200,6 +30303,19 @@
       "notes": ""
     },
     {
+      "company": "Flatiron Health",
+      "role": "Software Engineer",
+      "postingKey": "4412171567",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4412171567/?trackingId=5uL9K5GIkkfzhJuXKR0kOQ%3D%3D&refId=sAUo7dxL6I%2B7EJ8zBaNrKQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3Bejpn7Zy6TRqyCem%2B54VQvw%3D%3D",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-08",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "First Resonance",
       "role": "Forward Deployed Software Engineer",
       "postingKey": "fdb3fcb7-2575-4fb2-b5d8-945a7aeab427",
@@ -32241,6 +32357,19 @@
       "notes": ""
     },
     {
+      "company": "Box",
+      "role": "Associate Solutions Engineer",
+      "postingKey": "7819362",
+      "fitScore": 7,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/boxinc/jobs/7819362?gh_src=hpgt7yuj1us",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-08",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Blossom",
       "role": "Software Engineer (All Levels)",
       "postingKey": "4394990220",
@@ -32395,6 +32524,32 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Box",
+      "role": "SMB Solutions Engineer",
+      "postingKey": "4411230125",
+      "fitScore": 6,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4411230125/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-08",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Box",
+      "role": "Developer Relations Engineer",
+      "postingKey": "4396594817",
+      "fitScore": 6,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4396594817/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-08",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "UMATR",
@@ -48116,6 +48271,18 @@
           "contacts": []
         },
         {
+          "key": "4412171567",
+          "company": "Flatiron Health",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4398854319",
           "company": "Foxglove",
           "role": "Software Engineer, New Grad",
@@ -50012,6 +50179,18 @@
           "contacts": []
         },
         {
+          "key": "7819362",
+          "company": "Box",
+          "role": "Associate Solutions Engineer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4396373128",
           "company": "Chalk",
           "role": "Software Engineer",
@@ -50256,6 +50435,30 @@
           "company": "Zip",
           "role": "Software Engineer, Identity",
           "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4411230125",
+          "company": "Box",
+          "role": "SMB Solutions Engineer",
+          "fitScore": 6,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4396594817",
+          "company": "Box",
+          "role": "Developer Relations Engineer",
+          "fitScore": 6,
           "status": "Applied",
           "count": 1,
           "states": [
@@ -61392,6 +61595,18 @@
           "contacts": []
         },
         {
+          "key": "4412171567",
+          "company": "Flatiron Health",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4616929005",
           "company": "Glean",
           "role": "Software Engineer, Agentic Runtime",
@@ -62592,6 +62807,18 @@
           "contacts": []
         },
         {
+          "key": "7819362",
+          "company": "Box",
+          "role": "Associate Solutions Engineer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4410729638",
           "company": "CloudInnTech",
           "role": "Software Engineer",
@@ -62705,6 +62932,30 @@
           "role": "Full Stack Developer, Jr.",
           "fitScore": 7,
           "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4411230125",
+          "company": "Box",
+          "role": "SMB Solutions Engineer",
+          "fitScore": 6,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4396594817",
+          "company": "Box",
+          "role": "Developer Relations Engineer",
+          "fitScore": 6,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
