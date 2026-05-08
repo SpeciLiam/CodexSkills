@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T23:11:03.383135+00:00",
+  "generatedAt": "2026-05-08T00:01:28.040918+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 613,
-      "applied": 396,
-      "unapplied": 217,
+      "applied": 402,
+      "unapplied": 211,
       "active": 435,
       "rejected": 44,
       "interviewing": 3,
@@ -26,8 +26,8 @@
       "intakeNew": 40,
       "intakeManual": 219,
       "intakeApplied": 0,
-      "applyRate": 64.6,
-      "rejectionRate": 11.1,
+      "applyRate": 65.6,
+      "rejectionRate": 10.9,
       "recruiterWork": 320,
       "engineerWork": 416,
       "recruiterReachedOut": 115,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 345
+        "value": 351
       },
       {
         "name": "Archived",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 69
+        "value": 66
       },
       {
         "name": "Rejected",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 15
+        "value": 12
       },
       {
         "name": "Interviewing",
@@ -436,7 +436,7 @@
         "date": "2026-05-01",
         "cumulative": 361,
         "added": 64,
-        "applied": 54,
+        "applied": 55,
         "rejected": 1,
         "interviewing": 0
       },
@@ -444,7 +444,7 @@
         "date": "2026-05-02",
         "cumulative": 414,
         "added": 53,
-        "applied": 20,
+        "applied": 21,
         "rejected": 0,
         "interviewing": 0
       },
@@ -452,7 +452,7 @@
         "date": "2026-05-03",
         "cumulative": 484,
         "added": 70,
-        "applied": 16,
+        "applied": 17,
         "rejected": 0,
         "interviewing": 0
       },
@@ -476,7 +476,7 @@
         "date": "2026-05-06",
         "cumulative": 611,
         "added": 69,
-        "applied": 18,
+        "applied": 21,
         "rejected": 0,
         "interviewing": 0
       },
@@ -11201,8 +11201,8 @@
     {
       "company": "AssetWatch",
       "role": "Backend Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -11217,12 +11217,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend data services, scalable APIs, serverless workflows, database operations, ingestion pipelines, and production reliability. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: While this role is remote, AssetWatch values opportunities to connect in person. Are you able to travel domestically a couple times a year?; Which of our core values connects most to how you work? Walk us through a specific example that shows it in action.; Manual apply needed: Greenhouse form requires custom core-values example and AI-tools workflow response before submission 2026-05-04",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend data services, scalable APIs, serverless workflows, database operations, ingestion pipelines, and production reliability. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: While this role is remote, AssetWatch values opportunities to connect in person. Are you able to travel domestically a couple times a year?; Which of our core values connects most to how you work? Walk us through a specific example that shows it in action.; Manual apply needed: Greenhouse form requires custom core-values example and AI-tools workflow response before submission 2026-05-04; Application submitted 2026-05-07 via Greenhouse confirmation page: http://job-boards.greenhouse.io/assetwatch/jobs/4658890005/confirmation",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-04",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-07"
       ]
     },
     {
@@ -11751,8 +11752,8 @@
     {
       "company": "Loop",
       "role": "2026 New Grad - Software Engineer, Full-Stack",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -11767,11 +11768,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized new-grad full-stack engineering, AI logistics workflows, backend APIs, React product surfaces, data processing, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: What is your spike? What is your biggest accomplishment to date?",
+      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized new-grad full-stack engineering, AI logistics workflows, backend APIs, React product surfaces, data processing, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: What is your spike? What is your biggest accomplishment to date?; Application submitted 2026-05-07 via Greenhouse confirmation page: https://job-boards.greenhouse.io/loop/jobs/5981828004/confirmation",
       "noteLinks": [],
       "activityDates": [
         "2026-05-02",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-07"
       ]
     },
     {
@@ -12908,8 +12910,8 @@
     {
       "company": "Pallet",
       "role": "Forward Deployed Software Engineer (AI Agents)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -12924,7 +12926,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/grace-turner08",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-03 degraded public-search pass; tailored SWE resume rendered and verified one page; emphasized forward-deployed AI agents, logistics workflows, customer-facing engineering, backend APIs, full-stack delivery, and production validation. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you willing to work out of our office in San Francisco or New York City office?; Are you comfortable moving forward with the salary range posted?; Manual apply needed 2026-05-05: live Greenhouse form requires written role-specific customer-facing engineering responses: direct external-customer/client experience and why forward-deployed customer-facing engineering instead of internal platform/ML; routine office, salary, travel, authorization, and sponsorship fields are otherwise answerable.; Free-response answers and routine required fields staged in live Greenhouse form 2026-05-05; tab left open for review and final submit; not submitted. LinkedIn invite sent to Grace Turner (Recruiter) 2026-05-06",
+      "notes": "Hourly intake 2026-05-03 degraded public-search pass; tailored SWE resume rendered and verified one page; emphasized forward-deployed AI agents, logistics workflows, customer-facing engineering, backend APIs, full-stack delivery, and production validation. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you willing to work out of our office in San Francisco or New York City office?; Are you comfortable moving forward with the salary range posted?; Manual apply needed 2026-05-05: live Greenhouse form requires written role-specific customer-facing engineering responses: direct external-customer/client experience and why forward-deployed customer-facing engineering instead of internal platform/ML; routine office, salary, travel, authorization, and sponsorship fields are otherwise answerable.; Free-response answers and routine required fields staged in live Greenhouse form 2026-05-05; tab left open for review and final submit; not submitted. LinkedIn invite sent to Grace Turner (Recruiter) 2026-05-06; Application submitted 2026-05-07 via Greenhouse confirmation page: https://job-boards.greenhouse.io/pallet/jobs/5072543007/confirmation",
       "noteLinks": [
         {
           "label": "Grace Turner",
@@ -12936,7 +12938,8 @@
         "2026-05-04",
         "2026-05-05",
         "2026-05-05",
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-07"
       ]
     },
     {
@@ -16280,8 +16283,8 @@
     {
       "company": "DLA Piper",
       "role": "Software Development Engineer I",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -16296,9 +16299,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for entry-level software development role in law-firm business systems; emphasized JavaScript/SQL, React/Angular/HTML/CSS UI work, REST APIs, enterprise integrations, Git/Azure DevOps workflow, testing/QA, troubleshooting, documentation, and client-facing requirements. Posting says no immigration sponsorship is available.",
+      "notes": "Tailored for entry-level software development role in law-firm business systems; emphasized JavaScript/SQL, React/Angular/HTML/CSS UI work, REST APIs, enterprise integrations, Git/Azure DevOps workflow, testing/QA, troubleshooting, documentation, and client-facing requirements. Posting says no immigration sponsorship is available.; Application submitted 2026-05-07",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-07"
+      ]
     },
     {
       "company": "MITRE",
@@ -16424,8 +16429,8 @@
     {
       "company": "Booz Allen Hamilton",
       "role": "Full Stack Developer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -16440,15 +16445,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Booz Allen Full Stack Developer requisition R0239385 supporting Digital Twin / modeling and simulation platforms; emphasized React/Angular UI work, JavaScript/TypeScript, Python/SQL, REST APIs, Java/C# OOP, modular cloud-integrated services, UI/UX prototypes, DevSecOps-style validation, debugging, and documentation. Did not claim Unity/Unreal/Omniverse, XR, DoD/federal environment, SDK ownership, real-time systems, or formal Agile/Scrum experience. Posting includes biometric identity verification and candidate AI-use restrictions for interviews/assessments.",
+      "notes": "Tailored for Booz Allen Full Stack Developer requisition R0239385 supporting Digital Twin / modeling and simulation platforms; emphasized React/Angular UI work, JavaScript/TypeScript, Python/SQL, REST APIs, Java/C# OOP, modular cloud-integrated services, UI/UX prototypes, DevSecOps-style validation, debugging, and documentation. Did not claim Unity/Unreal/Omniverse, XR, DoD/federal environment, SDK ownership, real-time systems, or formal Agile/Scrum experience. Posting includes biometric identity verification and candidate AI-use restrictions for interviews/assessments.; Application submitted 2026-05-07",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-07"
+      ]
     },
     {
       "company": "Infinite Convergence Solutions",
       "role": "Jr. Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -16463,9 +16470,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Infinite Convergence Solutions Jr. Software Engineer backend/server role; emphasized Java/C++/Python fundamentals, REST APIs, Spring Boot, data structures/database concepts, server-side debugging, CI-style validation, testing, documentation, PHP/JavaScript/HTML/CSS, and messaging-scale reliability. Did not claim Perl, Objective-C, Linux administration/network configuration, or real-time media ownership. Posting requires eligibility to work in the US without sponsorship.",
+      "notes": "Tailored for Infinite Convergence Solutions Jr. Software Engineer backend/server role; emphasized Java/C++/Python fundamentals, REST APIs, Spring Boot, data structures/database concepts, server-side debugging, CI-style validation, testing, documentation, PHP/JavaScript/HTML/CSS, and messaging-scale reliability. Did not claim Perl, Objective-C, Linux administration/network configuration, or real-time media ownership. Posting requires eligibility to work in the US without sponsorship.; Application submitted 2026-05-07",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-07"
+      ]
     },
     {
       "company": "Snyk",
@@ -25521,12 +25530,12 @@
       "role": "Forward Deployed Software Engineer (AI Agents)",
       "postingKey": "5072543007",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/pallet/jobs/5072543007",
       "prospectCount": 0,
       "readyEmails": 0,
-      "lastUpdated": "2026-05-03",
+      "lastUpdated": "2026-05-07",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -25989,12 +25998,12 @@
       "role": "2026 New Grad - Software Engineer, Full-Stack",
       "postingKey": "5780582004",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/loop/jobs/5780582004",
       "prospectCount": 0,
       "readyEmails": 0,
-      "lastUpdated": "2026-05-02",
+      "lastUpdated": "2026-05-07",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -27198,12 +27207,12 @@
       "role": "Backend Engineer",
       "postingKey": "4658890005",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/assetwatch/jobs/4658890005",
       "prospectCount": 0,
       "readyEmails": 0,
-      "lastUpdated": "2026-05-01",
+      "lastUpdated": "2026-05-07",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -29538,12 +29547,12 @@
       "role": "Jr. Software Engineer",
       "postingKey": "4409373481",
       "fitScore": 8,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://www.linkedin.com/jobs/view/4409373481/",
       "prospectCount": 0,
       "readyEmails": 0,
-      "lastUpdated": "2026-05-06",
+      "lastUpdated": "2026-05-07",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -29720,12 +29729,12 @@
       "role": "Software Development Engineer I",
       "postingKey": "4410724675",
       "fitScore": 8,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://www.linkedin.com/jobs/view/4410724675/",
       "prospectCount": 0,
       "readyEmails": 0,
-      "lastUpdated": "2026-05-06",
+      "lastUpdated": "2026-05-07",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -29902,12 +29911,12 @@
       "role": "Full Stack Developer",
       "postingKey": "4410949238",
       "fitScore": 8,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://www.linkedin.com/jobs/view/4410949238/",
       "prospectCount": 0,
       "readyEmails": 0,
-      "lastUpdated": "2026-05-06",
+      "lastUpdated": "2026-05-07",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -30940,7 +30949,7 @@
       "role": "Backend Engineer",
       "postingKey": "4658890005",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "recruiterName": "",
       "recruiterProfile": "",
       "recruiterPosition": "",
@@ -31156,7 +31165,7 @@
       "role": "2026 New Grad - Software Engineer, Full-Stack",
       "postingKey": "5780582004",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "recruiterName": "",
       "recruiterProfile": "",
       "recruiterPosition": "",
@@ -33460,7 +33469,7 @@
       "role": "Forward Deployed Software Engineer (AI Agents)",
       "postingKey": "5072543007",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "recruiterName": "Grace Turner",
       "recruiterProfile": "https://www.linkedin.com/in/grace-turner08",
       "recruiterPosition": "Head of Talent & People Operations at Pallet",
@@ -35720,7 +35729,7 @@
       "role": "Backend Engineer",
       "postingKey": "4658890005",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -36732,7 +36741,7 @@
       "role": "2026 New Grad - Software Engineer, Full-Stack",
       "postingKey": "5780582004",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -37192,7 +37201,7 @@
       "role": "Forward Deployed Software Engineer (AI Agents)",
       "postingKey": "5072543007",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -42045,7 +42054,7 @@
       "role": "Full Stack Developer",
       "postingKey": "4410949238",
       "fitScore": 8,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -42321,7 +42330,7 @@
       "role": "Software Development Engineer I",
       "postingKey": "4410724675",
       "fitScore": 8,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -42620,7 +42629,7 @@
       "role": "Jr. Software Engineer",
       "postingKey": "4409373481",
       "fitScore": 8,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -45047,7 +45056,7 @@
           "company": "AssetWatch",
           "role": "Backend Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -45419,7 +45428,7 @@
           "company": "Loop",
           "role": "2026 New Grad - Software Engineer, Full-Stack",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -47015,7 +47024,7 @@
           "company": "Booz Allen Hamilton",
           "role": "Full Stack Developer",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -47171,7 +47180,7 @@
           "company": "DLA Piper",
           "role": "Software Development Engineer I",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -47423,7 +47432,7 @@
           "company": "Infinite Convergence Solutions",
           "role": "Jr. Software Engineer",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -49073,7 +49082,7 @@
           "company": "Pallet",
           "role": "Forward Deployed Software Engineer (AI Agents)",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [],
           "contacts": [
@@ -57865,7 +57874,7 @@
           "company": "AssetWatch",
           "role": "Backend Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -58381,7 +58390,7 @@
           "company": "Loop",
           "role": "2026 New Grad - Software Engineer, Full-Stack",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -58633,7 +58642,7 @@
           "company": "Pallet",
           "role": "Forward Deployed Software Engineer (AI Agents)",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -60073,7 +60082,7 @@
           "company": "Booz Allen Hamilton",
           "role": "Full Stack Developer",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -60193,7 +60202,7 @@
           "company": "DLA Piper",
           "role": "Software Development Engineer I",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -60373,7 +60382,7 @@
           "company": "Infinite Convergence Solutions",
           "role": "Jr. Software Engineer",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"

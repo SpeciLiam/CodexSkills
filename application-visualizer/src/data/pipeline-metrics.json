@@ -2,12 +2,6 @@
   "applicationsPerDay": [
     {
       "archived": 0,
-      "date": "2026-04-30",
-      "manual": 0,
-      "submitted": 0
-    },
-    {
-      "archived": 0,
       "date": "2026-05-01",
       "manual": 0,
       "submitted": 0
@@ -46,7 +40,13 @@
       "archived": 10,
       "date": "2026-05-07",
       "manual": 0,
-      "submitted": 23
+      "submitted": 29
+    },
+    {
+      "archived": 0,
+      "date": "2026-05-08",
+      "manual": 0,
+      "submitted": 0
     }
   ],
   "avgConfidenceBySource": [
@@ -56,34 +56,34 @@
       "source": "Google Careers"
     },
     {
-      "avgScore": 33.5,
+      "avgScore": 34.2,
       "band": "low",
       "source": "Greenhouse"
     },
     {
-      "avgScore": 44.3,
+      "avgScore": 45.9,
       "band": "low",
       "source": "LinkedIn"
     }
   ],
-  "generatedAt": "2026-05-07T23:11:03.437708+00:00",
+  "generatedAt": "2026-05-08T00:01:28.223125+00:00",
   "intakeHealth": {
-    "greenhouseCapturedToday": 21,
+    "greenhouseCapturedToday": 0,
     "greenhouseLastRun": "2026-05-07T23:03:42.727473+00:00",
     "linkedinCacheHitRate": 0.381,
     "linkedinCapturedToday": 0,
     "linkedinLastRun": "2026-05-07T13:00:51.390807+00:00"
   },
   "queueDepth": {
-    "intakeUnprocessed": 72,
-    "manualApplyNeeded": 70,
+    "intakeUnprocessed": 70,
+    "manualApplyNeeded": 65,
     "readyToApply": 0,
-    "resumeTailored": 16
+    "resumeTailored": 12
   },
   "submitSuccessRate": {
-    "archived": 0.302,
-    "manual": 0.409,
-    "submitted": 0.29
+    "archived": 0.295,
+    "manual": 0.399,
+    "submitted": 0.306
   },
   "topBlockers": [
     {
