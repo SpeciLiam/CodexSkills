@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T00:19:22.914274+00:00",
+  "generatedAt": "2026-05-08T00:28:04.587630+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -12,9 +12,9 @@
       "total": 613,
       "applied": 405,
       "unapplied": 208,
-      "active": 435,
-      "rejected": 44,
-      "interviewing": 3,
+      "active": 434,
+      "rejected": 45,
+      "interviewing": 2,
       "assessments": 3,
       "highFit": 483,
       "reachOut": 542,
@@ -27,9 +27,9 @@
       "intakeManual": 221,
       "intakeApplied": 0,
       "applyRate": 66.1,
-      "rejectionRate": 10.9,
+      "rejectionRate": 11.1,
       "recruiterWork": 320,
-      "engineerWork": 416,
+      "engineerWork": 415,
       "recruiterReachedOut": 115,
       "engineerReachedOut": 37
     },
@@ -48,19 +48,19 @@
       },
       {
         "name": "Rejected",
-        "value": 44
+        "value": 45
       },
       {
         "name": "Resume Tailored",
         "value": 9
       },
       {
-        "name": "Interviewing",
+        "name": "Online Assessment",
         "value": 3
       },
       {
-        "name": "Online Assessment",
-        "value": 3
+        "name": "Interviewing",
+        "value": 2
       }
     ],
     "sourceCounts": [
@@ -373,8 +373,8 @@
         "cumulative": 150,
         "added": 9,
         "applied": 9,
-        "rejected": 1,
-        "interviewing": 1
+        "rejected": 2,
+        "interviewing": 0
       },
       {
         "date": "2026-04-16",
@@ -983,7 +983,7 @@
       "company": "Clever",
       "role": "Software Engineer, Infrastructure",
       "applied": true,
-      "status": "Interviewing",
+      "status": "Rejected",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -998,7 +998,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/johnstoecker/",
       "engineerContact": "Raquel Gonzalez",
       "engineerProfile": "https://www.linkedin.com/in/raquel-gr/",
-      "notes": "LinkedIn invite sent to Raquel Gonzalez, Cruz Gonzalez, Kristin Jue, Amelia Jones, Febin Bellamy, Matthew Negasi, and John Stoecker 2026-04-25; Corrected Raquel Gonzalez as engineer contact, not recruiter 2026-05-01; Replaced closed LinkedIn posting with Greenhouse role 2026-04-27; Manual apply needed: required Clever culture-tenet free response 2026-04-27; Manual apply verified: reCAPTCHA present on application flow 2026-04-28; Manual apply verified: Greenhouse embed form filled with tailored resume, Seattle location, sponsorship No, LinkedIn/source, custom Always a Student culture-tenet response, Kubernetes Yes, and demographic selections; all required fields validated but submit attempt stayed on form with embedded reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28; LinkedIn invite sent to Audrey Cevallos (Recruiter) 2026-04-28; Recruiter screen requested 2026-04-29; Interview availability submitted 2026-04-29",
+      "notes": "LinkedIn invite sent to Raquel Gonzalez, Cruz Gonzalez, Kristin Jue, Amelia Jones, Febin Bellamy, Matthew Negasi, and John Stoecker 2026-04-25; Corrected Raquel Gonzalez as engineer contact, not recruiter 2026-05-01; Replaced closed LinkedIn posting with Greenhouse role 2026-04-27; Manual apply needed: required Clever culture-tenet free response 2026-04-27; Manual apply verified: reCAPTCHA present on application flow 2026-04-28; Manual apply verified: Greenhouse embed form filled with tailored resume, Seattle location, sponsorship No, LinkedIn/source, custom Always a Student culture-tenet response, Kubernetes Yes, and demographic selections; all required fields validated but submit attempt stayed on form with embedded reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28; LinkedIn invite sent to Audrey Cevallos (Recruiter) 2026-04-28; Recruiter screen requested 2026-04-29; Interview availability submitted 2026-04-29; Rejection after first round received 2026-05-07",
       "noteLinks": [
         {
           "label": "Raquel Gonzalez",
@@ -1043,7 +1043,8 @@
         "2026-04-28",
         "2026-04-28",
         "2026-04-29",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-05-07"
       ]
     },
     {
@@ -51196,7 +51197,7 @@
           "company": "Clever",
           "role": "Software Engineer, Infrastructure",
           "fitScore": 9,
-          "status": "Interviewing",
+          "status": "Rejected",
           "count": 2,
           "states": [],
           "contacts": [
@@ -53973,39 +53974,6 @@
               "engineerSignal": {
                 "alumniMatch": false,
                 "seniority": "mid",
-                "whyThisPerson": "",
-                "teamMatch": "unknown"
-              }
-            }
-          ]
-        },
-        {
-          "key": "7437730",
-          "company": "Clever",
-          "role": "Software Engineer, Infrastructure",
-          "fitScore": 9,
-          "status": "Interviewing",
-          "count": 1,
-          "states": [
-            "Labeled, needs approval"
-          ],
-          "contacts": [
-            {
-              "lane": "engineer",
-              "name": "Raquel Gonzalez",
-              "profile": "https://www.linkedin.com/in/raquel-gr/",
-              "position": "Saved on application row",
-              "approval": "",
-              "outcome": "Not reached out",
-              "route": "application-tracker",
-              "connectionNote": "",
-              "sentDate": "2026-04-15",
-              "source": "application-tracker",
-              "lastChecked": "2026-04-15",
-              "notes": "Active application needs engineer outreach.",
-              "engineerSignal": {
-                "alumniMatch": false,
-                "seniority": "unknown",
                 "whyThisPerson": "",
                 "teamMatch": "unknown"
               }
