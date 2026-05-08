@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T00:05:02.340139+00:00",
+  "generatedAt": "2026-05-08T00:10:59.292792+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 613,
-      "applied": 402,
-      "unapplied": 211,
+      "applied": 405,
+      "unapplied": 208,
       "active": 435,
       "rejected": 44,
       "interviewing": 3,
@@ -26,7 +26,7 @@
       "intakeNew": 40,
       "intakeManual": 221,
       "intakeApplied": 0,
-      "applyRate": 65.6,
+      "applyRate": 66.1,
       "rejectionRate": 10.9,
       "recruiterWork": 320,
       "engineerWork": 416,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 351
+        "value": 354
       },
       {
         "name": "Archived",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 12
+        "value": 9
       },
       {
         "name": "Interviewing",
@@ -476,7 +476,7 @@
         "date": "2026-05-06",
         "cumulative": 611,
         "added": 69,
-        "applied": 21,
+        "applied": 24,
         "rejected": 0,
         "interviewing": 0
       },
@@ -16406,8 +16406,8 @@
     {
       "company": "Alvarez & Marsal",
       "role": "Software Engineer, Innovation Team",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -16422,9 +16422,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for second Alvarez & Marsal Innovation Team full-stack/front-end posting; emphasized TypeScript/JavaScript, React single-page apps, Figma-to-product implementation, REST APIs, Docker/data modeling, Git/CI-style workflows, unit testing, documentation, and translating business requirements into UI/API workflows. Did not claim Django, Jira, GitHub Actions, Linux/WSL2, or finance domain experience.",
+      "notes": "Tailored for second Alvarez & Marsal Innovation Team full-stack/front-end posting; emphasized TypeScript/JavaScript, React single-page apps, Figma-to-product implementation, REST APIs, Docker/data modeling, Git/CI-style workflows, unit testing, documentation, and translating business requirements into UI/API workflows. Did not claim Django, Jira, GitHub Actions, Linux/WSL2, or finance domain experience.; Application submitted 2026-05-07 via A&M Talemetry confirmation page: https://careers.alvarezandmarsal.com/pages/thank-you",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-07"
+      ]
     },
     {
       "company": "Booz Allen Hamilton",
@@ -16479,8 +16481,8 @@
     {
       "company": "Snyk",
       "role": "Associate Product Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -16495,9 +16497,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-05-07",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-07"
+      ]
     },
     {
       "company": "Airbnb",
@@ -16648,8 +16652,8 @@
     {
       "company": "Northwestern Mutual",
       "role": "DevSecOps Engineer I",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -16664,9 +16668,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for entry-level DevSecOps/AppSec role; emphasized vulnerability-oriented validation, AI-assisted testing, scripting, CI/CD, cloud operations, metrics/reporting, API coverage, documentation, and cross-functional risk communication. Did not claim formal vulnerability management platform ownership, deep networking administration, PowerShell/Bash, cryptography implementation, or regulatory data-security ownership.",
+      "notes": "Tailored for entry-level DevSecOps/AppSec role; emphasized vulnerability-oriented validation, AI-assisted testing, scripting, CI/CD, cloud operations, metrics/reporting, API coverage, documentation, and cross-functional risk communication. Did not claim formal vulnerability management platform ownership, deep networking administration, PowerShell/Bash, cryptography implementation, or regulatory data-security ownership.; Application submitted 2026-05-07",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-07"
+      ]
     },
     {
       "company": "Sundayy",
@@ -27820,12 +27826,12 @@
       "role": "Associate Product Engineer",
       "postingKey": "4353111076",
       "fitScore": 9,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://www.linkedin.com/jobs/view/4353111076/",
       "prospectCount": 0,
       "readyEmails": 0,
-      "lastUpdated": "2026-05-06",
+      "lastUpdated": "2026-05-07",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -28184,12 +28190,12 @@
       "role": "DevSecOps Engineer I",
       "postingKey": "4410761485",
       "fitScore": 9,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://www.linkedin.com/jobs/view/4410761485/",
       "prospectCount": 0,
       "readyEmails": 0,
-      "lastUpdated": "2026-05-06",
+      "lastUpdated": "2026-05-07",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -28821,12 +28827,12 @@
       "role": "Software Engineer, Innovation Team",
       "postingKey": "4410767902",
       "fitScore": 9,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://www.linkedin.com/jobs/view/4410767902/",
       "prospectCount": 0,
       "readyEmails": 0,
-      "lastUpdated": "2026-05-06",
+      "lastUpdated": "2026-05-07",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -39759,7 +39765,7 @@
       "role": "Software Engineer, Innovation Team",
       "postingKey": "4410767902",
       "fitScore": 9,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -40288,7 +40294,7 @@
       "role": "DevSecOps Engineer I",
       "postingKey": "4410761485",
       "fitScore": 9,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -40495,7 +40501,7 @@
       "role": "Associate Product Engineer",
       "postingKey": "4353111076",
       "fitScore": 9,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -46212,7 +46218,7 @@
           "company": "Alvarez & Marsal",
           "role": "Software Engineer, Innovation Team",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -46584,7 +46590,7 @@
           "company": "Northwestern Mutual",
           "role": "DevSecOps Engineer I",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -46752,7 +46758,7 @@
           "company": "Snyk",
           "role": "Associate Product Engineer",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -59486,7 +59492,7 @@
           "company": "Alvarez & Marsal",
           "role": "Software Engineer, Innovation Team",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -59750,7 +59756,7 @@
           "company": "Northwestern Mutual",
           "role": "DevSecOps Engineer I",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -59858,7 +59864,7 @@
           "company": "Snyk",
           "role": "Associate Product Engineer",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
