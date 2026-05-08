@@ -45,8 +45,8 @@
     {
       "archived": 0,
       "date": "2026-05-08",
-      "manual": 5,
-      "submitted": 6
+      "manual": 6,
+      "submitted": 16
     }
   ],
   "avgConfidenceBySource": [
@@ -61,39 +61,48 @@
       "source": "Google Careers"
     },
     {
-      "avgScore": 33.7,
+      "avgScore": 32.8,
       "band": "low",
       "source": "Greenhouse"
     },
     {
-      "avgScore": 46.1,
+      "avgScore": 44.0,
       "band": "low",
       "source": "LinkedIn"
+    },
+    {
+      "avgScore": 10.0,
+      "band": "low",
+      "source": "LinkedIn/Ashby"
     }
   ],
-  "generatedAt": "2026-05-08T08:06:57.307297+00:00",
+  "generatedAt": "2026-05-08T18:40:28.745439+00:00",
   "intakeHealth": {
     "greenhouseCapturedToday": 0,
-    "greenhouseLastRun": "2026-05-07T23:03:42.727473+00:00",
-    "linkedinCacheHitRate": 0.381,
+    "greenhouseLastRun": "",
+    "linkedinCacheHitRate": 0,
     "linkedinCapturedToday": 0,
-    "linkedinLastRun": "2026-05-07T13:00:51.390807+00:00"
+    "linkedinLastRun": ""
   },
   "queueDepth": {
     "intakeUnprocessed": 70,
-    "manualApplyNeeded": 51,
+    "manualApplyNeeded": 53,
     "readyToApply": 0,
-    "resumeTailored": 9
+    "resumeTailored": 12
   },
   "submitSuccessRate": {
-    "archived": 0.283,
-    "manual": 0.401,
-    "submitted": 0.316
+    "archived": 0.271,
+    "manual": 0.389,
+    "submitted": 0.339
   },
   "topBlockers": [
     {
       "count": 108,
       "reason": "unspecified"
+    },
+    {
+      "count": 1,
+      "reason": "Required Ashby resume upload/file upload handoff; tab left open on application form with routine fields filled and tailored PDF ready."
     }
   ],
   "windowDays": 7
