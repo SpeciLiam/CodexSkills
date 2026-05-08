@@ -11,6 +11,7 @@ import {
   MailCheck,
   Network,
   Radar,
+  Route,
   Search,
   Send,
   Sparkles,
@@ -87,6 +88,7 @@ const INFO_COPY = {
   source: "Compares where roles are coming from, so you can see which channels are feeding the most opportunities.",
   role: "Plots visible applications by fit score and status. It is useful for spotting high-fit roles that are still only tailored or need action.",
   radar: "Summarizes campaign health across applied rate, high-fit share, reach-out coverage, recruiter coverage, and active share.",
+  stageSnake: "Maps each role to the deepest observed process stage using status plus tracker notes, then shows where applications are still alive or rejected.",
   recruiters: "Lists applications with a known recruiter or LinkedIn path, sorted toward stronger fit so outreach targets are easy to open.",
   intake: "Shows fresh LinkedIn and Greenhouse jobs discovered by the hourly intake listener before they become tailored application rows.",
   gaps: "Highlights high-fit reach-out rows that still need more prospects or ready email addresses.",
@@ -413,6 +415,7 @@ function App() {
     [],
   );
   const dailyApplicationPulse = useMemo(() => buildDailyApplicationPulse(data.stats.timeline, data.applications), []);
+  const stageSnake = useMemo(() => buildStageSnake(filtered), [filtered]);
   const successDonut = useMemo(
     () => [
       { name: "Submitted", value: pipelineMetrics.submitSuccessRate.submitted },
@@ -579,6 +582,10 @@ function App() {
                 </div>
               </div>
             </div>
+          </Panel>
+
+          <Panel title="Application Stage Snake" icon={<Route />} info={INFO_COPY.stageSnake} wide>
+            <ApplicationStageSnake stages={stageSnake.stages} total={stageSnake.total} />
           </Panel>
 
           <Panel title="Application Velocity" icon={<Activity />} info={INFO_COPY.velocity}>
@@ -1793,6 +1800,60 @@ function LegendDots({ items }: { items: Array<{ name: string; value: number }> }
   );
 }
 
+type StageSnakeNode = {
+  id: string;
+  label: string;
+  count: number;
+  active: number;
+  rejected: number;
+  rejectedExamples: Application[];
+};
+
+function ApplicationStageSnake({ stages, total }: { stages: StageSnakeNode[]; total: number }) {
+  const maxCount = Math.max(...stages.map((stage) => stage.count), 1);
+  const dropStages = stages.filter((stage) => stage.rejected > 0);
+  return (
+    <div className="stage-snake" aria-label="Application stage snake">
+      <div className="stage-snake-track">
+        {stages.map((stage, index) => {
+          const width = `${Math.max(16, (stage.count / maxCount) * 100)}%`;
+          const survival = total ? Math.round((stage.count / total) * 100) : 0;
+          return (
+            <section className="stage-node" key={stage.id}>
+              <div className="stage-node-head">
+                <span>{index + 1}</span>
+                <strong>{stage.label}</strong>
+              </div>
+              <div className="stage-flow" style={{ width }}>
+                <b>{stage.count}</b>
+                <small>{survival}% reach</small>
+              </div>
+              <div className="stage-node-meta">
+                <span>{stage.active} alive</span>
+                <span className={stage.rejected ? "drop" : ""}>{stage.rejected} rejected here</span>
+              </div>
+            </section>
+          );
+        })}
+      </div>
+      <div className="stage-drop-grid">
+        {(dropStages.length ? dropStages : stages.slice(0, 1)).map((stage) => (
+          <article className="stage-drop-card" key={`drop-${stage.id}`}>
+            <span>{stage.label}</span>
+            <strong>{stage.rejected}</strong>
+            <p>{stage.rejected ? "rejections at this furthest known stage" : "No rejected rows in the current filter"}</p>
+            <div>
+              {stage.rejectedExamples.slice(0, 4).map((app) => (
+                <small key={`${stage.id}-${app.company}-${app.postingKey}`}>{app.company} | {app.role}</small>
+              ))}
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function OutreachDetailModal({
   app,
   lane,
@@ -2413,6 +2474,71 @@ function summarize(apps: Application[]) {
   const applied = apps.filter((app) => app.applied).length;
   const avgFit = apps.reduce((sum, app) => sum + app.fitScore, 0) / Math.max(apps.length, 1);
   return { applied, avgFit };
+}
+
+const APPLICATION_STAGES = [
+  { id: "tailored", label: "Tailored" },
+  { id: "applied", label: "Applied" },
+  { id: "assessment", label: "OA / Take-home" },
+  { id: "screen", label: "Recruiter Screen" },
+  { id: "first", label: "First Round" },
+  { id: "second", label: "Second Round" },
+  { id: "final", label: "Final / Offer" },
+] as const;
+
+function buildStageSnake(apps: Application[]) {
+  const stages = APPLICATION_STAGES.map((stage) => ({
+    ...stage,
+    count: 0,
+    active: 0,
+    rejected: 0,
+    rejectedExamples: [] as Application[],
+  }));
+
+  apps.forEach((app) => {
+    const stageIndex = inferApplicationStageIndex(app);
+    const isRejected = app.status.toLowerCase() === "rejected";
+    stages.forEach((stage, index) => {
+      if (index > stageIndex) return;
+      stage.count += 1;
+      if (!isRejected) stage.active += 1;
+    });
+    if (isRejected) {
+      stages[stageIndex].rejected += 1;
+      stages[stageIndex].rejectedExamples.push(app);
+    }
+  });
+
+  stages.forEach((stage) => {
+    stage.rejectedExamples.sort((a, b) => b.fitScore - a.fitScore || a.company.localeCompare(b.company));
+  });
+
+  return { total: apps.length, stages };
+}
+
+function inferApplicationStageIndex(app: Application) {
+  const status = app.status.toLowerCase();
+  const notes = app.notes.toLowerCase();
+  const text = `${status}; ${notes}`;
+  let index = app.applied ? 1 : 0;
+
+  if (/online assessment|assessment|take-home|take home|coding challenge|codesignal|hackerrank|technical screen/.test(text)) {
+    index = Math.max(index, 2);
+  }
+  if (/recruiter screen|phone screen|intro call|screen requested|screen scheduled/.test(text)) {
+    index = Math.max(index, 3);
+  }
+  if (/first round|one-way video|video interview|interview invite|interview availability|interview signup|interview requested/.test(text)) {
+    index = Math.max(index, 4);
+  }
+  if (/second round|technical interview|onsite|on-site|panel interview|final round/.test(text)) {
+    index = Math.max(index, 5);
+  }
+  if (/offer|finalist|verbal offer|written offer/.test(text)) {
+    index = Math.max(index, 6);
+  }
+
+  return Math.min(index, APPLICATION_STAGES.length - 1);
 }
 
 function buildDailyApplicationPulse(timeline: Array<Record<string, number | string>>, apps: Application[]) {

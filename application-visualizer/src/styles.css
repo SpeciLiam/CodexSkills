@@ -539,6 +539,153 @@ select option {
   font-size: 15px;
 }
 
+.stage-snake {
+  display: grid;
+  gap: 16px;
+}
+
+.stage-snake-track {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(150px, 1fr));
+  gap: 12px;
+  overflow-x: auto;
+  padding: 4px 2px 12px;
+  scrollbar-width: thin;
+}
+
+.stage-node {
+  position: relative;
+  min-width: 150px;
+  padding: 12px;
+  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(3, 7, 18, .28);
+  border-radius: 8px;
+}
+
+.stage-node:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 49px;
+  right: -13px;
+  z-index: 2;
+  width: 14px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(85,214,190,.75), rgba(247,178,103,.58));
+}
+
+.stage-node-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 28px;
+}
+
+.stage-node-head span {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+  color: #06111e;
+  background: #55d6be;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.stage-node-head strong {
+  font-size: 13px;
+  line-height: 1.15;
+}
+
+.stage-flow {
+  display: grid;
+  align-content: center;
+  min-width: 74px;
+  min-height: 68px;
+  margin-top: 12px;
+  padding: 10px;
+  color: #06111e;
+  background: linear-gradient(135deg, #55d6be, #f7b267);
+  border-radius: 8px;
+  box-shadow: 0 14px 38px rgba(85, 214, 190, .16);
+}
+
+.stage-flow b {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.stage-flow small {
+  margin-top: 3px;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.stage-node-meta {
+  display: grid;
+  gap: 5px;
+  margin-top: 10px;
+  color: #95a8bd;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.stage-node-meta .drop {
+  color: #ffb4b2;
+}
+
+.stage-drop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 10px;
+}
+
+.stage-drop-card {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(255,255,255,.045);
+  border-radius: 8px;
+}
+
+.stage-drop-card > span {
+  color: #8dd7cf;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.stage-drop-card strong {
+  display: block;
+  margin-top: 8px;
+  color: #f25f5c;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.stage-drop-card p {
+  margin-top: 5px;
+  color: #cbd5e1;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.stage-drop-card div {
+  display: grid;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.stage-drop-card small {
+  overflow: hidden;
+  color: #95a8bd;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .action-matrix {
   display: grid;
   grid-template-columns: repeat(5, minmax(210px, 1fr));
