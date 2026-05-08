@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 528
+Companies queued: 530
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -459,9 +459,11 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Cloaked | Fullstack Engineer | 4411692727 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4411692727/) | 1 |  | 2026-05-08 | LinkedIn invite sent to Rafa Torres, Talent at Cloaked, 2026-05-08. |
 | Clarity Innovations | Software Engineer | 5125081007 | 8 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/clarityinnovates/jobs/5125081007?gh_src=my.greenhouse.search) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Chime | Product Security Engineer | 4307589021 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4307589021/) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-07 via Greenhouse confirmation page for job-boards.greenhouse.io/chime/jobs/8141068002/confirmation. |
+| CHAOS Industries | Software Engineer - Data Engineering | 4370725029 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4370725029/?trackingId=OLXFj62O8twReJj21yl2nw%3D%3D&refId=sAUo7dxL6I%2B7EJ8zBaNrKQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BE0XSDYHtQTOjLIgKW%2BkPag%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | Celltrio | Software Engineer (Full-Stack) | 4411759573 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4411759573/?trackingId=llzoa0gWClZO5wdNFpJhfA%3D%3D&refId=%2FJ95SvUHr%2BJRbsyOTJu5NA%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3B88R9f%2FORTICjayGJ8WfPKg%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | CDW | Software Engineer I - Backend | 4400775698 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4400775698/) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Cadence | Software Engineer ll (New College Grad 2026) | 4377975350 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4377975350/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
+| Box | Software Engineer II, AI Experiences | software-engineer-ii-ai-experiences | 8 | Applied | Yes | [Posting](https://careers.box.com/en/jobs/7886709/software-engineer-ii-ai-experiences/) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | Booz Allen Hamilton | Full Stack Developer | 4410949238 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4410949238/) |  |  | 2026-05-07 | Queued by resume-tailor after tailored resume update. |
 | Benchling | Software Engineer, Backend (Infrastructure Engineering) | e729560e-a2dd-4949-8dc5-031312a9b2e2 | 8 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/benchling/e729560e-a2dd-4949-8dc5-031312a9b2e2/application?utm_source=JobWrapping) |  |  |  |  |
 | Bamboo X | Software Engineer | 4395721402 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/collections/recommended/?currentJobId=4395721402) |  |  |  |  |

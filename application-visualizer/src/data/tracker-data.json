@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T23:08:30.220660+00:00",
+  "generatedAt": "2026-05-08T23:20:15.250234+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 641,
-      "applied": 437,
+      "total": 643,
+      "applied": 439,
       "unapplied": 204,
-      "active": 454,
+      "active": 456,
       "rejected": 51,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 505,
-      "reachOut": 566,
+      "highFit": 507,
+      "reachOut": 568,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,17 +26,17 @@
       "intakeNew": 40,
       "intakeManual": 252,
       "intakeApplied": 0,
-      "applyRate": 68.2,
-      "rejectionRate": 11.7,
-      "recruiterWork": 338,
-      "engineerWork": 416,
+      "applyRate": 68.3,
+      "rejectionRate": 11.6,
+      "recruiterWork": 340,
+      "engineerWork": 418,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 379
+        "value": 381
       },
       {
         "name": "Archived",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 255
+        "value": 256
       },
       {
         "name": "Greenhouse",
@@ -135,6 +135,10 @@
       {
         "name": "Meta Careers",
         "value": 1
+      },
+      {
+        "name": "Box Careers",
+        "value": 1
       }
     ],
     "locationCounts": [
@@ -144,11 +148,11 @@
       },
       {
         "name": "Bay Area",
-        "value": 140
+        "value": 141
       },
       {
         "name": "Other",
-        "value": 115
+        "value": 116
       },
       {
         "name": "Remote",
@@ -186,7 +190,7 @@
       },
       {
         "name": "AI/ML",
-        "value": 38
+        "value": 39
       },
       {
         "name": "Infra/Platform",
@@ -194,7 +198,7 @@
       },
       {
         "name": "Data",
-        "value": 10
+        "value": 11
       },
       {
         "name": "Frontend",
@@ -232,7 +236,7 @@
       },
       {
         "score": "8",
-        "count": 121
+        "count": 123
       },
       {
         "score": "9",
@@ -494,9 +498,9 @@
       },
       {
         "date": "2026-05-08",
-        "cumulative": 641,
-        "added": 28,
-        "applied": 20,
+        "cumulative": 643,
+        "added": 30,
+        "applied": 22,
         "rejected": 0,
         "interviewing": 1
       }
@@ -18881,6 +18885,58 @@
         "2026-05-08",
         "2026-05-08"
       ]
+    },
+    {
+      "company": "CHAOS Industries",
+      "role": "Software Engineer - Data Engineering",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-08",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4370725029/?trackingId=OLXFj62O8twReJj21yl2nw%3D%3D&refId=sAUo7dxL6I%2B7EJ8zBaNrKQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BE0XSDYHtQTOjLIgKW%2BkPag%3D%3D",
+      "postingKey": "4370725029",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CHAOS Industries/Software_Engineer_Data_Engineering/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CHAOS Industries/Software_Engineer_Data_Engineering/Liam_Van_Resume/Liam_Van_CHAOS_Industries.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-08 from early-career source for CHAOS Industries Software Engineer - Data Engineering role; emphasized Python/SQL/Java, data pipelines, ETL-style workflows, Apache Parquet, telemetry data modeling, OpenSearch retrieval, real-time search/caching, cloud data-service validation, Docker/GCP/AWS/OCI, log analysis, Grafana/T2 metrics, low-latency debugging, and mission-critical reliability framing. Did not claim Kafka, Spark Streaming, Flink, Palantir Foundry, Kubernetes, NoSQL warehouse ownership, defense/aerospace domain work, or radar/EO/IR/EW sensor ownership beyond supported Caterpillar telemetry evidence.; Application submitted by Liam 2026-05-08.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-08",
+        "2026-05-08"
+      ]
+    },
+    {
+      "company": "Box",
+      "role": "Software Engineer II, AI Experiences",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-08",
+      "location": "Redwood City, CA",
+      "source": "Box Careers",
+      "jobLink": "https://careers.box.com/en/jobs/7886709/software-engineer-ii-ai-experiences/",
+      "postingKey": "software-engineer-ii-ai-experiences",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Box/Software_Engineer_II_AI_Experiences/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Box/Software_Engineer_II_AI_Experiences/Liam_Van_Resume/Liam_Van_Box.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-08 from general source for Box Software Engineer II, AI Experiences; emphasized React/TypeScript, AI product experiences, LLM recommendation work, React/NestJS product surfaces, API integration, CI-style validation, technical documentation, on-call debugging, Grafana/T2 metrics, customer-facing reliability, and Fantasy Wizard AI assistant evidence. Did not claim React Native production experience, GraphQL, feature flags/A-B ownership, Box content platform ownership, or direct enterprise content-management domain ownership beyond supported resume evidence.; Application submitted by Liam 2026-05-08.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-08",
+        "2026-05-08"
+      ]
     }
   ],
   "jobIntake": [
@@ -31639,6 +31695,19 @@
       "notes": "Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-07 via Greenhouse confirmation page for job-boards.greenhouse.io/chime/jobs/8141068002/confirmation."
     },
     {
+      "company": "CHAOS Industries",
+      "role": "Software Engineer - Data Engineering",
+      "postingKey": "4370725029",
+      "fitScore": 8,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4370725029/?trackingId=OLXFj62O8twReJj21yl2nw%3D%3D&refId=sAUo7dxL6I%2B7EJ8zBaNrKQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BE0XSDYHtQTOjLIgKW%2BkPag%3D%3D",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-08",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Celltrio",
       "role": "Software Engineer (Full-Stack)",
       "postingKey": "4411759573",
@@ -31675,6 +31744,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Box",
+      "role": "Software Engineer II, AI Experiences",
+      "postingKey": "software-engineer-ii-ai-experiences",
+      "fitScore": 8,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://careers.box.com/en/jobs/7886709/software-engineer-ii-ai-experiences/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-08",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -48742,6 +48824,30 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-ii-ai-experiences",
+          "company": "Box",
+          "role": "Software Engineer II, AI Experiences",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4370725029",
+          "company": "CHAOS Industries",
+          "role": "Software Engineer - Data Engineering",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "computer-science-engineer-jobs",
           "company": "CNN",
           "role": "Software Engineer I",
@@ -61802,9 +61908,33 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-ii-ai-experiences",
+          "company": "Box",
+          "role": "Software Engineer II, AI Experiences",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4400775698",
           "company": "CDW",
           "role": "Software Engineer I - Backend",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4370725029",
+          "company": "CHAOS Industries",
+          "role": "Software Engineer - Data Engineering",
           "fitScore": 8,
           "status": "Applied",
           "count": 1,
