@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T05:15:52.631394+00:00",
+  "generatedAt": "2026-05-08T05:40:39.937651+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,9 +10,9 @@
   "stats": {
     "kpis": {
       "total": 614,
-      "applied": 408,
-      "unapplied": 206,
-      "active": 435,
+      "applied": 418,
+      "unapplied": 196,
+      "active": 433,
       "rejected": 45,
       "interviewing": 2,
       "assessments": 3,
@@ -24,11 +24,11 @@
       "intakeJobs": 455,
       "intakeQueued": 30,
       "intakeNew": 40,
-      "intakeManual": 232,
+      "intakeManual": 221,
       "intakeApplied": 0,
-      "applyRate": 66.4,
-      "rejectionRate": 11.0,
-      "recruiterWork": 321,
+      "applyRate": 68.1,
+      "rejectionRate": 10.8,
+      "recruiterWork": 319,
       "engineerWork": 416,
       "recruiterReachedOut": 115,
       "engineerReachedOut": 37
@@ -36,15 +36,15 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 357
+        "value": 367
       },
       {
         "name": "Archived",
-        "value": 134
+        "value": 136
       },
       {
         "name": "Manual Apply Needed",
-        "value": 64
+        "value": 52
       },
       {
         "name": "Rejected",
@@ -70,11 +70,11 @@
       },
       {
         "name": "LinkedIn",
-        "value": 236
+        "value": 232
       },
       {
         "name": "Ashby",
-        "value": 67
+        "value": 71
       },
       {
         "name": "Company Site",
@@ -258,11 +258,11 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 232
+        "value": 221
       },
       {
         "name": "Tailored",
-        "value": 115
+        "value": 124
       },
       {
         "name": "New",
@@ -278,6 +278,10 @@
       },
       {
         "name": "Expired",
+        "value": 2
+      },
+      {
+        "name": "Archived",
         "value": 2
       },
       {
@@ -444,7 +448,7 @@
         "date": "2026-05-02",
         "cumulative": 414,
         "added": 53,
-        "applied": 21,
+        "applied": 22,
         "rejected": 0,
         "interviewing": 0
       },
@@ -468,7 +472,7 @@
         "date": "2026-05-05",
         "cumulative": 542,
         "added": 34,
-        "applied": 12,
+        "applied": 13,
         "rejected": 0,
         "interviewing": 0
       },
@@ -476,7 +480,7 @@
         "date": "2026-05-06",
         "cumulative": 611,
         "added": 69,
-        "applied": 25,
+        "applied": 32,
         "rejected": 0,
         "interviewing": 0
       },
@@ -484,7 +488,7 @@
         "date": "2026-05-07",
         "cumulative": 614,
         "added": 3,
-        "applied": 1,
+        "applied": 2,
         "rejected": 0,
         "interviewing": 0
       }
@@ -12860,28 +12864,29 @@
     {
       "company": "OpenAI",
       "role": "Forward Deployed Software Engineer - NYC",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
       "dateAdded": "2026-05-02",
       "location": "New York, NY",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-software-engineer-nyc-at-openai-4349516535",
-      "postingKey": "forward-deployed-software-engineer-nyc-at-openai-4349516535",
+      "source": "Ashby",
+      "jobLink": "https://jobs.ashbyhq.com/openai/533c0fc9-b773-476d-9f96-a0528efbab0e/application",
+      "postingKey": "533c0fc9-b773-476d-9f96-a0528efbab0e",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OpenAI/Forward_Deployed_Software_Engineer_NYC/Liam_Van_Resume_2",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OpenAI/Forward_Deployed_Software_Engineer_NYC/Liam_Van_Resume_2/Liam_Van_OpenAI.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized forward-deployed OpenAI API solutions, full-stack prototypes, customer-facing technical delivery, LLM product systems, and production-quality abstractions. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via LinkedIn flow because it was outside the completed automated Greenhouse submit batch.; Clean regenerated resume reapply attempted 2026-05-04 via LinkedIn to OpenAI Ashby; blocked by personal/legal application questions including start date, NYC office availability, visa sponsorship, arbitration acknowledgement, application certification, and voluntary EEO/self-identification.",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized forward-deployed OpenAI API solutions, full-stack prototypes, customer-facing technical delivery, LLM product systems, and production-quality abstractions. Browser-based submission was blocked because Computer Use access to Chrome and Firefox was denied during this automation run.; Clean regenerated resume ready 2026-05-04 after bad-resume fix; reapply needed via LinkedIn flow because it was outside the completed automated Greenhouse submit batch.; Clean regenerated resume reapply attempted 2026-05-04 via LinkedIn to OpenAI Ashby; blocked by personal/legal application questions including start date, NYC office availability, visa sponsorship, arbitration acknowledgement, application certification, and voluntary EEO/self-identification.; Application submitted 2026-05-08 via Ashby: https://jobs.ashbyhq.com/openai/533c0fc9-b773-476d-9f96-a0528efbab0e/application.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-02",
         "2026-05-04",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-08"
       ]
     },
     {
@@ -15726,27 +15731,28 @@
     {
       "company": "OpenAI",
       "role": "Full Stack Software Engineer, Growth",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
       "dateAdded": "2026-05-05",
       "location": "San Francisco, CA",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/full-stack-software-engineer-growth-at-openai-4307261950",
-      "postingKey": "full-stack-software-engineer-growth-at-openai-4307261950",
+      "source": "Ashby",
+      "jobLink": "https://jobs.ashbyhq.com/openai/77bc0b3a-35c1-4ecf-99c7-1b3b19d959ca/application",
+      "postingKey": "77bc0b3a-35c1-4ecf-99c7-1b3b19d959ca",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OpenAI/Full_Stack_Software_Engineer_Growth/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OpenAI/Full_Stack_Software_Engineer_Growth/Liam_Van_Resume/Liam_Van_OpenAI.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-05 17:00 PT; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, experimentation, backend APIs, and AI product growth work. Captured through degraded public lane after Computer Use approval was denied for Chrome and Firefox.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "notes": "Hourly intake 2026-05-05 17:00 PT; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, experimentation, backend APIs, and AI product growth work. Captured through degraded public lane after Computer Use approval was denied for Chrome and Firefox.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05; Application submitted 2026-05-08 via Ashby: https://jobs.ashbyhq.com/openai/77bc0b3a-35c1-4ecf-99c7-1b3b19d959ca/application.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-05",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-08"
       ]
     },
     {
@@ -16810,26 +16816,27 @@
     {
       "company": "OpenAI",
       "role": "Forward Deployed Engineer (FDE) - NYC",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
       "dateAdded": "2026-05-06",
       "location": "New York, NY",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-nyc-at-openai-4334774578",
-      "postingKey": "forward-deployed-engineer-nyc-at-openai-4334774578",
+      "source": "Ashby",
+      "jobLink": "https://jobs.ashbyhq.com/openai/cf31f5f6-4e67-4695-808c-9cdd2e1fa3b1/application",
+      "postingKey": "cf31f5f6-4e67-4695-808c-9cdd2e1fa3b1",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OpenAI/Forward_Deployed_Engineer_FDE_NYC/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OpenAI/Forward_Deployed_Engineer_FDE_NYC/Liam_Van_Resume/Liam_Van_OpenAI.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight; Application submitted 2026-05-08 via Ashby: https://jobs.ashbyhq.com/openai/cf31f5f6-4e67-4695-808c-9cdd2e1fa3b1/application.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-08"
       ]
     },
     {
@@ -16987,26 +16994,27 @@
     {
       "company": "Avoca",
       "role": "Forward Deployed Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
       "dateAdded": "2026-05-06",
       "location": "New York, NY",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-avoca-4295417569",
-      "postingKey": "forward-deployed-engineer-at-avoca-4295417569",
+      "source": "Ashby",
+      "jobLink": "https://jobs.ashbyhq.com/avoca/0fc22fe4-6b8c-4c93-9b3f-fa3738054601/application",
+      "postingKey": "0fc22fe4-6b8c-4c93-9b3f-fa3738054601",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Avoca/Forward_Deployed_Engineer/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Avoca/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Avoca.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight; Application submitted 2026-05-08 via Ashby: https://jobs.ashbyhq.com/avoca/0fc22fe4-6b8c-4c93-9b3f-fa3738054601/application.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-08"
       ]
     },
     {
@@ -17063,7 +17071,7 @@
       "company": "FloVision Solutions",
       "role": "Forward Deployed Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 8,
       "reachOut": true,
       "referral": "",
@@ -17078,10 +17086,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight; Archived 2026-05-08 per Liam after manual review.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-08"
       ]
     },
     {
@@ -17164,8 +17173,8 @@
     {
       "company": "CLEAR - Corporate",
       "role": "iOS Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -17180,10 +17189,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Greenhouse iOS Engineer / product engineering posting; emphasized user-facing product flows, React/Angular/NestJS, REST APIs, backend integrations, testing, and release readiness. Did not claim Swift, SwiftUI, or native iOS production experience. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-06.; Manual apply still needed 2026-05-08: included in full manual-row retry queue; do not auto-submit because resume intentionally does not claim Swift/SwiftUI or native iOS production experience. Use Safari upload flow and Liam final review.",
+      "notes": "Tailored for Greenhouse iOS Engineer / product engineering posting; emphasized user-facing product flows, React/Angular/NestJS, REST APIs, backend integrations, testing, and release readiness. Did not claim Swift, SwiftUI, or native iOS production experience. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-06.; Manual apply still needed 2026-05-08: included in full manual-row retry queue; do not auto-submit because resume intentionally does not claim Swift/SwiftUI or native iOS production experience. Use Safari upload flow and Liam final review.; Application submitted 2026-05-08 via Greenhouse confirmation page: https://job-boards.greenhouse.io/clear/jobs/7819202/confirmation.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-06",
+        "2026-05-08",
         "2026-05-08"
       ]
     },
@@ -17191,7 +17201,7 @@
       "company": "Raytheon",
       "role": "2026 Raytheon Full Time Software Engineer I - RDPL - Onsite (CA)",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -17206,10 +17216,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for LinkedIn Software Engineer I RDPL posting; emphasized Java/Python/C++/C#, disciplined validation, data processing, APIs, debugging, documentation, and release operations. Posting likely requires citizenship/security-clearance review. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-06.",
+      "notes": "Tailored for LinkedIn Software Engineer I RDPL posting; emphasized Java/Python/C++/C#, disciplined validation, data processing, APIs, debugging, documentation, and release operations. Posting likely requires citizenship/security-clearance review. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-06.; Archived 2026-05-08 per Liam: 2026 Raytheon Full Time Software Engineer I - RDPL - Onsite (CA).",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-08"
       ]
     },
     {
@@ -17397,8 +17408,8 @@
     {
       "company": "Uare.ai",
       "role": "Software Engineer (Early Career)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -17413,10 +17424,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight; Manual apply verified 2026-05-08: Safari Greenhouse retry reached the application form with resume/cover-letter upload retry staged and basic profile fields partly filled, but the phone country widget selected +376; Liam should correct country to United States +1 and review before any submit.",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight; Manual apply verified 2026-05-08: Safari Greenhouse retry reached the application form with resume/cover-letter upload retry staged and basic profile fields partly filled, but the phone country widget selected +376; Liam should correct country to United States +1 and review before any submit.; Application submitted 2026-05-08 via Greenhouse confirmation page: https://job-boards.greenhouse.io/uareai/jobs/4036519009/confirmation.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-06",
+        "2026-05-08",
         "2026-05-08"
       ]
     },
@@ -17772,8 +17784,8 @@
     {
       "company": "Glean",
       "role": "Software Engineer, Agentic Runtime",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -17788,17 +17800,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06",
+      "notes": "Manual apply needed: Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06; Application submitted 2026-05-08 via Greenhouse confirmation page: https://job-boards.greenhouse.io/gleanwork/jobs/4616929005/confirmation.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-08"
       ]
     },
     {
       "company": "Pilot.com",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -17813,10 +17826,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06",
+      "notes": "Manual apply needed: Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06; Application submitted 2026-05-08 via Greenhouse confirmation page: https://job-boards.greenhouse.io/pilothq/jobs/8516101002/confirmation.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-08"
       ]
     },
     {
@@ -17979,8 +17993,8 @@
     {
       "company": "SingleStore-LinkedIn",
       "role": "Forward Deployment Engineer- Greater NYC",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "",
@@ -17995,11 +18009,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06 from adjacent verified template because generic-resume is absent locally; emphasized forward deployed engineering, customer-facing technical delivery, real-time data systems, solution architecture, integrations, and hands-on implementation. Manual apply needed: Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06.; Manual apply still needed 2026-05-08: included in full manual-row retry queue; use Safari upload flow if needed and leave for Liam final review unless every required field is high confidence.",
+      "notes": "Tailored 2026-05-06 from adjacent verified template because generic-resume is absent locally; emphasized forward deployed engineering, customer-facing technical delivery, real-time data systems, solution architecture, integrations, and hands-on implementation. Manual apply needed: Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06.; Manual apply still needed 2026-05-08: included in full manual-row retry queue; use Safari upload flow if needed and leave for Liam final review unless every required field is high confidence.; Application submitted 2026-05-08 via Greenhouse confirmation page: https://job-boards.greenhouse.io/singlestore-linkedin/jobs/7793896/confirmation.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-06",
         "2026-05-06",
+        "2026-05-08",
         "2026-05-08"
       ]
     },
@@ -18084,8 +18099,8 @@
     {
       "company": "CLEAR - Corporate",
       "role": "Software Engineer, Infrastructure",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -18100,10 +18115,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-07 for CLEAR Infrastructure SWE; emphasized cloud infrastructure, OCI/GCP release validation, service APIs, regression tooling, on-call triage, and production readiness. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight, so Greenhouse submission could not be safely completed.",
+      "notes": "Tailored 2026-05-07 for CLEAR Infrastructure SWE; emphasized cloud infrastructure, OCI/GCP release validation, service APIs, regression tooling, on-call triage, and production readiness. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight, so Greenhouse submission could not be safely completed.; Application submitted 2026-05-08 via Greenhouse confirmation page: https://job-boards.greenhouse.io/clear/jobs/7901600/confirmation.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-08"
       ]
     },
     {
@@ -18280,8 +18296,8 @@
       "discoveredAt": "2026-05-07T23:03:42.775648+00:00",
       "postedAge": "today",
       "fitScore": 10,
-      "status": "Manual",
-      "reason": "Tailored 2026-05-07; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "status": "Tailored",
+      "reason": "Application submitted 2026-05-08 via Greenhouse confirmation page",
       "trackerPostingKey": "7901600"
     },
     {
@@ -19498,9 +19514,9 @@
       "discoveredAt": "2026-05-06T08:04:07.591977+00:00",
       "postedAge": "1 week ago",
       "fitScore": 10,
-      "status": "Manual",
-      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
-      "trackerPostingKey": "4334774578"
+      "status": "Tailored",
+      "reason": "Application submitted 2026-05-08 via Ashby application link",
+      "trackerPostingKey": "cf31f5f6-4e67-4695-808c-9cdd2e1fa3b1"
     },
     {
       "source": "LinkedIn",
@@ -19596,9 +19612,9 @@
       "discoveredAt": "2026-05-06T08:04:07.591977+00:00",
       "postedAge": "1 week ago",
       "fitScore": 10,
-      "status": "Manual",
-      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
-      "trackerPostingKey": "4295417569"
+      "status": "Tailored",
+      "reason": "Application submitted 2026-05-08 via Ashby application link",
+      "trackerPostingKey": "0fc22fe4-6b8c-4c93-9b3f-fa3738054601"
     },
     {
       "source": "LinkedIn",
@@ -19792,9 +19808,9 @@
       "discoveredAt": "2026-05-06T00:05:57.521413+00:00",
       "postedAge": "4 hours ago",
       "fitScore": 10,
-      "status": "Manual",
-      "reason": "Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
-      "trackerPostingKey": "full-stack-software-engineer-growth-at-openai-4307261950"
+      "status": "Tailored",
+      "reason": "Application submitted 2026-05-08 via Ashby application link",
+      "trackerPostingKey": "77bc0b3a-35c1-4ecf-99c7-1b3b19d959ca"
     },
     {
       "source": "LinkedIn",
@@ -21976,8 +21992,8 @@
       "discoveredAt": "2026-05-06T23:03:45.688836+00:00",
       "postedAge": "crawled last week",
       "fitScore": 9,
-      "status": "Manual",
-      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "status": "Tailored",
+      "reason": "Application submitted 2026-05-08 via Greenhouse confirmation page",
       "trackerPostingKey": "8516101002"
     },
     {
@@ -22004,8 +22020,8 @@
       "discoveredAt": "2026-05-06T23:03:45.688836+00:00",
       "postedAge": "crawled 5 days ago",
       "fitScore": 9,
-      "status": "Manual",
-      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "status": "Tailored",
+      "reason": "Application submitted 2026-05-08 via Greenhouse confirmation page",
       "trackerPostingKey": "4616929005"
     },
     {
@@ -22032,8 +22048,8 @@
       "discoveredAt": "2026-05-06T16:37:28.116158+00:00",
       "postedAge": "public Greenhouse result crawled 4 days ago; captured 2026-05-06",
       "fitScore": 9,
-      "status": "Manual",
-      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "status": "Tailored",
+      "reason": "Application submitted 2026-05-08 via Greenhouse confirmation page",
       "trackerPostingKey": "4036519009"
     },
     {
@@ -22060,8 +22076,8 @@
       "discoveredAt": "2026-05-06T09:03:29.099277+00:00",
       "postedAge": "public result crawled 2 days ago",
       "fitScore": 9,
-      "status": "Manual",
-      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; did not claim native iOS/Swift experience",
+      "status": "Tailored",
+      "reason": "Application submitted 2026-05-08 via Greenhouse confirmation page",
       "trackerPostingKey": "7819202"
     },
     {
@@ -22425,8 +22441,8 @@
       "postedAge": "1 day ago; public LinkedIn degraded capture",
       "fitScore": 9,
       "status": "Tailored",
-      "reason": "Tailored 2026-05-03; resume rendered and verified one page; emphasized forward-deployed OpenAI API solutions, full-stack prototypes, customer-facing technical delivery, LLM product systems, and production-quality abstractions",
-      "trackerPostingKey": "forward-deployed-software-engineer-nyc-at-openai-4349516535"
+      "reason": "Application submitted 2026-05-08 via Ashby application link",
+      "trackerPostingKey": "533c0fc9-b773-476d-9f96-a0528efbab0e"
     },
     {
       "source": "LinkedIn",
@@ -22970,8 +22986,8 @@
       "discoveredAt": "2026-05-07T00:05:02.474347+00:00",
       "postedAge": "3 weeks ago",
       "fitScore": 8,
-      "status": "Manual",
-      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "status": "Tailored",
+      "reason": "Application submitted 2026-05-08 via Greenhouse confirmation page",
       "trackerPostingKey": "7793896"
     },
     {
@@ -22998,8 +23014,8 @@
       "discoveredAt": "2026-05-06T09:03:29.099277+00:00",
       "postedAge": "1 day ago",
       "fitScore": 8,
-      "status": "Manual",
-      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; citizenship/security-clearance eligibility needs review",
+      "status": "Archived",
+      "reason": "Archived 2026-05-08 per Liam: RDPL Onsite CA role",
       "trackerPostingKey": "4403169313"
     },
     {
@@ -23012,8 +23028,8 @@
       "discoveredAt": "2026-05-06T08:04:07.591977+00:00",
       "postedAge": "2 weeks ago",
       "fitScore": 8,
-      "status": "Manual",
-      "reason": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "status": "Archived",
+      "reason": "Archived 2026-05-08 per Liam after manual review",
       "trackerPostingKey": "5149067008"
     },
     {
@@ -25885,28 +25901,28 @@
     {
       "company": "OpenAI",
       "role": "Full Stack Software Engineer, Growth",
-      "postingKey": "full-stack-software-engineer-growth-at-openai-4307261950",
+      "postingKey": "77bc0b3a-35c1-4ecf-99c7-1b3b19d959ca",
       "fitScore": 10,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "reachOut": true,
-      "jobLink": "https://www.linkedin.com/jobs/view/full-stack-software-engineer-growth-at-openai-4307261950",
+      "jobLink": "https://jobs.ashbyhq.com/openai/77bc0b3a-35c1-4ecf-99c7-1b3b19d959ca/application",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-05",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome."
     },
     {
       "company": "OpenAI",
       "role": "Forward Deployed Engineer (FDE) - NYC",
-      "postingKey": "forward-deployed-engineer-nyc-at-openai-4334774578",
+      "postingKey": "cf31f5f6-4e67-4695-808c-9cdd2e1fa3b1",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
-      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-nyc-at-openai-4334774578",
+      "jobLink": "https://jobs.ashbyhq.com/openai/cf31f5f6-4e67-4695-808c-9cdd2e1fa3b1/application",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome."
     },
     {
       "company": "Octane",
@@ -27070,13 +27086,13 @@
       "role": "Software Engineer, Infrastructure",
       "postingKey": "7901600",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/clear/jobs/7901600",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-07",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome."
     },
     {
       "company": "Civis Analytics",
@@ -27276,15 +27292,15 @@
     {
       "company": "Avoca",
       "role": "Forward Deployed Engineer",
-      "postingKey": "forward-deployed-engineer-at-avoca-4295417569",
+      "postingKey": "0fc22fe4-6b8c-4c93-9b3f-fa3738054601",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
-      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-avoca-4295417569",
+      "jobLink": "https://jobs.ashbyhq.com/avoca/0fc22fe4-6b8c-4c93-9b3f-fa3738054601/application",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome."
     },
     {
       "company": "Automat",
@@ -27798,13 +27814,13 @@
       "role": "Software Engineer (Early Career)",
       "postingKey": "4036519009",
       "fitScore": 9,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/uareai/jobs/4036519009",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome."
     },
     {
       "company": "Truveta",
@@ -28292,13 +28308,13 @@
       "role": "Software Engineer",
       "postingKey": "8516101002",
       "fitScore": 9,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/pilothq/jobs/8516101002",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome."
     },
     {
       "company": "Parsec Automation Corp.",
@@ -28342,15 +28358,15 @@
     {
       "company": "OpenAI",
       "role": "Forward Deployed Software Engineer - NYC",
-      "postingKey": "forward-deployed-software-engineer-nyc-at-openai-4349516535",
+      "postingKey": "533c0fc9-b773-476d-9f96-a0528efbab0e",
       "fitScore": 9,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
-      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-software-engineer-nyc-at-openai-4349516535",
+      "jobLink": "https://jobs.ashbyhq.com/openai/533c0fc9-b773-476d-9f96-a0528efbab0e/application",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-02",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome."
     },
     {
       "company": "Omniva-Corp",
@@ -28682,13 +28698,13 @@
       "role": "Software Engineer, Agentic Runtime",
       "postingKey": "4616929005",
       "fitScore": 9,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/gleanwork/jobs/4616929005",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome."
     },
     {
       "company": "Garage",
@@ -28877,13 +28893,13 @@
       "role": "iOS Engineer",
       "postingKey": "7819202",
       "fitScore": 9,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/clear/jobs/7819202",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome."
     },
     {
       "company": "Clay",
@@ -29254,13 +29270,13 @@
       "role": "Forward Deployment Engineer- Greater NYC",
       "postingKey": "7793896",
       "fitScore": 8,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/singlestore-linkedin/jobs/7793896",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome."
     },
     {
       "company": "Sift",
@@ -29384,13 +29400,13 @@
       "role": "2026 Raytheon Full Time Software Engineer I - RDPL - Onsite (CA)",
       "postingKey": "4403169313",
       "fitScore": 8,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "reachOut": true,
       "jobLink": "https://www.linkedin.com/jobs/view/2026-raytheon-full-time-software-engineer-i-rdpl-onsite-ca-at-raytheon-4403169313",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome."
     },
     {
       "company": "Radley James",
@@ -29891,13 +29907,13 @@
       "role": "Forward Deployed Engineer",
       "postingKey": "5149067008",
       "fitScore": 8,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/flovisionsolutions/jobs/5149067008",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome."
     },
     {
       "company": "Epic Placements",
@@ -32483,9 +32499,9 @@
       "batch": "recruiter-2026-05-04",
       "company": "OpenAI",
       "role": "Forward Deployed Software Engineer - NYC",
-      "postingKey": "forward-deployed-software-engineer-nyc-at-openai-4349516535",
+      "postingKey": "533c0fc9-b773-476d-9f96-a0528efbab0e",
       "fitScore": 9,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "recruiterName": "",
       "recruiterProfile": "",
       "recruiterPosition": "",
@@ -32494,7 +32510,7 @@
       "approval": "Needs recruiter",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Status updated 2026-05-08 from Liam manual outcome.",
       "recruiterSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -36128,9 +36144,9 @@
       "batch": "engineer-2026-05-06",
       "company": "Avoca",
       "role": "Forward Deployed Engineer",
-      "postingKey": "forward-deployed-engineer-at-avoca-4295417569",
+      "postingKey": "0fc22fe4-6b8c-4c93-9b3f-fa3738054601",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -36139,7 +36155,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Status updated 2026-05-08 from Liam manual outcome.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -37255,9 +37271,9 @@
       "batch": "engineer-2026-05-06",
       "company": "OpenAI",
       "role": "Forward Deployed Engineer (FDE) - NYC",
-      "postingKey": "forward-deployed-engineer-nyc-at-openai-4334774578",
+      "postingKey": "cf31f5f6-4e67-4695-808c-9cdd2e1fa3b1",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -37266,7 +37282,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Status updated 2026-05-08 from Liam manual outcome.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -37278,9 +37294,9 @@
       "batch": "engineer-2026-05-06",
       "company": "OpenAI",
       "role": "Full Stack Software Engineer, Growth",
-      "postingKey": "full-stack-software-engineer-growth-at-openai-4307261950",
+      "postingKey": "77bc0b3a-35c1-4ecf-99c7-1b3b19d959ca",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -37289,7 +37305,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Status updated 2026-05-08 from Liam manual outcome.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -40132,7 +40148,7 @@
       "role": "iOS Engineer",
       "postingKey": "7819202",
       "fitScore": 9,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -40141,7 +40157,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Status updated 2026-05-08 from Liam manual outcome.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -40270,7 +40286,7 @@
       "role": "Software Engineer, Agentic Runtime",
       "postingKey": "4616929005",
       "fitScore": 9,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -40279,7 +40295,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Status updated 2026-05-08 from Liam manual outcome.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -40544,9 +40560,9 @@
       "batch": "engineer-2026-05-03",
       "company": "OpenAI",
       "role": "Forward Deployed Software Engineer - NYC",
-      "postingKey": "forward-deployed-software-engineer-nyc-at-openai-4349516535",
+      "postingKey": "533c0fc9-b773-476d-9f96-a0528efbab0e",
       "fitScore": 9,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -40555,7 +40571,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Status updated 2026-05-08 from Liam manual outcome.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -40615,7 +40631,7 @@
       "role": "Software Engineer",
       "postingKey": "8516101002",
       "fitScore": 9,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -40624,7 +40640,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Status updated 2026-05-08 from Liam manual outcome.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -40960,7 +40976,7 @@
       "role": "Software Engineer (Early Career)",
       "postingKey": "4036519009",
       "fitScore": 9,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -40969,7 +40985,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Status updated 2026-05-08 from Liam manual outcome.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -42639,7 +42655,7 @@
       "role": "Forward Deployed Engineer",
       "postingKey": "5149067008",
       "fitScore": 8,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -42648,7 +42664,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Status updated 2026-05-08 from Liam manual outcome.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -43145,7 +43161,7 @@
       "role": "2026 Raytheon Full Time Software Engineer I - RDPL - Onsite (CA)",
       "postingKey": "4403169313",
       "fitScore": 8,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -43154,7 +43170,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Status updated 2026-05-08 from Liam manual outcome.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -43283,7 +43299,7 @@
       "role": "Forward Deployment Engineer- Greater NYC",
       "postingKey": "7793896",
       "fitScore": 8,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -43292,7 +43308,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Status updated 2026-05-08 from Liam manual outcome.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -45328,11 +45344,11 @@
           "contacts": []
         },
         {
-          "key": "forward-deployed-engineer-at-avoca-4295417569",
+          "key": "0fc22fe4-6b8c-4c93-9b3f-fa3738054601",
           "company": "Avoca",
           "role": "Forward Deployed Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -45380,7 +45396,7 @@
           "company": "CLEAR - Corporate",
           "role": "Software Engineer, Infrastructure",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -45796,11 +45812,11 @@
           "contacts": []
         },
         {
-          "key": "full-stack-software-engineer-growth-at-openai-4307261950",
+          "key": "77bc0b3a-35c1-4ecf-99c7-1b3b19d959ca",
           "company": "OpenAI",
           "role": "Full Stack Software Engineer, Growth",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -45808,11 +45824,11 @@
           "contacts": []
         },
         {
-          "key": "forward-deployed-engineer-nyc-at-openai-4334774578",
+          "key": "cf31f5f6-4e67-4695-808c-9cdd2e1fa3b1",
           "company": "OpenAI",
           "role": "Forward Deployed Engineer (FDE) - NYC",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -46472,7 +46488,7 @@
           "company": "CLEAR - Corporate",
           "role": "iOS Engineer",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -46640,7 +46656,7 @@
           "company": "Glean",
           "role": "Software Engineer, Agentic Runtime",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -46828,11 +46844,11 @@
           "contacts": []
         },
         {
-          "key": "forward-deployed-software-engineer-nyc-at-openai-4349516535",
+          "key": "533c0fc9-b773-476d-9f96-a0528efbab0e",
           "company": "OpenAI",
           "role": "Forward Deployed Software Engineer - NYC",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -46856,7 +46872,7 @@
           "company": "Pilot.com",
           "role": "Software Engineer",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -47096,7 +47112,7 @@
           "company": "Uare.ai",
           "role": "Software Engineer (Early Career)",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -47529,18 +47545,6 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "5149067008",
-          "company": "FloVision Solutions",
-          "role": "Forward Deployed Engineer",
-          "fitScore": 8,
-          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -48028,18 +48032,6 @@
           "contacts": []
         },
         {
-          "key": "4403169313",
-          "company": "Raytheon",
-          "role": "2026 Raytheon Full Time Software Engineer I - RDPL - Onsite (CA)",
-          "fitScore": 8,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "7891749",
           "company": "Reddit",
           "role": "iOS Software Engineer, Contributions",
@@ -48140,7 +48132,7 @@
           "company": "SingleStore-LinkedIn",
           "role": "Forward Deployment Engineer- Greater NYC",
           "fitScore": 8,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -58173,11 +58165,11 @@
           "contacts": []
         },
         {
-          "key": "forward-deployed-engineer-at-avoca-4295417569",
+          "key": "0fc22fe4-6b8c-4c93-9b3f-fa3738054601",
           "company": "Avoca",
           "role": "Forward Deployed Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -58249,7 +58241,7 @@
           "company": "CLEAR - Corporate",
           "role": "Software Engineer, Infrastructure",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -58773,11 +58765,11 @@
           "contacts": []
         },
         {
-          "key": "forward-deployed-engineer-nyc-at-openai-4334774578",
+          "key": "cf31f5f6-4e67-4695-808c-9cdd2e1fa3b1",
           "company": "OpenAI",
           "role": "Forward Deployed Engineer (FDE) - NYC",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -58785,11 +58777,11 @@
           "contacts": []
         },
         {
-          "key": "full-stack-software-engineer-growth-at-openai-4307261950",
+          "key": "77bc0b3a-35c1-4ecf-99c7-1b3b19d959ca",
           "company": "OpenAI",
           "role": "Full Stack Software Engineer, Growth",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -59725,7 +59717,7 @@
           "company": "CLEAR - Corporate",
           "role": "iOS Engineer",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -59833,7 +59825,7 @@
           "company": "Glean",
           "role": "Software Engineer, Agentic Runtime",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -59973,11 +59965,11 @@
           "contacts": []
         },
         {
-          "key": "forward-deployed-software-engineer-nyc-at-openai-4349516535",
+          "key": "533c0fc9-b773-476d-9f96-a0528efbab0e",
           "company": "OpenAI",
           "role": "Forward Deployed Software Engineer - NYC",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -60013,7 +60005,7 @@
           "company": "Pilot.com",
           "role": "Software Engineer",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -60193,7 +60185,7 @@
           "company": "Uare.ai",
           "role": "Software Engineer (Early Career)",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -60493,7 +60485,7 @@
           "company": "FloVision Solutions",
           "role": "Forward Deployed Engineer",
           "fitScore": 8,
-          "status": "Manual Apply Needed",
+          "status": "Archived",
           "count": 1,
           "states": [
             "Needs label"
@@ -60745,7 +60737,7 @@
           "company": "Raytheon",
           "role": "2026 Raytheon Full Time Software Engineer I - RDPL - Onsite (CA)",
           "fitScore": 8,
-          "status": "Manual Apply Needed",
+          "status": "Archived",
           "count": 1,
           "states": [
             "Needs label"
@@ -60817,7 +60809,7 @@
           "company": "SingleStore-LinkedIn",
           "role": "Forward Deployment Engineer- Greater NYC",
           "fitScore": 8,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
