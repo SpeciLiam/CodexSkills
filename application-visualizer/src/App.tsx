@@ -88,7 +88,7 @@ const INFO_COPY = {
   source: "Compares where roles are coming from, so you can see which channels are feeding the most opportunities.",
   role: "Plots visible applications by fit score and status. It is useful for spotting high-fit roles that are still only tailored or need action.",
   radar: "Summarizes campaign health across applied rate, high-fit share, reach-out coverage, recruiter coverage, and active share.",
-  stageSnake: "Maps each role to the deepest observed process stage using status plus tracker notes, then shows where applications are still alive or rejected.",
+  stageSnake: "Maps each non-archived role to the deepest observed process stage using status plus tracker notes, then shows where applications are still alive or rejected.",
   recruiters: "Lists applications with a known recruiter or LinkedIn path, sorted toward stronger fit so outreach targets are easy to open.",
   intake: "Shows fresh LinkedIn and Greenhouse jobs discovered by the hourly intake listener before they become tailored application rows.",
   gaps: "Highlights high-fit reach-out rows that still need more prospects or ready email addresses.",
@@ -1804,6 +1804,7 @@ type StageSnakeNode = {
   id: string;
   label: string;
   count: number;
+  reached: number;
   active: number;
   rejected: number;
   rejectedExamples: Application[];
@@ -1817,7 +1818,7 @@ function ApplicationStageSnake({ stages, total }: { stages: StageSnakeNode[]; to
       <div className="stage-snake-track">
         {stages.map((stage, index) => {
           const width = `${Math.max(16, (stage.count / maxCount) * 100)}%`;
-          const survival = total ? Math.round((stage.count / total) * 100) : 0;
+          const survival = total ? Math.round((stage.reached / total) * 100) : 0;
           return (
             <section className="stage-node" key={stage.id}>
               <div className="stage-node-head">
@@ -1826,10 +1827,10 @@ function ApplicationStageSnake({ stages, total }: { stages: StageSnakeNode[]; to
               </div>
               <div className="stage-flow" style={{ width }}>
                 <b>{stage.count}</b>
-                <small>{survival}% reach</small>
+                <small>{survival}% reached</small>
               </div>
               <div className="stage-node-meta">
-                <span>{stage.active} alive</span>
+                <span>{stage.active} alive here</span>
                 <span className={stage.rejected ? "drop" : ""}>{stage.rejected} rejected here</span>
               </div>
             </section>
@@ -2490,30 +2491,35 @@ function buildStageSnake(apps: Application[]) {
   const stages = APPLICATION_STAGES.map((stage) => ({
     ...stage,
     count: 0,
+    reached: 0,
     active: 0,
     rejected: 0,
     rejectedExamples: [] as Application[],
   }));
 
-  apps.forEach((app) => {
+  const livePipelineApps = apps.filter((app) => app.status.toLowerCase() !== "archived");
+
+  livePipelineApps.forEach((app) => {
     const stageIndex = inferApplicationStageIndex(app);
     const isRejected = app.status.toLowerCase() === "rejected";
-    stages.forEach((stage, index) => {
-      if (index > stageIndex) return;
-      stage.count += 1;
-      if (!isRejected) stage.active += 1;
-    });
+    stages[stageIndex].count += 1;
     if (isRejected) {
       stages[stageIndex].rejected += 1;
       stages[stageIndex].rejectedExamples.push(app);
+    } else {
+      stages[stageIndex].active += 1;
     }
+  });
+
+  stages.forEach((stage, index) => {
+    stage.reached = livePipelineApps.filter((app) => inferApplicationStageIndex(app) >= index).length;
   });
 
   stages.forEach((stage) => {
     stage.rejectedExamples.sort((a, b) => b.fitScore - a.fitScore || a.company.localeCompare(b.company));
   });
 
-  return { total: apps.length, stages };
+  return { total: livePipelineApps.length, stages };
 }
 
 function inferApplicationStageIndex(app: Application) {
