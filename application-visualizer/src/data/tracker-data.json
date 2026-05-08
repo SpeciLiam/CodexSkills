@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T05:40:39.937651+00:00",
+  "generatedAt": "2026-05-08T06:05:00.408364+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,10 +21,10 @@
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 455,
+      "intakeJobs": 457,
       "intakeQueued": 30,
       "intakeNew": 40,
-      "intakeManual": 221,
+      "intakeManual": 223,
       "intakeApplied": 0,
       "applyRate": 68.1,
       "rejectionRate": 10.8,
@@ -258,7 +258,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 221
+        "value": 223
       },
       {
         "name": "Tailored",
@@ -292,11 +292,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 295
+        "value": 296
       },
       {
         "name": "LinkedIn",
-        "value": 160
+        "value": 161
       }
     ],
     "timeline": [
@@ -18174,6 +18174,34 @@
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "StubHub",
+      "role": "Software Engineer I - Open Distribution (New Grad)",
+      "location": "Los Angeles, California, United States",
+      "postingKey": "4654170101",
+      "jobUrl": "https://job-boards.greenhouse.io/stubhubinc/jobs/4654170101",
+      "discoveredAt": "2026-05-08T06:04:19.790803+00:00",
+      "postedAge": "3 months ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-08: strong early-career Greenhouse role, but `generic-resume/` is missing locally so resume-tailor cannot prepare and verify a role folder; browser application attempt is also blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "LendingClub",
+      "role": "Software Engineer, Backend",
+      "location": "San Francisco, CA",
+      "postingKey": "linkedin-lendingclub-software-engineer-backend-sf-2026-05-08",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-new-grad-program-at-sigma-4372197656",
+      "discoveredAt": "2026-05-08T06:04:19.790803+00:00",
+      "postedAge": "41 minutes ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-08: strong fresh SF backend role, but public LinkedIn capture exposed only an aggregate/result URL instead of an authenticated job page, `generic-resume/` is missing locally so resume-tailor cannot prepare and verify a role folder, and browser application attempt is blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
     {
       "source": "Greenhouse",
       "company": "Flex",
