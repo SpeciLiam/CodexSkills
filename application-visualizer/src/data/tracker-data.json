@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T06:16:22.885970+00:00",
+  "generatedAt": "2026-05-08T08:06:57.254382+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,10 +21,10 @@
       "recruiterRows": 124,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 457,
+      "intakeJobs": 472,
       "intakeQueued": 30,
       "intakeNew": 40,
-      "intakeManual": 223,
+      "intakeManual": 236,
       "intakeApplied": 0,
       "applyRate": 68.1,
       "rejectionRate": 10.8,
@@ -258,7 +258,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 223
+        "value": 236
       },
       {
         "name": "Tailored",
@@ -270,7 +270,7 @@
       },
       {
         "name": "Skipped",
-        "value": 35
+        "value": 37
       },
       {
         "name": "Queued",
@@ -292,11 +292,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 296
+        "value": 302
       },
       {
         "name": "LinkedIn",
-        "value": 161
+        "value": 170
       }
     ],
     "timeline": [
@@ -18176,6 +18176,20 @@
   "jobIntake": [
     {
       "source": "Greenhouse",
+      "company": "Thatch",
+      "role": "Software Engineer: Backend",
+      "location": "Remote (US); San Francisco, California, United States",
+      "postingKey": "5113759008",
+      "jobUrl": "https://job-boards.greenhouse.io/thatch/jobs/5113759008",
+      "discoveredAt": "2026-05-08T08:05:04.776821+00:00",
+      "postedAge": "Public Greenhouse result; crawled 2 months ago; recaptured 2026-05-08T08:04:59.083Z",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-08: strong backend Greenhouse role, but `generic-resume/` is missing locally so resume-tailor cannot prepare and verify a role folder; browser application attempt is also blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "StubHub",
       "role": "Software Engineer I - Open Distribution (New Grad)",
       "location": "Los Angeles, California, United States",
@@ -21801,6 +21815,62 @@
       "trackerPostingKey": "4401827377"
     },
     {
+      "source": "LinkedIn",
+      "company": "TechChain Talent",
+      "role": "Founding Engineer (New York)",
+      "location": "New York, NY",
+      "postingKey": "founding-engineer-new-york-at-techchain-talent-4402134085",
+      "jobUrl": "https://www.linkedin.com/jobs/view/founding-engineer-new-york-at-techchain-talent-4402134085",
+      "discoveredAt": "2026-05-08T08:05:04.776821+00:00",
+      "postedAge": "1 day ago in public LinkedIn result; captured 2026-05-08T08:04:59.083Z",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-08: strong NYC founding-engineer LinkedIn role, but `generic-resume/` is missing locally so resume-tailor cannot prepare and verify a role folder; authenticated LinkedIn/browser application is also blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Sourcegraph",
+      "role": "Forward Deployed Engineer [IC1-IC5]",
+      "location": "San Francisco, CA",
+      "postingKey": "5496292004",
+      "jobUrl": "https://job-boards.greenhouse.io/sourcegraph91/jobs/5496292004?gh_src=0cd0575f4us",
+      "discoveredAt": "2026-05-08T08:05:04.776821+00:00",
+      "postedAge": "Public Greenhouse result; crawled 7 months ago; recaptured 2026-05-08T08:04:59.083Z",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-08: plausible level-flexible Greenhouse role, but `generic-resume/` is missing locally so resume-tailor cannot prepare and verify a role folder; browser application attempt is also blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Rovi Health (YC F25)",
+      "role": "Founding Engineer",
+      "location": "New York, NY",
+      "postingKey": "founding-engineer-at-rovi-health-yc-f25-4402319981",
+      "jobUrl": "https://www.linkedin.com/jobs/view/founding-engineer-at-rovi-health-yc-f25-4402319981",
+      "discoveredAt": "2026-05-08T08:05:04.776821+00:00",
+      "postedAge": "1 day ago in public LinkedIn result; captured 2026-05-08T08:04:59.083Z",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-08: strong NYC founding-engineer LinkedIn role, but `generic-resume/` is missing locally so resume-tailor cannot prepare and verify a role folder; authenticated LinkedIn/browser application is also blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Block MB",
+      "role": "Founding Engineer",
+      "location": "New York, United States",
+      "postingKey": "founding-engineer-at-block-mb-4402916699",
+      "jobUrl": "https://www.linkedin.com/jobs/view/founding-engineer-at-block-mb-4402916699",
+      "discoveredAt": "2026-05-08T08:05:04.776821+00:00",
+      "postedAge": "1 day ago in public LinkedIn result; captured 2026-05-08T08:04:59.083Z",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-08: strong NYC founding-engineer LinkedIn role, but `generic-resume/` is missing locally so resume-tailor cannot prepare and verify a role folder; authenticated LinkedIn/browser application is also blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "Greenhouse",
       "company": "Pario",
       "role": "Frontend Engineer",
@@ -22655,6 +22725,34 @@
       "trackerPostingKey": "5592469004"
     },
     {
+      "source": "Greenhouse",
+      "company": "Shift5",
+      "role": "Forward Deployed Engineer",
+      "location": "Remote",
+      "postingKey": "5371476004",
+      "jobUrl": "https://job-boards.greenhouse.io/shift5/jobs/5371476004?gh_src=4149ce774us",
+      "discoveredAt": "2026-05-08T08:05:04.776821+00:00",
+      "postedAge": "Public Greenhouse result; crawled 7 months ago; recaptured 2026-05-08T08:04:59.083Z",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-08: plausible remote forward-deployed Greenhouse role, but `generic-resume/` is missing locally so resume-tailor cannot prepare and verify a role folder; browser application attempt is also blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Infinity Constellation",
+      "role": "Founding AI Engineer - Paradox Machines",
+      "location": "New York, NY / Remote",
+      "postingKey": "founding-ai-engineer-paradox-machines-at-infinity-constellation-4403154657",
+      "jobUrl": "https://www.linkedin.com/jobs/view/founding-ai-engineer-paradox-machines-at-infinity-constellation-4403154657",
+      "discoveredAt": "2026-05-08T08:05:04.776821+00:00",
+      "postedAge": "1 day ago in public LinkedIn result; captured 2026-05-08T08:04:59.083Z",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-08: plausible NYC/remote founding AI LinkedIn role, but `generic-resume/` is missing locally so resume-tailor cannot prepare and verify a role folder; authenticated LinkedIn/browser application is also blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "LinkedIn",
       "company": "Remi",
       "role": "Software Engineer I/II",
@@ -23314,6 +23412,90 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Spring Health",
+      "role": "Senior Software Engineer I, Customer Experience",
+      "location": "New York (Hybrid)",
+      "postingKey": "4611462005",
+      "jobUrl": "https://job-boards.greenhouse.io/springhealth66/jobs/4611462005?gh_src=5d92b3ff5us",
+      "discoveredAt": "2026-05-08T08:05:04.776821+00:00",
+      "postedAge": "Public Greenhouse result; crawled 7 months ago; recaptured 2026-05-08T08:04:59.083Z",
+      "fitScore": 7,
+      "status": "Skipped",
+      "reason": "SWE-family role, early-career signal, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Penguin Ai",
+      "role": "Forward Deployed Engineer - FDE",
+      "location": "United States",
+      "postingKey": "forward-deployed-engineer-fde-at-penguin-ai-4328802189",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-fde-at-penguin-ai-4328802189",
+      "discoveredAt": "2026-05-08T08:05:04.776821+00:00",
+      "postedAge": "1 day ago in public LinkedIn result; captured 2026-05-08T08:04:59.083Z",
+      "fitScore": 7,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-08: plausible U.S. FDE LinkedIn role, but `generic-resume/` is missing locally so resume-tailor cannot prepare and verify a role folder; authenticated LinkedIn/browser application is also blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "LiveKit",
+      "role": "Forward Deployed Engineer",
+      "location": "United States",
+      "postingKey": "forward-deployed-engineer-at-livekit-4384757792",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-livekit-4384757792",
+      "discoveredAt": "2026-05-08T08:05:04.776821+00:00",
+      "postedAge": "1 day ago in public LinkedIn result; captured 2026-05-08T08:04:59.083Z",
+      "fitScore": 7,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-08: plausible U.S. FDE LinkedIn role but likely senior-leaning, and `generic-resume/` is missing locally so resume-tailor cannot prepare and verify a role folder; authenticated LinkedIn/browser application is also blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Innovaccer",
+      "role": "AI Forward Deployed Engineer",
+      "location": "United States",
+      "postingKey": "3803-ai-forward-deployed-engineer-at-innovaccer-4402228275",
+      "jobUrl": "https://www.linkedin.com/jobs/view/3803-ai-forward-deployed-engineer-at-innovaccer-4402228275",
+      "discoveredAt": "2026-05-08T08:05:04.776821+00:00",
+      "postedAge": "1 day ago in public LinkedIn result; captured 2026-05-08T08:04:59.083Z",
+      "fitScore": 7,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-08: plausible U.S. AI FDE LinkedIn role, but `generic-resume/` is missing locally so resume-tailor cannot prepare and verify a role folder; authenticated LinkedIn/browser application is also blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Innovaccer",
+      "role": "4049-Forward Deployed Engineer (AI/Agents)",
+      "location": "United States",
+      "postingKey": "4049-forward-deployed-engineer-ai-agents-at-innovaccer-4402233169",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4049-forward-deployed-engineer-ai-agents-at-innovaccer-4402233169",
+      "discoveredAt": "2026-05-08T08:05:04.776821+00:00",
+      "postedAge": "1 day ago in public LinkedIn result; captured 2026-05-08T08:04:59.083Z",
+      "fitScore": 7,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-08: plausible U.S. AI agents FDE LinkedIn role, but `generic-resume/` is missing locally so resume-tailor cannot prepare and verify a role folder; authenticated LinkedIn/browser application is also blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Attis",
+      "role": "Forward Deployed Engineer - Palantir Foundry / Data / Software / Analytics",
+      "location": "United States / Remote",
+      "postingKey": "forward-deployed-engineer-palantir-foundry-data-software-analytics-data-analysis-remote-at-attis-4403416842",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-palantir-foundry-data-software-analytics-data-analysis-remote-at-attis-4403416842",
+      "discoveredAt": "2026-05-08T08:05:04.776821+00:00",
+      "postedAge": "1 day ago in public LinkedIn result; captured 2026-05-08T08:04:59.083Z",
+      "fitScore": 7,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-08: plausible remote FDE LinkedIn role, but `generic-resume/` is missing locally so resume-tailor cannot prepare and verify a role folder; authenticated LinkedIn/browser application is also blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Chime Financial, Inc",
       "role": "Full-Stack Engineer, Cards Success",
       "location": "San Francisco, CA",
@@ -23730,6 +23912,20 @@
       "fitScore": 7,
       "status": "New",
       "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Flagship Pioneering / Lila Sciences",
+      "role": "Forward Deployed Engineer (Level Flexible)",
+      "location": "Cambridge, MA USA",
+      "postingKey": "8067750002",
+      "jobUrl": "https://job-boards.greenhouse.io/flagshippioneeringinc/jobs/8067750002?gh_jid=8067750002",
+      "discoveredAt": "2026-05-08T08:05:04.776821+00:00",
+      "postedAge": "Public Greenhouse result; crawled 8 months ago; recaptured 2026-05-08T08:04:59.083Z",
+      "fitScore": 6,
+      "status": "Manual",
+      "reason": "Manual tailoring/apply needed 2026-05-08: level-flexible Greenhouse role needs review, and `generic-resume/` is missing locally so resume-tailor cannot prepare and verify a role folder; browser application attempt is also blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
       "trackerPostingKey": ""
     },
     {
@@ -24430,6 +24626,20 @@
       "fitScore": 4,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "TRM Labs",
+      "role": "Forward Deployed Engineer - National Security (TS/SCI)",
+      "location": "Washington DC",
+      "postingKey": "5574327004",
+      "jobUrl": "https://job-boards.greenhouse.io/trmlabs/jobs/5574327004",
+      "discoveredAt": "2026-05-08T08:05:04.776821+00:00",
+      "postedAge": "Public Greenhouse result; crawled 8 months ago; recaptured 2026-05-08T08:04:59.083Z",
+      "fitScore": 3,
+      "status": "Skipped",
+      "reason": "SWE-family role, other US location",
       "trackerPostingKey": ""
     },
     {
