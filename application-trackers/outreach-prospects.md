@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 526
+Companies queued: 528
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -390,6 +390,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Sofar Ocean | Software Engineer | 4408057809 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4408057809/?trackingId=DwG%2BdHl0SSCkj8VHOFgNGA%3D%3D&refId=5T2Rb2GlMfL%2FBz2KqJWJrw%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BnQ3WrNZISgWjPS5etG6bWg%3D%3D) |  |  |  |  |
 | SingleStore-LinkedIn | Forward Deployment Engineer- Greater NYC | 7793896 | 8 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/singlestore-linkedin/jobs/7793896) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome. |
 | Sift | Software Engineer, Full Stack | software-engineer-full-stack-at-sift-4253102305 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-full-stack-at-sift-4253102305) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
+| ServiceNow | Associate Software Engineer, Core Infrastructure - Moveworks | 4369288501 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4369288501/?trackingId=7jk20O7aE6NqO8DUtbjdVA%3D%3D&refId=sAUo7dxL6I%2B7EJ8zBaNrKQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BXh4jeX1vS12yxjinkWLesg%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | Sartre Group | Founding Software Engineer, NYC (onsite), AI-native consumer insurance | 4407183931 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4407183931/) |  |  |  |  |
 | Salient | Forward Deployed Software Engineer | forward-deployed-software-engineer-at-salient-4337004844 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/forward-deployed-software-engineer-at-salient-4337004844) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Ruli | Software Engineer, AI | 4405909745 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4405909745/) |  |  |  |  |
@@ -490,6 +491,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Monarch Recruiters | Full Stack Engineer | 4380393957 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4380393957/) |  |  |  |  |
 | Magnite | Engineer I, Automation and Custom Applications | 4394227079 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4394227079/) |  |  |  |  |
 | JKB Advisors | Full Stack Engineer | 4383132488 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4383132488/) |  |  |  |  |
+| Google | Software Engineer I, Mobile (Android), Gmail | 124572938656457414-software-engineer-i | 7 | Applied | Yes | [Posting](https://www.google.com/about/careers/applications/jobs/results/124572938656457414-software-engineer-i/?src=Online/LinkedIn/linkedin_us&utm_source=linkedin&utm_medium=jobposting&utm_campaign=contract) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | Goldman Sachs | Asset & Wealth Management - Data Engineer - Associate - New York | 4377604624 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4377604624) |  |  |  |  |
 | Glean | Software Engineer, Context Platform | 4638008005 | 7 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/gleanwork/jobs/4638008005) |  |  |  |  |
 | Etched | Core Software Engineer | 4385381877 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4385381877/?trackingId=WG2MrHqpt%2BAhjfF7EnmFuA%3D%3D&refId=ynHDPB5ZgeFfDqqpeBArmA%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BvPPdJNsVRT28llzO1KN9yA%3D%3D) |  |  |  |  |

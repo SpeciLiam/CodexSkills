@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T22:57:31.508493+00:00",
+  "generatedAt": "2026-05-08T23:08:30.220660+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 639,
-      "applied": 435,
+      "total": 641,
+      "applied": 437,
       "unapplied": 204,
-      "active": 452,
+      "active": 454,
       "rejected": 51,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 504,
-      "reachOut": 564,
+      "highFit": 505,
+      "reachOut": 566,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,17 +26,17 @@
       "intakeNew": 40,
       "intakeManual": 252,
       "intakeApplied": 0,
-      "applyRate": 68.1,
+      "applyRate": 68.2,
       "rejectionRate": 11.7,
-      "recruiterWork": 336,
-      "engineerWork": 414,
+      "recruiterWork": 338,
+      "engineerWork": 416,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 377
+        "value": 379
       },
       {
         "name": "Archived",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "LinkedIn",
-        "value": 254
+        "value": 255
       },
       {
         "name": "Greenhouse",
@@ -105,6 +105,10 @@
         "value": 2
       },
       {
+        "name": "Google Careers",
+        "value": 2
+      },
+      {
         "name": "Unknown",
         "value": 1
       },
@@ -129,10 +133,6 @@
         "value": 1
       },
       {
-        "name": "Google Careers",
-        "value": 1
-      },
-      {
         "name": "Meta Careers",
         "value": 1
       }
@@ -148,7 +148,7 @@
       },
       {
         "name": "Other",
-        "value": 113
+        "value": 115
       },
       {
         "name": "Remote",
@@ -186,11 +186,11 @@
       },
       {
         "name": "AI/ML",
-        "value": 37
+        "value": 38
       },
       {
         "name": "Infra/Platform",
-        "value": 26
+        "value": 27
       },
       {
         "name": "Data",
@@ -228,11 +228,11 @@
       },
       {
         "score": "7",
-        "count": 36
+        "count": 37
       },
       {
         "score": "8",
-        "count": 120
+        "count": 121
       },
       {
         "score": "9",
@@ -494,9 +494,9 @@
       },
       {
         "date": "2026-05-08",
-        "cumulative": 639,
-        "added": 26,
-        "applied": 18,
+        "cumulative": 641,
+        "added": 28,
+        "applied": 20,
         "rejected": 0,
         "interviewing": 1
       }
@@ -18829,6 +18829,58 @@
         "2026-05-08",
         "2026-05-08"
       ]
+    },
+    {
+      "company": "Google",
+      "role": "Software Engineer I, Mobile (Android), Gmail",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 7,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-08",
+      "location": "Mountain View, CA",
+      "source": "Google Careers",
+      "jobLink": "https://www.google.com/about/careers/applications/jobs/results/124572938656457414-software-engineer-i/?src=Online/LinkedIn/linkedin_us&utm_source=linkedin&utm_medium=jobposting&utm_campaign=contract",
+      "postingKey": "124572938656457414-software-engineer-i",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Google/Software_Engineer_I_Mobile_Android_Gmail/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Google/Software_Engineer_I_Mobile_Android_Gmail/Liam_Van_Resume/Liam_Van_Google.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-08 from early-career source for Google Software Engineer I, Mobile (Android), Gmail; emphasized Java, Android/Capacitor mobile packaging, React/Vite mobile UI, Camera APIs, product/system code, code review/testability, documentation, debugging, distributed systems, OpenSearch/retrieval, and cloud service validation. Did not claim native Kotlin/Java Android production ownership, Jetpack/Compose, accessibility technology ownership, or Google-scale mobile systems beyond supported resume and SplitCheck evidence.; Application submitted by Liam 2026-05-08.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-08",
+        "2026-05-08"
+      ]
+    },
+    {
+      "company": "ServiceNow",
+      "role": "Associate Software Engineer, Core Infrastructure - Moveworks",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-08",
+      "location": "Mountain View, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4369288501/?trackingId=7jk20O7aE6NqO8DUtbjdVA%3D%3D&refId=sAUo7dxL6I%2B7EJ8zBaNrKQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BXh4jeX1vS12yxjinkWLesg%3D%3D",
+      "postingKey": "4369288501",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/ServiceNow/Associate_Software_Engineer_Core_Infrastructure_Moveworks/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/ServiceNow/Associate_Software_Engineer_Core_Infrastructure_Moveworks/Liam_Van_Resume/Liam_Van_ServiceNow.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-08 from early-career source for ServiceNow / Moveworks Associate Software Engineer, Core Infrastructure role; emphasized Python/Java/C++, distributed cloud database validation, Docker/GCP/AWS/OCI, OpenSearch retrieval, regression utilities, observability, log analysis, Grafana/T2 metrics, canary triage, performance-oriented debugging, unit testing, and cross-team infrastructure support. Did not claim Go, Kafka, Istio, distributed key-value store ownership, traffic capture/replay, feature flags/A-B systems, or direct Moveworks platform ownership beyond supported resume evidence.; Application submitted by Liam 2026-05-08.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-08",
+        "2026-05-08"
+      ]
     }
   ],
   "jobIntake": [
@@ -30690,6 +30742,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "ServiceNow",
+      "role": "Associate Software Engineer, Core Infrastructure - Moveworks",
+      "postingKey": "4369288501",
+      "fitScore": 8,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4369288501/?trackingId=7jk20O7aE6NqO8DUtbjdVA%3D%3D&refId=sAUo7dxL6I%2B7EJ8zBaNrKQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BXh4jeX1vS12yxjinkWLesg%3D%3D",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-08",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Sartre Group",
       "role": "Founding Software Engineer, NYC (onsite), AI-native consumer insurance",
       "postingKey": "4407183931",
@@ -31988,6 +32053,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Google",
+      "role": "Software Engineer I, Mobile (Android), Gmail",
+      "postingKey": "124572938656457414-software-engineer-i",
+      "fitScore": 7,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.google.com/about/careers/applications/jobs/results/124572938656457414-software-engineer-i/?src=Online/LinkedIn/linkedin_us&utm_source=linkedin&utm_medium=jobposting&utm_campaign=contract",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-08",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Goldman Sachs",
@@ -49516,6 +49594,18 @@
           "contacts": []
         },
         {
+          "key": "4369288501",
+          "company": "ServiceNow",
+          "role": "Associate Software Engineer, Core Infrastructure - Moveworks",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-full-stack-at-sift-4253102305",
           "company": "Sift",
           "role": "Software Engineer, Full Stack",
@@ -49891,6 +49981,18 @@
           "key": "4377604624",
           "company": "Goldman Sachs",
           "role": "Asset & Wealth Management - Data Engineer - Associate - New York",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "124572938656457414-software-engineer-i",
+          "company": "Google",
+          "role": "Software Engineer I, Mobile (Android), Gmail",
           "fitScore": 7,
           "status": "Applied",
           "count": 1,
@@ -62204,6 +62306,18 @@
           "contacts": []
         },
         {
+          "key": "4369288501",
+          "company": "ServiceNow",
+          "role": "Associate Software Engineer, Core Infrastructure - Moveworks",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-full-stack-at-sift-4253102305",
           "company": "Sift",
           "role": "Software Engineer, Full Stack",
@@ -62353,6 +62467,18 @@
           "role": "Software Engineer",
           "fitScore": 7,
           "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "124572938656457414-software-engineer-i",
+          "company": "Google",
+          "role": "Software Engineer I, Mobile (Android), Gmail",
+          "fitScore": 7,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
