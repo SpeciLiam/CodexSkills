@@ -58,16 +58,21 @@ Notes carried from tracker: {notes}
 
 Use Codex Computer Use (computer-use@openai-bundled) for the live browser flow.
 
-Before drafting any FRQ, cover-letter interest sentence, "why us" answer, values
-answer, achievement example, or project example, load Liam's factual context.
-Read the row's tailored resume source at <resume directory>/resume.tex when
-available, where <resume directory> is the directory containing Resume PDF. Also
-read generic-resume/README.md and generic-resume/resume.tex when those files
-exist in the repo; they are the broader evidence bank. Use only Liam's actual
-resume/profile/project/tracker evidence. Never invent employers, internships,
-projects, tools, metrics, dates, credentials, or responsibilities. If a required
-answer cannot be grounded in those sources, use a supported adjacent example or
-mark the row manual for Liam review.
+Before drafting any FRQ, "why us" answer, values answer, achievement example,
+or project example, load Liam's factual context. Read the row's tailored resume
+source at <resume directory>/resume.tex when available, where <resume directory>
+is the directory containing Resume PDF. Also read generic-resume/README.md and
+generic-resume/resume.tex when those files exist in the repo; they are the
+broader evidence bank. Use only Liam's actual resume/profile/project/tracker
+evidence. Never invent employers, internships, projects, tools, metrics, dates,
+credentials, or responsibilities. If a required answer cannot be grounded in
+those sources, use a supported adjacent example or mark the row manual for Liam
+review.
+
+Do not generate, render, write, paste, or upload cover letters. If a
+cover-letter field is optional, leave it blank. If a cover-letter field is
+required and cannot be skipped, leave the tab open and set state="manual" with
+blocker "Cover letter required; skipped by no-cover-letter policy".
 
 Dropdowns / typeahead / combo boxes / multi-select: open the menu, click the actual option, verify the rendered chip/value. Never just type into a typeahead and move on — the field will be silently rejected.
 
@@ -78,6 +83,12 @@ Confidence decision after final review:
 - MEDIUM (FRQ or one uncertain field): fill all safe fields, generate best-effort answer from Liam's profile and resume evidence, leave the tab open at the cleanest review point, set state="manual" with blocker like "FRQ review: <question>".
 - HARD blocker (account creation, fresh login when not authenticated, SMS/authenticator-app 2FA, interactive CAPTCHA, Workday, legal signature, AI-deterrent verification): set state="manual" with the exact blocker.
 - Posting closed/404/redirected to a different role: set state="archived".
+
+Education dates are strict: University of Georgia, BS Computer Science, started
+Aug 2021, graduated Dec 2024. Never enter any graduation year before 2024, and
+never answer that Liam graduated before 2020. If a form asks whether Liam
+graduated before 2020, answer No. If a rendered education answer differs,
+correct it before final submit or mark manual if it cannot be corrected.
 
 Then UPDATE /tmp/fa_script_run_state.json — find the items[] entry where key == "{key}" and set:
   state: submitted | manual | archived

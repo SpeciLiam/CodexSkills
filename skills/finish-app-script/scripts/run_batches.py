@@ -26,6 +26,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[3]
 STATE_PATH = Path("/tmp/fa_script_run_state.json")
+TODO_PATH = Path("/tmp/fa_script_todo.md")
 OUTPUT_DIR = Path("/tmp/fa_script_batch_outputs")
 DEFAULT_MODEL = "gpt-5.5"
 DEFAULT_BATCH_SIZE = 2
@@ -38,9 +39,11 @@ SYSTEMIC_BLOCKER_TERMS = (
     "browser access blocker",
     "chrome computer use unavailable",
     "chrome/computer use timeout",
+    "cgwindownotfound",
     "computer use access denied",
     "computer use approval denied",
     "computer use itself is unavailable",
+    "connectioninvalid",
     "google chrome/com.google.chrome",
     "timeout for google chrome",
     "timeoutreached",
@@ -51,6 +54,14 @@ SYSTEMIC_BLOCKER_TERMS = (
 BATCH_PROMPT = """\
 Read skills/finish-app-script/OPERATING_CARD.md before starting. Follow the
 standing answers and submission rules strictly, with this batch override:
+
+Before doing browser work, read /tmp/fa_script_todo.md. It is the human-readable
+handoff file for this monitored run; /tmp/fa_script_run_state.json remains the
+machine-readable source of truth. After every row outcome, append one short note
+to /tmp/fa_script_todo.md with: company, role, row key, state, confirmation
+evidence if submitted, exact blocker/review item if manual, and whether a
+handoff tab was left open. Before exiting the batch, append a final batch note
+with any unresolved blockers or review tabs still open.
 
 You are a fresh parent application agent, not a per-row subagent. Use Codex
 Computer Use directly in this process. Prefer Google Chrome when it is
@@ -77,8 +88,8 @@ For each row:
 - Always open a brand-new browser tab before navigating to the jobLink, including
   the first row in this batch. Never navigate over an existing application,
   email, search, or handoff tab.
-- Before drafting any FRQ, cover-letter interest sentence, "why us" answer,
-  values answer, achievement example, or project example, load Liam's factual
+- Before drafting any FRQ, "why us" answer, values answer, achievement example,
+  or project example, load Liam's factual
   context. Read the row's tailored resume source at <resume directory>/resume.tex
   when available, where <resume directory> is the directory containing resumePdf.
   Also read generic-resume/README.md and generic-resume/resume.tex when those
@@ -99,8 +110,7 @@ For each row:
   "upload-error redo", "Document upload failed", or "Firefox picker", open the
   application URL in Safari before uploading documents and perform the upload
   there. This path has been verified on Uare.ai Greenhouse for both resume and
-  cover letter. Do not spend the retry on Firefox unless Safari itself is
-  unavailable.
+  resume. Do not spend the retry on Firefox unless Safari itself is unavailable.
 - Robust file-picker method: when a native macOS file picker opens, do not
   navigate by clicking folders. Press Cmd+Shift+G, paste the exact absolute PDF
   path from /tmp/fa_script_run_state.json, press Return, then press Return/Open.
@@ -112,24 +122,20 @@ For each row:
   and repeat the exact nested Browse/Cmd+Shift+G upload flow there before
   declaring the row manual.
 - On Greenhouse-style upload widgets, click the nested "Browse..." button
-  inside the Resume/CV or Cover Letter control, not the outer "Attach" tab or
-  label. The outer Attach control can open a picker state where a selected PDF
-  still leaves Open disabled. Use "Browse..." first, then the Cmd+Shift+G exact
-  path flow.
-- Resume/CV and Cover Letter fields are file-upload only. Never click
-  "Enter manually", never paste resume or cover-letter text into an ATS form,
-  and never submit with manually entered document text. This applies equally
-  to cover letters: if the ATS offers a cover-letter text box, manual-entry
-  option, or paste area, do not use it.
-- If a Cover Letter field is present, attach a cover-letter PDF too. Look in
-  the same directory as resumePdf for Liam_Van_<Company>_Cover_Letter.pdf. If
-  it is missing, generate and render it before upload:
-  python3 skills/resume-tailor/scripts/create_cover_letter.py --dir "<resume directory>" --company "<Company>" --role "<Role>" --why-interest "<2-3 truthful sentences grounded in the posting and Liam's projects>"
-  python3 skills/resume-tailor/scripts/render_cover_letter_pdf.py --dir "<resume directory>"
-  Upload the rendered cover-letter PDF by file picker, never manual text.
-- If an exact resume or cover-letter PDF cannot be attached after one retry,
-  leave the tab open, mark the row manual with blocker
-  "Document upload failed; manual attach required", and continue.
+  inside the Resume/CV control, not the outer "Attach" tab or label. The outer
+  Attach control can open a picker state where a selected PDF still leaves Open
+  disabled. Use "Browse..." first, then the Cmd+Shift+G exact path flow.
+- Resume/CV fields are file-upload only. Never click "Enter manually", never
+  paste resume text into an ATS form, and never submit with manually entered
+  document text.
+- Do not generate, render, write, paste, or upload cover letters. If a
+  cover-letter field is optional, leave it blank. If a cover-letter field is
+  required and cannot be skipped, leave the tab open, mark the row manual with
+  blocker "Cover letter required; skipped by no-cover-letter policy", and
+  continue.
+- If an exact resume PDF cannot be attached after one retry, leave the tab
+  open, mark the row manual with blocker "Document upload failed; manual attach
+  required", and continue.
 - Submit high-confidence applications when every required field is filled
   truthfully from standing answers, obvious profile facts, resume/profile
   evidence, projects, or concise FRQ/custom written drafts. Click the final Submit/Submit application
@@ -146,6 +152,12 @@ For each row:
   comfortable working onsite/hybrid/in-office in NYC or San Francisco, including
   San Francisco 5 days/week = Yes. If any present answer differs, correct it. If
   you cannot correct it, mark manual and leave the tab open.
+- Treat education dates as strict guardrails before final submit: University of
+  Georgia, BS Computer Science, started Aug 2021, graduated Dec 2024. Never
+  enter any graduation year before 2024, and never answer that Liam graduated
+  before 2020. If a form asks whether Liam graduated before 2020, answer No. If
+  any present rendered education answer differs, correct it. If you cannot
+  correct it, mark manual and leave the tab open.
 - Email 2FA, emailed verification codes, and magic links sent to
   liamvanpj@gmail.com are not blockers. Use Gmail access to retrieve the code
   or click the magic link, then continue the application. Escalate only if the
@@ -227,6 +239,19 @@ def state_counts(state: dict[str, Any]) -> dict[str, int]:
     return counts
 
 
+def format_counts(counts: dict[str, int]) -> str:
+    return (
+        f"queued={counts['queued']} submitted={counts['submitted']} "
+        f"manual={counts['manual']} archived={counts['archived']} skipped={counts['skipped']}"
+    )
+
+
+def append_todo(note: str) -> None:
+    TODO_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with TODO_PATH.open("a", encoding="utf-8") as handle:
+        handle.write(f"- {now_iso()} - {note}\n")
+
+
 def completed_keys(state: dict[str, Any]) -> set[str]:
     return {
         str(item.get("key") or "")
@@ -262,6 +287,7 @@ def mark_manual(item: dict[str, Any], blocker: str) -> None:
         break
     if changed:
         STATE_PATH.write_text(json.dumps(state, indent=2) + "\n", encoding="utf-8")
+        append_todo(f"{item.get('company')} | manual | {blocker}")
 
 
 def safe_filename(value: str) -> str:
@@ -440,6 +466,16 @@ def main() -> int:
         print(f"\nBatch {batch_number}:")
         for item in batch_preview:
             print(f"  - {item.get('company')} | {item.get('role')} | {item.get('key')}")
+        append_todo(
+            "Batch "
+            f"{batch_number} starting with {len(batch_preview)} row(s); "
+            f"counts {format_counts(state_counts(before))}; "
+            f"rows: "
+            + "; ".join(
+                f"{item.get('company')} | {item.get('role')} | {item.get('key')}"
+                for item in batch_preview
+            )
+        )
 
         before_done = completed_keys(before)
         before_counts = state_counts(before)
@@ -462,6 +498,10 @@ def main() -> int:
         terminal_success_since_commit += new_submitted + new_archived
 
         print(f"  exit rc={rc} after {elapsed:.0f}s | output: {output_file}")
+        append_todo(
+            f"Batch {batch_number} finished rc={rc} after {elapsed:.0f}s; "
+            f"child output `{output_file}`; counts {format_counts(after_counts)}."
+        )
         if newly_done:
             by_key = {str(item.get("key") or ""): item for item in after.get("items", [])}
             for key in sorted(newly_done):
@@ -473,6 +513,10 @@ def main() -> int:
                     line += f" | {blocker}"
                 summary.append(line)
                 print(f"  {line}")
+                append_todo(
+                    f"{item.get('company')} | {item.get('role')} | {key} | "
+                    f"{state_value} | {blocker or 'no blocker'}"
+                )
         else:
             tail = output.strip().splitlines()[-3:]
             print("  no state progress detected")
@@ -493,26 +537,36 @@ def main() -> int:
 
         if rc != 0:
             print("  child exited non-zero; treating as a per-row/batch blocker and continuing.")
+            append_todo(f"Batch {batch_number} child exited non-zero; runner continuing.")
             continue
 
         if not args.no_commit and terminal_success_since_commit >= 5:
             today = dt.date.today().isoformat()
             print(f"\nCommitting {terminal_success_since_commit} submitted/archived application outcome(s)...")
-            commit_and_push(
+            committed = commit_and_push(
                 push=not args.no_push,
                 message=f"Apply: {terminal_success_since_commit} submitted or archived outcomes {today}",
+            )
+            append_todo(
+                f"Commit threshold reached for {terminal_success_since_commit} submitted/archived outcome(s); "
+                f"commit/push {'succeeded' if committed else 'had no committed changes or failed'}."
             )
             terminal_success_since_commit = 0
 
     if not args.no_commit and terminal_success_since_commit:
         today = dt.date.today().isoformat()
         print(f"\nFinal commit for {terminal_success_since_commit} submitted/archived application outcome(s)...")
-        commit_and_push(
+        committed = commit_and_push(
             push=not args.no_push,
             message=f"Apply: {terminal_success_since_commit} submitted or archived outcomes {today}",
         )
+        append_todo(
+            f"Final commit for {terminal_success_since_commit} submitted/archived outcome(s); "
+            f"commit/push {'succeeded' if committed else 'had no committed changes or failed'}."
+        )
 
     final_counts = state_counts(load_state())
+    append_todo(f"run_batches complete with final counts {format_counts(final_counts)}.")
     print("\nSummary")
     print("=" * 7)
     print(

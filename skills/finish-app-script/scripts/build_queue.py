@@ -48,6 +48,8 @@ TRUE_MANUAL_BLOCKERS = (
     "background-check",
     "bot",
     "captcha",
+    "cover letter",
+    "cover-letter",
     "declaration",
     "embedded",
     "email application",
@@ -71,7 +73,6 @@ TRUE_MANUAL_BLOCKERS = (
 RETRYABLE_MANUAL_BLOCKERS = (
     "bad-resume fix",
     "clean regenerated resume",
-    "cover letter",
     "desired salary",
     "final application submission confirmation",
     "final submit confirmation",

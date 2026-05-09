@@ -51,7 +51,7 @@ from the row state, then Return/Open, and verify the rendered attached filename.
 Do not trust folder-click navigation when the picker remembers a previous
 application's directory or stale file.
 For Greenhouse upload widgets, click the nested `Browse...` button inside the
-Resume/CV or Cover Letter field rather than the outer `Attach` control; the
+Resume/CV field rather than the outer `Attach` control; the
 outer control can leave `Open` disabled even when a PDF is selected.
 If Firefox selects the exact existing PDF but leaves the native picker `Open`
 button disabled, treat that as a Firefox upload bug, not a missing-file blocker:
@@ -60,7 +60,7 @@ Cmd+Shift+G exact-path flow before marking the row manual.
 For known upload-redo rows whose notes or blocker mention `Document upload
 failed`, `upload-error redo`, or `Firefox picker`, start the document upload in
 Safari instead of spending the retry on Firefox. Safari has been verified on
-Uare.ai Greenhouse for both resume and cover-letter PDFs.
+Uare.ai Greenhouse for resume PDFs.
 
 ## Tab Confidence Grouping
 
@@ -246,29 +246,25 @@ Detailed in `OPERATING_CARD.md` rule 5. The condensed list is in the per-row pro
 ## Factual Resume Context
 
 Every spawned agent must use Liam's real work history as the factual basis for
-FRQs, cover-letter interest text, values answers, achievement examples, and
-project examples. The row's tailored `resume.tex` next to `resumePdf` is the
+FRQs, values answers, achievement examples, and project examples. The row's
+tailored `resume.tex` next to `resumePdf` is the
 immediate source of truth. If `generic-resume/README.md` or
 `generic-resume/resume.tex` exists, the agent must read those too and treat them
 as the broader evidence bank. Never invent employers, internships, tools,
 projects, metrics, dates, credentials, or responsibilities. If a requested
 answer cannot be grounded in the resume/profile/tracker evidence, the agent
 should use a supported adjacent example or leave the tab open for review.
+Education dates are strict: University of Georgia BS Computer Science, started
+Aug 2021, graduated Dec 2024. Never enter a graduation year before 2024, and
+never answer that Liam graduated before 2020. If a form asks whether Liam
+graduated before 2020, answer No.
 
 ## Cover Letters
 
-Generate only when required (not optional). From the spawned agent:
-
-```bash
-python3 skills/resume-tailor/scripts/create_cover_letter.py \
-  --dir "<company resume folder>" --company "<Company>" --role "<Role>" \
-  --why-interest "<2-3 sentences grounded in posting + Liam's projects>"
-
-python3 skills/resume-tailor/scripts/render_cover_letter_pdf.py \
-  --dir "<company resume folder>"
-```
-
-Upload `Liam_Van_<Company>_Cover_Letter.pdf`. Record in tracker note that a cover letter was submitted.
+Do not generate, render, write, paste, or upload cover letters. If a
+cover-letter field is optional, leave it blank. If a cover-letter field is
+required and cannot be skipped, leave the tab open and mark the row manual with
+`Cover letter required; skipped by no-cover-letter policy`.
 
 ## Workday
 
