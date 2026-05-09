@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 534
+Companies queued: 537
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -320,6 +320,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Neuralink | Software Engineer, Implant Manufacturing | 6353417003 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/neuralink/jobs/6353417003) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Netic | Software Engineer, New Grad | 63c216dc-a082-43df-928c-d71b3ed4f887 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/netic/63c216dc-a082-43df-928c-d71b3ed4f887) |  |  |  |  |
 | Nectar Social | Software Engineer, Early Career | 4369424395 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4369424395/) |  |  |  |  |
+| Navier AI | Backend Engineer | 4863071008 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/navierai/jobs/4863071008) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | MongoDB | Software Engineer, Developer Productivity | 4411728704 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4411728704/?trackingId=KSTf3EiQDHt9HbKL4sHafQ%3D%3D&refId=glJ8A%2B2sNgHqb%2Bh7kMbvlQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BeNIFZB5rQRO4G7zGJZQ%2B2Q%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | Mixpanel | Software Engineer, DevInfra | 7850913 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/mixpanel/jobs/7850913) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | MITRE | Early Career Software Developer | 4410726576 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4410726576/) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
@@ -329,6 +330,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Maybern | Software Engineer | 0e6d43a6-a5f9-44fb-be3e-78a160a8fb11 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/maybern/0e6d43a6-a5f9-44fb-be3e-78a160a8fb11) |  |  |  |  |
 | Match Group | Software Engineer, Backend | f14dbcb6-f740-4c95-9634-6dd87ba3f4df | 9 | Applied | Yes | [Posting](https://jobs.lever.co/matchgroup/f14dbcb6-f740-4c95-9634-6dd87ba3f4df) |  |  |  |  |
 | Lead | Software Engineer II | 4354352768 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4354352768/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
+| LaunchDarkly | Backend Engineer, AI | 7649833003 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/launchdarkly/jobs/7649833003) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Known | Software Engineer | 8515531002 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/known/jobs/8515531002) |  |  |  |  |
 | Kalshi | Software Engineer, Product | 3dd97725-4a12-4963-b47a-cb5c562cfd1d | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/kalshi/3dd97725-4a12-4963-b47a-cb5c562cfd1d/application) |  |  |  |  |
 | Jobs via Dice | Software Engineer (Python & Go) \| $80/hr Remote | software-engineer-python-go-%2480-hr-remote-at-jobs-via-dice-4402385969 | 9 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-python-go-%2480-hr-remote-at-jobs-via-dice-4402385969) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
@@ -368,6 +370,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Betterment | Software Engineer, Backend | software-engineer-backend-at-betterment-4293940011 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-backend-at-betterment-4293940011) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Astronomer | Software Engineer - Airflow Infrastructure | b9abf88b-946f-4be3-ae74-fb95ee9b7cc8 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/astronomer/b9abf88b-946f-4be3-ae74-fb95ee9b7cc8/application?utm_source=linkedin) |  |  |  |  |
 | Astronomer | Software Engineer - Data Plane Management | 4411459497 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4411459497/) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
+| Ansa | Mid-Level Full Stack Engineer - Backend Focused | 4505571008 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/ansa/jobs/4505571008) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Anduril Industries | Software Engineer II, Manufacturing Test | 5003658007 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/andurilindustries/jobs/5003658007?gh_jid=5003658007) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Alvarez & Marsal | Software Engineer, Innovation Team | 4409714242 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4409714242/) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-07 via A&M Talemetry confirmation page. |
 | Alvarez & Marsal | Software Engineer, Innovation Team | 4410767902 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4410767902/) |  |  | 2026-05-07 | Queued by resume-tailor after tailored resume update. |

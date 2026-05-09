@@ -2,12 +2,6 @@
   "applicationsPerDay": [
     {
       "archived": 0,
-      "date": "2026-05-01",
-      "manual": 0,
-      "submitted": 0
-    },
-    {
-      "archived": 0,
       "date": "2026-05-02",
       "manual": 0,
       "submitted": 0
@@ -47,6 +41,12 @@
       "date": "2026-05-08",
       "manual": 6,
       "submitted": 16
+    },
+    {
+      "archived": 0,
+      "date": "2026-05-09",
+      "manual": 0,
+      "submitted": 0
     }
   ],
   "avgConfidenceBySource": [
@@ -76,7 +76,7 @@
       "source": "LinkedIn/Ashby"
     }
   ],
-  "generatedAt": "2026-05-08T23:31:23.901724+00:00",
+  "generatedAt": "2026-05-09T07:07:59.487632+00:00",
   "intakeHealth": {
     "greenhouseCapturedToday": 0,
     "greenhouseLastRun": "",
@@ -86,7 +86,7 @@
   },
   "queueDepth": {
     "intakeUnprocessed": 70,
-    "manualApplyNeeded": 52,
+    "manualApplyNeeded": 55,
     "readyToApply": 0,
     "resumeTailored": 17
   },

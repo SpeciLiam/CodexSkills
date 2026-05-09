@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T23:31:23.840843+00:00",
+  "generatedAt": "2026-05-09T07:07:59.436755+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 647,
+      "total": 650,
       "applied": 442,
-      "unapplied": 205,
-      "active": 460,
+      "unapplied": 208,
+      "active": 463,
       "rejected": 51,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 508,
-      "reachOut": 572,
+      "highFit": 511,
+      "reachOut": 575,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 493,
+      "intakeJobs": 496,
       "intakeQueued": 30,
       "intakeNew": 40,
-      "intakeManual": 252,
+      "intakeManual": 255,
       "intakeApplied": 0,
-      "applyRate": 68.3,
+      "applyRate": 68.0,
       "rejectionRate": 11.5,
-      "recruiterWork": 344,
-      "engineerWork": 422,
+      "recruiterWork": 347,
+      "engineerWork": 425,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 53
+        "value": 56
       },
       {
         "name": "Rejected",
@@ -70,7 +70,7 @@
       },
       {
         "name": "Greenhouse",
-        "value": 243
+        "value": 246
       },
       {
         "name": "Ashby",
@@ -148,7 +148,7 @@
       },
       {
         "name": "Bay Area",
-        "value": 142
+        "value": 145
       },
       {
         "name": "Other",
@@ -182,7 +182,7 @@
       },
       {
         "name": "Backend",
-        "value": 70
+        "value": 73
       },
       {
         "name": "Forward Deployed",
@@ -240,7 +240,7 @@
       },
       {
         "score": "9",
-        "count": 119
+        "count": 122
       },
       {
         "score": "10",
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 252
+        "value": 255
       },
       {
         "name": "Tailored",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 310
+        "value": 313
       },
       {
         "name": "LinkedIn",
@@ -503,6 +503,14 @@
         "applied": 25,
         "rejected": 0,
         "interviewing": 1
+      },
+      {
+        "date": "2026-05-09",
+        "cumulative": 650,
+        "added": 3,
+        "applied": 0,
+        "rejected": 0,
+        "interviewing": 0
       }
     ],
     "topCompanies": [
@@ -19040,6 +19048,81 @@
         "2026-05-08",
         "2026-05-08"
       ]
+    },
+    {
+      "company": "Ansa",
+      "role": "Mid-Level Full Stack Engineer - Backend Focused",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "San Francisco",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/ansa/jobs/4505571008",
+      "postingKey": "4505571008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ansa/Mid_Level_Full_Stack_Engineer_Backend_Focused/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ansa/Mid_Level_Full_Stack_Engineer_Backend_Focused/Liam_Van_Resume/Liam_Van_Ansa.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09 from public Greenhouse capture; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback, so the Greenhouse application could not be safely opened/submitted.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Navier AI",
+      "role": "Backend Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "San Francisco",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/navierai/jobs/4863071008",
+      "postingKey": "4863071008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Navier AI/Backend_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Navier AI/Backend_Engineer/Liam_Van_Resume/Liam_Van_Navier_AI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09 from public Greenhouse capture; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback, so the Greenhouse application could not be safely opened/submitted.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "LaunchDarkly",
+      "role": "Backend Engineer, AI",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "Hybrid - San Francisco Bay Area",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/launchdarkly/jobs/7649833003",
+      "postingKey": "7649833003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/LaunchDarkly/Backend_Engineer_AI/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/LaunchDarkly/Backend_Engineer_AI/Liam_Van_Resume/Liam_Van_LaunchDarkly.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09 from public Greenhouse capture; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback, so the Greenhouse application could not be safely opened/submitted.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
     }
   ],
   "jobIntake": [
@@ -22892,6 +22975,48 @@
       "status": "Tailored",
       "reason": "SWE-family role, early-career signal, NYC preference",
       "trackerPostingKey": "4401827377"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Navier AI",
+      "role": "Backend Engineer",
+      "location": "San Francisco",
+      "postingKey": "4863071008",
+      "jobUrl": "https://job-boards.greenhouse.io/navierai/jobs/4863071008",
+      "discoveredAt": "2026-05-09T07:04:30.478502+00:00",
+      "postedAge": "Crawled yesterday; public Greenhouse search result",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback",
+      "trackerPostingKey": "4863071008"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "LaunchDarkly",
+      "role": "Backend Engineer, AI",
+      "location": "Hybrid - San Francisco Bay Area",
+      "postingKey": "7649833003",
+      "jobUrl": "https://job-boards.greenhouse.io/launchdarkly/jobs/7649833003",
+      "discoveredAt": "2026-05-09T07:04:30.478502+00:00",
+      "postedAge": "Crawled yesterday; public Greenhouse search result",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback",
+      "trackerPostingKey": "7649833003"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Ansa",
+      "role": "Mid-Level Full Stack Engineer - Backend Focused",
+      "location": "San Francisco",
+      "postingKey": "4505571008",
+      "jobUrl": "https://job-boards.greenhouse.io/ansa/jobs/4505571008",
+      "discoveredAt": "2026-05-09T07:04:30.478502+00:00",
+      "postedAge": "Crawled yesterday; public Greenhouse search result",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback",
+      "trackerPostingKey": "4505571008"
     },
     {
       "source": "LinkedIn",
@@ -29991,6 +30116,19 @@
       "notes": ""
     },
     {
+      "company": "Navier AI",
+      "role": "Backend Engineer",
+      "postingKey": "4863071008",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/navierai/jobs/4863071008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "MongoDB",
       "role": "Software Engineer, Developer Productivity",
       "postingKey": "4411728704",
@@ -30105,6 +30243,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "LaunchDarkly",
+      "role": "Backend Engineer, AI",
+      "postingKey": "7649833003",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/launchdarkly/jobs/7649833003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -30612,6 +30763,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-08",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Ansa",
+      "role": "Mid-Level Full Stack Engineer - Backend Focused",
+      "postingKey": "4505571008",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/ansa/jobs/4505571008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -48103,6 +48267,18 @@
           "contacts": []
         },
         {
+          "key": "4505571008",
+          "company": "Ansa",
+          "role": "Mid-Level Full Stack Engineer - Backend Focused",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-apple-game-services",
           "company": "Apple",
           "role": "Software Engineer, Apple Game Services",
@@ -48415,6 +48591,18 @@
           "contacts": []
         },
         {
+          "key": "7649833003",
+          "company": "LaunchDarkly",
+          "role": "Backend Engineer, AI",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4354352768",
           "company": "Lead",
           "role": "Software Engineer II",
@@ -48492,6 +48680,18 @@
           "role": "Software Engineer, Developer Productivity",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4863071008",
+          "company": "Navier AI",
+          "role": "Backend Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -61439,6 +61639,18 @@
           "contacts": []
         },
         {
+          "key": "4505571008",
+          "company": "Ansa",
+          "role": "Mid-Level Full Stack Engineer - Backend Focused",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-apple-game-services",
           "company": "Apple",
           "role": "Software Engineer, Apple Game Services",
@@ -61679,6 +61891,18 @@
           "contacts": []
         },
         {
+          "key": "7649833003",
+          "company": "LaunchDarkly",
+          "role": "Backend Engineer, AI",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4354352768",
           "company": "Lead",
           "role": "Software Engineer II",
@@ -61732,6 +61956,18 @@
           "role": "Software Engineer, Developer Productivity",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4863071008",
+          "company": "Navier AI",
+          "role": "Backend Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
