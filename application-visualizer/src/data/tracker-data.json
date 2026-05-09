@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T13:22:15.508274+00:00",
+  "generatedAt": "2026-05-09T14:06:48.001351+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 672,
+      "total": 673,
       "applied": 445,
-      "unapplied": 227,
-      "active": 482,
+      "unapplied": 228,
+      "active": 483,
       "rejected": 54,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 533,
-      "reachOut": 597,
+      "highFit": 534,
+      "reachOut": 598,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 519,
+      "intakeJobs": 521,
       "intakeQueued": 30,
-      "intakeNew": 41,
-      "intakeManual": 277,
+      "intakeNew": 42,
+      "intakeManual": 278,
       "intakeApplied": 0,
-      "applyRate": 66.2,
+      "applyRate": 66.1,
       "rejectionRate": 12.1,
-      "recruiterWork": 369,
-      "engineerWork": 447,
+      "recruiterWork": 370,
+      "engineerWork": 448,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 78
+        "value": 79
       },
       {
         "name": "Rejected",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 268
+        "value": 269
       },
       {
         "name": "LinkedIn",
@@ -152,7 +152,7 @@
       },
       {
         "name": "Other",
-        "value": 118
+        "value": 119
       },
       {
         "name": "Remote",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 368
+        "value": 369
       },
       {
         "name": "Full Stack",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 281
+        "count": 282
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 277
+        "value": 278
       },
       {
         "name": "Tailored",
@@ -274,7 +274,7 @@
       },
       {
         "name": "New",
-        "value": 41
+        "value": 42
       },
       {
         "name": "Queued",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 336
+        "value": 338
       },
       {
         "name": "LinkedIn",
@@ -506,8 +506,8 @@
       },
       {
         "date": "2026-05-09",
-        "cumulative": 672,
-        "added": 25,
+        "cumulative": 673,
+        "added": 26,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -19688,9 +19688,48 @@
       "activityDates": [
         "2026-05-09"
       ]
+    },
+    {
+      "company": "Bloomreach",
+      "role": "Software Engineer II (Pulsar team)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/bloomreach/jobs/4179833",
+      "postingKey": "4179833",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Bloomreach/Software_Engineer_II_Pulsar_team/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Bloomreach/Software_Engineer_II_Pulsar_team/Liam_Van_Resume/Liam_Van_Bloomreach.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Bloomreach",
+      "role": "Software Engineer II (Pulsar team)",
+      "location": "United States",
+      "postingKey": "4179833",
+      "jobUrl": "https://job-boards.greenhouse.io/bloomreach/jobs/4179833",
+      "discoveredAt": "2026-05-09T14:05:13.407875+00:00",
+      "postedAge": "Crawled last week",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "trackerPostingKey": "4179833"
+    },
     {
       "source": "Greenhouse",
       "company": "Scale AI",
@@ -26063,6 +26102,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "SingleStore",
+      "role": "Forward Deployment Engineer",
+      "location": "United States",
+      "postingKey": "7793656",
+      "jobUrl": "https://job-boards.greenhouse.io/singlestore/jobs/7793656",
+      "discoveredAt": "2026-05-09T14:05:13.407875+00:00",
+      "postedAge": "Crawled last month",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Nourish",
       "role": "Senior Backend Engineer",
       "location": "New York, NY or Remote",
@@ -29895,6 +29948,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Bloomreach",
+      "role": "Software Engineer II (Pulsar team)",
+      "postingKey": "4179833",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/bloomreach/jobs/4179833",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -48312,6 +48378,18 @@
           "contacts": []
         },
         {
+          "key": "4179833",
+          "company": "Bloomreach",
+          "role": "Software Engineer II (Pulsar team)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4687774007",
           "company": "CHAOS Industries",
           "role": "Software Engineer, Backend & Data",
@@ -61689,6 +61767,18 @@
           "role": "Associate, Full Stack Engineer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4179833",
+          "company": "Bloomreach",
+          "role": "Software Engineer II (Pulsar team)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"

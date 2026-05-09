@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 559
+Companies queued: 560
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -235,6 +235,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Cadence | Software Engineer I | Software-Engineer-I_R53009-1 | 10 | Applied | Yes | [Posting](https://cadence.wd1.myworkdayjobs.com/External_Careers/job/SAN-JOSE/Software-Engineer-I_R53009-1?source=LinkedIn) |  |  |  |  |
 | Brex | Software Engineer II, Product | software-engineer-ii-product-at-brex-4341255828 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-product-at-brex-4341255828) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Brex | Software Engineer II, Frontend | software-engineer-ii-frontend-at-brex-4337650485 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-frontend-at-brex-4337650485) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
+| Bloomreach | Software Engineer II (Pulsar team) | 4179833 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/bloomreach/jobs/4179833) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | BlackRock | Associate, Full Stack Engineer | 4380495648 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4380495648/?trackingId=AJW6hfwNSWOSl69I9BEbpA%3D%3D&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BI6XXU%2BGdQIad7YU%2Bc9JYoA%3D%3D) |  |  |  |  |
 | Benchling | Software Engineer, New Grad (2026) | b3c9b312-6e2b-4dbc-9b15-0b0310d75a7f | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/benchling/b3c9b312-6e2b-4dbc-9b15-0b0310d75a7f/application?utm_source=JobWrapping) |  |  |  |  |
 | Beacon Software | Software Engineer | 4974798008 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/beaconsoftware/jobs/4974798008) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
