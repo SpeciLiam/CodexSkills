@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T08:07:34.162295+00:00",
+  "generatedAt": "2026-05-09T09:06:51.078315+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 655,
+      "total": 661,
       "applied": 442,
-      "unapplied": 213,
-      "active": 468,
+      "unapplied": 219,
+      "active": 474,
       "rejected": 51,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 516,
-      "reachOut": 580,
+      "highFit": 522,
+      "reachOut": 586,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 502,
+      "intakeJobs": 508,
       "intakeQueued": 30,
       "intakeNew": 41,
-      "intakeManual": 260,
+      "intakeManual": 266,
       "intakeApplied": 0,
-      "applyRate": 67.5,
+      "applyRate": 66.9,
       "rejectionRate": 11.5,
-      "recruiterWork": 352,
-      "engineerWork": 430,
+      "recruiterWork": 358,
+      "engineerWork": 436,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 61
+        "value": 67
       },
       {
         "name": "Rejected",
@@ -70,7 +70,7 @@
       },
       {
         "name": "Greenhouse",
-        "value": 251
+        "value": 257
       },
       {
         "name": "Ashby",
@@ -148,7 +148,7 @@
       },
       {
         "name": "Bay Area",
-        "value": 145
+        "value": 149
       },
       {
         "name": "Other",
@@ -156,7 +156,7 @@
       },
       {
         "name": "Remote",
-        "value": 70
+        "value": 72
       },
       {
         "name": "Seattle",
@@ -174,11 +174,11 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 364
+        "value": 366
       },
       {
         "name": "Full Stack",
-        "value": 88
+        "value": 89
       },
       {
         "name": "Backend",
@@ -194,7 +194,7 @@
       },
       {
         "name": "Infra/Platform",
-        "value": 27
+        "value": 30
       },
       {
         "name": "Data",
@@ -240,11 +240,11 @@
       },
       {
         "score": "9",
-        "count": 122
+        "count": 124
       },
       {
         "score": "10",
-        "count": 269
+        "count": 273
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 260
+        "value": 266
       },
       {
         "name": "Tailored",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 319
+        "value": 325
       },
       {
         "name": "LinkedIn",
@@ -506,8 +506,8 @@
       },
       {
         "date": "2026-05-09",
-        "cumulative": 655,
-        "added": 8,
+        "cumulative": 661,
+        "added": 14,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -542,6 +542,12 @@
         "company": "Twitch",
         "roles": 6,
         "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
+        "company": "Chime",
+        "roles": 6,
+        "avgFit": 9.17,
         "bestFit": 10
       },
       {
@@ -648,12 +654,6 @@
       },
       {
         "company": "Applied Intuition",
-        "roles": 3,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Axon",
         "roles": 3,
         "avgFit": 10.0,
         "bestFit": 10
@@ -19248,9 +19248,221 @@
       "activityDates": [
         "2026-05-09"
       ]
+    },
+    {
+      "company": "Mochi Health",
+      "role": "Fullstack Software Engineer, Early Career",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-09",
+      "location": "San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/mochihealth/jobs/4785763008",
+      "postingKey": "4785763008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Mochi Health/Fullstack_Software_Engineer_Early_Career/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Mochi Health/Fullstack_Software_Engineer_Early_Career/Liam_Van_Resume/Liam_Van_Mochi_Health.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-09 02:04 PT; captured from Greenhouse public board/search, tailored resume rendered and verified one page; Manual apply needed: application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-09.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09",
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Metronome",
+      "role": "Software Engineer, Infrastructure",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-09",
+      "location": "New York City; Remote; San Francisco Bay Area",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/metronome/jobs/4894044008",
+      "postingKey": "4894044008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Metronome/Software_Engineer_Infrastructure/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Metronome/Software_Engineer_Infrastructure/Liam_Van_Resume/Liam_Van_Metronome.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-09 02:04 PT; captured from Greenhouse public board/search, tailored resume rendered and verified one page; Manual apply needed: application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-09.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09",
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Metronome",
+      "role": "Software Engineer, Product & Platform Teams",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-09",
+      "location": "New York City; Remote; San Francisco Bay Area",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/metronome/jobs/4757311008",
+      "postingKey": "4757311008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Metronome/Software_Engineer_Product_Platform_Teams/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Metronome/Software_Engineer_Product_Platform_Teams/Liam_Van_Resume/Liam_Van_Metronome.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-09 02:04 PT; captured from Greenhouse public board/search, tailored resume rendered and verified one page; Manual apply needed: application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-09.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09",
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Chime",
+      "role": "Software Engineer, Credit Risk Platform",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-09",
+      "location": "San Francisco, CA, USA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/Chime/jobs/8219793002",
+      "postingKey": "8219793002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Chime/Software_Engineer_Credit_Risk_Platform/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Chime/Software_Engineer_Credit_Risk_Platform/Liam_Van_Resume/Liam_Van_Chime.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-09 02:04 PT; captured from Greenhouse public board/search, tailored resume rendered and verified one page; Manual apply needed: application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-09.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09",
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Chime",
+      "role": "Software Engineer, Deposits & Insights",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-09",
+      "location": "San Francisco, CA, USA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/chime/jobs/8523547002?gh_jid=8523547002",
+      "postingKey": "8523547002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Chime/Software_Engineer_Deposits_Insights/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Chime/Software_Engineer_Deposits_Insights/Liam_Van_Resume/Liam_Van_Chime.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-09 02:04 PT; captured from Greenhouse public board/search, tailored resume rendered and verified one page; Manual apply needed: application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-09.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09",
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Chime",
+      "role": "Software Engineer, MyPay",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-09",
+      "location": "San Francisco, CA, USA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/chime/jobs/8499450002?gh_jid=8499450002",
+      "postingKey": "8499450002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Chime/Software_Engineer_MyPay/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Chime/Software_Engineer_MyPay/Liam_Van_Resume/Liam_Van_Chime.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-09 02:04 PT; captured from Greenhouse public board/search, tailored resume rendered and verified one page; Manual apply needed: application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-09.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09",
+        "2026-05-09"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Mochi Health",
+      "role": "Fullstack Software Engineer, Early Career",
+      "location": "San Francisco, CA",
+      "postingKey": "4785763008",
+      "jobUrl": "https://job-boards.greenhouse.io/mochihealth/jobs/4785763008",
+      "discoveredAt": "2026-05-09T09:04:10.398120+00:00",
+      "postedAge": "Current Greenhouse board listing marked New",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4785763008"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Metronome",
+      "role": "Software Engineer, Infrastructure",
+      "location": "New York City; Remote; San Francisco Bay Area",
+      "postingKey": "4894044008",
+      "jobUrl": "https://job-boards.greenhouse.io/metronome/jobs/4894044008",
+      "discoveredAt": "2026-05-09T09:04:10.398120+00:00",
+      "postedAge": "Current Greenhouse board listing",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4894044008"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Metronome",
+      "role": "Software Engineer, Product & Platform Teams",
+      "location": "New York City; Remote; San Francisco Bay Area",
+      "postingKey": "4757311008",
+      "jobUrl": "https://job-boards.greenhouse.io/metronome/jobs/4757311008",
+      "discoveredAt": "2026-05-09T09:04:10.398120+00:00",
+      "postedAge": "Current Greenhouse board listing",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4757311008"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Chime Financial, Inc",
+      "role": "Software Engineer, Credit Risk Platform",
+      "location": "San Francisco, CA, USA",
+      "postingKey": "8219793002",
+      "jobUrl": "https://job-boards.greenhouse.io/Chime/jobs/8219793002",
+      "discoveredAt": "2026-05-09T09:04:10.398120+00:00",
+      "postedAge": "Crawled last week",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "8219793002"
+    },
     {
       "source": "Greenhouse",
       "company": "Virtu Financial",
@@ -23142,6 +23354,34 @@
       "status": "Tailored",
       "reason": "SWE-family role, early-career signal, NYC preference",
       "trackerPostingKey": "4401827377"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Chime Financial, Inc",
+      "role": "Software Engineer, Deposits & Insights",
+      "location": "San Francisco, CA, USA",
+      "postingKey": "8523547002",
+      "jobUrl": "https://job-boards.greenhouse.io/chime/jobs/8523547002?gh_jid=8523547002",
+      "discoveredAt": "2026-05-09T09:04:10.398120+00:00",
+      "postedAge": "Crawled 4 days ago; Greenhouse page marked New",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "8523547002"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Chime Financial, Inc",
+      "role": "Software Engineer, MyPay",
+      "location": "San Francisco, CA, USA",
+      "postingKey": "8499450002",
+      "jobUrl": "https://job-boards.greenhouse.io/chime/jobs/8499450002?gh_jid=8499450002",
+      "discoveredAt": "2026-05-09T09:04:10.398120+00:00",
+      "postedAge": "Crawled 3 weeks ago",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "8499450002"
     },
     {
       "source": "Greenhouse",
@@ -27829,6 +28069,19 @@
       "notes": ""
     },
     {
+      "company": "Mochi Health",
+      "role": "Fullstack Software Engineer, Early Career",
+      "postingKey": "4785763008",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/mochihealth/jobs/4785763008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Mirage",
       "role": "Software Engineer, Early Career",
       "postingKey": "cbf278fd-84ec-48d9-8052-b76abb035ac7",
@@ -27917,6 +28170,32 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Metronome",
+      "role": "Software Engineer, Infrastructure",
+      "postingKey": "4894044008",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/metronome/jobs/4894044008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Metronome",
+      "role": "Software Engineer, Product & Platform Teams",
+      "postingKey": "4757311008",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/metronome/jobs/4757311008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -28996,6 +29275,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-05",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Chime",
+      "role": "Software Engineer, Credit Risk Platform",
+      "postingKey": "8219793002",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/Chime/jobs/8219793002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -30908,6 +31200,32 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Chime",
+      "role": "Software Engineer, Deposits & Insights",
+      "postingKey": "8523547002",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/chime/jobs/8523547002?gh_jid=8523547002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Chime",
+      "role": "Software Engineer, MyPay",
+      "postingKey": "8499450002",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/chime/jobs/8499450002?gh_jid=8499450002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Chicago Trading Company",
@@ -47425,6 +47743,18 @@
           "contacts": []
         },
         {
+          "key": "8219793002",
+          "company": "Chime",
+          "role": "Software Engineer, Credit Risk Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4367615242",
           "company": "Cisco",
           "role": "Software Engineer I (Full Time) - United States",
@@ -47797,6 +48127,30 @@
           "contacts": []
         },
         {
+          "key": "4894044008",
+          "company": "Metronome",
+          "role": "Software Engineer, Infrastructure",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4757311008",
+          "company": "Metronome",
+          "role": "Software Engineer, Product & Platform Teams",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineering-ic3-at-microsoft-4342545143",
           "company": "Microsoft",
           "role": "Software Engineer II - CTJ - Poly",
@@ -47838,6 +48192,18 @@
           "role": "Software Engineer, Early Career",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4785763008",
+          "company": "Mochi Health",
+          "role": "Fullstack Software Engineer, Early Career",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -48652,6 +49018,30 @@
           "key": "7296759",
           "company": "Checkr",
           "role": "Software Engineer II",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8523547002",
+          "company": "Chime",
+          "role": "Software Engineer, Deposits & Insights",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8499450002",
+          "company": "Chime",
+          "role": "Software Engineer, MyPay",
           "fitScore": 9,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -60617,6 +61007,18 @@
           "contacts": []
         },
         {
+          "key": "8219793002",
+          "company": "Chime",
+          "role": "Software Engineer, Credit Risk Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4367615242",
           "company": "Cisco",
           "role": "Software Engineer I (Full Time) - United States",
@@ -60989,6 +61391,30 @@
           "contacts": []
         },
         {
+          "key": "4894044008",
+          "company": "Metronome",
+          "role": "Software Engineer, Infrastructure",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4757311008",
+          "company": "Metronome",
+          "role": "Software Engineer, Product & Platform Teams",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "1970393556643571",
           "company": "Microsoft",
           "role": "Software Engineer II",
@@ -61066,6 +61492,18 @@
           "role": "Software Engineer, Growth (New Grad)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4785763008",
+          "company": "Mochi Health",
+          "role": "Fullstack Software Engineer, Early Career",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -62098,6 +62536,30 @@
           "role": "Software Engineer II",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8523547002",
+          "company": "Chime",
+          "role": "Software Engineer, Deposits & Insights",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8499450002",
+          "company": "Chime",
+          "role": "Software Engineer, MyPay",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"

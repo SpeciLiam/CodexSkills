@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 542
+Companies queued: 548
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -128,6 +128,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Moxxi Digital | Full Stack Engineer, Backend | 5155519008 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/moxxidigital/jobs/5155519008) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Moxxi Digital | Software Engineer | 5083041008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/moxxidigital/jobs/5083041008) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Morgan Stanley | Associate Software Engineer | 4386890681 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4386890681/) |  |  |  |  |
+| Mochi Health | Fullstack Software Engineer, Early Career | 4785763008 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/mochihealth/jobs/4785763008) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Mirage | Software Engineer, Early Career | cbf278fd-84ec-48d9-8052-b76abb035ac7 | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/mirage/cbf278fd-84ec-48d9-8052-b76abb035ac7/application?utm_source=LEbxa7kWm6) |  |  |  |  |
 | Mirage | Software Engineer, Early Career | 1c4a937b-894e-402a-b2fd-93435b86657f | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/mirage/1c4a937b-894e-402a-b2fd-93435b86657f/application?utm_source=LEbxa7kWm6) |  |  |  |  |
 | Microsoft AI | Software Engineer II | software-engineer-ii-at-microsoft-ai-4403126655 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-at-microsoft-ai-4403126655) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
@@ -135,6 +136,8 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Microsoft | Software Engineer II | 1970393556643571 | 10 | Manual Apply Needed | Yes | [Posting](https://apply.careers.microsoft.com/careers/job/1970393556643571?utm_source=linkedin&domain=microsoft.com&src=LinkedIn) |  |  |  |  |
 | Microsoft | Software Engineer II - CTJ - Poly | software-engineering-ic3-at-microsoft-4342545143 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineering-ic3-at-microsoft-4342545143) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Metronome | Software Engineer, Product | 4425245008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/metronome/jobs/4425245008?gh_src=b17e39cd8us&src=levels.fyi) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
+| Metronome | Software Engineer, Infrastructure | 4894044008 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/metronome/jobs/4894044008) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
+| Metronome | Software Engineer, Product & Platform Teams | 4757311008 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/metronome/jobs/4757311008) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Mesa | Software Engineer - University Grad | 4967098008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/mesamember/jobs/4967098008) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Memorial Sloan Kettering Cancer Center | Software Engineer II - Biostatistics Service | software-engineer-ii-biostatistics-service-at-memorial-sloan-kettering-cancer-center-4400834627 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-biostatistics-service-at-memorial-sloan-kettering-cancer-center-4400834627) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Melio | Full Stack Engineer | 7174896003 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/melio/jobs/7174896003) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
@@ -218,6 +221,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Citi | Junior Generative AI Application Developer | 4411715287 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4411715287/?trackingId=n9Qpmb2VmX0jj7ilbP9PZw%3D%3D&refId=glJ8A%2B2sNgHqb%2Bh7kMbvlQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BAYdAWy1hRr2jMAxKih4zOg%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | Cisco | Software Engineer I (Full Time) - United States | 4367615242 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-i-full-time-united-states-at-cisco-4367615242) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Chime | Software Engineer, Financial Platform | 8183064002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/chime/jobs/8183064002) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
+| Chime | Software Engineer, Credit Risk Platform | 8219793002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/Chime/jobs/8219793002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Checkr | Backend Software Engineer II | 7438937 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/checkr/jobs/7438937) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | CareerWellness | Backend Engineer | 4411313503 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4411313503/?trackingId=EBVYXiR1yLpVpCccxqA3YA%3D%3D&refId=%2FJ95SvUHr%2BJRbsyOTJu5NA%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BtOtbKfUjRbqzE0274Rmn2A%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | Capco | Full Stack Engineer | 7558557 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/capco/jobs/7558557) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
@@ -365,6 +369,8 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | CLEAR - Corporate | iOS Engineer | 7819202 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/clear/jobs/7819202) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome. |
 | Clay | Software Engineer Backend | 248aa0c7-034f-47d3-a57e-ce16736eeab6 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/claylabs/248aa0c7-034f-47d3-a57e-ce16736eeab6/application?src=LinkedInJobSlot) |  |  |  |  |
 | Chime | Software Engineer, Credit Line | 8219795002 | 9 | Applied | Yes | [Posting](https://boards.greenhouse.io/chime/jobs/8219795002?gh_jid=8219795002) |  |  |  |  |
+| Chime | Software Engineer, Deposits & Insights | 8523547002 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/chime/jobs/8523547002?gh_jid=8523547002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
+| Chime | Software Engineer, MyPay | 8499450002 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/chime/jobs/8499450002?gh_jid=8499450002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Chicago Trading Company | Software Engineer - Risk | 4640488005 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/embed/job_app?for=chicagotrading&token=4640488005&gh_src=2ca2e12e5us&b=https://chicagotrading.com/posting?req=4640488005-NewYork-Chicago) |  |  |  |  |
 | Checkr | Software Engineer II | 7296759 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/checkr/jobs/7296759) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Canopy Connect | Backend Engineer - Carrier Integrations Team (Remote) | 4076674004 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/canopyconnect/jobs/4076674004) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
