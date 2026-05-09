@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T18:08:08.368048+00:00",
+  "generatedAt": "2026-05-09T19:08:43.450593+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 683,
+      "total": 686,
       "applied": 445,
-      "unapplied": 238,
-      "active": 493,
+      "unapplied": 241,
+      "active": 496,
       "rejected": 54,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 544,
-      "reachOut": 608,
+      "highFit": 547,
+      "reachOut": 611,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 533,
+      "intakeJobs": 536,
       "intakeQueued": 30,
       "intakeNew": 42,
-      "intakeManual": 288,
+      "intakeManual": 291,
       "intakeApplied": 0,
-      "applyRate": 65.2,
+      "applyRate": 64.9,
       "rejectionRate": 12.1,
-      "recruiterWork": 380,
-      "engineerWork": 458,
+      "recruiterWork": 383,
+      "engineerWork": 461,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 89
+        "value": 92
       },
       {
         "name": "Rejected",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 274
+        "value": 277
       },
       {
         "name": "LinkedIn",
@@ -156,11 +156,11 @@
       },
       {
         "name": "Remote",
-        "value": 75
+        "value": 77
       },
       {
         "name": "Seattle",
-        "value": 20
+        "value": 21
       },
       {
         "name": "Unknown",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 376
+        "value": 379
       },
       {
         "name": "Full Stack",
@@ -236,15 +236,15 @@
       },
       {
         "score": "8",
-        "count": 127
+        "count": 128
       },
       {
         "score": "9",
-        "count": 127
+        "count": 128
       },
       {
         "score": "10",
-        "count": 290
+        "count": 291
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 288
+        "value": 291
       },
       {
         "name": "Tailored",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 344
+        "value": 347
       },
       {
         "name": "LinkedIn",
@@ -506,8 +506,8 @@
       },
       {
         "date": "2026-05-09",
-        "cumulative": 683,
-        "added": 36,
+        "cumulative": 686,
+        "added": 39,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -611,6 +611,12 @@
         "bestFit": 10
       },
       {
+        "company": "Axon",
+        "roles": 4,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "Loop",
         "roles": 4,
         "avgFit": 9.5,
@@ -648,12 +654,6 @@
       },
       {
         "company": "Handshake",
-        "roles": 3,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Flexport",
         "roles": 3,
         "avgFit": 10.0,
         "bestFit": 10
@@ -19966,9 +19966,98 @@
       "activityDates": [
         "2026-05-09"
       ]
+    },
+    {
+      "company": "Tailscale",
+      "role": "Software Engineer, Engineering Tooling",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "Remote (United States)",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/tailscale/jobs/4616090005",
+      "postingKey": "4616090005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tailscale/Software_Engineer_Engineering_Tooling/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tailscale/Software_Engineer_Engineering_Tooling/Liam_Van_Resume/Liam_Van_Tailscale.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-09; tailored one-page resume rendered and verified for engineering tooling role emphasizing CI/CD, scripting workflows, observability, release validation, distributed systems, and developer-facing documentation. Manual apply needed: browser application attempt blocked because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Transcend Inc.",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "Remote (United States)",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/transcendinc/jobs/4202502009",
+      "postingKey": "4202502009",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Transcend Inc./Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Transcend Inc./Software_Engineer/Liam_Van_Resume/Liam_Van_Transcend_Inc..pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-09; tailored one-page resume rendered and verified for early-career remote workflows SWE role emphasizing TypeScript, React, Node.js, APIs, data workflows, AWS/GCP, reliability, and product collaboration. Manual apply needed: browser application attempt blocked because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Axon",
+      "role": "Software Engineer I - Android",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "Seattle, Washington, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/axon/jobs/7689548003?gh_jid=7689548003",
+      "postingKey": "7689548003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Axon/Software_Engineer_I_Android/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Axon/Software_Engineer_I_Android/Liam_Van_Resume/Liam_Van_Axon.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-09; tailored one-page resume rendered and verified for Software Engineer I Android-adjacent product role emphasizing Java, TypeScript, backend APIs, product implementation, testing, release reliability, and cross-functional debugging. Manual apply needed: browser application attempt blocked because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Axon",
+      "role": "Software Engineer I - Android",
+      "location": "Seattle, Washington, United States",
+      "postingKey": "7689548003",
+      "jobUrl": "https://job-boards.greenhouse.io/axon/jobs/7689548003?gh_jid=7689548003",
+      "discoveredAt": "2026-05-09T19:05:53.480946+00:00",
+      "postedAge": "New in public Greenhouse result",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "7689548003"
+    },
     {
       "source": "Greenhouse",
       "company": "PlayStation Global",
@@ -24170,6 +24259,20 @@
       "trackerPostingKey": "4401827377"
     },
     {
+      "source": "Greenhouse",
+      "company": "Transcend Inc.",
+      "role": "Software Engineer",
+      "location": "Remote (United States)",
+      "postingKey": "4202502009",
+      "jobUrl": "https://job-boards.greenhouse.io/transcendinc/jobs/4202502009",
+      "discoveredAt": "2026-05-09T19:05:53.480946+00:00",
+      "postedAge": "Crawled yesterday; opened 2026-05-09",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4202502009"
+    },
+    {
       "source": "LinkedIn",
       "company": "CoreWeave",
       "role": "Systems Engineer, Kernel",
@@ -25190,6 +25293,20 @@
       "status": "Tailored",
       "reason": "SWE-family role, SF/Bay Area preference",
       "trackerPostingKey": "5592469004"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Tailscale",
+      "role": "Software Engineer, Engineering Tooling",
+      "location": "Remote (United States)",
+      "postingKey": "4616090005",
+      "jobUrl": "https://job-boards.greenhouse.io/tailscale/jobs/4616090005",
+      "discoveredAt": "2026-05-09T19:05:53.480946+00:00",
+      "postedAge": "Crawled yesterday; opened 2026-05-09",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4616090005"
     },
     {
       "source": "LinkedIn",
@@ -30528,6 +30645,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Axon",
+      "role": "Software Engineer I - Android",
+      "postingKey": "7689548003",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/axon/jobs/7689548003?gh_jid=7689548003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Avoca",
       "role": "Forward Deployed Engineer",
       "postingKey": "0fc22fe4-6b8c-4c93-9b3f-fa3738054601",
@@ -31162,6 +31292,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Transcend Inc.",
+      "role": "Software Engineer",
+      "postingKey": "4202502009",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/transcendinc/jobs/4202502009",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -32722,6 +32865,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-04",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Tailscale",
+      "role": "Software Engineer, Engineering Tooling",
+      "postingKey": "4616090005",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/tailscale/jobs/4616090005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -48965,6 +49121,18 @@
           "contacts": []
         },
         {
+          "key": "7689548003",
+          "company": "Axon",
+          "role": "Software Engineer I - Android",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4974798008",
           "company": "Beacon Software",
           "role": "Software Engineer",
@@ -51113,6 +51281,18 @@
           "contacts": []
         },
         {
+          "key": "4202502009",
+          "company": "Transcend Inc.",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5817190004",
           "company": "Truveta",
           "role": "Software Engineer - Person Matching",
@@ -52364,6 +52544,18 @@
           "key": "4653722005",
           "company": "Tailscale",
           "role": "Backend Engineer, Control Plane",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4616090005",
+          "company": "Tailscale",
+          "role": "Software Engineer, Engineering Tooling",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -62481,6 +62673,18 @@
           "contacts": []
         },
         {
+          "key": "7689548003",
+          "company": "Axon",
+          "role": "Software Engineer I - Android",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4380495648",
           "company": "BlackRock",
           "role": "Associate, Full Stack Engineer",
@@ -64749,6 +64953,18 @@
           "contacts": []
         },
         {
+          "key": "4202502009",
+          "company": "Transcend Inc.",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5817190004",
           "company": "Truveta",
           "role": "Software Engineer - Person Matching",
@@ -65520,6 +65736,18 @@
           "key": "4653722005",
           "company": "Tailscale",
           "role": "Backend Engineer, Control Plane",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4616090005",
+          "company": "Tailscale",
+          "role": "Software Engineer, Engineering Tooling",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
