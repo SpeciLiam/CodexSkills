@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T14:06:48.001351+00:00",
+  "generatedAt": "2026-05-09T15:06:32.593206+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,7 +21,7 @@
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 521,
+      "intakeJobs": 523,
       "intakeQueued": 30,
       "intakeNew": 42,
       "intakeManual": 278,
@@ -270,7 +270,7 @@
       },
       {
         "name": "Skipped",
-        "value": 42
+        "value": 43
       },
       {
         "name": "New",
@@ -281,26 +281,26 @@
         "value": 30
       },
       {
+        "name": "Duplicate",
+        "value": 2
+      },
+      {
         "name": "Expired",
         "value": 2
       },
       {
         "name": "Archived",
         "value": 2
-      },
-      {
-        "name": "Duplicate",
-        "value": 1
       }
     ],
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 338
+        "value": 339
       },
       {
         "name": "LinkedIn",
-        "value": 183
+        "value": 184
       }
     ],
     "timeline": [
@@ -19717,6 +19717,20 @@
   ],
   "jobIntake": [
     {
+      "source": "LinkedIn",
+      "company": "DoorDash",
+      "role": "Software Engineer I, Entry-Level (Graduation Date: Fall 2025-Summer 2026)",
+      "location": "New York, NY",
+      "postingKey": "software-engineering-entry-level-jobs",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineering-entry-level-jobs",
+      "discoveredAt": "2026-05-09T15:05:33.028123+00:00",
+      "postedAge": "1 day ago in public search result",
+      "fitScore": 10,
+      "status": "Duplicate",
+      "reason": "Duplicate degraded LinkedIn search capture 2026-05-09: exact Greenhouse DoorDash USA row already exists from 2026-05-08 with posting key 7263610 and should remain the actionable source",
+      "trackerPostingKey": "7263610"
+    },
+    {
       "source": "Greenhouse",
       "company": "Bloomreach",
       "role": "Software Engineer II (Pulsar team)",
@@ -25538,6 +25552,20 @@
       "fitScore": 8,
       "status": "Queued",
       "reason": "SWE-family role, early-career signal, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Twitch",
+      "role": "Software Development Engineer, Discovery",
+      "location": "San Francisco, CA",
+      "postingKey": "8447271002",
+      "jobUrl": "https://job-boards.greenhouse.io/twitch/jobs/8447271002",
+      "discoveredAt": "2026-05-09T15:05:33.028123+00:00",
+      "postedAge": "Twitch board current listing marked New in public result",
+      "fitScore": 7,
+      "status": "Skipped",
+      "reason": "SF/Bay Area preference",
       "trackerPostingKey": ""
     },
     {
