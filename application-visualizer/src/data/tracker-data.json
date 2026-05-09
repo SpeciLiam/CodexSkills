@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T11:28:19.633089+00:00",
+  "generatedAt": "2026-05-09T13:22:15.508274+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 667,
+      "total": 672,
       "applied": 445,
-      "unapplied": 222,
-      "active": 477,
+      "unapplied": 227,
+      "active": 482,
       "rejected": 54,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 528,
-      "reachOut": 592,
+      "highFit": 533,
+      "reachOut": 597,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 514,
+      "intakeJobs": 519,
       "intakeQueued": 30,
       "intakeNew": 41,
-      "intakeManual": 272,
+      "intakeManual": 277,
       "intakeApplied": 0,
-      "applyRate": 66.7,
+      "applyRate": 66.2,
       "rejectionRate": 12.1,
-      "recruiterWork": 364,
-      "engineerWork": 442,
+      "recruiterWork": 369,
+      "engineerWork": 447,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 73
+        "value": 78
       },
       {
         "name": "Rejected",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 263
+        "value": 268
       },
       {
         "name": "LinkedIn",
@@ -144,11 +144,11 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 295
+        "value": 296
       },
       {
         "name": "Bay Area",
-        "value": 153
+        "value": 155
       },
       {
         "name": "Other",
@@ -156,7 +156,7 @@
       },
       {
         "name": "Remote",
-        "value": 73
+        "value": 75
       },
       {
         "name": "Seattle",
@@ -182,15 +182,15 @@
       },
       {
         "name": "Backend",
-        "value": 73
+        "value": 75
       },
       {
         "name": "Forward Deployed",
-        "value": 44
+        "value": 46
       },
       {
         "name": "AI/ML",
-        "value": 39
+        "value": 40
       },
       {
         "name": "Infra/Platform",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 276
+        "count": 281
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 272
+        "value": 277
       },
       {
         "name": "Tailored",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 331
+        "value": 336
       },
       {
         "name": "LinkedIn",
@@ -506,8 +506,8 @@
       },
       {
         "date": "2026-05-09",
-        "cumulative": 667,
-        "added": 20,
+        "cumulative": 672,
+        "added": 25,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -521,13 +521,13 @@
         "bestFit": 10
       },
       {
-        "company": "Pinterest",
-        "roles": 8,
+        "company": "Scale AI",
+        "roles": 9,
         "avgFit": 10.0,
         "bestFit": 10
       },
       {
-        "company": "Scale AI",
+        "company": "Pinterest",
         "roles": 8,
         "avgFit": 10.0,
         "bestFit": 10
@@ -19563,9 +19563,204 @@
       "activityDates": [
         "2026-05-09"
       ]
+    },
+    {
+      "company": "Scale AI",
+      "role": "Forward Deployed Engineer, GenAI",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "San Francisco, CA; New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/scaleai/jobs/4593571005",
+      "postingKey": "4593571005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scale AI/Forward_Deployed_Engineer_GenAI/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scale AI/Forward_Deployed_Engineer_GenAI/Liam_Van_Resume/Liam_Van_Scale_AI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-09 13:18Z; tailored SWE resume rendered and verified one page; emphasized GenAI forward-deployed engineering, LLM applications, customer-facing product delivery, backend APIs, and production validation. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Motive",
+      "role": "Software Engineer - Backend Services / San Francisco",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "United States - San Francisco, California",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/gomotive/jobs/8037852002?gh_src=gojobs.run&source=gojobs.run",
+      "postingKey": "8037852002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Motive/Software_Engineer_Backend_Services_San_Francisco/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Motive/Software_Engineer_Backend_Services_San_Francisco/Liam_Van_Resume/Liam_Van_Motive.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-09 13:18Z; tailored SWE resume rendered and verified one page; emphasized backend services, REST APIs, cloud integrations, reliability validation, and product-facing service delivery. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Forerunner",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "New York City, San Francisco Bay Area, Portland Maine, or Remote USA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/forerunner/jobs/4716512007",
+      "postingKey": "4716512007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Forerunner/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Forerunner/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Forerunner.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-09 13:18Z; tailored SWE resume rendered and verified one page; emphasized forward-deployed full-stack integrations, customer workflows, data pipelines, React product surfaces, and backend APIs. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "CHAOS Industries",
+      "role": "Software Engineer, Backend & Data",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/chaosindustries/jobs/4687774007",
+      "postingKey": "4687774007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CHAOS Industries/Software_Engineer_Backend_Data/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CHAOS Industries/Software_Engineer_Backend_Data/Liam_Van_Resume/Liam_Van_CHAOS_Industries.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-09 13:18Z; tailored SWE resume rendered and verified one page; emphasized backend and data engineering, cloud validation, scripting automation, production reliability, and cross-functional product support. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "AssemblyAI",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "Remote - San Francisco OR New York",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/assemblyai/jobs/4691426005",
+      "postingKey": "4691426005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/AssemblyAI/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/AssemblyAI/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_AssemblyAI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-09 13:18Z; tailored SWE resume rendered and verified one page; emphasized Voice AI forward-deployed engineering, LLM applications, customer-facing technical delivery, APIs, and production validation. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Scale AI",
+      "role": "Forward Deployed Engineer, GenAI",
+      "location": "San Francisco, CA; New York, NY",
+      "postingKey": "4593571005",
+      "jobUrl": "https://job-boards.greenhouse.io/scaleai/jobs/4593571005",
+      "discoveredAt": "2026-05-09T13:18:53.506599+00:00",
+      "postedAge": "public Greenhouse result; crawled yesterday",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4593571005"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Motive",
+      "role": "Software Engineer - Backend Services / San Francisco",
+      "location": "United States - San Francisco, California",
+      "postingKey": "8037852002",
+      "jobUrl": "https://job-boards.greenhouse.io/gomotive/jobs/8037852002?gh_src=gojobs.run&source=gojobs.run",
+      "discoveredAt": "2026-05-09T13:18:53.506599+00:00",
+      "postedAge": "public Greenhouse result; crawled 7 months ago; still open 2026-05-09",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "8037852002"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Forerunner",
+      "role": "Forward Deployed Engineer",
+      "location": "New York City, San Francisco Bay Area, Portland Maine, or Remote USA",
+      "postingKey": "4716512007",
+      "jobUrl": "https://job-boards.greenhouse.io/forerunner/jobs/4716512007",
+      "discoveredAt": "2026-05-09T13:18:53.506599+00:00",
+      "postedAge": "public Greenhouse result; crawled 3 months ago; still open 2026-05-09",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4716512007"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "CHAOS Industries",
+      "role": "Software Engineer, Backend & Data",
+      "location": "San Francisco, California, United States",
+      "postingKey": "4687774007",
+      "jobUrl": "https://job-boards.greenhouse.io/chaosindustries/jobs/4687774007",
+      "discoveredAt": "2026-05-09T13:18:53.506599+00:00",
+      "postedAge": "public Greenhouse result; crawled 9 months ago; still open 2026-05-09",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4687774007"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "AssemblyAI",
+      "role": "Forward Deployed Engineer",
+      "location": "Remote - San Francisco OR New York",
+      "postingKey": "4691426005",
+      "jobUrl": "https://job-boards.greenhouse.io/assemblyai/jobs/4691426005",
+      "discoveredAt": "2026-05-09T13:18:53.506599+00:00",
+      "postedAge": "public Greenhouse result; crawled yesterday",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4691426005"
+    },
     {
       "source": "Greenhouse",
       "company": "PlanetScale",
@@ -27610,6 +27805,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Scale AI",
+      "role": "Forward Deployed Engineer, GenAI",
+      "postingKey": "4593571005",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/scaleai/jobs/4593571005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "S&P Global",
       "role": "Software Engineer II",
       "postingKey": "software-engineer-ii-at-s-p-global-4402306070",
@@ -28325,6 +28533,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Motive",
+      "role": "Software Engineer - Backend Services / San Francisco",
+      "postingKey": "8037852002",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/gomotive/jobs/8037852002?gh_src=gojobs.run&source=gojobs.run",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Morgan Stanley",
       "role": "Associate Software Engineer",
       "postingKey": "4386890681",
@@ -29027,6 +29248,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Forerunner",
+      "role": "Forward Deployed Engineer",
+      "postingKey": "4716512007",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/forerunner/jobs/4716512007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "FlowFuse",
       "role": "FlowFuse Full Stack Developer (AI-focused)",
       "postingKey": "5744138004",
@@ -29586,6 +29820,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "CHAOS Industries",
+      "role": "Software Engineer, Backend & Data",
+      "postingKey": "4687774007",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/chaosindustries/jobs/4687774007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "CareerWellness",
       "role": "Backend Engineer",
       "postingKey": "4411313503",
@@ -29908,6 +30155,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-07",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "AssemblyAI",
+      "role": "Forward Deployed Engineer",
+      "postingKey": "4691426005",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/assemblyai/jobs/4691426005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -47956,6 +48216,18 @@
           "contacts": []
         },
         {
+          "key": "4691426005",
+          "company": "AssemblyAI",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4658890005",
           "company": "AssetWatch",
           "role": "Backend Engineer",
@@ -48033,6 +48305,18 @@
           "role": "Software Engineer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4687774007",
+          "company": "CHAOS Industries",
+          "role": "Software Engineer, Backend & Data",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -48223,6 +48507,18 @@
           "key": "7580661",
           "company": "Flexport",
           "role": "Software Engineer I (Generalist)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4716512007",
+          "company": "Forerunner",
+          "role": "Forward Deployed Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -48535,6 +48831,18 @@
           "key": "4785763008",
           "company": "Mochi Health",
           "role": "Fullstack Software Engineer, Early Career",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8037852002",
+          "company": "Motive",
+          "role": "Software Engineer - Backend Services / San Francisco",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -48921,6 +49229,18 @@
           "role": "Software Engineer, Gen AI",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4593571005",
+          "company": "Scale AI",
+          "role": "Forward Deployed Engineer, GenAI",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -61244,6 +61564,18 @@
           "contacts": []
         },
         {
+          "key": "4691426005",
+          "company": "AssemblyAI",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4658890005",
           "company": "AssetWatch",
           "role": "Backend Engineer",
@@ -61357,6 +61689,18 @@
           "role": "Associate, Full Stack Engineer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4687774007",
+          "company": "CHAOS Industries",
+          "role": "Software Engineer, Backend & Data",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -61573,6 +61917,18 @@
           "role": "Software Engineer II, Autonomous Freight Systems",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4716512007",
+          "company": "Forerunner",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -61907,6 +62263,18 @@
           "key": "4785763008",
           "company": "Mochi Health",
           "role": "Fullstack Software Engineer, Early Career",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8037852002",
+          "company": "Motive",
+          "role": "Software Engineer - Backend Services / San Francisco",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -62377,6 +62745,18 @@
           "role": "Software Engineer, Gen AI",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4593571005",
+          "company": "Scale AI",
+          "role": "Forward Deployed Engineer, GenAI",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
