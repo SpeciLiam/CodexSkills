@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T20:04:00.178904+00:00",
+  "generatedAt": "2026-05-09T23:31:58.222928+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,10 +21,10 @@
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 536,
+      "intakeJobs": 537,
       "intakeQueued": 30,
       "intakeNew": 42,
-      "intakeManual": 291,
+      "intakeManual": 292,
       "intakeApplied": 0,
       "applyRate": 64.9,
       "rejectionRate": 12.1,
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 291
+        "value": 292
       },
       {
         "name": "Tailored",
@@ -300,7 +300,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 189
+        "value": 190
       }
     ],
     "timeline": [
@@ -25293,6 +25293,20 @@
       "status": "Tailored",
       "reason": "SWE-family role, SF/Bay Area preference",
       "trackerPostingKey": "5592469004"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Netflix",
+      "role": "New Grad Software Engineer (2026)",
+      "location": "Los Gatos, CA",
+      "postingKey": "linkedin-netflix-new-grad-software-engineer-2026-los-gatos-2026-05-09",
+      "jobUrl": "https://www.linkedin.com/jobs/search/?keywords=New%20Grad%20Software%20Engineer%202026%20Netflix&location=Los%20Gatos%2C%20CA",
+      "discoveredAt": "2026-05-09T23:28:46.543213+00:00",
+      "postedAge": "4 days ago",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual review needed 2026-05-09: degraded public LinkedIn capture exposed an aggregate/search result but no verified exact posting URL; authenticated Chrome/Firefox capture was blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
     },
     {
       "source": "Greenhouse",

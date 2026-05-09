@@ -2,8 +2,8 @@
 
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
-Jobs discovered: 536
-New: 42 | Queued: 30 | Tailored: 124 | Applied: 0 | Manual: 291 | Skipped: 43 | Duplicate: 2 | Expired: 2
+Jobs discovered: 537
+New: 42 | Queued: 30 | Tailored: 124 | Applied: 0 | Manual: 292 | Skipped: 43 | Duplicate: 2 | Expired: 2
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -382,6 +382,7 @@ New: 42 | Queued: 30 | Tailored: 124 | Applied: 0 | Manual: 291 | Skipped: 43 | 
 | Greenhouse | Amplitude | Engineering: Forward Deploy Engineer II | San Francisco, CA | 8532139002 | https://job-boards.greenhouse.io/amplitude/jobs/8532139002 | 2026-05-02T22:57:58.203484+00:00 | today | 9 | Skipped | early-career signal, SF/Bay Area preference |  |
 | Greenhouse | Truveta | Software Engineer - Data Fulfillment | Seattle, WA | 5978337004 | https://job-boards.greenhouse.io/truveta/jobs/5978337004 | 2026-05-02T22:16:26.875141+00:00 | today | 9 | Queued | SWE-family role, preferred/remote US location |  |
 | Greenhouse | Merge API | Software Engineer | San Francisco, CA | 5592469004 | https://job-boards.greenhouse.io/merge/jobs/5592469004 | 2026-05-02T22:16:26.875141+00:00 | today | 9 | Tailored | SWE-family role, SF/Bay Area preference | 5592469004 |
+| LinkedIn | Netflix | New Grad Software Engineer (2026) | Los Gatos, CA | linkedin-netflix-new-grad-software-engineer-2026-los-gatos-2026-05-09 | https://www.linkedin.com/jobs/search/?keywords=New%20Grad%20Software%20Engineer%202026%20Netflix&location=Los%20Gatos%2C%20CA | 2026-05-09T23:28:46.543213+00:00 | 4 days ago | 8 | Manual | Manual review needed 2026-05-09: degraded public LinkedIn capture exposed an aggregate/search result but no verified exact posting URL; authenticated Chrome/Firefox capture was blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight |  |
 | Greenhouse | Tailscale | Software Engineer, Engineering Tooling | Remote (United States) | 4616090005 | https://job-boards.greenhouse.io/tailscale/jobs/4616090005 | 2026-05-09T19:05:53.480946+00:00 | Crawled yesterday; opened 2026-05-09 | 8 | Manual | Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight | 4616090005 |
 | LinkedIn | Paperless Post | Software Development Engineer in Test | United States | 4403527536 | https://www.linkedin.com/jobs/view/software-development-engineer-in-test-at-paperless-post-4403527536 | 2026-05-09T17:05:15.883605+00:00 | 23 hours ago in public LinkedIn result | 8 | Manual | Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight |  |
 | Greenhouse | Starburst | Forward Deployed Engineer | United States | 5016295008 | https://job-boards.greenhouse.io/starburst/jobs/5016295008 | 2026-05-09T10:04:46.323078+00:00 | crawled 2 days ago | 8 | Manual | Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight | 5016295008 |
