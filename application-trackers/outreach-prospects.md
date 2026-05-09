@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 568
+Companies queued: 570
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -93,6 +93,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Point72 | Software Engineer, Commodities Technology | 8180667002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/point72/jobs/8180667002) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Point72 | Software Engineer - 2026 Grad | 8202068002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/point72/jobs/8202068002?gh_jid=8202068002) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | PlayStation Global | Software Engineer I | 5840954004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/sonyinteractiveentertainmentglobal/jobs/5840954004) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
+| PlayStation Global | Software Engineer II | 5985217004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/sonyinteractiveentertainmentglobal/jobs/5985217004) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | PlanetScale | Software Engineer - Infrastructure | 4036240009 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/planetscale/jobs/4036240009) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Plaid | Software Engineer | 49139a62-a9bc-4400-ae89-789818b34cb8 | 10 | Applied | Yes | [Posting](https://jobs.lever.co/plaid/49139a62-a9bc-4400-ae89-789818b34cb8/apply?lever-origin=applied&lever-source=LinkedInPaid) |  |  |  |  |
 | Piramidal | Forward Deployed Engineer | 4212486009 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/piramidalinc/jobs/4212486009?gh_src=Blind) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
@@ -257,6 +258,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Attentive | Frontend Software Engineer II, Messaging Platform | 4121615009 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/attentive/jobs/4121615009) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Atoms | Software Engineer - New Grad - New York, NY | 4409955386 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4409955386/) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Atoms | Software Engineer - New Grad - Seattle, WA | 4409947975 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4409947975/) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
+| Atoms | Software Engineer - New Grad - Mountain View, CA | 8537765002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/atoms/jobs/8537765002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Assurant | Associate Software Engineer (.NET) | associate-software-engineer-net-at-assurant-4344223933 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/associate-software-engineer-net-at-assurant-4344223933) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | AssetWatch | Backend Engineer | 4658890005 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/assetwatch/jobs/4658890005) |  |  | 2026-05-07 | Queued by resume-tailor after tailored resume update. |
 | AssemblyAI | Forward Deployed Engineer | 4691426005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/assemblyai/jobs/4691426005) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |

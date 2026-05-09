@@ -2,11 +2,13 @@
 
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
-Jobs discovered: 531
-New: 42 | Queued: 38 | Tailored: 124 | Applied: 0 | Manual: 278 | Skipped: 43 | Duplicate: 2 | Expired: 2
+Jobs discovered: 533
+New: 42 | Queued: 32 | Tailored: 124 | Applied: 0 | Manual: 286 | Skipped: 43 | Duplicate: 2 | Expired: 2
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Greenhouse | PlayStation Global | Software Engineer II | Madison, WI, United States | 5985217004 | https://job-boards.greenhouse.io/sonyinteractiveentertainmentglobal/jobs/5985217004 | 2026-05-09T18:05:12.951811+00:00 | last week | 10 | Manual | Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight | 5985217004 |
+| Greenhouse | Atoms | Software Engineer - New Grad - Mountain View, CA | Mountain View, CA | 8537765002 | https://job-boards.greenhouse.io/atoms/jobs/8537765002 | 2026-05-09T18:05:12.951811+00:00 | yesterday | 10 | Manual | Tailored 2026-05-09; resume and cover letter rendered; resume verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight; form also asks target graduation timing question for review | 8537765002 |
 | LinkedIn | Patreon | Fullstack Software Engineer (New Grad) | San Francisco, CA | 4380681272 | https://www.linkedin.com/jobs/view/fullstack-software-engineer-new-grad-at-patreon-4380681272 | 2026-05-09T17:05:15.883605+00:00 | 22 hours ago in public LinkedIn result | 10 | Manual | Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight |  |
 | LinkedIn | MongoDB | Software Engineer, Networking & Observability | New York, NY | 4380491440 | https://www.linkedin.com/jobs/view/software-engineer-networking-observability-at-mongodb-4380491440 | 2026-05-09T17:05:15.883605+00:00 | 11 hours ago in public LinkedIn result | 10 | Manual | Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight |  |
 | LinkedIn | ChatGPT Jobs / Flamingo | Software Engineer | New York, NY | 4357811639 | https://www.linkedin.com/jobs/view/software-engineer-at-chatgpt-jobs-4357811639 | 2026-05-09T17:05:15.883605+00:00 | 14 hours ago in public LinkedIn result | 10 | Manual | Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight |  |

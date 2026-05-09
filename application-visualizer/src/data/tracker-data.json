@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T17:11:18.229690+00:00",
+  "generatedAt": "2026-05-09T18:08:08.368048+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 681,
+      "total": 683,
       "applied": 445,
-      "unapplied": 236,
-      "active": 491,
+      "unapplied": 238,
+      "active": 493,
       "rejected": 54,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 542,
-      "reachOut": 606,
+      "highFit": 544,
+      "reachOut": 608,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 531,
+      "intakeJobs": 533,
       "intakeQueued": 30,
       "intakeNew": 42,
-      "intakeManual": 286,
+      "intakeManual": 288,
       "intakeApplied": 0,
-      "applyRate": 65.3,
+      "applyRate": 65.2,
       "rejectionRate": 12.1,
-      "recruiterWork": 378,
-      "engineerWork": 456,
+      "recruiterWork": 380,
+      "engineerWork": 458,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 87
+        "value": 89
       },
       {
         "name": "Rejected",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 272
+        "value": 274
       },
       {
         "name": "LinkedIn",
@@ -152,7 +152,7 @@
       },
       {
         "name": "Other",
-        "value": 120
+        "value": 122
       },
       {
         "name": "Remote",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 375
+        "value": 376
       },
       {
         "name": "Full Stack",
@@ -190,7 +190,7 @@
       },
       {
         "name": "AI/ML",
-        "value": 40
+        "value": 41
       },
       {
         "name": "Infra/Platform",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 288
+        "count": 290
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 286
+        "value": 288
       },
       {
         "name": "Tailored",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 342
+        "value": 344
       },
       {
         "name": "LinkedIn",
@@ -506,8 +506,8 @@
       },
       {
         "date": "2026-05-09",
-        "cumulative": 681,
-        "added": 34,
+        "cumulative": 683,
+        "added": 36,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -19916,9 +19916,87 @@
       "activityDates": [
         "2026-05-09"
       ]
+    },
+    {
+      "company": "PlayStation Global",
+      "role": "Software Engineer II",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "United States, Madison, WI",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/sonyinteractiveentertainmentglobal/jobs/5985217004",
+      "postingKey": "5985217004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/PlayStation Global/Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/PlayStation Global/Software_Engineer_II/Liam_Van_Resume/Liam_Van_PlayStation_Global.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-09 degraded Greenhouse capture; tailored SWE resume rendered and verified one page; emphasized React/JavaScript product engineering, testing, CI/CD, performance, accessibility, and release quality. Manual apply needed: browser application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Atoms",
+      "role": "Software Engineer - New Grad - Mountain View, CA",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "Mountain View, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/atoms/jobs/8537765002",
+      "postingKey": "8537765002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Atoms/Software_Engineer_New_Grad_Mountain_View_CA/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Atoms/Software_Engineer_New_Grad_Mountain_View_CA/Liam_Van_Resume/Liam_Van_Atoms.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-09 degraded Greenhouse capture; tailored SWE resume and cover letter rendered, resume verified one page. Manual apply needed: browser application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live form also asks target graduation timing question that may need review against Dec 2024 graduation.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "PlayStation Global",
+      "role": "Software Engineer II",
+      "location": "Madison, WI, United States",
+      "postingKey": "5985217004",
+      "jobUrl": "https://job-boards.greenhouse.io/sonyinteractiveentertainmentglobal/jobs/5985217004",
+      "discoveredAt": "2026-05-09T18:05:12.951811+00:00",
+      "postedAge": "last week",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "trackerPostingKey": "5985217004"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Atoms",
+      "role": "Software Engineer - New Grad - Mountain View, CA",
+      "location": "Mountain View, CA",
+      "postingKey": "8537765002",
+      "jobUrl": "https://job-boards.greenhouse.io/atoms/jobs/8537765002",
+      "discoveredAt": "2026-05-09T18:05:12.951811+00:00",
+      "postedAge": "yesterday",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume and cover letter rendered; resume verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight; form also asks target graduation timing question for review",
+      "trackerPostingKey": "8537765002"
+    },
     {
       "source": "LinkedIn",
       "company": "Patreon",
@@ -28448,6 +28526,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "PlayStation Global",
+      "role": "Software Engineer II",
+      "postingKey": "5985217004",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/sonyinteractiveentertainmentglobal/jobs/5985217004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "PlanetScale",
       "role": "Software Engineer - Infrastructure",
       "postingKey": "4036240009",
@@ -30577,6 +30668,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Atoms",
+      "role": "Software Engineer - New Grad - Mountain View, CA",
+      "postingKey": "8537765002",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/atoms/jobs/8537765002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -48801,6 +48905,18 @@
           "contacts": []
         },
         {
+          "key": "8537765002",
+          "company": "Atoms",
+          "role": "Software Engineer - New Grad - Mountain View, CA",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "a4172515-0353-47ec-9c71-631a294aa137",
           "company": "Automat",
           "role": "Software Engineer (Junior/Intermediate)",
@@ -49682,6 +49798,18 @@
           "role": "Software Engineer I",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5985217004",
+          "company": "PlayStation Global",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -62281,6 +62409,18 @@
           "contacts": []
         },
         {
+          "key": "8537765002",
+          "company": "Atoms",
+          "role": "Software Engineer - New Grad - Mountain View, CA",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4195625009",
           "company": "Attentive",
           "role": "Software Engineer I, AI Product",
@@ -63306,6 +63446,18 @@
           "role": "Software Engineer I",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5985217004",
+          "company": "PlayStation Global",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
