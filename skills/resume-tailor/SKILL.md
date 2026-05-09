@@ -38,14 +38,15 @@ If a link is provided, open it and extract:
 
 ## Files and folders
 
-- Generic source resume lives in `generic-resume/`
-- The primary resume source file should usually be `generic-resume/resume.tex`
+- Generic source resumes live in `generic-resume/`
+- Use `generic-resume/resume.tex` as the early-career source when a posting is explicitly new-grad, university-grad, associate, junior, SWE I, or otherwise early-career. This version includes Liam's graduation month/year (`Dec 2024`) and GPA, and labels both Caterpillar roles as internships.
+- Use `generic-resume/resume-general.tex` when a posting is not explicitly early-career. This version omits graduation month/year and GPA, labels Caterpillar May 2023-Dec 2023 as `Software Engineer`, and labels only Caterpillar May 2022-August 2022 as `Software Engineer Intern`.
 - Candidate metadata lives in `generic-resume/README.md`
 - The canonical personal website is `liamvan.dev`; every tailored resume header should preserve `\href{https://liamvan.dev}{liamvan.dev}`
 - The canonical Fantasy Wizard project URL is `https://fantasysportwizard.com`; when including the project, prefer linking the project title as `\href{https://fantasysportwizard.com}{Fantasy Wizard}` when space and formatting allow
 - Set `candidate_name: Your Name` in that README so the scripts can name output folders and PDFs
 - Treat `generic-resume/README.md` as the richer candidate profile and evidence source, not just naming metadata
-- Treat the generic resume and README as the context bank; they can be richer than one page because the tailored output is what must be compressed to one page
+- Treat the selected generic resume and README as the context bank; they can be richer than one page because the tailored output is what must be compressed to one page
 - Company outputs should live in `companies/<Company Name>/<Role_Slug>/Liam_Van_Resume/` when a role title is known for Liam's pipeline
 - If the same role is tailored again, create `companies/<Company Name>/<Role_Slug>/<Candidate_Name>_Resume_2`, then `_3`, and so on
 - Fall back to `companies/<Company Name>/Liam_Van_Resume/` only when the role is unknown
@@ -193,7 +194,7 @@ Use that map to drive edits instead of only reordering the existing list.
 ## Editing workflow
 
 1. Read the job description and extract the top priorities.
-2. Inspect the generic LaTeX resume in `generic-resume/`, usually `generic-resume/resume.tex`.
+2. Inspect `generic-resume/README.md`, then select the right base: `generic-resume/resume.tex` for explicit early-career/new-grad/associate/junior/SWE I roles, or `generic-resume/resume-general.tex` for broader roles that do not need graduation date, GPA, or internship framing.
 3. Read `generic-resume/README.md` in full and use it as the richer profile, evidence bank, and wording guide.
 4. Use `candidate_name` from `generic-resume/README.md` for output naming.
 5. Create the company-specific copy with `prepare_resume_folder.py`.
@@ -215,6 +216,7 @@ Use that map to drive edits instead of only reordering the existing list.
    - removal of lower-value lines or roles
    - preserve readability over over-compression, even if that means a few bullets wrap to a second line
    - inspect wrapped bullets and rewrite any that leave an orphaned trailing word or tiny fragment on the next line
+   - preserve the source-specific education/Caterpillar framing unless the job posting or user request clearly calls for switching variants
 9. Check for one-page risk. If the resume is too long:
    - remove least relevant bullets first
    - shorten wording second
