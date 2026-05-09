@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T15:06:32.593206+00:00",
+  "generatedAt": "2026-05-09T17:11:18.229690+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 673,
+      "total": 681,
       "applied": 445,
-      "unapplied": 228,
-      "active": 483,
+      "unapplied": 236,
+      "active": 491,
       "rejected": 54,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 534,
-      "reachOut": 598,
+      "highFit": 542,
+      "reachOut": 606,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 523,
+      "intakeJobs": 531,
       "intakeQueued": 30,
       "intakeNew": 42,
-      "intakeManual": 278,
+      "intakeManual": 286,
       "intakeApplied": 0,
-      "applyRate": 66.1,
+      "applyRate": 65.3,
       "rejectionRate": 12.1,
-      "recruiterWork": 370,
-      "engineerWork": 448,
+      "recruiterWork": 378,
+      "engineerWork": 456,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 79
+        "value": 87
       },
       {
         "name": "Rejected",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 269
+        "value": 272
       },
       {
         "name": "LinkedIn",
-        "value": 259
+        "value": 264
       },
       {
         "name": "Ashby",
@@ -144,15 +144,15 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 296
+        "value": 299
       },
       {
         "name": "Bay Area",
-        "value": 155
+        "value": 159
       },
       {
         "name": "Other",
-        "value": 119
+        "value": 120
       },
       {
         "name": "Remote",
@@ -174,11 +174,11 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 369
+        "value": 375
       },
       {
         "name": "Full Stack",
-        "value": 90
+        "value": 91
       },
       {
         "name": "Backend",
@@ -194,7 +194,7 @@
       },
       {
         "name": "Infra/Platform",
-        "value": 32
+        "value": 33
       },
       {
         "name": "Data",
@@ -236,15 +236,15 @@
       },
       {
         "score": "8",
-        "count": 126
+        "count": 127
       },
       {
         "score": "9",
-        "count": 126
+        "count": 127
       },
       {
         "score": "10",
-        "count": 282
+        "count": 288
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 278
+        "value": 286
       },
       {
         "name": "Tailored",
@@ -296,11 +296,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 339
+        "value": 342
       },
       {
         "name": "LinkedIn",
-        "value": 184
+        "value": 189
       }
     ],
     "timeline": [
@@ -506,8 +506,8 @@
       },
       {
         "date": "2026-05-09",
-        "cumulative": 673,
-        "added": 26,
+        "cumulative": 681,
+        "added": 34,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -593,6 +593,12 @@
         "bestFit": 10
       },
       {
+        "company": "Amplitude",
+        "roles": 4,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "Flex",
         "roles": 4,
         "avgFit": 10.0,
@@ -648,12 +654,6 @@
       },
       {
         "company": "Flexport",
-        "roles": 3,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Applied Intuition",
         "roles": 3,
         "avgFit": 10.0,
         "bestFit": 10
@@ -10583,7 +10583,7 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required custom personal project and LLM/social profile responses; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume reapply attempt 2026-05-04 stopped on blocker: Clean regenerated resume uploaded where possible; submit stopped on validation/blocker:; Manual apply still needed 2026-05-04: live Greenhouse embed has reCAPTCHA, plus required custom personal/LLM response fields for this Whop role.; Manual apply needed 2026-05-05: live Greenhouse embed staged with resume/education, but not submitted because role requires Palo Alto office 5 days/week, minimum 5 years experience, and custom required LLM-prompt response for Liam review.; Manual apply still needed 2026-05-08: full manual-row retry preserved prior blocker; required custom personal project/LLM/social-profile responses plus onsite/experience concerns need Liam review before any submit.; Application submitted via Greenhouse confirmation page 2026-05-08 after Safari manual fill; uploaded tailored Liam_Van_Whop.pdf and filled education, work authorization, onsite, LinkedIn, and custom LLM/free-response answers.",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Manual apply needed: required custom personal project and LLM/social profile responses; not submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized fullstack. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume reapply attempt 2026-05-04 stopped on blocker: Clean regenerated resume uploaded where possible; submit stopped on validation/blocker:; Manual apply still needed 2026-05-04: live Greenhouse embed has reCAPTCHA, plus required custom personal/LLM response fields for this Whop role.; Manual apply needed 2026-05-05: live Greenhouse embed staged with resume/education, but not submitted because role requires Palo Alto office 5 days/week, minimum 5 years experience, and custom required LLM-prompt response for Liam review.; Manual apply still needed 2026-05-08: full manual-row retry preserved prior blocker; required custom personal project/LLM/social-profile responses plus onsite/experience concerns need Liam review before any submit.; Application submitted via Greenhouse confirmation page 2026-05-08 after Safari manual fill; uploaded tailored Liam_Van_Whop.pdf and filled education, work authorization, onsite, LinkedIn, and custom LLM/free-response answers.; Application confirmation email received 2026-05-08",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
@@ -10592,6 +10592,7 @@
         "2026-05-04",
         "2026-05-04",
         "2026-05-05",
+        "2026-05-08",
         "2026-05-08",
         "2026-05-08"
       ]
@@ -17672,7 +17673,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/bncwana/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Bafana Ncwana (Recruiter) 2026-05-06; Manual apply needed: Talemetry/CDW required typed-name ITAR/export-control acknowledgement and desired compensation with no posted range before final application review 2026-05-06; Manual apply still needed 2026-05-08: Safari/CDW Talemetry staged at Applicant Consents; tailored resume uploaded successfully; contact/address/work history/education parsed; disability/veteran/job questions filled; ITAR acknowledgement typed Liam Van; desired compensation $120,000; start date 2026-05-08. Applicant Consents visible with consent checkbox checked, gender Male and race Hispanic or Latino selected. Left for Liam final I ACCEPT/submit; no final submit clicked.; Application submitted by Liam 2026-05-08 via CDW Talemetry for Software Engineer I - Backend.",
+      "notes": "LinkedIn invite sent to Bafana Ncwana (Recruiter) 2026-05-06; Manual apply needed: Talemetry/CDW required typed-name ITAR/export-control acknowledgement and desired compensation with no posted range before final application review 2026-05-06; Manual apply still needed 2026-05-08: Safari/CDW Talemetry staged at Applicant Consents; tailored resume uploaded successfully; contact/address/work history/education parsed; disability/veteran/job questions filled; ITAR acknowledgement typed Liam Van; desired compensation $120,000; start date 2026-05-08. Applicant Consents visible with consent checkbox checked, gender Male and race Hispanic or Latino selected. Left for Liam final I ACCEPT/submit; no final submit clicked.; Application submitted by Liam 2026-05-08 via CDW Talemetry for Software Engineer I - Backend.; Application confirmation email received 2026-05-08",
       "noteLinks": [
         {
           "label": "Bafana Ncwana",
@@ -17682,6 +17683,7 @@
       "activityDates": [
         "2026-05-06",
         "2026-05-06",
+        "2026-05-08",
         "2026-05-08",
         "2026-05-08",
         "2026-05-08"
@@ -17835,10 +17837,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06; Application submitted 2026-05-08 via Greenhouse confirmation page: https://job-boards.greenhouse.io/gleanwork/jobs/4616929005/confirmation.",
+      "notes": "Manual apply needed: Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06; Application submitted 2026-05-08 via Greenhouse confirmation page: https://job-boards.greenhouse.io/gleanwork/jobs/4616929005/confirmation.; Application confirmation email received 2026-05-08",
       "noteLinks": [],
       "activityDates": [
         "2026-05-06",
+        "2026-05-08",
         "2026-05-08"
       ]
     },
@@ -19713,9 +19716,293 @@
       "activityDates": [
         "2026-05-09"
       ]
+    },
+    {
+      "company": "Amplitude",
+      "role": "Software Engineer II, Web",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/amplitude/jobs/7949946002",
+      "postingKey": "7949946002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Amplitude/Software_Engineer_II_Web/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Amplitude/Software_Engineer_II_Web/Liam_Van_Resume/Liam_Van_Amplitude.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Patreon",
+      "role": "Fullstack Software Engineer (New Grad)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/fullstack-software-engineer-new-grad-at-patreon-4380681272",
+      "postingKey": "fullstack-software-engineer-new-grad-at-patreon-4380681272",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Patreon/Fullstack_Software_Engineer_New_Grad/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Patreon/Fullstack_Software_Engineer_New_Grad/Liam_Van_Resume/Liam_Van_Patreon.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "MongoDB",
+      "role": "Software Engineer, Networking & Observability",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-networking-observability-at-mongodb-4380491440",
+      "postingKey": "software-engineer-networking-observability-at-mongodb-4380491440",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/MongoDB/Software_Engineer_Networking_Observability/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/MongoDB/Software_Engineer_Networking_Observability/Liam_Van_Resume/Liam_Van_MongoDB.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "ChatGPT Jobs / Flamingo",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-at-chatgpt-jobs-4357811639",
+      "postingKey": "software-engineer-at-chatgpt-jobs-4357811639",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/ChatGPT Jobs - Flamingo/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/ChatGPT Jobs - Flamingo/Software_Engineer/Liam_Van_Resume/Liam_Van_ChatGPT_Jobs_-_Flamingo.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "CoreWeave",
+      "role": "Systems Engineer, Kernel",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/systems-engineer-kernel-at-coreweave-4347141537",
+      "postingKey": "systems-engineer-kernel-at-coreweave-4347141537",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CoreWeave/Systems_Engineer_Kernel/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CoreWeave/Systems_Engineer_Kernel/Liam_Van_Resume/Liam_Van_CoreWeave.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Paperless Post",
+      "role": "Software Development Engineer in Test",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-development-engineer-in-test-at-paperless-post-4403527536",
+      "postingKey": "software-development-engineer-in-test-at-paperless-post-4403527536",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Paperless Post/Software_Development_Engineer_in_Test/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Paperless Post/Software_Development_Engineer_in_Test/Liam_Van_Resume/Liam_Van_Paperless_Post.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Amplitude",
+      "role": "Software Engineer I, Growth Platform",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/amplitude/jobs/7949946002?gh_jid=7949946002-growth-platform",
+      "postingKey": "7949946002-growth-platform",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Amplitude/Software_Engineer_I_Growth_Platform/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Amplitude/Software_Engineer_I_Growth_Platform/Liam_Van_Resume/Liam_Van_Amplitude.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Amplitude",
+      "role": "Software Engineer II, Product Adoption",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/amplitude/jobs/7949946002?gh_jid=7949946002-product-adoption",
+      "postingKey": "7949946002-product-adoption",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Amplitude/Software_Engineer_II_Product_Adoption/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Amplitude/Software_Engineer_II_Product_Adoption/Liam_Van_Resume/Liam_Van_Amplitude.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "LinkedIn",
+      "company": "Patreon",
+      "role": "Fullstack Software Engineer (New Grad)",
+      "location": "San Francisco, CA",
+      "postingKey": "4380681272",
+      "jobUrl": "https://www.linkedin.com/jobs/view/fullstack-software-engineer-new-grad-at-patreon-4380681272",
+      "discoveredAt": "2026-05-09T17:05:15.883605+00:00",
+      "postedAge": "22 hours ago in public LinkedIn result",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "MongoDB",
+      "role": "Software Engineer, Networking & Observability",
+      "location": "New York, NY",
+      "postingKey": "4380491440",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-networking-observability-at-mongodb-4380491440",
+      "discoveredAt": "2026-05-09T17:05:15.883605+00:00",
+      "postedAge": "11 hours ago in public LinkedIn result",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "ChatGPT Jobs / Flamingo",
+      "role": "Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "4357811639",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-at-chatgpt-jobs-4357811639",
+      "discoveredAt": "2026-05-09T17:05:15.883605+00:00",
+      "postedAge": "14 hours ago in public LinkedIn result",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Amplitude",
+      "role": "Software Engineer I, Growth Platform",
+      "location": "San Francisco, CA",
+      "postingKey": "7949946002-growth-platform",
+      "jobUrl": "https://job-boards.greenhouse.io/amplitude/jobs/7949946002",
+      "discoveredAt": "2026-05-09T17:05:15.883605+00:00",
+      "postedAge": "public Greenhouse board result marked New",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Amplitude",
+      "role": "Software Engineer II, Product Adoption",
+      "location": "San Francisco, CA",
+      "postingKey": "7949946002-product-adoption",
+      "jobUrl": "https://job-boards.greenhouse.io/amplitude/jobs/7949946002",
+      "discoveredAt": "2026-05-09T17:05:15.883605+00:00",
+      "postedAge": "public Greenhouse board result marked New",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Amplitude",
+      "role": "Software Engineer II, Web",
+      "location": "San Francisco, CA",
+      "postingKey": "7949946002-web",
+      "jobUrl": "https://job-boards.greenhouse.io/amplitude/jobs/7949946002",
+      "discoveredAt": "2026-05-09T17:05:15.883605+00:00",
+      "postedAge": "public Greenhouse board result marked New",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
     {
       "source": "LinkedIn",
       "company": "DoorDash",
@@ -23805,6 +24092,20 @@
       "trackerPostingKey": "4401827377"
     },
     {
+      "source": "LinkedIn",
+      "company": "CoreWeave",
+      "role": "Systems Engineer, Kernel",
+      "location": "New York, NY",
+      "postingKey": "4347141537",
+      "jobUrl": "https://www.linkedin.com/jobs/view/systems-engineer-kernel-at-coreweave-4347141537",
+      "discoveredAt": "2026-05-09T17:05:15.883605+00:00",
+      "postedAge": "7 hours ago in public LinkedIn result",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "Greenhouse",
       "company": "Chime",
       "role": "Software Engineer, Growth",
@@ -24811,6 +25112,20 @@
       "status": "Tailored",
       "reason": "SWE-family role, SF/Bay Area preference",
       "trackerPostingKey": "5592469004"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Paperless Post",
+      "role": "Software Development Engineer in Test",
+      "location": "United States",
+      "postingKey": "4403527536",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-development-engineer-in-test-at-paperless-post-4403527536",
+      "discoveredAt": "2026-05-09T17:05:15.883605+00:00",
+      "postedAge": "23 hours ago in public LinkedIn result",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": ""
     },
     {
       "source": "Greenhouse",
@@ -28328,6 +28643,19 @@
       "notes": ""
     },
     {
+      "company": "Patreon",
+      "role": "Fullstack Software Engineer (New Grad)",
+      "postingKey": "fullstack-software-engineer-new-grad-at-patreon-4380681272",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/fullstack-software-engineer-new-grad-at-patreon-4380681272",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Pario",
       "role": "Founding Engineer (Backend)",
       "postingKey": "4784339004",
@@ -28638,6 +28966,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "MongoDB",
+      "role": "Software Engineer, Networking & Observability",
+      "postingKey": "software-engineer-networking-observability-at-mongodb-4380491440",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-networking-observability-at-mongodb-4380491440",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Mochi Health",
@@ -29901,6 +30242,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "ChatGPT Jobs / Flamingo",
+      "role": "Software Engineer",
+      "postingKey": "software-engineer-at-chatgpt-jobs-4357811639",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-at-chatgpt-jobs-4357811639",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "CHAOS Industries",
       "role": "Software Engineer, Backend & Data",
       "postingKey": "4687774007",
@@ -30393,6 +30747,45 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Amplitude",
+      "role": "Software Engineer II, Web",
+      "postingKey": "7949946002",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/amplitude/jobs/7949946002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Amplitude",
+      "role": "Software Engineer I, Growth Platform",
+      "postingKey": "7949946002-growth-platform",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/amplitude/jobs/7949946002?gh_jid=7949946002-growth-platform",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Amplitude",
+      "role": "Software Engineer II, Product Adoption",
+      "postingKey": "7949946002-product-adoption",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/amplitude/jobs/7949946002?gh_jid=7949946002-product-adoption",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Alchemy",
@@ -31773,6 +32166,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "CoreWeave",
+      "role": "Systems Engineer, Kernel",
+      "postingKey": "systems-engineer-kernel-at-coreweave-4347141537",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/systems-engineer-kernel-at-coreweave-4347141537",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Color",
       "role": "New Grad Software Engineer",
       "postingKey": "4397683013",
@@ -32550,6 +32956,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-05",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Paperless Post",
+      "role": "Software Development Engineer in Test",
+      "postingKey": "software-development-engineer-in-test-at-paperless-post-4403527536",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-development-engineer-in-test-at-paperless-post-4403527536",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -48262,6 +48681,42 @@
           "contacts": []
         },
         {
+          "key": "7949946002",
+          "company": "Amplitude",
+          "role": "Software Engineer II, Web",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7949946002-growth-platform",
+          "company": "Amplitude",
+          "role": "Software Engineer I, Growth Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7949946002-product-adoption",
+          "company": "Amplitude",
+          "role": "Software Engineer II, Product Adoption",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "associate-software-engineer-software-engineer-at-applied-systems-4400119719",
           "company": "Applied Systems",
           "role": "Associate Software Engineer / Software Engineer",
@@ -48447,6 +48902,18 @@
           "role": "Backend Engineer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-at-chatgpt-jobs-4357811639",
+          "company": "ChatGPT Jobs / Flamingo",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -48946,6 +49413,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-networking-observability-at-mongodb-4380491440",
+          "company": "MongoDB",
+          "role": "Software Engineer, Networking & Observability",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8037852002",
           "company": "Motive",
           "role": "Software Engineer - Backend Services / San Francisco",
@@ -49071,6 +49550,18 @@
           "role": "Founding Engineer (Backend)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "fullstack-software-engineer-new-grad-at-patreon-4380681272",
+          "company": "Patreon",
+          "role": "Fullstack Software Engineer (New Grad)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -49863,6 +50354,18 @@
           "role": "New Grad Software Engineer",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "systems-engineer-kernel-at-coreweave-4347141537",
+          "company": "CoreWeave",
+          "role": "Systems Engineer, Kernel",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -51411,6 +51914,18 @@
           "role": "Software Engineer, Perception (All levels)",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-development-engineer-in-test-at-paperless-post-4403527536",
+          "company": "Paperless Post",
+          "role": "Software Development Engineer in Test",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -61622,6 +62137,42 @@
           "contacts": []
         },
         {
+          "key": "7949946002",
+          "company": "Amplitude",
+          "role": "Software Engineer II, Web",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7949946002-growth-platform",
+          "company": "Amplitude",
+          "role": "Software Engineer I, Growth Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7949946002-product-adoption",
+          "company": "Amplitude",
+          "role": "Software Engineer II, Product Adoption",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "associate-software-engineer-software-engineer-at-applied-systems-4400119719",
           "company": "Applied Systems",
           "role": "Associate Software Engineer / Software Engineer",
@@ -61843,6 +62394,18 @@
           "role": "Backend Engineer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-at-chatgpt-jobs-4357811639",
+          "company": "ChatGPT Jobs / Flamingo",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -62390,6 +62953,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-networking-observability-at-mongodb-4380491440",
+          "company": "MongoDB",
+          "role": "Software Engineer, Networking & Observability",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8037852002",
           "company": "Motive",
           "role": "Software Engineer - Backend Services / San Francisco",
@@ -62575,6 +63150,18 @@
           "role": "Founding Engineer (Backend)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "fullstack-software-engineer-new-grad-at-patreon-4380681272",
+          "company": "Patreon",
+          "role": "Fullstack Software Engineer (New Grad)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -63509,6 +64096,18 @@
           "key": "7913323002",
           "company": "Chime",
           "role": "Software Engineer, Growth",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "systems-engineer-kernel-at-coreweave-4347141537",
+          "company": "CoreWeave",
+          "role": "Systems Engineer, Kernel",
           "fitScore": 9,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -64613,6 +65212,18 @@
           "key": "d9517f18-7f9f-4f13-83e8-feb078e8792d",
           "company": "OneStream",
           "role": "Software Engineer I",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-development-engineer-in-test-at-paperless-post-4403527536",
+          "company": "Paperless Post",
+          "role": "Software Development Engineer in Test",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
