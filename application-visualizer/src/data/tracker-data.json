@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T09:06:51.078315+00:00",
+  "generatedAt": "2026-05-09T09:23:31.908239+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 661,
-      "applied": 442,
-      "unapplied": 219,
+      "applied": 443,
+      "unapplied": 218,
       "active": 474,
       "rejected": 51,
       "interviewing": 3,
@@ -26,7 +26,7 @@
       "intakeNew": 41,
       "intakeManual": 266,
       "intakeApplied": 0,
-      "applyRate": 66.9,
+      "applyRate": 67.0,
       "rejectionRate": 11.5,
       "recruiterWork": 358,
       "engineerWork": 436,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 384
+        "value": 385
       },
       {
         "name": "Archived",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 17
+        "value": 16
       },
       {
         "name": "Online Assessment",
@@ -500,7 +500,7 @@
         "date": "2026-05-08",
         "cumulative": 647,
         "added": 34,
-        "applied": 25,
+        "applied": 26,
         "rejected": 0,
         "interviewing": 1
       },
@@ -937,7 +937,7 @@
         "status": "Applied",
         "prospectCount": 0,
         "readyEmails": 0,
-        "jobLink": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4673616005#app"
+        "jobLink": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4673616005"
       },
       {
         "company": "The New York Times",
@@ -3302,19 +3302,19 @@
       "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
-      "referral": "No",
+      "referral": "Yes",
       "dateAdded": "2026-04-09",
       "location": "New York, NY",
       "source": "Greenhouse",
-      "jobLink": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4673616005#app",
+      "jobLink": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4673616005",
       "postingKey": "4673616005",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/The New York Times/Software_Engineer_Scoop_Core/Liam_Van_Resume_2",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/The New York Times/Software_Engineer_Scoop_Core/Liam_Van_Resume_2/Liam_Van_The_New_York_Times.pdf",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/The New York Times/Software_Engineer_Scoop_Core/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/The New York Times/Software_Engineer_Scoop_Core/Liam_Van_Resume/Liam_Van_The_New_York_Times.pdf",
       "recruiterContact": "Nadia Tiwari",
       "recruiterProfile": "https://www.linkedin.com/in/nadia-tiwari-28b1a5151/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Nadia Tiwari (Recruiter) 2026-04-25; Replaced company posting with direct Greenhouse application 2026-04-27; Manual apply needed: desired salary and final application submission confirmation 2026-04-27; Application submitted via Greenhouse with tailored NYTimes resume and provided salary/source answers 2026-04-28; Refreshed tailored resume 2026-05-05 for current Scoop Core posting; emphasized backend platform services, API validation, cloud services on GCP/AWS, unit and integration testing, documentation, onboarding, observability, and cross-functional release communication.",
+      "notes": "LinkedIn invite sent to Nadia Tiwari (Recruiter) 2026-04-25; Replaced company posting with direct Greenhouse application 2026-04-27; Manual apply needed: desired salary and final application submission confirmation 2026-04-27; Application submitted via Greenhouse with tailored NYTimes resume and provided salary/source answers 2026-04-28; Refreshed tailored resume 2026-05-05 for current Scoop Core posting; emphasized backend platform services, API validation, cloud services on GCP/AWS, unit and integration testing, documentation, onboarding, observability, and cross-functional release communication.; Refreshed tailored resume 2026-05-09 for direct NYT referral application request https://job-boards.greenhouse.io/thenewyorktimes/job_application_requests/sscykj73caef5adwxvg32ce9nugup5us; emphasized backend platform services, API validation, AWS/GCP/OCI cloud services, unit and integration testing, documentation, onboarding, observability, and cross-functional release communication. Did not claim Golang or GraphQL because resume evidence was not present.; Direct NYT Greenhouse referral request completed 2026-05-09 using refreshed tailored resume.",
       "noteLinks": [
         {
           "label": "Nadia Tiwari",
@@ -3326,7 +3326,9 @@
         "2026-04-27",
         "2026-04-27",
         "2026-04-28",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-09",
+        "2026-05-09"
       ]
     },
     {
@@ -18407,8 +18409,8 @@
     {
       "company": "The New York Times",
       "role": "Software Engineer, Programming",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "Yes",
@@ -18417,16 +18419,18 @@
       "source": "Greenhouse",
       "jobLink": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4656665005",
       "postingKey": "4656665005",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/The New York Times/Software_Engineer_Programming/Liam_Van_Resume",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/The New York Times/Software_Engineer_Programming/Liam_Van_Resume/Liam_Van_The_New_York_Times.pdf",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/The New York Times/Software_Engineer_Programming/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/The New York Times/Software_Engineer_Programming/Liam_Van_Resume_2/Liam_Van_The_New_York_Times.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-08 for NYT Programming team referral; emphasized JavaScript/TypeScript, HTML/CSS, React/NestJS product surfaces, API integration, editorial-tooling-style workflows, cross-functional product/design collaboration, testing, observability, and production reliability. Did not claim GraphQL because resume evidence was not present.",
+      "notes": "Tailored 2026-05-08 for NYT Programming team referral; emphasized JavaScript/TypeScript, HTML/CSS, React/NestJS product surfaces, API integration, editorial-tooling-style workflows, cross-functional product/design collaboration, testing, observability, and production reliability. Did not claim GraphQL because resume evidence was not present.; Refreshed tailored resume 2026-05-09 for direct NYT referral application request https://job-boards.greenhouse.io/thenewyorktimes/job_application_requests/bppnrwebz6v1gy2mwxdtetkzmgoq15us; emphasized JavaScript, TypeScript, HTML/CSS, React, Node/NestJS product surfaces, REST API integration, product/design/newsroom collaboration, testing, monitoring, and production reliability. Did not claim GraphQL because resume evidence was not present.; Application submitted via direct NYT Greenhouse referral request 2026-05-09 using refreshed tailored resume.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-09",
+        "2026-05-09"
       ]
     },
     {
@@ -26944,7 +26948,7 @@
       "fitScore": 10,
       "status": "Applied",
       "reachOut": true,
-      "jobLink": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4673616005#app",
+      "jobLink": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4673616005",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "",
@@ -48719,7 +48723,7 @@
           "company": "The New York Times",
           "role": "Software Engineer, Programming",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
