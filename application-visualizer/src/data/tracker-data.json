@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T10:08:23.690594+00:00",
+  "generatedAt": "2026-05-09T11:28:19.633089+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 666,
+      "total": 667,
       "applied": 445,
-      "unapplied": 221,
-      "active": 476,
+      "unapplied": 222,
+      "active": 477,
       "rejected": 54,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 527,
-      "reachOut": 591,
+      "highFit": 528,
+      "reachOut": 592,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 513,
+      "intakeJobs": 514,
       "intakeQueued": 30,
       "intakeNew": 41,
-      "intakeManual": 271,
+      "intakeManual": 272,
       "intakeApplied": 0,
-      "applyRate": 66.8,
+      "applyRate": 66.7,
       "rejectionRate": 12.1,
-      "recruiterWork": 363,
-      "engineerWork": 441,
+      "recruiterWork": 364,
+      "engineerWork": 442,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 72
+        "value": 73
       },
       {
         "name": "Rejected",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 262
+        "value": 263
       },
       {
         "name": "LinkedIn",
@@ -148,7 +148,7 @@
       },
       {
         "name": "Bay Area",
-        "value": 152
+        "value": 153
       },
       {
         "name": "Other",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 367
+        "value": 368
       },
       {
         "name": "Full Stack",
@@ -240,7 +240,7 @@
       },
       {
         "score": "9",
-        "count": 125
+        "count": 126
       },
       {
         "score": "10",
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 271
+        "value": 272
       },
       {
         "name": "Tailored",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 330
+        "value": 331
       },
       {
         "name": "LinkedIn",
@@ -506,8 +506,8 @@
       },
       {
         "date": "2026-05-09",
-        "cumulative": 666,
-        "added": 19,
+        "cumulative": 667,
+        "added": 20,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -533,6 +533,12 @@
         "bestFit": 10
       },
       {
+        "company": "Chime",
+        "roles": 7,
+        "avgFit": 9.14,
+        "bestFit": 10
+      },
+      {
         "company": "Attentive",
         "roles": 6,
         "avgFit": 10.0,
@@ -542,12 +548,6 @@
         "company": "Twitch",
         "roles": 6,
         "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Chime",
-        "roles": 6,
-        "avgFit": 9.17,
         "bestFit": 10
       },
       {
@@ -19538,6 +19538,31 @@
       "activityDates": [
         "2026-05-09"
       ]
+    },
+    {
+      "company": "Chime",
+      "role": "Software Engineer, Growth",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/chime/jobs/7913323002",
+      "postingKey": "7913323002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Chime/Software_Engineer_Growth/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Chime/Software_Engineer_Growth/Liam_Van_Resume/Liam_Van_Chime.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-09; tailored growth/product SWE resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
     }
   ],
   "jobIntake": [
@@ -23530,6 +23555,20 @@
       "status": "Tailored",
       "reason": "SWE-family role, early-career signal, NYC preference",
       "trackerPostingKey": "4401827377"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Chime",
+      "role": "Software Engineer, Growth",
+      "location": "San Francisco, CA",
+      "postingKey": "7913323002",
+      "jobUrl": "https://job-boards.greenhouse.io/chime/jobs/7913323002",
+      "discoveredAt": "2026-05-09T11:26:20.192052+00:00",
+      "postedAge": "Search result crawled 3 months ago",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "7913323002"
     },
     {
       "source": "Greenhouse",
@@ -31465,6 +31504,19 @@
       "status": "Manual Apply Needed",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/chime/jobs/8499450002?gh_jid=8499450002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Chime",
+      "role": "Software Engineer, Growth",
+      "postingKey": "7913323002",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/chime/jobs/7913323002",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-09",
@@ -49368,6 +49420,18 @@
           "contacts": []
         },
         {
+          "key": "7913323002",
+          "company": "Chime",
+          "role": "Software Engineer, Growth",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4397683013",
           "company": "Color",
           "role": "New Grad Software Engineer",
@@ -62935,6 +62999,18 @@
           "key": "8499450002",
           "company": "Chime",
           "role": "Software Engineer, MyPay",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7913323002",
+          "company": "Chime",
+          "role": "Software Engineer, Growth",
           "fitScore": 9,
           "status": "Manual Apply Needed",
           "count": 1,

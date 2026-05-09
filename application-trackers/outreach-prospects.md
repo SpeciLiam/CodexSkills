@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 553
+Companies queued: 554
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -374,6 +374,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Chime | Software Engineer, Credit Line | 8219795002 | 9 | Applied | Yes | [Posting](https://boards.greenhouse.io/chime/jobs/8219795002?gh_jid=8219795002) |  |  |  |  |
 | Chime | Software Engineer, Deposits & Insights | 8523547002 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/chime/jobs/8523547002?gh_jid=8523547002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Chime | Software Engineer, MyPay | 8499450002 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/chime/jobs/8499450002?gh_jid=8499450002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
+| Chime | Software Engineer, Growth | 7913323002 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/chime/jobs/7913323002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Chicago Trading Company | Software Engineer - Risk | 4640488005 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/embed/job_app?for=chicagotrading&token=4640488005&gh_src=2ca2e12e5us&b=https://chicagotrading.com/posting?req=4640488005-NewYork-Chicago) |  |  |  |  |
 | Checkr | Software Engineer II | 7296759 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/checkr/jobs/7296759) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | CHAOS Industries | Field Software Engineer | 5082153007 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/chaosindustries/jobs/5082153007) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |

@@ -2,8 +2,8 @@
 
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
-Jobs discovered: 513
-New: 41 | Queued: 30 | Tailored: 124 | Applied: 0 | Manual: 271 | Skipped: 42 | Duplicate: 1 | Expired: 2
+Jobs discovered: 514
+New: 41 | Queued: 30 | Tailored: 124 | Applied: 0 | Manual: 272 | Skipped: 42 | Duplicate: 1 | Expired: 2
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -292,6 +292,7 @@ New: 41 | Queued: 30 | Tailored: 124 | Applied: 0 | Manual: 271 | Skipped: 42 | 
 | LinkedIn | Uber | Software Engineer I | San Francisco, CA | 4403550427 | https://www.linkedin.com/jobs/view/4403550427/ | 2026-05-02T22:16:26.875141+00:00 | 20 hours ago | 10 | Tailored | SWE-family role, early-career signal, SF/Bay Area preference | 4403550427 |
 | Greenhouse | Truveta | Software Engineer - Person Matching | Seattle, WA | 5817190004 | https://job-boards.greenhouse.io/truveta/jobs/5817190004 | 2026-05-02T22:16:26.875141+00:00 | 2 days ago | 10 | Tailored | SWE-family role, early-career signal, preferred/remote US location | 5817190004 |
 | LinkedIn | Confido | New Grad Software Engineer | New York, NY | 4401827377 | https://www.linkedin.com/jobs/view/4401827377/ | 2026-05-02T22:16:26.875141+00:00 | 20 hours ago | 10 | Tailored | SWE-family role, early-career signal, NYC preference | 4401827377 |
+| Greenhouse | Chime | Software Engineer, Growth | San Francisco, CA | 7913323002 | https://job-boards.greenhouse.io/chime/jobs/7913323002 | 2026-05-09T11:26:20.192052+00:00 | Search result crawled 3 months ago | 9 | Manual | Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight | 7913323002 |
 | Greenhouse | CHAOS Industries | Field Software Engineer | San Francisco, California, United States | 5082153007 | https://job-boards.greenhouse.io/chaosindustries/jobs/5082153007 | 2026-05-09T10:04:46.323078+00:00 | crawled yesterday | 9 | Manual | Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight | 5082153007 |
 | Greenhouse | Chime Financial, Inc | Software Engineer, Deposits & Insights | San Francisco, CA, USA | 8523547002 | https://job-boards.greenhouse.io/chime/jobs/8523547002?gh_jid=8523547002 | 2026-05-09T09:04:10.398120+00:00 | Crawled 4 days ago; Greenhouse page marked New | 9 | Manual | Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight | 8523547002 |
 | Greenhouse | Chime Financial, Inc | Software Engineer, MyPay | San Francisco, CA, USA | 8499450002 | https://job-boards.greenhouse.io/chime/jobs/8499450002?gh_jid=8499450002 | 2026-05-09T09:04:10.398120+00:00 | Crawled 3 weeks ago | 9 | Manual | Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight | 8499450002 |
