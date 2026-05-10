@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T13:52:15.834784+00:00",
+  "generatedAt": "2026-05-10T14:04:07.900906+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 727,
+      "total": 743,
       "applied": 445,
-      "unapplied": 282,
-      "active": 536,
+      "unapplied": 298,
+      "active": 552,
       "rejected": 55,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 588,
-      "reachOut": 652,
+      "highFit": 604,
+      "reachOut": 668,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 598,
-      "intakeQueued": 43,
+      "intakeJobs": 601,
+      "intakeQueued": 30,
       "intakeNew": 42,
-      "intakeManual": 327,
+      "intakeManual": 343,
       "intakeApplied": 0,
-      "applyRate": 61.2,
+      "applyRate": 59.9,
       "rejectionRate": 12.4,
-      "recruiterWork": 424,
-      "engineerWork": 505,
+      "recruiterWork": 440,
+      "engineerWork": 521,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -39,12 +39,12 @@
         "value": 383
       },
       {
-        "name": "Archived",
-        "value": 136
+        "name": "Manual Apply Needed",
+        "value": 149
       },
       {
-        "name": "Manual Apply Needed",
-        "value": 133
+        "name": "Archived",
+        "value": 136
       },
       {
         "name": "Rejected",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 308
+        "value": 316
       },
       {
         "name": "LinkedIn",
-        "value": 274
+        "value": 282
       },
       {
         "name": "Ashby",
@@ -144,19 +144,19 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 323
+        "value": 332
       },
       {
         "name": "Bay Area",
-        "value": 167
+        "value": 169
       },
       {
         "name": "Other",
-        "value": 124
+        "value": 127
       },
       {
         "name": "Remote",
-        "value": 84
+        "value": 86
       },
       {
         "name": "Seattle",
@@ -174,27 +174,27 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 400
+        "value": 405
       },
       {
         "name": "Full Stack",
-        "value": 94
+        "value": 95
       },
       {
         "name": "Backend",
-        "value": 80
+        "value": 81
       },
       {
         "name": "Forward Deployed",
-        "value": 53
+        "value": 54
       },
       {
         "name": "AI/ML",
-        "value": 45
+        "value": 50
       },
       {
         "name": "Infra/Platform",
-        "value": 34
+        "value": 36
       },
       {
         "name": "Data",
@@ -202,7 +202,7 @@
       },
       {
         "name": "Frontend",
-        "value": 10
+        "value": 11
       }
     ],
     "fitCounts": [
@@ -236,15 +236,15 @@
       },
       {
         "score": "8",
-        "count": 130
-      },
-      {
-        "score": "9",
         "count": 131
       },
       {
+        "score": "9",
+        "count": 132
+      },
+      {
         "score": "10",
-        "count": 327
+        "count": 341
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 327
+        "value": 343
       },
       {
         "name": "Tailored",
@@ -273,12 +273,12 @@
         "value": 47
       },
       {
-        "name": "Queued",
-        "value": 43
-      },
-      {
         "name": "New",
         "value": 42
+      },
+      {
+        "name": "Queued",
+        "value": 30
       },
       {
         "name": "Duplicate",
@@ -296,11 +296,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 381
+        "value": 383
       },
       {
         "name": "LinkedIn",
-        "value": 217
+        "value": 218
       }
     ],
     "timeline": [
@@ -514,8 +514,8 @@
       },
       {
         "date": "2026-05-10",
-        "cumulative": 727,
-        "added": 22,
+        "cumulative": 743,
+        "added": 38,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -547,6 +547,12 @@
         "bestFit": 10
       },
       {
+        "company": "Attentive",
+        "roles": 7,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "Twitch",
         "roles": 7,
         "avgFit": 10.0,
@@ -556,12 +562,6 @@
         "company": "Glean",
         "roles": 7,
         "avgFit": 9.29,
-        "bestFit": 10
-      },
-      {
-        "company": "Attentive",
-        "roles": 6,
-        "avgFit": 10.0,
         "bestFit": 10
       },
       {
@@ -631,6 +631,12 @@
         "bestFit": 10
       },
       {
+        "company": "CoreWeave",
+        "roles": 4,
+        "avgFit": 9.75,
+        "bestFit": 10
+      },
+      {
         "company": "Loop",
         "roles": 4,
         "avgFit": 9.5,
@@ -656,12 +662,6 @@
       },
       {
         "company": "Giga",
-        "roles": 3,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Fanatics Betting & Gaming",
         "roles": 3,
         "avgFit": 10.0,
         "bestFit": 10
@@ -21093,9 +21093,469 @@
       "activityDates": [
         "2026-05-10"
       ]
+    },
+    {
+      "company": "S&P Global",
+      "role": "Software Engineer I, Development",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4404270607/",
+      "postingKey": "4404270607",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/S&P Global/Software_Engineer_I_Development/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/S&P Global/Software_Engineer_I_Development/Liam_Van_Resume/Liam_Van_S&P_Global.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized NYC early-career software engineering, AI/data product systems, backend services, API validation, cloud reliability, and testing. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Moment",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/moment/jobs/4597124007",
+      "postingKey": "4597124007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Moment/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Moment/Software_Engineer/Liam_Van_Resume/Liam_Van_Moment.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized NYC product engineering, full-stack delivery, React and TypeScript product surfaces, backend APIs, testing, and production reliability. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Microsoft",
+      "role": "Software Engineer II - AI Red Team",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4403614098/",
+      "postingKey": "4403614098",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Microsoft/Software_Engineer_II_AI_Red_Team/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Microsoft/Software_Engineer_II_AI_Red_Team/Liam_Van_Resume/Liam_Van_Microsoft.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized NYC AI security engineering, cloud service validation, backend APIs, reliability, test automation, and production incident response. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Disney Entertainment and ESPN Product & Technology",
+      "role": "Software Engineer II",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4356696707/",
+      "postingKey": "4356696707",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Disney Entertainment and ESPN Product & Technology/Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Disney Entertainment and ESPN Product & Technology/Software_Engineer_II/Liam_Van_Resume/Liam_Van_Disney_Entertainment_and_ESPN_Product_&_Technology.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized NYC media product engineering, backend APIs, distributed service validation, cloud integrations, testing, and production reliability. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "DISCO",
+      "role": "AI Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4409297262/",
+      "postingKey": "4409297262",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DISCO/AI_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DISCO/AI_Software_Engineer/Liam_Van_Resume/Liam_Van_DISCO.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized NYC AI software engineering, LLM-assisted product workflows, backend APIs, data retrieval, testing, and reliable cloud delivery. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "CVector Energy",
+      "role": "Software Engineer, Energy AI",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-energy-ai-at-cvector-energy-4390530770",
+      "postingKey": "software-engineer-energy-ai-at-cvector-energy-4390530770",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CVector Energy/Software_Engineer_Energy_AI/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CVector Energy/Software_Engineer_Energy_AI/Liam_Van_Resume/Liam_Van_CVector_Energy.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized NYC energy AI product engineering, backend services, data workflows, cloud validation, React/NestJS surfaces, and production reliability. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "CoreWeave",
+      "role": "Software Engineer, Internal Tools",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4398679665/",
+      "postingKey": "4398679665",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CoreWeave/Software_Engineer_Internal_Tools/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CoreWeave/Software_Engineer_Internal_Tools/Liam_Van_Resume/Liam_Van_CoreWeave.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized NYC internal tooling, platform workflows, cloud integrations, developer productivity, testing automation, and operational reliability. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Civis Analytics",
+      "role": "Software Engineer, AI Platform",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/civisanalytics/jobs/6690898",
+      "postingKey": "6690898",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Civis Analytics/Software_Engineer_AI_Platform/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Civis Analytics/Software_Engineer_AI_Platform/Liam_Van_Resume/Liam_Van_Civis_Analytics.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized remote AI platform engineering, backend APIs, data workflows, cloud systems, testing, and reliable mission-driven product delivery. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Brex",
+      "role": "Software Engineer, Frontend",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4410462416/",
+      "postingKey": "4410462416",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Brex/Software_Engineer_Frontend/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Brex/Software_Engineer_Frontend/Liam_Van_Resume/Liam_Van_Brex.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized NYC fintech frontend engineering, React and TypeScript product surfaces, backend API collaboration, testing, accessibility, and production reliability. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Attentive",
+      "role": "Software Engineer II, Identity Infrastructure",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/attentive/jobs/7866395002",
+      "postingKey": "7866395002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Attentive/Software_Engineer_II_Identity_Infrastructure/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Attentive/Software_Engineer_II_Identity_Infrastructure/Liam_Van_Resume/Liam_Van_Attentive.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized identity infrastructure, platform APIs, cloud reliability, backend service validation, testing automation, and production operations. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Affirm",
+      "role": "Software Engineer I, Repayments Platform",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "Remote US",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/affirm/jobs/6697653003",
+      "postingKey": "6697653003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Affirm/Software_Engineer_I_Repayments_Platform/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Affirm/Software_Engineer_I_Repayments_Platform/Liam_Van_Resume/Liam_Van_Affirm.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized early-career fintech backend engineering, repayments platform APIs, distributed workflows, cloud validation, testing, and reliability. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Vercel",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "San Francisco, CA, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5653673004",
+      "postingKey": "5653673004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Vercel/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Vercel/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Vercel.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed product engineering, customer-facing delivery, React/TypeScript surfaces, backend integrations, and reliable cloud workflows. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Speechmatics",
+      "role": "Machine Learning Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/speechmatics/jobs/7724171002",
+      "postingKey": "7724171002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Speechmatics/Machine_Learning_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Speechmatics/Machine_Learning_Software_Engineer/Liam_Van_Resume/Liam_Van_Speechmatics.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized machine-learning-adjacent software engineering, backend services, AI product workflows, cloud validation, testing, and production reliability. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Censys",
+      "role": "Software Engineer (Backend), SaaS Platform",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "Remote (US/Canada)",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/censys/jobs/8538086002",
+      "postingKey": "8538086002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Censys/Software_Engineer_Backend_SaaS_Platform/Liam_Van_Resume_3",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Censys/Software_Engineer_Backend_SaaS_Platform/Liam_Van_Resume_3/Liam_Van_Censys.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 13:53Z; tailored backend/platform resume rendered and verified one page; emphasized backend services, robust APIs, GCP/cloud infrastructure, database access patterns, CI/CD, monitoring, and operational ownership. Manual apply needed: browser application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live Greenhouse form also asks 'Did AI complete this application?' which needs Liam review.; Hourly intake 2026-05-10 06:54 PT; tailored SWE resume rendered and verified one page; emphasized backend SaaS platform engineering, Python and Java services, APIs, data workflows, cloud reliability, testing, and distributed systems. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Forge Global",
+      "role": "Software Engineer II of Marketplace Middleware Engineering",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/forgeglobal/jobs/5971239004",
+      "postingKey": "5971239004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Forge Global/Software_Engineer_II_of_Marketplace_Middleware_Engineering/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Forge Global/Software_Engineer_II_of_Marketplace_Middleware_Engineering/Liam_Van_Resume/Liam_Van_Forge_Global.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 06:54 PT; tailored SWE resume rendered and verified one page; emphasized marketplace middleware engineering, backend services, SQL-backed workflows, financial platform reliability, testing, and production delivery. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "CVector",
+      "role": "Full Stack Software Engineer I",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/full-stack-software-engineer-i-at-cvector-4368241276",
+      "postingKey": "full-stack-software-engineer-i-at-cvector-4368241276",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CVector/Full_Stack_Software_Engineer_I/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CVector/Full_Stack_Software_Engineer_I/Liam_Van_Resume_2/Liam_Van_CVector.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 06:54 PT; tailored SWE resume rendered and verified one page; emphasized NYC early-career full-stack engineering, React and TypeScript product surfaces, backend APIs, data-heavy workflows, testing, and production reliability. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; LinkedIn application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Hourly intake 2026-05-10 06:54 PT; tailored SWE resume rendered and verified one page; emphasized NYC early-career full-stack engineering, React and TypeScript product surfaces, backend APIs, cloud workflows, testing, and reliable product delivery. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10",
+        "2026-05-10",
+        "2026-05-10"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Forge Global",
+      "role": "Software Engineer II of Marketplace Middleware Engineering",
+      "location": "San Francisco, California, United States",
+      "postingKey": "5971239004",
+      "jobUrl": "https://job-boards.greenhouse.io/forgeglobal/jobs/5971239004",
+      "discoveredAt": "2026-05-10T13:53:56.090315+00:00",
+      "postedAge": "public Greenhouse search result captured 2026-05-10; crawled 2 days ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "5971239004"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "CVector",
+      "role": "Full Stack Software Engineer I",
+      "location": "New York, NY",
+      "postingKey": "4368241276",
+      "jobUrl": "https://www.linkedin.com/jobs/view/full-stack-software-engineer-i-at-cvector-4368241276",
+      "discoveredAt": "2026-05-10T13:53:56.090315+00:00",
+      "postedAge": "public LinkedIn search result captured 2026-05-10; listed as 2 weeks ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4368241276"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Censys",
+      "role": "Software Engineer (Backend), SaaS Platform",
+      "location": "Remote (US/Canada)",
+      "postingKey": "8538086002",
+      "jobUrl": "https://job-boards.greenhouse.io/censys/jobs/8538086002",
+      "discoveredAt": "2026-05-10T13:52:40.900616+00:00",
+      "postedAge": "Greenhouse public result captured 2026-05-10; page crawled yesterday",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live Greenhouse form asks 'Did AI complete this application?' and needs Liam review",
+      "trackerPostingKey": "8538086002"
+    },
     {
       "source": "LinkedIn",
       "company": "Warner Bros. Discovery",
@@ -21120,9 +21580,9 @@
       "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
       "postedAge": "public LinkedIn search result captured 2026-05-10; listed about 1 day old",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4404270607"
     },
     {
       "source": "Greenhouse",
@@ -21134,9 +21594,9 @@
       "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
       "postedAge": "public Greenhouse search result captured 2026-05-10; exact job URL visible",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4597124007"
     },
     {
       "source": "LinkedIn",
@@ -21148,9 +21608,9 @@
       "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
       "postedAge": "public LinkedIn search result captured 2026-05-10; listed about 1 day old",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4403614098"
     },
     {
       "source": "LinkedIn",
@@ -21162,9 +21622,9 @@
       "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
       "postedAge": "public LinkedIn search result captured 2026-05-10; listed about 4 hours old",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4356696707"
     },
     {
       "source": "LinkedIn",
@@ -21176,9 +21636,9 @@
       "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
       "postedAge": "public LinkedIn search result captured 2026-05-10; exact job view visible",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4409297262"
     },
     {
       "source": "LinkedIn",
@@ -21190,9 +21650,9 @@
       "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
       "postedAge": "public LinkedIn search result captured 2026-05-10; exact job view visible",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4390530770"
     },
     {
       "source": "LinkedIn",
@@ -21204,9 +21664,9 @@
       "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
       "postedAge": "public LinkedIn search result captured 2026-05-10; listed about 1 day old",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4398679665"
     },
     {
       "source": "Greenhouse",
@@ -21218,9 +21678,9 @@
       "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
       "postedAge": "public Greenhouse search result captured 2026-05-10; exact job URL visible",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, preferred/remote US location",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "6690898"
     },
     {
       "source": "LinkedIn",
@@ -21232,9 +21692,9 @@
       "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
       "postedAge": "public LinkedIn search result captured 2026-05-10; listed about 2 days old",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4410462416"
     },
     {
       "source": "Greenhouse",
@@ -21246,9 +21706,9 @@
       "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
       "postedAge": "public Greenhouse search result captured 2026-05-10; exact job URL visible",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, preferred/remote US location",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "7866395002"
     },
     {
       "source": "Greenhouse",
@@ -21260,9 +21720,9 @@
       "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
       "postedAge": "public Greenhouse search result captured 2026-05-10; exact job URL visible",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, preferred/remote US location",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "6697653003"
     },
     {
       "source": "LinkedIn",
@@ -26062,9 +26522,9 @@
       "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
       "postedAge": "public Greenhouse search result captured 2026-05-10; exact job URL visible",
       "fitScore": 9,
-      "status": "Queued",
-      "reason": "SWE-family role, SF/Bay Area preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "5653673004"
     },
     {
       "source": "Greenhouse",
@@ -27154,9 +27614,9 @@
       "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
       "postedAge": "public Greenhouse search result captured 2026-05-10; exact job URL visible",
       "fitScore": 8,
-      "status": "Queued",
-      "reason": "SWE-family role, preferred/remote US location",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "7724171002"
     },
     {
       "source": "Greenhouse",
@@ -52844,6 +53304,18 @@
           "contacts": []
         },
         {
+          "key": "6697653003",
+          "company": "Affirm",
+          "role": "Software Engineer I, Repayments Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7949946002",
           "company": "Amplitude",
           "role": "Software Engineer II, Web",
@@ -53012,6 +53484,18 @@
           "contacts": []
         },
         {
+          "key": "7866395002",
+          "company": "Attentive",
+          "role": "Software Engineer II, Identity Infrastructure",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "a4172515-0353-47ec-9c71-631a294aa137",
           "company": "Automat",
           "role": "Software Engineer (Junior/Intermediate)",
@@ -53096,6 +53580,18 @@
           "contacts": []
         },
         {
+          "key": "4410462416",
+          "company": "Brex",
+          "role": "Software Engineer, Frontend",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4687774007",
           "company": "CHAOS Industries",
           "role": "Software Engineer, Backend & Data",
@@ -53113,6 +53609,30 @@
           "role": "Software Engineer, Infrastructure",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "full-stack-software-engineer-i-at-cvector-4368241276",
+          "company": "CVector",
+          "role": "Full Stack Software Engineer I",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-energy-ai-at-cvector-energy-4390530770",
+          "company": "CVector Energy",
+          "role": "Software Engineer, Energy AI",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -53147,6 +53667,18 @@
           "key": "8500307002",
           "company": "Censys",
           "role": "Software Engineer (Backend), Core Services",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8538086002",
+          "company": "Censys",
+          "role": "Software Engineer (Backend), SaaS Platform",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -53221,6 +53753,18 @@
           "role": "Junior Generative AI Application Developer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "6690898",
+          "company": "Civis Analytics",
+          "role": "Software Engineer, AI Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -53324,9 +53868,33 @@
           "contacts": []
         },
         {
+          "key": "4398679665",
+          "company": "CoreWeave",
+          "role": "Software Engineer, Internal Tools",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-at-current-4401782875",
           "company": "Current",
           "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4409297262",
+          "company": "DISCO",
+          "role": "AI Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -53351,6 +53919,18 @@
           "key": "5620556004",
           "company": "Dex",
           "role": "Product Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4356696707",
+          "company": "Disney Entertainment and ESPN Product & Technology",
+          "role": "Software Engineer II",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -53449,6 +54029,18 @@
           "role": "Software Engineer II, Marketplace Middleware Engineering",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5971239004",
+          "company": "Forge Global",
+          "role": "Software Engineer II of Marketplace Middleware Engineering",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -53792,6 +54384,18 @@
           "contacts": []
         },
         {
+          "key": "4403614098",
+          "company": "Microsoft",
+          "role": "Software Engineer II - AI Red Team",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-ii-at-microsoft-ai-4403126655",
           "company": "Microsoft AI",
           "role": "Software Engineer II",
@@ -53831,6 +54435,18 @@
           "key": "4785763008",
           "company": "Mochi Health",
           "role": "Fullstack Software Engineer, Early Career",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4597124007",
+          "company": "Moment",
+          "role": "Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -54251,6 +54867,18 @@
           "key": "software-engineer-ii-at-s-p-global-4402306070",
           "company": "S&P Global",
           "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4404270607",
+          "company": "S&P Global",
+          "role": "Software Engineer I, Development",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -55676,6 +56304,18 @@
           "contacts": []
         },
         {
+          "key": "5653673004",
+          "company": "Vercel",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4128624007",
           "company": "Verkada",
           "role": "Software Engineer - Computer Vision",
@@ -56833,6 +57473,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7724171002",
+          "company": "Speechmatics",
+          "role": "Machine Learning Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -66840,6 +67492,18 @@
           "contacts": []
         },
         {
+          "key": "6697653003",
+          "company": "Affirm",
+          "role": "Software Engineer I, Repayments Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7949946002-growth-platform",
           "company": "Amplitude",
           "role": "Software Engineer I, Growth Platform",
@@ -67056,6 +67720,18 @@
           "contacts": []
         },
         {
+          "key": "7866395002",
+          "company": "Attentive",
+          "role": "Software Engineer II, Identity Infrastructure",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "0fc22fe4-6b8c-4c93-9b3f-fa3738054601",
           "company": "Avoca",
           "role": "Forward Deployed Engineer",
@@ -67128,6 +67804,18 @@
           "contacts": []
         },
         {
+          "key": "4410462416",
+          "company": "Brex",
+          "role": "Software Engineer, Frontend",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4687774007",
           "company": "CHAOS Industries",
           "role": "Software Engineer, Backend & Data",
@@ -67145,6 +67833,30 @@
           "role": "Software Engineer, Infrastructure",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "full-stack-software-engineer-i-at-cvector-4368241276",
+          "company": "CVector",
+          "role": "Full Stack Software Engineer I",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-energy-ai-at-cvector-energy-4390530770",
+          "company": "CVector Energy",
+          "role": "Software Engineer, Energy AI",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -67179,6 +67891,18 @@
           "key": "8500307002",
           "company": "Censys",
           "role": "Software Engineer (Backend), Core Services",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8538086002",
+          "company": "Censys",
+          "role": "Software Engineer (Backend), SaaS Platform",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -67265,6 +67989,18 @@
           "role": "Junior Generative AI Application Developer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "6690898",
+          "company": "Civis Analytics",
+          "role": "Software Engineer, AI Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -67380,9 +68116,33 @@
           "contacts": []
         },
         {
+          "key": "4398679665",
+          "company": "CoreWeave",
+          "role": "Software Engineer, Internal Tools",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-at-current-4401782875",
           "company": "Current",
           "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4409297262",
+          "company": "DISCO",
+          "role": "AI Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -67407,6 +68167,18 @@
           "key": "5620556004",
           "company": "Dex",
           "role": "Product Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4356696707",
+          "company": "Disney Entertainment and ESPN Product & Technology",
+          "role": "Software Engineer II",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -67505,6 +68277,18 @@
           "role": "Software Engineer II, Marketplace Middleware Engineering",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5971239004",
+          "company": "Forge Global",
+          "role": "Software Engineer II of Marketplace Middleware Engineering",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -67848,6 +68632,18 @@
           "contacts": []
         },
         {
+          "key": "4403614098",
+          "company": "Microsoft",
+          "role": "Software Engineer II - AI Red Team",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "linkedin-public-microsoft-ai-machine-learning-software-engineer-ny-2026-05-06",
           "company": "Microsoft AI",
           "role": "Machine Learning Software Engineer",
@@ -67911,6 +68707,18 @@
           "key": "4785763008",
           "company": "Mochi Health",
           "role": "Fullstack Software Engineer, Early Career",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4597124007",
+          "company": "Moment",
+          "role": "Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -68415,6 +69223,18 @@
           "key": "software-engineer-ii-at-s-p-global-4402306070",
           "company": "S&P Global",
           "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4404270607",
+          "company": "S&P Global",
+          "role": "Software Engineer I, Development",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -69804,6 +70624,18 @@
           "contacts": []
         },
         {
+          "key": "5653673004",
+          "company": "Vercel",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4128624007",
           "company": "Verkada",
           "role": "Software Engineer - Computer Vision",
@@ -70529,6 +71361,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7724171002",
+          "company": "Speechmatics",
+          "role": "Machine Learning Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
