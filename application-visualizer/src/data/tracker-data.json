@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T02:20:21.837379+00:00",
+  "generatedAt": "2026-05-10T03:19:46.198835+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 693,
+      "total": 696,
       "applied": 445,
-      "unapplied": 248,
-      "active": 503,
+      "unapplied": 251,
+      "active": 506,
       "rejected": 54,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 554,
-      "reachOut": 618,
+      "highFit": 557,
+      "reachOut": 621,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 544,
+      "intakeJobs": 547,
       "intakeQueued": 30,
       "intakeNew": 42,
-      "intakeManual": 299,
+      "intakeManual": 302,
       "intakeApplied": 0,
-      "applyRate": 64.2,
+      "applyRate": 63.9,
       "rejectionRate": 12.1,
-      "recruiterWork": 390,
-      "engineerWork": 471,
+      "recruiterWork": 393,
+      "engineerWork": 474,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 99
+        "value": 102
       },
       {
         "name": "Rejected",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 282
+        "value": 285
       },
       {
         "name": "LinkedIn",
@@ -144,11 +144,11 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 301
+        "value": 302
       },
       {
         "name": "Bay Area",
-        "value": 161
+        "value": 162
       },
       {
         "name": "Other",
@@ -156,7 +156,7 @@
       },
       {
         "name": "Remote",
-        "value": 79
+        "value": 80
       },
       {
         "name": "Seattle",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 380
+        "value": 381
       },
       {
         "name": "Full Stack",
@@ -186,11 +186,11 @@
       },
       {
         "name": "Forward Deployed",
-        "value": 46
+        "value": 47
       },
       {
         "name": "AI/ML",
-        "value": 41
+        "value": 42
       },
       {
         "name": "Infra/Platform",
@@ -236,15 +236,15 @@
       },
       {
         "score": "8",
-        "count": 129
+        "count": 130
       },
       {
         "score": "9",
-        "count": 129
+        "count": 130
       },
       {
         "score": "10",
-        "count": 296
+        "count": 297
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 299
+        "value": 302
       },
       {
         "name": "Tailored",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 352
+        "value": 355
       },
       {
         "name": "LinkedIn",
@@ -506,8 +506,8 @@
       },
       {
         "date": "2026-05-09",
-        "cumulative": 693,
-        "added": 46,
+        "cumulative": 696,
+        "added": 49,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -20218,9 +20218,98 @@
         "2026-05-09",
         "2026-05-09"
       ]
+    },
+    {
+      "company": "Swarm Aero",
+      "role": "Forward Deployed Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "Remote",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/swarmaero/jobs/5007039007",
+      "postingKey": "5007039007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Swarm Aero/Forward_Deployed_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Swarm Aero/Forward_Deployed_Software_Engineer/Liam_Van_Resume/Liam_Van_Swarm_Aero.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Ridgeline",
+      "role": "Software Engineer II - Site Reliability Engineering",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/ridgeline/jobs/7029807003?gh_jid=7029807003",
+      "postingKey": "7029807003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ridgeline/Software_Engineer_II_Site_Reliability_Engineering/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ridgeline/Software_Engineer_II_Site_Reliability_Engineering/Liam_Van_Resume/Liam_Van_Ridgeline.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Speechify",
+      "role": "Software Engineer, AI Studio - San Francisco, USA",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "San Francisco, USA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/speechify/jobs/5615649004",
+      "postingKey": "5615649004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Speechify/Software_Engineer_AI_Studio_San_Francisco_USA/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Speechify/Software_Engineer_AI_Studio_San_Francisco_USA/Liam_Van_Resume/Liam_Van_Speechify.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Ridgeline",
+      "role": "Software Engineer II - Site Reliability Engineering",
+      "location": "New York, NY",
+      "postingKey": "7029807003",
+      "jobUrl": "https://job-boards.greenhouse.io/ridgeline/jobs/7029807003?gh_jid=7029807003",
+      "discoveredAt": "2026-05-10T03:13:20.212501+00:00",
+      "postedAge": "Crawled 6 months ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "7029807003"
+    },
     {
       "source": "Greenhouse",
       "company": "Chime Financial, Inc",
@@ -24507,6 +24596,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Speechify",
+      "role": "Software Engineer, AI Studio - San Francisco, USA",
+      "location": "San Francisco, USA",
+      "postingKey": "5615649004",
+      "jobUrl": "https://job-boards.greenhouse.io/speechify/jobs/5615649004",
+      "discoveredAt": "2026-05-10T03:13:20.212501+00:00",
+      "postedAge": "Crawled 7 months ago",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "5615649004"
+    },
+    {
+      "source": "Greenhouse",
       "company": "Chime Financial, Inc",
       "role": "Software Engineer, Instant Loans",
       "location": "San Francisco, CA, USA",
@@ -25554,6 +25657,20 @@
       "status": "Tailored",
       "reason": "SWE-family role, SF/Bay Area preference",
       "trackerPostingKey": "5592469004"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Swarm Aero",
+      "role": "Forward Deployed Software Engineer",
+      "location": "Remote",
+      "postingKey": "5007039007",
+      "jobUrl": "https://job-boards.greenhouse.io/swarmaero/jobs/5007039007",
+      "discoveredAt": "2026-05-10T03:13:20.212501+00:00",
+      "postedAge": "Crawled 2 months ago",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "5007039007"
     },
     {
       "source": "Greenhouse",
@@ -28776,6 +28893,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Ridgeline",
+      "role": "Software Engineer II - Site Reliability Engineering",
+      "postingKey": "7029807003",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/ridgeline/jobs/7029807003?gh_jid=7029807003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "ResortPass",
       "role": "Software Engineer - Full Stack",
       "postingKey": "5059472007",
@@ -31857,6 +31987,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Speechify",
+      "role": "Software Engineer, AI Studio - San Francisco, USA",
+      "postingKey": "5615649004",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/speechify/jobs/5615649004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Snyk",
       "role": "Associate Product Engineer",
       "postingKey": "4353111076",
@@ -33242,6 +33385,19 @@
       "status": "Manual Apply Needed",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/tailscale/jobs/4616090005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Swarm Aero",
+      "role": "Forward Deployed Software Engineer",
+      "postingKey": "5007039007",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/swarmaero/jobs/5007039007",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-09",
@@ -51911,6 +52067,18 @@
           "contacts": []
         },
         {
+          "key": "7029807003",
+          "company": "Ridgeline",
+          "role": "Software Engineer II - Site Reliability Engineering",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4402165922",
           "company": "Rokt",
           "role": "Junior Software Engineer",
@@ -53068,6 +53236,18 @@
           "role": "Associate Product Engineer",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5615649004",
+          "company": "Speechify",
+          "role": "Software Engineer, AI Studio - San Francisco, USA",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -54424,6 +54604,18 @@
           "role": "Software Engineer, Full Stack",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5007039007",
+          "company": "Swarm Aero",
+          "role": "Forward Deployed Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -65679,6 +65871,18 @@
           "contacts": []
         },
         {
+          "key": "7029807003",
+          "company": "Ridgeline",
+          "role": "Software Engineer II - Site Reliability Engineering",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-ii-at-s-p-global-4402306070",
           "company": "S&P Global",
           "role": "Software Engineer II",
@@ -66795,6 +66999,18 @@
           "contacts": []
         },
         {
+          "key": "5615649004",
+          "company": "Speechify",
+          "role": "Software Engineer, AI Studio - San Francisco, USA",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4401537802",
           "company": "Spot & Tango",
           "role": "Jr Software Engineer",
@@ -67674,6 +67890,18 @@
           "key": "5016295008",
           "company": "Starburst",
           "role": "Forward Deployed Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5007039007",
+          "company": "Swarm Aero",
+          "role": "Forward Deployed Software Engineer",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
