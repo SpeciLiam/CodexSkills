@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T10:23:09.130195+00:00",
+  "generatedAt": "2026-05-10T10:49:47.911870+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 719,
+      "total": 721,
       "applied": 445,
-      "unapplied": 274,
-      "active": 528,
+      "unapplied": 276,
+      "active": 530,
       "rejected": 55,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 580,
-      "reachOut": 644,
+      "highFit": 582,
+      "reachOut": 646,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
       "intakeJobs": 578,
-      "intakeQueued": 34,
+      "intakeQueued": 32,
       "intakeNew": 42,
-      "intakeManual": 315,
+      "intakeManual": 317,
       "intakeApplied": 0,
-      "applyRate": 61.9,
+      "applyRate": 61.7,
       "rejectionRate": 12.4,
-      "recruiterWork": 416,
-      "engineerWork": 497,
+      "recruiterWork": 418,
+      "engineerWork": 499,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 122
+        "value": 124
       },
       {
         "name": "Rejected",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 302
+        "value": 303
       },
       {
         "name": "LinkedIn",
-        "value": 272
+        "value": 273
       },
       {
         "name": "Ashby",
@@ -144,7 +144,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 317
+        "value": 318
       },
       {
         "name": "Bay Area",
@@ -152,7 +152,7 @@
       },
       {
         "name": "Other",
-        "value": 123
+        "value": 124
       },
       {
         "name": "Remote",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 395
+        "value": 397
       },
       {
         "name": "Full Stack",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 319
+        "count": 321
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 315
+        "value": 317
       },
       {
         "name": "Tailored",
@@ -278,7 +278,7 @@
       },
       {
         "name": "Queued",
-        "value": 34
+        "value": 32
       },
       {
         "name": "Duplicate",
@@ -514,8 +514,8 @@
       },
       {
         "date": "2026-05-10",
-        "cumulative": 719,
-        "added": 14,
+        "cumulative": 721,
+        "added": 16,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -20887,6 +20887,56 @@
         "2026-05-10",
         "2026-05-10"
       ]
+    },
+    {
+      "company": "Priceline",
+      "role": "Software Engineer I",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-i-at-priceline-4374057896",
+      "postingKey": "software-engineer-i-at-priceline-4374057896",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Priceline/Software_Engineer_I/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Priceline/Software_Engineer_I/Liam_Van_Resume/Liam_Van_Priceline.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 follow-on capture; resume rendered and verified one page; used early-career SWE I framing for travel marketplace product/platform engineering. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "mthree",
+      "role": "Junior Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/mthree/jobs/4374589006",
+      "postingKey": "4374589006",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/mthree/Junior_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/mthree/Junior_Software_Engineer/Liam_Van_Resume/Liam_Van_mthree.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 follow-on capture; resume rendered and verified one page; used junior early-career SWE framing for broad software engineering readiness. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10"
+      ]
     }
   ],
   "jobIntake": [
@@ -20914,9 +20964,9 @@
       "discoveredAt": "2026-05-10T09:04:00.989817+00:00",
       "postedAge": "public LinkedIn result recaptured 2026-05-10",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4374057896"
     },
     {
       "source": "Greenhouse",
@@ -20928,9 +20978,9 @@
       "discoveredAt": "2026-05-10T09:04:00.989817+00:00",
       "postedAge": "public Greenhouse result; captured 2026-05-10",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, preferred/remote US location",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4374589006"
     },
     {
       "source": "Greenhouse",
@@ -30168,6 +30218,19 @@
       "notes": ""
     },
     {
+      "company": "Priceline",
+      "role": "Software Engineer I",
+      "postingKey": "software-engineer-i-at-priceline-4374057896",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-i-at-priceline-4374057896",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "PointOne",
       "role": "New Grad Software Engineer",
       "postingKey": "new-grad-software-engineer-at-pointone-4400038260",
@@ -30708,6 +30771,19 @@
       "status": "Manual Apply Needed",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/narmi/jobs/5237248004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "mthree",
+      "role": "Junior Software Engineer",
+      "postingKey": "4374589006",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/mthree/jobs/4374589006",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
@@ -53490,6 +53566,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-i-at-priceline-4374057896",
+          "company": "Priceline",
+          "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5609233004",
           "company": "Ramp",
           "role": "Software Engineer - New Grad",
@@ -54083,6 +54171,18 @@
           "role": "Full Stack Engineer, Ruby and React - Assistant Vice President",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4374589006",
+          "company": "mthree",
+          "role": "Junior Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -67558,6 +67658,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-i-at-priceline-4374057896",
+          "company": "Priceline",
+          "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5609233004",
           "company": "Ramp",
           "role": "Software Engineer - New Grad",
@@ -68259,6 +68371,18 @@
           "role": "Full Stack Engineer, Ruby and React - Assistant Vice President",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4374589006",
+          "company": "mthree",
+          "role": "Junior Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
