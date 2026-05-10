@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T10:49:47.911870+00:00",
+  "generatedAt": "2026-05-10T10:51:13.646426+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 721,
+      "total": 723,
       "applied": 445,
-      "unapplied": 276,
-      "active": 530,
+      "unapplied": 278,
+      "active": 532,
       "rejected": 55,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 582,
-      "reachOut": 646,
+      "highFit": 584,
+      "reachOut": 648,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 578,
-      "intakeQueued": 32,
+      "intakeJobs": 579,
+      "intakeQueued": 31,
       "intakeNew": 42,
-      "intakeManual": 317,
+      "intakeManual": 319,
       "intakeApplied": 0,
-      "applyRate": 61.7,
+      "applyRate": 61.5,
       "rejectionRate": 12.4,
-      "recruiterWork": 418,
-      "engineerWork": 499,
+      "recruiterWork": 420,
+      "engineerWork": 501,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 124
+        "value": 129
       },
       {
         "name": "Rejected",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 17
+        "value": 14
       },
       {
         "name": "Online Assessment",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 303
+        "value": 305
       },
       {
         "name": "LinkedIn",
@@ -144,7 +144,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 318
+        "value": 320
       },
       {
         "name": "Bay Area",
@@ -178,7 +178,7 @@
       },
       {
         "name": "Full Stack",
-        "value": 92
+        "value": 93
       },
       {
         "name": "Backend",
@@ -186,7 +186,7 @@
       },
       {
         "name": "Forward Deployed",
-        "value": 52
+        "value": 53
       },
       {
         "name": "AI/ML",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 321
+        "count": 323
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 317
+        "value": 319
       },
       {
         "name": "Tailored",
@@ -278,7 +278,7 @@
       },
       {
         "name": "Queued",
-        "value": 32
+        "value": 31
       },
       {
         "name": "Duplicate",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 372
+        "value": 373
       },
       {
         "name": "LinkedIn",
@@ -514,8 +514,8 @@
       },
       {
         "date": "2026-05-10",
-        "cumulative": 721,
-        "added": 16,
+        "cumulative": 723,
+        "added": 18,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -577,6 +577,12 @@
         "bestFit": 10
       },
       {
+        "company": "Clear Street",
+        "roles": 5,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "Intuit",
         "roles": 5,
         "avgFit": 9.6,
@@ -614,12 +620,6 @@
       },
       {
         "company": "Flex",
-        "roles": 4,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Clear Street",
         "roles": 4,
         "avgFit": 10.0,
         "bestFit": 10
@@ -20791,7 +20791,7 @@
       "company": "Skild AI",
       "role": "Software Engineer, AI Training and Infrastructure",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -20806,9 +20806,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 08:34Z; tailored SWE resume rendered and verified one page; emphasized AI training infrastructure, distributed pipelines, model evaluation, cloud training systems, Python/C++ engineering, testing, and production reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-10 08:34Z; tailored SWE resume rendered and verified one page; emphasized AI training infrastructure, distributed pipelines, model evaluation, cloud training systems, Python/C++ engineering, testing, and production reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; tailored resume rendered and verified one page 2026-05-10",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-10",
         "2026-05-10"
       ]
     },
@@ -20816,7 +20817,7 @@
       "company": "Glean",
       "role": "Software Engineer, AI Infrastructure",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -20831,9 +20832,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 08:34Z; tailored SWE resume rendered and verified one page; emphasized AI infrastructure engineering, LLM serving and orchestration, data pipelines, cloud deployments, backend services, testing, and reliable customer-facing systems. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-10 08:34Z; tailored SWE resume rendered and verified one page; emphasized AI infrastructure engineering, LLM serving and orchestration, data pipelines, cloud deployments, backend services, testing, and reliable customer-facing systems. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; tailored resume rendered and verified one page 2026-05-10",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-10",
         "2026-05-10"
       ]
     },
@@ -20841,7 +20843,7 @@
       "company": "Skild AI",
       "role": "Software Engineer, AI Inference",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -20856,9 +20858,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 08:34Z; tailored SWE resume rendered and verified one page; emphasized AI inference systems, production model deployment, scalable software, Python/C++ infrastructure, testing, and robotics-adjacent reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-10 08:34Z; tailored SWE resume rendered and verified one page; emphasized AI inference systems, production model deployment, scalable software, Python/C++ infrastructure, testing, and robotics-adjacent reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; tailored resume rendered and verified one page 2026-05-10",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-10",
         "2026-05-10"
       ]
     },
@@ -20937,9 +20940,75 @@
       "activityDates": [
         "2026-05-10"
       ]
+    },
+    {
+      "company": "HackerRank",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/hackerrank/jobs/7482134",
+      "postingKey": "7482134",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/HackerRank/Forward_Deployed_Engineer/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/HackerRank/Forward_Deployed_Engineer/Liam_Van_Resume_2/Liam_Van_HackerRank.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 08:31Z; tailored SWE/FDE resume rendered and verified one page; emphasized forward-deployed customer engineering, API integration debugging, AI-assisted assessment tooling, reliability validation, and production-readiness.; Hourly intake 2026-05-10 follow-on Greenhouse capture; resume rendered and verified one page; used general SWE framing for customer-facing platform/product engineering. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Clear Street",
+      "role": "Software Engineer, Full Stack - Risk Engineering",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "New York, New York",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/clearstreet/jobs/7258580",
+      "postingKey": "7258580",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Clear Street/Software_Engineer_Full_Stack_Risk_Engineering/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Clear Street/Software_Engineer_Full_Stack_Risk_Engineering/Liam_Van_Resume_2/Liam_Van_Clear_Street.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 08:31Z; tailored full-stack risk engineering resume rendered and verified one page; emphasized React/NestJS product surfaces, backend APIs, SQL/data modeling, reliability validation, and production debugging.; Hourly intake 2026-05-10 follow-on Greenhouse capture; resume rendered and verified one page; used general SWE framing for fintech full-stack risk systems and backend APIs. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Arine",
+      "role": "Full Stack Software Engineer",
+      "location": "San Francisco (Bay Area - Preferred)",
+      "postingKey": "5837493004",
+      "jobUrl": "https://job-boards.greenhouse.io/arine/jobs/5837493004",
+      "discoveredAt": "2026-05-10T10:50:52.369802+00:00",
+      "postedAge": "",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
     {
       "source": "Greenhouse",
       "company": "The New York Times",
@@ -21020,9 +21089,9 @@
       "discoveredAt": "2026-05-10T08:31:37.477720+00:00",
       "postedAge": "public Greenhouse result; crawled 3 days ago; captured degraded 2026-05-10T08:31:33.633Z",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "7482134"
     },
     {
       "source": "Greenhouse",
@@ -21034,9 +21103,9 @@
       "discoveredAt": "2026-05-10T08:31:37.477720+00:00",
       "postedAge": "public Greenhouse result; crawled 2 days ago; captured degraded 2026-05-10T08:31:33.633Z",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "7258580"
     },
     {
       "source": "Greenhouse",
@@ -31414,6 +31483,19 @@
       "notes": "Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-08."
     },
     {
+      "company": "HackerRank",
+      "role": "Forward Deployed Engineer",
+      "postingKey": "7482134",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/hackerrank/jobs/7482134",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "GreenSpark",
       "role": "Software Engineer",
       "postingKey": "4169702004",
@@ -32126,6 +32208,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-04",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Clear Street",
+      "role": "Software Engineer, Full Stack - Risk Engineering",
+      "postingKey": "7258580",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/clearstreet/jobs/7258580",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -52714,6 +52809,18 @@
           "contacts": []
         },
         {
+          "key": "7258580",
+          "company": "Clear Street",
+          "role": "Software Engineer, Full Stack - Risk Engineering",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4371198015",
           "company": "Cockroach Labs",
           "role": "Member of Technical Staff (Early Career - Developer Infrastructure)",
@@ -52994,7 +53101,7 @@
           "company": "Glean",
           "role": "Software Engineer, AI Infrastructure",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -53005,6 +53112,18 @@
           "key": "4169702004",
           "company": "GreenSpark",
           "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7482134",
+          "company": "HackerRank",
+          "role": "Forward Deployed Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -53798,7 +53917,7 @@
           "company": "Skild AI",
           "role": "Software Engineer, AI Training and Infrastructure",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -54914,7 +55033,7 @@
           "company": "Skild AI",
           "role": "Software Engineer, AI Inference",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -66686,6 +66805,18 @@
           "contacts": []
         },
         {
+          "key": "7258580",
+          "company": "Clear Street",
+          "role": "Software Engineer, Full Stack - Risk Engineering",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4371198015",
           "company": "Cockroach Labs",
           "role": "Member of Technical Staff (Early Career - Developer Infrastructure)",
@@ -66990,7 +67121,7 @@
           "company": "Glean",
           "role": "Software Engineer, AI Infrastructure",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -67003,6 +67134,18 @@
           "role": "Software Engineer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7482134",
+          "company": "HackerRank",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -67890,7 +68033,7 @@
           "company": "Skild AI",
           "role": "Software Engineer, AI Training and Infrastructure",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -68982,7 +69125,7 @@
           "company": "Skild AI",
           "role": "Software Engineer, AI Inference",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
