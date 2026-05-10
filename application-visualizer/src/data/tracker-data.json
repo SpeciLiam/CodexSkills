@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T13:47:06.045015+00:00",
+  "generatedAt": "2026-05-10T13:52:15.834784+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,8 +21,8 @@
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 584,
-      "intakeQueued": 30,
+      "intakeJobs": 598,
+      "intakeQueued": 43,
       "intakeNew": 42,
       "intakeManual": 327,
       "intakeApplied": 0,
@@ -270,15 +270,15 @@
       },
       {
         "name": "Skipped",
-        "value": 46
+        "value": 47
+      },
+      {
+        "name": "Queued",
+        "value": 43
       },
       {
         "name": "New",
         "value": 42
-      },
-      {
-        "name": "Queued",
-        "value": 30
       },
       {
         "name": "Duplicate",
@@ -296,11 +296,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 375
+        "value": 381
       },
       {
         "name": "LinkedIn",
-        "value": 209
+        "value": 217
       }
     ],
     "timeline": [
@@ -21098,6 +21098,174 @@
   "jobIntake": [
     {
       "source": "LinkedIn",
+      "company": "Warner Bros. Discovery",
+      "role": "Software Development Engineer II, Video Experiences",
+      "location": "New York, NY",
+      "postingKey": "4401154779",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4401154779/",
+      "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
+      "postedAge": "public LinkedIn search result captured 2026-05-10; listed about 1 day old",
+      "fitScore": 10,
+      "status": "Skipped",
+      "reason": "early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "S&P Global",
+      "role": "Software Engineer I, Development",
+      "location": "New York, NY",
+      "postingKey": "4404270607",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4404270607/",
+      "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
+      "postedAge": "public LinkedIn search result captured 2026-05-10; listed about 1 day old",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Moment",
+      "role": "Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "4597124007",
+      "jobUrl": "https://job-boards.greenhouse.io/moment/jobs/4597124007",
+      "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
+      "postedAge": "public Greenhouse search result captured 2026-05-10; exact job URL visible",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Microsoft",
+      "role": "Software Engineer II - AI Red Team",
+      "location": "New York, NY",
+      "postingKey": "4403614098",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4403614098/",
+      "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
+      "postedAge": "public LinkedIn search result captured 2026-05-10; listed about 1 day old",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Disney Entertainment and ESPN Product & Technology",
+      "role": "Software Engineer II",
+      "location": "New York, NY",
+      "postingKey": "4356696707",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4356696707/",
+      "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
+      "postedAge": "public LinkedIn search result captured 2026-05-10; listed about 4 hours old",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "DISCO",
+      "role": "AI Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "4409297262",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4409297262/",
+      "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
+      "postedAge": "public LinkedIn search result captured 2026-05-10; exact job view visible",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "CVector Energy",
+      "role": "Software Engineer, Energy AI",
+      "location": "New York, NY",
+      "postingKey": "4390530770",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-energy-ai-at-cvector-energy-4390530770",
+      "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
+      "postedAge": "public LinkedIn search result captured 2026-05-10; exact job view visible",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "CoreWeave",
+      "role": "Software Engineer, Internal Tools",
+      "location": "New York, NY",
+      "postingKey": "4398679665",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4398679665/",
+      "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
+      "postedAge": "public LinkedIn search result captured 2026-05-10; listed about 1 day old",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Civis Analytics",
+      "role": "Software Engineer, AI Platform",
+      "location": "United States",
+      "postingKey": "6690898",
+      "jobUrl": "https://job-boards.greenhouse.io/civisanalytics/jobs/6690898",
+      "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
+      "postedAge": "public Greenhouse search result captured 2026-05-10; exact job URL visible",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Brex",
+      "role": "Software Engineer, Frontend",
+      "location": "New York, NY",
+      "postingKey": "4410462416",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4410462416/",
+      "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
+      "postedAge": "public LinkedIn search result captured 2026-05-10; listed about 2 days old",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Attentive",
+      "role": "Software Engineer II, Identity Infrastructure",
+      "location": "United States",
+      "postingKey": "7866395002",
+      "jobUrl": "https://job-boards.greenhouse.io/attentive/jobs/7866395002",
+      "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
+      "postedAge": "public Greenhouse search result captured 2026-05-10; exact job URL visible",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Affirm",
+      "role": "Software Engineer I, Repayments Platform",
+      "location": "Remote US",
+      "postingKey": "6697653003",
+      "jobUrl": "https://job-boards.greenhouse.io/affirm/jobs/6697653003",
+      "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
+      "postedAge": "public Greenhouse search result captured 2026-05-10; exact job URL visible",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
       "company": "Optimum",
       "role": "Software Development Engineer I - iOS",
       "location": "New York, NY",
@@ -25886,6 +26054,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Vercel",
+      "role": "Forward Deployed Engineer",
+      "location": "San Francisco, CA, United States",
+      "postingKey": "5653673004",
+      "jobUrl": "https://job-boards.greenhouse.io/vercel/jobs/5653673004",
+      "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
+      "postedAge": "public Greenhouse search result captured 2026-05-10; exact job URL visible",
+      "fitScore": 9,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Skild AI",
       "role": "Software Engineer, AI Inference",
       "location": "Pittsburgh, San Francisco, Bengaluru",
@@ -26961,6 +27143,20 @@
       "status": "Tailored",
       "reason": "SWE-family role, SF/Bay Area preference",
       "trackerPostingKey": "5592469004"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Speechmatics",
+      "role": "Machine Learning Software Engineer",
+      "location": "United States",
+      "postingKey": "7724171002",
+      "jobUrl": "https://job-boards.greenhouse.io/speechmatics/jobs/7724171002",
+      "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
+      "postedAge": "public Greenhouse search result captured 2026-05-10; exact job URL visible",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
     },
     {
       "source": "Greenhouse",
