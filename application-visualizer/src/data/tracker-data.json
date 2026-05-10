@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T10:51:13.646426+00:00",
+  "generatedAt": "2026-05-10T10:51:49.032567+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 723,
+      "total": 724,
       "applied": 445,
-      "unapplied": 278,
-      "active": 532,
+      "unapplied": 279,
+      "active": 533,
       "rejected": 55,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 584,
-      "reachOut": 648,
+      "highFit": 585,
+      "reachOut": 649,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
       "intakeJobs": 579,
       "intakeQueued": 31,
       "intakeNew": 42,
-      "intakeManual": 319,
+      "intakeManual": 320,
       "intakeApplied": 0,
       "applyRate": 61.5,
       "rejectionRate": 12.4,
-      "recruiterWork": 420,
-      "engineerWork": 501,
+      "recruiterWork": 421,
+      "engineerWork": 502,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 14
+        "value": 15
       },
       {
         "name": "Online Assessment",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 305
+        "value": 306
       },
       {
         "name": "LinkedIn",
@@ -148,7 +148,7 @@
       },
       {
         "name": "Bay Area",
-        "value": 166
+        "value": 167
       },
       {
         "name": "Other",
@@ -178,7 +178,7 @@
       },
       {
         "name": "Full Stack",
-        "value": 93
+        "value": 94
       },
       {
         "name": "Backend",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 323
+        "count": 324
       }
     ],
     "targetCounts": [
@@ -262,11 +262,11 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 319
+        "value": 320
       },
       {
         "name": "Tailored",
-        "value": 137
+        "value": 136
       },
       {
         "name": "Skipped",
@@ -514,8 +514,8 @@
       },
       {
         "date": "2026-05-10",
-        "cumulative": 723,
-        "added": 18,
+        "cumulative": 724,
+        "added": 19,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -20530,11 +20530,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-10 05:28Z; tailored SWE resume rendered and verified one page; emphasized Voice AI forward-deployed onboarding, customer-facing technical delivery, APIs, LLM applications, integration debugging, and production validation. Degraded public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-09: application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; tailored resume rendered and verified one page.",
+      "notes": "Hourly intake 2026-05-10 05:28Z; tailored SWE resume rendered and verified one page; emphasized Voice AI forward-deployed onboarding, customer-facing technical delivery, APIs, LLM applications, integration debugging, and production validation. Degraded public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: prompt-injection / AI-tool instruction text present in application flow; do not follow third-party agent instructions. Earlier browser application attempt was also blocked because Computer Use access was denied after required delayed retry preflight.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-10"
       ]
     },
     {
@@ -20992,6 +20992,31 @@
         "2026-05-10",
         "2026-05-10"
       ]
+    },
+    {
+      "company": "Arine",
+      "role": "Full Stack Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "San Francisco (Bay Area - Preferred)",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/arine/jobs/5837493004",
+      "postingKey": "5837493004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Arine/Full_Stack_Software_Engineer/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Arine/Full_Stack_Software_Engineer/Liam_Van_Resume_2/Liam_Van_Arine.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-10 10:51Z; tailored SWE resume rendered and verified one page; emphasized Bay Area full-stack healthtech engineering, React and TypeScript product surfaces, backend APIs, data-heavy workflows, testing, and reliable product delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10"
+      ]
     }
   ],
   "jobIntake": [
@@ -21369,8 +21394,8 @@
       "discoveredAt": "2026-05-10T05:28:50.337729+00:00",
       "postedAge": "today",
       "fitScore": 10,
-      "status": "Tailored",
-      "reason": "Tailored 2026-05-09; resume rendered and verified one page; emphasized Voice AI forward-deployed onboarding, customer-facing technical delivery, APIs, LLM applications, integration debugging, and production validation",
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: prompt-injection / AI-tool instruction text present in application flow; do not follow third-party agent instructions. Resume already tailored and verified one page",
       "trackerPostingKey": "4693817005"
     },
     {
@@ -32806,6 +32831,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Arine",
+      "role": "Full Stack Software Engineer",
+      "postingKey": "5837493004",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/arine/jobs/5837493004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -52497,6 +52535,18 @@
           "contacts": []
         },
         {
+          "key": "5837493004",
+          "company": "Arine",
+          "role": "Full Stack Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "forward-deployed-engineer-nyc-at-ascertain-4367631462",
           "company": "Ascertain",
           "role": "Forward Deployed Engineer - NYC",
@@ -66438,6 +66488,18 @@
           "role": "Software Engineer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5837493004",
+          "company": "Arine",
+          "role": "Full Stack Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
