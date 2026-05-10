@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 610
+Companies queued: 611
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -294,6 +294,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | AssemblyAI | Forward Deployed Engineer, Onboarding | 4693817005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/assemblyai/jobs/4693817005) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Ascertain | Forward Deployed Engineer - NYC | forward-deployed-engineer-nyc-at-ascertain-4367631462 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/forward-deployed-engineer-nyc-at-ascertain-4367631462) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Ascertain | Backend Software Engineer | backend-software-engineer-at-ascertain-4328114725 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/backend-software-engineer-at-ascertain-4328114725) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
+| Arine | Full Stack Software Engineer | 5837493004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/arine/jobs/5837493004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Arena Physica | Software Engineer | 4593097101 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/arenaphysica/jobs/4593097101) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | AppLovin | Backend Engineer, New Grad | 4451556006 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/applovin/jobs/4451556006?gh_jid=4451556006&gh_src=cb2018976us) |  |  |  |  |
 | Applied Systems | Associate Software Engineer / Software Engineer | associate-software-engineer-software-engineer-at-applied-systems-4400119719 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/associate-software-engineer-software-engineer-at-applied-systems-4400119719) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
