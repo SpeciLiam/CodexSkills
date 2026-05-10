@@ -2,11 +2,12 @@
 
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
-Jobs discovered: 611
-New: 42 | Queued: 29 | Tailored: 124 | Applied: 0 | Manual: 351 | Skipped: 49 | Duplicate: 3 | Expired: 3
+Jobs discovered: 612
+New: 42 | Queued: 29 | Tailored: 132 | Applied: 0 | Manual: 352 | Skipped: 49 | Duplicate: 3 | Expired: 3
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Greenhouse | tvScientific | Software Engineer II, Simulation, tvScientific | San Francisco, CA, US; Remote, US | 7655637 | https://job-boards.greenhouse.io/tvscientificpoweredbypinterest/jobs/7655637 | 2026-05-10T20:30:46.225493+00:00 | crawled 2 days ago; public Greenhouse search result captured 2026-05-10 | 10 | Manual | Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight. Form also has required voluntary demographic selects that need Liam standing-answer confirmation if browser access is restored. | 7655637 |
 | Greenhouse | Dorsia | Product Engineer | New York, NY | 4827963007 | https://job-boards.greenhouse.io/dorsia/jobs/4827963007 | 2026-05-10T19:16:06.871091+00:00 | public Greenhouse search result captured 2026-05-10 | 10 | Manual | Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight | 4827963007 |
 | Greenhouse | Checkr | Software Engineer II, Monetization Platform | San Francisco, California, United States | 5621468004 | https://job-boards.greenhouse.io/checkr/jobs/5621468004 | 2026-05-10T19:16:06.871091+00:00 | public Greenhouse search result captured 2026-05-10 | 10 | Manual | Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight | 5621468004 |
 | Greenhouse | Atoms | Software Engineer - New Grad - New York | New York, New York | 8537777002 | https://job-boards.greenhouse.io/atoms/jobs/8537777002 | 2026-05-10T19:16:06.871091+00:00 | public Greenhouse search result captured 2026-05-10 | 10 | Manual | Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight | 8537777002 |

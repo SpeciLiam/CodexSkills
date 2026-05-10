@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 625
+Companies queued: 626
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -39,6 +39,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Twitch | Software Engineer II, Safety | 8499608002 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/twitch/jobs/8499608002) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Twitch | Software Engineer I, Streamer Monetization Experience | 8470752002 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/twitch/jobs/8470752002) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Twitch | Software Engineer I, Commerce | search-results | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/search-results/?keywords=Software%20Engineer%20I%20Commerce%20Twitch&geoId=103644278&f_TPR=r86400) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
+| tvScientific | Software Engineer II, Simulation, tvScientific | 7655637 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/tvscientificpoweredbypinterest/jobs/7655637) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Trexquant Investment LP | Software Engineer - Early Career (USA) | 4297854738 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4297854738/) |  |  |  |  |
 | Trexquant Investment LP | Software Engineer - Early Career (USA) | 4330689211 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4330689211/) |  |  |  |  |
 | Translucent | Software Engineer | 4038826009 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/translucent/jobs/4038826009) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
