@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 611
+Companies queued: 614
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -163,6 +163,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Memorial Sloan Kettering Cancer Center | Software Engineer II - Biostatistics Service | software-engineer-ii-biostatistics-service-at-memorial-sloan-kettering-cancer-center-4400834627 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-biostatistics-service-at-memorial-sloan-kettering-cancer-center-4400834627) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Melio | Full Stack Engineer | 7174896003 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/melio/jobs/7174896003) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Maybern | Software Engineer, New Grad | 90f7a0d4-4e6c-43e0-a444-06301faa4058 | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/maybern/90f7a0d4-4e6c-43e0-a444-06301faa4058) |  |  |  |  |
+| Mastercard | Software Engineer II - Foundry - R&D | software-engineer-ii-foundry-r-d-at-mastercard-4398606624 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-foundry-r-d-at-mastercard-4398606624) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Markforged | Software Engineer I | 5802712004 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/markforged/jobs/5802712004) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Lynx Analytics | Software Engineer (US) | 8395412002 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/lynxanalytics/jobs/8395412002) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Loop | 2026 New Grad Software Engineer, Full-Stack | 4404859319 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4404859319/) |  |  |  |  |
@@ -204,6 +205,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Giga | Software Engineer I / II | ba9b543d-e85c-4bd1-978b-f838d7a4062f | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/GigaML/ba9b543d-e85c-4bd1-978b-f838d7a4062f/application?utm_source=6p28rgeQLE) |  |  |  |  |
 | Giga | Software Engineer I / II - New York | linkedin-public-giga-software-engineer-i-ii-ny-2026-05-06 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/linkedin-public-giga-software-engineer-i-ii-ny-2026-05-06/) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Garner Health | Software Engineer II | software-engineer-ii-at-garner-health-4379614164 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-at-garner-health-4379614164) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
+| Garner Health | Associate Software Engineer | 5701122004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/garnerhealth/jobs/5701122004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Fortune | Full Stack Software Engineer Next.js | 5424161004 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/fortune/jobs/5424161004) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Fortue | Founding Engineer | 4664203004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/applytofortue/jobs/4664203004) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Forge Global | Software Engineer II, Marketplace Middleware Engineering | 5971240004 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/forgeglobal/jobs/5971240004) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
@@ -227,6 +229,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | EnergyHub | Software Engineer II, Battery | 8382615002-software-engineer-ii-battery | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/energyhub/jobs/8382615002) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | EliseAI | Software Engineer (New Grads 2025-2026) | 1ffbd278-a5fe-443c-984f-521d61a97353 | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/eliseai/1ffbd278-a5fe-443c-984f-521d61a97353?utm_source=LinkedInPaid) |  |  |  |  |
 | DRW | Full Stack Engineer, Blockchain Product | full-stack-engineer-blockchain-product-at-drw-4342884810 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/full-stack-engineer-blockchain-product-at-drw-4342884810) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
+| DoorDash USA | Software Engineer II, New Verticals | 7155159 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/doordashusa/jobs/7155159) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Disney | Software Engineer II - Data Transformation | 91303727120 | 10 | Applied | Yes | [Posting](https://www.disneycareers.com/en/job/-/-/391/91303727120?source=LINKEDIN_JOB_SLOTS) |  |  |  |  |
 | Disney | Software Engineer II | 93426467616 | 10 | Applied | Yes | [Posting](https://www.disneycareers.com/en/job/-/-/391/93426467616?source=LINKEDIN_JOB_SLOTS) |  |  |  |  |
 | Dex | Product Engineer | 5620556004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/dex/jobs/5620556004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
