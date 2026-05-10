@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T18:04:04.679870+00:00",
+  "generatedAt": "2026-05-10T19:24:43.985218+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 743,
+      "total": 751,
       "applied": 446,
-      "unapplied": 297,
-      "active": 550,
+      "unapplied": 305,
+      "active": 558,
       "rejected": 57,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 604,
-      "reachOut": 668,
+      "highFit": 612,
+      "reachOut": 676,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 602,
+      "intakeJobs": 611,
       "intakeQueued": 29,
       "intakeNew": 42,
-      "intakeManual": 343,
+      "intakeManual": 351,
       "intakeApplied": 0,
-      "applyRate": 60.0,
+      "applyRate": 59.4,
       "rejectionRate": 12.8,
-      "recruiterWork": 439,
-      "engineerWork": 521,
+      "recruiterWork": 447,
+      "engineerWork": 529,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 148
+        "value": 156
       },
       {
         "name": "Archived",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 316
+        "value": 324
       },
       {
         "name": "LinkedIn",
@@ -144,15 +144,15 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 332
+        "value": 335
       },
       {
         "name": "Bay Area",
-        "value": 169
+        "value": 173
       },
       {
         "name": "Other",
-        "value": 127
+        "value": 128
       },
       {
         "name": "Remote",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 405
+        "value": 411
       },
       {
         "name": "Full Stack",
@@ -190,11 +190,11 @@
       },
       {
         "name": "AI/ML",
-        "value": 50
+        "value": 51
       },
       {
         "name": "Infra/Platform",
-        "value": 36
+        "value": 37
       },
       {
         "name": "Data",
@@ -236,15 +236,15 @@
       },
       {
         "score": "8",
-        "count": 131
-      },
-      {
-        "score": "9",
         "count": 132
       },
       {
+        "score": "9",
+        "count": 136
+      },
+      {
         "score": "10",
-        "count": 341
+        "count": 344
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 343
+        "value": 351
       },
       {
         "name": "Tailored",
@@ -270,7 +270,7 @@
       },
       {
         "name": "Skipped",
-        "value": 48
+        "value": 49
       },
       {
         "name": "New",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 384
+        "value": 393
       },
       {
         "name": "LinkedIn",
@@ -514,8 +514,8 @@
       },
       {
         "date": "2026-05-10",
-        "cumulative": 743,
-        "added": 38,
+        "cumulative": 751,
+        "added": 46,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -631,6 +631,12 @@
         "bestFit": 10
       },
       {
+        "company": "Atoms",
+        "roles": 4,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "CoreWeave",
         "roles": 4,
         "avgFit": 9.75,
@@ -638,6 +644,12 @@
       },
       {
         "company": "Loop",
+        "roles": 4,
+        "avgFit": 9.5,
+        "bestFit": 10
+      },
+      {
+        "company": "Checkr",
         "roles": 4,
         "avgFit": 9.5,
         "bestFit": 10
@@ -652,18 +664,6 @@
         "company": "Airbnb",
         "roles": 4,
         "avgFit": 9.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Ramp",
-        "roles": 4,
-        "avgFit": 5.25,
-        "bestFit": 10
-      },
-      {
-        "company": "Giga",
-        "roles": 3,
-        "avgFit": 10.0,
         "bestFit": 10
       }
     ],
@@ -21524,9 +21524,266 @@
         "2026-05-10",
         "2026-05-10"
       ]
+    },
+    {
+      "company": "Checkr",
+      "role": "Software Engineer, Reliability",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "Denver, Colorado, United States; San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/checkr/jobs/7705523",
+      "postingKey": "7705523",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Checkr/Software_Engineer_Reliability/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Checkr/Software_Engineer_Reliability/Liam_Van_Resume/Liam_Van_Checkr.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-10 19:10Z; tailored SWE resume rendered and verified one page; emphasized service reliability engineering, backend systems, observability, cloud platform operations, testing, incident-aware delivery, and production hardening. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Anthropic",
+      "role": "Applied AI Engineer, Life Sciences (Beneficial Deployments)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "San Francisco, CA | New York City, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/anthropic/jobs/5111942008",
+      "postingKey": "5111942008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Anthropic/Applied_AI_Engineer_Life_Sciences_Beneficial_Deployments/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Anthropic/Applied_AI_Engineer_Life_Sciences_Beneficial_Deployments/Liam_Van_Resume/Liam_Van_Anthropic.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-10 19:10Z; tailored SWE resume rendered and verified one page; emphasized applied AI product engineering, customer-facing deployment workflows, evaluation and validation systems, backend APIs, model-adjacent tooling, and reliable delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Dorsia",
+      "role": "Product Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/dorsia/jobs/4827963007",
+      "postingKey": "4827963007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Dorsia/Product_Engineer/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Dorsia/Product_Engineer/Liam_Van_Resume_2/Liam_Van_Dorsia.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-10 12:16 PT; tailored SWE resume rendered and verified one page; emphasized NYC product engineering, React and TypeScript product surfaces, backend APIs, customer-facing workflows, testing, and reliable product delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Checkr",
+      "role": "Software Engineer II, Monetization Platform",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/checkr/jobs/5621468004",
+      "postingKey": "5621468004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Checkr/Software_Engineer_II_Monetization_Platform/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Checkr/Software_Engineer_II_Monetization_Platform/Liam_Van_Resume_2/Liam_Van_Checkr.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-10 12:16 PT; tailored SWE resume rendered and verified one page; emphasized monetization platform engineering, backend services, APIs, SQL-backed workflows, cloud reliability, testing, and production delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Atoms",
+      "role": "Software Engineer - New Grad - New York",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "New York, New York",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/atoms/jobs/8537777002",
+      "postingKey": "8537777002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Atoms/Software_Engineer_New_Grad_New_York/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Atoms/Software_Engineer_New_Grad_New_York/Liam_Van_Resume_2/Liam_Van_Atoms.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-10 12:16 PT; tailored SWE resume rendered and verified one page; emphasized NYC new-grad software engineering, React and TypeScript product surfaces, backend APIs, testing, and fast product delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "xAI",
+      "role": "Exceptional Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "San Francisco & Palo Alto, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/xai/jobs/4639900007",
+      "postingKey": "4639900007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/xAI/Exceptional_Software_Engineer/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/xAI/Exceptional_Software_Engineer/Liam_Van_Resume_2/Liam_Van_xAI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-10 12:16 PT; tailored SWE resume rendered and verified one page; emphasized applied AI software engineering, LLM applications, backend APIs, cloud validation, testing automation, and production reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Tekmerion",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "San Francisco Bay Area, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/tekmerion/jobs/4771091008",
+      "postingKey": "4771091008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tekmerion/Software_Engineer/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tekmerion/Software_Engineer/Liam_Van_Resume_2/Liam_Van_Tekmerion.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-10 12:16 PT; tailored SWE resume rendered and verified one page; emphasized Bay Area software engineering, backend services, APIs, cloud workflows, testing, and production reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "DLH Corporation",
+      "role": "Software Developer I",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/dlhcorp/jobs/4776336008",
+      "postingKey": "4776336008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DLH Corporation/Software_Developer_I/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DLH Corporation/Software_Developer_I/Liam_Van_Resume_2/Liam_Van_DLH_Corporation.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-10 12:16 PT; tailored SWE resume rendered and verified one page; emphasized early-career software development, backend services, Java and Python workflows, APIs, testing, and production support. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10",
+        "2026-05-10"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Dorsia",
+      "role": "Product Engineer",
+      "location": "New York, NY",
+      "postingKey": "4827963007",
+      "jobUrl": "https://job-boards.greenhouse.io/dorsia/jobs/4827963007",
+      "discoveredAt": "2026-05-10T19:16:06.871091+00:00",
+      "postedAge": "public Greenhouse search result captured 2026-05-10",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": "4827963007"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Checkr",
+      "role": "Software Engineer II, Monetization Platform",
+      "location": "San Francisco, California, United States",
+      "postingKey": "5621468004",
+      "jobUrl": "https://job-boards.greenhouse.io/checkr/jobs/5621468004",
+      "discoveredAt": "2026-05-10T19:16:06.871091+00:00",
+      "postedAge": "public Greenhouse search result captured 2026-05-10",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": "5621468004"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Atoms",
+      "role": "Software Engineer - New Grad - New York",
+      "location": "New York, New York",
+      "postingKey": "8537777002",
+      "jobUrl": "https://job-boards.greenhouse.io/atoms/jobs/8537777002",
+      "discoveredAt": "2026-05-10T19:16:06.871091+00:00",
+      "postedAge": "public Greenhouse search result captured 2026-05-10",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": "8537777002"
+    },
     {
       "source": "Greenhouse",
       "company": "Enveritas",
@@ -26541,6 +26798,76 @@
     },
     {
       "source": "Greenhouse",
+      "company": "xAI",
+      "role": "Exceptional Software Engineer",
+      "location": "San Francisco & Palo Alto, CA",
+      "postingKey": "4639900007",
+      "jobUrl": "https://job-boards.greenhouse.io/xai/jobs/4639900007",
+      "discoveredAt": "2026-05-10T19:16:06.871091+00:00",
+      "postedAge": "public Greenhouse search result captured 2026-05-10",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": "4639900007"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Tekmerion",
+      "role": "Software Engineer",
+      "location": "San Francisco Bay Area, CA",
+      "postingKey": "4771091008",
+      "jobUrl": "https://job-boards.greenhouse.io/tekmerion/jobs/4771091008",
+      "discoveredAt": "2026-05-10T19:16:06.871091+00:00",
+      "postedAge": "public Greenhouse search result captured 2026-05-10",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": "4771091008"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "ExodusPoint",
+      "role": "Junior Software Engineer - Derivatives Technology",
+      "location": "London, United Kingdom",
+      "postingKey": "8177041002",
+      "jobUrl": "https://job-boards.greenhouse.io/exoduspoint/jobs/8177041002",
+      "discoveredAt": "2026-05-10T19:16:06.871091+00:00",
+      "postedAge": "public Greenhouse search result captured 2026-05-10; location outside US, junior signal",
+      "fitScore": 9,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-10: London-only location is outside this automation pass preference for U.S.-based roles despite junior SWE fit signal",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Checkr",
+      "role": "Software Engineer, Reliability",
+      "location": "Denver, Colorado, United States; San Francisco, California, United States",
+      "postingKey": "7705523",
+      "jobUrl": "https://job-boards.greenhouse.io/checkr/jobs/7705523",
+      "discoveredAt": "2026-05-10T19:10:19.543421+00:00",
+      "postedAge": "public Greenhouse search result captured 2026-05-10; crawled last week",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": "7705523"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Anthropic",
+      "role": "Applied AI Engineer, Life Sciences (Beneficial Deployments)",
+      "location": "San Francisco, CA | New York City, NY",
+      "postingKey": "5111942008",
+      "jobUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5111942008",
+      "discoveredAt": "2026-05-10T19:10:19.543421+00:00",
+      "postedAge": "public Greenhouse search result captured 2026-05-10; crawled 3 days ago",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": "5111942008"
+    },
+    {
+      "source": "Greenhouse",
       "company": "Vercel",
       "role": "Forward Deployed Engineer",
       "location": "San Francisco, CA, United States",
@@ -27630,6 +27957,20 @@
       "status": "Tailored",
       "reason": "SWE-family role, SF/Bay Area preference",
       "trackerPostingKey": "5592469004"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "DLH Corporation",
+      "role": "Software Developer I",
+      "location": "United States",
+      "postingKey": "4776336008",
+      "jobUrl": "https://job-boards.greenhouse.io/dlhcorp/jobs/4776336008",
+      "discoveredAt": "2026-05-10T19:16:06.871091+00:00",
+      "postedAge": "public Greenhouse search result captured 2026-05-10",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": "4776336008"
     },
     {
       "source": "Greenhouse",
@@ -32831,6 +33172,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Dorsia",
+      "role": "Product Engineer",
+      "postingKey": "4827963007",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/dorsia/jobs/4827963007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "DoorDash USA",
       "role": "Software Engineer II, New Verticals",
       "postingKey": "7155159",
@@ -33244,6 +33598,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Checkr",
+      "role": "Software Engineer II, Monetization Platform",
+      "postingKey": "5621468004",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/checkr/jobs/5621468004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -33663,6 +34030,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Atoms",
+      "role": "Software Engineer - New Grad - New York",
+      "postingKey": "8537777002",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/atoms/jobs/8537777002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Assurant",
       "role": "Associate Software Engineer (.NET)",
       "postingKey": "associate-software-engineer-net-at-assurant-4344223933",
@@ -34079,6 +34459,19 @@
       "notes": ""
     },
     {
+      "company": "xAI",
+      "role": "Exceptional Software Engineer",
+      "postingKey": "4639900007",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/xai/jobs/4639900007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Whatnot",
       "role": "Software Engineer, Data",
       "postingKey": "a906c895-a49e-4961-9b11-7cc23517204a",
@@ -34259,6 +34652,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Tekmerion",
+      "role": "Software Engineer",
+      "postingKey": "4771091008",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/tekmerion/jobs/4771091008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "TechTree",
@@ -35509,6 +35915,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Checkr",
+      "role": "Software Engineer, Reliability",
+      "postingKey": "7705523",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/checkr/jobs/7705523",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "CHAOS Industries",
       "role": "Field Software Engineer",
       "postingKey": "5082153007",
@@ -35597,6 +36016,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-08",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Anthropic",
+      "role": "Applied AI Engineer, Life Sciences (Beneficial Deployments)",
+      "postingKey": "5111942008",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/anthropic/jobs/5111942008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -36716,6 +37148,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "DLH Corporation",
+      "role": "Software Developer I",
+      "postingKey": "4776336008",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/dlhcorp/jobs/4776336008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "DLA Piper",
@@ -53550,6 +53995,18 @@
           "contacts": []
         },
         {
+          "key": "8537777002",
+          "company": "Atoms",
+          "role": "Software Engineer - New Grad - New York",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7866395002",
           "company": "Attentive",
           "role": "Software Engineer II, Identity Infrastructure",
@@ -53769,6 +54226,18 @@
           "key": "software-engineer-at-chatgpt-jobs-4357811639",
           "company": "ChatGPT Jobs / Flamingo",
           "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5621468004",
+          "company": "Checkr",
+          "role": "Software Engineer II, Monetization Platform",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -54009,6 +54478,18 @@
           "key": "7155159",
           "company": "DoorDash USA",
           "role": "Software Engineer II, New Verticals",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4827963007",
+          "company": "Dorsia",
+          "role": "Product Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -55530,6 +56011,18 @@
           "contacts": []
         },
         {
+          "key": "5111942008",
+          "company": "Anthropic",
+          "role": "Applied AI Engineer, Life Sciences (Beneficial Deployments)",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-apple-game-services",
           "company": "Apple",
           "role": "Software Engineer, Apple Game Services",
@@ -55605,6 +56098,18 @@
           "key": "7296759",
           "company": "Checkr",
           "role": "Software Engineer II",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7705523",
+          "company": "Checkr",
+          "role": "Software Engineer, Reliability",
           "fitScore": 9,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -56310,6 +56815,18 @@
           "contacts": []
         },
         {
+          "key": "4771091008",
+          "company": "Tekmerion",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5103776007",
           "company": "Toshiba Global Commerce Solutions",
           "role": "Associate Software Engineer",
@@ -56423,6 +56940,18 @@
           "role": "Software Engineer II/III/Senior, Gateway",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4639900007",
+          "company": "xAI",
+          "role": "Exceptional Software Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -56759,6 +57288,18 @@
           "role": "Software Development Engineer I",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4776336008",
+          "company": "DLH Corporation",
+          "role": "Software Developer I",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -67750,6 +68291,18 @@
           "contacts": []
         },
         {
+          "key": "8537777002",
+          "company": "Atoms",
+          "role": "Software Engineer - New Grad - New York",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4195625009",
           "company": "Attentive",
           "role": "Software Engineer I, AI Product",
@@ -68002,6 +68555,18 @@
           "contacts": []
         },
         {
+          "key": "5621468004",
+          "company": "Checkr",
+          "role": "Software Engineer II, Monetization Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8219793002",
           "company": "Chime",
           "role": "Software Engineer, Credit Risk Platform",
@@ -68245,6 +68810,18 @@
           "key": "7155159",
           "company": "DoorDash USA",
           "role": "Software Engineer II, New Verticals",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4827963007",
+          "company": "Dorsia",
+          "role": "Product Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -69994,6 +70571,18 @@
           "contacts": []
         },
         {
+          "key": "5111942008",
+          "company": "Anthropic",
+          "role": "Applied AI Engineer, Life Sciences (Beneficial Deployments)",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-apple-game-services",
           "company": "Apple",
           "role": "Software Engineer, Apple Game Services",
@@ -70083,6 +70672,18 @@
           "role": "Software Engineer II",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7705523",
+          "company": "Checkr",
+          "role": "Software Engineer, Reliability",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -70642,6 +71243,18 @@
           "contacts": []
         },
         {
+          "key": "4771091008",
+          "company": "Tekmerion",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4202502009",
           "company": "Transcend Inc.",
           "role": "Software Engineer",
@@ -70731,6 +71344,18 @@
           "role": "Software Engineer II/III/Senior, Gateway",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4639900007",
+          "company": "xAI",
+          "role": "Exceptional Software Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -70983,6 +71608,18 @@
           "role": "Software Development Engineer I",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4776336008",
+          "company": "DLH Corporation",
+          "role": "Software Developer I",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
