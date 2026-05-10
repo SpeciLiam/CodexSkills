@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 606
+Companies queued: 608
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -100,6 +100,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Ramp | Software Engineer - New Grad | 5609233004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/ramp/jobs/5609233004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Procore Technologies | Software Engineer I (Datagrid) | 4406148082 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4406148082/) |  |  |  |  |
 | Procore Technologies | Software Engineer I (Datagrid) | 4400230667 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4400230667/) |  |  |  |  |
+| Priceline | Software Engineer I | software-engineer-i-at-priceline-4374057896 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-i-at-priceline-4374057896) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | PointOne | New Grad Software Engineer | new-grad-software-engineer-at-pointone-4400038260 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/new-grad-software-engineer-at-pointone-4400038260) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Point72 | Software Engineer, Commodities Technology | 8180667002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/point72/jobs/8180667002) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Point72 | Software Engineer - 2026 Grad | 8202068002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/point72/jobs/8202068002?gh_jid=8202068002) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
@@ -142,6 +143,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Nectar Social | Software Engineer, Early Career | 606df770-4167-4066-bbfd-d7464b28d9b2 | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/nectar-social/606df770-4167-4066-bbfd-d7464b28d9b2/application?utm_source=XxQk1yA33j) |  |  |  |  |
 | Narmi | Software Engineer | 4542082007 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/narmi/jobs/4542082007) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Narmi | Software Engineer | 5237248004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/narmi/jobs/5237248004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
+| mthree | Junior Software Engineer | 4374589006 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/mthree/jobs/4374589006) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Moxxi Digital | Full Stack Engineer, Backend | 5155519008 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/moxxidigital/jobs/5155519008) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Moxxi Digital | Software Engineer | 5083041008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/moxxidigital/jobs/5083041008) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Motive | Software Engineer - Backend Services / San Francisco | 8037852002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/gomotive/jobs/8037852002?gh_src=gojobs.run&source=gojobs.run) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
