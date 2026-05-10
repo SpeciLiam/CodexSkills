@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T23:31:58.222928+00:00",
+  "generatedAt": "2026-05-10T00:34:33.102958+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 686,
+      "total": 691,
       "applied": 445,
-      "unapplied": 241,
-      "active": 496,
+      "unapplied": 246,
+      "active": 501,
       "rejected": 54,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 547,
-      "reachOut": 611,
+      "highFit": 552,
+      "reachOut": 616,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 537,
+      "intakeJobs": 542,
       "intakeQueued": 30,
       "intakeNew": 42,
-      "intakeManual": 292,
+      "intakeManual": 297,
       "intakeApplied": 0,
-      "applyRate": 64.9,
+      "applyRate": 64.4,
       "rejectionRate": 12.1,
-      "recruiterWork": 383,
-      "engineerWork": 464,
+      "recruiterWork": 388,
+      "engineerWork": 469,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 92
+        "value": 97
       },
       {
         "name": "Rejected",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 277
+        "value": 280
       },
       {
         "name": "LinkedIn",
-        "value": 264
+        "value": 266
       },
       {
         "name": "Ashby",
@@ -144,7 +144,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 299
+        "value": 301
       },
       {
         "name": "Bay Area",
@@ -152,11 +152,11 @@
       },
       {
         "name": "Other",
-        "value": 122
+        "value": 123
       },
       {
         "name": "Remote",
-        "value": 77
+        "value": 79
       },
       {
         "name": "Seattle",
@@ -178,11 +178,11 @@
       },
       {
         "name": "Full Stack",
-        "value": 91
+        "value": 92
       },
       {
         "name": "Backend",
-        "value": 75
+        "value": 79
       },
       {
         "name": "Forward Deployed",
@@ -236,7 +236,7 @@
       },
       {
         "score": "8",
-        "count": 128
+        "count": 129
       },
       {
         "score": "9",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 291
+        "count": 295
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 292
+        "value": 297
       },
       {
         "name": "Tailored",
@@ -296,11 +296,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 347
+        "value": 350
       },
       {
         "name": "LinkedIn",
-        "value": 190
+        "value": 192
       }
     ],
     "timeline": [
@@ -506,8 +506,8 @@
       },
       {
         "date": "2026-05-09",
-        "cumulative": 686,
-        "added": 39,
+        "cumulative": 691,
+        "added": 44,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -20041,9 +20041,190 @@
       "activityDates": [
         "2026-05-09"
       ]
+    },
+    {
+      "company": "DRW",
+      "role": "Full Stack Engineer, Blockchain Product",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-09",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/full-stack-engineer-blockchain-product-at-drw-4342884810",
+      "postingKey": "full-stack-engineer-blockchain-product-at-drw-4342884810",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DRW/Full_Stack_Engineer_Blockchain_Product/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DRW/Full_Stack_Engineer_Blockchain_Product/Liam_Van_Resume/Liam_Van_DRW.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Censys",
+      "role": "Software Engineer (Backend, Distributed Systems)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-09",
+      "location": "Remote (US)",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/censys/jobs/8499166002",
+      "postingKey": "8499166002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Censys/Software_Engineer_Backend_Distributed_Systems/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Censys/Software_Engineer_Backend_Distributed_Systems/Liam_Van_Resume/Liam_Van_Censys.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Censys",
+      "role": "Software Engineer (Backend), Core Services",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-09",
+      "location": "Remote (US/Canada)",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/censys/jobs/8500307002",
+      "postingKey": "8500307002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Censys/Software_Engineer_Backend_Core_Services/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Censys/Software_Engineer_Backend_Core_Services/Liam_Van_Resume/Liam_Van_Censys.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Ascertain",
+      "role": "Backend Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-09",
+      "location": "United States / New York City",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/backend-software-engineer-at-ascertain-4328114725",
+      "postingKey": "backend-software-engineer-at-ascertain-4328114725",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ascertain/Backend_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ascertain/Backend_Software_Engineer/Liam_Van_Resume/Liam_Van_Ascertain.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "ERGO NEXT Group INTERNAL",
+      "role": "Backend Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-09",
+      "location": "Boston, MA / Waltham, MA hybrid",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/next-internal/jobs/7661171003",
+      "postingKey": "7661171003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/ERGO NEXT Group INTERNAL/Backend_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/ERGO NEXT Group INTERNAL/Backend_Software_Engineer/Liam_Van_Resume/Liam_Van_ERGO_NEXT_Group_INTERNAL.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "LinkedIn",
+      "company": "DRW",
+      "role": "Full Stack Engineer, Blockchain Product",
+      "location": "New York, NY",
+      "postingKey": "4342884810",
+      "jobUrl": "https://www.linkedin.com/jobs/view/full-stack-engineer-blockchain-product-at-drw-4342884810",
+      "discoveredAt": "2026-05-10T00:18:07.412809+00:00",
+      "postedAge": "3 days ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4342884810"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Censys",
+      "role": "Software Engineer (Backend, Distributed Systems)",
+      "location": "Remote (US)",
+      "postingKey": "8499166002",
+      "jobUrl": "https://job-boards.greenhouse.io/censys/jobs/8499166002",
+      "discoveredAt": "2026-05-10T00:18:07.412809+00:00",
+      "postedAge": "crawled yesterday",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "8499166002"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Censys",
+      "role": "Software Engineer (Backend), Core Services",
+      "location": "Remote (US/Canada)",
+      "postingKey": "8500307002",
+      "jobUrl": "https://job-boards.greenhouse.io/censys/jobs/8500307002",
+      "discoveredAt": "2026-05-10T00:18:07.412809+00:00",
+      "postedAge": "crawled yesterday",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "8500307002"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Ascertain",
+      "role": "Backend Software Engineer",
+      "location": "United States / New York City",
+      "postingKey": "4328114725",
+      "jobUrl": "https://www.linkedin.com/jobs/view/backend-software-engineer-at-ascertain-4328114725",
+      "discoveredAt": "2026-05-10T00:18:07.412809+00:00",
+      "postedAge": "6 days ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4328114725"
+    },
     {
       "source": "Greenhouse",
       "company": "Axon",
@@ -25295,6 +25476,20 @@
       "trackerPostingKey": "5592469004"
     },
     {
+      "source": "Greenhouse",
+      "company": "ERGO NEXT Group INTERNAL",
+      "role": "Backend Software Engineer",
+      "location": "Boston, MA / Waltham, MA hybrid",
+      "postingKey": "7661171003",
+      "jobUrl": "https://job-boards.greenhouse.io/next-internal/jobs/7661171003",
+      "discoveredAt": "2026-05-10T00:18:07.412809+00:00",
+      "postedAge": "crawled yesterday",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "7661171003"
+    },
+    {
       "source": "LinkedIn",
       "company": "Netflix",
       "role": "New Grad Software Engineer (2026)",
@@ -30126,6 +30321,19 @@
       "notes": ""
     },
     {
+      "company": "DRW",
+      "role": "Full Stack Engineer, Blockchain Product",
+      "postingKey": "full-stack-engineer-blockchain-product-at-drw-4342884810",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/full-stack-engineer-blockchain-product-at-drw-4342884810",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Disney",
       "role": "Software Engineer II - Data Transformation",
       "postingKey": "91303727120",
@@ -30484,6 +30692,32 @@
       "status": "Resume Tailored",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/chaosindustries/jobs/4687774007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Censys",
+      "role": "Software Engineer (Backend, Distributed Systems)",
+      "postingKey": "8499166002",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/censys/jobs/8499166002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Censys",
+      "role": "Software Engineer (Backend), Core Services",
+      "postingKey": "8500307002",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/censys/jobs/8500307002",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-09",
@@ -30877,6 +31111,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Ascertain",
+      "role": "Backend Software Engineer",
+      "postingKey": "backend-software-engineer-at-ascertain-4328114725",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/backend-software-engineer-at-ascertain-4328114725",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -33673,6 +33920,19 @@
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
       "notes": "Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome."
+    },
+    {
+      "company": "ERGO NEXT Group INTERNAL",
+      "role": "Backend Software Engineer",
+      "postingKey": "7661171003",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/next-internal/jobs/7661171003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Epic Placements",
@@ -50465,6 +50725,18 @@
           "contacts": []
         },
         {
+          "key": "backend-software-engineer-at-ascertain-4328114725",
+          "company": "Ascertain",
+          "role": "Backend Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4691426005",
           "company": "AssemblyAI",
           "role": "Forward Deployed Engineer",
@@ -50633,6 +50905,30 @@
           "contacts": []
         },
         {
+          "key": "8499166002",
+          "company": "Censys",
+          "role": "Software Engineer (Backend, Distributed Systems)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8500307002",
+          "company": "Censys",
+          "role": "Software Engineer (Backend), Core Services",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-at-chatgpt-jobs-4357811639",
           "company": "ChatGPT Jobs / Flamingo",
           "role": "Software Engineer",
@@ -50756,6 +51052,18 @@
           "key": "forward-deployed-engineer-at-coreweave-4373404097",
           "company": "CoreWeave",
           "role": "Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "full-stack-engineer-blockchain-product-at-drw-4342884810",
+          "company": "DRW",
+          "role": "Full Stack Engineer, Blockchain Product",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -53194,6 +53502,18 @@
           "role": "Full Stack Software Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7661171003",
+          "company": "ERGO NEXT Group INTERNAL",
+          "role": "Backend Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -63969,6 +64289,18 @@
           "contacts": []
         },
         {
+          "key": "backend-software-engineer-at-ascertain-4328114725",
+          "company": "Ascertain",
+          "role": "Backend Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4691426005",
           "company": "AssemblyAI",
           "role": "Forward Deployed Engineer",
@@ -64173,6 +64505,30 @@
           "contacts": []
         },
         {
+          "key": "8499166002",
+          "company": "Censys",
+          "role": "Software Engineer (Backend, Distributed Systems)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8500307002",
+          "company": "Censys",
+          "role": "Software Engineer (Backend), Core Services",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-at-chatgpt-jobs-4357811639",
           "company": "ChatGPT Jobs / Flamingo",
           "role": "Software Engineer",
@@ -64320,6 +64676,18 @@
           "key": "forward-deployed-engineer-at-coreweave-4373404097",
           "company": "CoreWeave",
           "role": "Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "full-stack-engineer-blockchain-product-at-drw-4342884810",
+          "company": "DRW",
+          "role": "Full Stack Engineer, Blockchain Product",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -66722,6 +67090,18 @@
           "role": "Full Stack Software Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7661171003",
+          "company": "ERGO NEXT Group INTERNAL",
+          "role": "Backend Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
