@@ -1,10 +1,10 @@
 {
   "applicationsPerDay": [
     {
-      "archived": 48,
+      "archived": 26,
       "date": "2026-05-03",
-      "manual": 37,
-      "submitted": 10
+      "manual": 18,
+      "submitted": 8
     },
     {
       "archived": 10,
@@ -45,8 +45,8 @@
     {
       "archived": 0,
       "date": "2026-05-10",
-      "manual": 2,
-      "submitted": 0
+      "manual": 8,
+      "submitted": 1
     }
   ],
   "avgConfidenceBySource": [
@@ -61,12 +61,12 @@
       "source": "Google Careers"
     },
     {
-      "avgScore": 33.0,
+      "avgScore": 25.9,
       "band": "low",
       "source": "Greenhouse"
     },
     {
-      "avgScore": 44.3,
+      "avgScore": 41.5,
       "band": "low",
       "source": "LinkedIn"
     },
@@ -76,28 +76,28 @@
       "source": "LinkedIn/Ashby"
     }
   ],
-  "generatedAt": "2026-05-10T03:40:32.452439+00:00",
+  "generatedAt": "2026-05-10T13:46:47.527048+00:00",
   "intakeHealth": {
     "greenhouseCapturedToday": 3,
     "greenhouseLastRun": "",
-    "linkedinCacheHitRate": 0.2,
+    "linkedinCacheHitRate": 0.4,
     "linkedinCapturedToday": 0,
     "linkedinLastRun": ""
   },
   "queueDepth": {
-    "intakeUnprocessed": 72,
-    "manualApplyNeeded": 104,
+    "intakeUnprocessed": 75,
+    "manualApplyNeeded": 132,
     "readyToApply": 0,
     "resumeTailored": 14
   },
   "submitSuccessRate": {
-    "archived": 0.263,
-    "manual": 0.384,
-    "submitted": 0.353
+    "archived": 0.213,
+    "manual": 0.387,
+    "submitted": 0.399
   },
   "topBlockers": [
     {
-      "count": 110,
+      "count": 97,
       "reason": "unspecified"
     },
     {
