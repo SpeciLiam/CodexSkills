@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T20:59:03.482828+00:00",
+  "generatedAt": "2026-05-10T21:10:07.830033+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 752,
+      "total": 754,
       "applied": 446,
-      "unapplied": 306,
-      "active": 559,
+      "unapplied": 308,
+      "active": 561,
       "rejected": 57,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 613,
-      "reachOut": 677,
+      "highFit": 615,
+      "reachOut": 679,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 612,
+      "intakeJobs": 616,
       "intakeQueued": 29,
-      "intakeNew": 42,
+      "intakeNew": 44,
       "intakeManual": 352,
       "intakeApplied": 0,
-      "applyRate": 59.3,
+      "applyRate": 59.2,
       "rejectionRate": 12.8,
-      "recruiterWork": 448,
-      "engineerWork": 527,
+      "recruiterWork": 450,
+      "engineerWork": 529,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 157
+        "value": 159
       },
       {
         "name": "Archived",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 325
+        "value": 327
       },
       {
         "name": "LinkedIn",
@@ -156,7 +156,7 @@
       },
       {
         "name": "Remote",
-        "value": 87
+        "value": 89
       },
       {
         "name": "Seattle",
@@ -186,7 +186,7 @@
       },
       {
         "name": "Forward Deployed",
-        "value": 54
+        "value": 56
       },
       {
         "name": "AI/ML",
@@ -236,7 +236,7 @@
       },
       {
         "score": "8",
-        "count": 132
+        "count": 133
       },
       {
         "score": "9",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 345
+        "count": 346
       }
     ],
     "targetCounts": [
@@ -266,7 +266,7 @@
       },
       {
         "name": "Tailored",
-        "value": 132
+        "value": 134
       },
       {
         "name": "Skipped",
@@ -274,7 +274,7 @@
       },
       {
         "name": "New",
-        "value": 42
+        "value": 44
       },
       {
         "name": "Queued",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 394
+        "value": 398
       },
       {
         "name": "LinkedIn",
@@ -514,8 +514,8 @@
       },
       {
         "date": "2026-05-10",
-        "cumulative": 752,
-        "added": 47,
+        "cumulative": 754,
+        "added": 49,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -739,6 +739,15 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/watershed/jobs/5600411003"
+      },
+      {
+        "company": "Warp",
+        "role": "Forward Deployed Engineer",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/warp/jobs/5749183004"
       },
       {
         "company": "Warner Bros. Discovery",
@@ -982,15 +991,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4673616005"
-      },
-      {
-        "company": "The New York Times",
-        "role": "Software Engineer AI Platforms and Products Frontend",
-        "fitScore": 10,
-        "status": "Resume Tailored",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4680447005"
       }
     ],
     "recruiterBatch": {
@@ -16515,9 +16515,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Booz Allen Full Stack Developer requisition R0239385 supporting Digital Twin / modeling and simulation platforms; emphasized React/Angular UI work, JavaScript/TypeScript, Python/SQL, REST APIs, Java/C# OOP, modular cloud-integrated services, UI/UX prototypes, DevSecOps-style validation, debugging, and documentation. Did not claim Unity/Unreal/Omniverse, XR, DoD/federal environment, SDK ownership, real-time systems, or formal Agile/Scrum experience. Posting includes biometric identity verification and candidate AI-use restrictions for interviews/assessments.; Application submitted 2026-05-07",
+      "notes": "Tailored for Booz Allen Full Stack Developer requisition R0239385 supporting Digital Twin / modeling and simulation platforms; emphasized React/Angular UI work, JavaScript/TypeScript, Python/SQL, REST APIs, Java/C# OOP, modular cloud-integrated services, UI/UX prototypes, DevSecOps-style validation, debugging, and documentation. Did not claim Unity/Unreal/Omniverse, XR, DoD/federal environment, SDK ownership, real-time systems, or formal Agile/Scrum experience. Posting includes biometric identity verification and candidate AI-use restrictions for interviews/assessments.; Application submitted 2026-05-07; Application confirmation email received 2026-05-07",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-07",
         "2026-05-07"
       ]
     },
@@ -16737,9 +16738,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for entry-level DevSecOps/AppSec role; emphasized vulnerability-oriented validation, AI-assisted testing, scripting, CI/CD, cloud operations, metrics/reporting, API coverage, documentation, and cross-functional risk communication. Did not claim formal vulnerability management platform ownership, deep networking administration, PowerShell/Bash, cryptography implementation, or regulatory data-security ownership.; Application submitted 2026-05-07",
+      "notes": "Tailored for entry-level DevSecOps/AppSec role; emphasized vulnerability-oriented validation, AI-assisted testing, scripting, CI/CD, cloud operations, metrics/reporting, API coverage, documentation, and cross-functional risk communication. Did not claim formal vulnerability management platform ownership, deep networking administration, PowerShell/Bash, cryptography implementation, or regulatory data-security ownership.; Application submitted 2026-05-07; Application confirmation email received 2026-05-07",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-07",
         "2026-05-07"
       ]
     },
@@ -17887,11 +17889,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06; Application submitted 2026-05-08 via Greenhouse confirmation page: https://job-boards.greenhouse.io/pilothq/jobs/8516101002/confirmation.",
+      "notes": "Manual apply needed: Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06; Application submitted 2026-05-08 via Greenhouse confirmation page: https://job-boards.greenhouse.io/pilothq/jobs/8516101002/confirmation.; Application confirmation email received 2026-05-07",
       "noteLinks": [],
       "activityDates": [
         "2026-05-06",
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-07"
       ]
     },
     {
@@ -21764,9 +21767,75 @@
       "activityDates": [
         "2026-05-10"
       ]
+    },
+    {
+      "company": "Warp",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "Remote within US and Canada",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/warp/jobs/5749183004",
+      "postingKey": "5749183004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Warp/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Warp/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Warp.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-10 14:08 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed agentic developer workflows, AI product implementation, backend APIs, TypeScript product surfaces, customer-facing delivery, testing, and production reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Automattic Careers",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "Remote",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/automatticcareers/jobs/7678677",
+      "postingKey": "7678677",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Automattic Careers/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Automattic Careers/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Automattic_Careers.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-10 14:08 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed enterprise web engineering, React and TypeScript product surfaces, backend APIs, customer integrations, technical documentation, testing, and reliable delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-10"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Warp",
+      "role": "Forward Deployed Engineer",
+      "location": "Remote within US and Canada",
+      "postingKey": "5749183004",
+      "jobUrl": "https://job-boards.greenhouse.io/warp/jobs/5749183004",
+      "discoveredAt": "2026-05-10T21:08:53.683362+00:00",
+      "postedAge": "crawled 3 days ago; public Greenhouse search result captured 2026-05-10 14:xx PDT",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-10; resume rendered and verified one page; emphasized forward-deployed agentic developer workflows, AI product implementation, backend APIs, TypeScript product surfaces, customer-facing delivery, testing, and production reliability",
+      "trackerPostingKey": "5749183004"
+    },
     {
       "source": "Greenhouse",
       "company": "tvScientific",
@@ -27999,6 +28068,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Automattic Careers",
+      "role": "Forward Deployed Engineer",
+      "location": "Remote",
+      "postingKey": "7678677",
+      "jobUrl": "https://job-boards.greenhouse.io/automatticcareers/jobs/7678677",
+      "discoveredAt": "2026-05-10T21:08:53.683362+00:00",
+      "postedAge": "crawled 3 days ago; public Greenhouse search result captured 2026-05-10 14:xx PDT",
+      "fitScore": 8,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-10; resume rendered and verified one page; emphasized forward-deployed enterprise web engineering, React and TypeScript product surfaces, backend APIs, customer integrations, technical documentation, testing, and reliable delivery",
+      "trackerPostingKey": "7678677"
+    },
+    {
+      "source": "Greenhouse",
       "company": "DLH Corporation",
       "role": "Software Developer I",
       "location": "United States",
@@ -29413,6 +29496,34 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Workstream",
+      "role": "Forward Deployed Engineer",
+      "location": "Menlo Park, California",
+      "postingKey": "5984207004",
+      "jobUrl": "https://job-boards.greenhouse.io/workstream/jobs/5984207004",
+      "discoveredAt": "2026-05-10T21:08:53.683362+00:00",
+      "postedAge": "crawled last week; public Greenhouse search result captured 2026-05-10 14:xx PDT",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, other US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Atomicwork Inc",
+      "role": "Applied AI Engineer",
+      "location": "United States",
+      "postingKey": "5073381008",
+      "jobUrl": "https://job-boards.greenhouse.io/atomicwork/jobs/5073381008",
+      "discoveredAt": "2026-05-10T21:08:53.683362+00:00",
+      "postedAge": "crawled 5 days ago; public Greenhouse search result captured 2026-05-10 14:xx PDT",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "SingleStore",
       "role": "Forward Deployment Engineer",
       "location": "United States",
@@ -30453,6 +30564,19 @@
       "readyEmails": 1,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Warp",
+      "role": "Forward Deployed Engineer",
+      "postingKey": "5749183004",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/warp/jobs/5749183004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Warner Bros. Discovery",
@@ -37499,6 +37623,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Automattic Careers",
+      "role": "Forward Deployed Engineer",
+      "postingKey": "7678677",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/automatticcareers/jobs/7678677",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Assort Health",
@@ -57369,6 +57506,18 @@
           "contacts": []
         },
         {
+          "key": "5749183004",
+          "company": "Warp",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-ii-at-wheels-up-4402765311",
           "company": "Wheels Up",
           "role": "Software Engineer II",
@@ -58550,6 +58699,18 @@
           "role": "Agent Engineer (New Grad, Summer 2026)",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7678677",
+          "company": "Automattic Careers",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -71893,6 +72054,18 @@
           "contacts": []
         },
         {
+          "key": "5749183004",
+          "company": "Warp",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-ii-at-wheels-up-4402765311",
           "company": "Wheels Up",
           "role": "Software Engineer II",
@@ -72894,6 +73067,18 @@
           "role": "Software Engineer - Platform",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7678677",
+          "company": "Automattic Careers",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
