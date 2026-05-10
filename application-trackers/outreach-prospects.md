@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 614
+Companies queued: 617
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -209,6 +209,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Fortune | Full Stack Software Engineer Next.js | 5424161004 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/fortune/jobs/5424161004) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Fortue | Founding Engineer | 4664203004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/applytofortue/jobs/4664203004) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Forge Global | Software Engineer II, Marketplace Middleware Engineering | 5971240004 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/forgeglobal/jobs/5971240004) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
+| Forge Global | Software Engineer II of Marketplace Middleware Engineering | 5971239004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/forgeglobal/jobs/5971239004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Forerunner | Forward Deployed Engineer | 4716512007 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/forerunner/jobs/4716512007) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | FlowFuse | FlowFuse Full Stack Developer (AI-focused) | 5744138004 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/flowfuse/jobs/5744138004) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Flourish | Backend Engineer | 5814572004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/flourish/jobs/5814572004) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
@@ -235,6 +236,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Dex | Product Engineer | 5620556004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/dex/jobs/5620556004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Databento | Backend Engineer | 7421561 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/databento/jobs/7421561?gh_src=8sb20jx21us) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Dandy | Software Engineer II, Product Lines Engineer (Full Stack) | software-engineer-ii-product-lines-engineer-full-stack-at-dandy-4364041463 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-product-lines-engineer-full-stack-at-dandy-4364041463) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
+| CVector | Full Stack Software Engineer I | full-stack-software-engineer-i-at-cvector-4368241276 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/full-stack-software-engineer-i-at-cvector-4368241276) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Current | Software Engineer | software-engineer-at-current-4401782875 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-at-current-4401782875) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Crunchyroll | Software Engineer II - LRX Core | 7569508 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/crunchyroll/jobs/7569508) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Crunchyroll | Software Engineer II, Frontend | 7262899 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/crunchyroll/jobs/7262899) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
@@ -265,6 +267,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Chalk | Software Engineer | 4552961005 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/chalk/jobs/4552961005) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Censys | Software Engineer (Backend, Distributed Systems) | 8499166002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/censys/jobs/8499166002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Censys | Software Engineer (Backend), Core Services | 8500307002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/censys/jobs/8500307002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
+| Censys | Software Engineer (Backend), SaaS Platform | 8538086002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/censys/jobs/8538086002) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | CareerWellness | Backend Engineer | 4411313503 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4411313503/?trackingId=EBVYXiR1yLpVpCccxqA3YA%3D%3D&refId=%2FJ95SvUHr%2BJRbsyOTJu5NA%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BtOtbKfUjRbqzE0274Rmn2A%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | Capco | Full Stack Engineer | 7558557 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/capco/jobs/7558557) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Cadence | Software Engineer I | Software-Engineer-I_R53009-1 | 10 | Applied | Yes | [Posting](https://cadence.wd1.myworkdayjobs.com/External_Careers/job/SAN-JOSE/Software-Engineer-I_R53009-1?source=LinkedIn) |  |  |  |  |
