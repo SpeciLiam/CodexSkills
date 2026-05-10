@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T10:59:00.205750+00:00",
+  "generatedAt": "2026-05-10T11:24:33.432253+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 724,
+      "total": 727,
       "applied": 445,
-      "unapplied": 279,
-      "active": 533,
+      "unapplied": 282,
+      "active": 536,
       "rejected": 55,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 585,
-      "reachOut": 649,
+      "highFit": 588,
+      "reachOut": 652,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
       "intakeJobs": 584,
-      "intakeQueued": 33,
+      "intakeQueued": 30,
       "intakeNew": 42,
-      "intakeManual": 322,
+      "intakeManual": 325,
       "intakeApplied": 0,
-      "applyRate": 61.5,
+      "applyRate": 61.2,
       "rejectionRate": 12.4,
-      "recruiterWork": 421,
-      "engineerWork": 502,
+      "recruiterWork": 424,
+      "engineerWork": 505,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 130
+        "value": 133
       },
       {
         "name": "Rejected",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 306
+        "value": 308
       },
       {
         "name": "LinkedIn",
-        "value": 273
+        "value": 274
       },
       {
         "name": "Ashby",
@@ -144,7 +144,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 320
+        "value": 323
       },
       {
         "name": "Bay Area",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 397
+        "value": 400
       },
       {
         "name": "Full Stack",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 324
+        "count": 327
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 322
+        "value": 325
       },
       {
         "name": "Tailored",
@@ -278,7 +278,7 @@
       },
       {
         "name": "Queued",
-        "value": 33
+        "value": 30
       },
       {
         "name": "Duplicate",
@@ -514,8 +514,8 @@
       },
       {
         "date": "2026-05-10",
-        "cumulative": 724,
-        "added": 19,
+        "cumulative": 727,
+        "added": 22,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -21018,6 +21018,81 @@
         "2026-05-10",
         "2026-05-10"
       ]
+    },
+    {
+      "company": "Mastercard",
+      "role": "Software Engineer II - Foundry - R&D",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-foundry-r-d-at-mastercard-4398606624",
+      "postingKey": "4398606624",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Mastercard/Software_Engineer_II_Foundry_R_D/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Mastercard/Software_Engineer_II_Foundry_R_D/Liam_Van_Resume/Liam_Van_Mastercard.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly LinkedIn intake 2026-05-10 10:59Z; tailored SWE II resume rendered and verified one page. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "Garner Health",
+      "role": "Associate Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/garnerhealth/jobs/5701122004",
+      "postingKey": "5701122004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Garner Health/Associate_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Garner Health/Associate_Software_Engineer/Liam_Van_Resume/Liam_Van_Garner_Health.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-10 10:59Z; tailored associate SWE resume rendered and verified one page. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10"
+      ]
+    },
+    {
+      "company": "DoorDash USA",
+      "role": "Software Engineer II, New Verticals",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "New York, NY; San Francisco, CA; Seattle, WA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/doordashusa/jobs/7155159",
+      "postingKey": "7155159",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DoorDash USA/Software_Engineer_II_New_Verticals/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DoorDash USA/Software_Engineer_II_New_Verticals/Liam_Van_Resume/Liam_Van_DoorDash_USA.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-10 10:59Z; tailored SWE II New Verticals resume rendered and verified one page. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10"
+      ]
     }
   ],
   "jobIntake": [
@@ -21045,9 +21120,9 @@
       "discoveredAt": "2026-05-10T10:58:59.962081+00:00",
       "postedAge": "public LinkedIn search result captured 2026-05-10; exact job view visible",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4398606624"
     },
     {
       "source": "Greenhouse",
@@ -21059,9 +21134,9 @@
       "discoveredAt": "2026-05-10T10:58:59.962081+00:00",
       "postedAge": "public Greenhouse search result captured 2026-05-10; exact job URL visible",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "5701122004"
     },
     {
       "source": "Greenhouse",
@@ -21073,9 +21148,9 @@
       "discoveredAt": "2026-05-10T10:58:59.962081+00:00",
       "postedAge": "public Greenhouse search result captured 2026-05-10; exact job URL visible",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "7155159"
     },
     {
       "source": "LinkedIn",
@@ -31202,6 +31277,19 @@
       "notes": ""
     },
     {
+      "company": "Mastercard",
+      "role": "Software Engineer II - Foundry - R&D",
+      "postingKey": "software-engineer-ii-foundry-r-d-at-mastercard-4398606624",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-foundry-r-d-at-mastercard-4398606624",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Markforged",
       "role": "Software Engineer I",
       "postingKey": "5802712004",
@@ -31735,6 +31823,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Garner Health",
+      "role": "Associate Software Engineer",
+      "postingKey": "5701122004",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/garnerhealth/jobs/5701122004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Fortune",
       "role": "Full Stack Software Engineer Next.js",
       "postingKey": "5424161004",
@@ -32031,6 +32132,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "DoorDash USA",
+      "role": "Software Engineer II, New Verticals",
+      "postingKey": "7155159",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/doordashusa/jobs/7155159",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -53050,6 +53164,18 @@
           "contacts": []
         },
         {
+          "key": "7155159",
+          "company": "DoorDash USA",
+          "role": "Software Engineer II, New Verticals",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4888585008",
           "company": "EvenUp",
           "role": "Software Engineer, Backend",
@@ -53149,6 +53275,18 @@
           "key": "software-engineer-ii-at-garner-health-4379614164",
           "company": "Garner Health",
           "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5701122004",
+          "company": "Garner Health",
+          "role": "Associate Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -53403,6 +53541,18 @@
           "role": "Software Engineer (US)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4398606624",
+          "company": "Mastercard",
+          "role": "Software Engineer II - Foundry - R&D",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -67070,6 +67220,18 @@
           "contacts": []
         },
         {
+          "key": "7155159",
+          "company": "DoorDash USA",
+          "role": "Software Engineer II, New Verticals",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4888585008",
           "company": "EvenUp",
           "role": "Software Engineer, Backend",
@@ -67171,6 +67333,18 @@
           "role": "Software Engineer II",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5701122004",
+          "company": "Garner Health",
+          "role": "Associate Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -67411,6 +67585,18 @@
           "role": "Software Engineer (US)",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4398606624",
+          "company": "Mastercard",
+          "role": "Software Engineer II - Foundry - R&D",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
