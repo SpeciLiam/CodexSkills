@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 578
+Companies queued: 580
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -232,6 +232,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Cisco | Software Engineer I (Full Time) - United States | 4367615242 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-i-full-time-united-states-at-cisco-4367615242) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Chime | Software Engineer, Financial Platform | 8183064002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/chime/jobs/8183064002) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Chime | Software Engineer, Credit Risk Platform | 8219793002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/Chime/jobs/8219793002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
+| Chime | Mobile Software Engineer, Cross Platform | 8433838002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/chime/jobs/8433838002?gh_jid=8433838002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Checkr | Backend Software Engineer II | 7438937 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/checkr/jobs/7438937) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | ChatGPT Jobs / Flamingo | Software Engineer | software-engineer-at-chatgpt-jobs-4357811639 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-at-chatgpt-jobs-4357811639) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | CHAOS Industries | Software Engineer, Backend & Data | 4687774007 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/chaosindustries/jobs/4687774007) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
@@ -396,6 +397,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Chime | Software Engineer, Deposits & Insights | 8523547002 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/chime/jobs/8523547002?gh_jid=8523547002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Chime | Software Engineer, MyPay | 8499450002 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/chime/jobs/8499450002?gh_jid=8499450002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Chime | Software Engineer, Growth | 7913323002 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/chime/jobs/7913323002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
+| Chime | Software Engineer, Instant Loans | 8433840002 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/chime/jobs/8433840002?gh_jid=8433840002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Chicago Trading Company | Software Engineer - Risk | 4640488005 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/embed/job_app?for=chicagotrading&token=4640488005&gh_src=2ca2e12e5us&b=https://chicagotrading.com/posting?req=4640488005-NewYork-Chicago) |  |  |  |  |
 | Checkr | Software Engineer II | 7296759 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/checkr/jobs/7296759) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | CHAOS Industries | Field Software Engineer | 5082153007 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/chaosindustries/jobs/5082153007) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |

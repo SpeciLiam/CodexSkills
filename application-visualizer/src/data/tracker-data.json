@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T00:34:33.102958+00:00",
+  "generatedAt": "2026-05-10T02:20:21.837379+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 691,
+      "total": 693,
       "applied": 445,
-      "unapplied": 246,
-      "active": 501,
+      "unapplied": 248,
+      "active": 503,
       "rejected": 54,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 552,
-      "reachOut": 616,
+      "highFit": 554,
+      "reachOut": 618,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 542,
+      "intakeJobs": 544,
       "intakeQueued": 30,
       "intakeNew": 42,
-      "intakeManual": 297,
+      "intakeManual": 299,
       "intakeApplied": 0,
-      "applyRate": 64.4,
+      "applyRate": 64.2,
       "rejectionRate": 12.1,
-      "recruiterWork": 388,
-      "engineerWork": 469,
+      "recruiterWork": 390,
+      "engineerWork": 471,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 97
+        "value": 99
       },
       {
         "name": "Rejected",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 280
+        "value": 282
       },
       {
         "name": "LinkedIn",
@@ -148,7 +148,7 @@
       },
       {
         "name": "Bay Area",
-        "value": 159
+        "value": 161
       },
       {
         "name": "Other",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 379
+        "value": 380
       },
       {
         "name": "Full Stack",
@@ -194,7 +194,7 @@
       },
       {
         "name": "Infra/Platform",
-        "value": 33
+        "value": 34
       },
       {
         "name": "Data",
@@ -240,11 +240,11 @@
       },
       {
         "score": "9",
-        "count": 128
+        "count": 129
       },
       {
         "score": "10",
-        "count": 295
+        "count": 296
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 297
+        "value": 299
       },
       {
         "name": "Tailored",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 350
+        "value": 352
       },
       {
         "name": "LinkedIn",
@@ -506,8 +506,8 @@
       },
       {
         "date": "2026-05-09",
-        "cumulative": 691,
-        "added": 44,
+        "cumulative": 693,
+        "added": 46,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -527,15 +527,15 @@
         "bestFit": 10
       },
       {
-        "company": "Pinterest",
-        "roles": 8,
-        "avgFit": 10.0,
+        "company": "Chime",
+        "roles": 9,
+        "avgFit": 9.22,
         "bestFit": 10
       },
       {
-        "company": "Chime",
-        "roles": 7,
-        "avgFit": 9.14,
+        "company": "Pinterest",
+        "roles": 8,
+        "avgFit": 10.0,
         "bestFit": 10
       },
       {
@@ -20166,9 +20166,75 @@
       "activityDates": [
         "2026-05-09"
       ]
+    },
+    {
+      "company": "Chime",
+      "role": "Software Engineer, Instant Loans",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "San Francisco, CA, USA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/chime/jobs/8433840002?gh_jid=8433840002",
+      "postingKey": "8433840002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Chime/Software_Engineer_Instant_Loans/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Chime/Software_Engineer_Instant_Loans/Liam_Van_Resume/Liam_Van_Chime.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-09 18:17 PT; captured from Greenhouse public board/search, tailored resume rendered and verified one page. Manual apply needed: application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-09.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09",
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Chime",
+      "role": "Mobile Software Engineer, Cross Platform",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "San Francisco, CA, USA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/chime/jobs/8433838002?gh_jid=8433838002",
+      "postingKey": "8433838002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Chime/Mobile_Software_Engineer_Cross_Platform/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Chime/Mobile_Software_Engineer_Cross_Platform/Liam_Van_Resume/Liam_Van_Chime.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-09 18:17 PT; captured from Greenhouse public board/search, tailored resume rendered and verified one page. Manual apply needed: application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-09.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-09",
+        "2026-05-09"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Chime Financial, Inc",
+      "role": "Mobile Software Engineer, Cross Platform",
+      "location": "San Francisco, CA, USA",
+      "postingKey": "8433838002",
+      "jobUrl": "https://job-boards.greenhouse.io/chime/jobs/8433838002?gh_jid=8433838002",
+      "discoveredAt": "2026-05-10T01:17:40.725306+00:00",
+      "postedAge": "Current Chime careers / Greenhouse board listing; verified open 2026-05-10",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "8433838002"
+    },
     {
       "source": "LinkedIn",
       "company": "DRW",
@@ -24438,6 +24504,20 @@
       "status": "Tailored",
       "reason": "SWE-family role, early-career signal, NYC preference",
       "trackerPostingKey": "4401827377"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Chime Financial, Inc",
+      "role": "Software Engineer, Instant Loans",
+      "location": "San Francisco, CA, USA",
+      "postingKey": "8433840002",
+      "jobUrl": "https://job-boards.greenhouse.io/chime/jobs/8433840002?gh_jid=8433840002",
+      "discoveredAt": "2026-05-10T01:17:40.725306+00:00",
+      "postedAge": "Current Chime careers / Greenhouse board listing; verified open 2026-05-10",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "8433840002"
     },
     {
       "source": "Greenhouse",
@@ -30659,6 +30739,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Chime",
+      "role": "Mobile Software Engineer, Cross Platform",
+      "postingKey": "8433838002",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/chime/jobs/8433838002?gh_jid=8433838002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Checkr",
       "role": "Backend Software Engineer II",
       "postingKey": "7438937",
@@ -32785,6 +32878,19 @@
       "status": "Manual Apply Needed",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/chime/jobs/7913323002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Chime",
+      "role": "Software Engineer, Instant Loans",
+      "postingKey": "8433840002",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/chime/jobs/8433840002?gh_jid=8433840002",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-09",
@@ -50953,6 +51059,18 @@
           "contacts": []
         },
         {
+          "key": "8433838002",
+          "company": "Chime",
+          "role": "Mobile Software Engineer, Cross Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4367615242",
           "company": "Cisco",
           "role": "Software Engineer I (Full Time) - United States",
@@ -52384,6 +52502,18 @@
           "key": "7913323002",
           "company": "Chime",
           "role": "Software Engineer, Growth",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8433840002",
+          "company": "Chime",
+          "role": "Software Engineer, Instant Loans",
           "fitScore": 9,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -64565,6 +64695,18 @@
           "contacts": []
         },
         {
+          "key": "8433838002",
+          "company": "Chime",
+          "role": "Mobile Software Engineer, Cross Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4367615242",
           "company": "Cisco",
           "role": "Software Engineer I (Full Time) - United States",
@@ -66248,6 +66390,18 @@
           "key": "8499450002",
           "company": "Chime",
           "role": "Software Engineer, MyPay",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8433840002",
+          "company": "Chime",
+          "role": "Software Engineer, Instant Loans",
           "fitScore": 9,
           "status": "Manual Apply Needed",
           "count": 1,
