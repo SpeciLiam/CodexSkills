@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 583
+Companies queued: 586
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -36,6 +36,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Twitch | Software Engineer I, Commerce Engineering | 8459320002 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/twitch/jobs/8459320002) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Twitch | Software Engineer II, Safety | 8499608002 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/twitch/jobs/8499608002) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Twitch | Software Engineer I, Streamer Monetization Experience | 8470752002 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/twitch/jobs/8470752002) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
+| Twitch | Software Engineer I, Commerce | search-results | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/search-results/?keywords=Software%20Engineer%20I%20Commerce%20Twitch&geoId=103644278&f_TPR=r86400) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Trexquant Investment LP | Software Engineer - Early Career (USA) | 4297854738 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4297854738/) |  |  |  |  |
 | Trexquant Investment LP | Software Engineer - Early Career (USA) | 4330689211 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4330689211/) |  |  |  |  |
 | Translucent | Software Engineer | 4038826009 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/translucent/jobs/4038826009) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
@@ -75,6 +76,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Scale AI | Software Engineer, Frontier AI Infrastructure | 4363623005 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/scaleai/jobs/4363623005) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Scale AI | Software Engineer, Gen AI | 4591300005 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/scaleai/jobs/4591300005) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Scale AI | Forward Deployed Engineer, GenAI | 4593571005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/scaleai/jobs/4593571005) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
+| Scale AI | Forward Deployed Engineer, ARC | 4681899005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/scaleai/jobs/4681899005) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | S&P Global | Software Engineer II | software-engineer-ii-at-s-p-global-4402306070 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-at-s-p-global-4402306070) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Runway | Software Engineer, Applied AI | 4596829007 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/runwayml/jobs/4596829007) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Rokt | Junior Software Engineer | 4402165922 | 10 | Interviewing | Yes | [Posting](https://www.linkedin.com/jobs/view/4402165922/?trackingId=n3nIWzW5%2FsjqL0Yu7dhZIQ%3D%3D&refId=glJ8A%2B2sNgHqb%2Bh7kMbvlQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3B1ZAisVhNS%2Fa%2BbbDZwRnYeA%3D%3D) |  |  |  |  |
@@ -180,6 +182,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | GreenSpark | Software Engineer | 4169702004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/applytogreenspark/jobs/4169702004) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Glean | Software Engineer, Fullstack | 4006734005 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/gleanwork/jobs/4006734005) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Glean | Software Engineer, Billing & Revenue Platform | 4675862005 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/gleanwork/jobs/4675862005) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
+| Glean | Forward Deployed Engineer | 4669019005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/gleanwork/jobs/4669019005) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Glazier | Founding Engineer (Glazier) | 4502530004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/applytoglazier/jobs/4502530004) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | GitHub | Software Engineer II | software-engineer-ii-at-github-4402311691 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-at-github-4402311691) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Giga | Software Engineer (New Grads) - San Francisco | cb74c445-322b-47fc-804c-b0565e18ca3a | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/GigaML/cb74c445-322b-47fc-804c-b0565e18ca3a/application?utm_source=6p28rgeQLE) |  |  |  |  |

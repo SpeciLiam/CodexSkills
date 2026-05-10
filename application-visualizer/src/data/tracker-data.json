@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T03:19:46.198835+00:00",
+  "generatedAt": "2026-05-10T04:02:27.334663+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 696,
+      "total": 699,
       "applied": 445,
-      "unapplied": 251,
-      "active": 506,
+      "unapplied": 254,
+      "active": 509,
       "rejected": 54,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 557,
-      "reachOut": 621,
+      "highFit": 560,
+      "reachOut": 624,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 547,
+      "intakeJobs": 551,
       "intakeQueued": 30,
       "intakeNew": 42,
       "intakeManual": 302,
       "intakeApplied": 0,
-      "applyRate": 63.9,
+      "applyRate": 63.7,
       "rejectionRate": 12.1,
-      "recruiterWork": 393,
-      "engineerWork": 474,
+      "recruiterWork": 396,
+      "engineerWork": 477,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 102
+        "value": 105
       },
       {
         "name": "Rejected",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 285
+        "value": 287
       },
       {
         "name": "LinkedIn",
-        "value": 266
+        "value": 267
       },
       {
         "name": "Ashby",
@@ -144,11 +144,11 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 302
+        "value": 304
       },
       {
         "name": "Bay Area",
-        "value": 162
+        "value": 163
       },
       {
         "name": "Other",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 381
+        "value": 382
       },
       {
         "name": "Full Stack",
@@ -186,7 +186,7 @@
       },
       {
         "name": "Forward Deployed",
-        "value": 47
+        "value": 49
       },
       {
         "name": "AI/ML",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 297
+        "count": 300
       }
     ],
     "targetCounts": [
@@ -266,11 +266,11 @@
       },
       {
         "name": "Tailored",
-        "value": 124
+        "value": 127
       },
       {
         "name": "Skipped",
-        "value": 43
+        "value": 44
       },
       {
         "name": "New",
@@ -296,11 +296,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 355
+        "value": 357
       },
       {
         "name": "LinkedIn",
-        "value": 192
+        "value": 194
       }
     ],
     "timeline": [
@@ -506,8 +506,8 @@
       },
       {
         "date": "2026-05-09",
-        "cumulative": 696,
-        "added": 49,
+        "cumulative": 699,
+        "added": 52,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -522,7 +522,7 @@
       },
       {
         "company": "Scale AI",
-        "roles": 9,
+        "roles": 10,
         "avgFit": 10.0,
         "bestFit": 10
       },
@@ -539,15 +539,21 @@
         "bestFit": 10
       },
       {
+        "company": "Twitch",
+        "roles": 7,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "Attentive",
         "roles": 6,
         "avgFit": 10.0,
         "bestFit": 10
       },
       {
-        "company": "Twitch",
+        "company": "Glean",
         "roles": 6,
-        "avgFit": 10.0,
+        "avgFit": 9.17,
         "bestFit": 10
       },
       {
@@ -570,12 +576,6 @@
       },
       {
         "company": "Uber",
-        "roles": 5,
-        "avgFit": 9.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Glean",
         "roles": 5,
         "avgFit": 9.0,
         "bestFit": 10
@@ -886,6 +886,15 @@
         "jobLink": "https://job-boards.greenhouse.io/twitch/jobs/8470752002"
       },
       {
+        "company": "Twitch",
+        "role": "Software Engineer I, Commerce",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://www.linkedin.com/jobs/search-results/?keywords=Software%20Engineer%20I%20Commerce%20Twitch&geoId=103644278&f_TPR=r86400"
+      },
+      {
         "company": "Trexquant Investment LP",
         "role": "Software Engineer - Early Career (USA)",
         "fitScore": 10,
@@ -974,15 +983,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://www.linkedin.com/jobs/view/4410910044/"
-      },
-      {
-        "company": "Tekmerion Capital",
-        "role": "Software Engineer",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://job-boards.greenhouse.io/tekmerion/jobs/7643023"
       }
     ],
     "recruiterBatch": {
@@ -20293,9 +20293,129 @@
       "activityDates": [
         "2026-05-09"
       ]
+    },
+    {
+      "company": "Twitch",
+      "role": "Software Engineer I, Commerce",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/search-results/?keywords=Software%20Engineer%20I%20Commerce%20Twitch&geoId=103644278&f_TPR=r86400",
+      "postingKey": "search-results",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Twitch/Software_Engineer_I_Commerce/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Twitch/Software_Engineer_I_Commerce/Liam_Van_Resume/Liam_Van_Twitch.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 03:29Z; tailored SWE resume rendered and verified one page; emphasized early-career commerce product engineering, React and TypeScript product surfaces, backend APIs, customer-facing workflows, testing, and production reliability. Degraded public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-09: application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; degraded LinkedIn capture only exposed search-results URL, so exact posting should be verified before submit.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Scale AI",
+      "role": "Forward Deployed Engineer, ARC",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "San Francisco, CA; New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/scaleai/jobs/4681899005",
+      "postingKey": "4681899005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scale AI/Forward_Deployed_Engineer_ARC/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scale AI/Forward_Deployed_Engineer_ARC/Liam_Van_Resume/Liam_Van_Scale_AI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 03:29Z; tailored SWE resume rendered and verified one page; emphasized applied AI forward-deployed engineering, customer-facing product delivery, LLM applications, backend APIs, technical debugging, and production validation. Degraded public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-09: tailored resume ready, but application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-09"
+      ]
+    },
+    {
+      "company": "Glean",
+      "role": "Forward Deployed Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-09",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/gleanwork/jobs/4669019005",
+      "postingKey": "4669019005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Glean/Forward_Deployed_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Glean/Forward_Deployed_Engineer/Liam_Van_Resume/Liam_Van_Glean.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-10 03:29Z; tailored SWE resume rendered and verified one page; emphasized AI product engineering, forward-deployed customer workflows, LLM applications, backend APIs, full-stack delivery, and production validation. Degraded public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-09: tailored resume ready, but application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-10",
+        "2026-05-09"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "LinkedIn",
+      "company": "Twitch",
+      "role": "Software Engineer I, Commerce",
+      "location": "San Francisco, CA",
+      "postingKey": "linkedin-public-twitch-software-engineer-i-commerce-sf-2026-05-10",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=Software%20Engineer%20I%20Commerce%20Twitch&geoId=103644278&f_TPR=r86400",
+      "discoveredAt": "2026-05-10T03:29:44.893927+00:00",
+      "postedAge": "public LinkedIn result; 1 day ago; degraded aggregate capture 2026-05-10",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; emphasized early-career commerce product engineering, React and TypeScript product surfaces, backend APIs, customer-facing workflows, testing, and production reliability",
+      "trackerPostingKey": "linkedin-public-twitch-software-engineer-i-commerce-sf-2026-05-10"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Scale AI",
+      "role": "Forward Deployed Engineer, ARC",
+      "location": "San Francisco, CA; New York, NY",
+      "postingKey": "4681899005",
+      "jobUrl": "https://job-boards.greenhouse.io/scaleai/jobs/4681899005",
+      "discoveredAt": "2026-05-10T03:29:44.893927+00:00",
+      "postedAge": "public Greenhouse result; current/degraded capture 2026-05-10",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; emphasized applied AI forward-deployed engineering, customer-facing product delivery, LLM applications, backend APIs, technical debugging, and production validation",
+      "trackerPostingKey": "4681899005"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Glean",
+      "role": "Forward Deployed Engineer",
+      "location": "New York, NY",
+      "postingKey": "4669019005",
+      "jobUrl": "https://job-boards.greenhouse.io/gleanwork/jobs/4669019005",
+      "discoveredAt": "2026-05-10T03:29:44.893927+00:00",
+      "postedAge": "public Greenhouse result; current/degraded capture 2026-05-10",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-09; resume rendered and verified one page; emphasized AI product engineering, forward-deployed customer workflows, LLM applications, backend APIs, full-stack delivery, and production validation",
+      "trackerPostingKey": "4669019005"
+    },
     {
       "source": "Greenhouse",
       "company": "Ridgeline",
@@ -27507,6 +27627,20 @@
       "trackerPostingKey": ""
     },
     {
+      "source": "LinkedIn",
+      "company": "Freddie Mac",
+      "role": "Software Development Engineer - Recent Grad",
+      "location": "United States",
+      "postingKey": "linkedin-public-freddie-mac-software-development-engineer-recent-grad-2026-05-10",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=Software%20Development%20Engineer%20Recent%20Grad%20Freddie%20Mac&geoId=103644278&f_TPR=r86400",
+      "discoveredAt": "2026-05-10T03:29:44.893927+00:00",
+      "postedAge": "public LinkedIn result; 17 hours ago; degraded aggregate capture 2026-05-10",
+      "fitScore": 5,
+      "status": "Skipped",
+      "reason": "preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "Greenhouse",
       "company": "Maven Clinic",
       "role": "Senior Software Engineer, Backend Engineering",
@@ -28308,6 +28442,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Twitch",
+      "role": "Software Engineer I, Commerce",
+      "postingKey": "search-results",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/search-results/?keywords=Software%20Engineer%20I%20Commerce%20Twitch&geoId=103644278&f_TPR=r86400",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Trexquant Investment LP",
       "role": "Software Engineer - Early Career (USA)",
       "postingKey": "4297854738",
@@ -28809,6 +28956,19 @@
       "status": "Resume Tailored",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/scaleai/jobs/4593571005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Scale AI",
+      "role": "Forward Deployed Engineer, ARC",
+      "postingKey": "4681899005",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/scaleai/jobs/4681899005",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-09",
@@ -30174,6 +30334,19 @@
       "status": "Manual Apply Needed",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/gleanwork/jobs/4675862005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Glean",
+      "role": "Forward Deployed Engineer",
+      "postingKey": "4669019005",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/gleanwork/jobs/4669019005",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-09",
@@ -51491,6 +51664,18 @@
           "contacts": []
         },
         {
+          "key": "4669019005",
+          "company": "Glean",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4169702004",
           "company": "GreenSpark",
           "role": "Software Engineer",
@@ -52175,6 +52360,18 @@
           "contacts": []
         },
         {
+          "key": "4681899005",
+          "company": "Scale AI",
+          "role": "Forward Deployed Engineer, ARC",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "forward-deployed-engineer-at-scaled-cognition-4392389111",
           "company": "Scaled Cognition",
           "role": "Forward Deployed Engineer",
@@ -52396,6 +52593,18 @@
           "role": "Software Engineer II, Safety",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "search-results",
+          "company": "Twitch",
+          "role": "Software Engineer I, Commerce",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -65187,6 +65396,18 @@
           "contacts": []
         },
         {
+          "key": "4669019005",
+          "company": "Glean",
+          "role": "Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4169702004",
           "company": "GreenSpark",
           "role": "Software Engineer",
@@ -65967,6 +66188,18 @@
           "contacts": []
         },
         {
+          "key": "4681899005",
+          "company": "Scale AI",
+          "role": "Forward Deployed Engineer, ARC",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "forward-deployed-engineer-at-scaled-cognition-4392389111",
           "company": "Scaled Cognition",
           "role": "Forward Deployed Engineer",
@@ -66260,6 +66493,18 @@
           "role": "Software Engineer II, Safety",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "search-results",
+          "company": "Twitch",
+          "role": "Software Engineer I, Commerce",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
