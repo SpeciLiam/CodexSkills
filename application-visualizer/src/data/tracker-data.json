@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T10:51:49.032567+00:00",
+  "generatedAt": "2026-05-10T10:51:59.560091+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -22,7 +22,7 @@
       "prospects": 3,
       "readyEmails": 3,
       "intakeJobs": 579,
-      "intakeQueued": 31,
+      "intakeQueued": 30,
       "intakeNew": 42,
       "intakeManual": 320,
       "intakeApplied": 0,
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 129
+        "value": 130
       },
       {
         "name": "Rejected",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 15
+        "value": 14
       },
       {
         "name": "Online Assessment",
@@ -266,7 +266,7 @@
       },
       {
         "name": "Tailored",
-        "value": 136
+        "value": 137
       },
       {
         "name": "Skipped",
@@ -278,7 +278,7 @@
       },
       {
         "name": "Queued",
-        "value": 31
+        "value": 30
       },
       {
         "name": "Duplicate",
@@ -20997,7 +20997,7 @@
       "company": "Arine",
       "role": "Full Stack Software Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -21006,15 +21006,16 @@
       "source": "Greenhouse",
       "jobLink": "https://job-boards.greenhouse.io/arine/jobs/5837493004",
       "postingKey": "5837493004",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Arine/Full_Stack_Software_Engineer/Liam_Van_Resume_2",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Arine/Full_Stack_Software_Engineer/Liam_Van_Resume_2/Liam_Van_Arine.pdf",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Arine/Full_Stack_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Arine/Full_Stack_Software_Engineer/Liam_Van_Resume/Liam_Van_Arine.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 10:51Z; tailored SWE resume rendered and verified one page; emphasized Bay Area full-stack healthtech engineering, React and TypeScript product surfaces, backend APIs, data-heavy workflows, testing, and reliable product delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-10 10:51Z; tailored SWE resume rendered and verified one page; emphasized Bay Area full-stack healthtech engineering, React and TypeScript product surfaces, backend APIs, data-heavy workflows, testing, and reliable product delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; tailored resume rendered and verified one page 2026-05-10",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-10",
         "2026-05-10"
       ]
     }
@@ -21030,9 +21031,9 @@
       "discoveredAt": "2026-05-10T10:50:52.369802+00:00",
       "postedAge": "",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, SF/Bay Area preference",
-      "trackerPostingKey": ""
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-10; resume rendered and verified one page; emphasized Bay Area full-stack healthtech engineering, React and TypeScript product surfaces, backend APIs, data-heavy workflows, testing, and reliable product delivery",
+      "trackerPostingKey": "5837493004"
     },
     {
       "source": "Greenhouse",
@@ -32838,7 +32839,7 @@
       "role": "Full Stack Software Engineer",
       "postingKey": "5837493004",
       "fitScore": 10,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/arine/jobs/5837493004",
       "prospectCount": 0,
@@ -52539,7 +52540,7 @@
           "company": "Arine",
           "role": "Full Stack Software Engineer",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -66499,7 +66500,7 @@
           "company": "Arine",
           "role": "Full Stack Software Engineer",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
