@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 608
+Companies queued: 610
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -192,6 +192,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Handshake | Associate Software Engineer, RLE | 4406112904 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4406112904/) |  |  |  |  |
 | Handshake | Software Engineer II | 9d7bdbac-2672-4717-99c0-90cf37aa48c1 | 10 | Applied | Yes | [Posting](https://joinhandshake.com/careers/job/?ashby_jid=9d7bdbac-2672-4717-99c0-90cf37aa48c1&utm_source=4xDZ2XYAXn) |  |  |  |  |
 | Handshake | Software Engineer I, Coding Pod | 4407495876 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4407495876/) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-08. |
+| HackerRank | Forward Deployed Engineer | 7482134 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/hackerrank/jobs/7482134) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | GreenSpark | Software Engineer | 4169702004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/applytogreenspark/jobs/4169702004) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Glean | Software Engineer, Fullstack | 4006734005 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/gleanwork/jobs/4006734005) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Glean | Software Engineer, Billing & Revenue Platform | 4675862005 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/gleanwork/jobs/4675862005) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
@@ -247,6 +248,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Clear Street | Software Engineer - Infrastructure | 7535167 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/clearstreet/jobs/7535167) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Clear Street | Software Engineer, Front End- Execution Management System | 4956908 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/clearstreet/jobs/4956908?gh_src=Blind) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Clear Street | Software Engineer - Low Touch Desk | 7466108 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/clearstreet/jobs/7466108) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
+| Clear Street | Software Engineer, Full Stack - Risk Engineering | 7258580 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/clearstreet/jobs/7258580) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | CLEAR - Corporate | Software Engineer, Infrastructure | 7901600 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/clear/jobs/7901600) |  |  | 2026-05-07 | Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome. |
 | Civis Analytics | Applied Software Engineer II | 7392088 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/civisanalytics/jobs/7392088) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Citi | Junior Generative AI Application Developer | 4411715287 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4411715287/?trackingId=n9Qpmb2VmX0jj7ilbP9PZw%3D%3D&refId=glJ8A%2B2sNgHqb%2Bh7kMbvlQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BAYdAWy1hRr2jMAxKih4zOg%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
