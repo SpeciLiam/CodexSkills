@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T10:58:46.585469+00:00",
+  "generatedAt": "2026-05-10T10:59:00.205750+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,8 +21,8 @@
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 579,
-      "intakeQueued": 30,
+      "intakeJobs": 584,
+      "intakeQueued": 33,
       "intakeNew": 42,
       "intakeManual": 322,
       "intakeApplied": 0,
@@ -270,7 +270,7 @@
       },
       {
         "name": "Skipped",
-        "value": 44
+        "value": 46
       },
       {
         "name": "New",
@@ -278,7 +278,7 @@
       },
       {
         "name": "Queued",
-        "value": 30
+        "value": 33
       },
       {
         "name": "Duplicate",
@@ -296,11 +296,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 373
+        "value": 375
       },
       {
         "name": "LinkedIn",
-        "value": 206
+        "value": 209
       }
     ],
     "timeline": [
@@ -21021,6 +21021,76 @@
     }
   ],
   "jobIntake": [
+    {
+      "source": "LinkedIn",
+      "company": "Optimum",
+      "role": "Software Development Engineer I - iOS",
+      "location": "New York, NY",
+      "postingKey": "4394952065",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-development-engineer-i-ios-at-optimum-4394952065",
+      "discoveredAt": "2026-05-10T10:58:59.962081+00:00",
+      "postedAge": "public LinkedIn search result captured 2026-05-10; exact job view visible",
+      "fitScore": 10,
+      "status": "Skipped",
+      "reason": "early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Mastercard",
+      "role": "Software Engineer II - Foundry - R&D",
+      "location": "New York, NY",
+      "postingKey": "4398606624",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-ii-foundry-r-d-at-mastercard-4398606624",
+      "discoveredAt": "2026-05-10T10:58:59.962081+00:00",
+      "postedAge": "public LinkedIn search result captured 2026-05-10; exact job view visible",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Garner Health",
+      "role": "Associate Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "5701122004",
+      "jobUrl": "https://job-boards.greenhouse.io/garnerhealth/jobs/5701122004",
+      "discoveredAt": "2026-05-10T10:58:59.962081+00:00",
+      "postedAge": "public Greenhouse search result captured 2026-05-10; exact job URL visible",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "DoorDash USA",
+      "role": "Software Engineer II, New Verticals",
+      "location": "New York, NY; San Francisco, CA; Seattle, WA",
+      "postingKey": "7155159",
+      "jobUrl": "https://job-boards.greenhouse.io/doordashusa/jobs/7155159",
+      "discoveredAt": "2026-05-10T10:58:59.962081+00:00",
+      "postedAge": "public Greenhouse search result captured 2026-05-10; exact job URL visible",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Amazon Ads",
+      "role": "Software Dev Engineer II, Amazon Ads",
+      "location": "New York, NY",
+      "postingKey": "4378951553",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-dev-engineer-ii-amazon-ads-at-amazon-ads-4378951553",
+      "discoveredAt": "2026-05-10T10:58:59.962081+00:00",
+      "postedAge": "public LinkedIn search result captured 2026-05-10; exact job view visible",
+      "fitScore": 10,
+      "status": "Skipped",
+      "reason": "early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
     {
       "source": "Greenhouse",
       "company": "Arine",
