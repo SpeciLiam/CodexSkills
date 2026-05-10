@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 626
+Companies queued: 628
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -18,6 +18,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Weights & Biases | Software Engineer II, Identity | software-engineer-ii-identity-weights-biases-at-weights-biases-4341979511 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-identity-weights-biases-at-weights-biases-4341979511) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Watershed | Software Engineer, Product | 5600411003 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/watershed/jobs/5600411003) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Warp | Software Engineer | 4324888004 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/warp/jobs/4324888004?gh_src=4qxzq4jk4us) | 1 | 1 |  |  |
+| Warp | Forward Deployed Engineer | 5749183004 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/warp/jobs/5749183004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Warner Bros. Discovery | Software Engineer I | Software-Engineer-I | 10 | Applied | Yes | [Posting](https://careers.wbd.com/global/en/job/R000103732/Software-Engineer-I) | 1 | 1 |  |  |
 | Warner Bros. Discovery | Software Engineer II | software-engineer-ii-at-warner-bros-discovery-4374141586 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-at-warner-bros-discovery-4374141586) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Virtu Financial | Software Engineer - Desktop Frontend Developer (C#/Winforms) | 8516902002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/virtu/jobs/8516902002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
@@ -560,6 +561,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Booz Allen Hamilton | Full Stack Developer | 4410949238 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4410949238/) |  |  | 2026-05-07 | Queued by resume-tailor after tailored resume update. |
 | Benchling | Software Engineer, Backend (Infrastructure Engineering) | e729560e-a2dd-4949-8dc5-031312a9b2e2 | 8 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/benchling/e729560e-a2dd-4949-8dc5-031312a9b2e2/application?utm_source=JobWrapping) |  |  |  |  |
 | Bamboo X | Software Engineer | 4395721402 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/collections/recommended/?currentJobId=4395721402) |  |  |  |  |
+| Automattic Careers | Forward Deployed Engineer | 7678677 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/automatticcareers/jobs/7678677) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Assort Health | Agent Engineer (New Grad, Summer 2026) | 64876579-05a2-40b6-a772-d1ce8b0ac8c4 | 8 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/assorthealth/64876579-05a2-40b6-a772-d1ce8b0ac8c4/application?utm_source=3Z7Kvr2enk) |  |  |  |  |
 | Asha Health | Software Engineer, AI x Healthcare | 4404700618 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4404700618/apply/) |  |  |  |  |
 | Apptronik | Software Engineer - Platform | 5985625004 | 8 | Applied | Yes | [Posting](https://boards.greenhouse.io/apptronik/jobs/5985625004?gh_jid=5985625004&gh_src=my.greenhouse.search) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
