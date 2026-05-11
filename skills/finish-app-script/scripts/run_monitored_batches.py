@@ -154,6 +154,7 @@ def main() -> int:
     parser.add_argument("--batch-size", type=int, default=2, help="Rows per fresh Codex process")
     parser.add_argument("--max-batches", type=int, default=0, help="Forwarded to run_batches.py")
     parser.add_argument("--model", default="gpt-5.5", help="Forwarded to run_batches.py")
+    parser.add_argument("--reasoning-effort", default="medium", help="Forwarded to run_batches.py")
     parser.add_argument("--timeout", type=int, default=1800, help="Forwarded to run_batches.py")
     parser.add_argument(
         "--child-sandbox",
@@ -214,6 +215,8 @@ def main() -> int:
             str(args.batch_size),
             "--model",
             args.model,
+            "--reasoning-effort",
+            args.reasoning_effort,
             "--timeout",
             str(args.timeout),
             "--child-sandbox",
