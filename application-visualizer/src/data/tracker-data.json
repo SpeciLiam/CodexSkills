@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T21:06:31.452932+00:00",
+  "generatedAt": "2026-05-11T22:21:21.210819+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 805,
+      "total": 807,
       "applied": 461,
-      "unapplied": 344,
-      "active": 611,
+      "unapplied": 346,
+      "active": 613,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 665,
-      "reachOut": 729,
+      "highFit": 667,
+      "reachOut": 731,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 702,
+      "intakeJobs": 706,
       "intakeQueued": 52,
       "intakeNew": 51,
-      "intakeManual": 375,
+      "intakeManual": 377,
       "intakeApplied": 0,
-      "applyRate": 57.3,
+      "applyRate": 57.1,
       "rejectionRate": 12.6,
-      "recruiterWork": 500,
-      "engineerWork": 579,
+      "recruiterWork": 502,
+      "engineerWork": 581,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 187
+        "value": 189
       },
       {
         "name": "Archived",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 358
+        "value": 360
       },
       {
         "name": "LinkedIn",
@@ -156,7 +156,7 @@
       },
       {
         "name": "Remote",
-        "value": 100
+        "value": 102
       },
       {
         "name": "Seattle",
@@ -182,7 +182,7 @@
       },
       {
         "name": "Backend",
-        "value": 87
+        "value": 88
       },
       {
         "name": "Forward Deployed",
@@ -190,7 +190,7 @@
       },
       {
         "name": "AI/ML",
-        "value": 55
+        "value": 56
       },
       {
         "name": "Infra/Platform",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 371
+        "count": 373
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 375
+        "value": 377
       },
       {
         "name": "Tailored",
@@ -270,7 +270,7 @@
       },
       {
         "name": "Skipped",
-        "value": 76
+        "value": 78
       },
       {
         "name": "Queued",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 463
+        "value": 467
       },
       {
         "name": "LinkedIn",
@@ -522,8 +522,8 @@
       },
       {
         "date": "2026-05-11",
-        "cumulative": 805,
-        "added": 14,
+        "cumulative": 807,
+        "added": 16,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -603,6 +603,12 @@
         "bestFit": 10
       },
       {
+        "company": "Affirm",
+        "roles": 5,
+        "avgFit": 9.8,
+        "bestFit": 10
+      },
+      {
         "company": "Intuit",
         "roles": 5,
         "avgFit": 9.6,
@@ -666,12 +672,6 @@
         "company": "Atoms",
         "roles": 4,
         "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "CoreWeave",
-        "roles": 4,
-        "avgFit": 9.75,
         "bestFit": 10
       }
     ],
@@ -23130,9 +23130,87 @@
       "activityDates": [
         "2026-05-11"
       ]
+    },
+    {
+      "company": "Affirm",
+      "role": "Software Engineer II, Backend (Merchant Advocacy)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "Remote US",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/affirm/jobs/7708925003",
+      "postingKey": "7708925003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Affirm/Software_Engineer_II_Backend_Merchant_Advocacy/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Affirm/Software_Engineer_II_Backend_Merchant_Advocacy/Liam_Van_Resume/Liam_Van_Affirm.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-11: tailored SWE II backend Merchant Advocacy resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11"
+      ]
+    },
+    {
+      "company": "Affirm",
+      "role": "Software Engineer II, Machine Learning (Feature Platform)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "Remote US",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/affirm/jobs/7694294003",
+      "postingKey": "7694294003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Affirm/Software_Engineer_II_Machine_Learning_Feature_Platform/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Affirm/Software_Engineer_II_Machine_Learning_Feature_Platform/Liam_Van_Resume/Liam_Van_Affirm.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-11: tailored SWE II ML Feature Platform resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Affirm",
+      "role": "Software Engineer II, Machine Learning (Feature Platform)",
+      "location": "Remote US",
+      "postingKey": "7694294003",
+      "jobUrl": "https://job-boards.greenhouse.io/affirm/jobs/7694294003",
+      "discoveredAt": "2026-05-11T22:18:00.975122+00:00",
+      "postedAge": "Crawled 2 days ago; public Greenhouse result opened 2026-05-11",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-11: tailored resume rendered and verified one page; live application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback",
+      "trackerPostingKey": "7694294003"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Affirm",
+      "role": "Software Engineer II, Backend (Merchant Advocacy)",
+      "location": "Remote US",
+      "postingKey": "7708925003",
+      "jobUrl": "https://job-boards.greenhouse.io/affirm/jobs/7708925003",
+      "discoveredAt": "2026-05-11T22:18:00.975122+00:00",
+      "postedAge": "Crawled 2 days ago; public Greenhouse result captured 2026-05-11",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-11: tailored resume rendered and verified one page; live application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback",
+      "trackerPostingKey": "7708925003"
+    },
     {
       "source": "Greenhouse",
       "company": "Pinwheel",
@@ -32291,6 +32369,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Rocket Money",
+      "role": "Senior Product Engineer, Compass",
+      "location": "San Francisco, CA; Washington, D.C.; New York City, N.Y.",
+      "postingKey": "7641075003",
+      "jobUrl": "https://job-boards.greenhouse.io/truebill/jobs/7641075003?gh_src=623e14483us",
+      "discoveredAt": "2026-05-11T22:18:00.975122+00:00",
+      "postedAge": "Crawled yesterday; public Greenhouse result",
+      "fitScore": 5,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Prosper Health",
       "role": "Senior Product Engineer",
       "location": "New York, New York, United States",
@@ -32665,6 +32757,20 @@
       "fitScore": 4,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Kinelo",
+      "role": "Senior Product Engineer",
+      "location": "San Francisco, CA",
+      "postingKey": "4205846009",
+      "jobUrl": "https://job-boards.greenhouse.io/kinelo/jobs/4205846009",
+      "discoveredAt": "2026-05-11T22:18:00.975122+00:00",
+      "postedAge": "HN May 2026 Greenhouse link; opened public Greenhouse 2026-05-11",
+      "fitScore": 3,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, SF/Bay Area preference",
       "trackerPostingKey": ""
     },
     {
@@ -37368,6 +37474,32 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-01",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Affirm",
+      "role": "Software Engineer II, Backend (Merchant Advocacy)",
+      "postingKey": "7708925003",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/affirm/jobs/7708925003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Affirm",
+      "role": "Software Engineer II, Machine Learning (Feature Platform)",
+      "postingKey": "7694294003",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/affirm/jobs/7694294003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -59780,6 +59912,30 @@
           "contacts": []
         },
         {
+          "key": "7708925003",
+          "company": "Affirm",
+          "role": "Software Engineer II, Backend (Merchant Advocacy)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7694294003",
+          "company": "Affirm",
+          "role": "Software Engineer II, Machine Learning (Feature Platform)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7949946002",
           "company": "Amplitude",
           "role": "Software Engineer II, Web",
@@ -74679,6 +74835,30 @@
           "key": "6697653003",
           "company": "Affirm",
           "role": "Software Engineer I, Repayments Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7708925003",
+          "company": "Affirm",
+          "role": "Software Engineer II, Backend (Merchant Advocacy)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7694294003",
+          "company": "Affirm",
+          "role": "Software Engineer II, Machine Learning (Feature Platform)",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,

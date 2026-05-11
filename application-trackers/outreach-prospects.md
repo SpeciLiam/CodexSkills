@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 678
+Companies queued: 680
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -348,6 +348,8 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Airbnb | iOS Software Engineer, Airbnb - New Grad | 7859317 | 10 | Applied | Yes | [Posting](https://careers.airbnb.com/positions/7859317/?gh_jid=7859317) |  |  |  |  |
 | Aflac | Software Engineer I | software-engineer-i-at-aflac-4337203348 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-i-at-aflac-4337203348) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Affirm | Software Engineer I, Backend (Purchasing Power Experience) | 7673126003 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/affirm/jobs/7673126003) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
+| Affirm | Software Engineer II, Backend (Merchant Advocacy) | 7708925003 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/affirm/jobs/7708925003) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
+| Affirm | Software Engineer II, Machine Learning (Feature Platform) | 7694294003 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/affirm/jobs/7694294003) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | adMarketplace | Software Engineer II, Data | 4596931005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/admarketplaceinc/jobs/4596931005?gh_src=9e9e08775us) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Addepar | Backend Software Engineer - Investor Solutions | 8387694002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/addepar1/jobs/8387694002) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Addepar | Full Stack Software Engineer - Alts & Data Management | 8538666002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/addepar1/jobs/8538666002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
