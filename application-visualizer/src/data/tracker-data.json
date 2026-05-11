@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T14:05:58.175512+00:00",
+  "generatedAt": "2026-05-11T14:32:02.277548+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 793,
+      "total": 796,
       "applied": 461,
-      "unapplied": 332,
-      "active": 599,
+      "unapplied": 335,
+      "active": 602,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 654,
-      "reachOut": 718,
+      "highFit": 657,
+      "reachOut": 721,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 684,
-      "intakeQueued": 49,
+      "intakeJobs": 690,
+      "intakeQueued": 52,
       "intakeNew": 51,
-      "intakeManual": 368,
+      "intakeManual": 371,
       "intakeApplied": 0,
-      "applyRate": 58.1,
+      "applyRate": 57.9,
       "rejectionRate": 12.6,
-      "recruiterWork": 489,
-      "engineerWork": 568,
+      "recruiterWork": 492,
+      "engineerWork": 571,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 179
+        "value": 182
       },
       {
         "name": "Archived",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 350
+        "value": 353
       },
       {
         "name": "LinkedIn",
@@ -148,7 +148,7 @@
       },
       {
         "name": "Bay Area",
-        "value": 186
+        "value": 189
       },
       {
         "name": "Other",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 435
+        "value": 436
       },
       {
         "name": "Full Stack",
@@ -182,7 +182,7 @@
       },
       {
         "name": "Backend",
-        "value": 85
+        "value": 86
       },
       {
         "name": "Forward Deployed",
@@ -194,7 +194,7 @@
       },
       {
         "name": "Infra/Platform",
-        "value": 37
+        "value": 38
       },
       {
         "name": "Data",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 363
+        "count": 366
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 368
+        "value": 371
       },
       {
         "name": "Tailored",
@@ -273,12 +273,12 @@
         "value": 69
       },
       {
-        "name": "New",
-        "value": 51
+        "name": "Queued",
+        "value": 52
       },
       {
-        "name": "Queued",
-        "value": 49
+        "name": "New",
+        "value": 51
       },
       {
         "name": "Duplicate",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 445
+        "value": 451
       },
       {
         "name": "LinkedIn",
@@ -522,8 +522,8 @@
       },
       {
         "date": "2026-05-11",
-        "cumulative": 793,
-        "added": 2,
+        "cumulative": 796,
+        "added": 5,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -720,6 +720,15 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/withcoverage/jobs/4828873008"
+      },
+      {
+        "company": "Wholesail",
+        "role": "Backend Product Engineer",
+        "fitScore": 10,
+        "status": "Manual Apply Needed",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/wholesail/jobs/7589353003"
       },
       {
         "company": "Wheels Up",
@@ -990,15 +999,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/twitch/jobs/8470752002"
-      },
-      {
-        "company": "Twitch",
-        "role": "Software Engineer I, Commerce",
-        "fitScore": 10,
-        "status": "Resume Tailored",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://www.linkedin.com/jobs/search-results/?keywords=Software%20Engineer%20I%20Commerce%20Twitch&geoId=103644278&f_TPR=r86400"
       }
     ],
     "recruiterBatch": {
@@ -22837,9 +22837,126 @@
       "activityDates": [
         "2026-05-11"
       ]
+    },
+    {
+      "company": "Wholesail",
+      "role": "Backend Product Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "San Francisco Bay Area",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/wholesail/jobs/7589353003",
+      "postingKey": "7589353003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Wholesail/Backend_Product_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Wholesail/Backend_Product_Engineer/Liam_Van_Resume/Liam_Van_Wholesail.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-11; tailored resume rendered and verified one page; emphasized backend product engineering, Python/Java APIs, data modeling, customer-facing workflows, testing, and SaaS delivery. Manual apply needed: live application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11"
+      ]
+    },
+    {
+      "company": "TRM Labs",
+      "role": "University Grad - Product Engineer (2026)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "San Francisco",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/trmlabs/jobs/5662998004?gh_jid=5662998004",
+      "postingKey": "5662998004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/TRM Labs/University_Grad_Product_Engineer_2026/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/TRM Labs/University_Grad_Product_Engineer_2026/Liam_Van_Resume/Liam_Van_TRM_Labs.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-11; tailored early-career resume rendered and verified one page; emphasized full-stack product surfaces, APIs, AI-assisted testing, secure data workflows, and recent-grad readiness. Manual apply needed: live application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11"
+      ]
+    },
+    {
+      "company": "Emergent Labs",
+      "role": "Software Engineer - Infrastructure",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "San Francisco",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/emergentlabsinc/jobs/4226183009",
+      "postingKey": "4226183009",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Emergent Labs/Software_Engineer_Infrastructure/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Emergent Labs/Software_Engineer_Infrastructure/Liam_Van_Resume_2/Liam_Van_Emergent_Labs.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-11; tailored resume rendered and verified one page; emphasized cloud infrastructure, release validation, APIs, cross-cloud debugging, regression tooling, and production reliability. Manual apply needed: live application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Wholesail",
+      "role": "Backend Product Engineer",
+      "location": "San Francisco Bay Area",
+      "postingKey": "7589353003",
+      "jobUrl": "https://job-boards.greenhouse.io/wholesail/jobs/7589353003",
+      "discoveredAt": "2026-05-11T14:20:42.867997+00:00",
+      "postedAge": "Crawled 5 days ago; public Greenhouse result visible 2026-05-11",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-11; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "7589353003"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "TRM Labs",
+      "role": "University Grad - Product Engineer (2026)",
+      "location": "San Francisco",
+      "postingKey": "5662998004",
+      "jobUrl": "https://job-boards.greenhouse.io/trmlabs/jobs/5662998004?gh_jid=5662998004",
+      "discoveredAt": "2026-05-11T14:20:42.867997+00:00",
+      "postedAge": "Crawled 6 months ago; public Greenhouse result visible 2026-05-11",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-11; early-career resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "5662998004"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Emergent Labs",
+      "role": "Software Engineer - Infrastructure",
+      "location": "San Francisco",
+      "postingKey": "4226183009",
+      "jobUrl": "https://job-boards.greenhouse.io/emergentlabsinc/jobs/4226183009",
+      "discoveredAt": "2026-05-11T14:20:42.867997+00:00",
+      "postedAge": "Crawled today; public Greenhouse result visible 2026-05-11",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-11; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4226183009"
+    },
     {
       "source": "Greenhouse",
       "company": "Sigma Computing",
@@ -29590,6 +29707,48 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Imbue",
+      "role": "Product Engineer",
+      "location": "San Francisco, CA",
+      "postingKey": "4010186009",
+      "jobUrl": "https://job-boards.greenhouse.io/imbue/jobs/4010186009",
+      "discoveredAt": "2026-05-11T14:20:42.867997+00:00",
+      "postedAge": "Crawled 2 days ago; public Greenhouse result visible 2026-05-11",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "fal",
+      "role": "Product Engineer",
+      "location": "San Francisco",
+      "postingKey": "4009194009",
+      "jobUrl": "https://job-boards.greenhouse.io/fal/jobs/4009194009",
+      "discoveredAt": "2026-05-11T14:20:42.867997+00:00",
+      "postedAge": "Crawled 3 weeks ago; public Greenhouse result visible 2026-05-11",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Check",
+      "role": "Product Engineer",
+      "location": "San Francisco, CA",
+      "postingKey": "5648952004",
+      "jobUrl": "https://job-boards.greenhouse.io/check/jobs/5648952004",
+      "discoveredAt": "2026-05-11T14:20:42.867997+00:00",
+      "postedAge": "Crawled 7 months ago; still visible in public Greenhouse result 2026-05-11",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Komodo Health",
       "role": "Forward Deployed, Software Engineer III (AI)",
       "location": "United States",
@@ -32484,6 +32643,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Wholesail",
+      "role": "Backend Product Engineer",
+      "postingKey": "7589353003",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/wholesail/jobs/7589353003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Wheels Up",
       "role": "Software Engineer II",
       "postingKey": "software-engineer-ii-at-wheels-up-4402765311",
@@ -32923,6 +33095,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "TRM Labs",
+      "role": "University Grad - Product Engineer (2026)",
+      "postingKey": "5662998004",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/trmlabs/jobs/5662998004?gh_jid=5662998004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -35471,6 +35656,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Emergent Labs",
+      "role": "Software Engineer - Infrastructure",
+      "postingKey": "4226183009",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/emergentlabsinc/jobs/4226183009",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -58627,6 +58825,18 @@
           "contacts": []
         },
         {
+          "key": "4226183009",
+          "company": "Emergent Labs",
+          "role": "Software Engineer - Infrastructure",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4888585008",
           "company": "EvenUp",
           "role": "Software Engineer, Backend",
@@ -59863,6 +60073,18 @@
           "contacts": []
         },
         {
+          "key": "5662998004",
+          "company": "TRM Labs",
+          "role": "University Grad - Product Engineer (2026)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7643023",
           "company": "Tekmerion Capital",
           "role": "Software Engineer",
@@ -60202,6 +60424,18 @@
           "key": "software-engineer-ii-at-wheels-up-4402765311",
           "company": "Wheels Up",
           "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7589353003",
+          "company": "Wholesail",
+          "role": "Backend Product Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -73463,6 +73697,18 @@
           "contacts": []
         },
         {
+          "key": "4226183009",
+          "company": "Emergent Labs",
+          "role": "Software Engineer - Infrastructure",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4888585008",
           "company": "EvenUp",
           "role": "Software Engineer, Backend",
@@ -74855,6 +75101,18 @@
           "contacts": []
         },
         {
+          "key": "5662998004",
+          "company": "TRM Labs",
+          "role": "University Grad - Product Engineer (2026)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7643023",
           "company": "Tekmerion Capital",
           "role": "Software Engineer",
@@ -75218,6 +75476,18 @@
           "key": "software-engineer-ii-at-wheels-up-4402765311",
           "company": "Wheels Up",
           "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7589353003",
+          "company": "Wholesail",
+          "role": "Backend Product Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,

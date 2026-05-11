@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 667
+Companies queued: 670
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -14,6 +14,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Writer | Forward Deployed Engineer | 4809387007 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/writer/jobs/4809387007) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Wonderschool | Early Career Software Engineer - Applied AI | 4406127370 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4406127370/) |  |  |  |  |
 | WithCoverage | Software Engineer | 4828873008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/withcoverage/jobs/4828873008) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
+| Wholesail | Backend Product Engineer | 7589353003 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/wholesail/jobs/7589353003) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | Wheels Up | Software Engineer II | software-engineer-ii-at-wheels-up-4402765311 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-at-wheels-up-4402765311) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Weights & Biases | Software Engineer II, Identity | software-engineer-ii-identity-weights-biases-at-weights-biases-4341979511 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-identity-weights-biases-at-weights-biases-4341979511) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Watershed | Software Engineer, Product | 5600411003 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/watershed/jobs/5600411003) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
@@ -48,6 +49,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Twitch | Software Engineer I, Streamer Monetization Experience | 8470752002 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/twitch/jobs/8470752002) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Twitch | Software Engineer I, Commerce | search-results | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/search-results/?keywords=Software%20Engineer%20I%20Commerce%20Twitch&geoId=103644278&f_TPR=r86400) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | tvScientific | Software Engineer II, Simulation, tvScientific | 7655637 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/tvscientificpoweredbypinterest/jobs/7655637) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
+| TRM Labs | University Grad - Product Engineer (2026) | 5662998004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/trmlabs/jobs/5662998004?gh_jid=5662998004) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | Trexquant Investment LP | Software Engineer - Early Career (USA) | 4297854738 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4297854738/) |  |  |  |  |
 | Trexquant Investment LP | Software Engineer - Early Career (USA) | 4330689211 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4330689211/) |  |  |  |  |
 | Translucent | Software Engineer | 4038826009 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/translucent/jobs/4038826009) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
@@ -244,6 +246,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | EvenUp | Software Engineer, Backend | 4888585008 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/evenup/jobs/4888585008) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | EnergyHub | Software Engineer II, Devices | 8382615002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/energyhub/jobs/8382615002) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | EnergyHub | Software Engineer II, Battery | 8382615002-software-engineer-ii-battery | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/energyhub/jobs/8382615002) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
+| Emergent Labs | Software Engineer - Infrastructure | 4226183009 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/emergentlabsinc/jobs/4226183009) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | EliseAI | Software Engineer (New Grads 2025-2026) | 1ffbd278-a5fe-443c-984f-521d61a97353 | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/eliseai/1ffbd278-a5fe-443c-984f-521d61a97353?utm_source=LinkedInPaid) |  |  |  |  |
 | DRW | Full Stack Engineer, Blockchain Product | full-stack-engineer-blockchain-product-at-drw-4342884810 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/full-stack-engineer-blockchain-product-at-drw-4342884810) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Dorsia | Product Engineer | 4827963007 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/dorsia/jobs/4827963007) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
