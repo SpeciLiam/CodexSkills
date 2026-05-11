@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 665
+Companies queued: 666
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -559,6 +559,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | HeyGen | Software Engineer, University Graduate | 4546885007 | 8 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/heygen/jobs/4546885007?gh_src=dfb9c5577us) |  |  |  |  |
 | HDR | Software Engineer | software-engineer-at-hdr-4389318555 | 8 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-at-hdr-4389318555) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Grid | Software Engineer | 637a49f0-7244-4bca-8093-232cb27b42c0 | 8 | Applied | Yes | [Posting](https://jobs.lever.co/Grid/637a49f0-7244-4bca-8093-232cb27b42c0/apply?lever-source=LinkedIn) |  |  |  |  |
+| Grafana Labs | Backend Engineer \| Mimir \| USA \| Remote | 5796104004 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/grafanalabs/jobs/5796104004) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update; application attempt blocked by Computer Use browser approval. |
 | Govini | Forward Deployed Software Engineer | 4068889009 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/govini/jobs/4068889009) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | GitLab | Backend Engineer, Knowledge Graph (Rust) | 8437754002 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/gitlab/jobs/8437754002) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Fuze Health | Software Engineer - FuzeRx | 4838340101 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/fuzehealth/jobs/4838340101) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
