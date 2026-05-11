@@ -3,7 +3,7 @@
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
 Jobs discovered: 684
-New: 51 | Queued: 53 | Tailored: 139 | Applied: 0 | Manual: 368 | Skipped: 65 | Duplicate: 3 | Expired: 3
+New: 51 | Queued: 50 | Tailored: 139 | Applied: 0 | Manual: 368 | Skipped: 68 | Duplicate: 3 | Expired: 3
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -398,7 +398,7 @@ New: 51 | Queued: 53 | Tailored: 139 | Applied: 0 | Manual: 368 | Skipped: 65 | 
 | LinkedIn | Uber | Software Engineer I | San Francisco, CA | 4403550427 | https://www.linkedin.com/jobs/view/4403550427/ | 2026-05-02T22:16:26.875141+00:00 | 20 hours ago | 10 | Tailored | SWE-family role, early-career signal, SF/Bay Area preference | 4403550427 |
 | Greenhouse | Truveta | Software Engineer - Person Matching | Seattle, WA | 5817190004 | https://job-boards.greenhouse.io/truveta/jobs/5817190004 | 2026-05-02T22:16:26.875141+00:00 | 2 days ago | 10 | Tailored | SWE-family role, early-career signal, preferred/remote US location | 5817190004 |
 | LinkedIn | Confido | New Grad Software Engineer | New York, NY | 4401827377 | https://www.linkedin.com/jobs/view/4401827377/ | 2026-05-02T22:16:26.875141+00:00 | 20 hours ago | 10 | Tailored | SWE-family role, early-career signal, NYC preference | 4401827377 |
-| Greenhouse | Nextdoor | Software Engineer | San Francisco, CA | 7688719 | https://job-boards.greenhouse.io/job-openings/jobs/7688719 | 2026-05-11T12:09:24.237340+00:00 | crawled today | 9 | Queued | SWE-family role, SF/Bay Area preference |  |
+| Greenhouse | Nextdoor | Software Engineer | San Francisco, CA | 7688719 | https://job-boards.greenhouse.io/job-openings/jobs/7688719 | 2026-05-11T12:09:24.237340+00:00 | crawled today | 9 | Skipped | Skipped 2026-05-11: posting is labeled Software Engineer 5, which is a senior-level mismatch for this early-career-to-mid-junior intake pass |  |
 | LinkedIn | Rackspace Technology | Forward Deployed Engineer - Data Migration & Data Consolidation Platforms | United States | 4386974168 | https://www.linkedin.com/jobs/view/forward-deployed-engineer-data-migration-data-consolidation-platforms-at-rackspace-technology-4386974168 | 2026-05-11T12:02:56.795296+00:00 | 1 week ago; public LinkedIn result | 9 | Queued | SWE-family role, preferred/remote US location |  |
 | Greenhouse | Hightouch | Full Stack Product Engineer | Remote (North America) | 4815070004-hightouch-fullstack-2026-05-11 | https://job-boards.greenhouse.io/hightouch/jobs/4815070004 | 2026-05-11T12:02:56.795296+00:00 | crawled yesterday; public Greenhouse board result | 9 | Queued | SWE-family role, preferred/remote US location |  |
 | Greenhouse | Thinking Machines Lab | Forward Deployed Engineer, Tinker | San Francisco | 5202369008 | https://job-boards.greenhouse.io/thinkingmachines/jobs/5202369008 | 2026-05-11T05:06:22.468953+00:00 | crawled last week | 9 | Tailored | Tailored 2026-05-10; resume rendered and verified one page; emphasized forward-deployed AI product engineering, fine-tuning platform workflows, customer-facing delivery, backend APIs, testing, and reliable cloud systems | 5202369008 |
