@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T02:21:35.234593+00:00",
+  "generatedAt": "2026-05-11T03:11:14.215472+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,7 +21,7 @@
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 627,
+      "intakeJobs": 634,
       "intakeQueued": 29,
       "intakeNew": 44,
       "intakeManual": 365,
@@ -270,7 +270,7 @@
       },
       {
         "name": "Skipped",
-        "value": 49
+        "value": 56
       },
       {
         "name": "New",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 409
+        "value": 416
       },
       {
         "name": "LinkedIn",
@@ -22114,6 +22114,20 @@
   "jobIntake": [
     {
       "source": "Greenhouse",
+      "company": "Warp",
+      "role": "Applied AI Engineer",
+      "location": "Remote within US and Canada",
+      "postingKey": "5542429004",
+      "jobUrl": "https://job-boards.greenhouse.io/warp/jobs/5542429004?gh_src=2b11affa4us",
+      "discoveredAt": "2026-05-11T02:57:47.446795+00:00",
+      "postedAge": "Crawled: 3 months ago",
+      "fitScore": 10,
+      "status": "Skipped",
+      "reason": "SWE-family role, preferred/remote US location; skipped 2026-05-10 because posting asks for at least 5 years applying AI/ML research to production products, above Liam's target range",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Vercel",
       "role": "Software Engineer, Agent",
       "location": "Hybrid - San Francisco, New York City",
@@ -30639,6 +30653,34 @@
       "trackerPostingKey": ""
     },
     {
+      "source": "Greenhouse",
+      "company": "Amplitude",
+      "role": "Engineering: Senior Customer Forward Deployed Engineer",
+      "location": "San Francisco, CA",
+      "postingKey": "amplitude-senior-customer-forward-deployed-engineer-2026-05-10",
+      "jobUrl": "https://job-boards.greenhouse.io/amplitude",
+      "discoveredAt": "2026-05-11T03:09:13.683650+00:00",
+      "postedAge": "current Greenhouse board snapshot crawled 3 days ago; marked New",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Amplitude",
+      "role": "Senior AI Software Engineer",
+      "location": "San Francisco, CA",
+      "postingKey": "amplitude-senior-ai-software-engineer-2026-05-10",
+      "jobUrl": "https://job-boards.greenhouse.io/amplitude",
+      "discoveredAt": "2026-05-11T03:09:13.683650+00:00",
+      "postedAge": "current Greenhouse board snapshot crawled 3 days ago; marked New",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "LinkedIn",
       "company": "PayPal",
       "role": "Software Engineer",
@@ -30790,6 +30832,62 @@
       "fitScore": 2,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Amplitude",
+      "role": "Staff Software Engineer",
+      "location": "San Francisco, CA",
+      "postingKey": "amplitude-staff-software-engineer-2026-05-10",
+      "jobUrl": "https://job-boards.greenhouse.io/amplitude",
+      "discoveredAt": "2026-05-11T03:09:13.683650+00:00",
+      "postedAge": "current Greenhouse board snapshot crawled 3 days ago",
+      "fitScore": 1,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Amplitude",
+      "role": "Senior Software Engineer, Data Management",
+      "location": "San Francisco, CA",
+      "postingKey": "amplitude-senior-software-engineer-data-management-2026-05-10",
+      "jobUrl": "https://job-boards.greenhouse.io/amplitude",
+      "discoveredAt": "2026-05-11T03:09:13.683650+00:00",
+      "postedAge": "current Greenhouse board snapshot crawled 3 days ago",
+      "fitScore": 1,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Amplitude",
+      "role": "Senior Software Engineer, Data Pipeline",
+      "location": "San Francisco, CA",
+      "postingKey": "amplitude-senior-software-engineer-data-pipeline-2026-05-10",
+      "jobUrl": "https://job-boards.greenhouse.io/amplitude",
+      "discoveredAt": "2026-05-11T03:09:13.683650+00:00",
+      "postedAge": "current Greenhouse board snapshot crawled 3 days ago",
+      "fitScore": 1,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Amplitude",
+      "role": "Engineering: Staff Customer Forward Deployed Engineer",
+      "location": "San Francisco, CA",
+      "postingKey": "amplitude-staff-customer-forward-deployed-engineer-2026-05-10",
+      "jobUrl": "https://job-boards.greenhouse.io/amplitude",
+      "discoveredAt": "2026-05-11T03:09:13.683650+00:00",
+      "postedAge": "current Greenhouse board snapshot crawled 3 days ago; marked New",
+      "fitScore": 1,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, SF/Bay Area preference",
       "trackerPostingKey": ""
     },
     {
