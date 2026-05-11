@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T06:07:17.255176+00:00",
+  "generatedAt": "2026-05-11T07:04:47.215765+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,9 +21,9 @@
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 650,
+      "intakeJobs": 655,
       "intakeQueued": 34,
-      "intakeNew": 47,
+      "intakeNew": 48,
       "intakeManual": 366,
       "intakeApplied": 0,
       "applyRate": 58.3,
@@ -270,11 +270,11 @@
       },
       {
         "name": "Skipped",
-        "value": 56
+        "value": 60
       },
       {
         "name": "New",
-        "value": 47
+        "value": 48
       },
       {
         "name": "Queued",
@@ -296,11 +296,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 427
+        "value": 429
       },
       {
         "name": "LinkedIn",
-        "value": 223
+        "value": 226
       }
     ],
     "timeline": [
@@ -22783,6 +22783,20 @@
   "jobIntake": [
     {
       "source": "LinkedIn",
+      "company": "Continuous",
+      "role": "Software Engineer I - C# .NET",
+      "location": "United States",
+      "postingKey": "4398704310",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-i-c%23-net-at-continuous-4398704310",
+      "discoveredAt": "2026-05-11T07:03:28.554966+00:00",
+      "postedAge": "3 days ago",
+      "fitScore": 1,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-11: public LinkedIn page says no longer accepting applications",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
       "company": "Plaid",
       "role": "Software Engineer, Full Stack",
       "location": "New York, NY",
@@ -28046,6 +28060,20 @@
       "trackerPostingKey": "4401827377"
     },
     {
+      "source": "LinkedIn",
+      "company": "HCLTech",
+      "role": "Platform Forward Deployed Engineer",
+      "location": "USA, Remote",
+      "postingKey": "4399782429",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-hcltech-4399782429",
+      "discoveredAt": "2026-05-11T07:03:28.554966+00:00",
+      "postedAge": "3 days ago",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-11: public LinkedIn page marks Mid-Senior level and requires strong Kubernetes, IAM, networking, and platform deployment depth",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "Greenhouse",
       "company": "Thinking Machines Lab",
       "role": "Forward Deployed Engineer, Tinker",
@@ -30217,6 +30245,20 @@
     },
     {
       "source": "LinkedIn",
+      "company": "Smartcat",
+      "role": "Forward Deployed Engineer",
+      "location": "United States",
+      "postingKey": "4346907656",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-smartcat-4346907656",
+      "discoveredAt": "2026-05-11T07:03:28.554966+00:00",
+      "postedAge": "13 hours ago",
+      "fitScore": 7,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
       "company": "Twilio",
       "role": "Software Engineer",
       "location": "United States",
@@ -31673,6 +31715,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Sigma Computing",
+      "role": "Staff Software Engineer - Fullstack",
+      "location": "New York City, NY",
+      "postingKey": "7480968003",
+      "jobUrl": "https://job-boards.greenhouse.io/sigmacomputing/jobs/7480968003",
+      "discoveredAt": "2026-05-11T07:03:28.554966+00:00",
+      "postedAge": "public capture",
+      "fitScore": 3,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "TRM Labs",
       "role": "Forward Deployed Engineer - National Security (TS/SCI)",
       "location": "Washington DC",
@@ -31725,6 +31781,20 @@
       "fitScore": 2,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "TRM Labs",
+      "role": "Forward Deployed Data Engineer (TS/SCI)",
+      "location": "Washington DC",
+      "postingKey": "5530711004",
+      "jobUrl": "https://job-boards.greenhouse.io/trmlabs/jobs/5530711004",
+      "discoveredAt": "2026-05-11T07:03:28.554966+00:00",
+      "postedAge": "public capture",
+      "fitScore": 1,
+      "status": "Skipped",
+      "reason": "SWE-family role, other US location",
       "trackerPostingKey": ""
     },
     {
