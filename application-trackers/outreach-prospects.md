@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 628
+Companies queued: 631
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -252,6 +252,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Color Health | New Grad Software Engineer | 6c7f692a-848b-41a4-b79b-4a9bba3aeb6d | 10 | Applied | Yes | [Posting](https://app.careerpuck.com/job-board/color-health/job/6c7f692a-848b-41a4-b79b-4a9bba3aeb6d) |  |  |  |  |
 | Colgate-Palmolive | AI Engineer/ Forward Deployed Engineer | ai-engineer-forward-deployed-engineer-at-colgate-palmolive-4377208045 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/ai-engineer-forward-deployed-engineer-at-colgate-palmolive-4377208045) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Cockroach Labs | Member of Technical Staff (Early Career - Developer Infrastructure) | 4371198015 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4371198015/?trackingId=ksALDwVweFm96Oh0ypFzpQ%3D%3D&refId=glJ8A%2B2sNgHqb%2Bh7kMbvlQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BO1XEeDlMTAS5EPlH%2ByWXLg%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
+| ClickHouse | Full Stack Software Engineer - Control Plane | 5587666004 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/clickhouse/jobs/5587666004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Clear Street | Backend Software Engineer - Reference Data Services | 6675504 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/clearstreet/jobs/6675504) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Clear Street | Software Engineer - Infrastructure | 7535167 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/clearstreet/jobs/7535167) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Clear Street | Software Engineer, Front End- Execution Management System | 4956908 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/clearstreet/jobs/4956908?gh_src=Blind) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
@@ -502,6 +503,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | OneStream | Software Engineer I | d9517f18-7f9f-4f13-83e8-feb078e8792d | 8 | Resume Tailored | Yes | [Posting](https://recruiting.ultipro.com/ONE1018ONSO/JobBoard/1955ffa6-bda6-4c95-8412-2c731d693ab2/OpportunityDetail?opportunityId=d9517f18-7f9f-4f13-83e8-feb078e8792d&source=LinkedIn) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Nuvo | Software Engineer | am9icG9zdDokPSI5BRzuYHmUj-Ig7JJz | 8 | Applied | Yes | [Posting](https://jobs.gem.com/nuvo/am9icG9zdDokPSI5BRzuYHmUj-Ig7JJz?src=linkedin) |  |  |  |  |
 | Nooks | Fullstack Engineer | 4031018009 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/nooks/jobs/4031018009) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
+| Nirmata | Forward Deployed Engineer | 5211206008 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/nirmata/jobs/5211206008) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | NinjaTrader | Software Engineer III (Fullstack) | 4535655006 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/ninjatrader/jobs/4535655006) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | NexTech Capital | Software Engineer | 4402056168 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4402056168/) |  |  |  |  |
 | Next Insurance | Backend Engineer - DevEx Team | 7719281003 | 8 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/nextinsurance66/jobs/7719281003?gh_src=my.greenhouse.search) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
@@ -528,6 +530,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Grid | Software Engineer | 637a49f0-7244-4bca-8093-232cb27b42c0 | 8 | Applied | Yes | [Posting](https://jobs.lever.co/Grid/637a49f0-7244-4bca-8093-232cb27b42c0/apply?lever-source=LinkedIn) |  |  |  |  |
 | Govini | Forward Deployed Software Engineer | 4068889009 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/govini/jobs/4068889009) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | GitLab | Backend Engineer, Knowledge Graph (Rust) | 8437754002 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/gitlab/jobs/8437754002) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
+| Fuze Health | Software Engineer - FuzeRx | 4838340101 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/fuzehealth/jobs/4838340101) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Future | Infrastructure Engineer | 4685899005 | 8 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/future/jobs/4685899005?gh_src=my.greenhouse.search) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Formic | Full Stack Software Engineer - Robotics | 4677397006 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/formic/jobs/4677397006?gh_src=my.greenhouse.search) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | FloVision Solutions | Forward Deployed Engineer | 5149067008 | 8 | Archived | Yes | [Posting](https://job-boards.greenhouse.io/flovisionsolutions/jobs/5149067008) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome. |
