@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 670
+Companies queued: 671
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -560,6 +560,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | INRIX | Software Development Engineer | 4402559065 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4402559065/) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | Initi8 Recruitment | Software Engineer (Founding Team / 0-3 Years Experience) | 4402469688 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4402469688/apply/) |  |  |  |  |
 | Infinite Convergence Solutions | Jr. Software Engineer | 4409373481 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4409373481/) |  |  | 2026-05-07 | Queued by resume-tailor after tailored resume update. |
+| Hightouch | Software Engineer, Streaming Systems | 5731011004 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/hightouch/jobs/5731011004) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | HeyGen | Software Engineer, University Graduate | 4546885007 | 8 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/heygen/jobs/4546885007?gh_src=dfb9c5577us) |  |  |  |  |
 | HDR | Software Engineer | software-engineer-at-hdr-4389318555 | 8 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-at-hdr-4389318555) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Grid | Software Engineer | 637a49f0-7244-4bca-8093-232cb27b42c0 | 8 | Applied | Yes | [Posting](https://jobs.lever.co/Grid/637a49f0-7244-4bca-8093-232cb27b42c0/apply?lever-source=LinkedIn) |  |  |  |  |

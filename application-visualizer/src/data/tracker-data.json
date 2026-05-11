@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T14:32:02.277548+00:00",
+  "generatedAt": "2026-05-11T18:08:28.461458+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 796,
+      "total": 797,
       "applied": 461,
-      "unapplied": 335,
-      "active": 602,
+      "unapplied": 336,
+      "active": 603,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 657,
-      "reachOut": 721,
+      "highFit": 658,
+      "reachOut": 722,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 690,
+      "intakeJobs": 691,
       "intakeQueued": 52,
       "intakeNew": 51,
       "intakeManual": 371,
       "intakeApplied": 0,
-      "applyRate": 57.9,
+      "applyRate": 57.8,
       "rejectionRate": 12.6,
-      "recruiterWork": 492,
-      "engineerWork": 571,
+      "recruiterWork": 493,
+      "engineerWork": 572,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 182
+        "value": 183
       },
       {
         "name": "Archived",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 353
+        "value": 354
       },
       {
         "name": "LinkedIn",
@@ -156,7 +156,7 @@
       },
       {
         "name": "Remote",
-        "value": 98
+        "value": 99
       },
       {
         "name": "Seattle",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 436
+        "value": 437
       },
       {
         "name": "Full Stack",
@@ -236,7 +236,7 @@
       },
       {
         "score": "8",
-        "count": 145
+        "count": 146
       },
       {
         "score": "9",
@@ -266,7 +266,7 @@
       },
       {
         "name": "Tailored",
-        "value": 139
+        "value": 140
       },
       {
         "name": "Skipped",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 451
+        "value": 452
       },
       {
         "name": "LinkedIn",
@@ -522,8 +522,8 @@
       },
       {
         "date": "2026-05-11",
-        "cumulative": 796,
-        "added": 5,
+        "cumulative": 797,
+        "added": 6,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -22912,6 +22912,32 @@
       "activityDates": [
         "2026-05-11"
       ]
+    },
+    {
+      "company": "Hightouch",
+      "role": "Software Engineer, Streaming Systems",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "Remote (North America)",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/hightouch/jobs/5731011004",
+      "postingKey": "5731011004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Hightouch/Software_Engineer_Streaming_Systems/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Hightouch/Software_Engineer_Streaming_Systems/Liam_Van_Resume/Liam_Van_Hightouch.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-11 11:07 PT; tailored SWE resume rendered and verified one page; emphasized streaming systems, distributed event infrastructure, backend APIs, TypeScript/Go-adjacent product delivery, testing, and reliable high-throughput systems. Public Greenhouse capture used because Computer Use access to Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-11: tailored resume rendered and verified one page, but live Greenhouse form review/submission is blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight. Hightouch also states candidates should submit only one application, so Liam should pick the best Hightouch role before manually proceeding.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11",
+        "2026-05-11"
+      ]
     }
   ],
   "jobIntake": [
@@ -29704,6 +29730,20 @@
       "status": "Tailored",
       "reason": "SWE-family role, SF/Bay Area preference",
       "trackerPostingKey": "5592469004"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Hightouch",
+      "role": "Software Engineer, Streaming Systems",
+      "location": "Remote (North America)",
+      "postingKey": "5731011004",
+      "jobUrl": "https://job-boards.greenhouse.io/hightouch/jobs/5731011004",
+      "discoveredAt": "2026-05-11T18:07:07.685063+00:00",
+      "postedAge": "captured 2026-05-11; board crawled 3 days ago",
+      "fitScore": 8,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-11; resume rendered and verified one page; emphasized streaming systems, distributed event infrastructure, backend APIs, TypeScript/Go-adjacent product delivery, testing, and reliable high-throughput systems",
+      "trackerPostingKey": "5731011004"
     },
     {
       "source": "Greenhouse",
@@ -39738,6 +39778,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-07",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Hightouch",
+      "role": "Software Engineer, Streaming Systems",
+      "postingKey": "5731011004",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/hightouch/jobs/5731011004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -62305,6 +62358,18 @@
           "contacts": []
         },
         {
+          "key": "5731011004",
+          "company": "Hightouch",
+          "role": "Software Engineer, Streaming Systems",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4402559065",
           "company": "INRIX",
           "role": "Software Development Engineer",
@@ -77062,6 +77127,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5731011004",
+          "company": "Hightouch",
+          "role": "Software Engineer, Streaming Systems",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"

@@ -2,8 +2,8 @@
 
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
-Jobs discovered: 690
-New: 51 | Queued: 52 | Tailored: 139 | Applied: 0 | Manual: 371 | Skipped: 69 | Duplicate: 3 | Expired: 3
+Jobs discovered: 691
+New: 51 | Queued: 53 | Tailored: 139 | Applied: 0 | Manual: 371 | Skipped: 69 | Duplicate: 3 | Expired: 3
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -492,6 +492,7 @@ New: 51 | Queued: 52 | Tailored: 139 | Applied: 0 | Manual: 371 | Skipped: 69 | 
 | Greenhouse | Amplitude | Engineering: Forward Deploy Engineer II | San Francisco, CA | 8532139002 | https://job-boards.greenhouse.io/amplitude/jobs/8532139002 | 2026-05-02T22:57:58.203484+00:00 | today | 9 | Skipped | early-career signal, SF/Bay Area preference |  |
 | Greenhouse | Truveta | Software Engineer - Data Fulfillment | Seattle, WA | 5978337004 | https://job-boards.greenhouse.io/truveta/jobs/5978337004 | 2026-05-02T22:16:26.875141+00:00 | today | 9 | Queued | SWE-family role, preferred/remote US location |  |
 | Greenhouse | Merge API | Software Engineer | San Francisco, CA | 5592469004 | https://job-boards.greenhouse.io/merge/jobs/5592469004 | 2026-05-02T22:16:26.875141+00:00 | today | 9 | Tailored | SWE-family role, SF/Bay Area preference | 5592469004 |
+| Greenhouse | Hightouch | Software Engineer, Streaming Systems | Remote (North America) | 5731011004 | https://job-boards.greenhouse.io/hightouch/jobs/5731011004 | 2026-05-11T18:07:07.685063+00:00 | captured 2026-05-11; board crawled 3 days ago | 8 | Tailored | Tailored 2026-05-11; resume rendered and verified one page; emphasized streaming systems, distributed event infrastructure, backend APIs, TypeScript/Go-adjacent product delivery, testing, and reliable high-throughput systems | 5731011004 |
 | Greenhouse | Imbue | Product Engineer | San Francisco, CA | 4010186009 | https://job-boards.greenhouse.io/imbue/jobs/4010186009 | 2026-05-11T14:20:42.867997+00:00 | Crawled 2 days ago; public Greenhouse result visible 2026-05-11 | 8 | Queued | SWE-family role, SF/Bay Area preference |  |
 | Greenhouse | fal | Product Engineer | San Francisco | 4009194009 | https://job-boards.greenhouse.io/fal/jobs/4009194009 | 2026-05-11T14:20:42.867997+00:00 | Crawled 3 weeks ago; public Greenhouse result visible 2026-05-11 | 8 | Queued | SWE-family role, SF/Bay Area preference |  |
 | Greenhouse | Check | Product Engineer | San Francisco, CA | 5648952004 | https://job-boards.greenhouse.io/check/jobs/5648952004 | 2026-05-11T14:20:42.867997+00:00 | Crawled 7 months ago; still visible in public Greenhouse result 2026-05-11 | 8 | Queued | SWE-family role, SF/Bay Area preference |  |
