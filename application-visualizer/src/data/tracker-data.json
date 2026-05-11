@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T05:09:09.424682+00:00",
+  "generatedAt": "2026-05-11T06:07:17.255176+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,38 +9,38 @@
   },
   "stats": {
     "kpis": {
-      "total": 790,
-      "applied": 456,
-      "unapplied": 334,
-      "active": 596,
+      "total": 791,
+      "applied": 461,
+      "unapplied": 330,
+      "active": 597,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 651,
-      "reachOut": 715,
+      "highFit": 652,
+      "reachOut": 716,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 645,
-      "intakeQueued": 30,
-      "intakeNew": 46,
+      "intakeJobs": 650,
+      "intakeQueued": 34,
+      "intakeNew": 47,
       "intakeManual": 366,
       "intakeApplied": 0,
-      "applyRate": 57.7,
-      "rejectionRate": 12.7,
-      "recruiterWork": 486,
-      "engineerWork": 565,
+      "applyRate": 58.3,
+      "rejectionRate": 12.6,
+      "recruiterWork": 487,
+      "engineerWork": 566,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 391
+        "value": 396
       },
       {
         "name": "Manual Apply Needed",
-        "value": 178
+        "value": 177
       },
       {
         "name": "Archived",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 21
+        "value": 18
       },
       {
         "name": "Online Assessment",
@@ -78,7 +78,7 @@
       },
       {
         "name": "Company Site",
-        "value": 29
+        "value": 30
       },
       {
         "name": "LinkedIn Easy Apply",
@@ -152,7 +152,7 @@
       },
       {
         "name": "Other",
-        "value": 132
+        "value": 133
       },
       {
         "name": "Remote",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 434
+        "value": 435
       },
       {
         "name": "Full Stack",
@@ -236,7 +236,7 @@
       },
       {
         "score": "8",
-        "count": 143
+        "count": 144
       },
       {
         "score": "9",
@@ -274,11 +274,11 @@
       },
       {
         "name": "New",
-        "value": 46
+        "value": 47
       },
       {
         "name": "Queued",
-        "value": 30
+        "value": 34
       },
       {
         "name": "Duplicate",
@@ -300,7 +300,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 218
+        "value": 223
       }
     ],
     "timeline": [
@@ -514,9 +514,9 @@
       },
       {
         "date": "2026-05-10",
-        "cumulative": 790,
-        "added": 85,
-        "applied": 10,
+        "cumulative": 791,
+        "added": 86,
+        "applied": 15,
         "rejected": 0,
         "interviewing": 0
       }
@@ -21372,8 +21372,8 @@
     {
       "company": "Attentive",
       "role": "Software Engineer II, Identity Infrastructure",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -21388,9 +21388,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized identity infrastructure, platform APIs, cloud reliability, backend service validation, testing automation, and production operations. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized identity infrastructure, platform APIs, cloud reliability, backend service validation, testing automation, and production operations. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Application submitted 2026-05-10; marked applied per user confirmation.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-10",
         "2026-05-10",
         "2026-05-10"
       ]
@@ -22453,8 +22454,8 @@
     {
       "company": "Overland AI",
       "role": "Software Engineer - UI",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -22469,15 +22470,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-05-10; marked applied per user confirmation.",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-10"
+      ]
     },
     {
       "company": "KLA",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -22492,9 +22495,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-05-10; marked applied per user confirmation.",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-10"
+      ]
     },
     {
       "company": "Alteryx",
@@ -22522,8 +22527,8 @@
     {
       "company": "Wealthfront",
       "role": "Backend Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -22538,15 +22543,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-05-10; marked applied per user confirmation.",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-10"
+      ]
     },
     {
       "company": "Waymo",
       "role": "Software Engineer, Perception Evaluation",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -22561,9 +22568,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-05-10; marked applied per user confirmation.",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-10"
+      ]
     },
     {
       "company": "Thinking Machines Lab",
@@ -22746,9 +22755,74 @@
         "2026-05-10",
         "2026-05-10"
       ]
+    },
+    {
+      "company": "Waymo",
+      "role": "Software Engineer, Simulator Evaluation",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "Mountain View, CA",
+      "source": "Company Site",
+      "jobLink": "https://careers.withwaymo.com/jobs/software-engineer-simulator-evaluation-mountain-view-california-united-states?gh_jid=6562547&gh_src=e2a2625d1us",
+      "postingKey": "6562547",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Waymo/Software_Engineer_Simulator_Evaluation/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Waymo/Software_Engineer_Simulator_Evaluation/Liam_Van_Resume/Liam_Van_Waymo.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
     }
   ],
   "jobIntake": [
+    {
+      "source": "LinkedIn",
+      "company": "Plaid",
+      "role": "Software Engineer, Full Stack",
+      "location": "New York, NY",
+      "postingKey": "linkedin-plaid-full-stack-nyc-2026-05-11",
+      "jobUrl": "https://www.linkedin.com/jobs/search/?currentJobId=plaid-software-engineer-full-stack-nyc-2026-05-11",
+      "discoveredAt": "2026-05-11T06:05:41.346223+00:00",
+      "postedAge": "3 days ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Pinwheel",
+      "role": "Software Engineer, Platform",
+      "location": "New York, NY",
+      "postingKey": "linkedin-pinwheel-platform-nyc-2026-05-11",
+      "jobUrl": "https://www.linkedin.com/jobs/search/?currentJobId=pinwheel-software-engineer-platform-nyc-2026-05-11",
+      "discoveredAt": "2026-05-11T06:05:41.346223+00:00",
+      "postedAge": "3 days ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Notion",
+      "role": "Software Engineer, Trust",
+      "location": "New York, NY",
+      "postingKey": "4411637470",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-trust-at-notion-4411637470/",
+      "discoveredAt": "2026-05-11T06:05:41.346223+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
     {
       "source": "Greenhouse",
       "company": "Via",
@@ -29204,6 +29278,20 @@
       "trackerPostingKey": "5592469004"
     },
     {
+      "source": "LinkedIn",
+      "company": "DocMe360",
+      "role": "Junior Software Engineer",
+      "location": "Arlington, VA",
+      "postingKey": "linkedin-docme360-junior-se-arlington-2026-05-11",
+      "jobUrl": "https://www.linkedin.com/jobs/search/?currentJobId=docme360-junior-software-engineer-arlington-2026-05-11",
+      "discoveredAt": "2026-05-11T06:05:41.346223+00:00",
+      "postedAge": "3 hours ago",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "Greenhouse",
       "company": "Praxent",
       "role": "Software Engineer(s)",
@@ -30125,6 +30213,20 @@
       "fitScore": 8,
       "status": "Queued",
       "reason": "SWE-family role, early-career signal, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Twilio",
+      "role": "Software Engineer",
+      "location": "United States",
+      "postingKey": "linkedin-twilio-software-engineer-us-2026-05-11",
+      "jobUrl": "https://www.linkedin.com/jobs/search/?currentJobId=twilio-software-engineer-us-2026-05-11",
+      "discoveredAt": "2026-05-11T06:05:41.346223+00:00",
+      "postedAge": "14 hours ago",
+      "fitScore": 7,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
       "trackerPostingKey": ""
     },
     {
@@ -36908,13 +37010,13 @@
       "role": "Software Engineer - UI",
       "postingKey": "4368289375",
       "fitScore": 9,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://www.linkedin.com/jobs/view/4368289375/",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update. Application submitted 2026-05-10; marked applied per user confirmation."
     },
     {
       "company": "OpenAI",
@@ -38000,22 +38102,35 @@
       "role": "Backend Engineer",
       "postingKey": "4324478525",
       "fitScore": 8,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://www.linkedin.com/jobs/view/4324478525/",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update. Application submitted 2026-05-10; marked applied per user confirmation."
     },
     {
       "company": "Waymo",
       "role": "Software Engineer, Perception Evaluation",
       "postingKey": "4368989222",
       "fitScore": 8,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://www.linkedin.com/jobs/view/4368989222/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update. Application submitted 2026-05-10; marked applied per user confirmation."
+    },
+    {
+      "company": "Waymo",
+      "role": "Software Engineer, Simulator Evaluation",
+      "postingKey": "6562547",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://careers.withwaymo.com/jobs/software-engineer-simulator-evaluation-mountain-view-california-united-states?gh_jid=6562547&gh_src=e2a2625d1us",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
@@ -38767,13 +38882,13 @@
       "role": "Software Engineer",
       "postingKey": "4382077091",
       "fitScore": 8,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://www.linkedin.com/jobs/view/4382077091/",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update. Application submitted 2026-05-10; marked applied per user confirmation."
     },
     {
       "company": "Kashable",
@@ -57427,7 +57542,7 @@
           "company": "Attentive",
           "role": "Software Engineer II, Identity Infrastructure",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -60295,7 +60410,7 @@
           "company": "Overland AI",
           "role": "Software Engineer - UI",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -61447,7 +61562,7 @@
           "company": "KLA",
           "role": "Software Engineer",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -62155,6 +62270,18 @@
           "company": "Waymo",
           "role": "Software Engineer, Perception Evaluation",
           "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "6562547",
+          "company": "Waymo",
+          "role": "Software Engineer, Simulator Evaluation",
+          "fitScore": 8,
           "status": "Resume Tailored",
           "count": 1,
           "states": [
@@ -62167,7 +62294,7 @@
           "company": "Wealthfront",
           "role": "Backend Engineer",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -75203,7 +75330,7 @@
           "company": "Overland AI",
           "role": "Software Engineer - UI",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -76103,7 +76230,7 @@
           "company": "KLA",
           "role": "Software Engineer",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -76463,6 +76590,18 @@
           "company": "Waymo",
           "role": "Software Engineer, Perception Evaluation",
           "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "6562547",
+          "company": "Waymo",
+          "role": "Software Engineer, Simulator Evaluation",
+          "fitScore": 8,
           "status": "Resume Tailored",
           "count": 1,
           "states": [
@@ -76475,7 +76614,7 @@
           "company": "Wealthfront",
           "role": "Backend Engineer",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"

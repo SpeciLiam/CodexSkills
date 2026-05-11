@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 664
+Companies queued: 665
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -403,7 +403,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Pilot.com | Software Engineer | 8516101002 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/pilothq/jobs/8516101002) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome. |
 | Parsec Automation Corp. | Software Engineer II (AI Focus) | 5199253008 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/parsecautomationcorp/jobs/5199253008?gh_src=my.greenhouse.search) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Palantir Technologies | Forward Deployed Software Engineer (New York) | dab396d4-2f14-4796-aac0-0d82883dccf0 | 9 | Applied | Yes | [Posting](https://jobs.lever.co/palantir/dab396d4-2f14-4796-aac0-0d82883dccf0) |  |  |  |  |
-| Overland AI | Software Engineer - UI | 4368289375 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4368289375/) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
+| Overland AI | Software Engineer - UI | 4368289375 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4368289375/) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. Application submitted 2026-05-10; marked applied per user confirmation. |
 | OpenAI | Software Engineer, Codex Cloud | 130a5389-83e1-493f-9205-542d3ff53afb | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/openai/130a5389-83e1-493f-9205-542d3ff53afb/application) |  |  |  |  |
 | OpenAI | Forward Deployed Software Engineer - NYC | 533c0fc9-b773-476d-9f96-a0528efbab0e | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/openai/533c0fc9-b773-476d-9f96-a0528efbab0e/application) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome. |
 | Opaque Systems | Forward Deployed Engineer (AI) | 4235505009 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/opaquesystems/jobs/4235505009) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
@@ -487,8 +487,9 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Zip | Software Engineer, Backend (All Levels) | d47287f7-97cc-4216-8c34-737a59a1f9c0 | 8 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/zip/d47287f7-97cc-4216-8c34-737a59a1f9c0/application) |  |  |  |  |
 | Wynd Labs - X Hiring | Full Stack Engineer | 4111764008 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/xhiring/jobs/4111764008) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Whop | Full Stack Engineer, Ad Networks | 5124207007 | 8 | Manual Apply Needed | Yes | [Posting](https://careers.whop.com/?gh_jid=5124207007&gh_src=my.greenhouse.search) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
-| Wealthfront | Backend Engineer | 4324478525 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4324478525/) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
-| Waymo | Software Engineer, Perception Evaluation | 4368989222 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4368989222/) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
+| Wealthfront | Backend Engineer | 4324478525 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4324478525/) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. Application submitted 2026-05-10; marked applied per user confirmation. |
+| Waymo | Software Engineer, Perception Evaluation | 4368989222 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4368989222/) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. Application submitted 2026-05-10; marked applied per user confirmation. |
+| Waymo | Software Engineer, Simulator Evaluation | 6562547 | 8 | Resume Tailored | Yes | [Posting](https://careers.withwaymo.com/jobs/software-engineer-simulator-evaluation-mountain-view-california-united-states?gh_jid=6562547&gh_src=e2a2625d1us) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Voxel | Software Engineer - Platform | f2cca900-58ed-4e14-9e4d-2797626d750e | 8 | Online Assessment | Yes | [Posting](https://jobs.ashbyhq.com/Voxel/f2cca900-58ed-4e14-9e4d-2797626d750e?utm_source=pOxa4Kqo8D) |  |  |  |  |
 | Vercel | Software Engineer, CDN Security | 5473266004 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5473266004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Venture Up | Software Engineer | 4407898952 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4407898952/?trackingId=v8mJtxIqb3xbqXXQPjnurg%3D%3D&refId=tBjUexm30TQ%2F0tU16a0ikg%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BXswBGatqRWSvZiq2ne7KBA%3D%3D) |  |  |  |  |
@@ -546,7 +547,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Lila Sciences | Software Engineer I, Instrument Software | 4388586015 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4388586015/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Lazarus | Software Engineer (Forward Deployed) | 5089480007 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/lazarusenterprises/jobs/5089480007) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | LaunchDarkly | Full Stack Engineer - Observability | 7689440003 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/launchdarkly/jobs/7689440003) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
-| KLA | Software Engineer | 4382077091 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4382077091/) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
+| KLA | Software Engineer | 4382077091 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4382077091/) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. Application submitted 2026-05-10; marked applied per user confirmation. |
 | Kashable | Software Engineer | 4403975734 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4403975734/apply/) |  |  |  |  |
 | Kapitus | Software Engineer II | 4231980009 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/kapitus/jobs/4231980009?gh_src=my.greenhouse.search) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Justworks | Software Engineer | 4378040567 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/collections/recommended/?currentJobId=4378040567) |  |  |  |  |
