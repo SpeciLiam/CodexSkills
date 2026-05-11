@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 666
+Companies queued: 667
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -202,6 +202,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | iCapital | Full Stack Engineer, Ruby and React - Assistant Vice President | 8452434002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/icapitalnetwork/jobs/8452434002) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Hebbia | Software Engineer | 4377217007 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/hebbia/jobs/4377217007) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Hebbia | Forward Deployed Software Engineer | 4058030008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/hebbia/jobs/4058030008) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
+| Harmonic | Full Stack Product Engineer (AI), Search | 4590192005 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/harmonic/jobs/4590192005?gh_src=51dbe3035us) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | Handshake | Associate Software Engineer, RLE | 4406112904 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4406112904/) |  |  |  |  |
 | Handshake | Software Engineer II | 9d7bdbac-2672-4717-99c0-90cf37aa48c1 | 10 | Applied | Yes | [Posting](https://joinhandshake.com/careers/job/?ashby_jid=9d7bdbac-2672-4717-99c0-90cf37aa48c1&utm_source=4xDZ2XYAXn) |  |  |  |  |
 | Handshake | Software Engineer I, Coding Pod | 4407495876 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4407495876/) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-08. |

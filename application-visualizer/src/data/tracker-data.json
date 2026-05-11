@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T12:01:05.730110+00:00",
+  "generatedAt": "2026-05-11T12:12:14.986167+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 792,
+      "total": 793,
       "applied": 461,
-      "unapplied": 331,
-      "active": 598,
+      "unapplied": 332,
+      "active": 599,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 653,
-      "reachOut": 717,
+      "highFit": 654,
+      "reachOut": 718,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 657,
-      "intakeQueued": 34,
-      "intakeNew": 48,
-      "intakeManual": 367,
+      "intakeJobs": 684,
+      "intakeQueued": 53,
+      "intakeNew": 51,
+      "intakeManual": 368,
       "intakeApplied": 0,
-      "applyRate": 58.2,
+      "applyRate": 58.1,
       "rejectionRate": 12.6,
-      "recruiterWork": 488,
-      "engineerWork": 567,
+      "recruiterWork": 489,
+      "engineerWork": 568,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 178
+        "value": 179
       },
       {
         "name": "Archived",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 349
+        "value": 350
       },
       {
         "name": "LinkedIn",
@@ -144,7 +144,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 342
+        "value": 343
       },
       {
         "name": "Bay Area",
@@ -178,7 +178,7 @@
       },
       {
         "name": "Full Stack",
-        "value": 98
+        "value": 99
       },
       {
         "name": "Backend",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 362
+        "count": 363
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 367
+        "value": 368
       },
       {
         "name": "Tailored",
@@ -270,15 +270,15 @@
       },
       {
         "name": "Skipped",
-        "value": 61
-      },
-      {
-        "name": "New",
-        "value": 48
+        "value": 65
       },
       {
         "name": "Queued",
-        "value": 34
+        "value": 53
+      },
+      {
+        "name": "New",
+        "value": 51
       },
       {
         "name": "Duplicate",
@@ -296,11 +296,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 431
+        "value": 445
       },
       {
         "name": "LinkedIn",
-        "value": 226
+        "value": 239
       }
     ],
     "timeline": [
@@ -522,8 +522,8 @@
       },
       {
         "date": "2026-05-11",
-        "cumulative": 792,
-        "added": 1,
+        "cumulative": 793,
+        "added": 2,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -22812,9 +22812,244 @@
         "2026-05-11",
         "2026-05-11"
       ]
+    },
+    {
+      "company": "Harmonic",
+      "role": "Full Stack Product Engineer (AI), Search",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/harmonic/jobs/4590192005?gh_src=51dbe3035us",
+      "postingKey": "4590192005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Harmonic/Full_Stack_Product_Engineer_AI_Search/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Harmonic/Full_Stack_Product_Engineer_AI_Search/Liam_Van_Resume/Liam_Van_Harmonic.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-11; tailored SWE resume rendered and verified one page; emphasized Python/React full-stack product engineering, AI/search/retrieval workflows, LLM recommendations, backend APIs, and customer-facing delivery. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight, preventing live Greenhouse form review and submission.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Sigma Computing",
+      "role": "Software Engineer - Compiler",
+      "location": "New York City, NY",
+      "postingKey": "7697621003",
+      "jobUrl": "https://job-boards.greenhouse.io/sigmacomputing/jobs/7697621003",
+      "discoveredAt": "2026-05-11T12:09:10.997384+00:00",
+      "postedAge": "last week",
+      "fitScore": 10,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-11: posting asks for 5+ years building complex infrastructure or compiler/platform systems, so not a realistic routine early-career automation target",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "tZERO Group, Inc.",
+      "role": "Junior Software Engineer",
+      "location": "United States",
+      "postingKey": "junior-software-engineer-at-tzero-group-inc-4372766628",
+      "jobUrl": "https://www.linkedin.com/jobs/view/junior-software-engineer-at-tzero-group-inc-4372766628",
+      "discoveredAt": "2026-05-11T12:03:14.133503+00:00",
+      "postedAge": "7 hours ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Numeral",
+      "role": "Software Engineer - Full Stack",
+      "location": "San Francisco, CA / Remote",
+      "postingKey": "4557887004",
+      "jobUrl": "https://job-boards.greenhouse.io/applytonumeral/jobs/4557887004",
+      "discoveredAt": "2026-05-11T12:03:14.133503+00:00",
+      "postedAge": "3 days ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Joveo Ai",
+      "role": "Junior Software Engineer",
+      "location": "United States / Remote",
+      "postingKey": "junior-software-engineer-at-joveo-ai-4403817491",
+      "jobUrl": "https://www.linkedin.com/jobs/view/junior-software-engineer-at-joveo-ai-4403817491",
+      "discoveredAt": "2026-05-11T12:03:14.133503+00:00",
+      "postedAge": "11 hours ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Jobs via Dice / Aivra Health LLC",
+      "role": "Junior Software Engineer",
+      "location": "United States",
+      "postingKey": "junior-software-engineer-at-jobs-via-dice-4397502329",
+      "jobUrl": "https://www.linkedin.com/jobs/view/junior-software-engineer-at-jobs-via-dice-4397502329",
+      "discoveredAt": "2026-05-11T12:03:14.133503+00:00",
+      "postedAge": "3 days ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Haystack",
+      "role": "Junior Software Engineer",
+      "location": "United States / Remote",
+      "postingKey": "junior-software-engineer-at-haystack-4398783613",
+      "jobUrl": "https://www.linkedin.com/jobs/view/junior-software-engineer-at-haystack-4398783613",
+      "discoveredAt": "2026-05-11T12:03:14.133503+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "GovCIO",
+      "role": "Junior Software Engineer",
+      "location": "United States / Remote",
+      "postingKey": "junior-software-engineer-at-govcio-4400652956",
+      "jobUrl": "https://www.linkedin.com/jobs/view/junior-software-engineer-at-govcio-4400652956",
+      "discoveredAt": "2026-05-11T12:03:14.133503+00:00",
+      "postedAge": "21 hours ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "ECFX",
+      "role": "Junior Software Engineer",
+      "location": "United States / Remote",
+      "postingKey": "junior-software-engineer-at-ecfx-4401365581",
+      "jobUrl": "https://www.linkedin.com/jobs/view/junior-software-engineer-at-ecfx-4401365581",
+      "discoveredAt": "2026-05-11T12:03:14.133503+00:00",
+      "postedAge": "4 days ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Airtable",
+      "role": "Software Engineer, Product Backend (8+ YOE)",
+      "location": "San Francisco, CA; Remote - US (Seattle, WA only)",
+      "postingKey": "8397618002",
+      "jobUrl": "https://job-boards.greenhouse.io/airtable/jobs/8397618002",
+      "discoveredAt": "2026-05-11T12:03:14.133503+00:00",
+      "postedAge": "3 days ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Loop",
+      "role": "2026 New Grad | Software Engineer, Full-Stack",
+      "location": "San Francisco, CA",
+      "postingKey": "linkedin-list-loop-2026-ng-fullstack-sf-2026-05-11",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-new-grad-jobs-san-francisco-ca",
+      "discoveredAt": "2026-05-11T12:02:56.795296+00:00",
+      "postedAge": "4 days ago; public LinkedIn search capture",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Hightouch",
+      "role": "Software Engineer, Customer Studio Backend",
+      "location": "Remote (North America)",
+      "postingKey": "4815070004-hightouch-customer-studio-backend-2026-05-11",
+      "jobUrl": "https://job-boards.greenhouse.io/hightouch/jobs/4815070004",
+      "discoveredAt": "2026-05-11T12:02:56.795296+00:00",
+      "postedAge": "crawled yesterday; public Greenhouse board result",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Hightouch",
+      "role": "Software Engineer, Distributed Systems",
+      "location": "Remote (North America)",
+      "postingKey": "4815070004-hightouch-distributed-systems-2026-05-11",
+      "jobUrl": "https://job-boards.greenhouse.io/hightouch/jobs/4815070004",
+      "discoveredAt": "2026-05-11T12:02:56.795296+00:00",
+      "postedAge": "crawled yesterday; public Greenhouse board result",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Harmonic",
+      "role": "Full Stack Product Engineer (AI), Search",
+      "location": "New York, NY",
+      "postingKey": "4590192005",
+      "jobUrl": "https://job-boards.greenhouse.io/harmonic/jobs/4590192005?gh_src=51dbe3035us",
+      "discoveredAt": "2026-05-11T12:02:56.795296+00:00",
+      "postedAge": "public Greenhouse result",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-11; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight, preventing live Greenhouse form review and submission",
+      "trackerPostingKey": "4590192005"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Harmonic",
+      "role": "Solutions Engineer, New Grad (Class of 2026)",
+      "location": "New York City, NY",
+      "postingKey": "4590189005-solutions-new-grad-2026-05-11",
+      "jobUrl": "https://job-boards.greenhouse.io/harmonic/jobs/4590189005?gh_src=Craft+Ventures+job+board",
+      "discoveredAt": "2026-05-11T12:02:56.795296+00:00",
+      "postedAge": "public Greenhouse board result",
+      "fitScore": 10,
+      "status": "Skipped",
+      "reason": "early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "EvenUp",
+      "role": "Software Engineer (New Grad), Cases Product",
+      "location": "San Francisco, CA",
+      "postingKey": "linkedin-list-evenup-cases-new-grad-2026-05-11",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-new-grad-jobs-san-francisco-ca",
+      "discoveredAt": "2026-05-11T12:02:56.795296+00:00",
+      "postedAge": "5 hours ago; public LinkedIn search capture",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
     {
       "source": "LinkedIn",
       "company": "Plaid",
@@ -28081,6 +28316,48 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Nextdoor",
+      "role": "Software Engineer",
+      "location": "San Francisco, CA",
+      "postingKey": "7688719",
+      "jobUrl": "https://job-boards.greenhouse.io/job-openings/jobs/7688719",
+      "discoveredAt": "2026-05-11T12:09:24.237340+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 9,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Rackspace Technology",
+      "role": "Forward Deployed Engineer - Data Migration & Data Consolidation Platforms",
+      "location": "United States",
+      "postingKey": "4386974168",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-data-migration-data-consolidation-platforms-at-rackspace-technology-4386974168",
+      "discoveredAt": "2026-05-11T12:02:56.795296+00:00",
+      "postedAge": "1 week ago; public LinkedIn result",
+      "fitScore": 9,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Hightouch",
+      "role": "Full Stack Product Engineer",
+      "location": "Remote (North America)",
+      "postingKey": "4815070004-hightouch-fullstack-2026-05-11",
+      "jobUrl": "https://job-boards.greenhouse.io/hightouch/jobs/4815070004",
+      "discoveredAt": "2026-05-11T12:02:56.795296+00:00",
+      "postedAge": "crawled yesterday; public Greenhouse board result",
+      "fitScore": 9,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Thinking Machines Lab",
       "role": "Forward Deployed Engineer, Tinker",
       "location": "San Francisco",
@@ -29313,6 +29590,62 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Komodo Health",
+      "role": "Forward Deployed, Software Engineer III (AI)",
+      "location": "United States",
+      "postingKey": "8447517002",
+      "jobUrl": "https://job-boards.greenhouse.io/komodohealth/jobs/8447517002",
+      "discoveredAt": "2026-05-11T12:03:14.133503+00:00",
+      "postedAge": "2 months ago",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Hightouch",
+      "role": "Software Engineer, AI Agents",
+      "location": "Remote (North America)",
+      "postingKey": "4815070004-hightouch-ai-agents-2026-05-11",
+      "jobUrl": "https://job-boards.greenhouse.io/hightouch/jobs/4815070004",
+      "discoveredAt": "2026-05-11T12:02:56.795296+00:00",
+      "postedAge": "crawled yesterday; public Greenhouse board result",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Hightouch",
+      "role": "Software Engineer, Control Plane",
+      "location": "Remote (North America)",
+      "postingKey": "4815070004-hightouch-control-plane-2026-05-11",
+      "jobUrl": "https://job-boards.greenhouse.io/hightouch/jobs/4815070004",
+      "discoveredAt": "2026-05-11T12:02:56.795296+00:00",
+      "postedAge": "crawled yesterday; public Greenhouse board result",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "FurtherAI",
+      "role": "Forward Deployed Engineer",
+      "location": "San Francisco, CA",
+      "postingKey": "linkedin-list-furtherai-fde-sf-2026-05-11",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-new-grad-jobs-san-francisco-ca",
+      "discoveredAt": "2026-05-11T12:02:56.795296+00:00",
+      "postedAge": "1 day ago; public LinkedIn search capture",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Grafana Labs",
       "role": "Backend Engineer | Mimir | USA | Remote",
       "location": "United States (Remote)",
@@ -30279,6 +30612,48 @@
     },
     {
       "source": "LinkedIn",
+      "company": "TENEX.AI",
+      "role": "Forward Deployed Engineer",
+      "location": "United States",
+      "postingKey": "4348080599",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-tenex-ai-4348080599",
+      "discoveredAt": "2026-05-11T12:02:56.795296+00:00",
+      "postedAge": "1 week ago; public LinkedIn result",
+      "fitScore": 7,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Hello Patient",
+      "role": "Forward Deployed Engineer",
+      "location": "United States",
+      "postingKey": "4344309287",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-hello-patient-4344309287",
+      "discoveredAt": "2026-05-11T12:02:56.795296+00:00",
+      "postedAge": "1 week ago; public LinkedIn result",
+      "fitScore": 7,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Boomi",
+      "role": "AI Forward Deployed Engineer",
+      "location": "United States",
+      "postingKey": "4368782906",
+      "jobUrl": "https://www.linkedin.com/jobs/view/ai-forward-deployed-engineer-at-boomi-4368782906",
+      "discoveredAt": "2026-05-11T12:02:56.795296+00:00",
+      "postedAge": "1 week ago; public LinkedIn result",
+      "fitScore": 7,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
       "company": "Smartcat",
       "role": "Forward Deployed Engineer",
       "location": "United States",
@@ -30891,6 +31266,20 @@
       "fitScore": 7,
       "status": "New",
       "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Hightouch",
+      "role": "Web Engineer",
+      "location": "Remote (North America)",
+      "postingKey": "4815070004-hightouch-web-engineer-2026-05-11",
+      "jobUrl": "https://job-boards.greenhouse.io/hightouch/jobs/4815070004",
+      "discoveredAt": "2026-05-11T12:02:56.795296+00:00",
+      "postedAge": "crawled yesterday; public Greenhouse board result",
+      "fitScore": 6,
+      "status": "Skipped",
+      "reason": "preferred/remote US location",
       "trackerPostingKey": ""
     },
     {
@@ -31829,6 +32218,20 @@
       "fitScore": 2,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Descript",
+      "role": "Senior Software Engineer, Agent",
+      "location": "San Francisco, CA | Remote",
+      "postingKey": "7499700003",
+      "jobUrl": "https://job-boards.greenhouse.io/descript/jobs/7499700003",
+      "discoveredAt": "2026-05-11T12:03:14.133503+00:00",
+      "postedAge": "2 days ago",
+      "fitScore": 1,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, SF/Bay Area preference",
       "trackerPostingKey": ""
     },
     {
@@ -34522,6 +34925,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Harmonic",
+      "role": "Full Stack Product Engineer (AI), Search",
+      "postingKey": "4590192005",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/harmonic/jobs/4590192005?gh_src=51dbe3035us",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -58487,6 +58903,18 @@
           "contacts": []
         },
         {
+          "key": "4590192005",
+          "company": "Harmonic",
+          "role": "Full Stack Product Engineer (AI), Search",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4409716261",
           "company": "Imprint",
           "role": "Software Engineer",
@@ -73316,6 +73744,18 @@
           "role": "Software Engineer I, RLE",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4590192005",
+          "company": "Harmonic",
+          "role": "Full Stack Product Engineer (AI), Search",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
