@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T12:12:14.986167+00:00",
+  "generatedAt": "2026-05-11T13:02:52.699894+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -22,7 +22,7 @@
       "prospects": 3,
       "readyEmails": 3,
       "intakeJobs": 684,
-      "intakeQueued": 53,
+      "intakeQueued": 50,
       "intakeNew": 51,
       "intakeManual": 368,
       "intakeApplied": 0,
@@ -270,15 +270,15 @@
       },
       {
         "name": "Skipped",
-        "value": 65
-      },
-      {
-        "name": "Queued",
-        "value": 53
+        "value": 68
       },
       {
         "name": "New",
         "value": 51
+      },
+      {
+        "name": "Queued",
+        "value": 50
       },
       {
         "name": "Duplicate",
@@ -22864,8 +22864,8 @@
       "discoveredAt": "2026-05-11T12:03:14.133503+00:00",
       "postedAge": "7 hours ago",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-11: public LinkedIn job URL redirects to expired search results instead of an active posting",
       "trackerPostingKey": ""
     },
     {
@@ -22934,8 +22934,8 @@
       "discoveredAt": "2026-05-11T12:03:14.133503+00:00",
       "postedAge": "21 hours ago",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-11: public LinkedIn posting says no longer accepting applications",
       "trackerPostingKey": ""
     },
     {
@@ -22962,8 +22962,8 @@
       "discoveredAt": "2026-05-11T12:03:14.133503+00:00",
       "postedAge": "3 days ago",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, SF/Bay Area preference",
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-11: posting requires 8+ years of backend/product engineering experience, above Liam's target range",
       "trackerPostingKey": ""
     },
     {
