@@ -303,6 +303,7 @@ def run_codex_batch(
     batch_number: int,
     batch_size: int,
     model: str,
+    reasoning_effort: str,
     timeout_s: int,
     child_sandbox: str,
     dry_run: bool,
@@ -319,6 +320,8 @@ def run_codex_batch(
         child_sandbox,
         "-m",
         model,
+        "-c",
+        f'model_reasoning_effort="{reasoning_effort}"',
         "-o",
         str(output_file),
         child_prompt(batch_size),
@@ -424,6 +427,12 @@ def main() -> int:
     parser.add_argument("--batch-size", type=int, default=DEFAULT_BATCH_SIZE, help="Rows per fresh Codex process")
     parser.add_argument("--max-batches", type=int, default=0, help="Stop after N batches; 0 drains the queue")
     parser.add_argument("--model", default=DEFAULT_MODEL, help=f"Model for codex exec (default: {DEFAULT_MODEL})")
+    parser.add_argument(
+        "--reasoning-effort",
+        choices=("low", "medium", "high", "xhigh"),
+        default="medium",
+        help="Reasoning effort for child codex exec processes (default: medium)",
+    )
     parser.add_argument("--timeout", type=int, default=DEFAULT_TIMEOUT_S, help="Per-batch timeout in seconds")
     parser.add_argument(
         "--child-sandbox",
@@ -484,6 +493,7 @@ def main() -> int:
             batch_number=batch_number,
             batch_size=args.batch_size,
             model=args.model,
+            reasoning_effort=args.reasoning_effort,
             timeout_s=args.timeout,
             child_sandbox=args.child_sandbox,
             dry_run=args.dry_run,
