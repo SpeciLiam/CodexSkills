@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T22:21:21.210819+00:00",
+  "generatedAt": "2026-05-11T23:05:17.187756+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 807,
+      "total": 808,
       "applied": 461,
-      "unapplied": 346,
-      "active": 613,
+      "unapplied": 347,
+      "active": 614,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 667,
-      "reachOut": 731,
+      "highFit": 668,
+      "reachOut": 732,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 706,
+      "intakeJobs": 708,
       "intakeQueued": 52,
       "intakeNew": 51,
       "intakeManual": 377,
       "intakeApplied": 0,
       "applyRate": 57.1,
       "rejectionRate": 12.6,
-      "recruiterWork": 502,
-      "engineerWork": 581,
+      "recruiterWork": 503,
+      "engineerWork": 582,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 189
+        "value": 190
       },
       {
         "name": "Archived",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 360
+        "value": 361
       },
       {
         "name": "LinkedIn",
@@ -144,7 +144,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 347
+        "value": 348
       },
       {
         "name": "Bay Area",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 440
+        "value": 441
       },
       {
         "name": "Full Stack",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 373
+        "count": 374
       }
     ],
     "targetCounts": [
@@ -266,11 +266,11 @@
       },
       {
         "name": "Tailored",
-        "value": 140
+        "value": 141
       },
       {
         "name": "Skipped",
-        "value": 78
+        "value": 79
       },
       {
         "name": "Queued",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 467
+        "value": 469
       },
       {
         "name": "LinkedIn",
@@ -522,8 +522,8 @@
       },
       {
         "date": "2026-05-11",
-        "cumulative": 807,
-        "added": 16,
+        "cumulative": 808,
+        "added": 17,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -663,13 +663,13 @@
         "bestFit": 10
       },
       {
-        "company": "Axon",
+        "company": "Addepar",
         "roles": 4,
         "avgFit": 10.0,
         "bestFit": 10
       },
       {
-        "company": "Atoms",
+        "company": "Axon",
         "roles": 4,
         "avgFit": 10.0,
         "bestFit": 10
@@ -23180,9 +23180,49 @@
       "activityDates": [
         "2026-05-11"
       ]
+    },
+    {
+      "company": "Addepar",
+      "role": "Software Engineer - Portfolio Services",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/addepar1/jobs/8451446002",
+      "postingKey": "8451446002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Addepar/Software_Engineer_Portfolio_Services/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Addepar/Software_Engineer_Portfolio_Services/Liam_Van_Resume/Liam_Van_Addepar.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-11 16:04 PT; tailored SWE resume rendered and verified one page; emphasized NYC backend portfolio-services engineering, financial data workflows, API services, platform reliability, data validation, and cross-functional delivery. Public Greenhouse capture used because Computer Use access to Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-11: tailored resume rendered and verified one page, but live Greenhouse form review/submission is blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11",
+        "2026-05-11"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Addepar",
+      "role": "Software Engineer - Portfolio Services",
+      "location": "New York, NY",
+      "postingKey": "8451446002",
+      "jobUrl": "https://job-boards.greenhouse.io/addepar1/jobs/8451446002",
+      "discoveredAt": "2026-05-11T23:04:14.518576+00:00",
+      "postedAge": "2026-05-11",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-11; resume rendered and verified one page; emphasized NYC backend portfolio-services engineering, financial data workflows, API services, platform reliability, data validation, and cross-functional delivery",
+      "trackerPostingKey": "8451446002"
+    },
     {
       "source": "Greenhouse",
       "company": "Affirm",
@@ -28768,6 +28808,20 @@
       "status": "Tailored",
       "reason": "SWE-family role, early-career signal, NYC preference",
       "trackerPostingKey": "4401827377"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Checkr",
+      "role": "Python Engineer, Truework",
+      "location": "San Francisco, California, United States",
+      "postingKey": "7590238",
+      "jobUrl": "https://job-boards.greenhouse.io/checkr/jobs/7590238",
+      "discoveredAt": "2026-05-11T23:04:14.518576+00:00",
+      "postedAge": "2026-05-11",
+      "fitScore": 9,
+      "status": "Skipped",
+      "reason": "SF/Bay Area preference",
+      "trackerPostingKey": ""
     },
     {
       "source": "Greenhouse",
@@ -37552,6 +37606,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Addepar",
+      "role": "Software Engineer - Portfolio Services",
+      "postingKey": "8451446002",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/addepar1/jobs/8451446002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -59900,6 +59967,18 @@
           "contacts": []
         },
         {
+          "key": "8451446002",
+          "company": "Addepar",
+          "role": "Software Engineer - Portfolio Services",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "6697653003",
           "company": "Affirm",
           "role": "Software Engineer I, Repayments Platform",
@@ -74811,6 +74890,18 @@
           "key": "7890327002",
           "company": "Addepar",
           "role": "Software Engineer I",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8451446002",
+          "company": "Addepar",
+          "role": "Software Engineer - Portfolio Services",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
