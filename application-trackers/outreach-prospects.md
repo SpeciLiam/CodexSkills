@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 677
+Companies queued: 678
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -122,6 +122,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Plaid | Software Engineer | 49139a62-a9bc-4400-ae89-789818b34cb8 | 10 | Applied | Yes | [Posting](https://jobs.lever.co/plaid/49139a62-a9bc-4400-ae89-789818b34cb8/apply?lever-origin=applied&lever-source=LinkedInPaid) |  |  |  |  |
 | Plaid | Software Engineer, Backend | 7e10c0b5-a09a-4e07-aaa8-899a7f82a0c9 | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/plaid/7e10c0b5-a09a-4e07-aaa8-899a7f82a0c9/application?utm_source=aZL6JYLDoN&src=linkedin) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Piramidal | Forward Deployed Engineer | 4212486009 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/piramidalinc/jobs/4212486009?gh_src=Blind) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
+| Pinwheel | Software Engineer, Product (frontend leaning) | 7619799003 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/pinwheelapi/jobs/7619799003) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | Pinterest | Software Engineer I, Backend | 6816337 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/embed/job_app?for=pinterest&token=6816337) |  |  |  |  |
 | Pinterest | Security Software Engineer II, Detection and Response | 7770914 | 10 | Applied | Yes | [Posting](https://www.pinterestcareers.com/jobs/?gh_jid=7770914) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Pinterest | Software Engineer II, Backend | 4813946 | 10 | Applied | Yes | [Posting](https://www.pinterestcareers.com/jobs/?gh_jid=4813946) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
