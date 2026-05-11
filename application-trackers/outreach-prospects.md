@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 680
+Companies queued: 681
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -354,6 +354,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Addepar | Backend Software Engineer - Investor Solutions | 8387694002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/addepar1/jobs/8387694002) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Addepar | Full Stack Software Engineer - Alts & Data Management | 8538666002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/addepar1/jobs/8538666002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Addepar | Software Engineer I | 7890327002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/addepar/jobs/7890327002) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
+| Addepar | Software Engineer - Portfolio Services | 8451446002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/addepar1/jobs/8451446002) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | Abridge | Software Engineer, Full Stack | 4518531007 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/abridge/jobs/4518531007) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Abridge | Forward Deployed Engineer | 5412788004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/abridge/jobs/5412788004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | 3Y Health | Fullstack Engineer | 4929833008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/join3yhealth/jobs/4929833008) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
