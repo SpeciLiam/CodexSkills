@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T01:14:11.389169+00:00",
+  "generatedAt": "2026-05-12T03:04:52.064878+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 816,
+      "total": 819,
       "applied": 461,
-      "unapplied": 355,
-      "active": 622,
+      "unapplied": 358,
+      "active": 625,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 676,
-      "reachOut": 740,
+      "highFit": 679,
+      "reachOut": 743,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 737,
-      "intakeQueued": 52,
+      "intakeJobs": 746,
+      "intakeQueued": 54,
       "intakeNew": 51,
-      "intakeManual": 380,
+      "intakeManual": 383,
       "intakeApplied": 0,
-      "applyRate": 56.5,
+      "applyRate": 56.3,
       "rejectionRate": 12.6,
-      "recruiterWork": 511,
-      "engineerWork": 590,
+      "recruiterWork": 514,
+      "engineerWork": 593,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 198
+        "value": 201
       },
       {
         "name": "Archived",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 368
+        "value": 371
       },
       {
         "name": "LinkedIn",
@@ -144,7 +144,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 354
+        "value": 357
       },
       {
         "name": "Bay Area",
@@ -174,11 +174,11 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 443
+        "value": 445
       },
       {
         "name": "Full Stack",
-        "value": 99
+        "value": 100
       },
       {
         "name": "Backend",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 378
+        "count": 381
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 380
+        "value": 383
       },
       {
         "name": "Tailored",
@@ -270,11 +270,11 @@
       },
       {
         "name": "Skipped",
-        "value": 101
+        "value": 105
       },
       {
         "name": "Queued",
-        "value": 52
+        "value": 54
       },
       {
         "name": "New",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 498
+        "value": 507
       },
       {
         "name": "LinkedIn",
@@ -522,8 +522,8 @@
       },
       {
         "date": "2026-05-11",
-        "cumulative": 816,
-        "added": 25,
+        "cumulative": 819,
+        "added": 28,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -23410,9 +23410,101 @@
       "activityDates": [
         "2026-05-11"
       ]
+    },
+    {
+      "company": "Alchemy",
+      "role": "Product Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "New York, New York, United States, San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/alchemy/jobs/4033855005",
+      "postingKey": "4033855005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Alchemy/Product_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Alchemy/Product_Engineer/Liam_Van_Resume/Liam_Van_Alchemy.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-11 20:02 PT; tailored SWE resume rendered and verified one page; emphasized developer-platform product engineering, TypeScript and React interfaces, backend APIs, cloud reliability, testing, and product-minded delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; shell DNS to my.greenhouse.io was also unavailable.; Manual apply needed 2026-05-11: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11",
+        "2026-05-11"
+      ]
+    },
+    {
+      "company": "Thesis",
+      "role": "Full Stack Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "New York",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/trovohealth/jobs/5082367008",
+      "postingKey": "5082367008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Thesis/Full_Stack_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Thesis/Full_Stack_Engineer/Liam_Van_Resume/Liam_Van_Thesis.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-11 20:02 PT; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, React and TypeScript surfaces, backend services, AI-enabled healthcare workflows, testing, and scalable delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; shell DNS to my.greenhouse.io was also unavailable.; Manual apply needed 2026-05-11: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11",
+        "2026-05-11"
+      ]
+    },
+    {
+      "company": "Coast",
+      "role": "Product Engineer, Foundations Team",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/coast/jobs/5973821004",
+      "postingKey": "5973821004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Coast/Product_Engineer_Foundations_Team/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Coast/Product_Engineer_Foundations_Team/Liam_Van_Resume/Liam_Van_Coast.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-11 20:02 PT; tailored SWE resume rendered and verified one page; emphasized full-stack product foundations, React product surfaces, backend APIs, fintech workflow reliability, testing, and fast startup execution. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; shell DNS to my.greenhouse.io was also unavailable.; Manual apply needed 2026-05-11: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11",
+        "2026-05-11"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Alchemy",
+      "role": "Product Engineer",
+      "location": "New York, New York, United States; San Francisco, California, United States",
+      "postingKey": "4033855005",
+      "jobUrl": "https://job-boards.greenhouse.io/alchemy/jobs/4033855005",
+      "discoveredAt": "2026-05-12T03:02:51.609562+00:00",
+      "postedAge": "2026-05-12T03:02:48.328Z",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-11: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4033855005"
+    },
     {
       "source": "Greenhouse",
       "company": "Vercel",
@@ -27679,9 +27771,9 @@
       "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
       "postedAge": "public Greenhouse result; crawled yesterday",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-11: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "5082367008"
     },
     {
       "source": "Greenhouse",
@@ -27791,9 +27883,9 @@
       "discoveredAt": "2026-05-03T20:44:16.320127+00:00",
       "postedAge": "public Greenhouse result; crawled yesterday",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-11: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "5973821004"
     },
     {
       "source": "Greenhouse",
@@ -29110,6 +29202,20 @@
       "status": "Tailored",
       "reason": "SWE-family role, early-career signal, NYC preference",
       "trackerPostingKey": "4401827377"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Tomorrow Health",
+      "role": "AI/LLM Full-Stack Engineer",
+      "location": "New York, New York, United States",
+      "postingKey": "8079085002",
+      "jobUrl": "https://job-boards.greenhouse.io/tomorrowhealth/jobs/8079085002",
+      "discoveredAt": "2026-05-12T03:02:51.609562+00:00",
+      "postedAge": "2026-05-12T03:02:48.328Z",
+      "fitScore": 9,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
     },
     {
       "source": "Greenhouse",
@@ -30454,6 +30560,62 @@
       "status": "Tailored",
       "reason": "SWE-family role, SF/Bay Area preference",
       "trackerPostingKey": "5592469004"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Tailscale",
+      "role": "Software Engineer, Product Strategy",
+      "location": "Remote (United States)",
+      "postingKey": "4631832005",
+      "jobUrl": "https://job-boards.greenhouse.io/tailscale/jobs/4631832005",
+      "discoveredAt": "2026-05-12T03:04:44.068188+00:00",
+      "postedAge": "2026-05-12T03:04:37.756Z",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Defense Unicorns",
+      "role": "Software Engineer",
+      "location": "United States - Remote",
+      "postingKey": "5125804007",
+      "jobUrl": "https://job-boards.greenhouse.io/defenseunicorns/jobs/5125804007",
+      "discoveredAt": "2026-05-12T03:04:44.068188+00:00",
+      "postedAge": "2026-05-12T03:04:37.756Z",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Veeam Software",
+      "role": "Platform Engineer, VDC",
+      "location": "Remote, United States",
+      "postingKey": "4655862101",
+      "jobUrl": "https://job-boards.greenhouse.io/veeamsoftware/jobs/4655862101",
+      "discoveredAt": "2026-05-12T03:02:51.609562+00:00",
+      "postedAge": "2026-05-12T03:02:48.328Z",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Formic",
+      "role": "Product Engineer",
+      "location": "San Francisco || Oakland, CA",
+      "postingKey": "4654505006",
+      "jobUrl": "https://job-boards.greenhouse.io/formic/jobs/4654505006",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 3 days ago",
+      "fitScore": 8,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-11; resume rendered and verified one page; emphasized product engineering for robotics automation, TypeScript/React interfaces, backend APIs, cloud workflows, testing, and customer-facing delivery",
+      "trackerPostingKey": "4654505006"
     },
     {
       "source": "Greenhouse",
@@ -32221,6 +32383,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Nourish",
+      "role": "Senior Full Stack Engineer",
+      "location": "New York, NY or Remote",
+      "postingKey": "5011452008",
+      "jobUrl": "https://job-boards.greenhouse.io/usenourish/jobs/5011452008",
+      "discoveredAt": "2026-05-12T03:02:51.609562+00:00",
+      "postedAge": "2026-05-12T03:02:48.328Z",
+      "fitScore": 6,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Via",
       "role": "Senior Backend Engineer",
       "location": "New York City, New York",
@@ -33117,6 +33293,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Understood",
+      "role": "Senior Full-Stack Engineer",
+      "location": "New York, NY",
+      "postingKey": "8517120002",
+      "jobUrl": "https://job-boards.greenhouse.io/understood/jobs/8517120002?gh_jid=8517120002",
+      "discoveredAt": "2026-05-12T03:02:51.609562+00:00",
+      "postedAge": "2026-05-12T03:02:48.328Z",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Censys",
       "role": "Senior Backend Engineer, SOC & Threat Hunting",
       "location": "Remote (US/Canada)",
@@ -33267,6 +33457,20 @@
       "fitScore": 4,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Pillar",
+      "role": "Staff Software Engineer - Full Stack",
+      "location": "New York, NY",
+      "postingKey": "4074388009",
+      "jobUrl": "https://job-boards.greenhouse.io/stratoslabsinc/jobs/4074388009",
+      "discoveredAt": "2026-05-12T03:02:51.609562+00:00",
+      "postedAge": "2026-05-12T03:02:48.328Z",
+      "fitScore": 3,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
       "trackerPostingKey": ""
     },
     {
@@ -33433,6 +33637,20 @@
       "discoveredAt": "2026-05-04T20:03:12.177145+00:00",
       "postedAge": "Greenhouse public result crawled last week; still visible 2026-05-04",
       "fitScore": 2,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Materialize",
+      "role": "Staff Full Stack Engineer, Console",
+      "location": "New York, New York, United States",
+      "postingKey": "5693572004",
+      "jobUrl": "https://job-boards.greenhouse.io/materialize/jobs/5693572004",
+      "discoveredAt": "2026-05-12T03:02:51.609562+00:00",
+      "postedAge": "2026-05-12T03:02:48.328Z",
+      "fitScore": 1,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, NYC preference",
       "trackerPostingKey": ""
@@ -33716,20 +33934,6 @@
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, preferred/remote US location",
       "trackerPostingKey": ""
-    },
-    {
-      "source": "Greenhouse",
-      "company": "Formic",
-      "role": "Product Engineer",
-      "location": "San Francisco || Oakland, CA",
-      "postingKey": "4654505006",
-      "jobUrl": "https://job-boards.greenhouse.io/formic/jobs/4654505006",
-      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
-      "postedAge": "crawled 3 days ago",
-      "fitScore": 8,
-      "status": "Tailored",
-      "reason": "Tailored 2026-05-11; resume rendered and verified one page; emphasized product engineering for robotics automation, TypeScript/React interfaces, backend APIs, cloud workflows, testing, and customer-facing delivery",
-      "trackerPostingKey": "4654505006"
     }
   ],
   "outreachQueue": [
@@ -34330,6 +34534,19 @@
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
       "notes": "Queued by resume-tailor after tailored resume update.; Archived 2026-05-07: Greenhouse page says the job is no longer open."
+    },
+    {
+      "company": "Thesis",
+      "role": "Full Stack Engineer",
+      "postingKey": "5082367008",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/trovohealth/jobs/5082367008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "The Trade Desk",
@@ -37179,6 +37396,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Coast",
+      "role": "Product Engineer, Foundations Team",
+      "postingKey": "5973821004",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/coast/jobs/5973821004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "ClickHouse",
       "role": "Full Stack Software Engineer - Control Plane",
       "postingKey": "5587666004",
@@ -38125,6 +38355,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Alchemy",
+      "role": "Product Engineer",
+      "postingKey": "4033855005",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/alchemy/jobs/4033855005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -60753,6 +60996,18 @@
           "contacts": []
         },
         {
+          "key": "4033855005",
+          "company": "Alchemy",
+          "role": "Product Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7949946002",
           "company": "Amplitude",
           "role": "Software Engineer II, Web",
@@ -61308,6 +61563,18 @@
           "key": "5587666004",
           "company": "ClickHouse",
           "role": "Full Stack Software Engineer - Control Plane",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5973821004",
+          "company": "Coast",
+          "role": "Product Engineer, Foundations Team",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -62882,6 +63149,18 @@
           "role": "Full Stack Software Engineer II",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5082367008",
+          "company": "Thesis",
+          "role": "Full Stack Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -75793,6 +76072,18 @@
           "contacts": []
         },
         {
+          "key": "4033855005",
+          "company": "Alchemy",
+          "role": "Product Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7949946002-growth-platform",
           "company": "Amplitude",
           "role": "Software Engineer I, Growth Platform",
@@ -76396,6 +76687,18 @@
           "key": "5587666004",
           "company": "ClickHouse",
           "role": "Full Stack Software Engineer - Control Plane",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5973821004",
+          "company": "Coast",
+          "role": "Product Engineer, Foundations Team",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -78138,6 +78441,18 @@
           "role": "Full Stack Software Engineer II",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5082367008",
+          "company": "Thesis",
+          "role": "Full Stack Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
