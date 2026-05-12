@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T05:07:31.818050+00:00",
+  "generatedAt": "2026-05-12T13:41:37.648636+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 823,
+      "total": 825,
       "applied": 472,
-      "unapplied": 351,
-      "active": 630,
+      "unapplied": 353,
+      "active": 632,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 683,
-      "reachOut": 747,
+      "highFit": 685,
+      "reachOut": 749,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 747,
+      "intakeJobs": 749,
       "intakeQueued": 52,
       "intakeNew": 49,
-      "intakeManual": 374,
+      "intakeManual": 376,
       "intakeApplied": 15,
-      "applyRate": 57.4,
+      "applyRate": 57.2,
       "rejectionRate": 12.3,
-      "recruiterWork": 519,
-      "engineerWork": 598,
+      "recruiterWork": 521,
+      "engineerWork": 600,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 194
+        "value": 196
       },
       {
         "name": "Archived",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 374
+        "value": 376
       },
       {
         "name": "LinkedIn",
@@ -156,7 +156,7 @@
       },
       {
         "name": "Remote",
-        "value": 105
+        "value": 107
       },
       {
         "name": "Seattle",
@@ -182,7 +182,7 @@
       },
       {
         "name": "Backend",
-        "value": 91
+        "value": 92
       },
       {
         "name": "Forward Deployed",
@@ -190,7 +190,7 @@
       },
       {
         "name": "AI/ML",
-        "value": 57
+        "value": 58
       },
       {
         "name": "Infra/Platform",
@@ -236,7 +236,7 @@
       },
       {
         "score": "8",
-        "count": 151
+        "count": 152
       },
       {
         "score": "9",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 383
+        "count": 384
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 374
+        "value": 376
       },
       {
         "name": "Tailored",
@@ -300,7 +300,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 508
+        "value": 510
       },
       {
         "name": "LinkedIn",
@@ -531,6 +531,14 @@
         "applied": 1,
         "rejected": 0,
         "interviewing": 0
+      },
+      {
+        "date": "2026-05-12",
+        "cumulative": 825,
+        "added": 2,
+        "applied": 0,
+        "rejected": 0,
+        "interviewing": 0
       }
     ],
     "topCompanies": [
@@ -541,15 +549,15 @@
         "bestFit": 10
       },
       {
-        "company": "Scale AI",
-        "roles": 10,
-        "avgFit": 10.0,
+        "company": "Vercel",
+        "roles": 12,
+        "avgFit": 9.5,
         "bestFit": 10
       },
       {
-        "company": "Vercel",
+        "company": "Scale AI",
         "roles": 10,
-        "avgFit": 9.6,
+        "avgFit": 10.0,
         "bestFit": 10
       },
       {
@@ -861,6 +869,15 @@
         "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5704320004"
       },
       {
+        "company": "Vercel",
+        "role": "Software Engineer, Backend",
+        "fitScore": 10,
+        "status": "Manual Apply Needed",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5431123004"
+      },
+      {
         "company": "Valon",
         "role": "Software Engineer - New Grad",
         "fitScore": 10,
@@ -994,15 +1011,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/twitch/jobs/8459320002"
-      },
-      {
-        "company": "Twitch",
-        "role": "Software Engineer II, Safety",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://job-boards.greenhouse.io/twitch/jobs/8499608002"
       }
     ],
     "recruiterBatch": {
@@ -23602,9 +23610,73 @@
       "activityDates": [
         "2026-05-11"
       ]
+    },
+    {
+      "company": "Vercel",
+      "role": "Software Engineer, Domains",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "Remote - United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5813134004",
+      "postingKey": "5813134004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Vercel/Software_Engineer_Domains/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Vercel/Software_Engineer_Domains/Liam_Van_Resume/Liam_Van_Vercel.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-12; tailored resume rendered and verified one page; emphasized customer-facing domain workflows, React/NestJS product surfaces, search/discovery systems, backend APIs, and release validation. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Vercel",
+      "role": "Software Engineer, Backend",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "Remote - United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5431123004",
+      "postingKey": "5431123004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Vercel/Software_Engineer_Backend/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Vercel/Software_Engineer_Backend/Liam_Van_Resume/Liam_Van_Vercel.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-12; tailored resume rendered and verified one page; emphasized backend APIs, cloud reliability, service integrations, data systems, release support, and on-call debugging. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Vercel",
+      "role": "Software Engineer, Backend",
+      "location": "Remote - United States",
+      "postingKey": "5431123004",
+      "jobUrl": "https://job-boards.greenhouse.io/vercel/jobs/5431123004",
+      "discoveredAt": "2026-05-12T08:17:07.125945+00:00",
+      "postedAge": "Crawled 4 days ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-12; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": "5431123004"
+    },
     {
       "source": "Greenhouse",
       "company": "Sumo Logic",
@@ -30691,6 +30763,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Vercel",
+      "role": "Software Engineer, Domains",
+      "location": "Remote - United States",
+      "postingKey": "5813134004",
+      "jobUrl": "https://job-boards.greenhouse.io/vercel/jobs/5813134004",
+      "discoveredAt": "2026-05-12T08:17:07.125945+00:00",
+      "postedAge": "Crawled 4 days ago",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-12; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": "5813134004"
+    },
+    {
+      "source": "Greenhouse",
       "company": "Tailscale",
       "role": "Software Engineer, Product Strategy",
       "location": "Remote (United States)",
@@ -34350,6 +34436,19 @@
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
       "notes": "Queued by resume-tailor after tailored resume update.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11."
+    },
+    {
+      "company": "Vercel",
+      "role": "Software Engineer, Backend",
+      "postingKey": "5431123004",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5431123004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update.; Manual apply needed because Computer Use approval was denied after required delayed retry preflight."
     },
     {
       "company": "Valon",
@@ -40668,6 +40767,19 @@
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
       "notes": "Queued by resume-tailor after tailored resume update.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11."
+    },
+    {
+      "company": "Vercel",
+      "role": "Software Engineer, Domains",
+      "postingKey": "5813134004",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5813134004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update.; Manual apply needed because Computer Use approval was denied after required delayed retry preflight."
     },
     {
       "company": "Venture Up",
@@ -63600,6 +63712,18 @@
           "contacts": []
         },
         {
+          "key": "5431123004",
+          "company": "Vercel",
+          "role": "Software Engineer, Backend",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8516902002",
           "company": "Virtu Financial",
           "role": "Software Engineer - Desktop Frontend Developer (C#/Winforms)",
@@ -66377,6 +66501,18 @@
           "role": "Software Engineer, CDN Security",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5813134004",
+          "company": "Vercel",
+          "role": "Software Engineer, Domains",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -78952,6 +79088,18 @@
           "contacts": []
         },
         {
+          "key": "5431123004",
+          "company": "Vercel",
+          "role": "Software Engineer, Backend",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8516902002",
           "company": "Virtu Financial",
           "role": "Software Engineer - Desktop Frontend Developer (C#/Winforms)",
@@ -81081,6 +81229,18 @@
           "role": "Software Engineer, CDN Security",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5813134004",
+          "company": "Vercel",
+          "role": "Software Engineer, Domains",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"

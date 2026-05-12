@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 696
+Companies queued: 698
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -31,6 +31,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Vercel | Software Engineer, CDN | 5179639004 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5179639004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11. |
 | Vercel | Software Engineer, Deployment Infrastructure | 5633880004 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5633880004) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. Manual apply needed: Computer Use approval denied 2026-05-11.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11. |
 | Vercel | Software Engineer, Agent | 5704320004 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5704320004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11. |
+| Vercel | Software Engineer, Backend | 5431123004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5431123004) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update.; Manual apply needed because Computer Use approval was denied after required delayed retry preflight. |
 | Valon | Software Engineer - New Grad | 4409152006 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/valon/jobs/4409152006) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Valon | Software Engineer | 4402156847 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4402156847/?trackingId=8Co7I66maGhvzcjOzR5eyQ%3D%3D&refId=glJ8A%2B2sNgHqb%2Bh7kMbvlQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BZWay9dJ3Tkm72OKWKEYJDw%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | Valon | Software Engineer, Product | 5629764004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/valon/jobs/5629764004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
@@ -517,6 +518,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Waymo | Software Engineer, Simulator Evaluation | 6562547 | 8 | Resume Tailored | Yes | [Posting](https://careers.withwaymo.com/jobs/software-engineer-simulator-evaluation-mountain-view-california-united-states?gh_jid=6562547&gh_src=e2a2625d1us) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Voxel | Software Engineer - Platform | f2cca900-58ed-4e14-9e4d-2797626d750e | 8 | Online Assessment | Yes | [Posting](https://jobs.ashbyhq.com/Voxel/f2cca900-58ed-4e14-9e4d-2797626d750e?utm_source=pOxa4Kqo8D) |  |  |  |  |
 | Vercel | Software Engineer, CDN Security | 5473266004 | 8 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5473266004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11. |
+| Vercel | Software Engineer, Domains | 5813134004 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5813134004) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update.; Manual apply needed because Computer Use approval was denied after required delayed retry preflight. |
 | Venture Up | Software Engineer | 4407898952 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4407898952/?trackingId=v8mJtxIqb3xbqXXQPjnurg%3D%3D&refId=tBjUexm30TQ%2F0tU16a0ikg%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BXswBGatqRWSvZiq2ne7KBA%3D%3D) |  |  |  |  |
 | Uphold | Software Engineer - Trading Execution | 773 | 8 | Applied | Yes | [Posting](https://uphold.bamboohr.com/careers/773?source=linkedin) |  |  |  |  |
 | Triangulum Venture Labs | Software Engineer | 4411856373 | 8 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/4411856373/) |  |  | 2026-05-08 | Job poster verified as external Questglobaldigital recruiter, not current in-house Triangulum recruiter; no invite sent. Easy Apply left open at resume upload step for Liam/manual completion with tailored PDF ready. |
