@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T20:05:22.111845+00:00",
+  "generatedAt": "2026-05-12T20:35:30.344049+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 864,
+      "total": 866,
       "applied": 472,
-      "unapplied": 392,
-      "active": 670,
+      "unapplied": 394,
+      "active": 672,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 722,
-      "reachOut": 786,
+      "highFit": 724,
+      "reachOut": 788,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,10 +26,10 @@
       "intakeNew": 52,
       "intakeManual": 416,
       "intakeApplied": 15,
-      "applyRate": 54.6,
+      "applyRate": 54.5,
       "rejectionRate": 12.3,
-      "recruiterWork": 558,
-      "engineerWork": 638,
+      "recruiterWork": 560,
+      "engineerWork": 640,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 24
+        "value": 26
       },
       {
         "name": "Online Assessment",
@@ -70,7 +70,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 297
+        "value": 298
       },
       {
         "name": "Ashby",
@@ -78,7 +78,7 @@
       },
       {
         "name": "Company Site",
-        "value": 31
+        "value": 32
       },
       {
         "name": "LinkedIn Easy Apply",
@@ -144,11 +144,11 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 372
+        "value": 373
       },
       {
         "name": "Bay Area",
-        "value": 198
+        "value": 199
       },
       {
         "name": "Other",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 464
+        "value": 466
       },
       {
         "name": "Full Stack",
@@ -236,11 +236,11 @@
       },
       {
         "score": "8",
-        "count": 161
+        "count": 162
       },
       {
         "score": "9",
-        "count": 159
+        "count": 160
       },
       {
         "score": "10",
@@ -534,8 +534,8 @@
       },
       {
         "date": "2026-05-12",
-        "cumulative": 864,
-        "added": 41,
+        "cumulative": 866,
+        "added": 43,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -603,6 +603,12 @@
         "bestFit": 10
       },
       {
+        "company": "Uber",
+        "roles": 6,
+        "avgFit": 8.83,
+        "bestFit": 10
+      },
+      {
         "company": "Palantir Technologies",
         "roles": 6,
         "avgFit": 8.33,
@@ -648,12 +654,6 @@
         "company": "Loop",
         "roles": 5,
         "avgFit": 9.4,
-        "bestFit": 10
-      },
-      {
-        "company": "Uber",
-        "roles": 5,
-        "avgFit": 9.0,
         "bestFit": 10
       },
       {
@@ -24643,6 +24643,56 @@
       "activityDates": [
         "2026-05-12"
       ]
+    },
+    {
+      "company": "Uber",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "San Francisco, CA",
+      "source": "Company Site",
+      "jobLink": "https://www.uber.com/global/en/careers/list/156795/?iis=Job%20Board%20-%20Recruitment%20Marketing&iisn=LinkedIn&jClickId=b4ffaeb2-4564-4e60-a593-2478992c322d",
+      "postingKey": "156795",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Uber/Software_Engineer/Liam_Van_Resume_3",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Uber/Software_Engineer/Liam_Van_Resume_3/Liam_Van_Uber.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-12 for Uber posting 156795; emphasized Python/Java/C++/SQL, distributed systems, API/service integration, production debugging, monitoring, SDLC, AWS/GCP/OCI cloud work, and on-call reliability. Missing evidence not claimed: iOS/Swift/Objective-C, Wireshark, and deep network-protocol implementation.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Deeptune",
+      "role": "Member of Technical Staff",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4413737117/",
+      "postingKey": "4413737117",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Deeptune/Member_of_Technical_Staff/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Deeptune/Member_of_Technical_Staff/Liam_Van_Resume/Liam_Van_Deeptune.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-12 for Deeptune Member of Technical Staff posting 4413737117; emphasized Python/TypeScript, backend/infrastructure ownership, agentic AI-adjacent LLM work, AI-assisted API testing, distributed validation, cloud services, reliability, and startup-style ambiguity. Did not claim Go, RL training implementation, or direct simulation-environment ownership beyond supported project and Oracle evidence.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
     }
   ],
   "jobIntake": [
@@ -42317,6 +42367,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Deeptune",
+      "role": "Member of Technical Staff",
+      "postingKey": "4413737117",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4413737117/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Dash0",
       "role": "Platform Engineer",
       "postingKey": "c71c1a08-d9ea-4229-b7c9-a3ac9eabc95c",
@@ -42965,6 +43028,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Uber",
+      "role": "Software Engineer",
+      "postingKey": "156795",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.uber.com/global/en/careers/list/156795/?iis=Job%20Board%20-%20Recruitment%20Marketing&iisn=LinkedIn&jClickId=b4ffaeb2-4564-4e60-a593-2478992c322d",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Triangulum Venture Labs",
@@ -68088,6 +68164,18 @@
           "contacts": []
         },
         {
+          "key": "4413737117",
+          "company": "Deeptune",
+          "role": "Member of Technical Staff",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4409831521",
           "company": "Ema",
           "role": "Software Engineer, Backend",
@@ -70601,6 +70689,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "156795",
+          "company": "Uber",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -83944,6 +84044,18 @@
           "contacts": []
         },
         {
+          "key": "4413737117",
+          "company": "Deeptune",
+          "role": "Member of Technical Staff",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4409831521",
           "company": "Ema",
           "role": "Software Engineer, Backend",
@@ -85797,6 +85909,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "156795",
+          "company": "Uber",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"

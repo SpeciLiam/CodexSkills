@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 736
+Companies queued: 738
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -499,6 +499,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Figma | Software Engineer, Full Stack | 5691911004 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/figma/jobs/5691911004?gh_jid=5691911004&gh_src=28109e334us&source=LinkedIn) |  |  |  |  |
 | Ever | Software Engineer | 5064724008 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/ever/jobs/5064724008) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Ema | Software Engineer, Backend | 4409831521 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4409831521/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
+| Deeptune | Member of Technical Staff | 4413737117 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4413737117/) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Dash0 | Platform Engineer | c71c1a08-d9ea-4229-b7c9-a3ac9eabc95c | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/dash0/c71c1a08-d9ea-4229-b7c9-a3ac9eabc95c/application?utm_source=LinkedIn) |  |  |  |  |
 | Dagster Labs | Software Engineer - Platform | 7714923003 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/dagsterlabs/jobs/7714923003?gh_src=ojd9d6tp3us) |  |  |  |  |
 | CyberArk | Software Engineer | 4411459610 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4411459610/) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
@@ -549,6 +550,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Vercel | Software Engineer, Domains | 5813134004 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5813134004) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update.; Manual apply needed because Computer Use approval was denied after required delayed retry preflight. |
 | Venture Up | Software Engineer | 4407898952 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4407898952/?trackingId=v8mJtxIqb3xbqXXQPjnurg%3D%3D&refId=tBjUexm30TQ%2F0tU16a0ikg%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BXswBGatqRWSvZiq2ne7KBA%3D%3D) |  |  |  |  |
 | Uphold | Software Engineer - Trading Execution | 773 | 8 | Applied | Yes | [Posting](https://uphold.bamboohr.com/careers/773?source=linkedin) |  |  |  |  |
+| Uber | Software Engineer | 156795 | 8 | Resume Tailored | Yes | [Posting](https://www.uber.com/global/en/careers/list/156795/?iis=Job%20Board%20-%20Recruitment%20Marketing&iisn=LinkedIn&jClickId=b4ffaeb2-4564-4e60-a593-2478992c322d) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Triangulum Venture Labs | Software Engineer | 4411856373 | 8 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/4411856373/) |  |  | 2026-05-08 | Job poster verified as external Questglobaldigital recruiter, not current in-house Triangulum recruiter; no invite sent. Easy Apply left open at resume upload step for Liam/manual completion with tailored PDF ready. |
 | TradeForm | Software Engineer | 4403367885 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4403367885/apply/) |  |  |  |  |
 | The Voleon Group | Software Engineer, DevOps | 4407401640 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4407401640/) |  |  |  |  |
