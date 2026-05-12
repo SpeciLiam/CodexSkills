@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T16:01:59.643840+00:00",
+  "generatedAt": "2026-05-12T16:03:35.612531+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 839,
+      "total": 845,
       "applied": 472,
-      "unapplied": 367,
-      "active": 646,
+      "unapplied": 373,
+      "active": 652,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 699,
-      "reachOut": 763,
+      "highFit": 705,
+      "reachOut": 769,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,10 +26,10 @@
       "intakeNew": 50,
       "intakeManual": 390,
       "intakeApplied": 15,
-      "applyRate": 56.3,
+      "applyRate": 55.9,
       "rejectionRate": 12.3,
-      "recruiterWork": 535,
-      "engineerWork": 614,
+      "recruiterWork": 541,
+      "engineerWork": 620,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 210
+        "value": 216
       },
       {
         "name": "Archived",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 390
+        "value": 396
       },
       {
         "name": "LinkedIn",
@@ -144,11 +144,11 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 360
+        "value": 361
       },
       {
         "name": "Bay Area",
-        "value": 196
+        "value": 197
       },
       {
         "name": "Other",
@@ -156,7 +156,7 @@
       },
       {
         "name": "Remote",
-        "value": 110
+        "value": 114
       },
       {
         "name": "Seattle",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 456
+        "value": 457
       },
       {
         "name": "Full Stack",
@@ -182,19 +182,19 @@
       },
       {
         "name": "Backend",
-        "value": 93
+        "value": 94
+      },
+      {
+        "name": "AI/ML",
+        "value": 62
       },
       {
         "name": "Forward Deployed",
         "value": 62
       },
       {
-        "name": "AI/ML",
-        "value": 60
-      },
-      {
         "name": "Infra/Platform",
-        "value": 40
+        "value": 41
       },
       {
         "name": "Frontend",
@@ -202,7 +202,7 @@
       },
       {
         "name": "Data",
-        "value": 12
+        "value": 13
       }
     ],
     "fitCounts": [
@@ -236,7 +236,7 @@
       },
       {
         "score": "8",
-        "count": 157
+        "count": 158
       },
       {
         "score": "9",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 389
+        "count": 394
       }
     ],
     "targetCounts": [
@@ -534,8 +534,8 @@
       },
       {
         "date": "2026-05-12",
-        "cumulative": 839,
-        "added": 16,
+        "cumulative": 845,
+        "added": 22,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -615,6 +615,12 @@
         "bestFit": 10
       },
       {
+        "company": "Amplitude",
+        "roles": 5,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "Addepar",
         "roles": 5,
         "avgFit": 10.0,
@@ -675,12 +681,6 @@
         "bestFit": 10
       },
       {
-        "company": "Amplitude",
-        "roles": 4,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
         "company": "Flex",
         "roles": 4,
         "avgFit": 10.0,
@@ -696,6 +696,15 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://jobs.ashbyhq.com/zettabyte-space/50a9c6dc-7225-4ff0-a914-69d1dd325d6a/application?utm_source=LinkedInPaid"
+      },
+      {
+        "company": "YugabyteDB",
+        "role": "Platform Software Engineer (Control Plane)",
+        "fitScore": 10,
+        "status": "Manual Apply Needed",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/yugabyte/jobs/4656120006"
       },
       {
         "company": "Yext",
@@ -1002,15 +1011,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://www.linkedin.com/jobs/view/4408817630/"
-      },
-      {
-        "company": "Two Dots",
-        "role": "Software Engineer",
-        "fitScore": 10,
-        "status": "Resume Tailored",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://www.linkedin.com/jobs/view/4318551773/"
       }
     ],
     "recruiterBatch": {
@@ -23995,7 +23995,7 @@
       "reachOut": true,
       "referral": "No",
       "dateAdded": "2026-05-12",
-      "location": "New York, New York, United States",
+      "location": "New York, NY",
       "source": "Greenhouse",
       "jobLink": "https://job-boards.greenhouse.io/gardacp/jobs/5802057004",
       "postingKey": "5802057004",
@@ -24005,11 +24005,150 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-12; tailored AI tooling resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-12; tailored AI tooling resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Hourly intake 2026-05-12; tailored AI tooling resume rendered and verified one page; emphasized Python, LLM/API tooling, backend integrations, data workflows, monitoring, and stakeholder-facing automation. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-12",
         "2026-05-12"
       ]
+    },
+    {
+      "company": "YugabyteDB",
+      "role": "Platform Software Engineer (Control Plane)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "Remote, USA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/yugabyte/jobs/4656120006",
+      "postingKey": "4656120006",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/YugabyteDB/Platform_Software_Engineer_Control_Plane/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/YugabyteDB/Platform_Software_Engineer_Control_Plane/Liam_Van_Resume/Liam_Van_YugabyteDB.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "DoorDash USA",
+      "role": "Software Engineer II, Data Engineering",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "San Francisco, CA; Sunnyvale, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/doordashusa/jobs/6458514",
+      "postingKey": "6458514",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DoorDash USA/Software_Engineer_II_Data_Engineering/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DoorDash USA/Software_Engineer_II_Data_Engineering/Liam_Van_Resume/Liam_Van_DoorDash_USA.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Capital Technology Group",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "Remote (USA)",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/capitaltg/jobs/5011457007",
+      "postingKey": "5011457007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Capital Technology Group/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Capital Technology Group/Software_Engineer/Liam_Van_Resume/Liam_Van_Capital_Technology_Group.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Aura",
+      "role": "Software Engineer, Backend",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "Remote USA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/aura798/jobs/5837490004",
+      "postingKey": "5837490004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Aura/Software_Engineer_Backend/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Aura/Software_Engineer_Backend/Liam_Van_Resume/Liam_Van_Aura.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Amplitude",
+      "role": "Software Engineer II, AI Security",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/amplitude/jobs/8174490002",
+      "postingKey": "8174490002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Amplitude/Software_Engineer_II_AI_Security/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Amplitude/Software_Engineer_II_AI_Security/Liam_Van_Resume/Liam_Van_Amplitude.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Life360",
+      "role": "Software Engineer AI-Native, mobile Foundry",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "Remote, USA; Remote, Canada",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/life360/jobs/8517378002",
+      "postingKey": "8517378002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Life360/Software_Engineer_AI_Native_mobile_Foundry/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Life360/Software_Engineer_AI_Native_mobile_Foundry/Liam_Van_Resume/Liam_Van_Life360.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
     }
   ],
   "jobIntake": [
@@ -34977,6 +35116,19 @@
       "notes": ""
     },
     {
+      "company": "YugabyteDB",
+      "role": "Platform Software Engineer (Control Plane)",
+      "postingKey": "4656120006",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/yugabyte/jobs/4656120006",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Yext",
       "role": "Software Engineer",
       "postingKey": "7085149",
@@ -38279,6 +38431,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "DoorDash USA",
+      "role": "Software Engineer II, Data Engineering",
+      "postingKey": "6458514",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/doordashusa/jobs/6458514",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Disney",
       "role": "Software Engineer II - Data Transformation",
       "postingKey": "91303727120",
@@ -38851,6 +39016,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Capital Technology Group",
+      "role": "Software Engineer",
+      "postingKey": "5011457007",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/capitaltg/jobs/5011457007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Capco",
       "role": "Full Stack Engineer",
       "postingKey": "7558557",
@@ -39083,6 +39261,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Aura",
+      "role": "Software Engineer, Backend",
+      "postingKey": "5837490004",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/aura798/jobs/5837490004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Attentive",
@@ -39459,6 +39650,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Amplitude",
+      "role": "Software Engineer II, AI Security",
+      "postingKey": "8174490002",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/amplitude/jobs/8174490002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -42475,6 +42679,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Life360",
+      "role": "Software Engineer AI-Native, mobile Foundry",
+      "postingKey": "8517378002",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/life360/jobs/8517378002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -62330,6 +62547,18 @@
           "contacts": []
         },
         {
+          "key": "8174490002",
+          "company": "Amplitude",
+          "role": "Software Engineer II, AI Security",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "associate-software-engineer-software-engineer-at-applied-systems-4400119719",
           "company": "Applied Systems",
           "role": "Associate Software Engineer / Software Engineer",
@@ -62479,6 +62708,18 @@
           "role": "Software Engineer II, Identity Infrastructure",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5837490004",
+          "company": "Aura",
+          "role": "Software Engineer, Backend",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -62645,6 +62886,18 @@
           "key": "software-engineer-energy-ai-at-cvector-energy-4390530770",
           "company": "CVector Energy",
           "role": "Software Engineer, Energy AI",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5011457007",
+          "company": "Capital Technology Group",
+          "role": "Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -63029,6 +63282,18 @@
           "key": "7155159",
           "company": "DoorDash USA",
           "role": "Software Engineer II, New Verticals",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "6458514",
+          "company": "DoorDash USA",
+          "role": "Software Engineer II, Data Engineering",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -64829,6 +65094,18 @@
           "key": "4809387007",
           "company": "Writer",
           "role": "Forward Deployed Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4656120006",
+          "company": "YugabyteDB",
+          "role": "Platform Software Engineer (Control Plane)",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -66955,6 +67232,18 @@
           "role": "Software Engineer (Forward Deployed)",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8517378002",
+          "company": "Life360",
+          "role": "Software Engineer AI-Native, mobile Foundry",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -77670,6 +77959,18 @@
           "contacts": []
         },
         {
+          "key": "8174490002",
+          "company": "Amplitude",
+          "role": "Software Engineer II, AI Security",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "associate-software-engineer-software-engineer-at-applied-systems-4400119719",
           "company": "Applied Systems",
           "role": "Associate Software Engineer / Software Engineer",
@@ -77862,6 +78163,18 @@
           "contacts": []
         },
         {
+          "key": "5837490004",
+          "company": "Aura",
+          "role": "Software Engineer, Backend",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4409635237",
           "company": "AustinWorks",
           "role": "Forward Deployed Engineer",
@@ -78009,6 +78322,18 @@
           "key": "software-engineer-energy-ai-at-cvector-energy-4390530770",
           "company": "CVector Energy",
           "role": "Software Engineer, Energy AI",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5011457007",
+          "company": "Capital Technology Group",
+          "role": "Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -78417,6 +78742,18 @@
           "key": "7155159",
           "company": "DoorDash USA",
           "role": "Software Engineer II, New Verticals",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "6458514",
+          "company": "DoorDash USA",
+          "role": "Software Engineer II, Data Engineering",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -80406,6 +80743,18 @@
           "contacts": []
         },
         {
+          "key": "4656120006",
+          "company": "YugabyteDB",
+          "role": "Platform Software Engineer (Control Plane)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8452428002",
           "company": "iCapital",
           "role": "Full Stack Engineer - Ruby and React - Associate",
@@ -82175,6 +82524,18 @@
           "role": "Software Engineer (Forward Deployed)",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8517378002",
+          "company": "Life360",
+          "role": "Software Engineer AI-Native, mobile Foundry",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
