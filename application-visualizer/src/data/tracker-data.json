@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T13:41:37.648636+00:00",
+  "generatedAt": "2026-05-12T15:58:59.636187+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 825,
+      "total": 839,
       "applied": 472,
-      "unapplied": 353,
-      "active": 632,
+      "unapplied": 367,
+      "active": 646,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 685,
-      "reachOut": 749,
+      "highFit": 699,
+      "reachOut": 763,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 749,
-      "intakeQueued": 52,
-      "intakeNew": 49,
-      "intakeManual": 376,
+      "intakeJobs": 765,
+      "intakeQueued": 54,
+      "intakeNew": 50,
+      "intakeManual": 389,
       "intakeApplied": 15,
-      "applyRate": 57.2,
+      "applyRate": 56.3,
       "rejectionRate": 12.3,
-      "recruiterWork": 521,
-      "engineerWork": 600,
+      "recruiterWork": 535,
+      "engineerWork": 614,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 196
+        "value": 209
       },
       {
         "name": "Archived",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 23
+        "value": 24
       },
       {
         "name": "Online Assessment",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 376
+        "value": 390
       },
       {
         "name": "LinkedIn",
@@ -144,19 +144,19 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 357
+        "value": 360
       },
       {
         "name": "Bay Area",
-        "value": 193
+        "value": 196
       },
       {
         "name": "Other",
-        "value": 135
+        "value": 140
       },
       {
         "name": "Remote",
-        "value": 107
+        "value": 110
       },
       {
         "name": "Seattle",
@@ -174,15 +174,15 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 448
+        "value": 456
       },
       {
         "name": "Full Stack",
-        "value": 100
+        "value": 102
       },
       {
         "name": "Backend",
-        "value": 92
+        "value": 93
       },
       {
         "name": "Forward Deployed",
@@ -190,7 +190,7 @@
       },
       {
         "name": "AI/ML",
-        "value": 58
+        "value": 60
       },
       {
         "name": "Infra/Platform",
@@ -198,7 +198,7 @@
       },
       {
         "name": "Frontend",
-        "value": 13
+        "value": 14
       },
       {
         "name": "Data",
@@ -236,15 +236,15 @@
       },
       {
         "score": "8",
-        "count": 152
+        "count": 157
       },
       {
         "score": "9",
-        "count": 149
+        "count": 153
       },
       {
         "score": "10",
-        "count": 384
+        "count": 389
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 376
+        "value": 389
       },
       {
         "name": "Tailored",
@@ -274,11 +274,11 @@
       },
       {
         "name": "Queued",
-        "value": 52
+        "value": 54
       },
       {
         "name": "New",
-        "value": 49
+        "value": 50
       },
       {
         "name": "Applied",
@@ -300,7 +300,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 510
+        "value": 526
       },
       {
         "name": "LinkedIn",
@@ -534,8 +534,8 @@
       },
       {
         "date": "2026-05-12",
-        "cumulative": 825,
-        "added": 2,
+        "cumulative": 839,
+        "added": 16,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -550,8 +550,8 @@
       },
       {
         "company": "Vercel",
-        "roles": 12,
-        "avgFit": 9.5,
+        "roles": 13,
+        "avgFit": 9.46,
         "bestFit": 10
       },
       {
@@ -657,6 +657,12 @@
         "bestFit": 10
       },
       {
+        "company": "Anthropic",
+        "roles": 5,
+        "avgFit": 6.0,
+        "bestFit": 10
+      },
+      {
         "company": "The New York Times",
         "roles": 4,
         "avgFit": 10.0,
@@ -676,12 +682,6 @@
       },
       {
         "company": "Flex",
-        "roles": 4,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Axon",
         "roles": 4,
         "avgFit": 10.0,
         "bestFit": 10
@@ -804,6 +804,24 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/versaterm/jobs/4593081008"
+      },
+      {
+        "company": "Verkada",
+        "role": "Embedded Software Engineer - University Graduate 2026",
+        "fitScore": 10,
+        "status": "Manual Apply Needed",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/verkada/jobs/4835669007?gh_src=69392e8a7us"
+      },
+      {
+        "company": "Verkada",
+        "role": "Frontend Software Engineer - University Graduate 2026",
+        "fitScore": 10,
+        "status": "Manual Apply Needed",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/verkada/jobs/4855439007?gh_src=69392e8a7us"
       },
       {
         "company": "Vercel",
@@ -993,24 +1011,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://www.linkedin.com/jobs/view/4318551773/"
-      },
-      {
-        "company": "Twitch",
-        "role": "Software Engineer I - Ads Demand Enablement",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://job-boards.greenhouse.io/twitch/jobs/8162197002?gh_src=0c4ebc182"
-      },
-      {
-        "company": "Twitch",
-        "role": "Software Engineer I, Commerce Engineering",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://job-boards.greenhouse.io/twitch/jobs/8459320002"
       }
     ],
     "recruiterBatch": {
@@ -23660,9 +23660,441 @@
       "activityDates": [
         "2026-05-12"
       ]
+    },
+    {
+      "company": "Remesh",
+      "role": "Full Stack Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "New York City, New York",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/remesh/jobs/5591780004",
+      "postingKey": "5591780004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Remesh/Full_Stack_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Remesh/Full_Stack_Software_Engineer/Liam_Van_Resume/Liam_Van_Remesh.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Censys",
+      "role": "Backend Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "Remote, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/censys/jobs/8127725002",
+      "postingKey": "8127725002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Censys/Backend_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Censys/Backend_Software_Engineer/Liam_Van_Resume/Liam_Van_Censys.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Vercel",
+      "role": "Software Engineer, v0",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5634793004",
+      "postingKey": "5634793004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Vercel/Software_Engineer_v0/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Vercel/Software_Engineer_v0/Liam_Van_Resume/Liam_Van_Vercel.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Speechmatics",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "San Francisco Bay Area",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/speechmatics/jobs/4830644007",
+      "postingKey": "4830644007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Speechmatics/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Speechmatics/Software_Engineer/Liam_Van_Resume/Liam_Van_Speechmatics.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Anthropic",
+      "role": "Forward Deployed AI Engineer, Public Sector",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "Washington, DC | New York City | San Francisco | Seattle",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/anthropic/jobs/4020263008",
+      "postingKey": "4020263008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Anthropic/Forward_Deployed_AI_Engineer_Public_Sector/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Anthropic/Forward_Deployed_AI_Engineer_Public_Sector/Liam_Van_Resume/Liam_Van_Anthropic.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Tailscale",
+      "role": "Software Engineer, Network Security Integrations",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "Remote (United States)",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/tailscale/jobs/4638674005",
+      "postingKey": "4638674005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tailscale/Software_Engineer_Network_Security_Integrations/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tailscale/Software_Engineer_Network_Security_Integrations/Liam_Van_Resume/Liam_Van_Tailscale.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Starburst",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/starburst/jobs/8126108002",
+      "postingKey": "8126108002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Starburst/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Starburst/Software_Engineer/Liam_Van_Resume/Liam_Van_Starburst.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Sitreps 2 SteerCos",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "Washington, DC",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/sitreps2steercos/jobs/4801901007",
+      "postingKey": "4801901007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Sitreps 2 SteerCos/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Sitreps 2 SteerCos/Software_Engineer/Liam_Van_Resume/Liam_Van_Sitreps_2_SteerCos.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "NICE",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "United States - Remote",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/nice/jobs/7184361003",
+      "postingKey": "7184361003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/NICE/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/NICE/Software_Engineer/Liam_Van_Resume/Liam_Van_NICE.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Verkada",
+      "role": "Embedded Software Engineer - University Graduate 2026",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "San Mateo, CA United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/verkada/jobs/4835669007?gh_src=69392e8a7us",
+      "postingKey": "4835669007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Verkada/Embedded_Software_Engineer_University_Graduate_2026/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Verkada/Embedded_Software_Engineer_University_Graduate_2026/Liam_Van_Resume/Liam_Van_Verkada.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-12; tailored early-career embedded resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Scopely",
+      "role": "Full Stack Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "US - Bellevue, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/scopely/jobs/5105580008",
+      "postingKey": "5105580008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scopely/Full_Stack_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Scopely/Full_Stack_Engineer/Liam_Van_Resume/Liam_Van_Scopely.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-12; tailored full-stack resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Verkada",
+      "role": "Frontend Software Engineer - University Graduate 2026",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "San Mateo, CA United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/verkada/jobs/4855439007?gh_src=69392e8a7us",
+      "postingKey": "4855439007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Verkada/Frontend_Software_Engineer_University_Graduate_2026/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Verkada/Frontend_Software_Engineer_University_Graduate_2026/Liam_Van_Resume/Liam_Van_Verkada.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-12; tailored early-career frontend resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "CHAOS Industries",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/chaosindustries/jobs/4872368007?gh_src=be7dbdf57us",
+      "postingKey": "4872368007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CHAOS Industries/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CHAOS Industries/Software_Engineer/Liam_Van_Resume/Liam_Van_CHAOS_Industries.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-12; tailored software engineering resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Garda Capital Partners",
+      "role": "Software Engineer (AI Tooling)",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "New York, New York, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/gardacp/jobs/5802057004",
+      "postingKey": "5802057004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Garda Capital Partners/Software_Engineer_AI_Tooling/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Garda Capital Partners/Software_Engineer_AI_Tooling/Liam_Van_Resume/Liam_Van_Garda_Capital_Partners.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "RegScale",
+      "role": "Software Engineer II",
+      "location": "Remote",
+      "postingKey": "4801482007",
+      "jobUrl": "https://job-boards.greenhouse.io/regscale/jobs/4801482007",
+      "discoveredAt": "2026-05-12T15:58:59.274697+00:00",
+      "postedAge": "2 months ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Garda Capital Partners",
+      "role": "Software Engineer (AI Tooling)",
+      "location": "New York, New York, United States",
+      "postingKey": "5802057004",
+      "jobUrl": "https://job-boards.greenhouse.io/gardacp/jobs/5802057004",
+      "discoveredAt": "2026-05-12T15:53:08.774343+00:00",
+      "postedAge": "Crawled 2 days ago; live Greenhouse page verified 2026-05-12",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference, AI/backend tooling fit",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Remesh",
+      "role": "Full Stack Software Engineer",
+      "location": "New York City, New York",
+      "postingKey": "5591780004",
+      "jobUrl": "https://job-boards.greenhouse.io/remesh/jobs/5591780004",
+      "discoveredAt": "2026-05-12T15:15:25.887278+00:00",
+      "postedAge": "Crawled today",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "5591780004"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Censys",
+      "role": "Backend Software Engineer",
+      "location": "Remote, United States",
+      "postingKey": "8127725002",
+      "jobUrl": "https://job-boards.greenhouse.io/censys/jobs/8127725002",
+      "discoveredAt": "2026-05-12T15:15:25.887278+00:00",
+      "postedAge": "Crawled today",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "8127725002"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Verkada",
+      "role": "Frontend Software Engineer - University Graduate 2026",
+      "location": "San Mateo, CA United States",
+      "postingKey": "4855439007",
+      "jobUrl": "https://job-boards.greenhouse.io/verkada/jobs/4855439007?gh_src=69392e8a7us",
+      "discoveredAt": "2026-05-12T13:42:56.531976+00:00",
+      "postedAge": "Crawled 8 months ago by search index; included due university graduate 2026 label",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-12; resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4855439007"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Verkada",
+      "role": "Embedded Software Engineer - University Graduate 2026",
+      "location": "San Mateo, CA United States",
+      "postingKey": "4835669007",
+      "jobUrl": "https://job-boards.greenhouse.io/verkada/jobs/4835669007?gh_src=69392e8a7us",
+      "discoveredAt": "2026-05-12T13:42:56.531976+00:00",
+      "postedAge": "Crawled 8 months ago by search index; included due university graduate 2026 label",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-12; resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4835669007"
+    },
     {
       "source": "Greenhouse",
       "company": "Vercel",
@@ -29405,6 +29837,62 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Vercel",
+      "role": "Software Engineer, v0",
+      "location": "San Francisco, CA",
+      "postingKey": "5634793004",
+      "jobUrl": "https://job-boards.greenhouse.io/vercel/jobs/5634793004",
+      "discoveredAt": "2026-05-12T15:15:25.887278+00:00",
+      "postedAge": "Crawled today",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "5634793004"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Speechmatics",
+      "role": "Software Engineer",
+      "location": "San Francisco Bay Area",
+      "postingKey": "4830644007",
+      "jobUrl": "https://job-boards.greenhouse.io/speechmatics/jobs/4830644007",
+      "discoveredAt": "2026-05-12T15:15:25.887278+00:00",
+      "postedAge": "Crawled today",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4830644007"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Anthropic",
+      "role": "Forward Deployed AI Engineer, Public Sector",
+      "location": "Washington, DC | New York City | San Francisco | Seattle",
+      "postingKey": "4020263008",
+      "jobUrl": "https://job-boards.greenhouse.io/anthropic/jobs/4020263008",
+      "discoveredAt": "2026-05-12T15:15:25.887278+00:00",
+      "postedAge": "Crawled today",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4020263008"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "CHAOS Industries",
+      "role": "Software Engineer",
+      "location": "San Francisco, California, United States",
+      "postingKey": "4872368007",
+      "jobUrl": "https://job-boards.greenhouse.io/chaosindustries/jobs/4872368007?gh_src=be7dbdf57us",
+      "discoveredAt": "2026-05-12T13:42:56.531976+00:00",
+      "postedAge": "Crawled 8 months ago by search index; posting marked New",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-12; resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4872368007"
+    },
+    {
+      "source": "Greenhouse",
       "company": "Tomorrow Health",
       "role": "AI/LLM Full-Stack Engineer",
       "location": "New York, New York, United States",
@@ -30760,6 +31248,76 @@
       "status": "Tailored",
       "reason": "SWE-family role, SF/Bay Area preference",
       "trackerPostingKey": "5592469004"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Tailscale",
+      "role": "Software Engineer, Network Security Integrations",
+      "location": "Remote (United States)",
+      "postingKey": "4638674005",
+      "jobUrl": "https://job-boards.greenhouse.io/tailscale/jobs/4638674005",
+      "discoveredAt": "2026-05-12T15:15:25.887278+00:00",
+      "postedAge": "Crawled today",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4638674005"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Starburst",
+      "role": "Software Engineer",
+      "location": "United States",
+      "postingKey": "8126108002",
+      "jobUrl": "https://job-boards.greenhouse.io/starburst/jobs/8126108002",
+      "discoveredAt": "2026-05-12T15:15:25.887278+00:00",
+      "postedAge": "Crawled today",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "8126108002"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Sitreps 2 SteerCos",
+      "role": "Software Engineer",
+      "location": "Washington, DC",
+      "postingKey": "4801901007",
+      "jobUrl": "https://job-boards.greenhouse.io/sitreps2steercos/jobs/4801901007",
+      "discoveredAt": "2026-05-12T15:15:25.887278+00:00",
+      "postedAge": "Crawled today",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4801901007"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "NICE",
+      "role": "Software Engineer",
+      "location": "United States - Remote",
+      "postingKey": "7184361003",
+      "jobUrl": "https://job-boards.greenhouse.io/nice/jobs/7184361003",
+      "discoveredAt": "2026-05-12T15:15:25.887278+00:00",
+      "postedAge": "Crawled today",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "7184361003"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Scopely",
+      "role": "Full Stack Engineer",
+      "location": "US - Bellevue, United States",
+      "postingKey": "5105580008",
+      "jobUrl": "https://job-boards.greenhouse.io/scopely/jobs/5105580008",
+      "discoveredAt": "2026-05-12T13:42:56.531976+00:00",
+      "postedAge": "Crawled today by search index; posting marked New",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-12; resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "5105580008"
     },
     {
       "source": "Greenhouse",
@@ -33213,6 +33771,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Inorsa",
+      "role": "Software Engineer",
+      "location": "Austin, TX",
+      "postingKey": "4821202007",
+      "jobUrl": "https://job-boards.greenhouse.io/inorsa/jobs/4821202007",
+      "discoveredAt": "2026-05-12T15:15:25.887278+00:00",
+      "postedAge": "Crawled 5 days ago",
+      "fitScore": 5,
+      "status": "New",
+      "reason": "SWE-family role, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Flex",
       "role": "Senior Software Engineer, Fullstack",
       "location": "New York, New York, United States; Remote; San Francisco, California, United States",
@@ -34347,6 +34919,32 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Verkada",
+      "role": "Embedded Software Engineer - University Graduate 2026",
+      "postingKey": "4835669007",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/verkada/jobs/4835669007?gh_src=69392e8a7us",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Verkada",
+      "role": "Frontend Software Engineer - University Graduate 2026",
+      "postingKey": "4855439007",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/verkada/jobs/4855439007?gh_src=69392e8a7us",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Vercel",
       "role": "Software Engineer, AI Gateway",
       "postingKey": "5798406004",
@@ -35475,6 +36073,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-04",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Remesh",
+      "role": "Full Stack Software Engineer",
+      "postingKey": "5591780004",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/remesh/jobs/5591780004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -37064,6 +37675,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Garda Capital Partners",
+      "role": "Software Engineer (AI Tooling)",
+      "postingKey": "5802057004",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/gardacp/jobs/5802057004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Fortune",
       "role": "Full Stack Software Engineer Next.js",
       "postingKey": "5424161004",
@@ -37958,6 +38582,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Censys",
+      "role": "Backend Software Engineer",
+      "postingKey": "8127725002",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/censys/jobs/8127725002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -38910,6 +39547,19 @@
       "notes": "Queued by resume-tailor after tailored resume update.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11."
     },
     {
+      "company": "Vercel",
+      "role": "Software Engineer, v0",
+      "postingKey": "5634793004",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5634793004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Valon",
       "role": "Software Engineer",
       "postingKey": "580ec8b6-c894-497e-9769-270e6e21efbe",
@@ -39219,6 +39869,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-05",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Speechmatics",
+      "role": "Software Engineer",
+      "postingKey": "4830644007",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/speechmatics/jobs/4830644007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -40470,6 +41133,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "CHAOS Industries",
+      "role": "Software Engineer",
+      "postingKey": "4872368007",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/chaosindustries/jobs/4872368007?gh_src=be7dbdf57us",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Canopy Connect",
       "role": "Backend Engineer - Carrier Integrations Team (Remote)",
       "postingKey": "4076674004",
@@ -40558,6 +41234,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Anthropic",
+      "role": "Forward Deployed AI Engineer, Public Sector",
+      "postingKey": "4020263008",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/anthropic/jobs/4020263008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -40899,6 +41588,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Tailscale",
+      "role": "Software Engineer, Network Security Integrations",
+      "postingKey": "4638674005",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/tailscale/jobs/4638674005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Swarm Aero",
       "role": "Forward Deployed Software Engineer",
       "postingKey": "5007039007",
@@ -40964,6 +41666,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Starburst",
+      "role": "Software Engineer",
+      "postingKey": "8126108002",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/starburst/jobs/8126108002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Speakeasy",
       "role": "Software Engineer",
       "postingKey": "4398591026",
@@ -41003,6 +41718,19 @@
       "notes": ""
     },
     {
+      "company": "Sitreps 2 SteerCos",
+      "role": "Software Engineer",
+      "postingKey": "4801901007",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/sitreps2steercos/jobs/4801901007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "SingleStore-LinkedIn",
       "role": "Forward Deployment Engineer- Greater NYC",
       "postingKey": "7793896",
@@ -41039,6 +41767,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-08",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Scopely",
+      "role": "Full Stack Engineer",
+      "postingKey": "5105580008",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/scopely/jobs/5105580008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -41351,6 +42092,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "NICE",
+      "role": "Software Engineer",
+      "postingKey": "7184361003",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/nice/jobs/7184361003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -61708,6 +62462,18 @@
           "contacts": []
         },
         {
+          "key": "8127725002",
+          "company": "Censys",
+          "role": "Backend Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4552961005",
           "company": "Chalk",
           "role": "Software Engineer",
@@ -62157,6 +62923,18 @@
           "role": "Founding Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5802057004",
+          "company": "Garda Capital Partners",
+          "role": "Software Engineer (AI Tooling)",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -63052,6 +63830,18 @@
           "contacts": []
         },
         {
+          "key": "5591780004",
+          "company": "Remesh",
+          "role": "Full Stack Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5205535008",
           "company": "Renaissance Learning North America",
           "role": "Software Engineer I",
@@ -63724,6 +64514,30 @@
           "contacts": []
         },
         {
+          "key": "4835669007",
+          "company": "Verkada",
+          "role": "Embedded Software Engineer - University Graduate 2026",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4855439007",
+          "company": "Verkada",
+          "role": "Frontend Software Engineer - University Graduate 2026",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8516902002",
           "company": "Virtu Financial",
           "role": "Software Engineer - Desktop Frontend Developer (C#/Winforms)",
@@ -63916,6 +64730,18 @@
           "contacts": []
         },
         {
+          "key": "4020263008",
+          "company": "Anthropic",
+          "role": "Forward Deployed AI Engineer, Public Sector",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-apple-game-services",
           "company": "Apple",
           "role": "Software Engineer, Apple Game Services",
@@ -63943,6 +64769,18 @@
           "key": "5082153007",
           "company": "CHAOS Industries",
           "role": "Field Software Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4872368007",
+          "company": "CHAOS Industries",
+          "role": "Software Engineer",
           "fitScore": 9,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -64756,6 +65594,18 @@
           "contacts": []
         },
         {
+          "key": "4830644007",
+          "company": "Speechmatics",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4689411005",
           "company": "Spot & Tango",
           "role": "Software Engineer, Full Stack",
@@ -64941,6 +65791,18 @@
           "role": "Forward Deployed Engineer",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5634793004",
+          "company": "Vercel",
+          "role": "Software Engineer, v0",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -65944,6 +66806,18 @@
           "contacts": []
         },
         {
+          "key": "7184361003",
+          "company": "NICE",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "am9icG9zdDqbMRleJT0YrlocLLBQmE5p",
           "company": "Narmi",
           "role": "Software Engineer, New Grad",
@@ -66208,6 +67082,18 @@
           "contacts": []
         },
         {
+          "key": "5105580008",
+          "company": "Scopely",
+          "role": "Full Stack Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4369288501",
           "company": "ServiceNow",
           "role": "Associate Software Engineer, Core Infrastructure - Moveworks",
@@ -66237,6 +67123,18 @@
           "role": "Forward Deployment Engineer- Greater NYC",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4801901007",
+          "company": "Sitreps 2 SteerCos",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -66307,6 +67205,18 @@
           "key": "5016295008",
           "company": "Starburst",
           "role": "Forward Deployed Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8126108002",
+          "company": "Starburst",
+          "role": "Software Engineer",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -66391,6 +67301,18 @@
           "key": "4631832005",
           "company": "Tailscale",
           "role": "Software Engineer, Product Strategy",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4638674005",
+          "company": "Tailscale",
+          "role": "Software Engineer, Network Security Integrations",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -76904,6 +77826,18 @@
           "contacts": []
         },
         {
+          "key": "8127725002",
+          "company": "Censys",
+          "role": "Backend Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4552961005",
           "company": "Chalk",
           "role": "Software Engineer",
@@ -77365,6 +78299,18 @@
           "role": "Founding Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5802057004",
+          "company": "Garda Capital Partners",
+          "role": "Software Engineer (AI Tooling)",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -78368,6 +79314,18 @@
           "contacts": []
         },
         {
+          "key": "5591780004",
+          "company": "Remesh",
+          "role": "Full Stack Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "R_104873",
           "company": "Remitly",
           "role": "Software Development Engineer II - Trust Decisioning Platform",
@@ -79100,6 +80058,30 @@
           "contacts": []
         },
         {
+          "key": "4835669007",
+          "company": "Verkada",
+          "role": "Embedded Software Engineer - University Graduate 2026",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4855439007",
+          "company": "Verkada",
+          "role": "Frontend Software Engineer - University Graduate 2026",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8516902002",
           "company": "Virtu Financial",
           "role": "Software Engineer - Desktop Frontend Developer (C#/Winforms)",
@@ -79328,6 +80310,18 @@
           "contacts": []
         },
         {
+          "key": "4020263008",
+          "company": "Anthropic",
+          "role": "Forward Deployed AI Engineer, Public Sector",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-apple-game-services",
           "company": "Apple",
           "role": "Software Engineer, Apple Game Services",
@@ -79367,6 +80361,18 @@
           "key": "5082153007",
           "company": "CHAOS Industries",
           "role": "Field Software Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4872368007",
+          "company": "CHAOS Industries",
+          "role": "Software Engineer",
           "fitScore": 9,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -80012,6 +81018,18 @@
           "contacts": []
         },
         {
+          "key": "4830644007",
+          "company": "Speechmatics",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4401537802",
           "company": "Spot & Tango",
           "role": "Jr Software Engineer",
@@ -80197,6 +81215,18 @@
           "role": "Software Engineer, AI",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5634793004",
+          "company": "Vercel",
+          "role": "Software Engineer, v0",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -80936,6 +81966,18 @@
           "contacts": []
         },
         {
+          "key": "7184361003",
+          "company": "NICE",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5155205008",
           "company": "Nex",
           "role": "Fullstack Engineer (Digital Experience)",
@@ -81056,6 +82098,18 @@
           "contacts": []
         },
         {
+          "key": "5105580008",
+          "company": "Scopely",
+          "role": "Full Stack Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4369288501",
           "company": "ServiceNow",
           "role": "Associate Software Engineer, Core Infrastructure - Moveworks",
@@ -81085,6 +82139,18 @@
           "role": "Forward Deployment Engineer- Greater NYC",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4801901007",
+          "company": "Sitreps 2 SteerCos",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -81140,6 +82206,18 @@
           "contacts": []
         },
         {
+          "key": "8126108002",
+          "company": "Starburst",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5007039007",
           "company": "Swarm Aero",
           "role": "Forward Deployed Software Engineer",
@@ -81179,6 +82257,18 @@
           "key": "4631832005",
           "company": "Tailscale",
           "role": "Software Engineer, Product Strategy",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4638674005",
+          "company": "Tailscale",
+          "role": "Software Engineer, Network Security Integrations",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
