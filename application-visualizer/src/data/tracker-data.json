@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T21:05:06.532874+00:00",
+  "generatedAt": "2026-05-12T22:05:10.369896+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 868,
+      "total": 872,
       "applied": 472,
-      "unapplied": 396,
-      "active": 674,
+      "unapplied": 400,
+      "active": 678,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 726,
-      "reachOut": 790,
+      "highFit": 731,
+      "reachOut": 794,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,10 +26,10 @@
       "intakeNew": 52,
       "intakeManual": 416,
       "intakeApplied": 15,
-      "applyRate": 54.4,
+      "applyRate": 54.1,
       "rejectionRate": 12.3,
-      "recruiterWork": 562,
-      "engineerWork": 642,
+      "recruiterWork": 566,
+      "engineerWork": 646,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 28
+        "value": 32
       },
       {
         "name": "Online Assessment",
@@ -70,7 +70,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 300
+        "value": 304
       },
       {
         "name": "Ashby",
@@ -144,11 +144,11 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 375
+        "value": 377
       },
       {
         "name": "Bay Area",
-        "value": 199
+        "value": 200
       },
       {
         "name": "Other",
@@ -156,7 +156,7 @@
       },
       {
         "name": "Remote",
-        "value": 120
+        "value": 121
       },
       {
         "name": "Seattle",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 467
+        "value": 471
       },
       {
         "name": "Full Stack",
@@ -232,19 +232,19 @@
       },
       {
         "score": "7",
-        "count": 39
+        "count": 38
       },
       {
         "score": "8",
-        "count": 163
+        "count": 164
       },
       {
         "score": "9",
-        "count": 160
+        "count": 161
       },
       {
         "score": "10",
-        "count": 403
+        "count": 406
       }
     ],
     "targetCounts": [
@@ -534,8 +534,8 @@
       },
       {
         "date": "2026-05-12",
-        "cumulative": 868,
-        "added": 45,
+        "cumulative": 872,
+        "added": 49,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -6047,13 +6047,13 @@
       "role": "Core Software Engineer",
       "applied": true,
       "status": "Applied",
-      "fitScore": 7,
+      "fitScore": 9,
       "reachOut": true,
       "referral": "No",
       "dateAdded": "2026-04-27",
       "location": "San Jose, CA",
       "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/4385381877/?trackingId=WG2MrHqpt%2BAhjfF7EnmFuA%3D%3D&refId=ynHDPB5ZgeFfDqqpeBArmA%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BvPPdJNsVRT28llzO1KN9yA%3D%3D",
+      "jobLink": "https://www.linkedin.com/jobs/view/4385381877/",
       "postingKey": "4385381877",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Etched/Core_Software_Engineer/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Etched/Core_Software_Engineer/Liam_Van_Resume/Liam_Van_Etched.pdf",
@@ -6061,12 +6061,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: direct Ashby application requires submit-time Google reCAPTCHA 2026-04-28; Application submitted via direct Ashby posting e6416d04-da00-4917-a817-787b77c35650 with tailored resume and source LinkedIn 2026-04-28",
+      "notes": "Manual apply needed: LinkedIn login 2026-04-27; Manual apply verified: direct Ashby application requires submit-time Google reCAPTCHA 2026-04-28; Application submitted via direct Ashby posting e6416d04-da00-4917-a817-787b77c35650 with tailored resume and source LinkedIn 2026-04-28; Refreshed tailored resume 2026-05-12 for Etched Core Software Engineer posting 4385381877; emphasized TypeScript/React/Python full-stack product work, 0-to-1 internal tooling, LLM applications, AI-assisted API testing, data/storage workflows, cloud infrastructure validation, observability, release support, and rapid cross-functional execution. Did not claim ASIC design, hardware engineering, transformer-inference kernel work, or direct enterprise AI deployment ownership beyond supported cloud/data/product evidence.",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
         "2026-04-28",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-12"
       ]
     },
     {
@@ -24743,6 +24744,106 @@
       "activityDates": [
         "2026-05-12"
       ]
+    },
+    {
+      "company": "Spool AI",
+      "role": "Software Engineer, Voice Systems",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "United States; remote-first",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4413817594/",
+      "postingKey": "4413817594",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Spool AI/Software_Engineer_Voice_Systems/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Spool AI/Software_Engineer_Voice_Systems/Liam_Van_Resume/Liam_Van_Spool_AI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-12 for Spool AI Software Engineer, Voice Systems posting 4413817594; emphasized Python/TypeScript/Node-adjacent backend systems, LLM prompting, AI-assisted API testing, observability, production debugging, call-pipeline-adjacent reliability, customer-facing workflows, and early-team ownership. Did not claim Twilio, telephony systems, or realtime voice infrastructure experience beyond supported API/reliability/LLM evidence.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Tamarind Bio",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4412768792/",
+      "postingKey": "4412768792",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tamarind Bio/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tamarind Bio/Software_Engineer/Liam_Van_Resume/Liam_Van_Tamarind_Bio.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-12 for Tamarind Bio Software Engineer posting 4412768792; emphasized full-stack React/TypeScript, Python/Java APIs, AWS/GCP/OCI cloud delivery, Docker, LLM applications, data pipelines, observability, deployment validation, customer-facing product work, and startup-style ownership. Did not claim Kubernetes, DynamoDB, CUDA, PyTorch/TensorFlow, Slurm, Biopython, or computational-biology domain experience beyond supported cloud/data/AI-adjacent evidence.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Outtake",
+      "role": "Software Engineer (Product)",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4412928440/",
+      "postingKey": "4412928440",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Outtake/Software_Engineer_Product/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Outtake/Software_Engineer_Product/Liam_Van_Resume/Liam_Van_Outtake.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-12 for Outtake Software Engineer (Product) posting 4412928440; emphasized product engineering, React/TypeScript/NestJS, REST APIs, customer-facing systems, LLM/agentic tooling, OpenSearch/search indexing, large-data workflows, observability, code review, release support, and startup-style ownership. Did not claim direct impersonation/fraud takedown or security-trust domain ownership beyond supported customer-facing product, AI, data, and reliability evidence.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Rilla",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4249515331/",
+      "postingKey": "4249515331",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Rilla/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Rilla/Software_Engineer/Liam_Van_Resume/Liam_Van_Rilla.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-12 for Rilla Software Engineer posting 4249515331; emphasized TypeScript/React/Node product engineering, Python/Java APIs, LLM applications, AI-assisted testing, OpenSearch/search indexing, data pipelines, customer-facing workflows, fast iteration, code quality, and high-ownership startup execution. Did not claim React Native, PostgreSQL, Terraform, Spacelift, Turborepo, Lodash, Zod, or direct offline-sales domain ownership beyond supported product/data/AI evidence.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
     }
   ],
   "jobIntake": [
@@ -37074,6 +37175,19 @@
       "notes": ""
     },
     {
+      "company": "Spool AI",
+      "role": "Software Engineer, Voice Systems",
+      "postingKey": "4413817594",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4413817594/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Sony Interactive Entertainment",
       "role": "Software Engineer I",
       "postingKey": "4408454973",
@@ -37370,6 +37484,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Rilla",
+      "role": "Software Engineer",
+      "postingKey": "4249515331",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4249515331/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -37942,6 +38069,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Outtake",
+      "role": "Software Engineer (Product)",
+      "postingKey": "4412928440",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4412928440/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -42417,6 +42557,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Etched",
+      "role": "Core Software Engineer",
+      "postingKey": "4385381877",
+      "fitScore": 9,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4385381877/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "",
+      "notes": ""
+    },
+    {
       "company": "Ema",
       "role": "Software Engineer, Backend",
       "postingKey": "4409831521",
@@ -43156,6 +43309,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Tamarind Bio",
+      "role": "Software Engineer",
+      "postingKey": "4412768792",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4412768792/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Tailscale",
@@ -45063,19 +45229,6 @@
       "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/gleanwork/jobs/4638008005",
-      "prospectCount": 0,
-      "readyEmails": 0,
-      "lastUpdated": "",
-      "notes": ""
-    },
-    {
-      "company": "Etched",
-      "role": "Core Software Engineer",
-      "postingKey": "4385381877",
-      "fitScore": 7,
-      "status": "Applied",
-      "reachOut": true,
-      "jobLink": "https://www.linkedin.com/jobs/view/4385381877/?trackingId=WG2MrHqpt%2BAhjfF7EnmFuA%3D%3D&refId=ynHDPB5ZgeFfDqqpeBArmA%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BvPPdJNsVRT28llzO1KN9yA%3D%3D",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "",
@@ -66764,6 +66917,18 @@
           "contacts": []
         },
         {
+          "key": "4412928440",
+          "company": "Outtake",
+          "role": "Software Engineer (Product)",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "full-stack-software-engineer-application-development-at-palantir-technologies-4054555980",
           "company": "Palantir Technologies",
           "role": "Full Stack Software Engineer - Application Development",
@@ -67100,6 +67265,18 @@
           "contacts": []
         },
         {
+          "key": "4249515331",
+          "company": "Rilla",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4402165922",
           "company": "Rokt",
           "role": "Junior Software Engineer",
@@ -67309,6 +67486,18 @@
           "role": "Software Engineer I",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4413817594",
+          "company": "Spool AI",
+          "role": "Software Engineer, Voice Systems",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -68269,6 +68458,18 @@
           "role": "Software Engineer, Backend",
           "fitScore": 9,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4385381877",
+          "company": "Etched",
+          "role": "Core Software Engineer",
+          "fitScore": 9,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -70724,6 +70925,18 @@
           "contacts": []
         },
         {
+          "key": "4412768792",
+          "company": "Tamarind Bio",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4391812149",
           "company": "TechKareer",
           "role": "Software Engineer (SF / NYC)",
@@ -71051,18 +71264,6 @@
           "key": "4372088330",
           "company": "Crossing Hurdles",
           "role": "Staff-Software Engineer",
-          "fitScore": 7,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4385381877",
-          "company": "Etched",
-          "role": "Core Software Engineer",
           "fitScore": 7,
           "status": "Applied",
           "count": 1,
@@ -82512,6 +82713,18 @@
           "contacts": []
         },
         {
+          "key": "4412928440",
+          "company": "Outtake",
+          "role": "Software Engineer (Product)",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "full-stack-software-engineer-application-development-at-palantir-technologies-4054555980",
           "company": "Palantir Technologies",
           "role": "Full Stack Software Engineer - Application Development",
@@ -82920,6 +83133,18 @@
           "contacts": []
         },
         {
+          "key": "4249515331",
+          "company": "Rilla",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4630216006",
           "company": "Runway",
           "role": "Software Engineer, Full Stack",
@@ -83117,6 +83342,18 @@
           "role": "Software Engineer I",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4413817594",
+          "company": "Spool AI",
+          "role": "Software Engineer, Voice Systems",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -85997,6 +86234,18 @@
           "role": "Software Engineer, Product Strategy",
           "fitScore": 8,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4412768792",
+          "company": "Tamarind Bio",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
