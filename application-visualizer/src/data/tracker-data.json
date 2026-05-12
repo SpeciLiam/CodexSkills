@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T20:02:49.376110+00:00",
+  "generatedAt": "2026-05-12T20:05:22.111845+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,10 +21,10 @@
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 805,
+      "intakeJobs": 807,
       "intakeQueued": 58,
       "intakeNew": 52,
-      "intakeManual": 415,
+      "intakeManual": 416,
       "intakeApplied": 15,
       "applyRate": 54.6,
       "rejectionRate": 12.3,
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 415
+        "value": 416
       },
       {
         "name": "Tailored",
@@ -270,7 +270,7 @@
       },
       {
         "name": "Skipped",
-        "value": 111
+        "value": 112
       },
       {
         "name": "Queued",
@@ -304,7 +304,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 254
+        "value": 256
       }
     ],
     "timeline": [
@@ -30779,6 +30779,20 @@
       "trackerPostingKey": "4401827377"
     },
     {
+      "source": "LinkedIn",
+      "company": "Lyft",
+      "role": "Software Engineer, Gov Tech",
+      "location": "Seattle, WA",
+      "postingKey": "linkedin-public-lyft-gov-tech-seattle-2026-05-12-1303",
+      "jobUrl": "https://www.linkedin.com/jobs/software%2Bengineer-jobs",
+      "discoveredAt": "2026-05-12T20:04:52.174216+00:00",
+      "postedAge": "public LinkedIn degraded capture 2026-05-12 13:03 PT; visible card listed 1 hour ago; exact posting not available because Computer Use approval was denied",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual verification needed 2026-05-12: degraded LinkedIn capture exposed only an aggregate search URL; authenticated Chrome/Firefox capture and Easy Apply were blocked because Computer Use approval was denied after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "Greenhouse",
       "company": "CommerceIQ",
       "role": "Forward Deployed Engineer - Mountain View",
@@ -35242,6 +35256,20 @@
       "fitScore": 5,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Microsoft",
+      "role": "Software Development Engineer",
+      "location": "Redmond, WA",
+      "postingKey": "linkedin-public-microsoft-sde-redmond-2026-05-12-1303",
+      "jobUrl": "https://www.linkedin.com/jobs/software%2Bengineer-jobs",
+      "discoveredAt": "2026-05-12T20:04:52.174216+00:00",
+      "postedAge": "public LinkedIn degraded capture 2026-05-12 13:03 PT; visible card listed 1 hour ago; exact posting not available because Computer Use approval was denied",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "location needs review",
       "trackerPostingKey": ""
     },
     {
