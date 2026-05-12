@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 685
+Companies queued: 689
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -30,6 +30,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Vercel | Software Engineer, Workflows | 5798416004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5798416004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Vercel | Software Engineer, Dashboard | 5808568004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5808568004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Vercel | Software Engineer, CDN | 5179639004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5179639004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
+| Vercel | Software Engineer, Deployment Infrastructure | 5633880004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5633880004) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. Manual apply needed: Computer Use approval denied 2026-05-11. |
 | Valon | Software Engineer - New Grad | 4409152006 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/valon/jobs/4409152006) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Valon | Software Engineer | 4402156847 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4402156847/?trackingId=8Co7I66maGhvzcjOzR5eyQ%3D%3D&refId=glJ8A%2B2sNgHqb%2Bh7kMbvlQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BZWay9dJ3Tkm72OKWKEYJDw%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | Valon | Software Engineer, Product | 5629764004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/valon/jobs/5629764004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
@@ -346,6 +347,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Amplitude | Software Engineer II, Product Adoption | 7949946002-product-adoption | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/amplitude/jobs/7949946002?gh_jid=7949946002-product-adoption) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Alchemy | Software Engineer (Backend) - Distributed Systems | 4648515005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/alchemy/jobs/4648515005) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Alchemy | Software Engineer - Solutions | 4538329005 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/alchemy/jobs/4538329005) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
+| Airtable | Software Engineer, Infrastructure (4-8 YOE) | 8400373002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/airtable/jobs/8400373002) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. Manual apply needed: Computer Use approval denied 2026-05-11. |
 | Airbnb | iOS Software Engineer, Airbnb - New Grad | 7859317 | 10 | Applied | Yes | [Posting](https://careers.airbnb.com/positions/7859317/?gh_jid=7859317) |  |  |  |  |
 | Aflac | Software Engineer I | software-engineer-i-at-aflac-4337203348 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-i-at-aflac-4337203348) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Affirm | Software Engineer I, Backend (Purchasing Power Experience) | 7673126003 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/affirm/jobs/7673126003) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
@@ -450,6 +452,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | HealthLeap | Full Stack Engineer | c68a437b-dd8a-4e14-9b4e-d6229951d0aa | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/healthleap/c68a437b-dd8a-4e14-9b4e-d6229951d0aa) |  |  | 2026-05-07 | Queued by resume-tailor after tailored resume update. |
 | Grow Therapy | Software Engineer, Backend | 4678586005 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/growtherapy/jobs/4678586005?gh_src=8d47tscl5us) |  |  |  |  |
 | Grow Therapy | Software Engineer - Full Stack | 4678587005 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/growtherapy/jobs/4678587005) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
+| Grow Therapy | Web Frontend Engineer | 4669918005 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/growtherapy/jobs/4669918005) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. Manual apply needed: Computer Use approval denied 2026-05-11. |
 | Grid | Software Engineer \| Seattle | 4409035385 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4409035385/) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-10; marked applied per user confirmation. |
 | Greenhouse | Full Stack Software Engineer | 7296545 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/greenhouse/jobs/7296545) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Glimpse | Software Engineer | 767a3a59-53d6-4306-afae-6b05a265ba82 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/glimpse/767a3a59-53d6-4306-afae-6b05a265ba82/application?utm_source=4M0PNbwNk7&src=linkedin) |  |  |  |  |
@@ -504,6 +507,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Wynd Labs - X Hiring | Full Stack Engineer | 4111764008 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/xhiring/jobs/4111764008) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Whop | Full Stack Engineer, Ad Networks | 5124207007 | 8 | Manual Apply Needed | Yes | [Posting](https://careers.whop.com/?gh_jid=5124207007&gh_src=my.greenhouse.search) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Wealthfront | Backend Engineer | 4324478525 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4324478525/) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. Application submitted 2026-05-10; marked applied per user confirmation. |
+| Wealthfront | Backend Engineer | 4296094481 | 8 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/4296094481/?alternateChannel=search&refId=NotAvailable&trackingId=MBoL0KlFSvCJ1CMqPA42Ow%3D%3D&trk=d_flagship3_search_srp_jobs&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_jobs%3BbN20oDeWRNabVJXEUJn%2FJg%3D%3D) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. Manual apply needed: Computer Use approval denied 2026-05-11. |
 | Waymo | Software Engineer, Perception Evaluation | 4368989222 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4368989222/) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. Application submitted 2026-05-10; marked applied per user confirmation. |
 | Waymo | Software Engineer, Simulator Evaluation | 6562547 | 8 | Resume Tailored | Yes | [Posting](https://careers.withwaymo.com/jobs/software-engineer-simulator-evaluation-mountain-view-california-united-states?gh_jid=6562547&gh_src=e2a2625d1us) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Voxel | Software Engineer - Platform | f2cca900-58ed-4e14-9e4d-2797626d750e | 8 | Online Assessment | Yes | [Posting](https://jobs.ashbyhq.com/Voxel/f2cca900-58ed-4e14-9e4d-2797626d750e?utm_source=pOxa4Kqo8D) |  |  |  |  |

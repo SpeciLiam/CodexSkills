@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T00:09:41.219825+00:00",
+  "generatedAt": "2026-05-12T01:14:11.389169+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 812,
+      "total": 816,
       "applied": 461,
-      "unapplied": 351,
-      "active": 618,
+      "unapplied": 355,
+      "active": 622,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 672,
-      "reachOut": 736,
+      "highFit": 676,
+      "reachOut": 740,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 733,
+      "intakeJobs": 737,
       "intakeQueued": 52,
       "intakeNew": 51,
-      "intakeManual": 377,
+      "intakeManual": 380,
       "intakeApplied": 0,
-      "applyRate": 56.8,
+      "applyRate": 56.5,
       "rejectionRate": 12.6,
-      "recruiterWork": 507,
-      "engineerWork": 586,
+      "recruiterWork": 511,
+      "engineerWork": 590,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 194
+        "value": 198
       },
       {
         "name": "Archived",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 365
+        "value": 368
       },
       {
         "name": "LinkedIn",
-        "value": 293
+        "value": 294
       },
       {
         "name": "Ashby",
@@ -144,7 +144,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 350
+        "value": 354
       },
       {
         "name": "Bay Area",
@@ -182,7 +182,7 @@
       },
       {
         "name": "Backend",
-        "value": 90
+        "value": 91
       },
       {
         "name": "Forward Deployed",
@@ -194,14 +194,14 @@
       },
       {
         "name": "Infra/Platform",
-        "value": 38
-      },
-      {
-        "name": "Data",
-        "value": 12
+        "value": 40
       },
       {
         "name": "Frontend",
+        "value": 13
+      },
+      {
+        "name": "Data",
         "value": 12
       }
     ],
@@ -236,15 +236,15 @@
       },
       {
         "score": "8",
-        "count": 148
+        "count": 149
       },
       {
         "score": "9",
-        "count": 148
+        "count": 149
       },
       {
         "score": "10",
-        "count": 376
+        "count": 378
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 377
+        "value": 380
       },
       {
         "name": "Tailored",
@@ -270,7 +270,7 @@
       },
       {
         "name": "Skipped",
-        "value": 100
+        "value": 101
       },
       {
         "name": "Queued",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 494
+        "value": 498
       },
       {
         "name": "LinkedIn",
@@ -522,8 +522,8 @@
       },
       {
         "date": "2026-05-11",
-        "cumulative": 812,
-        "added": 21,
+        "cumulative": 816,
+        "added": 25,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -544,8 +544,8 @@
       },
       {
         "company": "Vercel",
-        "roles": 9,
-        "avgFit": 9.56,
+        "roles": 10,
+        "avgFit": 9.6,
         "bestFit": 10
       },
       {
@@ -848,6 +848,15 @@
         "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5179639004"
       },
       {
+        "company": "Vercel",
+        "role": "Software Engineer, Deployment Infrastructure",
+        "fitScore": 10,
+        "status": "Manual Apply Needed",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5633880004"
+      },
+      {
         "company": "Valon",
         "role": "Software Engineer - New Grad",
         "fitScore": 10,
@@ -990,15 +999,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/twitch/jobs/8499608002"
-      },
-      {
-        "company": "Twitch",
-        "role": "Software Engineer I, Streamer Monetization Experience",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://job-boards.greenhouse.io/twitch/jobs/8470752002"
       }
     ],
     "recruiterBatch": {
@@ -23310,9 +23310,137 @@
         "2026-05-11",
         "2026-05-11"
       ]
+    },
+    {
+      "company": "Wealthfront",
+      "role": "Backend Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4296094481/?alternateChannel=search&refId=NotAvailable&trackingId=MBoL0KlFSvCJ1CMqPA42Ow%3D%3D&trk=d_flagship3_search_srp_jobs&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_jobs%3BbN20oDeWRNabVJXEUJn%2FJg%3D%3D",
+      "postingKey": "4296094481",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Wealthfront/Backend_Engineer/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Wealthfront/Backend_Engineer/Liam_Van_Resume_2/Liam_Van_Wealthfront.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for Wealthfront Backend Engineer LinkedIn posting 4296094481; emphasized Java backend APIs, SQL/online data stores, distributed systems, automated testing, CI, observability, and production on-call ownership for hybrid New York/SF/Seattle role.; Manual apply needed: LinkedIn application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight 2026-05-11",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11"
+      ]
+    },
+    {
+      "company": "Grow Therapy",
+      "role": "Web Frontend Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "New York City, San Francisco, or Seattle",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/growtherapy/jobs/4669918005",
+      "postingKey": "4669918005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Grow Therapy/Web_Frontend_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Grow Therapy/Web_Frontend_Engineer/Liam_Van_Resume/Liam_Van_Grow_Therapy.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: live submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight 2026-05-11",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11"
+      ]
+    },
+    {
+      "company": "Vercel",
+      "role": "Software Engineer, Deployment Infrastructure",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "Hybrid - San Francisco, New York City",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5633880004",
+      "postingKey": "5633880004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Vercel/Software_Engineer_Deployment_Infrastructure/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Vercel/Software_Engineer_Deployment_Infrastructure/Liam_Van_Resume/Liam_Van_Vercel.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: live submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight 2026-05-11",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11"
+      ]
+    },
+    {
+      "company": "Airtable",
+      "role": "Software Engineer, Infrastructure (4-8 YOE)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "San Francisco, CA; New York, NY; Seattle, WA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/airtable/jobs/8400373002",
+      "postingKey": "8400373002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Airtable/Software_Engineer_Infrastructure_4_8_YOE/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Airtable/Software_Engineer_Infrastructure_4_8_YOE/Liam_Van_Resume/Liam_Van_Airtable.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed: live submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight 2026-05-11",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Vercel",
+      "role": "Software Engineer, Deployment Infrastructure",
+      "location": "Hybrid - San Francisco, New York City",
+      "postingKey": "5633880004",
+      "jobUrl": "https://job-boards.greenhouse.io/vercel/jobs/5633880004",
+      "discoveredAt": "2026-05-12T01:06:38.777848+00:00",
+      "postedAge": "search crawled 4 days ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-11; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": "5633880004"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Airtable",
+      "role": "Software Engineer, Infrastructure (4-8 YOE)",
+      "location": "San Francisco, CA; New York, NY; Seattle, WA",
+      "postingKey": "8400373002",
+      "jobUrl": "https://job-boards.greenhouse.io/airtable/jobs/8400373002",
+      "discoveredAt": "2026-05-12T01:06:38.777848+00:00",
+      "postedAge": "search crawled 4 days ago",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-11; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": "8400373002"
+    },
     {
       "source": "Greenhouse",
       "company": "Piramidal, Inc.",
@@ -28985,6 +29113,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Grow Therapy",
+      "role": "Web Frontend Engineer",
+      "location": "New York City, San Francisco, or Seattle",
+      "postingKey": "4669918005",
+      "jobUrl": "https://job-boards.greenhouse.io/growtherapy/jobs/4669918005",
+      "discoveredAt": "2026-05-12T01:06:05.463777+00:00",
+      "postedAge": "live board verified 2026-05-11",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Tailored 2026-05-11; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "trackerPostingKey": "4669918005"
+    },
+    {
+      "source": "Greenhouse",
       "company": "Checkr",
       "role": "Python Engineer, Truework",
       "location": "San Francisco, California, United States",
@@ -30312,20 +30454,6 @@
       "status": "Tailored",
       "reason": "SWE-family role, SF/Bay Area preference",
       "trackerPostingKey": "5592469004"
-    },
-    {
-      "source": "Greenhouse",
-      "company": "Formic",
-      "role": "Product Engineer",
-      "location": "San Francisco \\",
-      "postingKey": "\\",
-      "jobUrl": "Oakland, CA",
-      "discoveredAt": "4654505006",
-      "postedAge": "https://job-boards.greenhouse.io/formic/jobs/4654505006",
-      "fitScore": 0,
-      "status": "Tailored",
-      "reason": "Tailored 2026-05-11; resume rendered and verified one page; emphasized product engineering for robotics automation, TypeScript/React interfaces, backend APIs, cloud workflows, testing, and customer-facing delivery",
-      "trackerPostingKey": "4654505006"
     },
     {
       "source": "Greenhouse",
@@ -32696,6 +32824,20 @@
     {
       "source": "Greenhouse",
       "company": "Flex",
+      "role": "Senior Software Engineer, Fullstack",
+      "location": "New York, New York, United States; Remote; San Francisco, California, United States",
+      "postingKey": "4641215005",
+      "jobUrl": "https://job-boards.greenhouse.io/flex/jobs/4641215005",
+      "discoveredAt": "2026-05-12T01:06:05.463777+00:00",
+      "postedAge": "search crawled last week; live board verified 2026-05-11",
+      "fitScore": 5,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Flex",
       "role": "Senior Software Engineer, Backend",
       "location": "New York, New York, United States; Remote (U.S.)",
       "postingKey": "4681666005",
@@ -33574,6 +33716,20 @@
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, preferred/remote US location",
       "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Formic",
+      "role": "Product Engineer",
+      "location": "San Francisco || Oakland, CA",
+      "postingKey": "4654505006",
+      "jobUrl": "https://job-boards.greenhouse.io/formic/jobs/4654505006",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 3 days ago",
+      "fitScore": 8,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-11; resume rendered and verified one page; emphasized product engineering for robotics automation, TypeScript/React interfaces, backend APIs, cloud workflows, testing, and customer-facing delivery",
+      "trackerPostingKey": "4654505006"
     }
   ],
   "outreachQueue": [
@@ -33849,6 +34005,19 @@
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
       "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Vercel",
+      "role": "Software Engineer, Deployment Infrastructure",
+      "postingKey": "5633880004",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5633880004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
+      "notes": "Queued by resume-tailor after tailored resume update. Manual apply needed: Computer Use approval denied 2026-05-11."
     },
     {
       "company": "Valon",
@@ -37959,6 +38128,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Airtable",
+      "role": "Software Engineer, Infrastructure (4-8 YOE)",
+      "postingKey": "8400373002",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/airtable/jobs/8400373002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
+      "notes": "Queued by resume-tailor after tailored resume update. Manual apply needed: Computer Use approval denied 2026-05-11."
+    },
+    {
       "company": "Airbnb",
       "role": "iOS Software Engineer, Airbnb - New Grad",
       "postingKey": "7859317",
@@ -39311,6 +39493,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Grow Therapy",
+      "role": "Web Frontend Engineer",
+      "postingKey": "4669918005",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/growtherapy/jobs/4669918005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
+      "notes": "Queued by resume-tailor after tailored resume update. Manual apply needed: Computer Use approval denied 2026-05-11."
+    },
+    {
       "company": "Grid",
       "role": "Software Engineer | Seattle",
       "postingKey": "4409035385",
@@ -40011,6 +40206,19 @@
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
       "notes": "Queued by resume-tailor after tailored resume update. Application submitted 2026-05-10; marked applied per user confirmation."
+    },
+    {
+      "company": "Wealthfront",
+      "role": "Backend Engineer",
+      "postingKey": "4296094481",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4296094481/?alternateChannel=search&refId=NotAvailable&trackingId=MBoL0KlFSvCJ1CMqPA42Ow%3D%3D&trk=d_flagship3_search_srp_jobs&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_jobs%3BbN20oDeWRNabVJXEUJn%2FJg%3D%3D",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
+      "notes": "Queued by resume-tailor after tailored resume update. Manual apply needed: Computer Use approval denied 2026-05-11."
     },
     {
       "company": "Waymo",
@@ -60533,6 +60741,18 @@
           "contacts": []
         },
         {
+          "key": "8400373002",
+          "company": "Airtable",
+          "role": "Software Engineer, Infrastructure (4-8 YOE)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7949946002",
           "company": "Amplitude",
           "role": "Software Engineer II, Web",
@@ -62885,6 +63105,18 @@
           "contacts": []
         },
         {
+          "key": "5633880004",
+          "company": "Vercel",
+          "role": "Software Engineer, Deployment Infrastructure",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8516902002",
           "company": "Virtu Financial",
           "role": "Software Engineer - Desktop Frontend Developer (C#/Winforms)",
@@ -63466,6 +63698,18 @@
           "role": "Software Engineer, Backend",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4669918005",
+          "company": "Grow Therapy",
+          "role": "Web Frontend Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -65662,6 +65906,18 @@
           "role": "Backend Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4296094481",
+          "company": "Wealthfront",
+          "role": "Backend Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -75525,6 +75781,18 @@
           "contacts": []
         },
         {
+          "key": "8400373002",
+          "company": "Airtable",
+          "role": "Software Engineer, Infrastructure (4-8 YOE)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7949946002-growth-platform",
           "company": "Amplitude",
           "role": "Software Engineer I, Growth Platform",
@@ -78093,6 +78361,18 @@
           "contacts": []
         },
         {
+          "key": "5633880004",
+          "company": "Vercel",
+          "role": "Software Engineer, Deployment Infrastructure",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8516902002",
           "company": "Virtu Financial",
           "role": "Software Engineer - Desktop Frontend Developer (C#/Winforms)",
@@ -78638,6 +78918,18 @@
           "role": "Software Engineer - Full Stack",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4669918005",
+          "company": "Grow Therapy",
+          "role": "Web Frontend Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -80210,6 +80502,18 @@
           "role": "Backend Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4296094481",
+          "company": "Wealthfront",
+          "role": "Backend Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
