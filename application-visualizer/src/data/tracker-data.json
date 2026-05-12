@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T04:29:56.418652+00:00",
+  "generatedAt": "2026-05-12T04:32:27.245527+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,9 +10,9 @@
   "stats": {
     "kpis": {
       "total": 822,
-      "applied": 462,
-      "unapplied": 360,
-      "active": 628,
+      "applied": 472,
+      "unapplied": 350,
+      "active": 629,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
@@ -23,28 +23,28 @@
       "readyEmails": 3,
       "intakeJobs": 746,
       "intakeQueued": 52,
-      "intakeNew": 51,
-      "intakeManual": 384,
-      "intakeApplied": 1,
-      "applyRate": 56.2,
-      "rejectionRate": 12.6,
-      "recruiterWork": 517,
-      "engineerWork": 596,
+      "intakeNew": 49,
+      "intakeManual": 373,
+      "intakeApplied": 15,
+      "applyRate": 57.4,
+      "rejectionRate": 12.3,
+      "recruiterWork": 518,
+      "engineerWork": 597,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 397
+        "value": 407
       },
       {
         "name": "Manual Apply Needed",
-        "value": 202
+        "value": 193
       },
       {
         "name": "Archived",
-        "value": 136
+        "value": 135
       },
       {
         "name": "Rejected",
@@ -262,11 +262,11 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 384
+        "value": 373
       },
       {
         "name": "Tailored",
-        "value": 145
+        "value": 144
       },
       {
         "name": "Skipped",
@@ -278,7 +278,11 @@
       },
       {
         "name": "New",
-        "value": 51
+        "value": 49
+      },
+      {
+        "name": "Applied",
+        "value": 15
       },
       {
         "name": "Duplicate",
@@ -291,10 +295,6 @@
       {
         "name": "Archived",
         "value": 2
-      },
-      {
-        "name": "Applied",
-        "value": 1
       }
     ],
     "intakeSourceCounts": [
@@ -456,7 +456,7 @@
         "date": "2026-05-02",
         "cumulative": 413,
         "added": 53,
-        "applied": 22,
+        "applied": 23,
         "rejected": 1,
         "interviewing": 0
       },
@@ -520,7 +520,7 @@
         "date": "2026-05-10",
         "cumulative": 791,
         "added": 86,
-        "applied": 16,
+        "applied": 24,
         "rejected": 0,
         "interviewing": 0
       },
@@ -528,7 +528,7 @@
         "date": "2026-05-11",
         "cumulative": 822,
         "added": 31,
-        "applied": 0,
+        "applied": 1,
         "rejected": 0,
         "interviewing": 0
       }
@@ -801,7 +801,7 @@
         "company": "Vercel",
         "role": "Software Engineer, AI Gateway",
         "fitScore": 10,
-        "status": "Manual Apply Needed",
+        "status": "Applied",
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5798406004"
@@ -810,7 +810,7 @@
         "company": "Vercel",
         "role": "Software Engineer, AI SDK",
         "fitScore": 10,
-        "status": "Manual Apply Needed",
+        "status": "Applied",
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5474915004"
@@ -819,7 +819,7 @@
         "company": "Vercel",
         "role": "Software Engineer, Workflows",
         "fitScore": 10,
-        "status": "Manual Apply Needed",
+        "status": "Applied",
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5798416004"
@@ -828,7 +828,7 @@
         "company": "Vercel",
         "role": "Software Engineer, Dashboard",
         "fitScore": 10,
-        "status": "Manual Apply Needed",
+        "status": "Applied",
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5808568004"
@@ -837,7 +837,7 @@
         "company": "Vercel",
         "role": "Software Engineer, CDN",
         "fitScore": 10,
-        "status": "Manual Apply Needed",
+        "status": "Applied",
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5179639004"
@@ -846,7 +846,7 @@
         "company": "Vercel",
         "role": "Software Engineer, Deployment Infrastructure",
         "fitScore": 10,
-        "status": "Manual Apply Needed",
+        "status": "Applied",
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5633880004"
@@ -909,7 +909,7 @@
         "company": "Unframe",
         "role": "Full Stack Software Engineer (Remote)",
         "fitScore": 10,
-        "status": "Manual Apply Needed",
+        "status": "Applied",
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/unframe/jobs/4847758101"
@@ -11882,8 +11882,8 @@
     {
       "company": "Vercel",
       "role": "Software Engineer, AI",
-      "applied": false,
-      "status": "Archived",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -11898,11 +11898,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized AI product engineering, developer experience, LLM applications, TypeScript and Python systems, APIs, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.; Tracked Greenhouse job URL now routes to the Vercel job board without the Software Engineer, AI posting; archived on 2026-05-02.",
+      "notes": "Hourly intake 2026-05-02; tailored SWE resume rendered and verified one page; emphasized AI product engineering, developer experience, LLM applications, TypeScript and Python systems, APIs, and production validation. Did not claim direct company-specific domain ownership or unlisted framework experience.; Tracked Greenhouse job URL now routes to the Vercel job board without the Software Engineer, AI posting; archived on 2026-05-02.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-02",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-11"
       ]
     },
     {
@@ -21437,8 +21438,8 @@
     {
       "company": "Vercel",
       "role": "Forward Deployed Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -21453,11 +21454,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed product engineering, customer-facing delivery, React/TypeScript surfaces, backend integrations, and reliable cloud workflows. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed product engineering, customer-facing delivery, React/TypeScript surfaces, backend integrations, and reliable cloud workflows. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-11"
       ]
     },
     {
@@ -21937,8 +21939,8 @@
     {
       "company": "Vercel",
       "role": "Software Engineer, AI Gateway",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -21953,18 +21955,19 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 19:07 PT; tailored SWE resume rendered and verified one page; emphasized AI gateway product engineering, API platform work, TypeScript tooling, backend services, model-provider integrations, testing, and production reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-10 19:07 PT; tailored SWE resume rendered and verified one page; emphasized AI gateway product engineering, API platform work, TypeScript tooling, backend services, model-provider integrations, testing, and production reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-11"
       ]
     },
     {
       "company": "Vercel",
       "role": "Software Engineer, AI SDK",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -21979,18 +21982,19 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 19:07 PT; tailored SWE resume rendered and verified one page; emphasized AI SDK product engineering, TypeScript developer tooling, backend APIs, agentic workflows, testing, and customer-facing delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-10 19:07 PT; tailored SWE resume rendered and verified one page; emphasized AI SDK product engineering, TypeScript developer tooling, backend APIs, agentic workflows, testing, and customer-facing delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-11"
       ]
     },
     {
       "company": "Vercel",
       "role": "Software Engineer, Workflows",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -22005,18 +22009,19 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 19:07 PT; tailored SWE resume rendered and verified one page; emphasized workflow platform engineering, developer tooling, backend APIs, TypeScript product surfaces, cloud reliability, and production validation. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-10 19:07 PT; tailored SWE resume rendered and verified one page; emphasized workflow platform engineering, developer tooling, backend APIs, TypeScript product surfaces, cloud reliability, and production validation. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-11"
       ]
     },
     {
       "company": "Vercel",
       "role": "Software Engineer, Dashboard",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -22031,18 +22036,19 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 19:07 PT; tailored SWE resume rendered and verified one page; emphasized dashboard full-stack product engineering, React and TypeScript surfaces, backend APIs, developer workflows, testing, and reliable delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-10 19:07 PT; tailored SWE resume rendered and verified one page; emphasized dashboard full-stack product engineering, React and TypeScript surfaces, backend APIs, developer workflows, testing, and reliable delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-11"
       ]
     },
     {
       "company": "Vercel",
       "role": "Software Engineer, CDN",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -22057,11 +22063,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 19:07 PT; tailored SWE resume rendered and verified one page; emphasized CDN infrastructure, edge platform reliability, automation, observability, backend systems, and production operations. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-10 19:07 PT; tailored SWE resume rendered and verified one page; emphasized CDN infrastructure, edge platform reliability, automation, observability, backend systems, and production operations. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-11"
       ]
     },
     {
@@ -22093,8 +22100,8 @@
     {
       "company": "Vercel",
       "role": "Software Engineer, CDN Security",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -22109,11 +22116,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 19:07 PT; tailored SWE resume rendered and verified one page; emphasized CDN security systems, backend APIs, cloud reliability, traffic analysis, production validation, and operational debugging. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-10 19:07 PT; tailored SWE resume rendered and verified one page; emphasized CDN security systems, backend APIs, cloud reliability, traffic analysis, production validation, and operational debugging. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-11"
       ]
     },
     {
@@ -22315,8 +22323,8 @@
     {
       "company": "Unframe",
       "role": "Full Stack Software Engineer (Remote)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -22331,10 +22339,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 21:03 PT; tailored SWE resume rendered and verified one page; emphasized full-stack AI product delivery, TypeScript/React/Node, PostgreSQL-backed systems, LLM workflows, customer-facing enterprise integration, testing, and production reliability. Manual apply needed because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live form also needs confirmation on visa sponsorship and JS/Node/Vue/PostgreSQL stack experience.",
+      "notes": "Hourly Greenhouse intake 2026-05-10 21:03 PT; tailored SWE resume rendered and verified one page; emphasized full-stack AI product delivery, TypeScript/React/Node, PostgreSQL-backed systems, LLM workflows, customer-facing enterprise integration, testing, and production reliability. Manual apply needed because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live form also needs confirmation on visa sponsorship and JS/Node/Vue/PostgreSQL stack experience.; Application submitted 2026-05-11 via Greenhouse confirmation page: https://job-boards.greenhouse.io/unframe/jobs/4847758101/confirmation",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-11"
       ]
     },
     {
@@ -23342,8 +23351,8 @@
     {
       "company": "Vercel",
       "role": "Software Engineer, Deployment Infrastructure",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -23358,9 +23367,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: live submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight 2026-05-11",
+      "notes": "Manual apply needed: live submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight 2026-05-11; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-11",
         "2026-05-11"
       ]
     },
@@ -23511,9 +23521,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application submitted 2026-05-11 via Greenhouse confirmation page: https://job-boards.greenhouse.io/vercel/jobs/5704320004/confirmation",
+      "notes": "Application submitted 2026-05-11 via Greenhouse confirmation page: https://job-boards.greenhouse.io/vercel/jobs/5704320004/confirmation; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-11",
         "2026-05-11"
       ]
     },
@@ -23593,8 +23604,8 @@
       "discoveredAt": "2026-05-12T01:06:38.777848+00:00",
       "postedAge": "search crawled 4 days ago",
       "fitScore": 10,
-      "status": "Manual",
-      "reason": "Tailored 2026-05-11; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "status": "Applied",
+      "reason": "Tailored 2026-05-11; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "trackerPostingKey": "5633880004"
     },
     {
@@ -24083,8 +24094,8 @@
       "discoveredAt": "2026-05-11T04:03:31.625475+00:00",
       "postedAge": "crawled 2 weeks ago",
       "fitScore": 10,
-      "status": "Manual",
-      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live form also needs confirmation on visa sponsorship and JS/Node/Vue/PostgreSQL stack experience",
+      "status": "Applied",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live form also needs confirmation on visa sponsorship and JS/Node/Vue/PostgreSQL stack experience; Application submitted 2026-05-11 via Greenhouse confirmation page: https://job-boards.greenhouse.io/unframe/jobs/4847758101/confirmation",
       "trackerPostingKey": "4847758101"
     },
     {
@@ -24112,7 +24123,7 @@
       "postedAge": "crawled 3 weeks ago; visible on Vercel Greenhouse board 2026-05-11; confirmation received 2026-05-11",
       "fitScore": 10,
       "status": "Applied",
-      "reason": "Application submitted 2026-05-11 via Greenhouse confirmation page: https://job-boards.greenhouse.io/vercel/jobs/5704320004/confirmation",
+      "reason": "Application submitted 2026-05-11 via Greenhouse confirmation page: https://job-boards.greenhouse.io/vercel/jobs/5704320004/confirmation; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "trackerPostingKey": "5704320004"
     },
     {
@@ -24125,8 +24136,8 @@
       "discoveredAt": "2026-05-11T02:07:57.520505+00:00",
       "postedAge": "visible on Vercel Greenhouse board 2026-05-11; external listing crawled 2 months ago",
       "fitScore": 10,
-      "status": "Manual",
-      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "status": "Applied",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "trackerPostingKey": "5798406004"
     },
     {
@@ -24139,8 +24150,8 @@
       "discoveredAt": "2026-05-11T02:07:57.520505+00:00",
       "postedAge": "crawled 3 days ago; visible on Vercel Greenhouse board 2026-05-11",
       "fitScore": 10,
-      "status": "Manual",
-      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "status": "Applied",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "trackerPostingKey": "5474915004"
     },
     {
@@ -24153,8 +24164,8 @@
       "discoveredAt": "2026-05-11T02:07:57.520505+00:00",
       "postedAge": "visible on Vercel Greenhouse board 2026-05-11; external listing crawled 2 months ago",
       "fitScore": 10,
-      "status": "Manual",
-      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "status": "Applied",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "trackerPostingKey": "5798416004"
     },
     {
@@ -24167,8 +24178,8 @@
       "discoveredAt": "2026-05-11T02:07:57.520505+00:00",
       "postedAge": "visible on Vercel Greenhouse board 2026-05-11; external listing crawled 2 months ago",
       "fitScore": 10,
-      "status": "Manual",
-      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "status": "Applied",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "trackerPostingKey": "5808568004"
     },
     {
@@ -24181,8 +24192,8 @@
       "discoveredAt": "2026-05-11T02:07:57.520505+00:00",
       "postedAge": "visible on Vercel Greenhouse board 2026-05-11; external listing crawled 2 months ago",
       "fitScore": 10,
-      "status": "Manual",
-      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "status": "Applied",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "trackerPostingKey": "5179639004"
     },
     {
@@ -29557,8 +29568,8 @@
       "discoveredAt": "2026-05-10T13:52:15.578150+00:00",
       "postedAge": "public Greenhouse search result captured 2026-05-10; exact job URL visible",
       "fitScore": 9,
-      "status": "Manual",
-      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "status": "Applied",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "trackerPostingKey": "5653673004"
     },
     {
@@ -30593,8 +30604,8 @@
       "discoveredAt": "2026-05-02T23:16:14.069860+00:00",
       "postedAge": "current",
       "fitScore": 9,
-      "status": "Tailored",
-      "reason": "SWE-family role, preferred/remote US location",
+      "status": "Applied",
+      "reason": "SWE-family role, preferred/remote US location; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "trackerPostingKey": "5633379004"
     },
     {
@@ -30915,8 +30926,8 @@
       "discoveredAt": "2026-05-11T02:07:57.520505+00:00",
       "postedAge": "visible on Vercel Greenhouse board 2026-05-11; external listing crawled 3 months ago",
       "fitScore": 8,
-      "status": "Manual",
-      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "status": "Applied",
+      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "trackerPostingKey": "5473266004"
     },
     {
@@ -31321,9 +31332,9 @@
       "discoveredAt": "2026-05-07T05:03:23.685382+00:00",
       "postedAge": "",
       "fitScore": 8,
-      "status": "Manual",
-      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
-      "trackerPostingKey": ""
+      "status": "Applied",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
+      "trackerPostingKey": "5430088004"
     },
     {
       "source": "Greenhouse",
@@ -31335,9 +31346,9 @@
       "discoveredAt": "2026-05-07T05:03:23.685382+00:00",
       "postedAge": "",
       "fitScore": 8,
-      "status": "Manual",
-      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
-      "trackerPostingKey": ""
+      "status": "Applied",
+      "reason": "Manual tailoring/apply needed 2026-05-07: generic-resume directory is missing locally, so canonical resume-tailor could not prepare a role folder; browser application attempt also blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
+      "trackerPostingKey": "5551619004"
     },
     {
       "source": "Greenhouse",
@@ -32371,9 +32382,9 @@
       "discoveredAt": "2026-05-03T07:05:37.455995+00:00",
       "postedAge": "web result crawled 2 weeks ago",
       "fitScore": 7,
-      "status": "New",
-      "reason": "SWE-family role, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Applied",
+      "reason": "SWE-family role, NYC preference; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
+      "trackerPostingKey": "5752684004"
     },
     {
       "source": "Greenhouse",
@@ -32749,9 +32760,9 @@
       "discoveredAt": "2026-05-03T23:05:30.630479+00:00",
       "postedAge": "Greenhouse public result crawled 3 weeks ago; page open with apply form 2026-05-03",
       "fitScore": 6,
-      "status": "New",
-      "reason": "SWE-family role, preferred/remote US location",
-      "trackerPostingKey": ""
+      "status": "Applied",
+      "reason": "SWE-family role, preferred/remote US location; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
+      "trackerPostingKey": "5872425004"
     },
     {
       "source": "Greenhouse",
@@ -34215,78 +34226,78 @@
       "role": "Software Engineer, AI Gateway",
       "postingKey": "5798406004",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5798406004",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11."
     },
     {
       "company": "Vercel",
       "role": "Software Engineer, AI SDK",
       "postingKey": "5474915004",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5474915004",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11."
     },
     {
       "company": "Vercel",
       "role": "Software Engineer, Workflows",
       "postingKey": "5798416004",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5798416004",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11."
     },
     {
       "company": "Vercel",
       "role": "Software Engineer, Dashboard",
       "postingKey": "5808568004",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5808568004",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11."
     },
     {
       "company": "Vercel",
       "role": "Software Engineer, CDN",
       "postingKey": "5179639004",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5179639004",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11."
     },
     {
       "company": "Vercel",
       "role": "Software Engineer, Deployment Infrastructure",
       "postingKey": "5633880004",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5633880004",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-11",
-      "notes": "Queued by resume-tailor after tailored resume update. Manual apply needed: Computer Use approval denied 2026-05-11."
+      "notes": "Queued by resume-tailor after tailored resume update. Manual apply needed: Computer Use approval denied 2026-05-11.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11."
     },
     {
       "company": "Vercel",
@@ -34299,7 +34310,7 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11."
     },
     {
       "company": "Valon",
@@ -34371,13 +34382,13 @@
       "role": "Full Stack Software Engineer (Remote)",
       "postingKey": "4847758101",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/unframe/jobs/4847758101",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-11 via Greenhouse confirmation page: https://job-boards.greenhouse.io/unframe/jobs/4847758101/confirmation"
     },
     {
       "company": "Underdog",
@@ -38739,13 +38750,13 @@
       "role": "Software Engineer, AI",
       "postingKey": "5633379004",
       "fitScore": 9,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5633379004",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-02",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11."
     },
     {
       "company": "Valon",
@@ -40598,13 +40609,13 @@
       "role": "Software Engineer, CDN Security",
       "postingKey": "5473266004",
       "fitScore": 8,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5473266004",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Queued by resume-tailor after tailored resume update.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11."
     },
     {
       "company": "Venture Up",
@@ -52616,7 +52627,7 @@
       "role": "Full Stack Software Engineer (Remote)",
       "postingKey": "4847758101",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -52625,7 +52636,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Application submitted 2026-05-11 via Greenhouse confirmation page: https://job-boards.greenhouse.io/unframe/jobs/4847758101/confirmation",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -52694,7 +52705,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "Application submitted 2026-05-11 via Greenhouse confirmation page.",
+      "notes": "Application submitted 2026-05-11 via Greenhouse confirmation page.; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -52708,7 +52719,7 @@
       "role": "Software Engineer, AI Gateway",
       "postingKey": "5798406004",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -52717,7 +52728,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -52731,7 +52742,7 @@
       "role": "Software Engineer, AI SDK",
       "postingKey": "5474915004",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -52740,7 +52751,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -52754,7 +52765,7 @@
       "role": "Software Engineer, CDN",
       "postingKey": "5179639004",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -52763,7 +52774,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -52777,7 +52788,7 @@
       "role": "Software Engineer, Dashboard",
       "postingKey": "5808568004",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -52786,7 +52797,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -52800,7 +52811,7 @@
       "role": "Software Engineer, Workflows",
       "postingKey": "5798416004",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -52809,7 +52820,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -55790,7 +55801,7 @@
       "role": "Forward Deployed Engineer",
       "postingKey": "5653673004",
       "fitScore": 9,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -55799,7 +55810,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -58780,7 +58791,7 @@
       "role": "Software Engineer, CDN Security",
       "postingKey": "5473266004",
       "fitScore": 8,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -58789,7 +58800,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -63409,7 +63420,7 @@
           "company": "Unframe",
           "role": "Full Stack Software Engineer (Remote)",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -63445,7 +63456,7 @@
           "company": "Vercel",
           "role": "Software Engineer, AI Gateway",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -63457,7 +63468,7 @@
           "company": "Vercel",
           "role": "Software Engineer, AI SDK",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -63469,7 +63480,7 @@
           "company": "Vercel",
           "role": "Software Engineer, Workflows",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -63481,7 +63492,7 @@
           "company": "Vercel",
           "role": "Software Engineer, Dashboard",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -63493,7 +63504,7 @@
           "company": "Vercel",
           "role": "Software Engineer, CDN",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -63505,7 +63516,7 @@
           "company": "Vercel",
           "role": "Software Engineer, Deployment Infrastructure",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -64725,11 +64736,23 @@
           "contacts": []
         },
         {
+          "key": "5633379004",
+          "company": "Vercel",
+          "role": "Software Engineer, AI",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5653673004",
           "company": "Vercel",
           "role": "Forward Deployed Engineer",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -66289,7 +66312,7 @@
           "company": "Vercel",
           "role": "Software Engineer, CDN Security",
           "fitScore": 8,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -78737,7 +78760,7 @@
           "company": "Unframe",
           "role": "Full Stack Software Engineer (Remote)",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -78785,7 +78808,7 @@
           "company": "Vercel",
           "role": "Software Engineer, AI Gateway",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -78797,7 +78820,7 @@
           "company": "Vercel",
           "role": "Software Engineer, AI SDK",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -78809,7 +78832,7 @@
           "company": "Vercel",
           "role": "Software Engineer, CDN",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -78821,7 +78844,7 @@
           "company": "Vercel",
           "role": "Software Engineer, Dashboard",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -78833,7 +78856,7 @@
           "company": "Vercel",
           "role": "Software Engineer, Workflows",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -78845,7 +78868,7 @@
           "company": "Vercel",
           "role": "Software Engineer, Deployment Infrastructure",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -79937,7 +79960,19 @@
           "company": "Vercel",
           "role": "Forward Deployed Engineer",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5633379004",
+          "company": "Vercel",
+          "role": "Software Engineer, AI",
+          "fitScore": 9,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -80969,7 +81004,7 @@
           "company": "Vercel",
           "role": "Software Engineer, CDN Security",
           "fitScore": 8,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
