@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T15:58:59.636187+00:00",
+  "generatedAt": "2026-05-12T16:00:43.893357+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -22,9 +22,9 @@
       "prospects": 3,
       "readyEmails": 3,
       "intakeJobs": 765,
-      "intakeQueued": 54,
+      "intakeQueued": 52,
       "intakeNew": 50,
-      "intakeManual": 389,
+      "intakeManual": 390,
       "intakeApplied": 15,
       "applyRate": 56.3,
       "rejectionRate": 12.3,
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 209
+        "value": 210
       },
       {
         "name": "Archived",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 24
+        "value": 23
       },
       {
         "name": "Online Assessment",
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 389
+        "value": 390
       },
       {
         "name": "Tailored",
@@ -274,7 +274,7 @@
       },
       {
         "name": "Queued",
-        "value": 54
+        "value": 52
       },
       {
         "name": "New",
@@ -285,16 +285,16 @@
         "value": 15
       },
       {
+        "name": "Archived",
+        "value": 3
+      },
+      {
         "name": "Duplicate",
         "value": 3
       },
       {
         "name": "Expired",
         "value": 3
-      },
-      {
-        "name": "Archived",
-        "value": 2
       }
     ],
     "intakeSourceCounts": [
@@ -23990,7 +23990,7 @@
       "company": "Garda Capital Partners",
       "role": "Software Engineer (AI Tooling)",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -24005,9 +24005,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Hourly Greenhouse intake 2026-05-12; tailored AI tooling resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-12"
+      ]
     }
   ],
   "jobIntake": [
@@ -24021,8 +24023,8 @@
       "discoveredAt": "2026-05-12T15:58:59.274697+00:00",
       "postedAge": "2 months ago",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "status": "Archived",
+      "reason": "Posting closed 2026-05-12: live Greenhouse job URL redirects to RegScale board with error=true and the board no longer lists Software Engineer II",
       "trackerPostingKey": ""
     },
     {
@@ -24035,9 +24037,9 @@
       "discoveredAt": "2026-05-12T15:53:08.774343+00:00",
       "postedAge": "Crawled 2 days ago; live Greenhouse page verified 2026-05-12",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference, AI/backend tooling fit",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "5802057004"
     },
     {
       "source": "Greenhouse",
@@ -37679,7 +37681,7 @@
       "role": "Software Engineer (AI Tooling)",
       "postingKey": "5802057004",
       "fitScore": 10,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/gardacp/jobs/5802057004",
       "prospectCount": 0,
@@ -62934,7 +62936,7 @@
           "company": "Garda Capital Partners",
           "role": "Software Engineer (AI Tooling)",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -78310,7 +78312,7 @@
           "company": "Garda Capital Partners",
           "role": "Software Engineer (AI Tooling)",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
