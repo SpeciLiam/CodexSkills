@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T16:00:43.893357+00:00",
+  "generatedAt": "2026-05-12T16:01:59.643840+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,8 +21,8 @@
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 765,
-      "intakeQueued": 52,
+      "intakeJobs": 782,
+      "intakeQueued": 68,
       "intakeNew": 50,
       "intakeManual": 390,
       "intakeApplied": 15,
@@ -270,11 +270,11 @@
       },
       {
         "name": "Skipped",
-        "value": 105
+        "value": 106
       },
       {
         "name": "Queued",
-        "value": 52
+        "value": 68
       },
       {
         "name": "New",
@@ -300,7 +300,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 526
+        "value": 543
       },
       {
         "name": "LinkedIn",
@@ -24015,6 +24015,188 @@
   "jobIntake": [
     {
       "source": "Greenhouse",
+      "company": "Runway",
+      "role": "Software Engineer, Full Stack",
+      "location": "New York, NY",
+      "postingKey": "4630216006",
+      "jobUrl": "https://job-boards.greenhouse.io/runwayml/jobs/4630216006",
+      "discoveredAt": "2026-05-12T16:01:58.063316+00:00",
+      "postedAge": "fresh public Greenhouse result",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Ramp",
+      "role": "Software Engineer, Backend",
+      "location": "New York, NY",
+      "postingKey": "7868845002",
+      "jobUrl": "https://job-boards.greenhouse.io/ramp/jobs/7868845002",
+      "discoveredAt": "2026-05-12T16:01:58.063316+00:00",
+      "postedAge": "fresh public Greenhouse result",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Persona",
+      "role": "Software Engineer, Product",
+      "location": "San Francisco, CA; New York, NY",
+      "postingKey": "7862464002",
+      "jobUrl": "https://job-boards.greenhouse.io/persona/jobs/7862464002",
+      "discoveredAt": "2026-05-12T16:01:58.063316+00:00",
+      "postedAge": "fresh public Greenhouse result",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Pave",
+      "role": "Software Engineer, Full Stack",
+      "location": "San Francisco, CA; New York, NY",
+      "postingKey": "4639863006",
+      "jobUrl": "https://job-boards.greenhouse.io/pave/jobs/4639863006",
+      "discoveredAt": "2026-05-12T16:01:58.063316+00:00",
+      "postedAge": "fresh public Greenhouse result",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Modal Labs",
+      "role": "Software Engineer, Platform",
+      "location": "New York, NY",
+      "postingKey": "4013377008",
+      "jobUrl": "https://job-boards.greenhouse.io/modal/jobs/4013377008",
+      "discoveredAt": "2026-05-12T16:01:58.063316+00:00",
+      "postedAge": "fresh public Greenhouse result",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Harvey",
+      "role": "Software Engineer, Applied AI",
+      "location": "San Francisco, CA; New York, NY",
+      "postingKey": "4567728007",
+      "jobUrl": "https://job-boards.greenhouse.io/harvey/jobs/4567728007",
+      "discoveredAt": "2026-05-12T16:01:58.063316+00:00",
+      "postedAge": "fresh public Greenhouse result",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Clay",
+      "role": "Product Engineer",
+      "location": "New York, NY",
+      "postingKey": "5629653004",
+      "jobUrl": "https://job-boards.greenhouse.io/claylabs/jobs/5629653004",
+      "discoveredAt": "2026-05-12T16:01:58.063316+00:00",
+      "postedAge": "fresh public Greenhouse result",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Airtable",
+      "role": "Software Engineer, Infrastructure",
+      "location": "San Francisco, CA; New York, NY",
+      "postingKey": "7865719002",
+      "jobUrl": "https://job-boards.greenhouse.io/airtable/jobs/7865719002",
+      "discoveredAt": "2026-05-12T16:01:58.063316+00:00",
+      "postedAge": "fresh public Greenhouse result",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "YugabyteDB",
+      "role": "Platform Software Engineer (Control Plane)",
+      "location": "Remote, USA",
+      "postingKey": "4656120006",
+      "jobUrl": "https://job-boards.greenhouse.io/yugabyte/jobs/4656120006",
+      "discoveredAt": "2026-05-12T16:01:24.853776+00:00",
+      "postedAge": "2026-05-08",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "DoorDash USA",
+      "role": "Software Engineer II, Data Engineering",
+      "location": "San Francisco, CA; Sunnyvale, CA",
+      "postingKey": "6458514",
+      "jobUrl": "https://job-boards.greenhouse.io/doordashusa/jobs/6458514",
+      "discoveredAt": "2026-05-12T16:01:24.853776+00:00",
+      "postedAge": "2026-05-05",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Capital Technology Group",
+      "role": "Software Engineer",
+      "location": "Remote (USA)",
+      "postingKey": "5011457007",
+      "jobUrl": "https://job-boards.greenhouse.io/capitaltg/jobs/5011457007",
+      "discoveredAt": "2026-05-12T16:01:24.853776+00:00",
+      "postedAge": "2026-04-12",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Aura",
+      "role": "Software Engineer, Backend",
+      "location": "Remote USA",
+      "postingKey": "5837490004",
+      "jobUrl": "https://job-boards.greenhouse.io/aura798/jobs/5837490004",
+      "discoveredAt": "2026-05-12T16:01:24.853776+00:00",
+      "postedAge": "2026-04-12",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Amplitude",
+      "role": "Software Engineer II, AI Security",
+      "location": "San Francisco, CA",
+      "postingKey": "8174490002",
+      "jobUrl": "https://job-boards.greenhouse.io/amplitude/jobs/8174490002",
+      "discoveredAt": "2026-05-12T16:01:24.853776+00:00",
+      "postedAge": "2026-05-12",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "RegScale",
       "role": "Software Engineer II",
       "location": "Remote",
@@ -31253,6 +31435,48 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Linear",
+      "role": "Software Engineer, Product",
+      "location": "Remote - United States",
+      "postingKey": "4637985006",
+      "jobUrl": "https://job-boards.greenhouse.io/linear/jobs/4637985006",
+      "discoveredAt": "2026-05-12T16:01:58.063316+00:00",
+      "postedAge": "fresh public Greenhouse result",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Grow Therapy",
+      "role": "Software Engineer, Web Frontend",
+      "location": "Remote - United States",
+      "postingKey": "4598247005",
+      "jobUrl": "https://job-boards.greenhouse.io/growtherapy/jobs/4598247005",
+      "discoveredAt": "2026-05-12T16:01:58.063316+00:00",
+      "postedAge": "fresh public Greenhouse result",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Life360",
+      "role": "Software Engineer AI-Native, mobile Foundry",
+      "location": "Remote, USA; Remote, Canada",
+      "postingKey": "8517378002",
+      "jobUrl": "https://job-boards.greenhouse.io/life360/jobs/8517378002",
+      "discoveredAt": "2026-05-12T16:01:24.853776+00:00",
+      "postedAge": "2026-05-08",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Tailscale",
       "role": "Software Engineer, Network Security Integrations",
       "location": "Remote (United States)",
@@ -34077,6 +34301,20 @@
       "fitScore": 5,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Runpod",
+      "role": "Senior Software Engineer (Cloud)",
+      "location": "Remote, USA",
+      "postingKey": "4142227008",
+      "jobUrl": "https://job-boards.greenhouse.io/runpod/jobs/4142227008",
+      "discoveredAt": "2026-05-12T16:01:24.853776+00:00",
+      "postedAge": "2026-05-09",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, preferred/remote US location",
       "trackerPostingKey": ""
     },
     {
