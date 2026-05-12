@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 694
+Companies queued: 693
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -24,7 +24,6 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Warner Bros. Discovery | Software Engineer II | software-engineer-ii-at-warner-bros-discovery-4374141586 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-at-warner-bros-discovery-4374141586) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Virtu Financial | Software Engineer - Desktop Frontend Developer (C#/Winforms) | 8516902002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/virtu/jobs/8516902002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Versaterm | Software Engineer I | 4593081008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/versaterm/jobs/4593081008) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
-| Vercel | Software Engineer, Agent | 5704321004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5704321004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Vercel | Software Engineer, AI Gateway | 5798406004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5798406004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Vercel | Software Engineer, AI SDK | 5474915004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5474915004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Vercel | Software Engineer, Workflows | 5798416004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5798416004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T04:26:53.405414+00:00",
+  "generatedAt": "2026-05-12T04:28:12.414215+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 821,
+      "total": 820,
       "applied": 462,
-      "unapplied": 359,
-      "active": 627,
+      "unapplied": 358,
+      "active": 626,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 681,
-      "reachOut": 745,
+      "highFit": 680,
+      "reachOut": 744,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
       "intakeJobs": 746,
       "intakeQueued": 54,
       "intakeNew": 51,
-      "intakeManual": 383,
-      "intakeApplied": 0,
+      "intakeManual": 382,
+      "intakeApplied": 1,
       "applyRate": 56.3,
       "rejectionRate": 12.6,
-      "recruiterWork": 516,
-      "engineerWork": 595,
+      "recruiterWork": 515,
+      "engineerWork": 594,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 201
+        "value": 200
       },
       {
         "name": "Archived",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 372
+        "value": 371
       },
       {
         "name": "LinkedIn",
@@ -144,7 +144,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 358
+        "value": 357
       },
       {
         "name": "Bay Area",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 446
+        "value": 445
       },
       {
         "name": "Full Stack",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 383
+        "count": 382
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 383
+        "value": 382
       },
       {
         "name": "Tailored",
@@ -291,6 +291,10 @@
       {
         "name": "Archived",
         "value": 2
+      },
+      {
+        "name": "Applied",
+        "value": 1
       }
     ],
     "intakeSourceCounts": [
@@ -514,15 +518,15 @@
       },
       {
         "date": "2026-05-10",
-        "cumulative": 792,
-        "added": 87,
+        "cumulative": 791,
+        "added": 86,
         "applied": 16,
         "rejected": 0,
         "interviewing": 0
       },
       {
         "date": "2026-05-11",
-        "cumulative": 821,
+        "cumulative": 820,
         "added": 29,
         "applied": 0,
         "rejected": 0,
@@ -537,15 +541,15 @@
         "bestFit": 10
       },
       {
-        "company": "Vercel",
-        "roles": 11,
-        "avgFit": 9.64,
-        "bestFit": 10
-      },
-      {
         "company": "Scale AI",
         "roles": 10,
         "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
+        "company": "Vercel",
+        "roles": 10,
+        "avgFit": 9.6,
         "bestFit": 10
       },
       {
@@ -795,15 +799,6 @@
       },
       {
         "company": "Vercel",
-        "role": "Software Engineer, Agent",
-        "fitScore": 10,
-        "status": "Manual Apply Needed",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5704321004"
-      },
-      {
-        "company": "Vercel",
         "role": "Software Engineer, AI Gateway",
         "fitScore": 10,
         "status": "Manual Apply Needed",
@@ -999,6 +994,15 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/twitch/jobs/8459320002"
+      },
+      {
+        "company": "Twitch",
+        "role": "Software Engineer II, Safety",
+        "fitScore": 10,
+        "status": "Applied",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/twitch/jobs/8499608002"
       }
     ],
     "recruiterBatch": {
@@ -21932,32 +21936,6 @@
     },
     {
       "company": "Vercel",
-      "role": "Software Engineer, Agent",
-      "applied": false,
-      "status": "Manual Apply Needed",
-      "fitScore": 10,
-      "reachOut": true,
-      "referral": "No",
-      "dateAdded": "2026-05-10",
-      "location": "Hybrid - San Francisco, New York City",
-      "source": "Greenhouse",
-      "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5704321004",
-      "postingKey": "5704321004",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Vercel/Software_Engineer_Agent/Liam_Van_Resume_2",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Vercel/Software_Engineer_Agent/Liam_Van_Resume_2/Liam_Van_Vercel.pdf",
-      "recruiterContact": "",
-      "recruiterProfile": "",
-      "engineerContact": "",
-      "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 19:07 PT; tailored SWE resume rendered and verified one page; emphasized agentic production debugging systems, AI product engineering, backend APIs, TypeScript product surfaces, observability, and reliable delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
-      "noteLinks": [],
-      "activityDates": [
-        "2026-05-10",
-        "2026-05-10"
-      ]
-    },
-    {
-      "company": "Vercel",
       "role": "Software Engineer, AI Gateway",
       "applied": false,
       "status": "Manual Apply Needed",
@@ -24077,15 +24055,15 @@
       "source": "Greenhouse",
       "company": "Vercel",
       "role": "Software Engineer, Agent",
-      "location": "Hybrid - San Francisco, New York City",
-      "postingKey": "5704321004",
-      "jobUrl": "https://job-boards.greenhouse.io/vercel/jobs/5704321004",
+      "location": "Hybrid - San Francisco",
+      "postingKey": "5704320004",
+      "jobUrl": "https://job-boards.greenhouse.io/vercel/jobs/5704320004",
       "discoveredAt": "2026-05-11T02:07:57.520505+00:00",
-      "postedAge": "crawled 3 weeks ago; visible on Vercel Greenhouse board 2026-05-11",
+      "postedAge": "crawled 3 weeks ago; visible on Vercel Greenhouse board 2026-05-11; confirmation received 2026-05-11",
       "fitScore": 10,
-      "status": "Manual",
-      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
-      "trackerPostingKey": "5704321004"
+      "status": "Applied",
+      "reason": "Application submitted 2026-05-11 via Greenhouse confirmation page: https://job-boards.greenhouse.io/vercel/jobs/5704320004/confirmation",
+      "trackerPostingKey": "5704320004"
     },
     {
       "source": "Greenhouse",
@@ -34180,19 +34158,6 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
-      "notes": "Queued by resume-tailor after tailored resume update."
-    },
-    {
-      "company": "Vercel",
-      "role": "Software Engineer, Agent",
-      "postingKey": "5704321004",
-      "fitScore": 10,
-      "status": "Manual Apply Needed",
-      "reachOut": true,
-      "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5704321004",
-      "prospectCount": 0,
-      "readyEmails": 0,
-      "lastUpdated": "2026-05-10",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -52642,9 +52607,9 @@
       "batch": "engineer-2026-05-11",
       "company": "Vercel",
       "role": "Software Engineer, Agent",
-      "postingKey": "5704321004",
+      "postingKey": "5704320004",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "engineerName": "",
       "engineerProfile": "",
       "engineerPosition": "",
@@ -52653,7 +52618,7 @@
       "approval": "Needs engineer",
       "outcome": "Not reached out",
       "lastChecked": "",
-      "notes": "",
+      "notes": "Application submitted 2026-05-11 via Greenhouse confirmation page.",
       "engineerSignal": {
         "alumniMatch": false,
         "seniority": "unknown",
@@ -63391,18 +63356,6 @@
           "key": "5629764004",
           "company": "Valon",
           "role": "Software Engineer, Product",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "5704321004",
-          "company": "Vercel",
-          "role": "Software Engineer, Agent",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -78716,11 +78669,11 @@
           "contacts": []
         },
         {
-          "key": "5704321004",
+          "key": "5704320004",
           "company": "Vercel",
           "role": "Software Engineer, Agent",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -78793,18 +78746,6 @@
           "role": "Software Engineer, Deployment Infrastructure",
           "fitScore": 10,
           "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "5704320004",
-          "company": "Vercel",
-          "role": "Software Engineer, Agent",
-          "fitScore": 10,
-          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
