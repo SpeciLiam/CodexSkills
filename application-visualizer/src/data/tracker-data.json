@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T23:05:17.187756+00:00",
+  "generatedAt": "2026-05-12T00:09:41.219825+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 808,
+      "total": 812,
       "applied": 461,
-      "unapplied": 347,
-      "active": 614,
+      "unapplied": 351,
+      "active": 618,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 668,
-      "reachOut": 732,
+      "highFit": 672,
+      "reachOut": 736,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 708,
+      "intakeJobs": 733,
       "intakeQueued": 52,
       "intakeNew": 51,
       "intakeManual": 377,
       "intakeApplied": 0,
-      "applyRate": 57.1,
+      "applyRate": 56.8,
       "rejectionRate": 12.6,
-      "recruiterWork": 503,
-      "engineerWork": 582,
+      "recruiterWork": 507,
+      "engineerWork": 586,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 190
+        "value": 194
       },
       {
         "name": "Archived",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 361
+        "value": 365
       },
       {
         "name": "LinkedIn",
@@ -144,15 +144,15 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 348
+        "value": 350
       },
       {
         "name": "Bay Area",
-        "value": 191
+        "value": 192
       },
       {
         "name": "Other",
-        "value": 134
+        "value": 135
       },
       {
         "name": "Remote",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 441
+        "value": 443
       },
       {
         "name": "Full Stack",
@@ -182,7 +182,7 @@
       },
       {
         "name": "Backend",
-        "value": 88
+        "value": 90
       },
       {
         "name": "Forward Deployed",
@@ -236,7 +236,7 @@
       },
       {
         "score": "8",
-        "count": 146
+        "count": 148
       },
       {
         "score": "9",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 374
+        "count": 376
       }
     ],
     "targetCounts": [
@@ -266,11 +266,11 @@
       },
       {
         "name": "Tailored",
-        "value": 141
+        "value": 145
       },
       {
         "name": "Skipped",
-        "value": 79
+        "value": 100
       },
       {
         "name": "Queued",
@@ -296,7 +296,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 469
+        "value": 494
       },
       {
         "name": "LinkedIn",
@@ -522,8 +522,8 @@
       },
       {
         "date": "2026-05-11",
-        "cumulative": 808,
-        "added": 17,
+        "cumulative": 812,
+        "added": 21,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -603,6 +603,12 @@
         "bestFit": 10
       },
       {
+        "company": "Addepar",
+        "roles": 5,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "Affirm",
         "roles": 5,
         "avgFit": 9.8,
@@ -658,12 +664,6 @@
       },
       {
         "company": "Flex",
-        "roles": 4,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Addepar",
         "roles": 4,
         "avgFit": 10.0,
         "bestFit": 10
@@ -23206,9 +23206,183 @@
         "2026-05-11",
         "2026-05-11"
       ]
+    },
+    {
+      "company": "Hebbia",
+      "role": "Backend Engineer, Agents",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "New York City; San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/hebbia/jobs/4584766005",
+      "postingKey": "4584766005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Hebbia/Backend_Engineer_Agents/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Hebbia/Backend_Engineer_Agents/Liam_Van_Resume/Liam_Van_Hebbia.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-11 17:06 PT; tailored SWE resume rendered and verified one page; emphasized NYC/SF backend agent engineering, AI product infrastructure, APIs, data workflows, testing, and reliable production delivery. Public Greenhouse capture used because Computer Use access to Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed: live Greenhouse submission blocked by Computer Use approval denial 2026-05-11",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11",
+        "2026-05-11"
+      ]
+    },
+    {
+      "company": "Addepar",
+      "role": "Backend Software Engineer - Precompute",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/addepar1/jobs/8539734002",
+      "postingKey": "8539734002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Addepar/Backend_Software_Engineer_Precompute/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Addepar/Backend_Software_Engineer_Precompute/Liam_Van_Resume/Liam_Van_Addepar.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-11 17:06 PT; tailored SWE resume rendered and verified one page; emphasized NYC backend data/compute infrastructure, analytics APIs, financial data workflows, platform reliability, and production validation. Public Greenhouse capture used because Computer Use access to Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed: live Greenhouse submission blocked by Computer Use approval denial 2026-05-11",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11",
+        "2026-05-11"
+      ]
+    },
+    {
+      "company": "Formic",
+      "role": "Product Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "San Francisco || Oakland, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/formic/jobs/4654505006",
+      "postingKey": "4654505006",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Formic/Product_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Formic/Product_Engineer/Liam_Van_Resume/Liam_Van_Formic.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-11 17:06 PT; tailored SWE resume rendered and verified one page; emphasized product engineering for robotics automation, TypeScript/React interfaces, backend APIs, cloud workflows, testing, and customer-facing delivery. Public Greenhouse capture used because Computer Use access to Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed: live Greenhouse submission blocked by Computer Use approval denial 2026-05-11",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11",
+        "2026-05-11"
+      ]
+    },
+    {
+      "company": "Coefficient",
+      "role": "Early Product Engineer - US",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "San Mateo, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/coefficient/jobs/4669394006",
+      "postingKey": "4669394006",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Coefficient/Early_Product_Engineer_US/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Coefficient/Early_Product_Engineer_US/Liam_Van_Resume/Liam_Van_Coefficient.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-11 17:06 PT; tailored SWE resume rendered and verified one page; emphasized early product engineering, full-stack data products, spreadsheet-connected workflows, AI agentic data systems, testing, and fast product iteration. Public Greenhouse capture used because Computer Use access to Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed: live Greenhouse submission blocked by Computer Use approval denial 2026-05-11",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11",
+        "2026-05-11"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Piramidal, Inc.",
+      "role": "Software Engineer - Backend",
+      "location": "New York",
+      "postingKey": "4212456009",
+      "jobUrl": "https://job-boards.greenhouse.io/piramidalinc/jobs/4212456009?gh_src=Blind",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 3 days ago",
+      "fitScore": 10,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-11: live capture says 5+ years backend experience required; too senior for this pass",
+      "trackerPostingKey": "4212456009"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Keystone Strategy",
+      "role": "Sr. Forward Deployed Engineer (Office of the CEO)",
+      "location": "New York",
+      "postingKey": "7895037",
+      "jobUrl": "https://job-boards.greenhouse.io/keystonestrategy/jobs/7895037?gh_src=Blind",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 4 days ago",
+      "fitScore": 10,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-11: Sr./CEO-office builder role is too senior/high-autonomy for this pass",
+      "trackerPostingKey": "7895037"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "iCapital",
+      "role": "Scala Backend Software Engineer - Vice President",
+      "location": "New York, New York, United States",
+      "postingKey": "8390646002",
+      "jobUrl": "https://job-boards.greenhouse.io/icapitalnetwork/jobs/8390646002",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 3 days ago",
+      "fitScore": 10,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-11: Vice President backend role is outside early-career-to-mid-junior target",
+      "trackerPostingKey": "8390646002"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Hebbia",
+      "role": "Backend Engineer, Agents",
+      "location": "New York City; San Francisco, CA",
+      "postingKey": "4584766005",
+      "jobUrl": "https://job-boards.greenhouse.io/hebbia/jobs/4584766005",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 4 days ago",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-11; resume rendered and verified one page; emphasized NYC/SF backend agent engineering, AI product infrastructure, APIs, data workflows, testing, and reliable production delivery",
+      "trackerPostingKey": "4584766005"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Addepar",
+      "role": "Backend Software Engineer - Precompute",
+      "location": "New York, NY",
+      "postingKey": "8539734002",
+      "jobUrl": "https://job-boards.greenhouse.io/addepar1/jobs/8539734002",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-11; resume rendered and verified one page; emphasized NYC backend data/compute infrastructure, analytics APIs, financial data workflows, platform reliability, and production validation",
+      "trackerPostingKey": "8539734002"
+    },
     {
       "source": "Greenhouse",
       "company": "Addepar",
@@ -30141,6 +30315,34 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Formic",
+      "role": "Product Engineer",
+      "location": "San Francisco \\",
+      "postingKey": "\\",
+      "jobUrl": "Oakland, CA",
+      "discoveredAt": "4654505006",
+      "postedAge": "https://job-boards.greenhouse.io/formic/jobs/4654505006",
+      "fitScore": 0,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-11; resume rendered and verified one page; emphasized product engineering for robotics automation, TypeScript/React interfaces, backend APIs, cloud workflows, testing, and customer-facing delivery",
+      "trackerPostingKey": "4654505006"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Aktos",
+      "role": "Full Stack Engineer - LATAM (Remote)",
+      "location": "Remote",
+      "postingKey": "5077985004",
+      "jobUrl": "https://job-boards.greenhouse.io/applytoaktos/jobs/5077985004",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 8,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-11: LATAM remote posting is not a strong US-location fit",
+      "trackerPostingKey": "5077985004"
+    },
+    {
+      "source": "Greenhouse",
       "company": "Clover Health",
       "role": "Software Engineer",
       "location": "Remote - USA",
@@ -31891,6 +32093,76 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Via",
+      "role": "Senior Backend Engineer",
+      "location": "New York City, New York",
+      "postingKey": "8321613002",
+      "jobUrl": "https://job-boards.greenhouse.io/via/jobs/8321613002",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 3 days ago",
+      "fitScore": 6,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Kalepa",
+      "role": "Senior Backend Engineer - Submission Processing Team (USA)",
+      "location": "New York, NY. Remote US.",
+      "postingKey": "5755122004",
+      "jobUrl": "https://job-boards.greenhouse.io/kalepa/jobs/5755122004",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 4 days ago",
+      "fitScore": 6,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Daylight",
+      "role": "Senior Backend Engineer",
+      "location": "New York, NY",
+      "postingKey": "4574421008",
+      "jobUrl": "https://job-boards.greenhouse.io/daylight/jobs/4574421008",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 6,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Coefficient",
+      "role": "Early Product Engineer - US",
+      "location": "San Mateo, CA",
+      "postingKey": "4669394006",
+      "jobUrl": "https://job-boards.greenhouse.io/coefficient/jobs/4669394006",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 3 days ago",
+      "fitScore": 6,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-11; resume rendered and verified one page; emphasized early product engineering, full-stack data products, spreadsheet-connected workflows, AI agentic data systems, testing, and fast product iteration",
+      "trackerPostingKey": "4669394006"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Bluefish AI",
+      "role": "Senior Backend Engineer (Data Platform)",
+      "location": "New York",
+      "postingKey": "5212649008",
+      "jobUrl": "https://job-boards.greenhouse.io/bluefishai/jobs/5212649008",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 4 days ago",
+      "fitScore": 6,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Hightouch",
       "role": "Web Engineer",
       "location": "Remote (North America)",
@@ -32423,6 +32695,34 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Flex",
+      "role": "Senior Software Engineer, Backend",
+      "location": "New York, New York, United States; Remote (U.S.)",
+      "postingKey": "4681666005",
+      "jobUrl": "https://job-boards.greenhouse.io/flex/jobs/4681666005",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 4 days ago",
+      "fitScore": 5,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "EDO",
+      "role": "Senior Product Engineer",
+      "location": "Los Angeles; New York; Remote; San Francisco",
+      "postingKey": "5105024007",
+      "jobUrl": "https://job-boards.greenhouse.io/edo/jobs/5105024007",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 3 days ago",
+      "fitScore": 5,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Rocket Money",
       "role": "Senior Product Engineer, Compass",
       "location": "San Francisco, CA; Washington, D.C.; New York City, N.Y.",
@@ -32674,6 +32974,20 @@
       "trackerPostingKey": ""
     },
     {
+      "source": "Greenhouse",
+      "company": "Censys",
+      "role": "Senior Backend Engineer, SOC & Threat Hunting",
+      "location": "Remote (US/Canada)",
+      "postingKey": "8527413002",
+      "jobUrl": "https://job-boards.greenhouse.io/censys/jobs/8527413002",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "SWE-family role, early-career signal, skip-title signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "LinkedIn",
       "company": "HCLTech",
       "role": "Platform Forward Deployed Engineer",
@@ -32815,6 +33129,76 @@
     },
     {
       "source": "Greenhouse",
+      "company": "WorkBoard",
+      "role": "Senior Full Stack Engineer",
+      "location": "United States - Remote",
+      "postingKey": "8388974002",
+      "jobUrl": "https://job-boards.greenhouse.io/workboard/jobs/8388974002",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 3 days ago",
+      "fitScore": 3,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Serhant",
+      "role": "Senior Full Stack Engineer",
+      "location": "Remote, USA",
+      "postingKey": "4121505009",
+      "jobUrl": "https://job-boards.greenhouse.io/serhant/jobs/4121505009",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 3 days ago",
+      "fitScore": 3,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Prolific",
+      "role": "Senior Product Engineer",
+      "location": "San Francisco",
+      "postingKey": "4767348101",
+      "jobUrl": "https://job-boards.greenhouse.io/prolific/jobs/4767348101",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 5 days ago",
+      "fitScore": 3,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Fueled",
+      "role": "Senior Full Stack Engineer",
+      "location": "Remote",
+      "postingKey": "4965159008",
+      "jobUrl": "https://job-boards.greenhouse.io/fueledcareers/jobs/4965159008",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 3,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Cresta",
+      "role": "Senior Full Stack Engineer - Conversation Intelligence",
+      "location": "Canada (Remote)",
+      "postingKey": "5026012008",
+      "jobUrl": "https://job-boards.greenhouse.io/cresta/jobs/5026012008?action=apply",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 3 days ago",
+      "fitScore": 3,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Kinelo",
       "role": "Senior Product Engineer",
       "location": "San Francisco, CA",
@@ -32909,6 +33293,76 @@
       "fitScore": 2,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Mighty Networks",
+      "role": "Senior Software Engineer, Full-Stack",
+      "location": "Remote",
+      "postingKey": "8506638002",
+      "jobUrl": "https://job-boards.greenhouse.io/mightynetworks/jobs/8506638002",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 1,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Invisible Technologies",
+      "role": "Principal Backend Engineer (Forward Deployed)",
+      "location": "Austin, Texas - Hybrid; New York - Hybrid; San Francisco Bay Area - Hybrid",
+      "postingKey": "4697596101",
+      "jobUrl": "https://job-boards.greenhouse.io/invisibletech/jobs/4697596101",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 4 days ago",
+      "fitScore": 1,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Gruns",
+      "role": "Staff Full-Stack Engineer, Revenue Systems",
+      "location": "Remote",
+      "postingKey": "5137065008",
+      "jobUrl": "https://job-boards.greenhouse.io/gruns/jobs/5137065008",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 2 days ago",
+      "fitScore": 1,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Future",
+      "role": "Staff Product Engineer",
+      "location": "Remote",
+      "postingKey": "4683143005",
+      "jobUrl": "https://job-boards.greenhouse.io/future/jobs/4683143005",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled yesterday",
+      "fitScore": 1,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Amplitude",
+      "role": "Senior Software Engineer (Experiment)",
+      "location": "San Francisco, CA",
+      "postingKey": "8542021002",
+      "jobUrl": "https://job-boards.greenhouse.io/amplitude/jobs/8542021002",
+      "discoveredAt": "2026-05-12T00:05:48.697661+00:00",
+      "postedAge": "crawled 2 days ago",
+      "fitScore": 1,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, SF/Bay Area preference",
       "trackerPostingKey": ""
     },
     {
@@ -35685,6 +36139,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Hebbia",
+      "role": "Backend Engineer, Agents",
+      "postingKey": "4584766005",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/hebbia/jobs/4584766005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Harmonic",
       "role": "Full Stack Product Engineer (AI), Search",
       "postingKey": "4590192005",
@@ -37616,6 +38083,19 @@
       "status": "Resume Tailored",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/addepar1/jobs/8451446002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Addepar",
+      "role": "Backend Software Engineer - Precompute",
+      "postingKey": "8539734002",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/addepar1/jobs/8539734002",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-11",
@@ -40547,6 +41027,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Formic",
+      "role": "Product Engineer",
+      "postingKey": "4654505006",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/formic/jobs/4654505006",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "FloVision Solutions",
       "role": "Forward Deployed Engineer",
       "postingKey": "5149067008",
@@ -40831,6 +41324,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Coefficient",
+      "role": "Early Product Engineer - US",
+      "postingKey": "4669394006",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/coefficient/jobs/4669394006",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "CNN",
@@ -59979,6 +60485,18 @@
           "contacts": []
         },
         {
+          "key": "8539734002",
+          "company": "Addepar",
+          "role": "Backend Software Engineer - Precompute",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "6697653003",
           "company": "Affirm",
           "role": "Software Engineer I, Repayments Platform",
@@ -61050,6 +61568,18 @@
           "key": "4590192005",
           "company": "Harmonic",
           "role": "Full Stack Product Engineer (AI), Search",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4584766005",
+          "company": "Hebbia",
+          "role": "Backend Engineer, Agents",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -63867,6 +64397,18 @@
           "contacts": []
         },
         {
+          "key": "4669394006",
+          "company": "Coefficient",
+          "role": "Early Product Engineer - US",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4d5a3632-2812-4ab0-b3ad-ca6cf6083348",
           "company": "Comulate",
           "role": "Software Engineer",
@@ -64158,6 +64700,18 @@
           "key": "4677397006",
           "company": "Formic",
           "role": "Full Stack Software Engineer - Robotics",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4654505006",
+          "company": "Formic",
+          "role": "Product Engineer",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -74911,6 +75465,18 @@
           "contacts": []
         },
         {
+          "key": "8539734002",
+          "company": "Addepar",
+          "role": "Backend Software Engineer - Precompute",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7673126003",
           "company": "Affirm",
           "role": "Software Engineer I, Backend (Purchasing Power Experience)",
@@ -76054,6 +76620,18 @@
           "key": "4590192005",
           "company": "Harmonic",
           "role": "Full Stack Product Engineer (AI), Search",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4584766005",
+          "company": "Hebbia",
+          "role": "Backend Engineer, Agents",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -78871,6 +79449,18 @@
           "contacts": []
         },
         {
+          "key": "4669394006",
+          "company": "Coefficient",
+          "role": "Early Product Engineer - US",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5116390007",
           "company": "Conga",
           "role": "Software Engineer II - Full Stack",
@@ -79068,6 +79658,18 @@
           "role": "Full Stack Software Engineer - Robotics",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4654505006",
+          "company": "Formic",
+          "role": "Product Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
