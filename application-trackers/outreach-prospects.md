@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 733
+Companies queued: 736
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -267,6 +267,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | EnergyHub | Software Engineer II, Battery | 8382615002-software-engineer-ii-battery | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/energyhub/jobs/8382615002) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Emergent Labs | Software Engineer - Infrastructure | 4226183009 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/emergentlabsinc/jobs/4226183009) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | EliseAI | Software Engineer (New Grads 2025-2026) | 1ffbd278-a5fe-443c-984f-521d61a97353 | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/eliseai/1ffbd278-a5fe-443c-984f-521d61a97353?utm_source=LinkedInPaid) |  |  |  |  |
+| Dyno Therapeutics | Software Engineer II, Computational Platform | 7732038003 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/dynotherapeutics/jobs/7732038003) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | DRW | Full Stack Engineer, Blockchain Product | full-stack-engineer-blockchain-product-at-drw-4342884810 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/full-stack-engineer-blockchain-product-at-drw-4342884810) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Dorsia | Product Engineer | 4827963007 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/dorsia/jobs/4827963007) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | DoorDash USA | Software Engineer II, New Verticals | 7155159 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/doordashusa/jobs/7155159) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
@@ -360,6 +361,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Applied Intuition | Software Engineer - New Grad | 4600028005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/appliedintuition/jobs/4600028005) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Anthropic | Software Engineer, Inference Deployment | 5111745008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/anthropic/jobs/5111745008) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Anthropic | Software Engineer, Safeguards | 4966493008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/anthropic/jobs/4966493008) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
+| Anthropic | Full-Stack Software Engineer, Reinforcement Learning | 5186067008 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/anthropic/jobs/5186067008?gh_src=myjobs.greenhouse) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Anrok | Software Engineer (Early Career) | 874deeb1-750a-4b2d-818d-99e7eb409892 | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/anrok/874deeb1-750a-4b2d-818d-99e7eb409892) |  |  |  |  |
 | Amplitude | Software Engineer II, Web | 7949946002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/amplitude/jobs/7949946002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Amplitude | Software Engineer I, Growth Platform | 7949946002-growth-platform | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/amplitude/jobs/7949946002?gh_jid=7949946002-growth-platform) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
@@ -644,6 +646,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Divergent | Full Stack Software Engineer | 5207177008 | 8 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/divergent/jobs/5207177008?gh_src=my.greenhouse.search) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Dirac, Inc. | Forward Deployed Software Engineer | 4401461482 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4401461482/) |  |  |  |  |
 | Deltek | Software Engineer | 4394474747 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4394474747/) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
+| Delmar Nord | Software Engineer | 4405699079 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/collections/recommended/?currentJobId=4405699079) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Defense Unicorns | Software Engineer | 5125804007 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/defenseunicorns/jobs/5125804007) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | Cytation AI | Technical Engineering Assistant | 4412192322 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4412192322/?trackingId=S6j%2BKbuE2Jiph4n4CjVnnA%3D%3D&refId=KQ5bGs%2BEKOWK3Lz5%2By3FEQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BPtsK%2FDnhRAWCLuUJoL5hpQ%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | Cruzader Advanced Recruiting Solutions | Software Engineer Backend Platform | 4406142475 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4406142475/apply/) |  |  |  |  |

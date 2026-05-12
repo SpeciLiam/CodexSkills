@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T17:13:32.727652+00:00",
+  "generatedAt": "2026-05-12T19:59:17.998630+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 860,
+      "total": 863,
       "applied": 472,
-      "unapplied": 388,
-      "active": 667,
+      "unapplied": 391,
+      "active": 670,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 719,
-      "reachOut": 783,
+      "highFit": 722,
+      "reachOut": 786,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 800,
+      "intakeJobs": 805,
       "intakeQueued": 58,
       "intakeNew": 52,
-      "intakeManual": 410,
+      "intakeManual": 415,
       "intakeApplied": 15,
-      "applyRate": 54.9,
+      "applyRate": 54.7,
       "rejectionRate": 12.3,
-      "recruiterWork": 555,
-      "engineerWork": 634,
+      "recruiterWork": 558,
+      "engineerWork": 637,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 231
+        "value": 233
       },
       {
         "name": "Archived",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 23
+        "value": 24
       },
       {
         "name": "Online Assessment",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 411
+        "value": 413
       },
       {
         "name": "LinkedIn",
-        "value": 295
+        "value": 296
       },
       {
         "name": "Ashby",
@@ -144,7 +144,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 370
+        "value": 372
       },
       {
         "name": "Bay Area",
@@ -156,7 +156,7 @@
       },
       {
         "name": "Remote",
-        "value": 118
+        "value": 119
       },
       {
         "name": "Seattle",
@@ -174,11 +174,11 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 462
+        "value": 463
       },
       {
         "name": "Full Stack",
-        "value": 105
+        "value": 106
       },
       {
         "name": "Backend",
@@ -194,7 +194,7 @@
       },
       {
         "name": "Infra/Platform",
-        "value": 43
+        "value": 44
       },
       {
         "name": "Frontend",
@@ -236,7 +236,7 @@
       },
       {
         "score": "8",
-        "count": 160
+        "count": 161
       },
       {
         "score": "9",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 400
+        "count": 402
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 410
+        "value": 415
       },
       {
         "name": "Tailored",
@@ -300,11 +300,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 549
+        "value": 551
       },
       {
         "name": "LinkedIn",
-        "value": 251
+        "value": 254
       }
     ],
     "timeline": [
@@ -534,8 +534,8 @@
       },
       {
         "date": "2026-05-12",
-        "cumulative": 860,
-        "added": 37,
+        "cumulative": 863,
+        "added": 40,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -609,6 +609,12 @@
         "bestFit": 10
       },
       {
+        "company": "Anthropic",
+        "roles": 6,
+        "avgFit": 6.67,
+        "bestFit": 10
+      },
+      {
         "company": "Giga",
         "roles": 5,
         "avgFit": 10.0,
@@ -664,12 +670,6 @@
       },
       {
         "company": "Robinhood",
-        "roles": 5,
-        "avgFit": 6.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Anthropic",
         "roles": 5,
         "avgFit": 6.0,
         "bestFit": 10
@@ -24545,9 +24545,138 @@
       "activityDates": [
         "2026-05-12"
       ]
+    },
+    {
+      "company": "Anthropic",
+      "role": "Full-Stack Software Engineer, Reinforcement Learning",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "San Francisco, CA | New York City, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/anthropic/jobs/5186067008?gh_src=myjobs.greenhouse",
+      "postingKey": "5186067008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Anthropic/Full_Stack_Software_Engineer_Reinforcement_Learning/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Anthropic/Full_Stack_Software_Engineer_Reinforcement_Learning/Liam_Van_Resume/Liam_Van_Anthropic.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-12: tailored full-stack RL resume rendered and verified one page; emphasized React/TypeScript, Python, APIs, AI-assisted testing, data workflows, observability, and cross-functional platform delivery. Manual apply needed: live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; form also requires AI policy acknowledgement, in-office/relocation/address answers, visa answers, and a 200-400 word Why Anthropic response.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Dyno Therapeutics",
+      "role": "Software Engineer II, Computational Platform",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "Remote; Watertown, Massachusetts, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/dynotherapeutics/jobs/7732038003",
+      "postingKey": "7732038003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Dyno Therapeutics/Software_Engineer_II_Computational_Platform/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Dyno Therapeutics/Software_Engineer_II_Computational_Platform/Liam_Van_Resume/Liam_Van_Dyno_Therapeutics.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-12: tailored SWE II computational platform resume rendered and verified one page; emphasized AI product workflows, Python/TypeScript, React, cloud integration, data pipelines, APIs, and reliability. Manual apply needed: live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; role also asks for 4+ years, so final review should confirm level fit.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Delmar Nord",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/collections/recommended/?currentJobId=4405699079",
+      "postingKey": "4405699079",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Delmar Nord/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Delmar Nord/Software_Engineer/Liam_Van_Resume/Liam_Van_Delmar_Nord.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
     }
   ],
   "jobIntake": [
+    {
+      "source": "LinkedIn",
+      "company": "TrueMeter",
+      "role": "Software Engineer - Full Stack",
+      "location": "San Francisco, CA",
+      "postingKey": "linkedin-truemeter-full-stack-sf-2026-05-12",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4376199476/",
+      "discoveredAt": "2026-05-12T19:54:18.325264+00:00",
+      "postedAge": "public LinkedIn degraded capture 2026-05-12; visible card listed 3 days ago; captured_at 2026-05-12T18:00:00-07:00",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual verification needed 2026-05-12: degraded LinkedIn capture exposed an aggregate/mismatched job URL instead of a verified exact posting; authenticated Chrome/Firefox capture and Easy Apply were blocked because Computer Use approval was denied after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Dyno Therapeutics",
+      "role": "Software Engineer II, Computational Platform",
+      "location": "Remote; Watertown, Massachusetts, United States",
+      "postingKey": "7732038003",
+      "jobUrl": "https://job-boards.greenhouse.io/dynotherapeutics/jobs/7732038003",
+      "discoveredAt": "2026-05-12T19:54:18.325264+00:00",
+      "postedAge": "public Greenhouse search capture 2026-05-12; crawled today; captured_at 2026-05-12T18:00:00-07:00",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; role asks for 4+ years, so final review should confirm level fit",
+      "trackerPostingKey": "7732038003"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Authentic",
+      "role": "Software Engineer - Platform",
+      "location": "New York, NY",
+      "postingKey": "linkedin-authentic-software-engineer-platform-ny-2026-05-12",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4342667046",
+      "discoveredAt": "2026-05-12T19:54:18.325264+00:00",
+      "postedAge": "public LinkedIn degraded capture 2026-05-12; visible card listed 5 days ago; captured_at 2026-05-12T18:00:00-07:00",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual verification needed 2026-05-12: degraded LinkedIn capture exposed a mismatched exact URL, not the verified Authentic platform posting; authenticated Chrome/Firefox capture and Easy Apply were blocked because Computer Use approval was denied after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Anthropic",
+      "role": "Full-Stack Software Engineer, Reinforcement Learning",
+      "location": "San Francisco, CA | New York City, NY",
+      "postingKey": "5186067008",
+      "jobUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5186067008?gh_src=myjobs.greenhouse",
+      "discoveredAt": "2026-05-12T19:54:18.325264+00:00",
+      "postedAge": "public Greenhouse search capture 2026-05-12; crawled 3 weeks ago; captured_at 2026-05-12T18:00:00-07:00",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; form requires AI policy acknowledgement, in-office/relocation/address answers, visa answers, and a 200-400 word Why Anthropic response",
+      "trackerPostingKey": "5186067008"
+    },
     {
       "source": "LinkedIn",
       "company": "Sigma",
@@ -34126,6 +34255,20 @@
     },
     {
       "source": "LinkedIn",
+      "company": "USAN, Inc.",
+      "role": "Software Engineer - AWS Reporting - Recent Graduate",
+      "location": "Norcross, GA",
+      "postingKey": "linkedin-usan-aws-reporting-recent-graduate-2026-05-12",
+      "jobUrl": "https://www.linkedin.com/jobs/view/devops-intern-at-cadent-4366167047",
+      "discoveredAt": "2026-05-12T19:54:18.325264+00:00",
+      "postedAge": "public LinkedIn degraded capture 2026-05-12; visible card listed 2 days ago; captured_at 2026-05-12T18:00:00-07:00",
+      "fitScore": 6,
+      "status": "Manual",
+      "reason": "Manual verification needed 2026-05-12: lower-priority Georgia recent-grad role from degraded LinkedIn capture; exact URL is mismatched and authenticated Chrome/Firefox capture was blocked because Computer Use approval was denied after required delayed retry preflight",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
       "company": "Smarsh",
       "role": "Software Engineer - UI & Backend Services",
       "location": "Portland, OR",
@@ -39105,6 +39248,19 @@
       "notes": ""
     },
     {
+      "company": "Dyno Therapeutics",
+      "role": "Software Engineer II, Computational Platform",
+      "postingKey": "7732038003",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/dynotherapeutics/jobs/7732038003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "DRW",
       "role": "Full Stack Engineer, Blockchain Product",
       "postingKey": "full-stack-engineer-blockchain-product-at-drw-4342884810",
@@ -40311,6 +40467,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-04",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Anthropic",
+      "role": "Full-Stack Software Engineer, Reinforcement Learning",
+      "postingKey": "5186067008",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/anthropic/jobs/5186067008?gh_src=myjobs.greenhouse",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -44003,6 +44172,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Delmar Nord",
+      "role": "Software Engineer",
+      "postingKey": "4405699079",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/collections/recommended/?currentJobId=4405699079",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -63414,6 +63596,18 @@
           "contacts": []
         },
         {
+          "key": "5186067008",
+          "company": "Anthropic",
+          "role": "Full-Stack Software Engineer, Reinforcement Learning",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "associate-software-engineer-software-engineer-at-applied-systems-4400119719",
           "company": "Applied Systems",
           "role": "Associate Software Engineer / Software Engineer",
@@ -64161,6 +64355,18 @@
           "key": "4827963007",
           "company": "Dorsia",
           "role": "Product Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7732038003",
+          "company": "Dyno Therapeutics",
+          "role": "Software Engineer II, Computational Platform",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -67787,6 +67993,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4405699079",
+          "company": "Delmar Nord",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -78994,6 +79212,18 @@
           "contacts": []
         },
         {
+          "key": "5186067008",
+          "company": "Anthropic",
+          "role": "Full-Stack Software Engineer, Reinforcement Learning",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "associate-software-engineer-software-engineer-at-applied-systems-4400119719",
           "company": "Applied Systems",
           "role": "Associate Software Engineer / Software Engineer",
@@ -79789,6 +80019,18 @@
           "key": "4827963007",
           "company": "Dorsia",
           "role": "Product Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7732038003",
+          "company": "Dyno Therapeutics",
+          "role": "Software Engineer II, Computational Platform",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -83355,6 +83597,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4405699079",
+          "company": "Delmar Nord",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
