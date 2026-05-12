@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 693
+Companies queued: 695
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -524,6 +524,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | TechKareer | Software Engineer (SF / NYC) | 4391812149 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4391812149/apply/) |  |  |  |  |
 | Tailscale | Backend Engineer, Control Plane | 4653722005 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/tailscale/jobs/4653722005) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Tailscale | Software Engineer, Engineering Tooling | 4616090005 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/tailscale/jobs/4616090005) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
+| Tailscale | Software Engineer, Product Strategy | 4631832005 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/tailscale/jobs/4631832005) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | Swarm Aero | Forward Deployed Software Engineer | 5007039007 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/swarmaero/jobs/5007039007) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Supio | Software Engineer, Full Stack | am9icG9zdDokLY-gOKYyi4f5JNIx755l | 8 | Applied | Yes | [Posting](https://jobs.gem.com/supio/am9icG9zdDokLY-gOKYyi4f5JNIx755l?src=Linkedin) |  |  |  |  |
 | Sundayy | Software Developer, Jr. (Python, API) | 4409851680 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4409851680/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
@@ -606,6 +607,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Divergent | Full Stack Software Engineer | 5207177008 | 8 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/divergent/jobs/5207177008?gh_src=my.greenhouse.search) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Dirac, Inc. | Forward Deployed Software Engineer | 4401461482 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4401461482/) |  |  |  |  |
 | Deltek | Software Engineer | 4394474747 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4394474747/) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
+| Defense Unicorns | Software Engineer | 5125804007 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/defenseunicorns/jobs/5125804007) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | Cytation AI | Technical Engineering Assistant | 4412192322 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4412192322/?trackingId=S6j%2BKbuE2Jiph4n4CjVnnA%3D%3D&refId=KQ5bGs%2BEKOWK3Lz5%2By3FEQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BPtsK%2FDnhRAWCLuUJoL5hpQ%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | Cruzader Advanced Recruiting Solutions | Software Engineer Backend Platform | 4406142475 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4406142475/apply/) |  |  |  |  |
 | Crossing Hurdles | Full Stack Software Engineer | 4382410515 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4382410515/apply/) |  |  |  |  |
