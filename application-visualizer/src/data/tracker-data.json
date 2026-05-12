@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T16:10:01.320229+00:00",
+  "generatedAt": "2026-05-12T17:13:32.727652+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 859,
+      "total": 860,
       "applied": 472,
-      "unapplied": 387,
-      "active": 666,
+      "unapplied": 388,
+      "active": 667,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 718,
-      "reachOut": 782,
+      "highFit": 719,
+      "reachOut": 783,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 794,
+      "intakeJobs": 800,
       "intakeQueued": 58,
       "intakeNew": 52,
-      "intakeManual": 409,
+      "intakeManual": 410,
       "intakeApplied": 15,
       "applyRate": 54.9,
       "rejectionRate": 12.3,
-      "recruiterWork": 554,
-      "engineerWork": 633,
+      "recruiterWork": 555,
+      "engineerWork": 634,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 230
+        "value": 231
       },
       {
         "name": "Archived",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 410
+        "value": 411
       },
       {
         "name": "LinkedIn",
@@ -152,7 +152,7 @@
       },
       {
         "name": "Other",
-        "value": 140
+        "value": 141
       },
       {
         "name": "Remote",
@@ -186,7 +186,7 @@
       },
       {
         "name": "AI/ML",
-        "value": 63
+        "value": 64
       },
       {
         "name": "Forward Deployed",
@@ -240,7 +240,7 @@
       },
       {
         "score": "9",
-        "count": 158
+        "count": 159
       },
       {
         "score": "10",
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 409
+        "value": 410
       },
       {
         "name": "Tailored",
@@ -270,7 +270,7 @@
       },
       {
         "name": "Skipped",
-        "value": 107
+        "value": 111
       },
       {
         "name": "Queued",
@@ -286,7 +286,7 @@
       },
       {
         "name": "Archived",
-        "value": 3
+        "value": 4
       },
       {
         "name": "Duplicate",
@@ -300,11 +300,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 546
+        "value": 549
       },
       {
         "name": "LinkedIn",
-        "value": 248
+        "value": 251
       }
     ],
     "timeline": [
@@ -534,8 +534,8 @@
       },
       {
         "date": "2026-05-12",
-        "cumulative": 859,
-        "added": 36,
+        "cumulative": 860,
+        "added": 37,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -24520,9 +24520,48 @@
       "activityDates": [
         "2026-05-12"
       ]
+    },
+    {
+      "company": "CommerceIQ",
+      "role": "Forward Deployed Engineer - Mountain View",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "Mountain View, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/commerceiq/jobs/7703500003",
+      "postingKey": "7703500003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CommerceIQ/Forward_Deployed_Engineer_Mountain_View/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CommerceIQ/Forward_Deployed_Engineer_Mountain_View/Liam_Van_Resume/Liam_Van_CommerceIQ.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume verified one page; live submission blocked because Computer Use approval was denied for Chrome/Firefox after delayed retry, and posting asks for 4-6+ years, Monday-Friday Mountain View onsite, about 50% travel, and role-specific FDE/prototype/AI free responses needing Liam review.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "LinkedIn",
+      "company": "Sigma",
+      "role": "Software Engineer (New Grad Program)",
+      "location": "New York, NY",
+      "postingKey": "linkedin-sigma-new-grad-nyc-2026-05-12",
+      "jobUrl": "https://www.linkedin.com/jobs/search-results/?keywords=Software%20Engineer%20New%20Grad%20Program%20Sigma%20New%20York",
+      "discoveredAt": "2026-05-12T17:06:51.104204+00:00",
+      "postedAge": "public LinkedIn search capture 2026-05-12; listed 3 days ago",
+      "fitScore": 10,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-12: duplicate of already-applied Sigma Computing New Grad Greenhouse row 7690411003; no re-application needed",
+      "trackerPostingKey": "7690411003"
+    },
     {
       "source": "Greenhouse",
       "company": "Thatch",
@@ -30587,6 +30626,20 @@
     },
     {
       "source": "Greenhouse",
+      "company": "CommerceIQ",
+      "role": "Forward Deployed Engineer - Mountain View",
+      "location": "Mountain View, California, United States",
+      "postingKey": "7703500003",
+      "jobUrl": "https://job-boards.greenhouse.io/commerceiq/jobs/7703500003",
+      "discoveredAt": "2026-05-12T17:06:51.104204+00:00",
+      "postedAge": "public Greenhouse search capture 2026-05-12; crawled 4 days ago",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live submission blocked because Computer Use approval was denied for Chrome/Firefox after delayed retry, and posting asks for 4-6+ years, Monday-Friday Mountain View onsite, about 50% travel, and role-specific FDE/prototype/AI free responses needing Liam review",
+      "trackerPostingKey": "7703500003"
+    },
+    {
+      "source": "Greenhouse",
       "company": "Thatch",
       "role": "Software Engineer: Foundations",
       "location": "Remote (US); San Francisco, California, United States",
@@ -32028,6 +32081,34 @@
       "trackerPostingKey": "5592469004"
     },
     {
+      "source": "Greenhouse",
+      "company": "Twilio",
+      "role": "Software Engineer (L2)",
+      "location": "Remote - US",
+      "postingKey": "7188174",
+      "jobUrl": "https://job-boards.greenhouse.io/twilio/jobs/7188174",
+      "discoveredAt": "2026-05-12T17:06:51.104204+00:00",
+      "postedAge": "public Greenhouse search capture 2026-05-12; crawled 4 days ago",
+      "fitScore": 8,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-12: live posting says role is remote but not eligible to be hired in WA, CA, NY, NJ, PA, or CT, which conflicts with Liam's Seattle base and preferred locations",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Affirm",
+      "role": "Software Engineer",
+      "location": "Remote US",
+      "postingKey": "7560426003",
+      "jobUrl": "https://job-boards.greenhouse.io/affirm/jobs/7560426003",
+      "discoveredAt": "2026-05-12T17:06:51.104204+00:00",
+      "postedAge": "public Greenhouse search capture 2026-05-12; crawled 4 months ago",
+      "fitScore": 8,
+      "status": "Archived",
+      "reason": "Archived 2026-05-12: exact Greenhouse job URL redirects to Affirm board with error=true, so the posting appears closed or unavailable",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "LinkedIn",
       "company": "Microsoft",
       "role": "Full Stack Engineer",
@@ -33359,6 +33440,20 @@
     },
     {
       "source": "LinkedIn",
+      "company": "Twilio",
+      "role": "Software Engineer (L2)",
+      "location": "United States",
+      "postingKey": "4365603613",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-l2-at-twilio-4365603613",
+      "discoveredAt": "2026-05-12T17:06:51.104204+00:00",
+      "postedAge": "public LinkedIn search capture 2026-05-12; listed 2 days ago",
+      "fitScore": 7,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-12: matched Twilio Greenhouse role 7188174, whose live posting excludes WA, CA, NY, NJ, PA, and CT hiring locations",
+      "trackerPostingKey": "7188174"
+    },
+    {
+      "source": "LinkedIn",
       "company": "Intuit",
       "role": "Software Engineer 2 - Credit Karma",
       "location": "Charlotte, NC",
@@ -34657,6 +34752,20 @@
       "fitScore": 6,
       "status": "New",
       "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Avalara",
+      "role": "Software Development Engineer",
+      "location": "United States",
+      "postingKey": "4328693856",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-development-engineer-at-avalara-4328693856",
+      "discoveredAt": "2026-05-12T17:06:51.104204+00:00",
+      "postedAge": "public LinkedIn search capture 2026-05-12; listed 12 hours ago",
+      "fitScore": 5,
+      "status": "Skipped",
+      "reason": "preferred/remote US location",
       "trackerPostingKey": ""
     },
     {
@@ -42074,6 +42183,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-09",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "CommerceIQ",
+      "role": "Forward Deployed Engineer - Mountain View",
+      "postingKey": "7703500003",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/commerceiq/jobs/7703500003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -66232,6 +66354,18 @@
           "contacts": []
         },
         {
+          "key": "7703500003",
+          "company": "CommerceIQ",
+          "role": "Forward Deployed Engineer - Mountain View",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "systems-engineer-kernel-at-coreweave-4347141537",
           "company": "CoreWeave",
           "role": "Systems Engineer, Kernel",
@@ -82031,6 +82165,18 @@
           "key": "8499450002",
           "company": "Chime",
           "role": "Software Engineer, MyPay",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7703500003",
+          "company": "CommerceIQ",
+          "role": "Forward Deployed Engineer - Mountain View",
           "fitScore": 9,
           "status": "Manual Apply Needed",
           "count": 1,

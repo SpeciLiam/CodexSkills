@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 732
+Companies queued: 733
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -504,6 +504,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Crossing Hurdles | Full Stack Software Engineer \| Remote | full-stack-software-engineer-remote-at-crossing-hurdles-4399604454 | 9 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/full-stack-software-engineer-remote-at-crossing-hurdles-4399604454) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Crossing Hurdles | Software Engineer - TypeScript & Go \| $80/hr Remote | software-engineer-typescript-go-%2480-hr-remote-at-crossing-hurdles-4400713087 | 9 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-typescript-go-%2480-hr-remote-at-crossing-hurdles-4400713087) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | CoreWeave | Systems Engineer, Kernel | systems-engineer-kernel-at-coreweave-4347141537 | 9 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/systems-engineer-kernel-at-coreweave-4347141537) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
+| CommerceIQ | Forward Deployed Engineer - Mountain View | 7703500003 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/commerceiq/jobs/7703500003) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Color | New Grad Software Engineer | 4397683013 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4397683013/) |  |  |  |  |
 | Clever | Software Engineer, Infrastructure | 7437730 | 9 | Applied | Yes | [Posting](https://www.clever.com/about/careers?gh_jid=7437730&gh_src=auac04yc1us) |  |  |  |  |
 | CLEAR - Corporate | iOS Engineer | 7819202 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/clear/jobs/7819202) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome. |
