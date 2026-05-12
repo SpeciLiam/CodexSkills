@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T04:28:12.414215+00:00",
+  "generatedAt": "2026-05-12T04:28:59.527168+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 820,
+      "total": 822,
       "applied": 462,
-      "unapplied": 358,
-      "active": 626,
+      "unapplied": 360,
+      "active": 628,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 680,
-      "reachOut": 744,
+      "highFit": 682,
+      "reachOut": 746,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,10 +26,10 @@
       "intakeNew": 51,
       "intakeManual": 382,
       "intakeApplied": 1,
-      "applyRate": 56.3,
+      "applyRate": 56.2,
       "rejectionRate": 12.6,
-      "recruiterWork": 515,
-      "engineerWork": 594,
+      "recruiterWork": 517,
+      "engineerWork": 596,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 200
+        "value": 202
       },
       {
         "name": "Archived",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 371
+        "value": 373
       },
       {
         "name": "LinkedIn",
@@ -156,7 +156,7 @@
       },
       {
         "name": "Remote",
-        "value": 102
+        "value": 104
       },
       {
         "name": "Seattle",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 445
+        "value": 447
       },
       {
         "name": "Full Stack",
@@ -236,7 +236,7 @@
       },
       {
         "score": "8",
-        "count": 149
+        "count": 151
       },
       {
         "score": "9",
@@ -526,8 +526,8 @@
       },
       {
         "date": "2026-05-11",
-        "cumulative": 820,
-        "added": 29,
+        "cumulative": 822,
+        "added": 31,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -23516,6 +23516,56 @@
       "activityDates": [
         "2026-05-11"
       ]
+    },
+    {
+      "company": "Tailscale",
+      "role": "Software Engineer, Product Strategy",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "Remote (United States)",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/tailscale/jobs/4631832005",
+      "postingKey": "4631832005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tailscale/Software_Engineer_Product_Strategy/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tailscale/Software_Engineer_Product_Strategy/Liam_Van_Resume/Liam_Van_Tailscale.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-11 20:04 PT; tailored resume rendered and verified one page; emphasized product strategy proof-of-concept delivery, TypeScript/React product surfaces, backend APIs, cloud integration tooling, release reliability, and technical documentation. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11"
+      ]
+    },
+    {
+      "company": "Defense Unicorns",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "United States - Remote",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/defenseunicorns/jobs/5125804007",
+      "postingKey": "5125804007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Defense Unicorns/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Defense Unicorns/Software_Engineer/Liam_Van_Resume/Liam_Van_Defense_Unicorns.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly Greenhouse intake 2026-05-11 20:04 PT; tailored resume rendered and verified one page; emphasized cloud infrastructure validation, secure API testing, release automation, incident triage, CLI scripting, Docker/cloud workflows, and backend service integration. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11"
+      ]
     }
   ],
   "jobIntake": [
@@ -40661,6 +40711,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Tailscale",
+      "role": "Software Engineer, Product Strategy",
+      "postingKey": "4631832005",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/tailscale/jobs/4631832005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Swarm Aero",
       "role": "Forward Deployed Software Engineer",
       "postingKey": "5007039007",
@@ -41724,6 +41787,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Defense Unicorns",
+      "role": "Software Engineer",
+      "postingKey": "5125804007",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/defenseunicorns/jobs/5125804007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -65117,6 +65193,18 @@
           "contacts": []
         },
         {
+          "key": "5125804007",
+          "company": "Defense Unicorns",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4394474747",
           "company": "Deltek",
           "role": "Software Engineer",
@@ -66080,6 +66168,18 @@
           "key": "4616090005",
           "company": "Tailscale",
           "role": "Software Engineer, Engineering Tooling",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4631832005",
+          "company": "Tailscale",
+          "role": "Software Engineer, Product Strategy",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -80205,6 +80305,18 @@
           "contacts": []
         },
         {
+          "key": "5125804007",
+          "company": "Defense Unicorns",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4394474747",
           "company": "Deltek",
           "role": "Software Engineer",
@@ -80796,6 +80908,18 @@
           "key": "4616090005",
           "company": "Tailscale",
           "role": "Software Engineer, Engineering Tooling",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4631832005",
+          "company": "Tailscale",
+          "role": "Software Engineer, Product Strategy",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
