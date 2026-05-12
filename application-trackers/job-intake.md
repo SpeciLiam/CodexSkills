@@ -2,11 +2,12 @@
 
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
-Jobs discovered: 746
-New: 49 | Queued: 52 | Tailored: 144 | Applied: 15 | Manual: 373 | Skipped: 105 | Duplicate: 3 | Expired: 3
+Jobs discovered: 747
+New: 49 | Queued: 52 | Tailored: 144 | Applied: 15 | Manual: 374 | Skipped: 105 | Duplicate: 3 | Expired: 3
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Greenhouse | Sumo Logic | Software Engineer II - Core Ingest | Remote, United States | 7860073 | https://job-boards.greenhouse.io/sumologic/jobs/7860073 | 2026-05-12T05:05:19.504912+00:00 | 2026-05-12T00:00:00Z | 10 | Manual | Manual apply needed 2026-05-11: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight | 7860073 |
 | Greenhouse | Alchemy | Product Engineer | New York, New York, United States; San Francisco, California, United States | 4033855005 | https://job-boards.greenhouse.io/alchemy/jobs/4033855005 | 2026-05-12T03:02:51.609562+00:00 | 2026-05-12T03:02:48.328Z | 10 | Manual | Manual apply needed 2026-05-11: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight | 4033855005 |
 | Greenhouse | Vercel | Software Engineer, Deployment Infrastructure | Hybrid - San Francisco, New York City | 5633880004 | https://job-boards.greenhouse.io/vercel/jobs/5633880004 | 2026-05-12T01:06:38.777848+00:00 | search crawled 4 days ago | 10 | Applied | Tailored 2026-05-11; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight; Marked applied per user confirmation that all Vercel applications were submitted on 2026-05-11. | 5633880004 |
 | Greenhouse | Airtable | Software Engineer, Infrastructure (4-8 YOE) | San Francisco, CA; New York, NY; Seattle, WA | 8400373002 | https://job-boards.greenhouse.io/airtable/jobs/8400373002 | 2026-05-12T01:06:38.777848+00:00 | search crawled 4 days ago | 10 | Manual | Tailored 2026-05-11; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight | 8400373002 |
