@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T20:35:30.344049+00:00",
+  "generatedAt": "2026-05-12T21:05:06.532874+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 866,
+      "total": 868,
       "applied": 472,
-      "unapplied": 394,
-      "active": 672,
+      "unapplied": 396,
+      "active": 674,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 724,
-      "reachOut": 788,
+      "highFit": 726,
+      "reachOut": 790,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,10 +26,10 @@
       "intakeNew": 52,
       "intakeManual": 416,
       "intakeApplied": 15,
-      "applyRate": 54.5,
+      "applyRate": 54.4,
       "rejectionRate": 12.3,
-      "recruiterWork": 560,
-      "engineerWork": 640,
+      "recruiterWork": 562,
+      "engineerWork": 642,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 26
+        "value": 28
       },
       {
         "name": "Online Assessment",
@@ -70,7 +70,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 298
+        "value": 300
       },
       {
         "name": "Ashby",
@@ -144,7 +144,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 373
+        "value": 375
       },
       {
         "name": "Bay Area",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 466
+        "value": 467
       },
       {
         "name": "Full Stack",
@@ -186,7 +186,7 @@
       },
       {
         "name": "AI/ML",
-        "value": 64
+        "value": 65
       },
       {
         "name": "Forward Deployed",
@@ -236,7 +236,7 @@
       },
       {
         "score": "8",
-        "count": 162
+        "count": 163
       },
       {
         "score": "9",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 402
+        "count": 403
       }
     ],
     "targetCounts": [
@@ -534,8 +534,8 @@
       },
       {
         "date": "2026-05-12",
-        "cumulative": 866,
-        "added": 43,
+        "cumulative": 868,
+        "added": 45,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -24693,6 +24693,56 @@
       "activityDates": [
         "2026-05-12"
       ]
+    },
+    {
+      "company": "Codes Health",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4327410663/",
+      "postingKey": "4327410663",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Codes Health/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Codes Health/Software_Engineer/Liam_Van_Resume/Liam_Van_Codes_Health.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-12 for Codes Health Software Engineer posting 4327410663; emphasized TypeScript/React, Python-backed product workflows, customer-facing shipping, internal tools for ops, LLM applications, API/service integration, fast iteration, and startup-style ownership. Did not claim FastAPI because the source resume supports Python/API work but not that framework by name.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Nxt Level",
+      "role": "Founding Forward Deployed Engineer (AI)",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "New York City Metropolitan Area; travel 30-50%",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4406884510/",
+      "postingKey": "4406884510",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Nxt Level/Founding_Forward_Deployed_Engineer_AI/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Nxt Level/Founding_Forward_Deployed_Engineer_AI/Liam_Van_Resume/Liam_Van_Nxt_Level.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-12 for Nxt Level recruiting posting 4406884510 for an unnamed home-based-care AI-agent client; emphasized AI-assisted testing, LLM applications, workflow automation, Robot Framework/Selenium, customer-facing integrations, field-style debugging, QA/monitoring, deployment validation, and fast product iteration. Did not claim healthcare/EMR production ownership, scraping/reverse-engineering, or direct customer-site deployment beyond supported resume evidence.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
     }
   ],
   "jobIntake": [
@@ -39637,6 +39687,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Codes Health",
+      "role": "Software Engineer",
+      "postingKey": "4327410663",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4327410663/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Cockroach Labs",
       "role": "Member of Technical Staff (Early Career - Developer Infrastructure)",
       "postingKey": "4371198015",
@@ -43586,6 +43649,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Nxt Level",
+      "role": "Founding Forward Deployed Engineer (AI)",
+      "postingKey": "4406884510",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4406884510/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -65728,6 +65804,18 @@
           "contacts": []
         },
         {
+          "key": "4327410663",
+          "company": "Codes Health",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "ai-engineer-forward-deployed-engineer-at-colgate-palmolive-4377208045",
           "company": "Colgate-Palmolive",
           "role": "AI Engineer/ Forward Deployed Engineer",
@@ -70173,6 +70261,18 @@
           "role": "Forward Deployed Engineer",
           "fitScore": 8,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4406884510",
+          "company": "Nxt Level",
+          "role": "Founding Forward Deployed Engineer (AI)",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -81404,6 +81504,18 @@
           "contacts": []
         },
         {
+          "key": "4327410663",
+          "company": "Codes Health",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "ai-engineer-forward-deployed-engineer-at-colgate-palmolive-4377208045",
           "company": "Colgate-Palmolive",
           "role": "AI Engineer/ Forward Deployed Engineer",
@@ -85609,6 +85721,18 @@
           "role": "Forward Deployed Engineer",
           "fitScore": 8,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4406884510",
+          "company": "Nxt Level",
+          "role": "Founding Forward Deployed Engineer (AI)",
+          "fitScore": 8,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
