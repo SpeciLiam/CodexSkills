@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 695
+Companies queued: 696
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -69,6 +69,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Superblocks | Software Engineer, Cloud Infrastructure | 4507226005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/superblocks/jobs/4507226005) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Superblocks | Backend Engineer - AI Agent & Governance | 4590752005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/superblocks/jobs/4590752005) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Sumo Logic | Software Engineer II - Core Platform | 7485892 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/sumologic/jobs/7485892) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
+| Sumo Logic | Software Engineer II - Core Ingest | 7860073 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/sumologic/jobs/7860073) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | StubHub | Software Engineer I (New Grad) - Consumer Experience | 4825411101 | 10 | Applied | Yes | [Posting](https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4825411101?gh_src=47e65a22teu) |  |  |  |  |
 | StubHub | Software Engineer II – Consumer Experience (Full-Stack) | 4792613101 | 10 | Applied | Yes | [Posting](https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4792613101) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | StubHub | Software Engineer II - (Fullstack / Product Engineering) | 4790893101 | 10 | Applied | Yes | [Posting](https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4790893101) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
