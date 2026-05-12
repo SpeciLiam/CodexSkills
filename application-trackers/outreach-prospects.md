@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 692
+Companies queued: 694
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -31,6 +31,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Vercel | Software Engineer, Dashboard | 5808568004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5808568004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Vercel | Software Engineer, CDN | 5179639004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5179639004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Vercel | Software Engineer, Deployment Infrastructure | 5633880004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5633880004) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. Manual apply needed: Computer Use approval denied 2026-05-11. |
+| Vercel | Software Engineer, Agent | 5704320004 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/vercel/jobs/5704320004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Valon | Software Engineer - New Grad | 4409152006 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/valon/jobs/4409152006) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Valon | Software Engineer | 4402156847 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4402156847/?trackingId=8Co7I66maGhvzcjOzR5eyQ%3D%3D&refId=glJ8A%2B2sNgHqb%2Bh7kMbvlQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BZWay9dJ3Tkm72OKWKEYJDw%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | Valon | Software Engineer, Product | 5629764004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/valon/jobs/5629764004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
@@ -195,6 +196,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Kensho Technologies | Full-Stack Software Engineer II (JavaScript) | full-stack-software-engineer-ii-javascript-at-kensho-technologies-4366929870 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/full-stack-software-engineer-ii-javascript-at-kensho-technologies-4366929870) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Julius AI | Software Engineer - Product (New Grad) | 83d88b90-1b7f-476c-a0e8-10b1cb71639e | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/julius/83d88b90-1b7f-476c-a0e8-10b1cb71639e/application?utm_source=R7w09vvYr1) |  |  |  |  |
 | JPMorganChase | Software Engineer II - Fullstack - Python/React | software-engineer-ii-fullstack-python-react-at-jpmorganchase-4397428728 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-fullstack-python-react-at-jpmorganchase-4397428728) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
+| Jampack AI | Founding Engineer - AI Agents | 4377186706 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4377186706/) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | Iterable | Software Engineer II | 7783095 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/iterable/jobs/7783095) |  |  |  |  |
 | Invisible Technologies | Software Engineer - Forward Deployed | 4697599101 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/invisibletech/jobs/4697599101) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Intuit | Center of Money Software Engineer 1 | 87369448720 | 10 | Applied | Yes | [Posting](https://jobs.intuit.com/job/-/-/27595/87369448720?cid=pjob_li_click_us_swe-other-fy26_cn_text_job_int-tm&p_sid=nYDXj0b&p_uid=fS3fiu8oN1&ss=paid&utm_campaign=&utm_content=pj_board&utm_medium=jobad&utm_source=linkedin+slots+(intuit) |  |  |  |  |

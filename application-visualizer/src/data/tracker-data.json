@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T03:04:52.064878+00:00",
+  "generatedAt": "2026-05-12T04:26:53.405414+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 819,
-      "applied": 461,
-      "unapplied": 358,
-      "active": 625,
+      "total": 821,
+      "applied": 462,
+      "unapplied": 359,
+      "active": 627,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 679,
-      "reachOut": 743,
+      "highFit": 681,
+      "reachOut": 745,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
@@ -28,15 +28,15 @@
       "intakeApplied": 0,
       "applyRate": 56.3,
       "rejectionRate": 12.6,
-      "recruiterWork": 514,
-      "engineerWork": 593,
+      "recruiterWork": 516,
+      "engineerWork": 595,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 396
+        "value": 397
       },
       {
         "name": "Manual Apply Needed",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 22
+        "value": 23
       },
       {
         "name": "Online Assessment",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 371
+        "value": 372
       },
       {
         "name": "LinkedIn",
-        "value": 294
+        "value": 295
       },
       {
         "name": "Ashby",
@@ -144,11 +144,11 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 357
+        "value": 358
       },
       {
         "name": "Bay Area",
-        "value": 192
+        "value": 193
       },
       {
         "name": "Other",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 445
+        "value": 446
       },
       {
         "name": "Full Stack",
@@ -190,7 +190,7 @@
       },
       {
         "name": "AI/ML",
-        "value": 56
+        "value": 57
       },
       {
         "name": "Infra/Platform",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 381
+        "count": 383
       }
     ],
     "targetCounts": [
@@ -514,16 +514,16 @@
       },
       {
         "date": "2026-05-10",
-        "cumulative": 791,
-        "added": 86,
-        "applied": 15,
+        "cumulative": 792,
+        "added": 87,
+        "applied": 16,
         "rejected": 0,
         "interviewing": 0
       },
       {
         "date": "2026-05-11",
-        "cumulative": 819,
-        "added": 28,
+        "cumulative": 821,
+        "added": 29,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -537,15 +537,15 @@
         "bestFit": 10
       },
       {
-        "company": "Scale AI",
-        "roles": 10,
-        "avgFit": 10.0,
+        "company": "Vercel",
+        "roles": 11,
+        "avgFit": 9.64,
         "bestFit": 10
       },
       {
-        "company": "Vercel",
+        "company": "Scale AI",
         "roles": 10,
-        "avgFit": 9.6,
+        "avgFit": 10.0,
         "bestFit": 10
       },
       {
@@ -857,6 +857,15 @@
         "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5633880004"
       },
       {
+        "company": "Vercel",
+        "role": "Software Engineer, Agent",
+        "fitScore": 10,
+        "status": "Applied",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5704320004"
+      },
+      {
         "company": "Valon",
         "role": "Software Engineer - New Grad",
         "fitScore": 10,
@@ -990,15 +999,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/twitch/jobs/8459320002"
-      },
-      {
-        "company": "Twitch",
-        "role": "Software Engineer II, Safety",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://job-boards.greenhouse.io/twitch/jobs/8499608002"
       }
     ],
     "recruiterBatch": {
@@ -23488,6 +23488,56 @@
         "2026-05-11",
         "2026-05-11"
       ]
+    },
+    {
+      "company": "Jampack AI",
+      "role": "Founding Engineer - AI Agents",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-11",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4377186706/",
+      "postingKey": "4377186706",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Jampack AI/Founding_Engineer_AI_Agents/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Jampack AI/Founding_Engineer_AI_Agents/Liam_Van_Resume/Liam_Van_Jampack_AI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-11 for Jampack AI founding AI agents role; emphasized AI-assisted API testing, LLM recommendations, retrieval/search pipelines, TypeScript/React/NestJS product surfaces, cloud workflow validation, production safety, and high-ownership customer-facing execution.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11"
+      ]
+    },
+    {
+      "company": "Vercel",
+      "role": "Software Engineer, Agent",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-10",
+      "location": "Hybrid - San Francisco",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5704320004",
+      "postingKey": "5704320004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Vercel/Software_Engineer_Agent/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Vercel/Software_Engineer_Agent/Liam_Van_Resume_2/Liam_Van_Vercel.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application submitted 2026-05-11 via Greenhouse confirmation page: https://job-boards.greenhouse.io/vercel/jobs/5704320004/confirmation",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-11"
+      ]
     }
   ],
   "jobIntake": [
@@ -34224,6 +34274,19 @@
       "notes": "Queued by resume-tailor after tailored resume update. Manual apply needed: Computer Use approval denied 2026-05-11."
     },
     {
+      "company": "Vercel",
+      "role": "Software Engineer, Agent",
+      "postingKey": "5704320004",
+      "fitScore": 10,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/vercel/jobs/5704320004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Valon",
       "role": "Software Engineer - New Grad",
       "postingKey": "4409152006",
@@ -36353,6 +36416,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Jampack AI",
+      "role": "Founding Engineer - AI Agents",
+      "postingKey": "4377186706",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4377186706/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-11",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -62136,6 +62212,18 @@
           "contacts": []
         },
         {
+          "key": "4377186706",
+          "company": "Jampack AI",
+          "role": "Founding Engineer - AI Agents",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4411862168",
           "company": "Koah",
           "role": "Software Engineer - Product",
@@ -63389,6 +63477,18 @@
           "role": "Software Engineer, Deployment Infrastructure",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5704320004",
+          "company": "Vercel",
+          "role": "Software Engineer, Agent",
+          "fitScore": 10,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -77272,6 +77372,18 @@
           "contacts": []
         },
         {
+          "key": "4377186706",
+          "company": "Jampack AI",
+          "role": "Founding Engineer - AI Agents",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4411862168",
           "company": "Koah",
           "role": "Software Engineer - Product",
@@ -78681,6 +78793,18 @@
           "role": "Software Engineer, Deployment Infrastructure",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5704320004",
+          "company": "Vercel",
+          "role": "Software Engineer, Agent",
+          "fitScore": 10,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
