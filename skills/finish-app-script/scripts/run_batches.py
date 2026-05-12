@@ -141,7 +141,9 @@ For each row:
   evidence, projects, or concise FRQ/custom written drafts. Click the final Submit/Submit application
   button, wait for a confirmation page or confirmation text, capture it in
   confirmationEvidence, and set state to "submitted". Do not leave a
-  high-confidence application staged.
+  high-confidence application staged or mark it manual merely because it is at
+  the final submit button; final review is the point where high-confidence rows
+  should be submitted.
 - Before clicking final Submit, make a short explicit decision: "submit is safe
   because <reason>". Base the decision on the row's confidence score: only high
   confidence may submit after truthful completion. Medium and low confidence
