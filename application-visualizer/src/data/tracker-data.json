@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T16:03:35.612531+00:00",
+  "generatedAt": "2026-05-12T16:04:26.751323+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,10 +21,10 @@
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 782,
-      "intakeQueued": 68,
-      "intakeNew": 50,
-      "intakeManual": 390,
+      "intakeJobs": 794,
+      "intakeQueued": 71,
+      "intakeNew": 52,
+      "intakeManual": 396,
       "intakeApplied": 15,
       "applyRate": 55.9,
       "rejectionRate": 12.3,
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 390
+        "value": 396
       },
       {
         "name": "Tailored",
@@ -270,15 +270,15 @@
       },
       {
         "name": "Skipped",
-        "value": 106
+        "value": 107
       },
       {
         "name": "Queued",
-        "value": 68
+        "value": 71
       },
       {
         "name": "New",
-        "value": 50
+        "value": 52
       },
       {
         "name": "Applied",
@@ -300,11 +300,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 543
+        "value": 546
       },
       {
         "name": "LinkedIn",
-        "value": 239
+        "value": 248
       }
     ],
     "timeline": [
@@ -24031,9 +24031,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-12"
+      ]
     },
     {
       "company": "DoorDash USA",
@@ -24054,9 +24056,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-12"
+      ]
     },
     {
       "company": "Capital Technology Group",
@@ -24077,9 +24081,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-12"
+      ]
     },
     {
       "company": "Aura",
@@ -24100,9 +24106,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-12"
+      ]
     },
     {
       "company": "Amplitude",
@@ -24123,9 +24131,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-12"
+      ]
     },
     {
       "company": "Life360",
@@ -24146,12 +24156,70 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-12"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Thatch",
+      "role": "Software Engineer: Full Stack",
+      "location": "Remote (US); San Francisco, California, United States",
+      "postingKey": "5113761008",
+      "jobUrl": "https://job-boards.greenhouse.io/thatch/jobs/5113761008",
+      "discoveredAt": "2026-05-12T16:03:50.485444+00:00",
+      "postedAge": "public Greenhouse result captured 2026-05-12; crawled 2 months ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Peloton Interactive",
+      "role": "Software Engineer I",
+      "location": "New York, NY",
+      "postingKey": "4403212491",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4403212491/",
+      "discoveredAt": "2026-05-12T16:03:50.485444+00:00",
+      "postedAge": "public LinkedIn result captured 2026-05-12; listed 6 minutes ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Mercor",
+      "role": "Software Engineer, Backend",
+      "location": "San Francisco, CA",
+      "postingKey": "4405680291",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4405680291/",
+      "discoveredAt": "2026-05-12T16:03:50.485444+00:00",
+      "postedAge": "public LinkedIn result captured 2026-05-12; listed 48 minutes ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Intryc (YC S24)",
+      "role": "Fullstack Software Engineer",
+      "location": "San Francisco, CA",
+      "postingKey": "4404785401",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4404785401/",
+      "discoveredAt": "2026-05-12T16:03:50.485444+00:00",
+      "postedAge": "public LinkedIn result captured 2026-05-12; listed 59 minutes ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
     {
       "source": "Greenhouse",
       "company": "Runway",
@@ -24274,9 +24342,9 @@
       "discoveredAt": "2026-05-12T16:01:24.853776+00:00",
       "postedAge": "2026-05-08",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, preferred/remote US location",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4656120006"
     },
     {
       "source": "Greenhouse",
@@ -24288,9 +24356,9 @@
       "discoveredAt": "2026-05-12T16:01:24.853776+00:00",
       "postedAge": "2026-05-05",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, SF/Bay Area preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "6458514"
     },
     {
       "source": "Greenhouse",
@@ -24302,9 +24370,9 @@
       "discoveredAt": "2026-05-12T16:01:24.853776+00:00",
       "postedAge": "2026-04-12",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, preferred/remote US location",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "5011457007"
     },
     {
       "source": "Greenhouse",
@@ -24316,9 +24384,9 @@
       "discoveredAt": "2026-05-12T16:01:24.853776+00:00",
       "postedAge": "2026-04-12",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, preferred/remote US location",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "5837490004"
     },
     {
       "source": "Greenhouse",
@@ -24330,9 +24398,9 @@
       "discoveredAt": "2026-05-12T16:01:24.853776+00:00",
       "postedAge": "2026-05-12",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, SF/Bay Area preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "8174490002"
     },
     {
       "source": "Greenhouse",
@@ -30160,6 +30228,34 @@
     },
     {
       "source": "Greenhouse",
+      "company": "Thatch",
+      "role": "Software Engineer: Foundations",
+      "location": "Remote (US); San Francisco, California, United States",
+      "postingKey": "4615090008",
+      "jobUrl": "https://job-boards.greenhouse.io/thatch/jobs/4615090008",
+      "discoveredAt": "2026-05-12T16:03:50.485444+00:00",
+      "postedAge": "public Greenhouse result captured 2026-05-12; crawled 3 months ago",
+      "fitScore": 9,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Redwood Materials",
+      "role": "DevOps Software Engineer, Energy Storage",
+      "location": "San Francisco, California, United States",
+      "postingKey": "5737848004",
+      "jobUrl": "https://job-boards.greenhouse.io/redwoodmaterials/jobs/5737848004",
+      "discoveredAt": "2026-05-12T16:03:50.485444+00:00",
+      "postedAge": "public Greenhouse result captured 2026-05-12; crawled 3 months ago",
+      "fitScore": 9,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Vercel",
       "role": "Software Engineer, v0",
       "location": "San Francisco, CA",
@@ -31573,6 +31669,48 @@
       "trackerPostingKey": "5592469004"
     },
     {
+      "source": "LinkedIn",
+      "company": "Microsoft",
+      "role": "Full Stack Engineer",
+      "location": "Mountain View, CA",
+      "postingKey": "4405664260",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4405664260/",
+      "discoveredAt": "2026-05-12T16:03:50.485444+00:00",
+      "postedAge": "public LinkedIn result captured 2026-05-12; listed 1 hour ago",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Mercor",
+      "role": "Software Engineer, Frontend",
+      "location": "San Francisco, CA",
+      "postingKey": "4405659781",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4405659781/",
+      "discoveredAt": "2026-05-12T16:03:50.485444+00:00",
+      "postedAge": "public LinkedIn result captured 2026-05-12; listed 48 minutes ago",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "HackerRank",
+      "role": "Backend Engineer II",
+      "location": "Santa Clara, CA",
+      "postingKey": "4399933005",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4399933005/",
+      "discoveredAt": "2026-05-12T16:03:50.485444+00:00",
+      "postedAge": "public LinkedIn result captured 2026-05-12; listed 1 hour ago",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "Greenhouse",
       "company": "Linear",
       "role": "Software Engineer, Product",
@@ -31610,9 +31748,9 @@
       "discoveredAt": "2026-05-12T16:01:24.853776+00:00",
       "postedAge": "2026-05-08",
       "fitScore": 8,
-      "status": "Queued",
-      "reason": "SWE-family role, preferred/remote US location",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "8517378002"
     },
     {
       "source": "Greenhouse",
@@ -32862,6 +33000,20 @@
     },
     {
       "source": "LinkedIn",
+      "company": "Intuit",
+      "role": "Software Engineer 2 - Credit Karma",
+      "location": "Charlotte, NC",
+      "postingKey": "4395281767",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4395281767/",
+      "discoveredAt": "2026-05-12T16:03:50.485444+00:00",
+      "postedAge": "public LinkedIn result captured 2026-05-12; listed 1 hour ago",
+      "fitScore": 7,
+      "status": "New",
+      "reason": "SWE-family role, early-career signal, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
       "company": "TENEX.AI",
       "role": "Forward Deployed Engineer",
       "location": "United States",
@@ -33516,6 +33668,20 @@
       "fitScore": 7,
       "status": "New",
       "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Smarsh",
+      "role": "Software Engineer - UI & Backend Services",
+      "location": "Portland, OR",
+      "postingKey": "4405638761",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4405638761/",
+      "discoveredAt": "2026-05-12T16:03:50.485444+00:00",
+      "postedAge": "public LinkedIn result captured 2026-05-12; listed 2 hours ago",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, location needs review",
       "trackerPostingKey": ""
     },
     {
@@ -34440,6 +34606,20 @@
       "fitScore": 5,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Visa",
+      "role": "Software Engineer",
+      "location": "Bellevue, WA",
+      "postingKey": "4401499033",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4401499033/",
+      "discoveredAt": "2026-05-12T16:03:50.485444+00:00",
+      "postedAge": "public LinkedIn result captured 2026-05-12; listed 2 hours ago",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "SWE-family role, location needs review",
       "trackerPostingKey": ""
     },
     {

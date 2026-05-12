@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 712
+Companies queued: 718
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -10,6 +10,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Company | Role | Posting Key | Fit Score | Status | Reach Out | Job Link | Prospect Count | Ready Emails | Last Updated | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Zettabyte | Software Engineer (New Grad) | 50a9c6dc-7225-4ff0-a914-69d1dd325d6a | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/zettabyte-space/50a9c6dc-7225-4ff0-a914-69d1dd325d6a/application?utm_source=LinkedInPaid) |  |  |  |  |
+| YugabyteDB | Platform Software Engineer (Control Plane) | 4656120006 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/yugabyte/jobs/4656120006) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Yext | Software Engineer | 7085149 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/yext/jobs/7085149) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Writer | Forward Deployed Engineer | 4809387007 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/writer/jobs/4809387007) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Wonderschool | Early Career Software Engineer - Applied AI | 4406127370 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4406127370/) |  |  |  |  |
@@ -264,6 +265,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | DRW | Full Stack Engineer, Blockchain Product | full-stack-engineer-blockchain-product-at-drw-4342884810 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/full-stack-engineer-blockchain-product-at-drw-4342884810) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Dorsia | Product Engineer | 4827963007 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/dorsia/jobs/4827963007) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | DoorDash USA | Software Engineer II, New Verticals | 7155159 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/doordashusa/jobs/7155159) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
+| DoorDash USA | Software Engineer II, Data Engineering | 6458514 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/doordashusa/jobs/6458514) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Disney | Software Engineer II - Data Transformation | 91303727120 | 10 | Applied | Yes | [Posting](https://www.disneycareers.com/en/job/-/-/391/91303727120?source=LINKEDIN_JOB_SLOTS) |  |  |  |  |
 | Disney | Software Engineer II | 93426467616 | 10 | Applied | Yes | [Posting](https://www.disneycareers.com/en/job/-/-/391/93426467616?source=LINKEDIN_JOB_SLOTS) |  |  |  |  |
 | Dex | Product Engineer | 5620556004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/dex/jobs/5620556004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
@@ -308,6 +310,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Censys | Software Engineer (Backend), SaaS Platform | 8538086002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/censys/jobs/8538086002) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Censys | Backend Software Engineer | 8127725002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/censys/jobs/8127725002) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | CareerWellness | Backend Engineer | 4411313503 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4411313503/?trackingId=EBVYXiR1yLpVpCccxqA3YA%3D%3D&refId=%2FJ95SvUHr%2BJRbsyOTJu5NA%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BtOtbKfUjRbqzE0274Rmn2A%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
+| Capital Technology Group | Software Engineer | 5011457007 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/capitaltg/jobs/5011457007) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Capco | Full Stack Engineer | 7558557 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/capco/jobs/7558557) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Cadence | Software Engineer I | Software-Engineer-I_R53009-1 | 10 | Applied | Yes | [Posting](https://cadence.wd1.myworkdayjobs.com/External_Careers/job/SAN-JOSE/Software-Engineer-I_R53009-1?source=LinkedIn) |  |  |  |  |
 | Broccoli AI | Software Engineer | 3e59cf67-61dd-4210-b5dc-c7338fa91eba | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/broccoli/3e59cf67-61dd-4210-b5dc-c7338fa91eba/application?utm_source=y48Rnx8X6e&src=LinkedInPaid) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-10; marked applied per user confirmation. |
@@ -326,6 +329,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Automat | Software Engineer (Junior/Intermediate) | a4172515-0353-47ec-9c71-631a294aa137 | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/automat/a4172515-0353-47ec-9c71-631a294aa137/application?utm_source=bxPLPgVwzr) |  |  |  |  |
 | AustinWorks | Forward Deployed Engineer | 4409635237 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4409635237/) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | Aurora | Software Engineer I, FinOps | 8450213002 | 10 | Applied | Yes | [Posting](https://aurora.tech/careers/8450213002?gh_src=b6049de52us) |  |  |  |  |
+| Aura | Software Engineer, Backend | 5837490004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/aura798/jobs/5837490004) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Attentive | Software Engineer I, AI Product | 4195625009 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/attentive/jobs/4195625009?gh_src=63pk6gu69us) |  |  |  |  |
 | Attentive | Software Engineer I | 4121843009 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/attentive/jobs/4121843009?gh_jid=4121843009) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Attentive | Software Engineer II, Developer Experience | 4120600009 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/attentive/jobs/4120600009) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
@@ -355,6 +359,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Amplitude | Software Engineer II, Web | 7949946002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/amplitude/jobs/7949946002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Amplitude | Software Engineer I, Growth Platform | 7949946002-growth-platform | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/amplitude/jobs/7949946002?gh_jid=7949946002-growth-platform) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Amplitude | Software Engineer II, Product Adoption | 7949946002-product-adoption | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/amplitude/jobs/7949946002?gh_jid=7949946002-product-adoption) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
+| Amplitude | Software Engineer II, AI Security | 8174490002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/amplitude/jobs/8174490002) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Alchemy | Software Engineer (Backend) - Distributed Systems | 4648515005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/alchemy/jobs/4648515005) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Alchemy | Software Engineer - Solutions | 4538329005 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/alchemy/jobs/4538329005) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Alchemy | Product Engineer | 4033855005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/alchemy/jobs/4033855005) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
@@ -587,6 +592,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Loop | Software Engineer, Full-Stack | 4398089710 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4398089710) |  |  |  |  |
 | LinkedIn | Software Engineer - Applications | 4391881641 | 8 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/4391881641/) |  |  |  |  |
 | Lila Sciences | Software Engineer I, Instrument Software | 4388586015 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4388586015/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
+| Life360 | Software Engineer AI-Native, mobile Foundry | 8517378002 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/life360/jobs/8517378002) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Lazarus | Software Engineer (Forward Deployed) | 5089480007 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/lazarusenterprises/jobs/5089480007) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | LaunchDarkly | Full Stack Engineer - Observability | 7689440003 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/launchdarkly/jobs/7689440003) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | KLA | Software Engineer | 4382077091 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4382077091/) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. Application submitted 2026-05-10; marked applied per user confirmation. |
