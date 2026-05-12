@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 689
+Companies queued: 692
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -55,6 +55,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Trexquant Investment LP | Software Engineer - Early Career (USA) | 4330689211 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4330689211/) |  |  |  |  |
 | Translucent | Software Engineer | 4038826009 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/translucent/jobs/4038826009) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Trace3 | Software Engineer II | 7752983 | 10 | Archived | Yes | [Posting](https://job-boards.greenhouse.io/trace3/jobs/7752983) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update.; Archived 2026-05-07: Greenhouse page says the job is no longer open. |
+| Thesis | Full Stack Engineer | 5082367008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/trovohealth/jobs/5082367008) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | The Trade Desk | Software Engineer II | 5102422007 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/thetradedesk/jobs/5102422007?gh_src=1c01b2067us) |  |  |  |  |
 | The New York Times | Software Engineer, Scoop Core | 4673616005 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/thenewyorktimes/jobs/4673616005) |  |  |  |  |
 | The New York Times | Software Engineer AI Platforms and Products Frontend | 4680447005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/thenewyorktimes/jobs/4680447005) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
@@ -274,6 +275,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Color Health | New Grad Software Engineer | 6c7f692a-848b-41a4-b79b-4a9bba3aeb6d | 10 | Applied | Yes | [Posting](https://app.careerpuck.com/job-board/color-health/job/6c7f692a-848b-41a4-b79b-4a9bba3aeb6d) |  |  |  |  |
 | Colgate-Palmolive | AI Engineer/ Forward Deployed Engineer | ai-engineer-forward-deployed-engineer-at-colgate-palmolive-4377208045 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/ai-engineer-forward-deployed-engineer-at-colgate-palmolive-4377208045) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Cockroach Labs | Member of Technical Staff (Early Career - Developer Infrastructure) | 4371198015 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4371198015/?trackingId=ksALDwVweFm96Oh0ypFzpQ%3D%3D&refId=glJ8A%2B2sNgHqb%2Bh7kMbvlQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BO1XEeDlMTAS5EPlH%2ByWXLg%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
+| Coast | Product Engineer, Foundations Team | 5973821004 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/coast/jobs/5973821004) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | ClickHouse | Full Stack Software Engineer - Control Plane | 5587666004 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/clickhouse/jobs/5587666004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Clear Street | Backend Software Engineer - Reference Data Services | 6675504 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/clearstreet/jobs/6675504) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Clear Street | Software Engineer - Infrastructure | 7535167 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/clearstreet/jobs/7535167) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
@@ -347,6 +349,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Amplitude | Software Engineer II, Product Adoption | 7949946002-product-adoption | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/amplitude/jobs/7949946002?gh_jid=7949946002-product-adoption) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Alchemy | Software Engineer (Backend) - Distributed Systems | 4648515005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/alchemy/jobs/4648515005) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Alchemy | Software Engineer - Solutions | 4538329005 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/alchemy/jobs/4538329005) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
+| Alchemy | Product Engineer | 4033855005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/alchemy/jobs/4033855005) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | Airtable | Software Engineer, Infrastructure (4-8 YOE) | 8400373002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/airtable/jobs/8400373002) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. Manual apply needed: Computer Use approval denied 2026-05-11. |
 | Airbnb | iOS Software Engineer, Airbnb - New Grad | 7859317 | 10 | Applied | Yes | [Posting](https://careers.airbnb.com/positions/7859317/?gh_jid=7859317) |  |  |  |  |
 | Aflac | Software Engineer I | software-engineer-i-at-aflac-4337203348 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-i-at-aflac-4337203348) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
