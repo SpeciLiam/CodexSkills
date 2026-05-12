@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T16:05:14.103031+00:00",
+  "generatedAt": "2026-05-12T16:06:43.665184+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 845,
+      "total": 853,
       "applied": 472,
-      "unapplied": 373,
-      "active": 652,
+      "unapplied": 381,
+      "active": 660,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 705,
-      "reachOut": 769,
+      "highFit": 713,
+      "reachOut": 777,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,10 +26,10 @@
       "intakeNew": 52,
       "intakeManual": 396,
       "intakeApplied": 15,
-      "applyRate": 55.9,
+      "applyRate": 55.3,
       "rejectionRate": 12.3,
-      "recruiterWork": 541,
-      "engineerWork": 620,
+      "recruiterWork": 549,
+      "engineerWork": 628,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 216
+        "value": 224
       },
       {
         "name": "Archived",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 396
+        "value": 404
       },
       {
         "name": "LinkedIn",
@@ -144,11 +144,11 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 361
+        "value": 364
       },
       {
         "name": "Bay Area",
-        "value": 197
+        "value": 198
       },
       {
         "name": "Other",
@@ -156,7 +156,7 @@
       },
       {
         "name": "Remote",
-        "value": 114
+        "value": 118
       },
       {
         "name": "Seattle",
@@ -174,15 +174,15 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 457
+        "value": 461
       },
       {
         "name": "Full Stack",
-        "value": 102
+        "value": 104
       },
       {
         "name": "Backend",
-        "value": 94
+        "value": 95
       },
       {
         "name": "AI/ML",
@@ -198,7 +198,7 @@
       },
       {
         "name": "Frontend",
-        "value": 14
+        "value": 15
       },
       {
         "name": "Data",
@@ -236,15 +236,15 @@
       },
       {
         "score": "8",
-        "count": 158
+        "count": 160
       },
       {
         "score": "9",
-        "count": 153
+        "count": 155
       },
       {
         "score": "10",
-        "count": 394
+        "count": 398
       }
     ],
     "targetCounts": [
@@ -534,8 +534,8 @@
       },
       {
         "date": "2026-05-12",
-        "cumulative": 845,
-        "added": 22,
+        "cumulative": 853,
+        "added": 30,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -657,6 +657,12 @@
         "bestFit": 10
       },
       {
+        "company": "Ramp",
+        "roles": 5,
+        "avgFit": 6.2,
+        "bestFit": 10
+      },
+      {
         "company": "Robinhood",
         "roles": 5,
         "avgFit": 6.0,
@@ -676,12 +682,6 @@
       },
       {
         "company": "Handshake",
-        "roles": 4,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Flex",
         "roles": 4,
         "avgFit": 10.0,
         "bestFit": 10
@@ -24005,10 +24005,9 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-12; tailored AI tooling resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Hourly intake 2026-05-12; tailored AI tooling resume rendered and verified one page; emphasized Python, LLM/API tooling, backend integrations, data workflows, monitoring, and stakeholder-facing automation. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
+      "notes": "Hourly intake 2026-05-12; tailored AI tooling resume rendered and verified one page; emphasized Python, LLM/API tooling, backend integrations, data workflows, monitoring, and stakeholder-facing automation. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12",
         "2026-05-12"
       ]
     },
@@ -24025,16 +24024,15 @@
       "source": "Greenhouse",
       "jobLink": "https://job-boards.greenhouse.io/yugabyte/jobs/4656120006",
       "postingKey": "4656120006",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/YugabyteDB/Platform_Software_Engineer_Control_Plane/Liam_Van_Resume",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/YugabyteDB/Platform_Software_Engineer_Control_Plane/Liam_Van_Resume/Liam_Van_YugabyteDB.pdf",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/YugabyteDB/Platform_Software_Engineer_Control_Plane/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/YugabyteDB/Platform_Software_Engineer_Control_Plane/Liam_Van_Resume_2/Liam_Van_YugabyteDB.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Hourly Greenhouse intake 2026-05-12: tailored platform/control-plane resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-12; tailored platform/control-plane resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12",
         "2026-05-12"
       ]
     },
@@ -24051,16 +24049,15 @@
       "source": "Greenhouse",
       "jobLink": "https://job-boards.greenhouse.io/doordashusa/jobs/6458514",
       "postingKey": "6458514",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DoorDash USA/Software_Engineer_II_Data_Engineering/Liam_Van_Resume",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DoorDash USA/Software_Engineer_II_Data_Engineering/Liam_Van_Resume/Liam_Van_DoorDash_USA.pdf",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DoorDash USA/Software_Engineer_II_Data_Engineering/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DoorDash USA/Software_Engineer_II_Data_Engineering/Liam_Van_Resume_2/Liam_Van_DoorDash_USA.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Hourly Greenhouse intake 2026-05-12: tailored data engineering resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-12; tailored data engineering resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12",
         "2026-05-12"
       ]
     },
@@ -24077,16 +24074,15 @@
       "source": "Greenhouse",
       "jobLink": "https://job-boards.greenhouse.io/capitaltg/jobs/5011457007",
       "postingKey": "5011457007",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Capital Technology Group/Software_Engineer/Liam_Van_Resume",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Capital Technology Group/Software_Engineer/Liam_Van_Resume/Liam_Van_Capital_Technology_Group.pdf",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Capital Technology Group/Software_Engineer/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Capital Technology Group/Software_Engineer/Liam_Van_Resume_2/Liam_Van_Capital_Technology_Group.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Hourly Greenhouse intake 2026-05-12: tailored civic-tech software engineering resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-12; tailored software engineering resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12",
         "2026-05-12"
       ]
     },
@@ -24103,13 +24099,13 @@
       "source": "Greenhouse",
       "jobLink": "https://job-boards.greenhouse.io/aura798/jobs/5837490004",
       "postingKey": "5837490004",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Aura/Software_Engineer_Backend/Liam_Van_Resume",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Aura/Software_Engineer_Backend/Liam_Van_Resume/Liam_Van_Aura.pdf",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Aura/Software_Engineer_Backend/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Aura/Software_Engineer_Backend/Liam_Van_Resume_2/Liam_Van_Aura.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "notes": "Hourly Greenhouse intake 2026-05-12; tailored backend resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-12"
@@ -24128,15 +24124,18 @@
       "source": "Greenhouse",
       "jobLink": "https://job-boards.greenhouse.io/amplitude/jobs/8174490002",
       "postingKey": "8174490002",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Amplitude/Software_Engineer_II_AI_Security/Liam_Van_Resume",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Amplitude/Software_Engineer_II_AI_Security/Liam_Van_Resume/Liam_Van_Amplitude.pdf",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Amplitude/Software_Engineer_II_AI_Security/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Amplitude/Software_Engineer_II_AI_Security/Liam_Van_Resume_2/Liam_Van_Amplitude.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Hourly Greenhouse intake 2026-05-12; tailored AI security resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Hourly Greenhouse intake 2026-05-12: tailored AI security resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Hourly Greenhouse intake 2026-05-12; tailored AI/security tooling resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-12",
+        "2026-05-12",
+        "2026-05-12",
         "2026-05-12"
       ]
     },
@@ -24153,13 +24152,216 @@
       "source": "Greenhouse",
       "jobLink": "https://job-boards.greenhouse.io/life360/jobs/8517378002",
       "postingKey": "8517378002",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Life360/Software_Engineer_AI_Native_mobile_Foundry/Liam_Van_Resume",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Life360/Software_Engineer_AI_Native_mobile_Foundry/Liam_Van_Resume/Liam_Van_Life360.pdf",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Life360/Software_Engineer_AI_Native_mobile_Foundry/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Life360/Software_Engineer_AI_Native_mobile_Foundry/Liam_Van_Resume_2/Liam_Van_Life360.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Hourly Greenhouse intake 2026-05-12; tailored AI-native/mobile full-stack resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Hourly Greenhouse intake 2026-05-12: tailored AI-native partner-platform resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Hourly Greenhouse intake 2026-05-12; tailored AI-native product engineering resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12",
+        "2026-05-12",
+        "2026-05-12",
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Runway",
+      "role": "Software Engineer, Full Stack",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/runwayml/jobs/4630216006",
+      "postingKey": "4630216006",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Runway/Software_Engineer_Full_Stack/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Runway/Software_Engineer_Full_Stack/Liam_Van_Resume_2/Liam_Van_Runway.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Ramp",
+      "role": "Software Engineer, Backend",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/ramp/jobs/7868845002",
+      "postingKey": "7868845002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ramp/Software_Engineer_Backend/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ramp/Software_Engineer_Backend/Liam_Van_Resume/Liam_Van_Ramp.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Persona",
+      "role": "Software Engineer, Product",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "San Francisco, CA; New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/persona/jobs/7862464002",
+      "postingKey": "7862464002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Persona/Software_Engineer_Product/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Persona/Software_Engineer_Product/Liam_Van_Resume/Liam_Van_Persona.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Thatch",
+      "role": "Software Engineer: Full Stack",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "Remote (US); San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/thatch/jobs/5113761008",
+      "postingKey": "5113761008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Thatch/Software_Engineer_Full_Stack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Thatch/Software_Engineer_Full_Stack/Liam_Van_Resume/Liam_Van_Thatch.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Thatch",
+      "role": "Software Engineer: Foundations",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "Remote (US); San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/thatch/jobs/4615090008",
+      "postingKey": "4615090008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Thatch/Software_Engineer_Foundations/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Thatch/Software_Engineer_Foundations/Liam_Van_Resume/Liam_Van_Thatch.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Redwood Materials",
+      "role": "DevOps Software Engineer, Energy Storage",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/redwoodmaterials/jobs/5737848004",
+      "postingKey": "5737848004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Redwood Materials/DevOps_Software_Engineer_Energy_Storage/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Redwood Materials/DevOps_Software_Engineer_Energy_Storage/Liam_Van_Resume/Liam_Van_Redwood_Materials.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Linear",
+      "role": "Software Engineer, Product",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "Remote - United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/linear/jobs/4637985006",
+      "postingKey": "4637985006",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Linear/Software_Engineer_Product/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Linear/Software_Engineer_Product/Liam_Van_Resume/Liam_Van_Linear.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Grow Therapy",
+      "role": "Software Engineer, Web Frontend",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "Remote - United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/growtherapy/jobs/4598247005",
+      "postingKey": "4598247005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Grow Therapy/Software_Engineer_Web_Frontend/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Grow Therapy/Software_Engineer_Web_Frontend/Liam_Van_Resume/Liam_Van_Grow_Therapy.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-12"
@@ -36027,6 +36229,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Thatch",
+      "role": "Software Engineer: Full Stack",
+      "postingKey": "5113761008",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/thatch/jobs/5113761008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Temelio",
       "role": "Founding Engineer",
       "postingKey": "4604909004",
@@ -36534,6 +36749,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Runway",
+      "role": "Software Engineer, Full Stack",
+      "postingKey": "4630216006",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/runwayml/jobs/4630216006",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Rokt",
       "role": "Junior Software Engineer",
       "postingKey": "4402165922",
@@ -36700,6 +36928,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Ramp",
+      "role": "Software Engineer, Backend",
+      "postingKey": "7868845002",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/ramp/jobs/7868845002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -36986,6 +37227,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-03",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Persona",
+      "role": "Software Engineer, Product",
+      "postingKey": "7862464002",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/persona/jobs/7862464002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -40317,6 +40571,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Thatch",
+      "role": "Software Engineer: Foundations",
+      "postingKey": "4615090008",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/thatch/jobs/4615090008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Tennr",
       "role": "Backend Software Engineer",
       "postingKey": "9aae43bf-3303-468e-aae0-038b7fb395f3",
@@ -40718,6 +40985,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Redwood Materials",
+      "role": "DevOps Software Engineer, Energy Storage",
+      "postingKey": "5737848004",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/redwoodmaterials/jobs/5737848004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Reddit",
@@ -42852,6 +43132,19 @@
       "notes": ""
     },
     {
+      "company": "Linear",
+      "role": "Software Engineer, Product",
+      "postingKey": "4637985006",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/linear/jobs/4637985006",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Lila Sciences",
       "role": "Software Engineer I, Instrument Software",
       "postingKey": "4388586015",
@@ -43057,6 +43350,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-02",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Grow Therapy",
+      "role": "Software Engineer, Web Frontend",
+      "postingKey": "4598247005",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/growtherapy/jobs/4598247005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -64326,6 +64632,18 @@
           "contacts": []
         },
         {
+          "key": "7862464002",
+          "company": "Persona",
+          "role": "Software Engineer, Product",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7494666",
           "company": "Pinterest",
           "role": "Security Software Engineer II, Corporate Security",
@@ -64494,6 +64812,18 @@
           "contacts": []
         },
         {
+          "key": "7868845002",
+          "company": "Ramp",
+          "role": "Software Engineer, Backend",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4408146891",
           "company": "Redfin",
           "role": "Software Developer I - Digit",
@@ -64571,6 +64901,18 @@
           "role": "Junior Software Engineer",
           "fitScore": 10,
           "status": "Interviewing",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4630216006",
+          "company": "Runway",
+          "role": "Software Engineer, Full Stack",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -64883,6 +65225,18 @@
           "role": "Founding Engineer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5113761008",
+          "company": "Thatch",
+          "role": "Software Engineer: Full Stack",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -66198,6 +66552,18 @@
           "contacts": []
         },
         {
+          "key": "5737848004",
+          "company": "Redwood Materials",
+          "role": "DevOps Software Engineer, Energy Storage",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "820e461b-cae2-4e13-b9e4-2e17270bd78f",
           "company": "Reval",
           "role": "Founding Software Engineer",
@@ -66381,6 +66747,18 @@
           "key": "4771091008",
           "company": "Tekmerion",
           "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4615090008",
+          "company": "Thatch",
+          "role": "Software Engineer: Foundations",
           "fitScore": 9,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -67230,6 +67608,18 @@
           "contacts": []
         },
         {
+          "key": "4598247005",
+          "company": "Grow Therapy",
+          "role": "Software Engineer, Web Frontend",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-at-hdr-4389318555",
           "company": "HDR",
           "role": "Software Engineer",
@@ -67437,6 +67827,18 @@
           "key": "4388586015",
           "company": "Lila Sciences",
           "role": "Software Engineer I, Instrument Software",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4637985006",
+          "company": "Linear",
+          "role": "Software Engineer, Product",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -79870,6 +80272,18 @@
           "contacts": []
         },
         {
+          "key": "7862464002",
+          "company": "Persona",
+          "role": "Software Engineer, Product",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7494666",
           "company": "Pinterest",
           "role": "Security Software Engineer II, Corporate Security",
@@ -80050,6 +80464,18 @@
           "contacts": []
         },
         {
+          "key": "7868845002",
+          "company": "Ramp",
+          "role": "Software Engineer, Backend",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4408146891",
           "company": "Redfin",
           "role": "Software Developer I - Digit",
@@ -80125,6 +80551,18 @@
           "key": "7029807003",
           "company": "Ridgeline",
           "role": "Software Engineer II - Site Reliability Engineering",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4630216006",
+          "company": "Runway",
+          "role": "Software Engineer, Full Stack",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -80487,6 +80925,18 @@
           "role": "Founding Engineer",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5113761008",
+          "company": "Thatch",
+          "role": "Software Engineer: Full Stack",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -81730,6 +82180,18 @@
           "contacts": []
         },
         {
+          "key": "5737848004",
+          "company": "Redwood Materials",
+          "role": "DevOps Software Engineer, Energy Storage",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4785681008",
           "company": "Runpod",
           "role": "Software Engineer (Full-Stack)",
@@ -81901,6 +82363,18 @@
           "key": "4771091008",
           "company": "Tekmerion",
           "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4615090008",
+          "company": "Thatch",
+          "role": "Software Engineer: Foundations",
           "fitScore": 9,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -82582,6 +83056,18 @@
           "contacts": []
         },
         {
+          "key": "4598247005",
+          "company": "Grow Therapy",
+          "role": "Software Engineer, Web Frontend",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-at-hdr-4389318555",
           "company": "HDR",
           "role": "Software Engineer",
@@ -82731,6 +83217,18 @@
           "role": "Software Engineer I, Instrument Software",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4637985006",
+          "company": "Linear",
+          "role": "Software Engineer, Product",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
