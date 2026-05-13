@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 744
+Companies queued: 746
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -473,6 +473,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Meltwater | Software Engineer - Machine Learning | software-engineer-machine-learning-at-meltwater-4377382456 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-machine-learning-at-meltwater-4377382456) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Maybern | Software Engineer | 0e6d43a6-a5f9-44fb-be3e-78a160a8fb11 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/maybern/0e6d43a6-a5f9-44fb-be3e-78a160a8fb11) |  |  |  |  |
 | Match Group | Software Engineer, Backend | f14dbcb6-f740-4c95-9634-6dd87ba3f4df | 9 | Applied | Yes | [Posting](https://jobs.lever.co/matchgroup/f14dbcb6-f740-4c95-9634-6dd87ba3f4df) |  |  |  |  |
+| Maple | Forward Deployed Engineer - Growth | 4404934063 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4404934063/) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Lyft | Software Engineer, Server | 8492315002 | 9 | Applied | Yes | [Posting](https://app.careerpuck.com/job-board/lyft/job/8492315002?gh_jid=8492315002) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-10; marked applied per user confirmation. |
 | Loop | Forward Deployed Engineer | 5986356004 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/loop/jobs/5986356004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Lead | Software Engineer II | 4354352768 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4354352768/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
@@ -480,6 +481,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Labelbox | Forward Deployed Engineer | 4640927007 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/labelbox/jobs/4640927007) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Known | Software Engineer | 8515531002 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/known/jobs/8515531002) |  |  |  |  |
 | Kalshi | Software Engineer, Product | 3dd97725-4a12-4963-b47a-cb5c562cfd1d | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/kalshi/3dd97725-4a12-4963-b47a-cb5c562cfd1d/application) |  |  |  |  |
+| Kabilah | Software Engineer | 4315520980 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4315520980/) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Jobs via Dice | Software Engineer (Python & Go) \| $80/hr Remote | software-engineer-python-go-%2480-hr-remote-at-jobs-via-dice-4402385969 | 9 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-python-go-%2480-hr-remote-at-jobs-via-dice-4402385969) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | HP IQ | AI Software Engineer | 5819552004 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/hpiq/jobs/5819552004?gh_src=xe1kpeyi4us) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. Application submitted 2026-05-08. |
 | Heart Aerospace | Software Engineer I/II, Flight Software | 4013531009 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/heartaerospace/jobs/4013531009) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |

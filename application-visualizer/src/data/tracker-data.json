@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T22:05:10.369896+00:00",
+  "generatedAt": "2026-05-13T00:04:22.293141+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 872,
+      "total": 874,
       "applied": 472,
-      "unapplied": 400,
-      "active": 678,
+      "unapplied": 402,
+      "active": 680,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 731,
-      "reachOut": 794,
+      "highFit": 733,
+      "reachOut": 796,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,10 +26,10 @@
       "intakeNew": 52,
       "intakeManual": 416,
       "intakeApplied": 15,
-      "applyRate": 54.1,
+      "applyRate": 54.0,
       "rejectionRate": 12.3,
-      "recruiterWork": 566,
-      "engineerWork": 646,
+      "recruiterWork": 568,
+      "engineerWork": 648,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 32
+        "value": 34
       },
       {
         "name": "Online Assessment",
@@ -70,7 +70,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 304
+        "value": 306
       },
       {
         "name": "Ashby",
@@ -144,7 +144,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 377
+        "value": 379
       },
       {
         "name": "Bay Area",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 471
+        "value": 472
       },
       {
         "name": "Full Stack",
@@ -190,7 +190,7 @@
       },
       {
         "name": "Forward Deployed",
-        "value": 63
+        "value": 64
       },
       {
         "name": "Infra/Platform",
@@ -240,7 +240,7 @@
       },
       {
         "score": "9",
-        "count": 161
+        "count": 163
       },
       {
         "score": "10",
@@ -534,8 +534,8 @@
       },
       {
         "date": "2026-05-12",
-        "cumulative": 872,
-        "added": 49,
+        "cumulative": 874,
+        "added": 51,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -24844,6 +24844,52 @@
       "activityDates": [
         "2026-05-12"
       ]
+    },
+    {
+      "company": "Kabilah",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4315520980/",
+      "postingKey": "4315520980",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Kabilah/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Kabilah/Software_Engineer/Liam_Van_Resume/Liam_Van_Kabilah.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Maple",
+      "role": "Forward Deployed Engineer - Growth",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4404934063/",
+      "postingKey": "4404934063",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Maple/Forward_Deployed_Engineer_Growth/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Maple/Forward_Deployed_Engineer_Growth/Liam_Van_Resume/Liam_Van_Maple.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
     }
   ],
   "jobIntake": [
@@ -42180,6 +42226,19 @@
       "notes": ""
     },
     {
+      "company": "Maple",
+      "role": "Forward Deployed Engineer - Growth",
+      "postingKey": "4404934063",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4404934063/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Lyft",
       "role": "Software Engineer, Server",
       "postingKey": "8492315002",
@@ -42269,6 +42328,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Kabilah",
+      "role": "Software Engineer",
+      "postingKey": "4315520980",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4315520980/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Jobs via Dice",
@@ -68705,6 +68777,18 @@
           "contacts": []
         },
         {
+          "key": "4315520980",
+          "company": "Kabilah",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4640927007",
           "company": "Labelbox",
           "role": "Forward Deployed Engineer",
@@ -68770,6 +68854,18 @@
           "role": "Early Career Software Developer",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4404934063",
+          "company": "Maple",
+          "role": "Forward Deployed Engineer - Growth",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -84573,6 +84669,18 @@
           "contacts": []
         },
         {
+          "key": "4315520980",
+          "company": "Kabilah",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4640927007",
           "company": "Labelbox",
           "role": "Forward Deployed Engineer",
@@ -84638,6 +84746,18 @@
           "role": "Early Career Software Developer",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4404934063",
+          "company": "Maple",
+          "role": "Forward Deployed Engineer - Growth",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
