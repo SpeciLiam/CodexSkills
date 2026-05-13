@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T22:07:23.777038+00:00",
+  "generatedAt": "2026-05-13T23:08:09.695142+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,8 +21,8 @@
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 857,
-      "intakeQueued": 68,
+      "intakeJobs": 864,
+      "intakeQueued": 75,
       "intakeNew": 53,
       "intakeManual": 437,
       "intakeApplied": 15,
@@ -274,7 +274,7 @@
       },
       {
         "name": "Queued",
-        "value": 68
+        "value": 75
       },
       {
         "name": "New",
@@ -300,7 +300,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 577
+        "value": 584
       },
       {
         "name": "LinkedIn",
@@ -25697,6 +25697,104 @@
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Superhuman",
+      "role": "Software Engineer, Data Engineering",
+      "location": "New York City, NY",
+      "postingKey": "6966865",
+      "jobUrl": "https://job-boards.greenhouse.io/grammarly/jobs/6966865",
+      "discoveredAt": "2026-05-13T23:05:58.191509+00:00",
+      "postedAge": "Greenhouse public result; Grammarly/Superhuman board lists New York data engineering SWE",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "StubHub",
+      "role": "Software Engineer I - Direct Issuance (New Grad)",
+      "location": "Aliso Viejo, California, United States",
+      "postingKey": "4691657101",
+      "jobUrl": "https://job-boards.greenhouse.io/stubhubinc/jobs/4691657101",
+      "discoveredAt": "2026-05-13T23:05:58.191509+00:00",
+      "postedAge": "Greenhouse public result; role marked New on board",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "StubHub",
+      "role": "Software Engineer I - Direct Issuance (New Grad)",
+      "location": "Los Angeles, California, United States",
+      "postingKey": "4688101101",
+      "jobUrl": "https://job-boards.greenhouse.io/stubhubinc/jobs/4688101101",
+      "discoveredAt": "2026-05-13T23:05:58.191509+00:00",
+      "postedAge": "Greenhouse public result; role marked New on board",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "StubHub",
+      "role": "Software Engineer I - AI Platform",
+      "location": "Aliso Viejo, California, United States",
+      "postingKey": "4686659101",
+      "jobUrl": "https://job-boards.greenhouse.io/stubhubinc/jobs/4686659101",
+      "discoveredAt": "2026-05-13T23:05:58.191509+00:00",
+      "postedAge": "Greenhouse public result; board lists Software Engineer I - AI Platform",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Dagster Labs",
+      "role": "Developer Success Engineer (Early Career)",
+      "location": "Remote with offices in New York, NY / San Francisco, CA / Minneapolis, MN",
+      "postingKey": "6326231003",
+      "jobUrl": "https://job-boards.greenhouse.io/dagsterlabs/jobs/6326231003",
+      "discoveredAt": "2026-05-13T23:05:58.191509+00:00",
+      "postedAge": "Greenhouse public result; board lists early-career developer success engineer",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Asana Early Career Programs",
+      "role": "Software Engineer, Early Career",
+      "location": "New York City; San Francisco",
+      "postingKey": "5175474",
+      "jobUrl": "https://job-boards.greenhouse.io/earlycareerprograms/jobs/5175474",
+      "discoveredAt": "2026-05-13T23:05:58.191509+00:00",
+      "postedAge": "Greenhouse public result; current board lists one early-career engineering job",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Affirm",
+      "role": "Software Engineer I, Full-Stack (Home and Search Experience)",
+      "location": "Remote US",
+      "postingKey": "7685236003",
+      "jobUrl": "https://job-boards.greenhouse.io/affirm/jobs/7685236003",
+      "discoveredAt": "2026-05-13T23:05:58.191509+00:00",
+      "postedAge": "Live Greenhouse board checked 2026-05-13 after stale public early-career result redirected to Affirm board",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
     {
       "source": "LinkedIn",
       "company": "Weights & Biases",
