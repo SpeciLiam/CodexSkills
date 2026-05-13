@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T18:51:44.637711+00:00",
+  "generatedAt": "2026-05-13T18:52:02.341408+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 893,
-      "applied": 479,
-      "unapplied": 414,
+      "applied": 480,
+      "unapplied": 413,
       "active": 693,
       "rejected": 64,
       "interviewing": 3,
@@ -26,8 +26,8 @@
       "intakeNew": 53,
       "intakeManual": 434,
       "intakeApplied": 15,
-      "applyRate": 53.6,
-      "rejectionRate": 13.4,
+      "applyRate": 53.8,
+      "rejectionRate": 13.3,
       "recruiterWork": 582,
       "engineerWork": 666,
       "recruiterReachedOut": 116,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 408
+        "value": 409
       },
       {
         "name": "Manual Apply Needed",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 29
+        "value": 28
       },
       {
         "name": "Online Assessment",
@@ -536,7 +536,7 @@
         "date": "2026-05-12",
         "cumulative": 876,
         "added": 53,
-        "applied": 3,
+        "applied": 4,
         "rejected": 0,
         "interviewing": 0
       },
@@ -24900,8 +24900,8 @@
     {
       "company": "Maple",
       "role": "Forward Deployed Engineer - Growth",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -24916,9 +24916,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application confirmation email received 2026-05-12",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-12"
+      ]
     },
     {
       "company": "Flex",
@@ -70394,7 +70396,7 @@
           "company": "Maple",
           "role": "Forward Deployed Engineer - Growth",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -86478,7 +86480,7 @@
           "company": "Maple",
           "role": "Forward Deployed Engineer - Growth",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
