@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T18:52:02.341408+00:00",
+  "generatedAt": "2026-05-13T18:52:54.247317+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -12,8 +12,8 @@
       "total": 893,
       "applied": 480,
       "unapplied": 413,
-      "active": 693,
-      "rejected": 64,
+      "active": 692,
+      "rejected": 65,
       "interviewing": 3,
       "assessments": 3,
       "highFit": 751,
@@ -27,8 +27,8 @@
       "intakeManual": 434,
       "intakeApplied": 15,
       "applyRate": 53.8,
-      "rejectionRate": 13.3,
-      "recruiterWork": 582,
+      "rejectionRate": 13.5,
+      "recruiterWork": 581,
       "engineerWork": 666,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 409
+        "value": 408
       },
       {
         "name": "Manual Apply Needed",
@@ -48,7 +48,7 @@
       },
       {
         "name": "Rejected",
-        "value": 64
+        "value": 65
       },
       {
         "name": "Resume Tailored",
@@ -313,7 +313,7 @@
         "cumulative": 29,
         "added": 29,
         "applied": 27,
-        "rejected": 10,
+        "rejected": 11,
         "interviewing": 0
       },
       {
@@ -5022,7 +5022,7 @@
       "company": "Notion",
       "role": "Software Engineer, Fullstack, Early Career",
       "applied": true,
-      "status": "Applied",
+      "status": "Rejected",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -5037,7 +5037,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/angela-ching-1536a9a0/",
       "engineerContact": "Hanna Koh",
       "engineerProfile": "https://www.linkedin.com/in/hannakohxt/",
-      "notes": "LinkedIn invite sent to recruiter 2026-04-24; LinkedIn invite sent to engineer Hanna Koh 2026-04-24; LinkedIn invite sent to Hanna Koh (Engineer) 2026-04-24; Blocked on custom motivation question 2026-04-27; Manual apply needed: custom motivation question 2026-04-27; Manual apply verified: required motivation free-response 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, contact/location, LinkedIn, GitHub, tailored Notion motivation response, pronoun preference, full-stack preference, in-office acknowledgement, New York location interest, sponsorship No, LinkedIn source, 2024 graduation, and EEO fields; submit clicked but form stayed with hidden reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28",
+      "notes": "LinkedIn invite sent to recruiter 2026-04-24; LinkedIn invite sent to engineer Hanna Koh 2026-04-24; LinkedIn invite sent to Hanna Koh (Engineer) 2026-04-24; Blocked on custom motivation question 2026-04-27; Manual apply needed: custom motivation question 2026-04-27; Manual apply verified: required motivation free-response 2026-04-28; Manual apply verified: Ashby form filled with tailored resume, contact/location, LinkedIn, GitHub, tailored Notion motivation response, pronoun preference, full-stack preference, in-office acknowledgement, New York location interest, sponsorship No, LinkedIn source, 2024 graduation, and EEO fields; submit clicked but form stayed with hidden reCAPTCHA/no confirmation 2026-04-28; Application confirmation email received 2026-04-28; Rejection email received 2026-05-12",
       "noteLinks": [
         {
           "label": "Hanna Koh",
@@ -5056,7 +5056,8 @@
         "2026-04-27",
         "2026-04-28",
         "2026-04-28",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-12"
       ]
     },
     {
@@ -66374,40 +66375,6 @@
           ]
         },
         {
-          "key": "f7399542-9122-481a-bf64-43bf8093748b",
-          "company": "Notion",
-          "role": "Software Engineer, Fullstack, Early Career",
-          "fitScore": 10,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Labeled, needs approval"
-          ],
-          "contacts": [
-            {
-              "lane": "recruiter",
-              "name": "Angela Ching",
-              "profile": "https://www.linkedin.com/in/angela-ching-1536a9a0/",
-              "position": "Saved on application row",
-              "approval": "",
-              "outcome": "Not reached out",
-              "route": "application-tracker",
-              "connectionNote": "",
-              "sentDate": "2026-04-06",
-              "source": "application-tracker",
-              "lastChecked": "2026-04-06",
-              "notes": "Active application needs recruiter outreach.",
-              "recruiterSignal": {
-                "alumniMatch": false,
-                "seniority": "unknown",
-                "whyThisPerson": "",
-                "recruiterType": "in_house",
-                "ownsRole": null
-              }
-            }
-          ]
-        },
-        {
           "key": "4408817630",
           "company": "Uber",
           "role": "Software Engineer",
@@ -88594,7 +88561,7 @@
           "company": "Notion",
           "role": "Software Engineer, Fullstack, Early Career",
           "fitScore": 10,
-          "status": "Applied",
+          "status": "Rejected",
           "count": 1,
           "states": [],
           "contacts": [
