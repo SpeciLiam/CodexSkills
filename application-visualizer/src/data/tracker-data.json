@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T17:49:33.322398+00:00",
+  "generatedAt": "2026-05-13T18:37:30.053392+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 886,
+      "total": 892,
       "applied": 479,
-      "unapplied": 407,
-      "active": 687,
+      "unapplied": 413,
+      "active": 693,
       "rejected": 63,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 744,
-      "reachOut": 807,
+      "highFit": 750,
+      "reachOut": 813,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
       "intakeJobs": 851,
-      "intakeQueued": 81,
+      "intakeQueued": 76,
       "intakeNew": 53,
-      "intakeManual": 428,
+      "intakeManual": 429,
       "intakeApplied": 15,
-      "applyRate": 54.1,
+      "applyRate": 53.7,
       "rejectionRate": 13.2,
-      "recruiterWork": 575,
-      "engineerWork": 659,
+      "recruiterWork": 581,
+      "engineerWork": 665,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 244
+        "value": 245
       },
       {
         "name": "Archived",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 28
+        "value": 33
       },
       {
         "name": "Online Assessment",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 421
+        "value": 425
       },
       {
         "name": "LinkedIn",
-        "value": 310
+        "value": 312
       },
       {
         "name": "Ashby",
@@ -144,11 +144,11 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 384
+        "value": 387
       },
       {
         "name": "Bay Area",
-        "value": 202
+        "value": 203
       },
       {
         "name": "Other",
@@ -156,7 +156,7 @@
       },
       {
         "name": "Remote",
-        "value": 123
+        "value": 125
       },
       {
         "name": "Seattle",
@@ -174,11 +174,11 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 477
+        "value": 478
       },
       {
         "name": "Full Stack",
-        "value": 109
+        "value": 111
       },
       {
         "name": "Backend",
@@ -186,11 +186,11 @@
       },
       {
         "name": "AI/ML",
-        "value": 65
+        "value": 67
       },
       {
         "name": "Forward Deployed",
-        "value": 65
+        "value": 66
       },
       {
         "name": "Infra/Platform",
@@ -236,7 +236,7 @@
       },
       {
         "score": "8",
-        "count": 164
+        "count": 165
       },
       {
         "score": "9",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 416
+        "count": 421
       }
     ],
     "targetCounts": [
@@ -262,11 +262,11 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 428
+        "value": 429
       },
       {
         "name": "Tailored",
-        "value": 144
+        "value": 148
       },
       {
         "name": "Skipped",
@@ -274,7 +274,7 @@
       },
       {
         "name": "Queued",
-        "value": 81
+        "value": 76
       },
       {
         "name": "New",
@@ -542,8 +542,8 @@
       },
       {
         "date": "2026-05-13",
-        "cumulative": 886,
-        "added": 10,
+        "cumulative": 892,
+        "added": 16,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -552,8 +552,8 @@
     "topCompanies": [
       {
         "company": "StubHub",
-        "roles": 13,
-        "avgFit": 9.46,
+        "roles": 14,
+        "avgFit": 9.5,
         "bestFit": 10
       },
       {
@@ -617,6 +617,12 @@
         "bestFit": 10
       },
       {
+        "company": "OpenAI",
+        "roles": 6,
+        "avgFit": 8.5,
+        "bestFit": 10
+      },
+      {
         "company": "Palantir Technologies",
         "roles": 6,
         "avgFit": 8.33,
@@ -677,12 +683,6 @@
         "bestFit": 10
       },
       {
-        "company": "OpenAI",
-        "roles": 5,
-        "avgFit": 8.6,
-        "bestFit": 10
-      },
-      {
         "company": "Ramp",
         "roles": 5,
         "avgFit": 6.2,
@@ -722,6 +722,15 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/yext/jobs/7085149"
+      },
+      {
+        "company": "Yext",
+        "role": "Software Engineer, AI Search",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/yext/jobs/8122667002"
       },
       {
         "company": "Writer",
@@ -1010,15 +1019,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://www.linkedin.com/jobs/view/4403550427/"
-      },
-      {
-        "company": "Uber",
-        "role": "Software Engineer",
-        "fitScore": 10,
-        "status": "Manual Apply Needed",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://www.linkedin.com/jobs/view/4408817630/"
       }
     ],
     "recruiterBatch": {
@@ -25220,6 +25220,156 @@
       "activityDates": [
         "2026-05-13"
       ]
+    },
+    {
+      "company": "Yext",
+      "role": "Software Engineer, AI Search",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-13",
+      "location": "New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/yext/jobs/8122667002",
+      "postingKey": "8122667002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Yext/Software_Engineer_AI_Search/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Yext/Software_Engineer_AI_Search/Liam_Van_Resume/Liam_Van_Yext.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly recruiting intake 2026-05-13 09:32 PT; tailored SWE resume rendered and verified one page; emphasized AI search product engineering, backend APIs, data workflows, TypeScript product surfaces, testing, and production reliability. Public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; Apify was not configured.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-13"
+      ]
+    },
+    {
+      "company": "OpenAI",
+      "role": "System Software Engineer, Consumer Devices",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-13",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/system-software-engineer-consumer-devices-at-openai-4381795293",
+      "postingKey": "system-software-engineer-consumer-devices-at-openai-4381795293",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OpenAI/System_Software_Engineer_Consumer_Devices/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OpenAI/System_Software_Engineer_Consumer_Devices/Liam_Van_Resume/Liam_Van_OpenAI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live LinkedIn/Ashby submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-13"
+      ]
+    },
+    {
+      "company": "Motive",
+      "role": "Software Engineer, Full Stack",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-13",
+      "location": "United States - Remote",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/gomotive/jobs/8126787002",
+      "postingKey": "8126787002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Motive/Software_Engineer_Full_Stack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Motive/Software_Engineer_Full_Stack/Liam_Van_Resume/Liam_Van_Motive.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly recruiting intake 2026-05-13 09:32 PT; tailored SWE resume rendered and verified one page; emphasized remote full-stack product engineering, React and TypeScript interfaces, backend APIs, reliability validation, testing, and cross-functional delivery. Public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; Apify was not configured.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-13"
+      ]
+    },
+    {
+      "company": "LTK",
+      "role": "Software Engineer, Full Stack",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-13",
+      "location": "United States - Remote",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/ltkusa/jobs/8125669002",
+      "postingKey": "8125669002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/LTK/Software_Engineer_Full_Stack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/LTK/Software_Engineer_Full_Stack/Liam_Van_Resume/Liam_Van_LTK.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly recruiting intake 2026-05-13 09:32 PT; tailored SWE resume rendered and verified one page; emphasized remote full-stack product engineering, React product surfaces, backend APIs, creator-commerce workflows, testing, and reliable delivery. Public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; Apify was not configured.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-13"
+      ]
+    },
+    {
+      "company": "StubHub",
+      "role": "Software Engineer II - Mobile (AI-Powered Consumer Experiences)",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-13",
+      "location": "New York, New York, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/stubhubinc/jobs/4790673101",
+      "postingKey": "4790673101",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/StubHub/Software_Engineer_II_Mobile_AI_Powered_Consumer_Experiences/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/StubHub/Software_Engineer_II_Mobile_AI_Powered_Consumer_Experiences/Liam_Van_Resume_2/Liam_Van_StubHub.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly recruiting intake 2026-05-13 09:32 PT; tailored SWE resume rendered and verified one page; emphasized NYC consumer product engineering, mobile-adjacent full-stack delivery, AI-powered user experiences, backend APIs, testing, and high-traffic reliability. Public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; Apify was not configured.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-13"
+      ]
+    },
+    {
+      "company": "Attis",
+      "role": "Forward Deployed Software Engineer - Up to $220k + Equity",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-13",
+      "location": "New York City Metropolitan Area",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-software-engineer-up-to-%24220k-%2B-equity-at-attis-4400554099",
+      "postingKey": "forward-deployed-software-engineer-up-to-%24220k-%2B-equity-at-attis-4400554099",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Attis/Forward_Deployed_Software_Engineer_Up_to_220k_Equity/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Attis/Forward_Deployed_Software_Engineer_Up_to_220k_Equity/Liam_Van_Resume/Liam_Van_Attis.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly recruiting intake 2026-05-13 09:32 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed software engineering, customer-facing delivery, backend APIs, data workflows, AI-enabled product iteration, testing, and production reliability. Public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; Apify was not configured.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-13"
+      ]
     }
   ],
   "jobIntake": [
@@ -25345,9 +25495,9 @@
       "discoveredAt": "2026-05-13T16:32:50.872782+00:00",
       "postedAge": "",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-13; resume rendered and verified one page; emphasized NYC consumer product engineering, mobile-adjacent full-stack delivery, AI-powered user experiences, backend APIs, testing, and high-traffic reliability",
+      "trackerPostingKey": "4790673101"
     },
     {
       "source": "LinkedIn",
@@ -25373,9 +25523,9 @@
       "discoveredAt": "2026-05-13T16:31:33.689149+00:00",
       "postedAge": "Greenhouse public result surfaced during 2026-05-13 degraded capture; logged-in browser capture blocked by Computer Use approval denial",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-13; resume rendered and verified one page; emphasized AI search product engineering, backend APIs, data workflows, TypeScript product surfaces, testing, and production reliability",
+      "trackerPostingKey": "8122667002"
     },
     {
       "source": "Greenhouse",
@@ -25387,9 +25537,9 @@
       "discoveredAt": "2026-05-13T16:31:33.689149+00:00",
       "postedAge": "Greenhouse public result surfaced during 2026-05-13 degraded capture; logged-in browser capture blocked by Computer Use approval denial",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, preferred/remote US location",
-      "trackerPostingKey": ""
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-13; resume rendered and verified one page; emphasized remote full-stack product engineering, React and TypeScript interfaces, backend APIs, reliability validation, testing, and cross-functional delivery",
+      "trackerPostingKey": "8126787002"
     },
     {
       "source": "Greenhouse",
@@ -25401,9 +25551,9 @@
       "discoveredAt": "2026-05-13T16:31:33.689149+00:00",
       "postedAge": "Greenhouse public result surfaced during 2026-05-13 degraded capture; logged-in browser capture blocked by Computer Use approval denial",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, preferred/remote US location",
-      "trackerPostingKey": ""
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-13; resume rendered and verified one page; emphasized remote full-stack product engineering, React product surfaces, backend APIs, creator-commerce workflows, testing, and reliable delivery",
+      "trackerPostingKey": "8125669002"
     },
     {
       "source": "LinkedIn",
@@ -33297,9 +33447,9 @@
       "discoveredAt": "2026-05-13T16:05:34.697629+00:00",
       "postedAge": "LinkedIn public result showed 1 day ago; logged-in browser capture blocked",
       "fitScore": 8,
-      "status": "Queued",
-      "reason": "SWE-family role, SF/Bay Area preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live LinkedIn/Ashby submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "system-software-engineer-consumer-devices-at-openai-4381795293"
     },
     {
       "source": "Greenhouse",
@@ -37179,6 +37329,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Yext",
+      "role": "Software Engineer, AI Search",
+      "postingKey": "8122667002",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/yext/jobs/8122667002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-13",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Writer",
       "role": "Forward Deployed Engineer",
       "postingKey": "4809387007",
@@ -38138,6 +38301,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "StubHub",
+      "role": "Software Engineer II - Mobile (AI-Powered Consumer Experiences)",
+      "postingKey": "4790673101",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/stubhubinc/jobs/4790673101",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-13",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -39337,6 +39513,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Motive",
+      "role": "Software Engineer, Full Stack",
+      "postingKey": "8126787002",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/gomotive/jobs/8126787002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-13",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Morgan Stanley",
       "role": "Associate Software Engineer",
       "postingKey": "4386890681",
@@ -39633,6 +39822,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-01",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "LTK",
+      "role": "Software Engineer, Full Stack",
+      "postingKey": "8125669002",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/ltkusa/jobs/8125669002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-13",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -41570,6 +41772,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Attis",
+      "role": "Forward Deployed Software Engineer - Up to $220k + Equity",
+      "postingKey": "forward-deployed-software-engineer-up-to-%24220k-%2B-equity-at-attis-4400554099",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/forward-deployed-software-engineer-up-to-%24220k-%2B-equity-at-attis-4400554099",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-13",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -44964,6 +45179,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "OpenAI",
+      "role": "System Software Engineer, Consumer Devices",
+      "postingKey": "system-software-engineer-consumer-devices-at-openai-4381795293",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/system-software-engineer-consumer-devices-at-openai-4381795293",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-13",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "OneStream",
@@ -66686,6 +66914,18 @@
           "contacts": []
         },
         {
+          "key": "forward-deployed-software-engineer-up-to-%24220k-%2B-equity-at-attis-4400554099",
+          "company": "Attis",
+          "role": "Forward Deployed Software Engineer - Up to $220k + Equity",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5837490004",
           "company": "Aura",
           "role": "Software Engineer, Backend",
@@ -67802,6 +68042,18 @@
           "contacts": []
         },
         {
+          "key": "8125669002",
+          "company": "LTK",
+          "role": "Software Engineer, Full Stack",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-applications-nyc-at-linkedin-4317506689",
           "company": "LinkedIn",
           "role": "Software Engineer - Applications (NYC)",
@@ -68047,6 +68299,18 @@
           "role": "Software Engineer - Backend Services / San Francisco",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8126787002",
+          "company": "Motive",
+          "role": "Software Engineer, Full Stack",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -68798,6 +69062,18 @@
           "contacts": []
         },
         {
+          "key": "4790673101",
+          "company": "StubHub",
+          "role": "Software Engineer II - Mobile (AI-Powered Consumer Experiences)",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7485892",
           "company": "Sumo Logic",
           "role": "Software Engineer II - Core Platform",
@@ -69283,6 +69559,18 @@
           "role": "Forward Deployed Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8122667002",
+          "company": "Yext",
+          "role": "Software Engineer, AI Search",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -71765,6 +72053,18 @@
           "key": "d9517f18-7f9f-4f13-83e8-feb078e8792d",
           "company": "OneStream",
           "role": "Software Engineer I",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "system-software-engineer-consumer-devices-at-openai-4381795293",
+          "company": "OpenAI",
+          "role": "System Software Engineer, Consumer Devices",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -82542,6 +82842,18 @@
           "contacts": []
         },
         {
+          "key": "forward-deployed-software-engineer-up-to-%24220k-%2B-equity-at-attis-4400554099",
+          "company": "Attis",
+          "role": "Forward Deployed Software Engineer - Up to $220k + Equity",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5837490004",
           "company": "Aura",
           "role": "Software Engineer, Backend",
@@ -83682,6 +83994,18 @@
           "contacts": []
         },
         {
+          "key": "8125669002",
+          "company": "LTK",
+          "role": "Software Engineer, Full Stack",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "software-engineer-applications-nyc-at-linkedin-4317506689",
           "company": "LinkedIn",
           "role": "Software Engineer - Applications (NYC)",
@@ -83951,6 +84275,18 @@
           "role": "Software Engineer - Backend Services / San Francisco",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8126787002",
+          "company": "Motive",
+          "role": "Software Engineer, Full Stack",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -84834,6 +85170,18 @@
           "contacts": []
         },
         {
+          "key": "4790673101",
+          "company": "StubHub",
+          "role": "Software Engineer II - Mobile (AI-Powered Consumer Experiences)",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7860073",
           "company": "Sumo Logic",
           "role": "Software Engineer II - Core Ingest",
@@ -85355,6 +85703,18 @@
           "role": "Forward Deployed Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8122667002",
+          "company": "Yext",
+          "role": "Software Engineer, AI Search",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -87405,6 +87765,18 @@
           "key": "d9517f18-7f9f-4f13-83e8-feb078e8792d",
           "company": "OneStream",
           "role": "Software Engineer I",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "system-software-engineer-consumer-devices-at-openai-4381795293",
+          "company": "OpenAI",
+          "role": "System Software Engineer, Consumer Devices",
           "fitScore": 8,
           "status": "Manual Apply Needed",
           "count": 1,
