@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T03:37:22.787788+00:00",
+  "generatedAt": "2026-05-13T06:42:00.130957+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 877,
-      "applied": 478,
-      "unapplied": 399,
-      "active": 680,
-      "rejected": 61,
+      "total": 881,
+      "applied": 479,
+      "unapplied": 402,
+      "active": 683,
+      "rejected": 62,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 736,
-      "reachOut": 799,
+      "highFit": 740,
+      "reachOut": 803,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 810,
+      "intakeJobs": 814,
       "intakeQueued": 58,
       "intakeNew": 52,
-      "intakeManual": 419,
+      "intakeManual": 423,
       "intakeApplied": 15,
-      "applyRate": 54.5,
-      "rejectionRate": 12.8,
-      "recruiterWork": 569,
-      "engineerWork": 651,
+      "applyRate": 54.4,
+      "rejectionRate": 12.9,
+      "recruiterWork": 572,
+      "engineerWork": 655,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 236
+        "value": 239
       },
       {
         "name": "Archived",
@@ -48,7 +48,7 @@
       },
       {
         "name": "Rejected",
-        "value": 61
+        "value": 62
       },
       {
         "name": "Resume Tailored",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 415
+        "value": 416
       },
       {
         "name": "LinkedIn",
-        "value": 307
+        "value": 310
       },
       {
         "name": "Ashby",
@@ -152,11 +152,11 @@
       },
       {
         "name": "Other",
-        "value": 141
+        "value": 144
       },
       {
         "name": "Remote",
-        "value": 122
+        "value": 123
       },
       {
         "name": "Seattle",
@@ -174,15 +174,15 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 473
+        "value": 475
       },
       {
         "name": "Full Stack",
-        "value": 106
+        "value": 107
       },
       {
         "name": "Backend",
-        "value": 95
+        "value": 96
       },
       {
         "name": "AI/ML",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 409
+        "count": 413
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 419
+        "value": 423
       },
       {
         "name": "Tailored",
@@ -300,11 +300,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 553
+        "value": 554
       },
       {
         "name": "LinkedIn",
-        "value": 257
+        "value": 260
       }
     ],
     "timeline": [
@@ -489,7 +489,7 @@
         "cumulative": 610,
         "added": 69,
         "applied": 32,
-        "rejected": 0,
+        "rejected": 1,
         "interviewing": 0
       },
       {
@@ -520,7 +520,7 @@
         "date": "2026-05-10",
         "cumulative": 791,
         "added": 86,
-        "applied": 24,
+        "applied": 25,
         "rejected": 0,
         "interviewing": 0
       },
@@ -534,16 +534,16 @@
       },
       {
         "date": "2026-05-12",
-        "cumulative": 874,
-        "added": 51,
+        "cumulative": 876,
+        "added": 53,
         "applied": 3,
         "rejected": 0,
         "interviewing": 0
       },
       {
         "date": "2026-05-13",
-        "cumulative": 877,
-        "added": 3,
+        "cumulative": 881,
+        "added": 5,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -15554,13 +15554,14 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-05 14:00 PT; tailored SWE resume rendered and verified one page; emphasized NYC full-stack SaaS and fintech product engineering, React product surfaces, backend APIs, scalable platform workflows, testing, and close product collaboration. LinkedIn and browser-based apply were blocked because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-05: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.; Application confirmation email received 2026-05-06.; Interview availability requested 2026-05-07",
+      "notes": "Hourly Greenhouse intake 2026-05-05 14:00 PT; tailored SWE resume rendered and verified one page; emphasized NYC full-stack SaaS and fintech product engineering, React product surfaces, backend APIs, scalable platform workflows, testing, and close product collaboration. LinkedIn and browser-based apply were blocked because Computer Use access to Chrome and Firefox was denied.; Manual apply needed 2026-05-05: tailored resume rendered and verified one page, but application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required retry preflight.; Application confirmation email received 2026-05-06.; Interview availability requested 2026-05-07; Interview confirmed for 2026-05-12",
       "noteLinks": [],
       "activityDates": [
         "2026-05-05",
         "2026-05-05",
         "2026-05-06",
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-12"
       ]
     },
     {
@@ -16605,7 +16606,7 @@
       "company": "Snyk",
       "role": "Associate Product Engineer",
       "applied": true,
-      "status": "Applied",
+      "status": "Rejected",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -16620,11 +16621,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application submitted 2026-05-07; Application confirmation email received 2026-05-07",
+      "notes": "Application submitted 2026-05-07; Application confirmation email received 2026-05-07; Rejection email received 2026-05-11",
       "noteLinks": [],
       "activityDates": [
         "2026-05-07",
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-11"
       ]
     },
     {
@@ -20993,8 +20995,8 @@
     {
       "company": "mthree",
       "role": "Junior Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -21009,10 +21011,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-10 follow-on capture; resume rendered and verified one page; used junior early-career SWE framing for broad software engineering readiness. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly intake 2026-05-10 follow-on capture; resume rendered and verified one page; used junior early-career SWE framing for broad software engineering readiness. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application confirmation email received 2026-05-11",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-11"
       ]
     },
     {
@@ -24985,9 +24988,167 @@
       "activityDates": [
         "2026-05-13"
       ]
+    },
+    {
+      "company": "HealthEquity",
+      "role": "Software Engineer II",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-13",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-healthequity-4362190773",
+      "postingKey": "software-engineer-ii-at-healthequity-4362190773",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/HealthEquity/Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/HealthEquity/Software_Engineer_II/Liam_Van_Resume/Liam_Van_HealthEquity.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly LinkedIn intake 2026-05-13: degraded web-visible capture used because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; tailored Java/API/data reliability resume rendered and verified one page. Manual apply needed because live LinkedIn application/submission is blocked by Computer Use approval denial.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-13"
+      ]
+    },
+    {
+      "company": "TP-Link",
+      "role": "2026 Early Career Software Engineering (Mobile, BackEnd, Embedded, AI/ML)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-13",
+      "location": "Irvine, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/2026-early-career-software-engineering-mobile-backend-embedded-ai-ml-at-tp-link-4389973425",
+      "postingKey": "2026-early-career-software-engineering-mobile-backend-embedded-ai-ml-at-tp-link-4389973425",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/TP-Link/2026_Early_Career_Software_Engineering_Mobile_BackEnd_Embedded_AI_ML/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/TP-Link/2026_Early_Career_Software_Engineering_Mobile_BackEnd_Embedded_AI_ML/Liam_Van_Resume/Liam_Van_TP-Link.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly LinkedIn intake 2026-05-13: degraded web-visible capture used because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; tailored early-career backend/systems/AI resume rendered and verified one page. Manual apply needed because live LinkedIn application/submission is blocked by Computer Use approval denial.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-13"
+      ]
+    },
+    {
+      "company": "Cala Health",
+      "role": "Full Stack Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "SF Bay Area / Remote",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/calahealth/jobs/5982842004",
+      "postingKey": "5982842004",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Cala Health/Full_Stack_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Cala Health/Full_Stack_Software_Engineer/Liam_Van_Resume/Liam_Van_Cala_Health.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly recruiting intake 2026-05-12 23:31 PT; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, React and TypeScript interfaces, backend APIs, healthcare workflow reliability, testing, and cloud delivery. Public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; Apify was not configured.; Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12",
+        "2026-05-12"
+      ]
+    },
+    {
+      "company": "Availity",
+      "role": "Software Engineer II",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-12",
+      "location": "Colorado, United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-availity-4378235176",
+      "postingKey": "software-engineer-ii-at-availity-4378235176",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Availity/Software_Engineer_II/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Availity/Software_Engineer_II/Liam_Van_Resume/Liam_Van_Availity.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly recruiting intake 2026-05-12 23:31 PT; tailored SWE resume rendered and verified one page; emphasized backend software engineering, REST APIs, Java/Spring-style services, healthcare platform workflows, testing, and production reliability. Public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; Apify was not configured.; Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live LinkedIn/application submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-12",
+        "2026-05-12"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Cala Health",
+      "role": "Full Stack Software Engineer",
+      "location": "SF Bay Area / Remote",
+      "postingKey": "5982842004",
+      "jobUrl": "https://job-boards.greenhouse.io/calahealth/jobs/5982842004",
+      "discoveredAt": "2026-05-13T06:31:38.884224+00:00",
+      "postedAge": "Greenhouse public result crawled last week; logged-in browser capture blocked",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "5982842004"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Availity",
+      "role": "Software Engineer II",
+      "location": "Colorado, United States",
+      "postingKey": "4378235176",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-availity-4378235176",
+      "discoveredAt": "2026-05-13T06:31:38.884224+00:00",
+      "postedAge": "LinkedIn public result showed 1 day ago; logged-in browser capture blocked",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4378235176"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "TP-Link",
+      "role": "2026 Early Career Software Engineering (Mobile, BackEnd, Embedded, AI/ML)",
+      "location": "Irvine, CA",
+      "postingKey": "4389973425",
+      "jobUrl": "https://www.linkedin.com/jobs/view/2026-early-career-software-engineering-mobile-backend-embedded-ai-ml-at-tp-link-4389973425",
+      "discoveredAt": "2026-05-13T04:56:01.559252+00:00",
+      "postedAge": "LinkedIn/web result showed 2 weeks ago; browser capture blocked",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live LinkedIn application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4389973425"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "HealthEquity",
+      "role": "Software Engineer II",
+      "location": "United States",
+      "postingKey": "4362190773",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-healthequity-4362190773",
+      "discoveredAt": "2026-05-13T04:56:01.559252+00:00",
+      "postedAge": "LinkedIn/web result showed 2 weeks ago; browser capture blocked",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live LinkedIn application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4362190773"
+    },
     {
       "source": "LinkedIn",
       "company": "Spotify",
@@ -36981,6 +37142,19 @@
       "notes": "Queued by resume-tailor after tailored resume update.; Archived 2026-05-07: Greenhouse page says the job is no longer open."
     },
     {
+      "company": "TP-Link",
+      "role": "2026 Early Career Software Engineering (Mobile, BackEnd, Embedded, AI/ML)",
+      "postingKey": "2026-early-career-software-engineering-mobile-backend-embedded-ai-ml-at-tp-link-4389973425",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/2026-early-career-software-engineering-mobile-backend-embedded-ai-ml-at-tp-link-4389973425",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-13",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Thesis",
       "role": "Full Stack Engineer",
       "postingKey": "5082367008",
@@ -39139,6 +39313,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "HealthEquity",
+      "role": "Software Engineer II",
+      "postingKey": "software-engineer-ii-at-healthequity-4362190773",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-healthequity-4362190773",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-13",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Harmonic",
       "role": "Full Stack Product Engineer (AI), Search",
       "postingKey": "4590192005",
@@ -40439,6 +40626,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Cala Health",
+      "role": "Full Stack Software Engineer",
+      "postingKey": "5982842004",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/calahealth/jobs/5982842004",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Cadence",
       "role": "Software Engineer I",
       "postingKey": "Software-Engineer-I_R53009-1",
@@ -40619,6 +40819,19 @@
       "readyEmails": 0,
       "lastUpdated": "2026-05-06",
       "notes": "Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome."
+    },
+    {
+      "company": "Availity",
+      "role": "Software Engineer II",
+      "postingKey": "software-engineer-ii-at-availity-4378235176",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-availity-4378235176",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Automat",
@@ -65809,6 +66022,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-ii-at-availity-4378235176",
+          "company": "Availity",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "0fc22fe4-6b8c-4c93-9b3f-fa3738054601",
           "company": "Avoca",
           "role": "Forward Deployed Engineer",
@@ -65944,6 +66169,18 @@
           "key": "software-engineer-energy-ai-at-cvector-energy-4390530770",
           "company": "CVector Energy",
           "role": "Software Engineer, Energy AI",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5982842004",
+          "company": "Cala Health",
+          "role": "Full Stack Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -66724,6 +66961,18 @@
           "key": "4590192005",
           "company": "Harmonic",
           "role": "Full Stack Product Engineer (AI), Search",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-ii-at-healthequity-4362190773",
+          "company": "HealthEquity",
+          "role": "Software Engineer II",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -67849,6 +68098,18 @@
           "contacts": []
         },
         {
+          "key": "2026-early-career-software-engineering-mobile-backend-embedded-ai-ml-at-tp-link-4389973425",
+          "company": "TP-Link",
+          "role": "2026 Early Career Software Engineering (Mobile, BackEnd, Embedded, AI/ML)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5662998004",
           "company": "TRM Labs",
           "role": "University Grad - Product Engineer (2026)",
@@ -68345,7 +68606,7 @@
           "company": "mthree",
           "role": "Junior Software Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -69388,18 +69649,6 @@
           "key": "77521da6-5a0a-44bf-b434-6947f345c970",
           "company": "Slash",
           "role": "Software Engineer, Growth",
-          "fitScore": 9,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4353111076",
-          "company": "Snyk",
-          "role": "Associate Product Engineer",
           "fitScore": 9,
           "status": "Applied",
           "count": 1,
@@ -81581,6 +81830,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-ii-at-availity-4378235176",
+          "company": "Availity",
+          "role": "Software Engineer II",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "0fc22fe4-6b8c-4c93-9b3f-fa3738054601",
           "company": "Avoca",
           "role": "Forward Deployed Engineer",
@@ -81716,6 +81977,18 @@
           "key": "software-engineer-energy-ai-at-cvector-energy-4390530770",
           "company": "CVector Energy",
           "role": "Software Engineer, Energy AI",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5982842004",
+          "company": "Cala Health",
+          "role": "Full Stack Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -82532,6 +82805,18 @@
           "key": "4590192005",
           "company": "Harmonic",
           "role": "Full Stack Product Engineer (AI), Search",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-ii-at-healthequity-4362190773",
+          "company": "HealthEquity",
+          "role": "Software Engineer II",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -83794,6 +84079,18 @@
           "role": "Software Engineer II - Core Platform",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "2026-early-career-software-engineering-mobile-backend-embedded-ai-ml-at-tp-link-4389973425",
+          "company": "TP-Link",
+          "role": "2026 Early Career Software Engineering (Mobile, BackEnd, Embedded, AI/ML)",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"

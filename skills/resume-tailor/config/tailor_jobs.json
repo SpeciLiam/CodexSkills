@@ -1,6 +1,49 @@
 {
   "batches": [
     {
+      "id": "tailor_hourly_2026_05_12_2331",
+      "date_added": "2026-05-12",
+      "note_prefix": "Hourly recruiting intake 2026-05-12 23:31 PT",
+      "note_suffix": "Public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; Apify was not configured.",
+      "update_intake_status": true,
+      "intake_tailored_date": "2026-05-12",
+      "status_updates": [],
+      "jobs": [
+        {
+          "company": "Cala Health",
+          "role": "Full Stack Software Engineer",
+          "location": "SF Bay Area / Remote",
+          "url": "https://job-boards.greenhouse.io/calahealth/jobs/5982842004",
+          "kind": "fullstack",
+          "fit": "10",
+          "focus": "full-stack product engineering, React and TypeScript interfaces, backend APIs, healthcare workflow reliability, testing, and cloud delivery",
+          "notes": "Sourced from hourly Greenhouse intake 2026-05-12 23:31 PT",
+          "source": "Greenhouse",
+          "posting_key": "5982842004",
+          "generated": true,
+          "date_tailored": "2026-05-12",
+          "resume_folder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Cala Health/Full_Stack_Software_Engineer/Liam_Van_Resume",
+          "resume_pdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Cala Health/Full_Stack_Software_Engineer/Liam_Van_Resume/Liam_Van_Cala_Health.pdf"
+        },
+        {
+          "company": "Availity",
+          "role": "Software Engineer II",
+          "location": "Colorado, United States",
+          "url": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-availity-4378235176",
+          "kind": "backend",
+          "fit": "10",
+          "focus": "backend software engineering, REST APIs, Java/Spring-style services, healthcare platform workflows, testing, and production reliability",
+          "notes": "Sourced from hourly LinkedIn intake 2026-05-12 23:31 PT",
+          "source": "LinkedIn",
+          "posting_key": "4378235176",
+          "generated": true,
+          "date_tailored": "2026-05-12",
+          "resume_folder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Availity/Software_Engineer_II/Liam_Van_Resume",
+          "resume_pdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Availity/Software_Engineer_II/Liam_Van_Resume/Liam_Van_Availity.pdf"
+        }
+      ]
+    },
+    {
       "id": "tailor_hourly_2026_05_11_2002",
       "date_added": "2026-05-11",
       "note_prefix": "Hourly Greenhouse intake 2026-05-11 20:02 PT",
