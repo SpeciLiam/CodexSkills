@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T01:25:53.028881+00:00",
+  "generatedAt": "2026-05-13T01:27:02.210609+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -12,8 +12,8 @@
       "total": 877,
       "applied": 478,
       "unapplied": 399,
-      "active": 683,
-      "rejected": 58,
+      "active": 680,
+      "rejected": 61,
       "interviewing": 3,
       "assessments": 3,
       "highFit": 736,
@@ -22,13 +22,13 @@
       "prospects": 3,
       "readyEmails": 3,
       "intakeJobs": 810,
-      "intakeQueued": 61,
+      "intakeQueued": 58,
       "intakeNew": 52,
-      "intakeManual": 416,
+      "intakeManual": 419,
       "intakeApplied": 15,
       "applyRate": 54.5,
-      "rejectionRate": 12.1,
-      "recruiterWork": 571,
+      "rejectionRate": 12.8,
+      "recruiterWork": 569,
       "engineerWork": 651,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 413
+        "value": 410
       },
       {
         "name": "Manual Apply Needed",
@@ -48,7 +48,7 @@
       },
       {
         "name": "Rejected",
-        "value": 58
+        "value": 61
       },
       {
         "name": "Resume Tailored",
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 416
+        "value": 419
       },
       {
         "name": "Tailored",
@@ -274,7 +274,7 @@
       },
       {
         "name": "Queued",
-        "value": 61
+        "value": 58
       },
       {
         "name": "New",
@@ -449,7 +449,7 @@
         "cumulative": 360,
         "added": 64,
         "applied": 56,
-        "rejected": 6,
+        "rejected": 7,
         "interviewing": 0
       },
       {
@@ -505,7 +505,7 @@
         "cumulative": 647,
         "added": 34,
         "applied": 28,
-        "rejected": 0,
+        "rejected": 2,
         "interviewing": 1
       },
       {
@@ -10293,7 +10293,7 @@
       "company": "Future",
       "role": "Infrastructure Engineer",
       "applied": true,
-      "status": "Applied",
+      "status": "Rejected",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -10308,13 +10308,14 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized infra. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Compensation & Benefits; Location (City)*",
+      "notes": "Sourced from MyGreenhouse 2026-05-01; Application submitted 2026-05-01; Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized infra. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Compensation & Benefits; Location (City)*; Rejection email received 2026-05-12",
       "noteLinks": [],
       "activityDates": [
         "2026-05-01",
         "2026-05-01",
         "2026-05-01",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-12"
       ]
     },
     {
@@ -18860,7 +18861,7 @@
       "company": "Cockroach Labs",
       "role": "Member of Technical Staff (Early Career - Developer Infrastructure)",
       "applied": true,
-      "status": "Applied",
+      "status": "Rejected",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -18875,11 +18876,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-08 from early-career source for Cockroach Labs Developer Infrastructure role; emphasized Python/Java/C++, CI/CD, regression utilities, GCloud/OCI CLI workflows, release automation, AI-assisted testing, internal support, documentation, cloud infrastructure, observability, on-call debugging, and database-service validation. Did not claim Go, Bazel, TeamCity, GitHub Actions, Terraform, Cursor/Claude Code, CockroachDB internals, or direct build-system ownership beyond supported resume evidence.; Application submitted by Liam 2026-05-08.",
+      "notes": "Tailored 2026-05-08 from early-career source for Cockroach Labs Developer Infrastructure role; emphasized Python/Java/C++, CI/CD, regression utilities, GCloud/OCI CLI workflows, release automation, AI-assisted testing, internal support, documentation, cloud infrastructure, observability, on-call debugging, and database-service validation. Did not claim Go, Bazel, TeamCity, GitHub Actions, Terraform, Cursor/Claude Code, CockroachDB internals, or direct build-system ownership beyond supported resume evidence.; Application submitted by Liam 2026-05-08.; Rejection email received 2026-05-12",
       "noteLinks": [],
       "activityDates": [
         "2026-05-08",
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-12"
       ]
     },
     {
@@ -18938,7 +18940,7 @@
       "company": "Google",
       "role": "Software Engineer I, Mobile (Android), Gmail",
       "applied": true,
-      "status": "Applied",
+      "status": "Rejected",
       "fitScore": 7,
       "reachOut": true,
       "referral": "No",
@@ -18953,11 +18955,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-08 from early-career source for Google Software Engineer I, Mobile (Android), Gmail; emphasized Java, Android/Capacitor mobile packaging, React/Vite mobile UI, Camera APIs, product/system code, code review/testability, documentation, debugging, distributed systems, OpenSearch/retrieval, and cloud service validation. Did not claim native Kotlin/Java Android production ownership, Jetpack/Compose, accessibility technology ownership, or Google-scale mobile systems beyond supported resume and SplitCheck evidence.; Application submitted by Liam 2026-05-08.",
+      "notes": "Tailored 2026-05-08 from early-career source for Google Software Engineer I, Mobile (Android), Gmail; emphasized Java, Android/Capacitor mobile packaging, React/Vite mobile UI, Camera APIs, product/system code, code review/testability, documentation, debugging, distributed systems, OpenSearch/retrieval, and cloud service validation. Did not claim native Kotlin/Java Android production ownership, Jetpack/Compose, accessibility technology ownership, or Google-scale mobile systems beyond supported resume and SplitCheck evidence.; Application submitted by Liam 2026-05-08.; Rejection email received 2026-05-12",
       "noteLinks": [],
       "activityDates": [
         "2026-05-08",
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-12"
       ]
     },
     {
@@ -24995,9 +24998,9 @@
       "discoveredAt": "2026-05-13T00:15:52.310101+00:00",
       "postedAge": "1 day ago in public LinkedIn aggregate snippet",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page; public LinkedIn capture exposed an aggregate URL and live LinkedIn application/submission was blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "engineer-ii-software-engineering-jobs-new-york-ny"
     },
     {
       "source": "Greenhouse",
@@ -25009,9 +25012,9 @@
       "discoveredAt": "2026-05-13T00:15:52.310101+00:00",
       "postedAge": "crawled today; marked New in public Greenhouse result",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, early-career signal, preferred/remote US location",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4694429005"
     },
     {
       "source": "Greenhouse",
@@ -25023,9 +25026,9 @@
       "discoveredAt": "2026-05-13T00:15:52.310101+00:00",
       "postedAge": "crawled yesterday in public Greenhouse result",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; posting asks for 4+ years, so final review should confirm level fit",
+      "trackerPostingKey": "5030496007"
     },
     {
       "source": "LinkedIn",
@@ -66190,18 +66193,6 @@
           "contacts": []
         },
         {
-          "key": "4371198015",
-          "company": "Cockroach Labs",
-          "role": "Member of Technical Staff (Early Career - Developer Infrastructure)",
-          "fitScore": 10,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "4327410663",
           "company": "Codes Health",
           "role": "Software Engineer",
@@ -71593,18 +71584,6 @@
           "key": "4377604624",
           "company": "Goldman Sachs",
           "role": "Asset & Wealth Management - Data Engineer - Associate - New York",
-          "fitScore": 7,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "124572938656457414-software-engineer-i",
-          "company": "Google",
-          "role": "Software Engineer I, Mobile (Android), Gmail",
           "fitScore": 7,
           "status": "Applied",
           "count": 1,
