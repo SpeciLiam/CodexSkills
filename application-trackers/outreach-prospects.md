@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 769
+Companies queued: 773
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -95,6 +95,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Spotify | Frontend Engineer II - SRC - Music | engineer-ii-software-engineering-jobs-new-york-ny | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/engineer-ii-software-engineering-jobs-new-york-ny) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Spool AI | Software Engineer, Voice Systems | 4413817594 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4413817594/) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Sony Interactive Entertainment | Software Engineer I | 4408454973 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4408454973/) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
+| Sola | Software Engineer, Backend | 4366277572 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4366277572/) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Smartsheet | Software Engineer I - Secure Platform Operations (Remote Eligible) | 7732551 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/smartsheet/jobs/7732551) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Skild AI | Software Engineer, AI Training and Infrastructure | 4136356008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/skildai-careers/jobs/4136356008?gh_src=Simplify) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Sigma Computing | Software Engineer (New Grad Program) | 7690411003 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/sigmacomputing/jobs/7690411003) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
@@ -451,6 +452,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Sesame | Software Engineer | software-engineer-at-sesame-4403118222 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-at-sesame-4403118222) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Serval | Deployed Software Engineer | 37e2985b-a7bf-4c02-bd71-b5d906292814 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/Serval/37e2985b-a7bf-4c02-bd71-b5d906292814/application?utm_source=oMxPwOllGK) |  |  |  |  |
 | Secureframe | New Grad Software Engineer, Growth | 4385170921 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4385170921/?alternateChannel=search&eBP=NOT_ELIGIBLE_FOR_CHARGING&refId=hNlXCoT1sJNGEiCY5kJsHQ%3D%3D&trackingId=KSiio0FyolwHsmPyo7Ka6g%3D%3D) |  |  |  |  |
+| Sea12 | Platform Engineer | 4410227455 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4410227455/) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Schonfeld | Full Stack Engineer | 7843972 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/schonfeld/jobs/7843972?gh_src=my.greenhouse.search) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Savvy Wealth | Software Engineer, Applied AI | 41dabf52-d665-4c67-a2ae-31f70df6c470 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/savvy/41dabf52-d665-4c67-a2ae-31f70df6c470/application?utm_source=LinkedInJobWrapping) |  |  |  |  |
 | Savvy | Software Engineer | 073aefc5-5eb1-4e67-9cb3-d4059dd8ce58 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/savvy/073aefc5-5eb1-4e67-9cb3-d4059dd8ce58?utm_source=LinkedInJobWrapping) |  |  |  |  |
@@ -476,6 +478,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | OpenAI | Forward Deployed Software Engineer - NYC | 533c0fc9-b773-476d-9f96-a0528efbab0e | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/openai/533c0fc9-b773-476d-9f96-a0528efbab0e/application) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome. |
 | Opaque Systems | Forward Deployed Engineer (AI) | 4235505009 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/opaquesystems/jobs/4235505009) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Omniva-Corp | Software Engineer I | omnivacorpsandbox | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/omnivacorpsandbox) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
+| Nxt Level | Founding Forward Deployed Engineer (AI) | 4406884510 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4406884510/) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Nue | Full-Stack Software Engineer (New Grad) | am9icG9zdDob7-dG2QGrMQovdiXJRx7P | 9 | Applied | Yes | [Posting](https://jobs.gem.com/nue/am9icG9zdDob7-dG2QGrMQovdiXJRx7P) |  |  |  |  |
 | Notion | Software Engineer, Cloud Infrastructure | software-engineer-cloud-infrastructure-at-notion-4334347546 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-cloud-infrastructure-at-notion-4334347546) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Northwestern Mutual | DevSecOps Engineer I | 4410761485 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4410761485/) |  |  | 2026-05-07 | Queued by resume-tailor after tailored resume update. |
@@ -526,6 +529,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Ever | Software Engineer | 5064724008 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/ever/jobs/5064724008) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Etched | Core Software Engineer | 4385381877 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4385381877/) |  |  |  |  |
 | Ema | Software Engineer, Backend | 4409831521 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4409831521/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
+| Edison Scientific | Frontend Software Engineer | 4824588007 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/edisonscientific/jobs/4824588007) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Deeptune | Member of Technical Staff | 4413737117 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4413737117/) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Dash0 | Platform Engineer | c71c1a08-d9ea-4229-b7c9-a3ac9eabc95c | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/dash0/c71c1a08-d9ea-4229-b7c9-a3ac9eabc95c/application?utm_source=LinkedIn) |  |  |  |  |
 | Dagster Labs | Software Engineer - Platform | 7714923003 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/dagsterlabs/jobs/7714923003?gh_src=ojd9d6tp3us) |  |  |  |  |
@@ -623,7 +627,6 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Overland AI | Software Engineer, Perception (All levels) | 4353111144 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4353111144) |  |  |  |  |
 | OpenAI | System Software Engineer, Consumer Devices | system-software-engineer-consumer-devices-at-openai-4381795293 | 8 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/system-software-engineer-consumer-devices-at-openai-4381795293) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | OneStream | Software Engineer I | d9517f18-7f9f-4f13-83e8-feb078e8792d | 8 | Resume Tailored | Yes | [Posting](https://recruiting.ultipro.com/ONE1018ONSO/JobBoard/1955ffa6-bda6-4c95-8412-2c731d693ab2/OpportunityDetail?opportunityId=d9517f18-7f9f-4f13-83e8-feb078e8792d&source=LinkedIn) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
-| Nxt Level | Founding Forward Deployed Engineer (AI) | 4406884510 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4406884510/) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Nuvo | Software Engineer | am9icG9zdDokPSI5BRzuYHmUj-Ig7JJz | 8 | Applied | Yes | [Posting](https://jobs.gem.com/nuvo/am9icG9zdDokPSI5BRzuYHmUj-Ig7JJz?src=linkedin) |  |  |  |  |
 | Nooks | Fullstack Engineer | 4031018009 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/nooks/jobs/4031018009) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Nirmata | Forward Deployed Engineer | 5211206008 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/nirmata/jobs/5211206008) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
@@ -659,6 +662,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Grid | Software Engineer | 637a49f0-7244-4bca-8093-232cb27b42c0 | 8 | Applied | Yes | [Posting](https://jobs.lever.co/Grid/637a49f0-7244-4bca-8093-232cb27b42c0/apply?lever-source=LinkedIn) |  |  |  |  |
 | Grafana Labs | Backend Engineer \| Mimir \| USA \| Remote | 5796104004 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/grafanalabs/jobs/5796104004) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update; application attempt blocked by Computer Use browser approval. |
 | Govini | Forward Deployed Software Engineer | 4068889009 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/govini/jobs/4068889009) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
+| GlossGenius | Software Engineer - All Levels | 4286961888 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4286961888/) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | GitLab | Backend Engineer, Knowledge Graph (Rust) | 8437754002 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/gitlab/jobs/8437754002) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Fuze Health | Software Engineer - FuzeRx | 4838340101 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/fuzehealth/jobs/4838340101) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Future | Infrastructure Engineer | 4685899005 | 8 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/future/jobs/4685899005?gh_src=my.greenhouse.search) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |

@@ -2,8 +2,8 @@
 
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
-Jobs discovered: 855
-New: 53 | Queued: 68 | Tailored: 144 | Applied: 15 | Manual: 436 | Skipped: 129 | Duplicate: 3 | Expired: 3
+Jobs discovered: 857
+New: 53 | Queued: 68 | Tailored: 144 | Applied: 15 | Manual: 437 | Skipped: 130 | Duplicate: 3 | Expired: 3
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -472,6 +472,7 @@ New: 53 | Queued: 68 | Tailored: 144 | Applied: 15 | Manual: 436 | Skipped: 129 
 | LinkedIn | Uber | Software Engineer I | San Francisco, CA | 4403550427 | https://www.linkedin.com/jobs/view/4403550427/ | 2026-05-02T22:16:26.875141+00:00 | 20 hours ago | 10 | Tailored | SWE-family role, early-career signal, SF/Bay Area preference | 4403550427 |
 | Greenhouse | Truveta | Software Engineer - Person Matching | Seattle, WA | 5817190004 | https://job-boards.greenhouse.io/truveta/jobs/5817190004 | 2026-05-02T22:16:26.875141+00:00 | 2 days ago | 10 | Tailored | SWE-family role, early-career signal, preferred/remote US location | 5817190004 |
 | LinkedIn | Confido | New Grad Software Engineer | New York, NY | 4401827377 | https://www.linkedin.com/jobs/view/4401827377/ | 2026-05-02T22:16:26.875141+00:00 | 20 hours ago | 10 | Tailored | SWE-family role, early-career signal, NYC preference | 4401827377 |
+| Greenhouse | Edison Scientific | Frontend Software Engineer | San Francisco, CA | 4824588007 | https://job-boards.greenhouse.io/edisonscientific/jobs/4824588007 | 2026-05-13T22:04:54.814514+00:00 | Public Greenhouse result captured 2026-05-13; crawled 3 days ago | 9 | Manual | Tailored 2026-05-13; resume rendered and verified one page; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight | 4824588007 |
 | Greenhouse | Chime Financial, Inc | Backend Engineer | San Francisco, CA | 8342770002 | https://job-boards.greenhouse.io/chime/jobs/8342770002?gh_jid=8342770002 | 2026-05-13T17:49:32.641717+00:00 |  | 9 | Skipped | Skipped 2026-05-13: Greenhouse job redirects to Chime careers search page, not the posting |  |
 | LinkedIn | Thera | Founding Engineer | New York, NY | 4377084383 | https://www.linkedin.com/jobs/view/founding-engineer-at-thera-4377084383 | 2026-05-13T16:32:36.964331+00:00 | 4 days ago | 9 | Queued | SWE-family role, NYC preference |  |
 | LinkedIn | TechTree | Founding Engineer / Founding Full-Stack Engineer | New York, United States | 4368994827 | https://www.linkedin.com/jobs/view/founding-engineer-founding-full-stack-engineer-at-techtree-4368994827 | 2026-05-13T16:32:36.964331+00:00 | 1 week ago | 9 | Queued | SWE-family role, NYC preference |  |
@@ -841,6 +842,7 @@ New: 53 | Queued: 68 | Tailored: 144 | Applied: 15 | Manual: 436 | Skipped: 129 
 | Greenhouse | TRM Labs | Forward Deployed Software Engineer (TS/SCI) | Washington DC | 5734269004 | https://job-boards.greenhouse.io/trmlabs/jobs/5734269004 | 2026-05-06T02:05:09.633867+00:00 | Greenhouse public result still visible 2026-05-06 | 3 | Skipped | SWE-family role, other US location |  |
 | Greenhouse | Otter | Frontend Engineer - Los Angeles, CA | Los Angeles, CA | 8038656002 | https://job-boards.greenhouse.io/otter/jobs/8038656002 | 2026-05-02T23:33:24.154518+00:00 | crawled today | 3 | Skipped | SWE-family role, location needs review |  |
 | Greenhouse | Coast | Full-Stack Engineer / Senior Full-Stack Engineer | New York, NY | 4000170004 | https://job-boards.greenhouse.io/coast/jobs/4000170004 | 2026-05-04T20:03:12.177145+00:00 | Greenhouse public result crawled last week; still visible 2026-05-04 | 2 | Skipped | SWE-family role, skip-title signal, NYC preference |  |
+| Greenhouse | Peregrine Technologies | Staff Software Engineer, Machine Learning | San Francisco, CA | 4635570005 | https://job-boards.greenhouse.io/peregrinetechnologies/jobs/4635570005 | 2026-05-13T22:04:54.814514+00:00 | Public Greenhouse result captured 2026-05-13; crawled 2 months ago | 1 | Skipped | SWE-family role, skip-title signal, SF/Bay Area preference |  |
 | Greenhouse | Materialize | Staff Full Stack Engineer, Console | New York, New York, United States | 5693572004 | https://job-boards.greenhouse.io/materialize/jobs/5693572004 | 2026-05-12T03:02:51.609562+00:00 | 2026-05-12T03:02:48.328Z | 1 | Skipped | SWE-family role, skip-title signal, NYC preference |  |
 | Greenhouse | Mighty Networks | Senior Software Engineer, Full-Stack | Remote | 8506638002 | https://job-boards.greenhouse.io/mightynetworks/jobs/8506638002 | 2026-05-12T00:05:48.697661+00:00 | crawled today | 1 | Skipped | SWE-family role, skip-title signal, preferred/remote US location |  |
 | Greenhouse | Invisible Technologies | Principal Backend Engineer (Forward Deployed) | Austin, Texas - Hybrid; New York - Hybrid; San Francisco Bay Area - Hybrid | 4697596101 | https://job-boards.greenhouse.io/invisibletech/jobs/4697596101 | 2026-05-12T00:05:48.697661+00:00 | crawled 4 days ago | 1 | Skipped | SWE-family role, skip-title signal, NYC preference |  |
