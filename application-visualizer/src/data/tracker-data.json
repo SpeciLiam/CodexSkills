@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T06:42:00.130957+00:00",
+  "generatedAt": "2026-05-13T14:23:11.087754+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,7 +21,7 @@
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 814,
+      "intakeJobs": 816,
       "intakeQueued": 58,
       "intakeNew": 52,
       "intakeManual": 423,
@@ -270,7 +270,7 @@
       },
       {
         "name": "Skipped",
-        "value": 112
+        "value": 114
       },
       {
         "name": "Queued",
@@ -300,7 +300,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 554
+        "value": 556
       },
       {
         "name": "LinkedIn",
@@ -35482,6 +35482,20 @@
       "trackerPostingKey": ""
     },
     {
+      "source": "Greenhouse",
+      "company": "Flex",
+      "role": "Senior Software Engineer, Fullstack (Risk Engineering)",
+      "location": "New York, New York, United States; Remote (U.S.); San Francisco, California, United States",
+      "postingKey": "4689406005",
+      "jobUrl": "https://job-boards.greenhouse.io/flex/jobs/4689406005",
+      "discoveredAt": "2026-05-13T14:22:50.790714+00:00",
+      "postedAge": "Crawled yesterday; public Greenhouse capture 2026-05-13",
+      "fitScore": 5,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "LinkedIn",
       "company": "Avalara",
       "role": "Software Development Engineer",
@@ -36011,6 +36025,20 @@
       "fitScore": 4,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "System",
+      "role": "Senior Software Engineer",
+      "location": "New York City, Remote",
+      "postingKey": "5573086004",
+      "jobUrl": "https://job-boards.greenhouse.io/system/jobs/5573086004",
+      "discoveredAt": "2026-05-13T14:22:50.790714+00:00",
+      "postedAge": "Crawled 4 days ago; public Greenhouse capture 2026-05-13",
+      "fitScore": 3,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
       "trackerPostingKey": ""
     },
     {

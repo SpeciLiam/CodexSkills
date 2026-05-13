@@ -2,8 +2,8 @@
 
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
-Jobs discovered: 814
-New: 52 | Queued: 60 | Tailored: 144 | Applied: 15 | Manual: 421 | Skipped: 112 | Duplicate: 3 | Expired: 3
+Jobs discovered: 816
+New: 52 | Queued: 58 | Tailored: 144 | Applied: 15 | Manual: 423 | Skipped: 114 | Duplicate: 3 | Expired: 3
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -749,6 +749,7 @@ New: 52 | Queued: 60 | Tailored: 144 | Applied: 15 | Manual: 421 | Skipped: 112 
 | Greenhouse | Labelbox | Forward Deployed Engineer, RL Environments | San Francisco Bay Area | 5101187007 | https://job-boards.greenhouse.io/labelbox/jobs/5101187007 | 2026-05-02T22:57:58.203484+00:00 | yesterday | 6 | New | SWE-family role, SF/Bay Area preference |  |
 | Greenhouse | Glean | Founding Forward Deployed Engineer | Remote - US | 4651991005 | https://job-boards.greenhouse.io/gleanwork/jobs/4651991005 | 2026-05-02T22:57:58.203484+00:00 | yesterday | 6 | New | SWE-family role, preferred/remote US location |  |
 | Greenhouse | DevRev | Forward Deployed Engineer | Austin, Texas, United States | 5668875004 | https://job-boards.greenhouse.io/devrev/jobs/5668875004 | 2026-05-02T22:57:58.203484+00:00 | yesterday | 6 | New | SWE-family role, preferred/remote US location |  |
+| Greenhouse | Flex | Senior Software Engineer, Fullstack (Risk Engineering) | New York, New York, United States; Remote (U.S.); San Francisco, California, United States | 4689406005 | https://job-boards.greenhouse.io/flex/jobs/4689406005 | 2026-05-13T14:22:50.790714+00:00 | Crawled yesterday; public Greenhouse capture 2026-05-13 | 5 | Skipped | SWE-family role, skip-title signal, NYC preference |  |
 | LinkedIn | Avalara | Software Development Engineer | United States | 4328693856 | https://www.linkedin.com/jobs/view/software-development-engineer-at-avalara-4328693856 | 2026-05-12T17:06:51.104204+00:00 | public LinkedIn search capture 2026-05-12; listed 12 hours ago | 5 | Skipped | preferred/remote US location |  |
 | Greenhouse | Inorsa | Software Engineer | Austin, TX | 4821202007 | https://job-boards.greenhouse.io/inorsa/jobs/4821202007 | 2026-05-12T15:15:25.887278+00:00 | Crawled 5 days ago | 5 | New | SWE-family role, location needs review |  |
 | Greenhouse | Flex | Senior Software Engineer, Fullstack | New York, New York, United States; Remote; San Francisco, California, United States | 4641215005 | https://job-boards.greenhouse.io/flex/jobs/4641215005 | 2026-05-12T01:06:05.463777+00:00 | search crawled last week; live board verified 2026-05-11 | 5 | Skipped | SWE-family role, skip-title signal, NYC preference |  |
@@ -787,6 +788,7 @@ New: 52 | Queued: 60 | Tailored: 144 | Applied: 15 | Manual: 421 | Skipped: 112 
 | LinkedIn | Govini | Forward Deployed Software Engineer | Pittsburgh, PA | 4346650197 | https://www.linkedin.com/jobs/view/forward-deployed-software-engineer-at-govini-4346650197 | 2026-05-05T22:04:15.642911+00:00 | 1 day ago | 4 | Skipped | Skipped 2026-05-05: duplicate/low-fit LinkedIn capture; Greenhouse Govini posting 4068889009 was tailored and moved to manual apply needed |  |
 | LinkedIn | TriEdge Investments | Staff Forward Deployed Software Engineer | New York, NY | staff-forward-deployed-software-engineer-at-triedge-investments-4362395014 | https://www.linkedin.com/jobs/view/staff-forward-deployed-software-engineer-at-triedge-investments-4362395014 | 2026-05-03T01:05:58.686723+00:00 | 20 hours ago; public LinkedIn result | 4 | Skipped | SWE-family role, skip-title signal, NYC preference |  |
 | Greenhouse | Govini | Senior Software Engineer | Pittsburgh, Pennsylvania, United States | 4068826009 | https://job-boards.greenhouse.io/govini/jobs/4068826009 | 2026-05-02T23:33:24.154518+00:00 | crawled today | 4 | Skipped | SWE-family role, skip-title signal, preferred/remote US location |  |
+| Greenhouse | System | Senior Software Engineer | New York City, Remote | 5573086004 | https://job-boards.greenhouse.io/system/jobs/5573086004 | 2026-05-13T14:22:50.790714+00:00 | Crawled 4 days ago; public Greenhouse capture 2026-05-13 | 3 | Skipped | SWE-family role, skip-title signal, NYC preference |  |
 | Greenhouse | Pillar | Staff Software Engineer - Full Stack | New York, NY | 4074388009 | https://job-boards.greenhouse.io/stratoslabsinc/jobs/4074388009 | 2026-05-12T03:02:51.609562+00:00 | 2026-05-12T03:02:48.328Z | 3 | Skipped | SWE-family role, skip-title signal, NYC preference |  |
 | Greenhouse | WorkBoard | Senior Full Stack Engineer | United States - Remote | 8388974002 | https://job-boards.greenhouse.io/workboard/jobs/8388974002 | 2026-05-12T00:05:48.697661+00:00 | crawled 3 days ago | 3 | Skipped | SWE-family role, skip-title signal, preferred/remote US location |  |
 | Greenhouse | Serhant | Senior Full Stack Engineer | Remote, USA | 4121505009 | https://job-boards.greenhouse.io/serhant/jobs/4121505009 | 2026-05-12T00:05:48.697661+00:00 | crawled 3 days ago | 3 | Skipped | SWE-family role, skip-title signal, preferred/remote US location |  |
