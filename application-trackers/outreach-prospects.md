@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 764
+Companies queued: 766
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -344,6 +344,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | BlackRock | Associate, Full Stack Engineer | 4380495648 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4380495648/?trackingId=AJW6hfwNSWOSl69I9BEbpA%3D%3D&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BI6XXU%2BGdQIad7YU%2Bc9JYoA%3D%3D) |  |  |  |  |
 | Benchling | Software Engineer, New Grad (2026) | b3c9b312-6e2b-4dbc-9b15-0b0310d75a7f | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/benchling/b3c9b312-6e2b-4dbc-9b15-0b0310d75a7f/application?utm_source=JobWrapping) |  |  |  |  |
 | Beacon Software | Software Engineer | 4974798008 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/beaconsoftware/jobs/4974798008) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
+| Baseten | Software Engineer - Infrastructure | software-engineer-infrastructure-at-baseten-4380547143 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-infrastructure-at-baseten-4380547143) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Baselayer | Junior Backend Engineer | 4397307930 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4397307930) |  |  |  |  |
 | Axon | Software Engineer I | 7662648003 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/axon/jobs/7662648003) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Axon | Software Engineer II | 7508518003 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/axon/jobs/7508518003) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
@@ -475,6 +476,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Opaque Systems | Forward Deployed Engineer (AI) | 4235505009 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/opaquesystems/jobs/4235505009) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Omniva-Corp | Software Engineer I | omnivacorpsandbox | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/omnivacorpsandbox) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Nue | Full-Stack Software Engineer (New Grad) | am9icG9zdDob7-dG2QGrMQovdiXJRx7P | 9 | Applied | Yes | [Posting](https://jobs.gem.com/nue/am9icG9zdDob7-dG2QGrMQovdiXJRx7P) |  |  |  |  |
+| Notion | Software Engineer, Cloud Infrastructure | software-engineer-cloud-infrastructure-at-notion-4334347546 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-cloud-infrastructure-at-notion-4334347546) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Northwestern Mutual | DevSecOps Engineer I | 4410761485 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4410761485/) |  |  | 2026-05-07 | Queued by resume-tailor after tailored resume update. |
 | ngrok | Software Engineer II/III/Senior, Gateway | 5789584004 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/ngrokinc/jobs/5789584004) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Neuralink | Software Engineer, Implant Manufacturing | 6353417003 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/neuralink/jobs/6353417003) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |

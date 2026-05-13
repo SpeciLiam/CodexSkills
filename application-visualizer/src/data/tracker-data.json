@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T18:52:54.247317+00:00",
+  "generatedAt": "2026-05-13T18:57:33.172461+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,27 +9,27 @@
   },
   "stats": {
     "kpis": {
-      "total": 893,
+      "total": 895,
       "applied": 480,
-      "unapplied": 413,
-      "active": 692,
+      "unapplied": 415,
+      "active": 694,
       "rejected": 65,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 751,
-      "reachOut": 814,
+      "highFit": 753,
+      "reachOut": 816,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
       "intakeJobs": 851,
-      "intakeQueued": 75,
+      "intakeQueued": 65,
       "intakeNew": 53,
-      "intakeManual": 434,
+      "intakeManual": 436,
       "intakeApplied": 15,
-      "applyRate": 53.8,
+      "applyRate": 53.6,
       "rejectionRate": 13.5,
-      "recruiterWork": 581,
-      "engineerWork": 666,
+      "recruiterWork": 583,
+      "engineerWork": 668,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 250
+        "value": 252
       },
       {
         "name": "Archived",
@@ -70,7 +70,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 312
+        "value": 314
       },
       {
         "name": "Ashby",
@@ -144,7 +144,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 388
+        "value": 390
       },
       {
         "name": "Bay Area",
@@ -194,7 +194,7 @@
       },
       {
         "name": "Infra/Platform",
-        "value": 45
+        "value": 47
       },
       {
         "name": "Frontend",
@@ -240,11 +240,11 @@
       },
       {
         "score": "9",
-        "count": 164
+        "count": 165
       },
       {
         "score": "10",
-        "count": 422
+        "count": 423
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 434
+        "value": 436
       },
       {
         "name": "Tailored",
@@ -270,11 +270,11 @@
       },
       {
         "name": "Skipped",
-        "value": 120
+        "value": 128
       },
       {
         "name": "Queued",
-        "value": 75
+        "value": 65
       },
       {
         "name": "New",
@@ -542,8 +542,8 @@
       },
       {
         "date": "2026-05-13",
-        "cumulative": 893,
-        "added": 17,
+        "cumulative": 895,
+        "added": 19,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -25404,6 +25404,58 @@
       "activityDates": [
         "2026-05-13"
       ]
+    },
+    {
+      "company": "Baseten",
+      "role": "Software Engineer - Infrastructure",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-13",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-infrastructure-at-baseten-4380547143",
+      "postingKey": "software-engineer-infrastructure-at-baseten-4380547143",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Baseten/Software_Engineer_Infrastructure/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Baseten/Software_Engineer_Infrastructure/Liam_Van_Resume/Liam_Van_Baseten.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly recruiting intake 2026-05-13 10:49 PT; tailored SWE resume rendered and verified one page; emphasized AI infrastructure, Python/Go service work, Kubernetes and containerized deployment, monitoring, distributed systems, and cloud reliability. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; submit attempts are blocked until logged-in browser access is available.; Manual apply needed 2026-05-13: tailored resume rendered and verified one page, but live LinkedIn/Easy Apply submission is blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback was also denied.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-13",
+        "2026-05-13"
+      ]
+    },
+    {
+      "company": "Notion",
+      "role": "Software Engineer, Cloud Infrastructure",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-13",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-cloud-infrastructure-at-notion-4334347546",
+      "postingKey": "software-engineer-cloud-infrastructure-at-notion-4334347546",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Notion/Software_Engineer_Cloud_Infrastructure/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Notion/Software_Engineer_Cloud_Infrastructure/Liam_Van_Resume/Liam_Van_Notion.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly recruiting intake 2026-05-13 10:49 PT; tailored SWE resume rendered and verified one page; emphasized cloud infrastructure foundations, compute/networking reliability, self-service developer platforms, observability, testing, and pragmatic product-minded infrastructure delivery. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; submit attempts are blocked until logged-in browser access is available.; Manual apply needed 2026-05-13: tailored resume rendered and verified one page, but live LinkedIn/Easy Apply submission is blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback was also denied.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-13",
+        "2026-05-13"
+      ]
     }
   ],
   "jobIntake": [
@@ -25412,13 +25464,13 @@
       "company": "Weights & Biases",
       "role": "Software Engineer, Workspaces - Weights & Biases",
       "location": "New York, NY",
-      "postingKey": "linkedin-wandb-workspaces-nyc",
-      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-cloud-infrastructure-platform-jobs-new-york-ny",
+      "postingKey": "4352831439",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-workspaces-weights-biases-at-weights-biases-4352831439",
       "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
       "postedAge": "",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-13: public LinkedIn job redirects to expired search page",
       "trackerPostingKey": ""
     },
     {
@@ -25426,13 +25478,13 @@
       "company": "Watershed",
       "role": "Software engineer, cloud infrastructure",
       "location": "New York, NY",
-      "postingKey": "linkedin-watershed-cloud-infrastructure-nyc",
-      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-cloud-infrastructure-platform-jobs-new-york-ny",
+      "postingKey": "4345987575",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-cloud-infrastructure-at-watershed-4345987575",
       "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
       "postedAge": "",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-13: public posting asks for 3-5+ years infrastructure/platform experience and is a weaker junior fit",
       "trackerPostingKey": ""
     },
     {
@@ -25440,13 +25492,13 @@
       "company": "Ramp",
       "role": "Software Engineer, Data Platform",
       "location": "New York, NY",
-      "postingKey": "linkedin-ramp-data-platform-nyc",
-      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-cloud-infrastructure-platform-jobs-new-york-ny",
+      "postingKey": "4384385186",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-data-platform-at-ramp-4384385186",
       "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
       "postedAge": "",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-13: public LinkedIn job redirects to expired page / no longer accepting applications",
       "trackerPostingKey": ""
     },
     {
@@ -25459,22 +25511,22 @@
       "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
       "postedAge": "",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page, but live LinkedIn/Easy Apply submission is blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback was also denied.",
+      "trackerPostingKey": "4334347546"
     },
     {
       "source": "LinkedIn",
       "company": "Keye (YC F24)",
       "role": "Software Engineer (Remote)",
       "location": "New York, NY / Remote",
-      "postingKey": "linkedin-keye-software-engineer-remote",
-      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-cloud-infrastructure-platform-jobs-new-york-ny",
+      "postingKey": "4325154188",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-remote-at-keye-yc-f24-4325154188",
       "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
       "postedAge": "",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-13: public posting asks for 4+ years production full-stack/AI experience, below fit threshold for this intake",
       "trackerPostingKey": ""
     },
     {
@@ -25487,8 +25539,8 @@
       "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
       "postedAge": "",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-13: degraded capture did not surface an exact matching posting URL for safe tailoring/apply",
       "trackerPostingKey": ""
     },
     {
@@ -25496,13 +25548,13 @@
       "company": "CoreWeave",
       "role": "Backend Software Engineer, Cloud Platform",
       "location": "New York, NY",
-      "postingKey": "linkedin-coreweave-backend-cloud-platform-nyc",
-      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-cloud-infrastructure-platform-jobs-new-york-ny",
+      "postingKey": "4190854494",
+      "jobUrl": "https://www.linkedin.com/jobs/view/backend-software-engineer-cloud-platform-at-coreweave-4190854494",
       "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
       "postedAge": "",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-13: public LinkedIn job redirects to expired search page",
       "trackerPostingKey": ""
     },
     {
@@ -25510,14 +25562,14 @@
       "company": "Baseten",
       "role": "Software Engineer - Infrastructure",
       "location": "New York, NY",
-      "postingKey": "linkedin-baseten-infra-nyc",
-      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-cloud-infrastructure-platform-jobs-new-york-ny",
+      "postingKey": "4380547143",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-infrastructure-at-baseten-4380547143",
       "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
       "postedAge": "",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page, but live LinkedIn/Easy Apply submission is blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback was also denied.",
+      "trackerPostingKey": "4380547143"
     },
     {
       "source": "Greenhouse",
@@ -31913,8 +31965,8 @@
       "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
       "postedAge": "",
       "fitScore": 9,
-      "status": "Queued",
-      "reason": "SWE-family role, SF/Bay Area preference",
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-13: Greenhouse job redirects to Chime careers search page, not the posting",
       "trackerPostingKey": ""
     },
     {
@@ -33453,8 +33505,8 @@
       "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
       "postedAge": "",
       "fitScore": 8,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-13: degraded capture did not surface an exact matching posting URL and public results were stale/non-matching",
       "trackerPostingKey": ""
     },
     {
@@ -41679,6 +41731,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Baseten",
+      "role": "Software Engineer - Infrastructure",
+      "postingKey": "software-engineer-infrastructure-at-baseten-4380547143",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-infrastructure-at-baseten-4380547143",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-13",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Baselayer",
       "role": "Junior Backend Engineer",
       "postingKey": "4397307930",
@@ -43380,6 +43445,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Notion",
+      "role": "Software Engineer, Cloud Infrastructure",
+      "postingKey": "software-engineer-cloud-infrastructure-at-notion-4334347546",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/software-engineer-cloud-infrastructure-at-notion-4334347546",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-13",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Northwestern Mutual",
@@ -67035,6 +67113,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-infrastructure-at-baseten-4380547143",
+          "company": "Baseten",
+          "role": "Software Engineer - Infrastructure",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4974798008",
           "company": "Beacon Software",
           "role": "Software Engineer",
@@ -70472,6 +70562,18 @@
           "role": "DevSecOps Engineer I",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-cloud-infrastructure-at-notion-4334347546",
+          "company": "Notion",
+          "role": "Software Engineer, Cloud Infrastructure",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -82963,6 +83065,18 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-infrastructure-at-baseten-4380547143",
+          "company": "Baseten",
+          "role": "Software Engineer - Infrastructure",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4380495648",
           "company": "BlackRock",
           "role": "Associate, Full Stack Engineer",
@@ -86532,6 +86646,18 @@
           "role": "DevSecOps Engineer I",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-cloud-infrastructure-at-notion-4334347546",
+          "company": "Notion",
+          "role": "Software Engineer, Cloud Infrastructure",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
