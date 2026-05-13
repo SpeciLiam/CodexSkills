@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T18:37:30.053392+00:00",
+  "generatedAt": "2026-05-13T18:38:20.848842+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -12,7 +12,7 @@
       "total": 892,
       "applied": 479,
       "unapplied": 413,
-      "active": 693,
+      "active": 694,
       "rejected": 63,
       "interviewing": 3,
       "assessments": 3,
@@ -22,14 +22,14 @@
       "prospects": 3,
       "readyEmails": 3,
       "intakeJobs": 851,
-      "intakeQueued": 76,
+      "intakeQueued": 75,
       "intakeNew": 53,
       "intakeManual": 429,
       "intakeApplied": 15,
       "applyRate": 53.7,
       "rejectionRate": 13.2,
-      "recruiterWork": 581,
-      "engineerWork": 665,
+      "recruiterWork": 582,
+      "engineerWork": 666,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,11 +40,11 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 245
+        "value": 250
       },
       {
         "name": "Archived",
-        "value": 136
+        "value": 135
       },
       {
         "name": "Rejected",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 33
+        "value": 29
       },
       {
         "name": "Online Assessment",
@@ -266,7 +266,7 @@
       },
       {
         "name": "Tailored",
-        "value": 148
+        "value": 149
       },
       {
         "name": "Skipped",
@@ -274,7 +274,7 @@
       },
       {
         "name": "Queued",
-        "value": 76
+        "value": 75
       },
       {
         "name": "New",
@@ -454,15 +454,15 @@
       },
       {
         "date": "2026-05-02",
-        "cumulative": 413,
-        "added": 53,
+        "cumulative": 412,
+        "added": 52,
         "applied": 23,
         "rejected": 1,
         "interviewing": 0
       },
       {
         "date": "2026-05-03",
-        "cumulative": 483,
+        "cumulative": 482,
         "added": 70,
         "applied": 17,
         "rejected": 1,
@@ -470,7 +470,7 @@
       },
       {
         "date": "2026-05-04",
-        "cumulative": 507,
+        "cumulative": 506,
         "added": 24,
         "applied": 11,
         "rejected": 1,
@@ -478,7 +478,7 @@
       },
       {
         "date": "2026-05-05",
-        "cumulative": 541,
+        "cumulative": 540,
         "added": 34,
         "applied": 14,
         "rejected": 2,
@@ -486,7 +486,7 @@
       },
       {
         "date": "2026-05-06",
-        "cumulative": 610,
+        "cumulative": 609,
         "added": 69,
         "applied": 32,
         "rejected": 1,
@@ -494,7 +494,7 @@
       },
       {
         "date": "2026-05-07",
-        "cumulative": 613,
+        "cumulative": 612,
         "added": 3,
         "applied": 2,
         "rejected": 0,
@@ -502,7 +502,7 @@
       },
       {
         "date": "2026-05-08",
-        "cumulative": 647,
+        "cumulative": 646,
         "added": 34,
         "applied": 28,
         "rejected": 2,
@@ -510,7 +510,7 @@
       },
       {
         "date": "2026-05-09",
-        "cumulative": 705,
+        "cumulative": 704,
         "added": 58,
         "applied": 0,
         "rejected": 0,
@@ -518,7 +518,7 @@
       },
       {
         "date": "2026-05-10",
-        "cumulative": 791,
+        "cumulative": 790,
         "added": 86,
         "applied": 25,
         "rejected": 1,
@@ -526,7 +526,7 @@
       },
       {
         "date": "2026-05-11",
-        "cumulative": 823,
+        "cumulative": 822,
         "added": 32,
         "applied": 4,
         "rejected": 0,
@@ -534,7 +534,7 @@
       },
       {
         "date": "2026-05-12",
-        "cumulative": 876,
+        "cumulative": 875,
         "added": 53,
         "applied": 3,
         "rejected": 0,
@@ -543,7 +543,7 @@
       {
         "date": "2026-05-13",
         "cumulative": 892,
-        "added": 16,
+        "added": 17,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -718,7 +718,7 @@
         "company": "Yext",
         "role": "Software Engineer",
         "fitScore": 10,
-        "status": "Resume Tailored",
+        "status": "Manual Apply Needed",
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/yext/jobs/7085149"
@@ -12233,11 +12233,11 @@
       "company": "Yext",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Archived",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
-      "dateAdded": "2026-05-02",
+      "dateAdded": "2026-05-13",
       "location": "New York, NY",
       "source": "Greenhouse",
       "jobLink": "https://job-boards.greenhouse.io/yext/jobs/7085149",
@@ -12248,11 +12248,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC product engineering, AI-search platform services, backend APIs, data workflows, and production reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Posting closed/unavailable 2026-05-02",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC product engineering, AI-search platform services, backend APIs, data workflows, and production reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Posting closed/unavailable 2026-05-02; Tailored 2026-05-13; resume rendered and verified one page. Manual apply needed: live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; form also asks desired salary and standard legal authorization fields.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-02",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-13"
       ]
     },
     {
@@ -25225,7 +25226,7 @@
       "company": "Yext",
       "role": "Software Engineer, AI Search",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -25240,9 +25241,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly recruiting intake 2026-05-13 09:32 PT; tailored SWE resume rendered and verified one page; emphasized AI search product engineering, backend APIs, data workflows, TypeScript product surfaces, testing, and production reliability. Public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; Apify was not configured.",
+      "notes": "Hourly recruiting intake 2026-05-13 09:32 PT; tailored SWE resume rendered and verified one page; emphasized AI search product engineering, backend APIs, data workflows, TypeScript product surfaces, testing, and production reliability. Public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; Apify was not configured.; Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-13",
         "2026-05-13"
       ]
     },
@@ -25275,7 +25277,7 @@
       "company": "Motive",
       "role": "Software Engineer, Full Stack",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -25290,9 +25292,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly recruiting intake 2026-05-13 09:32 PT; tailored SWE resume rendered and verified one page; emphasized remote full-stack product engineering, React and TypeScript interfaces, backend APIs, reliability validation, testing, and cross-functional delivery. Public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; Apify was not configured.",
+      "notes": "Hourly recruiting intake 2026-05-13 09:32 PT; tailored SWE resume rendered and verified one page; emphasized remote full-stack product engineering, React and TypeScript interfaces, backend APIs, reliability validation, testing, and cross-functional delivery. Public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; Apify was not configured.; Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-13",
         "2026-05-13"
       ]
     },
@@ -25300,7 +25303,7 @@
       "company": "LTK",
       "role": "Software Engineer, Full Stack",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -25315,9 +25318,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly recruiting intake 2026-05-13 09:32 PT; tailored SWE resume rendered and verified one page; emphasized remote full-stack product engineering, React product surfaces, backend APIs, creator-commerce workflows, testing, and reliable delivery. Public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; Apify was not configured.",
+      "notes": "Hourly recruiting intake 2026-05-13 09:32 PT; tailored SWE resume rendered and verified one page; emphasized remote full-stack product engineering, React product surfaces, backend APIs, creator-commerce workflows, testing, and reliable delivery. Public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; Apify was not configured.; Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-13",
         "2026-05-13"
       ]
     },
@@ -25350,7 +25354,7 @@
       "company": "Attis",
       "role": "Forward Deployed Software Engineer - Up to $220k + Equity",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -25365,9 +25369,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly recruiting intake 2026-05-13 09:32 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed software engineering, customer-facing delivery, backend APIs, data workflows, AI-enabled product iteration, testing, and production reliability. Public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; Apify was not configured.",
+      "notes": "Hourly recruiting intake 2026-05-13 09:32 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed software engineering, customer-facing delivery, backend APIs, data workflows, AI-enabled product iteration, testing, and production reliability. Public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; Apify was not configured.; Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live LinkedIn/ATS submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-13",
         "2026-05-13"
       ]
     }
@@ -25509,9 +25514,9 @@
       "discoveredAt": "2026-05-13T16:32:50.872782+00:00",
       "postedAge": "",
       "fitScore": 10,
-      "status": "Queued",
-      "reason": "SWE-family role, NYC preference",
-      "trackerPostingKey": ""
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-13; resume rendered and verified one page; emphasized forward-deployed software engineering, customer-facing delivery, backend APIs, data workflows, AI-enabled product iteration, testing, and production reliability",
+      "trackerPostingKey": "forward-deployed-software-engineer-up-to-%24220k-%2B-equity-at-attis-4400554099"
     },
     {
       "source": "Greenhouse",
@@ -37320,7 +37325,7 @@
       "role": "Software Engineer",
       "postingKey": "7085149",
       "fitScore": 10,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/yext/jobs/7085149",
       "prospectCount": 0,
@@ -66918,7 +66923,7 @@
           "company": "Attis",
           "role": "Forward Deployed Software Engineer - Up to $220k + Equity",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -68046,7 +68051,7 @@
           "company": "LTK",
           "role": "Software Engineer, Full Stack",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -68310,7 +68315,7 @@
           "company": "Motive",
           "role": "Software Engineer, Full Stack",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -69566,11 +69571,23 @@
           "contacts": []
         },
         {
+          "key": "7085149",
+          "company": "Yext",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8122667002",
           "company": "Yext",
           "role": "Software Engineer, AI Search",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -82846,7 +82863,7 @@
           "company": "Attis",
           "role": "Forward Deployed Software Engineer - Up to $220k + Equity",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -83998,7 +84015,7 @@
           "company": "LTK",
           "role": "Software Engineer, Full Stack",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -84286,7 +84303,7 @@
           "company": "Motive",
           "role": "Software Engineer, Full Stack",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -85710,11 +85727,23 @@
           "contacts": []
         },
         {
+          "key": "7085149",
+          "company": "Yext",
+          "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8122667002",
           "company": "Yext",
           "role": "Software Engineer, AI Search",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"

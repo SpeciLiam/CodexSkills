@@ -11,7 +11,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Zettabyte | Software Engineer (New Grad) | 50a9c6dc-7225-4ff0-a914-69d1dd325d6a | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/zettabyte-space/50a9c6dc-7225-4ff0-a914-69d1dd325d6a/application?utm_source=LinkedInPaid) |  |  |  |  |
 | YugabyteDB | Platform Software Engineer (Control Plane) | 4656120006 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/yugabyte/jobs/4656120006) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
-| Yext | Software Engineer | 7085149 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/yext/jobs/7085149) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
+| Yext | Software Engineer | 7085149 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/yext/jobs/7085149) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Yext | Software Engineer, AI Search | 8122667002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/yext/jobs/8122667002) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Writer | Forward Deployed Engineer | 4809387007 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/writer/jobs/4809387007) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Wonderschool | Early Career Software Engineer - Applied AI | 4406127370 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4406127370/) |  |  |  |  |
