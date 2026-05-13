@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T18:39:02.849144+00:00",
+  "generatedAt": "2026-05-13T18:51:00.174538+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -12,7 +12,7 @@
       "total": 893,
       "applied": 479,
       "unapplied": 414,
-      "active": 695,
+      "active": 694,
       "rejected": 63,
       "interviewing": 3,
       "assessments": 3,
@@ -28,8 +28,8 @@
       "intakeApplied": 15,
       "applyRate": 53.6,
       "rejectionRate": 13.2,
-      "recruiterWork": 583,
-      "engineerWork": 667,
+      "recruiterWork": 582,
+      "engineerWork": 666,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,11 +40,11 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 251
+        "value": 250
       },
       {
         "name": "Archived",
-        "value": 135
+        "value": 136
       },
       {
         "name": "Rejected",
@@ -454,15 +454,15 @@
       },
       {
         "date": "2026-05-02",
-        "cumulative": 412,
-        "added": 52,
+        "cumulative": 413,
+        "added": 53,
         "applied": 23,
         "rejected": 1,
         "interviewing": 0
       },
       {
         "date": "2026-05-03",
-        "cumulative": 482,
+        "cumulative": 483,
         "added": 70,
         "applied": 17,
         "rejected": 1,
@@ -470,7 +470,7 @@
       },
       {
         "date": "2026-05-04",
-        "cumulative": 506,
+        "cumulative": 507,
         "added": 24,
         "applied": 11,
         "rejected": 1,
@@ -478,7 +478,7 @@
       },
       {
         "date": "2026-05-05",
-        "cumulative": 540,
+        "cumulative": 541,
         "added": 34,
         "applied": 14,
         "rejected": 2,
@@ -486,7 +486,7 @@
       },
       {
         "date": "2026-05-06",
-        "cumulative": 609,
+        "cumulative": 610,
         "added": 69,
         "applied": 32,
         "rejected": 1,
@@ -494,7 +494,7 @@
       },
       {
         "date": "2026-05-07",
-        "cumulative": 612,
+        "cumulative": 613,
         "added": 3,
         "applied": 2,
         "rejected": 0,
@@ -502,7 +502,7 @@
       },
       {
         "date": "2026-05-08",
-        "cumulative": 646,
+        "cumulative": 647,
         "added": 34,
         "applied": 28,
         "rejected": 2,
@@ -510,7 +510,7 @@
       },
       {
         "date": "2026-05-09",
-        "cumulative": 704,
+        "cumulative": 705,
         "added": 58,
         "applied": 0,
         "rejected": 0,
@@ -518,7 +518,7 @@
       },
       {
         "date": "2026-05-10",
-        "cumulative": 790,
+        "cumulative": 791,
         "added": 86,
         "applied": 25,
         "rejected": 1,
@@ -526,7 +526,7 @@
       },
       {
         "date": "2026-05-11",
-        "cumulative": 822,
+        "cumulative": 823,
         "added": 32,
         "applied": 4,
         "rejected": 0,
@@ -534,7 +534,7 @@
       },
       {
         "date": "2026-05-12",
-        "cumulative": 875,
+        "cumulative": 876,
         "added": 53,
         "applied": 3,
         "rejected": 0,
@@ -543,7 +543,7 @@
       {
         "date": "2026-05-13",
         "cumulative": 893,
-        "added": 18,
+        "added": 17,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -12233,11 +12233,11 @@
       "company": "Yext",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
-      "dateAdded": "2026-05-13",
+      "dateAdded": "2026-05-02",
       "location": "New York, NY",
       "source": "Greenhouse",
       "jobLink": "https://job-boards.greenhouse.io/yext/jobs/7085149",
@@ -12248,12 +12248,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC product engineering, AI-search platform services, backend APIs, data workflows, and production reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Posting closed/unavailable 2026-05-02; Tailored 2026-05-13; resume rendered and verified one page. Manual apply needed: live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; form also asks desired salary and standard legal authorization fields.",
+      "notes": "Hourly intake 2026-05-02/03 pass; tailored SWE resume rendered and verified one page; emphasized NYC product engineering, AI-search platform services, backend APIs, data workflows, and production reliability. Browser-based submission was not attempted because Computer Use access to Chrome and Firefox was denied during this automation run.; Posting closed/unavailable 2026-05-02",
       "noteLinks": [],
       "activityDates": [
         "2026-05-02",
-        "2026-05-02",
-        "2026-05-13"
+        "2026-05-02"
       ]
     },
     {
@@ -25352,7 +25351,7 @@
     },
     {
       "company": "Attis",
-      "role": "Forward Deployed Software Engineer - Up to k + Equity",
+      "role": "Forward Deployed Software Engineer - Up to $220k + Equity",
       "applied": false,
       "status": "Manual Apply Needed",
       "fitScore": 10,
@@ -25521,14 +25520,14 @@
       "company": "StubHub",
       "role": "Software Engineer II - Mobile (AI-Powered Consumer Experiences)",
       "location": "New York, New York, United States",
-      "postingKey": "4790673101",
-      "jobUrl": "https://job-boards.greenhouse.io/stubhubinc/jobs/4790673101",
+      "postingKey": "4792623101",
+      "jobUrl": "https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4792623101",
       "discoveredAt": "2026-05-13T16:32:50.872782+00:00",
-      "postedAge": "",
+      "postedAge": "live StubHub board redirected from captured Greenhouse result",
       "fitScore": 10,
       "status": "Manual",
-      "reason": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
-      "trackerPostingKey": "4790673101"
+      "reason": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; form also asks hybrid schedule confirmation and legal accuracy affirmation",
+      "trackerPostingKey": "4792623101"
     },
     {
       "source": "LinkedIn",
@@ -41820,7 +41819,7 @@
     },
     {
       "company": "Attis",
-      "role": "Forward Deployed Software Engineer - Up to k + Equity",
+      "role": "Forward Deployed Software Engineer - Up to $220k + Equity",
       "postingKey": "forward-deployed-software-engineer-up-to-%24220k-%2B-equity-at-attis-4400554099",
       "fitScore": 10,
       "status": "Manual Apply Needed",
@@ -66960,7 +66959,7 @@
         {
           "key": "forward-deployed-software-engineer-up-to-%24220k-%2B-equity-at-attis-4400554099",
           "company": "Attis",
-          "role": "Forward Deployed Software Engineer - Up to k + Equity",
+          "role": "Forward Deployed Software Engineer - Up to $220k + Equity",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -69613,18 +69612,6 @@
           "key": "4809387007",
           "company": "Writer",
           "role": "Forward Deployed Engineer",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "7085149",
-          "company": "Yext",
-          "role": "Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -82912,7 +82899,7 @@
         {
           "key": "forward-deployed-software-engineer-up-to-%24220k-%2B-equity-at-attis-4400554099",
           "company": "Attis",
-          "role": "Forward Deployed Software Engineer - Up to k + Equity",
+          "role": "Forward Deployed Software Engineer - Up to $220k + Equity",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -85781,18 +85768,6 @@
           "key": "4809387007",
           "company": "Writer",
           "role": "Forward Deployed Engineer",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "7085149",
-          "company": "Yext",
-          "role": "Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
