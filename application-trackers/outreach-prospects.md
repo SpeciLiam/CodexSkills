@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 763
+Companies queued: 764
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -88,6 +88,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | StubHub | Software Engineer II - Web Foundations | 4782722101 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/stubhubinc/jobs/4782722101) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | StubHub | Software Engineer I | 6685067003 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/stubhubinc/jobs/6685067003) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | StubHub | Software Engineer II - Mobile (AI-Powered Consumer Experiences) | 4790673101 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/stubhubinc/jobs/4790673101) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
+| StubHub | Software Engineer II - Mobile (AI-Powered Consumer Experiences) | 4792623101 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4792623101) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Stripe | Backend Engineer, Core Technology | linkedin-public-stripe-backend-engineer-core-technology-ny-2026-05-06 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/linkedin-public-stripe-backend-engineer-core-technology-ny-2026-05-06/) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Starburst | Software Engineer II | 4947916008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/starburst/jobs/4947916008) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Spotify | Backend Engineer, Music | ee5064af-0116-4ef2-994a-cb8fed580290 | 10 | Applied | Yes | [Posting](https://jobs.lever.co/spotify/ee5064af-0116-4ef2-994a-cb8fed580290/apply?lever-source=LinkedInJobs) |  |  |  |  |
@@ -354,7 +355,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | AustinWorks | Forward Deployed Engineer | 4409635237 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4409635237/) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | Aurora | Software Engineer I, FinOps | 8450213002 | 10 | Applied | Yes | [Posting](https://aurora.tech/careers/8450213002?gh_src=b6049de52us) |  |  |  |  |
 | Aura | Software Engineer, Backend | 5837490004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/aura798/jobs/5837490004) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
-| Attis | Forward Deployed Software Engineer - Up to $220k + Equity | forward-deployed-software-engineer-up-to-%24220k-%2B-equity-at-attis-4400554099 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/forward-deployed-software-engineer-up-to-%24220k-%2B-equity-at-attis-4400554099) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
+| Attis | Forward Deployed Software Engineer - Up to k + Equity | forward-deployed-software-engineer-up-to-%24220k-%2B-equity-at-attis-4400554099 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/forward-deployed-software-engineer-up-to-%24220k-%2B-equity-at-attis-4400554099) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Attentive | Software Engineer I, AI Product | 4195625009 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/attentive/jobs/4195625009?gh_src=63pk6gu69us) |  |  |  |  |
 | Attentive | Software Engineer I | 4121843009 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/attentive/jobs/4121843009?gh_jid=4121843009) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Attentive | Software Engineer II, Developer Experience | 4120600009 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/attentive/jobs/4120600009) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
