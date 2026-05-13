@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T01:25:03.825813+00:00",
+  "generatedAt": "2026-05-13T01:25:53.028881+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 875,
+      "total": 877,
       "applied": 478,
-      "unapplied": 397,
-      "active": 681,
+      "unapplied": 399,
+      "active": 683,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 734,
-      "reachOut": 797,
+      "highFit": 736,
+      "reachOut": 799,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,10 +26,10 @@
       "intakeNew": 52,
       "intakeManual": 416,
       "intakeApplied": 15,
-      "applyRate": 54.6,
+      "applyRate": 54.5,
       "rejectionRate": 12.1,
-      "recruiterWork": 569,
-      "engineerWork": 649,
+      "recruiterWork": 571,
+      "engineerWork": 651,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 234
+        "value": 236
       },
       {
         "name": "Archived",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 414
+        "value": 415
       },
       {
         "name": "LinkedIn",
-        "value": 306
+        "value": 307
       },
       {
         "name": "Ashby",
@@ -144,7 +144,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 379
+        "value": 381
       },
       {
         "name": "Bay Area",
@@ -174,7 +174,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 472
+        "value": 473
       },
       {
         "name": "Full Stack",
@@ -198,7 +198,7 @@
       },
       {
         "name": "Frontend",
-        "value": 15
+        "value": 16
       },
       {
         "name": "Data",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 407
+        "count": 409
       }
     ],
     "targetCounts": [
@@ -542,8 +542,8 @@
       },
       {
         "date": "2026-05-13",
-        "cumulative": 875,
-        "added": 1,
+        "cumulative": 877,
+        "added": 3,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -671,6 +671,12 @@
         "bestFit": 10
       },
       {
+        "company": "Spotify",
+        "roles": 5,
+        "avgFit": 9.2,
+        "bestFit": 10
+      },
+      {
         "company": "OpenAI",
         "roles": 5,
         "avgFit": 8.6,
@@ -686,12 +692,6 @@
         "company": "Robinhood",
         "roles": 5,
         "avgFit": 6.0,
-        "bestFit": 10
-      },
-      {
-        "company": "The New York Times",
-        "roles": 4,
-        "avgFit": 10.0,
         "bestFit": 10
       }
     ],
@@ -24932,6 +24932,56 @@
       "activityDates": [
         "2026-05-13"
       ]
+    },
+    {
+      "company": "Spotify",
+      "role": "Frontend Engineer II - SRC - Music",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-13",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/engineer-ii-software-engineering-jobs-new-york-ny",
+      "postingKey": "engineer-ii-software-engineering-jobs-new-york-ny",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Spotify/Frontend_Engineer_II_SRC_Music/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Spotify/Frontend_Engineer_II_SRC_Music/Liam_Van_Resume/Liam_Van_Spotify.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-13; tailored resume rendered and verified one page; emphasized React/TypeScript frontend architecture, accessible complex workflows, API/data-flow integration, testing, and customer-facing product delivery. Manual apply needed because public LinkedIn capture exposed an aggregate URL and Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-13"
+      ]
+    },
+    {
+      "company": "Dorsia",
+      "role": "Product Engineer, Growth",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-13",
+      "location": "New York City, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/dorsia/jobs/5030496007",
+      "postingKey": "5030496007",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Dorsia/Product_Engineer_Growth/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Dorsia/Product_Engineer_Growth/Liam_Van_Resume/Liam_Van_Dorsia.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-13; tailored resume rendered and verified one page; emphasized full-stack product engineering, React/TypeScript, Python/PHP-adjacent systems, AI workflow automation, GTM-style data flows, and measurable customer-facing delivery. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; posting asks for 4+ years, so final review should confirm level fit.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-13"
+      ]
     }
   ],
   "jobIntake": [
@@ -37303,6 +37353,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Spotify",
+      "role": "Frontend Engineer II - SRC - Music",
+      "postingKey": "engineer-ii-software-engineering-jobs-new-york-ny",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/engineer-ii-software-engineering-jobs-new-york-ny",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-13",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Spool AI",
@@ -66319,6 +66382,18 @@
           "contacts": []
         },
         {
+          "key": "5030496007",
+          "company": "Dorsia",
+          "role": "Product Engineer, Growth",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7732038003",
           "company": "Dyno Therapeutics",
           "role": "Software Engineer II, Computational Platform",
@@ -67692,6 +67767,18 @@
           "role": "Software Engineer, Voice Systems",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "engineer-ii-software-engineering-jobs-new-york-ny",
+          "company": "Spotify",
+          "role": "Frontend Engineer II - SRC - Music",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -82115,6 +82202,18 @@
           "contacts": []
         },
         {
+          "key": "5030496007",
+          "company": "Dorsia",
+          "role": "Product Engineer, Growth",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7732038003",
           "company": "Dyno Therapeutics",
           "role": "Software Engineer II, Computational Platform",
@@ -83596,6 +83695,18 @@
           "role": "Backend Engineer, Music",
           "fitScore": 10,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "engineer-ii-software-engineering-jobs-new-york-ny",
+          "company": "Spotify",
+          "role": "Frontend Engineer II - SRC - Music",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"

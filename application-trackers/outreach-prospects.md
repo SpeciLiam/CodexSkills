@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 748
+Companies queued: 749
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -88,6 +88,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Stripe | Backend Engineer, Core Technology | linkedin-public-stripe-backend-engineer-core-technology-ny-2026-05-06 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/linkedin-public-stripe-backend-engineer-core-technology-ny-2026-05-06/) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Starburst | Software Engineer II | 4947916008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/starburst/jobs/4947916008) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Spotify | Backend Engineer, Music | ee5064af-0116-4ef2-994a-cb8fed580290 | 10 | Applied | Yes | [Posting](https://jobs.lever.co/spotify/ee5064af-0116-4ef2-994a-cb8fed580290/apply?lever-source=LinkedInJobs) |  |  |  |  |
+| Spotify | Frontend Engineer II - SRC - Music | engineer-ii-software-engineering-jobs-new-york-ny | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/engineer-ii-software-engineering-jobs-new-york-ny) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Spool AI | Software Engineer, Voice Systems | 4413817594 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4413817594/) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Sony Interactive Entertainment | Software Engineer I | 4408454973 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4408454973/) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Smartsheet | Software Engineer I - Secure Platform Operations (Remote Eligible) | 7732551 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/smartsheet/jobs/7732551) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
