@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 746
+Companies queued: 748
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -260,6 +260,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Flex | Software Engineer II, Backend | 4652834005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/flex/jobs/4652834005?gh_src=Nfeutp) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Flex | Software Engineer II, Frontend, Mobile and Web | 4642708005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/flex/jobs/4642708005?gh_jid=4642708005) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Flex | Software Engineer I, Fullstack, Risk Engineering (New Grad - 2025) | 4649208005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/flex/jobs/4649208005?gh_src=Nfeutp) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
+| Flex | Software Engineer II, Core Platform | 4694429005 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/flex/jobs/4694429005) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Figma | Early Career, Software Engineer (2026) | 5616603004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/figma/jobs/5616603004) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Fanatics Betting & Gaming | Fullstack, Software Engineer II, Sportsbook - FBG | 4216147009 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/fanaticsfbg/jobs/4216147009?gh_src=k819kf909us) |  |  |  |  |
 | Fanatics Betting & Gaming | Software Engineer II | 4209810009 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/fanaticsfbg/jobs/4209810009) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
@@ -273,6 +274,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Dyno Therapeutics | Software Engineer II, Computational Platform | 7732038003 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/dynotherapeutics/jobs/7732038003) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | DRW | Full Stack Engineer, Blockchain Product | full-stack-engineer-blockchain-product-at-drw-4342884810 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/full-stack-engineer-blockchain-product-at-drw-4342884810) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Dorsia | Product Engineer | 4827963007 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/dorsia/jobs/4827963007) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
+| Dorsia | Product Engineer, Growth | 5030496007 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/dorsia/jobs/5030496007) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | DoorDash USA | Software Engineer II, New Verticals | 7155159 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/doordashusa/jobs/7155159) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | DoorDash USA | Software Engineer II, Data Engineering | 6458514 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/doordashusa/jobs/6458514) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Disney | Software Engineer II - Data Transformation | 91303727120 | 10 | Applied | Yes | [Posting](https://www.disneycareers.com/en/job/-/-/391/91303727120?source=LINKEDIN_JOB_SLOTS) |  |  |  |  |

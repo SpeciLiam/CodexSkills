@@ -3,8 +3,8 @@
     {
       "archived": 2,
       "date": "2026-05-06",
-      "manual": 15,
-      "submitted": 21
+      "manual": 11,
+      "submitted": 19
     },
     {
       "archived": 10,
@@ -46,22 +46,22 @@
       "archived": 0,
       "date": "2026-05-13",
       "manual": 0,
-      "submitted": 0
+      "submitted": 6
     }
   ],
   "avgConfidenceBySource": [
     {
-      "avgScore": 0.0,
+      "avgScore": 28.3,
       "band": "low",
       "source": "Ashby"
     },
     {
-      "avgScore": 29.6,
+      "avgScore": 29.2,
       "band": "low",
       "source": "Greenhouse"
     },
     {
-      "avgScore": 38.9,
+      "avgScore": 41.0,
       "band": "low",
       "source": "LinkedIn"
     },
@@ -71,28 +71,28 @@
       "source": "LinkedIn/Ashby"
     }
   ],
-  "generatedAt": "2026-05-13T00:04:25.641579+00:00",
+  "generatedAt": "2026-05-13T01:25:03.896381+00:00",
   "intakeHealth": {
     "greenhouseCapturedToday": 0,
     "greenhouseLastRun": "2026-05-12T15:58:43.805894+00:00",
-    "linkedinCacheHitRate": 0.3,
+    "linkedinCacheHitRate": 0.562,
     "linkedinCapturedToday": 0,
     "linkedinLastRun": ""
   },
   "queueDepth": {
-    "intakeUnprocessed": 110,
-    "manualApplyNeeded": 232,
+    "intakeUnprocessed": 113,
+    "manualApplyNeeded": 233,
     "readyToApply": 0,
-    "resumeTailored": 34
+    "resumeTailored": 28
   },
   "submitSuccessRate": {
     "archived": 0.065,
-    "manual": 0.5,
-    "submitted": 0.435
+    "manual": 0.478,
+    "submitted": 0.457
   },
   "topBlockers": [
     {
-      "count": 91,
+      "count": 87,
       "reason": "unspecified"
     },
     {

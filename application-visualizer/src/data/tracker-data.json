@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T00:04:22.293141+00:00",
+  "generatedAt": "2026-05-13T01:25:03.825813+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,38 +9,38 @@
   },
   "stats": {
     "kpis": {
-      "total": 874,
-      "applied": 472,
-      "unapplied": 402,
-      "active": 680,
+      "total": 875,
+      "applied": 478,
+      "unapplied": 397,
+      "active": 681,
       "rejected": 58,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 733,
-      "reachOut": 796,
+      "highFit": 734,
+      "reachOut": 797,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 807,
-      "intakeQueued": 58,
+      "intakeJobs": 810,
+      "intakeQueued": 61,
       "intakeNew": 52,
       "intakeManual": 416,
       "intakeApplied": 15,
-      "applyRate": 54.0,
-      "rejectionRate": 12.3,
-      "recruiterWork": 568,
-      "engineerWork": 648,
+      "applyRate": 54.6,
+      "rejectionRate": 12.1,
+      "recruiterWork": 569,
+      "engineerWork": 649,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 407
+        "value": 413
       },
       {
         "name": "Manual Apply Needed",
-        "value": 233
+        "value": 234
       },
       {
         "name": "Archived",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 34
+        "value": 28
       },
       {
         "name": "Online Assessment",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 413
+        "value": 414
       },
       {
         "name": "LinkedIn",
@@ -156,7 +156,7 @@
       },
       {
         "name": "Remote",
-        "value": 121
+        "value": 122
       },
       {
         "name": "Seattle",
@@ -194,7 +194,7 @@
       },
       {
         "name": "Infra/Platform",
-        "value": 44
+        "value": 45
       },
       {
         "name": "Frontend",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 406
+        "count": 407
       }
     ],
     "targetCounts": [
@@ -274,7 +274,7 @@
       },
       {
         "name": "Queued",
-        "value": 58
+        "value": 61
       },
       {
         "name": "New",
@@ -300,11 +300,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 551
+        "value": 553
       },
       {
         "name": "LinkedIn",
-        "value": 256
+        "value": 257
       }
     ],
     "timeline": [
@@ -528,7 +528,7 @@
         "date": "2026-05-11",
         "cumulative": 823,
         "added": 32,
-        "applied": 1,
+        "applied": 4,
         "rejected": 0,
         "interviewing": 0
       },
@@ -536,6 +536,14 @@
         "date": "2026-05-12",
         "cumulative": 874,
         "added": 51,
+        "applied": 3,
+        "rejected": 0,
+        "interviewing": 0
+      },
+      {
+        "date": "2026-05-13",
+        "cumulative": 875,
+        "added": 1,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -633,6 +641,12 @@
         "bestFit": 10
       },
       {
+        "company": "Flex",
+        "roles": 5,
+        "avgFit": 10.0,
+        "bestFit": 10
+      },
+      {
         "company": "Addepar",
         "roles": 5,
         "avgFit": 10.0,
@@ -676,12 +690,6 @@
       },
       {
         "company": "The New York Times",
-        "roles": 4,
-        "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Handshake",
         "roles": 4,
         "avgFit": 10.0,
         "bestFit": 10
@@ -22961,8 +22969,8 @@
     {
       "company": "AustinWorks",
       "role": "Forward Deployed Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -22977,15 +22985,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored resume for AustinWorks Forward Deployed Engineer role; emphasized Python/TypeScript, backend-leaning full-stack delivery, AI/LLM product work, customer-facing workflows, production validation, and high-ownership release execution.",
+      "notes": "Tailored resume for AustinWorks Forward Deployed Engineer role; emphasized Python/TypeScript, backend-leaning full-stack delivery, AI/LLM product work, customer-facing workflows, production validation, and high-ownership release execution.; Application confirmation email received 2026-05-11",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-11"
+      ]
     },
     {
       "company": "Gen Digital",
       "role": "Forward Deployed Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -23000,9 +23010,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored resume for Gen Digital / Engine Forward Deployed Engineer role; emphasized REST API integrations, auth/spec parsing, JSON/data transformations, PostgreSQL/OpenSearch, customer-facing product validation, technical documentation, and cross-functional release execution. Did not claim GraphQL, webhooks, OAuth/SAML/OIDC, or XML as standalone skills because current resume evidence does not directly support them.",
+      "notes": "Tailored resume for Gen Digital / Engine Forward Deployed Engineer role; emphasized REST API integrations, auth/spec parsing, JSON/data transformations, PostgreSQL/OpenSearch, customer-facing product validation, technical documentation, and cross-functional release execution. Did not claim GraphQL, webhooks, OAuth/SAML/OIDC, or XML as standalone skills because current resume evidence does not directly support them.; Application confirmation email received 2026-05-11",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-11"
+      ]
     },
     {
       "company": "Google",
@@ -23489,8 +23501,8 @@
     {
       "company": "Jampack AI",
       "role": "Founding Engineer - AI Agents",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -23505,9 +23517,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-11 for Jampack AI founding AI agents role; emphasized AI-assisted API testing, LLM recommendations, retrieval/search pipelines, TypeScript/React/NestJS product surfaces, cloud workflow validation, production safety, and high-ownership customer-facing execution.",
+      "notes": "Tailored 2026-05-11 for Jampack AI founding AI agents role; emphasized AI-assisted API testing, LLM recommendations, retrieval/search pipelines, TypeScript/React/NestJS product surfaces, cloud workflow validation, production safety, and high-ownership customer-facing execution.; Application confirmation email received 2026-05-11",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-11",
         "2026-05-11"
       ]
     },
@@ -24600,8 +24613,8 @@
     {
       "company": "Delmar Nord",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -24616,9 +24629,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application confirmation email received 2026-05-12",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-12"
+      ]
     },
     {
       "company": "Twilio",
@@ -24673,8 +24688,8 @@
     {
       "company": "Deeptune",
       "role": "Member of Technical Staff",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -24689,9 +24704,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-12 for Deeptune Member of Technical Staff posting 4413737117; emphasized Python/TypeScript, backend/infrastructure ownership, agentic AI-adjacent LLM work, AI-assisted API testing, distributed validation, cloud services, reliability, and startup-style ambiguity. Did not claim Go, RL training implementation, or direct simulation-environment ownership beyond supported project and Oracle evidence.",
+      "notes": "Tailored 2026-05-12 for Deeptune Member of Technical Staff posting 4413737117; emphasized Python/TypeScript, backend/infrastructure ownership, agentic AI-adjacent LLM work, AI-assisted API testing, distributed validation, cloud services, reliability, and startup-style ambiguity. Did not claim Go, RL training implementation, or direct simulation-environment ownership beyond supported project and Oracle evidence.; Application confirmation email received 2026-05-12",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-12",
         "2026-05-12"
       ]
     },
@@ -24748,8 +24764,8 @@
     {
       "company": "Spool AI",
       "role": "Software Engineer, Voice Systems",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -24764,9 +24780,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-12 for Spool AI Software Engineer, Voice Systems posting 4413817594; emphasized Python/TypeScript/Node-adjacent backend systems, LLM prompting, AI-assisted API testing, observability, production debugging, call-pipeline-adjacent reliability, customer-facing workflows, and early-team ownership. Did not claim Twilio, telephony systems, or realtime voice infrastructure experience beyond supported API/reliability/LLM evidence.",
+      "notes": "Tailored 2026-05-12 for Spool AI Software Engineer, Voice Systems posting 4413817594; emphasized Python/TypeScript/Node-adjacent backend systems, LLM prompting, AI-assisted API testing, observability, production debugging, call-pipeline-adjacent reliability, customer-facing workflows, and early-team ownership. Did not claim Twilio, telephony systems, or realtime voice infrastructure experience beyond supported API/reliability/LLM evidence.; Application confirmation email received 2026-05-12",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-12",
         "2026-05-12"
       ]
     },
@@ -24890,9 +24907,76 @@
       "notes": "",
       "noteLinks": [],
       "activityDates": []
+    },
+    {
+      "company": "Flex",
+      "role": "Software Engineer II, Core Platform",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-13",
+      "location": "Remote (U.S.)",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/flex/jobs/4694429005",
+      "postingKey": "4694429005",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Flex/Software_Engineer_II_Core_Platform/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Flex/Software_Engineer_II_Core_Platform/Liam_Van_Resume/Liam_Van_Flex.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Hourly intake 2026-05-13; tailored resume rendered and verified one page; emphasized Java/Python backend platform services, secure APIs, databases, AWS/cloud reliability, regression automation, and on-call debugging. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-13"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "LinkedIn",
+      "company": "Spotify",
+      "role": "Frontend Engineer II - SRC - Music",
+      "location": "New York, NY",
+      "postingKey": "linkedin-public-spotify-frontend-engineer-ii-src-music-ny-2026-05-13",
+      "jobUrl": "https://www.linkedin.com/jobs/engineer-ii-software-engineering-jobs-new-york-ny",
+      "discoveredAt": "2026-05-13T00:15:52.310101+00:00",
+      "postedAge": "1 day ago in public LinkedIn aggregate snippet",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Flex",
+      "role": "Software Engineer II, Core Platform",
+      "location": "Remote (U.S.)",
+      "postingKey": "4694429005",
+      "jobUrl": "https://job-boards.greenhouse.io/flex/jobs/4694429005",
+      "discoveredAt": "2026-05-13T00:15:52.310101+00:00",
+      "postedAge": "crawled today; marked New in public Greenhouse result",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Dorsia",
+      "role": "Product Engineer, Growth",
+      "location": "New York City, NY",
+      "postingKey": "5030496007",
+      "jobUrl": "https://job-boards.greenhouse.io/dorsia/jobs/5030496007",
+      "discoveredAt": "2026-05-13T00:15:52.310101+00:00",
+      "postedAge": "crawled yesterday in public Greenhouse result",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
     {
       "source": "LinkedIn",
       "company": "TrueMeter",
@@ -39457,6 +39541,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Flex",
+      "role": "Software Engineer II, Core Platform",
+      "postingKey": "4694429005",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/flex/jobs/4694429005",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-13",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Figma",
       "role": "Early Career, Software Engineer (2026)",
       "postingKey": "5616603004",
@@ -39623,6 +39720,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Dorsia",
+      "role": "Product Engineer, Growth",
+      "postingKey": "5030496007",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/dorsia/jobs/5030496007",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-13",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -65613,7 +65723,7 @@
           "company": "AustinWorks",
           "role": "Forward Deployed Engineer",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -66269,6 +66379,18 @@
           "contacts": []
         },
         {
+          "key": "4694429005",
+          "company": "Flex",
+          "role": "Software Engineer II, Core Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7839346",
           "company": "Flexport",
           "role": "Software Engineer II, Autonomous Freight Systems",
@@ -66381,7 +66503,7 @@
           "company": "Gen Digital",
           "role": "Forward Deployed Engineer",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -66621,7 +66743,7 @@
           "company": "Jampack AI",
           "role": "Founding Engineer - AI Agents",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -67569,7 +67691,7 @@
           "company": "Spool AI",
           "role": "Software Engineer, Voice Systems",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -68517,7 +68639,7 @@
           "company": "Deeptune",
           "role": "Member of Technical Staff",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -69933,7 +70055,7 @@
           "company": "Delmar Nord",
           "role": "Software Engineer",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -82041,6 +82163,18 @@
           "contacts": []
         },
         {
+          "key": "4694429005",
+          "company": "Flex",
+          "role": "Software Engineer II, Core Platform",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7580661",
           "company": "Flexport",
           "role": "Software Engineer I (Generalist)",
@@ -83449,7 +83583,7 @@
           "company": "Spool AI",
           "role": "Software Engineer, Voice Systems",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -84493,7 +84627,7 @@
           "company": "Deeptune",
           "role": "Member of Technical Staff",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
