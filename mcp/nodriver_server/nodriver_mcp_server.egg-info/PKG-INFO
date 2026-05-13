@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: nodriver-mcp-server
+Version: 0.1.0
+Summary: MCP Server for application-focused nodriver browser automation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: mcp>=0.1.0
+Requires-Dist: nodriver>=0.35
+
+# Nodriver MCP Server
+
+This MCP server provides browser automation for job applications, LinkedIn
+research, recruiter/contact discovery, and logged-in web workflows. It uses
+`nodriver` to control Chrome, inspect pages, interact with forms, capture
+screenshots, and debug dynamic application sites.
+
+The browser starts in Google Chrome using the local signed-in Ben profile:
+
+- Account: `bendov1010@gmail.com`
+- Chrome profile directory: `Profile 1`
+- User data dir: `$HOME/Library/Application Support/Google/Chrome`
+- Chrome binary: `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`
+
+This copy is configured for applications and LinkedIn work. It blocks navigation
+to known gambling/sportsbook domains by default so old source-project behavior
+does not leak into recruiting workflows.

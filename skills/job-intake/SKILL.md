@@ -25,7 +25,7 @@ Use Codex/ChatGPT Automations as the scheduler. The automation runbooks live at:
 ```
 
 The automation owns capture only. Deterministic scripts own schema validation, paging decisions, dedupe, finalization, and downstream intake handoff.
-Prefer Apify capture for LinkedIn when configured because LinkedIn is hostile to browser automation. Keep Chrome-via-Computer-Use as the fallback when Apify is not configured or fails for routine, non-bypass reasons. Liam's logged-in Chrome session is still required for Easy Apply and later tab handoff.
+Prefer Apify capture for LinkedIn when configured because LinkedIn is hostile to browser automation. When Apify is not configured or fails for routine, non-bypass reasons, prefer the local nodriver MCP browser using Liam's signed-in Chrome profile; keep Chrome-via-Computer-Use as the slower fallback when nodriver is unavailable or blocked. Liam's logged-in Chrome session is still required for Easy Apply and later tab handoff.
 
 Use this schedule:
 
@@ -118,7 +118,7 @@ The hourly automations are deterministic-script-driven. The agent only does brow
 3. `should_continue_paging.py` - emits `CONTINUE` / `STOP: saturated` / `STOP: empty`
 4. `finalize_capture.py` - merge captures into listener input, update intake, optionally tailor/promote when those scripts exist, and clean up
 
-LinkedIn lane prefers Apify capture when configured; otherwise use Chrome-via-Computer-Use. Greenhouse lane can use Apify, logged-in browser, or public boards.
+LinkedIn lane prefers Apify capture when configured; otherwise use the local nodriver MCP browser, then Chrome-via-Computer-Use as fallback. Greenhouse lane can use Apify, logged-in browser, or public boards.
 
 Lanes never share state: separate runbooks (`hourly-linkedin-intake.md`, `hourly-greenhouse-intake.md`), separate capture files, 30-minute schedule offset, separate commits.
 
