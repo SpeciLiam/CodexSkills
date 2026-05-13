@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T16:32:37.903720+00:00",
+  "generatedAt": "2026-05-13T17:49:33.322398+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,8 +21,8 @@
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 834,
-      "intakeQueued": 69,
+      "intakeJobs": 851,
+      "intakeQueued": 81,
       "intakeNew": 53,
       "intakeManual": 428,
       "intakeApplied": 15,
@@ -270,11 +270,11 @@
       },
       {
         "name": "Skipped",
-        "value": 115
+        "value": 120
       },
       {
         "name": "Queued",
-        "value": 69
+        "value": 81
       },
       {
         "name": "New",
@@ -300,11 +300,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 568
+        "value": 575
       },
       {
         "name": "LinkedIn",
-        "value": 266
+        "value": 276
       }
     ],
     "timeline": [
@@ -25224,6 +25224,146 @@
   ],
   "jobIntake": [
     {
+      "source": "LinkedIn",
+      "company": "Weights & Biases",
+      "role": "Software Engineer, Workspaces - Weights & Biases",
+      "location": "New York, NY",
+      "postingKey": "linkedin-wandb-workspaces-nyc",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-cloud-infrastructure-platform-jobs-new-york-ny",
+      "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
+      "postedAge": "",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Watershed",
+      "role": "Software engineer, cloud infrastructure",
+      "location": "New York, NY",
+      "postingKey": "linkedin-watershed-cloud-infrastructure-nyc",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-cloud-infrastructure-platform-jobs-new-york-ny",
+      "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
+      "postedAge": "",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Ramp",
+      "role": "Software Engineer, Data Platform",
+      "location": "New York, NY",
+      "postingKey": "linkedin-ramp-data-platform-nyc",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-cloud-infrastructure-platform-jobs-new-york-ny",
+      "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
+      "postedAge": "",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Notion",
+      "role": "Software Engineer, Cloud Infrastructure",
+      "location": "New York, NY",
+      "postingKey": "4334347546",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-engineer-cloud-infrastructure-at-notion-4334347546",
+      "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
+      "postedAge": "",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Keye (YC F24)",
+      "role": "Software Engineer (Remote)",
+      "location": "New York, NY / Remote",
+      "postingKey": "linkedin-keye-software-engineer-remote",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-cloud-infrastructure-platform-jobs-new-york-ny",
+      "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
+      "postedAge": "",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Dstillery",
+      "role": "Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "linkedin-dstillery-software-engineer-nyc",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-cloud-infrastructure-platform-jobs-new-york-ny",
+      "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
+      "postedAge": "",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "CoreWeave",
+      "role": "Backend Software Engineer, Cloud Platform",
+      "location": "New York, NY",
+      "postingKey": "linkedin-coreweave-backend-cloud-platform-nyc",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-cloud-infrastructure-platform-jobs-new-york-ny",
+      "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
+      "postedAge": "",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Baseten",
+      "role": "Software Engineer - Infrastructure",
+      "location": "New York, NY",
+      "postingKey": "linkedin-baseten-infra-nyc",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-cloud-infrastructure-platform-jobs-new-york-ny",
+      "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
+      "postedAge": "",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "StubHub",
+      "role": "Software Engineer II - Mobile (AI-Powered Consumer Experiences)",
+      "location": "New York, New York, United States",
+      "postingKey": "4790673101",
+      "jobUrl": "https://job-boards.greenhouse.io/stubhubinc/jobs/4790673101",
+      "discoveredAt": "2026-05-13T16:32:50.872782+00:00",
+      "postedAge": "",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Attis",
+      "role": "Forward Deployed Software Engineer - Up to $220k + Equity",
+      "location": "New York City Metropolitan Area",
+      "postingKey": "forward-deployed-software-engineer-up-to-%24220k-%2B-equity-at-attis-4400554099",
+      "jobUrl": "https://www.linkedin.com/jobs/view/forward-deployed-software-engineer-up-to-%24220k-%2B-equity-at-attis-4400554099",
+      "discoveredAt": "2026-05-13T16:32:50.872782+00:00",
+      "postedAge": "",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "Greenhouse",
       "company": "Yext",
       "role": "Software Engineer, AI Search",
@@ -31580,6 +31720,20 @@
       "trackerPostingKey": "4401827377"
     },
     {
+      "source": "Greenhouse",
+      "company": "Chime Financial, Inc",
+      "role": "Backend Engineer",
+      "location": "San Francisco, CA",
+      "postingKey": "8342770002",
+      "jobUrl": "https://job-boards.greenhouse.io/chime/jobs/8342770002?gh_jid=8342770002",
+      "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
+      "postedAge": "",
+      "fitScore": 9,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "LinkedIn",
       "company": "Thera",
       "role": "Founding Engineer",
@@ -33106,6 +33260,20 @@
       "trackerPostingKey": "5592469004"
     },
     {
+      "source": "LinkedIn",
+      "company": "Glimpse",
+      "role": "Front-End Engineer",
+      "location": "New York, NY",
+      "postingKey": "linkedin-glimpse-frontend-engineer-nyc",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-cloud-infrastructure-platform-jobs-new-york-ny",
+      "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
+      "postedAge": "",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "Greenhouse",
       "company": "StackAdapt",
       "role": "Software Engineer",
@@ -34489,6 +34657,34 @@
       "fitScore": 8,
       "status": "Queued",
       "reason": "SWE-family role, early-career signal, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Scale AI",
+      "role": "Senior Software Engineer, Backend - Frontier Data",
+      "location": "San Francisco, CA; New York, NY",
+      "postingKey": "4648525005",
+      "jobUrl": "https://job-boards.greenhouse.io/scaleai/jobs/4648525005",
+      "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
+      "postedAge": "",
+      "fitScore": 7,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "GoCardless",
+      "role": "Software Development Engineer II",
+      "location": "Lisbon, Portugal",
+      "postingKey": "7532919",
+      "jobUrl": "https://job-boards.greenhouse.io/gocardless/jobs/7532919",
+      "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
+      "postedAge": "",
+      "fitScore": 7,
+      "status": "Skipped",
+      "reason": "early-career signal, location needs review",
       "trackerPostingKey": ""
     },
     {
@@ -36407,6 +36603,48 @@
       "fitScore": 4,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "System",
+      "role": "Senior Software Engineer - Public Benefit",
+      "location": "New York City, Remote",
+      "postingKey": "5730323004",
+      "jobUrl": "https://job-boards.greenhouse.io/system/jobs/5730323004",
+      "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
+      "postedAge": "",
+      "fitScore": 3,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Fueled",
+      "role": "Senior Full Stack Engineer - Platform Extensions",
+      "location": "Remote",
+      "postingKey": "5208220008",
+      "jobUrl": "https://job-boards.greenhouse.io/fueledcareers/jobs/5208220008",
+      "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
+      "postedAge": "",
+      "fitScore": 3,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Breeze",
+      "role": "Senior Software Engineer",
+      "location": "New York City",
+      "postingKey": "5156291008",
+      "jobUrl": "https://job-boards.greenhouse.io/breezecash/jobs/5156291008",
+      "discoveredAt": "2026-05-13T17:49:32.641717+00:00",
+      "postedAge": "",
+      "fitScore": 3,
+      "status": "Skipped",
+      "reason": "SWE-family role, skip-title signal, NYC preference",
       "trackerPostingKey": ""
     },
     {
