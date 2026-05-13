@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 766
+Companies queued: 769
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -229,6 +229,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Imprint | Software Engineer | 4409716261 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4409716261/) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. Manual apply completed by user 2026-05-08. |
 | iCapital | Full Stack Engineer - Ruby and React - Associate | 8452428002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/icapitalnetwork/jobs/8452428002) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | iCapital | Full Stack Engineer, Ruby and React - Assistant Vice President | 8452434002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/icapitalnetwork/jobs/8452434002) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
+| IC Resources | Software Engineer - High Performance Systems / ML Infrastructure | 4388388870 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4388388870/) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Hebbia | Software Engineer | 4377217007 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/hebbia/jobs/4377217007) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Hebbia | Forward Deployed Software Engineer | 4058030008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/hebbia/jobs/4058030008) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Hebbia | Backend Engineer, Agents | 4584766005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/hebbia/jobs/4584766005) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
@@ -592,6 +593,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Stott and May | Software Engineer | 4404464189 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4404464189/apply/) |  |  |  |  |
 | Starburst | Forward Deployed Engineer | 5016295008 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/starburst/jobs/5016295008) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Starburst | Software Engineer | 8126108002 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/starburst/jobs/8126108002) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
+| Square | Software Engineer - Android Connected Devices | software-engineer-android-connected-devices-at-square-4342635931 | 8 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-android-connected-devices-at-square-4342635931) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Speakeasy | Software Engineer | 4398591026 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4398591026) |  |  |  |  |
 | Speakeasy | Software Engineer | 4329476930 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4329476930/) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-08. |
 | Sofar Ocean | Software Engineer | 4408057809 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4408057809/?trackingId=DwG%2BdHl0SSCkj8VHOFgNGA%3D%3D&refId=5T2Rb2GlMfL%2FBz2KqJWJrw%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BnQ3WrNZISgWjPS5etG6bWg%3D%3D) |  |  |  |  |
@@ -711,6 +713,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Alexander Chapman | Founding Full Stack Engineer | 4407459453 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4407459453/apply/) |  |  |  |  |
 | Albert Bow | Software Engineer, Low Latency Trading | MjI2MDItaHRxZWJ3YTRoa281aDY2ZQ== | 8 | Applied | Yes | [Posting](https://app.loxo.co/job/MjI2MDItaHRxZWJ3YTRoa281aDY2ZQ==?source=LinkedIn) |  |  |  |  |
 | Airbnb | Software Engineer, Infrastructure | 4410936090 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4410936090/) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
+| Accenture | AI Native Software Engineer | ai-native-software-engineer-at-accenture-4374091982 | 8 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/ai-native-software-engineer-at-accenture-4374091982) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Zip | Software Engineer, Identity | 4153477552 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4153477552/) |  |  |  |  |
 | Valon | Software Engineer | 4366508876 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4366508876/) |  |  |  |  |
 | SynergisticIT | Junior Java Spring boot developer/Data Scientist | 4405926747 | 7 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4405926747/?trackingId=hi%2Bn2Ucbw1mLqWOdxrEyVg%3D%3D&refId=ynHDPB5ZgeFfDqqpeBArmA%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BW1X4lUcFS9qe7REf8W07BQ%3D%3D) |  |  |  |  |
