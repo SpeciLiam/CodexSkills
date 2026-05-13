@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T14:23:11.087754+00:00",
+  "generatedAt": "2026-05-13T16:32:37.903720+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,38 +9,38 @@
   },
   "stats": {
     "kpis": {
-      "total": 881,
+      "total": 886,
       "applied": 479,
-      "unapplied": 402,
-      "active": 683,
-      "rejected": 62,
+      "unapplied": 407,
+      "active": 687,
+      "rejected": 63,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 740,
-      "reachOut": 803,
+      "highFit": 744,
+      "reachOut": 807,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 816,
-      "intakeQueued": 58,
-      "intakeNew": 52,
-      "intakeManual": 423,
+      "intakeJobs": 834,
+      "intakeQueued": 69,
+      "intakeNew": 53,
+      "intakeManual": 428,
       "intakeApplied": 15,
-      "applyRate": 54.4,
-      "rejectionRate": 12.9,
-      "recruiterWork": 572,
-      "engineerWork": 655,
+      "applyRate": 54.1,
+      "rejectionRate": 13.2,
+      "recruiterWork": 575,
+      "engineerWork": 659,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 410
+        "value": 409
       },
       {
         "name": "Manual Apply Needed",
-        "value": 239
+        "value": 244
       },
       {
         "name": "Archived",
@@ -48,7 +48,7 @@
       },
       {
         "name": "Rejected",
-        "value": 62
+        "value": 63
       },
       {
         "name": "Resume Tailored",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 416
+        "value": 421
       },
       {
         "name": "LinkedIn",
@@ -144,11 +144,11 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 381
+        "value": 384
       },
       {
         "name": "Bay Area",
-        "value": 200
+        "value": 202
       },
       {
         "name": "Other",
@@ -174,11 +174,11 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 475
+        "value": 477
       },
       {
         "name": "Full Stack",
-        "value": 107
+        "value": 109
       },
       {
         "name": "Backend",
@@ -190,7 +190,7 @@
       },
       {
         "name": "Forward Deployed",
-        "value": 64
+        "value": 65
       },
       {
         "name": "Infra/Platform",
@@ -232,7 +232,7 @@
       },
       {
         "score": "7",
-        "count": 38
+        "count": 39
       },
       {
         "score": "8",
@@ -240,11 +240,11 @@
       },
       {
         "score": "9",
-        "count": 163
+        "count": 164
       },
       {
         "score": "10",
-        "count": 413
+        "count": 416
       }
     ],
     "targetCounts": [
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 423
+        "value": 428
       },
       {
         "name": "Tailored",
@@ -270,15 +270,15 @@
       },
       {
         "name": "Skipped",
-        "value": 114
+        "value": 115
       },
       {
         "name": "Queued",
-        "value": 58
+        "value": 69
       },
       {
         "name": "New",
-        "value": 52
+        "value": 53
       },
       {
         "name": "Applied",
@@ -300,11 +300,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 556
+        "value": 568
       },
       {
         "name": "LinkedIn",
-        "value": 260
+        "value": 266
       }
     ],
     "timeline": [
@@ -521,7 +521,7 @@
         "cumulative": 791,
         "added": 86,
         "applied": 25,
-        "rejected": 0,
+        "rejected": 1,
         "interviewing": 0
       },
       {
@@ -542,8 +542,8 @@
       },
       {
         "date": "2026-05-13",
-        "cumulative": 881,
-        "added": 5,
+        "cumulative": 886,
+        "added": 10,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -18670,9 +18670,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-08 from the general generic source because the posting is not explicitly early-career; emphasized Python/Java/C++, AI/backend services, LLM tooling, OpenSearch retrieval, APIs/microservices, data pipelines, cloud/distributed validation, secure APIs, and Fantasy Wizard provider-adapter evidence. Did not claim NoSQL, streaming, edge-device, or agent-memory experience beyond supported resume evidence.; Application submitted 2026-05-08.",
+      "notes": "Tailored 2026-05-08 from the general generic source because the posting is not explicitly early-career; emphasized Python/Java/C++, AI/backend services, LLM tooling, OpenSearch retrieval, APIs/microservices, data pipelines, cloud/distributed validation, secure APIs, and Fantasy Wizard provider-adapter evidence. Did not claim NoSQL, streaming, edge-device, or agent-memory experience beyond supported resume evidence.; Application submitted 2026-05-08.; Application confirmation email received 2026-05-08",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-08",
         "2026-05-08",
         "2026-05-08"
       ]
@@ -18984,9 +18985,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-08 from early-career source for ServiceNow / Moveworks Associate Software Engineer, Core Infrastructure role; emphasized Python/Java/C++, distributed cloud database validation, Docker/GCP/AWS/OCI, OpenSearch retrieval, regression utilities, observability, log analysis, Grafana/T2 metrics, canary triage, performance-oriented debugging, unit testing, and cross-team infrastructure support. Did not claim Go, Kafka, Istio, distributed key-value store ownership, traffic capture/replay, feature flags/A-B systems, or direct Moveworks platform ownership beyond supported resume evidence.; Application submitted by Liam 2026-05-08.",
+      "notes": "Tailored 2026-05-08 from early-career source for ServiceNow / Moveworks Associate Software Engineer, Core Infrastructure role; emphasized Python/Java/C++, distributed cloud database validation, Docker/GCP/AWS/OCI, OpenSearch retrieval, regression utilities, observability, log analysis, Grafana/T2 metrics, canary triage, performance-oriented debugging, unit testing, and cross-team infrastructure support. Did not claim Go, Kafka, Istio, distributed key-value store ownership, traffic capture/replay, feature flags/A-B systems, or direct Moveworks platform ownership beyond supported resume evidence.; Application submitted by Liam 2026-05-08.; Application confirmation email received 2026-05-08",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-08",
         "2026-05-08",
         "2026-05-08"
       ]
@@ -22249,7 +22251,7 @@
       "company": "Mechanize, Inc.",
       "role": "Junior Software Engineer",
       "applied": true,
-      "status": "Applied",
+      "status": "Rejected",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -22264,10 +22266,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Mechanize junior SWE role building environments and evals for frontier coding agents; emphasized Python, LLM applications, prompt design, automated assessment, blackbox API testing, repeatable regression tooling, and failure analysis.; Application submitted via LinkedIn 2026-05-10; marked applied per user confirmation.",
+      "notes": "Tailored for Mechanize junior SWE role building environments and evals for frontier coding agents; emphasized Python, LLM applications, prompt design, automated assessment, blackbox API testing, repeatable regression tooling, and failure analysis.; Application submitted via LinkedIn 2026-05-10; marked applied per user confirmation.; Rejection email received 2026-05-12",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-12"
       ]
     },
     {
@@ -22362,10 +22365,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 21:03 PT; tailored SWE resume rendered and verified one page; emphasized full-stack AI product delivery, TypeScript/React/Node, PostgreSQL-backed systems, LLM workflows, customer-facing enterprise integration, testing, and production reliability. Manual apply needed because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live form also needs confirmation on visa sponsorship and JS/Node/Vue/PostgreSQL stack experience.; Application submitted 2026-05-11 via Greenhouse confirmation page: https://job-boards.greenhouse.io/unframe/jobs/4847758101/confirmation",
+      "notes": "Hourly Greenhouse intake 2026-05-10 21:03 PT; tailored SWE resume rendered and verified one page; emphasized full-stack AI product delivery, TypeScript/React/Node, PostgreSQL-backed systems, LLM workflows, customer-facing enterprise integration, testing, and production reliability. Manual apply needed because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live form also needs confirmation on visa sponsorship and JS/Node/Vue/PostgreSQL stack experience.; Application submitted 2026-05-11 via Greenhouse confirmation page: https://job-boards.greenhouse.io/unframe/jobs/4847758101/confirmation; Application confirmation email received 2026-05-11",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
+        "2026-05-11",
         "2026-05-11"
       ]
     },
@@ -22463,9 +22467,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application submitted 2026-05-10; marked applied per user confirmation.",
+      "notes": "Application submitted 2026-05-10; marked applied per user confirmation.; Application confirmation email received 2026-05-10",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-10",
         "2026-05-10"
       ]
     },
@@ -25090,9 +25095,260 @@
         "2026-05-12",
         "2026-05-12"
       ]
+    },
+    {
+      "company": "Doss",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-13",
+      "location": "New York City, New York, United States; San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/doss/jobs/4072754008",
+      "postingKey": "4072754008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Doss/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Doss/Software_Engineer/Liam_Van_Resume/Liam_Van_Doss.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-13"
+      ]
+    },
+    {
+      "company": "Maven AGI",
+      "role": "Software Engineer II, Full Stack",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-13",
+      "location": "Boston, MA; New York, NY",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/mavenagi/jobs/4602863006",
+      "postingKey": "4602863006",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Maven AGI/Software_Engineer_II_Full_Stack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Maven AGI/Software_Engineer_II_Full_Stack/Liam_Van_Resume/Liam_Van_Maven_AGI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-13"
+      ]
+    },
+    {
+      "company": "Candid Health",
+      "role": "Forward Deployed Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-13",
+      "location": "New York, New York, United States; San Francisco, California, United States; Denver, Colorado, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/candidhealth/jobs/4540018006",
+      "postingKey": "4540018006",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Candid Health/Forward_Deployed_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Candid Health/Forward_Deployed_Software_Engineer/Liam_Van_Resume/Liam_Van_Candid_Health.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-13"
+      ]
+    },
+    {
+      "company": "Reducto",
+      "role": "Software Engineer, Product",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-13",
+      "location": "San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/reducto/jobs/4556304006",
+      "postingKey": "4556304006",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Reducto/Software_Engineer_Product/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Reducto/Software_Engineer_Product/Liam_Van_Resume/Liam_Van_Reducto.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-13"
+      ]
+    },
+    {
+      "company": "Krea",
+      "role": "Full-stack Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 7,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-05-13",
+      "location": "San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/krea/jobs/4540659006",
+      "postingKey": "4540659006",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Krea/Full_stack_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Krea/Full_stack_Engineer/Liam_Van_Resume/Liam_Van_Krea.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page from lower-score but plausible SF full-stack role; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-13"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Yext",
+      "role": "Software Engineer, AI Search",
+      "location": "New York, NY",
+      "postingKey": "8122667002",
+      "jobUrl": "https://job-boards.greenhouse.io/yext/jobs/8122667002",
+      "discoveredAt": "2026-05-13T16:31:33.689149+00:00",
+      "postedAge": "Greenhouse public result surfaced during 2026-05-13 degraded capture; logged-in browser capture blocked by Computer Use approval denial",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Motive",
+      "role": "Software Engineer, Full Stack",
+      "location": "United States - Remote",
+      "postingKey": "8126787002",
+      "jobUrl": "https://job-boards.greenhouse.io/gomotive/jobs/8126787002",
+      "discoveredAt": "2026-05-13T16:31:33.689149+00:00",
+      "postedAge": "Greenhouse public result surfaced during 2026-05-13 degraded capture; logged-in browser capture blocked by Computer Use approval denial",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "LTK",
+      "role": "Software Engineer, Full Stack",
+      "location": "United States - Remote",
+      "postingKey": "8125669002",
+      "jobUrl": "https://job-boards.greenhouse.io/ltkusa/jobs/8125669002",
+      "discoveredAt": "2026-05-13T16:31:33.689149+00:00",
+      "postedAge": "Greenhouse public result surfaced during 2026-05-13 degraded capture; logged-in browser capture blocked by Computer Use approval denial",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Intuit",
+      "role": "Software Engineer 2",
+      "location": "New York, NY",
+      "postingKey": "linkedin-intuit-software-engineer-2-nyc-2026-05-13",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-2-jobs-new-york-ny",
+      "discoveredAt": "2026-05-13T16:31:33.689149+00:00",
+      "postedAge": "LinkedIn public listing result showed within the last day; logged-in Chrome and Firefox capture blocked by Computer Use approval denial",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Harmonic",
+      "role": "Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "4591276006",
+      "jobUrl": "https://job-boards.greenhouse.io/harmonic/jobs/4591276006",
+      "discoveredAt": "2026-05-13T16:31:33.689149+00:00",
+      "postedAge": "Greenhouse public result surfaced during 2026-05-13 degraded capture; logged-in browser capture blocked by Computer Use approval denial",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Ascertain",
+      "role": "Software Engineer",
+      "location": "New York, NY",
+      "postingKey": "linkedin-ascertain-software-engineer-nyc-2026-05-13",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineer-jobs-new-york",
+      "discoveredAt": "2026-05-13T16:31:33.689149+00:00",
+      "postedAge": "LinkedIn public listing result showed 1 day ago; logged-in Chrome and Firefox capture blocked by Computer Use approval denial",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Maven AGI",
+      "role": "Software Engineer II, Full Stack",
+      "location": "Boston, MA; New York, NY",
+      "postingKey": "4602863006",
+      "jobUrl": "https://job-boards.greenhouse.io/mavenagi/jobs/4602863006",
+      "discoveredAt": "2026-05-13T15:49:09.224449+00:00",
+      "postedAge": "public Greenhouse capture 2026-05-13",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4602863006"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Doss",
+      "role": "Software Engineer",
+      "location": "New York City, New York, United States; San Francisco, California, United States",
+      "postingKey": "4072754008",
+      "jobUrl": "https://job-boards.greenhouse.io/doss/jobs/4072754008",
+      "discoveredAt": "2026-05-13T15:49:09.224449+00:00",
+      "postedAge": "public Greenhouse capture 2026-05-13",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4072754008"
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Candid Health",
+      "role": "Forward Deployed Software Engineer",
+      "location": "New York, New York, United States; San Francisco, California, United States; Denver, Colorado, United States",
+      "postingKey": "4540018006",
+      "jobUrl": "https://job-boards.greenhouse.io/candidhealth/jobs/4540018006",
+      "discoveredAt": "2026-05-13T15:49:09.224449+00:00",
+      "postedAge": "public Greenhouse capture 2026-05-13",
+      "fitScore": 10,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4540018006"
+    },
     {
       "source": "Greenhouse",
       "company": "Cala Health",
@@ -31325,6 +31581,62 @@
     },
     {
       "source": "LinkedIn",
+      "company": "Thera",
+      "role": "Founding Engineer",
+      "location": "New York, NY",
+      "postingKey": "4377084383",
+      "jobUrl": "https://www.linkedin.com/jobs/view/founding-engineer-at-thera-4377084383",
+      "discoveredAt": "2026-05-13T16:32:36.964331+00:00",
+      "postedAge": "4 days ago",
+      "fitScore": 9,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "TechTree",
+      "role": "Founding Engineer / Founding Full-Stack Engineer",
+      "location": "New York, United States",
+      "postingKey": "4368994827",
+      "jobUrl": "https://www.linkedin.com/jobs/view/founding-engineer-founding-full-stack-engineer-at-techtree-4368994827",
+      "discoveredAt": "2026-05-13T16:32:36.964331+00:00",
+      "postedAge": "1 week ago",
+      "fitScore": 9,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Freeform Future Corp",
+      "role": "Software Engineer (New Grad Summer 2026)",
+      "location": "Los Angeles, CA (On-site)",
+      "postingKey": "6852163003",
+      "jobUrl": "https://job-boards.greenhouse.io/freeformfuturecorp/jobs/6852163003",
+      "discoveredAt": "2026-05-13T16:32:36.964331+00:00",
+      "postedAge": "open - indexed 3 months ago",
+      "fitScore": 9,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Reducto",
+      "role": "Software Engineer, Product",
+      "location": "San Francisco, CA",
+      "postingKey": "4556304006",
+      "jobUrl": "https://job-boards.greenhouse.io/reducto/jobs/4556304006",
+      "discoveredAt": "2026-05-13T15:49:09.224449+00:00",
+      "postedAge": "public Greenhouse capture 2026-05-13",
+      "fitScore": 9,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4556304006"
+    },
+    {
+      "source": "LinkedIn",
       "company": "Lyft",
       "role": "Software Engineer, Gov Tech",
       "location": "Seattle, WA",
@@ -32795,6 +33107,34 @@
     },
     {
       "source": "Greenhouse",
+      "company": "StackAdapt",
+      "role": "Software Engineer",
+      "location": "United States",
+      "postingKey": "8120564002",
+      "jobUrl": "https://job-boards.greenhouse.io/stackadapt/jobs/8120564002",
+      "discoveredAt": "2026-05-13T16:31:33.689149+00:00",
+      "postedAge": "Greenhouse public result surfaced during 2026-05-13 degraded capture; logged-in browser capture blocked by Computer Use approval denial",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "OpenAI",
+      "role": "System Software Engineer, Consumer Devices",
+      "location": "San Francisco, CA",
+      "postingKey": "4381795293",
+      "jobUrl": "https://www.linkedin.com/jobs/view/system-software-engineer-consumer-devices-at-openai-4381795293",
+      "discoveredAt": "2026-05-13T16:05:34.697629+00:00",
+      "postedAge": "LinkedIn public result showed 1 day ago; logged-in browser capture blocked",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
       "company": "Twilio",
       "role": "Software Engineer (L2)",
       "location": "Remote - US",
@@ -34152,6 +34492,20 @@
       "trackerPostingKey": ""
     },
     {
+      "source": "Greenhouse",
+      "company": "Krea",
+      "role": "Full-stack Engineer",
+      "location": "San Francisco, CA",
+      "postingKey": "4540659006",
+      "jobUrl": "https://job-boards.greenhouse.io/krea/jobs/4540659006",
+      "discoveredAt": "2026-05-13T15:49:09.224449+00:00",
+      "postedAge": "public Greenhouse capture 2026-05-13",
+      "fitScore": 7,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page from lower-score but plausible SF full-stack role; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "trackerPostingKey": "4540659006"
+    },
+    {
       "source": "LinkedIn",
       "company": "Twilio",
       "role": "Software Engineer (L2)",
@@ -34835,6 +35189,34 @@
       "fitScore": 7,
       "status": "New",
       "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Greenhouse",
+      "role": "Machine Learning Engineer",
+      "location": "Remote, United States",
+      "postingKey": "7477093",
+      "jobUrl": "https://job-boards.greenhouse.io/greenhouse/jobs/7477093",
+      "discoveredAt": "2026-05-13T16:32:36.964331+00:00",
+      "postedAge": "open - indexed 2 months ago",
+      "fitScore": 6,
+      "status": "Skipped",
+      "reason": "preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Rebel",
+      "role": "Founding Engineer",
+      "location": "United States",
+      "postingKey": "linkedin-rebel-founding-engineer-us-2026-05-13",
+      "jobUrl": "https://www.linkedin.com/jobs/founding-engineer-jobs",
+      "discoveredAt": "2026-05-13T16:31:33.689149+00:00",
+      "postedAge": "LinkedIn public listing result showed 1 day ago; logged-in Chrome and Firefox capture blocked by Computer Use approval denial",
+      "fitScore": 6,
+      "status": "New",
+      "reason": "SWE-family role, preferred/remote US location",
       "trackerPostingKey": ""
     },
     {
@@ -38964,6 +39346,19 @@
       "notes": ""
     },
     {
+      "company": "Maven AGI",
+      "role": "Software Engineer II, Full Stack",
+      "postingKey": "4602863006",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/mavenagi/jobs/4602863006",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-13",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Mastercard",
       "role": "Software Engineer II - Foundry - R&D",
       "postingKey": "software-engineer-ii-foundry-r-d-at-mastercard-4398606624",
@@ -39991,6 +40386,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Doss",
+      "role": "Software Engineer",
+      "postingKey": "4072754008",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/doss/jobs/4072754008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-13",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Dorsia",
       "role": "Product Engineer",
       "postingKey": "4827963007",
@@ -40651,6 +41059,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-04",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Candid Health",
+      "role": "Forward Deployed Software Engineer",
+      "postingKey": "4540018006",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/candidhealth/jobs/4540018006",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-13",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -42224,6 +42645,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Reducto",
+      "role": "Software Engineer, Product",
+      "postingKey": "4556304006",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/reducto/jobs/4556304006",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-13",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -66218,6 +66652,18 @@
           "contacts": []
         },
         {
+          "key": "4540018006",
+          "company": "Candid Health",
+          "role": "Forward Deployed Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5011457007",
           "company": "Capital Technology Group",
           "role": "Software Engineer",
@@ -66641,6 +67087,18 @@
           "key": "5030496007",
           "company": "Dorsia",
           "role": "Product Engineer, Growth",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4072754008",
+          "company": "Doss",
+          "role": "Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -67190,11 +67648,11 @@
           "contacts": []
         },
         {
-          "key": "4375258621",
-          "company": "Mechanize, Inc.",
-          "role": "Junior Software Engineer",
+          "key": "4602863006",
+          "company": "Maven AGI",
+          "role": "Software Engineer II, Full Stack",
           "fitScore": 10,
-          "status": "Applied",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -69595,6 +70053,18 @@
           "role": "Software Engineer",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4556304006",
+          "company": "Reducto",
+          "role": "Software Engineer, Product",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -82026,6 +82496,18 @@
           "contacts": []
         },
         {
+          "key": "4540018006",
+          "company": "Candid Health",
+          "role": "Forward Deployed Software Engineer",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5011457007",
           "company": "Capital Technology Group",
           "role": "Software Engineer",
@@ -82485,6 +82967,18 @@
           "key": "5030496007",
           "company": "Dorsia",
           "role": "Product Engineer, Growth",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4072754008",
+          "company": "Doss",
+          "role": "Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -83001,6 +83495,18 @@
           "key": "4398606624",
           "company": "Mastercard",
           "role": "Software Engineer II - Foundry - R&D",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4602863006",
+          "company": "Maven AGI",
+          "role": "Software Engineer II, Full Stack",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -85499,6 +86005,18 @@
           "role": "Software Engineer",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4556304006",
+          "company": "Reducto",
+          "role": "Software Engineer, Product",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"

@@ -1,0 +1,150 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+\fi
+
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in,itemsep=1pt,topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Liam Van} \\ \vspace{1pt}
+    \small 678-488-7259 $|$ liamvanpj@gmail.com $|$ Seattle, WA $|$
+    linkedin.com/in/liam-van $|$ github.com/SpeciLiam $|$ \href{https://liamvan.dev}{liamvan.dev}
+\end{center}
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: TypeScript, JavaScript, Python, Java, SQL, C++, C\#, PHP, C} \\
+     \textbf{Full-Stack Product}{: React, Node.js, NestJS, Spring Boot, REST APIs, Figma-to-product implementation} \\
+     \textbf{AI / Data}{: LLM applications, prompt design, OpenSearch, metadata pipelines, data modeling, retrieval workflows} \\
+     \textbf{Cloud / Delivery}{: GCP, OCI, AWS, Docker, CI/CD, GCloud CLI, OCI CLI, release automation, service integration} \\
+     \textbf{Quality / Reliability}{: Robot Framework, Selenium, Grafana, T2, canary validation, unit testing, on-call response} \\
+    }}
+ \end{itemize}
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Oracle}{May 2025 - Present}
+      {Software Engineer, GCP Integration (Oasis)}{Seattle, WA}
+      \resumeItemListStart
+        \resumeItem{Own GA readiness for OCI database services on GCP, validating BaseDB, ADBS, Exadata, backup, restore, and Data Guard workflows across console, CLI, and API surfaces}
+        \resumeItem{Lead cross-cloud integration debugging with Oracle and GCP engineers, driving canary triage, release blocker resolution, and production-readiness decisions}
+        \resumeItem{Built AI-assisted blackbox API testing for Oasis services, designing prompting strategy, Robot Framework setup, onboarding docs, and auth/spec parsing utilities}
+        \resumeItem{Created reusable GCloud and OCI scripting workflows plus regression utilities, scaling data-service validation and end-to-end coverage across releases}
+        \resumeItem{Implemented Exascale Storage Vault dry-run support, improving infrastructure preflight validation and reaching over 90\% unit test coverage across BaseDB and Exadata components}
+        \resumeItem{Serve as primary release on-call, leading Sev2 investigations and resolving Sev3/Sev4 issues through log analysis, Grafana and T2 metrics, and alarm tuning}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Oracle}{May 2024 - August 2024}
+      {Software Engineer}{Redwood City, CA}
+      \resumeItemListStart
+        \resumeItem{Built an LLM-powered recommendation service for Oracle University and OCI learning content, helping customers discover tailored cloud information and course paths}
+        \resumeItem{Integrated video search into Oracle University's search experience using OpenSearch indexing and retrieval pipelines}
+        \resumeItem{Implemented React and NestJS product surfaces from Figma designs, using PHP and SQL metadata pipelines to support search, recommendations, and model inputs}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Caterpillar Inc.}{May 2023 - December 2023}
+      {Software Engineer Intern}{Chicago, IL}
+      \resumeItemListStart
+        \resumeItem{Built Java data-processing workflows to convert JSON to Apache Parquet, improving storage efficiency by 30\%}
+        \resumeItem{Developed API and data-modeling flows for thousands of equipment telemetry points, improving downstream analysis speed by 50\%}
+        \resumeItem{Implemented distributed caching for real-time search across API responses, increasing parsing speed by 1000\%}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Caterpillar Inc.}{May 2022 - August 2022}
+      {Software Engineer Intern}{Chicago, IL}
+
+  \resumeSubHeadingListEnd
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Georgia, School of Computing}{Athens, GA}
+      {Bachelor of Science in Computer Science}{}
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://fantasysportwizard.com}{Fantasy Wizard}} $|$ \emph{React, TypeScript, Spring Boot, REST APIs, AI}}{}
+          \resumeItemListStart
+            \resumeItem{Built a full-stack fantasy sports assistant with React/Vite and Spring Boot APIs for roster, matchup, draft, waiver, trade, and advisor workflows}
+            \resumeItem{Designed provider-adapter and live-data flows for Sleeper, Yahoo, and ESPN league discovery, rosters, matchups, draft picks, and account linking}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}

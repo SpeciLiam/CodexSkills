@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 753
+Companies queued: 757
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -197,6 +197,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Melio | Full Stack Engineer | 7174896003 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/melio/jobs/7174896003) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Mechanize, Inc. | Junior Software Engineer | 4375258621 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4375258621/) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Maybern | Software Engineer, New Grad | 90f7a0d4-4e6c-43e0-a444-06301faa4058 | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/maybern/90f7a0d4-4e6c-43e0-a444-06301faa4058) |  |  |  |  |
+| Maven AGI | Software Engineer II, Full Stack | 4602863006 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/mavenagi/jobs/4602863006) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Mastercard | Software Engineer II - Foundry - R&D | software-engineer-ii-foundry-r-d-at-mastercard-4398606624 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-foundry-r-d-at-mastercard-4398606624) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Markforged | Software Engineer I | 5802712004 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/markforged/jobs/5802712004) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Lynx Analytics | Software Engineer (US) | 8395412002 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/lynxanalytics/jobs/8395412002) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
@@ -276,6 +277,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | EliseAI | Software Engineer (New Grads 2025-2026) | 1ffbd278-a5fe-443c-984f-521d61a97353 | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/eliseai/1ffbd278-a5fe-443c-984f-521d61a97353?utm_source=LinkedInPaid) |  |  |  |  |
 | Dyno Therapeutics | Software Engineer II, Computational Platform | 7732038003 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/dynotherapeutics/jobs/7732038003) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | DRW | Full Stack Engineer, Blockchain Product | full-stack-engineer-blockchain-product-at-drw-4342884810 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/full-stack-engineer-blockchain-product-at-drw-4342884810) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
+| Doss | Software Engineer | 4072754008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/doss/jobs/4072754008) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Dorsia | Product Engineer | 4827963007 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/dorsia/jobs/4827963007) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Dorsia | Product Engineer, Growth | 5030496007 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/dorsia/jobs/5030496007) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | DoorDash USA | Software Engineer II, New Verticals | 7155159 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/doordashusa/jobs/7155159) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
@@ -327,6 +329,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | CareerWellness | Backend Engineer | 4411313503 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4411313503/?trackingId=EBVYXiR1yLpVpCccxqA3YA%3D%3D&refId=%2FJ95SvUHr%2BJRbsyOTJu5NA%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BtOtbKfUjRbqzE0274Rmn2A%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | Capital Technology Group | Software Engineer | 5011457007 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/capitaltg/jobs/5011457007) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Capco | Full Stack Engineer | 7558557 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/capco/jobs/7558557) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
+| Candid Health | Forward Deployed Software Engineer | 4540018006 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/candidhealth/jobs/4540018006) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Cala Health | Full Stack Software Engineer | 5982842004 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/calahealth/jobs/5982842004) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Cadence | Software Engineer I | Software-Engineer-I_R53009-1 | 10 | Applied | Yes | [Posting](https://cadence.wd1.myworkdayjobs.com/External_Careers/job/SAN-JOSE/Software-Engineer-I_R53009-1?source=LinkedIn) |  |  |  |  |
 | Broccoli AI | Software Engineer | 3e59cf67-61dd-4210-b5dc-c7338fa91eba | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/broccoli/3e59cf67-61dd-4210-b5dc-c7338fa91eba/application?utm_source=y48Rnx8X6e&src=LinkedInPaid) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-10; marked applied per user confirmation. |
@@ -448,6 +451,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Reval | Founding Software Engineer | 820e461b-cae2-4e13-b9e4-2e17270bd78f | 9 | Applied | Yes | [Posting](https://www.reval.site/jobs/820e461b-cae2-4e13-b9e4-2e17270bd78f) |  |  |  |  |
 | Reevo | Builder - Software Engineer (New Grad) | 4333169684 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4333169684/) |  |  |  |  |
 | Redwood Materials | DevOps Software Engineer, Energy Storage | 5737848004 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/redwoodmaterials/jobs/5737848004) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
+| Reducto | Software Engineer, Product | 4556304006 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/reducto/jobs/4556304006) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
 | Reddit | Software Engineer | 7871398 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/reddit/jobs/7871398) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Ramp | Software Engineer \| Frontend | search-results | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/search-results/?keywords=software%20engineer&geoId=103644278&f_TPR=r86400) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Profound | Software Engineer, Backend, Workflow Runner | 4c29c22e-c6fa-4bde-97ed-79edd5a96cea | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/Profound/4c29c22e-c6fa-4bde-97ed-79edd5a96cea?departmentId=ff9a5ed0-40fd-481a-be99-bb7ea5ee8111&utm_source=paKr5qNkRZ) |  |  |  |  |
