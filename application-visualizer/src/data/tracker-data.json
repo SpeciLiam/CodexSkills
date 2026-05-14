@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T06:09:06.025323+00:00",
+  "generatedAt": "2026-05-14T08:47:47.095487+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 905,
-      "applied": 495,
-      "unapplied": 410,
+      "applied": 496,
+      "unapplied": 409,
       "active": 703,
       "rejected": 65,
       "interviewing": 3,
@@ -21,12 +21,12 @@
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 891,
+      "intakeJobs": 892,
       "intakeQueued": 77,
       "intakeNew": 55,
-      "intakeManual": 442,
-      "intakeApplied": 20,
-      "applyRate": 54.7,
+      "intakeManual": 441,
+      "intakeApplied": 21,
+      "applyRate": 54.8,
       "rejectionRate": 13.1,
       "recruiterWork": 589,
       "engineerWork": 670,
@@ -36,11 +36,11 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 423
+        "value": 424
       },
       {
         "name": "Manual Apply Needed",
-        "value": 239
+        "value": 238
       },
       {
         "name": "Archived",
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 442
+        "value": 441
       },
       {
         "name": "Tailored",
@@ -282,11 +282,11 @@
       },
       {
         "name": "Applied",
-        "value": 20
+        "value": 21
       },
       {
         "name": "Duplicate",
-        "value": 4
+        "value": 5
       },
       {
         "name": "Archived",
@@ -304,7 +304,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 306
+        "value": 307
       }
     ],
     "timeline": [
@@ -510,15 +510,15 @@
       },
       {
         "date": "2026-05-09",
-        "cumulative": 704,
-        "added": 57,
+        "cumulative": 703,
+        "added": 56,
         "applied": 5,
         "rejected": 0,
         "interviewing": 0
       },
       {
         "date": "2026-05-10",
-        "cumulative": 790,
+        "cumulative": 789,
         "added": 86,
         "applied": 33,
         "rejected": 1,
@@ -526,7 +526,7 @@
       },
       {
         "date": "2026-05-11",
-        "cumulative": 822,
+        "cumulative": 821,
         "added": 32,
         "applied": 4,
         "rejected": 0,
@@ -534,7 +534,7 @@
       },
       {
         "date": "2026-05-12",
-        "cumulative": 874,
+        "cumulative": 873,
         "added": 52,
         "applied": 4,
         "rejected": 0,
@@ -542,7 +542,7 @@
       },
       {
         "date": "2026-05-13",
-        "cumulative": 904,
+        "cumulative": 903,
         "added": 30,
         "applied": 1,
         "rejected": 0,
@@ -551,8 +551,8 @@
       {
         "date": "2026-05-14",
         "cumulative": 905,
-        "added": 1,
-        "applied": 1,
+        "added": 2,
+        "applied": 2,
         "rejected": 0,
         "interviewing": 0
       }
@@ -19548,13 +19548,13 @@
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
-      "dateAdded": "2026-05-09",
+      "dateAdded": "2026-05-14",
       "location": "San Francisco, CA (Hybrid)",
       "source": "Greenhouse",
       "jobLink": "https://job-boards.greenhouse.io/applytoonecrew/jobs/4283003004",
       "postingKey": "4283003004",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OneCrew/Software_Engineer_Fullstack_OneCrew/Liam_Van_Resume",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OneCrew/Software_Engineer_Fullstack_OneCrew/Liam_Van_Resume/Liam_Van_OneCrew.pdf",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OneCrew/Software_Engineer_Fullstack_OneCrew/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OneCrew/Software_Engineer_Fullstack_OneCrew/Liam_Van_Resume_2/Liam_Van_OneCrew.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
@@ -20534,8 +20534,8 @@
     {
       "company": "Linq",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -20550,11 +20550,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-10 05:28Z; tailored SWE resume rendered and verified one page; emphasized startup full-stack product engineering, React and Next.js interfaces, Node and TypeScript APIs, cloud infrastructure, and rapid customer-facing delivery. Degraded public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-09: application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; tailored resume rendered and verified one page.",
+      "notes": "Hourly intake 2026-05-10 05:28Z; tailored SWE resume rendered and verified one page; emphasized startup full-stack product engineering, React and Next.js interfaces, Node and TypeScript APIs, cloud infrastructure, and rapid customer-facing delivery. Degraded public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-09: application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; tailored resume rendered and verified one page.; Application submitted 2026-05-14 via Ashby; confirmation: Thanks for applying! A real person on our team will review your application and be in touch soon about next steps.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-14"
       ]
     },
     {
@@ -25727,6 +25728,20 @@
   "jobIntake": [
     {
       "source": "LinkedIn",
+      "company": "Uber",
+      "role": "Software Engineer II",
+      "location": "San Francisco, CA (On-site)",
+      "postingKey": "4414548126",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4414548126/",
+      "discoveredAt": "2026-05-14T06:15:59+00:00",
+      "postedAge": "Authenticated LinkedIn/nodriver search 2026-05-13; visible first card marked Viewed",
+      "fitScore": 10,
+      "status": "Duplicate",
+      "reason": "Duplicate stop 2026-05-13: normalized company + role already tracked in applications as Uber Software Engineer II, posting key 156932.",
+      "trackerPostingKey": "156932"
+    },
+    {
+      "source": "LinkedIn",
       "company": "NVIDIA",
       "role": "Software Engineer - AI Research Clusters",
       "location": "Santa Clara, CA (On-site)",
@@ -28381,8 +28396,8 @@
       "discoveredAt": "2026-05-09T10:04:46.323078+00:00",
       "postedAge": "crawled yesterday",
       "fitScore": 10,
-      "status": "Manual",
-      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "status": "Applied",
+      "reason": "Refreshed tailored resume 2026-05-14; application previously submitted via Greenhouse confirmation",
       "trackerPostingKey": "4283003004"
     },
     {
@@ -40299,7 +40314,7 @@
       "role": "Software Engineer, Fullstack (OneCrew)",
       "postingKey": "4283003004",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/applytoonecrew/jobs/4283003004",
       "prospectCount": 0,
@@ -69711,7 +69726,7 @@
           "company": "Linq",
           "role": "Software Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
