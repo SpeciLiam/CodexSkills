@@ -1,6 +1,49 @@
 {
   "batches": [
     {
+      "id": "tailor_hourly_2026_05_14_0430",
+      "date_added": "2026-05-14",
+      "note_prefix": "Nodriver automation fallback intake 2026-05-14 04:30 PT",
+      "note_suffix": "Web-indexed fallback capture used because authenticated LinkedIn/nodriver and Chrome/Firefox Computer Use preflight were blocked by macOS Automation/Accessibility permissions.",
+      "update_intake_status": true,
+      "intake_tailored_date": "2026-05-14",
+      "status_updates": [],
+      "jobs": [
+        {
+          "company": "Instabase",
+          "role": "Full-stack Software Engineer (New Grad)",
+          "location": "San Francisco, CA",
+          "url": "https://job-boards.greenhouse.io/instabase/jobs/8548929002",
+          "kind": "ai",
+          "fit": "10",
+          "focus": "new-grad full-stack AI platform engineering, React and TypeScript product surfaces, backend APIs, data workflows, cloud reliability, and production validation",
+          "notes": "Sourced from web-indexed Greenhouse fallback capture 2026-05-14",
+          "source": "Greenhouse",
+          "posting_key": "8548929002",
+          "generated": true,
+          "date_tailored": "2026-05-14",
+          "resume_folder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Instabase/Full_stack_Software_Engineer_New_Grad/Liam_Van_Resume",
+          "resume_pdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Instabase/Full_stack_Software_Engineer_New_Grad/Liam_Van_Resume/Liam_Van_Instabase.pdf"
+        },
+        {
+          "company": "Allstate",
+          "role": "(Entry level) Full Stack Software Engineer (LLM application Development)",
+          "location": "United States",
+          "url": "https://www.linkedin.com/jobs/view/entry-level-full-stack-software-engineer-llm-application-development-at-allstate-4401189061",
+          "kind": "ai",
+          "fit": "10",
+          "focus": "entry-level LLM application development, full-stack product engineering, React and TypeScript interfaces, backend APIs, AI-assisted workflows, testing, and reliable delivery",
+          "notes": "Sourced from web-indexed LinkedIn fallback capture 2026-05-14",
+          "source": "LinkedIn",
+          "posting_key": "4401189061",
+          "generated": true,
+          "date_tailored": "2026-05-14",
+          "resume_folder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Allstate/Entry_level_Full_Stack_Software_Engineer_LLM_application_Development/Liam_Van_Resume",
+          "resume_pdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Allstate/Entry_level_Full_Stack_Software_Engineer_LLM_application_Development/Liam_Van_Resume/Liam_Van_Allstate.pdf"
+        }
+      ]
+    },
+    {
       "id": "tailor_hourly_2026_05_13_1049",
       "date_added": "2026-05-13",
       "note_prefix": "Hourly recruiting intake 2026-05-13 10:49 PT",

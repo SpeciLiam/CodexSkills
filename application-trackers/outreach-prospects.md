@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 773
+Companies queued: 775
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -226,6 +226,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Intuit | Software Engineer 1 | 4401727507 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4401727507/) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Intuit | Software Engineer 1 - Fullstack | linkedin-public-intuit-swe-1-fullstack-ny-2026-05-06-0935 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/linkedin-public-intuit-swe-1-fullstack-ny-2026-05-06-0935/) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | InStride Health | Junior Fullstack Engineer | 4670604005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/instridehealth/jobs/4670604005) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
+| Instabase | Full-stack Software Engineer (New Grad) | 8548929002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/instabase/jobs/8548929002) |  |  | 2026-05-14 | Queued by resume-tailor after tailored resume update. |
 | Included Health | Software Engineer II, Fullstack | software-engineer-ii-fullstack-at-included-health-4252399531 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-fullstack-at-included-health-4252399531) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Imprint | Software Engineer | 4409716261 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4409716261/) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. Manual apply completed by user 2026-05-08. |
 | iCapital | Full Stack Engineer - Ruby and React - Associate | 8452428002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/icapitalnetwork/jobs/8452428002) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
@@ -390,6 +391,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Amplitude | Software Engineer I, Growth Platform | 7949946002-growth-platform | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/amplitude/jobs/7949946002?gh_jid=7949946002-growth-platform) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Amplitude | Software Engineer II, Product Adoption | 7949946002-product-adoption | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/amplitude/jobs/7949946002?gh_jid=7949946002-product-adoption) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Amplitude | Software Engineer II, AI Security | 8174490002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/amplitude/jobs/8174490002) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
+| Allstate | (Entry level) Full Stack Software Engineer (LLM application Development) | entry-level-full-stack-software-engineer-llm-application-development-at-allstate-4401189061 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/entry-level-full-stack-software-engineer-llm-application-development-at-allstate-4401189061) |  |  | 2026-05-14 | Queued by resume-tailor after tailored resume update. |
 | Alchemy | Software Engineer (Backend) - Distributed Systems | 4648515005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/alchemy/jobs/4648515005) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Alchemy | Software Engineer - Solutions | 4538329005 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/alchemy/jobs/4538329005) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update. |
 | Alchemy | Product Engineer | 4033855005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/alchemy/jobs/4033855005) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
