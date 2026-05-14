@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T03:04:56.488329+00:00",
+  "generatedAt": "2026-05-14T05:30:40.576633+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,9 +10,9 @@
   "stats": {
     "kpis": {
       "total": 905,
-      "applied": 480,
-      "unapplied": 425,
-      "active": 704,
+      "applied": 493,
+      "unapplied": 412,
+      "active": 703,
       "rejected": 65,
       "interviewing": 3,
       "assessments": 3,
@@ -21,14 +21,14 @@
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 881,
-      "intakeQueued": 75,
-      "intakeNew": 53,
+      "intakeJobs": 891,
+      "intakeQueued": 77,
+      "intakeNew": 55,
       "intakeManual": 447,
       "intakeApplied": 15,
-      "applyRate": 53.0,
-      "rejectionRate": 13.5,
-      "recruiterWork": 590,
+      "applyRate": 54.5,
+      "rejectionRate": 13.2,
+      "recruiterWork": 589,
       "engineerWork": 670,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
@@ -36,15 +36,15 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 408
+        "value": 421
       },
       {
         "name": "Manual Apply Needed",
-        "value": 255
+        "value": 241
       },
       {
         "name": "Archived",
-        "value": 136
+        "value": 137
       },
       {
         "name": "Rejected",
@@ -270,15 +270,15 @@
       },
       {
         "name": "Skipped",
-        "value": 136
+        "value": 142
       },
       {
         "name": "Queued",
-        "value": 75
+        "value": 77
       },
       {
         "name": "New",
-        "value": 53
+        "value": 55
       },
       {
         "name": "Applied",
@@ -304,7 +304,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 296
+        "value": 306
       }
     ],
     "timeline": [
@@ -512,7 +512,7 @@
         "date": "2026-05-09",
         "cumulative": 705,
         "added": 58,
-        "applied": 0,
+        "applied": 6,
         "rejected": 0,
         "interviewing": 0
       },
@@ -520,7 +520,7 @@
         "date": "2026-05-10",
         "cumulative": 791,
         "added": 86,
-        "applied": 25,
+        "applied": 32,
         "rejected": 1,
         "interviewing": 0
       },
@@ -19509,8 +19509,8 @@
     {
       "company": "PlanetScale",
       "role": "Software Engineer - Infrastructure",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -19525,17 +19525,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-09; tailored infrastructure resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-09; tailored infrastructure resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-14",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-14"
       ]
     },
     {
       "company": "OneCrew",
       "role": "Software Engineer, Fullstack (OneCrew)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -19550,17 +19551,19 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-09; tailored full-stack product resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-09; tailored full-stack product resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-13; Application submitted 2026-05-13 via Greenhouse; confirmation page: Thank you for applying. Your application has been received.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-13",
+        "2026-05-13"
       ]
     },
     {
       "company": "Glean",
       "role": "Software Engineer, Billing & Revenue Platform",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -19575,10 +19578,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-09; tailored backend/platform resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-09; tailored backend/platform resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-14; Application submitted 2026-05-14 via Greenhouse confirmation page: Thank you for applying. Your application has been received.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-14",
+        "2026-05-14"
       ]
     },
     {
@@ -19659,8 +19664,8 @@
     {
       "company": "Scale AI",
       "role": "Forward Deployed Engineer, GenAI",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -19675,10 +19680,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-09 13:18Z; tailored SWE resume rendered and verified one page; emphasized GenAI forward-deployed engineering, LLM applications, customer-facing product delivery, backend APIs, and production validation. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-09 13:18Z; tailored SWE resume rendered and verified one page; emphasized GenAI forward-deployed engineering, LLM applications, customer-facing product delivery, backend APIs, and production validation. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-14 via Greenhouse confirmation page",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-14"
       ]
     },
     {
@@ -19784,8 +19790,8 @@
     {
       "company": "Bloomreach",
       "role": "Software Engineer II (Pulsar team)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -19800,10 +19806,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight; Application submitted 2026-05-14",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-14"
       ]
     },
     {
@@ -20034,8 +20041,8 @@
     {
       "company": "Atoms",
       "role": "Software Engineer - New Grad - Mountain View, CA",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -20050,10 +20057,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-09 degraded Greenhouse capture; tailored SWE resume and cover letter rendered, resume verified one page. Manual apply needed: browser application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live form also asks target graduation timing question that may need review against Dec 2024 graduation.",
+      "notes": "Hourly intake 2026-05-09 degraded Greenhouse capture; tailored SWE resume and cover letter rendered, resume verified one page. Manual apply needed: browser application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live form also asks target graduation timing question that may need review against Dec 2024 graduation.; Application submitted 2026-05-14",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-14"
       ]
     },
     {
@@ -20746,7 +20754,7 @@
       "company": "Dex",
       "role": "Product Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -20761,10 +20769,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-10 degraded Greenhouse capture; resume rendered and verified one page; used general SWE framing for product/generalist full-stack engineering. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly intake 2026-05-10 degraded Greenhouse capture; resume rendered and verified one page; used general SWE framing for product/generalist full-stack engineering. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Archived 2026-05-13: Greenhouse exact posting URL redirected to Page not found / job board no longer active.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-13"
       ]
     },
     {
@@ -20870,8 +20879,8 @@
     {
       "company": "Skild AI",
       "role": "Software Engineer, AI Training and Infrastructure",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -20886,18 +20895,19 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 08:34Z; tailored SWE resume rendered and verified one page; emphasized AI training infrastructure, distributed pipelines, model evaluation, cloud training systems, Python/C++ engineering, testing, and production reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; tailored resume rendered and verified one page 2026-05-10",
+      "notes": "Hourly Greenhouse intake 2026-05-10 08:34Z; tailored SWE resume rendered and verified one page; emphasized AI training infrastructure, distributed pipelines, model evaluation, cloud training systems, Python/C++ engineering, testing, and production reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; tailored resume rendered and verified one page 2026-05-10; Application submitted 2026-05-14 via Greenhouse; confirmation page displayed: Thank you for applying. Your application has been received.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-14"
       ]
     },
     {
       "company": "Glean",
       "role": "Software Engineer, AI Infrastructure",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -20912,11 +20922,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 08:34Z; tailored SWE resume rendered and verified one page; emphasized AI infrastructure engineering, LLM serving and orchestration, data pipelines, cloud deployments, backend services, testing, and reliable customer-facing systems. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; tailored resume rendered and verified one page 2026-05-10",
+      "notes": "Hourly Greenhouse intake 2026-05-10 08:34Z; tailored SWE resume rendered and verified one page; emphasized AI infrastructure engineering, LLM serving and orchestration, data pipelines, cloud deployments, backend services, testing, and reliable customer-facing systems. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; tailored resume rendered and verified one page 2026-05-10; Application submitted 2026-05-14 via Greenhouse; confirmation page: Thank you for applying. Your application has been received.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-14"
       ]
     },
     {
@@ -21025,8 +21036,8 @@
     {
       "company": "HackerRank",
       "role": "Forward Deployed Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -21041,11 +21052,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-10 08:31Z; tailored SWE/FDE resume rendered and verified one page; emphasized forward-deployed customer engineering, API integration debugging, AI-assisted assessment tooling, reliability validation, and production-readiness.; Hourly intake 2026-05-10 follow-on Greenhouse capture; resume rendered and verified one page; used general SWE framing for customer-facing platform/product engineering. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly intake 2026-05-10 08:31Z; tailored SWE/FDE resume rendered and verified one page; emphasized forward-deployed customer engineering, API integration debugging, AI-assisted assessment tooling, reliability validation, and production-readiness.; Hourly intake 2026-05-10 follow-on Greenhouse capture; resume rendered and verified one page; used general SWE framing for customer-facing platform/product engineering. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-14",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-14"
       ]
     },
     {
@@ -21077,8 +21089,8 @@
     {
       "company": "Arine",
       "role": "Full Stack Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -21093,11 +21105,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 10:51Z; tailored SWE resume rendered and verified one page; emphasized Bay Area full-stack healthtech engineering, React and TypeScript product surfaces, backend APIs, data-heavy workflows, testing, and reliable product delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; tailored resume rendered and verified one page 2026-05-10",
+      "notes": "Hourly Greenhouse intake 2026-05-10 10:51Z; tailored SWE resume rendered and verified one page; emphasized Bay Area full-stack healthtech engineering, React and TypeScript product surfaces, backend APIs, data-heavy workflows, testing, and reliable product delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; tailored resume rendered and verified one page 2026-05-10; Application submitted via Greenhouse; confirmation page displayed: Thank you for applying. Your application has been received. If there is a fit, someone will be getting back to you.; Application submitted via Greenhouse on 2026-05-14. Confirmation page: Thank you for applying. Your application has been received.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-14"
       ]
     },
     {
@@ -21544,8 +21557,8 @@
     {
       "company": "Forge Global",
       "role": "Software Engineer II of Marketplace Middleware Engineering",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -21560,11 +21573,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-10 06:54 PT; tailored SWE resume rendered and verified one page; emphasized marketplace middleware engineering, backend services, SQL-backed workflows, financial platform reliability, testing, and production delivery. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "notes": "Hourly intake 2026-05-10 06:54 PT; tailored SWE resume rendered and verified one page; emphasized marketplace middleware engineering, backend services, SQL-backed workflows, financial platform reliability, testing, and production delivery. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Application submitted 2026-05-14",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-14"
       ]
     },
     {
@@ -21703,8 +21717,8 @@
     {
       "company": "Atoms",
       "role": "Software Engineer - New Grad - New York",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -21719,12 +21733,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 12:16 PT; tailored SWE resume rendered and verified one page; emphasized NYC new-grad software engineering, React and TypeScript product surfaces, backend APIs, testing, and fast product delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "notes": "Hourly Greenhouse intake 2026-05-10 12:16 PT; tailored SWE resume rendered and verified one page; emphasized NYC new-grad software engineering, React and TypeScript product surfaces, backend APIs, testing, and fast product delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Application submitted 2026-05-14 via Greenhouse; confirmation page displayed: Thank you for applying / Your application has been received.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-14"
       ]
     },
     {
@@ -21888,8 +21903,8 @@
     {
       "company": "ClickHouse",
       "role": "Full Stack Software Engineer - Control Plane",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -21904,11 +21919,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 19:04 PT; tailored SWE resume rendered and verified one page; emphasized control-plane platform engineering, full-stack product surfaces, cloud infrastructure lifecycle, backend APIs, distributed systems, testing, and production reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-10 19:04 PT; tailored SWE resume rendered and verified one page; emphasized control-plane platform engineering, full-stack product surfaces, cloud infrastructure lifecycle, backend APIs, distributed systems, testing, and production reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Application submitted 2026-05-14",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-14"
       ]
     },
     {
@@ -22367,12 +22383,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 21:03 PT; tailored SWE resume rendered and verified one page; emphasized full-stack AI product delivery, TypeScript/React/Node, PostgreSQL-backed systems, LLM workflows, customer-facing enterprise integration, testing, and production reliability. Manual apply needed because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live form also needs confirmation on visa sponsorship and JS/Node/Vue/PostgreSQL stack experience.; Application submitted 2026-05-11 via Greenhouse confirmation page: https://job-boards.greenhouse.io/unframe/jobs/4847758101/confirmation; Application confirmation email received 2026-05-11",
+      "notes": "Hourly Greenhouse intake 2026-05-10 21:03 PT; tailored SWE resume rendered and verified one page; emphasized full-stack AI product delivery, TypeScript/React/Node, PostgreSQL-backed systems, LLM workflows, customer-facing enterprise integration, testing, and production reliability. Manual apply needed because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live form also needs confirmation on visa sponsorship and JS/Node/Vue/PostgreSQL stack experience.; Application submitted 2026-05-11 via Greenhouse confirmation page: https://job-boards.greenhouse.io/unframe/jobs/4847758101/confirmation; Application confirmation email received 2026-05-11; Application submitted 2026-05-14",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
         "2026-05-11",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ]
     },
     {
@@ -32320,6 +32337,20 @@
       "trackerPostingKey": "4401827377"
     },
     {
+      "source": "LinkedIn",
+      "company": "PlanIT Group, LLC",
+      "role": "Software Engineer (Full Stack)",
+      "location": "United States (Remote)",
+      "postingKey": "4413922727",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4413922727/",
+      "discoveredAt": "2026-05-14T03:22:26.008758+00:00",
+      "postedAge": "last 24 hours",
+      "fitScore": 9,
+      "status": "Queued",
+      "reason": "SWE-family role, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "Greenhouse",
       "company": "Edison Scientific",
       "role": "Frontend Software Engineer",
@@ -33872,6 +33903,20 @@
       "status": "Tailored",
       "reason": "SWE-family role, SF/Bay Area preference",
       "trackerPostingKey": "5592469004"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Otis Elevator Co.",
+      "role": "Entry Level Software Engineer",
+      "location": "Farmington, CT (On-site)",
+      "postingKey": "4412401927",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4412401927/",
+      "discoveredAt": "2026-05-14T03:22:26.008758+00:00",
+      "postedAge": "last 24 hours",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, location needs review",
+      "trackerPostingKey": ""
     },
     {
       "source": "LinkedIn",
@@ -35444,6 +35489,20 @@
     {
       "source": "LinkedIn",
       "company": "Lockheed Martin",
+      "role": "Software Engineer for Security and Platform Services",
+      "location": "Mount Laurel, NJ (Hybrid)",
+      "postingKey": "4414527715",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4414527715/",
+      "discoveredAt": "2026-05-14T03:22:26.008758+00:00",
+      "postedAge": "last 24 hours",
+      "fitScore": 7,
+      "status": "New",
+      "reason": "SWE-family role, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Lockheed Martin",
       "role": "F-22 Software Engineer",
       "location": "Fort Worth, TX (On-site)",
       "postingKey": "4414200485",
@@ -36870,6 +36929,48 @@
       "trackerPostingKey": ""
     },
     {
+      "source": "LinkedIn",
+      "company": "University of Virginia",
+      "role": "Web Developer, Darden School of Business",
+      "location": "Charlottesville, VA (Hybrid)",
+      "postingKey": "4413479663",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4413479663/",
+      "discoveredAt": "2026-05-14T03:22:26.008758+00:00",
+      "postedAge": "last 24 hours",
+      "fitScore": 5,
+      "status": "Skipped",
+      "reason": "location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Leidos",
+      "role": "Software Engineer",
+      "location": "Huntsville, AL (Hybrid)",
+      "postingKey": "4410690197",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4410690197/",
+      "discoveredAt": "2026-05-14T03:22:26.008758+00:00",
+      "postedAge": "last 24 hours",
+      "fitScore": 5,
+      "status": "New",
+      "reason": "SWE-family role, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Charles Schwab",
+      "role": "Associate - Software Development & Engineering- Salesforce",
+      "location": "Southlake, TX (Hybrid)",
+      "postingKey": "4410396713",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4410396713/",
+      "discoveredAt": "2026-05-14T03:22:26.008758+00:00",
+      "postedAge": "last 24 hours",
+      "fitScore": 5,
+      "status": "Skipped",
+      "reason": "early-career signal, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "Greenhouse",
       "company": "Flex",
       "role": "Senior Software Engineer, Fullstack (Risk Engineering)",
@@ -37203,6 +37304,62 @@
       "fitScore": 5,
       "status": "Skipped",
       "reason": "SWE-family role, skip-title signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Virginia Tech",
+      "role": "Software Engineer",
+      "location": "Blacksburg, VA (On-site)",
+      "postingKey": "4410655466",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4410655466/",
+      "discoveredAt": "2026-05-14T03:22:26.008758+00:00",
+      "postedAge": "last 24 hours",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "SWE-family role, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Rincon Research Corporation",
+      "role": "Software Engineer",
+      "location": "Tucson, AZ (On-site)",
+      "postingKey": "4414273306",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4414273306/",
+      "discoveredAt": "2026-05-14T03:22:26.008758+00:00",
+      "postedAge": "last 24 hours",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "SWE-family role, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Lockheed Martin",
+      "role": "Computing Systems/Software Engineer",
+      "location": "Mount Laurel, NJ (On-site)",
+      "postingKey": "4414538214",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4414538214/",
+      "discoveredAt": "2026-05-14T03:22:26.008758+00:00",
+      "postedAge": "last 24 hours",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "SWE-family role, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Jobs via Dice",
+      "role": "Software Engineer",
+      "location": "Dayton, OH (On-site)",
+      "postingKey": "4413846703",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4413846703/",
+      "discoveredAt": "2026-05-14T03:22:26.008758+00:00",
+      "postedAge": "last 24 hours",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "SWE-family role, location needs review",
       "trackerPostingKey": ""
     },
     {
@@ -68259,7 +68416,7 @@
           "company": "Arine",
           "role": "Full Stack Software Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -68343,7 +68500,7 @@
           "company": "Atoms",
           "role": "Software Engineer - New Grad - Mountain View, CA",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -68355,7 +68512,7 @@
           "company": "Atoms",
           "role": "Software Engineer - New Grad - New York",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -68511,7 +68668,7 @@
           "company": "Bloomreach",
           "role": "Software Engineer II (Pulsar team)",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -68835,7 +68992,7 @@
           "company": "ClickHouse",
           "role": "Full Stack Software Engineer - Control Plane",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -68966,18 +69123,6 @@
           "key": "full-stack-engineer-blockchain-product-at-drw-4342884810",
           "company": "DRW",
           "role": "Full Stack Engineer, Blockchain Product",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "5620556004",
-          "company": "Dex",
-          "role": "Product Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -69183,7 +69328,7 @@
           "company": "Forge Global",
           "role": "Software Engineer II of Marketplace Middleware Engineering",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -69315,7 +69460,7 @@
           "company": "Glean",
           "role": "Software Engineer, Billing & Revenue Platform",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -69339,7 +69484,7 @@
           "company": "Glean",
           "role": "Software Engineer, AI Infrastructure",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -69363,7 +69508,7 @@
           "company": "HackerRank",
           "role": "Forward Deployed Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -69855,7 +70000,7 @@
           "company": "OneCrew",
           "role": "Software Engineer, Fullstack (OneCrew)",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -70095,7 +70240,7 @@
           "company": "PlanetScale",
           "role": "Software Engineer - Infrastructure",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -70371,7 +70516,7 @@
           "company": "Scale AI",
           "role": "Forward Deployed Engineer, GenAI",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -70443,7 +70588,7 @@
           "company": "Skild AI",
           "role": "Software Engineer, AI Training and Infrastructure",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
