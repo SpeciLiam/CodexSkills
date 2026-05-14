@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T13:09:52.788973+00:00",
+  "generatedAt": "2026-05-14T13:33:48.358218+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 907,
-      "applied": 521,
-      "unapplied": 386,
+      "applied": 523,
+      "unapplied": 384,
       "active": 705,
       "rejected": 65,
       "interviewing": 3,
@@ -26,8 +26,8 @@
       "intakeNew": 55,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 57.4,
-      "rejectionRate": 12.5,
+      "applyRate": 57.7,
+      "rejectionRate": 12.4,
       "recruiterWork": 591,
       "engineerWork": 672,
       "recruiterReachedOut": 116,
@@ -36,11 +36,11 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 449
+        "value": 451
       },
       {
         "name": "Manual Apply Needed",
-        "value": 224
+        "value": 222
       },
       {
         "name": "Archived",
@@ -544,7 +544,7 @@
         "date": "2026-05-13",
         "cumulative": 903,
         "added": 30,
-        "applied": 7,
+        "applied": 9,
         "rejected": 0,
         "interviewing": 0
       },
@@ -25081,8 +25081,8 @@
     {
       "company": "TP-Link",
       "role": "2026 Early Career Software Engineering (Mobile, BackEnd, Embedded, AI/ML)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -25097,10 +25097,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly LinkedIn intake 2026-05-13: degraded web-visible capture used because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; tailored early-career backend/systems/AI resume rendered and verified one page. Manual apply needed because live LinkedIn application/submission is blocked by Computer Use approval denial.",
+      "notes": "Hourly LinkedIn intake 2026-05-13: degraded web-visible capture used because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; tailored early-career backend/systems/AI resume rendered and verified one page. Manual apply needed because live LinkedIn application/submission is blocked by Computer Use approval denial.; Application submitted 2026-05-14 via Workable; confirmation page stated application submitted successfully.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-14"
       ]
     },
     {
@@ -25466,8 +25467,8 @@
     {
       "company": "Baseten",
       "role": "Software Engineer - Infrastructure",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -25482,11 +25483,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly recruiting intake 2026-05-13 10:49 PT; tailored SWE resume rendered and verified one page; emphasized AI infrastructure, Python/Go service work, Kubernetes and containerized deployment, monitoring, distributed systems, and cloud reliability. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; submit attempts are blocked until logged-in browser access is available.; Manual apply needed 2026-05-13: tailored resume rendered and verified one page, but live LinkedIn/Easy Apply submission is blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback was also denied.",
+      "notes": "Hourly recruiting intake 2026-05-13 10:49 PT; tailored SWE resume rendered and verified one page; emphasized AI infrastructure, Python/Go service work, Kubernetes and containerized deployment, monitoring, distributed systems, and cloud reliability. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; submit attempts are blocked until logged-in browser access is available.; Manual apply needed 2026-05-13: tailored resume rendered and verified one page, but live LinkedIn/Easy Apply submission is blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback was also denied.; Application submitted 2026-05-14 via Ashby; confirmation: Your application was successfully submitted. We'll contact you if there are next steps.; Application submitted 2026-05-14 via Ashby; confirmation page showed successful submission.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-13",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-14",
+        "2026-05-14"
       ]
     },
     {
@@ -68879,7 +68882,7 @@
           "company": "Baseten",
           "role": "Software Engineer - Infrastructure",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -71003,7 +71006,7 @@
           "company": "TP-Link",
           "role": "2026 Early Career Software Engineering (Mobile, BackEnd, Embedded, AI/ML)",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
