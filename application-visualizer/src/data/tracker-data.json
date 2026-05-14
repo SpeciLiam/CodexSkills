@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T05:55:18.192262+00:00",
+  "generatedAt": "2026-05-14T05:57:03.252451+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 905,
-      "applied": 492,
-      "unapplied": 413,
+      "applied": 494,
+      "unapplied": 411,
       "active": 703,
       "rejected": 65,
       "interviewing": 3,
@@ -24,9 +24,9 @@
       "intakeJobs": 891,
       "intakeQueued": 77,
       "intakeNew": 55,
-      "intakeManual": 445,
-      "intakeApplied": 17,
-      "applyRate": 54.4,
+      "intakeManual": 443,
+      "intakeApplied": 19,
+      "applyRate": 54.6,
       "rejectionRate": 13.2,
       "recruiterWork": 589,
       "engineerWork": 670,
@@ -36,11 +36,11 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 420
+        "value": 422
       },
       {
         "name": "Manual Apply Needed",
-        "value": 242
+        "value": 240
       },
       {
         "name": "Archived",
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 445
+        "value": 443
       },
       {
         "name": "Tailored",
@@ -282,7 +282,7 @@
       },
       {
         "name": "Applied",
-        "value": 17
+        "value": 19
       },
       {
         "name": "Duplicate",
@@ -520,7 +520,7 @@
         "date": "2026-05-10",
         "cumulative": 790,
         "added": 86,
-        "applied": 32,
+        "applied": 33,
         "rejected": 1,
         "interviewing": 0
       },
@@ -544,7 +544,7 @@
         "date": "2026-05-13",
         "cumulative": 904,
         "added": 30,
-        "applied": 0,
+        "applied": 1,
         "rejected": 0,
         "interviewing": 0
       },
@@ -21673,8 +21673,8 @@
     {
       "company": "Dorsia",
       "role": "Product Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -21689,12 +21689,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 12:16 PT; tailored SWE resume rendered and verified one page; emphasized NYC product engineering, React and TypeScript product surfaces, backend APIs, customer-facing workflows, testing, and reliable product delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "notes": "Hourly Greenhouse intake 2026-05-10 12:16 PT; tailored SWE resume rendered and verified one page; emphasized NYC product engineering, React and TypeScript product surfaces, backend APIs, customer-facing workflows, testing, and reliable product delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Marked done/applied per Liam 2026-05-14.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-10",
-        "2026-05-10"
+        "2026-05-14"
       ]
     },
     {
@@ -25003,8 +25002,8 @@
     {
       "company": "Dorsia",
       "role": "Product Engineer, Growth",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -25019,10 +25018,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-13; tailored resume rendered and verified one page; emphasized full-stack product engineering, React/TypeScript, Python/PHP-adjacent systems, AI workflow automation, GTM-style data flows, and measurable customer-facing delivery. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; posting asks for 4+ years, so final review should confirm level fit.",
+      "notes": "Hourly intake 2026-05-13; tailored resume rendered and verified one page; emphasized full-stack product engineering, React/TypeScript, Python/PHP-adjacent systems, AI workflow automation, GTM-style data flows, and measurable customer-facing delivery. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; posting asks for 4+ years, so final review should confirm level fit.; Marked done/applied per Liam 2026-05-14.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-14"
       ]
     },
     {
@@ -26210,8 +26210,8 @@
       "discoveredAt": "2026-05-13T00:15:52.310101+00:00",
       "postedAge": "crawled yesterday in public Greenhouse result",
       "fitScore": 10,
-      "status": "Manual",
-      "reason": "Manual apply needed 2026-05-13: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; posting asks for 4+ years, so final review should confirm level fit",
+      "status": "Applied",
+      "reason": "Marked done/applied per Liam 2026-05-14; resume tailored and verified one page",
       "trackerPostingKey": "5030496007"
     },
     {
@@ -27302,8 +27302,8 @@
       "discoveredAt": "2026-05-10T19:16:06.871091+00:00",
       "postedAge": "public Greenhouse search result captured 2026-05-10",
       "fitScore": 10,
-      "status": "Manual",
-      "reason": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight",
+      "status": "Applied",
+      "reason": "Marked done/applied per Liam 2026-05-14; resume tailored and verified one page",
       "trackerPostingKey": "4827963007"
     },
     {
@@ -41793,26 +41793,26 @@
       "role": "Product Engineer",
       "postingKey": "4827963007",
       "fitScore": 10,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/dorsia/jobs/4827963007",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Marked done/applied per Liam 2026-05-14."
     },
     {
       "company": "Dorsia",
       "role": "Product Engineer, Growth",
       "postingKey": "5030496007",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/dorsia/jobs/5030496007",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-13",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Marked done/applied per Liam 2026-05-14."
     },
     {
       "company": "DoorDash USA",
@@ -69182,7 +69182,7 @@
           "company": "Dorsia",
           "role": "Product Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -69194,7 +69194,7 @@
           "company": "Dorsia",
           "role": "Product Engineer, Growth",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
