@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T05:32:58.296489+00:00",
+  "generatedAt": "2026-05-14T05:55:18.192262+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 905,
-      "applied": 490,
-      "unapplied": 415,
+      "applied": 492,
+      "unapplied": 413,
       "active": 703,
       "rejected": 65,
       "interviewing": 3,
@@ -24,10 +24,10 @@
       "intakeJobs": 891,
       "intakeQueued": 77,
       "intakeNew": 55,
-      "intakeManual": 447,
-      "intakeApplied": 15,
-      "applyRate": 54.1,
-      "rejectionRate": 13.3,
+      "intakeManual": 445,
+      "intakeApplied": 17,
+      "applyRate": 54.4,
+      "rejectionRate": 13.2,
       "recruiterWork": 589,
       "engineerWork": 670,
       "recruiterReachedOut": 116,
@@ -36,11 +36,11 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 418
+        "value": 420
       },
       {
         "name": "Manual Apply Needed",
-        "value": 244
+        "value": 242
       },
       {
         "name": "Archived",
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 447
+        "value": 445
       },
       {
         "name": "Tailored",
@@ -282,7 +282,7 @@
       },
       {
         "name": "Applied",
-        "value": 15
+        "value": 17
       },
       {
         "name": "Duplicate",
@@ -510,15 +510,15 @@
       },
       {
         "date": "2026-05-09",
-        "cumulative": 705,
-        "added": 58,
-        "applied": 3,
+        "cumulative": 704,
+        "added": 57,
+        "applied": 4,
         "rejected": 0,
         "interviewing": 0
       },
       {
         "date": "2026-05-10",
-        "cumulative": 791,
+        "cumulative": 790,
         "added": 86,
         "applied": 32,
         "rejected": 1,
@@ -526,7 +526,7 @@
       },
       {
         "date": "2026-05-11",
-        "cumulative": 823,
+        "cumulative": 822,
         "added": 32,
         "applied": 4,
         "rejected": 0,
@@ -534,7 +534,7 @@
       },
       {
         "date": "2026-05-12",
-        "cumulative": 875,
+        "cumulative": 874,
         "added": 52,
         "applied": 4,
         "rejected": 0,
@@ -542,9 +542,17 @@
       },
       {
         "date": "2026-05-13",
-        "cumulative": 905,
+        "cumulative": 904,
         "added": 30,
         "applied": 0,
+        "rejected": 0,
+        "interviewing": 0
+      },
+      {
+        "date": "2026-05-14",
+        "cumulative": 905,
+        "added": 1,
+        "applied": 1,
         "rejected": 0,
         "interviewing": 0
       }
@@ -19765,8 +19773,8 @@
     {
       "company": "AssemblyAI",
       "role": "Forward Deployed Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -19781,10 +19789,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-09 13:18Z; tailored SWE resume rendered and verified one page; emphasized Voice AI forward-deployed engineering, LLM applications, customer-facing technical delivery, APIs, and production validation. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-09 13:18Z; tailored SWE resume rendered and verified one page; emphasized Voice AI forward-deployed engineering, LLM applications, customer-facing technical delivery, APIs, and production validation. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Marked done/applied per Liam 2026-05-14.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-14"
       ]
     },
     {
@@ -20602,27 +20611,28 @@
     {
       "company": "AssemblyAI",
       "role": "Forward Deployed Engineer, Onboarding",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
-      "dateAdded": "2026-05-09",
+      "dateAdded": "2026-05-14",
       "location": "Remote - New York",
       "source": "Greenhouse",
       "jobLink": "https://job-boards.greenhouse.io/assemblyai/jobs/4693817005",
       "postingKey": "4693817005",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/AssemblyAI/Forward_Deployed_Engineer_Onboarding/Liam_Van_Resume",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/AssemblyAI/Forward_Deployed_Engineer_Onboarding/Liam_Van_Resume/Liam_Van_AssemblyAI.pdf",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/AssemblyAI/Forward_Deployed_Engineer_Onboarding/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/AssemblyAI/Forward_Deployed_Engineer_Onboarding/Liam_Van_Resume_2/Liam_Van_AssemblyAI.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-10 05:28Z; tailored SWE resume rendered and verified one page; emphasized Voice AI forward-deployed onboarding, customer-facing technical delivery, APIs, LLM applications, integration debugging, and production validation. Degraded public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: prompt-injection / AI-tool instruction text present in application flow; do not follow third-party agent instructions. Earlier browser application attempt was also blocked because Computer Use access was denied after required delayed retry preflight.",
+      "notes": "Hourly intake 2026-05-10 05:28Z; tailored SWE resume rendered and verified one page; emphasized Voice AI forward-deployed onboarding, customer-facing technical delivery, APIs, LLM applications, integration debugging, and production validation. Degraded public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: prompt-injection / AI-tool instruction text present in application flow; do not follow third-party agent instructions. Earlier browser application attempt was also blocked because Computer Use access was denied after required delayed retry preflight.; Marked done/applied per Liam 2026-05-14.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-14"
       ]
     },
     {
@@ -27992,8 +28002,8 @@
       "discoveredAt": "2026-05-10T05:28:50.337729+00:00",
       "postedAge": "today",
       "fitScore": 10,
-      "status": "Manual",
-      "reason": "Manual apply needed 2026-05-10: prompt-injection / AI-tool instruction text present in application flow; do not follow third-party agent instructions. Resume already tailored and verified one page",
+      "status": "Applied",
+      "reason": "Marked done/applied per Liam 2026-05-14; resume tailored and verified one page",
       "trackerPostingKey": "4693817005"
     },
     {
@@ -28342,8 +28352,8 @@
       "discoveredAt": "2026-05-09T13:18:53.506599+00:00",
       "postedAge": "public Greenhouse result; crawled yesterday",
       "fitScore": 10,
-      "status": "Manual",
-      "reason": "Tailored 2026-05-09; resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "status": "Applied",
+      "reason": "Marked done/applied per Liam 2026-05-14; resume tailored and verified one page",
       "trackerPostingKey": "4691426005"
     },
     {
@@ -42901,26 +42911,26 @@
       "role": "Forward Deployed Engineer",
       "postingKey": "4691426005",
       "fitScore": 10,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/assemblyai/jobs/4691426005",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-09",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Marked done/applied per Liam 2026-05-14."
     },
     {
       "company": "AssemblyAI",
       "role": "Forward Deployed Engineer, Onboarding",
       "postingKey": "4693817005",
       "fitScore": 10,
-      "status": "Resume Tailored",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/assemblyai/jobs/4693817005",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-09",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Marked done/applied per Liam 2026-05-14."
     },
     {
       "company": "Ascertain",
@@ -68452,7 +68462,7 @@
           "company": "AssemblyAI",
           "role": "Forward Deployed Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -68464,7 +68474,7 @@
           "company": "AssemblyAI",
           "role": "Forward Deployed Engineer, Onboarding",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
