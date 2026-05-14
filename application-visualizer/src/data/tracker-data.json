@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T05:31:31.738441+00:00",
+  "generatedAt": "2026-05-14T05:32:58.296489+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 905,
-      "applied": 493,
-      "unapplied": 412,
+      "applied": 490,
+      "unapplied": 415,
       "active": 703,
       "rejected": 65,
       "interviewing": 3,
@@ -26,8 +26,8 @@
       "intakeNew": 55,
       "intakeManual": 447,
       "intakeApplied": 15,
-      "applyRate": 54.5,
-      "rejectionRate": 13.2,
+      "applyRate": 54.1,
+      "rejectionRate": 13.3,
       "recruiterWork": 589,
       "engineerWork": 670,
       "recruiterReachedOut": 116,
@@ -36,11 +36,11 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 421
+        "value": 418
       },
       {
         "name": "Manual Apply Needed",
-        "value": 241
+        "value": 244
       },
       {
         "name": "Archived",
@@ -512,7 +512,7 @@
         "date": "2026-05-09",
         "cumulative": 705,
         "added": 58,
-        "applied": 6,
+        "applied": 3,
         "rejected": 0,
         "interviewing": 0
       },
@@ -19509,8 +19509,8 @@
     {
       "company": "PlanetScale",
       "role": "Software Engineer - Infrastructure",
-      "applied": true,
-      "status": "Applied",
+      "applied": false,
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -19525,7 +19525,7 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-09; tailored infrastructure resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-14",
+      "notes": "Hourly Greenhouse intake 2026-05-09; tailored infrastructure resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Correction 2026-05-14: not submitted; PlanetScale application is staged in Safari with Liam_Van_PlanetScale.pdf attached and custom FRQ drafted, awaiting Liam approval before submit.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-09",
@@ -19790,8 +19790,8 @@
     {
       "company": "Bloomreach",
       "role": "Software Engineer II (Pulsar team)",
-      "applied": true,
-      "status": "Applied",
+      "applied": false,
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -19806,7 +19806,7 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight; Application submitted 2026-05-14",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight; Correction 2026-05-14: not submitted; Greenhouse form was partially attempted and resume upload reached, but browser context became unreliable before required dropdowns/submission.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-09",
@@ -20041,8 +20041,8 @@
     {
       "company": "Atoms",
       "role": "Software Engineer - New Grad - Mountain View, CA",
-      "applied": true,
-      "status": "Applied",
+      "applied": false,
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -20057,7 +20057,7 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-09 degraded Greenhouse capture; tailored SWE resume and cover letter rendered, resume verified one page. Manual apply needed: browser application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live form also asks target graduation timing question that may need review against Dec 2024 graduation.; Application submitted 2026-05-14",
+      "notes": "Hourly intake 2026-05-09 degraded Greenhouse capture; tailored SWE resume and cover letter rendered, resume verified one page. Manual apply needed: browser application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live form also asks target graduation timing question that may need review against Dec 2024 graduation.; Correction 2026-05-14: not submitted; Atoms form staged with resume and safe fields, but final required dropdown values could not be reliably verified before submit.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-09",
@@ -68500,7 +68500,7 @@
           "company": "Atoms",
           "role": "Software Engineer - New Grad - Mountain View, CA",
           "fitScore": 10,
-          "status": "Applied",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -68668,7 +68668,7 @@
           "company": "Bloomreach",
           "role": "Software Engineer II (Pulsar team)",
           "fitScore": 10,
-          "status": "Applied",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -70240,7 +70240,7 @@
           "company": "PlanetScale",
           "role": "Software Engineer - Infrastructure",
           "fitScore": 10,
-          "status": "Applied",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
