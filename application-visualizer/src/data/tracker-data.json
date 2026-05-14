@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T11:35:43.810413+00:00",
+  "generatedAt": "2026-05-14T13:09:52.788973+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 907,
-      "applied": 513,
-      "unapplied": 394,
+      "applied": 521,
+      "unapplied": 386,
       "active": 705,
       "rejected": 65,
       "interviewing": 3,
@@ -26,8 +26,8 @@
       "intakeNew": 55,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 56.6,
-      "rejectionRate": 12.7,
+      "applyRate": 57.4,
+      "rejectionRate": 12.5,
       "recruiterWork": 591,
       "engineerWork": 672,
       "recruiterReachedOut": 116,
@@ -36,11 +36,11 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 441
+        "value": 449
       },
       {
         "name": "Manual Apply Needed",
-        "value": 232
+        "value": 224
       },
       {
         "name": "Archived",
@@ -528,7 +528,7 @@
         "date": "2026-05-11",
         "cumulative": 821,
         "added": 32,
-        "applied": 6,
+        "applied": 14,
         "rejected": 0,
         "interviewing": 0
       },
@@ -23136,8 +23136,8 @@
     {
       "company": "Clear Street",
       "role": "Software Engineer - Market Data",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -23152,10 +23152,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-11 13:09 PT; tailored resume rendered and verified one page for NYC market-data/reference-data engineering, backend APIs, data modeling, OpenSearch retrieval, Java data workflows, testing, and production reliability. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly intake 2026-05-11 13:09 PT; tailored resume rendered and verified one page for NYC market-data/reference-data engineering, backend APIs, data modeling, OpenSearch retrieval, Java data workflows, testing, and production reliability. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-14",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ]
     },
     {
@@ -23186,8 +23187,8 @@
     {
       "company": "Affirm",
       "role": "Software Engineer II, Backend (Merchant Advocacy)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -23202,17 +23203,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-11: tailored SWE II backend Merchant Advocacy resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback.",
+      "notes": "Hourly intake 2026-05-11: tailored SWE II backend Merchant Advocacy resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback.; Application submitted 2026-05-14 via Greenhouse; confirmation page displayed.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ]
     },
     {
       "company": "Affirm",
       "role": "Software Engineer II, Machine Learning (Feature Platform)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -23227,10 +23229,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-11: tailored SWE II ML Feature Platform resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback.",
+      "notes": "Hourly intake 2026-05-11: tailored SWE II ML Feature Platform resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback.; Application submitted 2026-05-14; Application submitted 2026-05-14; confirmation page: Thank you for applying",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14",
+        "2026-05-14"
       ]
     },
     {
@@ -23262,8 +23266,8 @@
     {
       "company": "Hebbia",
       "role": "Backend Engineer, Agents",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -23278,18 +23282,19 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-11 17:06 PT; tailored SWE resume rendered and verified one page; emphasized NYC/SF backend agent engineering, AI product infrastructure, APIs, data workflows, testing, and reliable production delivery. Public Greenhouse capture used because Computer Use access to Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed: live Greenhouse submission blocked by Computer Use approval denial 2026-05-11",
+      "notes": "Hourly Greenhouse intake 2026-05-11 17:06 PT; tailored SWE resume rendered and verified one page; emphasized NYC/SF backend agent engineering, AI product infrastructure, APIs, data workflows, testing, and reliable production delivery. Public Greenhouse capture used because Computer Use access to Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed: live Greenhouse submission blocked by Computer Use approval denial 2026-05-11; Application submitted 2026-05-14 via Greenhouse; confirmation page displayed: Thank you for applying to Hebbia. We've received your application.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-11",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ]
     },
     {
       "company": "Addepar",
       "role": "Backend Software Engineer - Precompute",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -23304,11 +23309,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-11 17:06 PT; tailored SWE resume rendered and verified one page; emphasized NYC backend data/compute infrastructure, analytics APIs, financial data workflows, platform reliability, and production validation. Public Greenhouse capture used because Computer Use access to Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed: live Greenhouse submission blocked by Computer Use approval denial 2026-05-11",
+      "notes": "Hourly Greenhouse intake 2026-05-11 17:06 PT; tailored SWE resume rendered and verified one page; emphasized NYC backend data/compute infrastructure, analytics APIs, financial data workflows, platform reliability, and production validation. Public Greenhouse capture used because Computer Use access to Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed: live Greenhouse submission blocked by Computer Use approval denial 2026-05-11; Application submitted 2026-05-14 via Greenhouse with tailored resume; confirmation page displayed.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-11",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ]
     },
     {
@@ -23442,8 +23448,8 @@
     {
       "company": "Airtable",
       "role": "Software Engineer, Infrastructure (4-8 YOE)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -23458,10 +23464,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: live submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight 2026-05-11",
+      "notes": "Manual apply needed: live submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight 2026-05-11; Application submitted 2026-05-14 via Greenhouse. Confirmation: Thank you for applying. Your application has been received.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ]
     },
     {
@@ -23509,19 +23516,20 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-11 20:02 PT; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, React and TypeScript surfaces, backend services, AI-enabled healthcare workflows, testing, and scalable delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; shell DNS to my.greenhouse.io was also unavailable.; Manual apply needed 2026-05-11: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-14 via Greenhouse confirmation page",
+      "notes": "Hourly Greenhouse intake 2026-05-11 20:02 PT; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, React and TypeScript surfaces, backend services, AI-enabled healthcare workflows, testing, and scalable delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; shell DNS to my.greenhouse.io was also unavailable.; Manual apply needed 2026-05-11: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-14 via Greenhouse confirmation page; Application submitted 2026-05-14 via Greenhouse; confirmation page received.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-11",
         "2026-05-11",
+        "2026-05-14",
         "2026-05-14"
       ]
     },
     {
       "company": "Coast",
       "role": "Product Engineer, Foundations Team",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -23536,11 +23544,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-11 20:02 PT; tailored SWE resume rendered and verified one page; emphasized full-stack product foundations, React product surfaces, backend APIs, fintech workflow reliability, testing, and fast startup execution. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; shell DNS to my.greenhouse.io was also unavailable.; Manual apply needed 2026-05-11: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-11 20:02 PT; tailored SWE resume rendered and verified one page; emphasized full-stack product foundations, React product surfaces, backend APIs, fintech workflow reliability, testing, and fast startup execution. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; shell DNS to my.greenhouse.io was also unavailable.; Manual apply needed 2026-05-11: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-14",
       "noteLinks": [],
       "activityDates": [
         "2026-05-11",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ]
     },
     {
@@ -23648,8 +23657,8 @@
     {
       "company": "Sumo Logic",
       "role": "Software Engineer II - Core Ingest",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -23664,10 +23673,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-11 22:05 PT; tailored SWE II Core Ingest resume rendered and verified one page; emphasized Java, distributed systems, data pipelines, cloud database validation, release support, on-call debugging, and backend reliability. Public Greenhouse capture used because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight. Manual apply needed: live Greenhouse application attempt blocked by Computer Use approval denial.",
+      "notes": "Hourly Greenhouse intake 2026-05-11 22:05 PT; tailored SWE II Core Ingest resume rendered and verified one page; emphasized Java, distributed systems, data pipelines, cloud database validation, release support, on-call debugging, and backend reliability. Public Greenhouse capture used because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight. Manual apply needed: live Greenhouse application attempt blocked by Computer Use approval denial.; Application submitted 2026-05-14; Greenhouse confirmation: Thank you for applying. Your application has been received.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ]
     },
     {
@@ -68449,7 +68459,7 @@
           "company": "Addepar",
           "role": "Backend Software Engineer - Precompute",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -68473,7 +68483,7 @@
           "company": "Affirm",
           "role": "Software Engineer II, Backend (Merchant Advocacy)",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -68485,7 +68495,7 @@
           "company": "Affirm",
           "role": "Software Engineer II, Machine Learning (Feature Platform)",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -68497,7 +68507,7 @@
           "company": "Airtable",
           "role": "Software Engineer, Infrastructure (4-8 YOE)",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -69205,7 +69215,7 @@
           "company": "Clear Street",
           "role": "Software Engineer - Market Data",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -69229,7 +69239,7 @@
           "company": "Coast",
           "role": "Product Engineer, Foundations Team",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -69793,7 +69803,7 @@
           "company": "Hebbia",
           "role": "Backend Engineer, Agents",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -70981,7 +70991,7 @@
           "company": "Sumo Logic",
           "role": "Software Engineer II - Core Ingest",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
