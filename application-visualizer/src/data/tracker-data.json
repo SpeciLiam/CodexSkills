@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T08:58:27.143765+00:00",
+  "generatedAt": "2026-05-14T11:30:18.785116+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,38 +9,38 @@
   },
   "stats": {
     "kpis": {
-      "total": 905,
-      "applied": 497,
-      "unapplied": 408,
-      "active": 703,
+      "total": 907,
+      "applied": 513,
+      "unapplied": 394,
+      "active": 705,
       "rejected": 65,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 760,
-      "reachOut": 823,
+      "highFit": 762,
+      "reachOut": 825,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 892,
-      "intakeQueued": 77,
+      "intakeJobs": 898,
+      "intakeQueued": 81,
       "intakeNew": 55,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 54.9,
-      "rejectionRate": 13.1,
-      "recruiterWork": 589,
-      "engineerWork": 670,
+      "applyRate": 56.6,
+      "rejectionRate": 12.7,
+      "recruiterWork": 591,
+      "engineerWork": 672,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 425
+        "value": 441
       },
       {
         "name": "Manual Apply Needed",
-        "value": 237
+        "value": 230
       },
       {
         "name": "Archived",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 35
+        "value": 28
       },
       {
         "name": "Online Assessment",
@@ -66,11 +66,11 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 427
+        "value": 428
       },
       {
         "name": "LinkedIn",
-        "value": 322
+        "value": 323
       },
       {
         "name": "Ashby",
@@ -148,11 +148,11 @@
       },
       {
         "name": "Bay Area",
-        "value": 208
+        "value": 209
       },
       {
         "name": "Other",
-        "value": 146
+        "value": 147
       },
       {
         "name": "Remote",
@@ -178,7 +178,7 @@
       },
       {
         "name": "Full Stack",
-        "value": 111
+        "value": 113
       },
       {
         "name": "Backend",
@@ -244,7 +244,7 @@
       },
       {
         "score": "10",
-        "count": 425
+        "count": 427
       }
     ],
     "targetCounts": [
@@ -266,7 +266,7 @@
       },
       {
         "name": "Tailored",
-        "value": 144
+        "value": 146
       },
       {
         "name": "Skipped",
@@ -274,7 +274,7 @@
       },
       {
         "name": "Queued",
-        "value": 77
+        "value": 81
       },
       {
         "name": "New",
@@ -300,11 +300,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 585
+        "value": 586
       },
       {
         "name": "LinkedIn",
-        "value": 307
+        "value": 312
       }
     ],
     "timeline": [
@@ -528,7 +528,7 @@
         "date": "2026-05-11",
         "cumulative": 821,
         "added": 32,
-        "applied": 4,
+        "applied": 6,
         "rejected": 0,
         "interviewing": 0
       },
@@ -536,7 +536,7 @@
         "date": "2026-05-12",
         "cumulative": 873,
         "added": 52,
-        "applied": 4,
+        "applied": 12,
         "rejected": 0,
         "interviewing": 0
       },
@@ -544,14 +544,14 @@
         "date": "2026-05-13",
         "cumulative": 903,
         "added": 30,
-        "applied": 1,
+        "applied": 7,
         "rejected": 0,
         "interviewing": 0
       },
       {
         "date": "2026-05-14",
-        "cumulative": 905,
-        "added": 2,
+        "cumulative": 907,
+        "added": 4,
         "applied": 2,
         "rejected": 0,
         "interviewing": 0
@@ -22988,8 +22988,8 @@
     {
       "company": "Mixpanel",
       "role": "Software Engineer, Backend",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -23004,9 +23004,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored resume for Mixpanel Reporting & Analysis backend role; emphasized backend web architecture, customer-facing search/recommendation products, data flows, OpenSearch, reliability, and product-team execution.",
+      "notes": "Tailored resume for Mixpanel Reporting & Analysis backend role; emphasized backend web architecture, customer-facing search/recommendation products, data flows, OpenSearch, reliability, and product-team execution.; Application submitted via Greenhouse on 2026-05-14; confirmation page showed application received.",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-14"
+      ]
     },
     {
       "company": "AustinWorks",
@@ -23491,8 +23493,8 @@
     {
       "company": "Thesis",
       "role": "Full Stack Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -23507,11 +23509,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-11 20:02 PT; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, React and TypeScript surfaces, backend services, AI-enabled healthcare workflows, testing, and scalable delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; shell DNS to my.greenhouse.io was also unavailable.; Manual apply needed 2026-05-11: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-11 20:02 PT; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, React and TypeScript surfaces, backend services, AI-enabled healthcare workflows, testing, and scalable delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; shell DNS to my.greenhouse.io was also unavailable.; Manual apply needed 2026-05-11: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-14 via Greenhouse confirmation page",
       "noteLinks": [],
       "activityDates": [
         "2026-05-11",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ]
     },
     {
@@ -24045,8 +24048,8 @@
     {
       "company": "Garda Capital Partners",
       "role": "Software Engineer (AI Tooling)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -24061,17 +24064,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-12; tailored AI tooling resume rendered and verified one page; emphasized Python, LLM/API tooling, backend integrations, data workflows, monitoring, and stakeholder-facing automation. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
+      "notes": "Hourly intake 2026-05-12; tailored AI tooling resume rendered and verified one page; emphasized Python, LLM/API tooling, backend integrations, data workflows, monitoring, and stakeholder-facing automation. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Application submitted 2026-05-14 via Greenhouse",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-14"
       ]
     },
     {
       "company": "YugabyteDB",
       "role": "Platform Software Engineer (Control Plane)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -24086,17 +24090,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-12; tailored platform/control-plane resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-12; tailored platform/control-plane resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-14 via Greenhouse; confirmation page received.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-14"
       ]
     },
     {
       "company": "DoorDash USA",
       "role": "Software Engineer II, Data Engineering",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -24111,10 +24116,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-12; tailored data engineering resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-12; tailored data engineering resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-14",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-14"
       ]
     },
     {
@@ -24756,8 +24762,8 @@
     {
       "company": "Codes Health",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -24772,17 +24778,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-12 for Codes Health Software Engineer posting 4327410663; emphasized TypeScript/React, Python-backed product workflows, customer-facing shipping, internal tools for ops, LLM applications, API/service integration, fast iteration, and startup-style ownership. Did not claim FastAPI because the source resume supports Python/API work but not that framework by name.",
+      "notes": "Tailored 2026-05-12 for Codes Health Software Engineer posting 4327410663; emphasized TypeScript/React, Python-backed product workflows, customer-facing shipping, internal tools for ops, LLM applications, API/service integration, fast iteration, and startup-style ownership. Did not claim FastAPI because the source resume supports Python/API work but not that framework by name.; Application already marked Applied in YC Work at a Startup portal 2026-05-14",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-14"
       ]
     },
     {
       "company": "Nxt Level",
       "role": "Founding Forward Deployed Engineer (AI)",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -24797,10 +24804,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-12 for Nxt Level recruiting posting 4406884510 for an unnamed home-based-care AI-agent client; emphasized AI-assisted testing, LLM applications, workflow automation, Robot Framework/Selenium, customer-facing integrations, field-style debugging, QA/monitoring, deployment validation, and fast product iteration. Did not claim healthcare/EMR production ownership, scraping/reverse-engineering, or direct customer-site deployment beyond supported resume evidence.",
+      "notes": "Tailored 2026-05-12 for Nxt Level recruiting posting 4406884510 for an unnamed home-based-care AI-agent client; emphasized AI-assisted testing, LLM applications, workflow automation, Robot Framework/Selenium, customer-facing integrations, field-style debugging, QA/monitoring, deployment validation, and fast product iteration. Did not claim healthcare/EMR production ownership, scraping/reverse-engineering, or direct customer-site deployment beyond supported resume evidence.; Application submitted 2026-05-14; LinkedIn showed Application submitted 13 hours ago.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-14"
       ]
     },
     {
@@ -24832,8 +24840,8 @@
     {
       "company": "Tamarind Bio",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -24848,17 +24856,19 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-12 for Tamarind Bio Software Engineer posting 4412768792; emphasized full-stack React/TypeScript, Python/Java APIs, AWS/GCP/OCI cloud delivery, Docker, LLM applications, data pipelines, observability, deployment validation, customer-facing product work, and startup-style ownership. Did not claim Kubernetes, DynamoDB, CUDA, PyTorch/TensorFlow, Slurm, Biopython, or computational-biology domain experience beyond supported cloud/data/AI-adjacent evidence.",
+      "notes": "Tailored 2026-05-12 for Tamarind Bio Software Engineer posting 4412768792; emphasized full-stack React/TypeScript, Python/Java APIs, AWS/GCP/OCI cloud delivery, Docker, LLM applications, data pipelines, observability, deployment validation, customer-facing product work, and startup-style ownership. Did not claim Kubernetes, DynamoDB, CUDA, PyTorch/TensorFlow, Slurm, Biopython, or computational-biology domain experience beyond supported cloud/data/AI-adjacent evidence.; Application submitted 2026-05-14 via YC Work at a Startup; job page showed Applied.; Application submitted 2026-05-14 via YC Work at a Startup; status showed Applied.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-14",
+        "2026-05-14"
       ]
     },
     {
       "company": "Outtake",
       "role": "Software Engineer (Product)",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -24873,10 +24883,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-12 for Outtake Software Engineer (Product) posting 4412928440; emphasized product engineering, React/TypeScript/NestJS, REST APIs, customer-facing systems, LLM/agentic tooling, OpenSearch/search indexing, large-data workflows, observability, code review, release support, and startup-style ownership. Did not claim direct impersonation/fraud takedown or security-trust domain ownership beyond supported customer-facing product, AI, data, and reliability evidence.",
+      "notes": "Tailored 2026-05-12 for Outtake Software Engineer (Product) posting 4412928440; emphasized product engineering, React/TypeScript/NestJS, REST APIs, customer-facing systems, LLM/agentic tooling, OpenSearch/search indexing, large-data workflows, observability, code review, release support, and startup-style ownership. Did not claim direct impersonation/fraud takedown or security-trust domain ownership beyond supported customer-facing product, AI, data, and reliability evidence.; Application submitted 2026-05-14 via Ashby; confirmation: Your application was successfully submitted. We'll contact you if there are next steps.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-14"
       ]
     },
     {
@@ -24907,8 +24918,8 @@
     {
       "company": "Kabilah",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -24923,9 +24934,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-05-14 via YC Work at a Startup; page showed Applied.",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-14"
+      ]
     },
     {
       "company": "Maple",
@@ -24955,8 +24968,8 @@
     {
       "company": "Flex",
       "role": "Software Engineer II, Core Platform",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -24971,10 +24984,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-13; tailored resume rendered and verified one page; emphasized Java/Python backend platform services, secure APIs, databases, AWS/cloud reliability, regression automation, and on-call debugging. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly intake 2026-05-13; tailored resume rendered and verified one page; emphasized Java/Python backend platform services, secure APIs, databases, AWS/cloud reliability, regression automation, and on-call debugging. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-14; Application submitted 2026-05-14 via Greenhouse; confirmation page: Thank you for applying. Your application has been received.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-14",
+        "2026-05-14"
       ]
     },
     {
@@ -25081,8 +25096,8 @@
     {
       "company": "Cala Health",
       "role": "Full Stack Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -25097,11 +25112,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly recruiting intake 2026-05-12 23:31 PT; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, React and TypeScript interfaces, backend APIs, healthcare workflow reliability, testing, and cloud delivery. Public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; Apify was not configured.; Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly recruiting intake 2026-05-12 23:31 PT; tailored SWE resume rendered and verified one page; emphasized full-stack product engineering, React and TypeScript interfaces, backend APIs, healthcare workflow reliability, testing, and cloud delivery. Public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; Apify was not configured.; Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-14; Application submitted 2026-05-14 via Greenhouse; confirmation page: Thank you for applying. Your application has been received.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-12",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-14",
+        "2026-05-14"
       ]
     },
     {
@@ -25413,8 +25430,8 @@
     {
       "company": "StubHub",
       "role": "Software Engineer II - Mobile (AI-Powered Consumer Experiences)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -25429,10 +25446,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-13; tailored mobile/AI consumer experience resume rendered and verified one page. Manual apply needed: browser application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live Greenhouse form also asks hybrid schedule confirmation and legal accuracy affirmation.",
+      "notes": "Hourly intake 2026-05-13; tailored mobile/AI consumer experience resume rendered and verified one page. Manual apply needed: browser application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live Greenhouse form also asks hybrid schedule confirmation and legal accuracy affirmation.; Application submitted 2026-05-14",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-14"
       ]
     },
     {
@@ -25542,8 +25560,8 @@
     {
       "company": "IC Resources",
       "role": "Software Engineer - High Performance Systems / ML Infrastructure",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -25558,15 +25576,17 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-05-14",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-14"
+      ]
     },
     {
       "company": "Sea12",
       "role": "Platform Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -25581,9 +25601,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "LinkedIn shows application submitted 2026-05-14",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-14"
+      ]
     },
     {
       "company": "Rise Technical",
@@ -25611,8 +25633,8 @@
     {
       "company": "Sola",
       "role": "Software Engineer, Backend",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -25627,9 +25649,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-05-14",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-14"
+      ]
     },
     {
       "company": "William and William Recruiting",
@@ -25724,9 +25748,101 @@
       "activityDates": [
         "2026-05-13"
       ]
+    },
+    {
+      "company": "Instabase",
+      "role": "Full-stack Software Engineer (New Grad)",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-14",
+      "location": "San Francisco, CA",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/instabase/jobs/8548929002",
+      "postingKey": "8548929002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Instabase/Full_stack_Software_Engineer_New_Grad/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Instabase/Full_stack_Software_Engineer_New_Grad/Liam_Van_Resume/Liam_Van_Instabase.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Nodriver automation fallback intake 2026-05-14 04:30 PT; tailored SWE resume rendered and verified one page; emphasized new-grad full-stack AI platform engineering, React and TypeScript product surfaces, backend APIs, data workflows, cloud reliability, and production validation. Web-indexed fallback capture used because authenticated LinkedIn/nodriver and Chrome/Firefox Computer Use preflight were blocked by macOS Automation/Accessibility permissions.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-14"
+      ]
+    },
+    {
+      "company": "Allstate",
+      "role": "(Entry level) Full Stack Software Engineer (LLM application Development)",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-14",
+      "location": "United States",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/entry-level-full-stack-software-engineer-llm-application-development-at-allstate-4401189061",
+      "postingKey": "entry-level-full-stack-software-engineer-llm-application-development-at-allstate-4401189061",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Allstate/Entry_level_Full_Stack_Software_Engineer_LLM_application_Development/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Allstate/Entry_level_Full_Stack_Software_Engineer_LLM_application_Development/Liam_Van_Resume/Liam_Van_Allstate.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Nodriver automation fallback intake 2026-05-14 04:30 PT; tailored SWE resume rendered and verified one page; emphasized entry-level LLM application development, full-stack product engineering, React and TypeScript interfaces, backend APIs, AI-assisted workflows, testing, and reliable delivery. Web-indexed fallback capture used because authenticated LinkedIn/nodriver and Chrome/Firefox Computer Use preflight were blocked by macOS Automation/Accessibility permissions.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-14"
+      ]
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "Instabase",
+      "role": "Full-stack Software Engineer (New Grad)",
+      "location": "San Francisco, CA",
+      "postingKey": "8548929002",
+      "jobUrl": "https://job-boards.greenhouse.io/instabase/jobs/8548929002",
+      "discoveredAt": "2026-05-14T11:29:32.497619+00:00",
+      "postedAge": "Crawled today",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-14; resume rendered and verified one page; emphasized new-grad full-stack AI platform engineering, React and TypeScript product surfaces, backend APIs, data workflows, cloud reliability, and production validation",
+      "trackerPostingKey": "8548929002"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Allstate",
+      "role": "(Entry level) Full Stack Software Engineer (LLM application Development)",
+      "location": "United States",
+      "postingKey": "4401189061",
+      "jobUrl": "https://www.linkedin.com/jobs/view/entry-level-full-stack-software-engineer-llm-application-development-at-allstate-4401189061",
+      "discoveredAt": "2026-05-14T11:29:32.497619+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 10,
+      "status": "Tailored",
+      "reason": "Tailored 2026-05-14; resume rendered and verified one page; emphasized entry-level LLM application development, full-stack product engineering, React and TypeScript interfaces, backend APIs, AI-assisted workflows, testing, and reliable delivery",
+      "trackerPostingKey": "4401189061"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "New Lantern",
+      "role": "2026 New Grad Olympics \u2014 Software Engineer",
+      "location": "United States",
+      "postingKey": "4402653422",
+      "jobUrl": "https://www.linkedin.com/jobs/view/2026-new-grad-olympics-%E2%80%94-software-engineer-at-new-lantern-4402653422",
+      "discoveredAt": "2026-05-14T09:58:43.613958+00:00",
+      "postedAge": "17 hours ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, preferred/remote US location",
+      "trackerPostingKey": ""
+    },
     {
       "source": "LinkedIn",
       "company": "Uber",
@@ -33933,6 +34049,48 @@
     },
     {
       "source": "LinkedIn",
+      "company": "Lensa",
+      "role": "Entry Level Software Developer",
+      "location": "Dallas, TX",
+      "postingKey": "linkedin-lensa-entry-level-software-developer-dallas-2026-05-14",
+      "jobUrl": "https://www.linkedin.com/jobs/linkedin-entry-level-software-engineer-jobs-united-states?count=10&start=50",
+      "discoveredAt": "2026-05-14T09:58:43.613958+00:00",
+      "postedAge": "13 hours ago",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Lensa",
+      "role": "Software Developer/Data Engineer - Entry Level",
+      "location": "Atlanta, GA",
+      "postingKey": "4369740955",
+      "jobUrl": "https://www.linkedin.com/jobs/view/software-developer-data-engineer-entry-level-at-lensa-4369740955",
+      "discoveredAt": "2026-05-14T09:58:43.613958+00:00",
+      "postedAge": "13 hours ago",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "AARATECH",
+      "role": "Software Engineer",
+      "location": "San Francisco Bay Area",
+      "postingKey": "linkedin-aaratech-software-engineer-sf-bay-area-2026-05-14",
+      "jobUrl": "https://www.linkedin.com/jobs/linkedin-entry-level-software-engineer-jobs-united-states?count=10&start=50",
+      "discoveredAt": "2026-05-14T09:58:43.613958+00:00",
+      "postedAge": "55 minutes ago",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, SF/Bay Area preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
       "company": "Otis Elevator Co.",
       "role": "Entry Level Software Engineer",
       "location": "Farmington, CT (On-site)",
@@ -41039,6 +41197,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Instabase",
+      "role": "Full-stack Software Engineer (New Grad)",
+      "postingKey": "8548929002",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/instabase/jobs/8548929002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-14",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Included Health",
       "role": "Software Engineer II, Fullstack",
       "postingKey": "software-engineer-ii-fullstack-at-included-health-4252399531",
@@ -43168,6 +43339,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Allstate",
+      "role": "(Entry level) Full Stack Software Engineer (LLM application Development)",
+      "postingKey": "entry-level-full-stack-software-engineer-llm-application-development-at-allstate-4401189061",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/entry-level-full-stack-software-engineer-llm-application-development-at-allstate-4401189061",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-14",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -68343,6 +68527,18 @@
           "contacts": []
         },
         {
+          "key": "entry-level-full-stack-software-engineer-llm-application-development-at-allstate-4401189061",
+          "company": "Allstate",
+          "role": "(Entry level) Full Stack Software Engineer (LLM application Development)",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7949946002",
           "company": "Amplitude",
           "role": "Software Engineer II, Web",
@@ -68779,7 +68975,7 @@
           "company": "Cala Health",
           "role": "Full Stack Software Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -69043,7 +69239,7 @@
           "company": "Codes Health",
           "role": "Software Engineer",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -69187,7 +69383,7 @@
           "company": "DoorDash USA",
           "role": "Software Engineer II, Data Engineering",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -69295,7 +69491,7 @@
           "company": "Flex",
           "role": "Software Engineer II, Core Platform",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -69379,7 +69575,7 @@
           "company": "Garda Capital Partners",
           "role": "Software Engineer (AI Tooling)",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -69607,7 +69803,7 @@
           "company": "IC Resources",
           "role": "Software Engineer - High Performance Systems / ML Infrastructure",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -69632,6 +69828,18 @@
           "role": "Software Engineer II, Fullstack",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8548929002",
+          "company": "Instabase",
+          "role": "Full-stack Software Engineer (New Grad)",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -69895,7 +70103,7 @@
           "company": "Mixpanel",
           "role": "Software Engineer, Backend",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -70075,7 +70283,7 @@
           "company": "Outtake",
           "role": "Software Engineer (Product)",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -70639,7 +70847,7 @@
           "company": "Sola",
           "role": "Software Engineer, Backend",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -70747,7 +70955,7 @@
           "company": "StubHub",
           "role": "Software Engineer II - Mobile (AI-Powered Consumer Experiences)",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -70915,7 +71123,7 @@
           "company": "Thesis",
           "role": "Full Stack Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -71263,7 +71471,7 @@
           "company": "YugabyteDB",
           "role": "Platform Software Engineer (Control Plane)",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -71947,7 +72155,7 @@
           "company": "Kabilah",
           "role": "Software Engineer",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -72163,7 +72371,7 @@
           "company": "Nxt Level",
           "role": "Founding Forward Deployed Engineer (AI)",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -72379,7 +72587,7 @@
           "company": "Sea12",
           "role": "Platform Engineer",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -74263,7 +74471,7 @@
           "company": "Tamarind Bio",
           "role": "Software Engineer",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -84331,6 +84539,18 @@
           "contacts": []
         },
         {
+          "key": "entry-level-full-stack-software-engineer-llm-application-development-at-allstate-4401189061",
+          "company": "Allstate",
+          "role": "(Entry level) Full Stack Software Engineer (LLM application Development)",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7949946002-growth-platform",
           "company": "Amplitude",
           "role": "Software Engineer I, Growth Platform",
@@ -85667,7 +85887,7 @@
           "company": "IC Resources",
           "role": "Software Engineer - High Performance Systems / ML Infrastructure",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -85692,6 +85912,18 @@
           "role": "Software Engineer II, Fullstack",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "8548929002",
+          "company": "Instabase",
+          "role": "Full-stack Software Engineer (New Grad)",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -86795,7 +87027,7 @@
           "company": "Sola",
           "role": "Software Engineer, Backend",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -88463,7 +88695,7 @@
           "company": "Sea12",
           "role": "Platform Engineer",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
