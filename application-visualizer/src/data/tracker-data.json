@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T00:04:13.490603+00:00",
+  "generatedAt": "2026-05-14T03:04:56.488329+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,10 +21,10 @@
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 865,
+      "intakeJobs": 881,
       "intakeQueued": 75,
       "intakeNew": 53,
-      "intakeManual": 438,
+      "intakeManual": 447,
       "intakeApplied": 15,
       "applyRate": 53.0,
       "rejectionRate": 13.5,
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 438
+        "value": 447
       },
       {
         "name": "Tailored",
@@ -270,7 +270,7 @@
       },
       {
         "name": "Skipped",
-        "value": 130
+        "value": 136
       },
       {
         "name": "Queued",
@@ -285,12 +285,12 @@
         "value": 15
       },
       {
-        "name": "Archived",
+        "name": "Duplicate",
         "value": 4
       },
       {
-        "name": "Duplicate",
-        "value": 3
+        "name": "Archived",
+        "value": 4
       },
       {
         "name": "Expired",
@@ -300,11 +300,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 584
+        "value": 585
       },
       {
         "name": "LinkedIn",
-        "value": 281
+        "value": 296
       }
     ],
     "timeline": [
@@ -25699,17 +25699,17 @@
   "jobIntake": [
     {
       "source": "LinkedIn",
-      "company": "Tesla",
-      "role": "Software Engineer, Backend",
-      "location": "Fremont, CA (On-site)",
-      "postingKey": "4413790317",
-      "jobUrl": "https://www.linkedin.com/jobs/view/4413790317/",
-      "discoveredAt": "2026-05-13T23:26:40+00:00",
-      "postedAge": "Authenticated LinkedIn/nodriver search 2026-05-13; visible card listed 22 hours ago; LinkedIn apply handoff moved the job to Clicked apply/In progress and external Tesla URL https://www.tesla.com/careers/search/job/270101?source=LinkedIn returned an unexpected-error page before the application form",
-      "fitScore": 8,
-      "status": "Manual",
-      "reason": "Manual apply needed 2026-05-13: Tesla external careers page returned \"An error has occurred. The website encountered an unexpected error. Please try again later.\" after LinkedIn apply handoff; no application form or submit path was available.",
-      "trackerPostingKey": "4413790317"
+      "company": "NVIDIA",
+      "role": "Software Engineer - AI Research Clusters",
+      "location": "Santa Clara, CA (On-site)",
+      "postingKey": "4414401251",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4414401251/",
+      "discoveredAt": "2026-05-14T00:12:05+00:00",
+      "postedAge": "Authenticated LinkedIn/nodriver page 3 search 2026-05-13; visible card listed 2 minutes ago",
+      "fitScore": 10,
+      "status": "Duplicate",
+      "reason": "Duplicate stop 2026-05-13: normalized company + role already discovered as NVIDIA Software Engineer - AI Research Clusters, posting key 4414408125.",
+      "trackerPostingKey": "4414408125"
     },
     {
       "source": "Greenhouse",
@@ -33875,6 +33875,132 @@
     },
     {
       "source": "LinkedIn",
+      "company": "Tesla",
+      "role": "Software Engineer, Body Controls Validation, Vehicle Software",
+      "location": "Palo Alto, CA (On-site)",
+      "postingKey": "4413778471",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4413778471/",
+      "discoveredAt": "2026-05-14T00:12:05+00:00",
+      "postedAge": "Authenticated LinkedIn/nodriver page 3 search 2026-05-13; visible card listed 22 hours ago; Tesla careers page opened and left in Chrome",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: Tesla external careers page loaded for req 270652 and needs manual/tailored application follow-up; tab left open for Liam.",
+      "trackerPostingKey": "4413778471"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Voyager Technologies",
+      "role": "Software Engineer - Full Stack - Internal AI Tools Team",
+      "location": "Los Angeles Metropolitan Area (On-site)",
+      "postingKey": "4414146141",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4414146141/",
+      "discoveredAt": "2026-05-14T00:10:23+00:00",
+      "postedAge": "Authenticated LinkedIn/nodriver page 2 search 2026-05-13; visible card listed 7 hours ago; Greenhouse application opened and left in Chrome",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: Greenhouse application requires tailored resume/upload or multi-step ATS review before safe submit; tab left open for Liam.",
+      "trackerPostingKey": "4414146141"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Tesla",
+      "role": "Software Engineer, Full stack Machine Learning Platform, Manufacturing Quality",
+      "location": "Fremont, CA (On-site)",
+      "postingKey": "4413786375",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4413786375/",
+      "discoveredAt": "2026-05-14T00:10:23+00:00",
+      "postedAge": "Authenticated LinkedIn/nodriver page 2 search 2026-05-13; visible card listed within past 24 hours; Tesla external careers URL opened in Chrome",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: Tesla external careers URL https://www.tesla.com/careers/search/job/270058?source=LinkedIn needs manual review; tab left open for Liam.",
+      "trackerPostingKey": "4413786375"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "NVIDIA",
+      "role": "Software Engineer - AI Research Clusters",
+      "location": "Austin, TX (On-site)",
+      "postingKey": "4414408125",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4414408125/",
+      "discoveredAt": "2026-05-14T00:10:23+00:00",
+      "postedAge": "Authenticated LinkedIn/nodriver page 2 search 2026-05-13; visible card listed 17 minutes ago; Workday application opened and left in Chrome",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: Workday application requires tailored resume/upload or multi-step ATS review before safe submit; tab left open for Liam.",
+      "trackerPostingKey": "4414408125"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Xpert Development",
+      "role": "Backend Software Engineer",
+      "location": "United States (Remote)",
+      "postingKey": "4413754945",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4413754945/",
+      "discoveredAt": "2026-05-14T00:07:21+00:00",
+      "postedAge": "Authenticated LinkedIn/nodriver search 2026-05-13; visible promoted card listed 22 hours ago; Dover application opened and left in Chrome",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: Dover application requires tailored resume upload before safe submit; tab left open at application form for Liam.",
+      "trackerPostingKey": "4413754945"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Jack Henry",
+      "role": "Software Engineer Entry Level : Core Deposits Software",
+      "location": "Monett, MO (Remote)",
+      "postingKey": "4414146726",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4414146726/",
+      "discoveredAt": "2026-05-14T00:07:21+00:00",
+      "postedAge": "Authenticated LinkedIn/nodriver search 2026-05-13; Avature application opened and left in Chrome",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: Avature flow requires resume selection/upload and multi-step application review; tab left open at application method page for Liam.",
+      "trackerPostingKey": "4414146726"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Alex AI",
+      "role": "Full-Stack Software Engineer",
+      "location": "San Francisco, CA (On-site)",
+      "postingKey": "4410324474",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4410324474/",
+      "discoveredAt": "2026-05-14T00:07:21+00:00",
+      "postedAge": "Authenticated LinkedIn/nodriver search 2026-05-13; visible card listed 22 hours ago; Ashby application opened and left in Chrome",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: Ashby application requires tailored resume upload plus location/relocation and interest response; tab left open at application form for Liam.",
+      "trackerPostingKey": "4410324474"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "AIG",
+      "role": "GenAI Software Engineer (Full Stack)",
+      "location": "Atlanta, GA (On-site)",
+      "postingKey": "4400010320",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4400010320/",
+      "discoveredAt": "2026-05-14T00:07:21+00:00",
+      "postedAge": "Authenticated LinkedIn/nodriver search 2026-05-13; visible card listed 8 hours ago; Workday application opened and left in Chrome",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: Workday application requires tailored resume/account-style multi-step flow before safe submit; tab left open for Liam.",
+      "trackerPostingKey": "4400010320"
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Tesla",
+      "role": "Software Engineer, Backend",
+      "location": "Fremont, CA (On-site)",
+      "postingKey": "4413790317",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4413790317/",
+      "discoveredAt": "2026-05-13T23:26:40+00:00",
+      "postedAge": "Authenticated LinkedIn/nodriver search 2026-05-13; visible card listed 22 hours ago; LinkedIn apply handoff moved the job to Clicked apply/In progress and external Tesla URL https://www.tesla.com/careers/search/job/270101?source=LinkedIn returned an unexpected-error page before the application form",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: Tesla external careers page returned \"An error has occurred. The website encountered an unexpected error. Please try again later.\" after LinkedIn apply handoff; no application form or submit path was available.",
+      "trackerPostingKey": "4413790317"
+    },
+    {
+      "source": "LinkedIn",
       "company": "Square",
       "role": "Software Engineer - Android Connected Devices",
       "location": "San Francisco Bay Area",
@@ -35316,6 +35442,20 @@
       "trackerPostingKey": ""
     },
     {
+      "source": "LinkedIn",
+      "company": "Lockheed Martin",
+      "role": "F-22 Software Engineer",
+      "location": "Fort Worth, TX (On-site)",
+      "postingKey": "4414200485",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4414200485/",
+      "discoveredAt": "2026-05-14T00:07:21+00:00",
+      "postedAge": "Authenticated LinkedIn/nodriver search 2026-05-13; visible card listed 9 hours ago; BrassRing application opened and left in Chrome",
+      "fitScore": 7,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: external BrassRing/Lockheed portal requires multi-step ATS review before safe submit; tab left open for Liam.",
+      "trackerPostingKey": "4414200485"
+    },
+    {
       "source": "Greenhouse",
       "company": "Scale AI",
       "role": "Senior Software Engineer, Backend - Frontier Data",
@@ -36041,6 +36181,20 @@
       "fitScore": 7,
       "status": "New",
       "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Seamless.AI",
+      "role": "Software Development Engineer (PLG) - Remote US",
+      "location": "United States",
+      "postingKey": "5821329004",
+      "jobUrl": "https://job-boards.greenhouse.io/seamlessai/jobs/5821329004",
+      "discoveredAt": "2026-05-14T03:04:32.138064+00:00",
+      "postedAge": "Crawled 2 months ago",
+      "fitScore": 6,
+      "status": "Skipped",
+      "reason": "preferred/remote US location",
       "trackerPostingKey": ""
     },
     {
@@ -37053,6 +37207,34 @@
     },
     {
       "source": "LinkedIn",
+      "company": "Jolera",
+      "role": "Software Engineer",
+      "location": "Buffalo, NY (On-site)",
+      "postingKey": "4413843728",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4413843728/",
+      "discoveredAt": "2026-05-14T00:10:23+00:00",
+      "postedAge": "Authenticated LinkedIn/nodriver page 2 search 2026-05-13; visible card listed 23 hours ago",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-13: posting emphasizes C#/.NET stack and is a weaker fit for Liam's current resume.",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Crate & Barrel",
+      "role": "Software Engineer",
+      "location": "Northbrook, IL (Remote)",
+      "postingKey": "4413745880",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4413745880/",
+      "discoveredAt": "2026-05-14T00:07:21+00:00",
+      "postedAge": "Authenticated LinkedIn/nodriver search 2026-05-13; visible card listed 8 hours ago",
+      "fitScore": 4,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-13: posting requires C# proficiency and 2-5 years professional software development experience, making it a weaker truthful fit for Liam's current resume.",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
       "company": "Microsoft",
       "role": "Software Development Engineer",
       "location": "Redmond, WA",
@@ -37483,6 +37665,48 @@
       "fitScore": 3,
       "status": "Skipped",
       "reason": "SWE-family role, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Sage",
+      "role": "Senior Software Engineer I",
+      "location": "Washington, DC (Remote)",
+      "postingKey": "4413849536",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4413849536/",
+      "discoveredAt": "2026-05-14T00:10:23+00:00",
+      "postedAge": "Authenticated LinkedIn/nodriver page 2 search 2026-05-13; visible card listed 22 hours ago",
+      "fitScore": 2,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-13: senior-level role outside early-career sweep.",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Northrop Grumman",
+      "role": "Associate Cyber Software Engineer - R10232384",
+      "location": "Jessup, MD (On-site)",
+      "postingKey": "4414285756",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4414285756/",
+      "discoveredAt": "2026-05-14T00:10:23+00:00",
+      "postedAge": "Authenticated LinkedIn/nodriver page 2 search 2026-05-13; visible card listed 1 hour ago",
+      "fitScore": 2,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-13: posting requires Top Secret clearance for start.",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Lockheed Martin",
+      "role": "Software Engineer",
+      "location": "Herndon, VA (On-site)",
+      "postingKey": "4410361004",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4410361004/",
+      "discoveredAt": "2026-05-14T00:10:23+00:00",
+      "postedAge": "Authenticated LinkedIn/nodriver page 2 search 2026-05-13; visible card listed 21 hours ago",
+      "fitScore": 2,
+      "status": "Skipped",
+      "reason": "Skipped 2026-05-13: posting requires Top Secret clearance with ability to obtain and maintain TS/SCI.",
       "trackerPostingKey": ""
     },
     {
