@@ -2,11 +2,12 @@
 
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
-Jobs discovered: 864
-New: 53 | Queued: 75 | Tailored: 144 | Applied: 15 | Manual: 437 | Skipped: 130 | Duplicate: 3 | Expired: 3
+Jobs discovered: 865
+New: 53 | Queued: 75 | Tailored: 144 | Applied: 15 | Manual: 438 | Skipped: 130 | Duplicate: 3 | Expired: 3
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| LinkedIn | Tesla | Software Engineer, Backend | Fremont, CA (On-site) | 4413790317 | https://www.linkedin.com/jobs/view/4413790317/ | 2026-05-13T23:26:40+00:00 | Authenticated LinkedIn/nodriver search 2026-05-13; visible card listed 22 hours ago; LinkedIn apply handoff moved the job to Clicked apply/In progress and external Tesla URL https://www.tesla.com/careers/search/job/270101?source=LinkedIn returned an unexpected-error page before the application form | 8 | Manual | Manual apply needed 2026-05-13: Tesla external careers page returned "An error has occurred. The website encountered an unexpected error. Please try again later." after LinkedIn apply handoff; no application form or submit path was available. | 4413790317 |
 | Greenhouse | Superhuman | Software Engineer, Data Engineering | New York City, NY | 6966865 | https://job-boards.greenhouse.io/grammarly/jobs/6966865 | 2026-05-13T23:05:58.191509+00:00 | Greenhouse public result; Grammarly/Superhuman board lists New York data engineering SWE | 10 | Queued | SWE-family role, NYC preference |  |
 | Greenhouse | StubHub | Software Engineer I - Direct Issuance (New Grad) | Aliso Viejo, California, United States | 4691657101 | https://job-boards.greenhouse.io/stubhubinc/jobs/4691657101 | 2026-05-13T23:05:58.191509+00:00 | Greenhouse public result; role marked New on board | 10 | Queued | SWE-family role, early-career signal, preferred/remote US location |  |
 | Greenhouse | StubHub | Software Engineer I - Direct Issuance (New Grad) | Los Angeles, California, United States | 4688101101 | https://job-boards.greenhouse.io/stubhubinc/jobs/4688101101 | 2026-05-13T23:05:58.191509+00:00 | Greenhouse public result; role marked New on board | 10 | Queued | SWE-family role, early-career signal, preferred/remote US location |  |

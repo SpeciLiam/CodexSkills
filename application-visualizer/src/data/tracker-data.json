@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T23:08:09.695142+00:00",
+  "generatedAt": "2026-05-14T00:04:13.490603+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -21,10 +21,10 @@
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 864,
+      "intakeJobs": 865,
       "intakeQueued": 75,
       "intakeNew": 53,
-      "intakeManual": 437,
+      "intakeManual": 438,
       "intakeApplied": 15,
       "applyRate": 53.0,
       "rejectionRate": 13.5,
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 437
+        "value": 438
       },
       {
         "name": "Tailored",
@@ -304,7 +304,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 280
+        "value": 281
       }
     ],
     "timeline": [
@@ -25697,6 +25697,20 @@
     }
   ],
   "jobIntake": [
+    {
+      "source": "LinkedIn",
+      "company": "Tesla",
+      "role": "Software Engineer, Backend",
+      "location": "Fremont, CA (On-site)",
+      "postingKey": "4413790317",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4413790317/",
+      "discoveredAt": "2026-05-13T23:26:40+00:00",
+      "postedAge": "Authenticated LinkedIn/nodriver search 2026-05-13; visible card listed 22 hours ago; LinkedIn apply handoff moved the job to Clicked apply/In progress and external Tesla URL https://www.tesla.com/careers/search/job/270101?source=LinkedIn returned an unexpected-error page before the application form",
+      "fitScore": 8,
+      "status": "Manual",
+      "reason": "Manual apply needed 2026-05-13: Tesla external careers page returned \"An error has occurred. The website encountered an unexpected error. Please try again later.\" after LinkedIn apply handoff; no application form or submit path was available.",
+      "trackerPostingKey": "4413790317"
+    },
     {
       "source": "Greenhouse",
       "company": "Superhuman",
