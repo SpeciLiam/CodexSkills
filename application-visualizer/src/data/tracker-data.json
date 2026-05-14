@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T05:57:03.252451+00:00",
+  "generatedAt": "2026-05-14T06:09:06.025323+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 905,
-      "applied": 494,
-      "unapplied": 411,
+      "applied": 495,
+      "unapplied": 410,
       "active": 703,
       "rejected": 65,
       "interviewing": 3,
@@ -24,10 +24,10 @@
       "intakeJobs": 891,
       "intakeQueued": 77,
       "intakeNew": 55,
-      "intakeManual": 443,
-      "intakeApplied": 19,
-      "applyRate": 54.6,
-      "rejectionRate": 13.2,
+      "intakeManual": 442,
+      "intakeApplied": 20,
+      "applyRate": 54.7,
+      "rejectionRate": 13.1,
       "recruiterWork": 589,
       "engineerWork": 670,
       "recruiterReachedOut": 116,
@@ -36,11 +36,11 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 422
+        "value": 423
       },
       {
         "name": "Manual Apply Needed",
-        "value": 240
+        "value": 239
       },
       {
         "name": "Archived",
@@ -262,7 +262,7 @@
     "intakeStatusCounts": [
       {
         "name": "Manual",
-        "value": 443
+        "value": 442
       },
       {
         "name": "Tailored",
@@ -282,7 +282,7 @@
       },
       {
         "name": "Applied",
-        "value": 19
+        "value": 20
       },
       {
         "name": "Duplicate",
@@ -512,7 +512,7 @@
         "date": "2026-05-09",
         "cumulative": 704,
         "added": 57,
-        "applied": 4,
+        "applied": 5,
         "rejected": 0,
         "interviewing": 0
       },
@@ -20176,8 +20176,8 @@
     {
       "company": "Censys",
       "role": "Software Engineer (Backend, Distributed Systems)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -20192,10 +20192,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Marked done/applied per Liam 2026-05-14.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-14"
       ]
     },
     {
@@ -28100,8 +28101,8 @@
       "discoveredAt": "2026-05-10T00:18:07.412809+00:00",
       "postedAge": "crawled yesterday",
       "fitScore": 10,
-      "status": "Manual",
-      "reason": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "status": "Applied",
+      "reason": "Marked done/applied per Liam 2026-05-14; resume tailored and verified one page",
       "trackerPostingKey": "8499166002"
     },
     {
@@ -42365,13 +42366,13 @@
       "role": "Software Engineer (Backend, Distributed Systems)",
       "postingKey": "8499166002",
       "fitScore": 10,
-      "status": "Manual Apply Needed",
+      "status": "Applied",
       "reachOut": true,
       "jobLink": "https://job-boards.greenhouse.io/censys/jobs/8499166002",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-09",
-      "notes": "Queued by resume-tailor after tailored resume update."
+      "notes": "Marked done/applied per Liam 2026-05-14."
     },
     {
       "company": "Censys",
@@ -68810,7 +68811,7 @@
           "company": "Censys",
           "role": "Software Engineer (Backend, Distributed Systems)",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
