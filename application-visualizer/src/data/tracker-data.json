@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T08:47:47.095487+00:00",
+  "generatedAt": "2026-05-14T08:50:09.879504+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 905,
-      "applied": 496,
-      "unapplied": 409,
+      "applied": 497,
+      "unapplied": 408,
       "active": 703,
       "rejected": 65,
       "interviewing": 3,
@@ -26,7 +26,7 @@
       "intakeNew": 55,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 54.8,
+      "applyRate": 54.9,
       "rejectionRate": 13.1,
       "recruiterWork": 589,
       "engineerWork": 670,
@@ -36,11 +36,11 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 424
+        "value": 425
       },
       {
         "name": "Manual Apply Needed",
-        "value": 238
+        "value": 237
       },
       {
         "name": "Archived",
@@ -480,7 +480,7 @@
         "date": "2026-05-05",
         "cumulative": 541,
         "added": 34,
-        "applied": 14,
+        "applied": 15,
         "rejected": 2,
         "interviewing": 1
       },
@@ -16193,8 +16193,8 @@
     {
       "company": "Giga",
       "role": "Software Engineer I / II - New York",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -16209,11 +16209,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-05 21:04 PT; tailored SWE resume rendered and verified one page; emphasized NYC early-career full-stack product engineering, React and TypeScript surfaces, backend APIs, data workflows, testing, and startup delivery. Public/degraded capture used because Computer Use access to Chrome and Firefox was denied after required preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-05.",
+      "notes": "Hourly intake 2026-05-05 21:04 PT; tailored SWE resume rendered and verified one page; emphasized NYC early-career full-stack product engineering, React and TypeScript surfaces, backend APIs, data workflows, testing, and startup delivery. Public/degraded capture used because Computer Use access to Chrome and Firefox was denied after required preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-05.; Application submitted 2026-05-14 via Ashby; confirmation: Your application was successfully submitted.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-05",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-14"
       ]
     },
     {
@@ -69426,7 +69427,7 @@
           "company": "Giga",
           "role": "Software Engineer I / II - New York",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
