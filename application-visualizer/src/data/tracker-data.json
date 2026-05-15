@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T22:38:44.183751+00:00",
+  "generatedAt": "2026-05-15T23:13:33.482653+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,9 +10,9 @@
   "stats": {
     "kpis": {
       "total": 908,
-      "applied": 534,
-      "unapplied": 374,
-      "active": 699,
+      "applied": 536,
+      "unapplied": 372,
+      "active": 698,
       "rejected": 69,
       "interviewing": 3,
       "assessments": 3,
@@ -26,9 +26,9 @@
       "intakeNew": 55,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 58.8,
+      "applyRate": 59.0,
       "rejectionRate": 12.9,
-      "recruiterWork": 586,
+      "recruiterWork": 585,
       "engineerWork": 669,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
@@ -36,15 +36,15 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 458
+        "value": 460
       },
       {
         "name": "Manual Apply Needed",
-        "value": 214
+        "value": 211
       },
       {
         "name": "Archived",
-        "value": 140
+        "value": 141
       },
       {
         "name": "Rejected",
@@ -520,7 +520,7 @@
         "date": "2026-05-10",
         "cumulative": 789,
         "added": 86,
-        "applied": 35,
+        "applied": 36,
         "rejected": 2,
         "interviewing": 0
       },
@@ -528,7 +528,7 @@
         "date": "2026-05-11",
         "cumulative": 821,
         "added": 32,
-        "applied": 15,
+        "applied": 16,
         "rejected": 0,
         "interviewing": 0
       },
@@ -21402,7 +21402,7 @@
       "company": "Civis Analytics",
       "role": "Software Engineer, AI Platform",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -21417,11 +21417,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized remote AI platform engineering, backend APIs, data workflows, cloud systems, testing, and reliable mission-driven product delivery. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "notes": "Hourly intake 2026-05-10 06:52 PT; tailored SWE resume rendered and verified one page; emphasized remote AI platform engineering, backend APIs, data workflows, cloud systems, testing, and reliable mission-driven product delivery. Public/degraded capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Posting closed 2026-05-15: Greenhouse redirected to Civis Analytics jobs board with \"The job you are looking for is no longer open.\"",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-15"
       ]
     },
     {
@@ -21878,8 +21879,8 @@
     {
       "company": "Warp",
       "role": "Forward Deployed Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -21894,11 +21895,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 14:08 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed agentic developer workflows, AI product implementation, backend APIs, TypeScript product surfaces, customer-facing delivery, testing, and production reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-10 14:08 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed agentic developer workflows, AI product implementation, backend APIs, TypeScript product surfaces, customer-facing delivery, testing, and production reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-15 via Greenhouse. Confirmation: Thanks for applying; we've received your application.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-15"
       ]
     },
     {
@@ -22908,8 +22910,8 @@
     {
       "company": "Wholesail",
       "role": "Backend Product Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -22924,10 +22926,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-11; tailored resume rendered and verified one page; emphasized backend product engineering, Python/Java APIs, data modeling, customer-facing workflows, testing, and SaaS delivery. Manual apply needed: live application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-11; tailored resume rendered and verified one page; emphasized backend product engineering, Python/Java APIs, data modeling, customer-facing workflows, testing, and SaaS delivery. Manual apply needed: live application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-15 via Greenhouse",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-15"
       ]
     },
     {
@@ -69563,18 +69566,6 @@
           "contacts": []
         },
         {
-          "key": "6690898",
-          "company": "Civis Analytics",
-          "role": "Software Engineer, AI Platform",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "6675504",
           "company": "Clear Street",
           "role": "Backend Software Engineer - Reference Data Services",
@@ -71787,7 +71778,7 @@
           "company": "Warp",
           "role": "Forward Deployed Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -71811,7 +71802,7 @@
           "company": "Wholesail",
           "role": "Backend Product Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
