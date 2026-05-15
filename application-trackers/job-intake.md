@@ -2,8 +2,8 @@
 
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
-Jobs discovered: 916
-New: 55 | Queued: 96 | Tailored: 146 | Applied: 21 | Manual: 441 | Skipped: 145 | Duplicate: 5 | Expired: 3
+Jobs discovered: 918
+New: 55 | Queued: 96 | Tailored: 147 | Applied: 21 | Manual: 441 | Skipped: 146 | Duplicate: 5 | Expired: 3
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -613,6 +613,7 @@ New: 55 | Queued: 96 | Tailored: 146 | Applied: 21 | Manual: 441 | Skipped: 145 
 | Greenhouse | Amplitude | Engineering: Forward Deploy Engineer II | San Francisco, CA | 8532139002 | https://job-boards.greenhouse.io/amplitude/jobs/8532139002 | 2026-05-02T22:57:58.203484+00:00 | today | 9 | Skipped | early-career signal, SF/Bay Area preference |  |
 | Greenhouse | Truveta | Software Engineer - Data Fulfillment | Seattle, WA | 5978337004 | https://job-boards.greenhouse.io/truveta/jobs/5978337004 | 2026-05-02T22:16:26.875141+00:00 | today | 9 | Queued | SWE-family role, preferred/remote US location |  |
 | Greenhouse | Merge API | Software Engineer | San Francisco, CA | 5592469004 | https://job-boards.greenhouse.io/merge/jobs/5592469004 | 2026-05-02T22:16:26.875141+00:00 | today | 9 | Tailored | SWE-family role, SF/Bay Area preference | 5592469004 |
+| LinkedIn | Jobs via Dice / SAIC | Junior Software Engineer | Fort Moore, GA | 4401400152 | https://www.linkedin.com/jobs/view/junior-software-engineer-at-jobs-via-dice-4401400152 | 2026-05-15T20:06:05.355994+00:00 | 1 day ago | 8 | Tailored | SWE-family role, early-career signal, location needs review | 17612674-junior-software-engineer |
 | LinkedIn | Lensa | Entry Level Software Developer | Dallas, TX | linkedin-lensa-entry-level-software-developer-dallas-2026-05-14 | https://www.linkedin.com/jobs/linkedin-entry-level-software-engineer-jobs-united-states?count=10&start=50 | 2026-05-14T09:58:43.613958+00:00 | 13 hours ago | 8 | Queued | SWE-family role, early-career signal, location needs review |  |
 | LinkedIn | Lensa | Software Developer/Data Engineer - Entry Level | Atlanta, GA | 4369740955 | https://www.linkedin.com/jobs/view/software-developer-data-engineer-entry-level-at-lensa-4369740955 | 2026-05-14T09:58:43.613958+00:00 | 13 hours ago | 8 | Queued | SWE-family role, early-career signal, location needs review |  |
 | LinkedIn | AARATECH | Software Engineer | San Francisco Bay Area | linkedin-aaratech-software-engineer-sf-bay-area-2026-05-14 | https://www.linkedin.com/jobs/linkedin-entry-level-software-engineer-jobs-united-states?count=10&start=50 | 2026-05-14T09:58:43.613958+00:00 | 55 minutes ago | 8 | Queued | SWE-family role, SF/Bay Area preference |  |
@@ -832,6 +833,7 @@ New: 55 | Queued: 96 | Tailored: 146 | Applied: 21 | Manual: 441 | Skipped: 145 
 | Greenhouse | Labelbox | Forward Deployed Engineer, RL Environments | San Francisco Bay Area | 5101187007 | https://job-boards.greenhouse.io/labelbox/jobs/5101187007 | 2026-05-02T22:57:58.203484+00:00 | yesterday | 6 | New | SWE-family role, SF/Bay Area preference |  |
 | Greenhouse | Glean | Founding Forward Deployed Engineer | Remote - US | 4651991005 | https://job-boards.greenhouse.io/gleanwork/jobs/4651991005 | 2026-05-02T22:57:58.203484+00:00 | yesterday | 6 | New | SWE-family role, preferred/remote US location |  |
 | Greenhouse | DevRev | Forward Deployed Engineer | Austin, Texas, United States | 5668875004 | https://job-boards.greenhouse.io/devrev/jobs/5668875004 | 2026-05-02T22:57:58.203484+00:00 | yesterday | 6 | New | SWE-family role, preferred/remote US location |  |
+| LinkedIn | Team Red Dog / ChatGPT Jobs | Software Development Engineer 1 | Remote, United States | 4363065602 | https://www.linkedin.com/jobs/view/software-development-engineer-1-at-chatgpt-jobs-4363065602 | 2026-05-15T20:06:05.355994+00:00 | 2 hours ago | 5 | Skipped | preferred/remote US location |  |
 | LinkedIn | University of Virginia | Web Developer, Darden School of Business | Charlottesville, VA (Hybrid) | 4413479663 | https://www.linkedin.com/jobs/view/4413479663/ | 2026-05-14T03:22:26.008758+00:00 | last 24 hours | 5 | Skipped | location needs review |  |
 | LinkedIn | Leidos | Software Engineer | Huntsville, AL (Hybrid) | 4410690197 | https://www.linkedin.com/jobs/view/4410690197/ | 2026-05-14T03:22:26.008758+00:00 | last 24 hours | 5 | New | SWE-family role, location needs review |  |
 | LinkedIn | Charles Schwab | Associate - Software Development & Engineering- Salesforce | Southlake, TX (Hybrid) | 4410396713 | https://www.linkedin.com/jobs/view/4410396713/ | 2026-05-14T03:22:26.008758+00:00 | last 24 hours | 5 | Skipped | early-career signal, location needs review |  |

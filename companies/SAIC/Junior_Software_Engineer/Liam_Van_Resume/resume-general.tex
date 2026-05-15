@@ -1,0 +1,159 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+\fi
+
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in,itemsep=1pt,topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Liam Van} \\ \vspace{1pt}
+    \small 678-488-7259 $|$ liamvanpj@gmail.com $|$ Seattle, WA $|$
+    linkedin.com/in/liam-van $|$ github.com/SpeciLiam $|$ \href{https://liamvan.dev}{liamvan.dev}
+\end{center}
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: TypeScript, JavaScript, Java, Python, SQL, C++, C\#, PHP, C} \\
+     \textbf{Product / Frontend}{: React, Vite, Node.js, NestJS, Angular, mobile UX, AI-assisted workflows, customer-facing systems} \\
+     \textbf{Backend / Data}{: REST APIs, Spring Boot, Postgres, Supabase, MySQL, OpenSearch, data modeling, distributed caching} \\
+     \textbf{Cloud / Reliability}{: AWS, GCP, OCI, Docker, CI/CD, Grafana, Sentry, canary validation, release support, on-call response} \\
+     \textbf{Testing / Tools}{: Robot Framework, Selenium, unit testing, prompt design, technical documentation, cross-team execution} \\
+    }}
+ \end{itemize}
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Oracle}{May 2025 - Present}
+      {Software Engineer, GCP Integration (Oasis)}{Seattle, WA}
+      \resumeItemListStart
+        \resumeItem{Own GA readiness for OCI databases on GCP, validating BaseDB, ADBS, Exadata, backup, restore, and API workflows}
+        \resumeItem{Debug cross-cloud integration issues with Oracle and GCP engineers, driving canary triage and release-blocker fixes}
+        \resumeItem{Built AI-assisted API tests for Oasis services with prompt design, Robot Framework, onboarding docs, and auth parsing}
+        \resumeItem{Created reusable GCloud and OCI scripting workflows plus regression utilities for data-service release validation}
+        \resumeItem{Implemented Exascale Storage Vault dry-run support, improving preflight validation with over 90\% unit coverage}
+        \resumeItem{Serve as primary release on-call, leading Sev2 investigations with log analysis, Grafana/T2 metrics, and alarm tuning}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Oracle}{May 2024 - August 2024}
+      {Software Engineer}{Redwood City, CA}
+      \resumeItemListStart
+        \resumeItem{Built an LLM-powered recommendation experience for Oracle University and OCI learning content discovery}
+        \resumeItem{Integrated video search into Oracle University's search experience using OpenSearch indexing and retrieval pipelines}
+        \resumeItem{Implemented React and NestJS product surfaces using PHP and SQL metadata pipelines for search and recommendations}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Caterpillar Inc.}{May 2023 - December 2023}
+      {Software Engineer}{Chicago, IL}
+      \resumeItemListStart
+        \resumeItem{Built Java data-processing workflows that converted JSON to Apache Parquet and improved storage efficiency by 30\%}
+        \resumeItem{Developed Java APIs and telemetry data models for equipment fleets, cutting analysis time by 50\%}
+        \resumeItem{Implemented distributed caching for real-time search across API responses, increasing parsing speed by 1000\%}
+        \resumeItem{Supported API validation and release-quality checks across telemetry and search workflows}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Caterpillar Inc.}{May 2022 - August 2022}
+      {Software Engineer Intern}{Chicago, IL}
+
+  \resumeSubHeadingListEnd
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Georgia, School of Computing}{Athens, GA}
+      {Bachelor of Science in Computer Science}{}
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{SplitCheck} $|$ \emph{React, Vite, Capacitor, Supabase, Postgres, AI}}{}
+          \resumeItemListStart
+            \resumeItem{Built a mobile-first receipt splitting app with diner assignment, guest claims, and Venmo/Zelle handoff}
+            \resumeItem{Designed Supabase Edge Functions for AI receipt parsing, share links, guest updates, payment status, and data export}
+            \resumeItem{Added realtime host refresh with edit-safe debouncing and fallback polling for guest activity}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://fantasysportwizard.com}{Fantasy Wizard}} $|$ \emph{React, TypeScript, Spring Boot, AI, REST APIs}}{}
+          \resumeItemListStart
+            \resumeItem{Built an AI fantasy advisor that turns live Sleeper, ESPN, and Yahoo league data into roster, draft, waiver, and trade picks}
+            \resumeItem{Designed Spring Boot provider flows for account linking, ESPN draft hydration, Caffeine caching, and provider gating}
+            \resumeItem{Deployed the Vite frontend and Railway backend with Postgres-backed saved league/provider connections}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}

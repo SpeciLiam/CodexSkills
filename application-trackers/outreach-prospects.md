@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 775
+Companies queued: 776
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -610,6 +610,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Scopely | Full Stack Engineer | 5105580008 | 8 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/scopely/jobs/5105580008) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Sartre Group | Founding Software Engineer, NYC (onsite), AI-native consumer insurance | 4407183931 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4407183931/) |  |  |  |  |
 | Salient | Forward Deployed Software Engineer | forward-deployed-software-engineer-at-salient-4337004844 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/forward-deployed-software-engineer-at-salient-4337004844) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
+| SAIC | Junior Software Engineer | 17612674-junior-software-engineer | 8 | Manual Apply Needed | Yes | [Posting](https://jobs.saic.com/jobs/17612674-junior-software-engineer) |  |  | 2026-05-15 | Queued by resume-tailor after tailored resume update.; Manual apply blocked 2026-05-15: per-row codex exec could not access /Users/liamvan/.codex/sessions and state DB was read-only, so no live form opened. |
 | Ruli | Software Engineer, AI | 4405909745 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4405909745/) |  |  |  |  |
 | Robinhood | Software Engineer, Backend | 7263578 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/robinhood/jobs/7263578?t=gh_src%3D&gh_jid=7263578&gh_src=ed898e781us) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Rise Technical | Software Engineer (Model Evaluation & Benchmarking) | 4395968677 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4395968677/) |  |  |  |  |

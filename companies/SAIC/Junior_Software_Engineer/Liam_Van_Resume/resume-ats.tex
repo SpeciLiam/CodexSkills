@@ -1,0 +1,97 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{enumitem}
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.65in}
+\addtolength{\textheight}{1.25in}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1pt}
+\setlist[itemize]{leftmargin=0.18in,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt}
+\raggedright
+
+\newcommand{\sectiontitle}[1]{\vspace{3pt}\textbf{\large #1}\vspace{1pt}\hrule\vspace{2pt}}
+\newcommand{\role}[4]{\textbf{#1} \hfill #2\\#3 \hfill #4\vspace{-2pt}}
+\newcommand{\project}[2]{#1 | #2\vspace{-2pt}}
+
+\begin{document}
+\fontsize{10.4}{11.4}\selectfont
+
+\begin{center}
+{\Large \textbf{Liam Van}}\\
+678-488-7259 | liamvanpj@gmail.com | Seattle, Washington | linkedin.com/in/liam-van | github.com/SpeciLiam | \href{https://liamvan.dev}{liamvan.dev}
+\end{center}
+
+\sectiontitle{Technical Skills}
+\textbf{Languages:} TypeScript, JavaScript, Java, Python, SQL, C++, C\#, PHP, C\\
+\textbf{Product and UI:} React, Vite, Node.js, NestJS, Angular, mobile UX, AI-assisted systems, customer-facing products\\
+\textbf{Backend / Data:} REST APIs, Spring Boot, Postgres, Supabase, MySQL, OpenSearch, data modeling, distributed caching\\
+\textbf{Cloud and Ops:} Amazon Web Services, GCP, OCI, Docker, CI/CD, Grafana, Sentry, canary validation\\
+\textbf{Quality:} Robot Framework, Selenium, unit testing, prompt design, technical documentation, cross-team execution
+
+\sectiontitle{Experience}
+\role{Oracle}{May 2025 - Present}{Software Engineer, GCP Integration (Oasis)}{Seattle, Washington}
+\begin{itemize}
+  \item Own GA readiness for OCI databases on GCP across BaseDB, ADBS, Exadata, backup, restore, and API paths.
+  \item Debug cross-cloud integration issues with Oracle and GCP engineers through canary triage and release blockers.
+  \item Built AI-assisted API tests for Oasis services with prompt design, Robot Framework, and auth handling.
+  \item Created reusable GCloud and OCI scripts plus regression utilities for data-service release validation.
+  \item Implemented Exascale Storage Vault dry-run support, improving setup validation with over 90\% unit coverage.
+  \item Serve as primary release on-call, leading Sev2 investigations with logs, Grafana/T2 metrics, and alarm tuning.
+  \item Document validation playbooks for product engineers supporting cross-cloud database releases.
+\end{itemize}
+
+\role{Oracle}{May 2024 - August 2024}{Software Engineer}{Redwood City, CA}
+\begin{itemize}
+  \item Built an LLM-powered recommendation experience for Oracle University and OCI learning content discovery.
+  \item Integrated video search into Oracle University's search experience using OpenSearch indexing and retrieval pipelines.
+  \item Implemented React and NestJS product surfaces for search using PHP and SQL metadata pipelines.
+  \item Partnered with product stakeholders to turn Figma designs and metadata needs into shipped search surfaces.
+\end{itemize}
+
+\role{Caterpillar Inc.}{May 2023 - December 2023}{Software Engineer}{Chicago, IL}
+\begin{itemize}
+  \item Built Java data-processing pipelines that converted JSON to Apache Parquet and cut storage use by 30\%.
+  \item Developed Java APIs and telemetry data models for equipment groups, cutting analysis time by 50\%.
+  \item Implemented distributed caching for real-time search across API responses, increasing parsing speed by 1000\%.
+  \item Supported API validation and release-quality checks across telemetry and search systems.
+\end{itemize}
+
+\role{Caterpillar Inc.}{May 2022 - August 2022}{Software Engineer Intern}{Chicago, IL}
+
+\sectiontitle{Education}
+\textbf{University of Georgia, School of Computing} \hfill Athens, GA\\
+Bachelor of Science in Computer Science
+
+\sectiontitle{Projects}
+\project{SplitCheck}{React, Vite, Capacitor, Supabase, Postgres, AI}
+\begin{itemize}
+  \item Built a mobile-first receipt splitting app with diner assignment, guest claims, and Venmo/Zelle handoff.
+  \item Designed Supabase Edge Functions for AI receipt parsing, share links, guest updates, payments, and exports.
+  \item Added realtime host refresh with edit-safe debouncing and fallback polling for guest activity.
+  \item Added privacy and launch foundations across RLS policies, receipt retention, telemetry, and store-readiness docs.
+  \item Built Supabase Auth, Storage, Postgres, and Realtime paths for saved splits, receipt images, and guest activity.
+  \item Added Sentry and app telemetry paths for frontend error capture and product-event tracking.
+\end{itemize}
+
+\project{Fantasy Wizard}{React, TypeScript, Spring Boot, AI, REST APIs}
+\begin{itemize}
+  \item Built an AI fantasy advisor for live Sleeper, ESPN, and Yahoo roster, draft, waiver, and trade decisions.
+  \item Designed Spring Boot provider flows for account linking, ESPN draft hydration, caching, and provider-aware UI.
+  \item Deployed the Vite frontend and Railway backend with Postgres-backed saved league/provider connections.
+  \item Added tests for ESPN clients, provider adapters, draft flows, league APIs, and user/account surfaces.
+  \item Built source comparison and league insight surfaces around live player, roster, matchup, and transaction context.
+  \item Implemented provider capability responses so the frontend gates unsupported data surfaces accurately.
+\end{itemize}
+
+\end{document}
