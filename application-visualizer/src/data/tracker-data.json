@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T21:56:10.466002+00:00",
+  "generatedAt": "2026-05-15T22:00:19.489172+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,9 +10,9 @@
   "stats": {
     "kpis": {
       "total": 908,
-      "applied": 528,
-      "unapplied": 380,
-      "active": 700,
+      "applied": 529,
+      "unapplied": 379,
+      "active": 699,
       "rejected": 69,
       "interviewing": 3,
       "assessments": 3,
@@ -26,9 +26,9 @@
       "intakeNew": 55,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 58.1,
-      "rejectionRate": 13.1,
-      "recruiterWork": 587,
+      "applyRate": 58.3,
+      "rejectionRate": 13.0,
+      "recruiterWork": 586,
       "engineerWork": 669,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
@@ -36,15 +36,15 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 452
+        "value": 453
       },
       {
         "name": "Manual Apply Needed",
-        "value": 217
+        "value": 216
       },
       {
         "name": "Archived",
-        "value": 139
+        "value": 140
       },
       {
         "name": "Rejected",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 25
+        "value": 24
       },
       {
         "name": "Online Assessment",
@@ -536,7 +536,7 @@
         "date": "2026-05-12",
         "cumulative": 873,
         "added": 52,
-        "applied": 12,
+        "applied": 13,
         "rejected": 0,
         "interviewing": 0
       },
@@ -23491,7 +23491,7 @@
       "company": "Alchemy",
       "role": "Product Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -23506,11 +23506,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-11 20:02 PT; tailored SWE resume rendered and verified one page; emphasized developer-platform product engineering, TypeScript and React interfaces, backend APIs, cloud reliability, testing, and product-minded delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; shell DNS to my.greenhouse.io was also unavailable.; Manual apply needed 2026-05-11: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-11 20:02 PT; tailored SWE resume rendered and verified one page; emphasized developer-platform product engineering, TypeScript and React interfaces, backend APIs, cloud reliability, testing, and product-minded delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; shell DNS to my.greenhouse.io was also unavailable.; Manual apply needed 2026-05-11: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Archived 2026-05-15: Greenhouse posting 4033855005 redirects to Page not found; job board is no longer active.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-11",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-15"
       ]
     },
     {
@@ -24919,8 +24920,8 @@
     {
       "company": "Rilla",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -24935,10 +24936,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-12 for Rilla Software Engineer posting 4249515331; emphasized TypeScript/React/Node product engineering, Python/Java APIs, LLM applications, AI-assisted testing, OpenSearch/search indexing, data pipelines, customer-facing workflows, fast iteration, code quality, and high-ownership startup execution. Did not claim React Native, PostgreSQL, Terraform, Spacelift, Turborepo, Lodash, Zod, or direct offline-sales domain ownership beyond supported product/data/AI evidence.",
+      "notes": "Tailored 2026-05-12 for Rilla Software Engineer posting 4249515331; emphasized TypeScript/React/Node product engineering, Python/Java APIs, LLM applications, AI-assisted testing, OpenSearch/search indexing, data pipelines, customer-facing workflows, fast iteration, code quality, and high-ownership startup execution. Did not claim React Native, PostgreSQL, Terraform, Spacelift, Turborepo, Lodash, Zod, or direct offline-sales domain ownership beyond supported product/data/AI evidence.; Application submitted 2026-05-15 after Liam-approved FRQ drafts",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-15"
       ]
     },
     {
@@ -68936,18 +68938,6 @@
           "contacts": []
         },
         {
-          "key": "4033855005",
-          "company": "Alchemy",
-          "role": "Product Engineer",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "entry-level-full-stack-software-engineer-llm-application-development-at-allstate-4401189061",
           "company": "Allstate",
           "role": "(Entry level) Full Stack Software Engineer (LLM application Development)",
@@ -71028,7 +71018,7 @@
           "company": "Rilla",
           "role": "Software Engineer",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
