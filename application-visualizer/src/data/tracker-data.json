@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T06:42:53.872355+00:00",
+  "generatedAt": "2026-05-15T11:51:14.956570+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,10 +10,10 @@
   "stats": {
     "kpis": {
       "total": 907,
-      "applied": 523,
-      "unapplied": 384,
-      "active": 703,
-      "rejected": 65,
+      "applied": 526,
+      "unapplied": 381,
+      "active": 700,
+      "rejected": 68,
       "interviewing": 3,
       "assessments": 3,
       "highFit": 762,
@@ -26,9 +26,9 @@
       "intakeNew": 55,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 57.7,
-      "rejectionRate": 12.4,
-      "recruiterWork": 589,
+      "applyRate": 58.0,
+      "rejectionRate": 12.9,
+      "recruiterWork": 587,
       "engineerWork": 672,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
@@ -40,7 +40,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 220
+        "value": 217
       },
       {
         "name": "Archived",
@@ -48,7 +48,7 @@
       },
       {
         "name": "Rejected",
-        "value": 65
+        "value": 68
       },
       {
         "name": "Resume Tailored",
@@ -449,7 +449,7 @@
         "cumulative": 360,
         "added": 64,
         "applied": 56,
-        "rejected": 8,
+        "rejected": 9,
         "interviewing": 0
       },
       {
@@ -489,7 +489,7 @@
         "cumulative": 610,
         "added": 69,
         "applied": 32,
-        "rejected": 1,
+        "rejected": 2,
         "interviewing": 0
       },
       {
@@ -512,7 +512,7 @@
         "date": "2026-05-09",
         "cumulative": 703,
         "added": 56,
-        "applied": 5,
+        "applied": 8,
         "rejected": 0,
         "interviewing": 0
       },
@@ -521,7 +521,7 @@
         "cumulative": 789,
         "added": 86,
         "applied": 33,
-        "rejected": 1,
+        "rejected": 2,
         "interviewing": 0
       },
       {
@@ -11268,7 +11268,7 @@
       "company": "Affirm",
       "role": "Software Engineer I, Backend (Purchasing Power Experience)",
       "applied": true,
-      "status": "Applied",
+      "status": "Rejected",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -11283,7 +11283,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/matt-altieri-2111084b",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend product APIs, financial-product reliability, data workflows, validation, and cross-team execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you legally authorized to work in the United States?; Which U.S. State or Canadian Province do you reside in? LinkedIn invite sent to Matt Altieri (Recruiter) 2026-05-06; Application confirmation email received 2026-05-01",
+      "notes": "Greenhouse-sourced batch 2026-05-01; tailored SWE resume rendered and verified one page; emphasized backend product APIs, financial-product reliability, data workflows, validation, and cross-team execution. Did not claim direct company-specific domain ownership or unlisted framework experience.; Clean regenerated resume ready 2026-05-04; reapply not submitted because live form asks for non-routine blocker: Are you legally authorized to work in the United States?; Which U.S. State or Canadian Province do you reside in? LinkedIn invite sent to Matt Altieri (Recruiter) 2026-05-06; Application confirmation email received 2026-05-01; Rejection email received 2026-05-13",
       "noteLinks": [
         {
           "label": "Matt Altieri",
@@ -11294,7 +11294,8 @@
         "2026-05-01",
         "2026-05-04",
         "2026-05-06",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-13"
       ]
     },
     {
@@ -17563,7 +17564,7 @@
       "company": "StubHub",
       "role": "Software Engineer II - Web Foundations",
       "applied": true,
-      "status": "Applied",
+      "status": "Rejected",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -17578,12 +17579,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight; Manual apply needed 2026-05-06: tailored resume rendered and verified one page; application not attempted because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight.; Application submitted 2026-05-06 via Greenhouse confirmation page observed in Chrome history fallback",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight; Manual apply needed 2026-05-06: tailored resume rendered and verified one page; application not attempted because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight.; Application submitted 2026-05-06 via Greenhouse confirmation page observed in Chrome history fallback; Rejection email received 2026-05-13",
       "noteLinks": [],
       "activityDates": [
         "2026-05-06",
         "2026-05-06",
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-13"
       ]
     },
     {
@@ -19518,8 +19520,8 @@
     {
       "company": "PlanetScale",
       "role": "Software Engineer - Infrastructure",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -19534,11 +19536,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-09; tailored infrastructure resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Correction 2026-05-14: not submitted; PlanetScale application is staged in Safari with Liam_Van_PlanetScale.pdf attached and custom FRQ drafted, awaiting Liam approval before submit.",
+      "notes": "Hourly Greenhouse intake 2026-05-09; tailored infrastructure resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Gmail confirmation resolved prior submission uncertainty; application confirmation email received 2026-05-13",
       "noteLinks": [],
       "activityDates": [
         "2026-05-09",
-        "2026-05-14"
+        "2026-05-13"
       ]
     },
     {
@@ -19800,8 +19802,8 @@
     {
       "company": "Bloomreach",
       "role": "Software Engineer II (Pulsar team)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -19816,11 +19818,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight; Correction 2026-05-14: not submitted; Greenhouse form was partially attempted and resume upload reached, but browser context became unreliable before required dropdowns/submission.",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight.; Gmail confirmation resolved prior submission uncertainty; application confirmation email received 2026-05-13",
       "noteLinks": [],
       "activityDates": [
         "2026-05-09",
-        "2026-05-14"
+        "2026-05-13"
       ]
     },
     {
@@ -20588,8 +20590,8 @@
     {
       "company": "Current",
       "role": "Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -20604,11 +20606,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-10 05:28Z; tailored SWE resume rendered and verified one page; emphasized fintech backend engineering, Java and Scala-adjacent service design, cloud infrastructure, distributed data workflows, API reliability, and production debugging. Degraded public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-09: application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; tailored resume rendered and verified one page.",
+      "notes": "Hourly intake 2026-05-10 05:28Z; tailored SWE resume rendered and verified one page; emphasized fintech backend engineering, Java and Scala-adjacent service design, cloud infrastructure, distributed data workflows, API reliability, and production debugging. Degraded public capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-09: application attempt blocked because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight; tailored resume rendered and verified one page.; Application confirmation email received 2026-05-14",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-14"
       ]
     },
     {
@@ -22380,7 +22383,7 @@
       "company": "Unframe",
       "role": "Full Stack Software Engineer (Remote)",
       "applied": true,
-      "status": "Applied",
+      "status": "Rejected",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -22395,12 +22398,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 21:03 PT; tailored SWE resume rendered and verified one page; emphasized full-stack AI product delivery, TypeScript/React/Node, PostgreSQL-backed systems, LLM workflows, customer-facing enterprise integration, testing, and production reliability. Manual apply needed because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live form also needs confirmation on visa sponsorship and JS/Node/Vue/PostgreSQL stack experience.; Application submitted 2026-05-11 via Greenhouse confirmation page: https://job-boards.greenhouse.io/unframe/jobs/4847758101/confirmation; Application confirmation email received 2026-05-11; Application submitted 2026-05-14",
+      "notes": "Hourly Greenhouse intake 2026-05-10 21:03 PT; tailored SWE resume rendered and verified one page; emphasized full-stack AI product delivery, TypeScript/React/Node, PostgreSQL-backed systems, LLM workflows, customer-facing enterprise integration, testing, and production reliability. Manual apply needed because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; live form also needs confirmation on visa sponsorship and JS/Node/Vue/PostgreSQL stack experience.; Application submitted 2026-05-11 via Greenhouse confirmation page: https://job-boards.greenhouse.io/unframe/jobs/4847758101/confirmation; Application confirmation email received 2026-05-11; Application submitted 2026-05-14; Rejection email received 2026-05-14",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
         "2026-05-11",
         "2026-05-11",
+        "2026-05-14",
         "2026-05-14"
       ]
     },
@@ -69080,7 +69084,7 @@
           "company": "Bloomreach",
           "role": "Software Engineer II (Pulsar team)",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -69512,7 +69516,7 @@
           "company": "Current",
           "role": "Software Engineer",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -70664,7 +70668,7 @@
           "company": "PlanetScale",
           "role": "Software Engineer - Infrastructure",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -71104,18 +71108,6 @@
           "contacts": []
         },
         {
-          "key": "4782722101",
-          "company": "StubHub",
-          "role": "Software Engineer II - Web Foundations",
-          "fitScore": 10,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "6685067003",
           "company": "StubHub",
           "role": "Software Engineer I",
@@ -71419,18 +71411,6 @@
           "key": "4647374005",
           "company": "Underdog",
           "role": "Associate Software Engineer, 2026 New Grad",
-          "fitScore": 10,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4847758101",
-          "company": "Unframe",
-          "role": "Full Stack Software Engineer (Remote)",
           "fitScore": 10,
           "status": "Applied",
           "count": 1,
