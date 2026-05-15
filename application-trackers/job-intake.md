@@ -2,11 +2,15 @@
 
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
-Jobs discovered: 912
-New: 55 | Queued: 92 | Tailored: 146 | Applied: 21 | Manual: 441 | Skipped: 145 | Duplicate: 5 | Expired: 3
+Jobs discovered: 916
+New: 55 | Queued: 96 | Tailored: 146 | Applied: 21 | Manual: 441 | Skipped: 145 | Duplicate: 5 | Expired: 3
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| LinkedIn | SkillStorm | Entry Level Software Developer | New York, NY | skillstorm-entry-level-software-developer-ny | https://www.linkedin.com/jobs/software-engineering-entry-level-jobs-new-york | 2026-05-15T19:48:54.090819+00:00 | 1 day ago | 10 | Queued | SWE-family role, early-career signal, NYC preference |  |
+| Greenhouse | Rockstar Games | Full Stack Engineer (C#/React) | Manhattan, New York, United States | 7711703003 | https://job-boards.greenhouse.io/rockstargames/jobs/7711703003 | 2026-05-15T19:48:54.090819+00:00 | crawled today | 10 | Queued | SWE-family role, NYC preference |  |
+| Greenhouse | CLEAR | Software Development Engineer, Fullstack | New York, New York, United States | 7926837 | https://job-boards.greenhouse.io/clear/jobs/7926837 | 2026-05-15T19:48:54.090819+00:00 | crawled today | 10 | Queued | SWE-family role, NYC preference |  |
+| Greenhouse | Anthropic | [Pipeline] Software Engineer, Safeguards Labs | New York City, NY | 5219486008 | https://job-boards.greenhouse.io/anthropic/jobs/5219486008 | 2026-05-15T19:48:54.090819+00:00 | crawled today | 10 | Queued | SWE-family role, NYC preference |  |
 | Greenhouse | stubhubinc | Software Engineer II – Consumer Experience (Full-Stack) | Aliso Viejo, CA, Los Angeles, CA, New York, NY | 4792614101 | https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4792614101 | 2026-05-15T03:01:22.992321+00:00 | Live Greenhouse board checked 2026-05-14 | 10 | Queued | SWE-family role, early-career signal, NYC preference |  |
 | Greenhouse | stubhubinc | Software Engineer II – Consumer Experience (Full-Stack) | Aliso Viejo, CA, Los Angeles, CA, New York, NY | 4792615101 | https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4792615101 | 2026-05-15T03:01:22.992321+00:00 | Live Greenhouse board checked 2026-05-14 | 10 | Queued | SWE-family role, early-career signal, NYC preference |  |
 | Greenhouse | stubhubinc | Software Engineer II - (Fullstack / Product Engineering) | Aliso Viejo, CA, Los Angeles, CA, New York, NY | 4755033101 | https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4755033101 | 2026-05-15T03:01:22.992321+00:00 | Live Greenhouse board checked 2026-05-14 | 10 | Queued | SWE-family role, early-career signal, NYC preference |  |

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T16:56:14.937715+00:00",
+  "generatedAt": "2026-05-15T19:49:34.117102+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -12,8 +12,8 @@
       "total": 907,
       "applied": 526,
       "unapplied": 381,
-      "active": 700,
-      "rejected": 68,
+      "active": 699,
+      "rejected": 69,
       "interviewing": 3,
       "assessments": 3,
       "highFit": 762,
@@ -21,14 +21,14 @@
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 912,
-      "intakeQueued": 92,
+      "intakeJobs": 916,
+      "intakeQueued": 96,
       "intakeNew": 55,
       "intakeManual": 441,
       "intakeApplied": 21,
       "applyRate": 58.0,
-      "rejectionRate": 12.9,
-      "recruiterWork": 587,
+      "rejectionRate": 13.1,
+      "recruiterWork": 586,
       "engineerWork": 672,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 451
+        "value": 450
       },
       {
         "name": "Manual Apply Needed",
@@ -48,7 +48,7 @@
       },
       {
         "name": "Rejected",
-        "value": 68
+        "value": 69
       },
       {
         "name": "Resume Tailored",
@@ -274,7 +274,7 @@
       },
       {
         "name": "Queued",
-        "value": 92
+        "value": 96
       },
       {
         "name": "New",
@@ -300,11 +300,11 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 598
+        "value": 601
       },
       {
         "name": "LinkedIn",
-        "value": 314
+        "value": 315
       }
     ],
     "timeline": [
@@ -489,7 +489,7 @@
         "cumulative": 610,
         "added": 69,
         "applied": 32,
-        "rejected": 2,
+        "rejected": 3,
         "interviewing": 0
       },
       {
@@ -16670,7 +16670,7 @@
       "company": "Campana & Schott",
       "role": "AI Solutions Analyst",
       "applied": true,
-      "status": "Applied",
+      "status": "Rejected",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -16685,10 +16685,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application submitted 2026-05-06",
+      "notes": "Application submitted 2026-05-06; Rejection email received 2026-05-13",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-13"
       ]
     },
     {
@@ -25822,6 +25823,62 @@
     }
   ],
   "jobIntake": [
+    {
+      "source": "LinkedIn",
+      "company": "SkillStorm",
+      "role": "Entry Level Software Developer",
+      "location": "New York, NY",
+      "postingKey": "skillstorm-entry-level-software-developer-ny",
+      "jobUrl": "https://www.linkedin.com/jobs/software-engineering-entry-level-jobs-new-york",
+      "discoveredAt": "2026-05-15T19:48:54.090819+00:00",
+      "postedAge": "1 day ago",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Rockstar Games",
+      "role": "Full Stack Engineer (C#/React)",
+      "location": "Manhattan, New York, United States",
+      "postingKey": "7711703003",
+      "jobUrl": "https://job-boards.greenhouse.io/rockstargames/jobs/7711703003",
+      "discoveredAt": "2026-05-15T19:48:54.090819+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "CLEAR",
+      "role": "Software Development Engineer, Fullstack",
+      "location": "New York, New York, United States",
+      "postingKey": "7926837",
+      "jobUrl": "https://job-boards.greenhouse.io/clear/jobs/7926837",
+      "discoveredAt": "2026-05-15T19:48:54.090819+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "Anthropic",
+      "role": "[Pipeline] Software Engineer, Safeguards Labs",
+      "location": "New York City, NY",
+      "postingKey": "5219486008",
+      "jobUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5219486008",
+      "discoveredAt": "2026-05-15T19:48:54.090819+00:00",
+      "postedAge": "crawled today",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
     {
       "source": "Greenhouse",
       "company": "stubhubinc",
@@ -71843,18 +71900,6 @@
           "key": "7819202",
           "company": "CLEAR - Corporate",
           "role": "iOS Engineer",
-          "fitScore": 9,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4410558870",
-          "company": "Campana & Schott",
-          "role": "AI Solutions Analyst",
           "fitScore": 9,
           "status": "Applied",
           "count": 1,
