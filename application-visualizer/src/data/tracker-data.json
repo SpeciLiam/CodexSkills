@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T21:53:59.821856+00:00",
+  "generatedAt": "2026-05-15T21:56:10.466002+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 908,
-      "applied": 527,
-      "unapplied": 381,
+      "applied": 528,
+      "unapplied": 380,
       "active": 700,
       "rejected": 69,
       "interviewing": 3,
@@ -26,7 +26,7 @@
       "intakeNew": 55,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 58.0,
+      "applyRate": 58.1,
       "rejectionRate": 13.1,
       "recruiterWork": 587,
       "engineerWork": 669,
@@ -36,11 +36,11 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 451
+        "value": 452
       },
       {
         "name": "Manual Apply Needed",
-        "value": 218
+        "value": 217
       },
       {
         "name": "Archived",
@@ -528,7 +528,7 @@
         "date": "2026-05-11",
         "cumulative": 821,
         "added": 32,
-        "applied": 14,
+        "applied": 15,
         "rejected": 0,
         "interviewing": 0
       },
@@ -22952,8 +22952,8 @@
     {
       "company": "Emergent Labs",
       "role": "Software Engineer - Infrastructure",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -22968,10 +22968,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-11; tailored resume rendered and verified one page; emphasized cloud infrastructure, release validation, APIs, cross-cloud debugging, regression tooling, and production reliability. Manual apply needed: live application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-11; tailored resume rendered and verified one page; emphasized cloud infrastructure, release validation, APIs, cross-cloud debugging, regression tooling, and production reliability. Manual apply needed: live application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-15 via Greenhouse; confirmation page: Thank you for applying to us.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-15"
       ]
     },
     {
@@ -69839,7 +69840,7 @@
           "company": "Emergent Labs",
           "role": "Software Engineer - Infrastructure",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
