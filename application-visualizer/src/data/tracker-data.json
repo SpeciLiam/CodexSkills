@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T22:00:19.489172+00:00",
+  "generatedAt": "2026-05-15T22:38:44.183751+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 908,
-      "applied": 529,
-      "unapplied": 379,
+      "applied": 534,
+      "unapplied": 374,
       "active": 699,
       "rejected": 69,
       "interviewing": 3,
@@ -26,8 +26,8 @@
       "intakeNew": 55,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 58.3,
-      "rejectionRate": 13.0,
+      "applyRate": 58.8,
+      "rejectionRate": 12.9,
       "recruiterWork": 586,
       "engineerWork": 669,
       "recruiterReachedOut": 116,
@@ -36,11 +36,11 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 453
+        "value": 458
       },
       {
         "name": "Manual Apply Needed",
-        "value": 216
+        "value": 214
       },
       {
         "name": "Archived",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 24
+        "value": 21
       },
       {
         "name": "Online Assessment",
@@ -504,7 +504,7 @@
         "date": "2026-05-08",
         "cumulative": 647,
         "added": 34,
-        "applied": 28,
+        "applied": 29,
         "rejected": 2,
         "interviewing": 1
       },
@@ -520,7 +520,7 @@
         "date": "2026-05-10",
         "cumulative": 789,
         "added": 86,
-        "applied": 34,
+        "applied": 35,
         "rejected": 2,
         "interviewing": 0
       },
@@ -536,7 +536,7 @@
         "date": "2026-05-12",
         "cumulative": 873,
         "added": 52,
-        "applied": 13,
+        "applied": 15,
         "rejected": 0,
         "interviewing": 0
       },
@@ -544,7 +544,7 @@
         "date": "2026-05-13",
         "cumulative": 903,
         "added": 30,
-        "applied": 9,
+        "applied": 10,
         "rejected": 0,
         "interviewing": 0
       },
@@ -18423,8 +18423,8 @@
     {
       "company": "INRIX",
       "role": "Software Development Engineer",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -18439,9 +18439,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-05-15; Application submitted 2026-05-15 via INRIX Jobvite",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-15",
+        "2026-05-15"
+      ]
     },
     {
       "company": "Imprint",
@@ -22828,8 +22831,8 @@
     {
       "company": "Waymo",
       "role": "Software Engineer, Simulator Evaluation",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -22844,9 +22847,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application submitted 2026-05-15; Application submitted 2026-05-15 via Waymo careers form",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-15",
+        "2026-05-15"
+      ]
     },
     {
       "company": "Grafana Labs",
@@ -24337,8 +24343,8 @@
     {
       "company": "Thatch",
       "role": "Software Engineer: Full Stack",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -24353,10 +24359,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-15 via Greenhouse; Application submitted 2026-05-15 via Greenhouse; confirmation page showed: Thank you for applying. Your application has been received.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-15",
+        "2026-05-15"
       ]
     },
     {
@@ -24638,8 +24646,8 @@
     {
       "company": "Anthropic",
       "role": "Full-Stack Software Engineer, Reinforcement Learning",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -24654,10 +24662,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-12: tailored full-stack RL resume rendered and verified one page; emphasized React/TypeScript, Python, APIs, AI-assisted testing, data workflows, observability, and cross-functional platform delivery. Manual apply needed: live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; form also requires AI policy acknowledgement, in-office/relocation/address answers, visa answers, and a 200-400 word Why Anthropic response.",
+      "notes": "Hourly intake 2026-05-12: tailored full-stack RL resume rendered and verified one page; emphasized React/TypeScript, Python, APIs, AI-assisted testing, data workflows, observability, and cross-functional platform delivery. Manual apply needed: live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; form also requires AI policy acknowledgement, in-office/relocation/address answers, visa answers, and a 200-400 word Why Anthropic response.; Application submitted 2026-05-15 via Greenhouse; confirmation page: Thank you for applying! Your application has been received.; Application submitted via Greenhouse on 2026-05-15; confirmation page: Thank you for applying! Your application has been received.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-15",
+        "2026-05-15"
       ]
     },
     {
@@ -25714,8 +25724,8 @@
     {
       "company": "GlossGenius",
       "role": "Software Engineer - All Levels",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -25730,9 +25740,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for GlossGenius product/platform role; emphasized React, AI features, Postgres/Supabase, reliability, customer-facing systems, and SplitCheck payment-adjacent consumer workflow evidence.",
+      "notes": "Tailored for GlossGenius product/platform role; emphasized React, AI features, Postgres/Supabase, reliability, customer-facing systems, and SplitCheck payment-adjacent consumer workflow evidence.; Application submitted 2026-05-15 via LinkedIn Easy Apply with tailored GlossGenius resume attached; Application submitted 2026-05-15 via LinkedIn Easy Apply; confirmation: Your application was sent to GlossGenius.",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-15",
+        "2026-05-15"
+      ]
     },
     {
       "company": "Shakudo",
@@ -69002,7 +69015,7 @@
           "company": "Anthropic",
           "role": "Full-Stack Software Engineer, Reinforcement Learning",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -71426,7 +71439,7 @@
           "company": "Thatch",
           "role": "Software Engineer: Full Stack",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -73934,7 +73947,7 @@
           "company": "GlossGenius",
           "role": "Software Engineer - All Levels",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -74054,7 +74067,7 @@
           "company": "INRIX",
           "role": "Software Development Engineer",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -75002,7 +75015,7 @@
           "company": "Waymo",
           "role": "Software Engineer, Simulator Evaluation",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
