@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T20:09:19.667235+00:00",
+  "generatedAt": "2026-05-15T21:53:59.821856+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 908,
-      "applied": 526,
-      "unapplied": 382,
+      "applied": 527,
+      "unapplied": 381,
       "active": 700,
       "rejected": 69,
       "interviewing": 3,
@@ -26,7 +26,7 @@
       "intakeNew": 55,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 57.9,
+      "applyRate": 58.0,
       "rejectionRate": 13.1,
       "recruiterWork": 587,
       "engineerWork": 669,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 450
+        "value": 451
       },
       {
         "name": "Manual Apply Needed",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 26
+        "value": 25
       },
       {
         "name": "Online Assessment",
@@ -520,7 +520,7 @@
         "date": "2026-05-10",
         "cumulative": 789,
         "added": 86,
-        "applied": 33,
+        "applied": 34,
         "rejected": 2,
         "interviewing": 0
       },
@@ -22194,8 +22194,8 @@
     {
       "company": "Giga",
       "role": "Software Engineer I / II - San Francisco",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -22210,9 +22210,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for Giga's early-career AI-agent platform role; emphasized backend/data integrations, AI-assisted testing, LLM product work, observability, release ownership, and React/Spring Boot full-stack shipping.",
+      "notes": "Tailored for Giga's early-career AI-agent platform role; emphasized backend/data integrations, AI-assisted testing, LLM product work, observability, release ownership, and React/Spring Boot full-stack shipping.; Application submitted 2026-05-15",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-15"
+      ]
     },
     {
       "company": "Plaid",
@@ -70029,7 +70031,7 @@
           "company": "Giga",
           "role": "Software Engineer I / II - San Francisco",
           "fitScore": 10,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
