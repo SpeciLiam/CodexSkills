@@ -2,11 +2,13 @@
 
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
-Jobs discovered: 918
-New: 55 | Queued: 96 | Tailored: 147 | Applied: 21 | Manual: 441 | Skipped: 146 | Duplicate: 5 | Expired: 3
+Jobs discovered: 921
+New: 56 | Queued: 98 | Tailored: 147 | Applied: 21 | Manual: 441 | Skipped: 146 | Duplicate: 5 | Expired: 3
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Greenhouse | XTX Markets | Software Engineer - Trading System Developer | New York | 7734432003 | https://job-boards.greenhouse.io/xtxmarketstechnologies/jobs/7734432003 | 2026-05-15T23:56:08.524220+00:00 | 2026-05-15T00:00:00Z | 10 | Queued | SWE-family role, NYC preference |  |
+| Greenhouse | BitGo | Software Engineer - Growth | New York | 8506660002 | https://job-boards.greenhouse.io/growth/jobs/8506660002 | 2026-05-15T23:56:08.524220+00:00 | 2026-05-15T00:00:00Z | 10 | Queued | SWE-family role, NYC preference |  |
 | LinkedIn | SkillStorm | Entry Level Software Developer | New York, NY | skillstorm-entry-level-software-developer-ny | https://www.linkedin.com/jobs/software-engineering-entry-level-jobs-new-york | 2026-05-15T19:48:54.090819+00:00 | 1 day ago | 10 | Queued | SWE-family role, early-career signal, NYC preference |  |
 | Greenhouse | Rockstar Games | Full Stack Engineer (C#/React) | Manhattan, New York, United States | 7711703003 | https://job-boards.greenhouse.io/rockstargames/jobs/7711703003 | 2026-05-15T19:48:54.090819+00:00 | crawled today | 10 | Queued | SWE-family role, NYC preference |  |
 | Greenhouse | CLEAR | Software Development Engineer, Fullstack | New York, New York, United States | 7926837 | https://job-boards.greenhouse.io/clear/jobs/7926837 | 2026-05-15T19:48:54.090819+00:00 | crawled today | 10 | Queued | SWE-family role, NYC preference |  |
@@ -833,6 +835,7 @@ New: 55 | Queued: 96 | Tailored: 147 | Applied: 21 | Manual: 441 | Skipped: 146 
 | Greenhouse | Labelbox | Forward Deployed Engineer, RL Environments | San Francisco Bay Area | 5101187007 | https://job-boards.greenhouse.io/labelbox/jobs/5101187007 | 2026-05-02T22:57:58.203484+00:00 | yesterday | 6 | New | SWE-family role, SF/Bay Area preference |  |
 | Greenhouse | Glean | Founding Forward Deployed Engineer | Remote - US | 4651991005 | https://job-boards.greenhouse.io/gleanwork/jobs/4651991005 | 2026-05-02T22:57:58.203484+00:00 | yesterday | 6 | New | SWE-family role, preferred/remote US location |  |
 | Greenhouse | DevRev | Forward Deployed Engineer | Austin, Texas, United States | 5668875004 | https://job-boards.greenhouse.io/devrev/jobs/5668875004 | 2026-05-02T22:57:58.203484+00:00 | yesterday | 6 | New | SWE-family role, preferred/remote US location |  |
+| Greenhouse | True Anomaly | Software Engineer (I-II), Prototype | Denver, CO | 5137655007 | https://job-boards.greenhouse.io/trueanomalyinc/jobs/5137655007 | 2026-05-15T23:56:08.524220+00:00 | 2026-05-15T00:00:00Z | 5 | New | SWE-family role, location needs review |  |
 | LinkedIn | Team Red Dog / ChatGPT Jobs | Software Development Engineer 1 | Remote, United States | 4363065602 | https://www.linkedin.com/jobs/view/software-development-engineer-1-at-chatgpt-jobs-4363065602 | 2026-05-15T20:06:05.355994+00:00 | 2 hours ago | 5 | Skipped | preferred/remote US location |  |
 | LinkedIn | University of Virginia | Web Developer, Darden School of Business | Charlottesville, VA (Hybrid) | 4413479663 | https://www.linkedin.com/jobs/view/4413479663/ | 2026-05-14T03:22:26.008758+00:00 | last 24 hours | 5 | Skipped | location needs review |  |
 | LinkedIn | Leidos | Software Engineer | Huntsville, AL (Hybrid) | 4410690197 | https://www.linkedin.com/jobs/view/4410690197/ | 2026-05-14T03:22:26.008758+00:00 | last 24 hours | 5 | New | SWE-family role, location needs review |  |

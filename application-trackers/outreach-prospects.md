@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 776
+Companies queued: 779
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -13,6 +13,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | YugabyteDB | Platform Software Engineer (Control Plane) | 4656120006 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/yugabyte/jobs/4656120006) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Yext | Software Engineer | 7085149 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/yext/jobs/7085149) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Yext | Software Engineer, AI Search | 8122667002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/yext/jobs/8122667002) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
+| XTX Markets | Software Engineer - Trading System Developer | 7734432003 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/xtxmarketstechnologies/jobs/7734432003) |  |  | 2026-05-15 | Queued by resume-tailor after tailored resume update. |
 | Writer | Forward Deployed Engineer | 4809387007 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/writer/jobs/4809387007) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Wonderschool | Early Career Software Engineer - Applied AI | 4406127370 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4406127370/) |  |  |  |  |
 | WithCoverage | Software Engineer | 4828873008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/withcoverage/jobs/4828873008) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
@@ -318,6 +319,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Clear Street | Software Engineer, Full Stack - Risk Engineering | 7258580 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/clearstreet/jobs/7258580) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Clear Street | Software Engineer - Market Data | 7120660 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/clearstreet/jobs/7120660) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | CLEAR - Corporate | Software Engineer, Infrastructure | 7901600 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/clear/jobs/7901600) |  |  | 2026-05-07 | Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome. |
+| CLEAR | Software Development Engineer, Fullstack | 7926837 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/clear/jobs/7926837) |  |  | 2026-05-15 | Queued by resume-tailor after tailored resume update. |
 | Civis Analytics | Applied Software Engineer II | 7392088 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/civisanalytics/jobs/7392088) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Citizen Health | Early Career Software Engineer | 7133dff5-e5a0-425b-81da-b6f78e78d944 | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/Citizen%20Health/7133dff5-e5a0-425b-81da-b6f78e78d944?utm_source=7rN0da4Arn) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Citi | Junior Generative AI Application Developer | 4411715287 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4411715287/?trackingId=n9Qpmb2VmX0jj7ilbP9PZw%3D%3D&refId=glJ8A%2B2sNgHqb%2Bh7kMbvlQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BAYdAWy1hRr2jMAxKih4zOg%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
@@ -345,6 +347,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Brex | Software Engineer II, Frontend | software-engineer-ii-frontend-at-brex-4337650485 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-frontend-at-brex-4337650485) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Bloomreach | Software Engineer II (Pulsar team) | 4179833 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/bloomreach/jobs/4179833) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | BlackRock | Associate, Full Stack Engineer | 4380495648 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4380495648/?trackingId=AJW6hfwNSWOSl69I9BEbpA%3D%3D&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BI6XXU%2BGdQIad7YU%2Bc9JYoA%3D%3D) |  |  |  |  |
+| BitGo | Software Engineer - Growth | 8506660002 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/growth/jobs/8506660002) |  |  | 2026-05-15 | Queued by resume-tailor after tailored resume update. |
 | Benchling | Software Engineer, New Grad (2026) | b3c9b312-6e2b-4dbc-9b15-0b0310d75a7f | 10 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/benchling/b3c9b312-6e2b-4dbc-9b15-0b0310d75a7f/application?utm_source=JobWrapping) |  |  |  |  |
 | Beacon Software | Software Engineer | 4974798008 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/beaconsoftware/jobs/4974798008) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Baseten | Software Engineer - Infrastructure | software-engineer-infrastructure-at-baseten-4380547143 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-infrastructure-at-baseten-4380547143) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |

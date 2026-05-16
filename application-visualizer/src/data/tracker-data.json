@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T23:13:33.482653+00:00",
+  "generatedAt": "2026-05-16T00:29:05.665178+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,38 +9,38 @@
   },
   "stats": {
     "kpis": {
-      "total": 908,
-      "applied": 536,
-      "unapplied": 372,
-      "active": 698,
+      "total": 911,
+      "applied": 540,
+      "unapplied": 371,
+      "active": 701,
       "rejected": 69,
       "interviewing": 3,
       "assessments": 3,
-      "highFit": 763,
-      "reachOut": 826,
+      "highFit": 766,
+      "reachOut": 829,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 918,
-      "intakeQueued": 96,
-      "intakeNew": 55,
+      "intakeJobs": 921,
+      "intakeQueued": 98,
+      "intakeNew": 56,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 59.0,
-      "rejectionRate": 12.9,
-      "recruiterWork": 585,
-      "engineerWork": 669,
+      "applyRate": 59.3,
+      "rejectionRate": 12.8,
+      "recruiterWork": 588,
+      "engineerWork": 672,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 460
+        "value": 464
       },
       {
         "name": "Manual Apply Needed",
-        "value": 211
+        "value": 206
       },
       {
         "name": "Archived",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 21
+        "value": 24
       },
       {
         "name": "Online Assessment",
@@ -61,12 +61,16 @@
       {
         "name": "Interviewing",
         "value": 3
+      },
+      {
+        "name": "Manual",
+        "value": 1
       }
     ],
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 428
+        "value": 431
       },
       {
         "name": "LinkedIn",
@@ -144,7 +148,7 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 393
+        "value": 396
       },
       {
         "name": "Bay Area",
@@ -174,11 +178,11 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 483
+        "value": 485
       },
       {
         "name": "Full Stack",
-        "value": 113
+        "value": 114
       },
       {
         "name": "Backend",
@@ -244,7 +248,7 @@
       },
       {
         "score": "10",
-        "count": 427
+        "count": 430
       }
     ],
     "targetCounts": [
@@ -274,11 +278,11 @@
       },
       {
         "name": "Queued",
-        "value": 96
+        "value": 98
       },
       {
         "name": "New",
-        "value": 55
+        "value": 56
       },
       {
         "name": "Applied",
@@ -300,7 +304,7 @@
     "intakeSourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 601
+        "value": 604
       },
       {
         "name": "LinkedIn",
@@ -512,7 +516,7 @@
         "date": "2026-05-09",
         "cumulative": 703,
         "added": 56,
-        "applied": 8,
+        "applied": 11,
         "rejected": 0,
         "interviewing": 0
       },
@@ -544,7 +548,7 @@
         "date": "2026-05-13",
         "cumulative": 903,
         "added": 30,
-        "applied": 10,
+        "applied": 11,
         "rejected": 0,
         "interviewing": 0
       },
@@ -558,8 +562,8 @@
       },
       {
         "date": "2026-05-15",
-        "cumulative": 908,
-        "added": 1,
+        "cumulative": 911,
+        "added": 4,
         "applied": 0,
         "rejected": 0,
         "interviewing": 0
@@ -747,6 +751,15 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://job-boards.greenhouse.io/yext/jobs/8122667002"
+      },
+      {
+        "company": "XTX Markets",
+        "role": "Software Engineer - Trading System Developer",
+        "fitScore": 10,
+        "status": "Resume Tailored",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://job-boards.greenhouse.io/xtxmarketstechnologies/jobs/7734432003"
       },
       {
         "company": "Writer",
@@ -1026,15 +1039,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://www.uber.com/global/en/careers/list/156932/?uclick_id=c3eed852-3739-4c33-ba86-8487c6d2f43b"
-      },
-      {
-        "company": "Uber",
-        "role": "Software Engineer I",
-        "fitScore": 10,
-        "status": "Resume Tailored",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://www.linkedin.com/jobs/view/4403550427/"
       }
     ],
     "recruiterBatch": {
@@ -19251,8 +19255,8 @@
     {
       "company": "Virtu Financial",
       "role": "Software Engineer - Desktop Frontend Developer (C#/Winforms)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -19267,17 +19271,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-09; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback",
+      "notes": "Tailored 2026-05-09; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback; Application submitted 2026-05-15",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-15"
       ]
     },
     {
       "company": "ExodusPoint Campus",
       "role": "Junior Software Engineer - Treasury Tech",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -19292,17 +19297,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-09; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback",
+      "notes": "Tailored 2026-05-09; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback; Application submitted 2026-05-15",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-15"
       ]
     },
     {
       "company": "Addepar",
       "role": "Full Stack Software Engineer - Alts & Data Management",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -19317,10 +19323,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-09; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback",
+      "notes": "Tailored 2026-05-09; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback; Application submitted 2026-05-15 via Greenhouse; Application submitted 2026-05-16 via Greenhouse with tailored resume; confirmation page displayed.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-15",
+        "2026-05-16"
       ]
     },
     {
@@ -20056,10 +20064,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-09 degraded Greenhouse capture; tailored SWE resume rendered and verified one page; emphasized React/JavaScript product engineering, testing, CI/CD, performance, accessibility, and release quality. Manual apply needed: browser application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly intake 2026-05-09 degraded Greenhouse capture; tailored SWE resume rendered and verified one page; emphasized React/JavaScript product engineering, testing, CI/CD, performance, accessibility, and release quality. Manual apply needed 2026-05-15: Greenhouse form reached review with resume attached, then reset after validation/navigation before a safe submit; resume and required dropdown selections need manual re-entry and review.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-15"
       ]
     },
     {
@@ -21855,7 +21864,7 @@
       "company": "tvScientific",
       "role": "Software Engineer II, Simulation, tvScientific",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Manual",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -21870,10 +21879,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight. Form also has required voluntary demographic selects that need Liam standing-answer confirmation if browser access is restored.",
+      "notes": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight. Form also has required voluntary demographic selects that need Liam standing-answer confirmation if browser access is restored.; Manual review needed 2026-05-15: interrupted form not safe to submit; resume missing, LinkedIn/website fields corrupted, required dropdowns blank.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-15"
       ]
     },
     {
@@ -25036,8 +25046,8 @@
     {
       "company": "Spotify",
       "role": "Frontend Engineer II - SRC - Music",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -25052,10 +25062,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-13; tailored resume rendered and verified one page; emphasized React/TypeScript frontend architecture, accessible complex workflows, API/data-flow integration, testing, and customer-facing product delivery. Manual apply needed because public LinkedIn capture exposed an aggregate URL and Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly intake 2026-05-13; tailored resume rendered and verified one page; emphasized React/TypeScript frontend architecture, accessible complex workflows, API/data-flow integration, testing, and customer-facing product delivery. Manual apply needed because public LinkedIn capture exposed an aggregate URL and Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application already received by Spotify/Lever on 2026-04-30; confirmed on 2026-05-15; Lever reported application already submitted on 2026-04-30",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-13"
+        "2026-05-13",
+        "2026-04-30",
+        "2026-05-15",
+        "2026-04-30"
       ]
     },
     {
@@ -25875,9 +25888,106 @@
         "2026-05-15",
         "2026-05-15"
       ]
+    },
+    {
+      "company": "BitGo",
+      "role": "Software Engineer - Growth",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-15",
+      "location": "New York",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/growth/jobs/8506660002",
+      "postingKey": "8506660002",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/BitGo/Software_Engineer_Growth/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/BitGo/Software_Engineer_Growth/Liam_Van_Resume/Liam_Van_BitGo.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "XTX Markets",
+      "role": "Software Engineer - Trading System Developer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-15",
+      "location": "New York",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/xtxmarketstechnologies/jobs/7734432003",
+      "postingKey": "7734432003",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/XTX Markets/Software_Engineer_Trading_System_Developer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/XTX Markets/Software_Engineer_Trading_System_Developer/Liam_Van_Resume/Liam_Van_XTX_Markets.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "CLEAR",
+      "role": "Software Development Engineer, Fullstack",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-15",
+      "location": "New York, New York, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/clear/jobs/7926837",
+      "postingKey": "7926837",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CLEAR/Software_Development_Engineer_Fullstack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/CLEAR/Software_Development_Engineer_Fullstack/Liam_Van_Resume/Liam_Van_CLEAR.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "",
+      "noteLinks": [],
+      "activityDates": []
     }
   ],
   "jobIntake": [
+    {
+      "source": "Greenhouse",
+      "company": "XTX Markets",
+      "role": "Software Engineer - Trading System Developer",
+      "location": "New York",
+      "postingKey": "7734432003",
+      "jobUrl": "https://job-boards.greenhouse.io/xtxmarketstechnologies/jobs/7734432003",
+      "discoveredAt": "2026-05-15T23:56:08.524220+00:00",
+      "postedAge": "2026-05-15T00:00:00Z",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "Greenhouse",
+      "company": "BitGo",
+      "role": "Software Engineer - Growth",
+      "location": "New York",
+      "postingKey": "8506660002",
+      "jobUrl": "https://job-boards.greenhouse.io/growth/jobs/8506660002",
+      "discoveredAt": "2026-05-15T23:56:08.524220+00:00",
+      "postedAge": "2026-05-15T00:00:00Z",
+      "fitScore": 10,
+      "status": "Queued",
+      "reason": "SWE-family role, NYC preference",
+      "trackerPostingKey": ""
+    },
     {
       "source": "LinkedIn",
       "company": "SkillStorm",
@@ -37443,6 +37553,20 @@
       "trackerPostingKey": ""
     },
     {
+      "source": "Greenhouse",
+      "company": "True Anomaly",
+      "role": "Software Engineer (I-II), Prototype",
+      "location": "Denver, CO",
+      "postingKey": "5137655007",
+      "jobUrl": "https://job-boards.greenhouse.io/trueanomalyinc/jobs/5137655007",
+      "discoveredAt": "2026-05-15T23:56:08.524220+00:00",
+      "postedAge": "2026-05-15T00:00:00Z",
+      "fitScore": 5,
+      "status": "New",
+      "reason": "SWE-family role, location needs review",
+      "trackerPostingKey": ""
+    },
+    {
       "source": "LinkedIn",
       "company": "Team Red Dog / ChatGPT Jobs",
       "role": "Software Development Engineer 1",
@@ -38782,6 +38906,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-13",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "XTX Markets",
+      "role": "Software Engineer - Trading System Developer",
+      "postingKey": "7734432003",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/xtxmarketstechnologies/jobs/7734432003",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-15",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -42750,6 +42887,19 @@
       "notes": "Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome."
     },
     {
+      "company": "CLEAR",
+      "role": "Software Development Engineer, Fullstack",
+      "postingKey": "7926837",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/clear/jobs/7926837",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-15",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Civis Analytics",
       "role": "Applied Software Engineer II",
       "postingKey": "7392088",
@@ -43099,6 +43249,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "BitGo",
+      "role": "Software Engineer - Growth",
+      "postingKey": "8506660002",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://job-boards.greenhouse.io/growth/jobs/8506660002",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-15",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Benchling",
@@ -68850,7 +69013,7 @@
           "company": "Addepar",
           "role": "Full Stack Software Engineer - Alts & Data Management",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -69290,6 +69453,18 @@
           "contacts": []
         },
         {
+          "key": "8506660002",
+          "company": "BitGo",
+          "role": "Software Engineer - Growth",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4179833",
           "company": "Bloomreach",
           "role": "Software Engineer II (Pulsar team)",
@@ -69331,6 +69506,18 @@
           "role": "Software Engineer, Backend & Data",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7926837",
+          "company": "CLEAR",
+          "role": "Software Development Engineer, Fullstack",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -69858,7 +70045,7 @@
           "company": "ExodusPoint Campus",
           "role": "Junior Software Engineer - Treasury Tech",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -71274,7 +71461,7 @@
           "company": "Spotify",
           "role": "Frontend Engineer II - SRC - Music",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -71766,7 +71953,7 @@
           "company": "Virtu Financial",
           "role": "Software Engineer - Desktop Frontend Developer (C#/Winforms)",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -71815,6 +72002,18 @@
           "role": "Forward Deployed Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7734432003",
+          "company": "XTX Markets",
+          "role": "Software Engineer - Trading System Developer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -71886,7 +72085,7 @@
           "company": "tvScientific",
           "role": "Software Engineer II, Simulation, tvScientific",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Manual",
           "count": 1,
           "states": [
             "Needs label"
@@ -85254,6 +85453,18 @@
           "contacts": []
         },
         {
+          "key": "8506660002",
+          "company": "BitGo",
+          "role": "Software Engineer - Growth",
+          "fitScore": 10,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4380495648",
           "company": "BlackRock",
           "role": "Associate, Full Stack Engineer",
@@ -85307,6 +85518,18 @@
           "role": "Software Engineer, Backend & Data",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7926837",
+          "company": "CLEAR",
+          "role": "Software Development Engineer, Fullstack",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -88007,6 +88230,18 @@
           "role": "Forward Deployed Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7734432003",
+          "company": "XTX Markets",
+          "role": "Software Engineer - Trading System Developer",
+          "fitScore": 10,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
