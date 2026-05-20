@@ -2,33 +2,9 @@
   "applicationsPerDay": [
     {
       "archived": 0,
-      "date": "2026-05-09",
-      "manual": 0,
-      "submitted": 7
-    },
-    {
-      "archived": 0,
-      "date": "2026-05-10",
-      "manual": 38,
-      "submitted": 6
-    },
-    {
-      "archived": 0,
-      "date": "2026-05-11",
-      "manual": 22,
-      "submitted": 1
-    },
-    {
-      "archived": 0,
-      "date": "2026-05-12",
-      "manual": 11,
-      "submitted": 0
-    },
-    {
-      "archived": 0,
       "date": "2026-05-13",
-      "manual": 12,
-      "submitted": 15
+      "manual": 0,
+      "submitted": 3
     },
     {
       "archived": 3,
@@ -47,11 +23,35 @@
       "date": "2026-05-16",
       "manual": 0,
       "submitted": 2
+    },
+    {
+      "archived": 0,
+      "date": "2026-05-17",
+      "manual": 0,
+      "submitted": 0
+    },
+    {
+      "archived": 0,
+      "date": "2026-05-18",
+      "manual": 0,
+      "submitted": 0
+    },
+    {
+      "archived": 0,
+      "date": "2026-05-19",
+      "manual": 0,
+      "submitted": 0
+    },
+    {
+      "archived": 7,
+      "date": "2026-05-20",
+      "manual": 1,
+      "submitted": 0
     }
   ],
   "avgConfidenceBySource": [
     {
-      "avgScore": 42.5,
+      "avgScore": 0.0,
       "band": "low",
       "source": "Ashby"
     },
@@ -61,43 +61,38 @@
       "source": "Company Site"
     },
     {
-      "avgScore": 0.0,
-      "band": "low",
-      "source": "Google Careers"
-    },
-    {
-      "avgScore": 24.7,
+      "avgScore": 4.2,
       "band": "low",
       "source": "Greenhouse"
     },
     {
-      "avgScore": 41.8,
+      "avgScore": 22.7,
       "band": "low",
       "source": "LinkedIn"
     }
   ],
-  "generatedAt": "2026-05-16T00:29:06.562866+00:00",
+  "generatedAt": "2026-05-20T18:44:04.775705+00:00",
   "intakeHealth": {
     "greenhouseCapturedToday": 0,
     "greenhouseLastRun": "",
-    "linkedinCacheHitRate": 0.0,
+    "linkedinCacheHitRate": 0,
     "linkedinCapturedToday": 0,
     "linkedinLastRun": ""
   },
   "queueDepth": {
     "intakeUnprocessed": 154,
-    "manualApplyNeeded": 204,
+    "manualApplyNeeded": 198,
     "readyToApply": 0,
     "resumeTailored": 24
   },
   "submitSuccessRate": {
-    "archived": 0.021,
-    "manual": 0.476,
-    "submitted": 0.503
+    "archived": 0.125,
+    "manual": 0.091,
+    "submitted": 0.784
   },
   "topBlockers": [
     {
-      "count": 90,
+      "count": 8,
       "reason": "unspecified"
     }
   ],
