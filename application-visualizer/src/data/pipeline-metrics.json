@@ -1,30 +1,6 @@
 {
   "applicationsPerDay": [
     {
-      "archived": 1,
-      "date": "2026-05-15",
-      "manual": 1,
-      "submitted": 13
-    },
-    {
-      "archived": 0,
-      "date": "2026-05-16",
-      "manual": 0,
-      "submitted": 2
-    },
-    {
-      "archived": 0,
-      "date": "2026-05-17",
-      "manual": 0,
-      "submitted": 0
-    },
-    {
-      "archived": 0,
-      "date": "2026-05-18",
-      "manual": 0,
-      "submitted": 0
-    },
-    {
       "archived": 0,
       "date": "2026-05-19",
       "manual": 0,
@@ -47,9 +23,38 @@
       "date": "2026-05-22",
       "manual": 1,
       "submitted": 13
+    },
+    {
+      "archived": 0,
+      "date": "2026-05-23",
+      "manual": 0,
+      "submitted": 21
+    },
+    {
+      "archived": 0,
+      "date": "2026-05-24",
+      "manual": 0,
+      "submitted": 2
+    },
+    {
+      "archived": 0,
+      "date": "2026-05-25",
+      "manual": 0,
+      "submitted": 2
+    },
+    {
+      "archived": 0,
+      "date": "2026-05-26",
+      "manual": 0,
+      "submitted": 0
     }
   ],
   "avgConfidenceBySource": [
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "Ashby"
+    },
     {
       "avgScore": 0.0,
       "band": "low",
@@ -64,9 +69,19 @@
       "avgScore": 0.0,
       "band": "low",
       "source": "LinkedIn"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "Meta Careers"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "Workday"
     }
   ],
-  "generatedAt": "2026-05-22T17:34:38.230416+00:00",
+  "generatedAt": "2026-05-26T23:24:23.924937+00:00",
   "intakeHealth": {
     "greenhouseCapturedToday": 0,
     "greenhouseLastRun": "",
@@ -76,18 +91,18 @@
   },
   "queueDepth": {
     "intakeUnprocessed": 165,
-    "manualApplyNeeded": 192,
+    "manualApplyNeeded": 191,
     "readyToApply": 0,
     "resumeTailored": 20
   },
   "submitSuccessRate": {
-    "archived": 0.196,
-    "manual": 0.065,
-    "submitted": 0.739
+    "archived": 0.148,
+    "manual": 0.037,
+    "submitted": 0.815
   },
   "topBlockers": [
     {
-      "count": 3,
+      "count": 2,
       "reason": "unspecified"
     }
   ],

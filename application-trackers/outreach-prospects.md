@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 787
+Companies queued: 791
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -198,6 +198,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Metronome | Software Engineer, Product | 4425245008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/metronome/jobs/4425245008?gh_src=b17e39cd8us&src=levels.fyi) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Metronome | Software Engineer, Infrastructure | 4894044008 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/metronome/jobs/4894044008) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | Metronome | Software Engineer, Product & Platform Teams | 4757311008 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/metronome/jobs/4757311008) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
+| Meta | Production Engineer (University Grad) | 1532365381610642 | 10 | Applied | Yes | [Posting](https://www.metacareers.com/profile/job_details/1532365381610642) |  |  | 2026-05-22 | Queued by resume-tailor after tailored resume update. |
 | Mesa | Software Engineer - University Grad | 4967098008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/mesamember/jobs/4967098008) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Memorial Sloan Kettering Cancer Center | Software Engineer II - Biostatistics Service | software-engineer-ii-biostatistics-service-at-memorial-sloan-kettering-cancer-center-4400834627 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-biostatistics-service-at-memorial-sloan-kettering-cancer-center-4400834627) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Melio | Full Stack Engineer | 7174896003 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/melio/jobs/7174896003) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
@@ -548,6 +549,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | CoreWeave | Systems Engineer, Kernel | systems-engineer-kernel-at-coreweave-4347141537 | 9 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/systems-engineer-kernel-at-coreweave-4347141537) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
 | CommerceIQ | Forward Deployed Engineer - Mountain View | 7703500003 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/commerceiq/jobs/7703500003) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Color | New Grad Software Engineer | 4397683013 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4397683013/) |  |  |  |  |
+| CoffeeSpace | Fullstack Engineer | 4416738856 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4416738856/) |  |  | 2026-05-22 | Queued by resume-tailor after tailored resume update. |
 | Clever | Software Engineer, Infrastructure | 7437730 | 9 | Applied | Yes | [Posting](https://www.clever.com/about/careers?gh_jid=7437730&gh_src=auac04yc1us) |  |  |  |  |
 | CLEAR - Corporate | iOS Engineer | 7819202 | 9 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/clear/jobs/7819202) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update.; Status updated 2026-05-08 from Liam manual outcome. |
 | Clay | Software Engineer Backend | 248aa0c7-034f-47d3-a57e-ce16736eeab6 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/claylabs/248aa0c7-034f-47d3-a57e-ce16736eeab6/application?src=LinkedInJobSlot) |  |  |  |  |
@@ -568,6 +570,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Betterment | Software Engineer, Backend | software-engineer-backend-at-betterment-4293940011 | 9 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-backend-at-betterment-4293940011) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Astronomer | Software Engineer - Airflow Infrastructure | b9abf88b-946f-4be3-ae74-fb95ee9b7cc8 | 9 | Applied | Yes | [Posting](https://jobs.ashbyhq.com/astronomer/b9abf88b-946f-4be3-ae74-fb95ee9b7cc8/application?utm_source=linkedin) |  |  |  |  |
 | Astronomer | Software Engineer - Data Plane Management | 4411459497 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4411459497/) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
+| Assort Health | Agent Software Engineer | 4419483889 | 9 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4419483889/) |  |  | 2026-05-26 | Queued by resume-tailor after tailored resume update. |
 | Anthropic | Applied AI Engineer, Life Sciences (Beneficial Deployments) | 5111942008 | 9 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/anthropic/jobs/5111942008) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
 | Anthropic | Forward Deployed AI Engineer, Public Sector | 4020263008 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/anthropic/jobs/4020263008) |  |  | 2026-05-12 | Queued by resume-tailor after tailored resume update. |
 | Ansa | Mid-Level Full Stack Engineer - Backend Focused | 4505571008 | 9 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/ansa/jobs/4505571008) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |
@@ -726,6 +729,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Ampcus Inc | Software Dev Engineer I | 4408366927 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4408366927/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Ampcus Inc | Software Dev Engineer II | 4408367883 | 8 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/4408367883/) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Ampcus Inc | Software Dev Engineer II | 4410745133 | 8 | Archived | Yes | [Posting](https://www.linkedin.com/jobs/view/4410745133/) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update.; Archived 2026-05-07: LinkedIn URL resolves to mismatched MarketSmart Fullstack Software Engineer posting and shows no longer accepting applications. |
+| Amazon | Software Development Engineer, AWS | software-development-engineer-aws | 8 | Resume Tailored | Yes | [Posting](https://www.amazon.jobs/en/jobs/10410349/software-development-engineer-aws) |  |  | 2026-05-26 | Queued by resume-tailor after tailored resume update. |
 | Altium | Full Stack Engineer | 4656473006 | 8 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/altium/jobs/4656473006) |  |  | 2026-05-04 | Queued by resume-tailor after tailored resume update. |
 | Alexander Chapman | Founding Full Stack Engineer | 4407459453 | 8 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4407459453/apply/) |  |  |  |  |
 | Albert Bow | Software Engineer, Low Latency Trading | MjI2MDItaHRxZWJ3YTRoa281aDY2ZQ== | 8 | Applied | Yes | [Posting](https://app.loxo.co/job/MjI2MDItaHRxZWJ3YTRoa281aDY2ZQ==?source=LinkedIn) |  |  |  |  |
