@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T21:06:15.438127+00:00",
+  "generatedAt": "2026-05-29T21:09:28.570128+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,9 +10,9 @@
   "stats": {
     "kpis": {
       "total": 938,
-      "applied": 580,
-      "unapplied": 358,
-      "active": 623,
+      "applied": 581,
+      "unapplied": 357,
+      "active": 620,
       "rejected": 96,
       "interviewing": 5,
       "assessments": 3,
@@ -26,9 +26,9 @@
       "intakeNew": 56,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 61.8,
-      "rejectionRate": 16.6,
-      "recruiterWork": 519,
+      "applyRate": 61.9,
+      "rejectionRate": 16.5,
+      "recruiterWork": 516,
       "engineerWork": 690,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
@@ -36,15 +36,15 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 475
+        "value": 476
       },
       {
         "name": "Archived",
-        "value": 219
+        "value": 222
       },
       {
         "name": "Manual Apply Needed",
-        "value": 120
+        "value": 116
       },
       {
         "name": "Rejected",
@@ -532,7 +532,7 @@
         "date": "2026-05-11",
         "cumulative": 822,
         "added": 32,
-        "applied": 16,
+        "applied": 17,
         "rejected": 5,
         "interviewing": 0
       },
@@ -23307,8 +23307,8 @@
     {
       "company": "Heart Aerospace",
       "role": "Software Engineer I/II, Flight Software",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -23323,10 +23323,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-11; tailored flight software resume rendered and verified one page; emphasized Python/C++/C systems, regression automation, API/service validation, infrastructure preflights, and reliability testing. Manual apply needed: live Greenhouse form review/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-11; tailored flight software resume rendered and verified one page; emphasized Python/C++/C systems, regression automation, API/service validation, infrastructure preflights, and reliability testing. Manual apply needed: live Greenhouse form review/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-29 via Greenhouse; confirmation page received.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-29"
       ]
     },
     {
@@ -24043,7 +24044,7 @@
       "company": "Anthropic",
       "role": "Forward Deployed AI Engineer, Public Sector",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -24058,10 +24059,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Archived 2026-05-29: Greenhouse posting says the job is no longer open.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-29"
       ]
     },
     {
@@ -24243,7 +24245,7 @@
       "company": "CHAOS Industries",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -24258,10 +24260,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-12; tailored software engineering resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-12; tailored software engineering resume rendered and verified one page. Application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Archived 2026-05-29: Greenhouse redirects to CHAOS Industries board error page for this posting.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-29"
       ]
     },
     {
@@ -24711,7 +24714,7 @@
       "company": "Harvey",
       "role": "Software Engineer, Applied AI",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "",
@@ -24726,10 +24729,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; tailored for ai alignment in this intake pass",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; tailored for ai alignment in this intake pass; Archived 2026-05-29: Greenhouse redirects to /harvey?error=true and returns Page not found / inactive job board.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-29"
       ]
     },
     {
@@ -24827,10 +24831,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-12: tailored resume verified one page; live submission blocked because Computer Use approval was denied for Chrome/Firefox after delayed retry, and posting asks for 4-6+ years, Monday-Friday Mountain View onsite, about 50% travel, and role-specific FDE/prototype/AI free responses needing Liam review.",
+      "notes": "Manual apply needed 2026-05-12: tailored resume verified one page; live submission blocked because Computer Use approval was denied for Chrome/Firefox after delayed retry, and posting asks for 4-6+ years, Monday-Friday Mountain View onsite, about 50% travel, and role-specific FDE/prototype/AI free responses needing Liam review.; Manual blocker 2026-05-29: application prepared with safe fields and resume; left pre-submit for Liam review of FDE/customer-facing/prototype/AI free-response answers.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-29"
       ]
     },
     {
@@ -72554,18 +72559,6 @@
           "contacts": []
         },
         {
-          "key": "4020263008",
-          "company": "Anthropic",
-          "role": "Forward Deployed AI Engineer, Public Sector",
-          "fitScore": 9,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "software-engineer-apple-game-services",
           "company": "Apple",
           "role": "Software Engineer, Apple Game Services",
@@ -72605,18 +72598,6 @@
           "key": "5082153007",
           "company": "CHAOS Industries",
           "role": "Field Software Engineer",
-          "fitScore": 9,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4872368007",
-          "company": "CHAOS Industries",
-          "role": "Software Engineer",
           "fitScore": 9,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -73058,18 +73039,6 @@
           "contacts": []
         },
         {
-          "key": "4567728007",
-          "company": "Harvey",
-          "role": "Software Engineer, Applied AI",
-          "fitScore": 9,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "c68a437b-dd8a-4e14-9b4e-d6229951d0aa",
           "company": "HealthLeap",
           "role": "Full Stack Engineer",
@@ -73086,7 +73055,7 @@
           "company": "Heart Aerospace",
           "role": "Software Engineer I/II, Flight Software",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
