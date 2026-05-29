@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T23:24:23.861149+00:00",
+  "generatedAt": "2026-05-29T06:38:02.286017+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 923,
-      "applied": 560,
+      "total": 936,
+      "applied": 573,
       "unapplied": 363,
-      "active": 677,
-      "rejected": 95,
+      "active": 688,
+      "rejected": 96,
       "interviewing": 5,
       "assessments": 3,
-      "highFit": 777,
-      "reachOut": 841,
+      "highFit": 789,
+      "reachOut": 854,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,17 +26,17 @@
       "intakeNew": 56,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 60.7,
-      "rejectionRate": 17.0,
-      "recruiterWork": 573,
-      "engineerWork": 675,
+      "applyRate": 61.2,
+      "rejectionRate": 16.8,
+      "recruiterWork": 584,
+      "engineerWork": 688,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 456
+        "value": 468
       },
       {
         "name": "Manual Apply Needed",
@@ -44,11 +44,11 @@
       },
       {
         "name": "Archived",
-        "value": 151
+        "value": 152
       },
       {
         "name": "Rejected",
-        "value": 95
+        "value": 96
       },
       {
         "name": "Resume Tailored",
@@ -61,10 +61,6 @@
       {
         "name": "Online Assessment",
         "value": 3
-      },
-      {
-        "name": "Manual",
-        "value": 1
       }
     ],
     "sourceCounts": [
@@ -74,11 +70,11 @@
       },
       {
         "name": "LinkedIn",
-        "value": 333
+        "value": 343
       },
       {
         "name": "Ashby",
-        "value": 78
+        "value": 81
       },
       {
         "name": "Company Site",
@@ -152,15 +148,15 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 403
+        "value": 407
       },
       {
         "name": "Bay Area",
-        "value": 211
+        "value": 216
       },
       {
         "name": "Other",
-        "value": 149
+        "value": 151
       },
       {
         "name": "Remote",
@@ -168,7 +164,7 @@
       },
       {
         "name": "Seattle",
-        "value": 25
+        "value": 27
       },
       {
         "name": "Unknown",
@@ -182,19 +178,19 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 493
+        "value": 501
       },
       {
         "name": "Full Stack",
-        "value": 116
+        "value": 117
       },
       {
         "name": "Backend",
-        "value": 97
+        "value": 100
       },
       {
         "name": "AI/ML",
-        "value": 71
+        "value": 72
       },
       {
         "name": "Forward Deployed",
@@ -240,19 +236,19 @@
       },
       {
         "score": "7",
-        "count": 41
+        "count": 42
       },
       {
         "score": "8",
-        "count": 172
+        "count": 176
       },
       {
         "score": "9",
-        "count": 173
+        "count": 176
       },
       {
         "score": "10",
-        "count": 432
+        "count": 437
       }
     ],
     "targetCounts": [
@@ -425,7 +421,7 @@
         "cumulative": 239,
         "added": 75,
         "applied": 65,
-        "rejected": 9,
+        "rejected": 10,
         "interviewing": 1
       },
       {
@@ -590,9 +586,25 @@
       },
       {
         "date": "2026-05-26",
-        "cumulative": 923,
-        "added": 2,
+        "cumulative": 926,
+        "added": 5,
+        "applied": 4,
+        "rejected": 0,
+        "interviewing": 0
+      },
+      {
+        "date": "2026-05-27",
+        "cumulative": 927,
+        "added": 1,
         "applied": 1,
+        "rejected": 0,
+        "interviewing": 0
+      },
+      {
+        "date": "2026-05-28",
+        "cumulative": 936,
+        "added": 9,
+        "applied": 9,
         "rejected": 0,
         "interviewing": 0
       }
@@ -629,6 +641,12 @@
         "bestFit": 10
       },
       {
+        "company": "Glean",
+        "roles": 8,
+        "avgFit": 9.38,
+        "bestFit": 10
+      },
+      {
         "company": "Attentive",
         "roles": 7,
         "avgFit": 10.0,
@@ -638,12 +656,6 @@
         "company": "Twitch",
         "roles": 7,
         "avgFit": 10.0,
-        "bestFit": 10
-      },
-      {
-        "company": "Glean",
-        "roles": 7,
-        "avgFit": 9.29,
         "bestFit": 10
       },
       {
@@ -719,6 +731,12 @@
         "bestFit": 10
       },
       {
+        "company": "Plaid",
+        "roles": 5,
+        "avgFit": 9.6,
+        "bestFit": 10
+      },
+      {
         "company": "Loop",
         "roles": 5,
         "avgFit": 9.4,
@@ -734,12 +752,6 @@
         "company": "Chalk",
         "roles": 5,
         "avgFit": 8.4,
-        "bestFit": 10
-      },
-      {
-        "company": "Ramp",
-        "roles": 5,
-        "avgFit": 6.2,
         "bestFit": 10
       }
     ],
@@ -3402,7 +3414,7 @@
       "recruiterProfile": "https://www.linkedin.com/in/nadia-tiwari-28b1a5151/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "LinkedIn invite sent to Nadia Tiwari (Recruiter) 2026-04-25; Replaced company posting with direct Greenhouse application 2026-04-27; Manual apply needed: desired salary and final application submission confirmation 2026-04-27; Application submitted via Greenhouse with tailored NYTimes resume and provided salary/source answers 2026-04-28; Refreshed tailored resume 2026-05-05 for current Scoop Core posting; emphasized backend platform services, API validation, cloud services on GCP/AWS, unit and integration testing, documentation, onboarding, observability, and cross-functional release communication.; Refreshed tailored resume 2026-05-09 for direct NYT referral application request https://job-boards.greenhouse.io/thenewyorktimes/job_application_requests/sscykj73caef5adwxvg32ce9nugup5us; emphasized backend platform services, API validation, AWS/GCP/OCI cloud services, unit and integration testing, documentation, onboarding, observability, and cross-functional release communication. Did not claim Golang or GraphQL because resume evidence was not present.; Direct NYT Greenhouse referral request completed 2026-05-09 using refreshed tailored resume.; Recruiter screen requested 2026-05-21; Phone interview confirmed for 2026-05-27",
+      "notes": "LinkedIn invite sent to Nadia Tiwari (Recruiter) 2026-04-25; Replaced company posting with direct Greenhouse application 2026-04-27; Manual apply needed: desired salary and final application submission confirmation 2026-04-27; Application submitted via Greenhouse with tailored NYTimes resume and provided salary/source answers 2026-04-28; Refreshed tailored resume 2026-05-05 for current Scoop Core posting; emphasized backend platform services, API validation, cloud services on GCP/AWS, unit and integration testing, documentation, onboarding, observability, and cross-functional release communication.; Refreshed tailored resume 2026-05-09 for direct NYT referral application request https://job-boards.greenhouse.io/thenewyorktimes/job_application_requests/sscykj73caef5adwxvg32ce9nugup5us; emphasized backend platform services, API validation, AWS/GCP/OCI cloud services, unit and integration testing, documentation, onboarding, observability, and cross-functional release communication. Did not claim Golang or GraphQL because resume evidence was not present.; Direct NYT Greenhouse referral request completed 2026-05-09 using refreshed tailored resume.; Recruiter screen requested 2026-05-21; Phone interview confirmed for 2026-05-27; Video interview confirmed for 2026-05-29",
       "noteLinks": [
         {
           "label": "Nadia Tiwari",
@@ -3418,7 +3430,8 @@
         "2026-05-09",
         "2026-05-09",
         "2026-05-21",
-        "2026-05-27"
+        "2026-05-27",
+        "2026-05-29"
       ]
     },
     {
@@ -7328,7 +7341,7 @@
       "company": "Uphold",
       "role": "Software Engineer - Trading Execution",
       "applied": true,
-      "status": "Applied",
+      "status": "Rejected",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -7343,7 +7356,7 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Replaced LinkedIn posting with direct BambooHR application 2026-04-27; Manual apply needed: required desired-pay field and anti-automation honeypot/reCAPTCHA fields 2026-04-27; Manual apply verified: required desired pay plus reCAPTCHA 2026-04-28; Manual apply verified: BambooHR form filled with tailored resume, legal address, Washington state, 2026-05-19 availability, desired pay, links, sponsorship No, work authorization Yes, hybrid NYC comfort Yes, and LinkedIn source; final submit reached 'Almost there! Please confirm you\u2019re not a robot' CAPTCHA gate 2026-04-28; Application confirmation email received 2026-04-28",
+      "notes": "Replaced LinkedIn posting with direct BambooHR application 2026-04-27; Manual apply needed: required desired-pay field and anti-automation honeypot/reCAPTCHA fields 2026-04-27; Manual apply verified: required desired pay plus reCAPTCHA 2026-04-28; Manual apply verified: BambooHR form filled with tailored resume, legal address, Washington state, 2026-05-19 availability, desired pay, links, sponsorship No, work authorization Yes, hybrid NYC comfort Yes, and LinkedIn source; final submit reached 'Almost there! Please confirm you\u2019re not a robot' CAPTCHA gate 2026-04-28; Application confirmation email received 2026-04-28; Rejection email received 2026-05-26",
       "noteLinks": [],
       "activityDates": [
         "2026-04-27",
@@ -7351,7 +7364,8 @@
         "2026-04-28",
         "2026-05-19",
         "2026-04-28",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-26"
       ]
     },
     {
@@ -21935,7 +21949,7 @@
       "company": "tvScientific",
       "role": "Software Engineer II, Simulation, tvScientific",
       "applied": false,
-      "status": "Manual",
+      "status": "Manual Apply Needed",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -23825,7 +23839,7 @@
       "company": "Vercel",
       "role": "Software Engineer, Backend",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -23840,10 +23854,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-12; tailored resume rendered and verified one page; emphasized backend APIs, cloud reliability, service integrations, data systems, release support, and on-call debugging. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-12; tailored resume rendered and verified one page; emphasized backend APIs, cloud reliability, service integrations, data systems, release support, and on-call debugging. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Archived 2026-05-29: Greenhouse posting 5431123004 redirects to Vercel jobs board with message that the job is no longer open.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-29"
       ]
     },
     {
@@ -26308,8 +26323,8 @@
     {
       "company": "Amazon",
       "role": "Software Development Engineer, AWS",
-      "applied": false,
-      "status": "Resume Tailored",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 8,
       "reachOut": true,
       "referral": "No",
@@ -26324,9 +26339,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Application confirmation email received 2026-05-26",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-26"
+      ]
     },
     {
       "company": "Assort Health",
@@ -26347,9 +26364,334 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
+      "notes": "Application confirmation email received 2026-05-26",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-26"
+      ]
+    },
+    {
+      "company": "Plaid",
+      "role": "Software Engineer, Backend",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-26",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4410265188/",
+      "postingKey": "4410265188",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Plaid/Software_Engineer_Backend/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Plaid/Software_Engineer_Backend/Liam_Van_Resume_2/Liam_Van_Plaid.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application confirmation email received 2026-05-26",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-26"
+      ]
+    },
+    {
+      "company": "Emonics LLC",
+      "role": "Software Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 7,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-26",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4418273959/",
+      "postingKey": "4418273959",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Emonics LLC/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Emonics LLC/Software_Engineer/Liam_Van_Resume/Liam_Van_Emonics_LLC.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn application confirmation email received 2026-05-26",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-26"
+      ]
+    },
+    {
+      "company": "Adobe",
+      "role": "Junior Software Development Engineer",
+      "applied": false,
+      "status": "Resume Tailored",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-26",
+      "location": "San Jose, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4408916821/",
+      "postingKey": "4408916821",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Adobe/Junior_Software_Development_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Adobe/Junior_Software_Development_Engineer/Liam_Van_Resume/Liam_Van_Adobe.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
       "notes": "",
       "noteLinks": [],
       "activityDates": []
+    },
+    {
+      "company": "Kiloforge",
+      "role": "Founding Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-27",
+      "location": "San Francisco, CA",
+      "source": "Ashby",
+      "jobLink": "https://jobs.ashbyhq.com/kiloforge/b5ebae38-a1de-4a26-bac0-e1baeb71deeb",
+      "postingKey": "b5ebae38-a1de-4a26-bac0-e1baeb71deeb",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Kiloforge/Founding_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Kiloforge/Founding_Engineer/Liam_Van_Resume/Liam_Van_Kiloforge.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application submitted 2026-05-28. Confirmation: Ashby success page says application was successfully submitted.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-28"
+      ]
+    },
+    {
+      "company": "Raydar",
+      "role": "Backend Software Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-28",
+      "location": "Seattle, WA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4420466743/",
+      "postingKey": "4420466743",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Raydar/Backend_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Raydar/Backend_Software_Engineer/Liam_Van_Resume/Liam_Van_Raydar.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application submitted 2026-05-28; LinkedIn status showed Application submitted 5 hours ago",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-28"
+      ]
+    },
+    {
+      "company": "Plaid",
+      "role": "Software Engineer, Backend",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-28",
+      "location": "Greater Seattle Area",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4410254702/",
+      "postingKey": "4410254702",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Plaid/Software_Engineer_Backend/Liam_Van_Resume_3",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Plaid/Software_Engineer_Backend/Liam_Van_Resume_3/Liam_Van_Plaid.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application submitted 2026-05-29 via Ashby confirmation page",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Glean",
+      "role": "Software Engineer, University Grad",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-28",
+      "location": "Mountain View, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4295123743/",
+      "postingKey": "4295123743",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Glean/Software_Engineer_University_Grad/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Glean/Software_Engineer_University_Grad/Liam_Van_Resume/Liam_Van_Glean.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application submitted 2026-05-28",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-28"
+      ]
+    },
+    {
+      "company": "Quantcast",
+      "role": "Software Engineer (Full Stack)",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-28",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4409992312/",
+      "postingKey": "4409992312",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Quantcast/Software_Engineer_Full_Stack/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Quantcast/Software_Engineer_Full_Stack/Liam_Van_Resume/Liam_Van_Quantcast.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application submitted 2026-05-28; LinkedIn shows Application submitted 2 hours ago",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-28"
+      ]
+    },
+    {
+      "company": "Convex",
+      "role": "Software Engineer, AI",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-28",
+      "location": "San Francisco, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4420611281/",
+      "postingKey": "4420611281",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Convex/Software_Engineer_AI/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Convex/Software_Engineer_AI/Liam_Van_Resume/Liam_Van_Convex.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application submitted 2026-05-28",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-28"
+      ]
+    },
+    {
+      "company": "Dragonfly",
+      "role": "Software Engineer - Dragonfly Portfolio",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-28",
+      "location": "New York City Metropolitan Area",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4417253858/",
+      "postingKey": "4417253858",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Dragonfly/Software_Engineer_Dragonfly_Portfolio/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Dragonfly/Software_Engineer_Dragonfly_Portfolio/Liam_Van_Resume/Liam_Van_Dragonfly.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application submitted 2026-05-29 via Gem",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Enigma",
+      "role": "Graduate Software Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-28",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4419075277/",
+      "postingKey": "4419075277",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Enigma/Graduate_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Enigma/Graduate_Software_Engineer/Liam_Van_Resume/Liam_Van_Enigma.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application submitted 2026-05-29",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "EliseAI",
+      "role": "Associate Solutions Engineer | Housing",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-28",
+      "location": "New York City; San Francisco",
+      "source": "Ashby",
+      "jobLink": "https://jobs.ashbyhq.com/eliseai/5b6f3775-3e79-4269-a255-47ee3057265d",
+      "postingKey": "5b6f3775-3e79-4269-a255-47ee3057265d",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/EliseAI/Associate_Solutions_Engineer_Housing/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/EliseAI/Associate_Solutions_Engineer_Housing/Liam_Van_Resume/Liam_Van_EliseAI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application submitted 2026-05-29 via Ashby; confirmation: FormSubmitSuccess.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "EliseAI",
+      "role": "GTM Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-28",
+      "location": "New York City",
+      "source": "Ashby",
+      "jobLink": "https://jobs.ashbyhq.com/eliseai/7a74322c-415a-41cb-8956-ee170d3bb267",
+      "postingKey": "7a74322c-415a-41cb-8956-ee170d3bb267",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/EliseAI/GTM_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/EliseAI/GTM_Engineer/Liam_Van_Resume/Liam_Van_EliseAI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application submitted 2026-05-29",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
     }
   ],
   "jobIntake": [
@@ -40977,6 +41319,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Quantcast",
+      "role": "Software Engineer (Full Stack)",
+      "postingKey": "4409992312",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4409992312/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-28",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Procore Technologies",
       "role": "Software Engineer I (Datagrid)",
       "postingKey": "4406148082",
@@ -41117,6 +41472,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Plaid",
+      "role": "Software Engineer, Backend",
+      "postingKey": "4410254702",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4410254702/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-28",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -42524,6 +42892,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Glean",
+      "role": "Software Engineer, University Grad",
+      "postingKey": "4295123743",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4295123743/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-28",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Glazier",
       "role": "Founding Engineer (Glazier)",
       "postingKey": "4502530004",
@@ -42940,6 +43321,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Enigma",
+      "role": "Graduate Software Engineer",
+      "postingKey": "4419075277",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4419075277/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-28",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "EnergyHub",
       "role": "Software Engineer II, Devices",
       "postingKey": "8382615002",
@@ -43236,6 +43630,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-05",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Convex",
+      "role": "Software Engineer, AI",
+      "postingKey": "4420611281",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4420611281/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-28",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -45488,6 +45895,19 @@
       "notes": ""
     },
     {
+      "company": "Plaid",
+      "role": "Software Engineer, Backend",
+      "postingKey": "4410265188",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4410265188/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-26",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Pilot.com",
       "role": "Software Engineer",
       "postingKey": "8516101002",
@@ -45928,6 +46348,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Kiloforge",
+      "role": "Founding Engineer",
+      "postingKey": "b5ebae38-a1de-4a26-bac0-e1baeb71deeb",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://jobs.ashbyhq.com/kiloforge/b5ebae38-a1de-4a26-bac0-e1baeb71deeb",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-27",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Kalshi",
@@ -46840,6 +47273,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Adobe",
+      "role": "Junior Software Development Engineer",
+      "postingKey": "4408916821",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4408916821/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-26",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Zip",
       "role": "Software Engineer, Backend (All Levels)",
       "postingKey": "d47287f7-97cc-4216-8c34-737a59a1f9c0",
@@ -47461,6 +47907,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-22",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Raydar",
+      "role": "Backend Software Engineer",
+      "postingKey": "4420466743",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4420466743/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-28",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -48257,6 +48716,32 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "EliseAI",
+      "role": "Associate Solutions Engineer | Housing",
+      "postingKey": "5b6f3775-3e79-4269-a255-47ee3057265d",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://jobs.ashbyhq.com/eliseai/5b6f3775-3e79-4269-a255-47ee3057265d",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-28",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "EliseAI",
+      "role": "GTM Engineer",
+      "postingKey": "7a74322c-415a-41cb-8956-ee170d3bb267",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://jobs.ashbyhq.com/eliseai/7a74322c-415a-41cb-8956-ee170d3bb267",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-28",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Edra",
       "role": "Software Engineer - Back End (New York)",
       "postingKey": "e0eca13d-889e-4efb-962e-fdf387875fe3",
@@ -48294,6 +48779,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Dragonfly",
+      "role": "Software Engineer - Dragonfly Portfolio",
+      "postingKey": "4417253858",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4417253858/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-28",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "DocuSign",
@@ -49087,6 +49585,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Emonics LLC",
+      "role": "Software Engineer",
+      "postingKey": "4418273959",
+      "fitScore": 7,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4418273959/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-26",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Crossing Hurdles",
@@ -70389,6 +70900,18 @@
           "contacts": []
         },
         {
+          "key": "4420611281",
+          "company": "Convex",
+          "role": "Software Engineer, AI",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "6747347003",
           "company": "CookUnity",
           "role": "AI-Native Software Engineer",
@@ -70500,6 +71023,18 @@
           "key": "4226183009",
           "company": "Emergent Labs",
           "role": "Software Engineer - Infrastructure",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4419075277",
+          "company": "Enigma",
+          "role": "Graduate Software Engineer",
           "fitScore": 10,
           "status": "Applied",
           "count": 1,
@@ -70764,6 +71299,18 @@
           "key": "4501783005",
           "company": "Glean",
           "role": "Software Engineer, AI Infrastructure",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4295123743",
+          "company": "Glean",
+          "role": "Software Engineer, University Grad",
           "fitScore": 10,
           "status": "Applied",
           "count": 1,
@@ -71481,6 +72028,18 @@
           "contacts": []
         },
         {
+          "key": "4410254702",
+          "company": "Plaid",
+          "role": "Software Engineer, Backend",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4036240009",
           "company": "PlanetScale",
           "role": "Software Engineer - Infrastructure",
@@ -71522,6 +72081,18 @@
           "role": "New Grad Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4409992312",
+          "company": "Quantcast",
+          "role": "Software Engineer (Full Stack)",
+          "fitScore": 10,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -72285,18 +72856,6 @@
           "contacts": []
         },
         {
-          "key": "5431123004",
-          "company": "Vercel",
-          "role": "Software Engineer, Backend",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "4835669007",
           "company": "Verkada",
           "role": "Embedded Software Engineer - University Graduate 2026",
@@ -72445,7 +73004,19 @@
           "company": "tvScientific",
           "role": "Software Engineer II, Simulation, tvScientific",
           "fitScore": 10,
-          "status": "Manual",
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4408916821",
+          "company": "Adobe",
+          "role": "Junior Software Development Engineer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
           "count": 1,
           "states": [
             "Needs label"
@@ -73113,6 +73684,18 @@
           "contacts": []
         },
         {
+          "key": "b5ebae38-a1de-4a26-bac0-e1baeb71deeb",
+          "company": "Kiloforge",
+          "role": "Founding Engineer",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4640927007",
           "company": "Labelbox",
           "role": "Forward Deployed Engineer",
@@ -73416,6 +73999,18 @@
           "key": "4243684882",
           "company": "Plaid",
           "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4410265188",
+          "company": "Plaid",
+          "role": "Software Engineer, Backend",
           "fitScore": 9,
           "status": "Applied",
           "count": 1,
@@ -73933,7 +74528,7 @@
           "company": "Amazon",
           "role": "Software Development Engineer, AWS",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -74361,6 +74956,18 @@
           "contacts": []
         },
         {
+          "key": "4417253858",
+          "company": "Dragonfly",
+          "role": "Software Engineer - Dragonfly Portfolio",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7661171003",
           "company": "ERGO NEXT Group INTERNAL",
           "role": "Backend Software Engineer",
@@ -74388,6 +74995,30 @@
           "key": "e0eca13d-889e-4efb-962e-fdf387875fe3",
           "company": "Edra",
           "role": "Software Engineer - Back End (New York)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5b6f3775-3e79-4269-a255-47ee3057265d",
+          "company": "EliseAI",
+          "role": "Associate Solutions Engineer | Housing",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7a74322c-415a-41cb-8956-ee170d3bb267",
+          "company": "EliseAI",
+          "role": "GTM Engineer",
           "fitScore": 8,
           "status": "Applied",
           "count": 1,
@@ -75105,6 +75736,18 @@
           "contacts": []
         },
         {
+          "key": "4420466743",
+          "company": "Raydar",
+          "role": "Backend Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7863495",
           "company": "Rent the Runway",
           "role": "Software Engineer III - Full Stack",
@@ -75537,18 +76180,6 @@
           "contacts": []
         },
         {
-          "key": "773",
-          "company": "Uphold",
-          "role": "Software Engineer - Trading Execution",
-          "fitScore": 8,
-          "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "4407898952",
           "company": "Venture Up",
           "role": "Software Engineer",
@@ -75792,6 +76423,18 @@
           "key": "4372088330",
           "company": "Crossing Hurdles",
           "role": "Staff-Software Engineer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4418273959",
+          "company": "Emonics LLC",
+          "role": "Software Engineer",
           "fitScore": 7,
           "status": "Applied",
           "count": 1,
@@ -86305,6 +86948,18 @@
           "contacts": []
         },
         {
+          "key": "4420611281",
+          "company": "Convex",
+          "role": "Software Engineer, AI",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "6747347003",
           "company": "CookUnity",
           "role": "AI-Native Software Engineer",
@@ -86428,6 +87083,18 @@
           "key": "4226183009",
           "company": "Emergent Labs",
           "role": "Software Engineer - Infrastructure",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4419075277",
+          "company": "Enigma",
+          "role": "Graduate Software Engineer",
           "fitScore": 10,
           "status": "Applied",
           "count": 1,
@@ -86692,6 +87359,18 @@
           "key": "4006734005",
           "company": "Glean",
           "role": "Software Engineer, Fullstack",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4295123743",
+          "company": "Glean",
+          "role": "Software Engineer, University Grad",
           "fitScore": 10,
           "status": "Applied",
           "count": 1,
@@ -87541,6 +88220,18 @@
           "contacts": []
         },
         {
+          "key": "4410254702",
+          "company": "Plaid",
+          "role": "Software Engineer, Backend",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4036240009",
           "company": "PlanetScale",
           "role": "Software Engineer - Infrastructure",
@@ -87582,6 +88273,18 @@
           "role": "New Grad Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4409992312",
+          "company": "Quantcast",
+          "role": "Software Engineer (Full Stack)",
+          "fitScore": 10,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -88645,6 +89348,18 @@
           "contacts": []
         },
         {
+          "key": "4408916821",
+          "company": "Adobe",
+          "role": "Junior Software Development Engineer",
+          "fitScore": 9,
+          "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7685236003",
           "company": "Affirm",
           "role": "Software Engineer I, Full-Stack (Home and Search Experience)",
@@ -89245,6 +89960,18 @@
           "contacts": []
         },
         {
+          "key": "b5ebae38-a1de-4a26-bac0-e1baeb71deeb",
+          "company": "Kiloforge",
+          "role": "Founding Engineer",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4640927007",
           "company": "Labelbox",
           "role": "Forward Deployed Engineer",
@@ -89524,6 +90251,18 @@
           "key": "8516101002",
           "company": "Pilot.com",
           "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4410265188",
+          "company": "Plaid",
+          "role": "Software Engineer, Backend",
           "fitScore": 9,
           "status": "Applied",
           "count": 1,
@@ -89969,7 +90708,7 @@
           "company": "Amazon",
           "role": "Software Development Engineer, AWS",
           "fitScore": 8,
-          "status": "Resume Tailored",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -90325,6 +91064,18 @@
           "contacts": []
         },
         {
+          "key": "4417253858",
+          "company": "Dragonfly",
+          "role": "Software Engineer - Dragonfly Portfolio",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7661171003",
           "company": "ERGO NEXT Group INTERNAL",
           "role": "Backend Software Engineer",
@@ -90342,6 +91093,30 @@
           "role": "AI Engineer - Forward Deployed",
           "fitScore": 8,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "5b6f3775-3e79-4269-a255-47ee3057265d",
+          "company": "EliseAI",
+          "role": "Associate Solutions Engineer | Housing",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "7a74322c-415a-41cb-8956-ee170d3bb267",
+          "company": "EliseAI",
+          "role": "GTM Engineer",
+          "fitScore": 8,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -90784,6 +91559,18 @@
           "key": "4418046077",
           "company": "Raydar",
           "role": "Software Engineer, Marketplace",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4420466743",
+          "company": "Raydar",
+          "role": "Backend Software Engineer",
           "fitScore": 8,
           "status": "Applied",
           "count": 1,
@@ -91266,6 +92053,18 @@
           "role": "Software Engineer",
           "fitScore": 7,
           "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4418273959",
+          "company": "Emonics LLC",
+          "role": "Software Engineer",
+          "fitScore": 7,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"

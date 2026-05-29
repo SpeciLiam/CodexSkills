@@ -2,27 +2,9 @@
   "applicationsPerDay": [
     {
       "archived": 0,
-      "date": "2026-05-19",
-      "manual": 0,
-      "submitted": 0
-    },
-    {
-      "archived": 7,
-      "date": "2026-05-20",
-      "manual": 1,
-      "submitted": 0
-    },
-    {
-      "archived": 0,
-      "date": "2026-05-21",
-      "manual": 0,
-      "submitted": 6
-    },
-    {
-      "archived": 1,
       "date": "2026-05-22",
-      "manual": 1,
-      "submitted": 13
+      "manual": 0,
+      "submitted": 11
     },
     {
       "archived": 0,
@@ -47,13 +29,41 @@
       "date": "2026-05-26",
       "manual": 0,
       "submitted": 0
+    },
+    {
+      "archived": 0,
+      "date": "2026-05-27",
+      "manual": 0,
+      "submitted": 5
+    },
+    {
+      "archived": 0,
+      "date": "2026-05-28",
+      "manual": 0,
+      "submitted": 0
+    },
+    {
+      "archived": 1,
+      "date": "2026-05-29",
+      "manual": 0,
+      "submitted": 10
     }
   ],
   "avgConfidenceBySource": [
     {
       "avgScore": 0.0,
       "band": "low",
+      "source": "Amazon Jobs"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
       "source": "Ashby"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "BambooHR"
     },
     {
       "avgScore": 0.0,
@@ -81,7 +91,7 @@
       "source": "Workday"
     }
   ],
-  "generatedAt": "2026-05-26T23:24:23.924937+00:00",
+  "generatedAt": "2026-05-29T06:38:02.360765+00:00",
   "intakeHealth": {
     "greenhouseCapturedToday": 0,
     "greenhouseLastRun": "",
@@ -91,20 +101,15 @@
   },
   "queueDepth": {
     "intakeUnprocessed": 165,
-    "manualApplyNeeded": 191,
+    "manualApplyNeeded": 190,
     "readyToApply": 0,
     "resumeTailored": 20
   },
   "submitSuccessRate": {
-    "archived": 0.148,
-    "manual": 0.037,
-    "submitted": 0.815
+    "archived": 0.019,
+    "manual": 0.0,
+    "submitted": 0.981
   },
-  "topBlockers": [
-    {
-      "count": 2,
-      "reason": "unspecified"
-    }
-  ],
+  "topBlockers": [],
   "windowDays": 7
 }
