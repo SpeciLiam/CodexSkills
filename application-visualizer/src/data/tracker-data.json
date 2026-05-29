@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T21:57:31.763518+00:00",
+  "generatedAt": "2026-05-29T22:03:15.358696+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 938,
-      "applied": 589,
-      "unapplied": 349,
+      "applied": 590,
+      "unapplied": 348,
       "active": 614,
       "rejected": 96,
       "interviewing": 5,
@@ -26,7 +26,7 @@
       "intakeNew": 56,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 62.8,
+      "applyRate": 62.9,
       "rejectionRate": 16.3,
       "recruiterWork": 511,
       "engineerWork": 690,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 484
+        "value": 485
       },
       {
         "name": "Archived",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 102
+        "value": 101
       },
       {
         "name": "Rejected",
@@ -524,7 +524,7 @@
         "date": "2026-05-10",
         "cumulative": 790,
         "added": 86,
-        "applied": 45,
+        "applied": 46,
         "rejected": 4,
         "interviewing": 1
       },
@@ -21836,8 +21836,8 @@
     {
       "company": "Anthropic",
       "role": "Applied AI Engineer, Life Sciences (Beneficial Deployments)",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -21852,12 +21852,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 19:10Z; tailored SWE resume rendered and verified one page; emphasized applied AI product engineering, customer-facing deployment workflows, evaluation and validation systems, backend APIs, model-adjacent tooling, and reliable delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Manual review needed 2026-05-29: application filled with correct resume attached; required Why Anthropic answer drafted and awaiting Liam approval before submit.",
+      "notes": "Hourly Greenhouse intake 2026-05-10 19:10Z; tailored SWE resume rendered and verified one page; emphasized applied AI product engineering, customer-facing deployment workflows, evaluation and validation systems, backend APIs, model-adjacent tooling, and reliable delivery. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Manual review needed 2026-05-29: application filled with correct resume attached; required Why Anthropic answer drafted and awaiting Liam approval before submit.; Application submitted 2026-05-29 via Greenhouse; confirmation page: Thank you for applying! Your application has been received.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
         "2026-05-10",
         "2026-05-10",
+        "2026-05-29",
         "2026-05-29"
       ]
     },
@@ -72566,7 +72567,7 @@
           "company": "Anthropic",
           "role": "Applied AI Engineer, Life Sciences (Beneficial Deployments)",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
