@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T21:09:28.570128+00:00",
+  "generatedAt": "2026-05-29T21:28:44.264866+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,9 +10,9 @@
   "stats": {
     "kpis": {
       "total": 938,
-      "applied": 581,
-      "unapplied": 357,
-      "active": 620,
+      "applied": 583,
+      "unapplied": 355,
+      "active": 617,
       "rejected": 96,
       "interviewing": 5,
       "assessments": 3,
@@ -26,9 +26,9 @@
       "intakeNew": 56,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 61.9,
+      "applyRate": 62.2,
       "rejectionRate": 16.5,
-      "recruiterWork": 516,
+      "recruiterWork": 513,
       "engineerWork": 690,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
@@ -36,15 +36,15 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 476
+        "value": 478
       },
       {
         "name": "Archived",
-        "value": 222
+        "value": 225
       },
       {
         "name": "Manual Apply Needed",
-        "value": 116
+        "value": 111
       },
       {
         "name": "Rejected",
@@ -524,7 +524,7 @@
         "date": "2026-05-10",
         "cumulative": 790,
         "added": 86,
-        "applied": 39,
+        "applied": 40,
         "rejected": 4,
         "interviewing": 1
       },
@@ -532,7 +532,7 @@
         "date": "2026-05-11",
         "cumulative": 822,
         "added": 32,
-        "applied": 17,
+        "applied": 18,
         "rejected": 5,
         "interviewing": 0
       },
@@ -21941,7 +21941,7 @@
       "company": "xAI",
       "role": "Exceptional Software Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -21956,19 +21956,20 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 12:16 PT; tailored SWE resume rendered and verified one page; emphasized applied AI software engineering, LLM applications, backend APIs, cloud validation, testing automation, and production reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "notes": "Hourly Greenhouse intake 2026-05-10 12:16 PT; tailored SWE resume rendered and verified one page; emphasized applied AI software engineering, LLM applications, backend APIs, cloud validation, testing automation, and production reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Archived 2026-05-29: posting closed on Greenhouse; page states job is no longer open.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-29"
       ]
     },
     {
       "company": "Tekmerion",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -21983,12 +21984,13 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 12:16 PT; tailored SWE resume rendered and verified one page; emphasized Bay Area software engineering, backend services, APIs, cloud workflows, testing, and production reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "notes": "Hourly Greenhouse intake 2026-05-10 12:16 PT; tailored SWE resume rendered and verified one page; emphasized Bay Area software engineering, backend services, APIs, cloud workflows, testing, and production reliability. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt blocked because Computer Use access was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Archived 2026-05-29: Greenhouse posting is no longer open; page redirected to Tekmerion board with error banner.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-29"
       ]
     },
     {
@@ -22820,8 +22822,8 @@
     {
       "company": "Thinking Machines Lab",
       "role": "Forward Deployed Engineer, Tinker",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -22836,11 +22838,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-10 22:06 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed AI product engineering, fine-tuning platform workflows, customer-facing delivery, backend APIs, testing, and reliable cloud systems. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-10 22:06 PT; tailored SWE resume rendered and verified one page; emphasized forward-deployed AI product engineering, fine-tuning platform workflows, customer-facing delivery, backend APIs, testing, and reliable cloud systems. Public Greenhouse capture used because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-10: tailored resume rendered and verified one page, but live Greenhouse application attempt is blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight.; Application submitted 2026-05-29; confirmation page: Thank you for applying to Thinking Machines! Your application has been received.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-29"
       ]
     },
     {
@@ -23283,7 +23286,7 @@
       "company": "Check",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -23298,10 +23301,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-11; tailored payroll platform/product engineering resume rendered and verified one page; emphasized Python/TypeScript full-stack delivery, APIs, product integrations, SQL-backed workflows, testing, and cloud reliability. Manual apply needed: live Greenhouse form review/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-11; tailored payroll platform/product engineering resume rendered and verified one page; emphasized Python/TypeScript full-stack delivery, APIs, product integrations, SQL-backed workflows, testing, and cloud reliability. Manual apply needed: live Greenhouse form review/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Archived 2026-05-29: Greenhouse posting URL returned Page not found; job board no longer active.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-29"
       ]
     },
     {
@@ -23599,8 +23603,8 @@
     {
       "company": "Grow Therapy",
       "role": "Web Frontend Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -23615,10 +23619,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed: live submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight 2026-05-11",
+      "notes": "Manual apply needed: live submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after the required delayed retry preflight 2026-05-11; Application submitted 2026-05-29; Confirmation page: Thank you for applying. We appreciate you taking the time to apply and your interest in helping us create mental healthcare that truly feels like care.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-29"
       ]
     },
     {
@@ -72631,18 +72636,6 @@
           "contacts": []
         },
         {
-          "key": "5823743004",
-          "company": "Check",
-          "role": "Software Engineer",
-          "fitScore": 9,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "7296759",
           "company": "Checkr",
           "role": "Software Engineer II",
@@ -73019,7 +73012,7 @@
           "company": "Grow Therapy",
           "role": "Web Frontend Engineer",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -73627,23 +73620,11 @@
           "contacts": []
         },
         {
-          "key": "4771091008",
-          "company": "Tekmerion",
-          "role": "Software Engineer",
-          "fitScore": 9,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "5202369008",
           "company": "Thinking Machines Lab",
           "role": "Forward Deployed Engineer, Tinker",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -73788,18 +73769,6 @@
           "role": "Software Engineer II/III/Senior, Gateway",
           "fitScore": 9,
           "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4639900007",
-          "company": "xAI",
-          "role": "Exceptional Software Engineer",
-          "fitScore": 9,
-          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
