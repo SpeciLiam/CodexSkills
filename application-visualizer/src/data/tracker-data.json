@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T19:33:01.652849+00:00",
+  "generatedAt": "2026-05-29T20:02:48.099420+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,9 +10,9 @@
   "stats": {
     "kpis": {
       "total": 936,
-      "applied": 576,
-      "unapplied": 360,
-      "active": 637,
+      "applied": 577,
+      "unapplied": 359,
+      "active": 629,
       "rejected": 96,
       "interviewing": 5,
       "assessments": 3,
@@ -26,9 +26,9 @@
       "intakeNew": 56,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 61.5,
-      "rejectionRate": 16.7,
-      "recruiterWork": 533,
+      "applyRate": 61.6,
+      "rejectionRate": 16.6,
+      "recruiterWork": 525,
       "engineerWork": 688,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
@@ -36,15 +36,15 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 471
+        "value": 472
       },
       {
         "name": "Archived",
-        "value": 203
+        "value": 211
       },
       {
         "name": "Manual Apply Needed",
-        "value": 138
+        "value": 129
       },
       {
         "name": "Rejected",
@@ -484,7 +484,7 @@
         "date": "2026-05-05",
         "cumulative": 542,
         "added": 34,
-        "applied": 15,
+        "applied": 16,
         "rejected": 3,
         "interviewing": 1
       },
@@ -15827,11 +15827,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly LinkedIn/Greenhouse intake 2026-05-05 15:00 PT; tailored SWE resume rendered and verified one page; emphasized security-focused Software Engineer II work, cloud services, secure backend systems, testing, observability, and scalable production delivery. Public capture used because Computer Use access to Chrome and Firefox was denied after required preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05",
+      "notes": "Hourly LinkedIn/Greenhouse intake 2026-05-05 15:00 PT; tailored SWE resume rendered and verified one page; emphasized security-focused Software Engineer II work, cloud services, secure backend systems, testing, observability, and scalable production delivery. Public capture used because Computer Use access to Chrome and Firefox was denied after required preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight; tailored resume rendered and verified one page 2026-05-05; Manual blocker 2026-05-29: application prepared with tailored resume and routine fields, but role requires active Top-Secret/SCI Security Clearance with Polygraph; truthful standing default is No.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-05",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-29"
       ]
     },
     {
@@ -16024,7 +16025,7 @@
       "company": "Wheels Up",
       "role": "Software Engineer II",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -16039,18 +16040,19 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-05 1905 PT; tailored SWE resume rendered and verified one page; emphasized remote/U.S. platform engineering, backend APIs, cloud-integrated product systems, testing, and production reliability. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-05.",
+      "notes": "Hourly intake 2026-05-05 1905 PT; tailored SWE resume rendered and verified one page; emphasized remote/U.S. platform engineering, backend APIs, cloud-integrated product systems, testing, and production reliability. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-05.; Archived 2026-05-29: LinkedIn posting shows no longer accepting applications.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-05",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-29"
       ]
     },
     {
       "company": "Microsoft AI",
       "role": "Software Engineer II",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -16065,11 +16067,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-05 1905 PT; tailored SWE resume rendered and verified one page; emphasized NYC AI platform security, identity and isolation systems, backend services, API validation, cloud reliability, testing, and production incident response. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-05.",
+      "notes": "Hourly intake 2026-05-05 1905 PT; tailored SWE resume rendered and verified one page; emphasized NYC AI platform security, identity and isolation systems, backend services, API validation, cloud reliability, testing, and production incident response. Did not claim direct company-specific domain ownership or unlisted framework experience.; Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-05.; Archived 2026-05-29: LinkedIn posting shows no longer accepting applications and no apply flow available.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-05",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-29"
       ]
     },
     {
@@ -16183,8 +16186,8 @@
     {
       "company": "Stripe",
       "role": "Backend Engineer, Core Technology",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -16199,11 +16202,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-05 21:04 PT; tailored SWE resume rendered and verified one page; emphasized NYC backend and platform engineering, API correctness, distributed systems, data workflows, production reliability, and testing. Public/degraded capture used because Computer Use access to Chrome and Firefox was denied after required preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-05.",
+      "notes": "Hourly intake 2026-05-05 21:04 PT; tailored SWE resume rendered and verified one page; emphasized NYC backend and platform engineering, API correctness, distributed systems, data workflows, production reliability, and testing. Public/degraded capture used because Computer Use access to Chrome and Firefox was denied after required preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-05.; Application submitted 2026-05-29 via Greenhouse with Liam_Van_Stripe.pdf; confirmation page displayed: Thank you for applying / Thank you for submitting your application to Stripe.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-05",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-29"
       ]
     },
     {
@@ -16237,7 +16241,7 @@
       "company": "Microsoft AI",
       "role": "Machine Learning Software Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -16252,11 +16256,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-05 21:04 PT; tailored SWE resume rendered and verified one page; emphasized NYC AI software engineering, ML-adjacent product systems, backend services, API validation, cloud reliability, testing, and production incident response. Public/degraded capture used because Computer Use access to Chrome and Firefox was denied after required preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-05.",
+      "notes": "Hourly intake 2026-05-05 21:04 PT; tailored SWE resume rendered and verified one page; emphasized NYC AI software engineering, ML-adjacent product systems, backend services, API validation, cloud reliability, testing, and production incident response. Public/degraded capture used because Computer Use access to Chrome and Firefox was denied after required preflight.; Manual apply needed: not automation-accessible because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-05.; Archived 2026-05-29: LinkedIn job page reports the job id is invalid or the posting has been removed.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-05",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-29"
       ]
     },
     {
@@ -17171,7 +17176,7 @@
       "company": "Colgate-Palmolive",
       "role": "AI Engineer/ Forward Deployed Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -17186,10 +17191,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight; Archived 2026-05-29: LinkedIn posting shows no longer accepting applications.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-29"
       ]
     },
     {
@@ -17222,7 +17228,7 @@
       "company": "Ascertain",
       "role": "Forward Deployed Engineer - NYC",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -17237,17 +17243,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight; Archived 2026-05-29: LinkedIn posting shows no longer accepting applications.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-29"
       ]
     },
     {
       "company": "Applied Systems",
       "role": "Associate Software Engineer / Software Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -17262,10 +17269,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight; Archived 2026-05-29: LinkedIn posting shows no longer accepting applications.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-29"
       ]
     },
     {
@@ -17350,7 +17358,7 @@
       "company": "Cisco",
       "role": "Software Engineer I (Full Time) - United States",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -17365,10 +17373,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored for LinkedIn Software Engineer I cloud/software posting; emphasized Java/Python, cloud backend APIs, GCP/OCI/AWS tooling, AI-assisted testing, release validation, and product engineering. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-06.",
+      "notes": "Tailored for LinkedIn Software Engineer I cloud/software posting; emphasized Java/Python, cloud backend APIs, GCP/OCI/AWS tooling, AI-assisted testing, release validation, and product engineering. Manual apply needed: Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight 2026-05-06.; Archived 2026-05-29: LinkedIn posting shows no longer accepting applications.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-29"
       ]
     },
     {
@@ -18074,7 +18083,7 @@
       "company": "Assurant",
       "role": "Associate Software Engineer (.NET)",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -18089,11 +18098,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06 from adjacent verified template because generic-resume is absent locally; emphasized associate .NET software engineering, C# services, APIs, databases, Azure-adjacent backend development, Git workflows, and early-career production delivery. Manual apply needed: Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06.",
+      "notes": "Tailored 2026-05-06 from adjacent verified template because generic-resume is absent locally; emphasized associate .NET software engineering, C# services, APIs, databases, Azure-adjacent backend development, Git workflows, and early-career production delivery. Manual apply needed: Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-06.; Archived 2026-05-29: LinkedIn posting shows no longer accepting applications.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-06",
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-29"
       ]
     },
     {
@@ -70189,18 +70199,6 @@
           "contacts": []
         },
         {
-          "key": "associate-software-engineer-software-engineer-at-applied-systems-4400119719",
-          "company": "Applied Systems",
-          "role": "Associate Software Engineer / Software Engineer",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "4409014859",
           "company": "Aquatic Capital Management",
           "role": "Software Engineer, Early Career",
@@ -70237,18 +70235,6 @@
           "contacts": []
         },
         {
-          "key": "forward-deployed-engineer-nyc-at-ascertain-4367631462",
-          "company": "Ascertain",
-          "role": "Forward Deployed Engineer - NYC",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "4691426005",
           "company": "AssemblyAI",
           "role": "Forward Deployed Engineer",
@@ -70278,18 +70264,6 @@
           "role": "Backend Engineer",
           "fitScore": 10,
           "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "associate-software-engineer-net-at-assurant-4344223933",
-          "company": "Assurant",
-          "role": "Associate Software Engineer (.NET)",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -70573,18 +70547,6 @@
           "contacts": []
         },
         {
-          "key": "4367615242",
-          "company": "Cisco",
-          "role": "Software Engineer I (Full Time) - United States",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "4411715287",
           "company": "Citi",
           "role": "Junior Generative AI Application Developer",
@@ -70662,18 +70624,6 @@
           "role": "Software Engineer",
           "fitScore": 10,
           "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "ai-engineer-forward-deployed-engineer-at-colgate-palmolive-4377208045",
-          "company": "Colgate-Palmolive",
-          "role": "AI Engineer/ Forward Deployed Engineer",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -71248,30 +71198,6 @@
           "key": "software-engineering-ic3-at-microsoft-4342545143",
           "company": "Microsoft",
           "role": "Software Engineer II - CTJ - Poly",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "software-engineer-ii-at-microsoft-ai-4403126655",
-          "company": "Microsoft AI",
-          "role": "Software Engineer II",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "linkedin-public-microsoft-ai-machine-learning-software-engineer-ny-2026-05-06",
-          "company": "Microsoft AI",
-          "role": "Machine Learning Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -71933,7 +71859,7 @@
           "company": "Stripe",
           "role": "Backend Engineer, Core Technology",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -72330,18 +72256,6 @@
           "role": "Forward Deployed Engineer",
           "fitScore": 10,
           "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "software-engineer-ii-at-wheels-up-4402765311",
-          "company": "Wheels Up",
-          "role": "Software Engineer II",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
