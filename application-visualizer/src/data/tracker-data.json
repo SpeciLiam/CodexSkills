@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T06:38:02.286017+00:00",
+  "generatedAt": "2026-05-29T06:56:19.034481+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,9 +10,9 @@
   "stats": {
     "kpis": {
       "total": 936,
-      "applied": 573,
-      "unapplied": 363,
-      "active": 688,
+      "applied": 574,
+      "unapplied": 362,
+      "active": 684,
       "rejected": 96,
       "interviewing": 5,
       "assessments": 3,
@@ -26,9 +26,9 @@
       "intakeNew": 56,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 61.2,
-      "rejectionRate": 16.8,
-      "recruiterWork": 584,
+      "applyRate": 61.3,
+      "rejectionRate": 16.7,
+      "recruiterWork": 580,
       "engineerWork": 688,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
@@ -36,15 +36,15 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 468
+        "value": 469
       },
       {
         "name": "Manual Apply Needed",
-        "value": 192
+        "value": 187
       },
       {
         "name": "Archived",
-        "value": 152
+        "value": 156
       },
       {
         "name": "Rejected",
@@ -524,7 +524,7 @@
         "date": "2026-05-10",
         "cumulative": 790,
         "added": 86,
-        "applied": 38,
+        "applied": 39,
         "rejected": 4,
         "interviewing": 1
       },
@@ -20734,7 +20734,7 @@
       "company": "Writer",
       "role": "Forward Deployed Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -20749,17 +20749,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-10 degraded Greenhouse capture; general SWE resume rendered and verified one page for forward-deployed applied-AI/customer engineering. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly intake 2026-05-10 degraded Greenhouse capture; general SWE resume rendered and verified one page for forward-deployed applied-AI/customer engineering. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Archived 2026-05-29: Greenhouse page says the job board is no longer active.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-29"
       ]
     },
     {
       "company": "Valon",
       "role": "Software Engineer, Product",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -20774,10 +20775,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-10 degraded Greenhouse capture; resume rendered and verified one page; used general SWE framing for product/full-stack fintech engineering. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly intake 2026-05-10 degraded Greenhouse capture; resume rendered and verified one page; used general SWE framing for product/full-stack fintech engineering. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Archived 2026-05-29: Greenhouse page says the job board is no longer active.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-29"
       ]
     },
     {
@@ -21948,8 +21950,8 @@
     {
       "company": "tvScientific",
       "role": "Software Engineer II, Simulation, tvScientific",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -21964,11 +21966,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight. Form also has required voluntary demographic selects that need Liam standing-answer confirmation if browser access is restored.; Manual review needed 2026-05-15: interrupted form not safe to submit; resume missing, LinkedIn/website fields corrupted, required dropdowns blank.",
+      "notes": "Manual apply needed 2026-05-10: tailored resume rendered and verified one page; live Greenhouse application attempt blocked because Computer Use approval was denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight. Form also has required voluntary demographic selects that need Liam standing-answer confirmation if browser access is restored.; Manual review needed 2026-05-15: interrupted form not safe to submit; resume missing, LinkedIn/website fields corrupted, required dropdowns blank.; Application submitted 2026-05-29 via Greenhouse; confirmation page: Thank you for applying. Your application has been received. If there is a fit, someone will be getting back to you.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-10",
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-29"
       ]
     },
     {
@@ -22981,7 +22984,7 @@
       "company": "Harmonic",
       "role": "Full Stack Product Engineer (AI), Search",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -22996,10 +22999,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-11; tailored SWE resume rendered and verified one page; emphasized Python/React full-stack product engineering, AI/search/retrieval workflows, LLM recommendations, backend APIs, and customer-facing delivery. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight, preventing live Greenhouse form review and submission.",
+      "notes": "Hourly intake 2026-05-11; tailored SWE resume rendered and verified one page; emphasized Python/React full-stack product engineering, AI/search/retrieval workflows, LLM recommendations, backend APIs, and customer-facing delivery. Manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight, preventing live Greenhouse form review and submission.; Archived 2026-05-29: Greenhouse posting redirects with message that the job is no longer open.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-29"
       ]
     },
     {
@@ -23366,7 +23370,7 @@
       "company": "Addepar",
       "role": "Software Engineer - Portfolio Services",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -23381,11 +23385,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-11 16:04 PT; tailored SWE resume rendered and verified one page; emphasized NYC backend portfolio-services engineering, financial data workflows, API services, platform reliability, data validation, and cross-functional delivery. Public Greenhouse capture used because Computer Use access to Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-11: tailored resume rendered and verified one page, but live Greenhouse form review/submission is blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback.",
+      "notes": "Hourly Greenhouse intake 2026-05-11 16:04 PT; tailored SWE resume rendered and verified one page; emphasized NYC backend portfolio-services engineering, financial data workflows, API services, platform reliability, data validation, and cross-functional delivery. Public Greenhouse capture used because Computer Use access to Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after the required delayed retry preflight.; Manual apply needed 2026-05-11: tailored resume rendered and verified one page, but live Greenhouse form review/submission is blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback.; Archived 2026-05-29: Greenhouse posting redirects to board with error=true and live board no longer contains posting 8451446002.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-11",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-29"
       ]
     },
     {
@@ -70132,18 +70137,6 @@
           "contacts": []
         },
         {
-          "key": "8451446002",
-          "company": "Addepar",
-          "role": "Software Engineer - Portfolio Services",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "8539734002",
           "company": "Addepar",
           "role": "Backend Software Engineer - Precompute",
@@ -71361,18 +71354,6 @@
           "role": "Software Engineer I, RLE",
           "fitScore": 10,
           "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4590192005",
-          "company": "Harmonic",
-          "role": "Full Stack Product Engineer (AI), Search",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -72772,18 +72753,6 @@
           "contacts": []
         },
         {
-          "key": "5629764004",
-          "company": "Valon",
-          "role": "Software Engineer, Product",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "5798406004",
           "company": "Vercel",
           "role": "Software Engineer, AI Gateway",
@@ -72916,18 +72885,6 @@
           "contacts": []
         },
         {
-          "key": "4809387007",
-          "company": "Writer",
-          "role": "Forward Deployed Engineer",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "7734432003",
           "company": "XTX Markets",
           "role": "Software Engineer - Trading System Developer",
@@ -73004,7 +72961,7 @@
           "company": "tvScientific",
           "role": "Software Engineer II, Simulation, tvScientific",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
