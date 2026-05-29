@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T22:03:15.358696+00:00",
+  "generatedAt": "2026-05-29T22:24:14.769318+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,9 +10,9 @@
   "stats": {
     "kpis": {
       "total": 938,
-      "applied": 590,
-      "unapplied": 348,
-      "active": 614,
+      "applied": 592,
+      "unapplied": 346,
+      "active": 612,
       "rejected": 96,
       "interviewing": 5,
       "assessments": 3,
@@ -26,9 +26,9 @@
       "intakeNew": 56,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 62.9,
-      "rejectionRate": 16.3,
-      "recruiterWork": 511,
+      "applyRate": 63.1,
+      "rejectionRate": 16.2,
+      "recruiterWork": 509,
       "engineerWork": 690,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
@@ -36,15 +36,15 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 485
+        "value": 487
       },
       {
         "name": "Archived",
-        "value": 228
+        "value": 230
       },
       {
         "name": "Manual Apply Needed",
-        "value": 101
+        "value": 97
       },
       {
         "name": "Rejected",
@@ -516,7 +516,7 @@
         "date": "2026-05-09",
         "cumulative": 704,
         "added": 56,
-        "applied": 15,
+        "applied": 17,
         "rejected": 3,
         "interviewing": 0
       },
@@ -19301,8 +19301,8 @@
     {
       "company": "Navier AI",
       "role": "Backend Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -19317,17 +19317,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-09 from public Greenhouse capture; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback, so the Greenhouse application could not be safely opened/submitted.",
+      "notes": "Tailored 2026-05-09 from public Greenhouse capture; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback, so the Greenhouse application could not be safely opened/submitted.; Application submitted 2026-05-29",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-29"
       ]
     },
     {
       "company": "LaunchDarkly",
       "role": "Backend Engineer, AI",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -19342,10 +19343,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-09 from public Greenhouse capture; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback, so the Greenhouse application could not be safely opened/submitted.",
+      "notes": "Tailored 2026-05-09 from public Greenhouse capture; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback, so the Greenhouse application could not be safely opened/submitted.; Archived 2026-05-29: Greenhouse posting is closed and redirects to LaunchDarkly current openings.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-29"
       ]
     },
     {
@@ -19604,18 +19606,19 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-09 02:04 PT; captured from Greenhouse public board/search, tailored resume rendered and verified one page; Manual apply needed: application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-09.",
+      "notes": "Hourly intake 2026-05-09 02:04 PT; captured from Greenhouse public board/search, tailored resume rendered and verified one page; Manual apply needed: application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-09.; Manual review needed 2026-05-29: form filled with Chime resume attached; required former-employer/third-party agreement question needs Liam answer before submit.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-09",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-29"
       ]
     },
     {
       "company": "Chime",
       "role": "Software Engineer, MyPay",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "",
@@ -19630,11 +19633,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-09 02:04 PT; captured from Greenhouse public board/search, tailored resume rendered and verified one page; Manual apply needed: application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-09.",
+      "notes": "Hourly intake 2026-05-09 02:04 PT; captured from Greenhouse public board/search, tailored resume rendered and verified one page; Manual apply needed: application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-09.; Application submitted 2026-05-29",
       "noteLinks": [],
       "activityDates": [
         "2026-05-09",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-29"
       ]
     },
     {
@@ -19771,7 +19775,7 @@
       "company": "Chime",
       "role": "Software Engineer, Growth",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -19786,10 +19790,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly Greenhouse intake 2026-05-09; tailored growth/product SWE resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly Greenhouse intake 2026-05-09; tailored growth/product SWE resume rendered and verified one page; application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Archived 2026-05-29: Greenhouse URL redirects to Chime careers search and live board search returned no matching Software Engineer, Growth posting.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-29"
       ]
     },
     {
@@ -72687,19 +72692,7 @@
           "company": "Chime",
           "role": "Software Engineer, MyPay",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "7913323002",
-          "company": "Chime",
-          "role": "Software Engineer, Growth",
-          "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -73115,18 +73108,6 @@
           "contacts": []
         },
         {
-          "key": "7649833003",
-          "company": "LaunchDarkly",
-          "role": "Backend Engineer, AI",
-          "fitScore": 9,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "4354352768",
           "company": "Lead",
           "role": "Software Engineer II",
@@ -73263,7 +73244,7 @@
           "company": "Navier AI",
           "role": "Backend Engineer",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"

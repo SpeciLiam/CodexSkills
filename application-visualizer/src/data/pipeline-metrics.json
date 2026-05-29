@@ -43,10 +43,10 @@
       "submitted": 0
     },
     {
-      "archived": 18,
+      "archived": 20,
       "date": "2026-05-29",
-      "manual": 0,
-      "submitted": 27
+      "manual": 1,
+      "submitted": 29
     }
   ],
   "avgConfidenceBySource": [
@@ -91,7 +91,7 @@
       "source": "Workday"
     }
   ],
-  "generatedAt": "2026-05-29T22:03:15.420413+00:00",
+  "generatedAt": "2026-05-29T22:24:14.829728+00:00",
   "intakeHealth": {
     "greenhouseCapturedToday": 0,
     "greenhouseLastRun": "",
@@ -101,15 +101,20 @@
   },
   "queueDepth": {
     "intakeUnprocessed": 165,
-    "manualApplyNeeded": 100,
+    "manualApplyNeeded": 96,
     "readyToApply": 0,
     "resumeTailored": 20
   },
   "submitSuccessRate": {
-    "archived": 0.24,
-    "manual": 0.0,
-    "submitted": 0.76
+    "archived": 0.25,
+    "manual": 0.013,
+    "submitted": 0.738
   },
-  "topBlockers": [],
+  "topBlockers": [
+    {
+      "count": 1,
+      "reason": "unspecified"
+    }
+  ],
   "windowDays": 7
 }
