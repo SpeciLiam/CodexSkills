@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T20:13:42.817815+00:00",
+  "generatedAt": "2026-05-29T20:51:54.491317+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 936,
-      "applied": 577,
-      "unapplied": 359,
-      "active": 626,
+      "total": 938,
+      "applied": 580,
+      "unapplied": 358,
+      "active": 623,
       "rejected": 96,
       "interviewing": 5,
       "assessments": 3,
-      "highFit": 789,
-      "reachOut": 854,
+      "highFit": 791,
+      "reachOut": 856,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,25 +26,25 @@
       "intakeNew": 56,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 61.6,
+      "applyRate": 61.8,
       "rejectionRate": 16.6,
-      "recruiterWork": 522,
-      "engineerWork": 688,
+      "recruiterWork": 519,
+      "engineerWork": 690,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 472
+        "value": 475
       },
       {
         "name": "Archived",
-        "value": 214
+        "value": 219
       },
       {
         "name": "Manual Apply Needed",
-        "value": 126
+        "value": 120
       },
       {
         "name": "Rejected",
@@ -66,7 +66,7 @@
     "sourceCounts": [
       {
         "name": "Greenhouse",
-        "value": 432
+        "value": 434
       },
       {
         "name": "LinkedIn",
@@ -160,7 +160,7 @@
       },
       {
         "name": "Remote",
-        "value": 127
+        "value": 129
       },
       {
         "name": "Seattle",
@@ -182,11 +182,11 @@
       },
       {
         "name": "Full Stack",
-        "value": 117
+        "value": 118
       },
       {
         "name": "Backend",
-        "value": 100
+        "value": 101
       },
       {
         "name": "AI/ML",
@@ -248,7 +248,7 @@
       },
       {
         "score": "10",
-        "count": 437
+        "count": 439
       }
     ],
     "targetCounts": [
@@ -548,7 +548,7 @@
         "date": "2026-05-13",
         "cumulative": 904,
         "added": 30,
-        "applied": 13,
+        "applied": 14,
         "rejected": 1,
         "interviewing": 0
       },
@@ -605,6 +605,14 @@
         "cumulative": 936,
         "added": 9,
         "applied": 9,
+        "rejected": 0,
+        "interviewing": 0
+      },
+      {
+        "date": "2026-05-29",
+        "cumulative": 938,
+        "added": 2,
+        "applied": 2,
         "rejected": 0,
         "interviewing": 0
       }
@@ -23982,7 +23990,7 @@
       "company": "Vercel",
       "role": "Software Engineer, v0",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -23997,17 +24005,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Archived 2026-05-29: Greenhouse redirected to Vercel jobs board with message that the job is no longer open.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-29"
       ]
     },
     {
       "company": "Speechmatics",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -24022,10 +24031,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Posting closed 2026-05-29: Greenhouse redirected to Speechmatics jobs board with no-longer-open message.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-29"
       ]
     },
     {
@@ -24493,7 +24503,7 @@
       "company": "Persona",
       "role": "Software Engineer, Product",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "",
@@ -24508,11 +24518,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; tailored for product alignment in this intake pass",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; tailored for product alignment in this intake pass; Archived 2026-05-29: Greenhouse Persona job board redirects to Page not found / inactive board.",
       "noteLinks": [],
       "activityDates": [
         "2026-05-12",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-29"
       ]
     },
     {
@@ -24546,7 +24557,7 @@
       "company": "Thatch",
       "role": "Software Engineer: Foundations",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -24561,17 +24572,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Archived 2026-05-29: Greenhouse posting closed/removed; replaced with live Thatch Product Engagement and Backend roles.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-29"
       ]
     },
     {
       "company": "Redwood Materials",
       "role": "DevOps Software Engineer, Energy Storage",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -24586,10 +24598,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Archived 2026-05-29: Greenhouse posting redirects to Redwood Materials general Join Us page and active listings omit this role.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-29"
       ]
     },
     {
@@ -24787,10 +24800,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; tailored for fde alignment in this intake pass",
+      "notes": "Manual apply needed 2026-05-12: tailored resume rendered and verified one page; live Greenhouse submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; tailored for fde alignment in this intake pass; Skipped 2026-05-29 at Liam's request while finishing Thatch Backend replacement.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-29"
       ]
     },
     {
@@ -25960,8 +25974,8 @@
     {
       "company": "Edison Scientific",
       "role": "Frontend Software Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -25976,10 +25990,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly recruiting intake 2026-05-13; tailored frontend/product resume rendered and verified one page; emphasized React/TypeScript UI, AI workflow product surfaces, reusable components, Supabase/realtime, Sentry, backend API integration, and scientific-style data review. Manual apply needed: live Greenhouse application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Hourly recruiting intake 2026-05-13; tailored frontend/product resume rendered and verified one page; emphasized React/TypeScript UI, AI workflow product surfaces, reusable components, Supabase/realtime, Sentry, backend API integration, and scientific-style data review. Manual apply needed: live Greenhouse application/submission blocked because Computer Use approval was denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Application submitted 2026-05-29",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-29"
       ]
     },
     {
@@ -26760,6 +26775,58 @@
       "notes": "Application submitted 2026-05-29",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Thatch",
+      "role": "Software Engineer: Full Stack, Product Engagement",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Remote (US); San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://thatch.com/jobs/software-engineer-full-stack-product-engagement-5171664008",
+      "postingKey": "software-engineer-full-stack-product-engagement-5171664008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Thatch/Software_Engineer_Full_Stack_Product_Engagement/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Thatch/Software_Engineer_Full_Stack_Product_Engagement/Liam_Van_Resume/Liam_Van_Thatch.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Replacement Thatch role added 2026-05-29 after Software Engineer: Foundations posting closed; live Thatch posting 5171664008 for Product Engagement full-stack engineering. Tailored Thatch resume reused from verified one-page full-stack Thatch resume.; Application submitted 2026-05-29 via Thatch careers confirmation page: Application submitted successfully. Thank you for your interest. We will review your application and get in touch with you soon.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29",
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Thatch",
+      "role": "Software Engineer: Backend",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Remote (US); San Francisco, California, United States",
+      "source": "Greenhouse",
+      "jobLink": "https://thatch.com/jobs/software-engineer-backend-5113759008",
+      "postingKey": "software-engineer-backend-5113759008",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Thatch/Software_Engineer_Backend/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Thatch/Software_Engineer_Backend/Liam_Van_Resume/Liam_Van_Thatch.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Replacement Thatch role added 2026-05-29 after Software Engineer: Foundations posting closed; live Thatch posting 5113759008 for backend systems, fund flows, integrations, and reliable benefits infrastructure. Tailored Thatch resume reused from verified one-page backend/API-focused Thatch resume.; Application submitted 2026-05-29 via Thatch careers confirmation page: Application submitted successfully. Thank you for your interest. We will review your application and get in touch with you soon.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29",
         "2026-05-29"
       ]
     }
@@ -40606,6 +40673,32 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Thatch",
+      "role": "Software Engineer: Full Stack, Product Engagement",
+      "postingKey": "software-engineer-full-stack-product-engagement-5171664008",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://thatch.com/jobs/software-engineer-full-stack-product-engagement-5171664008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Thatch",
+      "role": "Software Engineer: Backend",
+      "postingKey": "software-engineer-backend-5113759008",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://thatch.com/jobs/software-engineer-backend-5113759008",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -71980,6 +72073,30 @@
           "contacts": []
         },
         {
+          "key": "software-engineer-full-stack-product-engagement-5171664008",
+          "company": "Thatch",
+          "role": "Software Engineer: Full Stack, Product Engagement",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-backend-5113759008",
+          "company": "Thatch",
+          "role": "Software Engineer: Backend",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4680447005",
           "company": "The New York Times",
           "role": "Software Engineer AI Platforms and Products Frontend",
@@ -72728,7 +72845,7 @@
           "company": "Edison Scientific",
           "role": "Frontend Software Engineer",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -73288,18 +73405,6 @@
           "contacts": []
         },
         {
-          "key": "7862464002",
-          "company": "Persona",
-          "role": "Software Engineer, Product",
-          "fitScore": 9,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "8516101002",
           "company": "Pilot.com",
           "role": "Software Engineer",
@@ -73365,18 +73470,6 @@
           "role": "Software Engineer",
           "fitScore": 9,
           "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "5737848004",
-          "company": "Redwood Materials",
-          "role": "DevOps Software Engineer, Energy Storage",
-          "fitScore": 9,
-          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -73492,18 +73585,6 @@
           "contacts": []
         },
         {
-          "key": "4830644007",
-          "company": "Speechmatics",
-          "role": "Software Engineer",
-          "fitScore": 9,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "4689411005",
           "company": "Spot & Tango",
           "role": "Software Engineer, Full Stack",
@@ -73579,18 +73660,6 @@
           "key": "4771091008",
           "company": "Tekmerion",
           "role": "Software Engineer",
-          "fitScore": 9,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "4615090008",
-          "company": "Thatch",
-          "role": "Software Engineer: Foundations",
           "fitScore": 9,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -73701,18 +73770,6 @@
           "role": "Forward Deployed Engineer",
           "fitScore": 9,
           "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "5634793004",
-          "company": "Vercel",
-          "role": "Software Engineer, v0",
-          "fitScore": 9,
-          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -88139,6 +88196,30 @@
           "key": "5113761008",
           "company": "Thatch",
           "role": "Software Engineer: Full Stack",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-full-stack-product-engagement-5171664008",
+          "company": "Thatch",
+          "role": "Software Engineer: Full Stack, Product Engagement",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "software-engineer-backend-5113759008",
+          "company": "Thatch",
+          "role": "Software Engineer: Backend",
           "fitScore": 10,
           "status": "Applied",
           "count": 1,
