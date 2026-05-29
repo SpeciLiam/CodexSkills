@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T19:06:42.084910+00:00",
+  "generatedAt": "2026-05-29T19:33:01.652849+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,9 +10,9 @@
   "stats": {
     "kpis": {
       "total": 936,
-      "applied": 575,
-      "unapplied": 361,
-      "active": 646,
+      "applied": 576,
+      "unapplied": 360,
+      "active": 637,
       "rejected": 96,
       "interviewing": 5,
       "assessments": 3,
@@ -26,9 +26,9 @@
       "intakeNew": 56,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 61.4,
+      "applyRate": 61.5,
       "rejectionRate": 16.7,
-      "recruiterWork": 542,
+      "recruiterWork": 533,
       "engineerWork": 688,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
@@ -36,15 +36,15 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 470
+        "value": 471
       },
       {
         "name": "Archived",
-        "value": 194
+        "value": 203
       },
       {
         "name": "Manual Apply Needed",
-        "value": 148
+        "value": 138
       },
       {
         "name": "Rejected",
@@ -492,7 +492,7 @@
         "date": "2026-05-06",
         "cumulative": 611,
         "added": 69,
-        "applied": 32,
+        "applied": 33,
         "rejected": 4,
         "interviewing": 0
       },
@@ -16963,7 +16963,7 @@
       "company": "Scaled Cognition",
       "role": "Forward Deployed Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -16978,10 +16978,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight; Archived 2026-05-29: LinkedIn posting shows no longer accepting applications.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-29"
       ]
     },
     {
@@ -17039,8 +17040,8 @@
     {
       "company": "JPMorganChase",
       "role": "Software Engineer II - Fullstack - Python/React",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -17055,10 +17056,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight; Application submitted 2026-05-29; portal status Under Consideration, applied on 05/29/2026.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-29"
       ]
     },
     {
@@ -17143,7 +17145,7 @@
       "company": "CoreWeave",
       "role": "Forward Deployed Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -17158,10 +17160,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox was denied after required delayed retry preflight; Archived 2026-05-29: LinkedIn posting shows no longer accepting applications.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-29"
       ]
     },
     {
@@ -17532,7 +17535,7 @@
       "company": "PointOne",
       "role": "New Grad Software Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -17547,17 +17550,18 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight.",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight.; Archived 2026-05-29: LinkedIn posting shows no longer accepting applications and no application form available.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-29"
       ]
     },
     {
       "company": "OPIA Associates",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -17572,10 +17576,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight.",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required retry preflight.; Archived 2026-05-29: LinkedIn page says No longer accepting applications.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-29"
       ]
     },
     {
@@ -17664,7 +17669,7 @@
       "company": "Intuit",
       "role": "Software Engineer 1 - Fullstack",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -17679,10 +17684,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; manual apply needed because Computer Use access to Chrome/com.google.Chrome and Firefox/org.mozilla.firefox denied after required delayed retry preflight; Archived 2026-05-29: LinkedIn page says job id may not be valid or posting has been removed.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-29"
       ]
     },
     {
@@ -17798,7 +17804,7 @@
       "company": "Uber",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -17813,10 +17819,11 @@
       "recruiterProfile": "https://www.linkedin.com/in/shweta-r-mba-cdr/",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-06; resume rendered and verified one page; verified Shweta R. as current Uber Senior Talent Acquisition Specialist building North America engineering teams; LinkedIn invite already pending from prior Uber outreach; manual apply needed because Uber Careers requires account sign-in with password before any application fields are available, and no optional cover letter field was reachable before the gate.",
+      "notes": "Tailored 2026-05-06; resume rendered and verified one page; verified Shweta R. as current Uber Senior Talent Acquisition Specialist building North America engineering teams; LinkedIn invite already pending from prior Uber outreach; manual apply needed because Uber Careers requires account sign-in with password before any application fields are available, and no optional cover letter field was reachable before the gate.; Archived 2026-05-29: LinkedIn posting shows no longer accepting applications and no apply button available.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-29"
       ]
     },
     {
@@ -19999,7 +20006,7 @@
       "company": "ChatGPT Jobs / Flamingo",
       "role": "Software Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "No",
@@ -20014,10 +20021,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight.; Archived 2026-05-29: LinkedIn posting reports no longer accepting applications.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-29"
       ]
     },
     {
@@ -20256,7 +20264,7 @@
       "company": "DRW",
       "role": "Full Stack Engineer, Blockchain Product",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -20271,10 +20279,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; Archived 2026-05-29: LinkedIn posting shows no longer accepting applications.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-29"
       ]
     },
     {
@@ -20333,7 +20342,7 @@
       "company": "Ascertain",
       "role": "Backend Software Engineer",
       "applied": false,
-      "status": "Manual Apply Needed",
+      "status": "Archived",
       "fitScore": 10,
       "reachOut": true,
       "referral": "",
@@ -20348,10 +20357,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight",
+      "notes": "Tailored 2026-05-09; resume rendered and verified one page; manual apply needed because Computer Use approval denied for Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight; LinkedIn shows No longer accepting applications on 2026-05-29",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-29"
       ]
     },
     {
@@ -69937,40 +69947,6 @@
           ]
         },
         {
-          "key": "4408817630",
-          "company": "Uber",
-          "role": "Software Engineer",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Labeled, needs approval"
-          ],
-          "contacts": [
-            {
-              "lane": "recruiter",
-              "name": "Shweta R.",
-              "profile": "https://www.linkedin.com/in/shweta-r-mba-cdr/",
-              "position": "Saved on application row",
-              "approval": "",
-              "outcome": "Not reached out",
-              "route": "application-tracker",
-              "connectionNote": "",
-              "sentDate": "2026-05-06",
-              "source": "application-tracker",
-              "lastChecked": "2026-05-06",
-              "notes": "Active application needs recruiter outreach.",
-              "recruiterSignal": {
-                "alumniMatch": false,
-                "seniority": "unknown",
-                "whyThisPerson": "",
-                "recruiterType": "in_house",
-                "ownsRole": null
-              }
-            }
-          ]
-        },
-        {
           "key": "4411459497",
           "company": "Astronomer",
           "role": "Software Engineer - Data Plane Management",
@@ -70264,18 +70240,6 @@
           "key": "forward-deployed-engineer-nyc-at-ascertain-4367631462",
           "company": "Ascertain",
           "role": "Forward Deployed Engineer - NYC",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "backend-software-engineer-at-ascertain-4328114725",
-          "company": "Ascertain",
-          "role": "Backend Software Engineer",
           "fitScore": 10,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -70597,18 +70561,6 @@
           "contacts": []
         },
         {
-          "key": "software-engineer-at-chatgpt-jobs-4357811639",
-          "company": "ChatGPT Jobs / Flamingo",
-          "role": "Software Engineer",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "8219793002",
           "company": "Chime",
           "role": "Software Engineer, Credit Risk Platform",
@@ -70770,30 +70722,6 @@
           "role": "AI-Native Software Engineer",
           "fitScore": 10,
           "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "forward-deployed-engineer-at-coreweave-4373404097",
-          "company": "CoreWeave",
-          "role": "Forward Deployed Engineer",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "full-stack-engineer-blockchain-product-at-drw-4342884810",
-          "company": "DRW",
-          "role": "Full Stack Engineer, Blockchain Product",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -71197,23 +71125,11 @@
           "contacts": []
         },
         {
-          "key": "linkedin-public-intuit-swe-1-fullstack-ny-2026-05-06-0935",
-          "company": "Intuit",
-          "role": "Software Engineer 1 - Fullstack",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "software-engineer-ii-fullstack-python-react-at-jpmorganchase-4397428728",
           "company": "JPMorganChase",
           "role": "Software Engineer II - Fullstack - Python/React",
           "fitScore": 10,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -71430,18 +71346,6 @@
           "role": "Software Engineer",
           "fitScore": 10,
           "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "founding-engineer-at-opia-associates-4354638985",
-          "company": "OPIA Associates",
-          "role": "Software Engineer",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -71725,18 +71629,6 @@
           "contacts": []
         },
         {
-          "key": "new-grad-software-engineer-at-pointone-4400038260",
-          "company": "PointOne",
-          "role": "New Grad Software Engineer",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
           "key": "4409992312",
           "company": "Quantcast",
           "role": "Software Engineer (Full Stack)",
@@ -71934,18 +71826,6 @@
           "role": "Forward Deployed Engineer, GenAI",
           "fitScore": 10,
           "status": "Applied",
-          "count": 1,
-          "states": [
-            "Needs label"
-          ],
-          "contacts": []
-        },
-        {
-          "key": "forward-deployed-engineer-at-scaled-cognition-4392389111",
-          "company": "Scaled Cognition",
-          "role": "Forward Deployed Engineer",
-          "fitScore": 10,
-          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
