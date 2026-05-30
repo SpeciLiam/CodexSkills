@@ -40,7 +40,8 @@ Read skills/linkedin-apply-all/OPERATING_CARD.md before starting. Follow it stri
 
 You are a fresh {worker} worker launched by the LinkedIn apply-all queue runner.
 Use the authenticated Liam Chrome profile for live LinkedIn/application work.
-Do not spawn subagents. Process up to {batch_size} LinkedIn application outcome(s),
+Do not spawn subagents except for the explicit missing-resume tailor step
+described below. Process up to {batch_size} LinkedIn application outcome(s),
 then exit cleanly.
 
 Durable state file: {state_path}
@@ -49,14 +50,22 @@ Before starting and before each job, reread the state file. Respect:
 - runPolicy.mode must be "linkedin-apply-all" applications-only.
 - runPolicy.worker is "{worker}".
 - runPolicy.missingResumePolicy controls what to do when a realistic new posting
-  lacks a tailored resume. Default "queue_for_tailoring" means record the job
-  and move on; do not run the full sourcing/recruiter pipeline.
+  lacks a tailored resume. Default "tailor" means run a bounded resume-tailor
+  worker for the exact posting, refresh tracker/cache, then let a fresh
+  application worker continue with the new tailored resume. Do not run recruiter
+  outreach or the full sourcing pipeline.
 - runPolicy.outreachAllowed=false means no recruiter search and no LinkedIn
   connection invites.
 - search.url is the LinkedIn search to keep open. It already includes the chosen
   f_TPR freshness window.
 - search.currentResultIndex and visitedJobUrls are durable cursor hints. Update
   them after each inspected card.
+- If state contains an item with state "needs_tailoring", process that item
+  before opening the next LinkedIn card by running the bounded resume-tailor
+  step for its exact jobUrl.
+- If state contains an item with state "tailored" or "in_progress_tailoring"
+  and a valid resumePdf, process that item before opening the next LinkedIn card,
+  even if its jobUrl is already in visitedJobUrls.
 - Stop only if search.stopRequested, maxJobs is reached, the manual circuit
   breaker is hit, or a systemic LinkedIn/Chrome/auth/rate-limit blocker appears.
 
@@ -73,8 +82,14 @@ Per result, in order:
 4. Skip obvious bad fits: non-SWE, senior/staff/principal/manager, sales/support,
    internship-only, closed/stale, or outside Liam's cared-about locations.
 5. If a valid tailored resume exists for this exact posting, apply with it. If
-   not, follow runPolicy.missingResumePolicy exactly. In default apply-only mode,
-   mark queued_for_tailoring with the captured job details and continue.
+   not, follow runPolicy.missingResumePolicy exactly:
+   - "tailor": record the item as in_progress_tailoring, invoke one bounded
+     resume-tailor worker for the exact LinkedIn/ATS posting, refresh the
+     tracker/cache, update the item with resumePdf and state tailored, then exit
+     cleanly so the next application worker can apply with the new resume.
+   - "queue_for_tailoring": mark queued_for_tailoring with captured job details
+     and continue.
+   - "skip": mark skipped with the missing-resume reason and continue.
 6. Attempt the application using finish-applications guardrails. Verify LinkedIn
    Easy Apply email is liamvanpj@gmail.com. Do not submit Workday applications.
    Do not solve CAPTCHA, create accounts, bypass bot checks, guess legal/salary
@@ -110,6 +125,10 @@ def load_state() -> dict[str, Any]:
 
 def done_count(state: dict[str, Any]) -> int:
     return sum(1 for item in state.get("items", []) if item.get("state") in DONE_STATES)
+
+
+def progress_count(state: dict[str, Any]) -> int:
+    return done_count(state) + len(state.get("events", []))
 
 
 def submitted_count(state: dict[str, Any]) -> int:
@@ -227,6 +246,7 @@ def main() -> int:
         worker = args.worker or state.get("runPolicy", {}).get("worker") or "codex"
         max_jobs = int(state.get("runPolicy", {}).get("maxJobs") or 0)
         before_done = done_count(state)
+        before_progress = progress_count(state)
         if stop_requested(state):
             print("Search saturation/stop requested; no more workers.")
             return 0
@@ -247,6 +267,7 @@ def main() -> int:
         rc = run_worker(batch_no, worker, args.batch_size, args)
         after = load_state()
         after_done = done_count(after)
+        after_progress = progress_count(after)
         print(
             f"Progress: done {before_done} -> {after_done}; "
             f"submitted={submitted_count(after)}; manual={manual_count(after)}; worker={worker}"
@@ -259,7 +280,7 @@ def main() -> int:
             return rc or 3
         if has_systemic_blocker(after):
             return rc or 2
-        if after_done <= before_done:
+        if after_progress <= before_progress:
             return rc or 4
 
 

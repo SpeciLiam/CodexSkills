@@ -19,21 +19,29 @@ For long or worker-per-application runs, use the monitored queue runner:
 ```bash
 python3 skills/linkedin-apply-all/scripts/run_monitored_queue.py \
   --freshness week \
-  --worker codex
+  --worker codex \
+  --missing-resume-policy tailor
 ```
 
 Worker selection:
 
 ```bash
-python3 skills/linkedin-apply-all/scripts/run_monitored_queue.py --freshness 24h --worker codex
-python3 skills/linkedin-apply-all/scripts/run_monitored_queue.py --freshness week --worker claude
-python3 skills/linkedin-apply-all/scripts/run_monitored_queue.py --freshness month --worker codex
+python3 skills/linkedin-apply-all/scripts/run_monitored_queue.py --freshness 24h --worker codex --missing-resume-policy tailor
+python3 skills/linkedin-apply-all/scripts/run_monitored_queue.py --freshness week --worker claude --missing-resume-policy tailor
+python3 skills/linkedin-apply-all/scripts/run_monitored_queue.py --freshness month --worker codex --missing-resume-policy tailor
 ```
 
 Accepted freshness names are `24h`, `week`, and `month`; use
 `--freshness-seconds N` for a custom LinkedIn `f_TPR=rN` window. Pass
 `--search-url URL` when Liam supplies a specific LinkedIn search. The runner will
 insert or replace `f_TPR` on that URL.
+
+Default missing-resume behavior is `tailor`: when a realistic posting has no
+exact tailored resume, record it as `needs_tailoring`/`in_progress_tailoring`,
+run a bounded resume-tailor worker for that posting, refresh the tracker/cache,
+then continue with a fresh application worker using the newly tailored resume.
+Use `--missing-resume-policy queue_for_tailoring` only when Liam explicitly asks
+to collect postings without tailoring during the run.
 
 The runner writes durable state to `/tmp/linkedin_apply_all_state.json`, logs to
 `/tmp/linkedin_apply_all_monitor_logs`, and worker transcripts to
@@ -80,8 +88,9 @@ Load only the needed skill bodies as the run progresses:
 
 - `finish-applications` for live application submission guardrails and status
   update conventions.
-- `resume-tailor` only when the run policy explicitly allows tailoring missing
-  resumes. Default apply-all behavior is `queue_for_tailoring` and continue.
+- `resume-tailor` when a realistic new posting has no exact tailored resume.
+  Default apply-all behavior is `tailor`: tailor first, then continue the
+  application from a fresh worker using the new resume.
 - `application-visualizer-refresh` after tracker or outreach edits.
 - `tandem` when Liam asks for Claude/Codex collaboration. Read
   `references/tandem-usage.md` before starting the tandem run.
@@ -115,7 +124,8 @@ python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 ```bash
 python3 skills/linkedin-apply-all/scripts/build_run_state.py \
   --freshness week \
-  --worker codex
+  --worker codex \
+  --missing-resume-policy tailor
 ```
 
 5. Open Chrome in Liam's profile for actual applications:
@@ -150,9 +160,12 @@ For each visible LinkedIn result, in order:
    manager, sales/support/recruiting, internship-only, closed/stale, or location
    outside Liam's cared-about locations unless Liam explicitly widened scope.
 4. For new realistic SWE postings with no verified exact tailored resume, follow
-   `runPolicy.missingResumePolicy`. The default is `queue_for_tailoring`: record
-   the posting and continue to the next result. Use `--missing-resume-policy
-   tailor` only when Liam explicitly wants apply-all to tailor during the run.
+   `runPolicy.missingResumePolicy`. The default is `tailor`: record
+   `needs_tailoring`/`in_progress_tailoring`, run a bounded resume-tailor worker
+   for the exact posting, refresh the tracker/cache, then continue the
+   application from a fresh worker using the new tailored resume. Use
+   `--missing-resume-policy queue_for_tailoring` only when Liam explicitly wants
+   apply-all to collect postings without tailoring during the run.
 5. Click `Apply`, `Apply on company website`, or the equivalent LinkedIn control
    and proceed with the application lane below.
 6. After each durable outcome, return to the LinkedIn search results and move to

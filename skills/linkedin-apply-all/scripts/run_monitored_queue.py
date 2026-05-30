@@ -37,6 +37,10 @@ def done_count(state: dict[str, Any]) -> int:
     return sum(1 for item in state.get("items", []) if item.get("state") in DONE_STATES)
 
 
+def progress_count(state: dict[str, Any]) -> int:
+    return done_count(state) + len(state.get("events", []))
+
+
 def run_and_tee(cmd: list[str], log_path: Path) -> int:
     print(f"\n$ {' '.join(cmd)}", flush=True)
     with log_path.open("a", encoding="utf-8") as log:
@@ -65,7 +69,7 @@ def main() -> int:
     parser.add_argument("--worker", choices=("codex", "claude"), default="codex")
     parser.add_argument("--max-jobs", type=int, default=25)
     parser.add_argument("--batch-size", type=int, default=1)
-    parser.add_argument("--missing-resume-policy", choices=("queue_for_tailoring", "tailor", "skip"), default="queue_for_tailoring")
+    parser.add_argument("--missing-resume-policy", choices=("queue_for_tailoring", "tailor", "skip"), default="tailor")
     parser.add_argument("--manual-circuit-breaker", type=int, default=5)
     parser.add_argument("--max-restarts", type=int, default=3)
     parser.add_argument("--restart-sleep", type=int, default=10)
@@ -114,6 +118,7 @@ def main() -> int:
     while True:
         before = load_state()
         before_done = done_count(before)
+        before_progress = progress_count(before)
         max_jobs = int(before.get("runPolicy", {}).get("maxJobs") or args.max_jobs)
         if before.get("search", {}).get("stopRequested") or before_done >= max_jobs:
             print("Run complete or search saturated.")
@@ -146,6 +151,7 @@ def main() -> int:
         rc = run_and_tee(cmd, log_path)
         after = load_state()
         after_done = done_count(after)
+        after_progress = progress_count(after)
         print(f"\nmonitor progress: done {before_done} -> {after_done}; rc={rc}")
 
         if after.get("search", {}).get("stopRequested") or after_done >= max_jobs:
@@ -155,7 +161,7 @@ def main() -> int:
             return rc
         if args.dry_run:
             return rc
-        if after_done > before_done and rc == 0:
+        if after_progress > before_progress and rc == 0:
             restarts = 0
             print("Progress made; continuing.")
             continue
