@@ -2,11 +2,13 @@
 
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
-Jobs discovered: 932
-New: 56 | Queued: 109 | Tailored: 147 | Applied: 21 | Manual: 441 | Skipped: 146 | Duplicate: 5 | Expired: 3
+Jobs discovered: 934
+New: 56 | Queued: 111 | Tailored: 147 | Applied: 21 | Manual: 441 | Skipped: 146 | Duplicate: 5 | Expired: 3
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| LinkedIn | Stealth Startup | Open Source Developer [33130] | San Francisco, CA (Remote) | 4417644161 | https://www.linkedin.com/jobs/view/4417644161/ | 2026-05-30T23:11:25+00:00 | 2 days ago via authenticated LinkedIn apply-all search | 8 | Queued | SWE-family role, early-career signal, remote/preferred US location, Python/API/LLM/open-source focus; queued for tailoring because no exact tailored resume exists |  |
+| LinkedIn | Robert Half | Software Engineer | San Ramon, CA (Remote) | 4422075220 | https://www.linkedin.com/jobs/view/4422075220/ | 2026-05-30T23:10:00+00:00 | 23 hours ago via authenticated LinkedIn apply-all search | 8 | Queued | SWE-family role, early-career signal, remote/preferred US location; queued for tailoring because no exact tailored resume exists |  |
 | LinkedIn | Notion | Software Engineer, Datastore | New York, NY | linkedin-notion-software-engineer-datastore-nyc-2026-05-21 | https://www.linkedin.com/jobs/software-developer-jobs-new-york | 2026-05-21T23:55:42.012205+00:00 | 9 hours ago via public LinkedIn aggregate result | 10 | Queued | SWE-family role, NYC preference |  |
 | LinkedIn | Middesk | Software Engineer | New York, NY | linkedin-middesk-software-engineer-nyc-2026-05-21 | https://www.linkedin.com/jobs/software-developer-jobs-new-york | 2026-05-21T23:55:42.012205+00:00 | 8 hours ago via public LinkedIn aggregate result | 10 | Queued | SWE-family role, NYC preference |  |
 | Greenhouse | Clinical Architecture | Software Engineer II | Indianapolis, Indiana, United States | 5144130007 | https://boards.greenhouse.io/clinicalarchitecture/jobs/5144130007 | 2026-05-21T23:49:36.289070+00:00 | 1 hour ago via First Wave Jobs | 10 | Queued | SWE-family role, early-career signal, preferred/remote US location |  |

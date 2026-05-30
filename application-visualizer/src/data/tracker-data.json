@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-30T22:28:37.427789+00:00",
+  "generatedAt": "2026-05-30T23:11:57.545617+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -10,8 +10,8 @@
   "stats": {
     "kpis": {
       "total": 1000,
-      "applied": 633,
-      "unapplied": 367,
+      "applied": 635,
+      "unapplied": 365,
       "active": 673,
       "rejected": 96,
       "interviewing": 5,
@@ -21,13 +21,13 @@
       "recruiterRows": 127,
       "prospects": 3,
       "readyEmails": 3,
-      "intakeJobs": 932,
-      "intakeQueued": 109,
+      "intakeJobs": 934,
+      "intakeQueued": 111,
       "intakeNew": 56,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 63.3,
-      "rejectionRate": 15.2,
+      "applyRate": 63.5,
+      "rejectionRate": 15.1,
       "recruiterWork": 551,
       "engineerWork": 733,
       "recruiterReachedOut": 117,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 528
+        "value": 530
       },
       {
         "name": "Archived",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 118
+        "value": 116
       },
       {
         "name": "Rejected",
@@ -362,7 +362,7 @@
       },
       {
         "name": "Queued",
-        "value": 109
+        "value": 111
       },
       {
         "name": "New",
@@ -392,7 +392,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 323
+        "value": 325
       }
     ],
     "timeline": [
@@ -672,7 +672,7 @@
         "date": "2026-05-26",
         "cumulative": 926,
         "added": 5,
-        "applied": 4,
+        "applied": 5,
         "rejected": 0,
         "interviewing": 0
       },
@@ -704,7 +704,7 @@
         "date": "2026-05-30",
         "cumulative": 1000,
         "added": 5,
-        "applied": 3,
+        "applied": 4,
         "rejected": 0,
         "interviewing": 0
       }
@@ -26630,8 +26630,8 @@
     {
       "company": "Adobe",
       "role": "Junior Software Development Engineer",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -26646,9 +26646,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Manual apply needed 2026-05-30: Adobe Careers form opened to personal information step for requisition R168092, but tailored resume upload could not be completed because Chrome extension file upload returned Not allowed; tab left open at upload/personal information step with verified tailored PDF ready. Retry 2026-05-30: native macOS file picker successfully uploaded tailored resume and form advanced through personal information, experience, and application questions; tab left open after Adobe page state desynchronized on voluntary disclosures (URL step=4 while rendered/accessibility tree remained on education step), preventing reliable final disclosure/review submission.",
+      "notes": "Manual apply needed 2026-05-30: Adobe Careers form opened to personal information step for requisition R168092, but tailored resume upload could not be completed because Chrome extension file upload returned Not allowed; tab left open at upload/personal information step with verified tailored PDF ready. Retry 2026-05-30: native macOS file picker successfully uploaded tailored resume and form advanced through personal information, experience, and application questions; tab left open after Adobe page state desynchronized on voluntary disclosures (URL step=4 while rendered/accessibility tree remained on education step), preventing reliable final disclosure/review submission. Application submitted 2026-05-30; Adobe Careers success page said \"Thank you for applying\" and \"Your Application has successfully been submitted\" for Junior Software Development Engineer (R168092).",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-30",
         "2026-05-30",
         "2026-05-30"
       ]
@@ -28400,8 +28401,8 @@
     {
       "company": "Athena",
       "role": "Junior Software Engineer / Software Engineering",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 7,
       "reachOut": true,
       "referral": "No",
@@ -28416,9 +28417,10 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-30 from LinkedIn Easy Apply posting 4418528517 for Python/Bash automation, Linux/VM support, deployment pipeline support, documentation, AI productivity tooling, and Docker/Kubernetes-adjacent startup ops work. Manual apply needed 2026-05-30: LinkedIn Easy Apply contact step completed with Liam's saved email and phone, but resume step only exposed stale prior resumes and tailored PDF upload failed because Chrome extension file upload returned Not allowed; modal left open at resume selection/upload step. Do not submit with stale AustinWorks/BrothersTech resume.",
+      "notes": "Tailored 2026-05-30 from LinkedIn Easy Apply posting 4418528517 for Python/Bash automation, Linux/VM support, deployment pipeline support, documentation, AI productivity tooling, and Docker/Kubernetes-adjacent startup ops work. Manual apply needed 2026-05-30: LinkedIn Easy Apply contact step completed with Liam's saved email and phone, but resume step only exposed stale prior resumes and tailored PDF upload failed because Chrome extension file upload returned Not allowed; modal left open at resume selection/upload step. Do not submit with stale AustinWorks/BrothersTech resume. Application submitted 2026-05-30 via LinkedIn Easy Apply; confirmation dialog said \"Your application was sent to Athena!\" LinkedIn review used liamvanpj@gmail.com, phone 6784887259, tailored PDF Liam_Van_Athena.pdf, Python 2 years, Network Security 0 years, Linux 1 year, background check Yes, sponsorship No, top choice unchecked, and company follow unchecked.",
       "noteLinks": [],
       "activityDates": [
+        "2026-05-30",
         "2026-05-30",
         "2026-05-30"
       ]
@@ -28508,6 +28510,34 @@
     }
   ],
   "jobIntake": [
+    {
+      "source": "LinkedIn",
+      "company": "Stealth Startup",
+      "role": "Open Source Developer [33130]",
+      "location": "San Francisco, CA (Remote)",
+      "postingKey": "4417644161",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4417644161/",
+      "discoveredAt": "2026-05-30T23:11:25+00:00",
+      "postedAge": "2 days ago via authenticated LinkedIn apply-all search",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, remote/preferred US location, Python/API/LLM/open-source focus; queued for tailoring because no exact tailored resume exists",
+      "trackerPostingKey": ""
+    },
+    {
+      "source": "LinkedIn",
+      "company": "Robert Half",
+      "role": "Software Engineer",
+      "location": "San Ramon, CA (Remote)",
+      "postingKey": "4422075220",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4422075220/",
+      "discoveredAt": "2026-05-30T23:10:00+00:00",
+      "postedAge": "23 hours ago via authenticated LinkedIn apply-all search",
+      "fitScore": 8,
+      "status": "Queued",
+      "reason": "SWE-family role, early-career signal, remote/preferred US location; queued for tailoring because no exact tailored resume exists",
+      "trackerPostingKey": ""
+    },
     {
       "source": "LinkedIn",
       "company": "Notion",
@@ -74819,7 +74849,7 @@
           "company": "Adobe",
           "role": "Junior Software Development Engineer",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -78239,7 +78269,7 @@
           "company": "Athena",
           "role": "Junior Software Engineer / Software Engineering",
           "fitScore": 7,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -91535,7 +91565,7 @@
           "company": "Adobe",
           "role": "Junior Software Development Engineer",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -94511,7 +94541,7 @@
           "company": "Athena",
           "role": "Junior Software Engineer / Software Engineering",
           "fitScore": 7,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
