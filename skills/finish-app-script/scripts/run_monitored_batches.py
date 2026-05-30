@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Monitored entrypoint for finish-app-script.
 
-This wrapper is intentionally small: refresh/build once, run the rotating
-batch runner, and restart it a few times if it stops while queued rows remain.
-The batch runner still owns commits and pushes.
+This wrapper is intentionally small: refresh/build once, run the per-application
+worker orchestrator, and restart it a few times if it stops while queued rows
+remain. The per-row orchestrator still owns commits and pushes.
 """
 
 from __future__ import annotations
@@ -83,14 +83,13 @@ def write_todo(*, phase: str, command: str, log_path: Path, note: str = "") -> N
         f"- State file: `{STATE_PATH}`",
         f"- Monitor log: `{log_path}`",
         f"- Running counts: {format_counts(counts)}",
-        "- Latest batch number: see `/tmp/fa_script_batch_outputs/` and monitor log",
-        "- Latest child output path: see most recent `/tmp/fa_script_batch_outputs/batch_*.txt`",
+        "- Latest worker output path: see most recent `/tmp/fa_script_outputs/*.txt`",
         "- Unresolved blockers / review tabs: append below as rows are marked manual",
         "",
         "## Resume Instruction",
         "If context fills or the shell disappears, read this file plus "
         "`/tmp/fa_script_run_state.json`. If queued rows remain and no "
-        "`run_batches.py` or `codex exec` process is active, resume with:",
+        "`run_queue.py`, `codex exec`, or `claude -p` worker process is active, resume with:",
         "",
         "```bash",
         "python3 skills/finish-app-script/scripts/run_monitored_batches.py --resume",
@@ -109,13 +108,18 @@ def append_todo(note: str) -> None:
         handle.write(f"- {now_iso()} - {note}\n")
 
 
-def has_systemic_blocker() -> bool:
-    for item in load_state().get("items", []):
+def has_systemic_blocker(items: list[dict[str, Any]] | None = None) -> bool:
+    if items is None:
+        items = load_state().get("items", [])
+    for item in items:
         if item.get("state") != "manual":
             continue
+        # Only inspect fields written by the current worker outcome. Tracker
+        # notes can contain stale browser-access failures from older attempts
+        # and should not stop a healthy resumed drain.
         haystack = " ".join(
             str(item.get(field) or "")
-            for field in ("blocker", "result", "notes")
+            for field in ("blocker", "result")
         ).lower()
         if any(term in haystack for term in SYSTEMIC_BLOCKER_TERMS):
             return True
@@ -141,8 +145,25 @@ def run_and_tee(cmd: list[str], log_path: Path) -> int:
         return process.wait()
 
 
+def manual_items_by_key() -> dict[str, dict[str, Any]]:
+    return {
+        str(item.get("key") or ""): item
+        for item in load_state().get("items", [])
+        if item.get("state") == "manual"
+    }
+
+
+def newly_manual_items(before: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
+    after = manual_items_by_key()
+    return [
+        item
+        for key, item in after.items()
+        if key and key not in before
+    ]
+
+
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Monitor and restart finish-app-script batches.")
+    parser = argparse.ArgumentParser(description="Monitor and restart finish-app-script per-application workers.")
     parser.add_argument("--resume", action="store_true", help="Use the existing state file; skip refresh/build")
     parser.add_argument(
         "--max-restarts",
@@ -151,20 +172,27 @@ def main() -> int:
         help="Retries after a stopped run with queued rows; 0 means keep trying",
     )
     parser.add_argument("--restart-sleep", type=int, default=10, help="Seconds to wait before retrying")
-    parser.add_argument("--batch-size", type=int, default=2, help="Rows per fresh Codex process")
-    parser.add_argument("--max-batches", type=int, default=0, help="Forwarded to run_batches.py")
-    parser.add_argument("--model", default="gpt-5.5", help="Forwarded to run_batches.py")
-    parser.add_argument("--reasoning-effort", default="medium", help="Forwarded to run_batches.py")
-    parser.add_argument("--timeout", type=int, default=1800, help="Forwarded to run_batches.py")
+    parser.add_argument("--batch-size", type=int, default=1, help="Legacy compatibility flag; per-application mode always uses one row per child")
+    parser.add_argument("--max-batches", type=int, default=0, help="Legacy compatibility cap; maps to --max-rows for per-application workers")
+    parser.add_argument("--max-rows", type=int, default=0, help="Forwarded to run_queue.py; max one-application workers to launch")
+    parser.add_argument(
+        "--worker-agent",
+        choices=("codex", "claude"),
+        default="codex",
+        help="Forwarded to run_queue.py; worker CLI to spawn for each row",
+    )
+    parser.add_argument("--model", default="gpt-5.5", help="Forwarded to run_queue.py")
+    parser.add_argument("--reasoning-effort", default="medium", help="Forwarded to run_queue.py; default medium")
+    parser.add_argument("--timeout", type=int, default=1200, help="Forwarded to run_queue.py as per-application timeout")
     parser.add_argument(
         "--child-sandbox",
         choices=("read-only", "workspace-write", "danger-full-access"),
         default="danger-full-access",
-        help="Forwarded to run_batches.py",
+        help="Forwarded to run_queue.py",
     )
-    parser.add_argument("--no-commit", action="store_true", help="Forwarded to run_batches.py")
-    parser.add_argument("--no-push", action="store_true", help="Forwarded to run_batches.py")
-    parser.add_argument("--dry-run", action="store_true", help="Forwarded to run_batches.py")
+    parser.add_argument("--no-commit", action="store_true", help="Forwarded to run_queue.py")
+    parser.add_argument("--no-push", action="store_true", help="Forwarded to run_queue.py")
+    parser.add_argument("--dry-run", action="store_true", help="Forwarded to run_queue.py")
     args = parser.parse_args()
 
     LOG_DIR.mkdir(parents=True, exist_ok=True)
@@ -202,17 +230,18 @@ def main() -> int:
             return 0
 
         write_todo(
-            phase="batch run",
+            phase="per-application worker run",
             command=command,
             log_path=log_path,
-            note=f"Starting/continuing batch runner with {format_counts(before)}.",
+            note=f"Starting/continuing per-application workers with {format_counts(before)}.",
         )
+        max_rows = args.max_rows or args.max_batches
         cmd = [
             "python3",
             "-u",
-            "skills/finish-app-script/scripts/run_batches.py",
-            "--batch-size",
-            str(args.batch_size),
+            "skills/finish-app-script/scripts/run_queue.py",
+            "--worker-agent",
+            args.worker_agent,
             "--model",
             args.model,
             "--reasoning-effort",
@@ -222,8 +251,8 @@ def main() -> int:
             "--child-sandbox",
             args.child_sandbox,
         ]
-        if args.max_batches:
-            cmd.extend(["--max-batches", str(args.max_batches)])
+        if max_rows:
+            cmd.extend(["--max-rows", str(max_rows)])
         if args.no_commit:
             cmd.append("--no-commit")
         if args.no_push:
@@ -231,10 +260,12 @@ def main() -> int:
         if args.dry_run:
             cmd.append("--dry-run")
 
+        manual_before = manual_items_by_key()
         rc = run_and_tee(cmd, log_path)
         after = state_counts()
+        new_manuals = newly_manual_items(manual_before)
         append_todo(
-            "Batch runner returned "
+            "Per-application runner returned "
             f"rc={rc}; counts {format_counts(before)} -> {format_counts(after)}."
         )
         print(
@@ -249,17 +280,17 @@ def main() -> int:
             print("\nQueue drained.")
             write_todo(phase="complete", command=command, log_path=log_path, note="Queue drained.")
             return rc
-        if args.max_batches:
-            print("\nStopped because --max-batches was set.")
-            write_todo(phase="blocked", command=command, log_path=log_path, note="Stopped because --max-batches was set.")
+        if max_rows:
+            print("\nStopped because --max-rows/--max-batches was set.")
+            write_todo(phase="blocked", command=command, log_path=log_path, note="Stopped because --max-rows/--max-batches was set.")
             return rc
-        if has_systemic_blocker():
-            print("\nSystemic browser/Computer Use blocker recorded; stopping before more rows are mislabeled.")
+        if has_systemic_blocker(new_manuals):
+            print("\nSystemic Chrome plugin / browser blocker recorded; stopping before more rows are mislabeled.")
             write_todo(
                 phase="blocked",
                 command=command,
                 log_path=log_path,
-                note="Systemic browser/Computer Use blocker recorded; stopped before more rows are mislabeled.",
+                note="Systemic Chrome plugin / browser blocker recorded; stopped before more rows are mislabeled.",
             )
             return rc or 1
         if after["queued"] < before["queued"] and rc == 0:

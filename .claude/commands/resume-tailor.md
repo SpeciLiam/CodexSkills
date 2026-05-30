@@ -38,17 +38,18 @@ If a link is provided, open it and extract:
 
 ## Files and folders
 
-- Generic source resume lives in `generic-resume/`
-- The primary resume source file should usually be `generic-resume/resume.tex`
+- Generic source resumes live in `generic-resume/`
+- Use `generic-resume/resume.tex` as the early-career source when a posting is explicitly new-grad, university-grad, associate, junior, SWE I, or otherwise early-career. This version includes Liam's graduation month/year (`Dec 2024`) and GPA, and labels both Caterpillar roles as internships.
+- Use `generic-resume/resume-general.tex` when a posting is not explicitly early-career. This version omits graduation month/year and GPA, labels Caterpillar May 2023-Dec 2023 as `Software Engineer`, and labels only Caterpillar May 2022-August 2022 as `Software Engineer Intern`.
 - Candidate metadata lives in `generic-resume/README.md`
 - The canonical personal website is `liamvan.dev`; every tailored resume header should preserve `\href{https://liamvan.dev}{liamvan.dev}`
 - The canonical Fantasy Wizard project URL is `https://fantasysportwizard.com`; when including the project, prefer linking the project title as `\href{https://fantasysportwizard.com}{Fantasy Wizard}` when space and formatting allow
 - Set `candidate_name: Your Name` in that README so the scripts can name output folders and PDFs
 - Treat `generic-resume/README.md` as the richer candidate profile and evidence source, not just naming metadata
-- Treat the generic resume and README as the context bank; they can be richer than one page because the tailored output is what must be compressed to one page
-- Company outputs should live in `companies/<Company Name>/<Role_Slug>/<Candidate_Name>_Resume/` when a role title is known
+- Treat the selected generic resume and README as the context bank; they can be richer than one page because the tailored output is what must be compressed to one page
+- Company outputs should live in `companies/<Company Name>/<Role_Slug>/Liam_Van_Resume/` when a role title is known for Liam's pipeline
 - If the same role is tailored again, create `companies/<Company Name>/<Role_Slug>/<Candidate_Name>_Resume_2`, then `_3`, and so on
-- Fall back to `companies/<Company Name>/<Candidate_Name>_Resume/` only when the role is unknown
+- Fall back to `companies/<Company Name>/Liam_Van_Resume/` only when the role is unknown
 - Application tracking lives in `application-trackers/applications.md`
 - Optional Notion mirroring is handled by the separate `notion-application-sync` skill and should not run during normal resume tailoring.
 
@@ -74,16 +75,16 @@ After editing, render a final PDF in the same folder with:
 
 ```bash
 python3 skills/resume-tailor/scripts/render_resume_pdf.py \
-  --dir "companies/Company Name/Role_Slug/Candidate_Name_Resume"
+  --dir "companies/Company Name/Role_Slug/Liam_Van_Resume"
 ```
 
-This attempts to compile `resume.tex` and writes a final PDF named `<Candidate_Name>_<Company_Name>.pdf` in that same company-specific folder.
+This attempts to compile `resume.tex` and writes a final PDF named `Liam_Van_<Company_Name>.pdf` in that same company-specific folder.
 
 After every resume PDF render, verify that the PDF is exactly one page and materially fills the page:
 
 ```bash
 python3 skills/resume-tailor/scripts/verify_resume_pdf.py \
-  --pdf "companies/Company Name/Role_Slug/Candidate_Name_Resume/Candidate_Name_Company_Name.pdf"
+  --pdf "companies/Company Name/Role_Slug/Liam_Van_Resume/Liam_Van_Company_Name.pdf"
 ```
 
 If verification fails because the resume spills past one page, trim or compress the least relevant content, rerender, and verify again. If verification fails because the one-page resume is visibly underfilled, add more truthful, role-relevant evidence from `generic-resume/README.md`, the generic resume, or the provided job context, then rerender and verify again. Do not update the tracker until the rendered PDF passes this check or you have manually inspected the PDF and can explain why the automated fill check is unavailable or too conservative.
@@ -92,7 +93,7 @@ If the user wants a basic cover letter in the same folder, create it with:
 
 ```bash
 python3 skills/resume-tailor/scripts/create_cover_letter.py \
-  --dir "companies/Company Name/Role_Slug/Candidate_Name_Resume" \
+  --dir "companies/Company Name/Role_Slug/Liam_Van_Resume" \
   --company "Company Name" \
   --role "Role Title" \
   --why-interest "Two to three sentences on why the role is a fit"
@@ -102,10 +103,10 @@ Then render the cover letter PDF with:
 
 ```bash
 python3 skills/resume-tailor/scripts/render_cover_letter_pdf.py \
-  --dir "companies/Company Name/Role_Slug/Candidate_Name_Resume"
+  --dir "companies/Company Name/Role_Slug/Liam_Van_Resume"
 ```
 
-This writes `cover_letter.tex` and a final PDF named `<Candidate_Name>_<Company_Name>_Cover_Letter.pdf` right next to the tailored resume PDF.
+This writes `cover_letter.tex` and a final PDF named `Liam_Van_<Company_Name>_Cover_Letter.pdf` right next to the tailored resume PDF. Do not leave or upload `Candidate_Name_...` artifacts.
 
 After the folder and PDF exist, update the markdown tracker with:
 
@@ -118,8 +119,8 @@ python3 skills/resume-tailor/scripts/update_application_tracker.py \
   --source "Ashby" \
   --referral "No" \
   --date-added "YYYY-MM-DD" \
-  --resume-folder "/absolute/path/to/companies/Company Name/Candidate_Name_Resume" \
-  --resume-pdf "/absolute/path/to/companies/Company Name/Candidate_Name_Resume/Candidate_Name_Company_Name.pdf" \
+  --resume-folder "/absolute/path/to/companies/Company Name/Liam_Van_Resume" \
+  --resume-pdf "/absolute/path/to/companies/Company Name/Liam_Van_Resume/Liam_Van_Company_Name.pdf" \
   --status "Resume Tailored"
 ```
 
@@ -193,7 +194,7 @@ Use that map to drive edits instead of only reordering the existing list.
 ## Editing workflow
 
 1. Read the job description and extract the top priorities.
-2. Inspect the generic LaTeX resume in `generic-resume/`, usually `generic-resume/resume.tex`.
+2. Inspect `generic-resume/README.md`, then select the right base: `generic-resume/resume.tex` for explicit early-career/new-grad/associate/junior/SWE I roles, or `generic-resume/resume-general.tex` for broader roles that do not need graduation date, GPA, or internship framing.
 3. Read `generic-resume/README.md` in full and use it as the richer profile, evidence bank, and wording guide.
 4. Use `candidate_name` from `generic-resume/README.md` for output naming.
 5. Create the company-specific copy with `prepare_resume_folder.py`.
@@ -215,6 +216,7 @@ Use that map to drive edits instead of only reordering the existing list.
    - removal of lower-value lines or roles
    - preserve readability over over-compression, even if that means a few bullets wrap to a second line
    - inspect wrapped bullets and rewrite any that leave an orphaned trailing word or tiny fragment on the next line
+   - preserve the source-specific education/Caterpillar framing unless the job posting or user request clearly calls for switching variants
 9. Check for one-page risk. If the resume is too long:
    - remove least relevant bullets first
    - shorten wording second
@@ -263,8 +265,8 @@ De-prioritize:
 The final deliverable should usually include:
 
 1. Updated LaTeX resume files in the company-specific directory
-2. A final PDF named `<Candidate_Name>_<Company_Name>.pdf` in that same directory when local LaTeX tooling exists
-3. When requested, a basic `cover_letter.tex` and `<Candidate_Name>_<Company_Name>_Cover_Letter.pdf` in that same directory
+2. A final PDF named `Liam_Van_<Company_Name>.pdf` in that same directory when local LaTeX tooling exists
+3. When requested, a basic `cover_letter.tex` and `Liam_Van_<Company_Name>_Cover_Letter.pdf` in that same directory
 4. An updated row in `application-trackers/applications.md`
 5. A brief summary of changes made
 6. Any notes about missing evidence for requested skills

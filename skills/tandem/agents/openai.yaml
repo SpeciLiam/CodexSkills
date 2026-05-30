@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tandem (Claude + Codex)"
+  short_description: "Pair Claude and Codex on one task: cross-model plan, build, and review"
+  default_prompt: "Use $tandem to work this change with both Claude and Codex: draft a plan, have the peer model critique it, implement, then have the peer model review the diff. Operate on the current repo."

@@ -56,9 +56,12 @@ if project_root not in sys.path:
 
 logger = logging.getLogger("nodriver_mcp_server")
 
-DEFAULT_CHROME_USER_DATA_DIR = os.path.expanduser(
+# Chrome 148 refuses DevTools remote debugging against the default user data
+# directory. Use a non-default automation copy of the signed-in Ben profile.
+DEFAULT_CHROME_SOURCE_USER_DATA_DIR = os.path.expanduser(
   "~/Library/Application Support/Google/Chrome"
 )
+DEFAULT_CHROME_USER_DATA_DIR = os.path.expanduser("~/.codex/nodriver-chrome-ben")
 DEFAULT_CHROME_PROFILE_DIRECTORY = "Profile 1"
 DEFAULT_CHROME_PROFILE_EMAIL = "bendov1010@gmail.com"
 DEFAULT_CHROME_EXECUTABLE_PATH = (
@@ -99,8 +102,9 @@ def get_chrome_profile_config() -> Dict[str, Optional[str]]:
 
   if not os.path.isdir(user_data_dir):
     logger.warning(
-      "Chrome user data dir %s does not exist; nodriver will create/use its default profile",
+      "Chrome user data dir %s does not exist; create/sync it from %s or nodriver will use a fresh profile",
       user_data_dir,
+      DEFAULT_CHROME_SOURCE_USER_DATA_DIR,
     )
     user_data_dir = None
 

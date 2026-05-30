@@ -1,8 +1,12 @@
 # Application Defaults
 
 Use these standing answers when filling external application forms for Liam Van.
-If a form asks a materially different question, or the answer would create legal
-or eligibility ambiguity, leave the tab open and mark the application manual.
+Liam has already answered recurring application questions; treat this file,
+operating cards, prior tracker notes, and prior submitted application conventions
+as the answer bank. If the same routine question appears again, reuse the known
+answer instead of marking the application manual. If a form asks a materially
+different question, or the answer would create legal or eligibility ambiguity not
+covered by prior answers, leave the tab open and mark the application manual.
 
 ## Identity And Contact
 
@@ -70,15 +74,25 @@ or eligibility ambiguity, leave the tab open and mark the application manual.
   continue.
 - If a cover letter is required, tailor a concise role-specific letter from the
   job description and Liam's resume.
-- If essay/free-response questions are required, attempt a draft using the job
-  description and resume, but do not submit automatically. Leave the tab open and
-  mark the application manual for review.
+- If essay/free-response questions are required, attempt a concise truthful
+  draft using the job description and resume. It is okay not to submit an
+  application with an FRQ: if the answer would benefit from Liam review, leave
+  the tab open at the cleanest pre-submit point and record the exact review item.
+  Submit only when the FRQ is routine, grounded in Liam's actual
+  resume/profile/project evidence, and all other required fields are covered.
 
 ## Submission Policy
 
 - Submit high-confidence external applications when all required fields are
   filled safely, uploads are correct, and a final review page/confirmation step
   is clean.
+- Treat prior answered same-question patterns from tracker notes/submitted rows
+  as covered standing answers, provided the answer remains truthful for the live
+  role.
+- Treat routine acknowledgements as high-confidence safe fields: privacy/data
+  processing, equal-opportunity notices, recruiting contact consent,
+  background-check disclosure notices, at-will employment notices, electronic
+  communication notices, and truthful application-accuracy certifications.
 - Mark the tracker as submitted only after visible confirmation, confirmation
   email, or portal evidence.
 - If the application is not high-confidence, leave the tab open for Liam and

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Per-row codex exec orchestrator for finish-app-script.
+"""Per-row worker orchestrator for finish-app-script.
 
 For each queued row in /tmp/fa_script_run_state.json:
   1. Build a tight per-row prompt
-  2. Spawn `codex exec --cd $REPO --sandbox workspace-write -m <model> -o <out>`
+  2. Spawn a Codex or Claude worker for exactly one row
   3. Wait up to --timeout seconds
   4. Re-read the state file → check the row's outcome (submitted|manual|archived)
   5. Update counters; run circuit breaker; commit/push every 5 confirmed
@@ -35,7 +35,9 @@ TRACKER_PATH = "application-trackers/applications.md"
 CACHE_PATH = "application-visualizer/src/data/tracker-data.json"
 
 DEFAULT_MODEL = "gpt-5.5"
-DEFAULT_TIMEOUT_S = 360
+DEFAULT_TIMEOUT_S = 1200
+DEFAULT_CHILD_SANDBOX = "danger-full-access"
+DEFAULT_REASONING_EFFORT = "medium"
 CIRCUIT_BREAKER_THRESHOLD = 3
 COMMIT_EVERY = 5
 
@@ -45,7 +47,7 @@ DONE_STATES = {"submitted", "manual", "archived", "skipped"}
 PROMPT_TEMPLATE = """\
 Read skills/finish-app-script/OPERATING_CARD.md before starting. Follow it strictly.
 
-You are completing ONE job application. Single-row mode: process this row, write the outcome, exit.
+You are completing ONE job application. Single-row mode: process this row, attempt every safe step, write the outcome, and exit. Do not process another application.
 
 Company: {company}
 Role: {role}
@@ -56,7 +58,23 @@ Source: {source}
 State item key: {key}
 Notes carried from tracker: {notes}
 
-Use Codex Computer Use (computer-use@openai-bundled) for the live browser flow.
+If notes say Liam approved a draft/answer from a prior manual handoff, treat
+that answer as approved for this retry. Paste or reuse the approved grounded
+answer, then submit if the correct resume is attached and no true blocker
+remains. Do not re-mark the row manual solely because the approved answer is an
+FRQ/custom written response.
+
+Use Liam's Chrome profile for the live application flow. LinkedIn sourcing may
+use the Ben profile, but actual applications must use Chrome profile name
+"Liam", account liamvanpj@gmail.com, profile directory "Default" -- not Ben /
+bendov1010@gmail.com / "Profile 1". Before opening the ATS/application URL,
+make sure the active Google Chrome window is Liam's profile. If needed, open it
+with: open -na "Google Chrome" --args --profile-directory="Default"; or switch
+via Chrome's profile menu. Then use the installed Codex Chrome plugin first for
+the live ATS/application flow so Liam's real cookies, saved logins, existing
+tabs, extension-backed uploads, and portal state are preserved. Use Codex
+Computer Use (computer-use@openai-bundled) only as a fallback if the Chrome
+plugin cannot communicate with Chrome or cannot operate the current page.
 
 Before drafting any FRQ, "why us" answer, values answer, achievement example,
 or project example, load Liam's factual context. Read the row's tailored resume
@@ -69,19 +87,25 @@ credentials, or responsibilities. If a required answer cannot be grounded in
 those sources, use a supported adjacent example or mark the row manual for Liam
 review.
 
+Treat prior answered application questions as known answers. Before marking a routine question uncertain, check skills/linkedin-easy-apply-nodriver/references/application-defaults.md, the operating card, current tracker notes, and prior submitted rows for the same question pattern. If the same question has already been answered safely, reuse that answer and keep moving.
+
 Do not generate, render, write, paste, or upload cover letters. If a
 cover-letter field is optional, leave it blank. If a cover-letter field is
 required and cannot be skipped, leave the tab open and set state="manual" with
 blocker "Cover letter required; skipped by no-cover-letter policy".
+If the Chrome plugin reports that resume upload is blocked, leave the tab open
+and set state="manual" with blocker "Chrome plugin file upload blocked; enable
+file URL access for the Codex Chrome Extension in chrome://extensions".
 
 Dropdowns / typeahead / combo boxes / multi-select: open the menu, click the actual option, verify the rendered chip/value. Never just type into a typeahead and move on — the field will be silently rejected.
 
 Email 2FA / verification codes / magic links sent to liamvanpj@gmail.com are NOT blockers. Use the gmail@openai-curated MCP to read the inbox, extract the code or click the magic link in Chrome (already signed in), and continue. Only escalate to manual if the email never arrives, expires, or the verification switches to SMS / authenticator-app 2FA.
 
 Confidence decision after final review:
-- HIGH (every required field covered, no blocker): click submit. If a verification code is emailed, retrieve it via Gmail MCP and complete. Capture confirmation evidence. Run skills/gmail-application-refresh/scripts/update_application_status.py with --status Applied --applied Yes. Set state="submitted".
-- MEDIUM (FRQ or one uncertain field): fill all safe fields, generate best-effort answer from Liam's profile and resume evidence, leave the tab open at the cleanest review point, set state="manual" with blocker like "FRQ review: <question>".
-- HARD blocker (account creation, fresh login when not authenticated, SMS/authenticator-app 2FA, interactive CAPTCHA, Workday, legal signature, AI-deterrent verification): set state="manual" with the exact blocker.
+- HIGH (every required field covered, no blocker): click submit. Standing answers, prior answered same-question patterns, and routine acknowledgements such as privacy/data-processing, equal-opportunity, recruiting contact consent, background-check disclosure notices, at-will employment notices, electronic communication notices, and truthful application-accuracy certifications count as covered and should not downgrade confidence. If a verification code is emailed, retrieve it via Gmail MCP and complete. Capture confirmation evidence. Run skills/gmail-application-refresh/scripts/update_application_status.py with --status Applied --applied Yes. Set state="submitted".
+- FRQ REVIEW OK: If an FRQ/custom written answer is drafted but should get Liam review, do not submit. Leave the tab open at the cleanest pre-submit point, set state="manual" with blocker/result containing the exact FRQ question, the drafted answer, and "awaiting Liam approval". In your final response, say why it was not submitted and include the FRQ draft. If Liam approves that FRQ answer in chat later, a follow-up worker may return to the open tab, submit the prepared application, capture confirmation, update tracker/cache, close the tab, and set state="submitted".
+- MEDIUM (one uncertain or unsupported field): fill all safe fields, generate best-effort grounded answers from Liam's profile and resume evidence, leave the tab open at the cleanest review point, set state="manual" with blocker like "Review needed: <question>".
+- HARD blocker after attempt (account creation, fresh login when not authenticated, SMS/authenticator-app 2FA, interactive CAPTCHA, Workday account/profile gate, non-routine legal signature/contract terms, AI-deterrent verification): leave the tab open at the exact blocker, set state="manual" with the exact blocker, and exit. Do not skip a queued row merely because it is Workday/manual; attempt as far as safely possible first.
 - Posting closed/404/redirected to a different role: set state="archived".
 
 Education dates are strict: University of Georgia, BS Computer Science, started
@@ -99,6 +123,10 @@ Then UPDATE /tmp/fa_script_run_state.json — find the items[] entry where key =
 
 Refresh the visualizer cache when submitted:
   python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
+
+Tab rule:
+- If submitted and confirmation evidence is captured, close that application tab before exiting.
+- If not submitted, leave the most useful partially completed application tab open at the exact review/blocker point for Liam, then exit.
 
 Do NOT commit or push. The orchestrator owns commits.
 
@@ -171,24 +199,50 @@ def get_outcome(key: str) -> dict[str, Any] | None:
     return None
 
 
-def spawn_codex_exec(prompt: str, output_file: Path, model: str, timeout_s: int) -> tuple[int, str]:
+def spawn_worker(
+    prompt: str,
+    output_file: Path,
+    worker_agent: str,
+    model: str,
+    reasoning_effort: str,
+    timeout_s: int,
+    child_sandbox: str,
+) -> tuple[int, str]:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    cmd = [
-        "codex", "exec",
-        "--cd", str(ROOT),
-        "--sandbox", "workspace-write",
-        "-m", model,
-        "-o", str(output_file),
-        prompt,
-    ]
+    if worker_agent == "codex":
+        cmd = [
+            "codex", "exec",
+            "--cd", str(ROOT),
+            "--sandbox", child_sandbox,
+            "-m", model,
+            "-c", f'model_reasoning_effort="{reasoning_effort}"',
+            "-o", str(output_file),
+            prompt,
+        ]
+        stdin_data = None
+    elif worker_agent == "claude":
+        cmd = [
+            "claude", "-p",
+            "--permission-mode", "acceptEdits",
+            "--add-dir", str(ROOT),
+        ]
+        if model:
+            cmd.extend(["--model", model])
+        stdin_data = prompt
+    else:
+        raise ValueError(f"unsupported worker_agent: {worker_agent}")
     try:
         result = subprocess.run(
             cmd,
+            input=stdin_data,
             timeout=timeout_s,
             capture_output=True,
             text=True,
         )
-        return result.returncode, (result.stdout or "") + (result.stderr or "")
+        output = (result.stdout or "") + (result.stderr or "")
+        if worker_agent == "claude":
+            output_file.write_text(output, encoding="utf-8")
+        return result.returncode, output
     except subprocess.TimeoutExpired:
         return -1, f"timeout after {timeout_s}s"
 
@@ -229,20 +283,43 @@ def commit_and_push(*, push: bool, message: str) -> bool:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Per-row codex exec orchestrator for finish-app-script")
-    parser.add_argument("--model", default=DEFAULT_MODEL, help=f"Model for codex exec (default: {DEFAULT_MODEL})")
+    parser = argparse.ArgumentParser(description="Per-row worker orchestrator for finish-app-script")
+    parser.add_argument(
+        "--worker-agent",
+        choices=("codex", "claude"),
+        default="codex",
+        help="Worker CLI to spawn for each one-application child (default: codex)",
+    )
+    parser.add_argument("--model", default=DEFAULT_MODEL, help=f"Model for child worker (default: {DEFAULT_MODEL})")
+    parser.add_argument(
+        "--reasoning-effort",
+        default=DEFAULT_REASONING_EFFORT,
+        choices=("minimal", "low", "medium", "high", "xhigh"),
+        help=f"Reasoning effort for each one-application child worker (default: {DEFAULT_REASONING_EFFORT})",
+    )
     parser.add_argument("--timeout", type=int, default=DEFAULT_TIMEOUT_S, help="Per-row timeout in seconds")
+    parser.add_argument(
+        "--child-sandbox",
+        choices=("read-only", "workspace-write", "danger-full-access"),
+        default=DEFAULT_CHILD_SANDBOX,
+        help=f"Sandbox for each one-application child worker (default: {DEFAULT_CHILD_SANDBOX})",
+    )
     parser.add_argument("--max-rows", type=int, default=0, help="Cap rows processed (0 = drain queue)")
     parser.add_argument("--no-commit", action="store_true", help="Skip auto-commit every 5 confirmed submissions")
     parser.add_argument("--no-push", action="store_true", help="Commit but do not push to origin/main")
-    parser.add_argument("--dry-run", action="store_true", help="Print prompts without invoking codex exec")
+    parser.add_argument("--dry-run", action="store_true", help="Print prompts without invoking a worker")
     args = parser.parse_args()
 
     state = load_state()
     queue_total = sum(1 for it in state.get("items", []) if it.get("state") == "queued")
-    print(f"finish-app-script orchestrator | queue: {queue_total} | model: {args.model} | timeout: {args.timeout}s")
+    print(
+        "finish-app-script per-application orchestrator | "
+        f"queue: {queue_total} | worker_agent: {args.worker_agent} | model: {args.model} | "
+        f"reasoning_effort: {args.reasoning_effort} | "
+        f"timeout: {args.timeout}s | child_sandbox: {args.child_sandbox}"
+    )
     if args.dry_run:
-        print("(dry run — no codex exec invocations)")
+        print(f"(dry run — no {args.worker_agent} worker invocations)")
 
     processed = 0
     consecutive_manual = 0
@@ -270,7 +347,7 @@ def main() -> int:
         print(f"  url={url}")
 
         if args.dry_run:
-            print("  (would spawn codex exec; skipping)")
+            print(f"  (would spawn {args.worker_agent} worker; skipping)")
             mark_outcome_in_state(key, state_value="skipped", result="dry-run")
             summary["skipped"].append(f"{company} | {role}")
             processed += 1
@@ -279,7 +356,15 @@ def main() -> int:
         prompt = build_prompt(item)
         out_file = OUTPUT_DIR / f"{safe_filename(key)}.txt"
         started_at = time.time()
-        rc, _err = spawn_codex_exec(prompt, out_file, args.model, args.timeout)
+        rc, _err = spawn_worker(
+            prompt,
+            out_file,
+            args.worker_agent,
+            args.model,
+            args.reasoning_effort,
+            args.timeout,
+            args.child_sandbox,
+        )
         elapsed = time.time() - started_at
         processed += 1
 
@@ -294,14 +379,14 @@ def main() -> int:
             summary["manual"].append(f"{company} | exec timeout")
             consecutive_manual += 1
         elif rc != 0:
-            print(f"  ✗ codex exec exited rc={rc} after {elapsed:.0f}s — marking manual")
+            print(f"  ✗ {args.worker_agent} worker exited rc={rc} after {elapsed:.0f}s — marking manual")
             mark_outcome_in_state(
                 key,
                 state_value="manual",
-                blocker=f"codex exec rc={rc}",
+                blocker=f"{args.worker_agent} worker rc={rc}",
                 result="orchestrator non-zero exit",
             )
-            summary["manual"].append(f"{company} | exec rc={rc}")
+            summary["manual"].append(f"{company} | {args.worker_agent} worker rc={rc}")
             consecutive_manual += 1
         else:
             outcome = get_outcome(key) or {}

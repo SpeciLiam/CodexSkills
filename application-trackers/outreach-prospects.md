@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 849
+Companies queued: 851
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -62,6 +62,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Translucent | Software Engineer | 4038826009 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/translucent/jobs/4038826009) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Trace3 | Software Engineer II | 7752983 | 10 | Archived | Yes | [Posting](https://job-boards.greenhouse.io/trace3/jobs/7752983) |  |  | 2026-05-06 | Queued by resume-tailor after tailored resume update.; Archived 2026-05-07: Greenhouse page says the job is no longer open. |
 | TP-Link | 2026 Early Career Software Engineering (Mobile, BackEnd, Embedded, AI/ML) | 2026-early-career-software-engineering-mobile-backend-embedded-ai-ml-at-tp-link-4389973425 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/2026-early-career-software-engineering-mobile-backend-embedded-ai-ml-at-tp-link-4389973425) |  |  | 2026-05-13 | Queued by resume-tailor after tailored resume update. |
+| ThoughtSpot | Member of Technical Staff 2 | 4418241301 | 10 | Manual Apply Needed | Yes | [Posting](https://www.linkedin.com/jobs/view/4418241301/) |  |  | 2026-05-30 | Queued by resume-tailor after tailored resume update; Workday apply URL showed "page you are looking for doesn't exist" in Chrome on 2026-05-30, tailored resume ready. |
 | Thesis | Full Stack Engineer | 5082367008 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/trovohealth/jobs/5082367008) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | The Trade Desk | Software Engineer II | 5102422007 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/thetradedesk/jobs/5102422007?gh_src=1c01b2067us) |  |  |  |  |
 | The New York Times | Software Engineer, Scoop Core | 4673616005 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/thenewyorktimes/jobs/4673616005) |  |  |  |  |
@@ -420,6 +421,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Affirm | Software Engineer I, Backend (Purchasing Power Experience) | 7673126003 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/affirm/jobs/7673126003) |  |  | 2026-05-01 | Queued by resume-tailor after tailored resume update. |
 | Affirm | Software Engineer II, Backend (Merchant Advocacy) | 7708925003 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/affirm/jobs/7708925003) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
 | Affirm | Software Engineer II, Machine Learning (Feature Platform) | 7694294003 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/affirm/jobs/7694294003) |  |  | 2026-05-11 | Queued by resume-tailor after tailored resume update. |
+| Affirm | Software Engineer, Early Career | 4419370113 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4419370113/) |  |  | 2026-05-30 | Applied 2026-05-30 by user after Codex prefilled Greenhouse form; outreach remains useful. |
 | adMarketplace | Software Engineer II, Data | 4596931005 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/admarketplaceinc/jobs/4596931005?gh_src=9e9e08775us) |  |  | 2026-05-02 | Queued by resume-tailor after tailored resume update. |
 | Addepar | Backend Software Engineer - Investor Solutions | 8387694002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/addepar1/jobs/8387694002) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Addepar | Full Stack Software Engineer - Alts & Data Management | 8538666002 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/addepar1/jobs/8538666002) |  |  | 2026-05-09 | Queued by resume-tailor after tailored resume update. |

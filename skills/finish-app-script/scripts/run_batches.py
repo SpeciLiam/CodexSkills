@@ -5,7 +5,7 @@ This is intentionally different from run_queue.py:
 
 - run_queue.py spawns one tiny child agent per application row.
 - run_batches.py spawns one fresh Codex CLI process for a small batch, usually
-  two rows, and that process owns the live Chrome/Computer Use workflow.
+  two rows, and that process owns the live Chrome plugin / browser workflow.
 
 The goal is to get the context-reset benefit without making every single row a
 separate browser-worker process.
@@ -63,15 +63,26 @@ evidence if submitted, exact blocker/review item if manual, and whether a
 handoff tab was left open. Before exiting the batch, append a final batch note
 with any unresolved blockers or review tabs still open.
 
-You are a fresh parent application agent, not a per-row subagent. Use Codex
-Computer Use directly in this process. Prefer Google Chrome when it is
-responsive, using app name "Google Chrome" or bundle id "com.google.Chrome";
-if Chrome/Computer Use times out, immediately switch to Firefox using app name
-"Firefox" or bundle id "org.mozilla.firefox". If Firefox's native file picker
-shows the exact existing PDF selected but keeps Open disabled, treat that as a
-browser-specific upload failure and retry the same public ATS form in Safari
-using app name "Safari" or bundle id "com.apple.Safari". Do not use bare
-"Chrome". Do not spawn subagents or parallel browser workers.
+You are a fresh parent application agent, not a per-row subagent. Use Liam's
+Chrome profile for actual applications: profile name "Liam", account
+liamvanpj@gmail.com, profile directory "Default". Ben / bendov1010@gmail.com /
+"Profile 1" is only for LinkedIn sourcing, not application forms. Before opening
+an ATS/application URL, make sure the active Google Chrome window is Liam's
+profile. If needed, open it with:
+open -na "Google Chrome" --args --profile-directory="Default"
+Then use the installed Codex Chrome plugin first for the live ATS/application
+flow so Liam's real Chrome cookies, saved logins, existing tabs,
+extension-backed uploads, and portal state are preserved. Use Codex Computer Use
+only as a fallback when the Chrome plugin cannot communicate with Chrome or
+cannot operate the current page. Prefer Google Chrome when falling back to
+Computer Use, using app name "Google Chrome" or bundle id "com.google.Chrome";
+if both the Chrome plugin and Chrome/Computer Use time out, immediately switch
+to Firefox using app name "Firefox" or bundle id "org.mozilla.firefox". If
+Firefox's native file picker shows the exact existing PDF selected but keeps
+Open disabled, treat that as a browser-specific upload failure and retry the
+same public ATS form in Safari using app name "Safari" or bundle id
+"com.apple.Safari". Do not use bare "Chrome". Do not spawn subagents or
+parallel browser workers.
 
 Rows whose notes, result, or blocker mention "upload-error redo", "Document
 upload failed", or "Firefox picker" are known document-upload retries. For
@@ -98,6 +109,11 @@ For each row:
   internships, projects, tools, metrics, dates, credentials, or responsibilities.
   If a required answer cannot be grounded in those sources, use a supported
   adjacent example or mark the row manual for Liam review.
+- Treat prior answered application questions as known answers. Before marking a
+  routine question uncertain, check skills/linkedin-easy-apply-nodriver/
+  references/application-defaults.md, the operating card, current tracker notes,
+  and prior submitted rows for the same question pattern. If the same question
+  has already been answered safely, reuse that answer and keep moving.
 - Keep browser tabs organized by perceived confidence when possible: High Confidence /
   Ready Submit, Needs Review, Hard Blocker, and Submitted / Archived. If Chrome
   tab groups are not scriptable, leave tabs ordered in that bucket sequence and
@@ -128,6 +144,10 @@ For each row:
 - Resume/CV fields are file-upload only. Never click "Enter manually", never
   paste resume text into an ATS form, and never submit with manually entered
   document text.
+- If the Chrome plugin reports that file upload is blocked, leave the tab open,
+  mark the row manual with blocker "Chrome plugin file upload blocked; enable
+  file URL access for the Codex Chrome Extension in chrome://extensions", and
+  continue.
 - Do not generate, render, write, paste, or upload cover letters. If a
   cover-letter field is optional, leave it blank. If a cover-letter field is
   required and cannot be skipped, leave the tab open, mark the row manual with
@@ -138,17 +158,23 @@ For each row:
   required", and continue.
 - Submit high-confidence applications when every required field is filled
   truthfully from standing answers, obvious profile facts, resume/profile
-  evidence, projects, or concise FRQ/custom written drafts. Click the final Submit/Submit application
+  evidence, projects, prior answered-question conventions, concise FRQ/custom
+  written drafts, or routine boilerplate acknowledgements. Click the final
+  Submit/Submit application
   button, wait for a confirmation page or confirmation text, capture it in
   confirmationEvidence, and set state to "submitted". Do not leave a
   high-confidence application staged or mark it manual merely because it is at
   the final submit button; final review is the point where high-confidence rows
   should be submitted.
 - Before clicking final Submit, make a short explicit decision: "submit is safe
-  because <reason>". Base the decision on the row's confidence score: only high
-  confidence may submit after truthful completion. Medium and low confidence
-  rows must not submit; fill every safe field and all answerable FRQs, mark the
-  row manual with the exact item Liam needs to review, and leave the tab open.
+  because <reason>". Base the decision on the row's confidence score: high
+  confidence includes standing answers, prior answered same-question patterns,
+  and routine acknowledgements such as privacy/data-processing, equal-opportunity,
+  recruiting contact consent, background-check disclosure notices, at-will
+  employment notices, electronic communication notices, and truthful
+  application-accuracy certifications. Medium and low confidence rows must not
+  submit; fill every safe field and all answerable FRQs, mark the row manual with
+  the exact item Liam needs to review, and leave the tab open.
 - Treat these rendered answers as guardrails before final submit: authorized to
   work in the United States = Yes; now/future sponsorship required = No;
   comfortable working onsite/hybrid/in-office in NYC or San Francisco, including
@@ -168,10 +194,12 @@ For each row:
 - FRQ/custom written prompts should be completed whenever they can be answered
   truthfully from Liam's profile, resume, projects, standing answers, tracker
   notes, and the posting. Draft concise, specific, truthful answers and review
-  them against the resume/profile evidence before final submit. Submit only if
-  the row is high confidence; otherwise leave the tab open at the cleanest
-  review point, mark manual with the exact FRQ/review item, and continue to the
-  next row.
+  them against the resume/profile evidence. It is okay not to submit an
+  application with an FRQ even after drafting the answer. If the answer is
+  routine/grounded and all other required fields are covered, the row may still
+  submit; if Liam review would be useful, leave the tab open at the cleanest
+  pre-submit review point, mark manual with the exact FRQ/review item, and
+  continue to the next row.
 - Medium and low confidence rows must not be submitted. Fill safe fields,
   upload the correct resume when possible, complete answerable FRQs, leave the
   tab open at the cleanest review point, mark manual with the exact blocker or
@@ -204,10 +232,10 @@ For each row:
   short application-submitted note; then refresh the visualizer cache with:
   python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 
-If Chrome/Computer Use itself is unavailable for a row, mark only the current
-row manual with the exact browser-access blocker, then exit the batch cleanly.
-Do not continue burning queued rows when the browser automation layer is
-systemically unavailable.
+If the Chrome plugin cannot communicate with Chrome and Chrome/Computer Use is
+also unavailable for a row, mark only the current row manual with the exact
+browser-access blocker, then exit the batch cleanly. Do not continue burning
+queued rows when the browser automation layer is systemically unavailable.
 
 Do not commit or push. The outer orchestrator owns commits.
 

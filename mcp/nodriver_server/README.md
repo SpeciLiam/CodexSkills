@@ -20,13 +20,32 @@ The browser starts in Google Chrome using the local signed-in Ben profile:
 
 - Account: `bendov1010@gmail.com`
 - Chrome profile directory: `Profile 1`
-- User data dir: `$HOME/Library/Application Support/Google/Chrome`
+- Automation user data dir: `$HOME/.codex/nodriver-chrome-ben`
+- Source user data dir: `$HOME/Library/Application Support/Google/Chrome`
 - Chrome binary: `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`
+
+Chrome 148+ refuses DevTools remote debugging against the default Chrome data
+directory, so nodriver must use a non-default copy of the signed-in profile.
+Refresh that copy while regular Chrome is closed:
+
+```bash
+mkdir -p "$HOME/.codex/nodriver-chrome-ben"
+rsync -a --delete \
+  --exclude='Singleton*' \
+  --exclude='Crashpad' \
+  --exclude='BrowserMetrics' \
+  --exclude='DeferredBrowserMetrics' \
+  --exclude='*/Cache' \
+  --exclude='*/Code Cache' \
+  --exclude='*/GPUCache' \
+  "$HOME/Library/Application Support/Google/Chrome/" \
+  "$HOME/.codex/nodriver-chrome-ben/"
+```
 
 You can override the local profile without editing code:
 
 ```bash
-export NODRIVER_CHROME_USER_DATA_DIR="$HOME/Library/Application Support/Google/Chrome"
+export NODRIVER_CHROME_USER_DATA_DIR="$HOME/.codex/nodriver-chrome-ben"
 export NODRIVER_CHROME_PROFILE_DIRECTORY="Profile 1"
 export NODRIVER_CHROME_EXECUTABLE_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 ```
