@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-30T04:26:18.456993+00:00",
+  "generatedAt": "2026-05-30T21:41:27.452472+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 995,
-      "applied": 630,
-      "unapplied": 365,
-      "active": 668,
+      "total": 999,
+      "applied": 631,
+      "unapplied": 368,
+      "active": 672,
       "rejected": 96,
       "interviewing": 5,
       "assessments": 3,
-      "highFit": 820,
-      "reachOut": 894,
+      "highFit": 823,
+      "reachOut": 898,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,17 +26,17 @@
       "intakeNew": 56,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 63.3,
+      "applyRate": 63.2,
       "rejectionRate": 15.2,
-      "recruiterWork": 547,
-      "engineerWork": 728,
+      "recruiterWork": 551,
+      "engineerWork": 732,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 525
+        "value": 527
       },
       {
         "name": "Archived",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Manual Apply Needed",
-        "value": 115
+        "value": 118
       },
       {
         "name": "Rejected",
@@ -52,7 +52,7 @@
       },
       {
         "name": "Resume Tailored",
-        "value": 20
+        "value": 19
       },
       {
         "name": "Interviewing",
@@ -82,7 +82,7 @@
       },
       {
         "name": "LinkedIn Easy Apply",
-        "value": 27
+        "value": 28
       },
       {
         "name": "Lever",
@@ -90,7 +90,7 @@
       },
       {
         "name": "LinkedIn / Greenhouse",
-        "value": 7
+        "value": 8
       },
       {
         "name": "Gem",
@@ -114,6 +114,10 @@
       },
       {
         "name": "Meta Careers",
+        "value": 2
+      },
+      {
+        "name": "LinkedIn / Workday",
         "value": 2
       },
       {
@@ -157,7 +161,7 @@
         "value": 1
       },
       {
-        "name": "LinkedIn / Workday",
+        "name": "Adobe Careers",
         "value": 1
       },
       {
@@ -228,19 +232,19 @@
     "locationCounts": [
       {
         "name": "New York",
-        "value": 412
+        "value": 413
       },
       {
         "name": "Bay Area",
-        "value": 226
+        "value": 227
       },
       {
         "name": "Other",
-        "value": 183
+        "value": 184
       },
       {
         "name": "Remote",
-        "value": 137
+        "value": 138
       },
       {
         "name": "Seattle",
@@ -258,7 +262,7 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 543
+        "value": 547
       },
       {
         "name": "Full Stack",
@@ -316,7 +320,7 @@
       },
       {
         "score": "7",
-        "count": 55
+        "count": 56
       },
       {
         "score": "8",
@@ -328,7 +332,7 @@
       },
       {
         "score": "10",
-        "count": 444
+        "count": 447
       }
     ],
     "targetCounts": [
@@ -695,6 +699,14 @@
         "applied": 38,
         "rejected": 0,
         "interviewing": 0
+      },
+      {
+        "date": "2026-05-30",
+        "cumulative": 999,
+        "added": 4,
+        "applied": 1,
+        "rejected": 0,
+        "interviewing": 0
       }
     ],
     "topCompanies": [
@@ -747,15 +759,15 @@
         "bestFit": 10
       },
       {
-        "company": "Clear Street",
-        "roles": 6,
-        "avgFit": 10.0,
+        "company": "Affirm",
+        "roles": 7,
+        "avgFit": 9.71,
         "bestFit": 10
       },
       {
-        "company": "Affirm",
+        "company": "Clear Street",
         "roles": 6,
-        "avgFit": 9.67,
+        "avgFit": 10.0,
         "bestFit": 10
       },
       {
@@ -5591,21 +5603,22 @@
       "dateAdded": "2026-05-08",
       "location": "New York, NY",
       "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/4402165922/?trackingId=n3nIWzW5%2FsjqL0Yu7dhZIQ%3D%3D&refId=glJ8A%2B2sNgHqb%2Bh7kMbvlQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3B1ZAisVhNS%2Fa%2BbbDZwRnYeA%3D%3D",
+      "jobLink": "https://www.linkedin.com/jobs/view/4402165922/?trackingId=Ka43OFTcqwxK0Ht%2F%2FWFmng%3D%3D&refId=I9HjXnIBNKG9lH5G5VIP5A%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BRQhkYTWDTrOGA8LsUjiKqw%3D%3D",
       "postingKey": "4402165922",
-      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Rokt/Junior_Software_Engineer/Liam_Van_Resume",
-      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Rokt/Junior_Software_Engineer/Liam_Van_Resume/Liam_Van_Rokt.pdf",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Rokt/Junior_Software_Engineer/Liam_Van_Resume_2",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Rokt/Junior_Software_Engineer/Liam_Van_Resume_2/Liam_Van_Rokt.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Application confirmation email received 2026-04-16; Criteria CCAT/EPP assessment completed 2026-04-16; One-way video interview invite received 2026-04-17; Tailored 2026-05-08 from early-career source for Rokt Junior Software Engineer role; emphasized TypeScript/React, Java/Spring Boot, AI-assisted development/testing, recommendation systems, search/retrieval, full-stack product ownership, data pipelines, scale/reliability, and cross-functional implementation. Did not claim direct ecommerce ad-tech ownership, production ML model training, or billion-transaction systems beyond supported resume evidence.",
+      "notes": "Application confirmation email received 2026-04-16; Criteria CCAT/EPP assessment completed 2026-04-16; One-way video interview invite received 2026-04-17; Tailored 2026-05-08 from early-career source for Rokt Junior Software Engineer role; emphasized TypeScript/React, Java/Spring Boot, AI-assisted development/testing, recommendation systems, search/retrieval, full-stack product ownership, data pipelines, scale/reliability, and cross-functional implementation. Did not claim direct ecommerce ad-tech ownership, production ML model training, or billion-transaction systems beyond supported resume evidence.; Refreshed tailored resume 2026-05-30 in Liam_Van_Resume_2; emphasized AI-assisted development, TypeScript/React product work, Java/Spring Boot APIs, recommendation/search systems, data pipelines, performance/reliability, and consumer product ownership for Rokt Junior Software Engineer.",
       "noteLinks": [],
       "activityDates": [
         "2026-04-16",
         "2026-04-16",
         "2026-04-17",
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-30"
       ]
     },
     {
@@ -26618,24 +26631,27 @@
       "company": "Adobe",
       "role": "Junior Software Development Engineer",
       "applied": false,
-      "status": "Resume Tailored",
+      "status": "Manual Apply Needed",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
       "dateAdded": "2026-05-26",
       "location": "San Jose, CA",
-      "source": "LinkedIn",
-      "jobLink": "https://www.linkedin.com/jobs/view/4408916821/",
-      "postingKey": "4408916821",
+      "source": "Adobe Careers",
+      "jobLink": "https://careers.adobe.com/us/en/apply?jobSeqNo=ADOBUSR168092EXTERNALENUS&utm_source=linkedin&utm_medium=phenom-feeds&source=LinkedIn&step=1&stepname=personalInformation",
+      "postingKey": "R168092",
       "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Adobe/Junior_Software_Development_Engineer/Liam_Van_Resume",
       "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Adobe/Junior_Software_Development_Engineer/Liam_Van_Resume/Liam_Van_Adobe.pdf",
       "recruiterContact": "",
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "",
+      "notes": "Manual apply needed 2026-05-30: Adobe Careers form opened to personal information step for requisition R168092, but tailored resume upload could not be completed because Chrome extension file upload returned Not allowed; tab left open at upload/personal information step with verified tailored PDF ready. Retry 2026-05-30: native macOS file picker successfully uploaded tailored resume and form advanced through personal information, experience, and application questions; tab left open after Adobe page state desynchronized on voluntary disclosures (URL step=4 while rendered/accessibility tree remained on education step), preventing reliable final disclosure/review submission.",
       "noteLinks": [],
-      "activityDates": []
+      "activityDates": [
+        "2026-05-30",
+        "2026-05-30"
+      ]
     },
     {
       "company": "Kiloforge",
@@ -28352,6 +28368,111 @@
       "noteLinks": [],
       "activityDates": [
         "2026-05-29"
+      ]
+    },
+    {
+      "company": "Shade Inc.",
+      "role": "Junior Software Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-30",
+      "location": "Manhattan, NY (On-site)",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4419975065/",
+      "postingKey": "4419975065",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Shade Inc./Junior_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Shade Inc./Junior_Software_Engineer/Liam_Van_Resume/Liam_Van_Shade_Inc..pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-30 from LinkedIn/Ashby Junior AI Search Engineer posting 4419975065; emphasized Python, AI/search/retrieval, LLM recommendation work, OpenSearch, Postgres/data workflows, production validation, and shipped product ownership. Manual apply needed 2026-05-30: Ashby form opened and filled with Liam Van, liamvanpj@gmail.com, LinkedIn profile, and 5-days-in-NYC-office answer Yes, but required resume upload could not be completed because Chrome extension file upload returned Not allowed; tab left open at resume upload step with verified one-page tailored PDF ready.; Application submitted by Liam 2026-05-30; confirmation shown after Shade Ashby submission.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-30",
+        "2026-05-30",
+        "2026-05-30"
+      ]
+    },
+    {
+      "company": "Athena",
+      "role": "Junior Software Engineer / Software Engineering",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 7,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-30",
+      "location": "Palo Alto, CA (Hybrid)",
+      "source": "LinkedIn Easy Apply",
+      "jobLink": "https://www.linkedin.com/jobs/view/4418528517/",
+      "postingKey": "4418528517",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Athena/Junior_Software_Engineer_Software_Engineering/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Athena/Junior_Software_Engineer_Software_Engineering/Liam_Van_Resume/Liam_Van_Athena.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-30 from LinkedIn Easy Apply posting 4418528517 for Python/Bash automation, Linux/VM support, deployment pipeline support, documentation, AI productivity tooling, and Docker/Kubernetes-adjacent startup ops work. Manual apply needed 2026-05-30: LinkedIn Easy Apply contact step completed with Liam's saved email and phone, but resume step only exposed stale prior resumes and tailored PDF upload failed because Chrome extension file upload returned Not allowed; modal left open at resume selection/upload step. Do not submit with stale AustinWorks/BrothersTech resume.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-30",
+        "2026-05-30"
+      ]
+    },
+    {
+      "company": "ThoughtSpot",
+      "role": "Member of Technical Staff 2",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-30",
+      "location": "Mountain View, CA (Hybrid)",
+      "source": "LinkedIn / Workday",
+      "jobLink": "https://www.linkedin.com/jobs/view/4418241301/",
+      "postingKey": "4418241301",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/ThoughtSpot/Member_of_Technical_Staff_2/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/ThoughtSpot/Member_of_Technical_Staff_2/Liam_Van_Resume/Liam_Van_ThoughtSpot.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-30 from LinkedIn last-week posting 4418241301 / Workday JR2171 for early-career Member of Technical Staff 2; emphasized Java/Python/JavaScript/C++, full-stack product surfaces, data/search pipelines, distributed debugging, code review collaboration, AI workflow literacy, and release validation. Do not overstate database-internals production ownership. Manual apply needed 2026-05-30: LinkedIn Apply opened thoughtspot.wd5.myworkdayjobs.com/careers/job/Mountain-View-CA/Member-of-Technical-Staff-2_JR2171, which showed Workday's \"page you are looking for doesn't exist\"; manually tried the public canonical Workday URL /en-US/careers/job/Member-of-Technical-Staff-2_JR2171 and Chrome still showed the same Workday error, though search results still index the posting. Tailored resume is ready.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-30",
+        "2026-05-30"
+      ]
+    },
+    {
+      "company": "Affirm",
+      "role": "Software Engineer, Early Career",
+      "applied": false,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "Yes",
+      "dateAdded": "2026-05-30",
+      "location": "San Francisco, CA; New York, NY; Remote US",
+      "source": "LinkedIn / Greenhouse",
+      "jobLink": "https://www.linkedin.com/jobs/view/4419370113/",
+      "postingKey": "4419370113",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Affirm/Software_Engineer_Early_Career/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Affirm/Software_Engineer_Early_Career/Liam_Van_Resume/Liam_Van_Affirm.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Applied 2026-05-30 by user after Codex prefilled Greenhouse form. Tailored 2026-05-30 from LinkedIn last-week posting 4419370113 / Greenhouse 7485068003 for Affirm's hybrid early-career software engineering cohort; emphasized tested/extensible code, backend APIs, React/product surfaces, data workflows, distributed debugging, code reviews, stakeholder communication, release validation, and fintech-adjacent product workflows. Posting says visa sponsorship is not available.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-30",
+        "2026-05-30"
       ]
     }
   ],
@@ -42096,6 +42217,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "ThoughtSpot",
+      "role": "Member of Technical Staff 2",
+      "postingKey": "4418241301",
+      "fitScore": 10,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4418241301/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-30",
+      "notes": "Queued by resume-tailor after tailored resume update; Workday apply URL showed \"page you are looking for doesn't exist\" in Chrome on 2026-05-30, tailored resume ready."
+    },
+    {
       "company": "Thesis",
       "role": "Full Stack Engineer",
       "postingKey": "5082367008",
@@ -42668,6 +42802,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Shade Inc.",
+      "role": "Junior Software Engineer",
+      "postingKey": "4419975065",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4419975065/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-30",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "SeatGeek",
       "role": "Software Engineer - New Grad",
       "postingKey": "7858968",
@@ -42869,7 +43016,7 @@
       "fitScore": 10,
       "status": "Interviewing",
       "reachOut": true,
-      "jobLink": "https://www.linkedin.com/jobs/view/4402165922/?trackingId=n3nIWzW5%2FsjqL0Yu7dhZIQ%3D%3D&refId=glJ8A%2B2sNgHqb%2Bh7kMbvlQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3B1ZAisVhNS%2Fa%2BbbDZwRnYeA%3D%3D",
+      "jobLink": "https://www.linkedin.com/jobs/view/4402165922/?trackingId=Ka43OFTcqwxK0Ht%2F%2FWFmng%3D%3D&refId=I9HjXnIBNKG9lH5G5VIP5A%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BRQhkYTWDTrOGA8LsUjiKqw%3D%3D",
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "",
@@ -46735,6 +46882,19 @@
       "readyEmails": 0,
       "lastUpdated": "2026-05-11",
       "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Affirm",
+      "role": "Software Engineer, Early Career",
+      "postingKey": "4419370113",
+      "fitScore": 10,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4419370113/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-30",
+      "notes": "Applied 2026-05-30 by user after Codex prefilled Greenhouse form; outreach remains useful."
     },
     {
       "company": "adMarketplace",
@@ -51896,6 +52056,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Athena",
+      "role": "Junior Software Engineer / Software Engineering",
+      "postingKey": "4418528517",
+      "fitScore": 7,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4418528517/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-30",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "3Si",
@@ -72318,6 +72491,18 @@
           "contacts": []
         },
         {
+          "key": "4419370113",
+          "company": "Affirm",
+          "role": "Software Engineer, Early Career",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7865719002",
           "company": "Airtable",
           "role": "Software Engineer, Infrastructure",
@@ -73914,6 +74099,18 @@
           "contacts": []
         },
         {
+          "key": "4419975065",
+          "company": "Shade Inc.",
+          "role": "Junior Software Engineer",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7690411003",
           "company": "Sigma Computing",
           "role": "Software Engineer (New Grad Program)",
@@ -74250,6 +74447,18 @@
           "contacts": []
         },
         {
+          "key": "4418241301",
+          "company": "ThoughtSpot",
+          "role": "Member of Technical Staff 2",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8367602002",
           "company": "Twitch",
           "role": "Software Engineer I",
@@ -74562,11 +74771,11 @@
           "contacts": []
         },
         {
-          "key": "4408916821",
+          "key": "R168092",
           "company": "Adobe",
           "role": "Junior Software Development Engineer",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -77973,6 +78182,18 @@
           "key": "4421231724",
           "company": "3Si",
           "role": "Software Developer I (Junior)",
+          "fitScore": 7,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4418528517",
+          "company": "Athena",
+          "role": "Junior Software Engineer / Software Engineering",
           "fitScore": 7,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -87862,6 +88083,18 @@
           "contacts": []
         },
         {
+          "key": "4419370113",
+          "company": "Affirm",
+          "role": "Software Engineer, Early Career",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7865719002",
           "company": "Airtable",
           "role": "Software Engineer, Infrastructure",
@@ -90322,6 +90555,18 @@
           "contacts": []
         },
         {
+          "key": "4419975065",
+          "company": "Shade Inc.",
+          "role": "Junior Software Engineer",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7690411003",
           "company": "Sigma Computing",
           "role": "Software Engineer (New Grad Program)",
@@ -90766,6 +91011,18 @@
           "contacts": []
         },
         {
+          "key": "4418241301",
+          "company": "ThoughtSpot",
+          "role": "Member of Technical Staff 2",
+          "fitScore": 10,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8367602002",
           "company": "Twitch",
           "role": "Software Engineer I",
@@ -91186,11 +91443,11 @@
           "contacts": []
         },
         {
-          "key": "4408916821",
+          "key": "R168092",
           "company": "Adobe",
           "role": "Junior Software Development Engineer",
           "fitScore": 9,
-          "status": "Resume Tailored",
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -94153,6 +94410,18 @@
           "key": "net-software-engineer-at-assurant-4344124661",
           "company": "Assurant",
           "role": ".NET Software Engineer",
+          "fitScore": 7,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4418528517",
+          "company": "Athena",
+          "role": "Junior Software Engineer / Software Engineering",
           "fitScore": 7,
           "status": "Manual Apply Needed",
           "count": 1,

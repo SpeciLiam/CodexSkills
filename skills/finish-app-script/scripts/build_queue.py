@@ -14,7 +14,7 @@ three corrections:
 3. "custom", "free response", "free-response" moved out of TRUE_MANUAL_BLOCKERS
    into a new CONFIDENCE_REDUCERS tuple. Those terms now reduce confidence
    (-20) instead of permanently blocking the row, so the agent attempts the
-   application with fill-and-leave-open behavior.
+   application with draft-and-leave-open behavior when FRQ review is useful.
 
 State file: /tmp/fa_script_run_state.json (separate namespace from legacy).
 """
@@ -57,14 +57,14 @@ TRUE_MANUAL_BLOCKERS = (
     "hcaptcha",
     "hiring network",
     "honeypot",
-    "legal signature",
+    "non-routine legal",
     "login",
     "non-compete",
     "partner sharing",
     "profile",
     "recaptcha",
     "repeat application limit",
-    "signature",
+    "contract terms",
     "workday",
 )
 
@@ -92,7 +92,7 @@ RETRYABLE_MANUAL_BLOCKERS = (
 
 # Confidence reducers: signal that the form has FRQ / custom prompts. Don't
 # block the row, but lower confidence so the agent runs in medium band and
-# follows fill-and-leave-open when uncertain.
+# follows draft-and-leave-open when FRQ review is useful.
 CONFIDENCE_REDUCERS = (
     "custom",
     "custom essay",
@@ -198,7 +198,7 @@ def is_email_verification_reason(reason: str) -> bool:
 
 def true_manual_reason(app: dict[str, Any]) -> str:
     if is_workday(app):
-        return "Workday posting; Liam should submit manually."
+        return ""
     reason = manual_reason_from_notes(str(app.get("notes") or ""))
     normalized = norm(reason)
     notes = norm(app.get("notes") or "")
@@ -264,12 +264,12 @@ def confidence_score(app: dict[str, Any], resume_exists: bool, manual_reason: st
         value += 10
     if source in {"workday"} or "myworkdayjobs" in notes:
         value -= 50
-    if any(term in notes for term in ("captcha", "hcaptcha", "recaptcha", "2fa", "otp", "account creation", "signature")):
+    if any(term in notes for term in ("captcha", "hcaptcha", "recaptcha", "2fa", "otp", "account creation", "non-routine legal", "contract terms")):
         value -= 30
     if any(term in notes for term in RETRYABLE_MANUAL_BLOCKERS):
         value += 10
     # FRQ / custom-essay signals: reduce confidence to push the row to medium
-    # band, so the agent runs fill-and-leave-open instead of being blocked.
+    # band, so the agent drafts FRQs and leaves the tab open for review when useful.
     if any(term in notes for term in CONFIDENCE_REDUCERS):
         value -= 20
 
@@ -318,7 +318,7 @@ def queue_item(app: dict[str, Any]) -> dict[str, Any]:
 
 def manual_item(app: dict[str, Any]) -> dict[str, Any]:
     item = queue_item(app)
-    item["manualReason"] = "Workday posting; Liam should submit manually."
+    item["manualReason"] = "Workday posting; attempt as far as safely possible, then hand off exact blocker if needed."
     return item
 
 
@@ -368,8 +368,9 @@ def build_run_state(
     now = datetime.now(timezone.utc).isoformat()
     # Default skill behavior kept true-manual rows out of the live browser
     # runner. For a full drain, include them as low-confidence queued attempts:
-    # the batch prompt still treats account/login/Workday/signature/CAPTCHA as
-    # manual blockers and only submits high-confidence completed forms.
+    # the worker still treats account/login/Workday account gates/non-routine
+    # legal/CAPTCHA as manual blockers after attempting as far as safely possible
+    # and only submits high-confidence completed forms.
     agent_queue = []
     seen_queue_keys: set[str] = set()
     for queue_entry in queues["ready"] + queues["retry"] + queues["manual"] + queues["manualWorkday"]:
@@ -432,6 +433,13 @@ def build_run_state(
             "submissionGate": "confidenceBand == high",
             "executionMode": "per-row codex exec orchestrator",
             "operatingCardPath": str(OPERATING_CARD),
+            "applicationChromeProfile": {
+                "name": "Liam",
+                "email": "liamvanpj@gmail.com",
+                "profileDirectory": "Default",
+                "browserAutomation": "Codex Chrome plugin first; Computer Use fallback only.",
+                "note": "Ben/Profile 1 is only for LinkedIn sourcing. Actual ATS/application work stays in Liam's real Chrome profile.",
+            },
         },
         "createdAt": existing.get("createdAt") or now,
         "updatedAt": now,

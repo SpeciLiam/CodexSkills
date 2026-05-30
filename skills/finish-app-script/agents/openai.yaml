@@ -1,10 +1,10 @@
 interface:
   display_name: "Finish App Script"
   short_description: "Rotating batch application runner with fresh Codex CLI parents"
-  default_prompt: "Use $finish-app-script to drain my application queue from chat. Refresh the visualizer cache, run skills/finish-app-script/scripts/build_queue.py, then run skills/finish-app-script/scripts/run_batches.py. Use the rotating parent batch mode by default, not legacy per-row mode, and report the summary."
+  default_prompt: "Use $finish-app-script to drain my application queue from chat. Run skills/finish-app-script/scripts/run_monitored_batches.py so the queue is refreshed, built, and drained by fresh per-application workers. Use the installed Codex Chrome plugin first for Liam-profile ATS/application forms, with Computer Use only as fallback, and report the summary."
 
 execution:
-  mode: "rotating-parent-orchestrator"
+  mode: "monitored-per-application-orchestrator"
   spawn_command: "codex exec"
   sandbox: "danger-full-access"
   default_model: "gpt-5.5"
@@ -29,6 +29,8 @@ candidate_profile:
   standing_submit_intent: "Attempt and complete routine applications for rows with tailored resumes; only stop for true blockers."
 
 browser_form_handling:
-  use_codex_computer_use: true
+  use_codex_chrome_plugin_first: true
+  use_codex_computer_use_fallback: true
+  chrome_plugin_note: "Use the installed Codex Chrome plugin first for Liam-profile ATS/application forms; it preserves cookies, saved logins, existing tabs, uploads, and portal state."
   filtered_selects: "Open the menu, click the actual option, verify the rendered chip. Never leave typed text in a typeahead unselected."
   fill_and_leave_open: "For FRQ or medium-confidence fields: fill all safe fields, generate best-effort answer from profile, leave tab open, mark state=manual with exact blocker, continue queue."

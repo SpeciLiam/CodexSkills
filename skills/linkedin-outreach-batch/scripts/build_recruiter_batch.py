@@ -176,6 +176,12 @@ def needs_contact(app: dict[str, Any], config: dict[str, str | Path]) -> bool:
     if str(app.get("status", "")).lower() in {"rejected", "archived"}:
         return False
     notes = str(app.get("notes", "")).lower()
+    if str(config.get("batch_prefix")) == "engineer":
+        # Avoid re-queueing companies where engineer outreach is already recorded in the tracker notes.
+        # The canonical marker comes from `update_outreach_tracker.py` which appends
+        # "LinkedIn invite sent to ... (Engineer) YYYY-MM-DD".
+        if "linkedin invite sent" in notes and ("(engineer)" in notes or "engineer contact" in notes):
+            return False
     return not any(pattern in notes for pattern in SKIP_NOTE_PATTERNS)
 
 

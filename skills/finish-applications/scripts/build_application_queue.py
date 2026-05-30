@@ -36,7 +36,7 @@ TRUE_MANUAL_BLOCKERS = (
     "hcaptcha",
     "hiring network",
     "honeypot",
-    "legal signature",
+    "non-routine legal",
     "login",
     "non-compete",
     "not automation-accessible",
@@ -45,7 +45,7 @@ TRUE_MANUAL_BLOCKERS = (
     "profile",
     "recaptcha",
     "repeat application limit",
-    "signature",
+    "contract terms",
     "verification",
     "workday",
 )
@@ -195,7 +195,7 @@ def confidence_score(app: dict[str, Any], resume_exists: bool, manual_reason: st
         value += 10
     if source in {"workday"} or "myworkdayjobs" in notes:
         value -= 50
-    if any(term in notes for term in ("captcha", "hcaptcha", "recaptcha", "2fa", "otp", "account creation", "signature")):
+    if any(term in notes for term in ("captcha", "hcaptcha", "recaptcha", "2fa", "otp", "account creation", "non-routine legal", "contract terms")):
         value -= 30
     if any(term in notes for term in RETRYABLE_MANUAL_BLOCKERS):
         value += 10
@@ -349,7 +349,13 @@ def build_run_state(
             "askOnlyForTrueBlockers": True,
             "preferredExecution": "single Codex agent using Chrome Computer Use directly",
             "contextHandoff": "when context is crowded, checkpoint files and rerun finish-applications from fresh context",
-            "defaultBrowser": "Chrome Computer Use",
+            "defaultBrowser": "Chrome Computer Use with Liam profile (Default, liamvanpj@gmail.com)",
+            "applicationChromeProfile": {
+                "name": "Liam",
+                "email": "liamvanpj@gmail.com",
+                "profileDirectory": "Default",
+                "note": "Ben/Profile 1 is only for LinkedIn sourcing.",
+            },
             "agentOwns": ["browser flow", "run state", "tracker updates", "cache refresh", "commits"],
         },
         "createdAt": existing.get("createdAt") or now,
