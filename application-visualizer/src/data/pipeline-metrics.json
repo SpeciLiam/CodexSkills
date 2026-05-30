@@ -2,15 +2,9 @@
   "applicationsPerDay": [
     {
       "archived": 0,
-      "date": "2026-05-22",
-      "manual": 0,
-      "submitted": 0
-    },
-    {
-      "archived": 0,
       "date": "2026-05-23",
       "manual": 0,
-      "submitted": 21
+      "submitted": 11
     },
     {
       "archived": 0,
@@ -45,8 +39,14 @@
     {
       "archived": 20,
       "date": "2026-05-29",
-      "manual": 1,
-      "submitted": 29
+      "manual": 2,
+      "submitted": 32
+    },
+    {
+      "archived": 0,
+      "date": "2026-05-30",
+      "manual": 0,
+      "submitted": 0
     }
   ],
   "avgConfidenceBySource": [
@@ -84,14 +84,9 @@
       "avgScore": 0.0,
       "band": "low",
       "source": "Meta Careers"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
-      "source": "Workday"
     }
   ],
-  "generatedAt": "2026-05-29T22:24:14.829728+00:00",
+  "generatedAt": "2026-05-30T04:26:18.567742+00:00",
   "intakeHealth": {
     "greenhouseCapturedToday": 0,
     "greenhouseLastRun": "",
@@ -101,18 +96,18 @@
   },
   "queueDepth": {
     "intakeUnprocessed": 165,
-    "manualApplyNeeded": 96,
+    "manualApplyNeeded": 114,
     "readyToApply": 0,
     "resumeTailored": 20
   },
   "submitSuccessRate": {
-    "archived": 0.25,
-    "manual": 0.013,
-    "submitted": 0.738
+    "archived": 0.27,
+    "manual": 0.027,
+    "submitted": 0.703
   },
   "topBlockers": [
     {
-      "count": 1,
+      "count": 2,
       "reason": "unspecified"
     }
   ],

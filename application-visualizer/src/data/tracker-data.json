@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T22:24:14.769318+00:00",
+  "generatedAt": "2026-05-30T04:26:18.456993+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,15 +9,15 @@
   },
   "stats": {
     "kpis": {
-      "total": 938,
-      "applied": 592,
-      "unapplied": 346,
-      "active": 612,
+      "total": 995,
+      "applied": 630,
+      "unapplied": 365,
+      "active": 668,
       "rejected": 96,
       "interviewing": 5,
       "assessments": 3,
-      "highFit": 791,
-      "reachOut": 856,
+      "highFit": 820,
+      "reachOut": 894,
       "recruiterRows": 126,
       "prospects": 3,
       "readyEmails": 3,
@@ -26,25 +26,25 @@
       "intakeNew": 56,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 63.1,
-      "rejectionRate": 16.2,
-      "recruiterWork": 509,
-      "engineerWork": 690,
+      "applyRate": 63.3,
+      "rejectionRate": 15.2,
+      "recruiterWork": 547,
+      "engineerWork": 728,
       "recruiterReachedOut": 116,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 487
+        "value": 525
       },
       {
         "name": "Archived",
-        "value": 230
+        "value": 231
       },
       {
         "name": "Manual Apply Needed",
-        "value": 97
+        "value": 115
       },
       {
         "name": "Rejected",
@@ -70,7 +70,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 343
+        "value": 359
       },
       {
         "name": "Ashby",
@@ -82,11 +82,15 @@
       },
       {
         "name": "LinkedIn Easy Apply",
-        "value": 14
+        "value": 27
       },
       {
         "name": "Lever",
         "value": 12
+      },
+      {
+        "name": "LinkedIn / Greenhouse",
+        "value": 7
       },
       {
         "name": "Gem",
@@ -110,6 +114,14 @@
       },
       {
         "name": "Meta Careers",
+        "value": 2
+      },
+      {
+        "name": "LinkedIn / Ashby",
+        "value": 2
+      },
+      {
+        "name": "LinkedIn/Ashby",
         "value": 2
       },
       {
@@ -143,28 +155,96 @@
       {
         "name": "Amazon Jobs",
         "value": 1
+      },
+      {
+        "name": "LinkedIn / Workday",
+        "value": 1
+      },
+      {
+        "name": "LinkedIn / Jobvite",
+        "value": 1
+      },
+      {
+        "name": "Amazon Jobs / LinkedIn",
+        "value": 1
+      },
+      {
+        "name": "LinkedIn / BrightMove",
+        "value": 1
+      },
+      {
+        "name": "LinkedIn / Nokia Oracle Cloud HCM",
+        "value": 1
+      },
+      {
+        "name": "LinkedIn / Amazon.jobs",
+        "value": 1
+      },
+      {
+        "name": "LinkedIn / Bain Careers",
+        "value": 1
+      },
+      {
+        "name": "LinkedIn / SAIC",
+        "value": 1
+      },
+      {
+        "name": "LinkedIn / Ericsson SuccessFactors",
+        "value": 1
+      },
+      {
+        "name": "LinkedIn / Epic Avature",
+        "value": 1
+      },
+      {
+        "name": "LinkedIn / Dice",
+        "value": 1
+      },
+      {
+        "name": "LinkedIn / PCRecruiter",
+        "value": 1
+      },
+      {
+        "name": "LinkedIn Easy Apply / JazzHR",
+        "value": 1
+      },
+      {
+        "name": "LinkedIn / UKG",
+        "value": 1
+      },
+      {
+        "name": "LinkedIn/Qualcomm Eightfold",
+        "value": 1
+      },
+      {
+        "name": "LinkedIn/AARP iCIMS",
+        "value": 1
+      },
+      {
+        "name": "LinkedIn / IBM Avature",
+        "value": 1
       }
     ],
     "locationCounts": [
       {
         "name": "New York",
-        "value": 407
+        "value": 412
       },
       {
         "name": "Bay Area",
-        "value": 216
+        "value": 226
       },
       {
         "name": "Other",
-        "value": 151
+        "value": 183
       },
       {
         "name": "Remote",
-        "value": 129
+        "value": 137
       },
       {
         "name": "Seattle",
-        "value": 27
+        "value": 29
       },
       {
         "name": "Unknown",
@@ -178,27 +258,27 @@
     "roleCounts": [
       {
         "name": "General SWE",
-        "value": 501
+        "value": 543
       },
       {
         "name": "Full Stack",
-        "value": 118
+        "value": 122
       },
       {
         "name": "Backend",
-        "value": 101
+        "value": 102
       },
       {
         "name": "AI/ML",
-        "value": 72
+        "value": 77
       },
       {
         "name": "Forward Deployed",
-        "value": 68
+        "value": 70
       },
       {
         "name": "Infra/Platform",
-        "value": 48
+        "value": 49
       },
       {
         "name": "Frontend",
@@ -206,13 +286,13 @@
       },
       {
         "name": "Data",
-        "value": 13
+        "value": 15
       }
     ],
     "fitCounts": [
       {
         "score": "1",
-        "count": 43
+        "count": 44
       },
       {
         "score": "2",
@@ -220,35 +300,35 @@
       },
       {
         "score": "3",
-        "count": 2
+        "count": 3
       },
       {
         "score": "4",
-        "count": 5
+        "count": 6
       },
       {
         "score": "5",
-        "count": 29
+        "count": 33
       },
       {
         "score": "6",
-        "count": 14
+        "count": 22
       },
       {
         "score": "7",
-        "count": 42
+        "count": 55
       },
       {
         "score": "8",
-        "count": 176
+        "count": 194
       },
       {
         "score": "9",
-        "count": 176
+        "count": 182
       },
       {
         "score": "10",
-        "count": 439
+        "count": 444
       }
     ],
     "targetCounts": [
@@ -516,7 +596,7 @@
         "date": "2026-05-09",
         "cumulative": 704,
         "added": 56,
-        "applied": 17,
+        "applied": 19,
         "rejected": 3,
         "interviewing": 0
       },
@@ -610,9 +690,9 @@
       },
       {
         "date": "2026-05-29",
-        "cumulative": 938,
-        "added": 2,
-        "applied": 2,
+        "cumulative": 995,
+        "added": 59,
+        "applied": 38,
         "rejected": 0,
         "interviewing": 0
       }
@@ -19276,8 +19356,8 @@
     {
       "company": "Ansa",
       "role": "Mid-Level Full Stack Engineer - Backend Focused",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -19292,10 +19372,11 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Tailored 2026-05-09 from public Greenhouse capture; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback, so the Greenhouse application could not be safely opened/submitted.",
+      "notes": "Tailored 2026-05-09 from public Greenhouse capture; manual apply needed because Computer Use approval was denied for Google Chrome/com.google.Chrome after delayed retry and Firefox/org.mozilla.firefox fallback, so the Greenhouse application could not be safely opened/submitted.; Application submitted 2026-05-29 via Greenhouse; confirmation page: Thank you for applying. Your application has been received.",
       "noteLinks": [],
       "activityDates": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-29"
       ]
     },
     {
@@ -20422,8 +20503,8 @@
     {
       "company": "Chime",
       "role": "Software Engineer, Instant Loans",
-      "applied": false,
-      "status": "Manual Apply Needed",
+      "applied": true,
+      "status": "Applied",
       "fitScore": 9,
       "reachOut": true,
       "referral": "No",
@@ -20438,11 +20519,12 @@
       "recruiterProfile": "",
       "engineerContact": "",
       "engineerProfile": "",
-      "notes": "Hourly intake 2026-05-09 18:17 PT; captured from Greenhouse public board/search, tailored resume rendered and verified one page. Manual apply needed: application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-09.",
+      "notes": "Hourly intake 2026-05-09 18:17 PT; captured from Greenhouse public board/search, tailored resume rendered and verified one page. Manual apply needed: application attempt blocked because Computer Use approval was denied for Chrome/Google Chrome/com.google.Chrome and Firefox/org.mozilla.firefox after required delayed retry preflight 2026-05-09.; Application submitted 2026-05-29",
       "noteLinks": [],
       "activityDates": [
         "2026-05-09",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-29"
       ]
     },
     {
@@ -26854,6 +26936,1421 @@
       "noteLinks": [],
       "activityDates": [
         "2026-05-29",
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Switchboard",
+      "role": "Junior Software Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "New York, NY",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4420988356/",
+      "postingKey": "4420988356",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Switchboard/Junior_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Switchboard/Junior_Software_Engineer/Liam_Van_Resume/Liam_Van_Switchboard.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-29 from LinkedIn Easy Apply posting 4420988356 for NYC junior full-stack role building AI-assisted commercial insurance brokerage systems; emphasized full-stack product shipping, AI-assisted API testing/workflows, Postgres-backed applications, production validation, ownership, and customer-facing systems without claiming Rails/Hotwire experience.; LinkedIn Easy Apply submitted 2026-05-29 with tailored Switchboard resume; confirmation visible after submission; start-immediate question answered No per standing two-week availability.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29",
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "IBM",
+      "role": "Entry Level Software Developer 2026",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "San Jose, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4417968790/",
+      "postingKey": "4417968790",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/IBM/Entry_Level_Software_Developer_2026/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/IBM/Entry_Level_Software_Developer_2026/Liam_Van_Resume/Liam_Van_IBM.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-29 from LinkedIn posting 4417968790 for IBM Entry Level Software Developer 2026 in San Jose; emphasized Java/Python/C++/JavaScript breadth, responsive UI, REST APIs, data modeling, cloud reliability, API validation, agile collaboration, and enterprise release readiness.; Manual apply needed 2026-05-29: IBM external Avature apply requires IBMid login for liamvanpj@gmail.com and then a password before the form; tailored IBM resume is ready at /Users/liamvan/Documents/Repos/CodexSkills/companies/IBM/Entry_Level_Software_Developer_2026/Liam_Van_Resume/Liam_Van_IBM.pdf.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29",
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "BeaconFire Inc.",
+      "role": "Software Engineer Entry Level",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "California, United States",
+      "source": "LinkedIn Easy Apply",
+      "jobLink": "https://www.linkedin.com/jobs/view/4417989141/",
+      "postingKey": "4417989141",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/BeaconFire Inc./Software_Engineer_Entry_Level/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/BeaconFire Inc./Software_Engineer_Entry_Level/Liam_Van_Resume/Liam_Van_BeaconFire_Inc..pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn Easy Apply submitted 2026-05-29 with tailored BeaconFire resume; confirmation visible after submission. Answers: onsite Yes, authorized to work in US Yes, visa sponsorship required No; top-choice boost not selected.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Microchip Technology",
+      "role": "Engineer I- Software",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Boulder, CO",
+      "source": "LinkedIn / Workday",
+      "jobLink": "https://www.linkedin.com/jobs/view/4420992088/",
+      "postingKey": "4420992088",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Microchip Technology/Engineer_I_Software/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Microchip Technology/Engineer_I_Software/Liam_Van_Resume/Liam_Van_Microchip_Technology.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-29 from LinkedIn/Workday posting 4420992088 for Microchip Engineer I- Software in Boulder; emphasized C++/Python fundamentals, debugging, validation, Linux/Unix scripting, release-quality checks, and regulated engineering readiness without claiming embedded/timing experience. Manual apply needed 2026-05-29: external Workday flow requires creating/signing into a Microchip Workday account before resume upload/application steps; tailored resume is ready at /Users/liamvan/Documents/Repos/CodexSkills/companies/Microchip Technology/Engineer_I_Software/Liam_Van_Resume/Liam_Van_Microchip_Technology.pdf.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29",
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Acceler8 Talent",
+      "role": "Software Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "San Francisco Bay Area",
+      "source": "LinkedIn Easy Apply",
+      "jobLink": "https://www.linkedin.com/jobs/view/4417926516/",
+      "postingKey": "4417926516",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Acceler8 Talent/Software_Engineer_AI_Insurance_Claims/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Acceler8 Talent/Software_Engineer_AI_Insurance_Claims/Liam_Van_Resume/Liam_Van_Acceler8_Talent.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-29 from LinkedIn Easy Apply posting 4417926516 for Acceler8 Talent recruiter role at unnamed AI insurance-claims startup; emphasized Python, backend APIs, Postgres/OpenSearch/retrieval, cloud/containerized systems, AI-assisted workflows, production validation, and high-ownership startup execution. Did not claim direct production RAG ownership, multimodal ML deployment, insurance-domain experience, or 3+ years professional Python beyond supported evidence.; LinkedIn Easy Apply submitted 2026-05-29 with tailored Acceler8 resume; confirmation visible in LinkedIn as 'Application submitted now' and 'Your application was sent to Acceler8 Talent!'. Answers: onsite Yes; Python work experience 2 years; contact email liamvanpj@gmail.com.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29",
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Greylock Partners",
+      "role": "Forward Deployed Engineer (Multiple Opportunities)",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "San Francisco Bay Area",
+      "source": "LinkedIn Easy Apply",
+      "jobLink": "https://www.linkedin.com/jobs/view/4372000251/",
+      "postingKey": "4372000251",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Greylock Partners/Forward_Deployed_Engineer_Multiple_Opportunities/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Greylock Partners/Forward_Deployed_Engineer_Multiple_Opportunities/Liam_Van_Resume/Liam_Van_Greylock_Partners.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-29 from LinkedIn Easy Apply posting 4372000251 for Greylock Forward Deployed Engineer multiple-opportunities role; emphasized TypeScript/Python prototyping, user-facing product delivery, production software, backend/provider integrations, cloud release validation, debugging ambiguous issues, and founder-style ownership. Did not claim direct startup employment, sales ownership, or more than supported professional experience.; LinkedIn Easy Apply submitted 2026-05-29 with tailored Greylock resume; confirmation visible in LinkedIn as 'Application submitted now' and 'Your application was sent to Greylock Partners!'. Answers: contact email liamvanpj@gmail.com; top-choice boost not selected.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29",
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "OPEN Healthcare",
+      "role": "Junior Full-Stack Web Developer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Gardena, CA",
+      "source": "LinkedIn Easy Apply",
+      "jobLink": "https://www.linkedin.com/jobs/view/4422023467/",
+      "postingKey": "4422023467",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OPEN Healthcare/Junior_Full_Stack_Web_Developer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/OPEN Healthcare/Junior_Full_Stack_Web_Developer/Liam_Van_Resume/Liam_Van_OPEN_Healthcare.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored for junior full-stack healthcare web role: React/frontend, backend APIs, Postgres/Supabase, Docker/cloud, testing, documentation, and onsite availability.; LinkedIn Easy Apply submitted 2026-05-29 with tailored OPEN Healthcare resume; LinkedIn confirmation visible as 'Application submitted now'. Answers: work authorization documents Yes; sponsorship now/future No; resume legal name Yes; minimum salary requirement ,000; bachelor/equivalent Yes; top-choice boost not selected; follow-company checkbox unchecked.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Further",
+      "role": "Entry Level Software Developer | Graduate Leadership Program",
+      "applied": false,
+      "status": "Archived",
+      "fitScore": 1,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Dallas, TX",
+      "source": "LinkedIn / Greenhouse",
+      "jobLink": "https://www.linkedin.com/jobs/view/4403122265/",
+      "postingKey": "4403122265",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Further/Entry_Level_Software_Developer_Graduate_Leadership_Program/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Further/Entry_Level_Software_Developer_Graduate_Leadership_Program/Liam_Van_Resume/Liam_Van_Further.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-29 from LinkedIn/Greenhouse posting 4403122265 / Greenhouse 8384012002; emphasized TypeScript, Python, Git, Agile, AI coding-agent fluency, data/cloud application development, clean code, code review, and client-project readiness. Did not claim Dallas residency or unsupported certifications.; Archived 2026-05-29 after live Greenhouse inspection: required qualification asks for completed Bachelor's or Master's Degree between Fall 2025 and Spring 2026, but Liam's truthful graduation date is Dec 2024. Application not submitted; tailored resume exists but role is eligibility-mismatched. Greenhouse also required transcript upload and Dallas June/July 2026 readiness answers.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29",
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Stealth Startup",
+      "role": "Full Stack Developer [33002]",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "San Francisco, CA (Remote)",
+      "source": "LinkedIn Easy Apply",
+      "jobLink": "https://www.linkedin.com/jobs/view/4417915953/",
+      "postingKey": "4417915953",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Stealth Startup/Full_Stack_Developer_33002/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Stealth Startup/Full_Stack_Developer_33002/Liam_Van_Resume/Liam_Van_Stealth_Startup.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-29 from LinkedIn posting 4417915953 for Full Stack Developer [33002]; emphasized Python, React/Angular-style frontend, REST APIs, SQL/Postgres/Supabase, Git, debugging, CI/CD, and full-stack product delivery. Did not claim NoSQL production ownership beyond database-system familiarity supported by data modeling and backend work.; LinkedIn Easy Apply submitted 2026-05-29 with tailored Stealth Startup Full Stack Developer [33002] resume; LinkedIn confirmation visible as 'Your application was sent to Stealth Startup!' and Application status: Application submitted now. Answers: Python 2 years, Git 3 years, REST 3 years, AI-generated email/text/phone matching opportunities No, top choice not selected, follow company unchecked.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29",
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "iSoftStone",
+      "role": "Software Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 7,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Palo Alto, CA (On-site)",
+      "source": "LinkedIn / Jobvite",
+      "jobLink": "https://jobs.jobvite.com/isoftstone/job/ouBLzfw9?__jvst=Job%20Board&__jvsd=LinkedIn",
+      "postingKey": "ouBLzfw9",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/iSoftStone/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/iSoftStone/Software_Engineer/Liam_Van_Resume/Liam_Van_iSoftStone.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-29 from LinkedIn posting 4378981044 / Jobvite ouBLzfw9 for one-year W2 contract Software Engineer role in Palo Alto; emphasized Java/Python/SQL, data-processing workflows, ETL-style pipelines, backend integrations, API validation, troubleshooting, Git, CI/CD, and release support.; Application submitted 2026-05-29 via Jobvite confirmation page: 'Application Sent! We will review your application and will contact you if it's a good match.' Tailored resume uploaded; voluntary EEO fields left blank.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29",
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Jobright.ai",
+      "role": "Software Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "United States (Remote)",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4422044937/",
+      "postingKey": "4422044937",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Jobright.ai/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Jobright.ai/Software_Engineer/Liam_Van_Resume/Liam_Van_Jobright.ai.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn job 4422044937. AI job-search platform software engineer role focused on backend services, APIs, frontend features, AI agents, Python/TypeScript, cloud, and SQL.; Application submitted 2026-05-29 via LinkedIn Easy Apply confirmation: 'Your application was sent to Jobright.ai!' Tailored PDF uploaded; follow company left unchecked.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Atris",
+      "role": "Forward Deployed Engineer (New Grad)",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "San Francisco Bay Area (Hybrid)",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4419373024/",
+      "postingKey": "4419373024",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Atris/Forward_Deployed_Engineer_New_Grad/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Atris/Forward_Deployed_Engineer_New_Grad/Liam_Van_Resume/Liam_Van_Atris.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn job 4419373024. Tailored for early-career forward deployed engineer role at Atris: Python/TypeScript, AI tools, customer workflows, product shipping, integrations, ambiguity, and 25-50% travel.; Application submitted 2026-05-29 via LinkedIn Easy Apply confirmation: application status showed Application submitted. Tailored PDF uploaded. Answers: willing to travel 1-2 weeks per month Yes; future sponsorship required No; top choice off; follow company off.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Refocus LLC",
+      "role": "Software Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 6,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "New Jersey, United States (Hybrid)",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4422028585/",
+      "postingKey": "4422028585",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Refocus LLC/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Refocus LLC/Software_Engineer/Liam_Van_Resume/Liam_Van_Refocus_LLC.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn job 4422028585. Entry-level/new-grad software engineer Easy Apply via Refocus LLC staffing/recruiting posting. Tailored/reused early-career SWE resume emphasizing Java, Python, JavaScript, SQL, Git, APIs, testing, debugging, and collaborative product delivery.; Application submitted 2026-05-29 via LinkedIn Easy Apply confirmation: Your application was sent to Refocus LLC. Tailored PDF uploaded. Top choice off; follow company off.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "TikTok",
+      "role": "Software Engineer Graduate (Global CRM) - 2026 Start (BS/MS)",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "San Jose, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4273515903/",
+      "postingKey": "4273515903",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/TikTok/Software_Engineer_Graduate_Global_CRM_2026_Start/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/TikTok/Software_Engineer_Graduate_Global_CRM_2026_Start/Liam_Van_Resume/Liam_Van_TikTok.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn job 4273515903. TikTok graduate backend/CRM role requiring Java, Spring Boot/microservices, relational databases, and scalable CRM platform work. Tailored PDF verified one page. Candidate limit note: TikTok global two-position application cap appears in posting.; Application prepared 2026-05-29 via TikTok careers company-site application after LinkedIn SSO. Tailored PDF uploaded and form filled: UGA bachelor's in Computer Science, Aug 2020-Dec 2024; work authorization Yes; sponsorship No; source Social Networking Platforms > LinkedIn Jobs. Blocked at final submit by interactive CAPTCHA asking to select matching shapes; tab left open for Liam to complete.; Application submitted 2026-05-29 via TikTok careers company-site application after LinkedIn SSO. Tailored PDF uploaded. Confirmation page displayed: 'Thanks for your interest in TikTok. We have received your resume.' Work authorization Yes; sponsorship No; source Social Networking Platforms > LinkedIn Jobs.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29",
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Jack",
+      "role": "Founding Product Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "San Francisco Bay Area",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4422038376/",
+      "postingKey": "4422038376",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Jack/Founding_Product_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Jack/Founding_Product_Engineer/Liam_Van_Resume/Liam_Van_Jack.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn job 4422038376. Founding Product Engineer role at Jack / searchwithjack for AI-native outbound sales and customer engagement platform. Tailored PDF verified one page; emphasized React/TypeScript/Python, AI workflows, customer-facing product UX, Supabase/Postgres, full-stack ownership, and startup/product execution.; Manual apply needed 2026-05-29: Search with Jack external flow requires creating/logging into a Jack account before resume upload and application submission. Tailored one-page PDF is ready and tab left open at account screen.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Amazon",
+      "role": "Software Development Engineer - 2026 (US)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Seattle, WA",
+      "source": "Amazon Jobs / LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4371234483/",
+      "postingKey": "4371234483",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Amazon/Software_Development_Engineer_2026_US/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Amazon/Software_Development_Engineer_2026_US/Liam_Van_Resume/Liam_Van_Amazon.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-29: Amazon.jobs login accepted saved credentials but requires email verification code/MFA before resume upload/application continuation; tailored one-page resume ready. Amazon Job ID: 3177934; LinkedIn job ID: 4371234483.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "3Si",
+      "role": "Software Developer I (Junior)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 7,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Ashburn, VA",
+      "source": "LinkedIn / BrightMove",
+      "jobLink": "https://www.linkedin.com/jobs/view/4421231724/",
+      "postingKey": "4421231724",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/3Si/Software_Developer_I_Junior/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/3Si/Software_Developer_I_Junior/Liam_Van_3Si.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-29: BrightMove external flow requires creating a candidate profile with username/password before resume upload/application submission; tailored one-page resume ready. BrightMove Job ID: 27778449; LinkedIn job ID: 4421231724. Role is on-site in Ashburn, VA and requires background check/drug screen plus reliable commute answer.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Qualcomm",
+      "role": "Software Security Engineer (Multiple Levels)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 7,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "San Diego, CA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4401437974/",
+      "postingKey": "4401437974",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Qualcomm/Software_Security_Engineer_Multiple_Levels/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Qualcomm/Software_Security_Engineer_Multiple_Levels/Liam_Van_Resume/Liam_Van_Qualcomm.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-29: Qualcomm Eightfold flow did not recognize liamvanpj@gmail.com and requires creating a new Qualcomm account before application continuation; tailored one-page resume ready. Qualcomm careers pid/job link 446718079553, page job ID 3089769; LinkedIn job ID 4401437974. Low-match embedded/security role but accepts 0-7 years.; LinkedIn 4401437974 / Qualcomm pid 446718079553. Tailored resume uploaded and contact/country fields populated in Qualcomm Eightfold application. Manual review needed before final submit because required consent includes Qualcomm Terms and a mutual mandatory arbitration agreement; tab left open at the application form.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Tech Consulting",
+      "role": "Junior Software Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 7,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Colorado, United States (On-site)",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4421790499/",
+      "postingKey": "4421790499",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tech Consulting/Junior_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tech Consulting/Junior_Software_Engineer/Liam_Van_Resume/Liam_Van_Tech_Consulting.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn Easy Apply 4421790499. Consulting/W-2 junior SWE role requiring USC/GC, no sponsorship, Java or C#, and willingness to relocate to client projects; one-page tailored resume rendered and verified.; LinkedIn Easy Apply 4421790499 submitted with tailored one-page resume. Answered USC/GC/TN Yes, work authorized Yes, sponsorship No, immediate start Yes, consulting and relocation Yes; company follow unchecked.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Amazon Web Services (AWS)",
+      "role": "Software Development Engineer, AWS Data Services - 2026 (US)",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Seattle, WA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4411836289/",
+      "postingKey": "4411836289",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Amazon Web Services (AWS",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Amazon Web Services (AWS",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4411836289 / Amazon Jobs 10414316. AWS Data Services SDE-I posting for database, storage, analytics, distributed systems, cloud-native architecture, Java/Python/C++/TypeScript, SDLC, and operational ownership; one-page tailored AWS resume rendered and verified.; LinkedIn 4411836289 / Amazon Jobs 10414316. Tailored one-page AWS Data Services resume rendered and verified. Amazon.jobs accepted saved credentials but requires email verification code sent to liamvanpj@gmail.com before the application can continue; tab left open at verification screen.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "BayOne Solutions",
+      "role": "Junior Java Developer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 7,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Fremont, CA (Hybrid)",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4422025160/",
+      "postingKey": "4422025160",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/BayOne Solutions/Junior_Java_Developer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/BayOne Solutions/Junior_Java_Developer/Liam_Van_Resume/Liam_Van_BayOne_Solutions.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn Easy Apply 4422025160. W2 long-term contract Junior Java Developer role emphasizing Java, microservices, REST APIs, SQL, React/Angular, Git, Agile, and hybrid Fremont; one-page tailored resume rendered and verified.; LinkedIn Easy Apply 4422025160 submitted with visible LinkedIn confirmation. Tailored one-page resume uploaded; follow company unchecked. Role emphasizes Java, microservices, REST APIs, SQL, React/Angular, Git, Agile, W2 long-term contract, and hybrid Fremont.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Tech Consulting",
+      "role": "Full Stack Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Dallas, TX (On-site)",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4417956872/",
+      "postingKey": "4417956872",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tech Consulting/Full_Stack_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tech Consulting/Full_Stack_Engineer/Liam_Van_Resume/Liam_Van_Tech_Consulting.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn Easy Apply 4417956872. Entry-level full-stack developer role emphasizing React/HTML/CSS/JavaScript, Node.js or similar backend, REST APIs, SQL/NoSQL databases, Git/GitHub, AWS/Firebase/Vercel, CI/CD, Agile, and relocation/open onsite Dallas; one-page tailored resume rendered and verified.; Submitted LinkedIn Easy Apply on 2026-05-29 for job 4417956872. Confirmation visible: Your application was sent to Tech Consulting. Tailored one-page resume uploaded; follow company unchecked; answers included Node.js 1 year, AWS 2 years, Git 3 years, US citizen/permanent resident Yes.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Revature",
+      "role": "Entry Level Software Developer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 6,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "McLean, VA (On-site)",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4421795702/",
+      "postingKey": "4421795702",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Revature/Entry_Level_Software_Developer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Revature/Entry_Level_Software_Developer/Liam_Van_Resume/Liam_Van_Revature.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn external Revature entry-level software developer training program, job 4421795702. Requirements include bachelor's degree, US work authorization without sponsorship, willingness to relocate anywhere in the US, and strong desire to learn to code; one-page tailored resume rendered and verified. External form includes reCAPTCHA near submit.; LinkedIn external Revature entry-level software developer training program, job 4421795702. External form prepared with contact, location, education, relocation, work authorization, language, and tailored resume upload; blocked at interactive reCAPTCHA before submit. Optional partner-sharing checkbox left unchecked; tab left open for manual verification.; LinkedIn external Revature entry-level software developer training program, job 4421795702. Submitted on Revature form with tailored resume; confirmation page displayed: Thank you, we will contact you shortly regarding your interest. Optional partner-sharing checkbox left unchecked. Duplicate LinkedIn card 4422008461 (Des Moines, IA) inspected 2026-05-29 and points to the same generic Revature entry-level software engineer form URL already submitted; treated as covered, not re-submitted.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Dice - JW",
+      "role": "Junior Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "New York, NY (On-site)",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4422036613/",
+      "postingKey": "4422036613",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Dice - JW/Junior_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Dice - JW/Junior_Software_Engineer/Liam_Van_Resume/Liam_Van_Dice_-_JW.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn external apply 4422036613 via Jobs via Dice for GARGI TECHNOLOGIES INC junior Java/full-stack role; tailored one-page resume rendered and verified. Emphasized Java, Spring Boot, REST APIs, React/Angular, SQL/Postgres/MySQL, Docker/CI/CD, cloud validation, testing, Agile/code review, and production release support without claiming unsupported Kubernetes or broker experience.; LinkedIn external apply 4422036613 opened Dice/Appcast job b75086dc-5818-44cc-9e3e-5798ad212892 for GARGI TECHNOLOGIES INC; tailored one-page resume rendered and verified. Manual apply needed 2026-05-29: Dice redirected to account/profile creation for liamvanpj@gmail.com before the application wizard; tab left open at registration screen.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "European Tech Recruit",
+      "role": "Software Engineer (C++ Systems)",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 6,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "San Francisco Bay Area (On-site)",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4420960723/",
+      "postingKey": "4420960723",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/European Tech Recruit/Software_Engineer_C_Systems/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/European Tech Recruit/Software_Engineer_C_Systems/Liam_Van_Resume/Liam_Van_European_Tech_Recruit.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn Easy Apply 4420960723 for C++/systems/infrastructure startup role. Stretch fit: posting accepts 0-7 years and fresh BSc/MSc candidates with good internships, but emphasizes low-level C++ systems, GPU infrastructure, compilers/networking/kernel experience, HFT, and microsecond performance. Tailored resume truthfully emphasizes C/C++, performance debugging, telemetry data processing, caching, release validation, cloud infrastructure, and production incident triage without claiming compiler, kernel, NIC, GPU, or HFT experience.; LinkedIn Easy Apply submitted with tailored C++ systems resume. Answered C++ years 1, infrastructure years 1, onsite Yes, commute/location Yes, GPA 3.9, sponsorship No. Stretch role; resume keeps emphasis truthful and avoids unsupported compiler/kernel/NIC/GPU/HFT claims.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Nokia",
+      "role": "Software Development Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Sunnyvale, CA",
+      "source": "LinkedIn / Nokia Oracle Cloud HCM",
+      "jobLink": "https://www.linkedin.com/jobs/view/4378977459/",
+      "postingKey": "4378977459",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Nokia/Software_Development_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Nokia/Software_Development_Engineer/Liam_Van_Resume/Liam_Van_Nokia.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4378977459 / Nokia requisition 31358. Stretch systems/networking role for Nokia 7750 SR: C/C++, routing protocols, OS fundamentals, router software preferred. Tailored one-page resume foregrounds C/C++, systems/backend reliability, API regression testing, cloud infrastructure release validation, Java services, distributed caching, and provider adapters; no unsupported router/kernel/protocol claims.; Nokia Oracle HCM application prepared with tailored resume uploaded, contact/address mostly completed, and candidate data retention set to No. Manual review needed for broad legal question about active non-compete/non-solicit/confidentiality/NDA agreements before final submit.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Amazon Web Services (AWS)",
+      "role": "Software Development Engineer, CV Test Infrastructure - Annapurna ML",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 7,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Austin, TX",
+      "source": "LinkedIn / Amazon.jobs",
+      "jobLink": "https://www.linkedin.com/jobs/view/4420926889/",
+      "postingKey": "4420926889",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Amazon Web Services (AWS",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Amazon Web Services (AWS",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4420926889 / Amazon Jobs 10433746. Amazon.jobs external application likely requires same email verification/MFA gate already encountered during this LinkedIn drain; held for manual completion rather than opening another duplicate verification tab. Existing AWS-tailored resume path reused as placeholder pending manual completion; role match includes Python/Linux/CI/CD/internal tooling/test infrastructure.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "DAT Freight & Analytics",
+      "role": "Software Engineer I",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Denver, CO (Hybrid)",
+      "source": "LinkedIn / Greenhouse",
+      "jobLink": "https://www.linkedin.com/jobs/view/4420974725/",
+      "postingKey": "4420974725",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DAT Freight & Analytics/Software_Engineer_I/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/DAT Freight & Analytics/Software_Engineer_I/Liam_Van_Resume/Liam_Van_DAT_Freight_&_Analytics.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4420974725 / Greenhouse 6007145004. Software Engineer I role emphasizing TypeScript or PHP, SaaS APIs, SQL, Docker, REST, AI-assisted development, and logistics data; tailored one-page resume rendered and verified.; LinkedIn 4420974725 / Greenhouse 6007145004. Applied on DAT Greenhouse with tailored one-page resume; sponsorship No, related employee No, privacy consent checked, optional cover letter omitted, voluntary demographics declined/blank where possible. Greenhouse email security code completed.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Bain & Company",
+      "role": "Software Engineer I, Private Equity Innovation",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Dallas, TX (Hybrid)",
+      "source": "LinkedIn / Bain Careers",
+      "jobLink": "https://www.linkedin.com/jobs/view/4421206157/",
+      "postingKey": "4421206157",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Bain & Company/Software_Engineer_I_Private_Equity_Innovation/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Bain & Company/Software_Engineer_I_Private_Equity_Innovation/Liam_Van_Resume/Liam_Van_Bain_&_Company.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4421206157. Tailored one-page resume for Bain PEG Innovation SWE I role emphasizing Python, TypeScript/Node, APIs, data pipelines, debugging, documentation, and cross-functional delivery.; LinkedIn 4421206157 / Bain Careers folderId 106059. Tailored one-page resume ready. External Bain Careers apply requires account creation or login before the application form; tab left open at login/create-account screen.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "SpaceX",
+      "role": "Full Stack Software Engineer, Data (Starlink)",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Hawthorne, CA (On-site)",
+      "source": "LinkedIn / Greenhouse",
+      "jobLink": "https://www.linkedin.com/jobs/view/4411846935/",
+      "postingKey": "4411846935",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/SpaceX/Full_Stack_Software_Engineer_Data_Starlink/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/SpaceX/Full_Stack_Software_Engineer_Data_Starlink/Liam_Van_Resume/Liam_Van_SpaceX.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4411846935 / Greenhouse 8540435002. Tailored one-page resume for Starlink full-stack data platform role emphasizing Java/Python/TypeScript, APIs, Postgres, data pipelines, distributed debugging, monitoring, and product ownership.; Submitted via Greenhouse on 2026-05-29. Confirmation page: job-boards.greenhouse.io/spacex/jobs/8540435002/confirmation?gh_src=3c0864192. Tailored one-page resume for Starlink full-stack data platform role emphasizing Java/Python/TypeScript, APIs, Postgres, data pipelines, distributed debugging, monitoring, and product ownership.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "SAIC",
+      "role": "Entry-Level React Native Developer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Ashburn, VA (On-site)",
+      "source": "LinkedIn / SAIC",
+      "jobLink": "https://www.linkedin.com/jobs/view/4421217941/",
+      "postingKey": "4421217941",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/SAIC/Entry_Level_React_Native_Developer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/SAIC/Entry_Level_React_Native_Developer/Liam_Van_Resume/Liam_Van_SAIC.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4421217941 / SAIC job 2613063. Low LinkedIn match; posting asks for React Native/mobile, REST APIs, public trust eligibility, U.S. citizenship, and on-site Ashburn work 5 days/week for first year. Tailored resume emphasizes React/TypeScript mobile product work, Capacitor iOS/Android wrappers, REST-style APIs, testing, documentation, and release validation.; LinkedIn 4421217941 / SAIC job 2613063. Submitted 2026-05-29; SAIC Oracle portal shows Status: Application Received and Applied on 05/29/2026 after email verification. Low LinkedIn match; posting asks for React Native/mobile, REST APIs, public trust eligibility, U.S. citizenship, and on-site Ashburn work 5 days/week for first year. Tailored resume emphasizes React/TypeScript mobile product work, Capacitor iOS/Android wrappers, REST-style APIs, testing, documentation, and release validation.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Insight Global",
+      "role": "Software Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 7,
+      "reachOut": false,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "United States / deployment sites (LinkedIn remote; posting requires 6-9 month onsite deployments)",
+      "source": "LinkedIn Easy Apply",
+      "jobLink": "https://www.linkedin.com/jobs/view/4422036730/",
+      "postingKey": "4422036730",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Insight Global/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Insight Global/Software_Engineer/Liam_Van_Resume/Liam_Van_Insight_Global.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4422036730. Posting seeks 0-1 year SWE/new grads for full-stack Python, TypeScript, React, Postgres, APIs/services, cloud exposure, documentation, and customer-facing deployment work. LinkedIn labels remote, but JD requires willingness to travel or relocate for 6-9 month onsite deployments with free housing. Tailored resume emphasizes full-stack product, API/data workflows, cloud release validation, documentation, and customer-impacting debugging.; LinkedIn 4422036730. Submitted via LinkedIn Easy Apply on 2026-05-29 with tailored PDF Liam_Van_Insight_Global.pdf; follow/company marketing checkbox left off. Answers: 1 year software development experience, willing to commit to 6-9 month deployments, legally authorized to work in the United States. Posting seeks 0-1 year SWE/new grads for full-stack Python, TypeScript, React, Postgres, APIs/services, cloud exposure, documentation, and customer-facing deployment work. LinkedIn labels remote, but JD requires willingness to travel or relocate for 6-9 month onsite deployments with free housing.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Ericsson",
+      "role": "ASIC ESV Content Developer Entry Level",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 6,
+      "reachOut": false,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "Austin, TX (Hybrid)",
+      "source": "LinkedIn / Ericsson SuccessFactors",
+      "jobLink": "https://www.linkedin.com/jobs/view/4410860296/",
+      "postingKey": "4410860296",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ericsson/ASIC_ESV_Content_Developer_Entry_Level/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Ericsson/ASIC_ESV_Content_Developer_Entry_Level/Liam_Van_Resume/Liam_Van_Ericsson.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4410860296 / Ericsson job 784682. Entry-level ASIC ESV content developer role in Austin, focused on C/C++ device-driver and test-case work, Python test infrastructure, ASIC coverage analysis, Linux/Unix, bash, Git, lab testing, and cross-team debugging. Posting says no U.S. work authorization sponsorship, no F-1 CPT/EAD for this position. Tailored one-page resume emphasizes Python/C/C++, Linux/Unix, Git, automated regression utilities, release validation, log analysis, and cross-team debugging.; LinkedIn 4410860296 / Ericsson job 784682. Manual apply needed 2026-05-29: Ericsson SuccessFactors apply flow requires account creation or sign-in with email/password before resume upload/application submission. Tailored one-page PDF is ready. Entry-level ASIC ESV content developer role in Austin, focused on C/C++ device-driver and test-case work, Python test infrastructure, ASIC coverage analysis, Linux/Unix, bash, Git, lab testing, and cross-team debugging. Posting says no U.S. work authorization sponsorship, no F-1 CPT/EAD for this position.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "ITMC Systems, Inc",
+      "role": "Junior Software Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "Morristown, NJ (Hybrid)",
+      "source": "LinkedIn Easy Apply",
+      "jobLink": "https://www.linkedin.com/jobs/view/4417956663/",
+      "postingKey": "4417956663",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/ITMC Systems, Inc/Junior_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/ITMC Systems, Inc/Junior_Software_Engineer/Liam_Van_Resume/Liam_Van_ITMC_Systems,_Inc.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4417956663. Contract hybrid junior software developer role for AI claims automation and insurance workflows. Posting asks for Python, JavaScript or TypeScript, REST APIs, microservices, AWS services such as Lambda S3 API Gateway or DynamoDB, Git, AI/LLM tooling, document/data processing, and workflow automation. Tailored resume emphasizes AI-assisted API testing, LLM recommendation work, cloud data-service validation, Supabase Edge Functions for AI receipt parsing, data export and auditing, REST APIs, Postgres, AWS/GCP/OCI, Git, and release-quality checks.; LinkedIn 4417956663. Submitted via LinkedIn Easy Apply on 2026-05-29 with tailored PDF Liam_Van_ITMC_Systems,_Inc.pdf. Confirmation: LinkedIn showed Application submitted now. Answers: AWS 2 years, Property and Casualty Insurance 0 years, Artificial Intelligence 2 years. Follow/marketing checkbox left unchecked. Contract hybrid junior software developer role for AI claims automation and insurance workflows. Posting asks for Python, JavaScript or TypeScript, REST APIs, microservices, AWS services such as Lambda S3 API Gateway or DynamoDB, Git, AI/LLM tooling, document/data processing, and workflow automation. Tailored resume emphasizes AI-assisted API testing, LLM recommendation work, cloud data-service validation, Supabase Edge Functions for AI receipt parsing, data export and auditing, REST APIs, Postgres, AWS/GCP/OCI, Git, and release-quality checks.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Epic",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 7,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "Madison, WI relocation required; LinkedIn cards Sunnyvale, CA / Richmond, VA / Aurora, CO",
+      "source": "LinkedIn / Epic Avature",
+      "jobLink": "https://www.linkedin.com/jobs/view/3986118126/",
+      "postingKey": "3986118126",
+      "resumeFolder": "companies/Epic/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "companies/Epic/Software_Engineer/Liam_Van_Resume/Liam_Van_Epic.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 3986118126. Epic Software Engineer posting shown in LinkedIn search as Sunnyvale, CA but JD says position is based on Epic campus in Madison, WI and requires relocation with financial assistance. External apply via epic.avature.net ApplyFlowCheck folderId 740, not Workday. Tailored one-page PDF emphasizes JavaScript/TypeScript/C#, React/NestJS, REST APIs, data-service validation, release reliability, analytics/search workflows, AI-assisted testing, documentation, and cross-team debugging without claiming unsupported healthcare production experience.; LinkedIn 3986118126 / Epic Avature folderId 740. Tailored one-page PDF rendered and verified. External Epic Avature form is not Workday and accepted tailored resume upload, but continuation requires creating or using an Epic Careers account with password. Manual apply needed 2026-05-29: tab left open at Employment Inquiry - Software Developer with resume uploaded and contact/education fields visible. Posting shown in LinkedIn search as Sunnyvale, CA but JD says position is based on Epic campus in Madison, WI and requires relocation with financial assistance.; Duplicate LinkedIn card 3986112635 (Richmond, VA) inspected 2026-05-29 and routes to the same Epic Avature folderId 740 Software Engineer flow already prepared with tailored resume and blocked at Epic Careers account/password step; treated as covered, not re-uploaded.; Duplicate LinkedIn card 3986116456 (Aurora, CO) inspected 2026-05-29 and routes to the same Epic Avature folderId 740 Software Engineer flow already prepared with tailored resume and blocked at Epic Careers account/password step; treated as covered, not re-uploaded.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29",
+        "2026-05-29",
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Motion Recruitment Partners, LLC",
+      "role": "API Platform Developer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 6,
+      "reachOut": false,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "Dallas, TX (On-site)",
+      "source": "LinkedIn / Dice",
+      "jobLink": "https://www.linkedin.com/jobs/view/4422073586/",
+      "postingKey": "4422073586",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Motion Recruitment Partners, LLC/API_Platform_Developer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Motion Recruitment Partners, LLC/API_Platform_Developer/Liam_Van_Resume/Liam_Van_Motion_Recruitment_Partners,_LLC.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4422073586 / Dice 378e5599-c0b6-420b-8529-f0085620dbe5. Junior API Platform Developer via Jobs via Dice for Motion Recruitment Partners, LLC; .NET/C#, SQL, Azure, backend API endpoints, data-heavy internal platform. External Dice apply immediately required Dice login/create account before application wizard, so manual apply needed 2026-05-29. Generic one-page resume rendered only for tracker continuity; no application was submitted.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Creative Financial Staffing (CFS)",
+      "role": "Quantitative Software Developer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 7,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "Chicago, IL (Hybrid)",
+      "source": "LinkedIn / PCRecruiter",
+      "jobLink": "https://www.linkedin.com/jobs/view/4417993105/",
+      "postingKey": "4417993105",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Creative Financial Staffing (CFS",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Creative Financial Staffing (CFS",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4417993105 / CFS PCRecruiter. Submitted 2026-05-29 via CFS PCRecruiter registration form; confirmation page showed Thank you, Liam. Your information has been received. Uploaded one-page PDF Liam_Van_Creative_Financial_Staffing_(CFS).pdf, entered email, phone, Seattle/Washington, current title Software Engineer, and declined SMS opt-in. Posting: Quantitative Software Developer, Chicago hybrid, no sponsorship, $120k-$170k, Python/data pipelines/model execution/SQL/PostgreSQL/ETL/monitoring/CI/CD. Resume rendered from generic one-page resume for quick external registration continuity.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Artie",
+      "role": "Software Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 9,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "San Francisco, CA (On-site)",
+      "source": "LinkedIn / Ashby",
+      "jobLink": "https://www.linkedin.com/jobs/view/4417976234/",
+      "postingKey": "4417976234",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Artie/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Artie/Software_Engineer/Liam_Van_Resume/Liam_Van_Artie.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4417976234 / Ashby 9a743ac5-2228-4522-895f-139dac5426a2. Submitted 2026-05-29 via embedded Ashby form; confirmation: Your application was successfully submitted. Uploaded tailored one-page PDF Liam_Van_Artie.pdf, contact fields autofilled/reviewed, phone added manually. Role focuses on real-time streaming data replication, distributed systems, CDC connectors, infrastructure tooling, customer-facing analytics, TypeScript/React, Go/Postgres/Redis/Kafka/Elasticsearch, Terraform/Kubernetes/Helm on GCP/AWS; resume emphasized cross-cloud data-service validation, pipelines, distributed caching, OpenSearch, Postgres, React/NestJS, and release reliability.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "SpaceX",
+      "role": "Software Engineer, C++ (Starlink)",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "Redmond, WA (On-site)",
+      "source": "LinkedIn / Greenhouse",
+      "jobLink": "https://www.linkedin.com/jobs/view/4390662549/",
+      "postingKey": "4390662549",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/SpaceX/Software_Engineer_C_Starlink/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/SpaceX/Software_Engineer_C_Starlink/Liam_Van_Resume/Liam_Van_SpaceX.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4390662549 / Greenhouse 8477124002. Submitted via Greenhouse on 2026-05-29. Tailored one-page resume for SpaceX Starlink C++ role emphasizing C/C++, Python, distributed debugging, release validation, data workflows, and reliability without overstating embedded/RTOS experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Ivo",
+      "role": "Software Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "San Francisco, CA (On-site)",
+      "source": "LinkedIn / Ashby",
+      "jobLink": "https://www.linkedin.com/jobs/view/4401125470/",
+      "postingKey": "4401125470",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/generic-resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/generic-resume/Liam_Van_Generic_Early_Career.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4401125470 / Ashby 420b0b55-31cc-42fc-b568-293884015f84. Application requires two custom written responses in the user\u2019s own words: why Ivo, and something impressive built/done. Left for manual completion rather than fabricating user-specific answers.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "SpaceX",
+      "role": "Software Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "McGregor, TX (On-site)",
+      "source": "LinkedIn / Greenhouse",
+      "jobLink": "https://www.linkedin.com/jobs/view/4421224503/",
+      "postingKey": "4421224503",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/SpaceX/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/SpaceX/Software_Engineer/Liam_Van_Resume/Liam_Van_SpaceX.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4421224503 / Greenhouse 8563110002. Submitted via Greenhouse on 2026-05-29 after email security-code verification. Tailored one-page resume for SpaceX McGregor test software role emphasizing C++/Python, data acquisition workflows, telemetry/data processing, automation, distributed debugging, validation, and operations support without claiming LabVIEW or National Instruments hardware experience.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "BLN24",
+      "role": "Junior Data Integration Developer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 7,
+      "reachOut": false,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "McLean, VA (On-site)",
+      "source": "LinkedIn Easy Apply / JazzHR",
+      "jobLink": "https://www.linkedin.com/jobs/view/4422023414/",
+      "postingKey": "4422023414",
+      "resumeFolder": "companies/BLN24/Junior_Data_Integration_Developer/Liam_Van_Resume",
+      "resumePdf": "companies/BLN24/Junior_Data_Integration_Developer/Liam_Van_Resume/Liam_Van_BLN24.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Submitted via LinkedIn Easy Apply/JazzHR with tailored one-page resume. Required JazzHR questions answered using standing defaults: US Citizen, no active clearance, 2 years relevant experience, Bachelors Degree, no certifications, expected salary ,000-,000.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Applied Research Solutions",
+      "role": "Software Engineer I - NovaStar",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "Dayton, OH",
+      "source": "LinkedIn / UKG",
+      "jobLink": "https://www.linkedin.com/jobs/view/4421209141/",
+      "postingKey": "4421209141",
+      "resumeFolder": "companies/Applied Research Solutions/Software_Engineer_I_NovaStar/Liam_Van_Resume",
+      "resumePdf": "companies/Applied Research Solutions/Software_Engineer_I_NovaStar/Liam_Van_Resume/Liam_Van_Applied_Research_Solutions.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Prepared tailored one-page resume. UKG/Ultipro registration or sign-in gate before application form; tab left open for manual login/account creation, then continue apply. Role requires US citizenship and ability to obtain TS/SCI, no active clearance stated.",
+      "noteLinks": [],
+      "activityDates": []
+    },
+    {
+      "company": "Fieldguide",
+      "role": "AI Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 6,
+      "reachOut": false,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "San Francisco, CA (Hybrid)",
+      "source": "LinkedIn/Ashby",
+      "jobLink": "https://www.linkedin.com/jobs/view/4421229832/",
+      "postingKey": "4421229832",
+      "resumeFolder": "companies/Fieldguide/AI_Engineer/Liam_Van_Resume",
+      "resumePdf": "companies/Fieldguide/AI_Engineer/Liam_Van_Resume/Liam_Van_Fieldguide.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application submitted 2026-05-29 via Fieldguide embedded Ashby for AI Engineer; tailored one-page resume uploaded; no cover letter required.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "CareerXperts Consulting",
+      "role": "Associate Software Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "United States (Remote)",
+      "source": "LinkedIn Easy Apply",
+      "jobLink": "https://www.linkedin.com/jobs/view/4417955079/",
+      "postingKey": "4417955079",
+      "resumeFolder": "companies/ITMC Systems, Inc/Junior_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "companies/ITMC Systems, Inc/Junior_Software_Engineer/Liam_Van_Resume/Liam_Van_ITMC_Systems,_Inc.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application submitted 2026-05-29 via LinkedIn Easy Apply for remote Associate Software Engineer; used existing ITMC junior SWE resume from LinkedIn resume picker; generic 0-2 year SWE role through staffing/recruiting company.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Instructure",
+      "role": "Software Engineer - Salt Lake City Hybrid",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 7,
+      "reachOut": false,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "Salt Lake City, UT (Hybrid)",
+      "source": "LinkedIn/Ashby",
+      "jobLink": "https://www.linkedin.com/jobs/view/4417960661/",
+      "postingKey": "4417960661",
+      "resumeFolder": "companies/Instructure/Software_Engineer_Salt_Lake_City_Hybrid/Liam_Van_Resume",
+      "resumePdf": "companies/Instructure/Software_Engineer_Salt_Lake_City_Hybrid/Liam_Van_Resume/Liam_Van_Instructure.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application submitted 2026-05-29 via Instructure Ashby for Software Engineer - Salt Lake City Hybrid; tailored one-page full-stack resume uploaded; answered hybrid location gate truthfully as not within 60 miles/remote-only; compensation expectation ,000.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Qualcomm",
+      "role": "SW Engineer, Constrained AI Software",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 3,
+      "reachOut": false,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "San Diego, CA",
+      "source": "LinkedIn/Qualcomm Eightfold",
+      "jobLink": "https://www.linkedin.com/jobs/view/4421795885/",
+      "postingKey": "4421795885",
+      "resumeFolder": "companies/Qualcomm/SW_Engineer_Constrained_AI_Software/Liam_Van_Resume",
+      "resumePdf": "companies/Qualcomm/SW_Engineer_Constrained_AI_Software/Liam_Van_Resume/Liam_Van_Qualcomm.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Application submitted 2026-05-29 via Qualcomm Eightfold for SW Engineer, Constrained AI Software; confirmation page showed 'Thank you for your application, Liam!' for Qualcomm pid 446717497754 / page job ID 3087925. Tailored one-page AI/runtime-oriented resume uploaded; routine profile, work authorization, EEO, disability, veteran, and relationship fields completed before final submission.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "AARP",
+      "role": "Engineer I, AI Agents",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 7,
+      "reachOut": false,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "Washington, DC (Remote)",
+      "source": "LinkedIn/AARP iCIMS",
+      "jobLink": "https://www.linkedin.com/jobs/view/4417963579/",
+      "postingKey": "4417963579",
+      "resumeFolder": "companies/AARP/Engineer_I_AI_Agents/Liam_Van_Resume",
+      "resumePdf": "companies/AARP/Engineer_I_AI_Agents/Liam_Van_Resume/Liam_Van_AARP.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4417963579 / AARP careers job 7416. Remote Engineer I, AI Agents role for enterprise AI agent platform/capability team; asks for 1+ years in Python/TypeScript/C#/Java, REST/JSON integrations, LLM prompts/structured outputs, RAG concepts, agent workflows, cloud/workflow automation, logging/debugging, and responsible AI awareness. Tailored one-page resume emphasizes AI-assisted API testing, LLM recommendations, REST/JSON data workflows, prompt design, structured data, cloud release validation, logging, monitoring, and product integrations.; Manual apply needed 2026-05-29: AARP iCIMS candidate profile prepared for Engineer I, AI Agents; tailored one-page resume Liam_Van_AARP.pdf uploaded and parsed, and contact fields prefilled. Blocked at iCIMS create-login/password step (or returning-candidate saved login) before questionnaire/submission; tab left open at Candidate Profile so Liam can enter/login and the drain can continue afterward. LinkedIn 4417963579 / AARP iCIMS job 7416.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "SpaceX",
+      "role": "Software Engineer, CDN (Starlink)",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "Redmond, WA (On-site)",
+      "source": "LinkedIn / Greenhouse",
+      "jobLink": "https://www.linkedin.com/jobs/view/4380989383/",
+      "postingKey": "4380989383",
+      "resumeFolder": "companies/SpaceX/Software_Engineer_CDN_Starlink/Liam_Van_Resume",
+      "resumePdf": "companies/SpaceX/Software_Engineer_CDN_Starlink/Liam_Van_Resume/Liam_Van_SpaceX.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4380989383 / Greenhouse 8448505002. Tailored one-page resume for SpaceX Starlink CDN role emphasizing C/C++, distributed systems, caching, API/data-path validation, cloud reliability, observability, and release triage without overstating CDN/networking production ownership.; LinkedIn 4380989383 / Greenhouse 8448505002. Submitted via Greenhouse on 2026-05-29. Tailored one-page resume for SpaceX Starlink CDN role emphasizing C/C++, distributed systems, caching, API/data-path validation, cloud reliability, observability, and release triage without overstating CDN/networking production ownership.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Stealth Startup",
+      "role": "Backend Developer [33000]",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "United States (Remote)",
+      "source": "LinkedIn Easy Apply",
+      "jobLink": "https://www.linkedin.com/jobs/view/4417936004/",
+      "postingKey": "4417936004",
+      "resumeFolder": "companies/Stealth Startup/Backend_Developer_33000/Liam_Van_Resume",
+      "resumePdf": "companies/Stealth Startup/Backend_Developer_33000/Liam_Van_Resume/Liam_Van_Stealth_Startup.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4417936004. Tailored backend-focused one-page resume for Backend Developer [33000], emphasizing Python/Java/TypeScript, REST APIs, Node/NestJS, Spring Boot, SQL/Postgres, OpenSearch, caching, API regression testing, cloud reliability, and backend/data service validation without overstating production Node ownership.; LinkedIn 4417936004. LinkedIn Easy Apply submitted 2026-05-29 with tailored backend-focused one-page resume for Backend Developer [33000]. Answers were truthful/conservative for Bachelor's degree, Node.js, and Python experience; declined optional AI/prerecorded-message contact consent; no top-choice boost or optional follow selected.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "IBM",
+      "role": "Associate Application Developer (Early Career) - Future Now",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 8,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Baton Rouge, LA (Hybrid)",
+      "source": "LinkedIn / IBM Avature",
+      "jobLink": "https://www.linkedin.com/jobs/view/4400124814/",
+      "postingKey": "4400124814",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/IBM/Associate_Application_Developer_Early_Career_Future_Now/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/IBM/Associate_Application_Developer_Early_Career_Future_Now/Liam_Van_Resume/Liam_Van_IBM.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-05-29 from LinkedIn posting 4400124814 / IBM job 110398 for Associate Application Developer (Early Career) - Future Now in Baton Rouge; emphasized Java/Python/JavaScript/SQL foundations, REST APIs, application stack support, enterprise release validation, cloud reliability, API validation, agile collaboration, and willingness to learn client platforms. Manual apply needed 2026-05-29: IBM external Avature apply requires IBMid login before the application form; tab left open at IBMid sign-in so Liam can log in and the drain can continue afterward.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29",
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Relay",
+      "role": "Associate Software Engineer, Site Reliability Engineering",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 7,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-05-29",
+      "location": "Raleigh, NC (Hybrid)",
+      "source": "LinkedIn / Greenhouse",
+      "jobLink": "https://job-boards.greenhouse.io/relaypro/jobs/7950142?gh_src=c93255981us",
+      "postingKey": "7950142",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Relay/Associate_Software_Engineer_Site_Reliability/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Relay/Associate_Software_Engineer_Site_Reliability/Liam_Van_Resume/Liam_Van_Relay.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Manual apply needed 2026-05-29: Greenhouse form prepared for LinkedIn posting 4420682646 / Relay job 7950142 with tailored resume uploaded and basic contact, education, address, LinkedIn, portfolio, and source fields filled. Blocked at required eligibility/compensation questions: Raleigh HQ onsite 3x/week minimum plus full-time onsite for first 2 onboarding months is Yes/No only, and desired salary/start details still need Liam confirmation before submission; tab left open on Relay form.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Actalent",
+      "role": "Software Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 5,
+      "reachOut": false,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "Burnsville, MN (On-site)",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4421280536/",
+      "postingKey": "4421280536",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Actalent/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Actalent/Software_Engineer/Liam_Van_Resume/Liam_Van_Actalent.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Submitted 2026-05-29 via Actalent apply flow JP-006057994; confirmation received. Answered No to Burnsville onsite transportation because current location is Seattle.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Tech Consulting",
+      "role": "Jr iOS Developer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "New York, United States (On-site)",
+      "source": "LinkedIn Easy Apply",
+      "jobLink": "https://www.linkedin.com/jobs/view/4417963429/",
+      "postingKey": "4417963429",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tech Consulting/Junior_Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Tech Consulting/Junior_Software_Engineer/Liam_Van_Resume/Liam_Van_Tech_Consulting.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Submitted LinkedIn Easy Apply on 2026-05-29 for Jr iOS Developer / LinkedIn job 4417963429. Confirmation visible: Your application was sent to Tech Consulting. Required answers: Bachelor's Degree Yes; Citizen/Permanent Resident Yes. Follow company/top choice unchecked. LinkedIn picker only exposed the existing ITMC Systems junior SWE PDF during this flow, so that PDF was selected in the submitted modal; exact Tech Consulting junior SWE PDF remains recorded and available in the tracker folder.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "Gruve",
+      "role": "AI Vibe Coding Engineer",
+      "applied": false,
+      "status": "Manual Apply Needed",
+      "fitScore": 4,
+      "reachOut": false,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "California City, CA (Remote)",
+      "source": "LinkedIn Easy Apply",
+      "jobLink": "https://www.linkedin.com/jobs/view/4420982530/",
+      "postingKey": "4420982530",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Gruve/AI_Vibe_Coding_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Gruve/AI_Vibe_Coding_Engineer/Liam_Van_Resume/Liam_Van_Gruve.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn Easy Apply 4420982530. Remote AI Vibe Coding Engineer role for Gruve customer, emphasizing AI-assisted prototyping, LLM/RAG workflows, Python/TypeScript/Node.js, React/Next.js, REST APIs, Git/GitHub, prompt engineering, and U.S. citizenship/no sponsorship. Tailored one-page resume rendered and verified.; LinkedIn Easy Apply prepared on 2026-05-29 for AI Vibe Coding Engineer / LinkedIn job 4420982530. Tailored one-page resume Liam_Van_Gruve.pdf uploaded and selected; education saved as Bachelor's Degree / Computer Science; cover letter omitted because optional; top choice unchecked. Blocked at required Additional Questions: LinkedIn profile URL, relocation willingness, salary expectations, NDA/confidentiality acknowledgement, AI interview recording consent, and reference-check consent. Modal left open for Liam review; do not mark applied without submission confirmation.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "BrothersTech",
+      "role": "Software Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 6,
+      "reachOut": false,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "United States (Remote)",
+      "source": "LinkedIn Easy Apply",
+      "jobLink": "https://www.linkedin.com/jobs/view/4417961303/",
+      "postingKey": "4417961303",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/BrothersTech/Software_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/BrothersTech/Software_Engineer/Liam_Van_Resume/Liam_Van_BrothersTech.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn Easy Apply job 4417961303. Remote contract Software Engineer role emphasizing quality software and web applications, scalable/testable code, debugging, programming languages, and SQL/relational database skills. Tailored one-page resume rendered and verified before application attempt.; Submitted LinkedIn Easy Apply on 2026-05-29 for Software Engineer / LinkedIn job 4417961303. Confirmation visible: Your application was sent to BrothersTech. Tailored one-page resume Liam_Van_BrothersTech.pdf uploaded and selected; contact email liamvanpj@gmail.com and phone 6784887259 verified; top choice unchecked; follow company unchecked.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-05-29"
+      ]
+    },
+    {
+      "company": "AustinWorks",
+      "role": "Founding Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 6,
+      "reachOut": false,
+      "referral": "",
+      "dateAdded": "2026-05-29",
+      "location": "San Francisco, CA (On-site)",
+      "source": "LinkedIn Easy Apply",
+      "jobLink": "https://www.linkedin.com/jobs/view/4417993328/",
+      "postingKey": "4417993328",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/AustinWorks/Founding_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/AustinWorks/Founding_Engineer/Liam_Van_Resume/Liam_Van_AustinWorks.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn Easy Apply job 4417993328. Founding Engineer AI/infrastructure role posted by AustinWorks recruiting for an on-site San Francisco full-time role, K-K, seeking 1-5 years software engineering experience, backend fundamentals ideally Python/FastAPI, systems/APIs/infrastructure scaling, coding data/evaluation workflows, and customer deployment support. Tailored one-page resume rendered and verified before application attempt.; Submitted LinkedIn Easy Apply on 2026-05-29 for Founding Engineer / LinkedIn job 4417993328. Confirmation visible: Application submitted. Tailored one-page resume Liam_Van_AustinWorks.pdf uploaded and selected; contact email liamvanpj@gmail.com and phone 6784887259 verified; work authorization answered Yes and sponsorship answered No; top choice unchecked.",
+      "noteLinks": [],
+      "activityDates": [
         "2026-05-29"
       ]
     }
@@ -40781,6 +42278,32 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Tech Consulting",
+      "role": "Jr iOS Developer",
+      "postingKey": "4417963429",
+      "fitScore": 10,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4417963429/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Switchboard",
+      "role": "Junior Software Engineer",
+      "postingKey": "4420988356",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4420988356/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Superblocks",
       "role": "Software Engineer, Cloud Infrastructure",
       "postingKey": "4507226005",
@@ -41002,6 +42525,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Stealth Startup",
+      "role": "Backend Developer [33000]",
+      "postingKey": "4417936004",
+      "fitScore": 10,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4417936004/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Starburst",
       "role": "Software Engineer II",
       "postingKey": "4947916008",
@@ -41051,6 +42587,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-12",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "SpaceX",
+      "role": "Software Engineer, CDN (Starlink)",
+      "postingKey": "4380989383",
+      "fitScore": 10,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4380989383/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -44278,6 +45827,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "CareerXperts Consulting",
+      "role": "Associate Software Engineer",
+      "postingKey": "4417955079",
+      "fitScore": 10,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4417955079/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "CareerWellness",
       "role": "Backend Engineer",
       "postingKey": "4411313503",
@@ -45276,6 +46838,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "AARP",
+      "role": "Engineer I, AI Agents",
+      "postingKey": "4417963579",
+      "fitScore": 10,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4417963579/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -46592,6 +48167,32 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Jack",
+      "role": "Founding Product Engineer",
+      "postingKey": "4422038376",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4422038376/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "IBM",
+      "role": "Entry Level Software Developer 2026",
+      "postingKey": "4417968790",
+      "fitScore": 9,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4417968790/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "HP IQ",
       "role": "AI Software Engineer",
       "postingKey": "5819552004",
@@ -46707,6 +48308,19 @@
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
       "notes": "Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-10; marked applied per user confirmation."
+    },
+    {
+      "company": "Greylock Partners",
+      "role": "Forward Deployed Engineer (Multiple Opportunities)",
+      "postingKey": "4372000251",
+      "fitScore": 9,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4372000251/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Greenhouse",
@@ -47333,6 +48947,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Artie",
+      "role": "Software Engineer",
+      "postingKey": "4417976234",
+      "fitScore": 9,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4417976234/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Anthropic",
       "role": "Applied AI Engineer, Life Sciences (Beneficial Deployments)",
       "postingKey": "5111942008",
@@ -47382,6 +49009,32 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-01",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Amazon Web Services (AWS)",
+      "role": "Software Development Engineer, AWS Data Services - 2026 (US)",
+      "postingKey": "4411836289",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4411836289/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Amazon",
+      "role": "Software Development Engineer - 2026 (US)",
+      "postingKey": "4371234483",
+      "fitScore": 9,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4371234483/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -47671,6 +49324,19 @@
       "notes": ""
     },
     {
+      "company": "TikTok",
+      "role": "Software Engineer Graduate (Global CRM) - 2026 Start (BS/MS)",
+      "postingKey": "4273515903",
+      "fitScore": 8,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4273515903/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "The Voleon Group",
       "role": "Software Engineer, DevOps",
       "postingKey": "4407401640",
@@ -47695,6 +49361,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Tech Consulting",
+      "role": "Full Stack Engineer",
+      "postingKey": "4417956872",
+      "fitScore": 8,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4417956872/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Tamarind Bio",
@@ -47814,6 +49493,19 @@
       "notes": ""
     },
     {
+      "company": "Stealth Startup",
+      "role": "Full Stack Developer [33002]",
+      "postingKey": "4417915953",
+      "fitScore": 8,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4417915953/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Starburst",
       "role": "Forward Deployed Engineer",
       "postingKey": "5016295008",
@@ -47877,6 +49569,45 @@
       "readyEmails": 0,
       "lastUpdated": "2026-05-08",
       "notes": "Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-08."
+    },
+    {
+      "company": "SpaceX",
+      "role": "Full Stack Software Engineer, Data (Starlink)",
+      "postingKey": "4411846935",
+      "fitScore": 8,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4411846935/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "SpaceX",
+      "role": "Software Engineer, C++ (Starlink)",
+      "postingKey": "4390662549",
+      "fitScore": 8,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4390662549/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "SpaceX",
+      "role": "Software Engineer",
+      "postingKey": "4421224503",
+      "fitScore": 8,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4421224503/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Sofar Ocean",
@@ -48269,6 +50000,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "OPEN Healthcare",
+      "role": "Junior Full-Stack Web Developer",
+      "postingKey": "4422023467",
+      "fitScore": 8,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4422023467/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "OneStream",
       "role": "Software Engineer I",
       "postingKey": "d9517f18-7f9f-4f13-83e8-feb078e8792d",
@@ -48423,6 +50167,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Microchip Technology",
+      "role": "Engineer I- Software",
+      "postingKey": "4420992088",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4420992088/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Metronome",
@@ -48594,6 +50351,45 @@
       "notes": ""
     },
     {
+      "company": "Jobright.ai",
+      "role": "Software Engineer",
+      "postingKey": "4422044937",
+      "fitScore": 8,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4422044937/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Ivo",
+      "role": "Software Engineer",
+      "postingKey": "4401125470",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4401125470/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "ITMC Systems, Inc",
+      "role": "Junior Software Engineer",
+      "postingKey": "4417956663",
+      "fitScore": 8,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4417956663/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Intuit",
       "role": "Center of Money Software Engineer 1",
       "postingKey": "4401328323",
@@ -48656,6 +50452,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-07",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "IBM",
+      "role": "Associate Application Developer (Early Career) - Future Now",
+      "postingKey": "4400124814",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4400124814/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -49049,6 +50858,19 @@
       "notes": ""
     },
     {
+      "company": "Dice - JW",
+      "role": "Junior Software Engineer",
+      "postingKey": "4422036613",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4422036613/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Deltek",
       "role": "Software Engineer",
       "postingKey": "4394474747",
@@ -49085,6 +50907,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-11",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "DAT Freight & Analytics",
+      "role": "Software Engineer I",
+      "postingKey": "4420974725",
+      "fitScore": 8,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4420974725/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -49309,6 +51144,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "BrothersTech",
+      "role": "Software Engineer",
+      "postingKey": "4417961303",
+      "fitScore": 8,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4417961303/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Box",
       "role": "Software Engineer II, AI Experiences",
       "postingKey": "software-engineer-ii-ai-experiences",
@@ -49348,6 +51196,19 @@
       "notes": ""
     },
     {
+      "company": "BeaconFire Inc.",
+      "role": "Software Engineer Entry Level",
+      "postingKey": "4417989141",
+      "fitScore": 8,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4417989141/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Bamboo X",
       "role": "Software Engineer",
       "postingKey": "4395721402",
@@ -49361,6 +51222,19 @@
       "notes": ""
     },
     {
+      "company": "Bain & Company",
+      "role": "Software Engineer I, Private Equity Innovation",
+      "postingKey": "4421206157",
+      "fitScore": 8,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4421206157/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Automattic Careers",
       "role": "Forward Deployed Engineer",
       "postingKey": "7678677",
@@ -49371,6 +51245,19 @@
       "prospectCount": 0,
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Atris",
+      "role": "Forward Deployed Engineer (New Grad)",
+      "postingKey": "4419373024",
+      "fitScore": 8,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4419373024/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
@@ -49530,6 +51417,19 @@
       "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
+      "company": "Acceler8 Talent",
+      "role": "Software Engineer",
+      "postingKey": "4417926516",
+      "fitScore": 8,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4417926516/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Zip",
       "role": "Software Engineer, Identity",
       "postingKey": "4153477552",
@@ -49554,6 +51454,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Tech Consulting",
+      "role": "Junior Software Engineer",
+      "postingKey": "4421790499",
+      "fitScore": 7,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4421790499/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "SynergisticIT",
@@ -49632,6 +51545,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Qualcomm",
+      "role": "Software Security Engineer (Multiple Levels)",
+      "postingKey": "4401437974",
+      "fitScore": 7,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4401437974/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "PubMatic",
@@ -49738,6 +51664,19 @@
       "notes": ""
     },
     {
+      "company": "iSoftStone",
+      "role": "Software Engineer",
+      "postingKey": "ouBLzfw9",
+      "fitScore": 7,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://jobs.jobvite.com/isoftstone/job/ouBLzfw9?__jvst=Job%20Board&__jvsd=LinkedIn",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Google",
       "role": "Software Engineer I, Mobile (Android), Gmail",
       "postingKey": "124572938656457414-software-engineer-i",
@@ -49777,6 +51716,32 @@
       "notes": ""
     },
     {
+      "company": "Further",
+      "role": "Entry Level Software Developer | Graduate Leadership Program",
+      "postingKey": "4403122265",
+      "fitScore": 7,
+      "status": "Resume Tailored",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4403122265/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "Epic",
+      "role": "Software Engineer",
+      "postingKey": "3986118126",
+      "fitScore": 7,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/3986118126/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "Emonics LLC",
       "role": "Software Engineer",
       "postingKey": "4418273959",
@@ -49801,6 +51766,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Creative Financial Staffing (CFS)",
+      "role": "Quantitative Software Developer",
+      "postingKey": "4417993105",
+      "fitScore": 7,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4417993105/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "CloudInnTech",
@@ -49894,6 +51872,19 @@
       "notes": ""
     },
     {
+      "company": "BayOne Solutions",
+      "role": "Junior Java Developer",
+      "postingKey": "4422025160",
+      "fitScore": 7,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4422025160/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
       "company": "AvicenaTech",
       "role": "Entry Level Software Engineer",
       "postingKey": "0e1746e5-cfb8-4020-9aef-b978f8b61957",
@@ -49905,6 +51896,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "3Si",
+      "role": "Software Developer I (Junior)",
+      "postingKey": "4421231724",
+      "fitScore": 7,
+      "status": "Manual Apply Needed",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4421231724/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Viasat",
@@ -49944,6 +51948,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "Refocus LLC",
+      "role": "Software Engineer",
+      "postingKey": "4422028585",
+      "fitScore": 6,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4422028585/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "Profound",
@@ -49996,6 +52013,19 @@
       "readyEmails": 0,
       "lastUpdated": "",
       "notes": ""
+    },
+    {
+      "company": "European Tech Recruit",
+      "role": "Software Engineer (C++ Systems)",
+      "postingKey": "4420960723",
+      "fitScore": 6,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4420960723/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-29",
+      "notes": "Queued by resume-tailor after tailored resume update."
     },
     {
       "company": "DV Trading",
@@ -70624,6 +72654,18 @@
           "contacts": []
         },
         {
+          "key": "4417955079",
+          "company": "CareerXperts Consulting",
+          "role": "Associate Software Engineer",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8499166002",
           "company": "Censys",
           "role": "Software Engineer (Backend, Distributed Systems)",
@@ -71932,6 +73974,18 @@
           "contacts": []
         },
         {
+          "key": "4380989383",
+          "company": "SpaceX",
+          "role": "Software Engineer, CDN (Starlink)",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4413817594",
           "company": "Spool AI",
           "role": "Software Engineer, Voice Systems",
@@ -71947,6 +74001,18 @@
           "key": "engineer-ii-software-engineering-jobs-new-york-ny",
           "company": "Spotify",
           "role": "Frontend Engineer II - SRC - Music",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4417936004",
+          "company": "Stealth Startup",
+          "role": "Backend Developer [33000]",
           "fitScore": 10,
           "status": "Applied",
           "count": 1,
@@ -72028,6 +74094,18 @@
           "contacts": []
         },
         {
+          "key": "4420988356",
+          "company": "Switchboard",
+          "role": "Junior Software Engineer",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "2026-early-career-software-engineering-mobile-backend-embedded-ai-ml-at-tp-link-4389973425",
           "company": "TP-Link",
           "role": "2026 Early Career Software Engineering (Mobile, BackEnd, Embedded, AI/ML)",
@@ -72045,6 +74123,18 @@
           "role": "University Grad - Product Engineer (2026)",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4417963429",
+          "company": "Tech Consulting",
+          "role": "Jr iOS Developer",
+          "fitScore": 10,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -72544,6 +74634,30 @@
           "contacts": []
         },
         {
+          "key": "4371234483",
+          "company": "Amazon",
+          "role": "Software Development Engineer - 2026 (US)",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4411836289",
+          "company": "Amazon Web Services (AWS)",
+          "role": "Software Development Engineer, AWS Data Services - 2026 (US)",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5003658007",
           "company": "Anduril Industries",
           "role": "Software Engineer II, Manufacturing Test",
@@ -72560,7 +74674,7 @@
           "company": "Ansa",
           "role": "Mid-Level Full Stack Engineer - Backend Focused",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -72585,6 +74699,18 @@
           "role": "Software Engineer, Apple Game Services",
           "fitScore": 9,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4417976234",
+          "company": "Artie",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -72704,7 +74830,7 @@
           "company": "Chime",
           "role": "Software Engineer, Instant Loans",
           "fitScore": 9,
-          "status": "Manual Apply Needed",
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -72976,6 +75102,18 @@
           "contacts": []
         },
         {
+          "key": "4372000251",
+          "company": "Greylock Partners",
+          "role": "Forward Deployed Engineer (Multiple Opportunities)",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4409035385",
           "company": "Grid",
           "role": "Software Engineer | Seattle",
@@ -73053,6 +75191,30 @@
           "role": "Software Engineer I/II, Flight Software",
           "fitScore": 9,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4417968790",
+          "company": "IBM",
+          "role": "Entry Level Software Developer 2026",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4422038376",
+          "company": "Jack",
+          "role": "Founding Product Engineer",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -73744,6 +75906,18 @@
           "contacts": []
         },
         {
+          "key": "4417926516",
+          "company": "Acceler8 Talent",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "ai-native-software-engineer-at-accenture-4374091982",
           "company": "Accenture",
           "role": "AI Native Software Engineer",
@@ -73852,6 +76026,18 @@
           "contacts": []
         },
         {
+          "key": "4419373024",
+          "company": "Atris",
+          "role": "Forward Deployed Engineer (New Grad)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7678677",
           "company": "Automattic Careers",
           "role": "Forward Deployed Engineer",
@@ -73864,9 +76050,33 @@
           "contacts": []
         },
         {
+          "key": "4421206157",
+          "company": "Bain & Company",
+          "role": "Software Engineer I, Private Equity Innovation",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4395721402",
           "company": "Bamboo X",
           "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4417989141",
+          "company": "BeaconFire Inc.",
+          "role": "Software Engineer Entry Level",
           "fitScore": 8,
           "status": "Applied",
           "count": 1,
@@ -74116,6 +76326,18 @@
           "contacts": []
         },
         {
+          "key": "4420974725",
+          "company": "DAT Freight & Analytics",
+          "role": "Software Engineer I",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4410724675",
           "company": "DLA Piper",
           "role": "Software Development Engineer I",
@@ -74181,6 +76403,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4422036613",
+          "company": "Dice - JW",
+          "role": "Junior Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -74524,9 +76758,33 @@
           "contacts": []
         },
         {
+          "key": "4400124814",
+          "company": "IBM",
+          "role": "Associate Application Developer (Early Career) - Future Now",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4402559065",
           "company": "INRIX",
           "role": "Software Development Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4417956663",
+          "company": "ITMC Systems, Inc",
+          "role": "Junior Software Engineer",
           "fitScore": 8,
           "status": "Applied",
           "count": 1,
@@ -74575,6 +76833,30 @@
           "key": "4401328323",
           "company": "Intuit",
           "role": "Center of Money Software Engineer 1",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4401125470",
+          "company": "Ivo",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4422044937",
+          "company": "Jobright.ai",
+          "role": "Software Engineer",
           "fitScore": 8,
           "status": "Applied",
           "count": 1,
@@ -74740,6 +77022,18 @@
           "contacts": []
         },
         {
+          "key": "4420992088",
+          "company": "Microchip Technology",
+          "role": "Engineer I- Software",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4380380329",
           "company": "Monarch Recruiters",
           "role": "Full Stack Engineer (New Grad)",
@@ -74829,6 +77123,18 @@
           "role": "Forward Deployed Engineer",
           "fitScore": 8,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4422023467",
+          "company": "OPEN Healthcare",
+          "role": "Junior Full-Stack Web Developer",
+          "fitScore": 8,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -75172,6 +77478,42 @@
           "contacts": []
         },
         {
+          "key": "4411846935",
+          "company": "SpaceX",
+          "role": "Full Stack Software Engineer, Data (Starlink)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4390662549",
+          "company": "SpaceX",
+          "role": "Software Engineer, C++ (Starlink)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4421224503",
+          "company": "SpaceX",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4398591026",
           "company": "Speakeasy",
           "role": "Software Engineer",
@@ -75249,6 +77591,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4417915953",
+          "company": "Stealth Startup",
+          "role": "Full Stack Developer [33002]",
+          "fitScore": 8,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -75364,6 +77718,18 @@
           "contacts": []
         },
         {
+          "key": "4417956872",
+          "company": "Tech Consulting",
+          "role": "Full Stack Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4391812149",
           "company": "TechKareer",
           "role": "Software Engineer (SF / NYC)",
@@ -75379,6 +77745,18 @@
           "key": "4407401640",
           "company": "The Voleon Group",
           "role": "Software Engineer, DevOps",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4273515903",
+          "company": "TikTok",
+          "role": "Software Engineer Graduate (Global CRM) - 2026 Start (BS/MS)",
           "fitScore": 8,
           "status": "Applied",
           "count": 1,
@@ -75592,9 +77970,33 @@
           "contacts": []
         },
         {
+          "key": "4421231724",
+          "company": "3Si",
+          "role": "Software Developer I (Junior)",
+          "fitScore": 7,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "0e1746e5-cfb8-4020-9aef-b978f8b61957",
           "company": "AvicenaTech",
           "role": "Entry Level Software Engineer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4422025160",
+          "company": "BayOne Solutions",
+          "role": "Junior Java Developer",
           "fitScore": 7,
           "status": "Applied",
           "count": 1,
@@ -75688,6 +78090,18 @@
           "contacts": []
         },
         {
+          "key": "4417993105",
+          "company": "Creative Financial Staffing (CFS)",
+          "role": "Quantitative Software Developer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4372088330",
           "company": "Crossing Hurdles",
           "role": "Staff-Software Engineer",
@@ -75705,6 +78119,18 @@
           "role": "Software Engineer",
           "fitScore": 7,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "3986118126",
+          "company": "Epic",
+          "role": "Software Engineer",
+          "fitScore": 7,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -75820,6 +78246,18 @@
           "contacts": []
         },
         {
+          "key": "4401437974",
+          "company": "Qualcomm",
+          "role": "Software Security Engineer (Multiple Levels)",
+          "fitScore": 7,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4367074328",
           "company": "Rillet",
           "role": "Software Engineer",
@@ -75868,6 +78306,18 @@
           "contacts": []
         },
         {
+          "key": "4421790499",
+          "company": "Tech Consulting",
+          "role": "Junior Software Engineer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4366508876",
           "company": "Valon",
           "role": "Software Engineer",
@@ -75892,6 +78342,18 @@
           "contacts": []
         },
         {
+          "key": "ouBLzfw9",
+          "company": "iSoftStone",
+          "role": "Software Engineer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4411230125",
           "company": "Box",
           "role": "SMB Solutions Engineer",
@@ -75907,6 +78369,18 @@
           "key": "4687462005",
           "company": "DV Trading",
           "role": "Software Developer (New York)",
+          "fitScore": 6,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4420960723",
+          "company": "European Tech Recruit",
+          "role": "Software Engineer (C++ Systems)",
           "fitScore": 6,
           "status": "Applied",
           "count": 1,
@@ -75945,6 +78419,18 @@
           "role": "iOS Engineer",
           "fitScore": 6,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4422028585",
+          "company": "Refocus LLC",
+          "role": "Software Engineer",
+          "fitScore": 6,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -85928,6 +88414,18 @@
           "contacts": []
         },
         {
+          "key": "4417955079",
+          "company": "CareerXperts Consulting",
+          "role": "Associate Software Engineer",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "8127725002",
           "company": "Censys",
           "role": "Backend Software Engineer",
@@ -87884,6 +90382,18 @@
           "contacts": []
         },
         {
+          "key": "4380989383",
+          "company": "SpaceX",
+          "role": "Software Engineer, CDN (Starlink)",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4413817594",
           "company": "Spool AI",
           "role": "Software Engineer, Voice Systems",
@@ -87911,6 +90421,18 @@
           "key": "engineer-ii-software-engineering-jobs-new-york-ny",
           "company": "Spotify",
           "role": "Frontend Engineer II - SRC - Music",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4417936004",
+          "company": "Stealth Startup",
+          "role": "Backend Developer [33000]",
           "fitScore": 10,
           "status": "Applied",
           "count": 1,
@@ -88040,6 +90562,18 @@
           "contacts": []
         },
         {
+          "key": "4420988356",
+          "company": "Switchboard",
+          "role": "Junior Software Engineer",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "2026-early-career-software-engineering-mobile-backend-embedded-ai-ml-at-tp-link-4389973425",
           "company": "TP-Link",
           "role": "2026 Early Career Software Engineering (Mobile, BackEnd, Embedded, AI/ML)",
@@ -88057,6 +90591,18 @@
           "role": "University Grad - Product Engineer (2026)",
           "fitScore": 10,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4417963429",
+          "company": "Tech Consulting",
+          "role": "Jr iOS Developer",
+          "fitScore": 10,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -88724,6 +91270,30 @@
           "contacts": []
         },
         {
+          "key": "4371234483",
+          "company": "Amazon",
+          "role": "Software Development Engineer - 2026 (US)",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4411836289",
+          "company": "Amazon Web Services (AWS)",
+          "role": "Software Development Engineer, AWS Data Services - 2026 (US)",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5003658007",
           "company": "Anduril Industries",
           "role": "Software Engineer II, Manufacturing Test",
@@ -88777,6 +91347,18 @@
           "role": "Software Engineer, Apple Game Services",
           "fitScore": 9,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4417976234",
+          "company": "Artie",
+          "role": "Software Engineer",
+          "fitScore": 9,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -89132,6 +91714,18 @@
           "contacts": []
         },
         {
+          "key": "4372000251",
+          "company": "Greylock Partners",
+          "role": "Forward Deployed Engineer (Multiple Opportunities)",
+          "fitScore": 9,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4409035385",
           "company": "Grid",
           "role": "Software Engineer | Seattle",
@@ -89219,6 +91813,30 @@
           "key": "4013531009",
           "company": "Heart Aerospace",
           "role": "Software Engineer I/II, Flight Software",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4417968790",
+          "company": "IBM",
+          "role": "Entry Level Software Developer 2026",
+          "fitScore": 9,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4422038376",
+          "company": "Jack",
+          "role": "Founding Product Engineer",
           "fitScore": 9,
           "status": "Manual Apply Needed",
           "count": 1,
@@ -89960,6 +92578,18 @@
           "contacts": []
         },
         {
+          "key": "4417926516",
+          "company": "Acceler8 Talent",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "ai-native-software-engineer-at-accenture-4374091982",
           "company": "Accenture",
           "role": "AI Native Software Engineer",
@@ -90044,11 +92674,47 @@
           "contacts": []
         },
         {
+          "key": "4419373024",
+          "company": "Atris",
+          "role": "Forward Deployed Engineer (New Grad)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7678677",
           "company": "Automattic Careers",
           "role": "Forward Deployed Engineer",
           "fitScore": 8,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4421206157",
+          "company": "Bain & Company",
+          "role": "Software Engineer I, Private Equity Innovation",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4417989141",
+          "company": "BeaconFire Inc.",
+          "role": "Software Engineer Entry Level",
+          "fitScore": 8,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -90272,6 +92938,18 @@
           "contacts": []
         },
         {
+          "key": "4420974725",
+          "company": "DAT Freight & Analytics",
+          "role": "Software Engineer I",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4410724675",
           "company": "DLA Piper",
           "role": "Software Development Engineer I",
@@ -90325,6 +93003,18 @@
           "role": "Software Engineer",
           "fitScore": 8,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4422036613",
+          "company": "Dice - JW",
+          "role": "Junior Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -90620,9 +93310,33 @@
           "contacts": []
         },
         {
+          "key": "4400124814",
+          "company": "IBM",
+          "role": "Associate Application Developer (Early Career) - Future Now",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4402559065",
           "company": "INRIX",
           "role": "Software Development Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4417956663",
+          "company": "ITMC Systems, Inc",
+          "role": "Junior Software Engineer",
           "fitScore": 8,
           "status": "Applied",
           "count": 1,
@@ -90647,6 +93361,30 @@
           "key": "4410753471",
           "company": "InterScripts, Inc.",
           "role": "Software Engineer I (Full Stack) - Immediate Joiners",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4401125470",
+          "company": "Ivo",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4422044937",
+          "company": "Jobright.ai",
+          "role": "Software Engineer",
           "fitScore": 8,
           "status": "Applied",
           "count": 1,
@@ -90752,6 +93490,18 @@
           "contacts": []
         },
         {
+          "key": "4420992088",
+          "company": "Microchip Technology",
+          "role": "Engineer I- Software",
+          "fitScore": 8,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7184361003",
           "company": "NICE",
           "role": "Software Engineer",
@@ -90781,6 +93531,18 @@
           "role": "Forward Deployed Engineer",
           "fitScore": 8,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4422023467",
+          "company": "OPEN Healthcare",
+          "role": "Junior Full-Stack Web Developer",
+          "fitScore": 8,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -90992,6 +93754,42 @@
           "contacts": []
         },
         {
+          "key": "4411846935",
+          "company": "SpaceX",
+          "role": "Full Stack Software Engineer, Data (Starlink)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4390662549",
+          "company": "SpaceX",
+          "role": "Software Engineer, C++ (Starlink)",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4421224503",
+          "company": "SpaceX",
+          "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4329476930",
           "company": "Speakeasy",
           "role": "Software Engineer",
@@ -91064,6 +93862,18 @@
           "contacts": []
         },
         {
+          "key": "4417915953",
+          "company": "Stealth Startup",
+          "role": "Full Stack Developer [33002]",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5007039007",
           "company": "Swarm Aero",
           "role": "Forward Deployed Software Engineer",
@@ -91127,6 +93937,30 @@
           "key": "4412768792",
           "company": "Tamarind Bio",
           "role": "Software Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4417956872",
+          "company": "Tech Consulting",
+          "role": "Full Stack Engineer",
+          "fitScore": 8,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4273515903",
+          "company": "TikTok",
+          "role": "Software Engineer Graduate (Global CRM) - 2026 Start (BS/MS)",
           "fitScore": 8,
           "status": "Applied",
           "count": 1,
@@ -91292,6 +94126,18 @@
           "contacts": []
         },
         {
+          "key": "4421231724",
+          "company": "3Si",
+          "role": "Software Developer I (Junior)",
+          "fitScore": 7,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "5985982004",
           "company": "Apptronik",
           "role": "Software Engineer - Controls Infrastructure",
@@ -91309,6 +94155,18 @@
           "role": ".NET Software Engineer",
           "fitScore": 7,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4422025160",
+          "company": "BayOne Solutions",
+          "role": "Junior Java Developer",
+          "fitScore": 7,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -91352,11 +94210,35 @@
           "contacts": []
         },
         {
+          "key": "4417993105",
+          "company": "Creative Financial Staffing (CFS)",
+          "role": "Quantitative Software Developer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4418273959",
           "company": "Emonics LLC",
           "role": "Software Engineer",
           "fitScore": 7,
           "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "3986118126",
+          "company": "Epic",
+          "role": "Software Engineer",
+          "fitScore": 7,
+          "status": "Manual Apply Needed",
           "count": 1,
           "states": [
             "Needs label"
@@ -91472,6 +94354,18 @@
           "contacts": []
         },
         {
+          "key": "4401437974",
+          "company": "Qualcomm",
+          "role": "Software Security Engineer (Multiple Levels)",
+          "fitScore": 7,
+          "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "7720736003",
           "company": "Revolutional, LLC",
           "role": "Full Stack .NET Developer",
@@ -91501,6 +94395,30 @@
           "role": "Full Stack Developer, Jr.",
           "fitScore": 7,
           "status": "Resume Tailored",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4421790499",
+          "company": "Tech Consulting",
+          "role": "Junior Software Engineer",
+          "fitScore": 7,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "ouBLzfw9",
+          "company": "iSoftStone",
+          "role": "Software Engineer",
+          "fitScore": 7,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"
@@ -91544,11 +94462,35 @@
           "contacts": []
         },
         {
+          "key": "4420960723",
+          "company": "European Tech Recruit",
+          "role": "Software Engineer (C++ Systems)",
+          "fitScore": 6,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
           "key": "4931692008",
           "company": "Inorsa",
           "role": "Forward Deployed Software Engineer",
           "fitScore": 6,
           "status": "Manual Apply Needed",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4422028585",
+          "company": "Refocus LLC",
+          "role": "Software Engineer",
+          "fitScore": 6,
+          "status": "Applied",
           "count": 1,
           "states": [
             "Needs label"

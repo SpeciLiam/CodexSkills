@@ -1,0 +1,4 @@
+interface:
+  display_name: "LinkedIn Apply All"
+  short_description: "Drain LinkedIn SWE search applications"
+  default_prompt: "Use $linkedin-apply-all to process the current LinkedIn SWE search, skip duplicates, and apply to safe non-duplicate jobs."
