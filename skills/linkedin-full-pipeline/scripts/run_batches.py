@@ -16,7 +16,7 @@ STATE_PATH = Path("/tmp/linkedin_full_pipeline_state.json")
 OUTPUT_DIR = Path("/tmp/linkedin_full_pipeline_batch_outputs")
 DEFAULT_MODEL = "gpt-5.5"
 DEFAULT_TIMEOUT_S = 2700
-DONE_STATES = {"applied", "manual", "manual_apply_needed", "archived", "skipped", "duplicate"}
+DONE_STATES = {"applied", "submitted", "manual", "manual_apply_needed", "archived", "skipped", "duplicate"}
 SYSTEMIC_BLOCKER_TERMS = (
     "chrome computer use unavailable",
     "computer use access denied",
@@ -107,7 +107,7 @@ def done_count(state: dict[str, Any]) -> int:
 
 
 def submitted_count(state: dict[str, Any]) -> int:
-    return sum(1 for item in state.get("items", []) if item.get("state") == "applied")
+    return sum(1 for item in state.get("items", []) if item.get("state") in {"applied", "submitted"})
 
 
 def stop_requested(state: dict[str, Any]) -> bool:

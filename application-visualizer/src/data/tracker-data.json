@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-30T21:41:27.452472+00:00",
+  "generatedAt": "2026-05-30T22:28:37.427789+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,16 +9,16 @@
   },
   "stats": {
     "kpis": {
-      "total": 999,
-      "applied": 631,
-      "unapplied": 368,
-      "active": 672,
+      "total": 1000,
+      "applied": 633,
+      "unapplied": 367,
+      "active": 673,
       "rejected": 96,
       "interviewing": 5,
       "assessments": 3,
-      "highFit": 823,
-      "reachOut": 898,
-      "recruiterRows": 126,
+      "highFit": 824,
+      "reachOut": 899,
+      "recruiterRows": 127,
       "prospects": 3,
       "readyEmails": 3,
       "intakeJobs": 932,
@@ -26,17 +26,17 @@
       "intakeNew": 56,
       "intakeManual": 441,
       "intakeApplied": 21,
-      "applyRate": 63.2,
+      "applyRate": 63.3,
       "rejectionRate": 15.2,
       "recruiterWork": 551,
-      "engineerWork": 732,
-      "recruiterReachedOut": 116,
+      "engineerWork": 733,
+      "recruiterReachedOut": 117,
       "engineerReachedOut": 37
     },
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 527
+        "value": 528
       },
       {
         "name": "Archived",
@@ -70,7 +70,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 359
+        "value": 360
       },
       {
         "name": "Ashby",
@@ -240,7 +240,7 @@
       },
       {
         "name": "Other",
-        "value": 184
+        "value": 185
       },
       {
         "name": "Remote",
@@ -266,7 +266,7 @@
       },
       {
         "name": "Full Stack",
-        "value": 122
+        "value": 123
       },
       {
         "name": "Backend",
@@ -332,7 +332,7 @@
       },
       {
         "score": "10",
-        "count": 447
+        "count": 448
       }
     ],
     "targetCounts": [
@@ -702,9 +702,9 @@
       },
       {
         "date": "2026-05-30",
-        "cumulative": 999,
-        "added": 4,
-        "applied": 1,
+        "cumulative": 1000,
+        "added": 5,
+        "applied": 3,
         "rejected": 0,
         "interviewing": 0
       }
@@ -1118,6 +1118,15 @@
         "jobLink": "https://job-boards.greenhouse.io/valon/jobs/5629764004"
       },
       {
+        "company": "UST",
+        "role": "Junior Full Stack Developer (Data CoE)",
+        "fitScore": 10,
+        "status": "Applied",
+        "prospectCount": 0,
+        "readyEmails": 0,
+        "jobLink": "https://www.linkedin.com/jobs/view/4417242896/"
+      },
+      {
         "company": "Upstart",
         "role": "Software Engineer II, Verifications Decisioning",
         "fitScore": 10,
@@ -1170,15 +1179,6 @@
         "prospectCount": 0,
         "readyEmails": 0,
         "jobLink": "https://www.uber.com/careers/apply/form/157787?uclick_id=0da90020-fd3f-4bee-86e2-95a6160bf384"
-      },
-      {
-        "company": "Uber",
-        "role": "Software Engineer II",
-        "fitScore": 10,
-        "status": "Applied",
-        "prospectCount": 0,
-        "readyEmails": 0,
-        "jobLink": "https://www.uber.com/global/en/careers/list/156932/?uclick_id=c3eed852-3739-4c33-ba86-8487c6d2f43b"
       }
     ],
     "recruiterBatch": {
@@ -28452,11 +28452,11 @@
     {
       "company": "Affirm",
       "role": "Software Engineer, Early Career",
-      "applied": false,
+      "applied": true,
       "status": "Applied",
       "fitScore": 10,
       "reachOut": true,
-      "referral": "Yes",
+      "referral": "No",
       "dateAdded": "2026-05-30",
       "location": "San Francisco, CA; New York, NY; Remote US",
       "source": "LinkedIn / Greenhouse",
@@ -28470,6 +28470,37 @@
       "engineerProfile": "",
       "notes": "Applied 2026-05-30 by user after Codex prefilled Greenhouse form. Tailored 2026-05-30 from LinkedIn last-week posting 4419370113 / Greenhouse 7485068003 for Affirm's hybrid early-career software engineering cohort; emphasized tested/extensible code, backend APIs, React/product surfaces, data workflows, distributed debugging, code reviews, stakeholder communication, release validation, and fintech-adjacent product workflows. Posting says visa sponsorship is not available.",
       "noteLinks": [],
+      "activityDates": [
+        "2026-05-30",
+        "2026-05-30"
+      ]
+    },
+    {
+      "company": "UST",
+      "role": "Junior Full Stack Developer (Data CoE)",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 10,
+      "reachOut": true,
+      "referral": "No",
+      "dateAdded": "2026-05-30",
+      "location": "Bellevue, WA",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4417242896/",
+      "postingKey": "4417242896",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/UST/Junior_Full_Stack_Developer_Data_CoE/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/UST/Junior_Full_Stack_Developer_Data_CoE/Liam_Van_Resume/Liam_Van_UST.pdf",
+      "recruiterContact": "Kendall Messner",
+      "recruiterProfile": "https://www.linkedin.com/in/kendallmessner/",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn invite sent to Kendall Messner (Recruiter) 2026-05-30; Application submitted 2026-05-30 via RippleHire confirmation page: usource.ripplehire.com/candidate/#apply-success; confirmation text: You have successfully applied for Junior Full Stack Developer (Data CoE).",
+      "noteLinks": [
+        {
+          "label": "Kendall Messner",
+          "url": "https://www.linkedin.com/in/kendallmessner/"
+        }
+      ],
       "activityDates": [
         "2026-05-30",
         "2026-05-30"
@@ -41929,6 +41960,19 @@
       "readyEmails": 0,
       "lastUpdated": "2026-05-10",
       "notes": "Queued by resume-tailor after tailored resume update."
+    },
+    {
+      "company": "UST",
+      "role": "Junior Full Stack Developer (Data CoE)",
+      "postingKey": "4417242896",
+      "fitScore": 10,
+      "status": "Applied",
+      "reachOut": true,
+      "jobLink": "https://www.linkedin.com/jobs/view/4417242896/",
+      "prospectCount": 0,
+      "readyEmails": 0,
+      "lastUpdated": "2026-05-30",
+      "notes": "Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-30 via RippleHire confirmation page."
     },
     {
       "company": "Upstart",
@@ -79889,6 +79933,38 @@
           ]
         },
         {
+          "key": "4417242896",
+          "company": "UST",
+          "role": "Junior Full Stack Developer (Data CoE)",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [],
+          "contacts": [
+            {
+              "lane": "recruiter",
+              "name": "Kendall Messner",
+              "profile": "https://www.linkedin.com/in/kendallmessner/",
+              "position": "Recorded in application notes",
+              "approval": "Approved",
+              "outcome": "Sent",
+              "route": "application-note",
+              "connectionNote": "",
+              "sentDate": "2026-05-30",
+              "source": "application-notes",
+              "lastChecked": "2026-05-30",
+              "notes": "LinkedIn invite recorded in application tracker notes on 2026-05-30.",
+              "recruiterSignal": {
+                "alumniMatch": false,
+                "seniority": "unknown",
+                "whyThisPerson": "",
+                "recruiterType": "in_house",
+                "ownsRole": null
+              }
+            }
+          ]
+        },
+        {
           "key": "8162197002",
           "company": "Twitch",
           "role": "Software Engineer I - Ads Demand Enablement",
@@ -91086,6 +91162,18 @@
           "key": "4318551773",
           "company": "Two Dots",
           "role": "Software Engineer",
+          "fitScore": 10,
+          "status": "Applied",
+          "count": 1,
+          "states": [
+            "Needs label"
+          ],
+          "contacts": []
+        },
+        {
+          "key": "4417242896",
+          "company": "UST",
+          "role": "Junior Full Stack Developer (Data CoE)",
           "fitScore": 10,
           "status": "Applied",
           "count": 1,

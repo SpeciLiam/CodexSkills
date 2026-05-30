@@ -2,7 +2,7 @@
 
 This file tracks company-level prospecting and Apollo email lookup separately from `application-trackers/applications.md`.
 
-Companies queued: 851
+Companies queued: 852
 Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 
 ## Company Queue
@@ -40,6 +40,7 @@ Prospects recorded: 3 | Ready emails: 3 | Pending Apollo: 0
 | Valon | Software Engineer - New Grad | 4409152006 | 10 | Resume Tailored | Yes | [Posting](https://job-boards.greenhouse.io/valon/jobs/4409152006) |  |  | 2026-05-05 | Queued by resume-tailor after tailored resume update. |
 | Valon | Software Engineer | 4402156847 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4402156847/?trackingId=8Co7I66maGhvzcjOzR5eyQ%3D%3D&refId=glJ8A%2B2sNgHqb%2Bh7kMbvlQ%3D%3D&eBP=JOBS_AUCTION_SERVICE_FAILED&alternateChannel=search&isJobSearch=false&lipi=urn%3Ali%3Apage%3Ad_flagship3_nlsearch_srp_jobs%3BZWay9dJ3Tkm72OKWKEYJDw%3D%3D) |  |  | 2026-05-08 | Queued by resume-tailor after tailored resume update. |
 | Valon | Software Engineer, Product | 5629764004 | 10 | Manual Apply Needed | Yes | [Posting](https://job-boards.greenhouse.io/valon/jobs/5629764004) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update. |
+| UST | Junior Full Stack Developer (Data CoE) | 4417242896 | 10 | Applied | Yes | [Posting](https://www.linkedin.com/jobs/view/4417242896/) |  |  | 2026-05-30 | Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-30 via RippleHire confirmation page. |
 | Upstart | Software Engineer II, Verifications Decisioning | software-engineer-ii-verifications-decisioning-at-upstart-4374834468 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-verifications-decisioning-at-upstart-4374834468) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Upside | Software Engineer II | software-engineer-ii-at-upside-4307067658 | 10 | Resume Tailored | Yes | [Posting](https://www.linkedin.com/jobs/view/software-engineer-ii-at-upside-4307067658) |  |  | 2026-05-03 | Queued by resume-tailor after tailored resume update. |
 | Unframe | Full Stack Software Engineer (Remote) | 4847758101 | 10 | Applied | Yes | [Posting](https://job-boards.greenhouse.io/unframe/jobs/4847758101) |  |  | 2026-05-10 | Queued by resume-tailor after tailored resume update.; Application submitted 2026-05-11 via Greenhouse confirmation page: https://job-boards.greenhouse.io/unframe/jobs/4847758101/confirmation |

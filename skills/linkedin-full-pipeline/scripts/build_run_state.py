@@ -12,16 +12,20 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[3]
 DEFAULT_STATE = Path("/tmp/linkedin_full_pipeline_state.json")
-EARLY_CAREER_URL = (
-    "https://www.linkedin.com/jobs/search/?keywords=software%20engineer&"
-    "geoId=103644278&location=United%20States&f_TPR=r86400&f_E=2&"
-    "origin=JOB_SEARCH_PAGE_SEARCH_BUTTON"
-)
-BROAD_FALLBACK_URL = (
-    "https://www.linkedin.com/jobs/search-results/?currentJobId=4411219442&"
-    "keywords=software%20engineer&origin=JOBS_HOME_KEYWORD_HISTORY&geoId=103644278&"
-    "distance=0.0&f_TPR=r86400&f_SAL=f_SA_id_227001%3A276001"
-)
+def early_career_url(freshness_seconds: int) -> str:
+    return (
+        "https://www.linkedin.com/jobs/search/?keywords=software%20engineer&"
+        "geoId=103644278&location=United%20States&"
+        f"f_TPR=r{freshness_seconds}&f_E=2&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON"
+    )
+
+
+def broad_fallback_url(freshness_seconds: int) -> str:
+    return (
+        "https://www.linkedin.com/jobs/search-results/?currentJobId=4411219442&"
+        "keywords=software%20engineer&origin=JOBS_HOME_KEYWORD_HISTORY&geoId=103644278&"
+        f"distance=0.0&f_TPR=r{freshness_seconds}&f_SAL=f_SA_id_227001%3A276001"
+    )
 
 
 def now_iso() -> str:
@@ -39,6 +43,7 @@ def main() -> int:
     parser.add_argument("--state", type=Path, default=DEFAULT_STATE)
     parser.add_argument("--max-jobs", type=int, default=12, help="Maximum jobs to durably process in this run")
     parser.add_argument("--batch-size", type=int, default=1, help="Jobs per fresh Codex CLI process")
+    parser.add_argument("--freshness-seconds", type=int, default=86_400, help="LinkedIn f_TPR freshness window in seconds")
     parser.add_argument("--resume", action="store_true", help="Preserve existing state and only refresh policy fields")
     args = parser.parse_args()
 
@@ -58,11 +63,12 @@ def main() -> int:
             "earlyCareerFirst": True,
             "locationGate": ["NYC", "SF Bay Area", "US remote/hybrid", "Seattle", "Washington DC"],
             "stateFile": str(args.state),
+            "freshnessSeconds": args.freshness_seconds,
         },
         "search": {
             "phase": existing.get("search", {}).get("phase", "early-career"),
-            "earlyCareerUrl": EARLY_CAREER_URL,
-            "broadFallbackUrl": BROAD_FALLBACK_URL,
+            "earlyCareerUrl": early_career_url(args.freshness_seconds),
+            "broadFallbackUrl": broad_fallback_url(args.freshness_seconds),
             "saturationReason": existing.get("search", {}).get("saturationReason", ""),
             "stopRequested": bool(existing.get("search", {}).get("stopRequested", False)),
         },

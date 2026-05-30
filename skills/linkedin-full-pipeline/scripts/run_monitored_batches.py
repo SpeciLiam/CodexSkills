@@ -24,7 +24,7 @@ def load_state() -> dict[str, Any]:
 
 
 def done_count(state: dict[str, Any]) -> int:
-    done_states = {"applied", "manual", "manual_apply_needed", "archived", "skipped", "duplicate"}
+    done_states = {"applied", "submitted", "manual", "manual_apply_needed", "archived", "skipped", "duplicate"}
     return sum(1 for item in state.get("items", []) if item.get("state") in done_states)
 
 
@@ -52,6 +52,7 @@ def main() -> int:
     parser.add_argument("--resume", action="store_true", help="Reuse existing /tmp state")
     parser.add_argument("--max-jobs", type=int, default=12)
     parser.add_argument("--batch-size", type=int, default=1)
+    parser.add_argument("--freshness-seconds", type=int, default=86_400)
     parser.add_argument("--max-restarts", type=int, default=3)
     parser.add_argument("--restart-sleep", type=int, default=10)
     parser.add_argument("--max-batches", type=int, default=0)
@@ -77,6 +78,8 @@ def main() -> int:
                 str(args.max_jobs),
                 "--batch-size",
                 str(args.batch_size),
+                "--freshness-seconds",
+                str(args.freshness_seconds),
             ],
             log_path,
         )
