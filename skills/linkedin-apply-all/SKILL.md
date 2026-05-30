@@ -8,8 +8,37 @@ description: "Drain Liam Van's LinkedIn software engineer search results one by 
 Use this skill when Liam wants a Codex or Claude worker to walk a LinkedIn jobs
 search result list in order and keep applying until the list is exhausted,
 saturated with duplicates, or blocked by platform/application gates. This skill
-is an orchestrator: reuse the existing recruiting skills and scripts instead of
-forking their logic.
+is an applications-only queue runner. Do not route normal apply-all runs through
+`linkedin-full-pipeline`; that workflow includes recruiter outreach and broader
+sourcing/tailoring behavior.
+
+## Default Command
+
+For long or worker-per-application runs, use the monitored queue runner:
+
+```bash
+python3 skills/linkedin-apply-all/scripts/run_monitored_queue.py \
+  --freshness week \
+  --worker codex
+```
+
+Worker selection:
+
+```bash
+python3 skills/linkedin-apply-all/scripts/run_monitored_queue.py --freshness 24h --worker codex
+python3 skills/linkedin-apply-all/scripts/run_monitored_queue.py --freshness week --worker claude
+python3 skills/linkedin-apply-all/scripts/run_monitored_queue.py --freshness month --worker codex
+```
+
+Accepted freshness names are `24h`, `week`, and `month`; use
+`--freshness-seconds N` for a custom LinkedIn `f_TPR=rN` window. Pass
+`--search-url URL` when Liam supplies a specific LinkedIn search. The runner will
+insert or replace `f_TPR` on that URL.
+
+The runner writes durable state to `/tmp/linkedin_apply_all_state.json`, logs to
+`/tmp/linkedin_apply_all_monitor_logs`, and worker transcripts to
+`/tmp/linkedin_apply_all_worker_outputs`. Use `--resume` to continue an
+interrupted run from the state file.
 
 ## Worker And Monitor Roles
 
@@ -49,11 +78,10 @@ as a broad search, not a fit guarantee.
 
 Load only the needed skill bodies as the run progresses:
 
-- `linkedin-full-pipeline` for end-to-end LinkedIn sourcing, tailoring,
-  recruiter outreach, application attempts, and durable state patterns.
 - `finish-applications` for live application submission guardrails and status
   update conventions.
-- `resume-tailor` when a non-duplicate posting needs a fresh tailored resume.
+- `resume-tailor` only when the run policy explicitly allows tailoring missing
+  resumes. Default apply-all behavior is `queue_for_tailoring` and continue.
 - `application-visualizer-refresh` after tracker or outreach edits.
 - `tandem` when Liam asks for Claude/Codex collaboration. Read
   `references/tandem-usage.md` before starting the tandem run.
@@ -81,7 +109,16 @@ python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 3. Read enough of `applications.md` and `job-intake.md` to build duplicate keys:
    LinkedIn job id, canonical job URL, posting key, normalized company + title,
    and any ATS URL already recorded.
-4. Open Chrome in Liam's profile for actual applications:
+4. For monitored runs, initialize the queue state with the requested freshness
+   and worker:
+
+```bash
+python3 skills/linkedin-apply-all/scripts/build_run_state.py \
+  --freshness week \
+  --worker codex
+```
+
+5. Open Chrome in Liam's profile for actual applications:
 
 ```bash
 open -na "Google Chrome" --args --profile-directory="Default"
@@ -112,9 +149,10 @@ For each visible LinkedIn result, in order:
 3. Skip obvious bad fits with a short reason: non-SWE, senior/staff/principal,
    manager, sales/support/recruiting, internship-only, closed/stale, or location
    outside Liam's cared-about locations unless Liam explicitly widened scope.
-4. For new realistic SWE postings, capture the job description and route through
-   `resume-tailor` before attempting the application unless a verified exact
-   resume already exists.
+4. For new realistic SWE postings with no verified exact tailored resume, follow
+   `runPolicy.missingResumePolicy`. The default is `queue_for_tailoring`: record
+   the posting and continue to the next result. Use `--missing-resume-policy
+   tailor` only when Liam explicitly wants apply-all to tailor during the run.
 5. Click `Apply`, `Apply on company website`, or the equivalent LinkedIn control
    and proceed with the application lane below.
 6. After each durable outcome, return to the LinkedIn search results and move to
@@ -127,7 +165,8 @@ Follow `finish-applications` guardrails for all live forms.
 
 - Upload the exact tailored resume recorded in the tracker.
 - Generate and include a cover letter only when the application requires one or
-  the posting explicitly asks for one.
+  the posting explicitly asks for one. Skip optional cover letters in apply-only
+  mode.
 - Submit high-confidence routine applications without asking for final approval.
 - Stop short and mark `Manual Apply Needed` only for true blockers: login/account
   creation, 2FA, interactive CAPTCHA, Workday account/profile gates, unsupported
@@ -172,6 +211,16 @@ After each job:
 ```bash
 python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 ```
+
+For worker-per-application runs, the queue state item should include:
+
+- `key`, `company`, `role`, `jobUrl`, `linkedinJobId`, `location`, `source`,
+  `applyMode`
+- `resumePdf`
+- `applicationConfidence`
+- `state`: `submitted`, `manual`, `archived`, `skipped`, `duplicate`, or
+  `queued_for_tailoring`
+- `result`, `blocker`, `confirmationEvidence`, `updatedAt`
 
 ## Stop Conditions
 
