@@ -4,7 +4,7 @@
       "archived": 0,
       "date": "2026-05-23",
       "manual": 0,
-      "submitted": 11
+      "submitted": 0
     },
     {
       "archived": 0,
@@ -45,8 +45,8 @@
     {
       "archived": 0,
       "date": "2026-05-30",
-      "manual": 0,
-      "submitted": 0
+      "manual": 2,
+      "submitted": 1
     }
   ],
   "avgConfidenceBySource": [
@@ -83,10 +83,15 @@
     {
       "avgScore": 0.0,
       "band": "low",
+      "source": "LinkedIn Easy Apply"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
       "source": "Meta Careers"
     }
   ],
-  "generatedAt": "2026-05-30T04:26:18.567742+00:00",
+  "generatedAt": "2026-05-30T21:01:59.353345+00:00",
   "intakeHealth": {
     "greenhouseCapturedToday": 0,
     "greenhouseLastRun": "",
@@ -96,18 +101,18 @@
   },
   "queueDepth": {
     "intakeUnprocessed": 165,
-    "manualApplyNeeded": 114,
+    "manualApplyNeeded": 115,
     "readyToApply": 0,
     "resumeTailored": 20
   },
   "submitSuccessRate": {
-    "archived": 0.27,
-    "manual": 0.027,
-    "submitted": 0.703
+    "archived": 0.303,
+    "manual": 0.061,
+    "submitted": 0.636
   },
   "topBlockers": [
     {
-      "count": 2,
+      "count": 4,
       "reason": "unspecified"
     }
   ],
