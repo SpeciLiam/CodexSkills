@@ -118,7 +118,13 @@ python3 skills/linkedin-apply-all/scripts/run_queue.py \
 
 This spawns exactly one fresh Codex worker that walks to the next substantive
 card, tailors its resume, applies, writes the outcome, and exits — then returns
-control to you. While this worker runs you are the monitor: do not open Chrome,
+control to you.
+
+Codex workers always run the **latest model at medium intelligence**:
+`run_queue.py` forces `-c model_reasoning_effort=medium` and omits `-m` so codex
+uses the `~/.codex/config.toml` default model (kept at the latest, currently
+`gpt-5.5`). Do not pin `--codex-model` unless Liam asks for a specific model;
+override effort with `--codex-reasoning <low|medium|high>` only on request. While this worker runs you are the monitor: do not open Chrome,
 Computer Use, the Chrome extension, screenshots, or any browser-inspection tool.
 Stay file/log/state read-only.
 
