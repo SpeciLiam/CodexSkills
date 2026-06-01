@@ -221,7 +221,7 @@ def prompt(worker: str, batch_size: int) -> str:
     return WORKER_PROMPT.format(worker=worker, batch_size=batch_size, state_path=STATE_PATH)
 
 
-def codex_cmd(prompt_text: str, output_file: Path, model: str | None, sandbox: str) -> list[str]:
+def codex_cmd(prompt_text: str, output_file: Path, model: str | None, sandbox: str, reasoning: str | None) -> list[str]:
     cmd = [
         "codex",
         "exec",
@@ -233,8 +233,14 @@ def codex_cmd(prompt_text: str, output_file: Path, model: str | None, sandbox: s
         "-o",
         str(output_file),
     ]
+    # Model: when --codex-model is unset we deliberately omit -m so codex uses the
+    # config.toml default, which Liam keeps pointed at the latest codex model.
     if model:
         cmd.extend(["-m", model])
+    # Reasoning effort: force it explicitly so workers run at the intended
+    # intelligence even if config.toml is absent/overridden. Default "medium".
+    if reasoning:
+        cmd.extend(["-c", f"model_reasoning_effort={reasoning}"])
     cmd.append(prompt_text)
     return cmd
 
@@ -251,7 +257,7 @@ def run_worker(batch_no: int, worker: str, batch_size: int, args: argparse.Names
     output_file = OUTPUT_DIR / f"{worker}_{batch_no:03d}_{now_tag()}.txt"
     prompt_text = prompt(worker, batch_size)
     if worker == "codex":
-        cmd = codex_cmd(prompt_text, output_file, args.codex_model, args.child_sandbox)
+        cmd = codex_cmd(prompt_text, output_file, args.codex_model, args.child_sandbox, args.codex_reasoning)
         stdin_data = None
     else:
         cmd = claude_cmd(args.claude_model, args.claude_permission)
@@ -294,6 +300,7 @@ def main() -> int:
     parser.add_argument("--max-workers", type=int, default=1)
     parser.add_argument("--worker", choices=("codex", "claude"), help="Override worker in state")
     parser.add_argument("--codex-model")
+    parser.add_argument("--codex-reasoning", default="medium", help="codex model_reasoning_effort (default: medium)")
     parser.add_argument("--claude-model")
     parser.add_argument("--claude-permission", default="acceptEdits")
     parser.add_argument("--timeout", type=int, default=2700)
