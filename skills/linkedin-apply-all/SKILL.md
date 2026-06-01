@@ -1,6 +1,6 @@
 ---
 name: linkedin-apply-all
-description: "Drain Liam Van's LinkedIn software engineer search results one by one from Chrome, using a provided LinkedIn jobs search URL or the salary-filtered last-24-hours SWE search, skipping duplicate/already-applied postings, tailoring or reusing resumes, submitting safe applications, recording precise blockers, updating the markdown tracker/cache, and coordinating Codex/Claude as worker plus monitor without letting two agents operate the browser at once."
+description: "Drain Liam Van's LinkedIn software engineer search results one by one from Chrome with exactly one active worker/browser actor, using a provided LinkedIn jobs search URL or the salary-filtered SWE search, skipping duplicate/already-applied postings, tailoring or reusing resumes in the same worker, submitting safe applications, recording precise blockers, and updating the markdown tracker/cache."
 ---
 
 # LinkedIn Apply All
@@ -14,21 +14,29 @@ sourcing/tailoring behavior.
 
 ## Default Command
 
-For long or worker-per-application runs, use the monitored queue runner:
+Default to one long-lived worker. Do not run a monitor plus browser worker, and
+do not use worker-per-application mode unless Liam explicitly asks for that
+tradeoff. Initialize state, then launch exactly one worker with a batch size
+large enough to drain the requested pass:
 
 ```bash
-python3 skills/linkedin-apply-all/scripts/run_monitored_queue.py \
+python3 skills/linkedin-apply-all/scripts/build_run_state.py \
   --freshness week \
   --worker codex \
   --missing-resume-policy tailor
+
+python3 skills/linkedin-apply-all/scripts/run_queue.py \
+  --worker codex \
+  --batch-size 25 \
+  --max-workers 1
 ```
 
 Worker selection:
 
 ```bash
-python3 skills/linkedin-apply-all/scripts/run_monitored_queue.py --freshness 24h --worker codex --missing-resume-policy tailor
-python3 skills/linkedin-apply-all/scripts/run_monitored_queue.py --freshness week --worker claude --missing-resume-policy tailor
-python3 skills/linkedin-apply-all/scripts/run_monitored_queue.py --freshness month --worker codex --missing-resume-policy tailor
+python3 skills/linkedin-apply-all/scripts/build_run_state.py --freshness 24h --worker codex --missing-resume-policy tailor && python3 skills/linkedin-apply-all/scripts/run_queue.py --worker codex --batch-size 25 --max-workers 1
+python3 skills/linkedin-apply-all/scripts/build_run_state.py --freshness week --worker claude --missing-resume-policy tailor && python3 skills/linkedin-apply-all/scripts/run_queue.py --worker claude --batch-size 25 --max-workers 1
+python3 skills/linkedin-apply-all/scripts/build_run_state.py --freshness month --worker codex --missing-resume-policy tailor && python3 skills/linkedin-apply-all/scripts/run_queue.py --worker codex --batch-size 25 --max-workers 1
 ```
 
 Accepted freshness names are `24h`, `week`, and `month`; use
@@ -37,38 +45,43 @@ Accepted freshness names are `24h`, `week`, and `month`; use
 insert or replace `f_TPR` on that URL.
 
 Default missing-resume behavior is `tailor`: when a realistic posting has no
-exact tailored resume, record it as `needs_tailoring`/`in_progress_tailoring`,
-run a bounded resume-tailor worker for that posting, refresh the tracker/cache,
-then continue with a fresh application worker using the newly tailored resume.
+exact tailored resume, the same active worker records it as
+`needs_tailoring`/`in_progress_tailoring`, performs the bounded resume-tailor
+workflow itself for that posting, refreshes the tracker/cache, updates the item
+with the new resume, then continues the application using that resume. Do not
+spawn a second worker, subagent, monitor, or browser actor for tailoring.
 Use `--missing-resume-policy queue_for_tailoring` only when Liam explicitly asks
 to collect postings without tailoring during the run.
 
-The runner writes durable state to `/tmp/linkedin_apply_all_state.json`, logs to
-`/tmp/linkedin_apply_all_monitor_logs`, and worker transcripts to
-`/tmp/linkedin_apply_all_worker_outputs`. Use `--resume` to continue an
+The runner writes durable state to `/tmp/linkedin_apply_all_state.json` and
+worker transcripts to `/tmp/linkedin_apply_all_worker_outputs`. Use
+`build_run_state.py --resume` plus `run_queue.py --max-workers 1` to continue an
 interrupted run from the state file.
 
 ## Worker And Monitor Roles
 
-There are two coordination modes:
-
-- **Single-agent mode:** the current chat is the worker and performs the full
-  flow.
-- **Two-agent mode:** one agent is the application worker and the other agent is
-  the monitor/reviewer. The worker owns Chrome, applications, resume generation,
-  tracker/cache edits, and live confirmation capture. The monitor stays read-only
-  against browser/form state and reviews plans, duplicate criteria, blockers,
-  tracker diffs, and final reconciliation.
+Default to **single-agent mode:** one worker owns Chrome, applications, resume
+generation, tracker/cache edits, and live confirmation capture for the entire
+run. A second agent may only review files after the worker exits or explicitly
+hands off control.
 
 Choose the worker from the launch context:
 
-- If the run starts from Codex, use a Codex worker and Claude as the monitor.
-- If the run starts from Claude, use a Claude worker and Codex as the monitor.
+- If the run starts from Codex, use a Codex worker.
+- If the run starts from Claude, use a Claude worker.
 - If Liam explicitly asks for the opposite split, follow that instruction.
 
-Never let the worker and monitor operate Chrome, answer forms, upload files, or
-edit tracker/cache files at the same time. If control needs to switch, stop at a
-durable boundary, write the run ledger, and hand off explicitly.
+Never let more than one thing operate Chrome, answer forms, upload files, run
+application flows, tailor a resume, or edit tracker/cache files at the same time.
+If control needs to switch, stop at a durable boundary, write the run ledger, and
+hand off explicitly.
+
+Only one actor may attempt browser access at a time. While a worker owns Chrome,
+all other agents/tools must stay file/log/state-ledger read-only and must not
+call Chrome, Computer Use, Browser, Playwright, screenshots, accessibility
+snapshots, or any other browser-inspection tool. Browser inspection is allowed
+only after the worker has exited, paused at an explicit handoff, or recorded a
+durable blocker that transfers control back to the current agent.
 
 ## Default Search
 
@@ -89,8 +102,8 @@ Load only the needed skill bodies as the run progresses:
 - `finish-applications` for live application submission guardrails and status
   update conventions.
 - `resume-tailor` when a realistic new posting has no exact tailored resume.
-  Default apply-all behavior is `tailor`: tailor first, then continue the
-  application from a fresh worker using the new resume.
+  Default apply-all behavior is `tailor`: the same active worker tailors first,
+  then continues the application using the new resume.
 - `application-visualizer-refresh` after tracker or outreach edits.
 - `tandem` when Liam asks for Claude/Codex collaboration. Read
   `references/tandem-usage.md` before starting the tandem run.
@@ -101,6 +114,8 @@ Load only the needed skill bodies as the run progresses:
 - Intake ledger: `application-trackers/job-intake.md`
 - Dashboard cache: `application-visualizer/src/data/tracker-data.json`
 - Application defaults: `skills/linkedin-easy-apply-nodriver/references/application-defaults.md`
+- Private local application defaults, when present:
+  `skills/linkedin-apply-all/private-application-defaults.md`
 
 Markdown trackers are authoritative. Never mark a job applied from generated
 cache data alone.
@@ -118,8 +133,7 @@ python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 3. Read enough of `applications.md` and `job-intake.md` to build duplicate keys:
    LinkedIn job id, canonical job URL, posting key, normalized company + title,
    and any ATS URL already recorded.
-4. For monitored runs, initialize the queue state with the requested freshness
-   and worker:
+4. Initialize the queue state with the requested freshness and worker:
 
 ```bash
 python3 skills/linkedin-apply-all/scripts/build_run_state.py \
@@ -156,14 +170,22 @@ For each visible LinkedIn result, in order:
      continue from the existing tracker row instead of creating a duplicate.
    - If the posting exists in intake only, promote or continue it through the
      existing intake/tracker conventions rather than adding a second row.
-3. Skip obvious bad fits with a short reason: non-SWE, senior/staff/principal,
-   manager, sales/support/recruiting, internship-only, closed/stale, or location
-   outside Liam's cared-about locations unless Liam explicitly widened scope.
+3. Default mode may skip obvious bad fits with a short reason: non-SWE,
+   senior/staff/principal, manager, sales/support/recruiting, internship-only,
+   closed/stale, or location outside Liam's cared-about locations. If Liam says
+   to "go through all" or otherwise disables skipping, do not skip for location,
+   staffing/vendor source, weak fit, low salary, placement-funnel language, or
+   stack mismatch. Attempt the application path anyway with truthful standing
+   answers. Only stop short for hard blockers: duplicate/already handled,
+   closed/unavailable posting, required active clearance Liam does not have,
+   impossible date/eligibility requirements, CAPTCHA/bot checks, failed
+   login/2FA/account creation after defaults, unsupported legal answers, or a
+   required answer that cannot be truthfully provided.
 4. For new realistic SWE postings with no verified exact tailored resume, follow
    `runPolicy.missingResumePolicy`. The default is `tailor`: record
-   `needs_tailoring`/`in_progress_tailoring`, run a bounded resume-tailor worker
-   for the exact posting, refresh the tracker/cache, then continue the
-   application from a fresh worker using the new tailored resume. Use
+   `needs_tailoring`/`in_progress_tailoring`, run the bounded resume-tailor
+   workflow in the same worker for the exact posting, refresh the tracker/cache,
+   then continue the application using the new tailored resume. Use
    `--missing-resume-policy queue_for_tailoring` only when Liam explicitly wants
    apply-all to collect postings without tailoring during the run.
 5. Click `Apply`, `Apply on company website`, or the equivalent LinkedIn control
@@ -187,7 +209,10 @@ Follow `finish-applications` guardrails for all live forms.
   start-date commitments, or custom essays requiring Liam's review.
 - For LinkedIn Easy Apply, verify the contact email is `liamvanpj@gmail.com`
   before submission.
-- Do not submit Workday applications. Record a precise Workday manual blocker.
+- Workday applications are allowed but slower. Attempt and submit them only when
+  confidence is high, all required answers are covered by standing defaults or
+  the tracker, and no login/2FA/CAPTCHA/profile gate remains. Record precise
+  Workday blockers when the flow cannot be completed safely.
 - Do not mark an application submitted without visible confirmation, confirmation
   email, or portal status evidence.
 - Leave blocked/manual application tabs open at the cleanest review point when
@@ -225,14 +250,16 @@ After each job:
 python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 ```
 
-For worker-per-application runs, the queue state item should include:
+For long runs, each queue state item should include:
 
 - `key`, `company`, `role`, `jobUrl`, `linkedinJobId`, `location`, `source`,
   `applyMode`
 - `resumePdf`
 - `applicationConfidence`
-- `state`: `submitted`, `manual`, `archived`, `skipped`, `duplicate`, or
-  `queued_for_tailoring`
+- `state`: `submitted`, `manual`, `archived`, `skipped`, `duplicate`,
+  `queued_for_tailoring`, or `revisit_skipped`. In a no-skip/all-results pass,
+  previous `skipped` rows may be rewritten to `revisit_skipped`; process them
+  before opening new LinkedIn cards.
 - `result`, `blocker`, `confirmationEvidence`, `updatedAt`
 
 ## Stop Conditions
@@ -252,13 +279,13 @@ useful, and continue to the next LinkedIn result.
 
 ## Tandem / Monitor Collaboration
 
-When Liam asks to use both Claude and Codex, use the `tandem` skill with the
-worker/monitor split above. Read `references/tandem-usage.md`.
+When Liam asks to use both Claude and Codex, use the `tandem` skill with a
+strict handoff boundary. Read `references/tandem-usage.md`.
 
 Never let Claude and Codex both operate Chrome or edit the same tracker files at
-the same time. The monitor should critique the run plan, review duplicate
-criteria, review tracker diffs, and call out safety gaps. The worker should own
-Chrome, applications, tracker/cache writes, and final reconciliation.
+the same time. The non-owner may only critique/review files after the active
+worker has exited or explicitly handed off. The worker should own Chrome,
+applications, tracker/cache writes, and final reconciliation.
 
 ## Final Report
 
@@ -271,4 +298,4 @@ Report:
 - Manual blockers left open for Liam.
 - Postings archived/skipped with reasons.
 - Files changed and whether the visualizer cache was refreshed.
-- Whether tandem monitor critique/review succeeded or was unavailable.
+- Whether any explicit handoff review succeeded or was unavailable.

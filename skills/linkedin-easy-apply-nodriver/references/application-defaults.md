@@ -12,10 +12,13 @@ covered by prior answers, leave the tab open and mark the application manual.
 
 - Name: Liam Van
 - Email: `liamvanpj@gmail.com`
-- Phone: `6784887259`
+- Phone: `678-488-7259`
 - Address: `1421 Harvard Avenue, Seattle, Washington, 98122`
 - LinkedIn: `https://www.linkedin.com/in/liam-van/`
 - GitHub: `https://github.com/SpeciLiam/`
+- If ATS login, account creation, or 2FA is required, use the private local
+  defaults file referenced by the active skill/run state when it exists. Do not
+  commit private credentials or verification codes.
 
 ## Work Authorization
 
@@ -26,6 +29,9 @@ covered by prior answers, leave the tab open and mark the application manual.
 - Security clearance eligibility: Eligible
 - Background check consent: Yes
 - Routine privacy, data processing, and AI-review consent: Yes
+- NDA, non-compete, non-solicit, restrictive covenant, or similar agreement
+  affecting employment: No. Liam stated he is not bound by an NDA or anything
+  similar.
 
 ## Location And Work Model
 
@@ -86,6 +92,16 @@ covered by prior answers, leave the tab open and mark the application manual.
 - Submit high-confidence external applications when all required fields are
   filled safely, uploads are correct, and a final review page/confirmation step
   is clean.
+- Liam has granted standing permission to sign in to ATS/candidate accounts, and
+  to create routine candidate accounts when an application requires one, using
+  his approved application email and the private local credential note. Use
+  iMessage for SMS 2FA when needed; use email verification sent to
+  `liamvanpj@gmail.com` when available.
+- Workday applications may be attempted and submitted when confidence is high.
+  Treat Workday as slower and more stateful: proceed carefully one application
+  at a time, use saved/default answers, and record a precise blocker only for
+  login/2FA/CAPTCHA/profile/account gates or questions not covered by standing
+  answers.
 - Treat prior answered same-question patterns from tracker notes/submitted rows
   as covered standing answers, provided the answer remains truthful for the live
   role.

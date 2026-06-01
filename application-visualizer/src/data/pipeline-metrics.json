@@ -2,21 +2,9 @@
   "applicationsPerDay": [
     {
       "archived": 0,
-      "date": "2026-05-23",
-      "manual": 0,
-      "submitted": 0
-    },
-    {
-      "archived": 0,
-      "date": "2026-05-24",
-      "manual": 0,
-      "submitted": 2
-    },
-    {
-      "archived": 0,
       "date": "2026-05-25",
       "manual": 0,
-      "submitted": 2
+      "submitted": 0
     },
     {
       "archived": 0,
@@ -45,8 +33,20 @@
     {
       "archived": 0,
       "date": "2026-05-30",
-      "manual": 2,
+      "manual": 3,
       "submitted": 2
+    },
+    {
+      "archived": 0,
+      "date": "2026-05-31",
+      "manual": 7,
+      "submitted": 4
+    },
+    {
+      "archived": 0,
+      "date": "2026-06-01",
+      "manual": 5,
+      "submitted": 13
     }
   ],
   "avgConfidenceBySource": [
@@ -83,15 +83,80 @@
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn Easy Apply"
+      "source": "LinkedIn / Alignerr"
+    },
+    {
+      "avgScore": 0.5,
+      "band": "low",
+      "source": "LinkedIn / Ashby"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "Meta Careers"
+      "source": "LinkedIn / BlackRock Careers"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Easy Apply"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Gem"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / General Motors Workday"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Greenhouse"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / IBM Avature"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Jack"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Lever"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Oracle Cloud"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Robert Half Careers"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Starbucks Careers"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Workday"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn Easy Apply"
     }
   ],
-  "generatedAt": "2026-05-30T23:11:57.609932+00:00",
+  "generatedAt": "2026-06-01T21:42:19.624250+00:00",
   "intakeHealth": {
     "greenhouseCapturedToday": 0,
     "greenhouseLastRun": "",
@@ -101,19 +166,23 @@
   },
   "queueDepth": {
     "intakeUnprocessed": 165,
-    "manualApplyNeeded": 117,
+    "manualApplyNeeded": 136,
     "readyToApply": 0,
-    "resumeTailored": 20
+    "resumeTailored": 19
   },
   "submitSuccessRate": {
-    "archived": 0.299,
-    "manual": 0.06,
-    "submitted": 0.642
+    "archived": 0.215,
+    "manual": 0.183,
+    "submitted": 0.602
   },
   "topBlockers": [
     {
-      "count": 4,
+      "count": 16,
       "reason": "unspecified"
+    },
+    {
+      "count": 1,
+      "reason": "Required custom written Aircall prompts need Liam review before final submit"
     }
   ],
   "windowDays": 7

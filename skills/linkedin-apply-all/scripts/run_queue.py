@@ -4,8 +4,10 @@
 from __future__ import annotations
 
 import argparse
+import atexit
 import datetime as dt
 import json
+import os
 import shutil
 import subprocess
 from pathlib import Path
@@ -15,6 +17,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[3]
 STATE_PATH = Path("/tmp/linkedin_apply_all_state.json")
 OUTPUT_DIR = Path("/tmp/linkedin_apply_all_worker_outputs")
+LOCK_PATH = Path("/tmp/linkedin_apply_all_worker.lock")
 DONE_STATES = {
     "submitted",
     "applied",
@@ -40,9 +43,12 @@ Read skills/linkedin-apply-all/OPERATING_CARD.md before starting. Follow it stri
 
 You are a fresh {worker} worker launched by the LinkedIn apply-all queue runner.
 Use the authenticated Liam Chrome profile for live LinkedIn/application work.
-Do not spawn subagents except for the explicit missing-resume tailor step
-described below. Process up to {batch_size} LinkedIn application outcome(s),
-then exit cleanly.
+Prefer the Chrome extension backend when available. If Chrome extension
+discovery fails but the Google Chrome app is visible, use Computer Use as the
+sole browser actor for this worker. Do not spawn subagents, monitors, parallel
+browser tools, or a separate resume-tailor worker. You are the only active
+worker. Process up to {batch_size} LinkedIn application outcome(s), then exit
+cleanly.
 
 Durable state file: {state_path}
 
@@ -51,11 +57,19 @@ Before starting and before each job, reread the state file. Respect:
 - runPolicy.worker is "{worker}".
 - runPolicy.missingResumePolicy controls what to do when a realistic new posting
   lacks a tailored resume. Default "tailor" means run a bounded resume-tailor
-  worker for the exact posting, refresh tracker/cache, then let a fresh
-  application worker continue with the new tailored resume. Do not run recruiter
-  outreach or the full sourcing pipeline.
+  workflow yourself for the exact posting, refresh tracker/cache, update the
+  state item with the new resume path, then continue the application with that
+  resume. Do not run recruiter outreach or the full sourcing pipeline.
 - runPolicy.outreachAllowed=false means no recruiter search and no LinkedIn
   connection invites.
+- Read skills/linkedin-easy-apply-nodriver/references/application-defaults.md
+  and, when present, skills/linkedin-apply-all/private-application-defaults.md
+  before marking routine questions, login/account creation, 2FA, salary, phone,
+  legal defaults, or Workday flow as blockers. Do not print or commit private
+  credentials or verification codes.
+- Browser access rule: exactly one browser access method may be active. If you
+  fall back from Chrome extension to Computer Use, do not keep trying the Chrome
+  extension in parallel.
 - search.url is the LinkedIn search to keep open. It already includes the chosen
   f_TPR freshness window.
 - search.currentResultIndex and visitedJobUrls are durable cursor hints. Update
@@ -66,6 +80,16 @@ Before starting and before each job, reread the state file. Respect:
 - If state contains an item with state "tailored" or "in_progress_tailoring"
   and a valid resumePdf, process that item before opening the next LinkedIn card,
   even if its jobUrl is already in visitedJobUrls.
+- If state contains an item with state "revisit_skipped", process that skipped
+  item before opening the next LinkedIn card. Liam asked to go through all
+  results, so previous location, staffing/vendor, weak-fit, low-salary,
+  placement-funnel, and stack-mismatch skips are not terminal. Attempt the
+  application path with truthful standing answers. Only stop short for hard
+  blockers: duplicate/already handled, closed/unavailable posting, required
+  active clearance Liam does not have, impossible date/eligibility requirements,
+  CAPTCHA/bot checks, failed login/2FA/account creation after defaults,
+  unsupported legal answers, or a required answer that cannot be truthfully
+  provided.
 - Stop only if search.stopRequested, maxJobs is reached, the manual circuit
   breaker is hit, or a systemic LinkedIn/Chrome/auth/rate-limit blocker appears.
 
@@ -79,21 +103,26 @@ Per result, in order:
    and state items by Posting Key, LinkedIn job id, canonical URL, ATS URL, and
    normalized company + title. If already handled/completed, mark duplicate and
    continue if capacity remains.
-4. Skip obvious bad fits: non-SWE, senior/staff/principal/manager, sales/support,
-   internship-only, closed/stale, or outside Liam's cared-about locations.
+4. In normal mode, skip obvious bad fits: non-SWE,
+   senior/staff/principal/manager, sales/support, internship-only, closed/stale,
+   or outside Liam's cared-about locations. If runPolicy.noSkipAllResults is
+   true, do not skip for location, staffing/vendor source, weak fit, low salary,
+   placement-funnel language, or stack mismatch; attempt the application path
+   anyway using truthful standing answers.
 5. If a valid tailored resume exists for this exact posting, apply with it. If
    not, follow runPolicy.missingResumePolicy exactly:
-   - "tailor": record the item as in_progress_tailoring, invoke one bounded
-     resume-tailor worker for the exact LinkedIn/ATS posting, refresh the
-     tracker/cache, update the item with resumePdf and state tailored, then exit
-     cleanly so the next application worker can apply with the new resume.
+  - "tailor": record the item as in_progress_tailoring, run the bounded
+    resume-tailor workflow yourself for the exact LinkedIn/ATS posting, refresh
+    the tracker/cache, update the item with resumePdf and state tailored, then
+    continue this same worker into the application with the new resume.
    - "queue_for_tailoring": mark queued_for_tailoring with captured job details
      and continue.
    - "skip": mark skipped with the missing-resume reason and continue.
 6. Attempt the application using finish-applications guardrails. Verify LinkedIn
-   Easy Apply email is liamvanpj@gmail.com. Do not submit Workday applications.
-   Do not solve CAPTCHA, create accounts, bypass bot checks, guess legal/salary
-   commitments, or answer unsupported eligibility questions.
+   Easy Apply email is liamvanpj@gmail.com. Workday applications are allowed but
+   slower; attempt them one at a time and submit only with high confidence.
+   Do not solve CAPTCHA, bypass bot checks, guess unsupported legal/eligibility
+   answers, or submit when standing defaults do not cover the required answer.
 7. Record one durable item outcome with:
    key, company, role, jobUrl, linkedinJobId, location, source, applyMode,
    resumePdf, applicationConfidence, state, result, blocker,
@@ -121,6 +150,38 @@ def load_state() -> dict[str, Any]:
             "python3 skills/linkedin-apply-all/scripts/build_run_state.py"
         )
     return json.loads(STATE_PATH.read_text(encoding="utf-8"))
+
+
+def acquire_worker_lock() -> None:
+    while True:
+        try:
+            fd = os.open(LOCK_PATH, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+            with os.fdopen(fd, "w", encoding="utf-8") as lock:
+                lock.write(f"{os.getpid()}\n")
+            atexit.register(release_worker_lock)
+            return
+        except FileExistsError:
+            try:
+                pid_text = LOCK_PATH.read_text(encoding="utf-8").strip()
+                existing_pid = int(pid_text)
+                os.kill(existing_pid, 0)
+            except (ValueError, ProcessLookupError, FileNotFoundError):
+                try:
+                    LOCK_PATH.unlink()
+                except FileNotFoundError:
+                    pass
+                continue
+            except PermissionError:
+                pass
+            raise SystemExit(f"Another linkedin-apply-all worker is already active; lock: {LOCK_PATH}")
+
+
+def release_worker_lock() -> None:
+    try:
+        if LOCK_PATH.read_text(encoding="utf-8").strip() == str(os.getpid()):
+            LOCK_PATH.unlink()
+    except FileNotFoundError:
+        pass
 
 
 def done_count(state: dict[str, Any]) -> int:
@@ -229,8 +290,8 @@ def run_worker(batch_no: int, worker: str, batch_size: int, args: argparse.Names
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run LinkedIn apply-all queue workers.")
-    parser.add_argument("--batch-size", type=int, default=1)
-    parser.add_argument("--max-workers", type=int, default=0)
+    parser.add_argument("--batch-size", type=int, default=25)
+    parser.add_argument("--max-workers", type=int, default=1)
     parser.add_argument("--worker", choices=("codex", "claude"), help="Override worker in state")
     parser.add_argument("--codex-model")
     parser.add_argument("--claude-model")
@@ -239,6 +300,7 @@ def main() -> int:
     parser.add_argument("--child-sandbox", default="danger-full-access", choices=("read-only", "workspace-write", "danger-full-access"))
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
+    acquire_worker_lock()
 
     batch_no = 0
     while True:

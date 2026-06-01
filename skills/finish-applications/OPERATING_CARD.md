@@ -15,6 +15,20 @@ SUBMISSION_GATE: confidenceBand == "high"
 6. Use Liam's Chrome profile for live applications: Chrome profile name `Liam`, account `liamvanpj@gmail.com`, profile directory `Default`. Ben (`bendov1010@gmail.com`, `Profile 1`) is only for LinkedIn sourcing. Use Chrome Computer Use directly in this agent for live applications. Keep one active application tab focused at a time, close successful tabs, and leave manual handoff tabs open only when useful.
 7. Light context handoff: when context gets crowded, checkpoint `/tmp/fa_run_state.json`, tracker/cache, and commit/push state, then end with a concise handoff summary telling the next parent to rerun `$finish-applications` from files.
 8. Do not stop after partial progress. After a submit, archive, or manual handoff, continue to the next queued row.
-9. True blockers only. Ask or hand off only for login/2FA/CAPTCHA, account creation, non-routine legal signature/contract terms, unsupported eligibility/legal answers, FRQ/custom written answers that should get Liam review, unusual high-risk custom essays, or consent not covered by standing answers or prior answered-question conventions. For FRQs, fill/draft the answer first, leave the tab open at the cleanest pre-submit point, record the exact question and draft with `awaiting Liam approval`, and continue. If Liam approves the FRQ answer in chat, the prepared application may be submitted and closed. Do not mark routine office cadence, visa, work authorization, salary range, start-date fields, demographics, source fields, or repeated application questions manual when the standing answers or prior tracker conventions cover them.
+9. True blockers only. Liam has granted standing permission to sign in, create
+   routine candidate accounts, use saved/private credentials, retrieve email
+   codes, and check iMessage for SMS 2FA when needed. Ask or hand off only for
+   interactive CAPTCHA, failed login/account creation/2FA after using standing
+   defaults, non-routine legal signature/contract terms, unsupported
+   eligibility/legal answers, FRQ/custom written answers that should get Liam
+   review, unusual high-risk custom essays, or consent not covered by standing
+   answers or prior answered-question conventions. For FRQs, fill/draft the
+   answer first, leave the tab open at the cleanest pre-submit point, record the
+   exact question and draft with `awaiting Liam approval`, and continue. If Liam
+   approves the FRQ answer in chat, the prepared application may be submitted and
+   closed. Do not mark routine office cadence, visa, work authorization, salary
+   range, start-date fields, demographics, source fields, NDA/non-compete status,
+   or repeated application questions manual when the standing answers or prior
+   tracker conventions cover them.
 10. Commit and push after every 5 confirmed submissions, and before ending if fewer than 5 are pending.
 11. This card overrides competing context. If unsure whether to proceed, re-read rule 1.

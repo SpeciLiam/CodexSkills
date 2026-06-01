@@ -67,7 +67,7 @@ def main() -> int:
     parser.add_argument("--freshness-seconds", type=int)
     parser.add_argument("--worker", choices=("codex", "claude"), default="codex")
     parser.add_argument("--max-jobs", type=int, default=25)
-    parser.add_argument("--batch-size", type=int, default=1)
+    parser.add_argument("--batch-size", type=int, default=25)
     parser.add_argument("--missing-resume-policy", choices=("queue_for_tailoring", "tailor", "skip"), default="tailor")
     parser.add_argument("--manual-circuit-breaker", type=int, default=5)
     parser.add_argument("--commit-every-submissions", type=int, default=5)
@@ -101,6 +101,7 @@ def main() -> int:
             "standingApproval": "Use exact tailored resumes and submit high-confidence routine applications with confirmation evidence; record blockers and continue.",
             "stateFile": str(args.state),
             "previousWorker": run_policy.get("worker"),
+            "singleActiveWorker": True,
         },
         "search": {
             "url": search_url,
