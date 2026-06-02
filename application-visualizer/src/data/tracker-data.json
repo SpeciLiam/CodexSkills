@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T21:42:19.558298+00:00",
+  "generatedAt": "2026-06-02T04:41:20.437006+00:00",
   "sourceFiles": {
     "applications": "application-trackers/applications.md",
     "outreach": "application-trackers/outreach-prospects.md",
@@ -9,14 +9,14 @@
   },
   "stats": {
     "kpis": {
-      "total": 1047,
-      "applied": 659,
+      "total": 1049,
+      "applied": 661,
       "unapplied": 388,
-      "active": 720,
+      "active": 722,
       "rejected": 96,
       "interviewing": 5,
       "assessments": 3,
-      "highFit": 852,
+      "highFit": 853,
       "reachOut": 906,
       "recruiterRows": 127,
       "prospects": 3,
@@ -26,8 +26,8 @@
       "intakeNew": 56,
       "intakeManual": 445,
       "intakeApplied": 23,
-      "applyRate": 62.9,
-      "rejectionRate": 14.6,
+      "applyRate": 63.0,
+      "rejectionRate": 14.5,
       "recruiterWork": 558,
       "engineerWork": 740,
       "recruiterReachedOut": 117,
@@ -36,7 +36,7 @@
     "statusCounts": [
       {
         "name": "Applied",
-        "value": 556
+        "value": 558
       },
       {
         "name": "Archived",
@@ -70,7 +70,7 @@
       },
       {
         "name": "LinkedIn",
-        "value": 374
+        "value": 375
       },
       {
         "name": "Ashby",
@@ -299,12 +299,16 @@
       {
         "name": "LinkedIn / General Motors Workday",
         "value": 1
+      },
+      {
+        "name": "LinkedIn / Eightfold",
+        "value": 1
       }
     ],
     "locationCounts": [
       {
         "name": "New York",
-        "value": 418
+        "value": 419
       },
       {
         "name": "Bay Area",
@@ -312,7 +316,7 @@
       },
       {
         "name": "Other",
-        "value": 204
+        "value": 205
       },
       {
         "name": "Remote",
@@ -338,7 +342,7 @@
       },
       {
         "name": "Full Stack",
-        "value": 129
+        "value": 130
       },
       {
         "name": "Backend",
@@ -346,7 +350,7 @@
       },
       {
         "name": "AI/ML",
-        "value": 84
+        "value": 85
       },
       {
         "name": "Forward Deployed",
@@ -380,7 +384,7 @@
       },
       {
         "score": "4",
-        "count": 7
+        "count": 8
       },
       {
         "score": "5",
@@ -396,7 +400,7 @@
       },
       {
         "score": "8",
-        "count": 214
+        "count": 215
       },
       {
         "score": "9",
@@ -790,9 +794,17 @@
       },
       {
         "date": "2026-06-01",
-        "cumulative": 1047,
-        "added": 19,
-        "applied": 10,
+        "cumulative": 1048,
+        "added": 20,
+        "applied": 11,
+        "rejected": 0,
+        "interviewing": 0
+      },
+      {
+        "date": "2026-06-02",
+        "cumulative": 1049,
+        "added": 1,
+        "applied": 1,
         "rejected": 0,
         "interviewing": 0
       }
@@ -29782,6 +29794,57 @@
       "notes": "LinkedIn 4421891089 / Workday R26-00785. Tailored one-page resume rendered and verified for TEL AI Research SWE role. Workday Apply -> Autofill with Resume reached account creation before upload/application form; browser accessibility became unreliable at account gate, so application not submitted and tab left open for manual completion.",
       "noteLinks": [],
       "activityDates": []
+    },
+    {
+      "company": "Eightfold AI",
+      "role": "Software Engineer - AI Agentic Product Dev Team (US)",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 8,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-06-01",
+      "location": "Santa Clara, CA (Hybrid)",
+      "source": "LinkedIn / Eightfold",
+      "jobLink": "https://www.linkedin.com/jobs/view/4419147110/",
+      "postingKey": "4419147110",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Eightfold AI/Software_Engineer_AI_Agentic_Product_Dev_Team/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Eightfold AI/Software_Engineer_AI_Agentic_Product_Dev_Team/Liam_Van_Resume/Liam_Van_Eightfold_AI.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "LinkedIn 4419147110 / Eightfold ATS job 68761482276 (app.eightfold.ai). Conduct-apply-all Claude worker tailored the one-page resume (Liam_Van_Eightfold_AI.pdf) for the AI/Agentic Product Dev SWE role, then hit a Claude usage limit before submitting the external Eightfold application. Liam completed and submitted the application manually on 2026-06-01 using the tailored resume.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-06-01"
+      ]
+    },
+    {
+      "company": "Canyon Code",
+      "role": "Full-Stack ML Systems Engineer",
+      "applied": true,
+      "status": "Applied",
+      "fitScore": 4,
+      "reachOut": false,
+      "referral": "No",
+      "dateAdded": "2026-06-02",
+      "location": "Sunnyvale, CA (On-site)",
+      "source": "LinkedIn",
+      "jobLink": "https://www.linkedin.com/jobs/view/4422587432/",
+      "postingKey": "4422587432",
+      "resumeFolder": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Canyon Code/Full_Stack_ML_Systems_Engineer/Liam_Van_Resume",
+      "resumePdf": "/Users/liamvan/Documents/Repos/CodexSkills/companies/Canyon Code/Full_Stack_ML_Systems_Engineer/Liam_Van_Resume/Liam_Van_Canyon_Code.pdf",
+      "recruiterContact": "",
+      "recruiterProfile": "",
+      "engineerContact": "",
+      "engineerProfile": "",
+      "notes": "Tailored 2026-06-02 from LinkedIn Easy Apply posting 4422587432; AI infra startup, senior role 7+ years req, noSkipAllResults=true. Submitted via LinkedIn Easy Apply 2026-06-02 with Liam_Van_Overland_AI.pdf (Canyon Code tailored PDF on disk at Liam_Van_Canyon_Code.pdf; file-picker upload unavailable via automation). Screening: multi-agentic systems=No, model-serving platforms=No. Confirmation: \"Application submitted\" visible on screen.",
+      "noteLinks": [],
+      "activityDates": [
+        "2026-06-02",
+        "2026-06-02"
+      ]
     }
   ],
   "jobIntake": [
