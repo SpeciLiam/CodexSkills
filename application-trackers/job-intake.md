@@ -2,11 +2,12 @@
 
 This file tracks fresh jobs discovered by scheduled LinkedIn and Greenhouse intake before they become tailored applications.
 
-Jobs discovered: 939
-New: 56 | Queued: 109 | Tailored: 149 | Applied: 22 | Manual: 444 | Skipped: 147 | Duplicate: 5 | Expired: 3
+Jobs discovered: 940
+New: 56 | Queued: 109 | Tailored: 149 | Applied: 22 | Manual: 444 | Skipped: 148 | Duplicate: 5 | Expired: 3
 
 | Source | Company | Role | Location | Posting Key | Job URL | Discovered At | Posted Age | Fit Score | Status | Reason | Tracker Posting Key |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| LinkedIn | Applied Intuition | Software Engineer - Python | Sunnyvale, CA (On-site) | 4387198857 | https://www.linkedin.com/jobs/view/4387198857/ | 2026-06-04T20:50:00-07:00 | Reposted 1 week ago via authenticated LinkedIn apply-all search | 8 | Skipped | Skipped 2026-06-04: LinkedIn posting showed "No longer accepting applications"; no tailoring or submit attempted |  |
 | LinkedIn | Seso Inc. | AI-First Software Engineer | Seattle, WA (Remote) | 4421372911 | https://www.linkedin.com/jobs/view/4421372911/ | 2026-06-01T00:54:00+00:00 | Posted 23 hours ago via authenticated LinkedIn apply-all search | 7 | Manual | Manual review needed 2026-05-31: posting requires fluency in Spanish and English, and Liam's standing defaults/resume evidence do not establish Spanish fluency; no tailoring or submit attempted until Liam confirms this requirement can be truthfully met |  |
 | LinkedIn | Benchling | Software Engineer, Developer Platform | San Francisco, CA (Hybrid) | 4391765641 | https://www.linkedin.com/jobs/view/4391765641/ | 2026-05-31T22:46:38+00:00 | Reposted 9 hours ago via authenticated LinkedIn apply-all search | 6 | Skipped | Skipped 2026-05-31: posting requires current BS/MS enrollment with expected Summer 2026 graduation and target Summer 2026 start; Liam graduated Dec 2024, so the date/eligibility requirement cannot be truthfully met |  |
 | LinkedIn | Lam Research | Software Engineer Sys 1 | Fremont, CA | 4409705480 | https://www.linkedin.com/jobs/view/4409705480/ | 2026-05-31T00:27:00+00:00 | Reposted 3 days ago via authenticated LinkedIn apply-all search | 8 | Applied | Applied 2026-05-30 via Lam Research Eightfold job 1099553391121 with exact tailored PDF; success modal showed "Thank you for your application, Liam!" | 4409705480 |

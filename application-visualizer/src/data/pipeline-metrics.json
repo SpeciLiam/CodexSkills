@@ -1,28 +1,10 @@
 {
   "applicationsPerDay": [
     {
-      "archived": 0,
-      "date": "2026-05-26",
-      "manual": 0,
-      "submitted": 0
-    },
-    {
-      "archived": 0,
-      "date": "2026-05-27",
-      "manual": 0,
-      "submitted": 5
-    },
-    {
-      "archived": 0,
-      "date": "2026-05-28",
-      "manual": 0,
-      "submitted": 0
-    },
-    {
-      "archived": 20,
+      "archived": 5,
       "date": "2026-05-29",
       "manual": 2,
-      "submitted": 32
+      "submitted": 7
     },
     {
       "archived": 0,
@@ -43,42 +25,55 @@
       "submitted": 13
     },
     {
-      "archived": 0,
+      "archived": 10,
       "date": "2026-06-02",
+      "manual": 3,
+      "submitted": 2
+    },
+    {
+      "archived": 0,
+      "date": "2026-06-03",
       "manual": 0,
       "submitted": 0
+    },
+    {
+      "archived": 0,
+      "date": "2026-06-04",
+      "manual": 0,
+      "submitted": 0
+    },
+    {
+      "archived": 0,
+      "date": "2026-06-05",
+      "manual": 7,
+      "submitted": 19
     }
   ],
   "avgConfidenceBySource": [
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "Amazon Jobs"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
       "source": "Ashby"
     },
     {
-      "avgScore": 0.0,
-      "band": "low",
-      "source": "BambooHR"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
+      "avgScore": 56.7,
+      "band": "medium",
       "source": "Company Site"
     },
     {
-      "avgScore": 0.0,
+      "avgScore": 5.8,
       "band": "low",
       "source": "Greenhouse"
     },
     {
-      "avgScore": 0.0,
+      "avgScore": 13.1,
       "band": "low",
       "source": "LinkedIn"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Adobe Careers"
     },
     {
       "avgScore": 0.0,
@@ -86,7 +81,12 @@
       "source": "LinkedIn / Alignerr"
     },
     {
-      "avgScore": 0.5,
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Amazon.jobs"
+    },
+    {
+      "avgScore": 0.3,
       "band": "low",
       "source": "LinkedIn / Ashby"
     },
@@ -128,12 +128,27 @@
     {
       "avgScore": 0.0,
       "band": "low",
+      "source": "LinkedIn / Jack & Jill"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Jobs via Dice / Appcast"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
       "source": "LinkedIn / Lever"
     },
     {
       "avgScore": 0.0,
       "band": "low",
       "source": "LinkedIn / Oracle Cloud"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / PayPal Eightfold"
     },
     {
       "avgScore": 0.0,
@@ -148,6 +163,11 @@
     {
       "avgScore": 0.0,
       "band": "low",
+      "source": "LinkedIn / Viasat Careers"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
       "source": "LinkedIn / Workday"
     },
     {
@@ -156,7 +176,7 @@
       "source": "LinkedIn Easy Apply"
     }
   ],
-  "generatedAt": "2026-06-02T04:41:20.502536+00:00",
+  "generatedAt": "2026-06-05T21:46:51.687788+00:00",
   "intakeHealth": {
     "greenhouseCapturedToday": 0,
     "greenhouseLastRun": "",
@@ -166,18 +186,18 @@
   },
   "queueDepth": {
     "intakeUnprocessed": 165,
-    "manualApplyNeeded": 136,
+    "manualApplyNeeded": 144,
     "readyToApply": 0,
-    "resumeTailored": 19
+    "resumeTailored": 17
   },
   "submitSuccessRate": {
-    "archived": 0.215,
-    "manual": 0.183,
-    "submitted": 0.602
+    "archived": 0.169,
+    "manual": 0.303,
+    "submitted": 0.528
   },
   "topBlockers": [
     {
-      "count": 16,
+      "count": 26,
       "reason": "unspecified"
     },
     {

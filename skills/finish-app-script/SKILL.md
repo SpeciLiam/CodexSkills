@@ -74,9 +74,12 @@ For native macOS file uploads, use Cmd+Shift+G with the exact absolute PDF path
 from the row state, then Return/Open, and verify the rendered attached filename.
 Do not trust folder-click navigation when the picker remembers a previous
 application's directory or stale file.
-If the Chrome plugin reports that file upload is blocked, leave the tab open and
-tell Liam to enable file URL access for the Codex Chrome Extension in
-`chrome://extensions`.
+If the Chrome plugin reports that file upload is blocked or the file chooser
+returns `Not allowed`, treat that as the Codex Chrome Extension lacking
+local-file access, not as a rule forbidding resume uploads. Leave the tab open
+at the upload step, tell Liam to enable "Allow access to file URLs" for the
+Codex Chrome Extension in `chrome://extensions`, and retry the prepared upload
+after that setting is enabled.
 For Greenhouse upload widgets, click the nested `Browse...` button inside the
 Resume/CV field rather than the outer `Attach` control; the
 outer control can leave `Open` disabled even when a PDF is selected.
@@ -94,6 +97,14 @@ Uare.ai Greenhouse for resume PDFs.
 During live browser runs, keep open application tabs organized by perceived
 handoff confidence:
 
+Keep automation isolated from Liam's normal Chrome activity. When using the
+Codex Chrome plugin, create and use agent-owned tabs in the Codex tab group.
+Do not claim, navigate, reload, or reuse Liam's active/current tab unless
+intentionally resuming that exact row's prepared handoff tab.
+Before processing a row, prove that the isolated agent-owned tab can be created.
+If it cannot, stop as a systemic browser-access blocker instead of marking the
+row manual.
+
 - **High Confidence / Ready Submit**: fully completed tabs where every required
   answer is covered by standing answers, resume/profile evidence, grounded FRQs,
   or routine boilerplate acknowledgements; critical rendered answers are
@@ -109,9 +120,10 @@ handoff confidence:
   postings, mismatched redirects, and not-found pages.
 
 If Chrome tab groups are available through UI automation, place tabs into those
-groups. If tab groups are not scriptable from the current environment, use the
-closest non-destructive fallback: reorder tabs into the same sequence and keep a
-short written map in the run notes or final response.
+groups inside the agent-owned workflow group. If tab groups are not scriptable
+from the current environment, use the closest non-destructive fallback: reorder
+tabs into the same sequence and keep a short written map in the run notes or
+final response.
 
 ## How To Run
 

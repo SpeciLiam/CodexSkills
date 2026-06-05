@@ -71,6 +71,11 @@ def main() -> int:
     parser.add_argument("--missing-resume-policy", choices=("queue_for_tailoring", "tailor", "skip"), default="tailor")
     parser.add_argument("--manual-circuit-breaker", type=int, default=5)
     parser.add_argument("--commit-every-submissions", type=int, default=5)
+    parser.add_argument(
+        "--no-skip-all-results",
+        action="store_true",
+        help="Attempt every result: skip only already-applied/handled duplicates, never skip for location, fit, salary, staffing, or stack.",
+    )
     parser.add_argument("--resume", action="store_true", help="Preserve existing items and only refresh policy/search fields")
     args = parser.parse_args()
 
@@ -96,6 +101,7 @@ def main() -> int:
             "manualCircuitBreaker": args.manual_circuit_breaker,
             "commitEverySubmissions": args.commit_every_submissions,
             "continuePastPerApplicationBlockers": True,
+            "noSkipAllResults": args.no_skip_all_results,
             "outreachAllowed": False,
             "coverLetterPolicy": "Only create/include a cover letter when required by the application or explicitly requested by the posting.",
             "standingApproval": "Use exact tailored resumes and submit high-confidence routine applications with confirmation evidence; record blockers and continue.",

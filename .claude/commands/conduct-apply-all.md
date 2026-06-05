@@ -19,13 +19,20 @@ only on systemic browser failure.
 
 Loop:
 
-1. **Plan** — refresh cache, then `build_run_state.py --worker codex --missing-resume-policy tailor`
+1. **Plan** — refresh cache, then `build_run_state.py --worker codex --missing-resume-policy tailor --no-skip-all-results`
    (pass `--search-url` / `--freshness` from `$ARGUMENTS` when given). Read the
    tracker/intake dedupe landscape and confirm `/tmp/linkedin_apply_all_state.json`.
    Open Chrome in Liam's profile.
 2. **Execute one application** — `python3 skills/linkedin-apply-all/scripts/run_queue.py --worker codex --batch-size 1 --max-workers 1`.
-   Do **not** use `run_monitored_queue.py`. One fresh Codex worker walks to the
-   next substantive card, tailors, applies, writes the outcome, exits.
+   **Exactly one Codex worker at a time** — never raise `--max-workers`, never
+   launch a second `run_queue.py` while one runs. Do **not** use
+   `run_monitored_queue.py`. One fresh Codex worker walks to the next substantive
+   card, tailors, applies, writes the outcome, exits.
+
+**Attempt-all posture:** `--no-skip-all-results` means workers skip **only**
+already-applied/handled duplicates and attempt everything else — no skipping for
+location, fit, salary, staffing, or stack. Keep going past per-application
+blockers; stop only on saturation or a systemic browser/auth failure.
 3. **Checkpoint** — re-read the state file and judge the single changed item:
    systemic browser/auth/rate-limit failure (stop, don't relaunch), dedupe
    correctness (no duplicate rows), tracker integrity (submitted items must carry

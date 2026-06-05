@@ -99,6 +99,13 @@ For each row:
 - Always open a brand-new browser tab before navigating to the jobLink, including
   the first row in this batch. Never navigate over an existing application,
   email, search, or handoff tab.
+- Keep automation isolated from Liam's normal Chrome activity. When using the
+  Codex Chrome plugin, create/use agent-owned tabs in the Codex tab group; do
+  not claim, navigate, reload, or reuse Liam's active/current tab unless
+  intentionally resuming that exact row's prepared handoff tab.
+- Before processing the row, prove that the isolated agent-owned tab can be
+  created. If it cannot, stop the batch as a systemic browser-access blocker
+  instead of marking the row manual.
 - Before drafting any FRQ, "why us" answer, values answer, achievement example,
   or project example, load Liam's factual
   context. Read the row's tailored resume source at <resume directory>/resume.tex
@@ -115,9 +122,10 @@ For each row:
   and prior submitted rows for the same question pattern. If the same question
   has already been answered safely, reuse that answer and keep moving.
 - Keep browser tabs organized by perceived confidence when possible: High Confidence /
-  Ready Submit, Needs Review, Hard Blocker, and Submitted / Archived. If Chrome
-  tab groups are not scriptable, leave tabs ordered in that bucket sequence and
-  make the outcome note clear enough for Liam to identify the bucket.
+  Ready Submit, Needs Review, Hard Blocker, and Submitted / Archived. Prefer
+  Chrome tab groups inside the agent-owned workflow group. If Chrome tab groups
+  are not scriptable, leave tabs ordered in that bucket sequence and make the
+  outcome note clear enough for Liam to identify the bucket.
 - Complete the live application with the row's resumePdf. During file upload,
   the macOS file picker may default to the previous application's file; before
   confirming any upload, verify the selected path exactly matches the current
@@ -144,10 +152,12 @@ For each row:
 - Resume/CV fields are file-upload only. Never click "Enter manually", never
   paste resume text into an ATS form, and never submit with manually entered
   document text.
-- If the Chrome plugin reports that file upload is blocked, leave the tab open,
-  mark the row manual with blocker "Chrome plugin file upload blocked; enable
-  file URL access for the Codex Chrome Extension in chrome://extensions", and
-  continue.
+- If the Chrome plugin reports that file upload is blocked or the file chooser
+  returns `Not allowed`, treat that as the Codex Chrome Extension lacking
+  local-file access, not as a rule forbidding resume uploads. Leave the tab open,
+  mark the row manual/retryable with blocker "Chrome plugin file upload blocked;
+  enable file URL access for the Codex Chrome Extension in chrome://extensions;
+  retry after that setting is enabled", and continue.
 - Do not generate, render, write, paste, or upload cover letters. If a
   cover-letter field is optional, leave it blank. If a cover-letter field is
   required and cannot be skipped, leave the tab open, mark the row manual with

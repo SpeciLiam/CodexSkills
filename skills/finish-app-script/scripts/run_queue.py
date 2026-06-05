@@ -93,9 +93,12 @@ Do not generate, render, write, paste, or upload cover letters. If a
 cover-letter field is optional, leave it blank. If a cover-letter field is
 required and cannot be skipped, leave the tab open and set state="manual" with
 blocker "Cover letter required; skipped by no-cover-letter policy".
-If the Chrome plugin reports that resume upload is blocked, leave the tab open
-and set state="manual" with blocker "Chrome plugin file upload blocked; enable
-file URL access for the Codex Chrome Extension in chrome://extensions".
+If the Chrome plugin reports that resume upload is blocked or the file chooser
+returns `Not allowed`, treat that as the Codex Chrome Extension lacking
+local-file access, not as a rule forbidding resume uploads. Leave the tab open
+at the upload step and set state="manual" with blocker "Chrome plugin file
+upload blocked; enable file URL access for the Codex Chrome Extension in
+chrome://extensions; retry after that setting is enabled".
 
 Dropdowns / typeahead / combo boxes / multi-select: open the menu, click the actual option, verify the rendered chip/value. Never just type into a typeahead and move on — the field will be silently rejected.
 

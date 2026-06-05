@@ -56,9 +56,11 @@ before starting nodriver.
 
 Fallback to Computer Use only if nodriver cannot handle LinkedIn sourcing or the
 Chrome plugin cannot handle Liam-profile ATS work. If Chrome-plugin resume
-upload fails, tell Liam to enable file URL access for the Codex Chrome Extension
-in `chrome://extensions` and then retry. Do not bypass CAPTCHA, login walls,
-rate limits, or LinkedIn restrictions.
+upload fails or the file chooser returns `Not allowed`, treat that as the Codex
+Chrome Extension lacking local-file access, not as a rule forbidding resume
+uploads. Tell Liam to enable "Allow access to file URLs" for the Codex Chrome
+Extension in `chrome://extensions` and then retry. Do not bypass CAPTCHA, login
+walls, rate limits, or LinkedIn restrictions.
 
 ## Search Target
 
@@ -138,15 +140,22 @@ a freshness boundary.
    - Before filling the external ATS/application form, hand off to the Chrome
      plugin in Liam's Chrome profile (`Default`, `liamvanpj@gmail.com`). Ben is
      only for LinkedIn sourcing/list building.
-   - Keep each external application in Liam's real Chrome window/tab. Use the
-     Chrome plugin for navigation, uploads, field filling, review, and submit
-     actions so logged-in ATS sessions and saved browser state are preserved.
+   - Keep each external application in Liam's real Chrome session, but isolate
+     automation from Liam's normal browsing. Use agent-owned Chrome plugin tabs
+     in the Codex tab group; do not claim, navigate, reload, or reuse Liam's
+     active/current tab unless intentionally resuming that exact application's
+     prepared handoff tab. Use the Chrome plugin for navigation, uploads, field
+     filling, review, and submit actions so logged-in ATS sessions and saved
+     browser state are preserved. Before navigating to an external ATS, prove
+     that the isolated agent-owned tab can be created; if it cannot, stop as a
+     systemic browser blocker instead of marking that posting manual.
    - Use `resume-tailor` to tailor a role-specific resume unless a verified
      tailored resume already exists for that exact company/role.
    - Render and verify the tailored resume PDF, then upload it wherever the
      external application asks for a resume. If the Chrome plugin reports that
-     file upload is blocked, pause that application, leave the tab open, and ask
-     Liam to enable file URL access for the Codex Chrome Extension.
+     file upload is blocked or the file chooser returns `Not allowed`, pause
+     that application, leave the tab open, and ask Liam to enable "Allow access
+     to file URLs" for the Codex Chrome Extension.
    - Fill every safe required field using `references/application-defaults.md`,
      Liam's resume, saved profile, tracker, and prior application conventions.
      Liam has already answered many recurring application questions; treat those
@@ -169,9 +178,10 @@ a freshness boundary.
      `awaiting Liam approval`.
 6. Manual set:
    - Always mark new LinkedIn Easy Apply postings as manual candidates for Liam.
-   - When any application gets stuck or needs manual review, leave that browser
-     tab open in Liam's Chrome profile at the exact stuck state, record the
-     blocker, open a new tab, and continue with the next job.
+   - When any application gets stuck or needs manual review, leave that
+     agent-owned browser tab open in Liam's Chrome profile at the exact stuck
+     state, record the blocker, open a new agent-owned tab, and continue with
+     the next job.
    - Before marking a non-Easy-Apply application manual, attempt the application
      as far as safely possible: upload the tailored resume when available, fill
      all safe required fields from `application-defaults.md`, and draft required
