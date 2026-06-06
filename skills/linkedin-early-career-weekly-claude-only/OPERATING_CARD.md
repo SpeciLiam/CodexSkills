@@ -85,6 +85,49 @@ never the Codex Chrome plugin and never `codex exec`.
     Treat that file as the shared standing-answer context, together with the
     active operating cards, tracker notes, submitted-row conventions, the tailored
     resume, and `generic-resume/`.
+9e. Apply preflight — one-time directory grant (the one-approval autonomy path).
+    The Claude-in-Chrome `file_upload` tool only accepts files the user has shared
+    with the session (chat attachments, or folders connected via
+    `mcp__ccd_directory__request_directory`). It rejects arbitrary repo paths, and
+    copying a resume into `~/Downloads`, `~/.claude/downloads`, the project
+    `outputs/`, or even the session's own `…/<session-id>/uploads/` does **not**
+    work — the gate is a harness-maintained user-share registry, not a path check
+    (verified 2026-06-06 against a live Ashby form). YOLO / bypass-permissions does
+    not lift it (both `request_directory` and the extension upload sandbox live
+    outside Claude Code's permission system). Therefore, before the first resume
+    upload in a run, the conductor — on the **main thread**, the same context that
+    will perform the upload — calls `mcp__ccd_directory__request_directory` for
+    `/Users/liamvan/Documents/Repos/CodexSkills/companies`:
+    - **Supervised launch:** Liam approves once. The grant is expected to hold for
+      the main-thread session context, so every later `file_upload` of a
+      `companies/.../*.pdf` succeeds with no further prompts and the rest of the
+      drain runs hands-off. Record an `uploadGrant: granted` run-state event.
+    - **Run the uploading apply stage INLINE on the main thread.** Spawned Agent
+      subagents may not inherit the grant or the browser bridge (rule 9c), so do
+      not rely on a subagent seeing the grant — perform resume-upload applies
+      inline (still exactly one browser actor). If a worker ever lacks the grant,
+      fall back to inline main-thread apply, never to repeated per-item prompts.
+    - **Unsupervised / denied:** `request_directory` is unavailable. Only an exact
+      tailored PDF that was *already* shared as a chat attachment can be uploaded
+      (attachments work unsupervised); a resume freshly tailored during the run was
+      not pre-attached, so in practice record a precise per-item upload blocker, set
+      that item `manual`, and continue discovery/tailoring/other items. Record an
+      `uploadGrant: unavailable` event so checkpoints read upload failures as
+      expected per-item blockers, not a lost bridge.
+    - This resume-upload-only limitation is a **per-item `manual` blocker, NOT** the
+      "neither approved Claude path available" systemic stop of rule 9a; reserve
+      rule 9a's stop for an actual loss of the Claude browser bridge. A run with no
+      grant may still legitimately drain discover + tailor to prep the queue, but it
+      yields `manual` apply rows rather than submissions — call that out in the
+      final summary.
+    - Codex note (informational only): Codex's Chrome plugin can upload absolute
+      local paths (`chooser.setFiles([...])`) without Claude's shared-file registry,
+      so driving the apply stage from an interactive Codex.app session avoids the
+      `request_directory` grant. It is not zero-touch, though: Codex still prompts for
+      per-origin upload permission ("Allow upload to <origin>?") and may need the
+      Chrome extension's "Allow access to file URLs" setting, and spawned `codex exec`
+      workers cannot reach the Codex Chrome extension at all. So this is not a
+      headless path either. This Claude-only variant uses the grant above.
 10. No cover letters in this workflow. Leave optional cover-letter fields blank.
     If a cover letter is required and cannot be skipped, leave the tab open and
     mark the item `manual` with the exact blocker.
