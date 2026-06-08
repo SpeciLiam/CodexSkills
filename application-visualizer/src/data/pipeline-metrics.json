@@ -1,28 +1,10 @@
 {
   "applicationsPerDay": [
     {
-      "archived": 5,
-      "date": "2026-05-29",
-      "manual": 2,
-      "submitted": 7
-    },
-    {
-      "archived": 0,
-      "date": "2026-05-30",
-      "manual": 3,
-      "submitted": 2
-    },
-    {
-      "archived": 0,
-      "date": "2026-05-31",
-      "manual": 7,
-      "submitted": 4
-    },
-    {
       "archived": 0,
       "date": "2026-06-01",
-      "manual": 5,
-      "submitted": 13
+      "manual": 3,
+      "submitted": 10
     },
     {
       "archived": 10,
@@ -47,6 +29,24 @@
       "date": "2026-06-05",
       "manual": 7,
       "submitted": 19
+    },
+    {
+      "archived": 0,
+      "date": "2026-06-06",
+      "manual": 0,
+      "submitted": 2
+    },
+    {
+      "archived": 0,
+      "date": "2026-06-07",
+      "manual": 5,
+      "submitted": 13
+    },
+    {
+      "archived": 0,
+      "date": "2026-06-08",
+      "manual": 0,
+      "submitted": 0
     }
   ],
   "avgConfidenceBySource": [
@@ -56,17 +56,17 @@
       "source": "Ashby"
     },
     {
-      "avgScore": 56.7,
-      "band": "medium",
+      "avgScore": 85.0,
+      "band": "high",
       "source": "Company Site"
     },
     {
-      "avgScore": 5.8,
+      "avgScore": 25.0,
       "band": "low",
       "source": "Greenhouse"
     },
     {
-      "avgScore": 13.1,
+      "avgScore": 14.0,
       "band": "low",
       "source": "LinkedIn"
     },
@@ -86,7 +86,7 @@
       "source": "LinkedIn / Amazon.jobs"
     },
     {
-      "avgScore": 0.3,
+      "avgScore": 0.0,
       "band": "low",
       "source": "LinkedIn / Ashby"
     },
@@ -118,7 +118,7 @@
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / IBM Avature"
+      "source": "LinkedIn / H-E-B Careers"
     },
     {
       "avgScore": 0.0,
@@ -138,11 +138,6 @@
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Lever"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
       "source": "LinkedIn / Oracle Cloud"
     },
     {
@@ -153,22 +148,7 @@
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Robert Half Careers"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
-      "source": "LinkedIn / Starbucks Careers"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
       "source": "LinkedIn / Viasat Careers"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
-      "source": "LinkedIn / Workday"
     },
     {
       "avgScore": 0.0,
@@ -176,7 +156,7 @@
       "source": "LinkedIn Easy Apply"
     }
   ],
-  "generatedAt": "2026-06-05T21:46:51.687788+00:00",
+  "generatedAt": "2026-06-08T01:14:41.348020+00:00",
   "intakeHealth": {
     "greenhouseCapturedToday": 0,
     "greenhouseLastRun": "",
@@ -186,23 +166,19 @@
   },
   "queueDepth": {
     "intakeUnprocessed": 165,
-    "manualApplyNeeded": 144,
+    "manualApplyNeeded": 147,
     "readyToApply": 0,
-    "resumeTailored": 17
+    "resumeTailored": 18
   },
   "submitSuccessRate": {
-    "archived": 0.169,
-    "manual": 0.303,
-    "submitted": 0.528
+    "archived": 0.135,
+    "manual": 0.243,
+    "submitted": 0.622
   },
   "topBlockers": [
     {
-      "count": 26,
+      "count": 18,
       "reason": "unspecified"
-    },
-    {
-      "count": 1,
-      "reason": "Required custom written Aircall prompts need Liam review before final submit"
     }
   ],
   "windowDays": 7

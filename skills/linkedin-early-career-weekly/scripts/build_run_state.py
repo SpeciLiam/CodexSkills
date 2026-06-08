@@ -165,6 +165,7 @@ def main() -> int:
                     "allowedAutomation": ["Codex Chrome plugin", "Codex Computer Use"],
                     "disallowedAutomation": ["Playwright", "Playwright CLI", "Puppeteer", "npx browser tooling", "public scraping fallback"],
                     "tabIsolation": "Must create an agent-owned Codex Chrome tab group before LinkedIn navigation; fail closed if spawned workers cannot access the extension endpoint.",
+                    "lowMemory": "Keep at most one LinkedIn search/checkpoint tab plus one active work tab; close stale workflow tabs before opening more.",
                 },
                 "applications": {
                     "requiredProfile": "Liam",
@@ -175,8 +176,10 @@ def main() -> int:
                     "allowedAutomation": ["Codex Chrome plugin", "Codex Computer Use"],
                     "disallowedAutomation": ["Playwright", "Playwright CLI", "Puppeteer", "npx browser tooling", "public scraping fallback"],
                     "tabIsolation": "Must create an agent-owned Codex Chrome tab group before ATS navigation; fail closed if spawned workers cannot access the extension endpoint.",
+                    "lowMemory": "Manual/review tabs are not kept by default. Write application-trackers/manual-application-handoffs.txt with blocker, next action, filled answers, and FRQ drafts, then close the tab unless it contains unrecoverable state. Keep at most one live handoff tab total.",
                 },
             },
+            "manualHandoffFile": "application-trackers/manual-application-handoffs.txt",
             "applicationAnswerContext": "skills/linkedin-easy-apply-nodriver/references/application-defaults.md",
         },
         "search": {

@@ -242,8 +242,13 @@ if (!created || !created.tabGroup) {{
 ```
 
 - Use that `tab` for navigation. Do not claim user tabs for this workflow.
-- On normal cleanup, call `browser.tabs.finalize(...)`: keep manual/review
-  handoff tabs with status `"handoff"` and omit submitted/irrelevant tabs.
+- Low-memory cleanup is required: keep at most one LinkedIn search/checkpoint
+  tab and one active job/application tab. For manual blockers, write
+  `application-trackers/manual-application-handoffs.txt` first, then close or
+  omit the application tab unless it contains unrecoverable state. Keep at most
+  one live handoff tab total. On normal cleanup, call
+  `browser.tabs.finalize(...)` and omit submitted/irrelevant/recorded-manual
+  tabs.
 - If the import, both `agent.browsers.get("extension")` attempts,
   `browser.tabs.new()`, or tab-group verification fails, stop as a systemic
   browser blocker before navigation. Do not mark a posting manual solely because
@@ -498,6 +503,9 @@ Workflow:
    unavailable, set search.stopRequested=true with a precise systemic browser
    blocker event/reason and exit; do not navigate and do not mark any posting
    manual.
+   Low-memory rule: use one LinkedIn search/checkpoint tab for this stage and
+   close/finalize any stale workflow tabs from previously submitted, archived,
+   duplicate, or recorded-manual items before opening another posting tab.
 2. Continue from search.currentResultIndex, search.scrollCheckpoint,
    search.lastJobUrl, search.visitedJobUrls, and search.skippedJobUrls. Do not
    choose a visited or skipped job.
@@ -608,23 +616,29 @@ Workflow:
    blocker and exit. For file uploads, attach the exact resumePdf path and
    verify the displayed filename. If the Chrome plugin file chooser reports
    `Not allowed`, treat that as the Codex Chrome Extension lacking local-file
-   access, not as a ban on uploading resumes: leave the tab open at the upload
-   step, ask Liam to enable "Allow access to file URLs" for the Codex Chrome
-   Extension in `chrome://extensions`, and record the row as retryable after
-   that setting is enabled.
+   access, not as a ban on uploading resumes: record the upload URL, exact
+   resumePdf, blocker, and retry instruction in
+   `application-trackers/manual-application-handoffs.txt`; close the tab unless
+   it contains unrecoverable filled state; ask Liam to enable "Allow access to
+   file URLs" for the Codex Chrome Extension in `chrome://extensions`; and
+   record the row as retryable after that setting is enabled.
    Browser isolation: create/use an agent-owned tab in the Codex tab group for
    this application stage. Do not claim, navigate, reload, or reuse Liam's
    active/current Chrome tab unless intentionally resuming this exact item's
-   prepared handoff tab. Leave manual/review handoff tabs in that workflow tab
-   group when possible; close submitted/irrelevant agent-created tabs. Before
+   prepared handoff tab. Run low-memory: before opening a new application tab,
+   close/finalize stale workflow tabs from submitted, archived, duplicate, and
+   already-recorded manual items; keep at most one search/checkpoint tab and one
+   active work tab. Manual/review tabs are not kept by default. Before
    navigating to the job/application page, prove this agent-owned tab can be
    created. If the isolated Chrome plugin tab group is unavailable, leave this
    item in its current state, set search.stopRequested=true with a precise
    systemic browser blocker event/reason, and exit; do not mark the item manual
    solely because browser isolation failed.
 6. No cover letters. Leave optional cover-letter fields blank. If a cover letter
-   is required and cannot be skipped, leave the tab open and set state "manual"
-   with blocker "Cover letter required; skipped by no-cover-letter policy".
+   is required and cannot be skipped, write/update
+   `application-trackers/manual-application-handoffs.txt`, close the tab unless
+   it contains unrecoverable state, and set state "manual" with blocker
+   "Cover letter required; skipped by no-cover-letter policy".
 7. Fill safe required fields using Liam's standing answers from
    skills/linkedin-easy-apply-nodriver/references/application-defaults.md, the
    operating cards, generic-resume/README.md, the tailored resume source, and
@@ -633,19 +647,29 @@ Workflow:
    resume attachment, and absence of true blockers. Capture confirmation evidence.
    If emailed verification goes to liamvanpj@gmail.com and Gmail access is
    available, retrieve it and continue.
-9. For true blockers, leave the useful tab open at the exact blocker/review
-   point and set state "manual" with the exact blocker. For closed/unavailable
-   postings, set state "archived".
+9. For true blockers, write/update
+   `application-trackers/manual-application-handoffs.txt` before closing the
+   tab. Include company, role, posting key, job URL, apply URL, resume PDF,
+   exact blocker, exact next action, filled/selected answers, and every FRQ
+   question plus drafted answer. Prefer:
+   python3 skills/linkedin-early-career-weekly/scripts/upsert_manual_handoff.py --company "<Company>" --role "<Role>" --posting-key "<key>" --job-url "<Job URL>" --apply-url "<Apply URL>" --resume-pdf "<PDF>" --blocker "<Blocker>" --next-action "<Next action>" --answer "<field: answer>" --frq "<question ::: draft>"
+   Set state "manual" with the exact blocker. Keep a live tab only if there is
+   unrecoverable state that the text handoff cannot reconstruct, and keep at
+   most one live handoff tab total. For closed/unavailable postings, set state
+   "archived".
 10. On confirmed submission, run:
    python3 skills/gmail-application-refresh/scripts/update_application_status.py --company "<Company>" --role "<Role>" --posting-key "<key>" --status "Applied" --applied "Yes" --notes "Application submitted YYYY-MM-DD"
    Then refresh:
    python3 skills/application-visualizer-refresh/scripts/refresh_visualizer_data.py
 11. Update only this item in {state_path}: state "submitted" | "manual" |
    "archived" | "already_applied" | "already_submitted", result, blocker when
-   manual, confirmationEvidence when submitted/already submitted, and updatedAt.
+   manual, manualHandoffPath when manual, confirmationEvidence when
+   submitted/already submitted, and updatedAt.
 
 Write state atomically. Do not commit or push. Close submitted tabs after
-capturing evidence; leave manual/review tabs open. Exit after this one item.
+capturing evidence. For manual/review outcomes, write the text handoff first,
+then close the tab unless one live handoff tab is truly necessary. Exit after
+this one item.
 """
 
 

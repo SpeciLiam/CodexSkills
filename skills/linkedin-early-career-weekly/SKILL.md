@@ -14,11 +14,34 @@ This is intentionally not based on `linkedin-apply-all`.
 ## Default Invocation
 
 When this workflow is run from chat and persistent goal tools are available,
-create a pursuing goal before launching any monitor, stage runner, browser
-actor, or sub-agent. Keep that goal active for the whole drain, including across
-context compaction, and close it only when the workflow reaches search
+create a pursuing goal **before** launching any monitor, stage runner, browser
+actor, or sub-agent, and keep it active for the whole drain (including across
+context compaction). In Codex, use goal mode with the shared completion
+condition below:
+
+```text
+/goal Drain the LinkedIn early-career weekly per the shared Persistence Goal
+```
+
+Keep that goal active and close it only when the workflow reaches search
 saturation, a systemic blocker, or an explicit user stop. Do not launch
 additional workers merely to satisfy the goal; the one-worker rule still wins.
+
+### Persistence Goal (shared with the `linkedin-early-career-weekly-claude` variant)
+
+Both variants pursue **one identical persistence goal** so either agent knows to
+keep going. Keep this completion-condition text byte-identical across both
+skills:
+
+> Every fresh last-week LinkedIn Entry-level software-engineer posting from the
+> configured search is discovered, deduped against the tracker, and driven to a
+> terminal state — submitted with confirmation evidence, recorded as a precise
+> manual blocker, marked already-applied/duplicate, or archived with a reason —
+> until search saturation (`search.stopRequested` with a `saturationReason`) or
+> `runPolicy.maxJobs`, with the markdown tracker and visualizer cache
+> reconciled. Stop early only on a systemic browser/auth/rate-limit blocker or
+> an explicit user stop. Honor the one-worker / one-browser-actor rule; never
+> spawn extra workers just to satisfy the goal.
 
 When Liam asks to run this workflow from chat, launch the monitor:
 
@@ -112,6 +135,12 @@ Worker outputs live at:
 /tmp/linkedin_early_career_weekly_outputs/
 ```
 
+Manual application pickup notes live at:
+
+```text
+application-trackers/manual-application-handoffs.txt
+```
+
 Full job descriptions should be saved under:
 
 ```text
@@ -121,6 +150,27 @@ Full job descriptions should be saved under:
 The state tracks visited/skipped LinkedIn job URLs, result index, scroll
 checkpoint, duplicate streak, and item stages. A fresh parent can resume from
 only the operating card plus the state file.
+
+## Low-Memory Browser Policy
+
+This workflow runs on Liam's 16 GB RAM laptop and must keep Chrome light by
+default.
+
+- Keep at most two workflow tabs open during normal operation: one LinkedIn
+  search/checkpoint tab and one active job/application tab.
+- Do not leave manual/review tabs open by default. Record the exact blocker,
+  URL, resume path, filled-field summary, next action, and any FRQ drafts in
+  `application-trackers/manual-application-handoffs.txt`, state, and the
+  tracker, then close/finalize the application tab.
+- Keep a manual handoff tab only when the live page contains unrecoverable state
+  that cannot be reconstructed from the recorded URL and answers. Even then,
+  keep at most one handoff tab for the whole workflow and close older workflow
+  handoff tabs after recording their state.
+- Before opening a new application tab, clean up stale workflow tabs from prior
+  submitted, archived, duplicate, or manually recorded items.
+- Avoid broad DOM snapshots or full-page screenshots on heavy ATS pages unless
+  needed for a blocker. Prefer narrow locators, visible text, and small targeted
+  DOM reads.
 
 ## Guardrails
 
@@ -137,7 +187,8 @@ only the operating card plus the state file.
   active/current tab unless resuming that exact row's prepared handoff tab.
   Preflight this before navigating: if an agent-owned tab in the Codex tab group
   cannot be created, stop as a systemic browser blocker instead of touching a
-  posting or marking it manual.
+  posting or marking it manual. Keep the low-memory policy above: one search
+  tab, one active work tab, no pile of handoff tabs.
   Spawned `codex exec` workers may not have `tool_search`; `run_stages.py`
   injects the absolute Chrome plugin `browser-client.mjs` path so they can use
   the Node REPL JavaScript tool directly.
