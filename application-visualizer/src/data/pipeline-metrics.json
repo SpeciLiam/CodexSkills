@@ -2,33 +2,9 @@
   "applicationsPerDay": [
     {
       "archived": 0,
-      "date": "2026-06-01",
-      "manual": 3,
-      "submitted": 10
-    },
-    {
-      "archived": 10,
-      "date": "2026-06-02",
-      "manual": 3,
-      "submitted": 2
-    },
-    {
-      "archived": 0,
-      "date": "2026-06-03",
-      "manual": 0,
-      "submitted": 0
-    },
-    {
-      "archived": 0,
-      "date": "2026-06-04",
-      "manual": 0,
-      "submitted": 0
-    },
-    {
-      "archived": 0,
       "date": "2026-06-05",
-      "manual": 7,
-      "submitted": 19
+      "manual": 4,
+      "submitted": 11
     },
     {
       "archived": 0,
@@ -45,8 +21,32 @@
     {
       "archived": 0,
       "date": "2026-06-08",
+      "manual": 3,
+      "submitted": 6
+    },
+    {
+      "archived": 1,
+      "date": "2026-06-09",
+      "manual": 4,
+      "submitted": 5
+    },
+    {
+      "archived": 4,
+      "date": "2026-06-10",
+      "manual": 11,
+      "submitted": 20
+    },
+    {
+      "archived": 0,
+      "date": "2026-06-11",
       "manual": 0,
       "submitted": 0
+    },
+    {
+      "archived": 0,
+      "date": "2026-06-12",
+      "manual": 2,
+      "submitted": 59
     }
   ],
   "avgConfidenceBySource": [
@@ -56,17 +56,17 @@
       "source": "Ashby"
     },
     {
-      "avgScore": 85.0,
-      "band": "high",
+      "avgScore": 0.0,
+      "band": "low",
       "source": "Company Site"
     },
     {
-      "avgScore": 25.0,
+      "avgScore": 0.0,
       "band": "low",
       "source": "Greenhouse"
     },
     {
-      "avgScore": 14.0,
+      "avgScore": 0.4,
       "band": "low",
       "source": "LinkedIn"
     },
@@ -78,27 +78,22 @@
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Alignerr"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
-      "source": "LinkedIn / Amazon.jobs"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
       "source": "LinkedIn / Ashby"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / BlackRock Careers"
+      "source": "LinkedIn / Benchling Careers"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Easy Apply"
+      "source": "LinkedIn / Company Site"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Frontdoor Careers"
     },
     {
       "avgScore": 0.0,
@@ -108,12 +103,12 @@
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / General Motors Workday"
+      "source": "LinkedIn / Greenhouse"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Greenhouse"
+      "source": "LinkedIn / Greenhouse Easy Apply"
     },
     {
       "avgScore": 0.0,
@@ -123,40 +118,85 @@
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Jack"
+      "source": "LinkedIn / Intuitive Careers"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Jack & Jill"
+      "source": "LinkedIn / Lever"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Jobs via Dice / Appcast"
+      "source": "LinkedIn / Paylocity"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Oracle Cloud"
+      "source": "LinkedIn / Perplexity Ashby"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / PayPal Eightfold"
+      "source": "LinkedIn / Reval"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Viasat Careers"
+      "source": "LinkedIn / Rippling ATS"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Skydio Ashby"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / UnitedHealth Group Careers"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Workable"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Workday"
     },
     {
       "avgScore": 0.0,
       "band": "low",
       "source": "LinkedIn Easy Apply"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn/Ashby"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "ashby"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "custom"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "greenhouse"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "linkedin_easy_apply"
     }
   ],
-  "generatedAt": "2026-06-08T01:14:41.348020+00:00",
+  "generatedAt": "2026-06-12T18:24:34.240715+00:00",
   "intakeHealth": {
     "greenhouseCapturedToday": 0,
     "greenhouseLastRun": "",
@@ -165,19 +205,19 @@
     "linkedinLastRun": ""
   },
   "queueDepth": {
-    "intakeUnprocessed": 165,
-    "manualApplyNeeded": 147,
+    "intakeUnprocessed": 164,
+    "manualApplyNeeded": 186,
     "readyToApply": 0,
-    "resumeTailored": 18
+    "resumeTailored": 24
   },
   "submitSuccessRate": {
-    "archived": 0.135,
-    "manual": 0.243,
-    "submitted": 0.622
+    "archived": 0.033,
+    "manual": 0.193,
+    "submitted": 0.773
   },
   "topBlockers": [
     {
-      "count": 18,
+      "count": 29,
       "reason": "unspecified"
     }
   ],

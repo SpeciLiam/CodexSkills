@@ -54,7 +54,7 @@ APPLICATION_STATUSES = {
     "Interviewing",
     "Offer",
 }
-INTAKE_STATUSES = {"", "New", "Queued", "Tailored", "Manual", "Skipped", "Duplicate", "Expired", "Archived"}
+INTAKE_STATUSES = {"", "New", "Queued", "Tailored", "Manual", "Skipped", "Duplicate", "Expired", "Archived", "Applied"}
 RESUME_REQUIRED_STATUSES = {"Resume Tailored", "Ready to Apply", "Applied"}
 
 
@@ -112,7 +112,10 @@ def validate(path: Path, kind: str) -> list[str]:
             if not resume_pdf:
                 report(path, row.line_number, f"Resume PDF is required when Status is {status!r}", violations)
             elif not Path(resume_pdf).expanduser().exists():
-                report(path, row.line_number, f"Resume PDF path does not exist: {resume_pdf}", violations)
+                # Generated resume artifacts are intentionally untracked
+                # (see commit "Stop tracking generated resume artifacts"), so
+                # a missing file on this machine is a warning, not a blocker.
+                print(f"warning: {path}:{row.line_number}: Resume PDF path does not exist: {resume_pdf}")
 
     for posting_key, lines in sorted(posting_keys.items()):
         if len(lines) > 1:

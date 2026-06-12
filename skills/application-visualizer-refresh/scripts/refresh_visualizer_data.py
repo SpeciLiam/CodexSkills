@@ -180,8 +180,49 @@ def recruiter_signal(position: str, notes: str = "") -> dict[str, Any]:
     }
 
 
+APPLY_EVENT_RE = re.compile(
+    r"submitted|applied|application confirmation|confirmation email received|application received",
+    re.I,
+)
+NEGATIVE_APPLY_RE = re.compile(
+    r"not submitted|without submitting|not applied|manual apply needed|reapply needed|blocked|unable to submit",
+    re.I,
+)
+REJECT_EVENT_RE = re.compile(r"rejection|rejected|not moving forward", re.I)
+INTERVIEW_EVENT_RE = re.compile(r"interview|screen", re.I)
+
+
+def derive_event_dates(notes: str) -> dict[str, str]:
+    """Attribute applied/rejected/interview events to the dates recorded in notes.
+
+    Charts previously attributed every event to Date Added, which is the
+    tailoring date and is wrong for any row applied or rejected later.
+    """
+    applied_dates: list[str] = []
+    rejected_dates: list[str] = []
+    interview_dates: list[str] = []
+    for segment in notes.split(";"):
+        segment = segment.strip()
+        dates = DATE_RE.findall(segment)
+        if not dates:
+            continue
+        if REJECT_EVENT_RE.search(segment):
+            rejected_dates.extend(dates)
+            continue
+        if INTERVIEW_EVENT_RE.search(segment):
+            interview_dates.extend(dates)
+        if APPLY_EVENT_RE.search(segment) and not NEGATIVE_APPLY_RE.search(segment):
+            applied_dates.extend(dates)
+    return {
+        "appliedDate": min(applied_dates) if applied_dates else "",
+        "rejectedDate": max(rejected_dates) if rejected_dates else "",
+        "interviewDate": min(interview_dates) if interview_dates else "",
+    }
+
+
 def normalize_application(row: dict[str, str]) -> dict[str, Any]:
     notes = clean_text(row.get("Notes", ""))
+    event_dates = derive_event_dates(notes)
     return {
         "company": clean_text(row.get("Company", "")),
         "role": clean_text(row.get("Role", "")),
@@ -204,6 +245,9 @@ def normalize_application(row: dict[str, str]) -> dict[str, Any]:
         "notes": notes,
         "noteLinks": all_links(row.get("Notes", "")),
         "activityDates": DATE_RE.findall(row.get("Notes", "")),
+        "appliedDate": event_dates["appliedDate"],
+        "rejectedDate": event_dates["rejectedDate"],
+        "interviewDate": event_dates["interviewDate"],
     }
 
 
@@ -367,20 +411,43 @@ def build_stats(
 
     by_date: dict[str, dict[str, int]] = defaultdict(lambda: {"added": 0, "applied": 0, "rejected": 0, "interviewing": 0})
     for app in applications:
-        date = app["dateAdded"] or "Unknown"
-        by_date[date]["added"] += 1
+        added_date = app["dateAdded"] or "Unknown"
+        by_date[added_date]["added"] += 1
         if app["applied"]:
-            by_date[date]["applied"] += 1
+            applied_date = app.get("appliedDate") or added_date
+            by_date[applied_date]["applied"] += 1
         if app["status"].lower() == "rejected":
-            by_date[date]["rejected"] += 1
+            rejected_date = app.get("rejectedDate") or app.get("appliedDate") or added_date
+            by_date[rejected_date]["rejected"] += 1
         if app["status"].lower() == "interviewing":
-            by_date[date]["interviewing"] += 1
+            interview_date = app.get("interviewDate") or added_date
+            by_date[interview_date]["interviewing"] += 1
 
     cumulative = 0
+    cumulative_applied = 0
     timeline = []
     for date in sorted(d for d in by_date if d != "Unknown"):
         cumulative += by_date[date]["added"]
-        timeline.append({"date": date, "cumulative": cumulative, **by_date[date]})
+        cumulative_applied += by_date[date]["applied"]
+        timeline.append({"date": date, "cumulative": cumulative, "cumulativeApplied": cumulative_applied, **by_date[date]})
+
+    source_outcomes: dict[str, dict[str, int]] = defaultdict(lambda: {"applied": 0, "inProcess": 0, "rejected": 0, "notApplied": 0})
+    for app in applications:
+        bucket = source_outcomes[app["source"] or "Unknown"]
+        status = app["status"].lower()
+        if status == "rejected":
+            bucket["rejected"] += 1
+        elif status in ("interviewing", "offer") or "assessment" in status:
+            bucket["inProcess"] += 1
+        elif app["applied"]:
+            bucket["applied"] += 1
+        else:
+            bucket["notApplied"] += 1
+    source_outcome_rows = sorted(
+        ({"name": source, "total": sum(values.values()), **values} for source, values in source_outcomes.items()),
+        key=lambda item: item["total"],
+        reverse=True,
+    )
 
     company_scores = defaultdict(list)
     for app in applications:
@@ -437,6 +504,7 @@ def build_stats(
         },
         "statusCounts": [{"name": k, "value": v} for k, v in status_counts.most_common()],
         "sourceCounts": [{"name": k, "value": v} for k, v in source_counts.most_common()],
+        "sourceOutcomes": source_outcome_rows,
         "locationCounts": [{"name": k, "value": v} for k, v in location_counts.most_common()],
         "roleCounts": [{"name": k, "value": v} for k, v in role_counts.most_common()],
         "fitCounts": [{"score": k, "count": v} for k, v in sorted(fit_counts.items(), key=lambda kv: int(kv[0]))],

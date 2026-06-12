@@ -28,6 +28,7 @@ import {
   CartesianGrid,
   Cell,
   ComposedChart,
+  Legend,
   Line,
   Pie,
   PieChart,
@@ -37,6 +38,7 @@ import {
   Radar as RadarShape,
   RadarChart,
   ResponsiveContainer,
+  Sankey,
   Scatter,
   ScatterChart,
   Tooltip,
@@ -81,14 +83,14 @@ type TabId = (typeof NAV_ITEMS)[number]["id"];
 
 const INFO_COPY = {
   actions: "A practical action board. Roles are grouped by what to do next: apply, follow up, prepare for interviews or assessments, monitor, or deprioritize closed/rejected roles. Cards are sorted by fit score so the strongest opportunities stay visible.",
-  velocity: "Shows how the pipeline grew over time. The filled curve is cumulative tracked roles, while the line highlights applications submitted on each date.",
-  dailyApplications: "Tracks how many applications were submitted each day, then pairs it with recruiter and engineer reach-outs logged in tracker notes.",
+  velocity: "Shows how the pipeline grew over time. The filled curve is cumulative tracked roles; the second curve is cumulative submitted applications, dated by the actual submission evidence in notes.",
+  dailyApplications: "Tracks how many applications were submitted each day, using the submission or confirmation date recorded in notes (not the date the row was added), then pairs it with recruiter and engineer reach-outs logged in tracker notes.",
   status: "Breaks the tracker into current outcomes such as tailored, applied, interviewing, assessment, rejected, or offer.",
   fit: "Counts roles by fit score, making it easy to see whether the pipeline is concentrated around high-fit opportunities.",
-  source: "Compares where roles are coming from, so you can see which channels are feeding the most opportunities.",
+  source: "Compares where roles are coming from and how each channel is converting: applied and waiting, interview or assessment, rejected, or not applied yet.",
   role: "Plots visible applications by fit score and status. It is useful for spotting high-fit roles that are still only tailored or need action.",
   radar: "Summarizes campaign health across applied rate, high-fit share, reach-out coverage, recruiter coverage, and active share.",
-  stageSnake: "Shows the application funnel by stage reached, with each stage less than or equal to the one before it. The metadata still shows where roles are currently alive or rejected.",
+  stageSnake: "A Sankey funnel of submitted applications: each flow shows where applications went — straight to rejection, still waiting, into online assessments, into interviews, and on to offers. Stages are inferred only from dated status events in the tracker, not resume-tailoring text.",
   recruiters: "Lists applications with a known recruiter or LinkedIn path, sorted toward stronger fit so outreach targets are easy to open.",
   intake: "Shows fresh LinkedIn and Greenhouse jobs discovered by the hourly intake listener before they become tailored application rows.",
   gaps: "Highlights high-fit reach-out rows that still need more prospects or ready email addresses.",
@@ -415,7 +417,6 @@ function App() {
     [],
   );
   const dailyApplicationPulse = useMemo(() => buildDailyApplicationPulse(data.stats.timeline, data.applications), []);
-  const stageSnake = useMemo(() => buildStageSnake(filtered), [filtered]);
   const successDonut = useMemo(
     () => [
       { name: "Submitted", value: pipelineMetrics.submitSuccessRate.submitted },
@@ -584,8 +585,8 @@ function App() {
             </div>
           </Panel>
 
-          <Panel title="Application Stage Snake" icon={<Route />} info={INFO_COPY.stageSnake} wide>
-            <ApplicationStageSnake stages={stageSnake.stages} total={stageSnake.total} />
+          <Panel title="Application Funnel" icon={<Route />} info={INFO_COPY.stageSnake} wide>
+            <ApplicationSankey apps={filtered} />
           </Panel>
 
           <Panel title="Application Velocity" icon={<Activity />} info={INFO_COPY.velocity}>
@@ -601,8 +602,8 @@ function App() {
                 <XAxis dataKey="date" tickFormatter={readableDate} tick={{ fill: "#94a3b8", fontSize: 12 }} />
                 <YAxis tick={{ fill: "#94a3b8", fontSize: 12 }} />
                 <Tooltip content={<ChartTooltip />} />
-                <Area type="monotone" dataKey="cumulative" stroke="#55d6be" fill="url(#areaGlow)" strokeWidth={3} />
-                <Line type="monotone" dataKey="applied" stroke="#f7b267" strokeWidth={2} />
+                <Area type="monotone" dataKey="cumulative" name="Tracked roles" stroke="#55d6be" fill="url(#areaGlow)" strokeWidth={3} />
+                <Area type="monotone" dataKey="cumulativeApplied" name="Submitted applications" stroke="#f7b267" fill="none" strokeWidth={3} />
               </AreaChart>
             </ResponsiveContainer>
           </Panel>
@@ -635,13 +636,16 @@ function App() {
 
           <Panel title="Sources x Outcomes" icon={<LinkIcon />} info={INFO_COPY.source} wide>
             <ResponsiveContainer width="100%" height={320}>
-              <ComposedChart data={data.stats.sourceCounts.slice(0, 10)}>
+              <ComposedChart data={(data.stats.sourceOutcomes || []).slice(0, 10)}>
                 <CartesianGrid stroke="rgba(255,255,255,.08)" vertical={false} />
                 <XAxis dataKey="name" tick={{ fill: "#94a3b8", fontSize: 12 }} />
                 <YAxis tick={{ fill: "#94a3b8", fontSize: 12 }} />
                 <Tooltip content={<ChartTooltip />} />
-                <Bar dataKey="value" fill="#70a1ff" radius={[8, 8, 0, 0]} />
-                <Line type="monotone" dataKey="value" stroke="#f4d35e" strokeWidth={3} dot={{ r: 4 }} />
+                <Bar dataKey="applied" name="Applied, waiting" stackId="outcome" fill="#70a1ff" />
+                <Bar dataKey="inProcess" name="Interview / OA" stackId="outcome" fill="#55d6be" />
+                <Bar dataKey="rejected" name="Rejected" stackId="outcome" fill="#f25f5c" />
+                <Bar dataKey="notApplied" name="Not applied" stackId="outcome" fill="#5b6478" radius={[8, 8, 0, 0]} />
+                <Legend wrapperStyle={{ fontSize: 12 }} />
               </ComposedChart>
             </ResponsiveContainer>
           </Panel>
@@ -1800,61 +1804,155 @@ function LegendDots({ items }: { items: Array<{ name: string; value: number }> }
   );
 }
 
-type StageSnakeNode = {
-  id: string;
-  label: string;
-  count: number;
-  reached: number;
-  furthest: number;
-  active: number;
-  rejected: number;
-  rejectedExamples: Application[];
+const SANKEY_NODE_COLORS: Record<string, string> = {
+  Applied: "#70a1ff",
+  "Online Assessment": "#f4d35e",
+  Interviews: "#55d6be",
+  Offer: "#b388ff",
+  Rejected: "#f25f5c",
+  "No response yet": "#5b6478",
+  "Awaiting OA result": "#f7b267",
+  "In interview process": "#8dd7cf",
 };
 
-function ApplicationStageSnake({ stages, total }: { stages: StageSnakeNode[]; total: number }) {
-  const maxCount = Math.max(...stages.map((stage) => stage.count), 1);
-  const dropStages = stages.filter((stage) => stage.rejected > 0);
+function SankeyNodeShape(props: any) {
+  const { x, y, width, height, payload } = props;
+  const isTerminal = !payload.sourceLinks?.length;
   return (
-    <div className="stage-snake" aria-label="Application stage snake">
-      <div className="stage-snake-track">
-        {stages.map((stage, index) => {
-          const width = `${Math.max(16, (stage.count / maxCount) * 100)}%`;
-          const survival = total ? Math.round((stage.count / total) * 100) : 0;
-          return (
-            <section className="stage-node" key={stage.id}>
-              <div className="stage-node-head">
-                <span>{index + 1}</span>
-                <strong>{stage.label}</strong>
-              </div>
-              <div className="stage-flow" style={{ width }}>
-                <b>{stage.count}</b>
-                <small>{survival}% reached</small>
-              </div>
-              <div className="stage-node-meta">
-                <span>{stage.furthest} furthest here</span>
-                <span>{stage.active} alive here</span>
-                <span className={stage.rejected ? "drop" : ""}>{stage.rejected} rejected here</span>
-              </div>
-            </section>
-          );
-        })}
-      </div>
-      <div className="stage-drop-grid">
-        {(dropStages.length ? dropStages : stages.slice(0, 1)).map((stage) => (
-          <article className="stage-drop-card" key={`drop-${stage.id}`}>
-            <span>{stage.label}</span>
-            <strong>{stage.rejected}</strong>
-            <p>{stage.rejected ? "rejections at this furthest known stage" : "No rejected rows in the current filter"}</p>
-            <div>
-              {stage.rejectedExamples.slice(0, 4).map((app) => (
-                <small key={`${stage.id}-${app.company}-${app.postingKey}`}>{app.company} | {app.role}</small>
-              ))}
-            </div>
-          </article>
-        ))}
+    <g>
+      <rect x={x} y={y} width={width} height={Math.max(height, 2)} fill={SANKEY_NODE_COLORS[payload.name] || "#55d6be"} rx={2} />
+      <text
+        x={isTerminal ? x - 8 : x + width + 8}
+        y={y + Math.max(height, 2) / 2}
+        textAnchor={isTerminal ? "end" : "start"}
+        dominantBaseline="middle"
+        fill="#dbeafe"
+        fontSize={12}
+      >
+        {payload.name} ({payload.value})
+      </text>
+    </g>
+  );
+}
+
+function ApplicationSankey({ apps }: { apps: Application[] }) {
+  const funnel = useMemo(() => buildApplicationSankey(apps), [apps]);
+  if (!funnel.data.links.length) {
+    return <p className="batch-empty">No submitted applications in the current filter.</p>;
+  }
+  return (
+    <div className="application-sankey">
+      <ResponsiveContainer width="100%" height={420}>
+        <Sankey
+          data={funnel.data}
+          node={<SankeyNodeShape />}
+          nodePadding={32}
+          nodeWidth={12}
+          margin={{ top: 16, right: 170, bottom: 16, left: 8 }}
+          link={{ stroke: "rgba(148, 163, 184, 0.3)" }}
+        >
+          <Tooltip />
+        </Sankey>
+      </ResponsiveContainer>
+      <div className="pulse-metrics" aria-label="Funnel summary">
+        <MiniMetric label="Submitted" value={funnel.submitted} />
+        <MiniMetric label="Reached OA" value={funnel.reachedOa} />
+        <MiniMetric label="Reached interviews" value={funnel.reachedInterview} />
+        <MiniMetric label="Offers" value={funnel.offers} />
+        <MiniMetric label="Rejected" value={funnel.rejectedTotal} />
       </div>
     </div>
   );
+}
+
+function applicationStageEvidence(app: Application) {
+  const status = app.status.toLowerCase();
+  let oa = status.includes("assessment");
+  let interview = status === "interviewing";
+  let offer = status === "offer";
+  for (const rawSegment of app.notes.split(";")) {
+    const segment = rawSegment.trim();
+    // Only trust dated event notes; tailoring summaries mention words like
+    // "assessment" or "interview" without describing a real stage change.
+    if (!/20\d{2}-\d{2}-\d{2}/.test(segment)) continue;
+    if (/^(tailored|emphasized|hourly intake|did not claim)/i.test(segment)) continue;
+    if (/mock/i.test(segment)) continue;
+    if (/(online assessment|codesignal|hackerrank|take.?home|coding challenge|ccat|hirevue|one-way video|\bassessment\b|ai-led screen)/i.test(segment)) oa = true;
+    if (/(interview|recruiter screen|phone screen)/i.test(segment)) interview = true;
+    if (/\boffer\b/i.test(segment)) offer = true;
+  }
+  if (offer) interview = true;
+  return { oa, interview, offer };
+}
+
+function buildApplicationSankey(apps: Application[]) {
+  const submitted = apps.filter((app) => app.applied && app.status.toLowerCase() !== "archived");
+  let noResponse = 0;
+  let rejectedAtApply = 0;
+  let toOa = 0;
+  let directToInterview = 0;
+  let oaToInterview = 0;
+  let rejectedAtOa = 0;
+  let inOa = 0;
+  let rejectedAtInterview = 0;
+  let inInterview = 0;
+  let offers = 0;
+
+  submitted.forEach((app) => {
+    const { oa, interview, offer } = applicationStageEvidence(app);
+    const rejected = app.status.toLowerCase() === "rejected";
+    if (oa) toOa += 1;
+    if (interview) {
+      if (oa) oaToInterview += 1;
+      else directToInterview += 1;
+    }
+    if (offer) offers += 1;
+    if (!oa && !interview) {
+      if (rejected) rejectedAtApply += 1;
+      else noResponse += 1;
+    } else if (oa && !interview) {
+      if (rejected) rejectedAtOa += 1;
+      else inOa += 1;
+    } else if (interview && !offer) {
+      if (rejected) rejectedAtInterview += 1;
+      else inInterview += 1;
+    }
+  });
+
+  const rawLinks = [
+    { from: "Applied", to: "Online Assessment", value: toOa },
+    { from: "Applied", to: "Interviews", value: directToInterview },
+    { from: "Applied", to: "Rejected", value: rejectedAtApply },
+    { from: "Applied", to: "No response yet", value: noResponse },
+    { from: "Online Assessment", to: "Interviews", value: oaToInterview },
+    { from: "Online Assessment", to: "Rejected", value: rejectedAtOa },
+    { from: "Online Assessment", to: "Awaiting OA result", value: inOa },
+    { from: "Interviews", to: "Offer", value: offers },
+    { from: "Interviews", to: "Rejected", value: rejectedAtInterview },
+    { from: "Interviews", to: "In interview process", value: inInterview },
+  ].filter((link) => link.value > 0);
+
+  const nodeNames: string[] = [];
+  rawLinks.forEach((link) => {
+    if (!nodeNames.includes(link.from)) nodeNames.push(link.from);
+    if (!nodeNames.includes(link.to)) nodeNames.push(link.to);
+  });
+
+  return {
+    submitted: submitted.length,
+    reachedOa: toOa,
+    reachedInterview: directToInterview + oaToInterview,
+    offers,
+    rejectedTotal: rejectedAtApply + rejectedAtOa + rejectedAtInterview,
+    data: {
+      nodes: nodeNames.map((name) => ({ name })),
+      links: rawLinks.map((link) => ({
+        source: nodeNames.indexOf(link.from),
+        target: nodeNames.indexOf(link.to),
+        value: link.value,
+      })),
+    },
+  };
 }
 
 function OutreachDetailModal({
@@ -2477,81 +2575,6 @@ function summarize(apps: Application[]) {
   const applied = apps.filter((app) => app.applied).length;
   const avgFit = apps.reduce((sum, app) => sum + app.fitScore, 0) / Math.max(apps.length, 1);
   return { applied, avgFit };
-}
-
-const APPLICATION_STAGES = [
-  { id: "tailored", label: "Tailored" },
-  { id: "applied", label: "Applied" },
-  { id: "assessment", label: "OA / Take-home" },
-  { id: "screen", label: "Recruiter Screen" },
-  { id: "first", label: "First Round" },
-  { id: "second", label: "Second Round" },
-  { id: "final", label: "Final / Offer" },
-] as const;
-
-function buildStageSnake(apps: Application[]) {
-  const stages = APPLICATION_STAGES.map((stage) => ({
-    ...stage,
-    count: 0,
-    reached: 0,
-    furthest: 0,
-    active: 0,
-    rejected: 0,
-    rejectedExamples: [] as Application[],
-  }));
-
-  const livePipelineApps = apps.filter((app) => app.status.toLowerCase() !== "archived");
-  const stageIndexes = livePipelineApps.map((app) => ({
-    app,
-    stageIndex: inferApplicationStageIndex(app),
-  }));
-
-  stageIndexes.forEach(({ app, stageIndex }) => {
-    const isRejected = app.status.toLowerCase() === "rejected";
-    stages[stageIndex].furthest += 1;
-    if (isRejected) {
-      stages[stageIndex].rejected += 1;
-      stages[stageIndex].rejectedExamples.push(app);
-    } else {
-      stages[stageIndex].active += 1;
-    }
-  });
-
-  stages.forEach((stage, index) => {
-    stage.reached = stageIndexes.filter(({ stageIndex }) => stageIndex >= index).length;
-    stage.count = stage.reached;
-  });
-
-  stages.forEach((stage) => {
-    stage.rejectedExamples.sort((a, b) => b.fitScore - a.fitScore || a.company.localeCompare(b.company));
-  });
-
-  return { total: livePipelineApps.length, stages };
-}
-
-function inferApplicationStageIndex(app: Application) {
-  const status = app.status.toLowerCase();
-  const notes = app.notes.toLowerCase();
-  const text = `${status}; ${notes}`;
-  let index = app.applied ? 1 : 0;
-
-  if (/online assessment|assessment|take-home|take home|coding challenge|codesignal|hackerrank|technical screen/.test(text)) {
-    index = Math.max(index, 2);
-  }
-  if (/recruiter screen|phone screen|intro call|screen requested|screen scheduled/.test(text)) {
-    index = Math.max(index, 3);
-  }
-  if (/first round|one-way video|video interview|interview invite|interview availability|interview signup|interview requested/.test(text)) {
-    index = Math.max(index, 4);
-  }
-  if (/second round|technical interview|onsite|on-site|panel interview|final round/.test(text)) {
-    index = Math.max(index, 5);
-  }
-  if (/offer|finalist|verbal offer|written offer/.test(text)) {
-    index = Math.max(index, 6);
-  }
-
-  return Math.min(index, APPLICATION_STAGES.length - 1);
 }
 
 function buildDailyApplicationPulse(timeline: Array<Record<string, number | string>>, apps: Application[]) {

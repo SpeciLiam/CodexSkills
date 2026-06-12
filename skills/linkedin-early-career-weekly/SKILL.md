@@ -39,9 +39,11 @@ skills:
 > manual blocker, marked already-applied/duplicate, or archived with a reason —
 > until search saturation (`search.stopRequested` with a `saturationReason`) or
 > `runPolicy.maxJobs`, with the markdown tracker and visualizer cache
-> reconciled. Stop early only on a systemic browser/auth/rate-limit blocker or
-> an explicit user stop. Honor the one-worker / one-browser-actor rule; never
-> spawn extra workers just to satisfy the goal.
+> reconciled. Submit high-confidence applications when the tailored resume is
+> verified, all required answers are truthful/standing-answer covered, and no
+> true blocker remains. Stop early only on a systemic browser/auth/rate-limit
+> blocker or an explicit user stop. Honor the one-worker / one-browser-actor
+> rule; never spawn extra workers just to satisfy the goal.
 
 When Liam asks to run this workflow from chat, launch the monitor:
 

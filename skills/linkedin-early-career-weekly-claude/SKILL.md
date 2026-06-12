@@ -53,6 +53,38 @@ The conductor only reads the compact state file and the single item that changed
 between workers — never the raw transcripts, except to investigate one specific
 anomaly.
 
+## Persistence Goal (shared with the `linkedin-early-career-weekly` Codex variant)
+
+Both variants pursue **one identical persistence goal** so either agent knows to
+keep going across turns and context compaction. Before launching any stage
+runner, browser actor, or sub-agent, establish this pursuing goal and keep it
+active for the whole drain.
+
+- **Claude (this `-claude` variant):** Claude cannot fire `/goal` itself (it is a
+  user-typed command), so the conductor states this goal explicitly and the
+  durable-state loop below enforces persistence between stages. If Liam wants
+  hard session-scoped persistence, he runs `/goal Drain the LinkedIn
+  early-career weekly per the shared Persistence Goal` once at the start.
+- **Codex (base `linkedin-early-career-weekly`):** sets Codex goal mode with the
+  same condition (`/goal …`) before launching the monitor.
+
+Keep this completion-condition text byte-identical across both skills:
+
+> Every fresh last-week LinkedIn Entry-level software-engineer posting from the
+> configured search is discovered, deduped against the tracker, and driven to a
+> terminal state — submitted with confirmation evidence, recorded as a precise
+> manual blocker, marked already-applied/duplicate, or archived with a reason —
+> until search saturation (`search.stopRequested` with a `saturationReason`) or
+> `runPolicy.maxJobs`, with the markdown tracker and visualizer cache
+> reconciled. Submit high-confidence applications when the tailored resume is
+> verified, all required answers are truthful/standing-answer covered, and no
+> true blocker remains. Stop early only on a systemic browser/auth/rate-limit
+> blocker or an explicit user stop. Honor the one-worker / one-browser-actor
+> rule; never spawn extra workers just to satisfy the goal.
+
+Close the goal only when that condition is met, a systemic blocker is hit, or
+Liam stops the run.
+
 ## The Loop
 
 Drive this loop yourself (Claude). Do **not** call `run_monitored.py` — it is a

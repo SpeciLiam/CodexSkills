@@ -174,6 +174,7 @@ export type TrackerData = {
     kpis: Record<string, number>;
     statusCounts: CountDatum[];
     sourceCounts: CountDatum[];
+    sourceOutcomes?: Array<{ name: string; total: number; applied: number; inProcess: number; rejected: number; notApplied: number }>;
     locationCounts: CountDatum[];
     roleCounts: CountDatum[];
     fitCounts: Array<{ score: string; count: number }>;
