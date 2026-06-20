@@ -40,6 +40,15 @@ DONE_STATES = {
 }
 TAILOR_READY_STATES = {"tailor_needed", "discovered", "needs_tailor"}
 APPLY_READY_STATES = {"apply_needed", "tailored", "resume_tailored"}
+NON_USABLE_BATCH_STATES = {
+    "already_applied",
+    "already_submitted",
+    "archived",
+    "closed",
+    "duplicate",
+    "skipped",
+    "tailor_failed",
+}
 SYSTEMIC_BLOCKER_TERMS = (
     "browser is not available: extension",
     "codex chrome extension endpoint is unavailable",
@@ -122,7 +131,52 @@ def stop_requested(state: dict[str, Any]) -> bool:
     return bool(state.get("search", {}).get("stopRequested"))
 
 
+def batch_first_enabled(state: dict[str, Any]) -> bool:
+    policy = state.get("runPolicy", {})
+    return (
+        bool(policy.get("batchFirst"))
+        or str(policy.get("mode") or "") == "linkedin-batch-drain-codex"
+        or bool(state.get("batch", {}).get("usableTarget"))
+    )
+
+
+def batch_target(state: dict[str, Any]) -> int:
+    batch = state.get("batch", {})
+    policy = state.get("runPolicy", {})
+    return int(batch.get("usableTarget") or policy.get("batchTarget") or policy.get("maxJobs") or 0)
+
+
+def batch_usable_count(state: dict[str, Any]) -> int:
+    count = 0
+    for item in state.get("items", []):
+        item_state = str(item.get("state") or "")
+        if item_state in NON_USABLE_BATCH_STATES:
+            continue
+        if item_state in DONE_STATES or item_state in TAILOR_READY_STATES or item_state in APPLY_READY_STATES:
+            count += 1
+    return count
+
+
+def has_batch_pending_work(state: dict[str, Any]) -> bool:
+    return any(
+        item.get("state") in TAILOR_READY_STATES or item.get("state") in APPLY_READY_STATES
+        for item in state.get("items", [])
+    )
+
+
 def select_stage(state: dict[str, Any]) -> tuple[str, dict[str, Any] | None]:
+    if batch_first_enabled(state):
+        target = batch_target(state)
+        if not stop_requested(state) and (not target or batch_usable_count(state) < target):
+            return "discover", None
+        for item in state.get("items", []):
+            if item.get("state") in TAILOR_READY_STATES:
+                return "tailor", item
+        for item in state.get("items", []):
+            if item.get("state") in APPLY_READY_STATES:
+                return "apply", item
+        return "discover", None
+
     for item in state.get("items", []):
         if item.get("state") in APPLY_READY_STATES:
             return "apply", item
@@ -770,6 +824,8 @@ def run_worker(
 
 
 def main() -> int:
+    global STATE_PATH, LOCK_PATH, OUTPUT_DIR, DESCRIPTION_DIR
+
     parser = argparse.ArgumentParser(description="Run locked LinkedIn early-career stage workers.")
     parser.add_argument("--state", type=Path, default=STATE_PATH)
     parser.add_argument("--lock-file", type=Path, default=LOCK_PATH)
@@ -783,6 +839,13 @@ def main() -> int:
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
+    STATE_PATH = args.state
+    LOCK_PATH = args.lock_file
+    initial_state = load_state(args.state)
+    initial_policy = initial_state.get("runPolicy", {})
+    OUTPUT_DIR = Path(initial_policy.get("outputDir") or OUTPUT_DIR)
+    DESCRIPTION_DIR = Path(initial_policy.get("descriptionDir") or DESCRIPTION_DIR)
+
     processed = 0
     no_progress = 0
     with WorkerLock(args.lock_file, args.lock_ttl):
@@ -795,11 +858,17 @@ def main() -> int:
             policy = state.get("runPolicy", {})
             max_jobs = int(policy.get("maxJobs") or 0)
             if stop_requested(state):
-                print("Search stop requested; stage runner complete.")
-                return 0
-            if max_jobs and done_count(state) >= max_jobs:
-                print(f"Reached max jobs: {done_count(state)}/{max_jobs}")
-                return 0
+                if not batch_first_enabled(state) or not has_batch_pending_work(state):
+                    print("Search stop requested; stage runner complete.")
+                    return 0
+            if max_jobs:
+                if batch_first_enabled(state):
+                    if batch_usable_count(state) >= max_jobs and not has_batch_pending_work(state):
+                        print(f"Reached usable batch target: {batch_usable_count(state)}/{max_jobs}")
+                        return 0
+                elif done_count(state) >= max_jobs:
+                    print(f"Reached max jobs: {done_count(state)}/{max_jobs}")
+                    return 0
             if has_systemic_blocker(state):
                 print("Systemic blocker recorded in state; stopping.")
                 return 2

@@ -2,39 +2,9 @@
   "applicationsPerDay": [
     {
       "archived": 0,
-      "date": "2026-06-08",
-      "manual": 2,
-      "submitted": 2
-    },
-    {
-      "archived": 1,
-      "date": "2026-06-09",
-      "manual": 4,
-      "submitted": 5
-    },
-    {
-      "archived": 4,
-      "date": "2026-06-10",
-      "manual": 11,
-      "submitted": 20
-    },
-    {
-      "archived": 0,
-      "date": "2026-06-11",
+      "date": "2026-06-13",
       "manual": 0,
       "submitted": 0
-    },
-    {
-      "archived": 2,
-      "date": "2026-06-12",
-      "manual": 11,
-      "submitted": 68
-    },
-    {
-      "archived": 2,
-      "date": "2026-06-13",
-      "manual": 26,
-      "submitted": 12
     },
     {
       "archived": 0,
@@ -43,52 +13,67 @@
       "submitted": 0
     },
     {
-      "archived": 0,
+      "archived": 2,
       "date": "2026-06-15",
-      "manual": 11,
-      "submitted": 17
+      "manual": 17,
+      "submitted": 18
+    },
+    {
+      "archived": 0,
+      "date": "2026-06-16",
+      "manual": 0,
+      "submitted": 0
+    },
+    {
+      "archived": 1,
+      "date": "2026-06-17",
+      "manual": 8,
+      "submitted": 16
+    },
+    {
+      "archived": 4,
+      "date": "2026-06-18",
+      "manual": 10,
+      "submitted": 19
+    },
+    {
+      "archived": 3,
+      "date": "2026-06-19",
+      "manual": 36,
+      "submitted": 43
+    },
+    {
+      "archived": 2,
+      "date": "2026-06-20",
+      "manual": 22,
+      "submitted": 14
     }
   ],
   "avgConfidenceBySource": [
     {
-      "avgScore": 60.0,
-      "band": "medium",
-      "source": "AAIMTrack"
-    },
-    {
-      "avgScore": 20.7,
+      "avgScore": 0.0,
       "band": "low",
       "source": "Ashby"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "Company Site"
-    },
-    {
-      "avgScore": 80.0,
-      "band": "high",
-      "source": "Custom"
-    },
-    {
-      "avgScore": 70.0,
-      "band": "medium",
-      "source": "Dayforce"
-    },
-    {
-      "avgScore": 34.4,
-      "band": "low",
       "source": "Greenhouse"
     },
     {
-      "avgScore": 80.0,
-      "band": "high",
-      "source": "Lever"
-    },
-    {
-      "avgScore": 1.3,
+      "avgScore": 0.0,
       "band": "low",
       "source": "LinkedIn"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Altec Careers"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Appcast"
     },
     {
       "avgScore": 0.0,
@@ -98,17 +83,37 @@
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Benchling Careers"
+      "source": "LinkedIn / BambooHR"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Company Site"
+      "source": "LinkedIn / BioSpace"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Frontdoor Careers"
+      "source": "LinkedIn / BrassRing"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / CVS Health Careers"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Daybreak Careers"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Dayforce"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Gallagher Careers"
     },
     {
       "avgScore": 0.0,
@@ -118,17 +123,17 @@
     {
       "avgScore": 0.0,
       "band": "low",
+      "source": "LinkedIn / GovernmentJobs"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
       "source": "LinkedIn / Greenhouse"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Greenhouse Easy Apply"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
-      "source": "LinkedIn / Intuitive Careers"
+      "source": "LinkedIn / Jack & Jill"
     },
     {
       "avgScore": 0.0,
@@ -138,37 +143,27 @@
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Paylocity"
+      "source": "LinkedIn / Motion Recruitment"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Perplexity Ashby"
+      "source": "LinkedIn / Oracle"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Reval"
+      "source": "LinkedIn / SmartRecruiters"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Rippling ATS"
+      "source": "LinkedIn / T-Mobile Careers"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Skydio Ashby"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
-      "source": "LinkedIn / UnitedHealth Group Careers"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
-      "source": "LinkedIn / Workable"
+      "source": "LinkedIn / TSMC Careers"
     },
     {
       "avgScore": 0.0,
@@ -176,59 +171,14 @@
       "source": "LinkedIn / Workday"
     },
     {
-      "avgScore": 12.9,
+      "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn Easy Apply"
+      "source": "LinkedIn / iCIMS"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn/Ashby"
-    },
-    {
-      "avgScore": 70.0,
-      "band": "medium",
-      "source": "Oracle Candidate Experience"
-    },
-    {
-      "avgScore": 80.0,
-      "band": "high",
-      "source": "Paycom"
-    },
-    {
-      "avgScore": 80.0,
-      "band": "high",
-      "source": "Paylocity"
-    },
-    {
-      "avgScore": 70.0,
-      "band": "medium",
-      "source": "Phenom"
-    },
-    {
-      "avgScore": 70.0,
-      "band": "medium",
-      "source": "RTX/Phenom"
-    },
-    {
-      "avgScore": 80.0,
-      "band": "high",
-      "source": "Rippling"
-    },
-    {
-      "avgScore": 70.0,
-      "band": "medium",
-      "source": "UKG/UltiPro"
-    },
-    {
-      "avgScore": 80.0,
-      "band": "high",
-      "source": "Uber Careers"
-    },
-    {
-      "avgScore": 74.4,
-      "band": "medium",
-      "source": "Workday"
+      "source": "LinkedIn Easy Apply"
     },
     {
       "avgScore": 0.0,
@@ -236,32 +186,12 @@
       "source": "ashby"
     },
     {
-      "avgScore": 26.7,
+      "avgScore": 0.0,
       "band": "low",
       "source": "custom"
-    },
-    {
-      "avgScore": 70.0,
-      "band": "medium",
-      "source": "custom-gravityforms"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
-      "source": "greenhouse"
-    },
-    {
-      "avgScore": 70.0,
-      "band": "medium",
-      "source": "iCIMS"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
-      "source": "linkedin_easy_apply"
     }
   ],
-  "generatedAt": "2026-06-15T21:58:17.982615+00:00",
+  "generatedAt": "2026-06-20T03:23:57.756910+00:00",
   "intakeHealth": {
     "greenhouseCapturedToday": 0,
     "greenhouseLastRun": "",
@@ -271,47 +201,19 @@
   },
   "queueDepth": {
     "intakeUnprocessed": 164,
-    "manualApplyNeeded": 236,
+    "manualApplyNeeded": 318,
     "readyToApply": 0,
-    "resumeTailored": 23
+    "resumeTailored": 37
   },
   "submitSuccessRate": {
-    "archived": 0.045,
-    "manual": 0.328,
-    "submitted": 0.626
+    "archived": 0.056,
+    "manual": 0.433,
+    "submitted": 0.512
   },
   "topBlockers": [
     {
-      "count": 39,
+      "count": 93,
       "reason": "unspecified"
-    },
-    {
-      "count": 4,
-      "reason": "Workday account/sign-in gate before application steps."
-    },
-    {
-      "count": 4,
-      "reason": "Workday account gate: Apply Manually reaches step 1 Create Account/Sign In before My Information; unattended flow must not create or use an account for Liam."
-    },
-    {
-      "count": 2,
-      "reason": "LinkedIn Easy Apply requires native/browser upload control for the tailored resume; this drain could not safely guarantee the correct resume file before submit."
-    },
-    {
-      "count": 1,
-      "reason": "Prompt-injection text on Tential application page; not submitted per guardrails."
-    },
-    {
-      "count": 1,
-      "reason": "Interactive hCaptcha in Garmin iCIMS after email entry."
-    },
-    {
-      "count": 1,
-      "reason": "Applicant Arbitration Agreement acknowledgement/acceptance required; legal agreement needs manual review."
-    },
-    {
-      "count": 1,
-      "reason": "Lever hCaptcha challenge appeared after filling the form; upload widget also displayed a stale false error: File exceeds the maximum upload size of 100MB, despite the 18 KB PDF showing Success and a resumeStorageId."
     }
   ],
   "windowDays": 7

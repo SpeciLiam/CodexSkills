@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import shutil
 import subprocess
 from datetime import date
 from pathlib import Path
@@ -67,17 +68,38 @@ def tailor_tex(path: Path, kind: str, profiles: dict[str, Any]) -> None:
     profile = profiles[kind]
     text = path.read_text(encoding="utf-8")
     text = re.sub(
-        r"     \\textbf\{Languages\}\{:[\s\S]*?     \\textbf\{(?:Frontend / Product|Product / Tooling|Tooling / Product|Testing / Operations|Backend / Product|Cloud / Product|Frontend / Mobile)\}\{:[^\n]+\} \\\\\n",
+        (
+            r"     \\textbf\{Languages\}\{:[\s\S]*?"
+            r"     \\textbf\{(?:Frontend / Product|Product / Frontend|Product / Tooling|Tooling / Product|"
+            r"Testing / Operations|Testing / Tools|Backend / Product|Backend / Data|"
+            r"Cloud / Product|Cloud / Reliability|Frontend / Mobile)\}\{:[^\n]+\} \\\\\n"
+        ),
         lambda _: profile["skills"] + "\n",
         text,
     )
 
     bullets = profile["role_bullets"]
-    text = re.sub(
-        r"    \\resumeItem\{Drove GA readiness[\s\S]*?    \\resumeItem\{Built reusable GCloud[\s\S]*?\n    \\resumeItem\{(?:Implemented and merged dry-run support|Implemented Exascale Storage Vault dry-run support)[\s\S]*?\n",
-        lambda _: "".join(f"    \\resumeItem{{{bullet}}}\n" for bullet in bullets),
-        text,
+    replacement_bullets = "".join(f"        \\resumeItem{{{bullet}}}\n" for bullet in bullets)
+    current_oracle_pattern = (
+        r"(    \\resumeSubheading\n"
+        r"      \{Oracle\}\{May 2025 - Present\}\n"
+        r"      \{Software Engineer, GCP Integration \(Oasis\)\}\{Seattle, WA\}\n"
+        r"      \\resumeItemListStart\n)"
+        r"[\s\S]*?"
+        r"(      \\resumeItemListEnd)"
     )
+    text, replacements = re.subn(
+        current_oracle_pattern,
+        lambda match: f"{match.group(1)}{replacement_bullets}{match.group(2)}",
+        text,
+        count=1,
+    )
+    if replacements == 0:
+        text = re.sub(
+            r"    \\resumeItem\{Drove GA readiness[\s\S]*?    \\resumeItem\{Built reusable GCloud[\s\S]*?\n    \\resumeItem\{(?:Implemented and merged dry-run support|Implemented Exascale Storage Vault dry-run support)[\s\S]*?\n",
+            lambda _: "".join(f"    \\resumeItem{{{bullet}}}\n" for bullet in bullets),
+            text,
+        )
 
     if kind in {"backend", "platform", "ai"}:
         text = text.replace(
@@ -97,16 +119,22 @@ def find_batch(data: dict[str, Any], batch_id: str) -> dict[str, Any]:
 
 
 def render_job(batch: dict[str, Any], job: dict[str, Any], profiles: dict[str, Any]) -> Path:
-    destination = run(
-        "python3",
-        "skills/resume-tailor/scripts/prepare_resume_folder.py",
-        "--company",
-        job["company"],
-        "--role",
-        job["role"],
-    )
-    folder = Path(destination.splitlines()[-1]).resolve()
+    existing_folder = job.get("resume_folder")
+    if existing_folder and Path(existing_folder).exists():
+        folder = Path(existing_folder).resolve()
+    else:
+        destination = run(
+            "python3",
+            "skills/resume-tailor/scripts/prepare_resume_folder.py",
+            "--company",
+            job["company"],
+            "--role",
+            job["role"],
+        )
+        folder = Path(destination.splitlines()[-1]).resolve()
     tex = folder / "resume.tex"
+    if job.get("base_resume") == "general" and not existing_folder:
+        shutil.copyfile(folder / "resume-general.tex", tex)
     tailor_tex(tex, job["kind"], profiles)
 
     run("python3", "skills/resume-tailor/scripts/render_resume_pdf.py", "--dir", str(folder))
@@ -138,7 +166,7 @@ def render_job(batch: dict[str, Any], job: dict[str, Any], profiles: dict[str, A
         "--status",
         "Resume Tailored",
         "--fit-score",
-        job["fit"],
+        str(job["fit"]),
         "--notes",
         build_note(batch, job),
     )
