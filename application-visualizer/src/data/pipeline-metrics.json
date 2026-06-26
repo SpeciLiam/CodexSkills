@@ -1,52 +1,52 @@
 {
   "applicationsPerDay": [
     {
-      "archived": 0,
-      "date": "2026-06-13",
-      "manual": 0,
-      "submitted": 0
-    },
-    {
-      "archived": 0,
-      "date": "2026-06-14",
-      "manual": 0,
-      "submitted": 0
-    },
-    {
-      "archived": 2,
-      "date": "2026-06-15",
-      "manual": 17,
-      "submitted": 18
-    },
-    {
-      "archived": 0,
-      "date": "2026-06-16",
-      "manual": 0,
-      "submitted": 0
-    },
-    {
       "archived": 1,
-      "date": "2026-06-17",
-      "manual": 8,
-      "submitted": 16
+      "date": "2026-06-19",
+      "manual": 0,
+      "submitted": 0
     },
     {
-      "archived": 4,
-      "date": "2026-06-18",
-      "manual": 10,
-      "submitted": 19
+      "archived": 7,
+      "date": "2026-06-20",
+      "manual": 49,
+      "submitted": 22
+    },
+    {
+      "archived": 0,
+      "date": "2026-06-21",
+      "manual": 0,
+      "submitted": 0
     },
     {
       "archived": 3,
-      "date": "2026-06-19",
-      "manual": 36,
-      "submitted": 43
+      "date": "2026-06-22",
+      "manual": 21,
+      "submitted": 20
+    },
+    {
+      "archived": 3,
+      "date": "2026-06-23",
+      "manual": 21,
+      "submitted": 32
     },
     {
       "archived": 2,
-      "date": "2026-06-20",
-      "manual": 22,
-      "submitted": 14
+      "date": "2026-06-24",
+      "manual": 7,
+      "submitted": 16
+    },
+    {
+      "archived": 1,
+      "date": "2026-06-25",
+      "manual": 3,
+      "submitted": 8
+    },
+    {
+      "archived": 0,
+      "date": "2026-06-26",
+      "manual": 0,
+      "submitted": 0
     }
   ],
   "avgConfidenceBySource": [
@@ -68,12 +68,17 @@
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Altec Careers"
+      "source": "LinkedIn / Adobe Careers"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Appcast"
+      "source": "LinkedIn / Adzuna"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Altec Careers"
     },
     {
       "avgScore": 0.0,
@@ -83,22 +88,17 @@
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / BambooHR"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
-      "source": "LinkedIn / BioSpace"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
       "source": "LinkedIn / BrassRing"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / CVS Health Careers"
+      "source": "LinkedIn / Company Site"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / D. E. Shaw"
     },
     {
       "avgScore": 0.0,
@@ -108,17 +108,7 @@
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Dayforce"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
       "source": "LinkedIn / Gallagher Careers"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
-      "source": "LinkedIn / Gem"
     },
     {
       "avgScore": 0.0,
@@ -133,27 +123,22 @@
     {
       "avgScore": 0.0,
       "band": "low",
+      "source": "LinkedIn / Gusto"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
       "source": "LinkedIn / Jack & Jill"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Lever"
+      "source": "LinkedIn / JazzHR"
     },
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / Motion Recruitment"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
-      "source": "LinkedIn / Oracle"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
-      "source": "LinkedIn / SmartRecruiters"
+      "source": "LinkedIn / Peraton Careers"
     },
     {
       "avgScore": 0.0,
@@ -163,7 +148,12 @@
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / TSMC Careers"
+      "source": "LinkedIn / Toast Careers"
+    },
+    {
+      "avgScore": 0.0,
+      "band": "low",
+      "source": "LinkedIn / Viasat Careers"
     },
     {
       "avgScore": 0.0,
@@ -173,7 +163,7 @@
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "LinkedIn / iCIMS"
+      "source": "LinkedIn / Y Combinator"
     },
     {
       "avgScore": 0.0,
@@ -183,15 +173,10 @@
     {
       "avgScore": 0.0,
       "band": "low",
-      "source": "ashby"
-    },
-    {
-      "avgScore": 0.0,
-      "band": "low",
-      "source": "custom"
+      "source": "LinkedIn/Ashby"
     }
   ],
-  "generatedAt": "2026-06-20T03:23:57.756910+00:00",
+  "generatedAt": "2026-06-26T22:51:38.723551+00:00",
   "intakeHealth": {
     "greenhouseCapturedToday": 0,
     "greenhouseLastRun": "",
@@ -201,18 +186,18 @@
   },
   "queueDepth": {
     "intakeUnprocessed": 164,
-    "manualApplyNeeded": 318,
+    "manualApplyNeeded": 395,
     "readyToApply": 0,
-    "resumeTailored": 37
+    "resumeTailored": 80
   },
   "submitSuccessRate": {
-    "archived": 0.056,
-    "manual": 0.433,
-    "submitted": 0.512
+    "archived": 0.079,
+    "manual": 0.468,
+    "submitted": 0.454
   },
   "topBlockers": [
     {
-      "count": 93,
+      "count": 101,
       "reason": "unspecified"
     }
   ],
