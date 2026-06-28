@@ -8,6 +8,7 @@ Run directly, or via the visualizer's `npm run dev/build`.
 from __future__ import annotations
 
 import json
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -24,6 +25,21 @@ OUT = ROOT / "housing-visualizer" / "src" / "data" / "housing-data.json"
 def num(value: str):
     n = hp.to_int(value)
     return n if value not in (None, "") and n != 0 else (0 if value in ("0",) else None)
+
+
+def beds_num(beds: str, title: str):
+    """Bedroom count, from the Beds field or parsed from the title. None = unknown
+    (e.g. a room in a share, or no signal). 'studio' -> 0."""
+    n = hp.to_int(beds)
+    if n:
+        return n
+    text = (title or "").lower()
+    if "studio" in text:
+        return 0
+    m = re.search(r"(\d+)\s*(?:bd|br|beds?|bedrooms?)\b", text)
+    if m:
+        return int(m.group(1))
+    return None
 
 
 def export() -> dict:
@@ -43,6 +59,7 @@ def export() -> dict:
             "rent": num(row.get("Rent", "")),
             "allIn": num(row.get("All-In Estimate", "")),
             "beds": row.get("Beds", ""),
+            "bedsNum": beds_num(row.get("Beds", ""), row.get("Title", "")),
             "baths": row.get("Baths", ""),
             "lease": row.get("Lease", ""),
             "available": row.get("Available", ""),

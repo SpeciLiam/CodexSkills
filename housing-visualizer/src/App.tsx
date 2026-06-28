@@ -10,6 +10,7 @@ type Listing = {
   rent: number | null;
   allIn: number | null;
   beds: string;
+  bedsNum: number | null;
   baths: string;
   lease: string;
   available: string;
@@ -78,6 +79,15 @@ const SORTS: Record<string, (a: Listing, b: Listing) => number> = {
 };
 const SORT_KEYS = Object.keys(SORTS);
 
+const BEDS_OPTIONS = ["Any beds", "Studio", "1+ bd", "2+ bd", "3+ bd"];
+const bedsPass = (l: Listing, opt: string) => {
+  if (opt === "Any beds") return true;
+  if (l.bedsNum == null) return false;
+  if (opt === "Studio") return l.bedsNum === 0;
+  return l.bedsNum >= parseInt(opt, 10);
+};
+const bedsLabel = (n: number | null) => (n == null ? "" : n === 0 ? "studio" : `${n} bd`);
+
 function Score({ n }: { n: number }) {
   const tier = n >= 75 ? "hi" : n >= 60 ? "mid" : "lo";
   return <div className={`score ${tier}`}>{n}</div>;
@@ -109,10 +119,10 @@ function Card({ l, rank }: { l: Listing; rank?: number }) {
         <div className="chips">
           <span className="chip rent">{money(l.allIn ?? l.rent)}</span>
           {l.lease && <span className={isFlexLease(l.lease) ? "chip flex" : "chip"}>{l.lease}</span>}
-          {(l.beds || l.baths) && (
+          {(l.bedsNum != null || l.baths) && (
             <span className="chip">
-              {l.beds && `${l.beds} bd`}
-              {l.beds && l.baths ? " · " : ""}
+              {bedsLabel(l.bedsNum)}
+              {l.bedsNum != null && l.baths ? " · " : ""}
               {l.baths && `${l.baths} ba`}
             </span>
           )}
@@ -128,6 +138,7 @@ function Card({ l, rank }: { l: Listing; rank?: number }) {
 export default function App() {
   const [tab, setTab] = useState(SEGMENTS[0].key);
   const [sort, setSort] = useState(SORT_KEYS[0]);
+  const [beds, setBeds] = useState(BEDS_OPTIONS[0]);
   const [q, setQ] = useState("");
 
   const pools = useMemo(() => {
@@ -148,8 +159,12 @@ export default function App() {
     const match = (l: Listing) =>
       !q.trim() ||
       [l.title, l.market, l.city, l.neighborhood, l.lease, l.source].join(" ").toLowerCase().includes(q.toLowerCase());
-    return pools[seg.scope].filter(seg.test).filter(match).sort(SORTS[sort]);
-  }, [pools, seg, sort, q]);
+    return pools[seg.scope]
+      .filter(seg.test)
+      .filter((l) => bedsPass(l, beds))
+      .filter(match)
+      .sort(SORTS[sort]);
+  }, [pools, seg, sort, beds, q]);
 
   return (
     <div className="app">
@@ -179,6 +194,13 @@ export default function App() {
           </nav>
           <div className="controls">
             <input className="search" placeholder="Search title, city, neighborhood…" value={q} onChange={(e) => setQ(e.target.value)} />
+            <select className="select" value={beds} onChange={(e) => setBeds(e.target.value)} aria-label="Bedrooms">
+              {BEDS_OPTIONS.map((k) => (
+                <option key={k} value={k}>
+                  {k}
+                </option>
+              ))}
+            </select>
             <select className="select" value={sort} onChange={(e) => setSort(e.target.value)} aria-label="Sort by">
               {SORT_KEYS.map((k) => (
                 <option key={k} value={k}>
