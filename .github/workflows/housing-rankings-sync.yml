@@ -1,0 +1,38 @@
+name: Housing rankings sync
+
+# Cloud freshness backstop for the bay-area-housing-hunt skill. Every 6 hours it
+# does the headless Craigslist refresh + rescore and mirrors the ledger into Notion.
+# It does NOT log into Facebook/Zillow (no browser) and does NOT commit to the repo
+# — the rich browser capture and the authoritative markdown stay in local Claude/
+# Codex runs. The refreshed board is uploaded as an artifact for inspection.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "7 */6 * * *"   # every 6 hours, off the top of the hour
+
+jobs:
+  refresh:
+    # Runs on manual dispatch always; on schedule only when explicitly enabled.
+    if: ${{ github.event_name == 'workflow_dispatch' || vars.HOUSING_SYNC_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh board + mirror to Notion (headless Craigslist only)
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: |
+          python3 skills/bay-area-housing-hunt/scripts/run.py --notion
+
+      - name: Upload refreshed board
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: housing-board
+          path: housing-trackers/*.md
+          if-no-files-found: warn

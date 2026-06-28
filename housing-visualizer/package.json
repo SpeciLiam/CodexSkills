@@ -1,0 +1,24 @@
+{
+  "name": "housing-visualizer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "refresh": "python3 ../skills/bay-area-housing-hunt/scripts/export_housing_data.py",
+    "dev": "npm run refresh && vite --host 0.0.0.0",
+    "build": "npm run refresh && vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "@vitejs/plugin-react": "^5.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3",
+    "vite": "^6.4.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.28",
+    "@types/react-dom": "^18.3.7"
+  }
+}

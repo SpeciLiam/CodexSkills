@@ -6,6 +6,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "preview", "--prefix", "application-visualizer", "--", "--port", "4173"],
       "port": 4173
+    },
+    {
+      "name": "housing-visualizer",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "preview", "--prefix", "housing-visualizer", "--", "--port", "4174"],
+      "port": 4174
     }
   ]
 }

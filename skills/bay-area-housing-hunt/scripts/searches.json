@@ -1,0 +1,66 @@
+{
+  "_comment": "Source config for run.py. 'rss' feeds are fetched headlessly (public feeds only; on any block the run records a Source Blocked row, never bypasses). 'ai_browser' sources are captured by the conductor via Chrome plugin (Codex) or Claude-in-Chrome/Computer Use (Claude). Edit search URLs to taste.",
+  "rss": [
+    {"name": "Craigslist", "label": "south-bay-rooms", "market_hint": "Santa Clara", "url": "https://sfbay.craigslist.org/search/sby/roo", "enabled": true},
+    {"name": "Craigslist", "label": "south-bay-sublets", "market_hint": "Santa Clara", "url": "https://sfbay.craigslist.org/search/sby/sub", "enabled": true},
+    {"name": "Craigslist", "label": "south-bay-apts", "market_hint": "Sunnyvale", "url": "https://sfbay.craigslist.org/search/sby/apa?max_price=4500", "enabled": true},
+    {"name": "Craigslist", "label": "peninsula-rooms", "market_hint": "Redwood City/San Carlos/Belmont", "url": "https://sfbay.craigslist.org/search/pen/roo", "enabled": true},
+    {"name": "Craigslist", "label": "sf-sublets", "market_hint": "SF SoMa/South Beach/Mission Bay", "url": "https://sfbay.craigslist.org/search/sfc/sub", "enabled": true}
+  ],
+  "_ai_browser_comment": "Capture EVERY source in this list each run with the local logged-in browser. Craigslist is listed here (not only under rss) because its RSS 403s headlessly but loads fine in a real browser. Extraction playbook for Craigslist list pages: read .cl-search-result cards -> a[href], .posting-title .label (title), .priceinfo (rent), .result-posted-date (posted), .result-location (city); to pull the full result set past the tool's output truncation, write the JSON array into document.body as <pre>@@BEGIN@@...@@END@@</pre> then read it with get_page_text. Facebook Marketplace defaults to the account's saved city (Liam's is Seattle) -> open the location dialog, type 'Santa Clara, California', pick the City option, Apply; the URL then carries latitude=37.3505&longitude=-121.9427&radius=<km> (use ~24). Capture VISIBLE facts only; never bypass CAPTCHA/login/rate limits; never message posters or submit anything.",
+  "ai_browser": [
+    {"name": "Craigslist South Bay rooms", "market_hint": "Santa Clara", "search_url": "https://sfbay.craigslist.org/search/sby/roo?max_price=2800", "note": "Rooms/shares near office. Filter to Santa Clara/Sunnyvale/Mountain View/North San Jose. Flexible+cheap = top priority."},
+    {"name": "Craigslist South Bay sublets", "market_hint": "Santa Clara", "search_url": "https://sfbay.craigslist.org/search/sby/sub?max_price=4500", "note": "Sublets/temporary near office = the most-wanted lease shape. Drop RV/boat/storage and ultra-short stays."},
+    {"name": "Craigslist South Bay apartments", "market_hint": "Sunnyvale", "search_url": "https://sfbay.craigslist.org/search/sby/apa?min_price=1500&max_price=3800", "note": "Apartments near office in the solo budget band. Filter to Santa Clara/Sunnyvale/Mountain View/North San Jose."},
+    {"name": "Craigslist SF sublets", "market_hint": "SF SoMa/South Beach/Mission Bay", "search_url": "https://sfbay.craigslist.org/search/sfc/sub?max_price=3800", "note": "SF lifestyle options. Capture the neighborhood precisely (Caltrain bike-distance drives SF scoring)."},
+    {"name": "Craigslist Peninsula sublets", "market_hint": "Redwood City/San Carlos/Belmont", "search_url": "https://sfbay.craigslist.org/search/pen/sub?max_price=4500", "note": "Caltrain-corridor mid-points (San Mateo, Redwood City, Palo Alto)."},
+    {"name": "Facebook Marketplace (South Bay rentals)", "market_hint": "Santa Clara", "search_url": "https://www.facebook.com/marketplace/category/propertyrentals/?sortBy=creation_time_descend&maxPrice=4000&latitude=37.3505&longitude=-121.9427&radius=24", "note": "Logged-in visible browser. If listings show another metro, set location to 'Santa Clara, California' (see playbook). Cards: a[href*='/marketplace/item/'] -> price/beds-or-title/city lines. Subleases/rooms are top priority."},
+    {"name": "Facebook housing groups (Bay Area sublets/rooms)", "market_hint": "Other Bay Area", "search_url": "https://www.facebook.com/groups/feed/", "note": "Groups like 'Bay Area Housing, Rooms, Sublets & Roommates'. Capture visible post facts only; do not message posters. Park if the group feed is noisy/unreachable."},
+    {"name": "The Listing Project", "market_hint": "SF SoMa/South Beach/Mission Bay", "search_url": "https://www.thelistingproject.com/listings", "note": "Curated SF/Bay sublets and shares."},
+    {"name": "Zillow Rentals (Santa Clara/Sunnyvale, max $4500)", "market_hint": "Santa Clara", "search_url": "https://www.zillow.com/santa-clara-ca/rentals/", "note": "Apply price filter in the UI; capture rent, beds, lease, address, url. Heavy anti-bot: if it challenges, record Source Blocked and move on."},
+    {"name": "Kopa furnished sublets (near SCU/Stanford)", "market_hint": "Santa Clara", "search_url": "https://kopa.co/search", "note": "Furnished short-term sublets; strong for early-career movers."},
+    {"name": "Furnished Finder (Santa Clara area)", "market_hint": "Santa Clara", "search_url": "https://www.furnishedfinder.com/housing/Santa-Clara--CA", "note": "Monthly furnished; flexible terms."},
+    {"name": "Zumper (Santa Clara, max $4000)", "market_hint": "Santa Clara", "search_url": "https://www.zumper.com/apartments-for-rent/santa-clara-ca?max-price=4000", "note": "Apartments/condos with lighter anti-bot than Zillow; capture rent, beds, address, url."}
+  ],
+  "_apis_comment": "Free/keyed JSON endpoints fetched by capture_api.py. No-key entries (e.g. Reddit) run headlessly in the cloud; keyed entries skip until their key_env is set. {city} in url is substituted from each 'cities' value. We never add proxy/CAPTCHA/stealth code — heavy anti-bot portals (Zillow/Apartments/FB) go through the LOCAL browser instead.",
+  "apis": [
+    {
+      "name": "Reddit",
+      "enabled": true,
+      "market_hint": "Other Bay Area",
+      "source": "Reddit",
+      "url": "https://www.reddit.com/r/{city}/search.json?q=sublet%20OR%20room%20OR%20apartment%20OR%20rent&restrict_sr=on&sort=new&limit=50",
+      "cities": ["SFList", "sanfrancisco", "bayarea", "sanjose", "Sublets_"],
+      "list_path": "data.children",
+      "id_field": "data.id",
+      "field_map": {
+        "title": "data.title",
+        "description": "data.selftext",
+        "url": "data.url"
+      },
+      "note": "Public Reddit JSON; best-effort (may rate-limit cloud IPs -> recorded as Source Blocked). No login/key."
+    },
+    {
+      "name": "RentCast",
+      "enabled": false,
+      "market_hint": "Santa Clara",
+      "source": "RentCast",
+      "url": "https://api.rentcast.io/v1/listings/rental/long-term?city={city}&state=CA&status=Active&limit=50",
+      "cities": ["Santa Clara", "Sunnyvale", "Mountain View", "San Jose", "Redwood City", "San Francisco"],
+      "key_env": "RENTCAST_API_KEY",
+      "key_header": "X-Api-Key",
+      "list_path": "",
+      "id_field": "id",
+      "field_map": {
+        "title": "formattedAddress",
+        "address": "formattedAddress",
+        "city": "city",
+        "rent": "price",
+        "beds": "bedrooms",
+        "baths": "bathrooms",
+        "available": "listedDate"
+      },
+      "note": "Optional, OFF by default. Legit rentals/condos API with a free tier (~50 calls/mo). Set RENTCAST_API_KEY + enabled:true to use; listings have no public URL so they land in Needs Verification."
+    }
+  ]
+}
