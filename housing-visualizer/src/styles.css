@@ -65,6 +65,15 @@ h1 { margin: 0; font-size: 22px; letter-spacing: -0.4px; font-weight: 750; }
 }
 .tabs button.on .tcount { background: rgba(255, 255, 255, 0.2); color: #fff; }
 
+.officebar { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.olabel { font-size: 12px; font-weight: 700; color: var(--muted); margin-right: 2px; }
+.officebar button {
+  flex: 0 0 auto; background: var(--card); color: var(--muted); border: 1px solid var(--line);
+  padding: 7px 13px; border-radius: 10px; cursor: pointer; font-size: 13px; font-weight: 650;
+}
+.officebar button:hover { color: var(--text); }
+.officebar button.on { background: #eef4ff; color: #1d4ed8; border-color: #bcd2ff; }
+
 .controls { display: flex; gap: 8px; align-items: stretch; flex-wrap: wrap; }
 .search {
   flex: 1 1 200px; min-width: 0; background: var(--card); border: 1px solid var(--line); color: var(--text);

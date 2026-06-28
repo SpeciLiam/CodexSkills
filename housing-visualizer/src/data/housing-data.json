@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T22:15:30.984279+00:00",
+  "generatedAt": "2026-06-28T22:25:16.787546+00:00",
   "stats": {
     "total": 168,
     "active": 153,
@@ -19,6 +19,10 @@
     "Palo Alto/Menlo Park",
     "San Mateo/Burlingame/Millbrae",
     "Other Bay Area"
+  ],
+  "offices": [
+    "HackerRank (Santa Clara)",
+    "Google (San Francisco)"
   ],
   "listings": [
     {
@@ -44,6 +48,16 @@
       "commuteHomeMin": 87,
       "carCommuteMin": 79,
       "howToGetThere": "bike+Caltrain (~4m bike to Caltrain)",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 88,
+          "drive": 65
+        },
+        "Google (San Francisco)": {
+          "transit": 20,
+          "drive": 15
+        }
+      },
       "why": "sublease; to work ~79m / home ~87m (no-car); $1500/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -74,6 +88,16 @@
       "commuteHomeMin": 101,
       "carCommuteMin": 93,
       "howToGetThere": "bike+Caltrain (~18m bike to Caltrain)",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 88,
+          "drive": 65
+        },
+        "Google (San Francisco)": {
+          "transit": 20,
+          "drive": 15
+        }
+      },
       "why": "sublease; to work ~93m / home ~101m (no-car); $1600/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -104,6 +128,16 @@
       "commuteHomeMin": 101,
       "carCommuteMin": 93,
       "howToGetThere": "bike+Caltrain (~18m bike to Caltrain)",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 88,
+          "drive": 65
+        },
+        "Google (San Francisco)": {
+          "transit": 20,
+          "drive": 15
+        }
+      },
       "why": "sublease; to work ~93m / home ~101m (no-car); $1600/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -134,6 +168,16 @@
       "commuteHomeMin": 92,
       "carCommuteMin": 84,
       "howToGetThere": "bike+Caltrain (~9m bike to Caltrain)",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 88,
+          "drive": 65
+        },
+        "Google (San Francisco)": {
+          "transit": 20,
+          "drive": 15
+        }
+      },
       "why": "sublease; to work ~84m / home ~92m (no-car); $3000/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -164,6 +208,16 @@
       "commuteHomeMin": 101,
       "carCommuteMin": 93,
       "howToGetThere": "bike+Caltrain (~18m bike to Caltrain)",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 85,
+          "drive": 65
+        },
+        "Google (San Francisco)": {
+          "transit": 12,
+          "drive": 8
+        }
+      },
       "why": "sublease, furnished; to work ~93m / home ~101m (no-car); $1995/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -194,6 +248,16 @@
       "commuteHomeMin": 98,
       "carCommuteMin": 90,
       "howToGetThere": "bike+Caltrain (~15m bike to Caltrain (est))",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 85,
+          "drive": 65
+        },
+        "Google (San Francisco)": {
+          "transit": 12,
+          "drive": 8
+        }
+      },
       "why": "sublease; to work ~90m / home ~98m (no-car); $975/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -224,6 +288,16 @@
       "commuteHomeMin": 98,
       "carCommuteMin": 90,
       "howToGetThere": "bike+Caltrain (~15m bike to Caltrain (est))",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 85,
+          "drive": 65
+        },
+        "Google (San Francisco)": {
+          "transit": 12,
+          "drive": 8
+        }
+      },
       "why": "sublease; to work ~90m / home ~98m (no-car); $1500/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -254,6 +328,16 @@
       "commuteHomeMin": 98,
       "carCommuteMin": 90,
       "howToGetThere": "bike+Caltrain (~15m bike to Caltrain (est))",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 85,
+          "drive": 65
+        },
+        "Google (San Francisco)": {
+          "transit": 12,
+          "drive": 8
+        }
+      },
       "why": "sublease; to work ~90m / home ~98m (no-car); $2200/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -284,6 +368,16 @@
       "commuteHomeMin": 98,
       "carCommuteMin": 90,
       "howToGetThere": "bike+Caltrain (~15m bike to Caltrain (est))",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 85,
+          "drive": 65
+        },
+        "Google (San Francisco)": {
+          "transit": 12,
+          "drive": 8
+        }
+      },
       "why": "sublease; to work ~90m / home ~98m (no-car); $1900/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -314,6 +408,16 @@
       "commuteHomeMin": 90,
       "carCommuteMin": 82,
       "howToGetThere": "bike+Caltrain (~7m bike to Caltrain)",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 85,
+          "drive": 65
+        },
+        "Google (San Francisco)": {
+          "transit": 12,
+          "drive": 8
+        }
+      },
       "why": "sublease; to work ~82m / home ~90m (no-car); $2500/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -344,6 +448,16 @@
       "commuteHomeMin": null,
       "carCommuteMin": 65,
       "howToGetThere": "best SF commute if close to 4th & King",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 85,
+          "drive": 65
+        },
+        "Google (San Francisco)": {
+          "transit": 12,
+          "drive": 8
+        }
+      },
       "why": "Source Blocked: HTTPError: HTTP Error 403: Forbidden",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -374,6 +488,16 @@
       "commuteHomeMin": 96,
       "carCommuteMin": 88,
       "howToGetThere": "bike+Caltrain (~13m bike to Caltrain)",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 100,
+          "drive": 75
+        },
+        "Google (San Francisco)": {
+          "transit": 22,
+          "drive": 15
+        }
+      },
       "why": "sublease, furnished; to work ~88m / home ~96m (no-car); $1995/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -404,6 +528,16 @@
       "commuteHomeMin": 96,
       "carCommuteMin": 88,
       "howToGetThere": "bike+Caltrain (~13m bike to Caltrain)",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 100,
+          "drive": 75
+        },
+        "Google (San Francisco)": {
+          "transit": 22,
+          "drive": 15
+        }
+      },
       "why": "sublease, furnished; to work ~88m / home ~96m (no-car); $3000/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -434,6 +568,16 @@
       "commuteHomeMin": 96,
       "carCommuteMin": 88,
       "howToGetThere": "bike+Caltrain (~13m bike to Caltrain)",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 100,
+          "drive": 75
+        },
+        "Google (San Francisco)": {
+          "transit": 22,
+          "drive": 15
+        }
+      },
       "why": "sublease; to work ~88m / home ~96m (no-car); $1800/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -464,6 +608,16 @@
       "commuteHomeMin": 96,
       "carCommuteMin": 88,
       "howToGetThere": "bike+Caltrain (~13m bike to Caltrain)",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 100,
+          "drive": 75
+        },
+        "Google (San Francisco)": {
+          "transit": 22,
+          "drive": 15
+        }
+      },
       "why": "sublease; to work ~88m / home ~96m (no-car); $1000/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -494,6 +648,16 @@
       "commuteHomeMin": 96,
       "carCommuteMin": 88,
       "howToGetThere": "bike+Caltrain (~13m bike to Caltrain)",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 100,
+          "drive": 75
+        },
+        "Google (San Francisco)": {
+          "transit": 22,
+          "drive": 15
+        }
+      },
       "why": "sublease; to work ~88m / home ~96m (no-car); $3200/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -524,6 +688,16 @@
       "commuteHomeMin": 96,
       "carCommuteMin": 88,
       "howToGetThere": "bike+Caltrain (~13m bike to Caltrain)",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 100,
+          "drive": 75
+        },
+        "Google (San Francisco)": {
+          "transit": 22,
+          "drive": 15
+        }
+      },
       "why": "sublease; to work ~88m / home ~96m (no-car); $3000/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -554,6 +728,16 @@
       "commuteHomeMin": 96,
       "carCommuteMin": 88,
       "howToGetThere": "bike+Caltrain (~13m bike to Caltrain)",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 115,
+          "drive": 85
+        },
+        "Google (San Francisco)": {
+          "transit": 32,
+          "drive": 22
+        }
+      },
       "why": "sublease, furnished; to work ~88m / home ~96m (no-car); $1800/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -584,6 +768,16 @@
       "commuteHomeMin": 96,
       "carCommuteMin": 88,
       "howToGetThere": "bike+Caltrain (~13m bike to Caltrain)",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 115,
+          "drive": 85
+        },
+        "Google (San Francisco)": {
+          "transit": 32,
+          "drive": 22
+        }
+      },
       "why": "sublease, furnished; to work ~88m / home ~96m (no-car); $2600/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -614,6 +808,16 @@
       "commuteHomeMin": 108,
       "carCommuteMin": 100,
       "howToGetThere": "bike+Caltrain (~25m bike to Caltrain)",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 115,
+          "drive": 85
+        },
+        "Google (San Francisco)": {
+          "transit": 32,
+          "drive": 22
+        }
+      },
       "why": "sublease, furnished; to work ~100m / home ~108m (no-car); $1500/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -644,6 +848,16 @@
       "commuteHomeMin": 101,
       "carCommuteMin": 93,
       "howToGetThere": "bike+Caltrain (~18m bike to Caltrain)",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 115,
+          "drive": 85
+        },
+        "Google (San Francisco)": {
+          "transit": 32,
+          "drive": 22
+        }
+      },
       "why": "sublease; to work ~93m / home ~101m (no-car); $1800/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -674,6 +888,16 @@
       "commuteHomeMin": 101,
       "carCommuteMin": 93,
       "howToGetThere": "bike+Caltrain (~18m bike to Caltrain)",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 115,
+          "drive": 85
+        },
+        "Google (San Francisco)": {
+          "transit": 32,
+          "drive": 22
+        }
+      },
       "why": "sublease; to work ~93m / home ~101m (no-car); $1150/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -704,6 +928,16 @@
       "commuteHomeMin": 101,
       "carCommuteMin": 93,
       "howToGetThere": "bike+Caltrain (~18m bike to Caltrain)",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 115,
+          "drive": 85
+        },
+        "Google (San Francisco)": {
+          "transit": 32,
+          "drive": 22
+        }
+      },
       "why": "sublease; to work ~93m / home ~101m (no-car); $3500/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -734,6 +968,16 @@
       "commuteHomeMin": 66,
       "carCommuteMin": 58,
       "howToGetThere": "Caltrain/VTA Orange connection; productive but transfer-heavy",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 58,
+          "drive": 25
+        },
+        "Google (San Francisco)": {
+          "transit": 70,
+          "drive": 52
+        }
+      },
       "why": "sublease; to work ~58m / home ~66m (no-car); $1288/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -764,6 +1008,16 @@
       "commuteHomeMin": 66,
       "carCommuteMin": 58,
       "howToGetThere": "Caltrain/VTA Orange connection; productive but transfer-heavy",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 58,
+          "drive": 25
+        },
+        "Google (San Francisco)": {
+          "transit": 70,
+          "drive": 52
+        }
+      },
       "why": "sublease; to work ~58m / home ~66m (no-car); $1500/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -794,6 +1048,16 @@
       "commuteHomeMin": 66,
       "carCommuteMin": 58,
       "howToGetThere": "Caltrain/VTA Orange connection; productive but transfer-heavy",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 58,
+          "drive": 25
+        },
+        "Google (San Francisco)": {
+          "transit": 70,
+          "drive": 52
+        }
+      },
       "why": "furnished; to work ~58m / home ~66m (no-car); $1455/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -824,6 +1088,16 @@
       "commuteHomeMin": 66,
       "carCommuteMin": 58,
       "howToGetThere": "Caltrain/VTA Orange connection; productive but transfer-heavy",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 58,
+          "drive": 25
+        },
+        "Google (San Francisco)": {
+          "transit": 70,
+          "drive": 52
+        }
+      },
       "why": "lease unclear; to work ~58m / home ~66m (no-car); $1500/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -854,6 +1128,16 @@
       "commuteHomeMin": 66,
       "carCommuteMin": 58,
       "howToGetThere": "Caltrain/VTA Orange connection; productive but transfer-heavy",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 58,
+          "drive": 25
+        },
+        "Google (San Francisco)": {
+          "transit": 70,
+          "drive": 52
+        }
+      },
       "why": "lease unclear; to work ~58m / home ~66m (no-car); $1500/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -884,6 +1168,16 @@
       "commuteHomeMin": 66,
       "carCommuteMin": 58,
       "howToGetThere": "Caltrain/VTA Orange connection; productive but transfer-heavy",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 58,
+          "drive": 25
+        },
+        "Google (San Francisco)": {
+          "transit": 70,
+          "drive": 52
+        }
+      },
       "why": "lease unclear; to work ~58m / home ~66m (no-car); $1500/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -914,6 +1208,16 @@
       "commuteHomeMin": 66,
       "carCommuteMin": 58,
       "howToGetThere": "Caltrain/VTA Orange connection; productive but transfer-heavy",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 58,
+          "drive": 25
+        },
+        "Google (San Francisco)": {
+          "transit": 70,
+          "drive": 52
+        }
+      },
       "why": "lease unclear; to work ~58m / home ~66m (no-car); $1100/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -944,6 +1248,16 @@
       "commuteHomeMin": 66,
       "carCommuteMin": 58,
       "howToGetThere": "Caltrain/VTA Orange connection; productive but transfer-heavy",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 58,
+          "drive": 25
+        },
+        "Google (San Francisco)": {
+          "transit": 70,
+          "drive": 52
+        }
+      },
       "why": "lease unclear; to work ~58m / home ~66m (no-car); $2100/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -974,6 +1288,16 @@
       "commuteHomeMin": 66,
       "carCommuteMin": 58,
       "howToGetThere": "Caltrain/VTA Orange connection; productive but transfer-heavy",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 58,
+          "drive": 25
+        },
+        "Google (San Francisco)": {
+          "transit": 70,
+          "drive": 52
+        }
+      },
       "why": "lease unclear; to work ~58m / home ~66m (no-car); $2250/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1004,6 +1328,16 @@
       "commuteHomeMin": 66,
       "carCommuteMin": 58,
       "howToGetThere": "Caltrain/VTA Orange connection; productive but transfer-heavy",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 58,
+          "drive": 25
+        },
+        "Google (San Francisco)": {
+          "transit": 70,
+          "drive": 52
+        }
+      },
       "why": "lease unclear; to work ~58m / home ~66m (no-car); $2180/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1034,6 +1368,16 @@
       "commuteHomeMin": 66,
       "carCommuteMin": 58,
       "howToGetThere": "Caltrain/VTA Orange connection; productive but transfer-heavy",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 58,
+          "drive": 25
+        },
+        "Google (San Francisco)": {
+          "transit": 70,
+          "drive": 52
+        }
+      },
       "why": "lease unclear; to work ~58m / home ~66m (no-car); $2200/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1064,6 +1408,16 @@
       "commuteHomeMin": 66,
       "carCommuteMin": 58,
       "howToGetThere": "Caltrain/VTA Orange connection; productive but transfer-heavy",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 58,
+          "drive": 25
+        },
+        "Google (San Francisco)": {
+          "transit": 70,
+          "drive": 52
+        }
+      },
       "why": "lease unclear; to work ~58m / home ~66m (no-car); $2000/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1094,6 +1448,16 @@
       "commuteHomeMin": 66,
       "carCommuteMin": 58,
       "howToGetThere": "Caltrain/VTA Orange connection; productive but transfer-heavy",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 58,
+          "drive": 25
+        },
+        "Google (San Francisco)": {
+          "transit": 70,
+          "drive": 52
+        }
+      },
       "why": "lease unclear; to work ~58m / home ~66m (no-car); $2400/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1124,6 +1488,16 @@
       "commuteHomeMin": 66,
       "carCommuteMin": 58,
       "howToGetThere": "Caltrain/VTA Orange connection; productive but transfer-heavy",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 58,
+          "drive": 25
+        },
+        "Google (San Francisco)": {
+          "transit": 70,
+          "drive": 52
+        }
+      },
       "why": "lease unclear; to work ~58m / home ~66m (no-car); $2595/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1154,6 +1528,16 @@
       "commuteHomeMin": 66,
       "carCommuteMin": 58,
       "howToGetThere": "Caltrain/VTA Orange connection; productive but transfer-heavy",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 58,
+          "drive": 25
+        },
+        "Google (San Francisco)": {
+          "transit": 70,
+          "drive": 52
+        }
+      },
       "why": "lease unclear; to work ~58m / home ~66m (no-car); $2595/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1184,6 +1568,16 @@
       "commuteHomeMin": 66,
       "carCommuteMin": 58,
       "howToGetThere": "Caltrain/VTA Orange connection; productive but transfer-heavy",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 58,
+          "drive": 25
+        },
+        "Google (San Francisco)": {
+          "transit": 70,
+          "drive": 52
+        }
+      },
       "why": "lease unclear; to work ~58m / home ~66m (no-car); $3766/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1214,6 +1608,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "sublease; to work ~45m / home ~53m (no-car); $1450/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1244,6 +1648,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "sublease, short-term; to work ~45m / home ~53m (no-car); $3000/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1274,6 +1688,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "furnished, short-term; to work ~45m / home ~53m (no-car); $1000/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1304,6 +1728,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "furnished; to work ~45m / home ~53m (no-car); $1050/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1334,6 +1768,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "furnished; to work ~45m / home ~53m (no-car); $1100/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1364,6 +1808,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $1350/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1394,6 +1848,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $750/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1424,6 +1888,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $1200/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1454,6 +1928,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $1450/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1484,6 +1968,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $1050/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1514,6 +2008,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $990/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1544,6 +2048,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $1100/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1574,6 +2088,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $1850/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1604,6 +2128,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $1400/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1634,6 +2168,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $1550/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1664,6 +2208,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $1900/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1694,6 +2248,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $2000/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1724,6 +2288,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $2495/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1754,6 +2328,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $3189/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1784,6 +2368,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $3025/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1814,6 +2408,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $2895/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1844,6 +2448,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $3002/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1874,6 +2488,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $3498/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1904,6 +2528,16 @@
       "commuteHomeMin": 53,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "lease unclear; to work ~45m / home ~53m (no-car); $3759/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1934,6 +2568,16 @@
       "commuteHomeMin": null,
       "carCommuteMin": 22,
       "howToGetThere": "Caltrain/VTA or short drive; strong commute fit",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 22
+        },
+        "Google (San Francisco)": {
+          "transit": 75,
+          "drive": 55
+        }
+      },
       "why": "Source Blocked: HTTPError: HTTP Error 403: Forbidden",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1964,6 +2608,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "sublease, month-to-month; to work ~22m / home ~30m (no-car); $2750/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -1994,6 +2648,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "sublease, furnished; to work ~22m / home ~30m (no-car); $2200/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2024,6 +2688,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "sublease; to work ~22m / home ~30m (no-car); $1800/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2054,6 +2728,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "sublease; to work ~22m / home ~30m (no-car); $2580/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2084,6 +2768,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "furnished; to work ~22m / home ~30m (no-car); $1650/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2114,6 +2808,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "furnished; to work ~22m / home ~30m (no-car); $1675/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2144,6 +2848,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $635/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2174,6 +2888,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $1535/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2204,6 +2928,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $1400/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2234,6 +2968,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $1200/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2264,6 +3008,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $2300/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2294,6 +3048,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $1500/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2324,6 +3088,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $850/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2354,6 +3128,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $1395/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2384,6 +3168,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $1550/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2414,6 +3208,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $1385/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2444,6 +3248,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $1350/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2474,6 +3288,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $1300/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2504,6 +3328,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $1750/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2534,6 +3368,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $2425/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2564,6 +3408,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $3295/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2594,6 +3448,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $2830/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2624,6 +3488,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $2750/mo all-in",
       "source": "Facebook Marketplace",
       "firstSeen": "2026-06-28",
@@ -2654,6 +3528,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $2895/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2684,6 +3568,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $2995/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2714,6 +3608,16 @@
       "commuteHomeMin": 30,
       "carCommuteMin": 22,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "lease unclear; to work ~22m / home ~30m (no-car); $3051/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2744,6 +3648,16 @@
       "commuteHomeMin": null,
       "carCommuteMin": 12,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "Source Blocked: HTTPError: HTTP Error 403: Forbidden",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2774,6 +3688,16 @@
       "commuteHomeMin": null,
       "carCommuteMin": 12,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "Source Blocked: HTTPError: HTTP Error 403: Forbidden",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2804,6 +3728,16 @@
       "commuteHomeMin": null,
       "carCommuteMin": 12,
       "howToGetThere": "near office; local bus/bike/drive likely strongest",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 22,
+          "drive": 12
+        },
+        "Google (San Francisco)": {
+          "transit": 80,
+          "drive": 60
+        }
+      },
       "why": "Duplicate 2026-06-28: set manually",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2834,6 +3768,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "sublease, furnished; to work ~35m / home ~43m (no-car); $1500/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2864,6 +3808,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "sublease; to work ~35m / home ~43m (no-car); $1550/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2894,6 +3848,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "furnished; to work ~35m / home ~43m (no-car); $980/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2924,6 +3888,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "furnished; to work ~35m / home ~43m (no-car); $980/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2954,6 +3928,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "furnished; to work ~35m / home ~43m (no-car); $1200/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -2984,6 +3968,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "furnished; to work ~35m / home ~43m (no-car); $1450/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3014,6 +4008,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "furnished; to work ~35m / home ~43m (no-car); $1500/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3044,6 +4048,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "lease unclear; to work ~35m / home ~43m (no-car); $1200/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3074,6 +4088,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "lease unclear; to work ~35m / home ~43m (no-car); $785/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3104,6 +4128,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "lease unclear; to work ~35m / home ~43m (no-car); $1300/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3134,6 +4168,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "lease unclear; to work ~35m / home ~43m (no-car); $1300/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3164,6 +4208,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "lease unclear; to work ~35m / home ~43m (no-car); $2200/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3194,6 +4248,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "lease unclear; to work ~35m / home ~43m (no-car); $1350/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3224,6 +4288,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "lease unclear; to work ~35m / home ~43m (no-car); $975/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3254,6 +4328,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "lease unclear; to work ~35m / home ~43m (no-car); $1325/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3284,6 +4368,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "lease unclear; to work ~35m / home ~43m (no-car); $1290/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3314,6 +4408,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "lease unclear; to work ~35m / home ~43m (no-car); $1200/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3344,6 +4448,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "lease unclear; to work ~35m / home ~43m (no-car); $1200/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3374,6 +4488,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "lease unclear; to work ~35m / home ~43m (no-car); $1000/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3404,6 +4528,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "lease unclear; to work ~35m / home ~43m (no-car); $1000/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3434,6 +4568,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "lease unclear; to work ~35m / home ~43m (no-car); $3082/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3464,6 +4608,16 @@
       "commuteHomeMin": 43,
       "carCommuteMin": 35,
       "howToGetThere": "short South Bay commute; car or VTA can work",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 18
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 62
+        }
+      },
       "why": "lease unclear; to work ~35m / home ~43m (no-car); $3599/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3494,6 +4648,16 @@
       "commuteHomeMin": 78,
       "carCommuteMin": 70,
       "howToGetThere": "Caltrain corridor; check station distance",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 70,
+          "drive": 32
+        },
+        "Google (San Francisco)": {
+          "transit": 58,
+          "drive": 42
+        }
+      },
       "why": "sublease, furnished; to work ~70m / home ~78m (no-car); $1470/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3524,6 +4688,16 @@
       "commuteHomeMin": 78,
       "carCommuteMin": 70,
       "howToGetThere": "Caltrain corridor; check station distance",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 70,
+          "drive": 32
+        },
+        "Google (San Francisco)": {
+          "transit": 58,
+          "drive": 42
+        }
+      },
       "why": "sublease, furnished; to work ~70m / home ~78m (no-car); $1200/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3554,6 +4728,16 @@
       "commuteHomeMin": 78,
       "carCommuteMin": 70,
       "howToGetThere": "Caltrain corridor; check station distance",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 70,
+          "drive": 32
+        },
+        "Google (San Francisco)": {
+          "transit": 58,
+          "drive": 42
+        }
+      },
       "why": "sublease, furnished; to work ~70m / home ~78m (no-car); $1390/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3584,6 +4768,16 @@
       "commuteHomeMin": 78,
       "carCommuteMin": 70,
       "howToGetThere": "Caltrain corridor; check station distance",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 70,
+          "drive": 32
+        },
+        "Google (San Francisco)": {
+          "transit": 58,
+          "drive": 42
+        }
+      },
       "why": "sublease, furnished; to work ~70m / home ~78m (no-car); $1550/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3614,6 +4808,16 @@
       "commuteHomeMin": 78,
       "carCommuteMin": 70,
       "howToGetThere": "Caltrain corridor; check station distance",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 70,
+          "drive": 32
+        },
+        "Google (San Francisco)": {
+          "transit": 58,
+          "drive": 42
+        }
+      },
       "why": "sublease, furnished; to work ~70m / home ~78m (no-car); $1550/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3644,6 +4848,16 @@
       "commuteHomeMin": 78,
       "carCommuteMin": 70,
       "howToGetThere": "Caltrain corridor; check station distance",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 70,
+          "drive": 32
+        },
+        "Google (San Francisco)": {
+          "transit": 58,
+          "drive": 42
+        }
+      },
       "why": "sublease; to work ~70m / home ~78m (no-car); $1500/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3674,6 +4888,16 @@
       "commuteHomeMin": 78,
       "carCommuteMin": 70,
       "howToGetThere": "Caltrain corridor; check station distance",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 70,
+          "drive": 32
+        },
+        "Google (San Francisco)": {
+          "transit": 58,
+          "drive": 42
+        }
+      },
       "why": "sublease; to work ~70m / home ~78m (no-car); $990/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3704,6 +4928,16 @@
       "commuteHomeMin": 78,
       "carCommuteMin": 70,
       "howToGetThere": "Caltrain corridor; check station distance",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 70,
+          "drive": 32
+        },
+        "Google (San Francisco)": {
+          "transit": 58,
+          "drive": 42
+        }
+      },
       "why": "sublease; to work ~70m / home ~78m (no-car); $1500/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3734,6 +4968,16 @@
       "commuteHomeMin": 78,
       "carCommuteMin": 70,
       "howToGetThere": "Caltrain corridor; check station distance",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 70,
+          "drive": 32
+        },
+        "Google (San Francisco)": {
+          "transit": 58,
+          "drive": 42
+        }
+      },
       "why": "sublease, furnished; to work ~70m / home ~78m (no-car); $3250/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3764,6 +5008,16 @@
       "commuteHomeMin": null,
       "carCommuteMin": 32,
       "howToGetThere": "Caltrain corridor; check station distance",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 70,
+          "drive": 32
+        },
+        "Google (San Francisco)": {
+          "transit": 58,
+          "drive": 42
+        }
+      },
       "why": "Duplicate 2026-06-28: set manually",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3794,6 +5048,16 @@
       "commuteHomeMin": 88,
       "carCommuteMin": 80,
       "howToGetThere": "Caltrain corridor; commute is tolerable only near station",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 80,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 48,
+          "drive": 35
+        }
+      },
       "why": "sublease; to work ~80m / home ~88m (no-car); car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3824,6 +5088,16 @@
       "commuteHomeMin": null,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain corridor; commute is tolerable only near station",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 80,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 48,
+          "drive": 35
+        }
+      },
       "why": "Source Blocked: HTTPError: HTTP Error 403: Forbidden",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3854,6 +5128,16 @@
       "commuteHomeMin": null,
       "carCommuteMin": 45,
       "howToGetThere": "Caltrain corridor; commute is tolerable only near station",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 80,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 48,
+          "drive": 35
+        }
+      },
       "why": "Duplicate 2026-06-28: set manually",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3884,6 +5168,16 @@
       "commuteHomeMin": 98,
       "carCommuteMin": 90,
       "howToGetThere": "longer Caltrain corridor; check express timing",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 90,
+          "drive": 55
+        },
+        "Google (San Francisco)": {
+          "transit": 42,
+          "drive": 30
+        }
+      },
       "why": "sublease, furnished; to work ~90m / home ~98m (no-car); $800/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3914,6 +5208,16 @@
       "commuteHomeMin": 98,
       "carCommuteMin": 90,
       "howToGetThere": "longer Caltrain corridor; check express timing",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 90,
+          "drive": 55
+        },
+        "Google (San Francisco)": {
+          "transit": 42,
+          "drive": 30
+        }
+      },
       "why": "sublease, furnished; to work ~90m / home ~98m (no-car); $1260/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3944,6 +5248,16 @@
       "commuteHomeMin": 98,
       "carCommuteMin": 90,
       "howToGetThere": "longer Caltrain corridor; check express timing",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 90,
+          "drive": 55
+        },
+        "Google (San Francisco)": {
+          "transit": 42,
+          "drive": 30
+        }
+      },
       "why": "lease unclear; to work ~90m / home ~98m (no-car); $4351/mo all-in",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -3974,6 +5288,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "sublease, furnished; to work ~75m / home ~83m (no-car); $1125/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -4004,6 +5328,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "sublease, furnished; to work ~75m / home ~83m (no-car); $1200/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -4034,6 +5368,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "sublease, short-term; to work ~75m / home ~83m (no-car); $900/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -4064,6 +5408,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "sublease, furnished; to work ~75m / home ~83m (no-car); $2000/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -4094,6 +5448,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "sublease, furnished; to work ~75m / home ~83m (no-car); $2000/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -4124,6 +5488,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "sublease; to work ~75m / home ~83m (no-car); $600/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -4154,6 +5528,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "sublease; to work ~75m / home ~83m (no-car); $1050/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -4184,6 +5568,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "sublease; to work ~75m / home ~83m (no-car); $1000/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -4214,6 +5608,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "sublease; to work ~75m / home ~83m (no-car); $1499/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -4244,6 +5648,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "sublease; to work ~75m / home ~83m (no-car); $1500/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -4274,6 +5688,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "sublease; to work ~75m / home ~83m (no-car); $1100/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -4304,6 +5728,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "sublease; to work ~75m / home ~83m (no-car); $2300/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -4334,6 +5768,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "sublease; to work ~75m / home ~83m (no-car); $2100/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -4364,6 +5808,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "sublease; to work ~75m / home ~83m (no-car); $2500/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -4394,6 +5848,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "lease unclear; to work ~75m / home ~83m (no-car); $800/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Facebook Marketplace",
       "firstSeen": "2026-06-28",
@@ -4424,6 +5888,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "lease unclear; to work ~75m / home ~83m (no-car); $1450/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Facebook Marketplace",
       "firstSeen": "2026-06-28",
@@ -4454,6 +5928,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "lease unclear; to work ~75m / home ~83m (no-car); $499/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Facebook Marketplace",
       "firstSeen": "2026-06-28",
@@ -4484,6 +5968,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "lease unclear; to work ~75m / home ~83m (no-car); $825/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Facebook Marketplace",
       "firstSeen": "2026-06-28",
@@ -4514,6 +6008,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "lease unclear; to work ~75m / home ~83m (no-car); $900/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Facebook Marketplace",
       "firstSeen": "2026-06-28",
@@ -4544,6 +6048,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "lease unclear; to work ~75m / home ~83m (no-car); $900/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Facebook Marketplace",
       "firstSeen": "2026-06-28",
@@ -4574,6 +6088,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "lease unclear; to work ~75m / home ~83m (no-car); $1200/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Facebook Marketplace",
       "firstSeen": "2026-06-28",
@@ -4604,6 +6128,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "lease unclear; to work ~75m / home ~83m (no-car); $1100/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Facebook Marketplace",
       "firstSeen": "2026-06-28",
@@ -4634,6 +6168,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "lease unclear; to work ~75m / home ~83m (no-car); $1600/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Facebook Marketplace",
       "firstSeen": "2026-06-28",
@@ -4664,6 +6208,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "lease unclear; to work ~75m / home ~83m (no-car); $1200/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Facebook Marketplace",
       "firstSeen": "2026-06-28",
@@ -4694,6 +6248,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "lease unclear; to work ~75m / home ~83m (no-car); $1300/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Facebook Marketplace",
       "firstSeen": "2026-06-28",
@@ -4724,6 +6288,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "lease unclear; to work ~75m / home ~83m (no-car); $950/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Facebook Marketplace",
       "firstSeen": "2026-06-28",
@@ -4754,6 +6328,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "lease unclear; to work ~75m / home ~83m (no-car); $1250/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Facebook Marketplace",
       "firstSeen": "2026-06-28",
@@ -4784,6 +6368,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "lease unclear; to work ~75m / home ~83m (no-car); $1095/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Facebook Marketplace",
       "firstSeen": "2026-06-28",
@@ -4814,6 +6408,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "lease unclear; to work ~75m / home ~83m (no-car); $1500/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Facebook Marketplace",
       "firstSeen": "2026-06-28",
@@ -4844,6 +6448,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "lease unclear; to work ~75m / home ~83m (no-car); $1550/mo all-in; car scenario drives rank (costs ~$900/mo)",
       "source": "Facebook Marketplace",
       "firstSeen": "2026-06-28",
@@ -4874,6 +6488,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "lease unclear; to work ~75m / home ~83m (no-car); $3000/mo all-in",
       "source": "Facebook Marketplace",
       "firstSeen": "2026-06-28",
@@ -4904,6 +6528,16 @@
       "commuteHomeMin": 83,
       "carCommuteMin": 75,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "sublease; to work ~75m / home ~83m (no-car); car scenario drives rank (costs ~$900/mo)",
       "source": "Craigslist",
       "firstSeen": "2026-06-28",
@@ -4934,6 +6568,16 @@
       "commuteHomeMin": null,
       "carCommuteMin": 45,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "Source Blocked: HTTPError: HTTP Error 403: Blocked",
       "source": "Reddit",
       "firstSeen": "2026-06-28",
@@ -4964,6 +6608,16 @@
       "commuteHomeMin": null,
       "carCommuteMin": 45,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "Source Blocked: HTTPError: HTTP Error 403: Blocked",
       "source": "Reddit",
       "firstSeen": "2026-06-28",
@@ -4994,6 +6648,16 @@
       "commuteHomeMin": null,
       "carCommuteMin": 45,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "Source Blocked: HTTPError: HTTP Error 403: Blocked",
       "source": "Reddit",
       "firstSeen": "2026-06-28",
@@ -5024,6 +6688,16 @@
       "commuteHomeMin": null,
       "carCommuteMin": 45,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "Source Blocked: HTTPError: HTTP Error 403: Blocked",
       "source": "Reddit",
       "firstSeen": "2026-06-28",
@@ -5054,6 +6728,16 @@
       "commuteHomeMin": null,
       "carCommuteMin": 45,
       "howToGetThere": "needs manual commute verification",
+      "officeCommutes": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 45
+        },
+        "Google (San Francisco)": {
+          "transit": 60,
+          "drive": 45
+        }
+      },
       "why": "Source Blocked: HTTPError: HTTP Error 403: Blocked",
       "source": "Reddit",
       "firstSeen": "2026-06-28",

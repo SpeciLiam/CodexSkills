@@ -21,6 +21,40 @@ import sync_housing_to_notion as sync  # noqa: E402
 ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / "housing-visualizer" / "src" / "data" / "housing-data.json"
 
+# Pre-configured offices (no manual input). HackerRank commute reuses the board's
+# Santa Clara table; Google SF (downtown / 345 Spear St, Caltrain + BART reachable)
+# uses the hand table below. (transit_min, drive_min) per market. Swap in a Maps API
+# later for exact door-to-door routing.
+HACKERRANK = "HackerRank (Santa Clara)"
+GOOGLE_SF = "Google (San Francisco)"
+OFFICES = [HACKERRANK, GOOGLE_SF]
+
+GOOGLE_SF_COMMUTE = {
+    "SF SoMa/South Beach/Mission Bay": (12, 8),
+    "SF Dogpatch/Potrero/Showplace": (18, 12),
+    "SF Mission/Valencia": (20, 15),
+    "SF Hayes/Lower Haight/Castro/Duboce": (22, 15),
+    "SF Sunset/Richmond/Marina/North Beach": (32, 22),
+    "Oakland/Berkeley": (35, 30),
+    "San Mateo/Burlingame/Millbrae": (42, 30),
+    "Redwood City/San Carlos/Belmont": (48, 35),
+    "Palo Alto/Menlo Park": (58, 42),
+    "Mountain View": (70, 52),
+    "Sunnyvale": (75, 55),
+    "Santa Clara": (80, 60),
+    "North San Jose": (85, 62),
+    "Other Bay Area": (60, 45),
+}
+
+
+def office_commutes(market: str) -> dict:
+    hr = hp.COMMUTE_DEFAULTS.get(market, hp.COMMUTE_DEFAULTS["Other Bay Area"])
+    sf = GOOGLE_SF_COMMUTE.get(market, GOOGLE_SF_COMMUTE["Other Bay Area"])
+    return {
+        HACKERRANK: {"transit": hr["no_car"], "drive": hr["car"]},
+        GOOGLE_SF: {"transit": sf[0], "drive": sf[1]},
+    }
+
 
 def num(value: str):
     n = hp.to_int(value)
@@ -73,6 +107,7 @@ def export() -> dict:
             "commuteHomeMin": nc_from,
             "carCommuteMin": car_to,
             "howToGetThere": how,
+            "officeCommutes": office_commutes(row.get("Market", "")),
             "why": sync.hp.clean(row.get("Why", "")),
             "source": row.get("Source", ""),
             "firstSeen": row.get("First Seen", ""),
@@ -96,6 +131,7 @@ def export() -> dict:
             "markets": len(markets),
         },
         "marketOrder": [m for m in hp.MARKET_ORDER if m in markets],
+        "offices": OFFICES,
         "listings": listings,
     }
 

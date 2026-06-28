@@ -24,6 +24,7 @@ type Listing = {
   commuteHomeMin: number | null;
   carCommuteMin: number | null;
   howToGetThere: string;
+  officeCommutes: Record<string, { transit: number; drive: number }>;
   why: string;
   source: string;
   firstSeen: string;
@@ -36,8 +37,11 @@ type Data = {
   generatedAt: string;
   stats: { total: number; active: number; needsVerification: number; replaced: number; markets: number };
   marketOrder: string[];
+  offices: string[];
   listings: Listing[];
 };
+
+const shortOffice = (o: string) => (o.includes("Google") ? "Google SF" : o.includes("HackerRank") ? "Santa Clara" : o);
 
 const data = rawData as unknown as Data;
 const BIG = 1e9;
@@ -93,8 +97,10 @@ function Score({ n }: { n: number }) {
   return <div className={`score ${tier}`}>{n}</div>;
 }
 
-function Card({ l, rank }: { l: Listing; rank?: number }) {
+function Card({ l, rank, office }: { l: Listing; rank?: number; office: string }) {
   const sub = [l.neighborhood || l.city, l.market, l.source].filter(Boolean).join(" · ");
+  const oc = l.officeCommutes?.[office];
+  const isSantaClara = office.includes("HackerRank");
   return (
     <article className="card">
       {rank != null && <div className="rank">{rank}</div>}
@@ -126,10 +132,14 @@ function Card({ l, rank }: { l: Listing; rank?: number }) {
               {l.baths && `${l.baths} ba`}
             </span>
           )}
-          {l.commuteMin != null && <span className="chip commute">⏱ {l.commuteMin}m to office</span>}
+          {oc && (
+            <span className="chip commute">
+              ⏱ {oc.transit}m transit · {oc.drive}m drive → {shortOffice(office)}
+            </span>
+          )}
           {l.status !== "Active" && <span className="chip status">{l.status}</span>}
         </div>
-        {l.howToGetThere && <div className="route">🚆 {l.howToGetThere}</div>}
+        {isSantaClara && l.howToGetThere && <div className="route">🚆 {l.howToGetThere}</div>}
       </div>
     </article>
   );
@@ -139,6 +149,7 @@ export default function App() {
   const [tab, setTab] = useState(SEGMENTS[0].key);
   const [sort, setSort] = useState(SORT_KEYS[0]);
   const [beds, setBeds] = useState(BEDS_OPTIONS[0]);
+  const [office, setOffice] = useState(data.offices[0]);
   const [q, setQ] = useState("");
 
   const pools = useMemo(() => {
@@ -159,12 +170,17 @@ export default function App() {
     const match = (l: Listing) =>
       !q.trim() ||
       [l.title, l.market, l.city, l.neighborhood, l.lease, l.source].join(" ").toLowerCase().includes(q.toLowerCase());
+    const cmp =
+      sort === "Shortest commute"
+        ? (a: Listing, b: Listing) =>
+            (a.officeCommutes?.[office]?.transit ?? BIG) - (b.officeCommutes?.[office]?.transit ?? BIG) || b.score - a.score
+        : SORTS[sort];
     return pools[seg.scope]
       .filter(seg.test)
       .filter((l) => bedsPass(l, beds))
       .filter(match)
-      .sort(SORTS[sort]);
-  }, [pools, seg, sort, beds, q]);
+      .sort(cmp);
+  }, [pools, seg, sort, beds, office, q]);
 
   return (
     <div className="app">
@@ -192,6 +208,14 @@ export default function App() {
               </button>
             ))}
           </nav>
+          <div className="officebar">
+            <span className="olabel">⏱ Commute to</span>
+            {data.offices.map((o) => (
+              <button key={o} className={o === office ? "on" : ""} onClick={() => setOffice(o)}>
+                {shortOffice(o)}
+              </button>
+            ))}
+          </div>
           <div className="controls">
             <input className="search" placeholder="Search title, city, neighborhood…" value={q} onChange={(e) => setQ(e.target.value)} />
             <select className="select" value={beds} onChange={(e) => setBeds(e.target.value)} aria-label="Bedrooms">
@@ -216,7 +240,7 @@ export default function App() {
         {rows.length ? (
           <div className="list">
             {rows.map((l, i) => (
-              <Card key={l.listingKey} l={l} rank={seg.scope === "active" ? i + 1 : undefined} />
+              <Card key={l.listingKey} l={l} rank={seg.scope === "active" ? i + 1 : undefined} office={office} />
             ))}
           </div>
         ) : (
