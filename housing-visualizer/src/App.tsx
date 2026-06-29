@@ -1,4 +1,4 @@
-import { useMemo, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import rawData from "./data/housing-data.json";
 
 /* ──────────────────────────────────────────────────────────────────────────
@@ -8,7 +8,13 @@ import rawData from "./data/housing-data.json";
 
 const ACCENT = "#245ea8"; // deep blue
 const DENSITY: "comfortable" | "compact" = "comfortable";
-const DEFAULT_MODE: "solo" | "group" = "solo";
+
+// Remember the visitor's last selections in their browser.
+const STORE_KEY = "hh-prefs-v1";
+const loadPrefs = (): Record<string, any> => {
+  try { return JSON.parse(localStorage.getItem(STORE_KEY) || "{}"); } catch { return {}; }
+};
+const DEFAULT_PEOPLE: Person[] = [{ id: 1, name: "You", company: "HackerRank", address: "Santa Clara, CA" }];
 
 const SF_KEY = "Google (San Francisco)";
 const SC_KEY = "HackerRank (Santa Clara)";
@@ -164,38 +170,39 @@ function Weight({ label, value, onChange }: { label: string; value: number; onCh
 }
 
 export default function App() {
-  const [mode, setMode] = useState<"solo" | "group">(DEFAULT_MODE);
-  const [pref, setPref] = useState("fastest");
-  const [soloCompany, setSoloCompany] = useState("HackerRank");
-  const [soloAddress, setSoloAddress] = useState("Santa Clara, CA");
-  const [people, setPeople] = useState<Person[]>([
-    { id: 1, name: "You", company: "HackerRank", address: "Santa Clara, CA" },
-    { id: 2, name: "Sam", company: "Google", address: "San Francisco, CA" },
-  ]);
-  const [nextId, setNextId] = useState(3);
-  const [weights, setWeights] = useState({ commute: 60, price: 30, flex: 10 });
+  const [saved] = useState(loadPrefs);
+  const [pref, setPref] = useState<string>(saved.pref ?? "fastest");
+  const [people, setPeople] = useState<Person[]>(
+    Array.isArray(saved.people) && saved.people.length ? saved.people : DEFAULT_PEOPLE
+  );
+  const [weights, setWeights] = useState<{ commute: number; price: number; flex: number }>(saved.weights ?? { commute: 60, price: 30, flex: 10 });
   const [q, setQ] = useState("");
-  const [beds, setBeds] = useState("Any");
-  const [market, setMarket] = useState("All areas");
-  const [source, setSource] = useState("All sources");
-  const [region, setRegion] = useState("All");
-  const [segment, setSegment] = useState("All");
-  const [sort, setSort] = useState("Best fit");
-  const [maxPrice, setMaxPrice] = useState(6000);
+  const [beds, setBeds] = useState<string>(saved.beds ?? "Any");
+  const [market, setMarket] = useState<string>(saved.market ?? "All areas");
+  const [source, setSource] = useState<string>(saved.source ?? "All sources");
+  const [region, setRegion] = useState<string>(saved.region ?? "All");
+  const [segment, setSegment] = useState<string>(saved.segment ?? "All");
+  const [sort, setSort] = useState<string>(saved.sort ?? "Best fit");
+  const [maxPrice, setMaxPrice] = useState<number>(saved.maxPrice ?? 6000);
 
-  const isSolo = mode === "solo";
   const dense = DENSITY === "compact";
   const pad = dense ? "12px 15px" : "16px 17px";
+
+  // persist last selections (browser-local)
+  useEffect(() => {
+    try {
+      localStorage.setItem(STORE_KEY, JSON.stringify({ pref, people, weights, beds, market, source, region, segment, sort, maxPrice }));
+    } catch { /* storage unavailable — ignore */ }
+  }, [pref, people, weights, beds, market, source, region, segment, sort, maxPrice]);
 
   const setW = (k: "commute" | "price" | "flex", v: number) => setWeights((s) => ({ ...s, [k]: v }));
   const setPerson = (id: number, field: keyof Person, value: string) =>
     setPeople((s) => s.map((p) => (p.id === id ? { ...p, [field]: value } : p)));
-  const removePerson = (id: number) => setPeople((s) => s.filter((p) => p.id !== id));
+  const removePerson = (id: number) => setPeople((s) => (s.length <= 1 ? s : s.filter((p) => p.id !== id)));
   const addPerson = () =>
     setPeople((s) => {
-      if (s.length >= 6) return s;
-      setNextId((n) => n + 1);
-      return [...s, { id: nextId, name: "Person " + (s.length + 1), company: "", address: "" }];
+      const id = s.reduce((m, p) => Math.max(m, p.id), 0) + 1;
+      return [...s, { id, name: "Roommate " + (s.length + 1), company: "", address: "" }];
     });
 
   const active = useMemo(() => data.listings.filter((l) => l.status === "Active"), []);
@@ -213,7 +220,7 @@ export default function App() {
 
     const sum = weights.commute + weights.price + weights.flex || 1;
     const wc = weights.commute / sum, wp = weights.price / sum, wf = weights.flex / sum;
-    const roster = isSolo ? [{ name: "You", company: soloCompany, address: soloAddress }] : people;
+    const roster = people;
 
     const list = pool
       .filter((l) => segPass(l, segment, newest))
@@ -286,7 +293,7 @@ export default function App() {
     };
     list.sort(SB[sort] || SB["Best fit"]);
     return list;
-  }, [active, newest, isSolo, soloCompany, soloAddress, people, weights, q, beds, market, source, region, segment, sort, maxPrice, pref]);
+  }, [active, newest, people, weights, q, beds, market, source, region, segment, sort, maxPrice, pref]);
 
   const prefBtn = (k: string): CSSProperties => {
     const on = pref === k;
@@ -342,69 +349,41 @@ export default function App() {
       <div className="hh-grid" style={{ display: "grid", gridTemplateColumns: "344px minmax(0,1fr)", flex: 1, alignItems: "start" }}>
         {/* SIDEBAR */}
         <aside className="hh-aside" style={{ position: "sticky", top: 0, height: "100vh", overflowY: "auto", background: "#fffdf8", borderRight: "1px solid #e6e1d6", padding: "20px 20px 40px" }}>
-          {/* mode toggle */}
-          <div style={{ display: "flex", background: "#efeadf", borderRadius: 11, padding: 4, marginBottom: 20 }}>
-            {(["solo", "group"] as const).map((m) => {
-              const on = mode === m;
-              return (
-                <button
-                  key={m}
-                  onClick={() => setMode(m)}
-                  style={{
-                    flex: 1, border: "none", cursor: "pointer", padding: "9px 10px", borderRadius: 8, fontSize: 13.5,
-                    fontWeight: 600, fontFamily: "'Space Grotesk',sans-serif",
-                    background: on ? "#fffdf8" : "transparent", color: on ? "#1c1a17" : "#8a8378",
-                    boxShadow: on ? "0 1px 3px rgba(28,26,23,0.12)" : "none",
-                  }}
-                >
-                  {m === "solo" ? "Just me" : "A group"}
-                </button>
-              );
-            })}
+          <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 8, marginBottom: 4 }}>
+            <div style={sectionLabel}>Who's commuting</div>
+            <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 11, fontWeight: 600, color: "#b0a99c" }}>
+              {people.length} {people.length === 1 ? "person" : "people"}
+            </div>
+          </div>
+          <div style={{ fontSize: 12.5, color: "#6f6a61", marginBottom: 10 }}>
+            {people.length > 1 ? "Ranked by how everyone gets to work." : "Where do you work? Commute is scored to here."}
           </div>
 
-          <div style={{ ...sectionLabel, marginBottom: 10 }}>Who's commuting</div>
-
-          {isSolo ? (
-            <div style={{ marginBottom: 8, display: "flex", flexDirection: "column", gap: 7 }}>
-              <div style={{ fontSize: 12.5, color: "#6f6a61" }}>Where do you work? Commute is scored to here.</div>
-              <input
-                value={soloCompany}
-                onChange={(e) => setSoloCompany(e.target.value)}
-                placeholder="Company name"
-                style={{ width: "100%", border: "1.5px solid var(--accent)", background: "color-mix(in srgb, var(--accent) 8%, #fff)", borderRadius: 10, padding: "10px 12px", fontSize: 13.5, fontWeight: 600, color: "#1c1a17", outline: "none" }}
-              />
-              <input value={soloAddress} onChange={(e) => setSoloAddress(e.target.value)} placeholder="Work address or city" style={fieldStyle} />
-              <div style={{ fontSize: 11.5, fontWeight: 600, color: resolvedText(soloCompany, soloAddress).color }}>{resolvedText(soloCompany, soloAddress).text}</div>
-            </div>
-          ) : (
-            <div style={{ display: "flex", flexDirection: "column", gap: 9, marginBottom: 10 }}>
-              {people.map((p) => {
-                const rt = resolvedText(p.company, p.address);
-                return (
-                  <div key={p.id} style={{ border: "1px solid #e6e1d6", borderRadius: 12, padding: "10px 11px", background: "#fdfbf6" }}>
-                    <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
-                      <div style={{ width: 7, height: 7, borderRadius: "50%", background: "var(--accent)", flex: "0 0 auto" }} />
-                      <input value={p.name} onChange={(e) => setPerson(p.id, "name", e.target.value)} placeholder="Name" style={{ flex: 1, minWidth: 0, border: "none", background: "transparent", fontSize: 14, fontWeight: 600, color: "#1c1a17", outline: "none", padding: 0 }} />
-                      {people.length > 1 && (
-                        <button onClick={() => removePerson(p.id)} style={{ border: "none", background: "transparent", cursor: "pointer", color: "#b0a99c", fontSize: 17, lineHeight: 1, padding: "0 2px" }}>×</button>
-                      )}
-                    </div>
-                    <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-                      <input value={p.company} onChange={(e) => setPerson(p.id, "company", e.target.value)} placeholder="Company name" style={{ ...fieldStyle, borderRadius: 8, padding: "7px 9px", fontSize: 12.5, fontWeight: 600 }} />
-                      <input value={p.address} onChange={(e) => setPerson(p.id, "address", e.target.value)} placeholder="Work address or city" style={{ ...fieldStyle, borderRadius: 8, padding: "7px 9px", fontSize: 12 }} />
-                      <div style={{ fontSize: 11, fontWeight: 600, color: rt.color }}>{rt.text}</div>
-                    </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 9, marginBottom: 10 }}>
+            {people.map((p, idx) => {
+              const rt = resolvedText(p.company, p.address);
+              const lead = idx === 0;
+              return (
+                <div key={p.id} style={{ border: lead ? "1.5px solid var(--accent)" : "1px solid #e6e1d6", borderRadius: 12, padding: "10px 11px", background: lead ? "color-mix(in srgb, var(--accent) 6%, #fffdf8)" : "#fdfbf6" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
+                    <div style={{ width: 7, height: 7, borderRadius: "50%", background: "var(--accent)", flex: "0 0 auto" }} />
+                    <input value={p.name} onChange={(e) => setPerson(p.id, "name", e.target.value)} placeholder="Name" style={{ flex: 1, minWidth: 0, border: "none", background: "transparent", fontSize: 14, fontWeight: 600, color: "#1c1a17", outline: "none", padding: 0 }} />
+                    {people.length > 1 && (
+                      <button onClick={() => removePerson(p.id)} title="Remove" style={{ border: "none", background: "transparent", cursor: "pointer", color: "#b0a99c", fontSize: 17, lineHeight: 1, padding: "0 2px" }}>×</button>
+                    )}
                   </div>
-                );
-              })}
-              {people.length < 6 && (
-                <button onClick={addPerson} style={{ border: "1.5px dashed #d4cdbf", background: "transparent", cursor: "pointer", padding: 10, borderRadius: 11, fontSize: 13, fontWeight: 600, color: "#6f6a61" }}>
-                  + Add a person
-                </button>
-              )}
-            </div>
-          )}
+                  <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                    <input value={p.company} onChange={(e) => setPerson(p.id, "company", e.target.value)} placeholder="Company name" style={{ ...fieldStyle, borderRadius: 8, padding: "7px 9px", fontSize: 12.5, fontWeight: 600 }} />
+                    <input value={p.address} onChange={(e) => setPerson(p.id, "address", e.target.value)} placeholder="Work address or city" style={{ ...fieldStyle, borderRadius: 8, padding: "7px 9px", fontSize: 12 }} />
+                    <div style={{ fontSize: 11, fontWeight: 600, color: rt.color }}>{rt.text}</div>
+                  </div>
+                </div>
+              );
+            })}
+            <button onClick={addPerson} style={{ border: "1.5px dashed #d4cdbf", background: "transparent", cursor: "pointer", padding: 10, borderRadius: 11, fontSize: 13, fontWeight: 600, color: "#6f6a61" }}>
+              + Add a roommate
+            </button>
+          </div>
 
           {/* pref mode */}
           <div style={{ display: "flex", gap: 6, margin: "14px 0 22px" }}>
