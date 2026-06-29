@@ -1,5 +1,19 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, type CSSProperties } from "react";
 import rawData from "./data/housing-data.json";
+
+/* ──────────────────────────────────────────────────────────────────────────
+   Bay Area Housing Hunt — implementation of Housing Hunt.dc.html
+   Accent: deep blue (#245ea8). Reads the real housing-data.json mirror.
+   ────────────────────────────────────────────────────────────────────────── */
+
+const ACCENT = "#245ea8"; // deep blue
+const DENSITY: "comfortable" | "compact" = "comfortable";
+const DEFAULT_MODE: "solo" | "group" = "solo";
+
+const SF_KEY = "Google (San Francisco)";
+const SC_KEY = "HackerRank (Santa Clara)";
+const SOUTH = ["Mountain View", "Sunnyvale", "Santa Clara", "North San Jose"];
+const PENINSULA = ["Palo Alto/Menlo Park", "Redwood City/San Carlos/Belmont", "San Mateo/Burlingame/Millbrae"];
 
 type Listing = {
   listingKey: string;
@@ -13,253 +27,521 @@ type Listing = {
   bedsNum: number | null;
   baths: string;
   lease: string;
-  available: string;
   status: string;
-  score: number;
-  noCarScore: number;
-  carScore: number;
-  overallRank: number | null;
-  cityRank: number | null;
-  commuteMin: number | null;
-  commuteHomeMin: number | null;
-  carCommuteMin: number | null;
-  howToGetThere: string;
-  officeCommutes: Record<string, { transit: number; drive: number }>;
-  why: string;
-  source: string;
   firstSeen: string;
-  lastSeen: string;
+  officeCommutes: Record<string, { transit: number; drive: number }>;
+  source: string;
   url: string;
-  notes: string;
 };
-
 type Data = {
   generatedAt: string;
-  stats: { total: number; active: number; needsVerification: number; replaced: number; markets: number };
+  stats: { active: number; markets: number };
   marketOrder: string[];
-  offices: string[];
   listings: Listing[];
 };
-
-const shortOffice = (o: string) => (o.includes("Google") ? "Google SF" : o.includes("HackerRank") ? "Santa Clara" : o);
+type Person = { id: number; name: string; company: string; address: string };
 
 const data = rawData as unknown as Data;
-const BIG = 1e9;
 
-// "Today" = the most recent date any active listing was first seen (i.e. the latest
-// refresh batch), so the New-today view stays meaningful even between runs.
-const NEWEST = data.listings.reduce((m, l) => (l.status === "Active" && l.firstSeen > m ? l.firstSeen : m), "");
-const isNew = (l: Listing) => l.status === "Active" && !!NEWEST && l.firstSeen === NEWEST;
-
-const money = (n: number | null) => (n ? "$" + n.toLocaleString() : "no rent");
-const isFlexLease = (s: string) => /sublet|sublease|month|m2m|short|temporary|flexible/i.test(s);
+const clamp = (n: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, n));
+const money = (n: number | null) => (n ? "$" + n.toLocaleString() : "no price");
+const isFlex = (s: string) => /sublet|sublease|month|m2m|short|temporary|flexible/i.test(s || "");
 const isRoom = (l: Listing) => /\broom\b|roommate|\bshared?\b|private bath/i.test(`${l.title} ${l.lease}`);
 const isApt = (l: Listing) =>
-  /apartment|studio|\bcondo\b|townhouse|townhome|\bflat\b|\bunit\b|\d\s*(bd|br|bed|bedroom)/i.test(`${l.title} ${l.lease}`) ||
-  !!l.beds;
+  /apartment|studio|\bcondo\b|townhouse|townhome|\bflat\b|\bunit\b|\d\s*(bd|br|bed|bedroom)/i.test(`${l.title} ${l.lease}`) || !!l.beds;
 
-const SOUTH = ["Mountain View", "Sunnyvale", "Santa Clara", "North San Jose"];
-const PENINSULA = ["Palo Alto/Menlo Park", "Redwood City/San Carlos/Belmont", "San Mateo/Burlingame/Millbrae"];
+function transitMethod(market: string) {
+  if (/^SF /.test(market)) return "Caltrain + Muni";
+  if (/Palo Alto|Redwood|San Mateo|Burlingame|Millbrae|Menlo/.test(market)) return "Caltrain";
+  if (/Mountain View|Sunnyvale|Santa Clara|San Jose/.test(market)) return "VTA + Caltrain";
+  return "transit";
+}
 
-type Scope = "active" | "needs" | "replaced";
-const SEGMENTS: { key: string; scope: Scope; test: (l: Listing) => boolean }[] = [
-  { key: "Top picks", scope: "active", test: () => true },
-  { key: "New today", scope: "active", test: (l) => isNew(l) },
-  { key: "Subleases / M2M", scope: "active", test: (l) => isFlexLease(l.lease) },
-  { key: "Rooms", scope: "active", test: (l) => isRoom(l) },
-  { key: "Apartments", scope: "active", test: (l) => isApt(l) && !isRoom(l) },
-  { key: "SF", scope: "active", test: (l) => l.market.startsWith("SF ") },
-  { key: "South Bay", scope: "active", test: (l) => SOUTH.includes(l.market) },
-  { key: "Peninsula", scope: "active", test: (l) => PENINSULA.includes(l.market) },
-  { key: "To verify", scope: "needs", test: () => true },
-  { key: "Expired", scope: "replaced", test: () => true },
-];
+// Map any company/address text to a geographic weight between SF (0) and Santa Clara (1),
+// plus a few extra minutes for off-corridor spots. This is what lets the tool score a
+// commute to ANY company, not just the two seed offices.
+function geocode(text: string): { w: number; x: number; c: string; ok: boolean } {
+  const t = (text || "").toLowerCase();
+  const m = (...ks: string[]) => ks.some((k) => t.includes(k));
+  if (m("oakland", "berkeley", "emeryville", "alameda", "hayward", "san leandro", "fremont", "union city", "newark", "dublin", "pleasanton", "walnut creek", "concord")) return { w: 0.5, x: 28, c: "East Bay", ok: true };
+  if (m("marin", "sausalito", "san rafael", "novato", "mill valley")) return { w: 0.0, x: 24, c: "North Bay", ok: true };
+  if (m("south san francisco")) return { w: 0.12, x: 4, c: "South SF", ok: true };
+  if (m("daly city")) return { w: 0.1, x: 6, c: "Daly City", ok: true };
+  if (m("san bruno")) return { w: 0.2, x: 2, c: "San Bruno", ok: true };
+  if (m("millbrae")) return { w: 0.25, x: 0, c: "Millbrae", ok: true };
+  if (m("burlingame")) return { w: 0.3, x: 0, c: "Burlingame", ok: true };
+  if (m("san mateo")) return { w: 0.38, x: 0, c: "San Mateo", ok: true };
+  if (m("belmont", "san carlos")) return { w: 0.45, x: 0, c: "San Carlos", ok: true };
+  if (m("redwood city")) return { w: 0.5, x: 0, c: "Redwood City", ok: true };
+  if (m("east palo alto")) return { w: 0.58, x: 4, c: "East Palo Alto", ok: true };
+  if (m("menlo park")) return { w: 0.55, x: 0, c: "Menlo Park", ok: true };
+  if (m("palo alto")) return { w: 0.6, x: 0, c: "Palo Alto", ok: true };
+  if (m("los altos")) return { w: 0.66, x: 2, c: "Los Altos", ok: true };
+  if (m("mountain view")) return { w: 0.72, x: 0, c: "Mountain View", ok: true };
+  if (m("sunnyvale")) return { w: 0.8, x: 0, c: "Sunnyvale", ok: true };
+  if (m("cupertino")) return { w: 0.86, x: 4, c: "Cupertino", ok: true };
+  if (m("milpitas")) return { w: 0.9, x: 6, c: "Milpitas", ok: true };
+  if (m("santa clara")) return { w: 1.0, x: 0, c: "Santa Clara", ok: true };
+  if (m("north san jose")) return { w: 0.95, x: 0, c: "North San Jose", ok: true };
+  if (m("campbell", "los gatos", "saratoga")) return { w: 0.95, x: 10, c: "West Valley", ok: true };
+  if (m("san jose")) return { w: 0.97, x: 4, c: "San Jose", ok: true };
+  if (m("san francisco", "soma", "mission bay", "mission district", "financial district", "nob hill", "hayes valley", "the castro", "sunset", "richmond district", "marina district", "potrero", "dogpatch", "embarcadero", "tenderloin")) return { w: 0.0, x: 0, c: "San Francisco", ok: true };
+  return { w: 0.55, x: 8, c: "", ok: false };
+}
 
-const SORTS: Record<string, (a: Listing, b: Listing) => number> = {
-  "Best score": (a, b) => (a.overallRank ?? BIG) - (b.overallRank ?? BIG) || b.score - a.score,
-  "Shortest commute": (a, b) => (a.commuteMin ?? BIG) - (b.commuteMin ?? BIG) || b.score - a.score,
-  Cheapest: (a, b) => (a.allIn ?? a.rent ?? BIG) - (b.allIn ?? b.rent ?? BIG) || b.score - a.score,
-  Newest: (a, b) => (b.firstSeen || "").localeCompare(a.firstSeen || "") || (b.lastSeen || "").localeCompare(a.lastSeen || ""),
+function estimate(l: Listing, place: { w: number; x: number }, pref: string): { t: number | null; mode: string } {
+  const oc = l.officeCommutes;
+  if (!oc) return { t: null, mode: "transit" };
+  const sf = oc[SF_KEY], sc = oc[SC_KEY];
+  if (!sf || !sc) return { t: null, mode: "transit" };
+  const w = place.w, x = place.x || 0;
+  const transit = Math.round(sf.transit + (sc.transit - sf.transit) * w) + x;
+  const drive = Math.round(sf.drive + (sc.drive - sf.drive) * w) + Math.round(x * 0.7);
+  if (pref === "transit") return { t: transit, mode: "transit" };
+  if (pref === "drive") return { t: drive, mode: "drive" };
+  return { t: Math.min(transit, drive), mode: drive < transit ? "drive" : "transit" };
+}
+
+function resolvedText(company: string, address: string): { text: string; color: string } {
+  if (((company || "") + (address || "")).trim() === "") return { text: "Enter a company or address", color: "#b0a99c" };
+  const g = geocode((company || "") + " " + (address || ""));
+  if (g.ok) return { text: "✓ placed near " + g.c, color: "var(--accent)" };
+  return { text: "≈ couldn't place — estimating mid-Peninsula", color: "#b07d1a" };
+}
+
+const segPass = (l: Listing, seg: string, newest: string) => {
+  if (seg === "All") return true;
+  if (seg === "New today") return !!newest && l.firstSeen === newest;
+  if (seg === "Subleases") return isFlex(l.lease);
+  if (seg === "Rooms") return isRoom(l);
+  if (seg === "Apartments") return isApt(l) && !isRoom(l);
+  return true; // To verify / Expired — pool already scoped
 };
-const SORT_KEYS = Object.keys(SORTS);
-
-const BEDS_OPTIONS = ["Any beds", "Studio", "1+ bd", "2+ bd", "3+ bd"];
 const bedsPass = (l: Listing, opt: string) => {
-  if (opt === "Any beds") return true;
+  if (opt === "Any") return true;
   if (l.bedsNum == null) return false;
   if (opt === "Studio") return l.bedsNum === 0;
   return l.bedsNum >= parseInt(opt, 10);
 };
-const bedsLabel = (n: number | null) => (n == null ? "" : n === 0 ? "studio" : `${n} bd`);
+const regionPass = (l: Listing, r: string) => {
+  if (r === "All") return true;
+  if (r === "SF") return /^SF /.test(l.market) || l.market === "SF";
+  if (r === "Peninsula") return PENINSULA.includes(l.market);
+  if (r === "South Bay") return SOUTH.includes(l.market);
+  return true;
+};
+const matchQ = (l: Listing, q: string) =>
+  !q.trim() || [l.title, l.market, l.city, l.neighborhood, l.lease, l.source].join(" ").toLowerCase().includes(q.toLowerCase());
 
-function Score({ n }: { n: number }) {
-  const tier = n >= 75 ? "hi" : n >= 60 ? "mid" : "lo";
-  return <div className={`score ${tier}`}>{n}</div>;
-}
+const SEG_NAMES = ["All", "New today", "Subleases", "Rooms", "Apartments", "To verify", "Expired"];
+const SORT_OPTIONS = ["Best fit", "Cheapest", "Shortest commute", "Newest"];
+const BEDS_OPTIONS = ["Any", "Studio", "1+ bd", "2+ bd", "3+ bd"];
 
-function Card({ l, rank, office }: { l: Listing; rank?: number; office: string }) {
-  const sub = [l.neighborhood || l.city, l.market, l.source].filter(Boolean).join(" · ");
-  const oc = l.officeCommutes?.[office];
-  const isSantaClara = office.includes("HackerRank");
+// shared inline style fragments
+const sectionLabel: CSSProperties = {
+  fontSize: 11, textTransform: "uppercase", letterSpacing: "0.08em", color: "#8a8378",
+  fontWeight: 700, fontFamily: "'Space Grotesk',sans-serif",
+};
+const fieldStyle: CSSProperties = {
+  width: "100%", border: "1px solid #e0dacd", background: "#fdfbf6", borderRadius: 10,
+  padding: "9px 12px", fontSize: 13, color: "#1c1a17", outline: "none",
+};
+const selectStyle: CSSProperties = {
+  flex: 1, minWidth: 0, border: "1px solid #e0dacd", background: "#fdfbf6", borderRadius: 10,
+  padding: "9px 10px", fontSize: 13, fontWeight: 600, color: "#1c1a17", cursor: "pointer", outline: "none",
+};
+
+function Weight({ label, value, onChange }: { label: string; value: number; onChange: (v: number) => void }) {
   return (
-    <article className="card">
-      {rank != null && <div className="rank">{rank}</div>}
-      <div className="body">
-        <div className="head">
-          <div className="name">
-            {l.url ? (
-              <a href={l.url} target="_blank" rel="noreferrer">
-                {l.title || "(untitled)"}
-              </a>
-            ) : (
-              l.title || "(untitled)"
-            )}
-            {isNew(l) && <span className="newbadge">NEW</span>}
-            <div className="sub">
-              {sub}
-              {l.overallRank ? <span className="ov"> · overall #{l.overallRank}</span> : null}
-            </div>
-          </div>
-          <Score n={l.score} />
-        </div>
-        <div className="chips">
-          <span className="chip rent">{money(l.allIn ?? l.rent)}</span>
-          {l.lease && <span className={isFlexLease(l.lease) ? "chip flex" : "chip"}>{l.lease}</span>}
-          {(l.bedsNum != null || l.baths) && (
-            <span className="chip">
-              {bedsLabel(l.bedsNum)}
-              {l.bedsNum != null && l.baths ? " · " : ""}
-              {l.baths && `${l.baths} ba`}
-            </span>
-          )}
-          {oc && (
-            <span className="chip commute">
-              ⏱ {oc.transit}m transit · {oc.drive}m drive → {shortOffice(office)}
-            </span>
-          )}
-          {l.status !== "Active" && <span className="chip status">{l.status}</span>}
-        </div>
-        {isSantaClara && l.howToGetThere && <div className="route">🚆 {l.howToGetThere}</div>}
+    <div>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 6 }}>
+        <span style={{ fontSize: 13, fontWeight: 600 }}>{label}</span>
+        <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, fontWeight: 600, color: "var(--accent)" }}>{value}</span>
       </div>
-    </article>
-  );
-}
-
-export default function App() {
-  const [tab, setTab] = useState(SEGMENTS[0].key);
-  const [sort, setSort] = useState(SORT_KEYS[0]);
-  const [beds, setBeds] = useState(BEDS_OPTIONS[0]);
-  const [office, setOffice] = useState(data.offices[0]);
-  const [q, setQ] = useState("");
-
-  const pools = useMemo(() => {
-    const active = data.listings.filter((l) => l.status === "Active");
-    const needs = data.listings.filter((l) => l.status === "Needs Verification");
-    const replaced = data.listings.filter((l) => !["Active", "Needs Verification"].includes(l.status));
-    return { active, needs, replaced };
-  }, []);
-
-  const counts = useMemo(() => {
-    const c: Record<string, number> = {};
-    for (const seg of SEGMENTS) c[seg.key] = pools[seg.scope].filter(seg.test).length;
-    return c;
-  }, [pools]);
-
-  const seg = SEGMENTS.find((s) => s.key === tab)!;
-  const rows = useMemo(() => {
-    const match = (l: Listing) =>
-      !q.trim() ||
-      [l.title, l.market, l.city, l.neighborhood, l.lease, l.source].join(" ").toLowerCase().includes(q.toLowerCase());
-    const cmp =
-      sort === "Shortest commute"
-        ? (a: Listing, b: Listing) =>
-            (a.officeCommutes?.[office]?.transit ?? BIG) - (b.officeCommutes?.[office]?.transit ?? BIG) || b.score - a.score
-        : SORTS[sort];
-    return pools[seg.scope]
-      .filter(seg.test)
-      .filter((l) => bedsPass(l, beds))
-      .filter(match)
-      .sort(cmp);
-  }, [pools, seg, sort, beds, office, q]);
-
-  return (
-    <div className="app">
-      <header>
-        <h1>Bay Area Housing</h1>
-        <p className="tagline">
-          Flexible-first power rankings near the HackerRank Santa Clara office · updated{" "}
-          {new Date(data.generatedAt).toLocaleDateString(undefined, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })}
-        </p>
-        <div className="stats">
-          <Stat label="Active" value={data.stats.active} />
-          <Stat label="Markets" value={data.stats.markets} />
-          <Stat label="To verify" value={data.stats.needsVerification} />
-          <Stat label="Expired" value={data.stats.replaced} />
-        </div>
-      </header>
-
-      <div className="bar">
-        <div className="bar-inner">
-          <nav className="tabs">
-            {SEGMENTS.map((s) => (
-              <button key={s.key} className={s.key === tab ? "on" : ""} onClick={() => setTab(s.key)}>
-                {s.key}
-                <span className="tcount">{counts[s.key]}</span>
-              </button>
-            ))}
-          </nav>
-          <div className="officebar">
-            <span className="olabel">⏱ Commute to</span>
-            {data.offices.map((o) => (
-              <button key={o} className={o === office ? "on" : ""} onClick={() => setOffice(o)}>
-                {shortOffice(o)}
-              </button>
-            ))}
-          </div>
-          <div className="controls">
-            <input className="search" placeholder="Search title, city, neighborhood…" value={q} onChange={(e) => setQ(e.target.value)} />
-            <select className="select" value={beds} onChange={(e) => setBeds(e.target.value)} aria-label="Bedrooms">
-              {BEDS_OPTIONS.map((k) => (
-                <option key={k} value={k}>
-                  {k}
-                </option>
-              ))}
-            </select>
-            <select className="select" value={sort} onChange={(e) => setSort(e.target.value)} aria-label="Sort by">
-              {SORT_KEYS.map((k) => (
-                <option key={k} value={k}>
-                  {k}
-                </option>
-              ))}
-            </select>
-          </div>
-        </div>
-      </div>
-
-      <main>
-        {rows.length ? (
-          <div className="list">
-            {rows.map((l, i) => (
-              <Card key={l.listingKey} l={l} rank={seg.scope === "active" ? i + 1 : undefined} office={office} />
-            ))}
-          </div>
-        ) : (
-          <div className="empty">No listings in “{tab}”{q ? ` matching “${q}”` : ""}.</div>
-        )}
-      </main>
-
-      <footer>
-        Showing {rows.length} of {data.stats.total} · read-only mirror of <code>housing-trackers/</code>
-      </footer>
+      <input type="range" min={0} max={100} step={5} value={value} onChange={(e) => onChange(+e.target.value)} style={{ width: "100%" }} />
     </div>
   );
 }
 
-function Stat({ label, value }: { label: string; value: number }) {
+export default function App() {
+  const [mode, setMode] = useState<"solo" | "group">(DEFAULT_MODE);
+  const [pref, setPref] = useState("fastest");
+  const [soloCompany, setSoloCompany] = useState("HackerRank");
+  const [soloAddress, setSoloAddress] = useState("Santa Clara, CA");
+  const [people, setPeople] = useState<Person[]>([
+    { id: 1, name: "You", company: "HackerRank", address: "Santa Clara, CA" },
+    { id: 2, name: "Sam", company: "Google", address: "San Francisco, CA" },
+  ]);
+  const [nextId, setNextId] = useState(3);
+  const [weights, setWeights] = useState({ commute: 60, price: 30, flex: 10 });
+  const [q, setQ] = useState("");
+  const [beds, setBeds] = useState("Any");
+  const [market, setMarket] = useState("All areas");
+  const [source, setSource] = useState("All sources");
+  const [region, setRegion] = useState("All");
+  const [segment, setSegment] = useState("All");
+  const [sort, setSort] = useState("Best fit");
+  const [maxPrice, setMaxPrice] = useState(6000);
+
+  const isSolo = mode === "solo";
+  const dense = DENSITY === "compact";
+  const pad = dense ? "12px 15px" : "16px 17px";
+
+  const setW = (k: "commute" | "price" | "flex", v: number) => setWeights((s) => ({ ...s, [k]: v }));
+  const setPerson = (id: number, field: keyof Person, value: string) =>
+    setPeople((s) => s.map((p) => (p.id === id ? { ...p, [field]: value } : p)));
+  const removePerson = (id: number) => setPeople((s) => s.filter((p) => p.id !== id));
+  const addPerson = () =>
+    setPeople((s) => {
+      if (s.length >= 6) return s;
+      setNextId((n) => n + 1);
+      return [...s, { id: nextId, name: "Person " + (s.length + 1), company: "", address: "" }];
+    });
+
+  const active = useMemo(() => data.listings.filter((l) => l.status === "Active"), []);
+  const newest = useMemo(() => active.reduce((m, l) => (l.firstSeen > m ? l.firstSeen : m), ""), [active]);
+  const sourceOptions = useMemo(() => ["All sources", ...Array.from(new Set(active.map((l) => l.source)))], [active]);
+  const marketOptions = useMemo(() => ["All areas", ...(data.marketOrder || [])], []);
+
+  const rows = useMemo(() => {
+    const pool =
+      segment === "To verify"
+        ? data.listings.filter((l) => l.status === "Needs Verification")
+        : segment === "Expired"
+        ? data.listings.filter((l) => !["Active", "Needs Verification"].includes(l.status))
+        : active;
+
+    const sum = weights.commute + weights.price + weights.flex || 1;
+    const wc = weights.commute / sum, wp = weights.price / sum, wf = weights.flex / sum;
+    const roster = isSolo ? [{ name: "You", company: soloCompany, address: soloAddress }] : people;
+
+    const list = pool
+      .filter((l) => segPass(l, segment, newest))
+      .filter((l) => bedsPass(l, beds))
+      .filter((l) => market === "All areas" || l.market === market)
+      .filter((l) => source === "All sources" || l.source === source)
+      .filter((l) => regionPass(l, region))
+      .filter((l) => {
+        const p = l.allIn ?? l.rent;
+        return p == null || p <= maxPrice;
+      })
+      .filter((l) => matchQ(l, q))
+      .map((l) => {
+        const per = roster.map((person) => {
+          const g = geocode((person.company || "") + " " + (person.address || ""));
+          const cm = estimate(l, g, pref);
+          const dest = [person.company, g.c].filter(Boolean).join(" · ") || "their office";
+          return { name: person.name || "—", t: cm.t, mode: cm.mode, dest };
+        });
+        const times = per.map((x) => x.t).filter((x): x is number => x != null);
+        const avg = times.length ? times.reduce((a, b) => a + b, 0) / times.length : null;
+        const max = times.length ? Math.max(...times) : null;
+        const cScore = avg == null ? 0 : clamp((100 * (85 - avg)) / 70, 0, 100);
+        const price = l.allIn ?? l.rent;
+        const pScore = price == null ? 50 : clamp((100 * (4000 - price)) / 3300, 0, 100);
+        const fScore = isFlex(l.lease) ? 100 : 50;
+        const segC = wc * cScore, segP = wp * pScore, segF = wf * fScore;
+        const fit = Math.round(segC + segP + segF);
+        const tier = fit >= 70 ? "hi" : fit >= 52 ? "mid" : "lo";
+
+        const routes = per.map((x) => {
+          const isWorst = x.t != null && x.t === max && times.length > 1;
+          return {
+            name: x.name, dest: x.dest,
+            timeLabel: x.t == null ? "n/a" : "~" + x.t + "m",
+            timeColor: isWorst ? "#b4502f" : "#1c1a17",
+            method: x.t == null ? "no route data" : x.mode === "drive" ? "drive" : transitMethod(l.market),
+          };
+        });
+
+        const specBits: string[] = [];
+        if (l.bedsNum != null) specBits.push(l.bedsNum === 0 ? "studio" : l.bedsNum + " bd");
+        else if (l.beds) specBits.push(l.beds);
+        if (l.baths) specBits.push(l.baths + " ba");
+
+        const routesTitle =
+          roster.length > 1
+            ? "How everyone gets to work" + (avg == null ? "" : ` · ${Math.round(avg)}m avg, ${Math.round(max!)}m worst`)
+            : "How you get there";
+
+        return {
+          id: l.listingKey, title: l.title || "(untitled)", url: l.url || "#",
+          sub: [l.neighborhood || l.city, l.market, l.source].filter(Boolean).join(" · "),
+          isNew: l.status === "Active" && !!newest && l.firstSeen === newest,
+          priceLabel: money(price) + (price ? "/mo" : ""),
+          leaseLabel: l.lease || "lease n/a",
+          specLabel: specBits.join(" · "), hasSpec: specBits.length > 0,
+          status: l.status, routes, routesTitle,
+          fit, segC, segP, segF,
+          fitFg: tier === "hi" ? "var(--accent)" : tier === "mid" ? "#b07d1a" : "#9a9384",
+          _avg: avg == null ? 1e9 : avg, _price: price == null ? 1e9 : price, _first: l.firstSeen || "", _score: fit,
+        };
+      });
+
+    const SB: Record<string, (a: typeof list[number], b: typeof list[number]) => number> = {
+      "Best fit": (a, b) => b._score - a._score || a._avg - b._avg,
+      Cheapest: (a, b) => a._price - b._price || b._score - a._score,
+      "Shortest commute": (a, b) => a._avg - b._avg || b._score - a._score,
+      Newest: (a, b) => (b._first || "").localeCompare(a._first || "") || b._score - a._score,
+    };
+    list.sort(SB[sort] || SB["Best fit"]);
+    return list;
+  }, [active, newest, isSolo, soloCompany, soloAddress, people, weights, q, beds, market, source, region, segment, sort, maxPrice, pref]);
+
+  const prefBtn = (k: string): CSSProperties => {
+    const on = pref === k;
+    return {
+      flex: 1, cursor: "pointer", padding: "7px 4px", borderRadius: 8, fontSize: 12, fontWeight: 600,
+      border: `1px solid ${on ? "var(--accent)" : "#e0dacd"}`, background: on ? "var(--accent)" : "#fffdf8", color: on ? "#fffdf8" : "#6f6a61",
+    };
+  };
+  const chip = (on: boolean, dark = true): CSSProperties => ({
+    cursor: "pointer", padding: "7px 14px", borderRadius: 999, fontSize: 13, fontWeight: 600,
+    border: `1px solid ${on ? (dark ? "#1c1a17" : "var(--accent)") : "#e0dacd"}`,
+    background: on ? (dark ? "#1c1a17" : "color-mix(in srgb, var(--accent) 12%, #fff)") : "#fffdf8",
+    color: on ? (dark ? "#fffdf8" : "var(--accent)") : "#6f6a61",
+  });
+
+  const counts = useMemo(() => {
+    const needs = data.listings.filter((l) => l.status === "Needs Verification").length;
+    const expired = data.listings.filter((l) => !["Active", "Needs Verification"].includes(l.status)).length;
+    return { needs, expired };
+  }, []);
+
+  const viewLabel = segment === "All" ? "All listings" : segment;
+  const updated = data.generatedAt
+    ? new Date(data.generatedAt).toLocaleDateString(undefined, { month: "short", day: "numeric" })
+    : "–";
+
   return (
-    <div className="stat">
-      <div className="v">{value}</div>
-      <div className="l">{label}</div>
+    <div style={{ ["--accent" as any]: ACCENT, minHeight: "100vh", display: "flex", flexDirection: "column" } as CSSProperties}>
+      {/* header */}
+      <header
+        style={{
+          display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: 24,
+          padding: "20px 28px 18px", background: "#fffdf8", borderBottom: "1px solid #e6e1d6", flexWrap: "wrap",
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 14 }}>
+          <div style={{ width: 38, height: 38, borderRadius: 11, background: "var(--accent)", display: "flex", alignItems: "center", justifyContent: "center", flex: "0 0 auto", marginTop: 2 }}>
+            <div style={{ width: 13, height: 13, border: "2.5px solid #fffdf8", borderRadius: 3 }} />
+          </div>
+          <div>
+            <h1 style={{ margin: 0, fontFamily: "'Space Grotesk',sans-serif", fontSize: 23, fontWeight: 700, letterSpacing: "-0.4px", lineHeight: 1 }}>
+              Bay Area Housing Hunt
+            </h1>
+            <p style={{ margin: "6px 0 0", fontSize: 13, color: "#6f6a61" }}>Scraped listings, ranked by who has to commute · updated {updated}</p>
+          </div>
+        </div>
+        <div style={{ display: "flex", gap: 22 }}>
+          <Stat value={data.stats.active} label="Active" />
+          <Stat value={data.stats.markets} label="Markets" />
+        </div>
+      </header>
+
+      <div className="hh-grid" style={{ display: "grid", gridTemplateColumns: "344px minmax(0,1fr)", flex: 1, alignItems: "start" }}>
+        {/* SIDEBAR */}
+        <aside className="hh-aside" style={{ position: "sticky", top: 0, height: "100vh", overflowY: "auto", background: "#fffdf8", borderRight: "1px solid #e6e1d6", padding: "20px 20px 40px" }}>
+          {/* mode toggle */}
+          <div style={{ display: "flex", background: "#efeadf", borderRadius: 11, padding: 4, marginBottom: 20 }}>
+            {(["solo", "group"] as const).map((m) => {
+              const on = mode === m;
+              return (
+                <button
+                  key={m}
+                  onClick={() => setMode(m)}
+                  style={{
+                    flex: 1, border: "none", cursor: "pointer", padding: "9px 10px", borderRadius: 8, fontSize: 13.5,
+                    fontWeight: 600, fontFamily: "'Space Grotesk',sans-serif",
+                    background: on ? "#fffdf8" : "transparent", color: on ? "#1c1a17" : "#8a8378",
+                    boxShadow: on ? "0 1px 3px rgba(28,26,23,0.12)" : "none",
+                  }}
+                >
+                  {m === "solo" ? "Just me" : "A group"}
+                </button>
+              );
+            })}
+          </div>
+
+          <div style={{ ...sectionLabel, marginBottom: 10 }}>Who's commuting</div>
+
+          {isSolo ? (
+            <div style={{ marginBottom: 8, display: "flex", flexDirection: "column", gap: 7 }}>
+              <div style={{ fontSize: 12.5, color: "#6f6a61" }}>Where do you work? Commute is scored to here.</div>
+              <input
+                value={soloCompany}
+                onChange={(e) => setSoloCompany(e.target.value)}
+                placeholder="Company name"
+                style={{ width: "100%", border: "1.5px solid var(--accent)", background: "color-mix(in srgb, var(--accent) 8%, #fff)", borderRadius: 10, padding: "10px 12px", fontSize: 13.5, fontWeight: 600, color: "#1c1a17", outline: "none" }}
+              />
+              <input value={soloAddress} onChange={(e) => setSoloAddress(e.target.value)} placeholder="Work address or city" style={fieldStyle} />
+              <div style={{ fontSize: 11.5, fontWeight: 600, color: resolvedText(soloCompany, soloAddress).color }}>{resolvedText(soloCompany, soloAddress).text}</div>
+            </div>
+          ) : (
+            <div style={{ display: "flex", flexDirection: "column", gap: 9, marginBottom: 10 }}>
+              {people.map((p) => {
+                const rt = resolvedText(p.company, p.address);
+                return (
+                  <div key={p.id} style={{ border: "1px solid #e6e1d6", borderRadius: 12, padding: "10px 11px", background: "#fdfbf6" }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
+                      <div style={{ width: 7, height: 7, borderRadius: "50%", background: "var(--accent)", flex: "0 0 auto" }} />
+                      <input value={p.name} onChange={(e) => setPerson(p.id, "name", e.target.value)} placeholder="Name" style={{ flex: 1, minWidth: 0, border: "none", background: "transparent", fontSize: 14, fontWeight: 600, color: "#1c1a17", outline: "none", padding: 0 }} />
+                      {people.length > 1 && (
+                        <button onClick={() => removePerson(p.id)} style={{ border: "none", background: "transparent", cursor: "pointer", color: "#b0a99c", fontSize: 17, lineHeight: 1, padding: "0 2px" }}>×</button>
+                      )}
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                      <input value={p.company} onChange={(e) => setPerson(p.id, "company", e.target.value)} placeholder="Company name" style={{ ...fieldStyle, borderRadius: 8, padding: "7px 9px", fontSize: 12.5, fontWeight: 600 }} />
+                      <input value={p.address} onChange={(e) => setPerson(p.id, "address", e.target.value)} placeholder="Work address or city" style={{ ...fieldStyle, borderRadius: 8, padding: "7px 9px", fontSize: 12 }} />
+                      <div style={{ fontSize: 11, fontWeight: 600, color: rt.color }}>{rt.text}</div>
+                    </div>
+                  </div>
+                );
+              })}
+              {people.length < 6 && (
+                <button onClick={addPerson} style={{ border: "1.5px dashed #d4cdbf", background: "transparent", cursor: "pointer", padding: 10, borderRadius: 11, fontSize: 13, fontWeight: 600, color: "#6f6a61" }}>
+                  + Add a person
+                </button>
+              )}
+            </div>
+          )}
+
+          {/* pref mode */}
+          <div style={{ display: "flex", gap: 6, margin: "14px 0 22px" }}>
+            <button onClick={() => setPref("fastest")} style={prefBtn("fastest")}>Fastest</button>
+            <button onClick={() => setPref("transit")} style={prefBtn("transit")}>Transit</button>
+            <button onClick={() => setPref("drive")} style={prefBtn("drive")}>Drive</button>
+          </div>
+
+          {/* weights */}
+          <div style={{ ...sectionLabel, marginBottom: 14 }}>What matters most</div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: 24 }}>
+            <Weight label="Short commute" value={weights.commute} onChange={(v) => setW("commute", v)} />
+            <Weight label="Low price" value={weights.price} onChange={(v) => setW("price", v)} />
+            <Weight label="Flexible lease" value={weights.flex} onChange={(v) => setW("flex", v)} />
+          </div>
+
+          {/* filters */}
+          <div style={{ ...sectionLabel, marginBottom: 12 }}>Narrow it down</div>
+          <div style={{ display: "flex", gap: 6, marginBottom: 11, flexWrap: "wrap" }}>
+            {["All", "SF", "Peninsula", "South Bay"].map((name) => (
+              <button key={name} onClick={() => setRegion(name)} style={{ ...chip(region === name, false), padding: "6px 13px", fontSize: 12.5 }}>{name}</button>
+            ))}
+          </div>
+          <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search title, neighborhood…" style={{ ...fieldStyle, padding: "10px 12px", fontSize: 13.5, marginBottom: 10 }} />
+          <div style={{ display: "flex", gap: 8, marginBottom: 10 }}>
+            <select value={beds} onChange={(e) => setBeds(e.target.value)} style={selectStyle}>
+              {BEDS_OPTIONS.map((o) => <option key={o} value={o}>{o}</option>)}
+            </select>
+            <select value={market} onChange={(e) => setMarket(e.target.value)} style={selectStyle}>
+              {marketOptions.map((o) => <option key={o} value={o}>{o}</option>)}
+            </select>
+          </div>
+          <select value={source} onChange={(e) => setSource(e.target.value)} style={{ ...selectStyle, width: "100%", marginBottom: 10 }}>
+            {sourceOptions.map((o) => <option key={o} value={o}>{o}</option>)}
+          </select>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 6 }}>
+            <span style={{ fontSize: 13, fontWeight: 600 }}>Max all-in</span>
+            <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, fontWeight: 600, color: "#6f6a61" }}>{maxPrice >= 6000 ? "Any" : "$" + maxPrice.toLocaleString()}</span>
+          </div>
+          <input type="range" min={500} max={6000} step={100} value={maxPrice} onChange={(e) => setMaxPrice(+e.target.value)} style={{ width: "100%" }} />
+        </aside>
+
+        {/* MAIN */}
+        <main style={{ padding: "20px 26px 60px" }}>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 14, marginBottom: 18, flexWrap: "wrap" }}>
+            <div style={{ display: "flex", gap: 7, flexWrap: "wrap" }}>
+              {SEG_NAMES.map((name) => {
+                const c = name === "To verify" ? counts.needs : name === "Expired" ? counts.expired : null;
+                return (
+                  <button key={name} onClick={() => setSegment(name)} style={chip(segment === name)}>
+                    {name}{c != null ? ` ${c}` : ""}
+                  </button>
+                );
+              })}
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+              <span style={{ fontSize: 12, color: "#8a8378", fontWeight: 600 }}>Sort</span>
+              <select value={sort} onChange={(e) => setSort(e.target.value)} style={{ border: "1px solid #e0dacd", background: "#fffdf8", borderRadius: 9, padding: "7px 10px", fontSize: 13, fontWeight: 600, color: "#1c1a17", cursor: "pointer", outline: "none" }}>
+                {SORT_OPTIONS.map((o) => <option key={o} value={o}>{o}</option>)}
+              </select>
+            </div>
+          </div>
+
+          <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 14 }}>
+            <span style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 15, fontWeight: 600 }}>{viewLabel}</span>
+            <span style={{ fontSize: 13, color: "#8a8378" }}>{rows.length} homes · ranked by best fit</span>
+          </div>
+
+          {rows.length === 0 ? (
+            <div style={{ textAlign: "center", color: "#8a8378", padding: "54px 20px", border: "1px dashed #d8d1c3", borderRadius: 15, background: "#fffdf8" }}>
+              No homes match these filters. Try widening the price or area.
+            </div>
+          ) : (
+            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+              {rows.map((r, i) => (
+                <article key={r.id} style={{ display: "grid", gridTemplateColumns: "34px 1fr auto", gap: 14, alignItems: "start", background: "#fffdf8", border: "1px solid #e6e1d6", borderRadius: 15, padding: pad, boxShadow: "0 1px 2px rgba(28,26,23,0.03)" }}>
+                  <div style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 15, fontWeight: 700, color: "#b8b1a2", textAlign: "center", fontVariantNumeric: "tabular-nums", paddingTop: 2 }}>{i + 1}</div>
+
+                  <div style={{ minWidth: 0 }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+                      <a href={r.url} target="_blank" rel="noreferrer" style={{ fontSize: 15, fontWeight: 650, color: "#1c1a17", textDecoration: "none", lineHeight: 1.3 }}>{r.title}</a>
+                      {r.isNew && <span style={{ fontSize: 9.5, fontWeight: 800, letterSpacing: "0.06em", color: "var(--accent)", background: "color-mix(in srgb, var(--accent) 14%, #fff)", padding: "2px 6px", borderRadius: 5 }}>NEW</span>}
+                      {r.status !== "Active" && <span style={{ fontSize: 9.5, fontWeight: 800, letterSpacing: "0.06em", color: "#b4502f", background: "#f8ece6", padding: "2px 6px", borderRadius: 5 }}>{r.status.toUpperCase()}</span>}
+                    </div>
+                    <div style={{ fontSize: 12.5, color: "#8a8378", marginTop: 3 }}>{r.sub}</div>
+
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginTop: 10 }}>
+                      <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, fontWeight: 600, padding: "4px 9px", borderRadius: 7, background: "color-mix(in srgb, var(--accent) 11%, #fff)", color: "var(--accent)" }}>{r.priceLabel}</span>
+                      <span style={{ fontSize: 12, fontWeight: 600, padding: "4px 9px", borderRadius: 7, background: "#efece6", color: "#5a554c" }}>{r.leaseLabel}</span>
+                      {r.hasSpec && <span style={{ fontSize: 12, fontWeight: 600, padding: "4px 9px", borderRadius: 7, background: "#efece6", color: "#5a554c" }}>{r.specLabel}</span>}
+                    </div>
+
+                    <div style={{ marginTop: 10, paddingTop: 9, borderTop: "1px solid #f0ece3" }}>
+                      <div style={{ fontSize: 10.5, textTransform: "uppercase", letterSpacing: "0.06em", color: "#b0a99c", fontWeight: 700, marginBottom: 5 }}>{r.routesTitle}</div>
+                      <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                        {r.routes.map((rt, j) => (
+                          <div key={j} style={{ display: "flex", alignItems: "baseline", gap: 7, fontSize: 12.5, flexWrap: "wrap" }}>
+                            <span style={{ fontWeight: 700, color: "#1c1a17" }}>{rt.name}</span>
+                            <span style={{ color: "#c2bbac" }}>→</span>
+                            <span style={{ color: "#6f6a61" }}>{rt.dest}</span>
+                            <span style={{ color: "#d8d1c3" }}>·</span>
+                            <span style={{ fontFamily: "'JetBrains Mono',monospace", fontWeight: 600, color: rt.timeColor }}>{rt.timeLabel}</span>
+                            <span style={{ color: "#8a8378" }}>{rt.method}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* fit */}
+                  <div style={{ textAlign: "right", minWidth: 104, display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 7 }}>
+                    <div style={{ display: "flex", alignItems: "baseline", gap: 5 }}>
+                      <span style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 26, fontWeight: 700, lineHeight: 1, fontVariantNumeric: "tabular-nums", color: r.fitFg }}>{r.fit}</span>
+                      <span style={{ fontSize: 10, textTransform: "uppercase", letterSpacing: "0.06em", color: "#b0a99c", fontWeight: 700 }}>fit</span>
+                    </div>
+                    <div style={{ width: 104, height: 7, borderRadius: 5, background: "#ece8df", overflow: "hidden", display: "flex" }}>
+                      <span style={{ height: "100%", width: `${r.segC}%`, background: "var(--accent)" }} />
+                      <span style={{ height: "100%", width: `${r.segP}%`, background: "#8aa1b8" }} />
+                      <span style={{ height: "100%", width: `${r.segF}%`, background: "#cbb588" }} />
+                    </div>
+                    <div style={{ fontSize: 10, color: "#b0a99c", lineHeight: 1.4, textAlign: "right" }}>commute · price · lease</div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          )}
+        </main>
+      </div>
+    </div>
+  );
+}
+
+function Stat({ value, label }: { value: number; label: string }) {
+  return (
+    <div style={{ textAlign: "right" }}>
+      <div style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 22, fontWeight: 700, lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>{value}</div>
+      <div style={{ fontSize: 10.5, textTransform: "uppercase", letterSpacing: "0.07em", color: "#8a8378", fontWeight: 600, marginTop: 4 }}>{label}</div>
     </div>
   );
 }
