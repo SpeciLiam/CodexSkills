@@ -56,14 +56,14 @@ def load_household() -> list:
     try:
         cfg = json.loads(HOUSEHOLD_FILE.read_text(encoding="utf-8"))
         people = [
-            {"name": p.get("name", ""), "company": p.get("company", ""), "address": p.get("address", "")}
+            {"name": p.get("name", ""), "company": p.get("company", ""), "address": p.get("address", ""), "arrival": p.get("arrival", "09:00")}
             for p in cfg.get("people", []) if isinstance(p, dict)
         ]
         if people:
             return people
     except (OSError, json.JSONDecodeError, TypeError):
         pass
-    return [{"name": "You", "company": "HackerRank", "address": "Santa Clara, CA"}]
+    return [{"name": "You", "company": "HackerRank", "address": "Santa Clara, CA", "arrival": "09:00"}]
 
 
 def office_commutes(market: str) -> dict:

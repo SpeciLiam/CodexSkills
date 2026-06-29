@@ -19,7 +19,7 @@ const loadPrefs = (): Record<string, any> => {
 const loadMarks = (): Record<string, string> => {
   try { return JSON.parse(localStorage.getItem(MARKS_KEY) || "{}"); } catch { return {}; }
 };
-const FALLBACK_PEOPLE: Person[] = [{ id: 1, name: "You", company: "HackerRank", address: "Santa Clara, CA" }];
+const FALLBACK_PEOPLE: Person[] = [{ id: 1, name: "You", company: "HackerRank", address: "Santa Clara, CA", arrival: "09:00" }];
 
 const SF_KEY = "Google (San Francisco)";
 const SC_KEY = "HackerRank (Santa Clara)";
@@ -49,9 +49,9 @@ type Data = {
   stats: { active: number; markets: number };
   marketOrder: string[];
   listings: Listing[];
-  defaultPeople?: { name: string; company: string; address: string }[];
+  defaultPeople?: { name: string; company: string; address: string; arrival?: string }[];
 };
-type Person = { id: number; name: string; company: string; address: string };
+type Person = { id: number; name: string; company: string; address: string; arrival: string };
 
 const data = rawData as unknown as Data;
 
@@ -59,7 +59,7 @@ const data = rawData as unknown as Data;
 // people list (the visitor's own edits, saved below, take precedence).
 const houseDefault: Person[] =
   data.defaultPeople && data.defaultPeople.length
-    ? data.defaultPeople.map((p, i) => ({ id: i + 1, name: p.name || "Person " + (i + 1), company: p.company || "", address: p.address || "" }))
+    ? data.defaultPeople.map((p, i) => ({ id: i + 1, name: p.name || "Person " + (i + 1), company: p.company || "", address: p.address || "", arrival: p.arrival || "09:00" }))
     : FALLBACK_PEOPLE;
 
 const clamp = (n: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, n));
@@ -207,7 +207,9 @@ export default function App() {
   const [saved] = useState(loadPrefs);
   const [pref, setPref] = useState<string>(saved.pref ?? "fastest");
   const [people, setPeople] = useState<Person[]>(
-    Array.isArray(saved.people) && saved.people.length ? saved.people : houseDefault
+    Array.isArray(saved.people) && saved.people.length
+      ? saved.people.map((p: Person) => ({ ...p, arrival: p.arrival || "09:00" })) // backfill older saved prefs
+      : houseDefault
   );
   const [weights, setWeights] = useState<{ commute: number; price: number; flex: number }>(saved.weights ?? { commute: 60, price: 30, flex: 10 });
   const [q, setQ] = useState("");
@@ -293,7 +295,7 @@ export default function App() {
   const addPerson = () =>
     setPeople((s) => {
       const id = s.reduce((m, p) => Math.max(m, p.id), 0) + 1;
-      return [...s, { id, name: "Roommate " + (s.length + 1), company: "", address: "" }];
+      return [...s, { id, name: "Roommate " + (s.length + 1), company: "", address: "", arrival: "09:00" }];
     });
 
   const active = useMemo(() => data.listings.filter((l) => l.status === "Active"), []);
@@ -472,6 +474,11 @@ export default function App() {
                   <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
                     <input value={p.company} onChange={(e) => setPerson(p.id, "company", e.target.value)} placeholder="Company name" style={{ ...fieldStyle, borderRadius: 8, padding: "7px 9px", fontSize: 12.5, fontWeight: 600 }} />
                     <input value={p.address} onChange={(e) => setPerson(p.id, "address", e.target.value)} placeholder="Work address or city" style={{ ...fieldStyle, borderRadius: 8, padding: "7px 9px", fontSize: 12 }} />
+                    <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                      <span style={{ fontSize: 11, color: "#8a8378", fontWeight: 600 }}>Arrive by</span>
+                      <input type="time" value={p.arrival} onChange={(e) => setPerson(p.id, "arrival", e.target.value)} style={{ border: "1px solid #e0dacd", background: "#fdfbf6", borderRadius: 8, padding: "4px 7px", fontSize: 12, fontWeight: 600, color: "#1c1a17", outline: "none", fontFamily: "'JetBrains Mono',monospace" }} />
+                      <span style={{ fontSize: 10.5, color: "#b0a99c" }}>Mon/Wed/Thu</span>
+                    </div>
                     <div style={{ fontSize: 11, fontWeight: 600, color: rt.color }}>{rt.text}</div>
                   </div>
                 </div>
