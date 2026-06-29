@@ -9,12 +9,16 @@ import rawData from "./data/housing-data.json";
 const ACCENT = "#245ea8"; // deep blue
 const DENSITY: "comfortable" | "compact" = "comfortable";
 
-// Remember the visitor's last selections in their browser.
+// Remember the visitor's last selections + per-listing marks in their browser.
 const STORE_KEY = "hh-prefs-v1";
+const MARKS_KEY = "hh-marks-v1"; // listingKey -> "checked" | "promising" | "skip"
 const loadPrefs = (): Record<string, any> => {
   try { return JSON.parse(localStorage.getItem(STORE_KEY) || "{}"); } catch { return {}; }
 };
-const DEFAULT_PEOPLE: Person[] = [{ id: 1, name: "You", company: "HackerRank", address: "Santa Clara, CA" }];
+const loadMarks = (): Record<string, string> => {
+  try { return JSON.parse(localStorage.getItem(MARKS_KEY) || "{}"); } catch { return {}; }
+};
+const FALLBACK_PEOPLE: Person[] = [{ id: 1, name: "You", company: "HackerRank", address: "Santa Clara, CA" }];
 
 const SF_KEY = "Google (San Francisco)";
 const SC_KEY = "HackerRank (Santa Clara)";
@@ -44,10 +48,18 @@ type Data = {
   stats: { active: number; markets: number };
   marketOrder: string[];
   listings: Listing[];
+  defaultPeople?: { name: string; company: string; address: string }[];
 };
 type Person = { id: number; name: string; company: string; address: string };
 
 const data = rawData as unknown as Data;
+
+// Shared roommate config: the scrape's household.json seeds the dashboard's default
+// people list (the visitor's own edits, saved below, take precedence).
+const houseDefault: Person[] =
+  data.defaultPeople && data.defaultPeople.length
+    ? data.defaultPeople.map((p, i) => ({ id: i + 1, name: p.name || "Person " + (i + 1), company: p.company || "", address: p.address || "" }))
+    : FALLBACK_PEOPLE;
 
 const clamp = (n: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, n));
 const money = (n: number | null) => (n ? "$" + n.toLocaleString() : "no price");
@@ -141,7 +153,28 @@ const matchQ = (l: Listing, q: string) =>
 
 const SEG_NAMES = ["All", "New today", "Subleases", "Rooms", "Apartments", "To verify", "Expired"];
 const SORT_OPTIONS = ["Best fit", "Cheapest", "Shortest commute", "Newest"];
-const BEDS_OPTIONS = ["Any", "Studio", "1+ bd", "2+ bd", "3+ bd"];
+const BEDS_OPTIONS = ["Any", "Studio", "1+ bd", "2+ bd", "3+ bd", "4+ bd"];
+
+// per-listing marks
+const MARK_FILTERS = [
+  { key: "active", label: "Active", tone: "#1c1a17" },
+  { key: "promising", label: "★ Promising", tone: "var(--accent)" },
+  { key: "checked", label: "✓ Checked out", tone: "#5a8f6a" },
+  { key: "skip", label: "✕ Passed", tone: "#b4502f" },
+  { key: "all", label: "All", tone: "#8a8378" },
+];
+const markChip = (on: boolean, tone: string): CSSProperties => ({
+  cursor: "pointer", padding: "5px 11px", borderRadius: 999, fontSize: 12, fontWeight: 600,
+  border: `1px solid ${on ? tone : "#e0dacd"}`,
+  background: on ? `color-mix(in srgb, ${tone} 12%, #fff)` : "#fffdf8",
+  color: on ? tone : "#8a8378",
+});
+const markBtn = (on: boolean, tone: string): CSSProperties => ({
+  cursor: "pointer", padding: "4px 9px", borderRadius: 7, fontSize: 11.5, fontWeight: 600,
+  border: `1px solid ${on ? tone : "#e6e1d6"}`,
+  background: on ? `color-mix(in srgb, ${tone} 13%, #fff)` : "transparent",
+  color: on ? tone : "#8a8378",
+});
 
 // shared inline style fragments
 const sectionLabel: CSSProperties = {
@@ -173,7 +206,7 @@ export default function App() {
   const [saved] = useState(loadPrefs);
   const [pref, setPref] = useState<string>(saved.pref ?? "fastest");
   const [people, setPeople] = useState<Person[]>(
-    Array.isArray(saved.people) && saved.people.length ? saved.people : DEFAULT_PEOPLE
+    Array.isArray(saved.people) && saved.people.length ? saved.people : houseDefault
   );
   const [weights, setWeights] = useState<{ commute: number; price: number; flex: number }>(saved.weights ?? { commute: 60, price: 30, flex: 10 });
   const [q, setQ] = useState("");
@@ -183,17 +216,44 @@ export default function App() {
   const [region, setRegion] = useState<string>(saved.region ?? "All");
   const [segment, setSegment] = useState<string>(saved.segment ?? "All");
   const [sort, setSort] = useState<string>(saved.sort ?? "Best fit");
-  const [maxPrice, setMaxPrice] = useState<number>(saved.maxPrice ?? 6000);
+  const [maxPrice, setMaxPrice] = useState<number>(saved.maxPrice ?? 3000);
+  const [budgetCustom, setBudgetCustom] = useState<boolean>(saved.budgetCustom ?? false);
+  const [markFilter, setMarkFilter] = useState<string>(saved.markFilter ?? "active");
+  const [marks, setMarks] = useState<Record<string, string>>(loadMarks);
 
   const dense = DENSITY === "compact";
   const pad = dense ? "12px 15px" : "16px 17px";
 
+  // Budget: rule of thumb is $3k per tenant; the visitor can override (custom) and that sticks.
+  const tenants = people.length;
+  const ruleOfThumb = 3000 * tenants;
+  const budgetSliderMax = Math.max(8000, ruleOfThumb + 3000);
+  const budget = budgetCustom ? Math.min(maxPrice, budgetSliderMax) : ruleOfThumb;
+  const budgetIsAny = budget >= budgetSliderMax;
+
   // persist last selections (browser-local)
   useEffect(() => {
     try {
-      localStorage.setItem(STORE_KEY, JSON.stringify({ pref, people, weights, beds, market, source, region, segment, sort, maxPrice }));
+      localStorage.setItem(STORE_KEY, JSON.stringify({ pref, people, weights, beds, market, source, region, segment, sort, maxPrice, budgetCustom, markFilter }));
     } catch { /* storage unavailable — ignore */ }
-  }, [pref, people, weights, beds, market, source, region, segment, sort, maxPrice]);
+  }, [pref, people, weights, beds, market, source, region, segment, sort, maxPrice, budgetCustom, markFilter]);
+  useEffect(() => {
+    try { localStorage.setItem(MARKS_KEY, JSON.stringify(marks)); } catch { /* ignore */ }
+  }, [marks]);
+
+  // toggle a per-listing mark; clicking the active mark clears it
+  const setMark = (key: string, val: string) =>
+    setMarks((m) => { const n = { ...m }; if (n[key] === val) delete n[key]; else n[key] = val; return n; });
+  // copy the current household so it can be pasted into household.json (drives the scrape)
+  const copyScrapeConfig = () => {
+    const cfg = JSON.stringify({ people: people.map((p) => ({ name: p.name, company: p.company, address: p.address })) }, null, 2);
+    try { navigator.clipboard.writeText(cfg); } catch { /* ignore */ }
+  };
+  const markCounts = useMemo(() => {
+    const c: Record<string, number> = { promising: 0, checked: 0, skip: 0 };
+    for (const k in marks) if (c[marks[k]] != null) c[marks[k]]++;
+    return c;
+  }, [marks]);
 
   const setW = (k: "commute" | "price" | "flex", v: number) => setWeights((s) => ({ ...s, [k]: v }));
   const setPerson = (id: number, field: keyof Person, value: string) =>
@@ -230,9 +290,15 @@ export default function App() {
       .filter((l) => regionPass(l, region))
       .filter((l) => {
         const p = l.allIn ?? l.rent;
-        return p == null || p <= maxPrice;
+        return p == null || budgetIsAny || p <= budget;
       })
       .filter((l) => matchQ(l, q))
+      .filter((l) => {
+        const mk = marks[l.listingKey];
+        if (markFilter === "all") return true;
+        if (markFilter === "active") return mk !== "skip"; // default: hide passed
+        return mk === markFilter; // promising | checked | skip
+      })
       .map((l) => {
         const per = roster.map((person) => {
           const g = geocode((person.company || "") + " " + (person.address || ""));
@@ -278,7 +344,7 @@ export default function App() {
           priceLabel: money(price) + (price ? "/mo" : ""),
           leaseLabel: l.lease || "lease n/a",
           specLabel: specBits.join(" · "), hasSpec: specBits.length > 0,
-          status: l.status, routes, routesTitle,
+          status: l.status, routes, routesTitle, mark: marks[l.listingKey] || "",
           fit, segC, segP, segF,
           fitFg: tier === "hi" ? "var(--accent)" : tier === "mid" ? "#b07d1a" : "#9a9384",
           _avg: avg == null ? 1e9 : avg, _price: price == null ? 1e9 : price, _first: l.firstSeen || "", _score: fit,
@@ -293,7 +359,7 @@ export default function App() {
     };
     list.sort(SB[sort] || SB["Best fit"]);
     return list;
-  }, [active, newest, people, weights, q, beds, market, source, region, segment, sort, maxPrice, pref]);
+  }, [active, newest, people, weights, q, beds, market, source, region, segment, sort, budget, budgetIsAny, pref, marks, markFilter]);
 
   const prefBtn = (k: string): CSSProperties => {
     const on = pref === k;
@@ -383,6 +449,9 @@ export default function App() {
             <button onClick={addPerson} style={{ border: "1.5px dashed #d4cdbf", background: "transparent", cursor: "pointer", padding: 10, borderRadius: 11, fontSize: 13, fontWeight: 600, color: "#6f6a61" }}>
               + Add a roommate
             </button>
+            <button onClick={copyScrapeConfig} title="Copy this household as JSON to paste into scripts/household.json — that's what the scraper searches for" style={{ border: "none", background: "transparent", cursor: "pointer", padding: "2px 2px", fontSize: 11.5, fontWeight: 600, color: "var(--accent)", textAlign: "left" }}>
+              ⧉ Copy as scrape config
+            </button>
           </div>
 
           {/* pref mode */}
@@ -420,10 +489,18 @@ export default function App() {
             {sourceOptions.map((o) => <option key={o} value={o}>{o}</option>)}
           </select>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 6 }}>
-            <span style={{ fontSize: 13, fontWeight: 600 }}>Max all-in</span>
-            <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, fontWeight: 600, color: "#6f6a61" }}>{maxPrice >= 6000 ? "Any" : "$" + maxPrice.toLocaleString()}</span>
+            <span style={{ fontSize: 13, fontWeight: 600 }}>Budget — max all-in</span>
+            <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, fontWeight: 700, color: budgetCustom ? "var(--accent)" : "#6f6a61" }}>{budgetIsAny ? "Any" : "$" + budget.toLocaleString()}</span>
           </div>
-          <input type="range" min={500} max={6000} step={100} value={maxPrice} onChange={(e) => setMaxPrice(+e.target.value)} style={{ width: "100%" }} />
+          <input type="range" min={500} max={budgetSliderMax} step={100} value={Math.min(budget, budgetSliderMax)} onChange={(e) => { setMaxPrice(+e.target.value); setBudgetCustom(true); }} style={{ width: "100%" }} />
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 8, marginTop: 5 }}>
+            <span style={{ fontSize: 11, color: "#8a8378" }}>
+              Rule of thumb <strong style={{ color: "#6f6a61", fontWeight: 700 }}>$3k × {tenants}</strong> {tenants === 1 ? "tenant" : "tenants"} = ${ruleOfThumb.toLocaleString()}
+            </span>
+            {budgetCustom && (
+              <button onClick={() => setBudgetCustom(false)} style={{ border: "none", background: "transparent", cursor: "pointer", fontSize: 11, fontWeight: 600, color: "var(--accent)", padding: 0, whiteSpace: "nowrap" }}>↺ reset</button>
+            )}
+          </div>
         </aside>
 
         {/* MAIN */}
@@ -447,9 +524,18 @@ export default function App() {
             </div>
           </div>
 
-          <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 14 }}>
-            <span style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 15, fontWeight: 600 }}>{viewLabel}</span>
-            <span style={{ fontSize: 13, color: "#8a8378" }}>{rows.length} homes · ranked by best fit</span>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10, marginBottom: 14, flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
+              <span style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 15, fontWeight: 600 }}>{viewLabel}</span>
+              <span style={{ fontSize: 13, color: "#8a8378" }}>{rows.length} homes · ranked by best fit</span>
+            </div>
+            <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+              {MARK_FILTERS.map((mf) => (
+                <button key={mf.key} onClick={() => setMarkFilter(mf.key)} style={markChip(markFilter === mf.key, mf.tone)}>
+                  {mf.label}{(mf.key === "promising" || mf.key === "checked" || mf.key === "skip") ? ` ${markCounts[mf.key] || 0}` : ""}
+                </button>
+              ))}
+            </div>
           </div>
 
           {rows.length === 0 ? (
@@ -459,7 +545,7 @@ export default function App() {
           ) : (
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
               {rows.map((r, i) => (
-                <article key={r.id} style={{ display: "grid", gridTemplateColumns: "34px 1fr auto", gap: 14, alignItems: "start", background: "#fffdf8", border: "1px solid #e6e1d6", borderRadius: 15, padding: pad, boxShadow: "0 1px 2px rgba(28,26,23,0.03)" }}>
+                <article key={r.id} style={{ display: "grid", gridTemplateColumns: "34px 1fr auto", gap: 14, alignItems: "start", background: r.mark === "checked" ? "#fbf9f3" : "#fffdf8", border: r.mark === "promising" ? "1.5px solid var(--accent)" : "1px solid #e6e1d6", borderRadius: 15, padding: pad, boxShadow: "0 1px 2px rgba(28,26,23,0.03)", opacity: r.mark === "skip" ? 0.6 : 1 }}>
                   <div style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 15, fontWeight: 700, color: "#b8b1a2", textAlign: "center", fontVariantNumeric: "tabular-nums", paddingTop: 2 }}>{i + 1}</div>
 
                   <div style={{ minWidth: 0 }}>
@@ -490,6 +576,13 @@ export default function App() {
                           </div>
                         ))}
                       </div>
+                    </div>
+
+                    {/* mark this listing */}
+                    <div style={{ display: "flex", gap: 6, marginTop: 11, flexWrap: "wrap" }}>
+                      <button onClick={() => setMark(r.id, "checked")} style={markBtn(r.mark === "checked", "#5a8f6a")}>✓ Checked out</button>
+                      <button onClick={() => setMark(r.id, "promising")} style={markBtn(r.mark === "promising", "var(--accent)")}>★ Promising</button>
+                      <button onClick={() => setMark(r.id, "skip")} style={markBtn(r.mark === "skip", "#b4502f")}>✕ Not for me</button>
                     </div>
                   </div>
 

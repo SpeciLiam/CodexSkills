@@ -1,0 +1,6 @@
+{
+  "_comment": "Shared roommate/household config — the single source of truth for WHO is commuting. The dashboard seeds its default 'Who's commuting' list from this (export_housing_data.py embeds it as defaultPeople), and the scrape is sized for this household: 1 person -> rooms/studios/1bd, n people -> larger multi-bedroom homes (searches.json apartment searches run up to ~$6000 all-in so group-sized homes are captured). Supports 1..n people. The dashboard's '⧉ Copy as scrape config' button copies the visitor's current household here.",
+  "people": [
+    { "name": "You", "company": "HackerRank", "address": "Santa Clara, CA" }
+  ]
+}

@@ -47,6 +47,25 @@ GOOGLE_SF_COMMUTE = {
 }
 
 
+HOUSEHOLD_FILE = SCRIPT_DIR / "household.json"
+
+
+def load_household() -> list:
+    """The shared roommate config (scripts/household.json) — seeds the dashboard's
+    default 'Who's commuting' list. Falls back to a solo HackerRank default."""
+    try:
+        cfg = json.loads(HOUSEHOLD_FILE.read_text(encoding="utf-8"))
+        people = [
+            {"name": p.get("name", ""), "company": p.get("company", ""), "address": p.get("address", "")}
+            for p in cfg.get("people", []) if isinstance(p, dict)
+        ]
+        if people:
+            return people
+    except (OSError, json.JSONDecodeError, TypeError):
+        pass
+    return [{"name": "You", "company": "HackerRank", "address": "Santa Clara, CA"}]
+
+
 def office_commutes(market: str) -> dict:
     hr = hp.COMMUTE_DEFAULTS.get(market, hp.COMMUTE_DEFAULTS["Other Bay Area"])
     sf = GOOGLE_SF_COMMUTE.get(market, GOOGLE_SF_COMMUTE["Other Bay Area"])
@@ -132,6 +151,7 @@ def export() -> dict:
         },
         "marketOrder": [m for m in hp.MARKET_ORDER if m in markets],
         "offices": OFFICES,
+        "defaultPeople": load_household(),
         "listings": listings,
     }
 
