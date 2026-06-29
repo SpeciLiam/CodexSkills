@@ -128,6 +128,29 @@ function resolvedText(company: string, address: string): { text: string; color: 
   return { text: "≈ couldn't place — estimating mid-Peninsula", color: "#b07d1a" };
 }
 
+// ── Optimal-departure (live Google Routes via /api/commute) ──────────────────
+const OFFICE_DAYS = [1, 3, 4]; // Mon, Wed, Thu (RTO). Computed in the browser (Pacific).
+function nextOfficeArrivalISO(hhmm: string): string {
+  const [h, m] = (hhmm || "09:00").split(":").map((n) => parseInt(n, 10));
+  const now = new Date();
+  for (let i = 0; i < 8; i++) {
+    const c = new Date(now);
+    c.setDate(now.getDate() + i);
+    c.setHours(isNaN(h) ? 9 : h, isNaN(m) ? 0 : m, 0, 0);
+    if (OFFICE_DAYS.includes(c.getDay()) && c.getTime() > now.getTime()) return c.toISOString();
+  }
+  return new Date(now.getTime() + 86400000).toISOString();
+}
+function originForListing(l: Listing): string {
+  const looksAddr = /\d+\s+[\w.]+\s+\w+/.test(l.title) && /(st|ave|blvd|rd|dr|way|ln|ct|pl|cir|ter|real|hwy)\b/i.test(l.title);
+  if (looksAddr) return l.title.replace(/\s*[\(\[].*?[\)\]]\s*/g, " ").replace(/\s+/g, " ").trim();
+  const loc = [l.neighborhood, l.city].filter(Boolean).join(", ") || l.city || l.market;
+  return (loc || "San Francisco Bay Area") + ", CA";
+}
+const destOf = (company: string, address: string) => [company, address].filter(Boolean).join(", ") || "San Francisco, CA";
+const clockOf = (iso?: string) => (iso ? new Date(iso).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }) : "—");
+const railLeg = (legs: any[]) => (legs || []).find((x) => x?.rail);
+
 const segPass = (l: Listing, seg: string, newest: string) => {
   if (seg === "All") return true;
   if (seg === "New today") return !!newest && l.firstSeen === newest;
@@ -288,6 +311,30 @@ export default function App() {
     return c;
   }, [marks]);
 
+  // On-demand: live optimal-departure plans per listing (Google Routes via /api/commute).
+  // One request per person (transit/drive/bike), computed only when the user asks.
+  const [plans, setPlans] = useState<Record<string, { loading: boolean; results?: any[]; error?: boolean }>>({});
+  const planCommute = async (key: string, origin: string) => {
+    setPlans((p) => ({ ...p, [key]: { loading: true } }));
+    try {
+      const results = await Promise.all(
+        people.map(async (person) => {
+          const arrival = nextOfficeArrivalISO(person.arrival);
+          const url = `/api/commute?origin=${encodeURIComponent(origin)}&dest=${encodeURIComponent(destOf(person.company, person.address))}&arrival=${encodeURIComponent(arrival)}`;
+          try {
+            const r = await fetch(url);
+            return { person: person.name || "—", arrival, ...(await r.json()) };
+          } catch {
+            return { person: person.name || "—", error: true };
+          }
+        })
+      );
+      setPlans((p) => ({ ...p, [key]: { loading: false, results } }));
+    } catch {
+      setPlans((p) => ({ ...p, [key]: { loading: false, error: true } }));
+    }
+  };
+
   const setW = (k: "commute" | "price" | "flex", v: number) => setWeights((s) => ({ ...s, [k]: v }));
   const setPerson = (id: number, field: keyof Person, value: string) =>
     setPeople((s) => s.map((p) => (p.id === id ? { ...p, [field]: value } : p)));
@@ -377,7 +424,7 @@ export default function App() {
           priceLabel: money(price) + (price ? "/mo" : ""),
           leaseLabel: l.lease || "lease n/a",
           specLabel: specBits.join(" · "), hasSpec: specBits.length > 0,
-          status: l.status, routes, routesTitle, mark: marks[l.listingKey] || "",
+          status: l.status, routes, routesTitle, mark: marks[l.listingKey] || "", origin: originForListing(l),
           fit, segC, segP, segF,
           fitFg: tier === "hi" ? "var(--accent)" : tier === "mid" ? "#b07d1a" : "#9a9384",
           _avg: avg == null ? 1e9 : avg, _price: price == null ? 1e9 : price, _first: l.firstSeen || "", _score: fit,
@@ -614,6 +661,51 @@ export default function App() {
                           </div>
                         ))}
                       </div>
+                    </div>
+
+                    {/* optimal departure (live Google Routes) */}
+                    <div style={{ marginTop: 10 }}>
+                      {!plans[r.id] ? (
+                        <button onClick={() => planCommute(r.id, r.origin)} style={{ border: "1px solid #cdd9ea", background: "color-mix(in srgb, var(--accent) 6%, #fff)", color: "var(--accent)", cursor: "pointer", padding: "5px 11px", borderRadius: 8, fontSize: 11.5, fontWeight: 700 }}>
+                          ⏱ Optimal departure
+                        </button>
+                      ) : plans[r.id].loading ? (
+                        <div style={{ fontSize: 11.5, color: "#8a8378" }}>Planning routes…</div>
+                      ) : (
+                        <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                          {(plans[r.id].results || []).map((pr: any, k: number) => {
+                            const opts = [pr.transit, pr.drive, pr.bike].filter((o: any) => o && o.ok);
+                            if (!opts.length)
+                              return <div key={k} style={{ fontSize: 11.5, color: "#b07d1a" }}>{pr.person}: no route found</div>;
+                            const best = opts.reduce((a: any, b: any) => (new Date(b.leaveBy) > new Date(a.leaveBy) ? b : a), opts[0]);
+                            const rl = pr.transit?.ok ? railLeg(pr.transit.legs) : null;
+                            const icon: Record<string, string> = { transit: "🚆", drive: "🚗", bike: "🚲" };
+                            return (
+                              <div key={k} style={{ borderTop: "1px solid #f0ece3", paddingTop: 6 }}>
+                                <div style={{ fontSize: 11.5, marginBottom: 3 }}>
+                                  <span style={{ fontWeight: 700, color: "#1c1a17" }}>{pr.person}</span>
+                                  <span style={{ color: "#b0a99c", fontWeight: 600 }}> · arrive {clockOf(pr.arrival)}</span>
+                                  <span style={{ marginLeft: 6, color: "var(--accent)", fontWeight: 700, fontFamily: "'JetBrains Mono',monospace" }}>
+                                    {icon[best.mode]} leave {clockOf(best.leaveBy)}
+                                  </span>
+                                </div>
+                                <div style={{ display: "flex", flexWrap: "wrap", gap: "1px 12px", fontSize: 11 }}>
+                                  {opts.map((o: any) => (
+                                    <span key={o.mode} style={{ fontFamily: "'JetBrains Mono',monospace", fontWeight: o === best ? 700 : 500, color: o === best ? "var(--accent)" : "#8a8378" }}>
+                                      {icon[o.mode]} {clockOf(o.leaveBy)} ({o.durationMin}m)
+                                    </span>
+                                  ))}
+                                </div>
+                                {rl && (
+                                  <div style={{ fontSize: 10.5, color: "#8a8378", marginTop: 2 }}>
+                                    🚆 {rl.line} · {rl.from}→{rl.to} · {rl.stops} stops · dep {clockOf(rl.dep)}
+                                  </div>
+                                )}
+                              </div>
+                            );
+                          })}
+                        </div>
+                      )}
                     </div>
 
                     {/* mark this listing */}
