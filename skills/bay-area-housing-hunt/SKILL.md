@@ -42,16 +42,24 @@ script and files work whether Claude or Codex is the conductor.
 python3 skills/bay-area-housing-hunt/scripts/run.py
 ```
 
-`run.py` fetches the headless free sources in `scripts/searches.json` — Craigslist
-RSS plus Reddit / free JSON APIs via `capture_api.py` (any block is recorded as
-`Source Blocked`) — ingests every capture file in `/tmp/codexskills-housing-hunt/`,
-rescores, and rebuilds the board. Add `--notion` to also mirror the ledger into
-Notion (no-op unless `housing-trackers/notion-config.md` + `NOTION_TOKEN` are set).
-`stdout` is a clean JSON summary; the AI-capture plan goes to `stderr`.
+`run.py` runs the **headless** tiers in `scripts/searches.json` itself (no browser,
+cloud/CI-ok): the `web` tier via `capture_web.py` — **Craigslist** (its own
+`sapi.craigslist.org` JSON API; the RSS feed 403s so it's no longer used) and
+**Zumper** (embedded `__PRELOADED_STATE__`) — plus the `apis` tier via
+`capture_api.py` (Reddit / free JSON; Reddit needs a residential IP or OAuth, else
+`Source Blocked`). It then ingests every capture file in
+`/tmp/codexskills-housing-hunt/`, rescores, and rebuilds the board. Add `--notion`
+to mirror the ledger into Notion (no-op unless `housing-trackers/notion-config.md` +
+`NOTION_TOKEN` are set). `stdout` is a clean JSON summary; the AI-capture plan goes
+to `stderr`. A headless run already covers the bulk of the inventory (Craigslist +
+Zumper) before any browser step.
 
-3. Fulfil the AI-capture plan. For each dynamic/logged-in source it lists, open
-   the search and capture **visible facts only** into the JSON file it names,
-   using the schema in `references/sources.md`:
+3. Fulfil the AI-capture plan for the `ai_browser` tier only — sources that block
+   headless reads and need a visible/signed-in browser: **Facebook Marketplace +
+   groups** (login wall), **Zillow** (PerimeterX 403), **Furnished Finder** (403),
+   **The Listing Project** (bot challenge), **Kopa** (login-gated). For each, open
+   the search and capture **visible facts only** into the JSON file it names, using
+   the schema in `references/sources.md`:
    - **Codex**: Chrome plugin (Computer Use fallback).
    - **Claude**: Claude-in-Chrome / Computer Use.
    Never bypass CAPTCHA/login/rate limits, never message posters, never submit.
@@ -69,7 +77,7 @@ python3 skills/bay-area-housing-hunt/scripts/housing_pipeline.py \
 7. Report: new top-5 entrants, rank movers, expirations, best no-car / car-enabled
    options, and what still needs manual verification.
 
-Offline / no-network rebuild (skip the RSS fetch, just rescore from existing captures):
+Offline / no-network rebuild (skip the headless fetch, just rescore from existing captures):
 
 ```bash
 python3 skills/bay-area-housing-hunt/scripts/run.py --no-network
@@ -86,7 +94,7 @@ Prefer structured or alert-based sources first, then visible browser capture:
 
 - Gmail listing alerts and saved-search emails.
 - Official/public property-manager pages.
-- Craigslist saved searches/RSS-style captures when available.
+- Craigslist via its public `sapi.craigslist.org` JSON API (headless, no browser — see `capture_web.py`).
 - Facebook Marketplace and housing groups through a visible signed-in browser using nodriver/Chrome plugin; capture only visible listing facts.
 - Zillow/HotPads/Trulia, Apartments.com, Redfin Rentals, Realtor.com, Zumper/PadMapper, Rent.com, ApartmentGuide, ForRent, Apartment List, Roomies, SpareRoom, Furnished Finder, Airbnb monthly, Landing/Blueground, Reddit/community posts, and direct property managers.
 - Curated sublease/coliving/community sources: The Listing Project, Kopa, PadSplit, Diggz, Anyplace/Outsite/June Homes, corporate/relocation housing, Blind/Nextdoor, and the SCU/Stanford off-campus boards. See `references/sources.md` for the full grouped list.

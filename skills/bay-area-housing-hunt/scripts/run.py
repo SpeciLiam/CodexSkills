@@ -36,6 +36,7 @@ from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 import housing_pipeline as hp
 import capture_api
+import capture_web
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 DEFAULT_CAPTURE_DIR = Path("/tmp/codexskills-housing-hunt")
@@ -212,7 +213,8 @@ def main() -> int:
             continue
         captured.append(path.resolve())
     if not args.no_network:
-        print("Running headless capture (Craigslist RSS + configured APIs)...", file=sys.stderr)
+        print("Running headless capture (web adapters + RSS + configured APIs)...", file=sys.stderr)
+        captured.extend(p.resolve() for p in capture_web.run_web_capture(capture_dir, searches))
         captured.extend(p.resolve() for p in run_headless_capture(capture_dir, searches))
         captured.extend(p.resolve() for p in capture_api.run_api_capture(capture_dir, searches))
     # Ingest every capture file present in the dir plus any explicit --input.

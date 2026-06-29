@@ -66,17 +66,40 @@ Use the local nodriver MCP or Chrome plugin for visible browsing. Capture facts 
 
 ### Access policy (Liam's personal search)
 
-Scraping public/free data for Liam's own move is fine. Concretely:
+Scraping public/free data for Liam's own move is fine. Sources fall into three
+capture tiers (configured in `searches.json`; reachability re-probed 2026-06-28 with
+a realistic desktop-Chrome UA). Prefer the highest tier a source supports:
 
-- **Free + headless (cloud-ok):** public RSS (Craigslist) and public JSON APIs
-  (Reddit, and any free endpoint added to `searches.json` → `apis`). `capture_api.py`
-  fetches these with no key.
-- **Anti-bot portals (Zillow, Apartments.com, Realtor.com, Facebook, Nextdoor):**
-  do NOT try to defeat them headlessly. Capture them with the **local real signed-in
-  browser** (Claude-in-Chrome / Computer Use / Chrome plugin) — it's free and robust
-  because it's a genuine browser session.
-- **Keyed data APIs (RentCast, RapidAPI wrappers):** optional, off by default; enable
-  by setting the key env var. Only use free tiers unless Liam opts into paying.
+- **Free + headless `web` (cloud/CI-ok) — `capture_web.py`:** sites that serve their
+  own PUBLIC JSON/SSR data to a normal browser request. We identify as a browser and
+  read the public response — this is **not** a CAPTCHA/login/rate-limit bypass; on any
+  403/429/challenge we record `Source Blocked` and stop.
+  - **Craigslist** → its own `sapi.craigslist.org` v8 JSON search API. (The legacy RSS
+    feed 403s even with a browser UA, so Craigslist no longer uses the `rss` tier.)
+    Posting ids are delta-encoded: real id = `decode.minPostingId + item[0]`; the
+    canonical post URL is rebuilt from subarea/category/slug/id. All 5–6 CL searches
+    run here with **no browser** — this is the bulk of the inventory.
+  - **Zumper** → the `__PRELOADED_STATE__` blob in the search page (apartment-complex
+    rent ranges + beds + url).
+- **Free + headless JSON `apis` — `capture_api.py`:** keyless/keyed JSON endpoints.
+  - **Reddit** is best-effort: it returns 403 to plain UAs from datacenter IPs (no UA
+    variant helped in probing). It works from a **residential IP** (the local scheduled
+    run) or with a free Reddit **OAuth** app token; until then cloud/CI runs log it
+    `Source Blocked`.
+  - **RentCast / RapidAPI wrappers:** optional, off by default; enable via key env var.
+    Free tiers only unless Liam opts into paying.
+- **Visible/logged-in browser `ai_browser`:** sources that genuinely block headless
+  reads. Captured with the **local real signed-in browser** (Claude-in-Chrome /
+  Computer Use / Chrome plugin). Probed status:
+  - **Facebook Marketplace + groups** → login wall (headless 400 / login redirect).
+  - **Zillow** → PerimeterX anti-bot (headless 403); no keyless JSON path.
+  - **Furnished Finder** → anti-bot (headless 403 even with full browser headers).
+  - **The Listing Project** → bot-challenge interstitial (200 but no real listings);
+    may also need an email subscription.
+  - **Kopa** → no public search route (every `/search|/listings` path 404s); search is
+    login-gated.
+
+Do NOT try to defeat the `ai_browser` sources headlessly — use the local browser.
 
 Still off-limits (these are not about access, they're about conduct):
 
@@ -126,8 +149,11 @@ Extra fields the pipeline understands:
 
 Orchestration:
 
-- `scripts/run.py` is the kickoff. It reads `scripts/searches.json` (public RSS
-  feeds it fetches headlessly + the dynamic/logged-in sources it lists for AI
-  capture), ingests every JSON in the capture dir, and rebuilds the board.
-- The conductor (Codex Chrome plugin / Claude-in-Chrome / Computer Use) writes one
-  JSON array per dynamic source into the capture dir, then re-runs `run.py`.
+- `scripts/run.py` is the kickoff. It reads `scripts/searches.json` and runs the
+  headless tiers itself — `capture_web.py` (`web`: Craigslist sapi + Zumper) and
+  `capture_api.py` (`apis`: Reddit etc.) — then ingests every JSON in the capture dir
+  and rebuilds the board. With the `web` tier, a fully headless run (cloud/CI, no
+  browser) already covers Craigslist + Zumper.
+- For the `ai_browser` tier only, the conductor (Codex Chrome plugin /
+  Claude-in-Chrome / Computer Use) writes one JSON array per source into the capture
+  dir, then re-runs `run.py`. `run.py` prints the exact plan for these to stderr.
