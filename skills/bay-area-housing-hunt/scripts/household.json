@@ -1,6 +1,14 @@
 {
-  "_comment": "Shared roommate/household config — the single source of truth for WHO is commuting. The dashboard seeds its default 'Who's commuting' list from this (export_housing_data.py embeds it as defaultPeople), and the scrape is sized for this household: 1 person -> rooms/studios/1bd, n people -> larger multi-bedroom homes (searches.json apartment searches run up to ~$6000 all-in so group-sized homes are captured). Supports 1..n people. The dashboard's '⧉ Copy as scrape config' button copies the visitor's current household here.",
-  "people": [
-    { "name": "You", "company": "HackerRank", "address": "Santa Clara, CA", "arrival": "09:00" }
-  ]
+  "_comment": "Shared roommate/household config — the single source of truth for WHO is commuting, with TWO scrape profiles. 'liam' = solo: always the HackerRank office; that scraper looks for rooms/studios/1bd everywhere on the corridor. 'group' = the shared-household profile; that scraper targets ~N bedrooms (1:1 people->bedrooms; targetBedrooms overrides) everywhere. BOTH target the same broad geography (searches.json covers South Bay + Peninsula + SF; apartment searches run up to ~$6000 so group-sized homes are captured). The dashboard seeds its Liam/Group profiles from here (export_housing_data.py -> defaultLiam + defaultPeople) and its '⧉ Copy as scrape config' button writes the active profile back here. Per-person: arrival (HH:MM, next Mon/Wed/Thu), car/bike (route-optimization options).",
+  "liam": {
+    "people": [
+      { "name": "Liam", "company": "HackerRank", "address": "2350 Mission College Blvd #750, Santa Clara, CA 95054", "arrival": "09:00", "car": true, "bike": true }
+    ]
+  },
+  "group": {
+    "targetBedrooms": null,
+    "people": [
+      { "name": "Liam", "company": "HackerRank", "address": "2350 Mission College Blvd #750, Santa Clara, CA 95054", "arrival": "09:00", "car": true, "bike": true }
+    ]
+  }
 }

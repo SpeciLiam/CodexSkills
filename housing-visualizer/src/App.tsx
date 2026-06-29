@@ -19,7 +19,10 @@ const loadPrefs = (): Record<string, any> => {
 const loadMarks = (): Record<string, string> => {
   try { return JSON.parse(localStorage.getItem(MARKS_KEY) || "{}"); } catch { return {}; }
 };
-const FALLBACK_PEOPLE: Person[] = [{ id: 1, name: "You", company: "HackerRank", address: "Santa Clara, CA", arrival: "09:00" }];
+// Liam's profile is fixed to the HackerRank office.
+const LIAM_OFFICE = "2350 Mission College Blvd #750, Santa Clara, CA 95054";
+const DEFAULT_LIAM: Person = { id: 0, name: "Liam", company: "HackerRank", address: LIAM_OFFICE, arrival: "09:00", car: true, bike: true };
+const FALLBACK_PEOPLE: Person[] = [{ id: 1, name: "Liam", company: "HackerRank", address: LIAM_OFFICE, arrival: "09:00", car: true, bike: true }];
 
 const SF_KEY = "Google (San Francisco)";
 const SC_KEY = "HackerRank (Santa Clara)";
@@ -44,23 +47,28 @@ type Listing = {
   source: string;
   url: string;
 };
+type CfgPerson = { name: string; company: string; address: string; arrival?: string; car?: boolean; bike?: boolean };
 type Data = {
   generatedAt: string;
   stats: { active: number; markets: number };
   marketOrder: string[];
   listings: Listing[];
-  defaultPeople?: { name: string; company: string; address: string; arrival?: string }[];
+  defaultPeople?: CfgPerson[]; // group profile
+  defaultLiam?: CfgPerson; // liam (solo) profile
 };
-type Person = { id: number; name: string; company: string; address: string; arrival: string };
+type Person = { id: number; name: string; company: string; address: string; arrival: string; car: boolean; bike: boolean };
 
 const data = rawData as unknown as Data;
+const toPerson = (p: CfgPerson, id: number): Person => ({
+  id, name: p.name || "Person " + id, company: p.company || "", address: p.address || "",
+  arrival: p.arrival || "09:00", car: p.car ?? true, bike: p.bike ?? true,
+});
 
-// Shared roommate config: the scrape's household.json seeds the dashboard's default
-// people list (the visitor's own edits, saved below, take precedence).
-const houseDefault: Person[] =
-  data.defaultPeople && data.defaultPeople.length
-    ? data.defaultPeople.map((p, i) => ({ id: i + 1, name: p.name || "Person " + (i + 1), company: p.company || "", address: p.address || "", arrival: p.arrival || "09:00" }))
-    : FALLBACK_PEOPLE;
+// household.json seeds the dashboard's default people (the visitor's own edits, saved
+// below, take precedence). Two profiles: Liam (solo, HackerRank) + Group (editable).
+const groupDefault: Person[] =
+  data.defaultPeople && data.defaultPeople.length ? data.defaultPeople.map((p, i) => toPerson(p, i + 1)) : FALLBACK_PEOPLE;
+const liamDefault: Person = data.defaultLiam ? toPerson(data.defaultLiam, 0) : DEFAULT_LIAM;
 
 const clamp = (n: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, n));
 const money = (n: number | null) => (n ? "$" + n.toLocaleString() : "no price");
@@ -104,11 +112,11 @@ function geocode(text: string): { w: number; x: number; c: string; ok: boolean }
   if (m("north san jose")) return { w: 0.95, x: 0, c: "North San Jose", ok: true };
   if (m("campbell", "los gatos", "saratoga")) return { w: 0.95, x: 10, c: "West Valley", ok: true };
   if (m("san jose")) return { w: 0.97, x: 4, c: "San Jose", ok: true };
-  if (m("san francisco", "soma", "mission bay", "mission district", "financial district", "nob hill", "hayes valley", "the castro", "sunset", "richmond district", "marina district", "potrero", "dogpatch", "embarcadero", "tenderloin")) return { w: 0.0, x: 0, c: "San Francisco", ok: true };
+  if (m("san francisco", "san fran", "frisco", "soma", "mission bay", "mission district", "financial district", "nob hill", "hayes valley", "the castro", "sunset", "richmond district", "marina district", "potrero", "dogpatch", "embarcadero", "tenderloin") || /\bsf\b/.test(t)) return { w: 0.0, x: 0, c: "San Francisco", ok: true };
   return { w: 0.55, x: 8, c: "", ok: false };
 }
 
-function estimate(l: Listing, place: { w: number; x: number }, pref: string): { t: number | null; mode: string } {
+function estimate(l: Listing, place: { w: number; x: number }, pref: string, hasCar = true): { t: number | null; mode: string } {
   const oc = l.officeCommutes;
   if (!oc) return { t: null, mode: "transit" };
   const sf = oc[SF_KEY], sc = oc[SC_KEY];
@@ -116,7 +124,7 @@ function estimate(l: Listing, place: { w: number; x: number }, pref: string): { 
   const w = place.w, x = place.x || 0;
   const transit = Math.round(sf.transit + (sc.transit - sf.transit) * w) + x;
   const drive = Math.round(sf.drive + (sc.drive - sf.drive) * w) + Math.round(x * 0.7);
-  if (pref === "transit") return { t: transit, mode: "transit" };
+  if (pref === "transit" || !hasCar) return { t: transit, mode: "transit" }; // no car -> transit only
   if (pref === "drive") return { t: drive, mode: "drive" };
   return { t: Math.min(transit, drive), mode: drive < transit ? "drive" : "transit" };
 }
@@ -177,7 +185,8 @@ const matchQ = (l: Listing, q: string) =>
 
 const SEG_NAMES = ["All", "New today", "Subleases", "Rooms", "Apartments", "To verify", "Expired"];
 const SORT_OPTIONS = ["Best fit", "Cheapest", "Shortest commute", "Newest"];
-const BEDS_OPTIONS = ["Any", "Studio", "1+ bd", "2+ bd", "3+ bd", "4+ bd"];
+const BEDS_OPTIONS = ["Any", "Studio", "1+ bd", "2+ bd", "3+ bd", "4+ bd", "5+ bd", "6+ bd"];
+const bedsForGroup = (n: number) => (n <= 1 ? "Any" : `${Math.min(n, 6)}+ bd`); // 1:1 people->bedrooms
 
 // per-listing marks
 const MARK_FILTERS = [
@@ -229,11 +238,17 @@ function Weight({ label, value, onChange }: { label: string; value: number; onCh
 export default function App() {
   const [saved] = useState(loadPrefs);
   const [pref, setPref] = useState<string>(saved.pref ?? "fastest");
+  // Two search profiles: "liam" (solo, locked to HackerRank) and "group" (editable list).
+  const [profile, setProfile] = useState<"liam" | "group">(saved.profile === "group" ? "group" : "liam");
+  const [liamPerson, setLiamPerson] = useState<Person>(
+    saved.liam ? { ...liamDefault, ...saved.liam, id: 0, name: "Liam", company: "HackerRank", address: LIAM_OFFICE } : liamDefault
+  );
   const [people, setPeople] = useState<Person[]>(
     Array.isArray(saved.people) && saved.people.length
-      ? saved.people.map((p: Person) => ({ ...p, arrival: p.arrival || "09:00" })) // backfill older saved prefs
-      : houseDefault
+      ? saved.people.map((p: Person, i: number) => ({ ...p, id: p.id ?? i + 1, arrival: p.arrival || "09:00", car: p.car ?? true, bike: p.bike ?? true })) // backfill
+      : groupDefault
   );
+  const activePeople = useMemo(() => (profile === "liam" ? [liamPerson] : people), [profile, liamPerson, people]);
   const [weights, setWeights] = useState<{ commute: number; price: number; flex: number }>(saved.weights ?? { commute: 60, price: 30, flex: 10 });
   const [q, setQ] = useState("");
   const [beds, setBeds] = useState<string>(saved.beds ?? "Any");
@@ -251,7 +266,7 @@ export default function App() {
   const pad = dense ? "12px 15px" : "16px 17px";
 
   // Budget: rule of thumb is $3k per tenant; the visitor can override (custom) and that sticks.
-  const tenants = people.length;
+  const tenants = activePeople.length;
   const ruleOfThumb = 3000 * tenants;
   const budgetSliderMax = Math.max(8000, ruleOfThumb + 3000);
   const budget = budgetCustom ? Math.min(maxPrice, budgetSliderMax) : ruleOfThumb;
@@ -260,9 +275,17 @@ export default function App() {
   // persist last selections (browser-local)
   useEffect(() => {
     try {
-      localStorage.setItem(STORE_KEY, JSON.stringify({ pref, people, weights, beds, market, source, region, segment, sort, maxPrice, budgetCustom, markFilter }));
+      localStorage.setItem(STORE_KEY, JSON.stringify({ pref, profile, liam: liamPerson, people, weights, beds, market, source, region, segment, sort, maxPrice, budgetCustom, markFilter }));
     } catch { /* storage unavailable — ignore */ }
-  }, [pref, people, weights, beds, market, source, region, segment, sort, maxPrice, budgetCustom, markFilter]);
+  }, [pref, profile, liamPerson, people, weights, beds, market, source, region, segment, sort, maxPrice, budgetCustom, markFilter]);
+
+  // Group size -> default bedrooms (1:1 people→beds); Liam -> Any. Skips the first run so a
+  // saved bedroom choice survives load; re-applies when you switch profile or add/remove people.
+  const bedsInit = useRef(true);
+  useEffect(() => {
+    if (bedsInit.current) { bedsInit.current = false; return; }
+    setBeds(profile === "group" ? bedsForGroup(people.length) : "Any");
+  }, [profile, people.length]);
   useEffect(() => {
     try { localStorage.setItem(MARKS_KEY, JSON.stringify(marks)); } catch { /* ignore */ }
   }, [marks]);
@@ -300,11 +323,16 @@ export default function App() {
       return n;
     });
   };
-  // copy the current household so it can be pasted into household.json (drives the scrape)
+  // copy the active profile so it can be pasted into household.json (drives that scraper)
   const copyScrapeConfig = () => {
-    const cfg = JSON.stringify({ people: people.map((p) => ({ name: p.name, company: p.company, address: p.address })) }, null, 2);
-    try { navigator.clipboard.writeText(cfg); } catch { /* ignore */ }
+    const cfg = profile === "liam"
+      ? { profile: "liam", people: [{ name: "Liam", company: "HackerRank", address: LIAM_OFFICE, arrival: liamPerson.arrival, car: liamPerson.car, bike: liamPerson.bike }] }
+      : { profile: "group", targetBedrooms: people.length, people: people.map((p) => ({ name: p.name, company: p.company, address: p.address, arrival: p.arrival, car: p.car, bike: p.bike })) };
+    try { navigator.clipboard.writeText(JSON.stringify(cfg, null, 2)); } catch { /* ignore */ }
   };
+  const setLiam = (field: keyof Person, value: any) => setLiamPerson((p) => ({ ...p, [field]: value }));
+  const togglePersonFlag = (id: number, field: "car" | "bike") =>
+    setPeople((s) => s.map((p) => (p.id === id ? { ...p, [field]: !p[field] } : p)));
   const markCounts = useMemo(() => {
     const c: Record<string, number> = { promising: 0, checked: 0, skip: 0 };
     for (const k in marks) if (c[marks[k]] != null) c[marks[k]]++;
@@ -318,14 +346,14 @@ export default function App() {
     setPlans((p) => ({ ...p, [key]: { loading: true } }));
     try {
       const results = await Promise.all(
-        people.map(async (person) => {
+        activePeople.map(async (person) => {
           const arrival = nextOfficeArrivalISO(person.arrival);
           const url = `/api/commute?origin=${encodeURIComponent(origin)}&dest=${encodeURIComponent(destOf(person.company, person.address))}&arrival=${encodeURIComponent(arrival)}`;
           try {
             const r = await fetch(url);
-            return { person: person.name || "—", arrival, ...(await r.json()) };
+            return { person: person.name || "—", hasCar: person.car, hasBike: person.bike, arrival, ...(await r.json()) };
           } catch {
-            return { person: person.name || "—", error: true };
+            return { person: person.name || "—", hasCar: person.car, hasBike: person.bike, error: true };
           }
         })
       );
@@ -342,7 +370,7 @@ export default function App() {
   const addPerson = () =>
     setPeople((s) => {
       const id = s.reduce((m, p) => Math.max(m, p.id), 0) + 1;
-      return [...s, { id, name: "Roommate " + (s.length + 1), company: "", address: "", arrival: "09:00" }];
+      return [...s, { id, name: "Roommate " + (s.length + 1), company: "", address: "", arrival: "09:00", car: true, bike: true }];
     });
 
   const active = useMemo(() => data.listings.filter((l) => l.status === "Active"), []);
@@ -360,7 +388,7 @@ export default function App() {
 
     const sum = weights.commute + weights.price + weights.flex || 1;
     const wc = weights.commute / sum, wp = weights.price / sum, wf = weights.flex / sum;
-    const roster = people;
+    const roster = activePeople;
 
     const list = pool
       .filter((l) => segPass(l, segment, newest))
@@ -382,7 +410,7 @@ export default function App() {
       .map((l) => {
         const per = roster.map((person) => {
           const g = geocode((person.company || "") + " " + (person.address || ""));
-          const cm = estimate(l, g, pref);
+          const cm = estimate(l, g, pref, person.car);
           const dest = [person.company, g.c].filter(Boolean).join(" · ") || "their office";
           return { name: person.name || "—", t: cm.t, mode: cm.mode, dest };
         });
@@ -439,7 +467,7 @@ export default function App() {
     };
     list.sort(SB[sort] || SB["Best fit"]);
     return list;
-  }, [active, newest, people, weights, q, beds, market, source, region, segment, sort, budget, budgetIsAny, pref, marks, markFilter]);
+  }, [active, newest, activePeople, weights, q, beds, market, source, region, segment, sort, budget, budgetIsAny, pref, marks, markFilter]);
 
   const prefBtn = (k: string): CSSProperties => {
     const on = pref === k;
@@ -454,6 +482,20 @@ export default function App() {
     background: on ? (dark ? "#1c1a17" : "color-mix(in srgb, var(--accent) 12%, #fff)") : "#fffdf8",
     color: on ? (dark ? "#fffdf8" : "var(--accent)") : "#6f6a61",
   });
+
+  // car / bike tickers for a person — gate which modes the optimal-departure recommends
+  const tickerRow = (p: Person, onToggle: (f: "car" | "bike") => void) => (
+    <div style={{ display: "flex", gap: 6 }}>
+      {(["car", "bike"] as const).map((f) => {
+        const on = p[f];
+        return (
+          <button key={f} onClick={() => onToggle(f)} title={`${on ? "Has" : "No"} ${f}`} style={{ flex: 1, cursor: "pointer", padding: "5px 6px", borderRadius: 8, fontSize: 11, fontWeight: 600, border: `1px solid ${on ? "var(--accent)" : "#e0dacd"}`, background: on ? "color-mix(in srgb, var(--accent) 10%, #fff)" : "#fff", color: on ? "var(--accent)" : "#9a9384" }}>
+            {on ? "✓ " : ""}{f === "car" ? "🚗 Car" : "🚲 Bike"}
+          </button>
+        );
+      })}
+    </div>
+  );
 
   const counts = useMemo(() => {
     const needs = data.listings.filter((l) => l.status === "Needs Verification").length;
@@ -495,49 +537,83 @@ export default function App() {
       <div className="hh-grid" style={{ display: "grid", gridTemplateColumns: "344px minmax(0,1fr)", flex: 1, alignItems: "start" }}>
         {/* SIDEBAR */}
         <aside className="hh-aside" style={{ position: "sticky", top: 0, height: "100vh", overflowY: "auto", background: "#fffdf8", borderRight: "1px solid #e6e1d6", padding: "20px 20px 40px" }}>
-          <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 8, marginBottom: 4 }}>
-            <div style={sectionLabel}>Who's commuting</div>
-            <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 11, fontWeight: 600, color: "#b0a99c" }}>
-              {people.length} {people.length === 1 ? "person" : "people"}
-            </div>
-          </div>
-          <div style={{ fontSize: 12.5, color: "#6f6a61", marginBottom: 10 }}>
-            {people.length > 1 ? "Ranked by how everyone gets to work." : "Where do you work? Commute is scored to here."}
-          </div>
-
-          <div style={{ display: "flex", flexDirection: "column", gap: 9, marginBottom: 10 }}>
-            {people.map((p, idx) => {
-              const rt = resolvedText(p.company, p.address);
-              const lead = idx === 0;
+          {/* profile toggle: Liam (solo) vs Group */}
+          <div style={{ display: "flex", background: "#efeadf", borderRadius: 11, padding: 4, marginBottom: 12 }}>
+            {([["liam", "Liam"], ["group", "Group"]] as const).map(([k, lbl]) => {
+              const on = profile === k;
               return (
-                <div key={p.id} style={{ border: lead ? "1.5px solid var(--accent)" : "1px solid #e6e1d6", borderRadius: 12, padding: "10px 11px", background: lead ? "color-mix(in srgb, var(--accent) 6%, #fffdf8)" : "#fdfbf6" }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
-                    <div style={{ width: 7, height: 7, borderRadius: "50%", background: "var(--accent)", flex: "0 0 auto" }} />
-                    <input value={p.name} onChange={(e) => setPerson(p.id, "name", e.target.value)} placeholder="Name" style={{ flex: 1, minWidth: 0, border: "none", background: "transparent", fontSize: 14, fontWeight: 600, color: "#1c1a17", outline: "none", padding: 0 }} />
-                    {people.length > 1 && (
-                      <button onClick={() => removePerson(p.id)} title="Remove" style={{ border: "none", background: "transparent", cursor: "pointer", color: "#b0a99c", fontSize: 17, lineHeight: 1, padding: "0 2px" }}>×</button>
-                    )}
-                  </div>
-                  <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-                    <input value={p.company} onChange={(e) => setPerson(p.id, "company", e.target.value)} placeholder="Company name" style={{ ...fieldStyle, borderRadius: 8, padding: "7px 9px", fontSize: 12.5, fontWeight: 600 }} />
-                    <input value={p.address} onChange={(e) => setPerson(p.id, "address", e.target.value)} placeholder="Work address or city" style={{ ...fieldStyle, borderRadius: 8, padding: "7px 9px", fontSize: 12 }} />
-                    <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                      <span style={{ fontSize: 11, color: "#8a8378", fontWeight: 600 }}>Arrive by</span>
-                      <input type="time" value={p.arrival} onChange={(e) => setPerson(p.id, "arrival", e.target.value)} style={{ border: "1px solid #e0dacd", background: "#fdfbf6", borderRadius: 8, padding: "4px 7px", fontSize: 12, fontWeight: 600, color: "#1c1a17", outline: "none", fontFamily: "'JetBrains Mono',monospace" }} />
-                      <span style={{ fontSize: 10.5, color: "#b0a99c" }}>Mon/Wed/Thu</span>
-                    </div>
-                    <div style={{ fontSize: 11, fontWeight: 600, color: rt.color }}>{rt.text}</div>
-                  </div>
-                </div>
+                <button key={k} onClick={() => setProfile(k)} style={{ flex: 1, border: "none", cursor: "pointer", padding: "9px 10px", borderRadius: 8, fontSize: 13.5, fontWeight: 600, fontFamily: "'Space Grotesk',sans-serif", background: on ? "#fffdf8" : "transparent", color: on ? "#1c1a17" : "#8a8378", boxShadow: on ? "0 1px 3px rgba(28,26,23,0.12)" : "none" }}>{lbl}</button>
               );
             })}
-            <button onClick={addPerson} style={{ border: "1.5px dashed #d4cdbf", background: "transparent", cursor: "pointer", padding: 10, borderRadius: 11, fontSize: 13, fontWeight: 600, color: "#6f6a61" }}>
-              + Add a roommate
-            </button>
-            <button onClick={copyScrapeConfig} title="Copy this household as JSON to paste into scripts/household.json — that's what the scraper searches for" style={{ border: "none", background: "transparent", cursor: "pointer", padding: "2px 2px", fontSize: 11.5, fontWeight: 600, color: "var(--accent)", textAlign: "left" }}>
-              ⧉ Copy as scrape config
-            </button>
           </div>
+
+          <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 8, marginBottom: 4 }}>
+            <div style={sectionLabel}>Who's commuting</div>
+            {profile === "group" && (
+              <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 11, fontWeight: 600, color: "#b0a99c" }}>
+                {people.length} {people.length === 1 ? "person" : "people"}
+              </div>
+            )}
+          </div>
+          <div style={{ fontSize: 12.5, color: "#6f6a61", marginBottom: 10 }}>
+            {profile === "liam"
+              ? "Your commute to HackerRank (Santa Clara) — finding a place for you."
+              : people.length > 1
+              ? `Ranked by everyone's commute · targeting ~${Math.min(people.length, 6)} bedrooms.`
+              : "Add the roommates sharing the place."}
+          </div>
+
+          {profile === "liam" ? (
+            <div style={{ border: "1.5px solid var(--accent)", borderRadius: 12, padding: "11px 12px", background: "color-mix(in srgb, var(--accent) 6%, #fffdf8)", marginBottom: 8 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 5 }}>
+                <div style={{ width: 7, height: 7, borderRadius: "50%", background: "var(--accent)" }} />
+                <span style={{ fontSize: 14, fontWeight: 700 }}>Liam</span>
+                <span style={{ fontSize: 11, color: "#8a8378", marginLeft: "auto", fontWeight: 600 }}>HackerRank · Santa Clara</span>
+              </div>
+              <div style={{ fontSize: 11.5, color: "#6f6a61", marginBottom: 8 }}>{LIAM_OFFICE}</div>
+              <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 8 }}>
+                <span style={{ fontSize: 11, color: "#8a8378", fontWeight: 600 }}>Arrive by</span>
+                <input type="time" value={liamPerson.arrival} onChange={(e) => setLiam("arrival", e.target.value)} style={{ border: "1px solid #e0dacd", background: "#fdfbf6", borderRadius: 8, padding: "4px 7px", fontSize: 12, fontWeight: 600, fontFamily: "'JetBrains Mono',monospace", outline: "none" }} />
+                <span style={{ fontSize: 10.5, color: "#b0a99c" }}>Mon/Wed/Thu</span>
+              </div>
+              {tickerRow(liamPerson, (f) => setLiam(f, !liamPerson[f]))}
+            </div>
+          ) : (
+            <div style={{ display: "flex", flexDirection: "column", gap: 9, marginBottom: 8 }}>
+              {people.map((p, idx) => {
+                const rt = resolvedText(p.company, p.address);
+                const lead = idx === 0;
+                return (
+                  <div key={p.id} style={{ border: lead ? "1.5px solid var(--accent)" : "1px solid #e6e1d6", borderRadius: 12, padding: "10px 11px", background: lead ? "color-mix(in srgb, var(--accent) 6%, #fffdf8)" : "#fdfbf6" }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
+                      <div style={{ width: 7, height: 7, borderRadius: "50%", background: "var(--accent)", flex: "0 0 auto" }} />
+                      <input value={p.name} onChange={(e) => setPerson(p.id, "name", e.target.value)} placeholder="Name" style={{ flex: 1, minWidth: 0, border: "none", background: "transparent", fontSize: 14, fontWeight: 600, color: "#1c1a17", outline: "none", padding: 0 }} />
+                      {people.length > 1 && (
+                        <button onClick={() => removePerson(p.id)} title="Remove" style={{ border: "none", background: "transparent", cursor: "pointer", color: "#b0a99c", fontSize: 17, lineHeight: 1, padding: "0 2px" }}>×</button>
+                      )}
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                      <input value={p.company} onChange={(e) => setPerson(p.id, "company", e.target.value)} placeholder="Company name" style={{ ...fieldStyle, borderRadius: 8, padding: "7px 9px", fontSize: 12.5, fontWeight: 600 }} />
+                      <input value={p.address} onChange={(e) => setPerson(p.id, "address", e.target.value)} placeholder="Work address or city (e.g. San Francisco)" style={{ ...fieldStyle, borderRadius: 8, padding: "7px 9px", fontSize: 12 }} />
+                      <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                        <span style={{ fontSize: 11, color: "#8a8378", fontWeight: 600 }}>Arrive by</span>
+                        <input type="time" value={p.arrival} onChange={(e) => setPerson(p.id, "arrival", e.target.value)} style={{ border: "1px solid #e0dacd", background: "#fdfbf6", borderRadius: 8, padding: "4px 7px", fontSize: 12, fontWeight: 600, color: "#1c1a17", outline: "none", fontFamily: "'JetBrains Mono',monospace" }} />
+                        <span style={{ fontSize: 10.5, color: "#b0a99c" }}>Mon/Wed/Thu</span>
+                      </div>
+                      {tickerRow(p, (f) => togglePersonFlag(p.id, f))}
+                      <div style={{ fontSize: 11, fontWeight: 600, color: rt.color }}>{rt.text}</div>
+                    </div>
+                  </div>
+                );
+              })}
+              <button onClick={addPerson} style={{ border: "1.5px dashed #d4cdbf", background: "transparent", cursor: "pointer", padding: 10, borderRadius: 11, fontSize: 13, fontWeight: 600, color: "#6f6a61" }}>
+                + Add a roommate
+              </button>
+            </div>
+          )}
+          <button onClick={copyScrapeConfig} title="Copy this profile as JSON to paste into scripts/household.json — that's what its scraper searches for" style={{ border: "none", background: "transparent", cursor: "pointer", padding: "2px 2px 10px", fontSize: 11.5, fontWeight: 600, color: "var(--accent)", textAlign: "left" }}>
+            ⧉ Copy {profile === "liam" ? "Liam" : "group"} as scrape config
+          </button>
 
           {/* pref mode */}
           <div style={{ display: "flex", gap: 6, margin: "14px 0 22px" }}>
@@ -674,7 +750,8 @@ export default function App() {
                       ) : (
                         <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
                           {(plans[r.id].results || []).map((pr: any, k: number) => {
-                            const opts = [pr.transit, pr.drive, pr.bike].filter((o: any) => o && o.ok);
+                            // only recommend drive/bike if the person ticked having one
+                            const opts = [pr.transit, pr.hasCar !== false ? pr.drive : null, pr.hasBike !== false ? pr.bike : null].filter((o: any) => o && o.ok);
                             if (!opts.length)
                               return <div key={k} style={{ fontSize: 11.5, color: "#b07d1a" }}>{pr.person}: no route found</div>;
                             const best = opts.reduce((a: any, b: any) => (new Date(b.leaveBy) > new Date(a.leaveBy) ? b : a), opts[0]);

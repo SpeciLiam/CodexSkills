@@ -50,20 +50,32 @@ GOOGLE_SF_COMMUTE = {
 HOUSEHOLD_FILE = SCRIPT_DIR / "household.json"
 
 
-def load_household() -> list:
-    """The shared roommate config (scripts/household.json) — seeds the dashboard's
-    default 'Who's commuting' list. Falls back to a solo HackerRank default."""
+LIAM_DEFAULT = {"name": "Liam", "company": "HackerRank", "address": "2350 Mission College Blvd #750, Santa Clara, CA 95054", "arrival": "09:00", "car": True, "bike": True}
+
+
+def _norm_person(p: dict) -> dict:
+    return {
+        "name": p.get("name", ""), "company": p.get("company", ""), "address": p.get("address", ""),
+        "arrival": p.get("arrival", "09:00"), "car": p.get("car", True), "bike": p.get("bike", True),
+    }
+
+
+def load_household() -> dict:
+    """The shared roommate config (scripts/household.json) — seeds the dashboard's two
+    profiles. Returns {'liam': <person>, 'group': [<person>...]}. Solo HackerRank fallback."""
+    out = {"liam": dict(LIAM_DEFAULT), "group": [dict(LIAM_DEFAULT)]}
     try:
         cfg = json.loads(HOUSEHOLD_FILE.read_text(encoding="utf-8"))
-        people = [
-            {"name": p.get("name", ""), "company": p.get("company", ""), "address": p.get("address", ""), "arrival": p.get("arrival", "09:00")}
-            for p in cfg.get("people", []) if isinstance(p, dict)
-        ]
-        if people:
-            return people
-    except (OSError, json.JSONDecodeError, TypeError):
+        liam_people = ((cfg.get("liam") or {}).get("people")) or []
+        group_people = ((cfg.get("group") or {}).get("people")) or cfg.get("people") or []  # back-compat
+        if liam_people and isinstance(liam_people[0], dict):
+            out["liam"] = _norm_person(liam_people[0])
+        group = [_norm_person(p) for p in group_people if isinstance(p, dict)]
+        if group:
+            out["group"] = group
+    except (OSError, json.JSONDecodeError, TypeError, AttributeError):
         pass
-    return [{"name": "You", "company": "HackerRank", "address": "Santa Clara, CA", "arrival": "09:00"}]
+    return out
 
 
 def office_commutes(market: str) -> dict:
@@ -139,6 +151,7 @@ def export() -> dict:
     needs = [x for x in listings if x["status"] == "Needs Verification"]
     replaced = [x for x in listings if x["status"] in hp.REPLACED_STATUSES]
     markets = sorted({x["market"] for x in active if x["market"]}, key=hp.market_sort_key)
+    _hh = load_household()
 
     return {
         "generatedAt": datetime.now(timezone.utc).isoformat(),
@@ -151,7 +164,8 @@ def export() -> dict:
         },
         "marketOrder": [m for m in hp.MARKET_ORDER if m in markets],
         "offices": OFFICES,
-        "defaultPeople": load_household(),
+        "defaultPeople": _hh["group"],
+        "defaultLiam": _hh["liam"],
         "listings": listings,
     }
 

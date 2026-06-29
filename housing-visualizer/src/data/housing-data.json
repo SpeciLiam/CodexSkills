@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T22:12:24.599796+00:00",
+  "generatedAt": "2026-06-29T22:45:16.167993+00:00",
   "stats": {
     "total": 1058,
     "active": 847,
@@ -23,12 +23,22 @@
   ],
   "defaultPeople": [
     {
-      "name": "You",
+      "name": "Liam",
       "company": "HackerRank",
-      "address": "Santa Clara, CA",
-      "arrival": "09:00"
+      "address": "2350 Mission College Blvd #750, Santa Clara, CA 95054",
+      "arrival": "09:00",
+      "car": true,
+      "bike": true
     }
   ],
+  "defaultLiam": {
+    "name": "Liam",
+    "company": "HackerRank",
+    "address": "2350 Mission College Blvd #750, Santa Clara, CA 95054",
+    "arrival": "09:00",
+    "car": true,
+    "bike": true
+  },
   "listings": [
     {
       "listingKey": "craigslist-1ad30f6a11",
