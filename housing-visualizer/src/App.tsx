@@ -1,5 +1,6 @@
-import { useEffect, useMemo, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import rawData from "./data/housing-data.json";
+import { fetchRemoteMarks, upsertRemoteMark, deleteRemoteMark } from "./marksStore";
 
 /* ──────────────────────────────────────────────────────────────────────────
    Bay Area Housing Hunt — implementation of Housing Hunt.dc.html
@@ -241,9 +242,39 @@ export default function App() {
     try { localStorage.setItem(MARKS_KEY, JSON.stringify(marks)); } catch { /* ignore */ }
   }, [marks]);
 
-  // toggle a per-listing mark; clicking the active mark clears it
-  const setMark = (key: string, val: string) =>
-    setMarks((m) => { const n = { ...m }; if (n[key] === val) delete n[key]; else n[key] = val; return n; });
+  // Keys the user has toggled since mount — excluded from the load-merge so a fresh
+  // edit made during the initial fetch isn't clobbered by the (stale) remote value.
+  const touchedKeys = useRef<Set<string>>(new Set());
+
+  // Cross-device sync: pull the durable marks from Supabase once on load and merge
+  // them over the local cache (remote wins per key, except keys the user just touched).
+  // Offline -> keep local.
+  useEffect(() => {
+    let alive = true;
+    fetchRemoteMarks()
+      .then((remote) => {
+        if (!alive) return;
+        setMarks((local) => {
+          const out = { ...local };
+          for (const k in remote) if (!touchedKeys.current.has(k)) out[k] = remote[k];
+          return out;
+        });
+      })
+      .catch(() => { /* offline / unreachable — localStorage stays the source */ });
+    return () => { alive = false; };
+  }, []);
+
+  // toggle a per-listing mark; clicking the active mark clears it. Optimistic local
+  // update + background push to the durable store (fire-and-forget; offline is fine).
+  const setMark = (key: string, val: string) => {
+    touchedKeys.current.add(key);
+    setMarks((m) => {
+      const n = { ...m };
+      if (n[key] === val) { delete n[key]; deleteRemoteMark(key).catch(() => {}); }
+      else { n[key] = val; upsertRemoteMark(key, val).catch(() => {}); }
+      return n;
+    });
+  };
   // copy the current household so it can be pasted into household.json (drives the scrape)
   const copyScrapeConfig = () => {
     const cfg = JSON.stringify({ people: people.map((p) => ({ name: p.name, company: p.company, address: p.address })) }, null, 2);
