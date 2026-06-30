@@ -17,9 +17,24 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
 import housing_pipeline as hp  # noqa: E402
 import sync_housing_to_notion as sync  # noqa: E402
+import commute_origins as co  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / "housing-visualizer" / "src" / "data" / "housing-data.json"
+
+# Real Google-Maps commute cache (durations only; written by recompute_commutes.py).
+# Reading it here costs nothing — Google was billed once when the cache was built —
+# and lets every export ship real per-office routing instead of the static tables.
+COMMUTE_CACHE = SCRIPT_DIR / "commute_cache.json"
+# Acceptance envelope (one-way minutes). A geocode error makes the DRIVE absurd, so the
+# primary-office drive is the geocode-sanity gate: once it is in range we trust the
+# origin geocoded to a real point, and a transit FROM that same point is therefore real
+# too — even when it is huge (e.g. Santa Cruz ~483m: genuinely terrible transit, not a
+# bug). So transit is accepted across a wide band rather than rejected-and-clamped, which
+# is what used to fabricate a fast 43m transit for those far listings. The low floor
+# admits genuine sub-10m inner-city transit; the high ceiling still drops pure artifacts.
+_DRIVE_OK = (3, 180)
+_TRANSIT_OK = (2, 600)
 
 # Pre-configured offices (no manual input). HackerRank commute reuses the board's
 # Santa Clara table; Google SF (downtown / 345 Spear St, Caltrain + BART reachable)
@@ -85,6 +100,63 @@ def office_commutes(market: str) -> dict:
         HACKERRANK: {"transit": hr["no_car"], "drive": hr["car"]},
         GOOGLE_SF: {"transit": sf[0], "drive": sf[1]},
     }
+
+
+def load_commute_cache() -> dict:
+    """origin_key -> cache entry (or {} if the cache is missing/unbuilt)."""
+    try:
+        return (json.loads(COMMUTE_CACHE.read_text(encoding="utf-8")) or {}).get("origins", {})
+    except (OSError, json.JSONDecodeError, AttributeError):
+        return {}
+
+
+def _ok(v, lo_hi) -> bool:
+    return isinstance(v, (int, float)) and lo_hi[0] <= v <= lo_hi[1]
+
+
+def apply_google_commute(listing: dict, cache: dict) -> bool:
+    """Overwrite a listing's office routing with real Google numbers when we have a
+    trustworthy cache entry for its origin. Per-field gating keeps a static fallback
+    for any value that looks like a geocode error. Returns True if anything changed."""
+    entry = cache.get(co.origin_key(listing.get("market", ""), listing.get("city", ""),
+                                    listing.get("neighborhood", "")))
+    if not entry:
+        return False
+    offices = entry.get("office") or {}
+    prim = offices.get(co.PRIMARY_OFFICE) or {}
+    # Origin is only trusted when its primary-office drive is in range (geocode sanity).
+    if not _ok(prim.get("drive"), _DRIVE_OK):
+        return False
+
+    oc = dict(listing.get("officeCommutes") or {})
+    for label, rec in offices.items():
+        cell = dict(oc.get(label) or {})
+        if _ok(rec.get("transit"), _TRANSIT_OK):
+            cell["transit"] = round(rec["transit"])  # real google transit, any magnitude
+        if _ok(rec.get("drive"), _DRIVE_OK):
+            cell["drive"] = round(rec["drive"])
+        oc[label] = cell
+    listing["officeCommutes"] = oc
+
+    # Legacy scalar fields (Notion mirror / markdown board) read FROM the same primary
+    # cell so they can never diverge from what the dashboard shows.
+    sc = oc.get(co.PRIMARY_OFFICE) or {}
+    listing["carCommuteMin"] = sc.get("drive")
+    listing["commuteMin"] = sc.get("transit")
+    if _ok(entry.get("homeTransit"), _TRANSIT_OK):
+        listing["commuteHomeMin"] = round(entry["homeTransit"])
+    # Provenance-honest summary: only claim a Google transit/route when it was accepted.
+    transit_google = _ok(prim.get("transit"), _TRANSIT_OK)
+    summ = (prim.get("transitSummary") or "").strip()
+    dr = sc.get("drive")
+    if transit_google:
+        listing["howToGetThere"] = (
+            f"Transit ~{sc.get('transit')}m" + (f" via {summ}" if summ else "") + f" · drive ~{dr}m (Google Maps)"
+        )
+    else:
+        listing["howToGetThere"] = f"Drive ~{dr}m (Google Maps; transit estimated)"
+    listing["commuteSource"] = "google"
+    return True
 
 
 def num(value: str):
@@ -160,6 +232,14 @@ def export() -> dict:
             "notes": row.get("Notes", ""),
         })
 
+    # Overlay real Google-Maps routing where the cache covers a listing's origin.
+    cache = load_commute_cache()
+    google_n = 0
+    for x in listings:
+        x.setdefault("commuteSource", "static")
+        if apply_google_commute(x, cache):
+            google_n += 1
+
     active = [x for x in listings if x["status"] in hp.ACTIVE_STATUSES]
     needs = [x for x in listings if x["status"] == "Needs Verification"]
     replaced = [x for x in listings if x["status"] in hp.REPLACED_STATUSES]
@@ -174,6 +254,7 @@ def export() -> dict:
             "needsVerification": len(needs),
             "replaced": len(replaced),
             "markets": len(markets),
+            "googleCommutes": google_n,
         },
         "marketOrder": [m for m in hp.MARKET_ORDER if m in markets],
         "offices": OFFICES,

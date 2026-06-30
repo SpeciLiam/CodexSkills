@@ -1,0 +1,1953 @@
+{
+  "meta": {
+    "generatedAt": "2026-06-30T06:30:41.390272+00:00",
+    "arrival": "2026-07-06T09:00:00-07:00",
+    "endpoint": "https://housing-visualizer.vercel.app/api/commute",
+    "primaryOffice": "HackerRank (Santa Clara)",
+    "officeAddresses": {
+      "HackerRank (Santa Clara)": "2350 Mission College Blvd #750, Santa Clara, CA 95054",
+      "Google (San Francisco)": "345 Spear Street, San Francisco, CA 94105"
+    },
+    "originCount": 102
+  },
+  "origins": {
+    "21st ave., san francisco, ca": {
+      "origin": "21st Ave., San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 156,
+          "drive": 46,
+          "bike": 275,
+          "transitSummary": "tram + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 42,
+          "drive": 22,
+          "bike": 42
+        }
+      },
+      "computedAt": "2026-06-30T06:30:30.372719+00:00",
+      "suspect": false,
+      "homeTransit": 150
+    },
+    "alamo square, san francisco, ca": {
+      "origin": "Alamo Square, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 135,
+          "drive": 54,
+          "bike": 278,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 26,
+          "drive": 12,
+          "bike": 20
+        }
+      },
+      "computedAt": "2026-06-30T06:30:30.373505+00:00",
+      "suspect": false,
+      "homeTransit": 129
+    },
+    "alameda, ca": {
+      "origin": "Alameda, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 117,
+          "drive": 43,
+          "bike": 232,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 54,
+          "drive": 17,
+          "bike": 28
+        }
+      },
+      "computedAt": "2026-06-30T06:30:30.373382+00:00",
+      "suspect": false,
+      "homeTransit": 112
+    },
+    "berkeley, ca": {
+      "origin": "Berkeley, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 112,
+          "drive": 48,
+          "bike": 262,
+          "transitSummary": "Capitol Corridor + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 40,
+          "drive": 17,
+          "bike": 62
+        }
+      },
+      "computedAt": "2026-06-30T06:30:30.374079+00:00",
+      "suspect": false,
+      "homeTransit": 113
+    },
+    "252 chestnut ave, palo alto, ca": {
+      "origin": "252 Chestnut Ave, Palo Alto, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 96,
+          "drive": 16,
+          "bike": 66,
+          "transitSummary": "bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 102,
+          "drive": 41,
+          "bike": 188
+        }
+      },
+      "computedAt": "2026-06-30T06:30:30.373248+00:00",
+      "suspect": false,
+      "homeTransit": 109
+    },
+    "atherton, ca": {
+      "origin": "Atherton, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 89,
+          "drive": 21,
+          "bike": 96,
+          "transitSummary": "BART + Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 88,
+          "drive": 38,
+          "bike": 161
+        }
+      },
+      "computedAt": "2026-06-30T06:30:30.373719+00:00",
+      "suspect": false,
+      "homeTransit": 96
+    },
+    "antioch, ca": {
+      "origin": "Antioch, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 212,
+          "drive": 64,
+          "bike": 412,
+          "transitSummary": "BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 108,
+          "drive": 44,
+          "bike": 293
+        }
+      },
+      "computedAt": "2026-06-30T06:30:30.373609+00:00",
+      "suspect": false,
+      "homeTransit": 187
+    },
+    "bernal heights, san francisco, ca": {
+      "origin": "Bernal Heights, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 146,
+          "drive": 40,
+          "bike": 250,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 46,
+          "drive": 11,
+          "bike": 30
+        }
+      },
+      "computedAt": "2026-06-30T06:30:30.374234+00:00",
+      "suspect": false,
+      "homeTransit": 138
+    },
+    "campbell, ca": {
+      "origin": "Campbell, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 55,
+          "drive": 14,
+          "bike": 45,
+          "transitSummary": "BART + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 110,
+          "drive": 54,
+          "bike": 277
+        }
+      },
+      "computedAt": "2026-06-30T06:30:30.670381+00:00",
+      "suspect": false,
+      "homeTransit": 68
+    },
+    "burlingame, ca": {
+      "origin": "Burlingame, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 86,
+          "drive": 31,
+          "bike": 155,
+          "transitSummary": "Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 55,
+          "drive": 27,
+          "bike": 99
+        }
+      },
+      "computedAt": "2026-06-30T06:30:30.665791+00:00",
+      "suspect": false,
+      "homeTransit": 90
+    },
+    "brisbane, ca": {
+      "origin": "Brisbane, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 102,
+          "drive": 36,
+          "bike": 223,
+          "transitSummary": "Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 40,
+          "drive": 17,
+          "bike": 47
+        }
+      },
+      "computedAt": "2026-06-30T06:30:30.658244+00:00",
+      "suspect": false,
+      "homeTransit": 104
+    },
+    "belmont, ca": {
+      "origin": "Belmont, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 75,
+          "drive": 22,
+          "bike": 128,
+          "transitSummary": "Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 66,
+          "drive": 29,
+          "bike": 130
+        }
+      },
+      "computedAt": "2026-06-30T06:30:30.373927+00:00",
+      "suspect": false,
+      "homeTransit": 79
+    },
+    "bayview, san francisco, ca": {
+      "origin": "Bayview, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 136,
+          "drive": 38,
+          "bike": 246,
+          "transitSummary": "tram + Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 55,
+          "drive": 14,
+          "bike": 26
+        }
+      },
+      "computedAt": "2026-06-30T06:30:30.373826+00:00",
+      "suspect": false,
+      "homeTransit": 150
+    },
+    "campbell-willow glen cambrian, ca": {
+      "origin": "Campbell-Willow glen Cambrian, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 73,
+          "drive": 16,
+          "bike": 61,
+          "transitSummary": "bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 133,
+          "drive": 53,
+          "bike": 293
+        }
+      },
+      "computedAt": "2026-06-30T06:30:31.293604+00:00",
+      "suspect": false,
+      "homeTransit": 98
+    },
+    "city of san francisco, san francisco, ca": {
+      "origin": "City Of San Francisco, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 111,
+          "drive": 52,
+          "bike": 270,
+          "transitSummary": "Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 5,
+          "drive": 12,
+          "bike": 16
+        }
+      },
+      "computedAt": "2026-06-30T06:30:31.402439+00:00",
+      "suspect": false,
+      "homeTransit": 115
+    },
+    "castro, san francisco, ca": {
+      "origin": "Castro, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 131,
+          "drive": 48,
+          "bike": 271,
+          "transitSummary": "tram + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 21,
+          "drive": 15,
+          "bike": 25
+        }
+      },
+      "computedAt": "2026-06-30T06:30:31.396092+00:00",
+      "suspect": false,
+      "homeTransit": 115
+    },
+    "colma, ca": {
+      "origin": "Colma, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 142,
+          "drive": 39,
+          "bike": 226,
+          "transitSummary": "BART + Limited + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 48,
+          "drive": 18,
+          "bike": 68
+        }
+      },
+      "computedAt": "2026-06-30T06:30:31.510616+00:00",
+      "suspect": false,
+      "homeTransit": 151
+    },
+    "concord, ca": {
+      "origin": "Concord, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 147,
+          "drive": 54,
+          "bike": 324,
+          "transitSummary": "BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 57,
+          "drive": 34,
+          "bike": 205
+        }
+      },
+      "computedAt": "2026-06-30T06:30:31.543879+00:00",
+      "suspect": false,
+      "homeTransit": 131
+    },
+    "caspar, ca": {
+      "origin": "Caspar, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 606,
+          "drive": 228,
+          "bike": 1346,
+          "transitSummary": "bus + Capitol Corridor + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 381,
+          "drive": 194,
+          "bike": 1076
+        }
+      },
+      "computedAt": "2026-06-30T06:30:31.333959+00:00",
+      "suspect": true,
+      "homeTransit": 516
+    },
+    "clayton rd #37, concord, san francisco, ca": {
+      "origin": "Clayton Rd #37, Concord, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 150,
+          "drive": 57,
+          "bike": 281,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 35,
+          "drive": 15,
+          "bike": 25
+        }
+      },
+      "computedAt": "2026-06-30T06:30:31.477335+00:00",
+      "suspect": false,
+      "homeTransit": 136
+    },
+    "daly city, ca": {
+      "origin": "Daly City, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 131,
+          "drive": 37,
+          "bike": 235,
+          "transitSummary": "BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 29,
+          "drive": 15,
+          "bike": 62
+        }
+      },
+      "computedAt": "2026-06-30T06:30:31.882759+00:00",
+      "suspect": false,
+      "homeTransit": 118
+    },
+    "cupertino, ca": {
+      "origin": "Cupertino, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 57,
+          "drive": 15,
+          "bike": 41,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 101,
+          "drive": 47,
+          "bike": 240
+        }
+      },
+      "computedAt": "2026-06-30T06:30:31.611342+00:00",
+      "suspect": false,
+      "homeTransit": 62
+    },
+    "east palo alto, ca": {
+      "origin": "East Palo Alto, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 86,
+          "drive": 16,
+          "bike": 87,
+          "transitSummary": "bus + Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 84,
+          "drive": 37,
+          "bike": 197
+        }
+      },
+      "computedAt": "2026-06-30T06:30:32.138666+00:00",
+      "suspect": false,
+      "homeTransit": 92
+    },
+    "downtown, san francisco, ca": {
+      "origin": "Downtown, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 122,
+          "drive": 46,
+          "bike": 275,
+          "transitSummary": "BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 13,
+          "drive": 8,
+          "bike": 8
+        }
+      },
+      "computedAt": "2026-06-30T06:30:32.103776+00:00",
+      "suspect": false,
+      "homeTransit": 117
+    },
+    "foster city ca, ca": {
+      "origin": "Foster City CA, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 116,
+          "drive": 26,
+          "bike": 145,
+          "transitSummary": "bus + Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 74,
+          "drive": 29,
+          "bike": 124
+        }
+      },
+      "computedAt": "2026-06-30T06:30:32.345488+00:00",
+      "suspect": false,
+      "homeTransit": 130
+    },
+    "foster city, ca": {
+      "origin": "Foster city, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 116,
+          "drive": 26,
+          "bike": 145,
+          "transitSummary": "bus + Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 74,
+          "drive": 29,
+          "bike": 124
+        }
+      },
+      "computedAt": "2026-06-30T06:30:32.405922+00:00",
+      "suspect": false,
+      "homeTransit": 130
+    },
+    "fremont, ca": {
+      "origin": "Fremont, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 59,
+          "drive": 20,
+          "bike": 81,
+          "transitSummary": "Capitol Corridor + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 92,
+          "drive": 38,
+          "bike": 177
+        }
+      },
+      "computedAt": "2026-06-30T06:30:32.446977+00:00",
+      "suspect": false,
+      "homeTransit": 47
+    },
+    "fremont - alameda creek, ca": {
+      "origin": "Fremont - Alameda Creek, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": null,
+          "drive": 29,
+          "bike": 127,
+          "transitSummary": ""
+        },
+        "Google (San Francisco)": {
+          "transit": null,
+          "drive": 35,
+          "bike": 139
+        }
+      },
+      "computedAt": "2026-06-30T06:30:32.440775+00:00",
+      "suspect": false,
+      "homeTransit": null
+    },
+    "excelsior, san francisco, ca": {
+      "origin": "Excelsior, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 154,
+          "drive": 42,
+          "bike": 240,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 57,
+          "drive": 14,
+          "bike": 39
+        }
+      },
+      "computedAt": "2026-06-30T06:30:32.293912+00:00",
+      "suspect": false,
+      "homeTransit": 135
+    },
+    "gilroy, ca": {
+      "origin": "Gilroy, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 114,
+          "drive": 38,
+          "bike": 228,
+          "transitSummary": "South Santa Clara County Connector + Limited + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 134,
+          "drive": 79,
+          "bike": 468
+        }
+      },
+      "computedAt": "2026-06-30T06:30:32.632965+00:00",
+      "suspect": false,
+      "homeTransit": 110
+    },
+    "hayward, ca": {
+      "origin": "Hayward, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 76,
+          "drive": 33,
+          "bike": 138,
+          "transitSummary": "Capitol Corridor + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 66,
+          "drive": 29,
+          "bike": 123
+        }
+      },
+      "computedAt": "2026-06-30T06:30:32.834349+00:00",
+      "suspect": false,
+      "homeTransit": 74
+    },
+    "hayes valley, san francisco, ca": {
+      "origin": "Hayes Valley, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 134,
+          "drive": 53,
+          "bike": 276,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 33,
+          "drive": 11,
+          "bike": 19
+        }
+      },
+      "computedAt": "2026-06-30T06:30:32.694152+00:00",
+      "suspect": false,
+      "homeTransit": 127
+    },
+    "inner richmond, san francisco, ca": {
+      "origin": "Inner Richmond, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 148,
+          "drive": 52,
+          "bike": 284,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 51,
+          "drive": 18,
+          "bike": 34
+        }
+      },
+      "computedAt": "2026-06-30T06:30:32.905083+00:00",
+      "suspect": false,
+      "homeTransit": 136
+    },
+    "los altos hills, ca": {
+      "origin": "Los Altos Hills, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 98,
+          "drive": 21,
+          "bike": 71,
+          "transitSummary": "bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 124,
+          "drive": 45,
+          "bike": 204
+        }
+      },
+      "computedAt": "2026-06-30T06:30:33.192458+00:00",
+      "suspect": false,
+      "homeTransit": 119
+    },
+    "los gatos, ca": {
+      "origin": "Los Gatos, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 99,
+          "drive": 17,
+          "bike": 66,
+          "transitSummary": "bus + BART + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 149,
+          "drive": 55,
+          "bike": 289
+        }
+      },
+      "computedAt": "2026-06-30T06:30:33.217114+00:00",
+      "suspect": false,
+      "homeTransit": 113
+    },
+    "inner sunset, san francisco, ca": {
+      "origin": "Inner sunset, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 146,
+          "drive": 49,
+          "bike": 271,
+          "transitSummary": "tram + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 31,
+          "drive": 18,
+          "bike": 33
+        }
+      },
+      "computedAt": "2026-06-30T06:30:33.061707+00:00",
+      "suspect": false,
+      "homeTransit": 135
+    },
+    "laurel heights, san francisco, ca": {
+      "origin": "Laurel Heights, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 146,
+          "drive": 59,
+          "bike": 287,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 43,
+          "drive": 15,
+          "bike": 30
+        }
+      },
+      "computedAt": "2026-06-30T06:30:33.157844+00:00",
+      "suspect": false,
+      "homeTransit": 140
+    },
+    "lower haight, san francisco, ca": {
+      "origin": "Lower Haight, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 142,
+          "drive": 52,
+          "bike": 274,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 24,
+          "drive": 11,
+          "bike": 23
+        }
+      },
+      "computedAt": "2026-06-30T06:30:33.332121+00:00",
+      "suspect": false,
+      "homeTransit": 131
+    },
+    "lower pac hts, san francisco, ca": {
+      "origin": "Lower Pac Hts, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 111,
+          "drive": 52,
+          "bike": 270,
+          "transitSummary": "Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 5,
+          "drive": 12,
+          "bike": 16
+        }
+      },
+      "computedAt": "2026-06-30T06:30:33.537193+00:00",
+      "suspect": false,
+      "homeTransit": 115
+    },
+    "lower nob hill, san francisco, ca": {
+      "origin": "Lower Nob Hill, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 131,
+          "drive": 54,
+          "bike": 279,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 24,
+          "drive": 9,
+          "bike": 11
+        }
+      },
+      "computedAt": "2026-06-30T06:30:33.347854+00:00",
+      "suspect": false,
+      "homeTransit": 125
+    },
+    "menlo park, ca": {
+      "origin": "Menlo Park, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 65,
+          "drive": 21,
+          "bike": 87,
+          "transitSummary": "Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 77,
+          "drive": 40,
+          "bike": 167
+        }
+      },
+      "computedAt": "2026-06-30T06:30:33.748178+00:00",
+      "suspect": false,
+      "homeTransit": 68
+    },
+    "marina, san francisco, ca": {
+      "origin": "Marina, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 158,
+          "drive": 57,
+          "bike": 292,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 44,
+          "drive": 16,
+          "bike": 22
+        }
+      },
+      "computedAt": "2026-06-30T06:30:33.675428+00:00",
+      "suspect": false,
+      "homeTransit": 152
+    },
+    "mission district, san francisco, ca": {
+      "origin": "Mission District, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 127,
+          "drive": 54,
+          "bike": 265,
+          "transitSummary": "BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 32,
+          "drive": 12,
+          "bike": 17
+        }
+      },
+      "computedAt": "2026-06-30T06:30:34.171911+00:00",
+      "suspect": false,
+      "homeTransit": 122
+    },
+    "milpitas, ca": {
+      "origin": "Milpitas, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 45,
+          "drive": 12,
+          "bike": 37,
+          "transitSummary": "tram + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 96,
+          "drive": 45,
+          "bike": 229
+        }
+      },
+      "computedAt": "2026-06-30T06:30:34.052915+00:00",
+      "suspect": false,
+      "homeTransit": 57
+    },
+    "millbrae, ca": {
+      "origin": "Millbrae, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 90,
+          "drive": 30,
+          "bike": 171,
+          "transitSummary": "Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 53,
+          "drive": 22,
+          "bike": 85
+        }
+      },
+      "computedAt": "2026-06-30T06:30:34.003149+00:00",
+      "suspect": false,
+      "homeTransit": 94
+    },
+    "mid-market, san francisco, ca": {
+      "origin": "Mid-Market, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 123,
+          "drive": 49,
+          "bike": 276,
+          "transitSummary": "BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 12,
+          "drive": 13,
+          "bike": 10
+        }
+      },
+      "computedAt": "2026-06-30T06:30:33.931265+00:00",
+      "suspect": false,
+      "homeTransit": 117
+    },
+    "mint hill, san francisco, ca": {
+      "origin": "Mint Hill, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 139,
+          "drive": 53,
+          "bike": 274,
+          "transitSummary": "tram + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 19,
+          "drive": 11,
+          "bike": 22
+        }
+      },
+      "computedAt": "2026-06-30T06:30:34.097463+00:00",
+      "suspect": false,
+      "homeTransit": 123
+    },
+    "mountain view, ca": {
+      "origin": "Mountain View, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 56,
+          "drive": 13,
+          "bike": 44,
+          "transitSummary": "tram + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 69,
+          "drive": 44,
+          "bike": 208
+        }
+      },
+      "computedAt": "2026-06-30T06:30:34.282265+00:00",
+      "suspect": false,
+      "homeTransit": 54
+    },
+    "morgan hill, ca": {
+      "origin": "Morgan Hill, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 96,
+          "drive": 28,
+          "bike": 174,
+          "transitSummary": "South Santa Clara County Connector + Limited + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 116,
+          "drive": 69,
+          "bike": 393
+        }
+      },
+      "computedAt": "2026-06-30T06:30:34.268233+00:00",
+      "suspect": false,
+      "homeTransit": 92
+    },
+    "nopa, san francisco, ca": {
+      "origin": "NOPA, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 141,
+          "drive": 56,
+          "bike": 280,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 40,
+          "drive": 14,
+          "bike": 23
+        }
+      },
+      "computedAt": "2026-06-30T06:30:34.292689+00:00",
+      "suspect": false,
+      "homeTransit": 137
+    },
+    "nob hill, san francisco, ca": {
+      "origin": "Nob hill, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 141,
+          "drive": 53,
+          "bike": 280,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 29,
+          "drive": 9,
+          "bike": 11
+        }
+      },
+      "computedAt": "2026-06-30T06:30:34.642107+00:00",
+      "suspect": false,
+      "homeTransit": 125
+    },
+    "nob hill, san francisco, san francisco, ca": {
+      "origin": "Nob Hill, San Francisco, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 141,
+          "drive": 53,
+          "bike": 280,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 29,
+          "drive": 9,
+          "bike": 11
+        }
+      },
+      "computedAt": "2026-06-30T06:30:34.529802+00:00",
+      "suspect": false,
+      "homeTransit": 125
+    },
+    "north san jose, ca": {
+      "origin": "North San Jose, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 25,
+          "drive": 5,
+          "bike": 21,
+          "transitSummary": "BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 102,
+          "drive": 49,
+          "bike": 265
+        }
+      },
+      "computedAt": "2026-06-30T06:30:34.871399+00:00",
+      "suspect": false,
+      "homeTransit": 24
+    },
+    "noe valley, san francisco, ca": {
+      "origin": "Noe Valley, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 142,
+          "drive": 44,
+          "bike": 260,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 35,
+          "drive": 15,
+          "bike": 28
+        }
+      },
+      "computedAt": "2026-06-30T06:30:34.836952+00:00",
+      "suspect": false,
+      "homeTransit": 135
+    },
+    "north beach, san francisco, ca": {
+      "origin": "North Beach, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 142,
+          "drive": 51,
+          "bike": 280,
+          "transitSummary": "bus + Limited + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 15,
+          "drive": 10,
+          "bike": 10
+        }
+      },
+      "computedAt": "2026-06-30T06:30:34.845505+00:00",
+      "suspect": false,
+      "homeTransit": 119
+    },
+    "oakland, ca": {
+      "origin": "Oakland, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 95,
+          "drive": 41,
+          "bike": 232,
+          "transitSummary": "Capitol Corridor + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 17,
+          "drive": 15,
+          "bike": 32
+        }
+      },
+      "computedAt": "2026-06-30T06:30:34.911667+00:00",
+      "suspect": false,
+      "homeTransit": 93
+    },
+    "pac heights, san francisco, ca": {
+      "origin": "Pac Heights, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 151,
+          "drive": 59,
+          "bike": 285,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 42,
+          "drive": 13,
+          "bike": 23
+        }
+      },
+      "computedAt": "2026-06-30T06:30:34.997558+00:00",
+      "suspect": false,
+      "homeTransit": 143
+    },
+    "palo alto, ca": {
+      "origin": "Palo Alto, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 62,
+          "drive": 14,
+          "bike": 77,
+          "transitSummary": "Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 62,
+          "drive": 39,
+          "bike": 178
+        }
+      },
+      "computedAt": "2026-06-30T06:30:35.202668+00:00",
+      "suspect": false,
+      "homeTransit": 65
+    },
+    "pacific heights, san francisco, ca": {
+      "origin": "Pacific Heights, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 151,
+          "drive": 59,
+          "bike": 285,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 42,
+          "drive": 13,
+          "bike": 23
+        }
+      },
+      "computedAt": "2026-06-30T06:30:35.149165+00:00",
+      "suspect": false,
+      "homeTransit": 143
+    },
+    "pacifica, ca": {
+      "origin": "Pacifica, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 196,
+          "drive": 41,
+          "bike": 234,
+          "transitSummary": "bus + Limited + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 62,
+          "drive": 20,
+          "bike": 103
+        }
+      },
+      "computedAt": "2026-06-30T06:30:35.184560+00:00",
+      "suspect": false,
+      "homeTransit": 176
+    },
+    "peterman ave, hayward, ca": {
+      "origin": "Peterman Ave, Hayward, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 113,
+          "drive": 26,
+          "bike": 132,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 85,
+          "drive": 30,
+          "bike": 128
+        }
+      },
+      "computedAt": "2026-06-30T06:30:35.521766+00:00",
+      "suspect": false,
+      "homeTransit": 122
+    },
+    "prunedale, ca": {
+      "origin": "Prunedale, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 145,
+          "drive": 56,
+          "bike": 356,
+          "transitSummary": "bus + South Santa Clara County Connector + Local Weekday"
+        },
+        "Google (San Francisco)": {
+          "transit": 174,
+          "drive": 97,
+          "bike": 569
+        }
+      },
+      "computedAt": "2026-06-30T06:30:35.794606+00:00",
+      "suspect": false,
+      "homeTransit": 127
+    },
+    "portola district, san francisco, ca": {
+      "origin": "Portola District, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 154,
+          "drive": 39,
+          "bike": 244,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 47,
+          "drive": 11,
+          "bike": 31
+        }
+      },
+      "computedAt": "2026-06-30T06:30:35.728089+00:00",
+      "suspect": false,
+      "homeTransit": 138
+    },
+    "redwood city, ca": {
+      "origin": "Redwood City, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 69,
+          "drive": 21,
+          "bike": 106,
+          "transitSummary": "Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 56,
+          "drive": 33,
+          "bike": 147
+        }
+      },
+      "computedAt": "2026-06-30T06:30:35.867121+00:00",
+      "suspect": false,
+      "homeTransit": 73
+    },
+    "potrero hill, san francisco, ca": {
+      "origin": "Potrero Hill, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 126,
+          "drive": 43,
+          "bike": 263,
+          "transitSummary": "bus + Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 34,
+          "drive": 12,
+          "bike": 17
+        }
+      },
+      "computedAt": "2026-06-30T06:30:35.758194+00:00",
+      "suspect": false,
+      "homeTransit": 133
+    },
+    "redwood shores, ca": {
+      "origin": "Redwood Shores, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 121,
+          "drive": 25,
+          "bike": 144,
+          "transitSummary": "bus + Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 119,
+          "drive": 31,
+          "bike": 153
+        }
+      },
+      "computedAt": "2026-06-30T06:30:35.938295+00:00",
+      "suspect": false,
+      "homeTransit": 124
+    },
+    "peninsula, ca": {
+      "origin": "Peninsula, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 589,
+          "drive": 367,
+          "bike": 3533,
+          "transitSummary": "bus + tram + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 640,
+          "drive": 415,
+          "bike": 3639
+        }
+      },
+      "computedAt": "2026-06-30T06:30:35.516628+00:00",
+      "suspect": true,
+      "homeTransit": 1001
+    },
+    "russian hill, san francisco, ca": {
+      "origin": "Russian Hill, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 147,
+          "drive": 57,
+          "bike": 283,
+          "transitSummary": "bus + Limited + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 26,
+          "drive": 12,
+          "bike": 17
+        }
+      },
+      "computedAt": "2026-06-30T06:30:36.010975+00:00",
+      "suspect": false,
+      "homeTransit": 133
+    },
+    "richmond, san francisco, ca": {
+      "origin": "Richmond, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 150,
+          "drive": 51,
+          "bike": 290,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 45,
+          "drive": 19,
+          "bike": 43
+        }
+      },
+      "computedAt": "2026-06-30T06:30:35.971304+00:00",
+      "suspect": false,
+      "homeTransit": 136
+    },
+    "soma, san francisco, ca": {
+      "origin": "SOMA, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 126,
+          "drive": 45,
+          "bike": 275,
+          "transitSummary": "BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 13,
+          "drive": 6,
+          "bike": 6
+        }
+      },
+      "computedAt": "2026-06-30T06:30:36.045798+00:00",
+      "suspect": false,
+      "homeTransit": 120
+    },
+    "san bruno, ca": {
+      "origin": "San Bruno, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 93,
+          "drive": 32,
+          "bike": 202,
+          "transitSummary": "Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 39,
+          "drive": 19,
+          "bike": 69
+        }
+      },
+      "computedAt": "2026-06-30T06:30:36.364170+00:00",
+      "suspect": false,
+      "homeTransit": 97
+    },
+    "san francisco, san francisco, ca": {
+      "origin": "San Francisco, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 111,
+          "drive": 52,
+          "bike": 270,
+          "transitSummary": "Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 5,
+          "drive": 12,
+          "bike": 16
+        }
+      },
+      "computedAt": "2026-06-30T06:30:36.673975+00:00",
+      "suspect": false,
+      "homeTransit": 115
+    },
+    "san carlos, ca": {
+      "origin": "San Carlos, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 73,
+          "drive": 23,
+          "bike": 122,
+          "transitSummary": "Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 68,
+          "drive": 32,
+          "bike": 136
+        }
+      },
+      "computedAt": "2026-06-30T06:30:36.647700+00:00",
+      "suspect": false,
+      "homeTransit": 77
+    },
+    "san jose east, ca": {
+      "origin": "San Jose East, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 91,
+          "drive": 13,
+          "bike": 72,
+          "transitSummary": "bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 122,
+          "drive": 54,
+          "bike": 275
+        }
+      },
+      "computedAt": "2026-06-30T06:30:36.695286+00:00",
+      "suspect": false,
+      "homeTransit": 98
+    },
+    "san francisco, ca": {
+      "origin": "San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 111,
+          "drive": 52,
+          "bike": 270,
+          "transitSummary": "Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 5,
+          "drive": 12,
+          "bike": 16
+        }
+      },
+      "computedAt": "2026-06-30T06:30:36.667562+00:00",
+      "suspect": false,
+      "homeTransit": 115
+    },
+    "san jose north, ca": {
+      "origin": "San Jose North, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 25,
+          "drive": 5,
+          "bike": 21,
+          "transitSummary": "BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 102,
+          "drive": 49,
+          "bike": 265
+        }
+      },
+      "computedAt": "2026-06-30T06:30:36.904454+00:00",
+      "suspect": false,
+      "homeTransit": 24
+    },
+    "san jose, ca": {
+      "origin": "San Jose, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 70,
+          "drive": 11,
+          "bike": 49,
+          "transitSummary": "tram + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 83,
+          "drive": 53,
+          "bike": 293
+        }
+      },
+      "computedAt": "2026-06-30T06:30:37.091384+00:00",
+      "suspect": false,
+      "homeTransit": 53
+    },
+    "san jose south, ca": {
+      "origin": "San Jose South, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 193,
+          "drive": 26,
+          "bike": 128,
+          "transitSummary": "bus + Limited + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 897,
+          "drive": 67,
+          "bike": 336
+        }
+      },
+      "computedAt": "2026-06-30T06:30:36.932158+00:00",
+      "suspect": false,
+      "homeTransit": 185
+    },
+    "san jose downtown, ca": {
+      "origin": "San Jose Downtown, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 65,
+          "drive": 9,
+          "bike": 46,
+          "transitSummary": "tram + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 102,
+          "drive": 52,
+          "bike": 289
+        }
+      },
+      "computedAt": "2026-06-30T06:30:36.682183+00:00",
+      "suspect": false,
+      "homeTransit": 58
+    },
+    "san jose west, ca": {
+      "origin": "San Jose West, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 85,
+          "drive": 16,
+          "bike": 42,
+          "transitSummary": "bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 131,
+          "drive": 51,
+          "bike": 257
+        }
+      },
+      "computedAt": "2026-06-30T06:30:36.997632+00:00",
+      "suspect": false,
+      "homeTransit": 79
+    },
+    "san jose-capitol exp, ca": {
+      "origin": "San Jose-capitol exp, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 112,
+          "drive": 15,
+          "bike": 76,
+          "transitSummary": "bus + tram + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 148,
+          "drive": 56,
+          "bike": 316
+        }
+      },
+      "computedAt": "2026-06-30T06:30:37.187053+00:00",
+      "suspect": false,
+      "homeTransit": 99
+    },
+    "san leandro, ca": {
+      "origin": "San Leandro, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 89,
+          "drive": 36,
+          "bike": 170,
+          "transitSummary": "BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 35,
+          "drive": 25,
+          "bike": 84
+        }
+      },
+      "computedAt": "2026-06-30T06:30:37.537440+00:00",
+      "suspect": false,
+      "homeTransit": 81
+    },
+    "santa clara, ca": {
+      "origin": "Santa Clara, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 15,
+          "drive": 7,
+          "bike": 20,
+          "transitSummary": "bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 101,
+          "drive": 50,
+          "bike": 252
+        }
+      },
+      "computedAt": "2026-06-30T06:30:37.757785+00:00",
+      "suspect": false,
+      "homeTransit": 9
+    },
+    "san mateo, ca": {
+      "origin": "San Mateo, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 83,
+          "drive": 26,
+          "bike": 146,
+          "transitSummary": "Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 46,
+          "drive": 29,
+          "bike": 108
+        }
+      },
+      "computedAt": "2026-06-30T06:30:37.624831+00:00",
+      "suspect": false,
+      "homeTransit": 87
+    },
+    "santa cruz pleasure point, ca": {
+      "origin": "Santa Cruz Pleasure Point, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 483,
+          "drive": 43,
+          "bike": 228,
+          "transitSummary": "bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 522,
+          "drive": 80,
+          "bike": 441
+        }
+      },
+      "computedAt": "2026-06-30T06:30:37.843476+00:00",
+      "suspect": true,
+      "homeTransit": 177
+    },
+    "south sj,kaiser,sjc,lightrail, ca": {
+      "origin": "South SJ,Kaiser,SJC,LightRail, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 193,
+          "drive": 26,
+          "bike": 128,
+          "transitSummary": "bus + Limited + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 897,
+          "drive": 67,
+          "bike": 336
+        }
+      },
+      "computedAt": "2026-06-30T06:30:38.101666+00:00",
+      "suspect": false,
+      "homeTransit": 185
+    },
+    "south san jose, ca": {
+      "origin": "South San Jose, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 193,
+          "drive": 26,
+          "bike": 128,
+          "transitSummary": "bus + Limited + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 897,
+          "drive": 67,
+          "bike": 336
+        }
+      },
+      "computedAt": "2026-06-30T06:30:38.150732+00:00",
+      "suspect": false,
+      "homeTransit": 185
+    },
+    "south san francisco, ca": {
+      "origin": "South San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 96,
+          "drive": 35,
+          "bike": 210,
+          "transitSummary": "Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 36,
+          "drive": 18,
+          "bike": 62
+        }
+      },
+      "computedAt": "2026-06-30T06:30:38.112157+00:00",
+      "suspect": false,
+      "homeTransit": 100
+    },
+    "sunnyvale, ca": {
+      "origin": "Sunnyvale, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 35,
+          "drive": 12,
+          "bike": 30,
+          "transitSummary": "BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 73,
+          "drive": 46,
+          "bike": 229
+        }
+      },
+      "computedAt": "2026-06-30T06:30:38.355589+00:00",
+      "suspect": false,
+      "homeTransit": 36
+    },
+    "santa rosa, ca": {
+      "origin": "Santa Rosa, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 221,
+          "drive": 94,
+          "bike": 597,
+          "transitSummary": "bus + BART + tram"
+        },
+        "Google (San Francisco)": {
+          "transit": 135,
+          "drive": 63,
+          "bike": 328
+        }
+      },
+      "computedAt": "2026-06-30T06:30:37.952755+00:00",
+      "suspect": true,
+      "homeTransit": 250
+    },
+    "south bay area, ca": {
+      "origin": "South Bay Area, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 539,
+          "drive": 337,
+          "bike": 2473,
+          "transitSummary": "bus + Limited + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 619,
+          "drive": 382,
+          "bike": 3587
+        }
+      },
+      "computedAt": "2026-06-30T06:30:38.048378+00:00",
+      "suspect": true,
+      "homeTransit": 957
+    },
+    "sunset, san francisco, ca": {
+      "origin": "Sunset, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 158,
+          "drive": 47,
+          "bike": 267,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 58,
+          "drive": 24,
+          "bike": 49
+        }
+      },
+      "computedAt": "2026-06-30T06:30:38.708859+00:00",
+      "suspect": false,
+      "homeTransit": 146
+    },
+    "tenderloin, san francisco, ca": {
+      "origin": "Tenderloin, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 127,
+          "drive": 49,
+          "bike": 275,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 24,
+          "drive": 10,
+          "bike": 10
+        }
+      },
+      "computedAt": "2026-06-30T06:30:38.731636+00:00",
+      "suspect": false,
+      "homeTransit": 117
+    },
+    "tracy, ca": {
+      "origin": "Tracy, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 130,
+          "drive": 57,
+          "bike": 328,
+          "transitSummary": "Altamont Commuter Express + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 132,
+          "drive": 62,
+          "bike": 336
+        }
+      },
+      "computedAt": "2026-06-30T06:30:38.804909+00:00",
+      "suspect": false,
+      "homeTransit": 112
+    },
+    "twin peaks, san francisco, ca": {
+      "origin": "Twin Peaks, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 172,
+          "drive": 48,
+          "bike": 261,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 49,
+          "drive": 21,
+          "bike": 32
+        }
+      },
+      "computedAt": "2026-06-30T06:30:38.969705+00:00",
+      "suspect": false,
+      "homeTransit": 143
+    },
+    "usf, san francisco, ca": {
+      "origin": "USF, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 150,
+          "drive": 57,
+          "bike": 280,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 39,
+          "drive": 15,
+          "bike": 25
+        }
+      },
+      "computedAt": "2026-06-30T06:30:39.019073+00:00",
+      "suspect": false,
+      "homeTransit": 134
+    },
+    "westlake area - sf border, ca": {
+      "origin": "Westlake area - SF border, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 111,
+          "drive": 52,
+          "bike": 270,
+          "transitSummary": "Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 5,
+          "drive": 12,
+          "bike": 16
+        }
+      },
+      "computedAt": "2026-06-30T06:30:39.346474+00:00",
+      "suspect": false,
+      "homeTransit": 115
+    },
+    "visitacion valley, san francisco, ca": {
+      "origin": "Visitacion Valley, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 128,
+          "drive": 39,
+          "bike": 233,
+          "transitSummary": "bus + Local Weekday + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 61,
+          "drive": 14,
+          "bike": 38
+        }
+      },
+      "computedAt": "2026-06-30T06:30:39.172911+00:00",
+      "suspect": false,
+      "homeTransit": 122
+    },
+    "western addition, san francisco, ca": {
+      "origin": "Western Addition, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 141,
+          "drive": 54,
+          "bike": 278,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 36,
+          "drive": 13,
+          "bike": 20
+        }
+      },
+      "computedAt": "2026-06-30T06:30:39.339856+00:00",
+      "suspect": false,
+      "homeTransit": 136
+    },
+    "west portal, san francisco, ca": {
+      "origin": "West Portal, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 144,
+          "drive": 44,
+          "bike": 259,
+          "transitSummary": "tram + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 31,
+          "drive": 20,
+          "bike": 47
+        }
+      },
+      "computedAt": "2026-06-30T06:30:39.277127+00:00",
+      "suspect": false,
+      "homeTransit": 125
+    },
+    "willow glen, ca": {
+      "origin": "Willow Glen, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 91,
+          "drive": 12,
+          "bike": 51,
+          "transitSummary": "bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 119,
+          "drive": 55,
+          "bike": 286
+        }
+      },
+      "computedAt": "2026-06-30T06:30:39.881647+00:00",
+      "suspect": false,
+      "homeTransit": 89
+    },
+    "ingleside, san francisco, ca": {
+      "origin": "ingleside, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 151,
+          "drive": 42,
+          "bike": 251,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 52,
+          "drive": 17,
+          "bike": 43
+        }
+      },
+      "computedAt": "2026-06-30T06:30:39.928796+00:00",
+      "suspect": false,
+      "homeTransit": 137
+    }
+  }
+}
