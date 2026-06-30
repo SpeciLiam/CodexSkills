@@ -265,7 +265,7 @@ export default function App() {
   const [q, setQ] = useState("");
   const [beds, setBeds] = useState<string>(saved.beds ?? "Any");
   const [market, setMarket] = useState<string>(saved.market ?? "All areas");
-  const [source, setSource] = useState<string>(saved.source ?? "All sources");
+  const [excludedSources, setExcludedSources] = useState<string[]>(Array.isArray(saved.excludedSources) ? saved.excludedSources : []);
   const [region, setRegion] = useState<string>(saved.region ?? "All");
   const [segment, setSegment] = useState<string>(saved.segment ?? "All");
   const [sort, setSort] = useState<string>(saved.sort ?? "Best fit");
@@ -287,9 +287,9 @@ export default function App() {
   // persist last selections (browser-local)
   useEffect(() => {
     try {
-      localStorage.setItem(STORE_KEY, JSON.stringify({ pref, profile, liam: liamPerson, people, liamRegions, groupRegions, weights, beds, market, source, region, segment, sort, maxPrice, budgetCustom, markFilter }));
+      localStorage.setItem(STORE_KEY, JSON.stringify({ pref, profile, liam: liamPerson, people, liamRegions, groupRegions, weights, beds, market, excludedSources, region, segment, sort, maxPrice, budgetCustom, markFilter }));
     } catch { /* storage unavailable — ignore */ }
-  }, [pref, profile, liamPerson, people, liamRegions, groupRegions, weights, beds, market, source, region, segment, sort, maxPrice, budgetCustom, markFilter]);
+  }, [pref, profile, liamPerson, people, liamRegions, groupRegions, weights, beds, market, excludedSources, region, segment, sort, maxPrice, budgetCustom, markFilter]);
 
   // Sync the shared bits (Liam + Group profiles, region priorities) to Supabase so the
   // last-set config is one source of truth across devices. Debounced; skips the initial
@@ -419,7 +419,7 @@ export default function App() {
 
   const active = useMemo(() => data.listings.filter((l) => l.status === "Active"), []);
   const newest = useMemo(() => active.reduce((m, l) => (l.firstSeen > m ? l.firstSeen : m), ""), [active]);
-  const sourceOptions = useMemo(() => ["All sources", ...Array.from(new Set(active.map((l) => l.source)))], [active]);
+  const sourceList = useMemo(() => Array.from(new Set(active.map((l) => l.source))).sort(), [active]);
   const marketOptions = useMemo(() => ["All areas", ...(data.marketOrder || [])], []);
 
   const rows = useMemo(() => {
@@ -438,7 +438,7 @@ export default function App() {
       .filter((l) => segPass(l, segment, newest))
       .filter((l) => bedsPass(l, beds))
       .filter((l) => market === "All areas" || l.market === market)
-      .filter((l) => source === "All sources" || l.source === source)
+      .filter((l) => !excludedSources.includes(l.source))
       .filter((l) => regionPass(l, region))
       .filter((l) => {
         const p = l.allIn ?? l.rent;
@@ -513,7 +513,7 @@ export default function App() {
     };
     list.sort(SB[sort] || SB["Best fit"]);
     return list;
-  }, [active, newest, activePeople, activeRegions, weights, q, beds, market, source, region, segment, sort, budget, budgetIsAny, pref, marks, markFilter]);
+  }, [active, newest, activePeople, activeRegions, weights, q, beds, market, excludedSources, region, segment, sort, budget, budgetIsAny, pref, marks, markFilter]);
 
   const prefBtn = (k: string): CSSProperties => {
     const on = pref === k;
@@ -710,9 +710,25 @@ export default function App() {
               {marketOptions.map((o) => <option key={o} value={o}>{o}</option>)}
             </select>
           </div>
-          <select value={source} onChange={(e) => setSource(e.target.value)} style={{ ...selectStyle, width: "100%", marginBottom: 10 }}>
-            {sourceOptions.map((o) => <option key={o} value={o}>{o}</option>)}
-          </select>
+          <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 6 }}>
+            <span style={{ fontSize: 13, fontWeight: 600 }}>Sources</span>
+            <span style={{ fontSize: 11, color: "#8a8378", fontWeight: 600 }}>{sourceList.length - excludedSources.length}/{sourceList.length} on</span>
+          </div>
+          <div style={{ display: "flex", gap: 6, marginBottom: 10, flexWrap: "wrap" }}>
+            <button onClick={() => setExcludedSources([])} style={{ ...chip(excludedSources.length === 0, false), padding: "6px 11px", fontSize: 12 }}>All</button>
+            {sourceList.map((s) => {
+              const on = !excludedSources.includes(s);
+              return (
+                <button
+                  key={s}
+                  onClick={() => setExcludedSources((ex) => (on ? [...ex, s] : ex.filter((x) => x !== s)))}
+                  style={{ ...chip(on, false), padding: "6px 11px", fontSize: 12 }}
+                >
+                  {on ? "✓ " : ""}{s.startsWith("Facebook") ? "Facebook" : s}
+                </button>
+              );
+            })}
+          </div>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 6 }}>
             <span style={{ fontSize: 13, fontWeight: 600 }}>Budget — max all-in</span>
             <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, fontWeight: 700, color: budgetCustom ? "var(--accent)" : "#6f6a61" }}>{budgetIsAny ? "Any" : "$" + budget.toLocaleString()}</span>
