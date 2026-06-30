@@ -97,6 +97,28 @@ export const REGION_AXES: RegionAxis[] = [
   },
 ];
 
+/* Two radars for a readable UI: the MAIN radar shows the non-SF regions; SF gets
+   its OWN dedicated radar of neighborhoods (it was too cramped on one 13-axis chart).
+   Both read/write the same per-profile values map (keys are disjoint), so scoring is
+   unchanged. Labels are shortened — the section header already names the region. */
+export const MAIN_AXES: { key: string; label: string }[] = [
+  { key: "peninsula-mid", label: "San Mateo" },
+  { key: "peninsula-rwc", label: "Redwood City" },
+  { key: "peninsula-pa", label: "Palo Alto" },
+  { key: "south-mtv", label: "Mtn View" },
+  { key: "south-sunnyvale", label: "Sunnyvale" },
+  { key: "south-santaclara", label: "Santa Clara" },
+  { key: "south-sj", label: "N. San Jose" },
+  { key: "elsewhere", label: "East/North Bay" },
+];
+export const SF_AXES: { key: string; label: string }[] = [
+  { key: "sf-soma", label: "SoMa / Mission Bay" },
+  { key: "sf-mission", label: "Mission / Valencia" },
+  { key: "sf-hayes", label: "Hayes / Castro" },
+  { key: "sf-dogpatch", label: "Dogpatch / Potrero" },
+  { key: "sf-west", label: "Sunset / Richmond" },
+];
+
 // market string -> axis key (built once from REGION_AXES so the two never drift).
 const MARKET_TO_AXIS: Record<string, string> = (() => {
   const out: Record<string, string> = {};

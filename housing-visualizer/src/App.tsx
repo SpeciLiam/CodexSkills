@@ -3,7 +3,7 @@ import rawData from "./data/housing-data.json";
 import { fetchRemoteMarks, upsertRemoteMark, deleteRemoteMark } from "./marksStore";
 import { fetchConfig, saveConfig } from "./configStore";
 import RadarChart from "./RadarChart";
-import { REGION_AXES, listingAxisKey, DEFAULT_REGION_VALUES, regionBoost } from "./regions";
+import { MAIN_AXES, SF_AXES, listingAxisKey, DEFAULT_REGION_VALUES, regionBoost } from "./regions";
 
 /* ──────────────────────────────────────────────────────────────────────────
    Bay Area Housing Hunt — implementation of Housing Hunt.dc.html
@@ -258,6 +258,7 @@ export default function App() {
   const [liamRegions, setLiamRegions] = useState<Record<string, number>>(saved.liamRegions ?? { ...DEFAULT_REGION_VALUES });
   const [groupRegions, setGroupRegions] = useState<Record<string, number>>(saved.groupRegions ?? { ...DEFAULT_REGION_VALUES });
   const activeRegions = profile === "liam" ? liamRegions : groupRegions;
+  const [sfOpen, setSfOpen] = useState(false);
   const setRegionPref = (key: string, v: number) =>
     (profile === "liam" ? setLiamRegions : setGroupRegions)((r) => ({ ...r, [key]: v }));
   const [weights, setWeights] = useState<{ commute: number; price: number; flex: number }>(saved.weights ?? { commute: 60, price: 30, flex: 10 });
@@ -675,14 +676,23 @@ export default function App() {
             <Weight label="Flexible lease" value={weights.flex} onChange={(v) => setW("flex", v)} />
           </div>
 
-          {/* region radar — configurable per profile */}
+          {/* region radar — main (non-SF regions) + a dedicated SF-neighborhoods radar */}
           <div style={{ ...sectionLabel, marginBottom: 5 }}>Region priorities</div>
           <div style={{ fontSize: 12, color: "#6f6a61", marginBottom: 6 }}>
-            Tap the rings to set how much you want each area (incl. SF neighborhoods). It reweights the {profile === "liam" ? "Liam" : "group"} ranking.
+            Tap the rings to set how much you want each area. It reweights the {profile === "liam" ? "Liam" : "group"} ranking.
           </div>
-          <div style={{ marginBottom: 24 }}>
-            <RadarChart axes={REGION_AXES.map((a) => ({ key: a.key, label: a.label }))} values={activeRegions} onChange={setRegionPref} color="var(--accent)" size={340} />
+          <div style={{ marginBottom: 12 }}>
+            <RadarChart axes={MAIN_AXES} values={activeRegions} onChange={setRegionPref} color="var(--accent)" size={330} />
           </div>
+          <button onClick={() => setSfOpen((o) => !o)} style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between", border: "1px solid #e0dacd", background: "#fdfbf6", borderRadius: 10, padding: "9px 12px", fontSize: 12.5, fontWeight: 700, color: "#1c1a17", cursor: "pointer", marginBottom: 10 }}>
+            <span>SF neighborhoods</span>
+            <span style={{ color: "#8a8378", fontWeight: 600 }}>{sfOpen ? "▾ hide" : "▸ set"}</span>
+          </button>
+          {sfOpen && (
+            <div style={{ marginBottom: 24 }}>
+              <RadarChart axes={SF_AXES} values={activeRegions} onChange={setRegionPref} color="var(--accent)" size={300} />
+            </div>
+          )}
 
           {/* filters */}
           <div style={{ ...sectionLabel, marginBottom: 12 }}>Narrow it down</div>
