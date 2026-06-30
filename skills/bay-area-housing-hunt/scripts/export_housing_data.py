@@ -164,32 +164,51 @@ def num(value: str):
     return n if value not in (None, "") and n != 0 else (0 if value in ("0",) else None)
 
 
-# A number (or range/list like "1-2" / "0/1/2") immediately followed by a bedroom
-# token, in English/Spanish/Chinese. Bathrooms ("ba", "baño", "卫") are NOT matched.
-_BED_RE = re.compile(r"(\d+(?:\s*[/\-]\s*\d+)*)\s*(?:bd|br|beds?|bedrooms?|hab\b|habitaci\w*|室|卧)")
+# A 1-2 digit bedroom count (optionally a tight range like "1-2" / "2/3") immediately
+# before a bedroom token (EN/ES/ZH). The negative lookbehind stops a price digit gluing
+# in: "$1,500 / 1br" must read 1, not 500. Bathrooms ("ba"/"baño"/"卫") never match.
+_BED_RE = re.compile(
+    r"(?<![\d,.$])(\d{1,2})(?:\s?[-/]\s?(\d{1,2}))?\s*(?:bd|br|beds?|bedrooms?|hab\b|habitaci\w*|室|卧)",
+    re.I,
+)
+# Spelled-out counts ("Three Bedrooms for Rent"); 'studio' is handled separately as 0.
+_WORD_BEDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5,
+              "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
+_WORD_BED_RE = re.compile(r"\b(" + "|".join(_WORD_BEDS) + r")\b[\s-]+(?:bed|bd|br)", re.I)
+_BED_MAX = 12  # a parsed "bedroom" above this is a misparse (price, cross-street, etc.)
 
 
 def _parse_beds(text: str):
-    """Whole-unit bedroom count from a beds/title string. Returns the MAX of any range
-    (a '1-2 bd' building offers a 2bd, so a group wanting 2 bedrooms can rent there);
-    'studio' -> 0; None when there's no whole-unit bedroom signal (e.g. a room share)."""
+    """Whole-unit bedroom count from a beds/title string. Uses the FIRST explicit bedroom
+    mention — the advertised unit (so "1 Bed in a 2 Bed apt" -> 1) — taking MAX only within
+    a single range token ("1-2 bd" -> 2). Reads spelled-out counts ("Three Bedrooms" -> 3);
+    'studio' -> 0; None when there's no bedroom signal (e.g. a bare room share)."""
     t = (text or "").lower()
     if not t.strip():
         return None
-    studio = ("studio" in t) or ("estudio" in t) or ("monoambiente" in t)
-    nums = []
-    for cluster in _BED_RE.findall(t):
-        nums += [int(x) for x in re.findall(r"\d+", cluster)]
-    if not nums:
-        return 0 if studio else None
-    return max(nums)
+    m = _BED_RE.search(t)
+    if m:
+        cands = [int(g) for g in m.groups() if g is not None and int(g) <= _BED_MAX]
+        if cands:
+            return max(cands)
+    w = _WORD_BED_RE.search(t)
+    if w:
+        return _WORD_BEDS[w.group(1)]
+    if ("studio" in t) or ("estudio" in t) or ("monoambiente" in t):
+        return 0
+    return None
 
 
 def beds_num(beds: str, title: str):
-    """Bedroom count: the Beds column (authoritative for Zumper/Zillow) first, then the
-    title. None = unknown (e.g. a room in a share). 'studio' -> 0; ranges -> max offered."""
-    n = _parse_beds(beds)
-    return n if n is not None else _parse_beds(title)
+    """Bedroom count for the unit. The scraper's Beds bucket is often wrong (a room in a
+    5-bed house tagged '5 bd', or a price misparsed), so when the TITLE states an explicit
+    count that CONFLICTS with the Beds column, the poster's title wins. Otherwise the Beds
+    column (authoritative for Zumper/Zillow) is used, then the title as a fallback."""
+    b = _parse_beds(beds)
+    t = _parse_beds(title)
+    if b is not None and t is not None and b != t:
+        return t  # the title is what's advertised; the structured bucket is unreliable
+    return b if b is not None else t
 
 
 def export() -> dict:
