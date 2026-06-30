@@ -1,6 +1,9 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import rawData from "./data/housing-data.json";
 import { fetchRemoteMarks, upsertRemoteMark, deleteRemoteMark } from "./marksStore";
+import { fetchConfig, saveConfig } from "./configStore";
+import RadarChart from "./RadarChart";
+import { REGION_AXES, listingAxisKey, DEFAULT_REGION_VALUES, regionBoost } from "./regions";
 
 /* ──────────────────────────────────────────────────────────────────────────
    Bay Area Housing Hunt — implementation of Housing Hunt.dc.html
@@ -194,8 +197,10 @@ const MARK_FILTERS = [
   { key: "promising", label: "★ Promising", tone: "var(--accent)" },
   { key: "checked", label: "✓ Checked out", tone: "#5a8f6a" },
   { key: "skip", label: "✕ Passed", tone: "#b4502f" },
+  { key: "gone", label: "⊘ Archived", tone: "#9a9384" },
   { key: "all", label: "All", tone: "#8a8378" },
 ];
+const COUNTED_MARKS = ["promising", "checked", "skip", "gone"];
 const markChip = (on: boolean, tone: string): CSSProperties => ({
   cursor: "pointer", padding: "5px 11px", borderRadius: 999, fontSize: 12, fontWeight: 600,
   border: `1px solid ${on ? tone : "#e0dacd"}`,
@@ -249,6 +254,12 @@ export default function App() {
       : groupDefault
   );
   const activePeople = useMemo(() => (profile === "liam" ? [liamPerson] : people), [profile, liamPerson, people]);
+  // Per-profile region priorities (the configurable radar). 0..10 per axis.
+  const [liamRegions, setLiamRegions] = useState<Record<string, number>>(saved.liamRegions ?? { ...DEFAULT_REGION_VALUES });
+  const [groupRegions, setGroupRegions] = useState<Record<string, number>>(saved.groupRegions ?? { ...DEFAULT_REGION_VALUES });
+  const activeRegions = profile === "liam" ? liamRegions : groupRegions;
+  const setRegionPref = (key: string, v: number) =>
+    (profile === "liam" ? setLiamRegions : setGroupRegions)((r) => ({ ...r, [key]: v }));
   const [weights, setWeights] = useState<{ commute: number; price: number; flex: number }>(saved.weights ?? { commute: 60, price: 30, flex: 10 });
   const [q, setQ] = useState("");
   const [beds, setBeds] = useState<string>(saved.beds ?? "Any");
@@ -275,16 +286,29 @@ export default function App() {
   // persist last selections (browser-local)
   useEffect(() => {
     try {
-      localStorage.setItem(STORE_KEY, JSON.stringify({ pref, profile, liam: liamPerson, people, weights, beds, market, source, region, segment, sort, maxPrice, budgetCustom, markFilter }));
+      localStorage.setItem(STORE_KEY, JSON.stringify({ pref, profile, liam: liamPerson, people, liamRegions, groupRegions, weights, beds, market, source, region, segment, sort, maxPrice, budgetCustom, markFilter }));
     } catch { /* storage unavailable — ignore */ }
-  }, [pref, profile, liamPerson, people, weights, beds, market, source, region, segment, sort, maxPrice, budgetCustom, markFilter]);
+  }, [pref, profile, liamPerson, people, liamRegions, groupRegions, weights, beds, market, source, region, segment, sort, maxPrice, budgetCustom, markFilter]);
+
+  // Sync the shared bits (Liam + Group profiles, region priorities) to Supabase so the
+  // last-set config is one source of truth across devices. Debounced; skips the initial
+  // mount/hydrate so we don't echo defaults back over a real saved config.
+  const cfgInit = useRef(true);
+  useEffect(() => {
+    if (cfgInit.current) { cfgInit.current = false; return; }
+    const t = setTimeout(() => {
+      saveConfig("profiles", { liam: liamPerson, group: people }).catch(() => {});
+      saveConfig("regions", { liam: liamRegions, group: groupRegions }).catch(() => {});
+    }, 700);
+    return () => clearTimeout(t);
+  }, [liamPerson, people, liamRegions, groupRegions]);
 
   // Group size -> default bedrooms (1:1 people→beds); Liam -> Any. Skips the first run so a
   // saved bedroom choice survives load; re-applies when you switch profile or add/remove people.
   const bedsInit = useRef(true);
   useEffect(() => {
     if (bedsInit.current) { bedsInit.current = false; return; }
-    setBeds(profile === "group" ? bedsForGroup(people.length) : "Any");
+    setBeds(profile === "group" ? bedsForGroup(people.length) : "1+ bd"); // Liam: 1 bed -> many
   }, [profile, people.length]);
   useEffect(() => {
     try { localStorage.setItem(MARKS_KEY, JSON.stringify(marks)); } catch { /* ignore */ }
@@ -312,6 +336,25 @@ export default function App() {
     return () => { alive = false; };
   }, []);
 
+  // Pull the shared config (Liam + Group profiles, region priorities) from Supabase on
+  // load — the single source of truth. Last-set wins over local defaults; offline -> local.
+  useEffect(() => {
+    let alive = true;
+    fetchConfig()
+      .then((cfg) => {
+        if (!alive || !cfg) return;
+        const profiles = cfg.profiles as { liam?: Partial<Person>; group?: Partial<Person>[] } | undefined;
+        if (profiles?.liam) setLiamPerson((p) => ({ ...p, ...profiles.liam, id: 0, name: "Liam", company: "HackerRank", address: LIAM_OFFICE }));
+        if (Array.isArray(profiles?.group) && profiles.group.length)
+          setPeople(profiles.group.map((p, i) => ({ id: p.id ?? i + 1, name: p.name || "Roommate " + (i + 1), company: p.company || "", address: p.address || "", arrival: p.arrival || "09:00", car: p.car ?? true, bike: p.bike ?? true })));
+        const regions = cfg.regions as { liam?: Record<string, number>; group?: Record<string, number> } | undefined;
+        if (regions?.liam) setLiamRegions((r) => ({ ...r, ...regions.liam }));
+        if (regions?.group) setGroupRegions((r) => ({ ...r, ...regions.group }));
+      })
+      .catch(() => { /* offline — localStorage stays the source */ });
+    return () => { alive = false; };
+  }, []);
+
   // toggle a per-listing mark; clicking the active mark clears it. Optimistic local
   // update + background push to the durable store (fire-and-forget; offline is fine).
   const setMark = (key: string, val: string) => {
@@ -334,7 +377,7 @@ export default function App() {
   const togglePersonFlag = (id: number, field: "car" | "bike") =>
     setPeople((s) => s.map((p) => (p.id === id ? { ...p, [field]: !p[field] } : p)));
   const markCounts = useMemo(() => {
-    const c: Record<string, number> = { promising: 0, checked: 0, skip: 0 };
+    const c: Record<string, number> = { promising: 0, checked: 0, skip: 0, gone: 0 };
     for (const k in marks) if (c[marks[k]] != null) c[marks[k]]++;
     return c;
   }, [marks]);
@@ -404,8 +447,8 @@ export default function App() {
       .filter((l) => {
         const mk = marks[l.listingKey];
         if (markFilter === "all") return true;
-        if (markFilter === "active") return mk !== "skip"; // default: hide passed
-        return mk === markFilter; // promising | checked | skip
+        if (markFilter === "active") return mk !== "skip" && mk !== "gone"; // hide passed + archived
+        return mk === markFilter; // promising | checked | skip | gone
       })
       .map((l) => {
         const per = roster.map((person) => {
@@ -422,7 +465,9 @@ export default function App() {
         const pScore = price == null ? 50 : clamp((100 * (4000 - price)) / 3300, 0, 100);
         const fScore = isFlex(l.lease) ? 100 : 50;
         const segC = wc * cScore, segP = wp * pScore, segF = wf * fScore;
-        const fit = Math.round(segC + segP + segF);
+        // weight the fit by this profile's region priority (the configurable radar)
+        const rBoost = regionBoost(activeRegions[listingAxisKey(l.market, l.city)] ?? 5);
+        const fit = Math.round((segC + segP + segF) * rBoost);
         const tier = fit >= 70 ? "hi" : fit >= 52 ? "mid" : "lo";
 
         const routes = per.map((x) => {
@@ -467,7 +512,7 @@ export default function App() {
     };
     list.sort(SB[sort] || SB["Best fit"]);
     return list;
-  }, [active, newest, activePeople, weights, q, beds, market, source, region, segment, sort, budget, budgetIsAny, pref, marks, markFilter]);
+  }, [active, newest, activePeople, activeRegions, weights, q, beds, market, source, region, segment, sort, budget, budgetIsAny, pref, marks, markFilter]);
 
   const prefBtn = (k: string): CSSProperties => {
     const on = pref === k;
@@ -630,6 +675,15 @@ export default function App() {
             <Weight label="Flexible lease" value={weights.flex} onChange={(v) => setW("flex", v)} />
           </div>
 
+          {/* region radar — configurable per profile */}
+          <div style={{ ...sectionLabel, marginBottom: 5 }}>Region priorities</div>
+          <div style={{ fontSize: 12, color: "#6f6a61", marginBottom: 6 }}>
+            Tap the rings to set how much you want each area (incl. SF neighborhoods). It reweights the {profile === "liam" ? "Liam" : "group"} ranking.
+          </div>
+          <div style={{ marginBottom: 24 }}>
+            <RadarChart axes={REGION_AXES.map((a) => ({ key: a.key, label: a.label }))} values={activeRegions} onChange={setRegionPref} color="var(--accent)" size={340} />
+          </div>
+
           {/* filters */}
           <div style={{ ...sectionLabel, marginBottom: 12 }}>Narrow it down</div>
           <div style={{ display: "flex", gap: 6, marginBottom: 11, flexWrap: "wrap" }}>
@@ -693,7 +747,7 @@ export default function App() {
             <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
               {MARK_FILTERS.map((mf) => (
                 <button key={mf.key} onClick={() => setMarkFilter(mf.key)} style={markChip(markFilter === mf.key, mf.tone)}>
-                  {mf.label}{(mf.key === "promising" || mf.key === "checked" || mf.key === "skip") ? ` ${markCounts[mf.key] || 0}` : ""}
+                  {mf.label}{COUNTED_MARKS.includes(mf.key) ? ` ${markCounts[mf.key] || 0}` : ""}
                 </button>
               ))}
             </div>
@@ -790,6 +844,7 @@ export default function App() {
                       <button onClick={() => setMark(r.id, "checked")} style={markBtn(r.mark === "checked", "#5a8f6a")}>✓ Checked out</button>
                       <button onClick={() => setMark(r.id, "promising")} style={markBtn(r.mark === "promising", "var(--accent)")}>★ Promising</button>
                       <button onClick={() => setMark(r.id, "skip")} style={markBtn(r.mark === "skip", "#b4502f")}>✕ Not for me</button>
+                      <button onClick={() => setMark(r.id, "gone")} title="No longer available — archive it" style={markBtn(r.mark === "gone", "#9a9384")}>⊘ Unavailable</button>
                     </div>
                   </div>
 
