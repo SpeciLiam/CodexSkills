@@ -47,6 +47,7 @@ type Listing = {
   status: string;
   firstSeen: string;
   officeCommutes: Record<string, { transit: number; drive: number }>;
+  commuteOrigin?: string; // python-derived geocodable origin (matches the cached commute)
   source: string;
   url: string;
 };
@@ -74,8 +75,11 @@ const groupDefault: Person[] =
 const liamDefault: Person = data.defaultLiam ? toPerson(data.defaultLiam, 0) : DEFAULT_LIAM;
 
 const clamp = (n: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, n));
-const money = (n: number | null) => (n ? "$" + n.toLocaleString() : "no price");
-const isFlex = (s: string) => /sublet|sublease|month|m2m|short|temporary|flexible/i.test(s || "");
+const money = (n: number | null) => (n == null ? "no price" : "$" + n.toLocaleString());
+// Flexible / sublease term. The pipeline rarely populates l.lease, so callers pass the
+// title too. Word-bounded, specific tokens so a normal "short walk"/"this month" title
+// isn't mis-flagged (avoids bare "month"/"short").
+const isFlex = (s: string) => /\b(sublet|subleas|short[\s-]?term|month[\s-]?to[\s-]?month|m2m|temporary|flexible)\b/i.test(s || "");
 const isRoom = (l: Listing) => /\broom\b|roommate|\bshared?\b|private bath/i.test(`${l.title} ${l.lease}`);
 const isApt = (l: Listing) =>
   /apartment|studio|\bcondo\b|townhouse|townhome|\bflat\b|\bunit\b|\d\s*(bd|br|bed|bedroom)/i.test(`${l.title} ${l.lease}`) || !!l.beds;
@@ -153,10 +157,16 @@ function nextOfficeArrivalISO(hhmm: string): string {
   return new Date(now.getTime() + 86400000).toISOString();
 }
 function originForListing(l: Listing): string {
-  const looksAddr = /\d+\s+[\w.]+\s+\w+/.test(l.title) && /(st|ave|blvd|rd|dr|way|ln|ct|pl|cir|ter|real|hwy)\b/i.test(l.title);
-  if (looksAddr) return l.title.replace(/\s*[\(\[].*?[\)\]]\s*/g, " ").replace(/\s+/g, " ").trim();
-  const loc = [l.neighborhood, l.city].filter(Boolean).join(", ") || l.city || l.market;
-  return (loc || "San Francisco Bay Area") + ", CA";
+  // Prefer the python-derived origin (identical to the one behind the cached card
+  // numbers) so the live panel and the card can't disagree or mis-geocode. Fall back
+  // to a local derivation only for legacy data that predates commuteOrigin.
+  if (l.commuteOrigin && l.commuteOrigin.trim()) return l.commuteOrigin.trim();
+  const sf = l.market === "SF" || /^SF /.test(l.market);
+  const first = (s: string) => (s || "").split("/")[0].trim();
+  const loc = [first(l.neighborhood), first(l.city)].filter(Boolean).join(", ") || first(l.city) || first(l.market);
+  if (!loc) return "San Francisco Bay Area, CA";
+  if (/,\s*ca\b/i.test(loc) || /california/i.test(loc)) return loc;
+  return loc + (sf ? ", San Francisco, CA" : ", CA");
 }
 const destOf = (company: string, address: string) => [company, address].filter(Boolean).join(", ") || "San Francisco, CA";
 const clockOf = (iso?: string) => (iso ? new Date(iso).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }) : "—");
@@ -165,7 +175,7 @@ const railLeg = (legs: any[]) => (legs || []).find((x) => x?.rail);
 const segPass = (l: Listing, seg: string, newest: string) => {
   if (seg === "All") return true;
   if (seg === "New today") return !!newest && l.firstSeen === newest;
-  if (seg === "Subleases") return isFlex(l.lease);
+  if (seg === "Subleases") return isFlex(`${l.lease} ${l.title}`);
   if (seg === "Rooms") return isRoom(l);
   if (seg === "Apartments") return isApt(l) && !isRoom(l);
   return true; // To verify / Expired — pool already scoped
@@ -259,8 +269,10 @@ export default function App() {
   const [groupRegions, setGroupRegions] = useState<Record<string, number>>(saved.groupRegions ?? { ...DEFAULT_REGION_VALUES });
   const activeRegions = profile === "liam" ? liamRegions : groupRegions;
   const [sfOpen, setSfOpen] = useState(false);
-  const setRegionPref = (key: string, v: number) =>
+  const setRegionPref = (key: string, v: number) => {
+    cfgTouched.current = true;
     (profile === "liam" ? setLiamRegions : setGroupRegions)((r) => ({ ...r, [key]: v }));
+  };
   const [weights, setWeights] = useState<{ commute: number; price: number; flex: number }>(saved.weights ?? { commute: 60, price: 30, flex: 10 });
   const [q, setQ] = useState("");
   const [beds, setBeds] = useState<string>(saved.beds ?? "Any");
@@ -315,9 +327,13 @@ export default function App() {
   // Sync the shared bits (Liam + Group profiles, region priorities) to Supabase so the
   // last-set config is one source of truth across devices. Debounced; skips the initial
   // mount/hydrate so we don't echo defaults back over a real saved config.
-  const cfgInit = useRef(true);
+  // Push synced config (profiles + region radars) to Supabase, but ONLY after the user
+  // actually edits something. cfgTouched stays false through the load-time hydrate, so we
+  // never echo the just-fetched remote config straight back (which could clobber fresher
+  // remote data in a two-device race). Set true by every synced-field setter below.
+  const cfgTouched = useRef(false);
   useEffect(() => {
-    if (cfgInit.current) { cfgInit.current = false; return; }
+    if (!cfgTouched.current) return;
     const t = setTimeout(() => {
       saveConfig("profiles", { liam: liamPerson, group: people }).catch(() => {});
       saveConfig("regions", { liam: liamRegions, group: groupRegions }).catch(() => {});
@@ -325,13 +341,6 @@ export default function App() {
     return () => clearTimeout(t);
   }, [liamPerson, people, liamRegions, groupRegions]);
 
-  // Group size -> default bedrooms (1:1 people→beds); Liam -> Any. Skips the first run so a
-  // saved bedroom choice survives load; re-applies when you switch profile or add/remove people.
-  const bedsInit = useRef(true);
-  useEffect(() => {
-    if (bedsInit.current) { bedsInit.current = false; return; }
-    setBeds(profile === "group" ? bedsForGroup(people.length) : "1+ bd"); // Liam: 1 bed -> many
-  }, [profile, people.length]);
   useEffect(() => {
     try { localStorage.setItem(MARKS_KEY, JSON.stringify(marks)); } catch { /* ignore */ }
   }, [marks]);
@@ -348,8 +357,14 @@ export default function App() {
     fetchRemoteMarks()
       .then((remote) => {
         if (!alive) return;
+        // Authoritative merge: remote is the source of truth. Keep only the marks the
+        // user touched THIS session (not yet guaranteed round-tripped), then overlay all
+        // remote marks. A local mark that is untouched AND absent from remote was cleared
+        // on another device, so it's correctly dropped (the old additive merge kept it
+        // forever). Runs only on a successful fetch; offline keeps local via .catch.
         setMarks((local) => {
-          const out = { ...local };
+          const out: Record<string, string> = {};
+          for (const k in local) if (touchedKeys.current.has(k)) out[k] = local[k];
           for (const k in remote) if (!touchedKeys.current.has(k)) out[k] = remote[k];
           return out;
         });
@@ -365,6 +380,7 @@ export default function App() {
     fetchConfig()
       .then((cfg) => {
         if (!alive || !cfg) return;
+        if (cfgTouched.current) return; // user already edited this session — don't overwrite
         const profiles = cfg.profiles as { liam?: Partial<Person>; group?: Partial<Person>[] } | undefined;
         if (profiles?.liam) setLiamPerson((p) => ({ ...p, ...profiles.liam, id: 0, name: "Liam", company: "HackerRank", address: LIAM_OFFICE }));
         if (Array.isArray(profiles?.group) && profiles.group.length)
@@ -381,10 +397,13 @@ export default function App() {
   // update + background push to the durable store (fire-and-forget; offline is fine).
   const setMark = (key: string, val: string) => {
     touchedKeys.current.add(key);
+    const clearing = marks[key] === val; // clicking the active mark clears it
+    if (clearing) deleteRemoteMark(key).catch(() => {});
+    else upsertRemoteMark(key, val).catch(() => {});
     setMarks((m) => {
       const n = { ...m };
-      if (n[key] === val) { delete n[key]; deleteRemoteMark(key).catch(() => {}); }
-      else { n[key] = val; upsertRemoteMark(key, val).catch(() => {}); }
+      if (clearing) delete n[key];
+      else n[key] = val;
       return n;
     });
   };
@@ -395,9 +414,11 @@ export default function App() {
       : { profile: "group", targetBedrooms: people.length, people: people.map((p) => ({ name: p.name, company: p.company, address: p.address, arrival: p.arrival, car: p.car, bike: p.bike })) };
     try { navigator.clipboard.writeText(JSON.stringify(cfg, null, 2)); } catch { /* ignore */ }
   };
-  const setLiam = (field: keyof Person, value: any) => setLiamPerson((p) => ({ ...p, [field]: value }));
-  const togglePersonFlag = (id: number, field: "car" | "bike") =>
+  const setLiam = (field: keyof Person, value: any) => { cfgTouched.current = true; setLiamPerson((p) => ({ ...p, [field]: value })); };
+  const togglePersonFlag = (id: number, field: "car" | "bike") => {
+    cfgTouched.current = true;
     setPeople((s) => s.map((p) => (p.id === id ? { ...p, [field]: !p[field] } : p)));
+  };
   const markCounts = useMemo(() => {
     const c: Record<string, number> = { promising: 0, checked: 0, skip: 0, gone: 0 };
     for (const k in marks) if (c[marks[k]] != null) c[marks[k]]++;
@@ -429,14 +450,31 @@ export default function App() {
   };
 
   const setW = (k: "commute" | "price" | "flex", v: number) => setWeights((s) => ({ ...s, [k]: v }));
-  const setPerson = (id: number, field: keyof Person, value: string) =>
+  const setPerson = (id: number, field: keyof Person, value: string) => {
+    cfgTouched.current = true;
     setPeople((s) => s.map((p) => (p.id === id ? { ...p, [field]: value } : p)));
-  const removePerson = (id: number) => setPeople((s) => (s.length <= 1 ? s : s.filter((p) => p.id !== id)));
-  const addPerson = () =>
+  };
+  // Profile switch is a deliberate context change -> re-default the bedroom filter
+  // (Group: 1:1 people→beds; Liam solo: Any, so studios + 1-beds + rooms all show).
+  // Driven by user action (not an effect) so cross-device hydration never resets beds.
+  const changeProfile = (k: "liam" | "group") => {
+    setProfile(k);
+    setBeds(k === "group" ? bedsForGroup(people.length) : "Any");
+  };
+  const removePerson = (id: number) => {
+    if (people.length <= 1) return;
+    cfgTouched.current = true;
+    setPeople((s) => s.filter((p) => p.id !== id));
+    setBeds(bedsForGroup(people.length - 1));
+  };
+  const addPerson = () => {
+    cfgTouched.current = true;
     setPeople((s) => {
       const id = s.reduce((m, p) => Math.max(m, p.id), 0) + 1;
       return [...s, { id, name: "Roommate " + (s.length + 1), company: "", address: "", arrival: "09:00", car: true, bike: true }];
     });
+    setBeds(bedsForGroup(people.length + 1));
+  };
 
   const active = useMemo(() => data.listings.filter((l) => l.status === "Active"), []);
   const newest = useMemo(() => active.reduce((m, l) => (l.firstSeen > m ? l.firstSeen : m), ""), [active]);
@@ -474,9 +512,10 @@ export default function App() {
       })
       .map((l) => {
         const per = roster.map((person) => {
+          const hasOffice = `${person.company || ""}${person.address || ""}`.trim() !== "";
           const g = geocode((person.company || "") + " " + (person.address || ""));
-          const cm = estimate(l, g, pref, person.car);
-          const dest = [person.company, g.c].filter(Boolean).join(" · ") || "their office";
+          const cm = hasOffice ? estimate(l, g, pref, person.car) : { t: null as number | null, mode: "transit" };
+          const dest = hasOffice ? ([person.company, g.c].filter(Boolean).join(" · ") || "their office") : "no office set";
           return { name: person.name || "—", t: cm.t, mode: cm.mode, dest };
         });
         const times = per.map((x) => x.t).filter((x): x is number => x != null);
@@ -485,7 +524,7 @@ export default function App() {
         const cScore = avg == null ? 0 : clamp((100 * (85 - avg)) / 70, 0, 100);
         const price = l.allIn ?? l.rent;
         const pScore = price == null ? 50 : clamp((100 * (4000 - price)) / 3300, 0, 100);
-        const fScore = isFlex(l.lease) ? 100 : 50;
+        const fScore = isFlex(`${l.lease} ${l.title}`) ? 100 : 50;
         const segC = wc * cScore, segP = wp * pScore, segF = wf * fScore;
         // weight the fit by this profile's region priority (the configurable radar)
         const rBoost = regionBoost(activeRegions[listingAxisKey(l.market, l.city)] ?? 5);
@@ -516,7 +555,7 @@ export default function App() {
           id: l.listingKey, title: l.title || "(untitled)", url: l.url || "#",
           sub: [l.neighborhood || l.city, l.market, l.source].filter(Boolean).join(" · "),
           isNew: l.status === "Active" && !!newest && l.firstSeen === newest,
-          priceLabel: money(price) + (price ? "/mo" : ""),
+          priceLabel: money(price) + (price != null ? "/mo" : ""),
           leaseLabel: l.lease || "lease n/a",
           specLabel: specBits.join(" · "), hasSpec: specBits.length > 0,
           status: l.status, routes, routesTitle, mark: marks[l.listingKey] || "", origin: originForListing(l),
@@ -609,7 +648,7 @@ export default function App() {
             {([["liam", "Liam"], ["group", "Group"]] as const).map(([k, lbl]) => {
               const on = profile === k;
               return (
-                <button key={k} onClick={() => setProfile(k)} style={{ flex: 1, border: "none", cursor: "pointer", padding: "9px 10px", borderRadius: 8, fontSize: 13.5, fontWeight: 600, fontFamily: "'Space Grotesk',sans-serif", background: on ? "#fffdf8" : "transparent", color: on ? "#1c1a17" : "#8a8378", boxShadow: on ? "0 1px 3px rgba(28,26,23,0.12)" : "none" }}>{lbl}</button>
+                <button key={k} onClick={() => changeProfile(k)} style={{ flex: 1, border: "none", cursor: "pointer", padding: "9px 10px", borderRadius: 8, fontSize: 13.5, fontWeight: 600, fontFamily: "'Space Grotesk',sans-serif", background: on ? "#fffdf8" : "transparent", color: on ? "#1c1a17" : "#8a8378", boxShadow: on ? "0 1px 3px rgba(28,26,23,0.12)" : "none" }}>{lbl}</button>
               );
             })}
           </div>
@@ -818,7 +857,7 @@ export default function App() {
           ) : (
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
               {rows.map((r, i) => (
-                <article key={r.id} style={{ display: "grid", gridTemplateColumns: "34px 1fr auto", gap: 14, alignItems: "start", background: r.mark === "checked" ? "#fbf9f3" : "#fffdf8", border: r.mark === "promising" ? "1.5px solid var(--accent)" : "1px solid #e6e1d6", borderRadius: 15, padding: pad, boxShadow: "0 1px 2px rgba(28,26,23,0.03)", opacity: r.mark === "skip" ? 0.6 : 1 }}>
+                <article key={r.id} style={{ display: "grid", gridTemplateColumns: "34px 1fr auto", gap: 14, alignItems: "start", background: r.mark === "checked" ? "#fbf9f3" : "#fffdf8", border: r.mark === "promising" ? "1.5px solid var(--accent)" : r.mark === "gone" ? "1px dashed #cbc4b6" : "1px solid #e6e1d6", borderRadius: 15, padding: pad, boxShadow: "0 1px 2px rgba(28,26,23,0.03)", opacity: r.mark === "skip" || r.mark === "gone" ? 0.6 : 1 }}>
                   <div style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 15, fontWeight: 700, color: "#b8b1a2", textAlign: "center", fontVariantNumeric: "tabular-nums", paddingTop: 2 }}>{i + 1}</div>
 
                   <div style={{ minWidth: 0 }}>

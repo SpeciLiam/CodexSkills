@@ -79,9 +79,11 @@ export default function RadarChart({
     let bestDelta = Infinity;
     for (let i = 0; i < n; i++) {
       const a = angleFor(i, n);
-      // Smallest absolute angular difference, wrapped to [-π, π].
-      let d = Math.abs(((clickAng - a + Math.PI) % (2 * Math.PI)) - Math.PI);
-      d = Math.abs(d);
+      // Smallest absolute angular difference, wrapped to [0, π]. JS % is a SIGNED
+      // remainder, so normalize (clickAng - a + π) into [0, 2π) before subtracting π;
+      // otherwise negative diffs inflate d past π and snap the click to the wrong axis.
+      const m = (((clickAng - a + Math.PI) % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+      const d = Math.abs(m - Math.PI);
       if (d < bestDelta) {
         bestDelta = d;
         bestAxis = i;

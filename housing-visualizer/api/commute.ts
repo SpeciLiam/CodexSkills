@@ -79,9 +79,25 @@ export default async function handler(req: any, res: any) {
         { ...base, travelMode: "TRANSIT", arrivalTime: String(arrival), transitPreferences: { routingPreference: "LESS_WALKING" } },
         "routes.duration,routes.legs.steps.travelMode,routes.legs.steps.staticDuration,routes.legs.steps.transitDetails.transitLine.name,routes.legs.steps.transitDetails.transitLine.nameShort,routes.legs.steps.transitDetails.transitLine.vehicle.type,routes.legs.steps.transitDetails.stopCount,routes.legs.steps.transitDetails.stopDetails.departureTime,routes.legs.steps.transitDetails.stopDetails.arrivalTime,routes.legs.steps.transitDetails.stopDetails.departureStop.name,routes.legs.steps.transitDetails.stopDetails.arrivalStop.name"
       ).then((j) => parseTransit(j, String(arrival))).catch((e) => ({ ok: false, reason: String(e.message || e) })),
-      callRoutes({ ...base, travelMode: "DRIVE", arrivalTime: String(arrival), routingPreference: "TRAFFIC_AWARE" }, "routes.duration")
-        .catch(() => callRoutes({ ...base, travelMode: "DRIVE" }, "routes.duration"))
-        .then((j) => parseSimple(j, String(arrival), "drive")).catch((e) => ({ ok: false, reason: String(e.message || e) })),
+      // Routes DRIVE does NOT accept arrivalTime; for a traffic-aware estimate it needs a
+      // future departureTime. Depart ~1h before the target arrival so the duration reflects
+      // rush-hour traffic, then leaveBy = arrival - duration (parseSimple). Plain DRIVE
+      // (free-flow) only as a last-resort fallback.
+      (async () => {
+        try {
+          const j = await callRoutes(
+            { ...base, travelMode: "DRIVE", departureTime: isoMinus(String(arrival), 3600), routingPreference: "TRAFFIC_AWARE" },
+            "routes.duration"
+          );
+          return parseSimple(j, String(arrival), "drive");
+        } catch {
+          try {
+            return parseSimple(await callRoutes({ ...base, travelMode: "DRIVE" }, "routes.duration"), String(arrival), "drive");
+          } catch (e: any) {
+            return { ok: false, reason: String(e?.message || e) };
+          }
+        }
+      })(),
       callRoutes({ ...base, travelMode: "BICYCLE" }, "routes.duration")
         .then((j) => parseSimple(j, String(arrival), "bike")).catch((e) => ({ ok: false, reason: String(e.message || e) })),
     ]);

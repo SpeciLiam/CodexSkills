@@ -206,6 +206,9 @@ def export() -> dict:
             "market": row.get("Market", ""),
             "city": row.get("City", ""),
             "neighborhood": row.get("Neighborhood", ""),
+            # The exact geocodable origin used for this listing's cached commute, so the
+            # browser's live "Optimal departure" routes from the SAME point (no divergence).
+            "commuteOrigin": co.origin_address(row.get("Market", ""), row.get("City", ""), row.get("Neighborhood", "")),
             "rent": num(row.get("Rent", "")),
             "allIn": num(row.get("All-In Estimate", "")),
             "beds": row.get("Beds", ""),
@@ -256,7 +259,9 @@ def export() -> dict:
             "markets": len(markets),
             "googleCommutes": google_n,
         },
-        "marketOrder": [m for m in hp.MARKET_ORDER if m in markets],
+        # Ordered markets first, then any market present in the data but missing from
+        # MARKET_ORDER (e.g. a bare "SF" / "South Bay") so the Area dropdown can reach them.
+        "marketOrder": [m for m in hp.MARKET_ORDER if m in markets] + sorted(set(markets) - set(hp.MARKET_ORDER)),
         "offices": OFFICES,
         "defaultPeople": _hh["group"],
         "defaultLiam": _hh["liam"],
