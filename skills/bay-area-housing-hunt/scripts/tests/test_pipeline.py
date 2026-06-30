@@ -322,10 +322,44 @@ class SourceSelection(unittest.TestCase):
             ["Facebook Marketplace (corridor rentals)"],
         )
 
+    def test_five_bedroom_alias_selects_only_sf_5plus_sources(self):
+        searches = {
+            "web": [
+                {"name": "Craigslist", "label": "sf-apartments"},
+                {"name": "Craigslist", "label": "sf-apartments-5plus"},
+                {"name": "Craigslist", "label": "sf-sublets-5plus"},
+                {"name": "Zumper", "label": "zumper-sf-5plus"},
+                {"name": "Craigslist", "label": "south-bay-apartments"},
+            ],
+            "apis": [],
+            "ai_browser": [
+                {"name": "Facebook Marketplace (SF 5+ bedroom rentals)", "label": "facebook-sf-5plus"},
+                {"name": "Zillow Rentals (SF 5+ bedrooms)", "label": "zillow-sf-5plus"},
+                {"name": "Apartments.com Rentals (SF 5+ bedrooms)", "label": "apartments-com-sf-5plus"},
+                {"name": "Zillow Rentals (corridor)"},
+            ],
+            "rss": [],
+        }
+        filtered, _ = self.run.filter_searches(searches, ["5br"])
+        self.assertEqual(
+            [item["label"] for item in filtered["web"]],
+            ["sf-apartments-5plus", "sf-sublets-5plus", "zumper-sf-5plus"],
+        )
+        self.assertEqual(
+            [item["label"] for item in filtered["ai_browser"]],
+            ["facebook-sf-5plus", "zillow-sf-5plus", "apartments-com-sf-5plus"],
+        )
+
     def test_capture_dir_glob_respects_source_filter(self):
         filters = self.run.parse_source_filters(["zillow"])
         self.assertTrue(self.run.capture_path_matches(Path("/tmp/ai-zillow-rentals-corridor.json"), filters))
         self.assertFalse(self.run.capture_path_matches(Path("/tmp/web-craigslist-sf-sublets.json"), filters))
+
+    def test_capture_dir_glob_respects_five_bedroom_filter(self):
+        filters = self.run.parse_source_filters(["5br"])
+        self.assertTrue(self.run.capture_path_matches(Path("/tmp/web-Zumper-zumper-sf-5plus.json"), filters))
+        self.assertTrue(self.run.capture_path_matches(Path("/tmp/ai-zillow-sf-5plus.json"), filters))
+        self.assertFalse(self.run.capture_path_matches(Path("/tmp/ai-zillow-rentals-corridor.json"), filters))
 
     def test_all_keeps_everything(self):
         searches = {"web": [{"name": "Craigslist"}], "apis": [{"name": "Reddit"}], "ai_browser": [], "rss": []}

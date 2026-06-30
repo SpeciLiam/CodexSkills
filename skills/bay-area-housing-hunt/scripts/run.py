@@ -72,6 +72,16 @@ SOURCE_ALIASES = {
     "furnished-finder": {"furnished"},
     "reddit": {"reddit"},
     "rentcast": {"rentcast"},
+    "5br": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
+    "5bed": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
+    "5beds": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
+    "5bedroom": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
+    "5bedrooms": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
+    "5plus": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
+    "fiveplus": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
+    "sf5br": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
+    "sf5bed": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
+    "sf5plus": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
 }
 
 
@@ -183,6 +193,11 @@ def source_display_name(cfg: dict) -> str:
     if label:
         parts.append(f"[{label}]")
     return " ".join(part for part in parts if part).strip() or "unnamed source"
+
+
+def ai_capture_path(capture_dir: Path, src: dict) -> Path:
+    slug_base = src.get("label") or src.get("name", "source")
+    return capture_dir / f"ai-{hp.slug(str(slug_base))}.json"
 
 
 def list_configured_sources(searches: dict) -> None:
@@ -354,7 +369,7 @@ def print_ai_capture_plan(searches: dict, capture_dir: Path, sources_arg: list[s
     out("Record schema: see references/sources.md (title,url,city,neighborhood,rent,lease,available,description,posted)\n")
     for i, src in enumerate(plan, 1):
         name = src.get("name", "source")
-        dest = capture_dir / f"ai-{hp.slug(name)}.json"
+        dest = ai_capture_path(capture_dir, src)
         out(f"{i}. {name}  [{src.get('market_hint','')}]")
         if src.get("search_url"):
             out(f"   open : {src['search_url']}")
@@ -372,7 +387,7 @@ def print_ai_capture_plan(searches: dict, capture_dir: Path, sources_arg: list[s
             out(f"   note : {src['note']}")
         out(f"   write: {dest}")
     out("\nThen re-run:")
-    inputs = " ".join(str(capture_dir / f"ai-{hp.slug(s.get('name','source'))}.json") for s in plan)
+    inputs = " ".join(str(ai_capture_path(capture_dir, s)) for s in plan)
     sources_part = ""
     if sources_arg and parse_source_filters(sources_arg) != {"all"}:
         sources_part = " --sources " + " ".join(sources_arg)
