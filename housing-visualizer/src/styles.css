@@ -38,8 +38,14 @@ input[type="range"] { accent-color: var(--accent); }
 
 a { color: inherit; }
 
+/* draggable sidebar divider — subtle until hovered/active */
+.hh-resizer .hh-resizer-grip { transition: background 0.15s, height 0.15s; }
+.hh-resizer:hover .hh-resizer-grip,
+.hh-resizer:active .hh-resizer-grip { background: var(--accent); height: 64px; }
+
 /* responsive: collapse the sidebar above the listings on narrow screens */
 @media (max-width: 860px) {
   .hh-grid { grid-template-columns: 1fr !important; }
   .hh-aside { position: static !important; height: auto !important; border-right: none !important; border-bottom: 1px solid var(--line); }
+  .hh-resizer { display: none !important; }
 }

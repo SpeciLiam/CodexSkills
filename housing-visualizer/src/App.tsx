@@ -274,6 +274,27 @@ export default function App() {
   const [markFilter, setMarkFilter] = useState<string>(saved.markFilter ?? "active");
   const [marks, setMarks] = useState<Record<string, string>>(loadMarks);
 
+  // Resizable sidebar — drag the divider; width persists (double-click resets).
+  const ASIDE_MIN = 280, ASIDE_MAX = 680, ASIDE_DEFAULT = 344;
+  const [asideW, setAsideW] = useState<number>(
+    typeof saved.asideW === "number" ? clamp(saved.asideW, ASIDE_MIN, ASIDE_MAX) : ASIDE_DEFAULT
+  );
+  const startResize = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const startX = e.clientX, startW = asideW;
+    const onMove = (ev: MouseEvent) => setAsideW(clamp(startW + ev.clientX - startX, ASIDE_MIN, ASIDE_MAX));
+    const onUp = () => {
+      window.removeEventListener("mousemove", onMove);
+      window.removeEventListener("mouseup", onUp);
+      document.body.style.cursor = "";
+      document.body.style.userSelect = "";
+    };
+    window.addEventListener("mousemove", onMove);
+    window.addEventListener("mouseup", onUp);
+    document.body.style.cursor = "col-resize";
+    document.body.style.userSelect = "none";
+  };
+
   const dense = DENSITY === "compact";
   const pad = dense ? "12px 15px" : "16px 17px";
 
@@ -287,9 +308,9 @@ export default function App() {
   // persist last selections (browser-local)
   useEffect(() => {
     try {
-      localStorage.setItem(STORE_KEY, JSON.stringify({ pref, profile, liam: liamPerson, people, liamRegions, groupRegions, weights, beds, market, excludedSources, region, segment, sort, maxPrice, budgetCustom, markFilter }));
+      localStorage.setItem(STORE_KEY, JSON.stringify({ pref, profile, liam: liamPerson, people, liamRegions, groupRegions, weights, beds, market, excludedSources, region, segment, sort, maxPrice, budgetCustom, markFilter, asideW }));
     } catch { /* storage unavailable — ignore */ }
-  }, [pref, profile, liamPerson, people, liamRegions, groupRegions, weights, beds, market, excludedSources, region, segment, sort, maxPrice, budgetCustom, markFilter]);
+  }, [pref, profile, liamPerson, people, liamRegions, groupRegions, weights, beds, market, excludedSources, region, segment, sort, maxPrice, budgetCustom, markFilter, asideW]);
 
   // Sync the shared bits (Liam + Group profiles, region priorities) to Supabase so the
   // last-set config is one source of truth across devices. Debounced; skips the initial
@@ -580,7 +601,7 @@ export default function App() {
         </div>
       </header>
 
-      <div className="hh-grid" style={{ display: "grid", gridTemplateColumns: "344px minmax(0,1fr)", flex: 1, alignItems: "start" }}>
+      <div className="hh-grid" style={{ display: "grid", gridTemplateColumns: `${asideW}px 6px minmax(0,1fr)`, flex: 1, alignItems: "start" }}>
         {/* SIDEBAR */}
         <aside className="hh-aside" style={{ position: "sticky", top: 0, height: "100vh", overflowY: "auto", background: "#fffdf8", borderRight: "1px solid #e6e1d6", padding: "20px 20px 40px" }}>
           {/* profile toggle: Liam (solo) vs Group */}
@@ -743,6 +764,17 @@ export default function App() {
             )}
           </div>
         </aside>
+
+        {/* RESIZE HANDLE — drag to set sidebar width, double-click to reset */}
+        <div
+          className="hh-resizer"
+          onMouseDown={startResize}
+          onDoubleClick={() => setAsideW(ASIDE_DEFAULT)}
+          title="Drag to resize · double-click to reset"
+          style={{ position: "sticky", top: 0, height: "100vh", cursor: "col-resize", display: "flex", alignItems: "center", justifyContent: "center", background: "transparent", zIndex: 5 }}
+        >
+          <div className="hh-resizer-grip" style={{ width: 2, height: 40, borderRadius: 2, background: "#d8d2c5" }} />
+        </div>
 
         {/* MAIN */}
         <main style={{ padding: "20px 26px 60px" }}>
