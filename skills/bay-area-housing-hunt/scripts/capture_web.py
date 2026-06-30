@@ -95,7 +95,47 @@ def _cl_url(cfg: dict) -> str:
     return url
 
 
-def parse_craigslist(payload: dict, cfg: dict) -> list[dict]:
+# sapi v8 ships no per-item bedroom count, but its own min/max_bedrooms search filter
+# (the same params the site's form sends) partitions results server-side. We run one
+# bucketed query per N and tag each returned posting id with its whole-unit bed count.
+CL_BED_BUCKETS = [
+    ({"min_bedrooms": "0", "max_bedrooms": "0"}, "studio"),
+    ({"min_bedrooms": "1", "max_bedrooms": "1"}, "1 bd"),
+    ({"min_bedrooms": "2", "max_bedrooms": "2"}, "2 bd"),
+    ({"min_bedrooms": "3", "max_bedrooms": "3"}, "3 bd"),
+    ({"min_bedrooms": "4", "max_bedrooms": "4"}, "4 bd"),
+    ({"min_bedrooms": "5"}, "5 bd"),
+]
+
+
+def _cl_bucket_url(cfg: dict, extra: dict) -> str:
+    sub, cat = cfg["subarea"], cfg["category"]
+    url = f"{SAPI}?batch=1-0-0-0-0&cc=US&lang=en&searchPath={sub}/{cat}"
+    params = dict(cfg.get("params") or {})
+    params.update(extra)
+    for key, val in params.items():
+        url += f"&{key}={val}"
+    return url
+
+
+def craigslist_beds_by_pid(cfg: dict) -> dict[int, str]:
+    """Map posting id -> whole-unit bed string via Craigslist's own bedroom filter.
+    Each bucket is isolated: one failing must never block the source."""
+    out: dict[int, str] = {}
+    for extra, beds_str in CL_BED_BUCKETS:
+        try:
+            payload = json.loads(_get(_cl_bucket_url(cfg, extra), "application/json"))
+            data = payload.get("data") or {}
+            base = (data.get("decode") or {}).get("minPostingId", 0)
+            for it in data.get("items") or []:
+                if isinstance(it, list) and it and isinstance(it[0], int):
+                    out[base + it[0]] = beds_str
+        except Exception:  # noqa: BLE001 - a single bucket failure degrades gracefully
+            continue
+    return out
+
+
+def parse_craigslist(payload: dict, cfg: dict, beds_by_pid: dict | None = None) -> list[dict]:
     """Decode the sapi v8 positional/tagged item arrays into capture records."""
     data = payload.get("data") or {}
     items = data.get("items") or []
@@ -158,6 +198,7 @@ def parse_craigslist(payload: dict, cfg: dict) -> list[dict]:
             "url": f"https://{host}/{sub}/{cat}/d/{slug}/{pid}.html",
             "rent": rent,
             "city": city,
+            "beds": (beds_by_pid or {}).get(pid, ""),
             "market": market,
         })
     return records
@@ -170,7 +211,13 @@ def fetch_craigslist(cfg: dict) -> tuple[list[dict], str | None]:
         payload = json.loads(body)
     except Exception as exc:  # noqa: BLE001 - any block -> Source Blocked, never bypass
         return [_blocked(cfg.get("name", "Craigslist"), url, cfg.get("market_hint", ""), exc)], str(exc)
-    return parse_craigslist(payload, cfg), None
+    beds_by_pid: dict[int, str] = {}
+    if cfg.get("category") in ("apa", "sub"):  # whole-unit beds only meaningful for apts/sublets
+        try:
+            beds_by_pid = craigslist_beds_by_pid(cfg)
+        except Exception:  # noqa: BLE001
+            beds_by_pid = {}
+    return parse_craigslist(payload, cfg, beds_by_pid), None
 
 
 # --------------------------------------------------------------------------- #

@@ -92,19 +92,32 @@ def num(value: str):
     return n if value not in (None, "") and n != 0 else (0 if value in ("0",) else None)
 
 
+# A number (or range/list like "1-2" / "0/1/2") immediately followed by a bedroom
+# token, in English/Spanish/Chinese. Bathrooms ("ba", "baño", "卫") are NOT matched.
+_BED_RE = re.compile(r"(\d+(?:\s*[/\-]\s*\d+)*)\s*(?:bd|br|beds?|bedrooms?|hab\b|habitaci\w*|室|卧)")
+
+
+def _parse_beds(text: str):
+    """Whole-unit bedroom count from a beds/title string. Returns the MAX of any range
+    (a '1-2 bd' building offers a 2bd, so a group wanting 2 bedrooms can rent there);
+    'studio' -> 0; None when there's no whole-unit bedroom signal (e.g. a room share)."""
+    t = (text or "").lower()
+    if not t.strip():
+        return None
+    studio = ("studio" in t) or ("estudio" in t) or ("monoambiente" in t)
+    nums = []
+    for cluster in _BED_RE.findall(t):
+        nums += [int(x) for x in re.findall(r"\d+", cluster)]
+    if not nums:
+        return 0 if studio else None
+    return max(nums)
+
+
 def beds_num(beds: str, title: str):
-    """Bedroom count, from the Beds field or parsed from the title. None = unknown
-    (e.g. a room in a share, or no signal). 'studio' -> 0."""
-    n = hp.to_int(beds)
-    if n:
-        return n
-    text = (title or "").lower()
-    if "studio" in text:
-        return 0
-    m = re.search(r"(\d+)\s*(?:bd|br|beds?|bedrooms?)\b", text)
-    if m:
-        return int(m.group(1))
-    return None
+    """Bedroom count: the Beds column (authoritative for Zumper/Zillow) first, then the
+    title. None = unknown (e.g. a room in a share). 'studio' -> 0; ranges -> max offered."""
+    n = _parse_beds(beds)
+    return n if n is not None else _parse_beds(title)
 
 
 def export() -> dict:
