@@ -275,7 +275,7 @@ export default function App() {
   };
   const [weights, setWeights] = useState<{ commute: number; price: number; flex: number }>(saved.weights ?? { commute: 60, price: 30, flex: 10 });
   const [q, setQ] = useState("");
-  const [beds, setBeds] = useState<string>(saved.beds ?? "Any");
+  const [beds, setBeds] = useState<string>(saved.beds ?? "1+ bd"); // fresh user starts on Liam
   const [market, setMarket] = useState<string>(saved.market ?? "All areas");
   const [excludedSources, setExcludedSources] = useState<string[]>(Array.isArray(saved.excludedSources) ? saved.excludedSources : []);
   const [region, setRegion] = useState<string>(saved.region ?? "All");
@@ -454,12 +454,13 @@ export default function App() {
     cfgTouched.current = true;
     setPeople((s) => s.map((p) => (p.id === id ? { ...p, [field]: value } : p)));
   };
-  // Profile switch is a deliberate context change -> re-default the bedroom filter
-  // (Group: 1:1 people→beds; Liam solo: Any, so studios + 1-beds + rooms all show).
+  // Profile switch is a deliberate context change -> re-default the bedroom filter.
+  // Both use "N and up" semantics: Group targets ~1 bedroom per person (5 people -> 5+),
+  // Liam solo wants a 1-bedroom minimum ("1+ bd" — his own place, not a studio/room).
   // Driven by user action (not an effect) so cross-device hydration never resets beds.
   const changeProfile = (k: "liam" | "group") => {
     setProfile(k);
-    setBeds(k === "group" ? bedsForGroup(people.length) : "Any");
+    setBeds(k === "group" ? bedsForGroup(people.length) : "1+ bd");
   };
   const removePerson = (id: number) => {
     if (people.length <= 1) return;
