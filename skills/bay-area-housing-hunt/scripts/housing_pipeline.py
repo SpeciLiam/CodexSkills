@@ -28,13 +28,13 @@ LISTINGS_MD = TRACKER_DIR / "listings.md"
 RANKINGS_MD = TRACKER_DIR / "power-rankings.md"
 
 # Generated table lives between these markers so human prose outside them survives
-# a rewrite. Statuses are managed via run.py --mark, not by hand-editing rows.
-LEDGER_BEGIN = "<!-- housing-ledger:begin (generated — set statuses via run.py --mark, do not hand-edit rows) -->"
+# a rewrite. Statuses are managed via housing_pipeline.py --mark, not by hand-editing rows.
+LEDGER_BEGIN = "<!-- housing-ledger:begin (generated — set statuses via housing_pipeline.py --mark, do not hand-edit rows) -->"
 LEDGER_END = "<!-- housing-ledger:end -->"
 DEFAULT_LEDGER_PREAMBLE = (
     "# Housing Listings\n\n"
     "Source of truth for Bay Area housing candidates. Expired listings are kept, "
-    "not deleted. The table below is generated — set statuses via `run.py --mark`, "
+    "not deleted. The table below is generated — set statuses via `housing_pipeline.py --mark`, "
     "and add any of your own prose OUTSIDE the generated block."
 )
 

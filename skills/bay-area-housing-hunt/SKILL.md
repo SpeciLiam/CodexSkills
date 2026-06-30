@@ -36,10 +36,19 @@ One kickoff script orchestrates the daily run. It is agent-agnostic — the same
 script and files work whether Claude or Codex is the conductor.
 
 1. Check `git status --short` and avoid unrelated changes.
-2. Kick off the run (does safe headless capture + scoring, then prints the AI-capture plan to stderr):
+2. Kick off the run (does safe headless capture + scoring, then prints the AI-capture plan to stderr). For scheduled runs, start from a clean scratch capture dir so stale browser captures cannot refresh `Last Seen`:
 
 ```bash
+# Manual/default run
 python3 skills/bay-area-housing-hunt/scripts/run.py
+
+# Run only selected configured sources; default is all
+python3 skills/bay-area-housing-hunt/scripts/run.py --sources craigslist zillow facebook
+python3 skills/bay-area-housing-hunt/scripts/run.py --sources apartments.com
+python3 skills/bay-area-housing-hunt/scripts/run.py --list-sources
+
+# Scheduled-run kickoff
+python3 skills/bay-area-housing-hunt/scripts/run.py --fresh-capture-dir
 ```
 
 `run.py` runs the **headless** tiers in `scripts/searches.json` itself (no browser,
@@ -54,15 +63,27 @@ to mirror the ledger into Notion (no-op unless `housing-trackers/notion-config.m
 to `stderr`. A headless run already covers the bulk of the inventory (Craigslist +
 Zumper) before any browser step.
 
+Use `--sources` to select one or many configured sources; omitting it is the same
+as `--sources all`. This works across every configured tier/source row, not just
+the common examples: `craigslist`, `zumper`, `reddit`, `rentcast`, `facebook`,
+`zillow`, `apartments.com`, `furnished`, labels like `sf-sublets`, and aliases or
+minor typos like `cl`, `cragislist`, `fb`, and `faceb`. Source filtering affects
+headless capture, the printed AI-browser plan, and the capture-dir JSON glob so old
+scratch files from unselected sources do not sneak into a narrowed run. Use
+`--list-sources` to print the currently selectable configured sources/tokens.
+
 3. Fulfil the AI-capture plan for the `ai_browser` tier only — sources that block
-   headless reads and need a visible/signed-in browser: **Facebook Marketplace +
-   groups** (login wall), **Zillow** (PerimeterX 403), **Furnished Finder** (403),
-   **The Listing Project** (bot challenge), **Kopa** (login-gated). For each, open
-   the search and capture **visible facts only** into the JSON file it names, using
-   the schema in `references/sources.md`:
+   headless reads and need a visible/signed-in browser. As of 2026-06-30 this is
+   **Facebook Marketplace + groups** (login wall), **Zillow** (PerimeterX 403),
+   **Apartments.com** (HTTP 403 to headless browser-like requests), and
+   **Furnished Finder** (interactive map/search). For each, open the search and
+   capture **visible facts only** into the JSON file it names, using the schema in
+   `references/sources.md`:
    - **Codex**: Chrome plugin (Computer Use fallback).
    - **Claude**: Claude-in-Chrome / Computer Use.
    Never bypass CAPTCHA/login/rate limits, never message posters, never submit.
+   The Listings Project and Kopa are currently retired/dead sources in
+   `searches.json`; do not re-add them unless they relaunch a usable public search.
 4. Re-run with the AI captures: `python3 .../run.py --input <ai-*.json ...>`
    (or just re-run `run.py` — it re-ingests everything in the capture dir).
 5. Verify every current top-5 and any `Needs Verification` row in a visible
@@ -97,7 +118,7 @@ Prefer structured or alert-based sources first, then visible browser capture:
 - Craigslist via its public `sapi.craigslist.org` JSON API (headless, no browser — see `capture_web.py`).
 - Facebook Marketplace and housing groups through a visible signed-in browser using nodriver/Chrome plugin; capture only visible listing facts.
 - Zillow/HotPads/Trulia, Apartments.com, Redfin Rentals, Realtor.com, Zumper/PadMapper, Rent.com, ApartmentGuide, ForRent, Apartment List, Roomies, SpareRoom, Furnished Finder, Airbnb monthly, Landing/Blueground, Reddit/community posts, and direct property managers.
-- Curated sublease/coliving/community sources: The Listing Project, Kopa, PadSplit, Diggz, Anyplace/Outsite/June Homes, corporate/relocation housing, Blind/Nextdoor, and the SCU/Stanford off-campus boards. See `references/sources.md` for the full grouped list.
+- Curated sublease/coliving/community sources: PadSplit, Diggz, Anyplace/Outsite/June Homes, corporate/relocation housing, Blind/Nextdoor, and the SCU/Stanford off-campus boards. The Listings Project and Kopa remain useful concepts to watch, but are retired from automation until they relaunch usable public search. See `references/sources.md` for the full grouped list.
 
 Never add CAPTCHA bypass, login bypass, rate-limit bypass, proxy rotation, or stealth-circumvention code. If a site blocks automation, use saved alerts, manual browser review, or mark the source blocked.
 

@@ -2,10 +2,10 @@
 """Bay Area housing hunt — single kickoff entrypoint.
 
 Agent-agnostic: run by a human, by Codex, or by Claude. It does everything that
-can be done deterministically and offline, runs one *safe* headless capture
-(Craigslist RSS — a public feed, no login/CAPTCHA/rate-limit bypass), rebuilds the
-ledger + power rankings, and then prints a precise AI-CAPTURE PLAN for the sources
-that need a visible/logged-in browser. The conductor fulfils that plan with:
+can be done deterministically and offline, runs the safe headless capture tiers
+(Craigslist public sapi JSON, Zumper public SSR state, and configured APIs), rebuilds
+the ledger + power rankings, and then prints a precise AI-CAPTURE PLAN for the
+sources that need a visible/logged-in browser. The conductor fulfils that plan with:
 
   - Codex  -> Chrome plugin (or Computer Use fallback)
   - Claude -> Claude-in-Chrome / Computer Use
@@ -15,6 +15,11 @@ dir, then re-running this script. Same script, same files, either agent.
 
 Typical use:
     python3 run.py                 # headless capture + score + print AI plan
+    python3 run.py --sources craigslist zillow facebook
+                                   # run/plan only selected configured sources
+    python3 run.py --list-sources  # show selectable configured sources
+    python3 run.py --fresh-capture-dir
+                                   # scheduled-run kickoff; avoids stale AI files
     python3 run.py --no-network    # skip the network fetch (offline / blocked)
     python3 run.py --plan-only      # just print what AI capture is needed
     python3 run.py --input cap.json # also ingest a hand/AI-produced capture file
@@ -26,6 +31,7 @@ the conductor exactly what to capture and where to put it.
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 import sys
 import urllib.error
@@ -43,16 +49,175 @@ DEFAULT_CAPTURE_DIR = Path("/tmp/codexskills-housing-hunt")
 SEARCHES_FILE = SCRIPT_DIR / "searches.json"
 USER_AGENT = "CodexSkills-housing-hunt/1.0 (personal housing search; contact via repo owner)"
 FETCH_TIMEOUT = 12
+SOURCE_TIERS = ("web", "rss", "apis", "ai_browser")
+SOURCE_ALIASES = {
+    "all": {"all"},
+    "cl": {"craigslist"},
+    "craig": {"craigslist"},
+    "craigs": {"craigslist"},
+    "cragislist": {"craigslist"},
+    "craiglist": {"craigslist"},
+    "craigslist": {"craigslist"},
+    "fb": {"facebook"},
+    "faceb": {"facebook"},
+    "facebook": {"facebook"},
+    "marketplace": {"marketplace"},
+    "zillow": {"zillow"},
+    "zumper": {"zumper"},
+    "apartments": {"apartments"},
+    "apartments.com": {"apartments"},
+    "apts": {"apartments"},
+    "furnished": {"furnished"},
+    "furnishedfinder": {"furnished"},
+    "furnished-finder": {"furnished"},
+    "reddit": {"reddit"},
+    "rentcast": {"rentcast"},
+}
 
 
 def load_searches() -> dict:
     if not SEARCHES_FILE.exists():
-        return {"rss": [], "ai_browser": []}
+        return {"web": [], "rss": [], "apis": [], "ai_browser": []}
     try:
         return json.loads(SEARCHES_FILE.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, UnicodeDecodeError, OSError) as exc:
         print(f"WARNING: could not read {SEARCHES_FILE.name} ({exc}); proceeding with no configured sources", file=sys.stderr)
-        return {"rss": [], "ai_browser": []}
+        return {"web": [], "rss": [], "apis": [], "ai_browser": []}
+
+
+def _source_slug(value: str) -> str:
+    return hp.slug(value).replace("-", "")
+
+
+def parse_source_filters(raw: str | list[str]) -> set[str]:
+    """Normalize a comma/space-separated --sources string into match tokens."""
+    if isinstance(raw, list):
+        text = " ".join(str(item) for item in raw if str(item).strip())
+    else:
+        text = (raw or "all").strip()
+    if not text:
+        return {"all"}
+    out: set[str] = set()
+    for part in text.replace(",", " ").split():
+        key = part.strip().lower()
+        if not key:
+            continue
+        out.update(SOURCE_ALIASES.get(key, {_source_slug(key)}))
+    return out or {"all"}
+
+
+def source_tokens(cfg: dict) -> set[str]:
+    """Searchable tokens for one configured source row.
+
+    Users think in portals ("craigslist"), products ("facebook"), and sometimes
+    exact labels ("sf-sublets"), so keep product tokens broad and label tokens exact.
+    """
+    values: list[str] = []
+    for key in ("name", "kind", "source"):
+        value = cfg.get(key)
+        if isinstance(value, str):
+            values.append(value)
+    label = cfg.get("label")
+    if isinstance(label, str) and label.strip():
+        values.append(label)
+    tokens: set[str] = set()
+    url_values = [cfg.get(key) for key in ("search_url", "url")]
+    joined = " ".join(
+        value for value in [*values, *(v for v in url_values if isinstance(v, str))]
+    ).lower()
+    for value in values:
+        tokens.add(_source_slug(value))
+    # Source names/kinds are also selectable by word; labels stay exact so a generic
+    # word like "apartments" does not accidentally select every apartment category.
+    for key in ("name", "source"):
+        value = cfg.get(key)
+        if isinstance(value, str):
+            for chunk in value.replace("/", " ").replace("_", " ").replace("-", " ").split():
+                tokens.add(_source_slug(chunk))
+    if "facebook" in joined:
+        tokens.add("facebook")
+    if "craigslist" in joined or "sapi.craigslist" in joined:
+        tokens.add("craigslist")
+    if "zillow" in joined:
+        tokens.add("zillow")
+    if "apartments.com" in joined:
+        tokens.add("apartments")
+    if "zumper" in joined:
+        tokens.add("zumper")
+    if "furnished finder" in joined or "furnishedfinder" in joined:
+        tokens.add("furnished")
+    if "reddit" in joined:
+        tokens.add("reddit")
+    if "rentcast" in joined:
+        tokens.add("rentcast")
+    return tokens
+
+
+def source_matches(cfg: dict, filters: set[str]) -> bool:
+    if "all" in filters:
+        return True
+    tokens = source_tokens(cfg)
+    return any(wanted in tokens for wanted in filters)
+
+
+def filter_searches(searches: dict, raw_sources: str | list[str]) -> tuple[dict, set[str]]:
+    filters = parse_source_filters(raw_sources)
+    if "all" in filters:
+        return searches, filters
+    filtered = copy.deepcopy(searches)
+    for tier in SOURCE_TIERS:
+        filtered[tier] = [
+            cfg for cfg in searches.get(tier, [])
+            if isinstance(cfg, dict) and source_matches(cfg, filters)
+        ]
+    return filtered, filters
+
+
+def selected_source_counts(searches: dict) -> dict[str, int]:
+    return {tier: len(searches.get(tier, [])) for tier in SOURCE_TIERS}
+
+
+def source_display_name(cfg: dict) -> str:
+    parts = [hp.clean(cfg.get("name", ""))]
+    label = hp.clean(cfg.get("label", ""))
+    if label:
+        parts.append(f"[{label}]")
+    return " ".join(part for part in parts if part).strip() or "unnamed source"
+
+
+def list_configured_sources(searches: dict) -> None:
+    print("Selectable configured sources:")
+    for tier in SOURCE_TIERS:
+        rows = searches.get(tier, [])
+        if not rows:
+            continue
+        print(f"\n{tier}:")
+        for cfg in rows:
+            if not isinstance(cfg, dict):
+                continue
+            aliases = ", ".join(sorted(source_tokens(cfg))[:12])
+            print(f"  - {source_display_name(cfg)}")
+            if aliases:
+                print(f"    tokens: {aliases}")
+
+
+def capture_path_matches(path: Path, filters: set[str]) -> bool:
+    """Filter scratch capture files by selected source tokens.
+
+    Explicit --input files are still honored, but the capture-dir glob should not
+    pull stale unselected source files into a narrowed run.
+    """
+    if "all" in filters:
+        return True
+    stem = hp.slug(path.stem)
+    compact = stem.replace("-", "")
+    path_tokens = {compact, *(part for part in stem.split("-") if part)}
+    for wanted in filters:
+        if wanted in path_tokens:
+            return True
+        if wanted in compact:
+            return True
+    return False
 
 
 def _rss_url(url: str) -> str:
@@ -151,7 +316,24 @@ def run_headless_capture(capture_dir: Path, searches: dict) -> list[Path]:
     return written
 
 
-def print_ai_capture_plan(searches: dict, capture_dir: Path) -> None:
+def clear_capture_json(capture_dir: Path) -> int:
+    """Remove old scratch captures before a scheduled kickoff.
+
+    The pipeline treats every ingested capture as "seen on this run". Scheduled
+    browser captures therefore need a clean scratch dir at the first kickoff so an
+    old ai-*.json cannot keep a stale Facebook/Zillow/Furnished Finder listing alive.
+    """
+    removed = 0
+    for path in capture_dir.glob("*.json"):
+        try:
+            path.unlink()
+            removed += 1
+        except OSError as exc:
+            print(f"WARNING: could not remove stale capture {path}: {exc}", file=sys.stderr)
+    return removed
+
+
+def print_ai_capture_plan(searches: dict, capture_dir: Path, sources_arg: list[str] | None = None) -> None:
     # Human/conductor guidance goes to stderr so stdout stays clean parseable JSON.
     def out(*args):
         print(*args, file=sys.stderr)
@@ -176,12 +358,25 @@ def print_ai_capture_plan(searches: dict, capture_dir: Path) -> None:
         out(f"{i}. {name}  [{src.get('market_hint','')}]")
         if src.get("search_url"):
             out(f"   open : {src['search_url']}")
+        if src.get("cities"):
+            out(f"   cities: {', '.join(str(city) for city in src['cities'])}")
+        if src.get("centers"):
+            centers = ", ".join(
+                str(center.get("label") or f"{center.get('latitude')},{center.get('longitude')}")
+                for center in src["centers"]
+                if isinstance(center, dict)
+            )
+            if centers:
+                out(f"   areas : {centers}")
         if src.get("note"):
             out(f"   note : {src['note']}")
         out(f"   write: {dest}")
     out("\nThen re-run:")
     inputs = " ".join(str(capture_dir / f"ai-{hp.slug(s.get('name','source'))}.json") for s in plan)
-    out(f"   python3 {Path(__file__).name} --input {inputs}")
+    sources_part = ""
+    if sources_arg and parse_source_filters(sources_arg) != {"all"}:
+        sources_part = " --sources " + " ".join(sources_arg)
+    out(f"   python3 {Path(__file__).name}{sources_part} --input {inputs}")
     out("================================================\n")
 
 
@@ -190,7 +385,10 @@ def main() -> int:
     parser.add_argument("--capture-dir", type=Path, default=DEFAULT_CAPTURE_DIR)
     parser.add_argument("--input", nargs="*", type=Path, default=[], help="Extra capture file(s) to ingest (e.g. AI-produced)")
     parser.add_argument("--source", default="manual")
-    parser.add_argument("--no-network", action="store_true", help="Skip the headless RSS fetch")
+    parser.add_argument("--sources", nargs="+", default=["all"], help="One or more configured sources to run/plan (default: all). Examples: --sources craigslist zillow facebook, --sources craigslist,zillow,facebook, or --sources apartments.com")
+    parser.add_argument("--list-sources", action="store_true", help="Print selectable configured sources/tokens and exit")
+    parser.add_argument("--fresh-capture-dir", action="store_true", help="Delete existing *.json files in the capture dir before the kickoff run")
+    parser.add_argument("--no-network", action="store_true", help="Skip the headless web/API fetch")
     parser.add_argument("--notion", action="store_true", help="After refreshing, mirror the ledger into Notion (no-op unless NOTION_TOKEN + housing-trackers/notion-config.md are set)")
     parser.add_argument("--plan-only", action="store_true", help="Do not ingest/score; just print the AI capture plan")
     parser.add_argument("--date", default=hp.today_iso())
@@ -200,10 +398,25 @@ def main() -> int:
 
     capture_dir = args.capture_dir
     capture_dir.mkdir(parents=True, exist_ok=True)
+    if args.fresh_capture_dir:
+        removed = clear_capture_json(capture_dir)
+        print(f"Cleared {removed} old capture file(s) from {capture_dir}", file=sys.stderr)
     searches = load_searches()
+    searches, source_filters = filter_searches(searches, args.sources)
+    if args.list_sources:
+        list_configured_sources(searches)
+        return 0
+    if "all" not in source_filters:
+        counts = selected_source_counts(searches)
+        print(
+            "Selected sources "
+            f"{' '.join(args.sources)!r}: web={counts['web']}, rss={counts['rss']}, "
+            f"apis={counts['apis']}, ai_browser={counts['ai_browser']}",
+            file=sys.stderr,
+        )
 
     if args.plan_only:
-        print_ai_capture_plan(searches, capture_dir)
+        print_ai_capture_plan(searches, capture_dir, args.sources)
         return 0
 
     captured: list[Path] = []
@@ -213,12 +426,14 @@ def main() -> int:
             continue
         captured.append(path.resolve())
     if not args.no_network:
-        print("Running headless capture (web adapters + RSS + configured APIs)...", file=sys.stderr)
+        print("Running headless capture (web adapters + configured APIs; optional legacy RSS if configured)...", file=sys.stderr)
         captured.extend(p.resolve() for p in capture_web.run_web_capture(capture_dir, searches))
         captured.extend(p.resolve() for p in run_headless_capture(capture_dir, searches))
         captured.extend(p.resolve() for p in capture_api.run_api_capture(capture_dir, searches))
     # Ingest every capture file present in the dir plus any explicit --input.
     for path in sorted(capture_dir.glob("*.json")):
+        if not capture_path_matches(path, source_filters):
+            continue
         captured.append(path.resolve())
     # De-dupe by resolved path (so --input X and the dir glob can't double-process),
     # preserve order, keep only existing files.
@@ -248,7 +463,7 @@ def main() -> int:
         import subprocess
         subprocess.run([sys.executable, str(SCRIPT_DIR / "sync_housing_to_notion.py")], check=False)
 
-    print_ai_capture_plan(searches, capture_dir)
+    print_ai_capture_plan(searches, capture_dir, args.sources)
     return 0
 
 

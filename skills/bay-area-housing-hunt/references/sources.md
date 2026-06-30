@@ -15,8 +15,10 @@
 - Facebook Marketplace rentals.
 - Facebook housing/sublet groups, e.g. "Bay Area Housing, Rooms, Sublets & Roommates", "SF Housing, Rooms, Apartments, Sublets & Roommates", "Gypsy Housing Bay Area", and tech-worker housing groups.
 - Craigslist `apa`, `sub`, `roo`, and the relevant Bay Area subareas (`sby` South Bay, `pen` Peninsula, `sfc` SF).
-- The Listing Project (curated SF/Bay sublets and shares).
-- Kopa (furnished short-term sublets; strong near Stanford/SCU and for early-career movers).
+- The Listings Project / The Listing Project (watch only for now: automation retired
+  2026-06-29 because public pages resolved to parked/subscription-only surfaces).
+- Kopa (watch only for now: automation retired 2026-06-29 because the service
+  showed a shutdown/wind-down notice and no live public search).
 - Diggz and SpareRoom (roommate/room matching); treat Roomies/Roomster listings with extra scam caution.
 - PadSplit (room-by-room, lower-cost).
 - Furnished Finder (monthly furnished; travel-nurse stock but flexible terms).
@@ -90,14 +92,19 @@ a realistic desktop-Chrome UA). Prefer the highest tier a source supports:
     Free tiers only unless Liam opts into paying.
 - **Visible/logged-in browser `ai_browser`:** sources that genuinely block headless
   reads. Captured with the **local real signed-in browser** (Claude-in-Chrome /
-  Computer Use / Chrome plugin). Probed status:
+  Computer Use / Chrome plugin). Current configured status:
   - **Facebook Marketplace + groups** → login wall (headless 400 / login redirect).
   - **Zillow** → PerimeterX anti-bot (headless 403); no keyless JSON path.
-  - **Furnished Finder** → anti-bot (headless 403 even with full browser headers).
-  - **The Listing Project** → bot-challenge interstitial (200 but no real listings);
-    may also need an email subscription.
-  - **Kopa** → no public search route (every `/search|/listings` path 404s); search is
-    login-gated.
+  - **Apartments.com** → headless HTTP 403 with a realistic desktop-Chrome UA in
+    the 2026-06-30 probe; capture visible listing cards in a real browser.
+  - **Furnished Finder** → no reliable keyless public JSON path; current site is an
+    interactive map/search and needs manual visible-browser capture.
+- **Retired/watch-only sources:** do not re-add unless they relaunch a usable public
+  search.
+  - **The Listings Project / The Listing Project** → public web paths were parked or
+    subscription-only in the 2026-06-29 browser probe.
+  - **Kopa** → public site showed a shutdown/wind-down notice in the 2026-06-29
+    browser probe.
 
 Do NOT try to defeat the `ai_browser` sources headlessly — use the local browser.
 

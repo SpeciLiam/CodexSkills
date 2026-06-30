@@ -244,6 +244,96 @@ class CaptureApi(unittest.TestCase):
         self.assertEqual(written, [])
 
 
+class SourceSelection(unittest.TestCase):
+    def setUp(self):
+        import importlib
+        import run as housing_run
+        importlib.reload(housing_run)
+        self.run = housing_run
+
+    def test_aliases_and_typos_normalize(self):
+        filters = self.run.parse_source_filters(["cragislist", "faceb", "apartments.com"])
+        self.assertIn("craigslist", filters)
+        self.assertIn("facebook", filters)
+        self.assertIn("apartments", filters)
+
+    def test_filter_searches_across_tiers(self):
+        searches = {
+            "web": [
+                {"name": "Craigslist", "label": "sf-sublets"},
+                {"name": "Zumper", "label": "santa-clara"},
+            ],
+            "apis": [
+                {"name": "Reddit", "source": "Reddit"},
+                {"name": "RentCast", "source": "RentCast"},
+            ],
+            "ai_browser": [
+                {"name": "Facebook Marketplace (corridor rentals)"},
+                {"name": "Zillow Rentals (corridor)"},
+                {"name": "Apartments.com Rentals (corridor)"},
+            ],
+            "rss": [],
+        }
+        filtered, filters = self.run.filter_searches(searches, ["craigslist,zillow"])
+        self.assertNotIn("all", filters)
+        self.assertEqual([x["name"] for x in filtered["web"]], ["Craigslist"])
+        self.assertEqual([x["name"] for x in filtered["ai_browser"]], ["Zillow Rentals (corridor)"])
+        self.assertEqual(filtered["apis"], [])
+
+    def test_filter_can_select_every_configured_source_family(self):
+        searches = {
+            "web": [
+                {"name": "Craigslist", "label": "south-bay-rooms"},
+                {"name": "Zumper", "label": "santa-clara"},
+            ],
+            "apis": [
+                {"name": "Reddit", "source": "Reddit"},
+                {"name": "RentCast", "source": "RentCast"},
+            ],
+            "ai_browser": [
+                {"name": "Facebook Marketplace (corridor rentals)"},
+                {"name": "Zillow Rentals (corridor)"},
+                {"name": "Apartments.com Rentals (corridor)"},
+                {"name": "Furnished Finder (Santa Clara area)"},
+            ],
+            "rss": [],
+        }
+        filtered, _ = self.run.filter_searches(
+            searches,
+            ["craigslist", "zumper", "reddit", "rentcast", "facebook", "zillow", "apartments.com", "furnished"],
+        )
+        self.assertEqual(len(filtered["web"]), 2)
+        self.assertEqual(len(filtered["apis"]), 2)
+        self.assertEqual(len(filtered["ai_browser"]), 4)
+
+    def test_marketplace_alias_selects_marketplace_not_groups(self):
+        searches = {
+            "ai_browser": [
+                {"name": "Facebook Marketplace (corridor rentals)"},
+                {"name": "Facebook housing groups (Bay Area sublets/rooms)"},
+            ],
+            "web": [],
+            "apis": [],
+            "rss": [],
+        }
+        filtered, _ = self.run.filter_searches(searches, ["marketplace"])
+        self.assertEqual(
+            [item["name"] for item in filtered["ai_browser"]],
+            ["Facebook Marketplace (corridor rentals)"],
+        )
+
+    def test_capture_dir_glob_respects_source_filter(self):
+        filters = self.run.parse_source_filters(["zillow"])
+        self.assertTrue(self.run.capture_path_matches(Path("/tmp/ai-zillow-rentals-corridor.json"), filters))
+        self.assertFalse(self.run.capture_path_matches(Path("/tmp/web-craigslist-sf-sublets.json"), filters))
+
+    def test_all_keeps_everything(self):
+        searches = {"web": [{"name": "Craigslist"}], "apis": [{"name": "Reddit"}], "ai_browser": [], "rss": []}
+        filtered, filters = self.run.filter_searches(searches, ["all"])
+        self.assertIn("all", filters)
+        self.assertEqual(filtered, searches)
+
+
 class EndToEnd(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.mkdtemp()
