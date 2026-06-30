@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-06-30T06:30:41.390272+00:00",
+    "generatedAt": "2026-06-30T18:05:28.133530+00:00",
     "arrival": "2026-07-06T09:00:00-07:00",
     "endpoint": "https://housing-visualizer.vercel.app/api/commute",
     "primaryOffice": "HackerRank (Santa Clara)",
@@ -8,7 +8,7 @@
       "HackerRank (Santa Clara)": "2350 Mission College Blvd #750, Santa Clara, CA 95054",
       "Google (San Francisco)": "345 Spear Street, San Francisco, CA 94105"
     },
-    "originCount": 102
+    "originCount": 110
   },
   "origins": {
     "21st ave., san francisco, ca": {
@@ -1948,6 +1948,158 @@
       "computedAt": "2026-06-30T06:30:39.928796+00:00",
       "suspect": false,
       "homeTransit": 137
+    },
+    "emeryville, ca": {
+      "origin": "Emeryville, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 105,
+          "drive": 79,
+          "bike": 254,
+          "transitSummary": "Capitol Corridor + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 53,
+          "drive": 30,
+          "bike": 46
+        }
+      },
+      "computedAt": "2026-06-30T18:05:24.532270+00:00",
+      "suspect": false,
+      "homeTransit": 109
+    },
+    "buena vista, san francisco, ca": {
+      "origin": "Buena Vista, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 145,
+          "drive": 70,
+          "bike": 272,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 40,
+          "drive": 23,
+          "bike": 29
+        }
+      },
+      "computedAt": "2026-06-30T18:05:24.532135+00:00",
+      "suspect": false,
+      "homeTransit": 130
+    },
+    "newark, ca": {
+      "origin": "Newark, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 131,
+          "drive": 38,
+          "bike": 85,
+          "transitSummary": "bus + Capitol Corridor + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 112,
+          "drive": 70,
+          "bike": 177
+        }
+      },
+      "computedAt": "2026-06-30T18:05:24.532681+00:00",
+      "suspect": false,
+      "homeTransit": 98
+    },
+    "lower pac heights, san francisco, ca": {
+      "origin": "Lower Pac Heights, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 142,
+          "drive": 71,
+          "bike": 283,
+          "transitSummary": "bus + BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 35,
+          "drive": 18,
+          "bike": 22
+        }
+      },
+      "computedAt": "2026-06-30T18:05:24.532587+00:00",
+      "suspect": false,
+      "homeTransit": 140
+    },
+    "hollister, ca": {
+      "origin": "Hollister, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 203,
+          "drive": 73,
+          "bike": 310,
+          "transitSummary": "bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 283,
+          "drive": 120,
+          "bike": 550
+        }
+      },
+      "computedAt": "2026-06-30T18:05:24.532389+00:00",
+      "suspect": false,
+      "homeTransit": 257
+    },
+    "other bay area, ca": {
+      "origin": "Other Bay Area, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 128,
+          "drive": 81,
+          "bike": 250,
+          "transitSummary": "bus + Capitol Corridor + bus"
+        },
+        "Google (San Francisco)": {
+          "transit": 39,
+          "drive": 33,
+          "bike": 42
+        }
+      },
+      "computedAt": "2026-06-30T18:05:24.532772+00:00",
+      "suspect": false,
+      "homeTransit": 131
+    },
+    "1875 mission st #210, san francisco, ca": {
+      "origin": "1875 Mission St #210, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 126,
+          "drive": 63,
+          "bike": 269,
+          "transitSummary": "BART"
+        },
+        "Google (San Francisco)": {
+          "transit": 25,
+          "drive": 14,
+          "bike": 17
+        }
+      },
+      "computedAt": "2026-06-30T18:05:24.531895+00:00",
+      "suspect": false,
+      "homeTransit": 121
+    },
+    "land park - sacramento, san francisco, ca": {
+      "origin": "Land Park - Sacramento, San Francisco, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 585,
+          "drive": 129,
+          "bike": 736,
+          "transitSummary": "tram + bus + Capitol Corridor"
+        },
+        "Google (San Francisco)": {
+          "transit": 222,
+          "drive": 104,
+          "bike": 423
+        }
+      },
+      "computedAt": "2026-06-30T18:05:24.532488+00:00",
+      "suspect": true,
+      "homeTransit": 287
     }
   }
 }

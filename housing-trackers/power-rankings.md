@@ -6,9 +6,9 @@ Last refreshed: 2026-06-30
 
 ## Daily Summary
 
-- Active listings: 1249
+- Active listings: 1481
 - Needs verification: 22
-- Expired/unavailable/stale/replaced: 510
+- Expired/unavailable/stale/replaced: 511
 - New top-5 entrants: 0
 
 ## Top 5 Overall Active
@@ -22,6 +22,20 @@ Last refreshed: 2026-06-30
 | 5 | Same | 65 | 65 | 64 | 1455 | Santa Clara | Furnished spacious room in downtown |  | near office; local bus/bike/drive likely strongest; no-car ~22m to work / ~30m home, car ~12m / ~19m | furnished; to work ~22m / home ~30m (no-car); $1455/mo all-in | Active | [Open](https://sfbay.craigslist.org/sby/roo/d/mountain-view-furnished-spacious-room/7939819562.html) |
 
 ## Top 5 By Market
+
+### SF Mission/Valencia (Underfilled)
+
+| Rank | Delta | Score | No-Car | Car | Rent | Market | Listing | Lease | Commute | Why | Status | Link |
+| ---: | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Same | 42 | 42 | 41 | 3155 | SF Mission/Valencia | 1188 Mission at Trinity Place |  | bike+Caltrain (~15m bike to Caltrain (est)); no-car ~90m to work / ~98m home, car ~65m / ~72m | lease unclear; to work ~90m / home ~98m (no-car); $3155/mo all-in | Active | [Open](https://www.apartments.com/1188-mission-at-trinity-place-san-francisco-ca/dm9e9kl) |
+| 2 | Same | 40 | 40 | 38 | 3593 | SF Mission/Valencia | 1190 Mission at Trinity Place |  | bike+Caltrain (~15m bike to Caltrain (est)); no-car ~90m to work / ~98m home, car ~65m / ~72m | lease unclear; to work ~90m / home ~98m (no-car); $3593/mo all-in | Active | [Open](https://www.apartments.com/1190-mission-at-trinity-place-san-francisco-ca/yz77zfv) |
+| 3 | Same | 30 | 30 | 31 | 4814 | SF Mission/Valencia | Channel Mission Bay |  | bike+Caltrain (~4m bike to Caltrain); no-car ~79m to work / ~87m home, car ~65m / ~72m | lease unclear; to work ~79m / home ~87m (no-car); $4814/mo all-in | Active | [Open](https://www.apartments.com/channel-mission-bay-san-francisco-ca/7l08vty) |
+
+### SF Dogpatch/Potrero/Showplace (Underfilled)
+
+| Rank | Delta | Score | No-Car | Car | Rent | Market | Listing | Lease | Commute | Why | Status | Link |
+| ---: | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Same | 38 | 38 | 35 | 4095 | SF Dogpatch/Potrero/Showplace | Alta Potrero |  | bike+Caltrain (~7m bike to Caltrain); no-car ~82m to work / ~90m home, car ~62m / ~69m | lease unclear; to work ~82m / home ~90m (no-car); $4095/mo all-in | Active | [Open](https://www.apartments.com/alta-potrero-san-francisco-ca/k15xrnb) |
 
 ### SF SoMa/South Beach/Mission Bay (Top 5)
 
@@ -53,11 +67,11 @@ Last refreshed: 2026-06-30
 
 | Rank | Delta | Score | No-Car | Car | Rent | Market | Listing | Lease | Commute | Why | Status | Link |
 | ---: | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Same | 55 | 52 | 58 | 1200 | Sunnyvale | Private room for rent | room/shared | Caltrain/VTA or short drive; strong commute fit; no-car ~45m to work / ~53m home, car ~22m / ~29m | lease unclear; to work ~45m / home ~53m (no-car); $1200/mo all-in | Active | [Open](https://www.facebook.com/marketplace/item/3988188534811598) |
-| 2 | Same | 53 | 51 | 56 | 1771 | Sunnyvale | Apartment in San Jose East |  | Caltrain/VTA or short drive; strong commute fit; no-car ~45m to work / ~53m home, car ~22m / ~29m | lease unclear; to work ~45m / home ~53m (no-car); $1771/mo all-in | Active | [Open](https://sfbay.craigslist.org/sby/apa/d/x/7944297633.html) |
-| 3 | Same | 53 | 51 | 56 | 1771 | Sunnyvale | Apartment in San Jose |  | Caltrain/VTA or short drive; strong commute fit; no-car ~45m to work / ~53m home, car ~22m / ~29m | lease unclear; to work ~45m / home ~53m (no-car); $1771/mo all-in | Active | [Open](https://sfbay.craigslist.org/sby/apa/d/x/7944175882.html) |
-| 4 | Same | 53 | 50 | 56 | 1822 | Sunnyvale | Apartment in San Jose East |  | Caltrain/VTA or short drive; strong commute fit; no-car ~45m to work / ~53m home, car ~22m / ~29m | lease unclear; to work ~45m / home ~53m (no-car); $1822/mo all-in | Active | [Open](https://sfbay.craigslist.org/sby/apa/d/x/7944306269.html) |
-| 5 | Same | 53 | 50 | 56 | 1822 | Sunnyvale | Apartment in San Jose East |  | Caltrain/VTA or short drive; strong commute fit; no-car ~45m to work / ~53m home, car ~22m / ~29m | lease unclear; to work ~45m / home ~53m (no-car); $1822/mo all-in | Active | [Open](https://sfbay.craigslist.org/sby/apa/d/x/7944304374.html) |
+| 1 | +1 | 58 | 56 | 61 | 2850 | Sunnyvale | Macara Gardens |  | Caltrain/VTA or short drive; strong commute fit; no-car ~45m to work / ~53m home, car ~22m / ~29m | short-term; to work ~45m / home ~53m (no-car); $2850/mo all-in | Active | [Open](https://www.apartments.com/macara-gardens-sunnyvale-ca/zgw02nx) |
+| 2 | -1 | 55 | 52 | 58 | 1200 | Sunnyvale | Private room for rent | room/shared | Caltrain/VTA or short drive; strong commute fit; no-car ~45m to work / ~53m home, car ~22m / ~29m | lease unclear; to work ~45m / home ~53m (no-car); $1200/mo all-in | Active | [Open](https://www.facebook.com/marketplace/item/3988188534811598) |
+| 3 | Same | 53 | 51 | 56 | 1771 | Sunnyvale | Apartment in San Jose East |  | Caltrain/VTA or short drive; strong commute fit; no-car ~45m to work / ~53m home, car ~22m / ~29m | lease unclear; to work ~45m / home ~53m (no-car); $1771/mo all-in | Active | [Open](https://sfbay.craigslist.org/sby/apa/d/x/7944297633.html) |
+| 4 | Same | 53 | 51 | 56 | 1771 | Sunnyvale | Apartment in San Jose |  | Caltrain/VTA or short drive; strong commute fit; no-car ~45m to work / ~53m home, car ~22m / ~29m | lease unclear; to work ~45m / home ~53m (no-car); $1771/mo all-in | Active | [Open](https://sfbay.craigslist.org/sby/apa/d/x/7944175882.html) |
+| 5 | Same | 53 | 50 | 56 | 1822 | Sunnyvale | Apartment in San Jose East |  | Caltrain/VTA or short drive; strong commute fit; no-car ~45m to work / ~53m home, car ~22m / ~29m | lease unclear; to work ~45m / home ~53m (no-car); $1822/mo all-in | Active | [Open](https://sfbay.craigslist.org/sby/apa/d/x/7944306269.html) |
 
 ### Santa Clara (Top 5)
 
@@ -87,7 +101,7 @@ Last refreshed: 2026-06-30
 | 2 | Same | 53 | 49 | 56 | 1300 | Palo Alto/Menlo Park | 1 habitación 0 baños - Casa | room/shared | Caltrain corridor; check station distance; no-car ~70m to work / ~78m home, car ~32m / ~39m | lease unclear; to work ~70m / home ~78m (no-car); $1300/mo all-in | Active | [Open](https://www.facebook.com/marketplace/item/1521617282777396) |
 | 3 | Same | 53 | 49 | 56 | 1500 | Palo Alto/Menlo Park | Renta habitación privada | room/shared | Caltrain corridor; check station distance; no-car ~70m to work / ~78m home, car ~32m / ~39m | lease unclear; to work ~70m / home ~78m (no-car); $1500/mo all-in | Active | [Open](https://www.facebook.com/marketplace/item/1669088790994487) |
 | 4 | Same | 51 | 47 | 54 | 1200 | Palo Alto/Menlo Park | 2 Beds 2 Baths - House |  | Caltrain corridor; check station distance; no-car ~70m to work / ~78m home, car ~32m / ~39m | lease unclear; to work ~70m / home ~78m (no-car); $1200/mo all-in | Active | [Open](https://www.facebook.com/marketplace/item/1538557181013310) |
-| 5 | Same | 49 | 46 | 52 | 2395 | Palo Alto/Menlo Park | Emer01 |  | Caltrain corridor; check station distance; no-car ~70m to work / ~78m home, car ~32m / ~39m | lease unclear; to work ~70m / home ~78m (no-car); $2395/mo all-in | Active | [Open](https://www.zumper.com/apartment-buildings/p598848/2501-2511-emerson-street-midtown-palo-alto-ca) |
+| 5 | Same | 49 | 46 | 52 | 2060 | Palo Alto/Menlo Park | Wilton Court |  | Caltrain corridor; check station distance; no-car ~70m to work / ~78m home, car ~32m / ~39m | lease unclear; to work ~70m / home ~78m (no-car); $2060/mo all-in | Active | [Open](https://www.apartments.com/wilton-court-palo-alto-ca/4vk7t7l) |
 
 ### Redwood City/San Carlos/Belmont (Top 5)
 
@@ -107,7 +121,7 @@ Last refreshed: 2026-06-30
 | 2 | Same | 49 | 45 | 52 | 1300 | San Mateo/Burlingame/Millbrae | 2 habitaciones 1 baño - Departamento | room/shared | longer Caltrain corridor; check express timing; no-car ~90m to work / ~98m home, car ~55m / ~62m | lease unclear; to work ~90m / home ~98m (no-car); $1300/mo all-in | Active | [Open](https://www.facebook.com/marketplace/item/2160756604492256) |
 | 3 | Same | 48 | 44 | 51 | 1200 | San Mateo/Burlingame/Millbrae | Private room for rent | room/shared | longer Caltrain corridor; check express timing; no-car ~90m to work / ~98m home, car ~55m / ~62m | lease unclear; to work ~90m / home ~98m (no-car); $1200/mo all-in | Active | [Open](https://www.facebook.com/marketplace/item/1230885752381401) |
 | 4 | Same | 47 | 43 | 50 | 1500 | San Mateo/Burlingame/Millbrae | 1 Bed 1 Bath - House |  | longer Caltrain corridor; check express timing; no-car ~90m to work / ~98m home, car ~55m / ~62m | lease unclear; to work ~90m / home ~98m (no-car); $1500/mo all-in | Active | [Open](https://www.facebook.com/marketplace/item/1978932032739296) |
-| 5 | Same | 45 | 42 | 48 | 2275 | San Mateo/Burlingame/Millbrae | Colegrove |  | longer Caltrain corridor; check express timing; no-car ~90m to work / ~98m home, car ~55m / ~62m | lease unclear; to work ~90m / home ~98m (no-car); $2275/mo all-in | Active | [Open](https://www.zumper.com/apartment-buildings/p1070637/colegrove-sugarloaf-san-mateo-ca) |
+| 5 | Same | 46 | 43 | 49 | 2095 | San Mateo/Burlingame/Millbrae | Country Club |  | longer Caltrain corridor; check express timing; no-car ~90m to work / ~98m home, car ~55m / ~62m | lease unclear; to work ~90m / home ~98m (no-car); $2095/mo all-in | Active | [Open](https://www.apartments.com/country-club-san-mateo-ca/8ryvqc0) |
 
 ### Oakland/Berkeley (Underfilled)
 
@@ -121,11 +135,11 @@ Last refreshed: 2026-06-30
 
 | Rank | Delta | Score | No-Car | Car | Rent | Market | Listing | Lease | Commute | Why | Status | Link |
 | ---: | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Same | 50 | 45 | 53 | 900 | Other Bay Area | Rento habitación | room/shared | needs manual commute verification; no-car ~75m to work / ~83m home, car ~45m / ~52m | lease unclear; to work ~75m / home ~83m (no-car); $900/mo all-in | Active | [Open](https://www.facebook.com/marketplace/item/1030728422806449) |
-| 2 | Same | 49 | 44 | 52 | 850 | Other Bay Area | Cuarto de renta | room/shared | needs manual commute verification; no-car ~75m to work / ~83m home, car ~45m / ~52m | lease unclear; to work ~75m / home ~83m (no-car); $850/mo all-in | Active | [Open](https://www.facebook.com/marketplace/item/2025721528821110) |
-| 3 | Same | 49 | 45 | 52 | 1300 | Other Bay Area | 1 habitación 1 baño - Casa | room/shared | needs manual commute verification; no-car ~75m to work / ~83m home, car ~45m / ~52m | lease unclear; to work ~75m / home ~83m (no-car); $1300/mo all-in | Active | [Open](https://www.facebook.com/marketplace/item/1923302128359101) |
-| 4 | Same | 49 | 45 | 52 | 1500 | Other Bay Area | Habitación privada en alquiler | room/shared | needs manual commute verification; no-car ~75m to work / ~83m home, car ~45m / ~52m | lease unclear; to work ~75m / home ~83m (no-car); $1500/mo all-in | Active | [Open](https://www.facebook.com/marketplace/item/1055860410200563) |
-| 5 | Same | 48 | 43 | 51 | 444 | Other Bay Area | 4 Beds 4 Baths Apartment |  | needs manual commute verification; no-car ~75m to work / ~83m home, car ~45m / ~52m | lease unclear; to work ~75m / home ~83m (no-car); $444/mo all-in | Active | [Open](https://www.facebook.com/marketplace/item/1114758908397562) |
+| 1 | +4 | 53 | 50 | 56 | 2245 | Other Bay Area | eaves West Valley |  | needs manual commute verification; no-car ~75m to work / ~83m home, car ~45m / ~52m | short-term; to work ~75m / home ~83m (no-car); $2245/mo all-in | Active | [Open](https://www.apartments.com/eaves-west-valley-san-jose-ca/jtb85z5) |
+| 2 | -1 | 50 | 45 | 53 | 900 | Other Bay Area | Rento habitación | room/shared | needs manual commute verification; no-car ~75m to work / ~83m home, car ~45m / ~52m | lease unclear; to work ~75m / home ~83m (no-car); $900/mo all-in | Active | [Open](https://www.facebook.com/marketplace/item/1030728422806449) |
+| 3 | New | 49 | 49 | 52 | 2982 | Other Bay Area | Maxwell at Bascom |  | needs manual commute verification; no-car ~75m to work / ~83m home, car ~45m / ~52m | short-term; to work ~75m / home ~83m (no-car); $2982/mo all-in | Active | [Open](https://www.apartments.com/maxwell-at-bascom-san-jose-ca/163qzv7) |
+| 4 | -2 | 49 | 44 | 52 | 850 | Other Bay Area | Cuarto de renta | room/shared | needs manual commute verification; no-car ~75m to work / ~83m home, car ~45m / ~52m | lease unclear; to work ~75m / home ~83m (no-car); $850/mo all-in | Active | [Open](https://www.facebook.com/marketplace/item/2025721528821110) |
+| 5 | -2 | 49 | 45 | 52 | 1300 | Other Bay Area | 1 habitación 1 baño - Casa | room/shared | needs manual commute verification; no-car ~75m to work / ~83m home, car ~45m / ~52m | lease unclear; to work ~75m / home ~83m (no-car); $1300/mo all-in | Active | [Open](https://www.facebook.com/marketplace/item/1923302128359101) |
 
 ### SF (Top 5)
 
@@ -145,13 +159,13 @@ Last refreshed: 2026-06-30
 | 1 | New | 63 | 63 | 62 | 1000 | Santa Clara | Room for rent -FURNISHED 6mth lease min |  | near office; local bus/bike/drive likely strongest; no-car ~22m to work / ~30m home, car ~12m / ~19m | furnished; to work ~22m / home ~30m (no-car); $1000/mo all-in | Active | [Open](https://sfbay.craigslist.org/sby/roo/d/sunnyvale-room-for-rent-furnished-6mth/7941674109.html) |
 | 2 | New | 63 | 63 | 62 | 1050 | Santa Clara | 2 Furnished Rooms in a house with other Professional Males |  | near office; local bus/bike/drive likely strongest; no-car ~22m to work / ~30m home, car ~12m / ~19m | furnished; to work ~22m / home ~30m (no-car); $1050/mo all-in | Active | [Open](https://sfbay.craigslist.org/sby/roo/d/sunnyvale-furnished-rooms-in-house-with/7937843491.html) |
 | 3 | New | 62 | 62 | 64 | 1800 | SF SoMa/South Beach/Mission Bay | Fully Furnished Nob hill 1BR/1BA Sublet w/ Home Office – Utilities In... |  | bike+Caltrain (~13m bike to Caltrain); no-car ~88m to work / ~96m home, car ~65m / ~72m | sublease, furnished; to work ~88m / home ~96m (no-car); $1800/mo all-in | Active | [Open](https://sfbay.craigslist.org/sfc/sub/d/san-francisco-fully-furnished-nob-hill/7944267649.html) |
-| 4 | New | 58 | 58 | 57 | 1400 | SF Hayes/Lower Haight/Castro/Duboce | 1 Bedroom Sublease - Castro/Eureka Valley (July) | sublease | bike+Caltrain (~13m bike to Caltrain); no-car ~88m to work / ~96m home, car ~75m / ~82m | sublease; to work ~88m / home ~96m (no-car); $1400/mo all-in | Active | [Open](https://www.facebook.com/marketplace/item/1893335408007639) |
-| 5 | New | 58 | 58 | 58 | 600 | Santa Clara | Private room for rent San Antonio street cross 24th street 95116 |  | near office; local bus/bike/drive likely strongest; no-car ~22m to work / ~30m home, car ~12m / ~19m | lease unclear; to work ~22m / home ~30m (no-car); $600/mo all-in | Active | [Open](https://sfbay.craigslist.org/sby/roo/d/san-jose-private-room-for-rent-san/7943276355.html) |
-| 6 | New | 58 | 58 | 58 | 850 | Santa Clara | Room available in a house- Warm Springs Area |  | near office; local bus/bike/drive likely strongest; no-car ~22m to work / ~30m home, car ~12m / ~19m | lease unclear; to work ~22m / home ~30m (no-car); $850/mo all-in | Active | [Open](https://sfbay.craigslist.org/sby/roo/d/milpitas-room-available-in-house-warm/7944210302.html) |
-| 7 | New | 58 | 58 | 58 | 860 | Santa Clara | Room for rent |  | near office; local bus/bike/drive likely strongest; no-car ~22m to work / ~30m home, car ~12m / ~19m | lease unclear; to work ~22m / home ~30m (no-car); $860/mo all-in | Active | [Open](https://sfbay.craigslist.org/sby/roo/d/san-jose-room-for-rent/7944204797.html) |
-| 8 | New | 58 | 58 | 57 | 950 | Santa Clara | ROOM FOR RENT (Cupertino city ) |  | near office; local bus/bike/drive likely strongest; no-car ~22m to work / ~30m home, car ~12m / ~19m | lease unclear; to work ~22m / home ~30m (no-car); $950/mo all-in | Active | [Open](https://sfbay.craigslist.org/sby/roo/d/cupertino-room-for-rent-cupertino-city/7938221012.html) |
-| 9 | New | 58 | 58 | 57 | 1100 | Santa Clara | Master bedroom for rent |  | near office; local bus/bike/drive likely strongest; no-car ~22m to work / ~30m home, car ~12m / ~19m | lease unclear; to work ~22m / home ~30m (no-car); $1100/mo all-in | Active | [Open](https://sfbay.craigslist.org/sby/roo/d/san-jose-master-bedroom-for-rent/7944203959.html) |
-| 10 | New | 58 | 58 | 57 | 1100 | Santa Clara | Nice room in Cupertino |  | near office; local bus/bike/drive likely strongest; no-car ~22m to work / ~30m home, car ~12m / ~19m | lease unclear; to work ~22m / home ~30m (no-car); $1100/mo all-in | Active | [Open](https://sfbay.craigslist.org/sby/roo/d/cupertino-nice-room-in-cupertino/7944262178.html) |
+| 4 | New | 61 | 61 | 55 | 3560 | Santa Clara | Orlo and Alba |  | near office; local bus/bike/drive likely strongest; no-car ~22m to work / ~30m home, car ~12m / ~19m | short-term; to work ~22m / home ~30m (no-car); $3560/mo all-in | Active | [Open](https://www.apartments.com/orlo-and-alba-santa-clara-ca/1pw4vv6) |
+| 5 | New | 59 | 59 | 53 | 3490 | Santa Clara | AVE Santa Clara |  | near office; local bus/bike/drive likely strongest; no-car ~22m to work / ~30m home, car ~12m / ~19m | furnished; to work ~22m / home ~30m (no-car); $3490/mo all-in | Active | [Open](https://www.apartments.com/ave-santa-clara-santa-clara-ca/z3k89nx) |
+| 6 | New | 59 | 59 | 58 | 1450 | Santa Clara | St. Anton Apartments |  | near office; local bus/bike/drive likely strongest; no-car ~22m to work / ~30m home, car ~12m / ~19m | lease unclear; to work ~22m / home ~30m (no-car); $1450/mo all-in | Active | [Open](https://www.apartments.com/st-anton-apartments-santa-clara-ca/xms919p) |
+| 7 | New | 58 | 58 | 57 | 1400 | SF Hayes/Lower Haight/Castro/Duboce | 1 Bedroom Sublease - Castro/Eureka Valley (July) | sublease | bike+Caltrain (~13m bike to Caltrain); no-car ~88m to work / ~96m home, car ~75m / ~82m | sublease; to work ~88m / home ~96m (no-car); $1400/mo all-in | Active | [Open](https://www.facebook.com/marketplace/item/1893335408007639) |
+| 8 | New | 58 | 56 | 61 | 2850 | Sunnyvale | Macara Gardens |  | Caltrain/VTA or short drive; strong commute fit; no-car ~45m to work / ~53m home, car ~22m / ~29m | short-term; to work ~45m / home ~53m (no-car); $2850/mo all-in | Active | [Open](https://www.apartments.com/macara-gardens-sunnyvale-ca/zgw02nx) |
+| 9 | New | 58 | 58 | 58 | 600 | Santa Clara | Private room for rent San Antonio street cross 24th street 95116 |  | near office; local bus/bike/drive likely strongest; no-car ~22m to work / ~30m home, car ~12m / ~19m | lease unclear; to work ~22m / home ~30m (no-car); $600/mo all-in | Active | [Open](https://sfbay.craigslist.org/sby/roo/d/san-jose-private-room-for-rent-san/7943276355.html) |
+| 10 | New | 58 | 58 | 58 | 850 | Santa Clara | Room available in a house- Warm Springs Area |  | near office; local bus/bike/drive likely strongest; no-car ~22m to work / ~30m home, car ~12m / ~19m | lease unclear; to work ~22m / home ~30m (no-car); $850/mo all-in | Active | [Open](https://sfbay.craigslist.org/sby/roo/d/milpitas-room-available-in-house-warm/7944210302.html) |
 
 ## Expired / Unavailable / Stale / Replaced
 
@@ -179,6 +193,7 @@ Last refreshed: 2026-06-30
 | Expired | 2026-06-30 | Sunnyvale | 2 BRs in large house & yard, pool. 4 blocks to transit! PETS OK! | 1450 | Expired | [Open](https://www.craigslist.org/view/d/sunnyvale-brs-in-large-house-yard-pool/wcov1TNH6cPWso1ZsXAfpk) |
 | Expired | 2026-06-30 | Sunnyvale | 1B1B Room in sunnyvale for 1 month 19 July to 22nd August | 3000 | Expired | [Open](https://www.craigslist.org/view/d/sunnyvale-1b1b-room-in-sunnyvale-for/iRzpJQUqVu1kAxGs3Pwofs) |
 | Expired | 2026-06-30 | Sunnyvale | 1 Bedroom With Shared Bath For Rent | 1200 | Expired | [Open](https://www.craigslist.org/view/d/sunnyvale-bedroom-with-shared-bath-for/88Jdbht2RszghMhgwsE2B6) |
+| Source Blocked | 2026-06-30 | Santa Clara | Zillow Rentals (corridor) source blocked |  | Source Blocked | [Open](https://www.zillow.com/santa-clara-ca/rentals) |
 | Expired | 2026-06-30 | Santa Clara | Studio Apartment Near Valley Fair Mall | 1750 | Expired | [Open](https://www.craigslist.org/view/d/santa-clara-studio-apartment-near/8NjrDLQmsnKH84GHcMFeJu) |
 | Expired | 2026-06-30 | Santa Clara | Spacious, Comfy 1BR/Studio - Santa Clara | 2425 | Expired | [Open](https://www.craigslist.org/view/d/san-jose-spacious-comfy-beautiful/8QrbSR6TJ52hAKzxS1Ttep) |
 | Expired | 2026-06-30 | Santa Clara | Room for rent near Santana Row | 1300 | Expired | [Open](https://www.craigslist.org/view/d/santa-clara-room-for-rent-near-santana/8cSvY9hwztQfoKuQ4VaS2u) |
@@ -216,7 +231,6 @@ Last refreshed: 2026-06-30
 | Expired | 2026-06-30 | SF SoMa/South Beach/Mission Bay | Amazing Location One Bedroom One Bathroom | 2200 | Expired | [Open](https://www.craigslist.org/view/d/san-francisco-amazing-location-one/gSsNCwxjKyqYUpjjzJmZQ8) |
 | Expired | 2026-06-30 | SF Mission/Valencia | Unique third floor 2bd/1bth apartment w/deck, July 1 - Aug 15/30 | 3000 | Expired | [Open](https://www.craigslist.org/view/d/san-francisco-unique-third-floor-2bd/mZFkzmv3nxSQA23ezYpdS7) |
 | Expired | 2026-06-30 | SF Mission/Valencia | Spacious Room Available! Walk to BART | 1600 | Expired | [Open](https://www.craigslist.org/view/d/san-francisco-spacious-room-available/7PDnibrqczKxcMfCE7piSk) |
-| Expired | 2026-06-30 | SF Mission/Valencia | Lovely Garden View Room in 2br house | 1600 | Expired | [Open](https://www.craigslist.org/view/d/san-francisco-lovely-garden-view-room/bAqv8gzsqEn6KXuNeSgeR1) |
 
 ## Needs Manual Verification
 
@@ -254,6 +268,7 @@ Last refreshed: 2026-06-30
 - Craigslist: Source Blocked: HTTPError: HTTP Error 403: Forbidden ([Open](https://sfbay.craigslist.org/search/sby/sub?format=rss))
 - Furnished Finder: Source Blocked: old /housing/<city> route now 302s to an interactive map search homepage ([Open](https://www.furnishedfinder.com/housing/Santa-Clara--CA))
 - Kopa: Source Blocked: Kopa homepage now shows a wind-down notice ('After eight years of connecting renters and hosts, Kopa will be shutting down') after a scam incident. No live listings/search. Recommend removing this source. ([Open](https://www.kopa.co/))
+- Zillow: Source Blocked ([Open](https://www.zillow.com/santa-clara-ca/rentals))
 - Craigslist: Source Blocked: HTTPError: HTTP Error 403: Forbidden ([Open](https://sfbay.craigslist.org/search/pen/roo?format=rss))
 - Reddit: Source Blocked: HTTPError: HTTP Error 403: Blocked ([Open](https://www.reddit.com/r/SFList/search.json?limit=50&q=sublet+OR+room+OR+apartment+OR+rent&restrict_sr=on&sort=new))
 - Reddit: Source Blocked: HTTPError: HTTP Error 403: Blocked ([Open](https://www.reddit.com/r/sanfrancisco/search.json?limit=50&q=sublet+OR+room+OR+apartment+OR+rent&restrict_sr=on&sort=new))
