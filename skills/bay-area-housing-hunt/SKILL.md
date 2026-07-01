@@ -71,6 +71,8 @@ minor typos like `cl`, `cragislist`, `fb`, and `faceb`. Source filtering affects
 headless capture, the printed AI-browser plan, and the capture-dir JSON glob so old
 scratch files from unselected sources do not sneak into a narrowed run. Use
 `--list-sources` to print the currently selectable configured sources/tokens.
+`--sources 5br` / `5plus` runs the Bay Area-wide 5+ bedroom sweep; use
+`--sources sf5plus` for the narrower SF-only 5+ sweep.
 
 3. Fulfil the AI-capture plan for the `ai_browser` tier only — sources that block
    headless reads and need a visible/signed-in browser. As of 2026-06-30 this is

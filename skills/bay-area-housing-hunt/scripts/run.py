@@ -37,6 +37,7 @@ import sys
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
@@ -49,6 +50,7 @@ DEFAULT_CAPTURE_DIR = Path("/tmp/codexskills-housing-hunt")
 SEARCHES_FILE = SCRIPT_DIR / "searches.json"
 USER_AGENT = "CodexSkills-housing-hunt/1.0 (personal housing search; contact via repo owner)"
 FETCH_TIMEOUT = 12
+AI_CAPTURE_MAX_AGE_HOURS = 18
 SOURCE_TIERS = ("web", "rss", "apis", "ai_browser")
 SOURCE_ALIASES = {
     "all": {"all"},
@@ -72,16 +74,16 @@ SOURCE_ALIASES = {
     "furnished-finder": {"furnished"},
     "reddit": {"reddit"},
     "rentcast": {"rentcast"},
-    "5br": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
-    "5bed": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
-    "5beds": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
-    "5bedroom": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
-    "5bedrooms": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
-    "5plus": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
-    "fiveplus": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
-    "sf5br": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
-    "sf5bed": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
-    "sf5plus": {"sfapartments5plus", "sfsublets5plus", "zumpersf5plus", "facebooksf5plus", "zillowsf5plus", "apartmentscomsf5plus"},
+    "5br": {"5plus"},
+    "5bed": {"5plus"},
+    "5beds": {"5plus"},
+    "5bedroom": {"5plus"},
+    "5bedrooms": {"5plus"},
+    "5plus": {"5plus"},
+    "fiveplus": {"5plus"},
+    "sf5br": {"sf5plus"},
+    "sf5bed": {"sf5plus"},
+    "sf5plus": {"sf5plus"},
 }
 
 
@@ -160,6 +162,12 @@ def source_tokens(cfg: dict) -> set[str]:
         tokens.add("reddit")
     if "rentcast" in joined:
         tokens.add("rentcast")
+    if isinstance(label, str):
+        label_slug = _source_slug(label)
+        if "5plus" in label_slug:
+            tokens.add("5plus")
+        if ("sf5plus" in label_slug) or (label_slug.startswith("sf") and "5plus" in label_slug):
+            tokens.add("sf5plus")
     return tokens
 
 
@@ -233,6 +241,35 @@ def capture_path_matches(path: Path, filters: set[str]) -> bool:
         if wanted in compact:
             return True
     return False
+
+
+def is_ai_capture(path: Path) -> bool:
+    return path.name.startswith("ai-") and path.suffix.lower() == ".json"
+
+
+def capture_age_hours(path: Path, now: datetime | None = None) -> float:
+    now = now or datetime.now(timezone.utc)
+    try:
+        mtime = datetime.fromtimestamp(path.stat().st_mtime, tz=timezone.utc)
+    except OSError:
+        return float("inf")
+    return max(0.0, (now - mtime).total_seconds() / 3600)
+
+
+def stale_ai_capture_warning(path: Path, explicit_inputs: set[Path], allow_stale: bool, now: datetime | None = None) -> str | None:
+    """Directory-globbed AI captures are treated as browser observations from today.
+
+    Old `ai-*.json` files can otherwise refresh `Last Seen` without anyone re-opening
+    Facebook/Zillow/Apartments/Furnished Finder. Explicit `--input` files remain
+    honored because the conductor is deliberately replaying them.
+    """
+    resolved = path.resolve()
+    if allow_stale or resolved in explicit_inputs or not is_ai_capture(path):
+        return None
+    age = capture_age_hours(path, now)
+    if age <= AI_CAPTURE_MAX_AGE_HOURS:
+        return None
+    return f"skipped stale AI capture {path.name}: {age:.1f}h old (pass explicitly via --input or use --allow-stale-captures)"
 
 
 def _rss_url(url: str) -> str:
@@ -403,6 +440,7 @@ def main() -> int:
     parser.add_argument("--sources", nargs="+", default=["all"], help="One or more configured sources to run/plan (default: all). Examples: --sources craigslist zillow facebook, --sources craigslist,zillow,facebook, or --sources apartments.com")
     parser.add_argument("--list-sources", action="store_true", help="Print selectable configured sources/tokens and exit")
     parser.add_argument("--fresh-capture-dir", action="store_true", help="Delete existing *.json files in the capture dir before the kickoff run")
+    parser.add_argument("--allow-stale-captures", action="store_true", help="Allow old ai-*.json files discovered in the capture dir to refresh Last Seen")
     parser.add_argument("--no-network", action="store_true", help="Skip the headless web/API fetch")
     parser.add_argument("--notion", action="store_true", help="After refreshing, mirror the ledger into Notion (no-op unless NOTION_TOKEN + housing-trackers/notion-config.md are set)")
     parser.add_argument("--plan-only", action="store_true", help="Do not ingest/score; just print the AI capture plan")
@@ -435,11 +473,15 @@ def main() -> int:
         return 0
 
     captured: list[Path] = []
+    explicit_inputs: set[Path] = set()
+    capture_warnings: list[str] = []
     for path in args.input:
         if not path.exists():
             print(f"WARNING: --input not found, skipping: {path}", file=sys.stderr)
             continue
-        captured.append(path.resolve())
+        resolved = path.resolve()
+        explicit_inputs.add(resolved)
+        captured.append(resolved)
     if not args.no_network:
         print("Running headless capture (web adapters + configured APIs; optional legacy RSS if configured)...", file=sys.stderr)
         captured.extend(p.resolve() for p in capture_web.run_web_capture(capture_dir, searches))
@@ -448,6 +490,11 @@ def main() -> int:
     # Ingest every capture file present in the dir plus any explicit --input.
     for path in sorted(capture_dir.glob("*.json")):
         if not capture_path_matches(path, source_filters):
+            continue
+        stale_warning = stale_ai_capture_warning(path, explicit_inputs, args.allow_stale_captures)
+        if stale_warning:
+            capture_warnings.append(stale_warning)
+            print(f"WARNING: {stale_warning}", file=sys.stderr)
             continue
         captured.append(path.resolve())
     # De-dupe by resolved path (so --input X and the dir glob can't double-process),
@@ -467,6 +514,8 @@ def main() -> int:
         stale_days=args.stale_days,
         retire_days=args.retire_days,
     )
+    if capture_warnings:
+        summary["warnings"] = [*summary.get("warnings", []), *capture_warnings]
     print(json.dumps(summary, indent=2))
     if summary.get("warnings"):
         print("\nWarnings:", file=sys.stderr)

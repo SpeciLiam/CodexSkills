@@ -6,6 +6,8 @@
    GET /api/commute?origin=<addr>&dest=<addr>&arrival=<RFC3339>
    The client computes `arrival` (next Mon/Wed/Thu at the person's time, Pacific). */
 
+declare const process: { env: Record<string, string | undefined> };
+
 const KEY = process.env.GOOGLE_MAPS_API_KEY || "";
 const ROUTES = "https://routes.googleapis.com/directions/v2:computeRoutes";
 

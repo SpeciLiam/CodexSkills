@@ -445,6 +445,62 @@ def infer_market(city: str, neighborhood: str, title: str, description: str) -> 
     return "Other Bay Area"
 
 
+NON_SF_EXPLICIT_TERMS = {
+    "alameda",
+    "berkeley",
+    "campbell",
+    "cupertino",
+    "daly city",
+    "davis",
+    "east bay",
+    "emeryville",
+    "fremont",
+    "hayward",
+    "los altos",
+    "los gatos",
+    "menlo park",
+    "milpitas",
+    "mountain view",
+    "newark",
+    "oakland",
+    "palo alto",
+    "redwood city",
+    "sacramento",
+    "san carlos",
+    "san jose",
+    "san leandro",
+    "san luis obispo",
+    "san mateo",
+    "santa clara",
+    "santa cruz",
+    "south bay",
+    "sunnyvale",
+    "union city",
+}
+
+
+def reconcile_market(market: str, city: str, neighborhood: str, title: str, description: str) -> str:
+    """Respect an explicit listing location over the configured search bucket.
+
+    Craigslist section searches are intentionally broad: the SF section can return
+    Oakland, Davis, Santa Cruz, and other spillover posts. Keeping the configured
+    `market_hint` as-is makes the dashboard over-count "SF 5+" inventory, so only
+    use it as a fallback when the listing itself does not name a conflicting city.
+    """
+    current = clean(market) or infer_market(city, neighborhood, title, description)
+    city_text = normalize(city)
+    if not city_text:
+        return current
+    city_market = infer_market(city, "", "", "")
+    if city_market and city_market != "Other Bay Area":
+        return city_market
+    if any(term in city_text for term in NON_SF_EXPLICIT_TERMS):
+        return "Other Bay Area"
+    if current == "Other Bay Area" and city_market != "Other Bay Area":
+        return city_market
+    return current
+
+
 def infer_city(market: str, city: str, text: str) -> str:
     if city:
         return city
@@ -641,6 +697,13 @@ def _components(row: dict[str, str]) -> dict[str, Any]:
 
 
 def score_row(row: dict[str, str]) -> dict[str, str]:
+    row["Market"] = reconcile_market(
+        row.get("Market", ""),
+        row.get("City", ""),
+        row.get("Neighborhood", ""),
+        row.get("Title", ""),
+        row.get("Notes", ""),
+    )
     status = row.get("Status", "")
     if status in TERMINAL_STATUSES:
         row["Score"] = row["No-Car Score"] = row["Car Score"] = "0"
@@ -737,6 +800,7 @@ def row_from_record(record: dict[str, Any], default_source: str, run_date: str) 
         market = infer_market(city, neighborhood, title, " ".join([description, address]))
     if not city:
         city = infer_city(market, city, " ".join([title, neighborhood, address, description]))
+    market = reconcile_market(market, city, neighborhood, title, " ".join([description, address]))
     status = infer_status(first_value(record, ["status", "availability_status"]), rent, url, title)
     key = first_value(record, ["listing_key", "key", "id"])
     if not key:

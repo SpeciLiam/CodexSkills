@@ -177,6 +177,105 @@ _WORD_BEDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5,
 _WORD_BED_RE = re.compile(r"\b(" + "|".join(_WORD_BEDS) + r")\b[\s-]+(?:bed|bd|br)", re.I)
 _BED_MAX = 12  # a parsed "bedroom" above this is a misparse (price, cross-street, etc.)
 
+SF_NEIGHBORHOOD_HINTS = {
+    "bernal",
+    "castro",
+    "dogpatch",
+    "duboce",
+    "embarcadero",
+    "excelsior",
+    "glen park",
+    "haight",
+    "hayes",
+    "ingleside",
+    "inner richmond",
+    "inner sunset",
+    "lower haight",
+    "marina",
+    "mission bay",
+    "mission district",
+    "nob hill",
+    "noe valley",
+    "north beach",
+    "outer mission",
+    "outer richmond",
+    "outer sunset",
+    "pac heights",
+    "pacific heights",
+    "potrero",
+    "richmond",
+    "russian hill",
+    "soma",
+    "south beach",
+    "sunset",
+    "tenderloin",
+}
+
+
+def source_tier(source: str) -> str:
+    text = hp.normalize(source)
+    if "craigslist" in text or "zumper" in text:
+        return "headless"
+    if any(term in text for term in ["facebook", "zillow", "apartments", "furnished"]):
+        return "browser"
+    if "reddit" in text or "rentcast" in text:
+        return "api"
+    return "manual"
+
+
+def source_health(source: str) -> str:
+    text = hp.normalize(source)
+    if "zillow" in text:
+        return "human-verification-gated for exact 5+"
+    if "apartments" in text:
+        return "browser card scrape; 5+ route may label as 4+"
+    if "facebook" in text:
+        return "logged-in browser only"
+    if "craigslist" in text:
+        return "structured headless; section spillover possible"
+    if "zumper" in text:
+        return "structured headless SSR"
+    return "capture source"
+
+
+def unit_scope(row: dict, parsed_beds) -> str:
+    text = hp.normalize(" ".join([row.get("Title", ""), row.get("Beds", ""), row.get("Lease", ""), row.get("Notes", "")]))
+    if any(term in text for term in ["roommate", "shared room", "private room", "single bedroom", "room in", "one bed in"]):
+        return "room"
+    if parsed_beds is not None and parsed_beds >= 2 and any(term in text for term in ["house for rent", "apartment for rent", "entire", "whole house", "unit "]):
+        return "whole"
+    return "unknown"
+
+
+def location_meta(row: dict) -> dict:
+    market = row.get("Market", "")
+    city = row.get("City", "")
+    neighborhood = row.get("Neighborhood", "")
+    title = row.get("Title", "")
+    city_norm = hp.normalize(city)
+    text = hp.normalize(" ".join([city, neighborhood, title, row.get("Notes", "")]))
+    sf_market = market == "SF" or market.startswith("SF ")
+    city_says_other = bool(city_norm and any(term in city_norm for term in hp.NON_SF_EXPLICIT_TERMS))
+    strict_sf = "san francisco" in city_norm
+    sf_neighborhood = any(term in text for term in SF_NEIGHBORHOOD_HINTS)
+    exact_sf = sf_market and not city_says_other and (strict_sf or sf_neighborhood or not city_norm)
+    if sf_market and city_says_other:
+        confidence = "spillover"
+    elif strict_sf:
+        confidence = "city"
+    elif sf_market and sf_neighborhood:
+        confidence = "neighborhood"
+    elif sf_market:
+        confidence = "bucket"
+    else:
+        confidence = "city" if city_norm else "unknown"
+    return {
+        "sfMarket": sf_market,
+        "exactSf": exact_sf,
+        "strictSfCity": strict_sf,
+        "locationConfidence": confidence,
+    }
+
 
 def _parse_beds(text: str):
     """Whole-unit bedroom count from a beds/title string. Uses the FIRST explicit bedroom
@@ -219,6 +318,8 @@ def export() -> dict:
     for row in rows:
         lk = row.get("Listing Key", "")
         how, nc_to, nc_from, car_to = sync.commute_fields(row.get("Commute", ""), row.get("Market", ""))
+        parsed_beds = beds_num(row.get("Beds", ""), row.get("Title", ""))
+        loc = location_meta(row)
         listings.append({
             "listingKey": lk,
             "title": row.get("Title", ""),
@@ -231,7 +332,9 @@ def export() -> dict:
             "rent": num(row.get("Rent", "")),
             "allIn": num(row.get("All-In Estimate", "")),
             "beds": row.get("Beds", ""),
-            "bedsNum": beds_num(row.get("Beds", ""), row.get("Title", "")),
+            "bedsNum": parsed_beds,
+            "isFivePlus": parsed_beds is not None and parsed_beds >= 5,
+            "unitScope": unit_scope(row, parsed_beds),
             "baths": row.get("Baths", ""),
             "lease": row.get("Lease", ""),
             "available": row.get("Available", ""),
@@ -248,6 +351,9 @@ def export() -> dict:
             "officeCommutes": office_commutes(row.get("Market", "")),
             "why": sync.hp.clean(row.get("Why", "")),
             "source": row.get("Source", ""),
+            "sourceTier": source_tier(row.get("Source", "")),
+            "sourceHealth": source_health(row.get("Source", "")),
+            **loc,
             "firstSeen": row.get("First Seen", ""),
             "lastSeen": row.get("Last Seen", ""),
             "url": row.get("URL", ""),
@@ -266,6 +372,10 @@ def export() -> dict:
     needs = [x for x in listings if x["status"] == "Needs Verification"]
     replaced = [x for x in listings if x["status"] in hp.REPLACED_STATUSES]
     markets = sorted({x["market"] for x in active if x["market"]}, key=hp.market_sort_key)
+    five_plus = [x for x in active if x.get("isFivePlus")]
+    sf_market_five_plus = [x for x in five_plus if x.get("sfMarket")]
+    strict_sf_five_plus = [x for x in five_plus if x.get("strictSfCity")]
+    exact_sf_five_plus = [x for x in five_plus if x.get("exactSf")]
     _hh = load_household()
 
     return {
@@ -277,6 +387,10 @@ def export() -> dict:
             "replaced": len(replaced),
             "markets": len(markets),
             "googleCommutes": google_n,
+            "activeFivePlus": len(five_plus),
+            "sfMarketFivePlus": len(sf_market_five_plus),
+            "strictSfCityFivePlus": len(strict_sf_five_plus),
+            "exactSfFivePlus": len(exact_sf_five_plus),
         },
         # Ordered markets first, then any market present in the data but missing from
         # MARKET_ORDER (e.g. a bare "SF" / "South Bay") so the Area dropdown can reach them.

@@ -80,9 +80,12 @@ a realistic desktop-Chrome UA). Prefer the highest tier a source supports:
     feed 403s even with a browser UA, so Craigslist no longer uses the `rss` tier.)
     Posting ids are delta-encoded: real id = `decode.minPostingId + item[0]`; the
     canonical post URL is rebuilt from subarea/category/slug/id. All 5–6 CL searches
-    run here with **no browser** — this is the bulk of the inventory.
+    run here with **no browser** — this is the bulk of the inventory. The 5+ bedroom
+    sweep covers SF, South Bay, Peninsula, and East Bay, and the pipeline re-buckets
+    explicit city spillover instead of treating every SF-section result as SF.
   - **Zumper** → the `__PRELOADED_STATE__` blob in the search page (apartment-complex
-    rent ranges + beds + url).
+    rent ranges + beds + url). The 5+ sweep includes SF, South Bay, Peninsula, and
+    Oakland/Berkeley paths where public SSR data is available.
 - **Free + headless JSON `apis` — `capture_api.py`:** keyless/keyed JSON endpoints.
   - **Reddit** is best-effort: it returns 403 to plain UAs from datacenter IPs (no UA
     variant helped in probing). It works from a **residential IP** (the local scheduled
@@ -169,6 +172,11 @@ Orchestration:
   `capture_api.py` (`apis`: Reddit etc.) — then ingests every JSON in the capture dir
   and rebuilds the board. With the `web` tier, a fully headless run (cloud/CI, no
   browser) already covers Craigslist + Zumper.
+- `--sources 5br` / `5plus` now selects every configured 5+ lane across all tiers.
+  Use `--sources sf5plus` for the narrower SF-only sweep.
+- Old `ai-*.json` files discovered by capture-dir glob are skipped after 18 hours so
+  stale browser captures cannot refresh `Last Seen`. Explicit `--input ai-...json`
+  still replays a file intentionally; `--allow-stale-captures` exists for rare audits.
 - For the `ai_browser` tier only, the conductor (Codex Chrome plugin /
   Claude-in-Chrome / Computer Use) writes one JSON array per source into the capture
   dir, then re-runs `run.py`. `run.py` prints the exact plan for these to stderr.

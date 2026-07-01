@@ -10,6 +10,7 @@ import os
 import sys
 import tempfile
 import unittest
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parents[1]
@@ -122,6 +123,46 @@ class Capture(unittest.TestCase):
         summary = self.hp.run(inputs=[bad, good], default_source="manual", run_date="2026-06-27")
         self.assertEqual(summary["created"], 1)
         self.assertTrue(any("bad.json" in w for w in summary["warnings"]))
+
+    def test_sf_bucket_spillover_reclassified_by_explicit_city(self):
+        row = self.hp.row_from_record(
+            {"source": "Craigslist", "market": "SF SoMa/South Beach/Mission Bay",
+             "city": "Oakland", "title": "Sunny Spacious Room Sublet", "url": "http://x/oak",
+             "rent": "$870"},
+            "Craigslist", "2026-07-01")
+        self.assertEqual(row["Market"], "Oakland/Berkeley")
+
+    def test_sf_bucket_out_of_area_spillover_not_counted_as_sf(self):
+        row = self.hp.row_from_record(
+            {"source": "Craigslist", "market": "SF SoMa/South Beach/Mission Bay",
+             "city": "San Luis Obispo", "title": "House to sublease", "url": "http://x/slo",
+             "rent": "$1430"},
+            "Craigslist", "2026-07-01")
+        self.assertEqual(row["Market"], "Other Bay Area")
+
+    def test_sf_neighborhood_stays_in_sf_bucket(self):
+        row = self.hp.row_from_record(
+            {"source": "Craigslist", "market": "SF SoMa/South Beach/Mission Bay",
+             "city": "Mission District", "title": "Furnished Mission sublease", "url": "http://x/sf",
+             "rent": "$3200"},
+            "Craigslist", "2026-07-01")
+        self.assertTrue(row["Market"].startswith("SF "))
+
+    def test_non_sf_bucket_spillover_reclassified_by_explicit_city(self):
+        row = self.hp.row_from_record(
+            {"source": "Craigslist", "market": "Santa Clara",
+             "city": "Oakland", "title": "One bedroom for sublet", "url": "http://x/oak2",
+             "rent": "$597"},
+            "Craigslist", "2026-07-01")
+        self.assertEqual(row["Market"], "Oakland/Berkeley")
+
+    def test_south_bay_out_of_area_spillover_not_counted_as_santa_clara(self):
+        row = self.hp.row_from_record(
+            {"source": "Craigslist", "market": "Santa Clara",
+             "city": "Santa Cruz Pleasure Point", "title": "Ocean escape", "url": "http://x/scz",
+             "rent": "$3500"},
+            "Craigslist", "2026-07-01")
+        self.assertEqual(row["Market"], "Other Bay Area")
 
 
 class Scoring(unittest.TestCase):
@@ -328,14 +369,18 @@ class SourceSelection(unittest.TestCase):
                 {"name": "Craigslist", "label": "sf-apartments"},
                 {"name": "Craigslist", "label": "sf-apartments-5plus"},
                 {"name": "Craigslist", "label": "sf-sublets-5plus"},
+                {"name": "Craigslist", "label": "south-bay-apartments-5plus"},
                 {"name": "Zumper", "label": "zumper-sf-5plus"},
+                {"name": "Zumper", "label": "zumper-santa-clara-5plus"},
                 {"name": "Craigslist", "label": "south-bay-apartments"},
             ],
             "apis": [],
             "ai_browser": [
                 {"name": "Facebook Marketplace (SF 5+ bedroom rentals)", "label": "facebook-sf-5plus"},
+                {"name": "Zillow Rentals (South Bay 5+ bedrooms)", "label": "zillow-south-bay-5plus"},
                 {"name": "Zillow Rentals (SF 5+ bedrooms)", "label": "zillow-sf-5plus"},
                 {"name": "Apartments.com Rentals (SF 5+ bedrooms)", "label": "apartments-com-sf-5plus"},
+                {"name": "Apartments.com Rentals (Peninsula 5+ bedrooms)", "label": "apartments-com-peninsula-5plus"},
                 {"name": "Zillow Rentals (corridor)"},
             ],
             "rss": [],
@@ -343,12 +388,29 @@ class SourceSelection(unittest.TestCase):
         filtered, _ = self.run.filter_searches(searches, ["5br"])
         self.assertEqual(
             [item["label"] for item in filtered["web"]],
-            ["sf-apartments-5plus", "sf-sublets-5plus", "zumper-sf-5plus"],
+            ["sf-apartments-5plus", "sf-sublets-5plus", "south-bay-apartments-5plus", "zumper-sf-5plus", "zumper-santa-clara-5plus"],
         )
         self.assertEqual(
             [item["label"] for item in filtered["ai_browser"]],
-            ["facebook-sf-5plus", "zillow-sf-5plus", "apartments-com-sf-5plus"],
+            ["facebook-sf-5plus", "zillow-south-bay-5plus", "zillow-sf-5plus", "apartments-com-sf-5plus", "apartments-com-peninsula-5plus"],
         )
+
+    def test_sf_five_plus_alias_stays_sf_only(self):
+        searches = {
+            "web": [
+                {"name": "Craigslist", "label": "sf-apartments-5plus"},
+                {"name": "Craigslist", "label": "south-bay-apartments-5plus"},
+            ],
+            "apis": [],
+            "ai_browser": [
+                {"name": "Zillow Rentals (SF 5+ bedrooms)", "label": "zillow-sf-5plus"},
+                {"name": "Zillow Rentals (Peninsula 5+ bedrooms)", "label": "zillow-peninsula-5plus"},
+            ],
+            "rss": [],
+        }
+        filtered, _ = self.run.filter_searches(searches, ["sf5plus"])
+        self.assertEqual([item["label"] for item in filtered["web"]], ["sf-apartments-5plus"])
+        self.assertEqual([item["label"] for item in filtered["ai_browser"]], ["zillow-sf-5plus"])
 
     def test_capture_dir_glob_respects_source_filter(self):
         filters = self.run.parse_source_filters(["zillow"])
@@ -360,6 +422,25 @@ class SourceSelection(unittest.TestCase):
         self.assertTrue(self.run.capture_path_matches(Path("/tmp/web-Zumper-zumper-sf-5plus.json"), filters))
         self.assertTrue(self.run.capture_path_matches(Path("/tmp/ai-zillow-sf-5plus.json"), filters))
         self.assertFalse(self.run.capture_path_matches(Path("/tmp/ai-zillow-rentals-corridor.json"), filters))
+
+    def test_stale_ai_capture_skipped_unless_explicit(self):
+        p = Path(tempfile.mkdtemp()) / "ai-zillow-sf-5plus.json"
+        p.write_text("[]")
+        now = datetime(2026, 7, 1, 12, tzinfo=timezone.utc)
+        stale_mtime = (now - timedelta(hours=24)).timestamp()
+        os.utime(p, (stale_mtime, stale_mtime))
+        warning = self.run.stale_ai_capture_warning(p, set(), False, now)
+        self.assertIn("skipped stale AI capture", warning)
+        self.assertIsNone(self.run.stale_ai_capture_warning(p, {p.resolve()}, False, now))
+        self.assertIsNone(self.run.stale_ai_capture_warning(p, set(), True, now))
+
+    def test_fresh_ai_capture_allowed_from_capture_dir(self):
+        p = Path(tempfile.mkdtemp()) / "ai-apartments-com-sf-5plus.json"
+        p.write_text("[]")
+        now = datetime(2026, 7, 1, 12, tzinfo=timezone.utc)
+        fresh_mtime = (now - timedelta(hours=2)).timestamp()
+        os.utime(p, (fresh_mtime, fresh_mtime))
+        self.assertIsNone(self.run.stale_ai_capture_warning(p, set(), False, now))
 
     def test_all_keeps_everything(self):
         searches = {"web": [{"name": "Craigslist"}], "apis": [{"name": "Reddit"}], "ai_browser": [], "rss": []}

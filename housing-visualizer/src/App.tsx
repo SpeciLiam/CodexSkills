@@ -42,19 +42,42 @@ type Listing = {
   allIn: number | null;
   beds: string;
   bedsNum: number | null;
+  isFivePlus?: boolean;
+  unitScope?: "whole" | "room" | "unknown" | string;
   baths: string;
   lease: string;
+  available?: string;
   status: string;
   firstSeen: string;
+  lastSeen?: string;
   officeCommutes: Record<string, { transit: number; drive: number }>;
   commuteOrigin?: string; // python-derived geocodable origin (matches the cached commute)
   source: string;
+  sourceTier?: string;
+  sourceHealth?: string;
+  sfMarket?: boolean;
+  exactSf?: boolean;
+  strictSfCity?: boolean;
+  locationConfidence?: string;
+  score?: number;
+  noCarScore?: number;
+  carScore?: number;
+  overallRank?: number | null;
+  cityRank?: number | null;
+  commuteMin?: number | null;
+  carCommuteMin?: number | null;
+  commuteSource?: string;
+  why?: string;
+  notes?: string;
   url: string;
 };
 type CfgPerson = { name: string; company: string; address: string; arrival?: string; car?: boolean; bike?: boolean };
 type Data = {
   generatedAt: string;
-  stats: { active: number; markets: number };
+  stats: {
+    active: number; markets: number; total?: number; needsVerification?: number; replaced?: number; googleCommutes?: number;
+    activeFivePlus?: number; sfMarketFivePlus?: number; strictSfCityFivePlus?: number; exactSfFivePlus?: number;
+  };
   marketOrder: string[];
   listings: Listing[];
   defaultPeople?: CfgPerson[]; // group profile
@@ -186,6 +209,16 @@ const bedsPass = (l: Listing, opt: string) => {
   if (opt === "Studio") return l.bedsNum === 0;
   return l.bedsNum >= parseInt(opt, 10);
 };
+const possibleFiveText = (l: Listing) =>
+  /\b(5|five|6|six|7|seven|8|eight|9|nine|10|ten)\s*[-+]?\s*(bd|br|beds?|bedrooms?)\b/i.test(`${l.beds} ${l.title} ${l.notes || ""}`);
+const huntPass = (l: Listing, mode: string) => {
+  if (mode === "All inventory") return true;
+  if (mode === "5+ whole homes") return !!l.isFivePlus && l.unitScope !== "room";
+  if (mode === "Rooms in 5+ homes") return !!l.isFivePlus && l.unitScope === "room";
+  if (mode === "Exact SF 5+") return !!l.isFivePlus && !!l.exactSf;
+  if (mode === "Possible 5+") return !!l.isFivePlus || (l.bedsNum == null && possibleFiveText(l));
+  return true;
+};
 const regionPass = (l: Listing, r: string) => {
   if (r === "All") return true;
   if (r === "SF") return /^SF /.test(l.market) || l.market === "SF";
@@ -194,11 +227,12 @@ const regionPass = (l: Listing, r: string) => {
   return true;
 };
 const matchQ = (l: Listing, q: string) =>
-  !q.trim() || [l.title, l.market, l.city, l.neighborhood, l.lease, l.source].join(" ").toLowerCase().includes(q.toLowerCase());
+  !q.trim() || [l.title, l.market, l.city, l.neighborhood, l.lease, l.source, l.notes, l.why].join(" ").toLowerCase().includes(q.toLowerCase());
 
 const SEG_NAMES = ["All", "New today", "Subleases", "Rooms", "Apartments", "To verify", "Expired"];
-const SORT_OPTIONS = ["Best fit", "Cheapest", "Shortest commute", "Newest"];
+const SORT_OPTIONS = ["Best fit", "Board rank", "Cheapest", "Shortest commute", "No-car score", "Car score", "Newest"];
 const BEDS_OPTIONS = ["Any", "Studio", "1+ bd", "2+ bd", "3+ bd", "4+ bd", "5+ bd", "6+ bd"];
+const HUNT_OPTIONS = ["All inventory", "5+ whole homes", "Rooms in 5+ homes", "Exact SF 5+", "Possible 5+"];
 const bedsForGroup = (n: number) => (n <= 1 ? "Any" : `${Math.min(n, 6)}+ bd`); // 1:1 people->bedrooms
 
 // per-listing marks
@@ -277,11 +311,14 @@ export default function App() {
   const [q, setQ] = useState("");
   const [beds, setBeds] = useState<string>(saved.beds ?? "1+ bd"); // fresh user starts on Liam
   const [market, setMarket] = useState<string>(saved.market ?? "All areas");
+  const [huntMode, setHuntMode] = useState<string>(saved.huntMode ?? "All inventory");
   const [excludedSources, setExcludedSources] = useState<string[]>(Array.isArray(saved.excludedSources) ? saved.excludedSources : []);
   const [region, setRegion] = useState<string>(saved.region ?? "All");
   const [segment, setSegment] = useState<string>(saved.segment ?? "All");
   const [sort, setSort] = useState<string>(saved.sort ?? "Best fit");
   const [maxPrice, setMaxPrice] = useState<number>(saved.maxPrice ?? 3000);
+  const [maxTransit, setMaxTransit] = useState<number>(saved.maxTransit ?? 0);
+  const [maxDrive, setMaxDrive] = useState<number>(saved.maxDrive ?? 0);
   const [budgetCustom, setBudgetCustom] = useState<boolean>(saved.budgetCustom ?? false);
   const [markFilter, setMarkFilter] = useState<string>(saved.markFilter ?? "active");
   const [marks, setMarks] = useState<Record<string, string>>(loadMarks);
@@ -320,9 +357,9 @@ export default function App() {
   // persist last selections (browser-local)
   useEffect(() => {
     try {
-      localStorage.setItem(STORE_KEY, JSON.stringify({ pref, profile, liam: liamPerson, people, liamRegions, groupRegions, weights, beds, market, excludedSources, region, segment, sort, maxPrice, budgetCustom, markFilter, asideW }));
+      localStorage.setItem(STORE_KEY, JSON.stringify({ pref, profile, liam: liamPerson, people, liamRegions, groupRegions, weights, beds, market, huntMode, excludedSources, region, segment, sort, maxPrice, maxTransit, maxDrive, budgetCustom, markFilter, asideW }));
     } catch { /* storage unavailable — ignore */ }
-  }, [pref, profile, liamPerson, people, liamRegions, groupRegions, weights, beds, market, excludedSources, region, segment, sort, maxPrice, budgetCustom, markFilter, asideW]);
+  }, [pref, profile, liamPerson, people, liamRegions, groupRegions, weights, beds, market, huntMode, excludedSources, region, segment, sort, maxPrice, maxTransit, maxDrive, budgetCustom, markFilter, asideW]);
 
   // Sync the shared bits (Liam + Group profiles, region priorities) to Supabase so the
   // last-set config is one source of truth across devices. Debounced; skips the initial
@@ -414,6 +451,26 @@ export default function App() {
       : { profile: "group", targetBedrooms: people.length, people: people.map((p) => ({ name: p.name, company: p.company, address: p.address, arrival: p.arrival, car: p.car, bike: p.bike })) };
     try { navigator.clipboard.writeText(JSON.stringify(cfg, null, 2)); } catch { /* ignore */ }
   };
+  const copyMarkCommand = async (status: "Rejected" | "Unavailable" | "Duplicate", key: string) => {
+    const cmd = `python3 skills/bay-area-housing-hunt/scripts/housing_pipeline.py --mark "${status}=${key}"`;
+    const copyViaTextarea = () => {
+      const area = document.createElement("textarea");
+      area.value = cmd;
+      area.setAttribute("readonly", "true");
+      area.style.position = "fixed";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      let ok = false;
+      try { ok = document.execCommand("copy"); } catch { ok = false; }
+      document.body.removeChild(area);
+      return ok;
+    };
+    if (copyViaTextarea()) return;
+    try {
+      await navigator.clipboard.writeText(cmd);
+    } catch { /* clipboard unavailable */ }
+  };
   const setLiam = (field: keyof Person, value: any) => { cfgTouched.current = true; setLiamPerson((p) => ({ ...p, [field]: value })); };
   const togglePersonFlag = (id: number, field: "car" | "bike") => {
     cfgTouched.current = true;
@@ -479,7 +536,23 @@ export default function App() {
 
   const active = useMemo(() => data.listings.filter((l) => l.status === "Active"), []);
   const newest = useMemo(() => active.reduce((m, l) => (l.firstSeen > m ? l.firstSeen : m), ""), [active]);
-  const sourceList = useMemo(() => Array.from(new Set(active.map((l) => l.source))).sort(), [active]);
+  const sourceStats = useMemo(() => {
+    const stats: Record<string, { active: number; fivePlus: number; needs: number; blocked: number; stale: number; browser: number }> = {};
+    for (const l of data.listings) {
+      const key = l.source || "Unknown";
+      const s = stats[key] || (stats[key] = { active: 0, fivePlus: 0, needs: 0, blocked: 0, stale: 0, browser: 0 });
+      if (l.status === "Active") {
+        s.active++;
+        if (l.isFivePlus) s.fivePlus++;
+      }
+      if (l.status === "Needs Verification") s.needs++;
+      if (l.status === "Source Blocked") s.blocked++;
+      if (l.status === "Stale") s.stale++;
+      if (l.sourceTier === "browser") s.browser++;
+    }
+    return stats;
+  }, []);
+  const sourceList = useMemo(() => Object.keys(sourceStats).filter((s) => sourceStats[s].active > 0).sort(), [sourceStats]);
   const marketOptions = useMemo(() => ["All areas", ...(data.marketOrder || [])], []);
 
   const rows = useMemo(() => {
@@ -497,9 +570,12 @@ export default function App() {
     const list = pool
       .filter((l) => segPass(l, segment, newest))
       .filter((l) => bedsPass(l, beds))
+      .filter((l) => huntPass(l, huntMode))
       .filter((l) => market === "All areas" || l.market === market)
       .filter((l) => !excludedSources.includes(l.source))
       .filter((l) => regionPass(l, region))
+      .filter((l) => !maxTransit || (l.commuteMin != null && l.commuteMin <= maxTransit))
+      .filter((l) => !maxDrive || (l.carCommuteMin != null && l.carCommuteMin <= maxDrive))
       .filter((l) => {
         const p = l.allIn ?? l.rent;
         return p == null || budgetIsAny || p <= budget;
@@ -527,9 +603,11 @@ export default function App() {
         const pScore = price == null ? 50 : clamp((100 * (4000 - price)) / 3300, 0, 100);
         const fScore = isFlex(`${l.lease} ${l.title}`) ? 100 : 50;
         const segC = wc * cScore, segP = wp * pScore, segF = wf * fScore;
+        const markState = marks[l.listingKey] || "";
+        const markBoost = markState === "promising" ? 15 : markState === "checked" ? 5 : markState === "skip" ? -30 : markState === "gone" ? -100 : 0;
         // weight the fit by this profile's region priority (the configurable radar)
         const rBoost = regionBoost(activeRegions[listingAxisKey(l.market, l.city)] ?? 5);
-        const fit = Math.round((segC + segP + segF) * rBoost);
+        const fit = clamp(Math.round((segC + segP + segF) * rBoost + markBoost), 0, 100);
         const tier = fit >= 70 ? "hi" : fit >= 52 ? "mid" : "lo";
 
         const routes = per.map((x) => {
@@ -552,29 +630,44 @@ export default function App() {
             ? "How everyone gets to work" + (avg == null ? "" : ` · ${Math.round(avg)}m avg, ${Math.round(max!)}m worst`)
             : "How you get there";
 
+        const pricePerBedroom = price != null && l.bedsNum && l.bedsNum > 1 ? Math.round(price / l.bedsNum) : null;
+        const sourceLabel = l.sourceTier === "browser" ? "Browser source" : l.sourceTier === "headless" ? "Headless source" : l.sourceTier === "api" ? "API source" : "Manual source";
+        const locLabel = l.exactSf ? "Exact SF" : l.locationConfidence === "spillover" ? "Spillover" : l.sfMarket ? "SF bucket" : l.locationConfidence ? `Location: ${l.locationConfidence}` : "";
+        const ageDays = l.firstSeen ? Math.max(0, Math.floor((Date.now() - Date.parse(l.firstSeen)) / 86400000)) : null;
+
         return {
           id: l.listingKey, title: l.title || "(untitled)", url: l.url || "#",
           sub: [l.neighborhood || l.city, l.market, l.source].filter(Boolean).join(" · "),
           isNew: l.status === "Active" && !!newest && l.firstSeen === newest,
           priceLabel: money(price) + (price != null ? "/mo" : ""),
+          pricePerBedroom,
           leaseLabel: l.lease || "lease n/a",
           specLabel: specBits.join(" · "), hasSpec: specBits.length > 0,
-          status: l.status, routes, routesTitle, mark: marks[l.listingKey] || "", origin: originForListing(l),
+          status: l.status, routes, routesTitle, mark: markState, origin: originForListing(l),
+          sourceLabel, sourceHealth: l.sourceHealth || "", locLabel, locationConfidence: l.locationConfidence || "",
+          exactSf: !!l.exactSf, isFivePlus: !!l.isFivePlus, unitScope: l.unitScope || "unknown",
+          boardRank: l.overallRank ?? null, cityRank: l.cityRank ?? null, ageDays, markBoost,
+          pipelineWhy: l.why || "", lastSeen: l.lastSeen || "", available: l.available || "", commuteSource: l.commuteSource || "static",
+          pipelineScore: l.score ?? 0, noCarScore: l.noCarScore ?? 0, carScore: l.carScore ?? 0,
           fit, segC, segP, segF,
           fitFg: tier === "hi" ? "var(--accent)" : tier === "mid" ? "#b07d1a" : "#9a9384",
           _avg: avg == null ? 1e9 : avg, _price: price == null ? 1e9 : price, _first: l.firstSeen || "", _score: fit,
+          _board: l.overallRank ?? 1e9, _noCar: l.noCarScore ?? 0, _car: l.carScore ?? 0,
         };
       });
 
     const SB: Record<string, (a: typeof list[number], b: typeof list[number]) => number> = {
       "Best fit": (a, b) => b._score - a._score || a._avg - b._avg,
+      "Board rank": (a, b) => a._board - b._board || b._score - a._score,
       Cheapest: (a, b) => a._price - b._price || b._score - a._score,
       "Shortest commute": (a, b) => a._avg - b._avg || b._score - a._score,
+      "No-car score": (a, b) => b._noCar - a._noCar || b._score - a._score,
+      "Car score": (a, b) => b._car - a._car || b._score - a._score,
       Newest: (a, b) => (b._first || "").localeCompare(a._first || "") || b._score - a._score,
     };
     list.sort(SB[sort] || SB["Best fit"]);
     return list;
-  }, [active, newest, activePeople, activeRegions, weights, q, beds, market, excludedSources, region, segment, sort, budget, budgetIsAny, pref, marks, markFilter]);
+  }, [active, newest, activePeople, activeRegions, weights, q, beds, huntMode, market, excludedSources, region, segment, sort, budget, budgetIsAny, maxTransit, maxDrive, pref, marks, markFilter]);
 
   const prefBtn = (k: string): CSSProperties => {
     const on = pref === k;
@@ -637,6 +730,7 @@ export default function App() {
         </div>
         <div style={{ display: "flex", gap: 22 }}>
           <Stat value={data.stats.active} label="Active" />
+          <Stat value={data.stats.activeFivePlus ?? 0} label="5+ Beds" />
           <Stat value={data.stats.markets} label="Markets" />
         </div>
       </header>
@@ -772,6 +866,33 @@ export default function App() {
             </select>
           </div>
           <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 6 }}>
+            <span style={{ fontSize: 13, fontWeight: 600 }}>5+ hunting</span>
+            <span style={{ fontSize: 11, color: "#8a8378", fontWeight: 600 }}>{data.stats.activeFivePlus ?? 0} known 5+</span>
+          </div>
+          <div style={{ display: "flex", gap: 6, marginBottom: 12, flexWrap: "wrap" }}>
+            {HUNT_OPTIONS.map((opt) => (
+              <button key={opt} onClick={() => setHuntMode(opt)} style={{ ...chip(huntMode === opt, false), padding: "6px 11px", fontSize: 12 }}>
+                {opt}
+              </button>
+            ))}
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 9, marginBottom: 12 }}>
+            <div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 3 }}>
+                <span style={{ fontSize: 13, fontWeight: 600 }}>Max no-car commute</span>
+                <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, fontWeight: 700, color: maxTransit ? "var(--accent)" : "#8a8378" }}>{maxTransit ? `${maxTransit}m` : "Any"}</span>
+              </div>
+              <input type="range" min={0} max={140} step={5} value={maxTransit} onChange={(e) => setMaxTransit(+e.target.value)} style={{ width: "100%" }} />
+            </div>
+            <div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 3 }}>
+                <span style={{ fontSize: 13, fontWeight: 600 }}>Max drive commute</span>
+                <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, fontWeight: 700, color: maxDrive ? "var(--accent)" : "#8a8378" }}>{maxDrive ? `${maxDrive}m` : "Any"}</span>
+              </div>
+              <input type="range" min={0} max={120} step={5} value={maxDrive} onChange={(e) => setMaxDrive(+e.target.value)} style={{ width: "100%" }} />
+            </div>
+          </div>
+          <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 6 }}>
             <span style={{ fontSize: 13, fontWeight: 600 }}>Sources</span>
             <span style={{ fontSize: 11, color: "#8a8378", fontWeight: 600 }}>{sourceList.length - excludedSources.length}/{sourceList.length} on</span>
           </div>
@@ -779,13 +900,15 @@ export default function App() {
             <button onClick={() => setExcludedSources([])} style={{ ...chip(excludedSources.length === 0, false), padding: "6px 11px", fontSize: 12 }}>All</button>
             {sourceList.map((s) => {
               const on = !excludedSources.includes(s);
+              const stats = sourceStats[s];
               return (
                 <button
                   key={s}
                   onClick={() => setExcludedSources((ex) => (on ? [...ex, s] : ex.filter((x) => x !== s)))}
+                  title={`${stats.active} active · ${stats.fivePlus} known 5+ · ${stats.needs} needs verification · ${stats.blocked} blocked · ${stats.stale} stale`}
                   style={{ ...chip(on, false), padding: "6px 11px", fontSize: 12 }}
                 >
-                  {on ? "✓ " : ""}{s.startsWith("Facebook") ? "Facebook" : s}
+                  {on ? "✓ " : ""}{s.startsWith("Facebook") ? "Facebook" : s} {stats.active}{stats.fivePlus ? `/${stats.fivePlus} 5+` : ""}
                 </button>
               );
             })}
@@ -853,7 +976,7 @@ export default function App() {
 
           {rows.length === 0 ? (
             <div style={{ textAlign: "center", color: "#8a8378", padding: "54px 20px", border: "1px dashed #d8d1c3", borderRadius: 15, background: "#fffdf8" }}>
-              No homes match these filters. Try widening the price or area.
+              No homes match {huntMode !== "All inventory" ? huntMode : "these filters"}. Try widening beds, budget, source, or area.
             </div>
           ) : (
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
@@ -868,12 +991,29 @@ export default function App() {
                       {r.status !== "Active" && <span style={{ fontSize: 9.5, fontWeight: 800, letterSpacing: "0.06em", color: "#b4502f", background: "#f8ece6", padding: "2px 6px", borderRadius: 5 }}>{r.status.toUpperCase()}</span>}
                     </div>
                     <div style={{ fontSize: 12.5, color: "#8a8378", marginTop: 3 }}>{r.sub}</div>
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginTop: 7 }}>
+                      {r.boardRank && <span style={{ fontSize: 11, fontWeight: 700, padding: "3px 7px", borderRadius: 6, background: "#ece8df", color: "#5a554c" }}>Board #{r.boardRank}</span>}
+                      {r.cityRank && <span style={{ fontSize: 11, fontWeight: 700, padding: "3px 7px", borderRadius: 6, background: "#ece8df", color: "#5a554c" }}>Area #{r.cityRank}</span>}
+                      {r.isFivePlus && <span style={{ fontSize: 11, fontWeight: 800, padding: "3px 7px", borderRadius: 6, background: "color-mix(in srgb, var(--accent) 12%, #fff)", color: "var(--accent)" }}>5+ {r.unitScope === "room" ? "room lane" : "home lane"}</span>}
+                      {r.ageDays != null && <span style={{ fontSize: 11, fontWeight: 700, padding: "3px 7px", borderRadius: 6, background: r.ageDays <= 2 ? "#eef6ef" : r.ageDays <= 7 ? "#fbf1dd" : "#f8ece6", color: r.ageDays <= 2 ? "#4f8060" : r.ageDays <= 7 ? "#9a681b" : "#b4502f" }}>{r.ageDays === 0 ? "New today" : `${r.ageDays}d old`}</span>}
+                      {r.locLabel && <span title={r.locationConfidence} style={{ fontSize: 11, fontWeight: 700, padding: "3px 7px", borderRadius: 6, background: r.locationConfidence === "spillover" ? "#f8ece6" : "#f5f1e8", color: r.locationConfidence === "spillover" ? "#b4502f" : "#6f6a61" }}>{r.locLabel}</span>}
+                      <span title={r.sourceHealth} style={{ fontSize: 11, fontWeight: 700, padding: "3px 7px", borderRadius: 6, background: r.sourceLabel === "Browser source" ? "#edf3fb" : "#f5f1e8", color: r.sourceLabel === "Browser source" ? "var(--accent)" : "#6f6a61" }}>{r.sourceLabel}</span>
+                      <span style={{ fontSize: 11, fontWeight: 700, padding: "3px 7px", borderRadius: 6, background: r.commuteSource === "google" ? "#eef6ef" : "#f5f1e8", color: r.commuteSource === "google" ? "#4f8060" : "#8a8378" }}>{r.commuteSource === "google" ? "Google commute" : "Static commute"}</span>
+                    </div>
 
                     <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginTop: 10 }}>
                       <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, fontWeight: 600, padding: "4px 9px", borderRadius: 7, background: "color-mix(in srgb, var(--accent) 11%, #fff)", color: "var(--accent)" }}>{r.priceLabel}</span>
+                      {r.pricePerBedroom && <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, fontWeight: 600, padding: "4px 9px", borderRadius: 7, background: "#f5f1e8", color: "#6f6a61" }}>${r.pricePerBedroom.toLocaleString()}/bd</span>}
                       <span style={{ fontSize: 12, fontWeight: 600, padding: "4px 9px", borderRadius: 7, background: "#efece6", color: "#5a554c" }}>{r.leaseLabel}</span>
                       {r.hasSpec && <span style={{ fontSize: 12, fontWeight: 600, padding: "4px 9px", borderRadius: 7, background: "#efece6", color: "#5a554c" }}>{r.specLabel}</span>}
+                      <span style={{ fontSize: 12, fontWeight: 600, padding: "4px 9px", borderRadius: 7, background: r.available ? "#efece6" : "#f8ece6", color: r.available ? "#5a554c" : "#b4502f" }}>{r.available ? `Avail ${r.available}` : "availability missing"}</span>
+                      {r.lastSeen && <span style={{ fontSize: 12, fontWeight: 600, padding: "4px 9px", borderRadius: 7, background: "#efece6", color: "#5a554c" }}>Seen {r.lastSeen}</span>}
                     </div>
+                    {r.pipelineWhy && (
+                      <div style={{ fontSize: 12.5, color: "#6f6a61", marginTop: 8, lineHeight: 1.35 }}>
+                        {r.pipelineWhy}
+                      </div>
+                    )}
 
                     <div style={{ marginTop: 10, paddingTop: 9, borderTop: "1px solid #f0ece3" }}>
                       <div style={{ fontSize: 10.5, textTransform: "uppercase", letterSpacing: "0.06em", color: "#b0a99c", fontWeight: 700, marginBottom: 5 }}>{r.routesTitle}</div>
@@ -939,10 +1079,14 @@ export default function App() {
 
                     {/* mark this listing */}
                     <div style={{ display: "flex", gap: 6, marginTop: 11, flexWrap: "wrap" }}>
+                      <a href={r.url} target="_blank" rel="noreferrer" style={{ ...markBtn(false, "var(--accent)"), textDecoration: "none" }}>Open</a>
                       <button onClick={() => setMark(r.id, "checked")} style={markBtn(r.mark === "checked", "#5a8f6a")}>✓ Checked out</button>
                       <button onClick={() => setMark(r.id, "promising")} style={markBtn(r.mark === "promising", "var(--accent)")}>★ Promising</button>
                       <button onClick={() => setMark(r.id, "skip")} style={markBtn(r.mark === "skip", "#b4502f")}>✕ Not for me</button>
                       <button onClick={() => setMark(r.id, "gone")} title="No longer available — archive it" style={markBtn(r.mark === "gone", "#9a9384")}>⊘ Unavailable</button>
+                      <button onClick={() => copyMarkCommand("Rejected", r.id)} title="Copy housing_pipeline.py mark command" style={markBtn(false, "#b4502f")}>Copy reject cmd</button>
+                      <button onClick={() => copyMarkCommand("Unavailable", r.id)} title="Copy housing_pipeline.py mark command" style={markBtn(false, "#9a9384")}>Copy unavailable cmd</button>
+                      <button onClick={() => copyMarkCommand("Duplicate", r.id)} title="Copy housing_pipeline.py mark command" style={markBtn(false, "#8a8378")}>Copy duplicate cmd</button>
                     </div>
                   </div>
 
@@ -958,6 +1102,7 @@ export default function App() {
                       <span style={{ height: "100%", width: `${r.segF}%`, background: "#cbb588" }} />
                     </div>
                     <div style={{ fontSize: 10, color: "#b0a99c", lineHeight: 1.4, textAlign: "right" }}>commute · price · lease</div>
+                    {r.markBoost ? <div style={{ fontSize: 10, color: r.markBoost > 0 ? "var(--accent)" : "#b4502f", lineHeight: 1.3, textAlign: "right" }}>mark {r.markBoost > 0 ? "+" : ""}{r.markBoost}</div> : null}
                   </div>
                 </article>
               ))}
