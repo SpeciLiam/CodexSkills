@@ -95,8 +95,16 @@ a realistic desktop-Chrome UA). Prefer the highest tier a source supports:
   Computer Use / Chrome plugin). Current configured status:
   - **Facebook Marketplace + groups** → login wall (headless 400 / login redirect).
   - **Zillow** → PerimeterX anti-bot (headless 403); no keyless JSON path.
+    For SF 5+ specifically, the 2026-07-01 Chrome probe found that
+    `/san-francisco-ca/rentals/5-_beds/` loaded unfiltered listings, while the UI's
+    5+ beds state generated a `beds.min=5` URL that triggered Zillow's human
+    verification. Capture Zillow 5+ only after the real browser loads the exact
+    result set without that challenge.
   - **Apartments.com** → headless HTTP 403 with a realistic desktop-Chrome UA in
-    the 2026-06-30 probe; capture visible listing cards in a real browser.
+    the 2026-06-30 probe; capture visible listing cards in a real browser. For SF
+    5+, the route may show a 4+ heading; scrape visible `article[data-listingid]`
+    cards and keep only cards whose visible bed text is 5 or higher. The 2026-07-01
+    Chrome probe found 34 cards and 9 verified SF 5+ rows.
   - **Furnished Finder** → no reliable keyless public JSON path; current site is an
     interactive map/search and needs manual visible-browser capture.
 - **Retired/watch-only sources:** do not re-add unless they relaunch a usable public
