@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Recompute every listing's office commute with real Google Maps routing.
 
-Listings have no street address, so we group them by a normalized origin string
-(commute_origins.origin_key) and route each UNIQUE origin once to each office.
+Listings usually have only approximate location, so we group them by rounded
+coordinates when present, else by a normalized origin string
+(commute_origins.origin_key), and route each UNIQUE origin once to each office.
 Routing goes through the already-deployed Vercel function `/api/commute`, which
 holds GOOGLE_MAPS_API_KEY server-side — so this script never touches the secret
 and the exact same Routes logic (real Caltrain/BART schedules) is reused.
@@ -168,14 +169,25 @@ def main() -> int:
     data = json.loads(DATA.read_text(encoding="utf-8"))
     listings = data.get("listings", [])
 
-    # Unique live origins, keyed by normalized address.
+    # Unique live origins, keyed by rounded coordinates when present, else
+    # normalized address. Old address-keyed cache entries remain in the cache and
+    # are still read by export_housing_data.py as a fallback.
     origins: dict[str, str] = {}
     for x in listings:
         if x.get("status") not in LIVE_STATUSES:
             continue
-        key = co.origin_key(x.get("market", ""), x.get("city", ""), x.get("neighborhood", ""))
+        key = co.origin_key(
+            x.get("market", ""),
+            x.get("city", ""),
+            x.get("neighborhood", ""),
+            x.get("lat", ""),
+            x.get("lng", ""),
+        )
         if key not in origins:
-            origins[key] = co.origin_address(x.get("market", ""), x.get("city", ""), x.get("neighborhood", ""))
+            origins[key] = (
+                co.coordinate_origin(x.get("lat", ""), x.get("lng", ""))
+                or co.origin_address(x.get("market", ""), x.get("city", ""), x.get("neighborhood", ""))
+            )
 
     cache = load_cache()
     cache.setdefault("origins", {})

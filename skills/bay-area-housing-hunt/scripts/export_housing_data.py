@@ -118,8 +118,16 @@ def apply_google_commute(listing: dict, cache: dict) -> bool:
     """Overwrite a listing's office routing with real Google numbers when we have a
     trustworthy cache entry for its origin. Per-field gating keeps a static fallback
     for any value that looks like a geocode error. Returns True if anything changed."""
-    entry = cache.get(co.origin_key(listing.get("market", ""), listing.get("city", ""),
-                                    listing.get("neighborhood", "")))
+    key = co.origin_key(
+        listing.get("market", ""),
+        listing.get("city", ""),
+        listing.get("neighborhood", ""),
+        listing.get("lat", ""),
+        listing.get("lng", ""),
+    )
+    fallback_key = co.origin_key(listing.get("market", ""), listing.get("city", ""),
+                                 listing.get("neighborhood", ""))
+    entry = cache.get(key) or cache.get(fallback_key)
     if not entry:
         return False
     offices = entry.get("office") or {}
@@ -162,6 +170,15 @@ def apply_google_commute(listing: dict, cache: dict) -> bool:
 def num(value: str):
     n = hp.to_int(value)
     return n if value not in (None, "") and n != 0 else (0 if value in ("0",) else None)
+
+
+def coord_num(value: str):
+    parsed = co.parse_coord(value)
+    return parsed if parsed is not None else None
+
+
+def has_coords(listing: dict) -> bool:
+    return bool(co.rounded_coord_key(listing.get("lat", ""), listing.get("lng", "")))
 
 
 # A 1-2 digit bedroom count (optionally a tight range like "1-2" / "2/3") immediately
@@ -328,7 +345,12 @@ def export() -> dict:
             "neighborhood": row.get("Neighborhood", ""),
             # The exact geocodable origin used for this listing's cached commute, so the
             # browser's live "Optimal departure" routes from the SAME point (no divergence).
-            "commuteOrigin": co.origin_address(row.get("Market", ""), row.get("City", ""), row.get("Neighborhood", "")),
+            "commuteOrigin": (
+                co.coordinate_origin(row.get("Lat", ""), row.get("Lng", ""))
+                or co.origin_address(row.get("Market", ""), row.get("City", ""), row.get("Neighborhood", ""))
+            ),
+            "lat": coord_num(row.get("Lat", "")),
+            "lng": coord_num(row.get("Lng", "")),
             "rent": num(row.get("Rent", "")),
             "allIn": num(row.get("All-In Estimate", "")),
             "beds": row.get("Beds", ""),
@@ -364,7 +386,7 @@ def export() -> dict:
     cache = load_commute_cache()
     google_n = 0
     for x in listings:
-        x.setdefault("commuteSource", "static")
+        x.setdefault("commuteSource", "geo-estimate" if has_coords(x) else "region-default")
         if apply_google_commute(x, cache):
             google_n += 1
 

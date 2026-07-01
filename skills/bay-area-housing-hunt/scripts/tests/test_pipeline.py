@@ -164,6 +164,127 @@ class Capture(unittest.TestCase):
             "Craigslist", "2026-07-01")
         self.assertEqual(row["Market"], "Other Bay Area")
 
+    def test_geo_first_market_bucket_overrides_bad_hint(self):
+        row = self.hp.row_from_record(
+            {"source": "Craigslist", "market": "Santa Clara", "city": "San Francisco",
+             "neighborhood": "Castro", "title": "Castro furnished room",
+             "url": "http://x/castro", "rent": "$2400", "lat": "37.7609", "lng": "-122.4350"},
+            "Craigslist", "2026-07-01")
+        self.assertEqual(row["Market"], "SF Hayes/Lower Haight/Castro/Duboce")
+
+    def test_slug_city_spillover_is_other_bay_area(self):
+        row = self.hp.row_from_record(
+            {"source": "Craigslist", "market": "Santa Clara", "city": "",
+             "title": "santa-cruz-1100-month ocean room", "url": "https://sfbay.craigslist.org/sby/roo/d/santa-cruz-1100-month/1.html",
+             "rent": "$1100"},
+            "Craigslist", "2026-07-01")
+        self.assertEqual(row["Market"], "Other Bay Area")
+        self.assertIn("location out of search area", row["Notes"])
+
+    def test_nob_hill_and_usf_neighborhoods_are_sf_bucketed(self):
+        nob = self.hp.row_from_record(
+            {"source": "Craigslist", "market": "SF Sunset/Richmond/Marina/North Beach",
+             "city": "San Francisco", "title": "Fully Furnished Nob hill 1BR/1BA Sublet w/ Home Office",
+             "url": "http://x/nob", "rent": "$3000"},
+            "Craigslist", "2026-07-01")
+        usf = self.hp.row_from_record(
+            {"source": "Craigslist", "market": "SF SoMa/South Beach/Mission Bay",
+             "city": "San Francisco", "title": "USF Panhandle furnished room",
+             "url": "http://x/usf", "rent": "$2100"},
+            "Craigslist", "2026-07-01")
+        self.assertEqual(nob["Market"], "SF Sunset/Richmond/Marina/North Beach")
+        self.assertEqual(usf["Market"], "SF Sunset/Richmond/Marina/North Beach")
+
+    def test_bare_sf_neighborhood_words_do_not_override_non_sf_locations(self):
+        richmond = self.hp.reconcile_market(
+            "", "Richmond", "", "Room for rent in Richmond near BART", "")
+        fremont = self.hp.reconcile_market(
+            "", "Fremont", "", "Room in Mission San Jose", "")
+        mission_college = self.hp.row_from_record(
+            {"source": "Craigslist", "city": "Santa Clara",
+             "title": "Room near Mission College", "url": "http://x/mission-college",
+             "rent": "$1800"},
+            "Craigslist", "2026-07-01")
+        self.assertNotEqual(richmond, "SF Sunset/Richmond/Marina/North Beach")
+        self.assertNotEqual(fremont, "SF Mission/Valencia")
+        self.assertEqual(mission_college["Market"], "Santa Clara")
+
+    def test_sf_neighborhood_words_require_sf_context(self):
+        market = self.hp.reconcile_market(
+            "", "San Francisco", "", "Room in the Mission near Valencia", "")
+        cl_market = self.hp.reconcile_market(
+            "", "", "", "Room in the Richmond", "", url="https://sfbay.craigslist.org/sfc/roo/d/x/1.html")
+        self.assertEqual(market, "SF Mission/Valencia")
+        self.assertEqual(cl_market, "SF Sunset/Richmond/Marina/North Beach")
+
+    def test_weekly_and_short_term_rents_are_normalized(self):
+        weekly = self.hp.row_from_record(
+            {"source": "Craigslist", "title": "Modern1 bedroom state-of-the-art residence $400 Weekly",
+             "url": "http://x/weekly", "city": "San Francisco", "rent": "$400"},
+            "Craigslist", "2026-07-01")
+        short = self.hp.row_from_record(
+            {"source": "Craigslist", "title": "Furnished 1BR/1BA sublet June 30-July 15, $1495",
+             "url": "http://x/short", "city": "San Francisco", "rent": "$1495"},
+            "Craigslist", "2026-07-01")
+        self.assertEqual(weekly["Rent"], "1732")
+        self.assertIn("raw rent $400/wk normalized", weekly["Notes"])
+        self.assertEqual(short["Rent"], "2990")
+        self.assertIn("total-for-term normalized", short["Notes"])
+
+    def test_same_source_repost_marks_older_duplicate_and_preserves_first_seen(self):
+        cap1 = Path(self.tmp) / "cap1.json"
+        cap2 = Path(self.tmp) / "cap2.json"
+        cap1.write_text(json.dumps([
+            {"source": "Craigslist", "listing_key": "craigslist-7943383373",
+             "title": "Fully Furnished Nob hill 1BR/1BA Sublet w/ Home Office",
+             "url": "http://x/old", "city": "San Francisco", "rent": "$3000", "beds": "1 bd"}
+        ]))
+        cap2.write_text(json.dumps([
+            {"source": "Craigslist", "listing_key": "craigslist-7944267649",
+             "title": "Fully Furnished Nob hill 1BR/1BA Sublet w/ Home Office",
+             "url": "http://x/new", "city": "San Francisco", "rent": "$3000", "beds": "1 bd"}
+        ]))
+        self.hp.run(inputs=[cap1], default_source="Craigslist", run_date="2026-06-30")
+        self.hp.run(inputs=[cap2], default_source="Craigslist", run_date="2026-07-01")
+        rows = {row["Listing Key"]: row for row in self.hp.load_listing_rows()}
+        self.assertEqual(rows["craigslist-7943383373"]["Status"], "Duplicate")
+        self.assertEqual(rows["craigslist-7944267649"]["Status"], "Active")
+        self.assertEqual(rows["craigslist-7944267649"]["First Seen"], "2026-06-30")
+
+    def test_scam_median_and_repeated_cluster_flag_needs_verification(self):
+        cap = Path(self.tmp) / "scams.json"
+        cap.write_text(json.dumps([
+            {"source": "Craigslist", "title": "Normal Santa Clara 1BR A", "url": "http://x/a", "city": "Santa Clara", "rent": "$3000", "beds": "1 bd"},
+            {"source": "Craigslist", "title": "Normal Santa Clara 1BR B", "url": "http://x/b", "city": "Santa Clara", "rent": "$3200", "beds": "1 bd"},
+            {"source": "Craigslist", "title": "Modern1 bedroom state-of-the-art residence $400 Weekly", "url": "http://x/c", "city": "Santa Clara", "rent": "$400", "beds": "1 bd"},
+            {"source": "Craigslist", "title": "LRG RM near campus one", "url": "http://x/d", "city": "Santa Clara", "rent": "$2198"},
+            {"source": "Craigslist", "title": "LRG RM near campus two", "url": "http://x/e", "city": "Santa Clara", "rent": "$2198"},
+            {"source": "Craigslist", "title": "LRG RM near campus three", "url": "http://x/f", "city": "Santa Clara", "rent": "$2198"},
+        ]))
+        self.hp.run(inputs=[cap], default_source="Craigslist", run_date="2026-07-01")
+        rows = self.hp.load_listing_rows()
+        weekly = next(row for row in rows if "Weekly" in row["Title"])
+        cluster = [row for row in rows if row["Title"].startswith("LRG RM")]
+        self.assertEqual(weekly["Status"], "Needs Verification")
+        self.assertIn("scam-risk", weekly["Notes"])
+        self.assertTrue(all(row["Status"] == "Needs Verification" for row in cluster))
+
+    def test_term_fit_gate_excludes_short_window_from_overall(self):
+        cap = Path(self.tmp) / "terms.json"
+        cap.write_text(json.dumps([
+            {"title": "Furnished 1BR/1BA sublet June 30-July 15, $1495",
+             "url": "http://x/short-term", "city": "Santa Clara", "rent": "$1495", "lease": "sublet"},
+            {"title": "Good Santa Clara sublease July 16-Sep 30",
+             "url": "http://x/good", "city": "Santa Clara", "rent": "$2200", "lease": "sublet"},
+        ]))
+        summary = self.hp.run(inputs=[cap], default_source="manual", run_date="2026-07-01")
+        rows = self.hp.load_listing_rows()
+        short = next(row for row in rows if "June 30" in row["Title"])
+        rankings = Path(summary["rankings"]).read_text()
+        overall = rankings.split("## Top 5 Overall Active", 1)[1].split("## Top 5 By Market", 1)[0]
+        self.assertIn("term ends 2026-07-15", short["Notes"])
+        self.assertNotIn("June 30-July 15", overall)
+
 
 class Scoring(unittest.TestCase):
     def setUp(self):
@@ -211,6 +332,52 @@ class Scoring(unittest.TestCase):
             "Craigslist", "2026-06-27")
         self.assertEqual(row2["Rent"], "")
         self.assertEqual(row2["Status"], "Needs Verification")
+
+    def test_sf_first_mile_uses_coordinates_when_available(self):
+        bike, note = self.hp.sf_no_car_first_mile("Outer Richmond", "far from Caltrain", "37.7577", "-122.3925")
+        self.assertLessEqual(bike, 4)
+        self.assertIn("22nd St", note)
+
+
+class CommuteExports(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp()
+        fresh_module(self.tmp)
+        import commute_origins
+        import export_housing_data
+        importlib.reload(commute_origins)
+        importlib.reload(export_housing_data)
+        self.co = commute_origins
+        self.exporter = export_housing_data
+
+    def test_origin_key_prefers_rounded_coordinates_with_address_fallback(self):
+        geo = self.co.origin_key("Santa Clara", "Santa Clara", "", "37.35324", "-121.93674")
+        fallback = self.co.origin_key("Santa Clara", "Santa Clara", "")
+        self.assertEqual(geo, "geo:37.353,-121.937")
+        self.assertEqual(fallback, "santa clara, ca")
+
+    def test_google_cache_lookup_falls_back_to_legacy_address_key(self):
+        listing = {
+            "market": "Santa Clara",
+            "city": "Santa Clara",
+            "neighborhood": "",
+            "lat": 37.35324,
+            "lng": -121.93674,
+            "officeCommutes": self.exporter.office_commutes("Santa Clara"),
+        }
+        fallback_key = self.co.origin_key("Santa Clara", "Santa Clara", "")
+        cache = {fallback_key: {
+            "office": {self.co.PRIMARY_OFFICE: {"transit": 12, "drive": 8, "transitSummary": "Caltrain"}},
+            "homeTransit": 14,
+        }}
+        self.assertTrue(self.exporter.apply_google_commute(listing, cache))
+        self.assertEqual(listing["commuteSource"], "google")
+        self.assertEqual(listing["commuteMin"], 12)
+
+    def test_geo_estimate_source_when_coordinates_exist_without_google(self):
+        listing = {"lat": 37.35324, "lng": -121.93674}
+        listing.setdefault("commuteSource", "geo-estimate" if self.exporter.has_coords(listing) else "region-default")
+        self.assertEqual(listing["commuteSource"], "geo-estimate")
 
 
 class MarkdownRoundTrip(unittest.TestCase):
@@ -283,6 +450,27 @@ class CaptureApi(unittest.TestCase):
                               "url": "https://example.invalid/{city}", "cities": ["X"]}]}
         written = self.capture_api.run_api_capture(Path(self.tmp), searches)
         self.assertEqual(written, [])
+
+    def test_web_capture_extracts_cl_and_zumper_coordinates(self):
+        import capture_web
+        importlib.reload(capture_web)
+        cl_payload = {"data": {
+            "decode": {"minPostingId": 7940000000, "locationDescriptions": ["", "San Francisco"]},
+            "location": {"url": "sfbay.craigslist.org"},
+            "params": {"subarea": "sfc"},
+            "categoryAbbr": "sub",
+            "items": [[3383373, "abc", "Fully Furnished Nob hill 1BR/1BA Sublet", 3000, "0:1~37.7930~-122.4160", [6, "nob-hill-sublet"]]],
+        }}
+        cl = capture_web.parse_craigslist(cl_payload, {"name": "Craigslist", "subarea": "sfc", "category": "sub"})
+        self.assertEqual(cl[0]["lat"], "37.7930")
+        self.assertEqual(cl[0]["lng"], "-122.4160")
+        state = {"currentSearch": {"listables": {"listables": [
+            {"listing_id": "z1", "min_price": 3100, "max_price": 3100, "city": "Santa Clara",
+             "geo": {"latitude": 37.355, "longitude": -121.995}}
+        ]}}}
+        z = capture_web.parse_zumper(state, {"market_hint": "Santa Clara"})
+        self.assertEqual(z[0]["lat"], "37.355")
+        self.assertEqual(z[0]["lng"], "-121.995")
 
 
 class SourceSelection(unittest.TestCase):

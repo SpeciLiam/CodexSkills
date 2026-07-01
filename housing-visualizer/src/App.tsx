@@ -67,6 +67,7 @@ type Listing = {
   commuteMin?: number | null;
   carCommuteMin?: number | null;
   commuteSource?: string;
+  howToGetThere?: string;
   why?: string;
   notes?: string;
   url: string;
@@ -99,6 +100,99 @@ const liamDefault: Person = data.defaultLiam ? toPerson(data.defaultLiam, 0) : D
 
 const clamp = (n: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, n));
 const money = (n: number | null) => (n == null ? "no price" : "$" + n.toLocaleString());
+const NEED_START = new Date("2026-07-16T00:00:00");
+const DAY_MS = 86400000;
+
+const compactTitle = (s: string) =>
+  (s || "")
+    .toLowerCase()
+    .replace(/[$]\s*\d[\d,]*/g, "")
+    .replace(/\b(apt|apartment|bedroom|bed|bathroom|bath)\b/g, (m) => ({ apt: "apartment", bedroom: "bed", bathroom: "bath" }[m] || m))
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim()
+    .slice(0, 64);
+const clusterKey = (l: Listing) => `${l.market}|${Math.round(((l.allIn ?? l.rent ?? 0) || 0) / 50)}|${compactTitle(l.title)}`;
+const daysBetween = (a?: string, b?: string) => {
+  if (!a || !b) return null;
+  const da = Date.parse(a), db = Date.parse(b);
+  if (Number.isNaN(da) || Number.isNaN(db)) return null;
+  return Math.max(0, Math.floor((db - da) / DAY_MS));
+};
+const ago = (days: number | null, today = "today") => {
+  if (days == null) return "";
+  if (days === 0) return today;
+  return `${days}d ago`;
+};
+const fmtDate = (d: Date) => d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+
+const MONTHS: Record<string, number> = {
+  jan: 0, january: 0, feb: 1, february: 1, mar: 2, march: 2, apr: 3, april: 3, may: 4,
+  jun: 5, june: 5, jul: 6, july: 6, aug: 7, august: 7, sep: 8, sept: 8, september: 8,
+  oct: 9, october: 9, nov: 10, november: 10, dec: 11, december: 11,
+};
+function parseMonthDay(month: string, day: string, year?: string) {
+  const m = MONTHS[month.toLowerCase()];
+  const d = parseInt(day, 10);
+  if (m == null || Number.isNaN(d)) return null;
+  return new Date(parseInt(year || "2026", 10), m, d);
+}
+function termEndFromText(text: string): Date | null {
+  const t = text || "";
+  const long = new RegExp(`\\b(${Object.keys(MONTHS).join("|")})\\s+(\\d{1,2})(?:st|nd|rd|th)?(?:,?\\s*(20\\d{2}))?\\s*(?:-|–|—|to|through|until)\\s*(?:(${Object.keys(MONTHS).join("|")})\\s+)?(\\d{1,2})(?:st|nd|rd|th)?(?:,?\\s*(20\\d{2}))?`, "i");
+  const m = t.match(long);
+  if (m) return parseMonthDay(m[4] || m[1], m[5], m[6] || m[3]);
+  const numeric = t.match(/\b(\d{1,2})\/(\d{1,2})\s*(?:-|–|—|to|through|until)\s*(\d{1,2})\/(\d{1,2})\b/i);
+  if (numeric) return new Date(2026, parseInt(numeric[3], 10) - 1, parseInt(numeric[4], 10));
+  return null;
+}
+function stayRangeDays(text: string): number | null {
+  const t = text || "";
+  const long = new RegExp(`\\b(${Object.keys(MONTHS).join("|")})\\s+(\\d{1,2})(?:st|nd|rd|th)?(?:,?\\s*(20\\d{2}))?\\s*(?:-|–|—|to|through|until)\\s*(?:(${Object.keys(MONTHS).join("|")})\\s+)?(\\d{1,2})(?:st|nd|rd|th)?(?:,?\\s*(20\\d{2}))?`, "i");
+  const m = t.match(long);
+  if (m) {
+    const start = parseMonthDay(m[1], m[2], m[3]);
+    const end = parseMonthDay(m[4] || m[1], m[5], m[6] || m[3]);
+    if (start && end) return Math.max(1, Math.round((end.getTime() - start.getTime()) / DAY_MS));
+  }
+  const numeric = t.match(/\b(\d{1,2})\/(\d{1,2})\s*(?:-|–|—|to|through|until)\s*(\d{1,2})\/(\d{1,2})\b/i);
+  if (numeric) {
+    const start = new Date(2026, parseInt(numeric[1], 10) - 1, parseInt(numeric[2], 10));
+    const end = new Date(2026, parseInt(numeric[3], 10) - 1, parseInt(numeric[4], 10));
+    return Math.max(1, Math.round((end.getTime() - start.getTime()) / DAY_MS));
+  }
+  return null;
+}
+const titleMoney = (text: string) => {
+  const m = (text || "").match(/\$\s*([\d,]+)/);
+  return m ? parseInt(m[1].replace(/,/g, ""), 10) : null;
+};
+function honestRentLabel(l: Listing) {
+  const text = `${l.title} ${l.notes || ""} ${l.why || ""}`;
+  const price = l.allIn ?? l.rent;
+  const explicit = titleMoney(l.title) ?? price;
+  if (explicit != null && /\b(weekly|per week|a week|\/\s*wk|\/wk|\bwk\b)\b/i.test(text)) {
+    return `${money(explicit)}/wk ≈ ${money(Math.round(explicit * 4.33))}/mo`;
+  }
+  if (explicit != null && /\b(nightly|per night|a night|\/\s*night|\/night|\/\s*nt|\/nt|daily|per day)\b/i.test(text)) {
+    return `${money(explicit)}/nt ≈ ${money(Math.round(explicit * 30.44))}/mo`;
+  }
+  const days = stayRangeDays(l.title);
+  if (explicit != null && days != null && days > 0 && days < 30) {
+    return `${money(explicit)}/${days}d ≈ ${money(Math.round((explicit / days) * 30.44))}/mo`;
+  }
+  return money(price) + (price != null ? "/mo" : "");
+}
+const isScamRisk = (l: Listing) =>
+  /\bscam[-\s]?risk\b/i.test(`${l.notes || ""} ${l.why || ""}`) ||
+  (l.status === "Needs Verification" && /state-of-the-art|whatsapp|text only|hold the unit|no viewing/i.test(`${l.notes || ""} ${l.why || ""} ${l.title}`)) ||
+  (/state-of-the-art/i.test(l.title) && /\b(weekly|\/\s*wk|\/wk)\b/i.test(l.title));
+function commuteChip(l: Listing) {
+  const source = (l.commuteSource || "").toLowerCase();
+  const text = `${l.howToGetThere || ""} ${l.why || ""}`;
+  if (source === "google" || /Google Maps/i.test(text)) return { label: "Google", tone: "#4f8060", bg: "#eef6ef" };
+  if (source === "geo-estimate" || source === "geo") return { label: "geo est", tone: "#8a681f", bg: "#fbf1dd" };
+  return { label: /\(est\)/i.test(text) ? "region est" : "region est", tone: "#8a8378", bg: "#f5f1e8" };
+}
 // Flexible / sublease term. The pipeline rarely populates l.lease, so callers pass the
 // title too. Word-bounded, specific tokens so a normal "short walk"/"this month" title
 // isn't mis-flagged (avoids bare "month"/"short").
@@ -322,6 +416,8 @@ export default function App() {
   const [budgetCustom, setBudgetCustom] = useState<boolean>(saved.budgetCustom ?? false);
   const [markFilter, setMarkFilter] = useState<string>(saved.markFilter ?? "active");
   const [marks, setMarks] = useState<Record<string, string>>(loadMarks);
+  const [showNeedsReview, setShowNeedsReview] = useState<boolean>(saved.showNeedsReview ?? false);
+  const [expandedClusters, setExpandedClusters] = useState<Record<string, boolean>>({});
 
   // Resizable sidebar — drag the divider; width persists (double-click resets).
   const ASIDE_MIN = 280, ASIDE_MAX = 680, ASIDE_DEFAULT = 344;
@@ -357,9 +453,9 @@ export default function App() {
   // persist last selections (browser-local)
   useEffect(() => {
     try {
-      localStorage.setItem(STORE_KEY, JSON.stringify({ pref, profile, liam: liamPerson, people, liamRegions, groupRegions, weights, beds, market, huntMode, excludedSources, region, segment, sort, maxPrice, maxTransit, maxDrive, budgetCustom, markFilter, asideW }));
+      localStorage.setItem(STORE_KEY, JSON.stringify({ pref, profile, liam: liamPerson, people, liamRegions, groupRegions, weights, beds, market, huntMode, excludedSources, region, segment, sort, maxPrice, maxTransit, maxDrive, budgetCustom, markFilter, asideW, showNeedsReview }));
     } catch { /* storage unavailable — ignore */ }
-  }, [pref, profile, liamPerson, people, liamRegions, groupRegions, weights, beds, market, huntMode, excludedSources, region, segment, sort, maxPrice, maxTransit, maxDrive, budgetCustom, markFilter, asideW]);
+  }, [pref, profile, liamPerson, people, liamRegions, groupRegions, weights, beds, market, huntMode, excludedSources, region, segment, sort, maxPrice, maxTransit, maxDrive, budgetCustom, markFilter, asideW, showNeedsReview]);
 
   // Sync the shared bits (Liam + Group profiles, region priorities) to Supabase so the
   // last-set config is one source of truth across devices. Debounced; skips the initial
@@ -554,6 +650,7 @@ export default function App() {
   }, []);
   const sourceList = useMemo(() => Object.keys(sourceStats).filter((s) => sourceStats[s].active > 0).sort(), [sourceStats]);
   const marketOptions = useMemo(() => ["All areas", ...(data.marketOrder || [])], []);
+  const generatedDay = (data.generatedAt || new Date().toISOString()).slice(0, 10);
 
   const rows = useMemo(() => {
     const pool =
@@ -581,6 +678,11 @@ export default function App() {
         return p == null || budgetIsAny || p <= budget;
       })
       .filter((l) => matchQ(l, q))
+      .filter((l) => {
+        if (showNeedsReview || segment !== "All") return true;
+        const termEnd = termEndFromText(`${l.title} ${l.notes || ""} ${l.available || ""}`);
+        return l.status !== "Needs Verification" && !isScamRisk(l) && !(termEnd && termEnd < NEED_START);
+      })
       .filter((l) => {
         const mk = marks[l.listingKey];
         if (markFilter === "all") return true;
@@ -633,21 +735,29 @@ export default function App() {
         const pricePerBedroom = price != null && l.bedsNum && l.bedsNum > 1 ? Math.round(price / l.bedsNum) : null;
         const sourceLabel = l.sourceTier === "browser" ? "Browser source" : l.sourceTier === "headless" ? "Headless source" : l.sourceTier === "api" ? "API source" : "Manual source";
         const locLabel = l.exactSf ? "Exact SF" : l.locationConfidence === "spillover" ? "Spillover" : l.sfMarket ? "SF bucket" : l.locationConfidence ? `Location: ${l.locationConfidence}` : "";
-        const ageDays = l.firstSeen ? Math.max(0, Math.floor((Date.now() - Date.parse(l.firstSeen)) / 86400000)) : null;
+        const firstAgeDays = daysBetween(l.firstSeen, generatedDay);
+        const lastAgeDays = daysBetween(l.lastSeen || l.firstSeen, generatedDay);
+        const termEnd = termEndFromText(`${l.title} ${l.notes || ""} ${l.available || ""}`);
+        const endsBeforeNeed = !!termEnd && termEnd < NEED_START;
+        const commute = commuteChip(l);
 
         return {
           id: l.listingKey, title: l.title || "(untitled)", url: l.url || "#",
           sub: [l.neighborhood || l.city, l.market, l.source].filter(Boolean).join(" · "),
           isNew: l.status === "Active" && !!newest && l.firstSeen === newest,
-          priceLabel: money(price) + (price != null ? "/mo" : ""),
+          priceLabel: honestRentLabel(l),
           pricePerBedroom,
           leaseLabel: l.lease || "lease n/a",
           specLabel: specBits.join(" · "), hasSpec: specBits.length > 0,
           status: l.status, routes, routesTitle, mark: markState, origin: originForListing(l),
           sourceLabel, sourceHealth: l.sourceHealth || "", locLabel, locationConfidence: l.locationConfidence || "",
           exactSf: !!l.exactSf, isFivePlus: !!l.isFivePlus, unitScope: l.unitScope || "unknown",
-          boardRank: l.overallRank ?? null, cityRank: l.cityRank ?? null, ageDays, markBoost,
+          boardRank: l.overallRank ?? null, cityRank: l.cityRank ?? null, firstAgeDays, lastAgeDays,
+          ageLabel: l.firstSeen ? `first seen ${ago(firstAgeDays)} · last seen ${ago(lastAgeDays)}` : "",
+          stale: lastAgeDays != null && lastAgeDays > 2, markBoost,
           pipelineWhy: l.why || "", lastSeen: l.lastSeen || "", available: l.available || "", commuteSource: l.commuteSource || "static",
+          scamRisk: isScamRisk(l), termEndLabel: endsBeforeNeed && termEnd ? `Ends ${fmtDate(termEnd)}` : "",
+          commuteChip: commute, duplicateKey: clusterKey(l), duplicateCount: 1, duplicates: [] as any[],
           pipelineScore: l.score ?? 0, noCarScore: l.noCarScore ?? 0, carScore: l.carScore ?? 0,
           fit, segC, segP, segF,
           fitFg: tier === "hi" ? "var(--accent)" : tier === "mid" ? "#b07d1a" : "#9a9384",
@@ -666,8 +776,20 @@ export default function App() {
       Newest: (a, b) => (b._first || "").localeCompare(a._first || "") || b._score - a._score,
     };
     list.sort(SB[sort] || SB["Best fit"]);
-    return list;
-  }, [active, newest, activePeople, activeRegions, weights, q, beds, huntMode, market, excludedSources, region, segment, sort, budget, budgetIsAny, maxTransit, maxDrive, pref, marks, markFilter]);
+    const clusters = new Map<string, typeof list>();
+    for (const row of list) {
+      const bucket = clusters.get(row.duplicateKey);
+      if (bucket) bucket.push(row);
+      else clusters.set(row.duplicateKey, [row]);
+    }
+    const collapsed: typeof list = [];
+    for (const row of list) {
+      const bucket = clusters.get(row.duplicateKey)!;
+      if (bucket[0] !== row) continue;
+      collapsed.push({ ...row, duplicateCount: bucket.length, duplicates: bucket });
+    }
+    return collapsed;
+  }, [active, newest, activePeople, activeRegions, weights, q, beds, huntMode, market, excludedSources, region, segment, sort, budget, budgetIsAny, maxTransit, maxDrive, pref, marks, markFilter, showNeedsReview, generatedDay]);
 
   const prefBtn = (k: string): CSSProperties => {
     const on = pref === k;
@@ -953,6 +1075,13 @@ export default function App() {
               })}
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+              <button
+                onClick={() => setShowNeedsReview((v) => !v)}
+                title="Include Needs Verification and listings whose term ends before July 16, 2026"
+                style={markChip(showNeedsReview, "#b07d1a")}
+              >
+                {showNeedsReview ? "Showing review-needed" : "Hide review-needed"}
+              </button>
               <span style={{ fontSize: 12, color: "#8a8378", fontWeight: 600 }}>Sort</span>
               <select value={sort} onChange={(e) => setSort(e.target.value)} style={{ border: "1px solid #e0dacd", background: "#fffdf8", borderRadius: 9, padding: "7px 10px", fontSize: 13, fontWeight: 600, color: "#1c1a17", cursor: "pointer", outline: "none" }}>
                 {SORT_OPTIONS.map((o) => <option key={o} value={o}>{o}</option>)}
@@ -981,7 +1110,7 @@ export default function App() {
           ) : (
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
               {rows.map((r, i) => (
-                <article key={r.id} style={{ display: "grid", gridTemplateColumns: "34px 1fr auto", gap: 14, alignItems: "start", background: r.mark === "checked" ? "#fbf9f3" : "#fffdf8", border: r.mark === "promising" ? "1.5px solid var(--accent)" : r.mark === "gone" ? "1px dashed #cbc4b6" : "1px solid #e6e1d6", borderRadius: 15, padding: pad, boxShadow: "0 1px 2px rgba(28,26,23,0.03)", opacity: r.mark === "skip" || r.mark === "gone" ? 0.6 : 1 }}>
+                <article key={r.id} style={{ display: "grid", gridTemplateColumns: "34px 1fr auto", gap: 14, alignItems: "start", background: r.mark === "checked" ? "#fbf9f3" : "#fffdf8", border: r.mark === "promising" ? "1.5px solid var(--accent)" : r.mark === "gone" ? "1px dashed #cbc4b6" : "1px solid #e6e1d6", borderRadius: 15, padding: pad, boxShadow: "0 1px 2px rgba(28,26,23,0.03)", opacity: r.mark === "skip" || r.mark === "gone" ? 0.6 : r.stale ? 0.72 : 1 }}>
                   <div style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 15, fontWeight: 700, color: "#b8b1a2", textAlign: "center", fontVariantNumeric: "tabular-nums", paddingTop: 2 }}>{i + 1}</div>
 
                   <div style={{ minWidth: 0 }}>
@@ -989,17 +1118,33 @@ export default function App() {
                       <a href={r.url} target="_blank" rel="noreferrer" style={{ fontSize: 15, fontWeight: 650, color: "#1c1a17", textDecoration: "none", lineHeight: 1.3 }}>{r.title}</a>
                       {r.isNew && <span style={{ fontSize: 9.5, fontWeight: 800, letterSpacing: "0.06em", color: "var(--accent)", background: "color-mix(in srgb, var(--accent) 14%, #fff)", padding: "2px 6px", borderRadius: 5 }}>NEW</span>}
                       {r.status !== "Active" && <span style={{ fontSize: 9.5, fontWeight: 800, letterSpacing: "0.06em", color: "#b4502f", background: "#f8ece6", padding: "2px 6px", borderRadius: 5 }}>{r.status.toUpperCase()}</span>}
+                      {r.duplicateCount > 1 && (
+                        <button onClick={() => setExpandedClusters((s) => ({ ...s, [r.duplicateKey]: !s[r.duplicateKey] }))} style={{ border: "1px solid #d8d1c3", background: "#f5f1e8", color: "#6f6a61", cursor: "pointer", fontSize: 10.5, fontWeight: 800, padding: "2px 7px", borderRadius: 6 }}>
+                          ×{r.duplicateCount} posts
+                        </button>
+                      )}
                     </div>
                     <div style={{ fontSize: 12.5, color: "#8a8378", marginTop: 3 }}>{r.sub}</div>
                     <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginTop: 7 }}>
                       {r.boardRank && <span style={{ fontSize: 11, fontWeight: 700, padding: "3px 7px", borderRadius: 6, background: "#ece8df", color: "#5a554c" }}>Board #{r.boardRank}</span>}
                       {r.cityRank && <span style={{ fontSize: 11, fontWeight: 700, padding: "3px 7px", borderRadius: 6, background: "#ece8df", color: "#5a554c" }}>Area #{r.cityRank}</span>}
                       {r.isFivePlus && <span style={{ fontSize: 11, fontWeight: 800, padding: "3px 7px", borderRadius: 6, background: "color-mix(in srgb, var(--accent) 12%, #fff)", color: "var(--accent)" }}>5+ {r.unitScope === "room" ? "room lane" : "home lane"}</span>}
-                      {r.ageDays != null && <span style={{ fontSize: 11, fontWeight: 700, padding: "3px 7px", borderRadius: 6, background: r.ageDays <= 2 ? "#eef6ef" : r.ageDays <= 7 ? "#fbf1dd" : "#f8ece6", color: r.ageDays <= 2 ? "#4f8060" : r.ageDays <= 7 ? "#9a681b" : "#b4502f" }}>{r.ageDays === 0 ? "New today" : `${r.ageDays}d old`}</span>}
+                      {r.scamRisk && <span style={{ fontSize: 11, fontWeight: 800, padding: "3px 7px", borderRadius: 6, background: "#f8ece6", color: "#b4502f" }}>Scam risk</span>}
+                      {r.termEndLabel && <span style={{ fontSize: 11, fontWeight: 800, padding: "3px 7px", borderRadius: 6, background: "#f8ece6", color: "#b4502f" }}>{r.termEndLabel}</span>}
+                      {r.ageLabel && <span style={{ fontSize: 11, fontWeight: 700, padding: "3px 7px", borderRadius: 6, background: r.stale ? "#f8ece6" : "#eef6ef", color: r.stale ? "#b4502f" : "#4f8060" }}>{r.ageLabel}</span>}
                       {r.locLabel && <span title={r.locationConfidence} style={{ fontSize: 11, fontWeight: 700, padding: "3px 7px", borderRadius: 6, background: r.locationConfidence === "spillover" ? "#f8ece6" : "#f5f1e8", color: r.locationConfidence === "spillover" ? "#b4502f" : "#6f6a61" }}>{r.locLabel}</span>}
                       <span title={r.sourceHealth} style={{ fontSize: 11, fontWeight: 700, padding: "3px 7px", borderRadius: 6, background: r.sourceLabel === "Browser source" ? "#edf3fb" : "#f5f1e8", color: r.sourceLabel === "Browser source" ? "var(--accent)" : "#6f6a61" }}>{r.sourceLabel}</span>
-                      <span style={{ fontSize: 11, fontWeight: 700, padding: "3px 7px", borderRadius: 6, background: r.commuteSource === "google" ? "#eef6ef" : "#f5f1e8", color: r.commuteSource === "google" ? "#4f8060" : "#8a8378" }}>{r.commuteSource === "google" ? "Google commute" : "Static commute"}</span>
+                      <span style={{ fontSize: 11, fontWeight: 700, padding: "3px 7px", borderRadius: 6, background: r.commuteChip.bg, color: r.commuteChip.tone }}>{r.commuteChip.label}</span>
                     </div>
+                    {r.duplicateCount > 1 && expandedClusters[r.duplicateKey] && (
+                      <div style={{ display: "flex", flexDirection: "column", gap: 3, marginTop: 7, padding: "7px 9px", borderRadius: 8, background: "#f5f1e8", border: "1px solid #ece8df" }}>
+                        {r.duplicates.map((d) => (
+                          <a key={d.id} href={d.url} target="_blank" rel="noreferrer" style={{ fontSize: 11.5, fontWeight: 650, color: d.id === r.id ? "#6f6a61" : "var(--accent)", textDecoration: "none" }}>
+                            {d.id === r.id ? "Shown" : "Also posted"} · {d.sub} · {d.priceLabel}
+                          </a>
+                        ))}
+                      </div>
+                    )}
 
                     <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginTop: 10 }}>
                       <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, fontWeight: 600, padding: "4px 9px", borderRadius: 7, background: "color-mix(in srgb, var(--accent) 11%, #fff)", color: "var(--accent)" }}>{r.priceLabel}</span>
@@ -1007,7 +1152,6 @@ export default function App() {
                       <span style={{ fontSize: 12, fontWeight: 600, padding: "4px 9px", borderRadius: 7, background: "#efece6", color: "#5a554c" }}>{r.leaseLabel}</span>
                       {r.hasSpec && <span style={{ fontSize: 12, fontWeight: 600, padding: "4px 9px", borderRadius: 7, background: "#efece6", color: "#5a554c" }}>{r.specLabel}</span>}
                       <span style={{ fontSize: 12, fontWeight: 600, padding: "4px 9px", borderRadius: 7, background: r.available ? "#efece6" : "#f8ece6", color: r.available ? "#5a554c" : "#b4502f" }}>{r.available ? `Avail ${r.available}` : "availability missing"}</span>
-                      {r.lastSeen && <span style={{ fontSize: 12, fontWeight: 600, padding: "4px 9px", borderRadius: 7, background: "#efece6", color: "#5a554c" }}>Seen {r.lastSeen}</span>}
                     </div>
                     {r.pipelineWhy && (
                       <div style={{ fontSize: 12.5, color: "#6f6a61", marginTop: 8, lineHeight: 1.35 }}>

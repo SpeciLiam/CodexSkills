@@ -86,6 +86,14 @@ a realistic desktop-Chrome UA). Prefer the highest tier a source supports:
   - **Zumper** → the `__PRELOADED_STATE__` blob in the search page (apartment-complex
     rent ranges + beds + url). The 5+ sweep includes SF, South Bay, Peninsula, and
     Oakland/Berkeley paths where public SSR data is available.
+  - **Direct property managers (`pm`)** → only where the public community page embeds
+    real availability state for a normal browser GET. Added 2026-07-01:
+    **UDR River Terrace**, **UDR Marina Playa**, and **UDR Birch Creek** via
+    `window.udr.jsonObjPropertyViewModel` on the public apartments-pricing pages
+    (floorplan/unit rent, beds/baths, availability date, and page lat/lng).
+  - **Rent.com** → public search pages expose `__NEXT_DATA__` with listing/floorplan
+    rent, beds/baths, availability date, and coordinates. Added 2026-07-01 for
+    Santa Clara, Sunnyvale, Mountain View, and Palo Alto corridor pages.
 - **Free + headless JSON `apis` — `capture_api.py`:** keyless/keyed JSON endpoints.
   - **Reddit** is best-effort: it returns 403 to plain UAs from datacenter IPs (no UA
     variant helped in probing). It works from a **residential IP** (the local scheduled
@@ -110,12 +118,38 @@ a realistic desktop-Chrome UA). Prefer the highest tier a source supports:
     Chrome probe found 34 cards and 9 verified SF 5+ rows.
   - **Furnished Finder** → no reliable keyless public JSON path; current site is an
     interactive map/search and needs manual visible-browser capture.
+  - **HotPads** → headless HTTP 403 in the 2026-07-01 probe with a realistic
+    desktop-Chrome UA; do not fight it.
+  - **Apartment List** → 2026-07-01 probe returned public HTML but no
+    `__PRELOADED_STATE__` / `__NEXT_DATA__` / equivalent clean listing state for the
+    Santa Clara search page; no handler added.
 - **Retired/watch-only sources:** do not re-add unless they relaunch a usable public
   search.
   - **The Listings Project / The Listing Project** → public web paths were parked or
     subscription-only in the 2026-06-29 browser probe.
   - **Kopa** → public site showed a shutdown/wind-down notice in the 2026-06-29
     browser probe.
+
+2026-07-01 direct property-manager probe notes:
+
+- **Irvine Company Santa Clara Square / Monticello** → HTTP 403 to a normal
+  desktop-Chrome UA on public community/availability paths; recorded blocked, no
+  handler entry.
+- **Avalon Santa Clara** → probed likely public Avalon Santa Clara / Silicon Valley /
+  Morrison Park paths; returned HTTP 404, no clean public availability path found.
+- **Domain / Centerra (Essex)** → Essex public paths returned HTTP 429; recorded
+  blocked and stopped. The standalone `domainapts.com` page only redirected to a
+  thin lander, with no availability state.
+- **Nineteen800 (Prometheus)** → HTTP 403 on public community/floorplan paths;
+  recorded blocked, no handler entry.
+- **Mio** → `mioliving.com` resolved to an Afternic parked-domain page, not a live
+  apartment availability source.
+- **RentCafe/Yardi near-office candidates** (The Benton, Elan at River Oaks,
+  River Mark, Solera, Solstice, Encasa) → HTTP 403 to a normal desktop-Chrome UA;
+  recorded blocked, no handler entry.
+- **UDR River Terrace, Marina Playa, Birch Creek** → HTTP 200 public pages with
+  embedded `window.udr.jsonObjPropertyViewModel`; added to the `web` tier through
+  the `pm` handler.
 
 Do NOT try to defeat the `ai_browser` sources headlessly — use the local browser.
 

@@ -5,6 +5,8 @@
 - Office: 2350 Mission College Blvd #750, Santa Clara, CA 95054.
 - Work pattern: 3 in-office days per week on Monday, Wednesday, and Thursday (HackerRank RTO). Assume this Mon/Wed/Thu pattern unless Liam says otherwise.
 - Start date from offer letter: July 16, 2026.
+- Need window start constant: 2026-07-16.
+- Default minimum stay constant: 60 days.
 - Preferred first housing shape: sublease, month-to-month, furnished, or otherwise flexible while learning the Bay Area.
 - Open to: San Francisco neighborhoods if Caltrain access makes the commute tolerable; Peninsula/South Bay if value and commute are clearly better.
 - Car: possible, but score both no-car and car-enabled scenarios.

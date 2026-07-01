@@ -16,10 +16,14 @@ import json
 import os
 import re
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPT_DIR))
+import commute_origins as commute_geo  # noqa: E402
 
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -61,6 +65,8 @@ LISTING_COLUMNS = [
     "URL",
     "Why",
     "Notes",
+    "Lat",
+    "Lng",
 ]
 
 # Columns recomputed by score_row every run — never carried over from an incoming
@@ -130,6 +136,9 @@ CAR_PM_EXTRA = 7
 # Rents below this (after k-expansion) are implausible and treated as "no rent
 # parsed" so the listing is flagged for verification rather than scored as a steal.
 MIN_PLAUSIBLE_RENT = 300
+NEED_START = date(2026, 7, 16)
+MIN_STAY_DAYS = 60
+TOP_OVERALL_MIN_END = NEED_START + timedelta(days=30)
 
 
 def normalize(value: Any) -> str:
@@ -166,6 +175,16 @@ def parse_date(value: str) -> date | None:
             pass
     try:
         return datetime.fromisoformat(text.replace("Z", "+00:00")).date()
+    except ValueError:
+        return None
+
+
+def parse_float(value: Any) -> float | None:
+    text = clean(value)
+    if not text:
+        return None
+    try:
+        return float(text)
     except ValueError:
         return None
 
@@ -249,7 +268,10 @@ def load_listing_rows() -> list[dict[str, str]]:
             continue
         if header and cells and not all(re.fullmatch(r":?-{3,}:?", c or "") for c in cells):
             padded = cells + [""] * max(0, len(header) - len(cells))
-            rows.append({column: padded[index].strip() for index, column in enumerate(header)})
+            row = {column: padded[index].strip() for index, column in enumerate(header)}
+            for column in LISTING_COLUMNS:
+                row.setdefault(column, "")
+            rows.append(row)
     return rows
 
 
@@ -371,6 +393,100 @@ def parse_money(value: str) -> int:
     return 0
 
 
+MONTHS = {
+    "jan": 1, "january": 1,
+    "feb": 2, "february": 2,
+    "mar": 3, "march": 3,
+    "apr": 4, "april": 4,
+    "may": 5,
+    "jun": 6, "june": 6,
+    "jul": 7, "july": 7,
+    "aug": 8, "august": 8,
+    "sep": 9, "sept": 9, "september": 9,
+    "oct": 10, "october": 10,
+    "nov": 11, "november": 11,
+    "dec": 12, "december": 12,
+}
+
+
+def detect_cadence(text: str) -> str:
+    norm = normalize(text)
+    if re.search(r"\b(weekly|per week|a week|/wk|wkly)\b", norm):
+        return "weekly"
+    if re.search(r"\b(nightly|per night|/night|a day|daily|per day)\b", norm):
+        return "nightly"
+    return ""
+
+
+def _window_date(month: str, day: str, year: str = "") -> date | None:
+    month_num = MONTHS.get(normalize(month)[:3]) if len(normalize(month)) > 3 else MONTHS.get(normalize(month))
+    if not month_num:
+        return None
+    yr = int(year) if year else NEED_START.year
+    try:
+        return date(yr, month_num, int(day))
+    except ValueError:
+        return None
+
+
+def parse_stay_window(text: str) -> tuple[date | None, date | None]:
+    raw = clean(text)
+    if not raw:
+        return None, None
+    month_names = "|".join(sorted(MONTHS, key=len, reverse=True))
+    pattern = re.compile(
+        rf"\b({month_names})\.?\s+(\d{{1,2}})(?:,\s*(\d{{4}}))?\s*(?:-|–|—|to|through)\s*"
+        rf"(?:(?:({month_names})\.?\s+)?(\d{{1,2}})(?:,\s*(\d{{4}}))?)",
+        re.IGNORECASE,
+    )
+    match = pattern.search(raw)
+    if not match:
+        return None, None
+    start_month, start_day, start_year, end_month, end_day, end_year = match.groups()
+    start = _window_date(start_month, start_day, start_year or end_year or "")
+    end = _window_date(end_month or start_month, end_day, end_year or start_year or "")
+    if start and end and end < start:
+        try:
+            end = date(end.year + 1, end.month, end.day)
+        except ValueError:
+            pass
+    return start, end
+
+
+def normalize_rent_amount(rent_text: str, title: str, description: str) -> tuple[int, list[str], bool, date | None]:
+    amount = parse_money(rent_text)
+    if not amount and title:
+        lead = re.search(r"\$\s*[0-9][0-9,]*(?:\.\d+)?\s*[kKmM]?", title)
+        if lead:
+            amount = parse_money(lead.group(0))
+            rent_text = lead.group(0)
+    if not amount:
+        return 0, [], False, None
+
+    title_cadence = detect_cadence(" ".join([title, description]))
+    field_cadence = detect_cadence(rent_text)
+    cadence = title_cadence or field_cadence
+    notes: list[str] = []
+    needs_verification = bool(title_cadence and field_cadence != title_cadence)
+    normalized = amount
+
+    if cadence == "weekly":
+        normalized = int(round(amount * 4.33))
+        notes.append(f"raw rent ${amount}/wk normalized to ${normalized}/mo")
+    elif cadence == "nightly":
+        normalized = int(round(amount * 30))
+        notes.append(f"raw rent ${amount}/night normalized to ${normalized}/mo")
+
+    start, end = parse_stay_window(" ".join([title, description]))
+    if start and end:
+        days = max(1, (end - start).days)
+        notes.append(f"availability window {start.isoformat()} to {end.isoformat()}")
+        if days < 30 and not cadence:
+            normalized = int(round(amount * 30 / days))
+            notes.append(f"raw rent ${amount} total-for-term normalized to ${normalized}/mo")
+    return normalized, notes, needs_verification, end
+
+
 def money_cell(value: int) -> str:
     return str(value) if value else ""
 
@@ -411,20 +527,128 @@ def listing_key(source: str, title: str, url: str, city: str, neighborhood: str,
     return f"{slug(source)}-{hashlib.sha1(normalize(fallback).encode()).hexdigest()[:10]}"
 
 
-def infer_market(city: str, neighborhood: str, title: str, description: str) -> str:
-    haystack = normalize(" ".join(str(part or "") for part in [city, neighborhood, title, description]))
+MARKET_BBOXES = {
+    "SF Mission/Valencia": [(37.735, 37.775, -122.430, -122.400)],
+    "SF Dogpatch/Potrero/Showplace": [(37.740, 37.775, -122.405, -122.380)],
+    "SF SoMa/South Beach/Mission Bay": [(37.770, 37.795, -122.410, -122.380)],
+    "SF Hayes/Lower Haight/Castro/Duboce": [(37.750, 37.782, -122.445, -122.420)],
+    "SF Sunset/Richmond/Marina/North Beach": [
+        (37.760, 37.785, -122.515, -122.445),
+        (37.785, 37.810, -122.505, -122.390),
+    ],
+    "Mountain View": [(37.350, 37.435, -122.120, -122.035)],
+    "Sunnyvale": [(37.335, 37.425, -122.065, -121.965)],
+    "Santa Clara": [(37.320, 37.430, -122.020, -121.925)],
+    "North San Jose": [(37.340, 37.445, -121.950, -121.820)],
+    "Palo Alto/Menlo Park": [(37.420, 37.510, -122.230, -122.090)],
+    "Redwood City/San Carlos/Belmont": [(37.480, 37.545, -122.310, -122.185)],
+    "San Mateo/Burlingame/Millbrae": [(37.545, 37.640, -122.430, -122.270)],
+    "Oakland/Berkeley": [(37.765, 37.900, -122.330, -122.220)],
+}
+
+OUT_OF_AREA_TERMS = {
+    "santa cruz", "sacramento", "stockton", "modesto", "tracy", "vallejo", "santa rosa",
+}
+
+CITY_MARKET_TERMS = [
+    ("mountain view", "Mountain View"),
+    ("sunnyvale", "Sunnyvale"),
+    ("santa clara", "Santa Clara"),
+    ("north san jose", "North San Jose"),
+    ("palo alto", "Palo Alto/Menlo Park"),
+    ("menlo park", "Palo Alto/Menlo Park"),
+    ("redwood city", "Redwood City/San Carlos/Belmont"),
+    ("san carlos", "Redwood City/San Carlos/Belmont"),
+    ("belmont", "Redwood City/San Carlos/Belmont"),
+    ("san mateo", "San Mateo/Burlingame/Millbrae"),
+    ("burlingame", "San Mateo/Burlingame/Millbrae"),
+    ("millbrae", "San Mateo/Burlingame/Millbrae"),
+    ("oakland", "Oakland/Berkeley"),
+    ("berkeley", "Oakland/Berkeley"),
+    ("emeryville", "Oakland/Berkeley"),
+]
+
+SF_NEIGHBORHOOD_MARKETS = [
+    (("mission", "valencia", "bernal"), "SF Mission/Valencia"),
+    (("dogpatch", "potrero", "showplace"), "SF Dogpatch/Potrero/Showplace"),
+    (("soma", "south beach", "mission bay", "4th king", "4th & king"), "SF SoMa/South Beach/Mission Bay"),
+    (("hayes", "lower haight", "castro", "duboce", "noe"), "SF Hayes/Lower Haight/Castro/Duboce"),
+    (("usf", "panhandle", "nopa", "sunset", "richmond", "marina", "north beach"), "SF Sunset/Richmond/Marina/North Beach"),
+    (("nob hill", "russian hill", "pacific heights", "pac heights", "cow hollow"), "SF Sunset/Richmond/Marina/North Beach"),
+]
+
+
+def market_from_point(lat: Any, lng: Any) -> str:
+    lat_f = parse_float(lat)
+    lng_f = parse_float(lng)
+    if lat_f is None or lng_f is None:
+        return ""
+    for market in MARKET_ORDER:
+        for min_lat, max_lat, min_lng, max_lng in MARKET_BBOXES.get(market, []):
+            if min_lat <= lat_f <= max_lat and min_lng <= lng_f <= max_lng:
+                return market
+    return ""
+
+
+def explicit_market_from_text(text: str) -> str:
+    haystack = normalize(text.replace("-", " "))
+    if any(term in haystack for term in OUT_OF_AREA_TERMS):
+        return "Other Bay Area"
+    if ("san francisco" in haystack or re.search(r"\bsf\b", haystack)) and not any(term in haystack for term in NON_SF_EXPLICIT_TERMS):
+        for terms, market in SF_NEIGHBORHOOD_MARKETS:
+            if any(term in haystack for term in terms):
+                return market
+        return "SF SoMa/South Beach/Mission Bay"
+    for term, market in CITY_MARKET_TERMS:
+        if term in haystack:
+            return market
+    return ""
+
+
+def has_sf_context(text: str) -> bool:
+    haystack = normalize(text.replace("-", " "))
+    if "san francisco" in haystack or re.search(r"\bsf\b", haystack):
+        return True
+    return bool(re.search(r"https?://sfbay\.craigslist\.org/sfc(?:/|$)", text or "", re.IGNORECASE))
+
+
+def has_non_sf_explicit_term(text: str) -> bool:
+    haystack = normalize(text.replace("-", " "))
+    return any(term in haystack for term in NON_SF_EXPLICIT_TERMS)
+
+
+def neighborhood_market_from_text(text: str) -> str:
+    haystack = normalize(text)
+    if not has_sf_context(text) or has_non_sf_explicit_term(text):
+        return ""
+    for terms, market in SF_NEIGHBORHOOD_MARKETS:
+        if any(term in haystack for term in terms):
+            return market
+    return ""
+
+
+def out_of_area_reason(text: str) -> str:
+    haystack = normalize(text.replace("-", " "))
+    for term in sorted(OUT_OF_AREA_TERMS):
+        if term in haystack:
+            return "location out of search area"
+    return ""
+
+
+def infer_market(city: str, neighborhood: str, title: str, description: str, lat: Any = "", lng: Any = "", url: str = "") -> str:
+    point_market = market_from_point(lat, lng)
+    if point_market:
+        return point_market
+    haystack = normalize(" ".join(str(part or "") for part in [city, neighborhood, title, description, url]))
+    explicit = explicit_market_from_text(" ".join(str(part or "") for part in [city, title, url]))
+    if explicit:
+        return explicit
+    nhood_text = " ".join(str(part or "") for part in [city, neighborhood, title, description, url])
+    nhood_market = neighborhood_market_from_text(nhood_text)
+    if nhood_market:
+        return nhood_market
     city_norm = normalize(city)
     if "san francisco" in haystack or city_norm in {"sf", "san francisco"}:
-        if any(term in haystack for term in ["mission", "valencia", "bernal"]):
-            return "SF Mission/Valencia"
-        if any(term in haystack for term in ["dogpatch", "potrero", "showplace", "mission bay"]):
-            return "SF Dogpatch/Potrero/Showplace"
-        if any(term in haystack for term in ["soma", "south beach", "4th king", "4th & king"]):
-            return "SF SoMa/South Beach/Mission Bay"
-        if any(term in haystack for term in ["hayes", "lower haight", "castro", "duboce", "noe"]):
-            return "SF Hayes/Lower Haight/Castro/Duboce"
-        if any(term in haystack for term in ["sunset", "richmond", "marina", "north beach", "russian hill", "nob hill"]):
-            return "SF Sunset/Richmond/Marina/North Beach"
         return "SF SoMa/South Beach/Mission Bay"
     if "mountain view" in haystack:
         return "Mountain View"
@@ -479,7 +703,7 @@ NON_SF_EXPLICIT_TERMS = {
 }
 
 
-def reconcile_market(market: str, city: str, neighborhood: str, title: str, description: str) -> str:
+def reconcile_market(market: str, city: str, neighborhood: str, title: str, description: str, lat: Any = "", lng: Any = "", url: str = "") -> str:
     """Respect an explicit listing location over the configured search bucket.
 
     Craigslist section searches are intentionally broad: the SF section can return
@@ -487,7 +711,17 @@ def reconcile_market(market: str, city: str, neighborhood: str, title: str, desc
     `market_hint` as-is makes the dashboard over-count "SF 5+" inventory, so only
     use it as a fallback when the listing itself does not name a conflicting city.
     """
-    current = clean(market) or infer_market(city, neighborhood, title, description)
+    point_market = market_from_point(lat, lng)
+    if point_market:
+        return point_market
+    explicit = explicit_market_from_text(" ".join(str(part or "") for part in [city, title, url]))
+    if explicit:
+        return explicit
+    nhood_text = " ".join(str(part or "") for part in [city, neighborhood, title, description, url])
+    nhood_market = neighborhood_market_from_text(nhood_text)
+    if nhood_market:
+        return nhood_market
+    current = clean(market) or infer_market(city, neighborhood, title, description, lat, lng, url)
     city_text = normalize(city)
     if not city_text:
         return current
@@ -608,6 +842,38 @@ def quality_score(title: str, description: str, lease: str) -> int:
     return max(0, min(10, score))
 
 
+def scam_reasons_for_row(row: dict[str, str]) -> list[str]:
+    text = normalize(" ".join(clean(row.get(key, "")) for key in ["Title", "Notes", "Lease"]))
+    reasons: list[str] = []
+    for term in ["state-of-the-art", "whatsapp", "text only", "hold the unit", "no viewing"]:
+        if term in text:
+            reasons.append(term)
+    if "weekly" in text and ("apartment" in text or "1br" in text or "1 bedroom" in text or "residence" in text):
+        reasons.append("weekly price in monthly housing context")
+    return reasons
+
+
+def term_end(row: dict[str, str]) -> date | None:
+    for piece in re.split(r"\s*;\s*", clean(row.get("Notes", ""))):
+        match = re.search(r"availability window \d{4}-\d{2}-\d{2} to (\d{4}-\d{2}-\d{2})", piece)
+        if match:
+            return parse_date(match.group(1))
+    _start, end = parse_stay_window(" ".join(clean(row.get(key, "")) for key in ["Title", "Notes", "Available"]))
+    return end
+
+
+def ends_before_need_window(row: dict[str, str]) -> bool:
+    end = term_end(row)
+    return bool(end and end < TOP_OVERALL_MIN_END)
+
+
+def mark_needs_verification(row: dict[str, str], note: str) -> None:
+    if row.get("Status") in TERMINAL_STATUSES:
+        return
+    row["Status"] = "Needs Verification"
+    row["Notes"] = merge_notes(row.get("Notes", ""), note)
+
+
 def confidence_score(row: dict[str, str]) -> int:
     score = 10
     for field in ["URL", "Rent", "Market", "Lease", "Available"]:
@@ -659,9 +925,13 @@ SF_BIKE_FIRST_MILE = [
 ]
 
 
-def sf_no_car_first_mile(neighborhood: str, title: str) -> tuple[int, str]:
+def sf_no_car_first_mile(neighborhood: str, title: str, lat: Any = "", lng: Any = "") -> tuple[int, str]:
     """Bike minutes from an SF listing to its nearest Caltrain station, plus a label.
     Defaults to 15 (a mid bike) when the neighborhood is unknown/generic."""
+    station = commute_geo.nearest_caltrain_station(lat, lng)
+    if station:
+        minutes = int(round(station["distanceKm"] / 12 * 60 + 3))
+        return minutes, f"~{minutes}m bike to {station['name']} Caltrain (geo est)"
     text = normalize(" ".join(str(p or "") for p in [neighborhood, title]))
     for terms, minutes in SF_BIKE_FIRST_MILE:
         if any(t in text for t in terms):
@@ -675,7 +945,7 @@ def _components(row: dict[str, str]) -> dict[str, Any]:
     commute = COMMUTE_DEFAULTS.get(market, COMMUTE_DEFAULTS["Other Bay Area"])
     if market.startswith("SF"):
         bike, bike_note = sf_no_car_first_mile(
-            row.get("Neighborhood", ""), row.get("Title", "")
+            row.get("Neighborhood", ""), row.get("Title", ""), row.get("Lat", ""), row.get("Lng", "")
         )
         commute = {
             "no_car": SF_TRAIN_PLUS_LAST_MILE + bike,  # bike + Caltrain + last mile
@@ -703,6 +973,9 @@ def score_row(row: dict[str, str]) -> dict[str, str]:
         row.get("Neighborhood", ""),
         row.get("Title", ""),
         row.get("Notes", ""),
+        row.get("Lat", ""),
+        row.get("Lng", ""),
+        row.get("URL", ""),
     )
     status = row.get("Status", "")
     if status in TERMINAL_STATUSES:
@@ -722,6 +995,12 @@ def score_row(row: dict[str, str]) -> dict[str, str]:
 
     if status in VERIFY_STATUSES:
         overall = max(0, overall - 8)
+    if "location out of search area" in normalize(row.get("Notes", "")):
+        overall = max(0, overall - 18)
+    end = term_end(row)
+    if end and end < TOP_OVERALL_MIN_END:
+        overall = max(0, overall - 25)
+        row["Notes"] = merge_notes(row.get("Notes", ""), f"term ends {end.isoformat()} — before need window")
 
     row["Score"] = str(max(0, min(100, int(round(overall)))))
     row["No-Car Score"] = str(max(0, min(100, int(round(no_car)))))
@@ -780,34 +1059,42 @@ def row_from_record(record: dict[str, Any], default_source: str, run_date: str) 
     description = first_value(record, ["description", "notes", "body", "summary", "details"])
     lease = first_value(record, ["lease", "lease_term", "term", "availability_terms"])
     available = first_value(record, ["available", "available_date", "move_in", "move_in_date"])
+    lat = first_value(record, ["lat", "latitude"])
+    lng = first_value(record, ["lng", "lon", "longitude"])
     # Base rent and all-in are sourced from DISTINCT key sets so a capture that
     # provides both keeps the base-vs-all-in spread instead of overwriting one.
-    rent = parse_money(first_value(record, ["rent", "price", "monthly_rent", "base_rent"]))
-    all_in = parse_money(first_value(record, ["all_in", "all_in_estimate", "monthly_total", "estimated_total"]))
-    if not rent and not all_in and title:
-        # Classifieds (Craigslist/FB) lead the title with the price, e.g.
-        # "$2,400 / 1br Sunnyvale sublease". Reading that visible leading $ amount is
-        # capture, not invention. Anchored on $ so "1br"/"2 bed" never parse as rent.
-        lead = re.search(r"\$\s*[0-9][0-9,]*(?:\.\d+)?\s*[kKmM]?", title)
-        if lead:
-            rent = parse_money(lead.group(0))
+    rent_text = first_value(record, ["rent", "price", "monthly_rent", "base_rent"])
+    all_in_text = first_value(record, ["all_in", "all_in_estimate", "monthly_total", "estimated_total"])
+    rent, rent_notes, rent_needs_verification, _term = normalize_rent_amount(rent_text, title, description)
+    all_in, all_in_notes, all_in_needs_verification, _term2 = normalize_rent_amount(all_in_text, title, description)
+    rent_notes.extend(note for note in all_in_notes if note not in rent_notes)
+    rent_needs_verification = rent_needs_verification or all_in_needs_verification
     if not rent:
         rent = all_in
     if not all_in:
         all_in = rent
     market = first_value(record, ["market", "bucket"])
     if not market:
-        market = infer_market(city, neighborhood, title, " ".join([description, address]))
+        market = infer_market(city, neighborhood, title, " ".join([description, address]), lat, lng, url)
     if not city:
         city = infer_city(market, city, " ".join([title, neighborhood, address, description]))
-    market = reconcile_market(market, city, neighborhood, title, " ".join([description, address]))
+    market = reconcile_market(market, city, neighborhood, title, " ".join([description, address]), lat, lng, url)
     status = infer_status(first_value(record, ["status", "availability_status"]), rent, url, title)
+    if rent_needs_verification and status == "Active":
+        status = "Needs Verification"
     key = first_value(record, ["listing_key", "key", "id"])
     if not key:
         key = listing_key(source, title, url, city, neighborhood, rent)
-    notes = description
+    notes = merge_notes(description, "; ".join(rent_notes))
     if address and normalize(address) not in normalize(notes):
         notes = "; ".join(p for p in [notes, f"addr: {address}"] if p)
+    out_reason = out_of_area_reason(" ".join([city, title, url, description, address]))
+    if market == "Other Bay Area" and out_reason:
+        notes = merge_notes(notes, out_reason)
+    for reason in scam_reasons_for_row({"Title": title, "Notes": notes, "Lease": lease}):
+        notes = merge_notes(notes, f"scam-risk: {reason}")
+        if status == "Active":
+            status = "Needs Verification"
 
     row = {
         "Listing Key": key,
@@ -832,6 +1119,8 @@ def row_from_record(record: dict[str, Any], default_source: str, run_date: str) 
         "URL": url,
         "Why": "",
         "Notes": notes,
+        "Lat": lat,
+        "Lng": lng,
     }
     return score_row(row)
 
@@ -959,6 +1248,101 @@ def needs_rows(rows: list[dict[str, str]]) -> list[dict[str, str]]:
 
 def replaced_rows(rows: list[dict[str, str]]) -> list[dict[str, str]]:
     return [row for row in rows if row.get("Status") in REPLACED_STATUSES]
+
+
+def content_fingerprint(row: dict[str, str]) -> str:
+    rent = to_int(row.get("All-In Estimate") or row.get("Rent"))
+    rent_bucket = int(round(rent / 50.0) * 50) if rent else 0
+    title_slug = slug(row.get("Title", ""))[:60]
+    beds = normalize(row.get("Beds", ""))
+    market = normalize(row.get("Market", ""))
+    return "|".join([title_slug, str(rent_bucket), beds, market])
+
+
+def _first_seen_sort_value(row: dict[str, str]) -> str:
+    return clean(row.get("First Seen")) or "9999-12-31"
+
+
+def apply_content_dedupe(rows: list[dict[str, str]]) -> None:
+    same_source: dict[tuple[str, str], list[dict[str, str]]] = {}
+    cross_source: dict[str, list[dict[str, str]]] = {}
+    for row in rows:
+        if row.get("Status") in TERMINAL_STATUSES:
+            continue
+        fp = content_fingerprint(row)
+        if not fp.strip("|0"):
+            continue
+        same_source.setdefault((normalize(row.get("Source", "")), fp), []).append(row)
+        cross_source.setdefault(fp, []).append(row)
+
+    for group in same_source.values():
+        keys = {row.get("Listing Key", "") for row in group}
+        if len(group) < 2 or len(keys) < 2:
+            continue
+        winner = sorted(group, key=lambda r: (clean(r.get("Last Seen")), clean(r.get("URL"))), reverse=True)[0]
+        first_seen = min((_first_seen_sort_value(row) for row in group), default=winner.get("First Seen", ""))
+        if first_seen != "9999-12-31":
+            winner["First Seen"] = first_seen
+        for row in group:
+            if row is winner:
+                if row.get("Status") == "Duplicate":
+                    row["Status"] = "Active"
+                continue
+            row["Status"] = "Duplicate"
+            record_lifecycle(row, f"Duplicate {row.get('Last Seen')}: repost of {winner.get('Listing Key')}")
+
+    for group in cross_source.values():
+        sources = {normalize(row.get("Source", "")) for row in group}
+        if len(group) < 2 or len(sources) < 2:
+            continue
+        canonical = sorted(group, key=lambda r: (clean(r.get("First Seen")), clean(r.get("Listing Key"))))[0]
+        for row in group:
+            if row is canonical or row.get("Status") in TERMINAL_STATUSES:
+                continue
+            row["Notes"] = merge_notes(row.get("Notes", ""), f"possible cross-post of {canonical.get('Listing Key')}")
+
+
+def median(values: list[int]) -> int:
+    if not values:
+        return 0
+    ordered = sorted(values)
+    mid = len(ordered) // 2
+    if len(ordered) % 2:
+        return ordered[mid]
+    return int(round((ordered[mid - 1] + ordered[mid]) / 2))
+
+
+def title_cluster_key(row: dict[str, str]) -> str:
+    words = slug(row.get("Title", "")).split("-")
+    return "-".join(words[:4])
+
+
+def apply_scam_quality(rows: list[dict[str, str]]) -> None:
+    buckets: dict[tuple[str, str], list[int]] = {}
+    clusters: dict[tuple[str, str, int, str], list[dict[str, str]]] = {}
+    for row in rows:
+        if row.get("Status") not in ACTIVE_STATUSES | VERIFY_STATUSES:
+            continue
+        rent = to_int(row.get("All-In Estimate") or row.get("Rent"))
+        if rent:
+            buckets.setdefault((row.get("Market", ""), normalize(row.get("Beds", ""))), []).append(rent)
+            clusters.setdefault((normalize(row.get("Source", "")), row.get("Market", ""), rent, title_cluster_key(row)), []).append(row)
+
+    for row in rows:
+        if row.get("Status") not in ACTIVE_STATUSES | VERIFY_STATUSES:
+            continue
+        for reason in scam_reasons_for_row(row):
+            mark_needs_verification(row, f"scam-risk: {reason}")
+        rent = to_int(row.get("All-In Estimate") or row.get("Rent"))
+        med = median(buckets.get((row.get("Market", ""), normalize(row.get("Beds", ""))), []))
+        if rent and med and len(buckets.get((row.get("Market", ""), normalize(row.get("Beds", ""))), [])) >= 2 and rent < med * 0.4:
+            mark_needs_verification(row, f"scam-risk: rent below 40% of {row.get('Market')} {row.get('Beds') or 'unknown beds'} median")
+
+    for group in clusters.values():
+        if len(group) < 3:
+            continue
+        for row in group:
+            mark_needs_verification(row, "scam-risk: repeated same-poster rent/title cluster")
 
 
 def link_cell(row: dict[str, str]) -> str:
@@ -1099,7 +1483,7 @@ def build_rankings(rows: list[dict[str, str]], run_date: str) -> None:
     needs = sorted(needs_rows(rows), key=rank_sort_key)
     replaced = sorted(replaced_rows(rows), key=lambda r: (r.get("Last Seen", ""), r.get("Market", ""), r.get("Title", "")), reverse=True)
 
-    overall_top = active[:5]
+    overall_top = [row for row in active if not ends_before_need_window(row)][:5]
     new_entrants = [row for row in active if row.get("First Seen") == run_date][:20]
 
     lines = [
@@ -1235,6 +1619,8 @@ def run(
     apply_marks(rows, marks or [], run_date)
     mark_expired(rows, expire_keys or [], expire_urls or [], run_date)
     mark_stale(rows, run_date, stale_days, retire_days)
+    apply_content_dedupe(rows)
+    apply_scam_quality(rows)
     for row in rows:
         score_row(row)
 
