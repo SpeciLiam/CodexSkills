@@ -480,11 +480,38 @@ class SourceSelection(unittest.TestCase):
         importlib.reload(housing_run)
         self.run = housing_run
 
+    def _enabled_source_keys(self, searches):
+        keys = set()
+        for tier in self.run.SOURCE_TIERS:
+            for cfg in searches.get(tier, []):
+                if isinstance(cfg, dict) and cfg.get("enabled", True):
+                    keys.add(self._source_key(tier, cfg))
+        return keys
+
+    def _source_keys(self, searches):
+        keys = set()
+        for tier in self.run.SOURCE_TIERS:
+            for cfg in searches.get(tier, []):
+                if isinstance(cfg, dict) and cfg.get("enabled", True):
+                    keys.add(self._source_key(tier, cfg))
+        return keys
+
+    def _source_key(self, tier, cfg):
+        return (
+            tier,
+            cfg.get("label", ""),
+            cfg.get("name", ""),
+            cfg.get("source", ""),
+            cfg.get("search_url") or cfg.get("url", ""),
+        )
+
     def test_aliases_and_typos_normalize(self):
         filters = self.run.parse_source_filters(["cragislist", "faceb", "apartments.com"])
         self.assertIn("craigslist", filters)
         self.assertIn("facebook", filters)
         self.assertIn("apartments", filters)
+        self.assertEqual(self.run.parse_source_filters(["liam"]), {"solo"})
+        self.assertEqual(self.run.parse_source_filters(["group"]), {"sf5plus"})
 
     def test_filter_searches_across_tiers(self):
         searches = {
@@ -599,6 +626,41 @@ class SourceSelection(unittest.TestCase):
         filtered, _ = self.run.filter_searches(searches, ["sf5plus"])
         self.assertEqual([item["label"] for item in filtered["web"]], ["sf-apartments-5plus"])
         self.assertEqual([item["label"] for item in filtered["ai_browser"]], ["zillow-sf-5plus"])
+
+    def test_solo_excludes_five_plus_lanes_and_keeps_normal_lanes(self):
+        searches = self.run.load_searches()
+        filtered, _ = self.run.filter_searches(searches, ["solo"])
+        selected = self._source_keys(filtered)
+        self.assertTrue(selected)
+        for tier in self.run.SOURCE_TIERS:
+            for cfg in filtered.get(tier, []):
+                label = str(cfg.get("label", "")).lower()
+                self.assertNotIn("5plus", label)
+        normal_enabled = [
+            self._source_key(tier, cfg)
+            for tier in self.run.SOURCE_TIERS
+            for cfg in searches.get(tier, [])
+            if isinstance(cfg, dict)
+            and cfg.get("enabled", True)
+            and "5plus" not in str(cfg.get("label", "")).lower()
+        ]
+        self.assertTrue(normal_enabled)
+        self.assertTrue(set(normal_enabled).issubset(selected))
+
+    def test_group_alias_matches_sf_five_plus(self):
+        searches = self.run.load_searches()
+        group, _ = self.run.filter_searches(searches, ["group"])
+        sf5plus, _ = self.run.filter_searches(searches, ["sf5plus"])
+        self.assertEqual(self._source_keys(group), self._source_keys(sf5plus))
+
+    def test_solo_and_group_partition_enabled_lanes(self):
+        searches = self.run.load_searches()
+        solo, _ = self.run.filter_searches(searches, ["solo"])
+        group, _ = self.run.filter_searches(searches, ["group"])
+        solo_keys = self._source_keys(solo)
+        group_keys = self._source_keys(group)
+        self.assertEqual(solo_keys & group_keys, set())
+        self.assertEqual(solo_keys | group_keys, self._enabled_source_keys(searches))
 
     def test_capture_dir_glob_respects_source_filter(self):
         filters = self.run.parse_source_filters(["zillow"])

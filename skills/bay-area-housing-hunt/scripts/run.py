@@ -17,6 +17,8 @@ Typical use:
     python3 run.py                 # headless capture + score + print AI plan
     python3 run.py --sources craigslist zillow facebook
                                    # run/plan only selected configured sources
+    python3 run.py --sources solo  # Liam solo lanes; excludes 5+ group-house lanes
+    python3 run.py --sources group # SF 5+ group-house lanes (alias: sf5plus)
     python3 run.py --list-sources  # show selectable configured sources
     python3 run.py --fresh-capture-dir
                                    # scheduled-run kickoff; avoids stale AI files
@@ -84,6 +86,9 @@ SOURCE_ALIASES = {
     "sf5br": {"sf5plus"},
     "sf5bed": {"sf5plus"},
     "sf5plus": {"sf5plus"},
+    "group": {"sf5plus"},
+    "liam": {"solo"},
+    "solo": {"solo"},
 }
 
 
@@ -175,6 +180,8 @@ def source_matches(cfg: dict, filters: set[str]) -> bool:
     if "all" in filters:
         return True
     tokens = source_tokens(cfg)
+    if "solo" in filters and "5plus" not in tokens:
+        return True
     return any(wanted in tokens for wanted in filters)
 
 
@@ -210,6 +217,7 @@ def ai_capture_path(capture_dir: Path, src: dict) -> Path:
 
 def list_configured_sources(searches: dict) -> None:
     print("Selectable configured sources:")
+    print("  common tokens: solo/liam (non-5+ Liam lanes), group (SF 5+ lanes; alias sf5plus), all")
     for tier in SOURCE_TIERS:
         rows = searches.get(tier, [])
         if not rows:
@@ -235,6 +243,8 @@ def capture_path_matches(path: Path, filters: set[str]) -> bool:
     stem = hp.slug(path.stem)
     compact = stem.replace("-", "")
     path_tokens = {compact, *(part for part in stem.split("-") if part)}
+    if "solo" in filters and "5plus" not in compact:
+        return True
     for wanted in filters:
         if wanted in path_tokens:
             return True
@@ -437,7 +447,7 @@ def main() -> int:
     parser.add_argument("--capture-dir", type=Path, default=DEFAULT_CAPTURE_DIR)
     parser.add_argument("--input", nargs="*", type=Path, default=[], help="Extra capture file(s) to ingest (e.g. AI-produced)")
     parser.add_argument("--source", default="manual")
-    parser.add_argument("--sources", nargs="+", default=["all"], help="One or more configured sources to run/plan (default: all). Examples: --sources craigslist zillow facebook, --sources craigslist,zillow,facebook, or --sources apartments.com")
+    parser.add_argument("--sources", nargs="+", default=["all"], help="One or more configured sources to run/plan (default: all). Examples: --sources solo, --sources group, --sources craigslist zillow facebook, --sources craigslist,zillow,facebook, or --sources apartments.com")
     parser.add_argument("--list-sources", action="store_true", help="Print selectable configured sources/tokens and exit")
     parser.add_argument("--fresh-capture-dir", action="store_true", help="Delete existing *.json files in the capture dir before the kickoff run")
     parser.add_argument("--allow-stale-captures", action="store_true", help="Allow old ai-*.json files discovered in the capture dir to refresh Last Seen")
