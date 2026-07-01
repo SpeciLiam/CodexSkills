@@ -8,7 +8,6 @@ Run directly, or via the visualizer's `npm run dev/build`.
 from __future__ import annotations
 
 import json
-import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -181,19 +180,6 @@ def has_coords(listing: dict) -> bool:
     return bool(co.rounded_coord_key(listing.get("lat", ""), listing.get("lng", "")))
 
 
-# A 1-2 digit bedroom count (optionally a tight range like "1-2" / "2/3") immediately
-# before a bedroom token (EN/ES/ZH). The negative lookbehind stops a price digit gluing
-# in: "$1,500 / 1br" must read 1, not 500. Bathrooms ("ba"/"baño"/"卫") never match.
-_BED_RE = re.compile(
-    r"(?<![\d,.$])(\d{1,2})(?:\s?[-/]\s?(\d{1,2}))?\s*(?:bd|br|beds?|bedrooms?|hab\b|habitaci\w*|室|卧)",
-    re.I,
-)
-# Spelled-out counts ("Three Bedrooms for Rent"); 'studio' is handled separately as 0.
-_WORD_BEDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5,
-              "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
-_WORD_BED_RE = re.compile(r"\b(" + "|".join(_WORD_BEDS) + r")\b[\s-]+(?:bed|bd|br)", re.I)
-_BED_MAX = 12  # a parsed "bedroom" above this is a misparse (price, cross-street, etc.)
-
 SF_NEIGHBORHOOD_HINTS = {
     "bernal",
     "castro",
@@ -299,20 +285,7 @@ def _parse_beds(text: str):
     mention — the advertised unit (so "1 Bed in a 2 Bed apt" -> 1) — taking MAX only within
     a single range token ("1-2 bd" -> 2). Reads spelled-out counts ("Three Bedrooms" -> 3);
     'studio' -> 0; None when there's no bedroom signal (e.g. a bare room share)."""
-    t = (text or "").lower()
-    if not t.strip():
-        return None
-    m = _BED_RE.search(t)
-    if m:
-        cands = [int(g) for g in m.groups() if g is not None and int(g) <= _BED_MAX]
-        if cands:
-            return max(cands)
-    w = _WORD_BED_RE.search(t)
-    if w:
-        return _WORD_BEDS[w.group(1)]
-    if ("studio" in t) or ("estudio" in t) or ("monoambiente" in t):
-        return 0
-    return None
+    return hp.parse_bed_count(text)
 
 
 def beds_num(beds: str, title: str):

@@ -87,6 +87,30 @@ class CaptureSourceParsers(unittest.TestCase):
         self.assertEqual(records[0]["available"], "2026-07-17")
         self.assertEqual(records[0]["lat"], "37.339194")
 
+    def test_title_bed_count_avoids_price_and_bath_bleed(self):
+        cases = [
+            ("$5,200 / 6br house", 6),
+            ("Huge 5 bedroom 3 bath Victorian", 5),
+            ("$5200 2bd", 2),
+            ("5 bath 3 bedroom", 3),
+            ("Sunny group house near Dolores Park", None),
+        ]
+        for title, expected in cases:
+            with self.subTest(title=title):
+                self.assertEqual(self.capture_web.title_bed_count(title), expected)
+
+    def test_craigslist_title_fills_missing_beds_bucket(self):
+        payload = {"data": {"decode": {"minPostingId": 1000}, "items": [
+            [1, "Huge 5 bedroom 3 bath Victorian", 5200, "$5,200", "1:0~37.76~-122.42", [6, "huge-5-bedroom-3-bath-victorian"]]
+        ]}}
+        records = self.capture_web.parse_craigslist(payload, {
+            "name": "Craigslist",
+            "market_hint": "SF SoMa/South Beach/Mission Bay",
+            "subarea": "sfc",
+            "category": "apa",
+        }, {})
+        self.assertEqual(records[0]["beds"], "5 bd")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -3,68 +3,886 @@
   "_probe_note": "Headless reachability probed 2026-06-28 and rechecked 2026-06-30 where noted (realistic desktop-Chrome UA): Craigslist sapi JSON 200; Zumper SSR __PRELOADED_STATE__ 200; Reddit JSON 403 (datacenter/UA block — works from a residential IP or with OAuth); Listing Project 200-but-bot-challenge; Furnished Finder 403; Zillow 403 (PerimeterX; rechecked 2026-06-30); Apartments.com 403 (rechecked 2026-06-30); Facebook 400/login wall; Kopa search 404 (login-gated). Tier each source by that result.",
   "rss": [],
   "web": [
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "south-bay-rooms", "market_hint": "Santa Clara", "subarea": "sby", "category": "roo", "params": {"max_price": "2800"}, "limit": 100, "enabled": true, "note": "Rooms/shares near the Santa Clara office — flexible + cheap is top priority."},
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "south-bay-sublets", "market_hint": "Santa Clara", "subarea": "sby", "category": "sub", "params": {"max_price": "4500"}, "limit": 100, "enabled": true, "note": "Sublets/temporary near office — the most-wanted lease shape."},
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "south-bay-apartments", "market_hint": "Sunnyvale", "subarea": "sby", "category": "apa", "params": {"min_price": "1500", "max_price": "6000"}, "limit": 50, "enabled": true, "note": "Apartments near office in the solo budget band (newest 50; the band has 4000+)."},
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "peninsula-rooms", "market_hint": "Redwood City/San Carlos/Belmont", "subarea": "pen", "category": "roo", "params": {"max_price": "2800"}, "limit": 80, "enabled": true, "note": "Caltrain-corridor rooms (San Mateo, Redwood City, Palo Alto)."},
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "peninsula-sublets", "market_hint": "Redwood City/San Carlos/Belmont", "subarea": "pen", "category": "sub", "params": {"max_price": "4500"}, "limit": 80, "enabled": true, "note": "Caltrain-corridor sublets/temporary."},
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "sf-sublets", "market_hint": "SF SoMa/South Beach/Mission Bay", "subarea": "sfc", "category": "sub", "params": {"max_price": "3800"}, "limit": 80, "enabled": true, "note": "SF lifestyle options; Caltrain bike-distance drives SF scoring."},
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "sf-rooms", "market_hint": "SF SoMa/South Beach/Mission Bay", "subarea": "sfc", "category": "roo", "params": {"max_price": "2200"}, "limit": 80, "enabled": true, "note": "SF rooms/shares near Caltrain for the Google SF office."},
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "east-bay-rooms", "market_hint": "Oakland/Berkeley", "subarea": "eby", "category": "roo", "params": {"max_price": "2800"}, "limit": 80, "enabled": true, "note": "East Bay rooms/shares in the same standard room budget lane; useful for SF-office scenarios and BART comparison."},
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "east-bay-sublets", "market_hint": "Oakland/Berkeley", "subarea": "eby", "category": "sub", "params": {"max_price": "4500"}, "limit": 80, "enabled": true, "note": "East Bay sublets/temporary housing in the same standard sublet budget lane."},
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "peninsula-apartments", "market_hint": "Redwood City/San Carlos/Belmont", "subarea": "pen", "category": "apa", "params": {"min_price": "1500", "max_price": "6000"}, "limit": 60, "enabled": true, "note": "Caltrain-corridor apartments (Palo Alto, Redwood City, San Mateo, Burlingame)."},
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "sf-apartments", "market_hint": "SF SoMa/South Beach/Mission Bay", "subarea": "sfc", "category": "apa", "params": {"min_price": "1500", "max_price": "6000"}, "limit": 60, "enabled": true, "note": "SF apartments in budget near Caltrain."},
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "sf-apartments-5plus", "market_hint": "SF SoMa/South Beach/Mission Bay", "subarea": "sfc", "category": "apa", "params": {"min_bedrooms": "5", "max_price": "25000"}, "limit": 250, "enabled": true, "note": "Targeted Craigslist SF-section 5+ bedroom apartments/houses. Kept separate from the solo-budget scrape because large houses need a much higher price cap; verify city/neighborhood because the sfc section can include Bay Area spillover."},
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "sf-sublets-5plus", "market_hint": "SF SoMa/South Beach/Mission Bay", "subarea": "sfc", "category": "sub", "params": {"min_bedrooms": "5", "max_price": "25000"}, "limit": 250, "enabled": true, "note": "Targeted Craigslist SF-section 5+ bedroom sublets/group-house posts; verify city/neighborhood because the sfc section can include Bay Area spillover."},
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "south-bay-apartments-5plus", "market_hint": "Santa Clara", "subarea": "sby", "category": "apa", "params": {"min_bedrooms": "5", "max_price": "30000"}, "limit": 250, "enabled": true, "note": "Targeted South Bay 5+ bedroom apartments/houses for group-house hunting. Reclassify explicit city spillover; room-in-house posts are useful but not whole-home 5+ inventory."},
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "south-bay-sublets-5plus", "market_hint": "Santa Clara", "subarea": "sby", "category": "sub", "params": {"min_bedrooms": "5", "max_price": "30000"}, "limit": 250, "enabled": true, "note": "Targeted South Bay 5+ bedroom sublets/group-house posts; high-flexibility lane for group housing."},
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "peninsula-apartments-5plus", "market_hint": "Redwood City/San Carlos/Belmont", "subarea": "pen", "category": "apa", "params": {"min_bedrooms": "5", "max_price": "30000"}, "limit": 250, "enabled": true, "note": "Targeted Peninsula/Caltrain 5+ bedroom apartments/houses for group housing."},
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "peninsula-sublets-5plus", "market_hint": "Redwood City/San Carlos/Belmont", "subarea": "pen", "category": "sub", "params": {"min_bedrooms": "5", "max_price": "30000"}, "limit": 250, "enabled": true, "note": "Targeted Peninsula/Caltrain 5+ bedroom sublets/group-house posts."},
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "east-bay-apartments-5plus", "market_hint": "Oakland/Berkeley", "subarea": "eby", "category": "apa", "params": {"min_bedrooms": "5", "max_price": "30000"}, "limit": 250, "enabled": true, "note": "Targeted East Bay 5+ bedroom apartments/houses; useful for SF-office scenarios and group budget comparison."},
-    {"name": "Craigslist", "kind": "craigslist_sapi", "label": "east-bay-sublets-5plus", "market_hint": "Oakland/Berkeley", "subarea": "eby", "category": "sub", "params": {"min_bedrooms": "5", "max_price": "30000"}, "limit": 250, "enabled": true, "note": "Targeted East Bay 5+ bedroom sublets/group-house posts."},
-    {"name": "River Terrace", "kind": "pm", "label": "udr-river-terrace", "provider": "udr", "market_hint": "Santa Clara", "city": "Santa Clara", "address": "730 Agnew Road, Santa Clara, CA 95054", "url": "https://www.udr.com/san-francisco-bay-area-apartments/santa-clara/river-terrace/apartments-pricing/", "limit": 80, "enabled": true, "note": "Direct UDR property-manager public availability state; exact unit prices/dates from embedded window.udr.jsonObjPropertyViewModel."},
-    {"name": "Marina Playa", "kind": "pm", "label": "udr-marina-playa", "provider": "udr", "market_hint": "Santa Clara", "city": "Santa Clara", "url": "https://www.udr.com/san-francisco-bay-area-apartments/santa-clara/marina-playa/apartments-pricing/", "limit": 80, "enabled": true, "note": "Direct UDR property-manager public availability state; exact unit prices/dates from embedded window.udr.jsonObjPropertyViewModel."},
-    {"name": "Birch Creek", "kind": "pm", "label": "udr-birch-creek", "provider": "udr", "market_hint": "Mountain View", "city": "Mountain View", "url": "https://www.udr.com/san-francisco-bay-area-apartments/mountain-view/birch-creek/apartments-pricing/", "limit": 80, "enabled": true, "note": "Direct UDR property-manager public availability state for a nearby Mountain View community."},
-    {"name": "Rent.com", "kind": "rent_next_data", "label": "rent-com-santa-clara", "market_hint": "Santa Clara", "url": "https://www.rent.com/california/santa-clara-apartments", "limit": 60, "enabled": true, "note": "Rent.com search page public __NEXT_DATA__ with listing/floorplan prices, beds, availability, and coordinates."},
-    {"name": "Rent.com", "kind": "rent_next_data", "label": "rent-com-sunnyvale", "market_hint": "Sunnyvale", "url": "https://www.rent.com/california/sunnyvale-apartments", "limit": 60, "enabled": true, "note": "Rent.com public __NEXT_DATA__ corridor lane."},
-    {"name": "Rent.com", "kind": "rent_next_data", "label": "rent-com-mountain-view", "market_hint": "Mountain View", "url": "https://www.rent.com/california/mountain-view-apartments", "limit": 60, "enabled": true, "note": "Rent.com public __NEXT_DATA__ corridor lane."},
-    {"name": "Rent.com", "kind": "rent_next_data", "label": "rent-com-palo-alto", "market_hint": "Palo Alto/Menlo Park", "url": "https://www.rent.com/california/palo-alto-apartments", "limit": 60, "enabled": true, "note": "Rent.com public __NEXT_DATA__ corridor lane."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "santa-clara", "market_hint": "Santa Clara", "url": "https://www.zumper.com/apartments-for-rent/santa-clara-ca?max-price=4000", "enabled": true, "note": "Apartment-complex listings (rent ranges + beds) from the page's embedded __PRELOADED_STATE__. Lighter anti-bot than Zillow."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "mountain-view", "market_hint": "Mountain View", "url": "https://www.zumper.com/apartments-for-rent/mountain-view-ca?max-price=4000", "enabled": true, "note": "South Bay / lower-Peninsula apartments near the Google-adjacent corridor."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "palo-alto", "market_hint": "Palo Alto/Menlo Park", "url": "https://www.zumper.com/apartments-for-rent/palo-alto-ca?max-price=4500", "enabled": true, "note": "Caltrain mid-corridor (Palo Alto / East Palo Alto / Menlo Park)."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "redwood-city", "market_hint": "Redwood City/San Carlos/Belmont", "url": "https://www.zumper.com/apartments-for-rent/redwood-city-ca?max-price=4000", "enabled": true, "note": "Caltrain mid-Peninsula."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "san-mateo", "market_hint": "San Mateo/Burlingame/Millbrae", "url": "https://www.zumper.com/apartments-for-rent/san-mateo-ca?max-price=4000", "enabled": true, "note": "Upper-Peninsula Caltrain (San Mateo / Burlingame)."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "san-francisco", "market_hint": "SF SoMa/South Beach/Mission Bay", "url": "https://www.zumper.com/apartments-for-rent/san-francisco-ca?max-price=4000", "enabled": true, "note": "SF apartments for the Google SF office."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "zumper-sf-5plus", "market_hint": "SF SoMa/South Beach/Mission Bay", "url": "https://www.zumper.com/apartments-for-rent/san-francisco-ca/5-beds?max-price=25000", "enabled": true, "note": "Targeted public Zumper San Francisco 5+ bedroom path. Re-probed 2026-06-30: parser returns visible 5, 6, 8, and 10 bedroom rows."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "zumper-san-jose-5plus", "market_hint": "North San Jose", "url": "https://www.zumper.com/apartments-for-rent/san-jose-ca/5-beds?max-price=30000", "enabled": true, "note": "Targeted public Zumper San Jose 5+ bedroom path for group housing."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "zumper-santa-clara-5plus", "market_hint": "Santa Clara", "url": "https://www.zumper.com/apartments-for-rent/santa-clara-ca/5-beds?max-price=30000", "enabled": true, "note": "Targeted public Zumper Santa Clara 5+ bedroom path for group housing."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "zumper-sunnyvale-5plus", "market_hint": "Sunnyvale", "url": "https://www.zumper.com/apartments-for-rent/sunnyvale-ca/5-beds?max-price=30000", "enabled": true, "note": "Targeted public Zumper Sunnyvale 5+ bedroom path for group housing."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "zumper-mountain-view-5plus", "market_hint": "Mountain View", "url": "https://www.zumper.com/apartments-for-rent/mountain-view-ca/5-beds?max-price=30000", "enabled": true, "note": "Targeted public Zumper Mountain View 5+ bedroom path for group housing."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "zumper-palo-alto-5plus", "market_hint": "Palo Alto/Menlo Park", "url": "https://www.zumper.com/apartments-for-rent/palo-alto-ca/5-beds?max-price=30000", "enabled": true, "note": "Targeted public Zumper Palo Alto 5+ bedroom path for group housing."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "zumper-redwood-city-5plus", "market_hint": "Redwood City/San Carlos/Belmont", "url": "https://www.zumper.com/apartments-for-rent/redwood-city-ca/5-beds?max-price=30000", "enabled": true, "note": "Targeted public Zumper Redwood City 5+ bedroom path for group housing."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "zumper-san-mateo-5plus", "market_hint": "San Mateo/Burlingame/Millbrae", "url": "https://www.zumper.com/apartments-for-rent/san-mateo-ca/5-beds?max-price=30000", "enabled": true, "note": "Targeted public Zumper San Mateo 5+ bedroom path for group housing."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "zumper-oakland-5plus", "market_hint": "Oakland/Berkeley", "url": "https://www.zumper.com/apartments-for-rent/oakland-ca/5-beds?max-price=30000", "enabled": true, "note": "Targeted public Zumper Oakland 5+ bedroom path for group/SF-office comparison."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "zumper-berkeley-5plus", "market_hint": "Oakland/Berkeley", "url": "https://www.zumper.com/apartments-for-rent/berkeley-ca/5-beds?max-price=30000", "enabled": true, "note": "Targeted public Zumper Berkeley 5+ bedroom path for group/SF-office comparison."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "san-jose", "market_hint": "North San Jose", "url": "https://www.zumper.com/apartments-for-rent/san-jose-ca?max-price=4000", "enabled": true, "note": "San Jose apartments (incl. North SJ near the office)."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "sunnyvale", "market_hint": "Sunnyvale", "url": "https://www.zumper.com/apartments-for-rent/sunnyvale-ca?max-price=4000", "enabled": true, "note": "Sunnyvale apartments near the South Bay offices."},
-    {"name": "Zumper", "kind": "zumper_state", "label": "berkeley", "market_hint": "Other Bay Area", "url": "https://www.zumper.com/apartments-for-rent/berkeley-ca?max-price=4000", "enabled": true, "note": "East Bay option (BART to SF) for group flexibility."}
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "south-bay-rooms",
+      "market_hint": "Santa Clara",
+      "subarea": "sby",
+      "category": "roo",
+      "params": {
+        "max_price": "2800"
+      },
+      "limit": 100,
+      "enabled": true,
+      "note": "Rooms/shares near the Santa Clara office — flexible + cheap is top priority."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "south-bay-sublets",
+      "market_hint": "Santa Clara",
+      "subarea": "sby",
+      "category": "sub",
+      "params": {
+        "max_price": "4500"
+      },
+      "limit": 100,
+      "enabled": true,
+      "note": "Sublets/temporary near office — the most-wanted lease shape."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "south-bay-apartments",
+      "market_hint": "Sunnyvale",
+      "subarea": "sby",
+      "category": "apa",
+      "params": {
+        "min_price": "1500",
+        "max_price": "6000"
+      },
+      "limit": 50,
+      "enabled": true,
+      "note": "Apartments near office in the solo budget band (newest 50; the band has 4000+)."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "peninsula-rooms",
+      "market_hint": "Redwood City/San Carlos/Belmont",
+      "subarea": "pen",
+      "category": "roo",
+      "params": {
+        "max_price": "2800"
+      },
+      "limit": 80,
+      "enabled": true,
+      "note": "Caltrain-corridor rooms (San Mateo, Redwood City, Palo Alto)."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "peninsula-sublets",
+      "market_hint": "Redwood City/San Carlos/Belmont",
+      "subarea": "pen",
+      "category": "sub",
+      "params": {
+        "max_price": "4500"
+      },
+      "limit": 80,
+      "enabled": true,
+      "note": "Caltrain-corridor sublets/temporary."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "sf-sublets",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "subarea": "sfc",
+      "category": "sub",
+      "params": {
+        "max_price": "3800"
+      },
+      "limit": 80,
+      "enabled": true,
+      "note": "SF lifestyle options; Caltrain bike-distance drives SF scoring."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "sf-rooms",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "subarea": "sfc",
+      "category": "roo",
+      "params": {
+        "max_price": "2200"
+      },
+      "limit": 80,
+      "enabled": true,
+      "note": "SF rooms/shares near Caltrain for the Google SF office."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "east-bay-rooms",
+      "market_hint": "Oakland/Berkeley",
+      "subarea": "eby",
+      "category": "roo",
+      "params": {
+        "max_price": "2800"
+      },
+      "limit": 80,
+      "enabled": true,
+      "note": "East Bay rooms/shares in the same standard room budget lane; useful for SF-office scenarios and BART comparison."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "east-bay-sublets",
+      "market_hint": "Oakland/Berkeley",
+      "subarea": "eby",
+      "category": "sub",
+      "params": {
+        "max_price": "4500"
+      },
+      "limit": 80,
+      "enabled": true,
+      "note": "East Bay sublets/temporary housing in the same standard sublet budget lane."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "peninsula-apartments",
+      "market_hint": "Redwood City/San Carlos/Belmont",
+      "subarea": "pen",
+      "category": "apa",
+      "params": {
+        "min_price": "1500",
+        "max_price": "6000"
+      },
+      "limit": 60,
+      "enabled": true,
+      "note": "Caltrain-corridor apartments (Palo Alto, Redwood City, San Mateo, Burlingame)."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "sf-apartments",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "subarea": "sfc",
+      "category": "apa",
+      "params": {
+        "min_price": "1500",
+        "max_price": "6000"
+      },
+      "limit": 60,
+      "enabled": true,
+      "note": "SF apartments in budget near Caltrain."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "sf-apartments-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "subarea": "sfc",
+      "category": "apa",
+      "params": {
+        "min_bedrooms": "5",
+        "max_price": "13250"
+      },
+      "limit": 250,
+      "enabled": true,
+      "note": "Targeted Craigslist SF-section 5+ bedroom apartments/houses. Kept separate from the solo-budget scrape because large houses need a much higher price cap; verify city/neighborhood because the sfc section can include Bay Area spillover. Budget cap updated 2026-07-01 for 5 people at $2,650/person ($13,250/mo total); SF-only group lane."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "sf-sublets-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "subarea": "sfc",
+      "category": "sub",
+      "params": {
+        "min_bedrooms": "5",
+        "max_price": "13250"
+      },
+      "limit": 250,
+      "enabled": true,
+      "note": "Targeted Craigslist SF-section 5+ bedroom sublets/group-house posts; verify city/neighborhood because the sfc section can include Bay Area spillover. Budget cap updated 2026-07-01 for 5 people at $2,650/person ($13,250/mo total); SF-only group lane."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "sf-apartments-5-bedroom-keyword-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "subarea": "sfc",
+      "category": "apa",
+      "params": {
+        "query": "5 bedroom",
+        "max_price": "13250"
+      },
+      "limit": 250,
+      "enabled": true,
+      "note": "SF-only Craigslist keyword 5+ lane for posts missing the bedrooms filter bucket; query phrase '5 bedroom'; max $13,250/mo for 5 people. Title parser must confirm explicit bedroom text and avoid price/bath bleed."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "sf-apartments-5br-keyword-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "subarea": "sfc",
+      "category": "apa",
+      "params": {
+        "query": "5br",
+        "max_price": "13250"
+      },
+      "limit": 250,
+      "enabled": true,
+      "note": "SF-only Craigslist keyword 5+ lane for posts missing the bedrooms filter bucket; query phrase '5br'; max $13,250/mo for 5 people. Title parser must confirm explicit bedroom text and avoid price/bath bleed."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "sf-apartments-6-bedroom-keyword-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "subarea": "sfc",
+      "category": "apa",
+      "params": {
+        "query": "6 bedroom",
+        "max_price": "13250"
+      },
+      "limit": 250,
+      "enabled": true,
+      "note": "SF-only Craigslist keyword 5+ lane for posts missing the bedrooms filter bucket; query phrase '6 bedroom'; max $13,250/mo for 5 people. Title parser must confirm explicit bedroom text and avoid price/bath bleed."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "sf-apartments-6br-keyword-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "subarea": "sfc",
+      "category": "apa",
+      "params": {
+        "query": "6br",
+        "max_price": "13250"
+      },
+      "limit": 250,
+      "enabled": true,
+      "note": "SF-only Craigslist keyword 5+ lane for posts missing the bedrooms filter bucket; query phrase '6br'; max $13,250/mo for 5 people. Title parser must confirm explicit bedroom text and avoid price/bath bleed."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "sf-apartments-7-bedroom-keyword-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "subarea": "sfc",
+      "category": "apa",
+      "params": {
+        "query": "7 bedroom",
+        "max_price": "13250"
+      },
+      "limit": 250,
+      "enabled": true,
+      "note": "SF-only Craigslist keyword 5+ lane for posts missing the bedrooms filter bucket; query phrase '7 bedroom'; max $13,250/mo for 5 people. Title parser must confirm explicit bedroom text and avoid price/bath bleed."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "sf-sublets-5-bedroom-keyword-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "subarea": "sfc",
+      "category": "sub",
+      "params": {
+        "query": "5 bedroom",
+        "max_price": "13250"
+      },
+      "limit": 250,
+      "enabled": true,
+      "note": "SF-only Craigslist keyword 5+ lane for posts missing the bedrooms filter bucket; query phrase '5 bedroom'; max $13,250/mo for 5 people. Title parser must confirm explicit bedroom text and avoid price/bath bleed."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "sf-sublets-5br-keyword-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "subarea": "sfc",
+      "category": "sub",
+      "params": {
+        "query": "5br",
+        "max_price": "13250"
+      },
+      "limit": 250,
+      "enabled": true,
+      "note": "SF-only Craigslist keyword 5+ lane for posts missing the bedrooms filter bucket; query phrase '5br'; max $13,250/mo for 5 people. Title parser must confirm explicit bedroom text and avoid price/bath bleed."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "sf-sublets-6-bedroom-keyword-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "subarea": "sfc",
+      "category": "sub",
+      "params": {
+        "query": "6 bedroom",
+        "max_price": "13250"
+      },
+      "limit": 250,
+      "enabled": true,
+      "note": "SF-only Craigslist keyword 5+ lane for posts missing the bedrooms filter bucket; query phrase '6 bedroom'; max $13,250/mo for 5 people. Title parser must confirm explicit bedroom text and avoid price/bath bleed."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "sf-sublets-6br-keyword-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "subarea": "sfc",
+      "category": "sub",
+      "params": {
+        "query": "6br",
+        "max_price": "13250"
+      },
+      "limit": 250,
+      "enabled": true,
+      "note": "SF-only Craigslist keyword 5+ lane for posts missing the bedrooms filter bucket; query phrase '6br'; max $13,250/mo for 5 people. Title parser must confirm explicit bedroom text and avoid price/bath bleed."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "sf-sublets-7-bedroom-keyword-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "subarea": "sfc",
+      "category": "sub",
+      "params": {
+        "query": "7 bedroom",
+        "max_price": "13250"
+      },
+      "limit": 250,
+      "enabled": true,
+      "note": "SF-only Craigslist keyword 5+ lane for posts missing the bedrooms filter bucket; query phrase '7 bedroom'; max $13,250/mo for 5 people. Title parser must confirm explicit bedroom text and avoid price/bath bleed."
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "south-bay-apartments-5plus",
+      "market_hint": "Santa Clara",
+      "subarea": "sby",
+      "category": "apa",
+      "params": {
+        "min_bedrooms": "5",
+        "max_price": "30000"
+      },
+      "limit": 250,
+      "enabled": false,
+      "note": "Targeted South Bay 5+ bedroom apartments/houses for group-house hunting. Reclassify explicit city spillover; room-in-house posts are useful but not whole-home 5+ inventory. disabled 2026-07-01: group 5+ search is SF-only"
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "south-bay-sublets-5plus",
+      "market_hint": "Santa Clara",
+      "subarea": "sby",
+      "category": "sub",
+      "params": {
+        "min_bedrooms": "5",
+        "max_price": "30000"
+      },
+      "limit": 250,
+      "enabled": false,
+      "note": "Targeted South Bay 5+ bedroom sublets/group-house posts; high-flexibility lane for group housing. disabled 2026-07-01: group 5+ search is SF-only"
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "peninsula-apartments-5plus",
+      "market_hint": "Redwood City/San Carlos/Belmont",
+      "subarea": "pen",
+      "category": "apa",
+      "params": {
+        "min_bedrooms": "5",
+        "max_price": "30000"
+      },
+      "limit": 250,
+      "enabled": false,
+      "note": "Targeted Peninsula/Caltrain 5+ bedroom apartments/houses for group housing. disabled 2026-07-01: group 5+ search is SF-only"
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "peninsula-sublets-5plus",
+      "market_hint": "Redwood City/San Carlos/Belmont",
+      "subarea": "pen",
+      "category": "sub",
+      "params": {
+        "min_bedrooms": "5",
+        "max_price": "30000"
+      },
+      "limit": 250,
+      "enabled": false,
+      "note": "Targeted Peninsula/Caltrain 5+ bedroom sublets/group-house posts. disabled 2026-07-01: group 5+ search is SF-only"
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "east-bay-apartments-5plus",
+      "market_hint": "Oakland/Berkeley",
+      "subarea": "eby",
+      "category": "apa",
+      "params": {
+        "min_bedrooms": "5",
+        "max_price": "30000"
+      },
+      "limit": 250,
+      "enabled": false,
+      "note": "Targeted East Bay 5+ bedroom apartments/houses; useful for SF-office scenarios and group budget comparison. disabled 2026-07-01: group 5+ search is SF-only"
+    },
+    {
+      "name": "Craigslist",
+      "kind": "craigslist_sapi",
+      "label": "east-bay-sublets-5plus",
+      "market_hint": "Oakland/Berkeley",
+      "subarea": "eby",
+      "category": "sub",
+      "params": {
+        "min_bedrooms": "5",
+        "max_price": "30000"
+      },
+      "limit": 250,
+      "enabled": false,
+      "note": "Targeted East Bay 5+ bedroom sublets/group-house posts. disabled 2026-07-01: group 5+ search is SF-only"
+    },
+    {
+      "name": "River Terrace",
+      "kind": "pm",
+      "label": "udr-river-terrace",
+      "provider": "udr",
+      "market_hint": "Santa Clara",
+      "city": "Santa Clara",
+      "address": "730 Agnew Road, Santa Clara, CA 95054",
+      "url": "https://www.udr.com/san-francisco-bay-area-apartments/santa-clara/river-terrace/apartments-pricing/",
+      "limit": 80,
+      "enabled": true,
+      "note": "Direct UDR property-manager public availability state; exact unit prices/dates from embedded window.udr.jsonObjPropertyViewModel."
+    },
+    {
+      "name": "Marina Playa",
+      "kind": "pm",
+      "label": "udr-marina-playa",
+      "provider": "udr",
+      "market_hint": "Santa Clara",
+      "city": "Santa Clara",
+      "url": "https://www.udr.com/san-francisco-bay-area-apartments/santa-clara/marina-playa/apartments-pricing/",
+      "limit": 80,
+      "enabled": true,
+      "note": "Direct UDR property-manager public availability state; exact unit prices/dates from embedded window.udr.jsonObjPropertyViewModel."
+    },
+    {
+      "name": "Birch Creek",
+      "kind": "pm",
+      "label": "udr-birch-creek",
+      "provider": "udr",
+      "market_hint": "Mountain View",
+      "city": "Mountain View",
+      "url": "https://www.udr.com/san-francisco-bay-area-apartments/mountain-view/birch-creek/apartments-pricing/",
+      "limit": 80,
+      "enabled": true,
+      "note": "Direct UDR property-manager public availability state for a nearby Mountain View community."
+    },
+    {
+      "name": "Rent.com",
+      "kind": "rent_next_data",
+      "label": "rent-com-santa-clara",
+      "market_hint": "Santa Clara",
+      "url": "https://www.rent.com/california/santa-clara-apartments",
+      "limit": 60,
+      "enabled": true,
+      "note": "Rent.com search page public __NEXT_DATA__ with listing/floorplan prices, beds, availability, and coordinates."
+    },
+    {
+      "name": "Rent.com",
+      "kind": "rent_next_data",
+      "label": "rent-com-sunnyvale",
+      "market_hint": "Sunnyvale",
+      "url": "https://www.rent.com/california/sunnyvale-apartments",
+      "limit": 60,
+      "enabled": true,
+      "note": "Rent.com public __NEXT_DATA__ corridor lane."
+    },
+    {
+      "name": "Rent.com",
+      "kind": "rent_next_data",
+      "label": "rent-com-mountain-view",
+      "market_hint": "Mountain View",
+      "url": "https://www.rent.com/california/mountain-view-apartments",
+      "limit": 60,
+      "enabled": true,
+      "note": "Rent.com public __NEXT_DATA__ corridor lane."
+    },
+    {
+      "name": "Rent.com",
+      "kind": "rent_next_data",
+      "label": "rent-com-palo-alto",
+      "market_hint": "Palo Alto/Menlo Park",
+      "url": "https://www.rent.com/california/palo-alto-apartments",
+      "limit": 60,
+      "enabled": true,
+      "note": "Rent.com public __NEXT_DATA__ corridor lane."
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "santa-clara",
+      "market_hint": "Santa Clara",
+      "url": "https://www.zumper.com/apartments-for-rent/santa-clara-ca?max-price=4000",
+      "enabled": true,
+      "note": "Apartment-complex listings (rent ranges + beds) from the page's embedded __PRELOADED_STATE__. Lighter anti-bot than Zillow."
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "mountain-view",
+      "market_hint": "Mountain View",
+      "url": "https://www.zumper.com/apartments-for-rent/mountain-view-ca?max-price=4000",
+      "enabled": true,
+      "note": "South Bay / lower-Peninsula apartments near the Google-adjacent corridor."
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "palo-alto",
+      "market_hint": "Palo Alto/Menlo Park",
+      "url": "https://www.zumper.com/apartments-for-rent/palo-alto-ca?max-price=4500",
+      "enabled": true,
+      "note": "Caltrain mid-corridor (Palo Alto / East Palo Alto / Menlo Park)."
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "redwood-city",
+      "market_hint": "Redwood City/San Carlos/Belmont",
+      "url": "https://www.zumper.com/apartments-for-rent/redwood-city-ca?max-price=4000",
+      "enabled": true,
+      "note": "Caltrain mid-Peninsula."
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "san-mateo",
+      "market_hint": "San Mateo/Burlingame/Millbrae",
+      "url": "https://www.zumper.com/apartments-for-rent/san-mateo-ca?max-price=4000",
+      "enabled": true,
+      "note": "Upper-Peninsula Caltrain (San Mateo / Burlingame)."
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "san-francisco",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "url": "https://www.zumper.com/apartments-for-rent/san-francisco-ca?max-price=4000",
+      "enabled": true,
+      "note": "SF apartments for the Google SF office."
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "zumper-sf-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "url": "https://www.zumper.com/apartments-for-rent/san-francisco-ca/5-beds?max-price=13250",
+      "enabled": true,
+      "note": "Targeted public Zumper San Francisco 5+ bedroom path. Re-probed 2026-06-30: parser returns visible 5, 6, 8, and 10 bedroom rows. Budget cap updated 2026-07-01 for 5 people at $2,650/person ($13,250/mo total); SF-only group lane."
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "zumper-san-jose-5plus",
+      "market_hint": "North San Jose",
+      "url": "https://www.zumper.com/apartments-for-rent/san-jose-ca/5-beds?max-price=30000",
+      "enabled": false,
+      "note": "Targeted public Zumper San Jose 5+ bedroom path for group housing. disabled 2026-07-01: group 5+ search is SF-only"
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "zumper-santa-clara-5plus",
+      "market_hint": "Santa Clara",
+      "url": "https://www.zumper.com/apartments-for-rent/santa-clara-ca/5-beds?max-price=30000",
+      "enabled": false,
+      "note": "Targeted public Zumper Santa Clara 5+ bedroom path for group housing. disabled 2026-07-01: group 5+ search is SF-only"
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "zumper-sunnyvale-5plus",
+      "market_hint": "Sunnyvale",
+      "url": "https://www.zumper.com/apartments-for-rent/sunnyvale-ca/5-beds?max-price=30000",
+      "enabled": false,
+      "note": "Targeted public Zumper Sunnyvale 5+ bedroom path for group housing. disabled 2026-07-01: group 5+ search is SF-only"
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "zumper-mountain-view-5plus",
+      "market_hint": "Mountain View",
+      "url": "https://www.zumper.com/apartments-for-rent/mountain-view-ca/5-beds?max-price=30000",
+      "enabled": false,
+      "note": "Targeted public Zumper Mountain View 5+ bedroom path for group housing. disabled 2026-07-01: group 5+ search is SF-only"
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "zumper-palo-alto-5plus",
+      "market_hint": "Palo Alto/Menlo Park",
+      "url": "https://www.zumper.com/apartments-for-rent/palo-alto-ca/5-beds?max-price=30000",
+      "enabled": false,
+      "note": "Targeted public Zumper Palo Alto 5+ bedroom path for group housing. disabled 2026-07-01: group 5+ search is SF-only"
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "zumper-redwood-city-5plus",
+      "market_hint": "Redwood City/San Carlos/Belmont",
+      "url": "https://www.zumper.com/apartments-for-rent/redwood-city-ca/5-beds?max-price=30000",
+      "enabled": false,
+      "note": "Targeted public Zumper Redwood City 5+ bedroom path for group housing. disabled 2026-07-01: group 5+ search is SF-only"
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "zumper-san-mateo-5plus",
+      "market_hint": "San Mateo/Burlingame/Millbrae",
+      "url": "https://www.zumper.com/apartments-for-rent/san-mateo-ca/5-beds?max-price=30000",
+      "enabled": false,
+      "note": "Targeted public Zumper San Mateo 5+ bedroom path for group housing. disabled 2026-07-01: group 5+ search is SF-only"
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "zumper-oakland-5plus",
+      "market_hint": "Oakland/Berkeley",
+      "url": "https://www.zumper.com/apartments-for-rent/oakland-ca/5-beds?max-price=30000",
+      "enabled": false,
+      "note": "Targeted public Zumper Oakland 5+ bedroom path for group/SF-office comparison. disabled 2026-07-01: group 5+ search is SF-only"
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "zumper-berkeley-5plus",
+      "market_hint": "Oakland/Berkeley",
+      "url": "https://www.zumper.com/apartments-for-rent/berkeley-ca/5-beds?max-price=30000",
+      "enabled": false,
+      "note": "Targeted public Zumper Berkeley 5+ bedroom path for group/SF-office comparison. disabled 2026-07-01: group 5+ search is SF-only"
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "san-jose",
+      "market_hint": "North San Jose",
+      "url": "https://www.zumper.com/apartments-for-rent/san-jose-ca?max-price=4000",
+      "enabled": true,
+      "note": "San Jose apartments (incl. North SJ near the office)."
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "sunnyvale",
+      "market_hint": "Sunnyvale",
+      "url": "https://www.zumper.com/apartments-for-rent/sunnyvale-ca?max-price=4000",
+      "enabled": true,
+      "note": "Sunnyvale apartments near the South Bay offices."
+    },
+    {
+      "name": "Zumper",
+      "kind": "zumper_state",
+      "label": "berkeley",
+      "market_hint": "Other Bay Area",
+      "url": "https://www.zumper.com/apartments-for-rent/berkeley-ca?max-price=4000",
+      "enabled": true,
+      "note": "East Bay option (BART to SF) for group flexibility."
+    }
   ],
   "_ai_browser_comment": "Sources that need a visible/logged-in browser because they block headless reads (anti-bot or login wall — see _probe_note). The CONDUCTOR captures them (Codex: Chrome plugin; Claude: Claude-in-Chrome / Computer Use), writing ONE JSON array per source into the capture dir as ai-<slug>.json, then re-runs run.py. Capture VISIBLE facts only; never bypass CAPTCHA/login/rate limits; never message posters or submit anything. COVER THE WHOLE COMMUTE CORRIDOR, not just Santa Clara: South Bay (Santa Clara/Sunnyvale/Mountain View), Peninsula/Caltrain (Palo Alto, East Palo Alto, Redwood City, San Mateo, Burlingame), and SF (for the Google SF office). FB Marketplace: extract a[href*='/marketplace/item/'] cards (price/title/city); run multiple map centers via latitude/longitude/radius since one center can't reach both offices. Zillow: data is in the page's __NEXT_DATA__ (find the listResults array: zpid/detailUrl/address/price/units) — navigate per city /<city>-ca/rentals/ and read it; a real signed-in browser passes PerimeterX where headless 403s, but the exact SF 5+ filter can trigger human verification. Apartments.com: headless 403s; use the real browser and capture visible article[data-listingid] card facts from each city path.",
   "ai_browser": [
-    {"name": "Facebook Marketplace (corridor rentals)", "market_hint": "Santa Clara", "search_url": "https://www.facebook.com/marketplace/category/propertyrentals/?sortBy=creation_time_descend&maxPrice=4000&latitude=37.3505&longitude=-121.9427&radius=24", "status": "WORKS (logged-in browser)", "centers": [{"label": "South Bay", "latitude": 37.3505, "longitude": -121.9427, "radius": 24}, {"label": "Mid-Peninsula", "latitude": 37.49, "longitude": -122.23, "radius": 16}, {"label": "SF", "latitude": 37.7749, "longitude": -122.4194, "radius": 13}], "note": "Logged-in visible browser; location already follows the lat/long in the URL. Run each center in 'centers'. Scroll to lazy-load. Subleases/rooms are top priority."},
-    {"name": "Facebook Marketplace (SF 5+ bedroom rentals)", "label": "facebook-sf-5plus", "market_hint": "SF SoMa/South Beach/Mission Bay", "search_url": "https://www.facebook.com/marketplace/category/propertyrentals/?query=5%20bedroom&sortBy=creation_time_descend&maxPrice=25000&latitude=37.7749&longitude=-122.4194&radius=13", "status": "WORKS (logged-in browser)", "centers": [{"label": "SF", "latitude": 37.7749, "longitude": -122.4194, "radius": 13}], "note": "Visible-browser 5+ lane. Use the SF center and search/filter text for 5 bedroom, 6 bedroom, group house, or whole house; capture only cards visibly showing 5+ bedrooms or listing text that clearly says 5+."},
-    {"name": "Facebook housing groups (Bay Area sublets/rooms)", "market_hint": "Other Bay Area", "search_url": "https://www.facebook.com/groups/feed/", "blocked_reason": "Login wall + group membership required; noisy feed.", "note": "Groups like 'Bay Area Housing, Rooms, Sublets & Roommates'. Capture visible post facts only; do not message posters. Park if the feed is noisy/unreachable."},
-    {"name": "Zillow Rentals (corridor)", "market_hint": "Santa Clara", "search_url": "https://www.zillow.com/santa-clara-ca/rentals/", "status": "WORKS (real browser, __NEXT_DATA__); HEADLESS BLOCKED 2026-06-30 HTTP 403", "cities": ["santa-clara-ca", "sunnyvale-ca", "mountain-view-ca", "palo-alto-ca", "east-palo-alto-ca", "redwood-city-ca", "san-mateo-ca", "san-francisco-ca"], "note": "Navigate /<city>/rentals/ for each city in 'cities' and read listResults from __NEXT_DATA__ (zpid/detailUrl/address/price/units). Real signed-in browser passes PerimeterX where headless 403s."},
-    {"name": "Zillow Rentals (SF 5+ bedrooms)", "label": "zillow-sf-5plus", "market_hint": "SF SoMa/South Beach/Mission Bay", "search_url": "https://www.zillow.com/san-francisco-ca/rentals/5-_beds/", "status": "AI_BROWSER REQUIRED; 2026-07-01 exact 5+ URL triggered Zillow human verification", "cities": ["san-francisco-ca"], "note": "Visible-browser 5+ lane. 2026-07-01 Chrome probe: /5-_beds/ loaded but returned unfiltered SF rentals; applying the UI Beds 5+ control generated searchQueryState with beds.min=5, and direct reload of that URL showed Zillow Press & Hold human verification. Capture visible cards or __NEXT_DATA__ listResults only after the real browser loads the exact 5+ result set without challenge. Do not bypass; record Source Blocked if challenged."},
-    {"name": "Zillow Rentals (South Bay 5+ bedrooms)", "label": "zillow-south-bay-5plus", "market_hint": "Santa Clara", "search_url": "https://www.zillow.com/san-jose-ca/rentals/5-_beds/", "status": "AI_BROWSER REQUIRED; exact 5+ browser path may trigger human verification", "cities": ["san-jose-ca", "santa-clara-ca", "sunnyvale-ca", "mountain-view-ca"], "note": "Visible-browser 5+ lane for South Bay group housing. Capture only if the exact 5+ result set loads without CAPTCHA/human verification; otherwise record Source Blocked."},
-    {"name": "Zillow Rentals (Peninsula 5+ bedrooms)", "label": "zillow-peninsula-5plus", "market_hint": "Redwood City/San Carlos/Belmont", "search_url": "https://www.zillow.com/redwood-city-ca/rentals/5-_beds/", "status": "AI_BROWSER REQUIRED; exact 5+ browser path may trigger human verification", "cities": ["palo-alto-ca", "menlo-park-ca", "redwood-city-ca", "san-mateo-ca"], "note": "Visible-browser 5+ lane for Peninsula/Caltrain group housing. Capture only if the exact 5+ result set loads without CAPTCHA/human verification; otherwise record Source Blocked."},
-    {"name": "Zillow Rentals (East Bay 5+ bedrooms)", "label": "zillow-east-bay-5plus", "market_hint": "Oakland/Berkeley", "search_url": "https://www.zillow.com/oakland-ca/rentals/5-_beds/", "status": "AI_BROWSER REQUIRED; exact 5+ browser path may trigger human verification", "cities": ["oakland-ca", "berkeley-ca"], "note": "Visible-browser 5+ lane for East Bay group/SF-office comparison. Capture only if the exact 5+ result set loads without CAPTCHA/human verification; otherwise record Source Blocked."},
-    {"name": "Apartments.com Rentals (corridor)", "market_hint": "Santa Clara", "search_url": "https://www.apartments.com/santa-clara-ca/", "status": "AI_BROWSER REQUIRED; HEADLESS BLOCKED 2026-06-30 HTTP 403", "cities": ["santa-clara-ca", "sunnyvale-ca", "mountain-view-ca", "palo-alto-ca", "redwood-city-ca", "san-mateo-ca", "san-francisco-ca", "san-jose-ca"], "note": "Navigate https://www.apartments.com/<city>/ for each city in 'cities'. Capture visible listing-card facts only: title/building, URL, rent/range, beds/baths, address/city, availability/fees if visible. Record Source Blocked if the visible browser hits CAPTCHA or access denial."},
-    {"name": "Apartments.com Rentals (SF 5+ bedrooms)", "label": "apartments-com-sf-5plus", "market_hint": "SF SoMa/South Beach/Mission Bay", "search_url": "https://www.apartments.com/san-francisco-ca/5-bedrooms/", "status": "AI_BROWSER REQUIRED; 2026-07-01 Chrome probe captured 9 SF 5+ cards", "cities": ["san-francisco-ca"], "note": "Visible-browser 5+ lane. Apartments.com may label this route as 4+ Beds. Scrape visible article[data-listingid] cards, parse the card's visible bed text, and keep only rows with 5+ Beds/Bedrooms/bd or listing text that clearly says 5+. Ignore 4-bedroom cards. 2026-07-01 Chrome probe on this URL found 34 cards and 9 verified SF 5+ rows."},
-    {"name": "Apartments.com Rentals (South Bay 5+ bedrooms)", "label": "apartments-com-south-bay-5plus", "market_hint": "Santa Clara", "search_url": "https://www.apartments.com/san-jose-ca/5-bedrooms/", "status": "AI_BROWSER REQUIRED", "cities": ["san-jose-ca", "santa-clara-ca", "sunnyvale-ca", "mountain-view-ca"], "note": "Visible-browser 5+ lane for South Bay group housing. Apartments.com may label 5-bedroom routes as 4+ Beds; scrape visible article[data-listingid] cards and keep only visible 5+ bed rows."},
-    {"name": "Apartments.com Rentals (Peninsula 5+ bedrooms)", "label": "apartments-com-peninsula-5plus", "market_hint": "Redwood City/San Carlos/Belmont", "search_url": "https://www.apartments.com/redwood-city-ca/5-bedrooms/", "status": "AI_BROWSER REQUIRED", "cities": ["palo-alto-ca", "menlo-park-ca", "redwood-city-ca", "san-mateo-ca"], "note": "Visible-browser 5+ lane for Peninsula/Caltrain group housing. Scrape visible article[data-listingid] cards and keep only visible 5+ bed rows."},
-    {"name": "Apartments.com Rentals (East Bay 5+ bedrooms)", "label": "apartments-com-east-bay-5plus", "market_hint": "Oakland/Berkeley", "search_url": "https://www.apartments.com/oakland-ca/5-bedrooms/", "status": "AI_BROWSER REQUIRED", "cities": ["oakland-ca", "berkeley-ca"], "note": "Visible-browser 5+ lane for East Bay group/SF-office comparison. Scrape visible article[data-listingid] cards and keep only visible 5+ bed rows."},
-    {"name": "Furnished Finder (Santa Clara area)", "market_hint": "Santa Clara", "search_url": "https://www.furnishedfinder.com/", "blocked_reason": "Old /housing/<city> route now 302s to an interactive map-search homepage; no keyless JSON results API (candidates 404 or return the SPA shell). Needs manual autocomplete selection.", "note": "Monthly furnished; flexible terms. Type the city in the search box, select the autocomplete option, then read the result cards. Park if too fiddly."}
+    {
+      "name": "Facebook Marketplace (corridor rentals)",
+      "market_hint": "Santa Clara",
+      "search_url": "https://www.facebook.com/marketplace/category/propertyrentals/?sortBy=creation_time_descend&maxPrice=4000&latitude=37.3505&longitude=-121.9427&radius=24",
+      "status": "WORKS (logged-in browser)",
+      "centers": [
+        {
+          "label": "South Bay",
+          "latitude": 37.3505,
+          "longitude": -121.9427,
+          "radius": 24
+        },
+        {
+          "label": "Mid-Peninsula",
+          "latitude": 37.49,
+          "longitude": -122.23,
+          "radius": 16
+        },
+        {
+          "label": "SF",
+          "latitude": 37.7749,
+          "longitude": -122.4194,
+          "radius": 13
+        }
+      ],
+      "note": "Logged-in visible browser; location already follows the lat/long in the URL. Run each center in 'centers'. Scroll to lazy-load. Subleases/rooms are top priority."
+    },
+    {
+      "name": "Facebook Marketplace (SF 5+ bedroom rentals)",
+      "label": "facebook-sf-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "search_url": "https://www.facebook.com/marketplace/category/propertyrentals/?query=5+bedroom&sortBy=creation_time_descend&maxPrice=13250&latitude=37.7749&longitude=-122.4194&radius=13",
+      "status": "WORKS (logged-in browser)",
+      "centers": [
+        {
+          "label": "SF",
+          "latitude": 37.7749,
+          "longitude": -122.4194,
+          "radius": 13
+        }
+      ],
+      "note": "Visible-browser 5+ lane. Use the SF center and search/filter text for 5 bedroom, 6 bedroom, group house, or whole house; capture only cards visibly showing 5+ bedrooms or listing text that clearly says 5+. Budget cap for the SF-only 5-person group lane is $13,250/mo total ($2,650/person); apply that cap in visible-browser filters/results.",
+      "enabled": true
+    },
+    {
+      "name": "Facebook housing groups (Bay Area sublets/rooms)",
+      "market_hint": "Other Bay Area",
+      "search_url": "https://www.facebook.com/groups/feed/",
+      "blocked_reason": "Login wall + group membership required; noisy feed.",
+      "note": "Groups like 'Bay Area Housing, Rooms, Sublets & Roommates'. Capture visible post facts only; do not message posters. Park if the feed is noisy/unreachable."
+    },
+    {
+      "name": "Zillow Rentals (corridor)",
+      "market_hint": "Santa Clara",
+      "search_url": "https://www.zillow.com/santa-clara-ca/rentals/",
+      "status": "WORKS (real browser, __NEXT_DATA__); HEADLESS BLOCKED 2026-06-30 HTTP 403",
+      "cities": [
+        "santa-clara-ca",
+        "sunnyvale-ca",
+        "mountain-view-ca",
+        "palo-alto-ca",
+        "east-palo-alto-ca",
+        "redwood-city-ca",
+        "san-mateo-ca",
+        "san-francisco-ca"
+      ],
+      "note": "Navigate /<city>/rentals/ for each city in 'cities' and read listResults from __NEXT_DATA__ (zpid/detailUrl/address/price/units). Real signed-in browser passes PerimeterX where headless 403s."
+    },
+    {
+      "name": "Zillow Rentals (SF 5+ bedrooms)",
+      "label": "zillow-sf-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "search_url": "https://www.zillow.com/san-francisco-ca/rentals/5-_beds/",
+      "status": "AI_BROWSER REQUIRED; 2026-07-01 exact 5+ URL triggered Zillow human verification",
+      "cities": [
+        "san-francisco-ca"
+      ],
+      "note": "Visible-browser 5+ lane. 2026-07-01 Chrome probe: /5-_beds/ loaded but returned unfiltered SF rentals; applying the UI Beds 5+ control generated searchQueryState with beds.min=5, and direct reload of that URL showed Zillow Press & Hold human verification. Capture visible cards or __NEXT_DATA__ listResults only after the real browser loads the exact 5+ result set without challenge. Do not bypass; record Source Blocked if challenged. Budget cap for the SF-only 5-person group lane is $13,250/mo total ($2,650/person); apply that cap in visible-browser filters/results.",
+      "enabled": true
+    },
+    {
+      "name": "Zillow Rentals (South Bay 5+ bedrooms)",
+      "label": "zillow-south-bay-5plus",
+      "market_hint": "Santa Clara",
+      "search_url": "https://www.zillow.com/san-jose-ca/rentals/5-_beds/",
+      "status": "AI_BROWSER REQUIRED; exact 5+ browser path may trigger human verification",
+      "cities": [
+        "san-jose-ca",
+        "santa-clara-ca",
+        "sunnyvale-ca",
+        "mountain-view-ca"
+      ],
+      "note": "Visible-browser 5+ lane for South Bay group housing. Capture only if the exact 5+ result set loads without CAPTCHA/human verification; otherwise record Source Blocked. disabled 2026-07-01: group 5+ search is SF-only",
+      "enabled": false
+    },
+    {
+      "name": "Zillow Rentals (Peninsula 5+ bedrooms)",
+      "label": "zillow-peninsula-5plus",
+      "market_hint": "Redwood City/San Carlos/Belmont",
+      "search_url": "https://www.zillow.com/redwood-city-ca/rentals/5-_beds/",
+      "status": "AI_BROWSER REQUIRED; exact 5+ browser path may trigger human verification",
+      "cities": [
+        "palo-alto-ca",
+        "menlo-park-ca",
+        "redwood-city-ca",
+        "san-mateo-ca"
+      ],
+      "note": "Visible-browser 5+ lane for Peninsula/Caltrain group housing. Capture only if the exact 5+ result set loads without CAPTCHA/human verification; otherwise record Source Blocked. disabled 2026-07-01: group 5+ search is SF-only",
+      "enabled": false
+    },
+    {
+      "name": "Zillow Rentals (East Bay 5+ bedrooms)",
+      "label": "zillow-east-bay-5plus",
+      "market_hint": "Oakland/Berkeley",
+      "search_url": "https://www.zillow.com/oakland-ca/rentals/5-_beds/",
+      "status": "AI_BROWSER REQUIRED; exact 5+ browser path may trigger human verification",
+      "cities": [
+        "oakland-ca",
+        "berkeley-ca"
+      ],
+      "note": "Visible-browser 5+ lane for East Bay group/SF-office comparison. Capture only if the exact 5+ result set loads without CAPTCHA/human verification; otherwise record Source Blocked. disabled 2026-07-01: group 5+ search is SF-only",
+      "enabled": false
+    },
+    {
+      "name": "Apartments.com Rentals (corridor)",
+      "market_hint": "Santa Clara",
+      "search_url": "https://www.apartments.com/santa-clara-ca/",
+      "status": "AI_BROWSER REQUIRED; HEADLESS BLOCKED 2026-06-30 HTTP 403",
+      "cities": [
+        "santa-clara-ca",
+        "sunnyvale-ca",
+        "mountain-view-ca",
+        "palo-alto-ca",
+        "redwood-city-ca",
+        "san-mateo-ca",
+        "san-francisco-ca",
+        "san-jose-ca"
+      ],
+      "note": "Navigate https://www.apartments.com/<city>/ for each city in 'cities'. Capture visible listing-card facts only: title/building, URL, rent/range, beds/baths, address/city, availability/fees if visible. Record Source Blocked if the visible browser hits CAPTCHA or access denial."
+    },
+    {
+      "name": "Apartments.com Rentals (SF 5+ bedrooms)",
+      "label": "apartments-com-sf-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "search_url": "https://www.apartments.com/san-francisco-ca/5-bedrooms/",
+      "status": "AI_BROWSER REQUIRED; 2026-07-01 Chrome probe captured 9 SF 5+ cards",
+      "cities": [
+        "san-francisco-ca"
+      ],
+      "note": "Visible-browser 5+ lane. Apartments.com may label this route as 4+ Beds. Scrape visible article[data-listingid] cards, parse the card's visible bed text, and keep only rows with 5+ Beds/Bedrooms/bd or listing text that clearly says 5+. Ignore 4-bedroom cards. 2026-07-01 Chrome probe on this URL found 34 cards and 9 verified SF 5+ rows. Budget cap for the SF-only 5-person group lane is $13,250/mo total ($2,650/person); apply that cap in visible-browser filters/results.",
+      "enabled": true
+    },
+    {
+      "name": "Apartments.com Rentals (South Bay 5+ bedrooms)",
+      "label": "apartments-com-south-bay-5plus",
+      "market_hint": "Santa Clara",
+      "search_url": "https://www.apartments.com/san-jose-ca/5-bedrooms/",
+      "status": "AI_BROWSER REQUIRED",
+      "cities": [
+        "san-jose-ca",
+        "santa-clara-ca",
+        "sunnyvale-ca",
+        "mountain-view-ca"
+      ],
+      "note": "Visible-browser 5+ lane for South Bay group housing. Apartments.com may label 5-bedroom routes as 4+ Beds; scrape visible article[data-listingid] cards and keep only visible 5+ bed rows. disabled 2026-07-01: group 5+ search is SF-only",
+      "enabled": false
+    },
+    {
+      "name": "Apartments.com Rentals (Peninsula 5+ bedrooms)",
+      "label": "apartments-com-peninsula-5plus",
+      "market_hint": "Redwood City/San Carlos/Belmont",
+      "search_url": "https://www.apartments.com/redwood-city-ca/5-bedrooms/",
+      "status": "AI_BROWSER REQUIRED",
+      "cities": [
+        "palo-alto-ca",
+        "menlo-park-ca",
+        "redwood-city-ca",
+        "san-mateo-ca"
+      ],
+      "note": "Visible-browser 5+ lane for Peninsula/Caltrain group housing. Scrape visible article[data-listingid] cards and keep only visible 5+ bed rows. disabled 2026-07-01: group 5+ search is SF-only",
+      "enabled": false
+    },
+    {
+      "name": "Apartments.com Rentals (East Bay 5+ bedrooms)",
+      "label": "apartments-com-east-bay-5plus",
+      "market_hint": "Oakland/Berkeley",
+      "search_url": "https://www.apartments.com/oakland-ca/5-bedrooms/",
+      "status": "AI_BROWSER REQUIRED",
+      "cities": [
+        "oakland-ca",
+        "berkeley-ca"
+      ],
+      "note": "Visible-browser 5+ lane for East Bay group/SF-office comparison. Scrape visible article[data-listingid] cards and keep only visible 5+ bed rows. disabled 2026-07-01: group 5+ search is SF-only",
+      "enabled": false
+    },
+    {
+      "name": "Furnished Finder (Santa Clara area)",
+      "market_hint": "Santa Clara",
+      "search_url": "https://www.furnishedfinder.com/",
+      "blocked_reason": "Old /housing/<city> route now 302s to an interactive map-search homepage; no keyless JSON results API (candidates 404 or return the SPA shell). Needs manual autocomplete selection.",
+      "note": "Monthly furnished; flexible terms. Type the city in the search box, select the autocomplete option, then read the result cards. Park if too fiddly."
+    }
   ],
   "_dead_sources": "Removed 2026-06-29 after browser probing: 'The Listing Project' (both thelistingproject.com and thelistingsproject.com now resolve to HugeDomains 'for sale' parking pages; the Listings Project is email/subscription-only now) and 'Kopa' (homepage shows a wind-down notice — the service is shutting down). Do not re-add unless they relaunch a public web search.",
   "_apis_comment": "Free/keyed JSON endpoints fetched by capture_api.py. No-key entries (e.g. Reddit) are best-effort; keyed entries skip until their key_env is set. {city} in url is substituted from each 'cities' value. We never add proxy/CAPTCHA/stealth code.",
@@ -75,7 +893,13 @@
       "market_hint": "Other Bay Area",
       "source": "Reddit",
       "url": "https://www.reddit.com/r/{city}/search.json?q=sublet%20OR%20room%20OR%20apartment%20OR%20rent&restrict_sr=on&sort=new&limit=50",
-      "cities": ["SFList", "sanfrancisco", "bayarea", "sanjose", "Sublets_"],
+      "cities": [
+        "SFList",
+        "sanfrancisco",
+        "bayarea",
+        "sanjose",
+        "Sublets_"
+      ],
       "list_path": "data.children",
       "id_field": "data.id",
       "field_map": {
@@ -91,7 +915,14 @@
       "market_hint": "Santa Clara",
       "source": "RentCast",
       "url": "https://api.rentcast.io/v1/listings/rental/long-term?city={city}&state=CA&status=Active&limit=50",
-      "cities": ["Santa Clara", "Sunnyvale", "Mountain View", "San Jose", "Redwood City", "San Francisco"],
+      "cities": [
+        "Santa Clara",
+        "Sunnyvale",
+        "Mountain View",
+        "San Jose",
+        "Redwood City",
+        "San Francisco"
+      ],
       "key_env": "RENTCAST_API_KEY",
       "key_header": "X-Api-Key",
       "list_path": "",

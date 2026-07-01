@@ -393,6 +393,47 @@ def parse_money(value: str) -> int:
     return 0
 
 
+# A 1-2 digit bedroom count (optionally a tight range like "1-2" / "2/3") immediately
+# before a bedroom token. The negative lookbehind prevents price bleed:
+# "$5,200 / 6br" reads 6 beds, while "$5200 2bd" reads 2 beds.
+BED_COUNT_RE = re.compile(
+    r"(?<![\d,.$])(\d{1,2})(?:\s?[-/]\s?(\d{1,2}))?\s*(?:bd|br|beds?|bedrooms?|hab\b|habitaci\w*|室|卧)",
+    re.I,
+)
+WORD_BEDS = {
+    "one": 1,
+    "two": 2,
+    "three": 3,
+    "four": 4,
+    "five": 5,
+    "six": 6,
+    "seven": 7,
+    "eight": 8,
+    "nine": 9,
+    "ten": 10,
+}
+WORD_BED_RE = re.compile(r"\b(" + "|".join(WORD_BEDS) + r")\b[\s-]+(?:bed|bd|br)", re.I)
+BED_COUNT_MAX = 12
+
+
+def parse_bed_count(text: str):
+    """Whole-unit bedroom count from explicit bed text/title; None when absent."""
+    t = clean(text).lower()
+    if not t:
+        return None
+    m = BED_COUNT_RE.search(t)
+    if m:
+        cands = [int(g) for g in m.groups() if g is not None and int(g) <= BED_COUNT_MAX]
+        if cands:
+            return max(cands)
+    w = WORD_BED_RE.search(t)
+    if w:
+        return WORD_BEDS[w.group(1)]
+    if ("studio" in t) or ("estudio" in t) or ("monoambiente" in t):
+        return 0
+    return None
+
+
 MONTHS = {
     "jan": 1, "january": 1,
     "feb": 2, "february": 2,

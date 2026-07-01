@@ -79,13 +79,16 @@ a realistic desktop-Chrome UA). Prefer the highest tier a source supports:
   - **Craigslist** → its own `sapi.craigslist.org` v8 JSON search API. (The legacy RSS
     feed 403s even with a browser UA, so Craigslist no longer uses the `rss` tier.)
     Posting ids are delta-encoded: real id = `decode.minPostingId + item[0]`; the
-    canonical post URL is rebuilt from subarea/category/slug/id. All 5–6 CL searches
-    run here with **no browser** — this is the bulk of the inventory. The 5+ bedroom
-    sweep covers SF, South Bay, Peninsula, and East Bay, and the pipeline re-buckets
-    explicit city spillover instead of treating every SF-section result as SF.
+    canonical post URL is rebuilt from subarea/category/slug/id. The enabled 5+
+    Craigslist group-house sweep is SF-only as of 2026-07-01, capped at $13,250/mo
+    for 5 people. It includes the `min_bedrooms=5` bucket plus separate SF `apa` and
+    `sub` keyword lanes for `5 bedroom`, `5br`, `6 bedroom`, `6br`, and `7 bedroom`
+    because posters sometimes omit Craigslist's bedroom field. Title-derived bed
+    extraction requires an explicit bedroom token and avoids price/bath bleed.
   - **Zumper** → the `__PRELOADED_STATE__` blob in the search page (apartment-complex
-    rent ranges + beds + url). The 5+ sweep includes SF, South Bay, Peninsula, and
-    Oakland/Berkeley paths where public SSR data is available.
+    rent ranges + beds + url). The enabled 5+ group-house lane is SF-only as of
+    2026-07-01 and capped at $13,250/mo; prior South Bay, Peninsula, and East Bay
+    5+ paths remain disabled in `searches.json` for possible re-enable later.
   - **Direct property managers (`pm`)** → only where the public community page embeds
     real availability state for a normal browser GET. Added 2026-07-01:
     **UDR River Terrace**, **UDR Marina Playa**, and **UDR Birch Creek** via
@@ -93,7 +96,11 @@ a realistic desktop-Chrome UA). Prefer the highest tier a source supports:
     (floorplan/unit rent, beds/baths, availability date, and page lat/lng).
   - **Rent.com** → public search pages expose `__NEXT_DATA__` with listing/floorplan
     rent, beds/baths, availability date, and coordinates. Added 2026-07-01 for
-    Santa Clara, Sunnyvale, Mountain View, and Palo Alto corridor pages.
+    Santa Clara, Sunnyvale, Mountain View, and Palo Alto corridor pages. SF 5+
+    probe on 2026-07-01 tried likely public paths including
+    `/california/san-francisco-apartments/5-bedroom` and query-filter variants; they
+    returned public HTML without clean `__NEXT_DATA__`, so no SF 5+ Rent.com lane was
+    added.
 - **Free + headless JSON `apis` — `capture_api.py`:** keyless/keyed JSON endpoints.
   - **Reddit** is best-effort: it returns 403 to plain UAs from datacenter IPs (no UA
     variant helped in probing). It works from a **residential IP** (the local scheduled
@@ -206,8 +213,9 @@ Orchestration:
   `capture_api.py` (`apis`: Reddit etc.) — then ingests every JSON in the capture dir
   and rebuilds the board. With the `web` tier, a fully headless run (cloud/CI, no
   browser) already covers Craigslist + Zumper.
-- `--sources 5br` / `5plus` now selects every configured 5+ lane across all tiers.
-  Use `--sources sf5plus` for the narrower SF-only sweep.
+- `--sources 5br` / `5plus` and `--sources sf5plus` are operationally equivalent
+  for the current enabled group-house search because all enabled 5+ lanes are
+  SF-only. Non-SF 5+ lanes are kept disabled, not deleted, for future re-enable.
 - Old `ai-*.json` files discovered by capture-dir glob are skipped after 18 hours so
   stale browser captures cannot refresh `Last Seen`. Explicit `--input ai-...json`
   still replays a file intentionally; `--allow-stale-captures` exists for rare audits.

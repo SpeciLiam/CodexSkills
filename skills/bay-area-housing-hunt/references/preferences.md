@@ -28,6 +28,7 @@ Gross monthly base is about $15,000. Housing bands:
 | Room/sublease target | $1,600-$2,800 | Best for flexibility, savings, and testing neighborhoods. |
 | Solo sweet spot | $3,000-$3,750 | Strong default for a studio/1BR or premium flexible sublease. |
 | Solo stretch | $3,750-$4,500 | Allow only for exceptional commute/location/quality or short-term bridge housing. |
+| SF 5-person group-house cap | $13,250 total ($2,650/person) | San Francisco only; target 5 bedrooms for Liam plus 4 roommates. |
 | Overstretch | $4,500+ | Usually reject unless temporary, furnished, and clearly strategic. |
 
 All-in means rent plus recurring mandatory fees, utilities if known, parking if needed, pet fees if applicable, and any monthly service fees.

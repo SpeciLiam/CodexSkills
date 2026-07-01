@@ -37,7 +37,7 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import quote_plus, urljoin
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
@@ -222,7 +222,7 @@ def _cl_url(cfg: dict) -> str:
     cat = cfg["category"]
     url = f"{SAPI}?batch=1-0-0-0-0&cc=US&lang=en&searchPath={sub}/{cat}"
     for key, val in (cfg.get("params") or {}).items():
-        url += f"&{key}={val}"
+        url += f"&{key}={quote_plus(str(val))}"
     return url
 
 
@@ -245,8 +245,19 @@ def _cl_bucket_url(cfg: dict, extra: dict) -> str:
     params = dict(cfg.get("params") or {})
     params.update(extra)
     for key, val in params.items():
-        url += f"&{key}={val}"
+        url += f"&{key}={quote_plus(str(val))}"
     return url
+
+
+def title_bed_count(title: str):
+    return hp.parse_bed_count(title)
+
+
+def _title_beds(title: str) -> str:
+    beds = title_bed_count(title)
+    if beds is None:
+        return ""
+    return "studio" if beds == 0 else f"{beds} bd"
 
 
 def craigslist_beds_by_pid(cfg: dict) -> dict[int, str]:
@@ -334,7 +345,7 @@ def parse_craigslist(payload: dict, cfg: dict, beds_by_pid: dict | None = None) 
             "url": f"https://{host}/{sub}/{cat}/d/{slug}/{pid}.html",
             "rent": rent,
             "city": city,
-            "beds": (beds_by_pid or {}).get(pid, ""),
+            "beds": (beds_by_pid or {}).get(pid, "") or _title_beds(title),
             "market": market,
             "lat": lat,
             "lng": lng,
