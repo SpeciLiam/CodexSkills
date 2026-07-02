@@ -102,10 +102,14 @@ a realistic desktop-Chrome UA). Prefer the highest tier a source supports:
     returned public HTML without clean `__NEXT_DATA__`, so no SF 5+ Rent.com lane was
     added.
 - **Free + headless JSON `apis` — `capture_api.py`:** keyless/keyed JSON endpoints.
-  - **Reddit** is best-effort: it returns 403 to plain UAs from datacenter IPs (no UA
-    variant helped in probing). It works from a **residential IP** (the local scheduled
-    run) or with a free Reddit **OAuth** app token; until then cloud/CI runs log it
-    `Source Blocked`.
+  - **Reddit JSON is retired (2026-07-02):** the public `.json` endpoints now 403
+    even from a residential IP (probed www/old/api hosts, multiple UAs). Reddit
+    moved to the `rss` tier: the public **`.rss` Atom feeds** still serve search
+    results per subreddit. They 429 on back-to-back requests, so `run.py` spaces
+    RSS fetches 45s apart and honors one `Retry-After` per feed — polite pacing
+    within the published limit, never a bypass; a second 429 records
+    `Source Blocked`. Reddit rows are lead-generation (usually no rent) and land
+    in `Needs Verification` for manual follow-up.
   - **RentCast / RapidAPI wrappers:** optional, off by default; enable via key env var.
     Free tiers only unless Liam opts into paying.
 - **Visible/logged-in browser `ai_browser`:** sources that genuinely block headless
@@ -136,6 +140,31 @@ a realistic desktop-Chrome UA). Prefer the highest tier a source supports:
     subscription-only in the 2026-06-29 browser probe.
   - **Kopa** → public site showed a shutdown/wind-down notice in the 2026-06-29
     browser probe.
+
+2026-07-02 probe notes (new-source sweep):
+
+- **Redfin Rentals** → HTTP 200 with per-listing schema.org **ld+json**
+  (`Accommodation` name/url/address/geo/beds + `Product` offers.price) for the
+  Santa Clara, Sunnyvale, and Mountain View city pages (~41 listings each); added
+  as the `redfin_ldjson` handler. San Jose and San Francisco city pages returned
+  **HTTP 202 challenge pages** in the same probe — not added. Redfin also 202s
+  rapid back-to-back city requests, so `capture_web.py` spaces same-host Redfin
+  fetches 10s apart; any 202/challenge still records `Source Blocked` and stops.
+- **PadMapper** → HTTP 200 with the same `__PRELOADED_STATE__` as Zumper (same
+  backend; listings resolve to zumper.com URLs). NOT added: it would only
+  duplicate the existing Zumper lanes.
+- **Realtor.com rentals** → HTTP 429 to a normal desktop-Chrome UA; recorded
+  blocked, no handler.
+- **Roomies.com** → HTTP 403; recorded blocked, no handler.
+- **SpareRoom** → HTTP 200 public HTML but no clean embedded listing state
+  (`__PRELOADED_STATE__`/`__NEXT_DATA__` absent); no handler added.
+- **UDR Bay Area index sweep** → 9 more communities with the same public
+  `jsonObjPropertyViewModel` state added to the `pm` handler: Verve (Mountain
+  View), Channel Mission Bay / 388 Beale / 399 Fremont / HQ Apartments /
+  Edgewater / 2000 Post (San Francisco — Channel verified with 37 units, exact
+  rents/dates/coords), CitySouth / Bay Terrace (San Mateo). Skipped as
+  out-of-search-area: 5421 at Dublin Station, Residences at Lake Merritt,
+  Highlands of Marin (San Rafael), Almaden Lake Village (south San Jose).
 
 2026-07-01 direct property-manager probe notes:
 

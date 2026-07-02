@@ -60,6 +60,12 @@ type Listing = {
   strictSfCity?: boolean;
   locationConfidence?: string;
   score?: number;
+  fitTier?: string; // pipeline fit band: Great / Good / Fair / Weak
+  scoreBreakdown?: {
+    value?: number; flexibility?: number; flexibilityReason?: string; quality?: number;
+    confidence?: number; neighborhood?: number; commuteNoCar?: number; commuteCar?: number;
+    perPersonRent?: number | null; fitTier?: string;
+  };
   noCarScore?: number;
   carScore?: number;
   overallRank?: number | null;
@@ -759,6 +765,18 @@ export default function App() {
           scamRisk: isScamRisk(l), termEndLabel: endsBeforeNeed && termEnd ? `Ends ${fmtDate(termEnd)}` : "",
           commuteChip: commute, duplicateKey: clusterKey(l), duplicateCount: 1, duplicates: [] as any[],
           pipelineScore: l.score ?? 0, noCarScore: l.noCarScore ?? 0, carScore: l.carScore ?? 0,
+          boardFitTier: l.fitTier || "",
+          boardFitTitle: l.scoreBreakdown
+            ? [
+                `value ${l.scoreBreakdown.value ?? "?"}`,
+                `flex ${l.scoreBreakdown.flexibility ?? "?"}${l.scoreBreakdown.flexibilityReason ? ` (${l.scoreBreakdown.flexibilityReason})` : ""}`,
+                `commute ${l.scoreBreakdown.commuteNoCar ?? "?"}`,
+                `quality ${l.scoreBreakdown.quality ?? "?"}`,
+                `confidence ${l.scoreBreakdown.confidence ?? "?"}`,
+                `nbhd ${l.scoreBreakdown.neighborhood ?? "?"}`,
+                ...(l.scoreBreakdown.perPersonRent ? [`$${l.scoreBreakdown.perPersonRent}/person`] : []),
+              ].join(" · ")
+            : "",
           fit, segC, segP, segF,
           fitFg: tier === "hi" ? "var(--accent)" : tier === "mid" ? "#b07d1a" : "#9a9384",
           _avg: avg == null ? 1e9 : avg, _price: price == null ? 1e9 : price, _first: l.firstSeen || "", _score: fit,
@@ -1127,6 +1145,13 @@ export default function App() {
                     <div style={{ fontSize: 12.5, color: "#8a8378", marginTop: 3 }}>{r.sub}</div>
                     <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginTop: 7 }}>
                       {r.boardRank && <span style={{ fontSize: 11, fontWeight: 700, padding: "3px 7px", borderRadius: 6, background: "#ece8df", color: "#5a554c" }}>Board #{r.boardRank}</span>}
+                      {r.boardFitTier && (
+                        <span title={r.boardFitTitle} style={{ fontSize: 11, fontWeight: 800, padding: "3px 7px", borderRadius: 6,
+                          background: r.boardFitTier === "Great" ? "#eef6ef" : r.boardFitTier === "Good" ? "color-mix(in srgb, var(--accent) 12%, #fff)" : r.boardFitTier === "Fair" ? "#faf3e3" : "#f0ece3",
+                          color: r.boardFitTier === "Great" ? "#4f8060" : r.boardFitTier === "Good" ? "var(--accent)" : r.boardFitTier === "Fair" ? "#b07d1a" : "#9a9384" }}>
+                          Fit: {r.boardFitTier}{r.pipelineScore ? ` · ${r.pipelineScore}` : ""}
+                        </span>
+                      )}
                       {r.cityRank && <span style={{ fontSize: 11, fontWeight: 700, padding: "3px 7px", borderRadius: 6, background: "#ece8df", color: "#5a554c" }}>Area #{r.cityRank}</span>}
                       {r.isFivePlus && <span style={{ fontSize: 11, fontWeight: 800, padding: "3px 7px", borderRadius: 6, background: "color-mix(in srgb, var(--accent) 12%, #fff)", color: "var(--accent)" }}>5+ {r.unitScope === "room" ? "room lane" : "home lane"}</span>}
                       {r.scamRisk && <span style={{ fontSize: 11, fontWeight: 800, padding: "3px 7px", borderRadius: 6, background: "#f8ece6", color: "#b4502f" }}>Scam risk</span>}

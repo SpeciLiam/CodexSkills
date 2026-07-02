@@ -53,10 +53,13 @@ python3 skills/bay-area-housing-hunt/scripts/run.py --fresh-capture-dir
 
 `run.py` runs the **headless** tiers in `scripts/searches.json` itself (no browser,
 cloud/CI-ok): the `web` tier via `capture_web.py` — **Craigslist** (its own
-`sapi.craigslist.org` JSON API; the RSS feed 403s so it's no longer used) and
-**Zumper** (embedded `__PRELOADED_STATE__`) — plus the `apis` tier via
-`capture_api.py` (Reddit / free JSON; Reddit needs a residential IP or OAuth, else
-`Source Blocked`). It then ingests every capture file in
+`sapi.craigslist.org` JSON API; the legacy Craigslist RSS feed 403s so it's no
+longer used), **Zumper** (embedded `__PRELOADED_STATE__`), **Redfin Rentals**
+(schema.org ld+json on city pages), and **direct property managers** (UDR
+`jsonObjPropertyViewModel`, Rent.com `__NEXT_DATA__`) — plus the `rss` tier
+(**Reddit** `.rss` Atom search feeds, paced 45s apart because Reddit 429s bursts;
+its public JSON endpoints 403 everywhere as of 2026-07-02) and the `apis` tier via
+`capture_api.py` (keyed JSON endpoints such as RentCast, off by default). It then ingests every capture file in
 `/tmp/codexskills-housing-hunt/`, rescores, and rebuilds the board. Add `--notion`
 to mirror the ledger into Notion (no-op unless `housing-trackers/notion-config.md` +
 `NOTION_TOKEN` are set). `stdout` is a clean JSON summary; the AI-capture plan goes

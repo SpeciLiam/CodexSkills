@@ -726,5 +726,167 @@ class EndToEnd(unittest.TestCase):
         self.assertIn("My shortlist notes", Path(s2["listings"]).read_text())
 
 
+class DataQuality20260702(unittest.TestCase):
+    """Regressions for the 2026-07-02 board bugs: an office space and a Woodacre
+    (Marin) cottage ranked in SF market tables, and a reworded cross-post holding
+    two top-5 slots."""
+
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp()
+        self.hp = fresh_module(self.tmp)
+
+    def test_office_space_rejected(self):
+        rows = [base_row(self.hp, Title="For sublease: Third floor office in cow hollow",
+                         URL="http://x/office", Beds="", Notes="")]
+        self.hp.apply_non_housing(rows, "2026-07-02")
+        self.assertEqual(rows[0]["Status"], "Rejected")
+        self.assertIn("non-housing", rows[0]["Notes"])
+
+    def test_office_bucketed_as_studio_still_rejected(self):
+        # Craigslist sapi buckets office posts as 'studio' (0 bedrooms); that
+        # must not shield them from non-housing detection.
+        rows = [base_row(self.hp, Title="For sublease: Third floor office in cow hollow",
+                         URL="http://x/office2", Beds="studio", Notes="")]
+        self.hp.apply_non_housing(rows, "2026-07-02")
+        self.assertEqual(rows[0]["Status"], "Rejected")
+
+    def test_parse_beds_count_shapes(self):
+        self.assertEqual(self.hp.parse_beds_count("5 bd"), 5)
+        self.assertEqual(self.hp.parse_beds_count("1-3"), 3)
+        self.assertEqual(self.hp.parse_beds_count("studio"), 0)
+        self.assertEqual(self.hp.parse_beds_count("5"), 5)
+        self.assertEqual(self.hp.parse_beds_count(""), 0)
+
+    def test_bed_range_complex_not_split_per_person(self):
+        # An apartment complex advertising a 0-8 bd unit mix must not have its
+        # cheapest-unit rent divided per bedroom.
+        row = base_row(self.hp, Title="477 Building", Beds="0-8 bd", Rent="1295",
+                       **{"All-In Estimate": "1295", "URL": "http://x/complex"})
+        self.hp.score_row(row)
+        self.assertNotIn("/person split", row["Why"])
+
+    def test_room_price_with_house_bed_count_not_split(self):
+        # A $1,295 room listing tagged with the HOUSE's '8 bd' must not read as
+        # a $162/person whole house.
+        row = base_row(self.hp, Title="Room - House furnished room", Beds="8 bd", Rent="1295",
+                       **{"All-In Estimate": "1295", "URL": "http://x/room8"})
+        self.hp.score_row(row)
+        self.assertNotIn("/person split", row["Why"])
+
+    def test_home_office_and_bedroom_context_kept(self):
+        rows = [
+            base_row(self.hp, Title="Fully Furnished Nob hill 1BR/1BA Sublet w/ Home Office", URL="http://x/1br"),
+            base_row(self.hp, Title="Room with parking and storage included", URL="http://x/room"),
+            base_row(self.hp, Title="Office-adjacent unit", URL="http://x/beds", Beds="2"),
+        ]
+        self.hp.apply_non_housing(rows, "2026-07-02")
+        for row in rows:
+            self.assertEqual(row["Status"], "Active", row["Title"])
+
+    def test_woodacre_is_out_of_area(self):
+        market = self.hp.reconcile_market(
+            "SF Sunset/Richmond/Marina/North Beach", "", "", "Beautiful Cottage in Woodacre",
+            "", "", "", "https://sfbay.craigslist.org/sfc/sub/d/woodacre-beautiful-cottage-in-woodacre/1.html")
+        self.assertEqual(market, "Other Bay Area")
+        row = base_row(self.hp, Title="Beautiful Cottage in Woodacre", Market="", City="",
+                       URL="https://sfbay.craigslist.org/sfc/sub/d/woodacre-beautiful-cottage/1.html")
+        self.hp.score_row(row)
+        self.assertEqual(row["Market"], "Other Bay Area")
+        self.assertIn("location out of search area", row["Notes"])
+
+    def test_numeric_stay_window_parsed(self):
+        start, end = self.hp.parse_stay_window("(8/6 - 9/6) Sublet in beautiful NOPA")
+        self.assertEqual((start.month, start.day), (8, 6))
+        self.assertEqual((end.month, end.day), (9, 6))
+
+    def test_short_stay_without_dates_penalized(self):
+        self.assertEqual(self.hp.short_stay_days("Two Week Sublet Available in Central Location SF"), 14)
+        self.assertEqual(self.hp.short_stay_days("Furnished 1BR sublet"), 0)
+        row = base_row(self.hp, Title="Two Week Sublet Available in Central Location SF", URL="http://x/2wk")
+        self.hp.score_row(row)
+        self.assertIn("short stay ~14d", row["Notes"])
+        self.assertTrue(self.hp.ends_before_need_window(row))
+
+    def test_reworded_cross_post_same_window_deduped(self):
+        row_a = base_row(self.hp, Title="(8/6 - 9/6) Sublet in beautiful NOPA",
+                         URL="http://cl/a", **{"Listing Key": "cl-a", "Source": "Craigslist",
+                                               "Market": "SF Hayes/Lower Haight/Castro/Duboce",
+                                               "Rent": "2300", "All-In Estimate": "2300",
+                                               "Last Seen": "2026-07-02", "First Seen": "2026-07-01"})
+        row_b = base_row(self.hp, Title="1b/1b Sublet in NOPA (8/6 - 9/6)",
+                         URL="http://cl/b", **{"Listing Key": "cl-b", "Source": "Craigslist",
+                                               "Market": "SF Hayes/Lower Haight/Castro/Duboce",
+                                               "Rent": "2300", "All-In Estimate": "2300",
+                                               "Last Seen": "2026-07-02", "First Seen": "2026-07-02"})
+        rows = [row_a, row_b]
+        self.hp.apply_content_dedupe(rows)
+        statuses = sorted(row["Status"] for row in rows)
+        self.assertEqual(statuses, ["Active", "Duplicate"])
+
+    def test_unrelated_same_window_listings_not_deduped(self):
+        row_a = base_row(self.hp, Title="Sunny Bernal garden cottage 8/6 - 9/6",
+                         URL="http://cl/c", **{"Listing Key": "cl-c", "Source": "Craigslist",
+                                               "Market": "SF Mission/Valencia", "Rent": "2300",
+                                               "All-In Estimate": "2300"})
+        row_b = base_row(self.hp, Title="Hayes Valley loft with patio 8/6 - 9/6",
+                         URL="http://cl/d", **{"Listing Key": "cl-d", "Source": "Craigslist",
+                                               "Market": "SF Mission/Valencia", "Rent": "2300",
+                                               "All-In Estimate": "2300"})
+        rows = [row_a, row_b]
+        self.hp.apply_content_dedupe(rows)
+        self.assertEqual([row["Status"] for row in rows], ["Active", "Active"])
+
+
+class FitScoreOrganization(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp()
+        self.hp = fresh_module(self.tmp)
+
+    def test_group_listing_scores_per_person_not_total(self):
+        solo_total = base_row(self.hp, Title="Huge SF 5BR Victorian", Beds="5 bd",
+                              Rent="12500", **{"All-In Estimate": "12500",
+                                               "Market": "SF Mission/Valencia", "URL": "http://x/5br"})
+        self.hp.score_row(solo_total)
+        # $12,500 / 5 = $2,500/person — must not be scored like a $12.5k solo rent
+        self.assertGreater(int(solo_total["Score"]), 30)
+        self.assertIn("/person split 5 ways", solo_total["Why"])
+
+    def test_group_over_budget_scores_below_in_budget(self):
+        cheap = base_row(self.hp, Beds="5", Rent="11000", **{"All-In Estimate": "11000", "URL": "http://x/a"})
+        pricey = base_row(self.hp, Beds="5", Rent="16500", **{"All-In Estimate": "16500", "URL": "http://x/b"})
+        self.hp.score_row(cheap)
+        self.hp.score_row(pricey)
+        self.assertGreater(int(cheap["Score"]), int(pricey["Score"]))
+
+    def test_fit_tier_bands(self):
+        self.assertEqual(self.hp.fit_tier("82"), "Great")
+        self.assertEqual(self.hp.fit_tier("55"), "Good")
+        self.assertEqual(self.hp.fit_tier("41"), "Fair")
+        self.assertEqual(self.hp.fit_tier("12"), "Weak")
+        self.assertEqual(self.hp.fit_tier(""), "Weak")
+
+    def test_rankings_include_fit_column(self):
+        cap = Path(self.tmp) / "cap.json"
+        cap.write_text(json.dumps([
+            {"title": "Santa Clara sublease near office", "url": "http://x/f1",
+             "city": "Santa Clara", "rent": "$2500", "lease": "month-to-month sublease"},
+        ]))
+        summary = self.hp.run(inputs=[cap], default_source="manual", run_date="2026-07-02")
+        board = Path(summary["rankings"]).read_text()
+        self.assertIn("| Fit |", board)
+        self.assertRegex(board, r"\|\s*(Great|Good|Fair|Weak)\s*\|")
+
+    def test_score_breakdown_components_sum_to_no_car(self):
+        row = base_row(self.hp, URL="http://x/bd", Rent="2500", **{"All-In Estimate": "2500"})
+        self.hp.score_row(row)
+        b = self.hp.score_breakdown(row)
+        total = b["value"] + b["flexibility"] + b["quality"] + b["confidence"] + b["neighborhood"] + b["commuteNoCar"]
+        self.assertEqual(total, int(row["No-Car Score"]))
+
+    def test_score_breakdown_empty_for_terminal(self):
+        row = base_row(self.hp, Status="Rejected")
+        self.assertEqual(self.hp.score_breakdown(row), {})
+
+
 if __name__ == "__main__":
     unittest.main()

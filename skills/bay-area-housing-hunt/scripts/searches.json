@@ -1,7 +1,44 @@
 {
   "_comment": "Source config for run.py. THREE capture tiers, in order of preference: (1) 'web' = headless capture.py adapters that read a site's own PUBLIC JSON/SSR data with a normal browser UA (no login/CAPTCHA/rate-limit bypass; on any 403/429/challenge we record Source Blocked and stop) — this is the cloud/CI-capable tier; (2) 'apis' = keyless/keyed JSON endpoints via capture_api.py; (3) 'ai_browser' = sources that genuinely need a visible/logged-in browser (anti-bot or login wall) and are captured by the conductor (Codex Chrome plugin / Claude-in-Chrome / Computer Use). Legacy Craigslist RSS lived under 'rss' but 403s even with a browser UA, so Craigslist now runs headless via its own sapi JSON API under 'web'.",
-  "_probe_note": "Headless reachability probed 2026-06-28 and rechecked 2026-06-30 where noted (realistic desktop-Chrome UA): Craigslist sapi JSON 200; Zumper SSR __PRELOADED_STATE__ 200; Reddit JSON 403 (datacenter/UA block — works from a residential IP or with OAuth); Listing Project 200-but-bot-challenge; Furnished Finder 403; Zillow 403 (PerimeterX; rechecked 2026-06-30); Apartments.com 403 (rechecked 2026-06-30); Facebook 400/login wall; Kopa search 404 (login-gated). Tier each source by that result.",
-  "rss": [],
+  "_probe_note": "Headless reachability probed 2026-06-28, rechecked 2026-06-30 and 2026-07-02 where noted (realistic desktop-Chrome UA): Craigslist sapi JSON 200; Zumper SSR __PRELOADED_STATE__ 200; Reddit JSON 403 EVERYWHERE as of 2026-07-02 (even residential — use the .rss Atom feeds in the 'rss' tier, paced 45s); Redfin ld+json 200 for Santa Clara/Sunnyvale/Mountain View but 202-challenge for San Jose/SF; PadMapper 200 but duplicates Zumper (same backend); Realtor.com 429; Roomies 403; SpareRoom 200 without clean state; Listing Project 200-but-bot-challenge; Furnished Finder 403; Zillow 403 (PerimeterX); Apartments.com 403; Facebook 400/login wall; Kopa search 404 (login-gated). Tier each source by that result.",
+  "rss": [
+    {
+      "name": "Reddit",
+      "label": "SFList",
+      "enabled": true,
+      "market_hint": "",
+      "url": "https://www.reddit.com/r/SFList/search.rss?q=sublet%20OR%20room%20OR%20apartment%20OR%20rent&restrict_sr=on&sort=new",
+      "note": "Reddit public JSON 403s everywhere as of 2026-07-02, but .rss Atom feeds still serve (429 on back-to-back requests; run.py paces them). Lead source — most posts lack rent, so rows land in Needs Verification for manual follow-up."
+    },
+    {
+      "name": "Reddit",
+      "label": "sanfrancisco",
+      "enabled": true,
+      "market_hint": "",
+      "url": "https://www.reddit.com/r/sanfrancisco/search.rss?q=sublet%20OR%20sublease%20OR%20room%20for%20rent&restrict_sr=on&sort=new"
+    },
+    {
+      "name": "Reddit",
+      "label": "bayarea",
+      "enabled": true,
+      "market_hint": "",
+      "url": "https://www.reddit.com/r/bayarea/search.rss?q=sublet%20OR%20sublease%20OR%20room%20for%20rent&restrict_sr=on&sort=new"
+    },
+    {
+      "name": "Reddit",
+      "label": "sanjose",
+      "enabled": true,
+      "market_hint": "",
+      "url": "https://www.reddit.com/r/sanjose/search.rss?q=sublet%20OR%20sublease%20OR%20room%20for%20rent&restrict_sr=on&sort=new"
+    },
+    {
+      "name": "Reddit",
+      "label": "Sublets_",
+      "enabled": true,
+      "market_hint": "",
+      "url": "https://www.reddit.com/r/Sublets_/search.rss?q=san%20francisco%20OR%20bay%20area%20OR%20san%20jose%20OR%20santa%20clara&restrict_sr=on&sort=new"
+    }
+  ],
   "web": [
     {
       "name": "Craigslist",
@@ -468,6 +505,114 @@
       "note": "Direct UDR property-manager public availability state for a nearby Mountain View community."
     },
     {
+      "name": "Verve",
+      "kind": "pm",
+      "label": "udr-verve",
+      "provider": "udr",
+      "market_hint": "Mountain View",
+      "city": "Mountain View",
+      "url": "https://www.udr.com/san-francisco-bay-area-apartments/mountain-view/verve/apartments-pricing/",
+      "limit": 80,
+      "enabled": true,
+      "note": "Discovered on the UDR Bay Area index 2026-07-02; same public jsonObjPropertyViewModel state as the other UDR lanes."
+    },
+    {
+      "name": "Channel Mission Bay",
+      "kind": "pm",
+      "label": "udr-channel-mission-bay",
+      "provider": "udr",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "city": "San Francisco",
+      "url": "https://www.udr.com/san-francisco-bay-area-apartments/san-francisco/channel-mission-bay/apartments-pricing/",
+      "limit": 80,
+      "enabled": true,
+      "note": "SF Mission Bay, blocks from 4th & King Caltrain — verified 2026-07-02 (37 units with exact rent/availability/coords)."
+    },
+    {
+      "name": "388 Beale",
+      "kind": "pm",
+      "label": "udr-388-beale",
+      "provider": "udr",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "city": "San Francisco",
+      "url": "https://www.udr.com/san-francisco-bay-area-apartments/san-francisco/388-beale/apartments-pricing/",
+      "limit": 80,
+      "enabled": true,
+      "note": "SF Rincon Hill/South Beach, bikeable to 4th & King Caltrain."
+    },
+    {
+      "name": "399 Fremont",
+      "kind": "pm",
+      "label": "udr-399-fremont",
+      "provider": "udr",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "city": "San Francisco",
+      "url": "https://www.udr.com/san-francisco-bay-area-apartments/san-francisco/399-fremont/apartments-pricing/",
+      "limit": 80,
+      "enabled": true,
+      "note": "SF Rincon Hill, bikeable to 4th & King Caltrain."
+    },
+    {
+      "name": "HQ Apartments",
+      "kind": "pm",
+      "label": "udr-hq-apartments",
+      "provider": "udr",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "city": "San Francisco",
+      "url": "https://www.udr.com/san-francisco-bay-area-apartments/west-soma/hq-apartments/apartments-pricing/",
+      "limit": 80,
+      "enabled": true,
+      "note": "West SoMa, short bike to 4th & King Caltrain."
+    },
+    {
+      "name": "Edgewater",
+      "kind": "pm",
+      "label": "udr-edgewater",
+      "provider": "udr",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "city": "San Francisco",
+      "url": "https://www.udr.com/san-francisco-bay-area-apartments/san-francisco/edgewater/apartments-pricing/",
+      "limit": 80,
+      "enabled": true,
+      "note": "SF Mission Bay/China Basin area near Caltrain."
+    },
+    {
+      "name": "2000 Post",
+      "kind": "pm",
+      "label": "udr-2000-post",
+      "provider": "udr",
+      "market_hint": "SF Sunset/Richmond/Marina/North Beach",
+      "city": "San Francisco",
+      "url": "https://www.udr.com/san-francisco-bay-area-apartments/san-francisco/2000-post/apartments-pricing/",
+      "limit": 80,
+      "enabled": true,
+      "note": "SF Japantown/Lower Pac Heights — longer first mile to Caltrain; scoring handles it."
+    },
+    {
+      "name": "CitySouth",
+      "kind": "pm",
+      "label": "udr-citysouth",
+      "provider": "udr",
+      "market_hint": "San Mateo/Burlingame/Millbrae",
+      "city": "San Mateo",
+      "url": "https://www.udr.com/san-francisco-bay-area-apartments/san-mateo/citysouth/apartments-pricing/",
+      "limit": 80,
+      "enabled": true,
+      "note": "San Mateo Caltrain-corridor UDR community."
+    },
+    {
+      "name": "Bay Terrace",
+      "kind": "pm",
+      "label": "udr-bay-terrace",
+      "provider": "udr",
+      "market_hint": "San Mateo/Burlingame/Millbrae",
+      "city": "San Mateo",
+      "url": "https://www.udr.com/san-francisco-bay-area-apartments/san-mateo/bay-terrace/apartments-pricing/",
+      "limit": 80,
+      "enabled": true,
+      "note": "San Mateo Caltrain-corridor UDR community."
+    },
+    {
       "name": "Rent.com",
       "kind": "rent_next_data",
       "label": "rent-com-santa-clara",
@@ -677,6 +822,33 @@
       "url": "https://www.zumper.com/apartments-for-rent/berkeley-ca?max-price=4000",
       "enabled": true,
       "note": "East Bay option (BART to SF) for group flexibility."
+    },
+    {
+      "name": "Redfin",
+      "kind": "redfin_ldjson",
+      "label": "redfin-santa-clara",
+      "market_hint": "Santa Clara",
+      "url": "https://www.redfin.com/city/17675/CA/Santa-Clara/apartments-for-rent",
+      "enabled": true,
+      "note": "Redfin Rentals via public schema.org ld+json (Accommodation + Product price). Probed 2026-07-02: HTTP 200 with 41 listings to a normal desktop-Chrome GET. San Jose and SF city pages returned HTTP 202 challenge pages in the same probe — not added; on any challenge the handler records Source Blocked and stops."
+    },
+    {
+      "name": "Redfin",
+      "kind": "redfin_ldjson",
+      "label": "redfin-sunnyvale",
+      "market_hint": "Sunnyvale",
+      "url": "https://www.redfin.com/city/19457/CA/Sunnyvale/apartments-for-rent",
+      "enabled": true,
+      "note": "Verified 2026-07-02: 41 ld+json listings."
+    },
+    {
+      "name": "Redfin",
+      "kind": "redfin_ldjson",
+      "label": "redfin-mountain-view",
+      "market_hint": "Mountain View",
+      "url": "https://www.redfin.com/city/12739/CA/Mountain-View/apartments-for-rent",
+      "enabled": true,
+      "note": "Verified 2026-07-02: 41 ld+json listings."
     }
   ],
   "_ai_browser_comment": "Sources that need a visible/logged-in browser because they block headless reads (anti-bot or login wall — see _probe_note). The CONDUCTOR captures them (Codex: Chrome plugin; Claude: Claude-in-Chrome / Computer Use), writing ONE JSON array per source into the capture dir as ai-<slug>.json, then re-runs run.py. Capture VISIBLE facts only; never bypass CAPTCHA/login/rate limits; never message posters or submit anything. COVER THE WHOLE COMMUTE CORRIDOR, not just Santa Clara: South Bay (Santa Clara/Sunnyvale/Mountain View), Peninsula/Caltrain (Palo Alto, East Palo Alto, Redwood City, San Mateo, Burlingame), and SF (for the Google SF office). FB Marketplace: extract a[href*='/marketplace/item/'] cards (price/title/city); run multiple map centers via latitude/longitude/radius since one center can't reach both offices. Zillow: data is in the page's __NEXT_DATA__ (find the listResults array: zpid/detailUrl/address/price/units) — navigate per city /<city>-ca/rentals/ and read it; a real signed-in browser passes PerimeterX where headless 403s, but the exact SF 5+ filter can trigger human verification. Apartments.com: headless 403s; use the real browser and capture visible article[data-listingid] card facts from each city path.",
@@ -889,7 +1061,7 @@
   "apis": [
     {
       "name": "Reddit",
-      "enabled": true,
+      "enabled": false,
       "market_hint": "Other Bay Area",
       "source": "Reddit",
       "url": "https://www.reddit.com/r/{city}/search.json?q=sublet%20OR%20room%20OR%20apartment%20OR%20rent&restrict_sr=on&sort=new&limit=50",
@@ -907,7 +1079,7 @@
         "description": "data.selftext",
         "url": "data.url"
       },
-      "note": "Public Reddit JSON. Probed 2026-06-28: returns HTTP 403 to plain UAs from datacenter IPs (no UA variant helped). Works from a residential IP (the LOCAL scheduled run) or with a free Reddit OAuth app token. Until then it records Source Blocked in cloud/CI runs. No login/key required for the local path."
+      "note": "RETIRED 2026-07-02: Reddit public JSON now 403s even from a residential IP (probed www/old/api hosts, multiple UAs). Replaced by the .rss Atom lanes in the 'rss' tier above. Keep this entry disabled unless a free Reddit OAuth token path is added."
     },
     {
       "name": "RentCast",

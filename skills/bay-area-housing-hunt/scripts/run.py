@@ -35,7 +35,9 @@ from __future__ import annotations
 import argparse
 import copy
 import json
+import re
 import sys
+import time
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -52,6 +54,12 @@ DEFAULT_CAPTURE_DIR = Path("/tmp/codexskills-housing-hunt")
 SEARCHES_FILE = SCRIPT_DIR / "searches.json"
 USER_AGENT = "CodexSkills-housing-hunt/1.0 (personal housing search; contact via repo owner)"
 FETCH_TIMEOUT = 12
+# Reddit's public JSON endpoints 403 everywhere as of the 2026-07-02 probe, but the
+# public .rss feeds still serve. They 429 on back-to-back requests, so RSS fetches
+# are spaced out. This is polite pacing within the published limit, not a bypass —
+# any 403/429 that still occurs is recorded Source Blocked and we stop.
+RSS_FEED_DELAY_SECONDS = 45
+RSS_RETRY_AFTER_CAP_SECONDS = 90
 AI_CAPTURE_MAX_AGE_HOURS = 18
 SOURCE_TIERS = ("web", "rss", "apis", "ai_browser")
 SOURCE_ALIASES = {
@@ -284,6 +292,8 @@ def stale_ai_capture_warning(path: Path, explicit_inputs: set[Path], allow_stale
 
 def _rss_url(url: str) -> str:
     parts = urlparse(url)
+    if parts.path.endswith(".rss"):
+        return url
     query = dict(parse_qsl(parts.query, keep_blank_values=True))
     if query.get("format") == "rss":
         return url
@@ -304,22 +314,34 @@ def fetch_rss(name: str, url: str, market_hint: str) -> tuple[list[dict], str | 
     return a Source-Blocked record and the error string — never a retry, proxy,
     or bypass (that is a hard rule in references/sources.md)."""
     feed_url = _rss_url(url)
-    req = urllib.request.Request(feed_url, headers={"User-Agent": USER_AGENT})
-    try:
-        with urllib.request.urlopen(req, timeout=FETCH_TIMEOUT) as resp:
-            if resp.status != 200:
-                raise urllib.error.HTTPError(feed_url, resp.status, "non-200", resp.headers, None)
-            body = resp.read().decode("utf-8", errors="replace")
-    except Exception as exc:  # noqa: BLE001 - any failure -> blocked, by design
-        reason = f"Source Blocked: {type(exc).__name__}: {exc}"
-        return ([{
-            "source": name,
-            "status": "source blocked",
-            "title": f"{name} feed unreachable",
-            "url": feed_url,
-            "description": reason,
-            "market": market_hint,
-        }], reason)
+    req = urllib.request.Request(feed_url, headers={"User-Agent": capture_web.BROWSER_UA})
+    body = ""
+    for attempt in (1, 2):
+        try:
+            with urllib.request.urlopen(req, timeout=FETCH_TIMEOUT) as resp:
+                if resp.status != 200:
+                    raise urllib.error.HTTPError(feed_url, resp.status, "non-200", resp.headers, None)
+                body = resp.read().decode("utf-8", errors="replace")
+            break
+        except Exception as exc:  # noqa: BLE001 - any failure -> blocked, by design
+            # A 429 asks us to come back later; honoring Retry-After once per feed is
+            # compliant pacing. A second 429 (or any other error) -> Source Blocked.
+            if attempt == 1 and isinstance(exc, urllib.error.HTTPError) and exc.code == 429:
+                try:
+                    retry_after = int((exc.headers or {}).get("Retry-After") or RSS_FEED_DELAY_SECONDS)
+                except ValueError:  # Retry-After can also be an HTTP date
+                    retry_after = RSS_FEED_DELAY_SECONDS
+                time.sleep(min(max(retry_after, RSS_FEED_DELAY_SECONDS), RSS_RETRY_AFTER_CAP_SECONDS))
+                continue
+            reason = f"Source Blocked: {type(exc).__name__}: {exc}"
+            return ([{
+                "source": name,
+                "status": "source blocked",
+                "title": f"{name} feed unreachable",
+                "url": feed_url,
+                "description": reason,
+                "market": market_hint,
+            }], reason)
 
     try:
         records = parse_rss_body(body, name, market_hint)
@@ -335,20 +357,31 @@ def fetch_rss(name: str, url: str, market_hint: str) -> tuple[list[dict], str | 
     return records, None
 
 
+def _strip_html(text: str) -> str:
+    return " ".join(re.sub(r"<[^>]+>", " ", text or "").split())
+
+
 def parse_rss_body(body: str, name: str, market_hint: str) -> list[dict]:
-    """Parse RSS 2.0 or RSS 1.0/RDF into capture records. Namespace-agnostic."""
+    """Parse RSS 2.0, RSS 1.0/RDF, or Atom (<entry>, e.g. Reddit .rss) into
+    capture records. Namespace-agnostic."""
     root = ET.fromstring(body)
     records: list[dict] = []
     for item in root.iter():
-        if item.tag.split("}")[-1].lower() != "item":
+        if item.tag.split("}")[-1].lower() not in ("item", "entry"):
             continue
         title = _text(item, "title")
         link = _text(item, "link")
         if not link:
+            # Atom puts the URL in <link href="…"/>
+            for child in item.iter():
+                if child.tag.split("}")[-1].lower() == "link" and child.attrib.get("href"):
+                    link = child.attrib["href"]
+                    break
+        if not link:
             # RSS 1.0 / RDF puts the URL in rdf:about on the <item>
             link = item.attrib.get("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about", "")
-        desc = _text(item, "description", "encoded")
-        posted = _text(item, "date", "pubdate", "issued")
+        desc = _strip_html(_text(item, "description", "encoded", "content", "summary"))
+        posted = _text(item, "date", "pubdate", "issued", "published", "updated")
         if not (title or link):
             continue
         records.append({
@@ -367,6 +400,8 @@ def run_headless_capture(capture_dir: Path, searches: dict) -> list[Path]:
     for feed in searches.get("rss", []):
         if not feed.get("enabled", True):
             continue
+        if written:
+            time.sleep(RSS_FEED_DELAY_SECONDS)
         name = feed.get("name", "Craigslist")
         records, error = fetch_rss(name, feed["url"], feed.get("market_hint", ""))
         slug = hp.slug(f"{name}-{feed.get('label', feed.get('market_hint',''))}") or "feed"

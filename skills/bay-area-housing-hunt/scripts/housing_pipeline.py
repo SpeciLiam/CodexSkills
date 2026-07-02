@@ -128,6 +128,12 @@ COMMUTE_DEFAULTS = {
 
 CAR_MONTHLY_BURDEN = 900
 
+# Group 5+ lane (household.json "group" profile: 5 people x $2,650 = $13,250/mo).
+# Value for a 5+ bed house is judged on the PER-PERSON split, not the total —
+# value_score(13000) = 0 was zeroing out every group listing.
+GROUP_MIN_BEDS = 5
+GROUP_BUDGET_PER_PERSON = 2650
+
 # Door-to-door estimates above are the morning (to-work) leg. The evening (from-work)
 # leg runs a bit longer: Caltrain headways widen off-peak and the PM drive hits more
 # traffic. These are added to the to-work time to report an honest from-work time.
@@ -481,11 +487,25 @@ def parse_stay_window(text: str) -> tuple[date | None, date | None]:
         re.IGNORECASE,
     )
     match = pattern.search(raw)
-    if not match:
-        return None, None
-    start_month, start_day, start_year, end_month, end_day, end_year = match.groups()
-    start = _window_date(start_month, start_day, start_year or end_year or "")
-    end = _window_date(end_month or start_month, end_day, end_year or start_year or "")
+    if match:
+        start_month, start_day, start_year, end_month, end_day, end_year = match.groups()
+        start = _window_date(start_month, start_day, start_year or end_year or "")
+        end = _window_date(end_month or start_month, end_day, end_year or start_year or "")
+    else:
+        # Numeric M/D windows ("8/6 - 9/6", "7/15-9/30") — common in classifieds
+        # titles and previously invisible to the term-fit gate.
+        numeric = re.search(
+            r"\b(\d{1,2})/(\d{1,2})\s*(?:-|–|—|to|through)\s*(\d{1,2})/(\d{1,2})\b", raw)
+        if not numeric:
+            return None, None
+        sm, sd, em, ed = (int(g) for g in numeric.groups())
+        if not (1 <= sm <= 12 and 1 <= em <= 12 and 1 <= sd <= 31 and 1 <= ed <= 31):
+            return None, None
+        try:
+            start = date(NEED_START.year, sm, sd)
+            end = date(NEED_START.year, em, ed)
+        except ValueError:
+            return None, None
     if start and end and end < start:
         try:
             end = date(end.year + 1, end.month, end.day)
@@ -589,6 +609,11 @@ MARKET_BBOXES = {
 
 OUT_OF_AREA_TERMS = {
     "santa cruz", "sacramento", "stockton", "modesto", "tracy", "vallejo", "santa rosa",
+    # Marin / North Bay: no realistic commute to Santa Clara (2026-07-02 board had a
+    # Woodacre cottage ranked in an SF market table).
+    "woodacre", "san anselmo", "san rafael", "mill valley", "novato", "petaluma",
+    "sausalito", "larkspur", "corte madera", "tiburon", "fairfax ca", "napa",
+    "vacaville", "fairfield ca", "american canyon", "benicia", "martinez",
 }
 
 CITY_MARKET_TERMS = [
@@ -853,6 +878,44 @@ def value_score(rent: int) -> int:
     return 0
 
 
+def parse_beds_count(value: Any) -> int:
+    """Bedroom count from the Beds cell in any captured shape: '5', '5 bd',
+    '1-3' (range → max), 'studio' → 0."""
+    text = normalize(value)
+    if not text:
+        return 0
+    nums = [int(n) for n in re.findall(r"\d{1,2}", text)]
+    return max(nums) if nums else 0
+
+
+def parse_beds_exact(value: Any) -> int:
+    """Bedroom count only when the Beds cell states ONE number ('5', '5 bd').
+    A range like '0-8 bd' is an apartment complex's unit mix, not a single
+    house — splitting its (lowest-unit) rent per bedroom would be nonsense."""
+    text = normalize(value)
+    nums = re.findall(r"\d{1,2}", text)
+    return int(nums[0]) if len(nums) == 1 else 0
+
+
+def group_value_score(per_person_rent: int) -> int:
+    """Value brackets for the 5+ group lane, anchored on GROUP_BUDGET_PER_PERSON."""
+    if per_person_rent <= 0:
+        return 2
+    if per_person_rent <= 1900:
+        return 18
+    if per_person_rent <= 2200:
+        return 17
+    if per_person_rent <= 2450:
+        return 16
+    if per_person_rent <= GROUP_BUDGET_PER_PERSON:
+        return 14
+    if per_person_rent <= 2900:
+        return 10
+    if per_person_rent <= 3200:
+        return 5
+    return 0
+
+
 def commute_component(minutes: int) -> int:
     if minutes <= 0:
         return 8  # unknown commute is neutral, not "excellent"
@@ -883,6 +946,53 @@ def quality_score(title: str, description: str, lease: str) -> int:
     return max(0, min(10, score))
 
 
+# Classifieds sections leak non-housing posts (a "Third floor office in cow hollow"
+# sublease ranked in an SF top-5 on 2026-07-02). A title whose SUBJECT is one of
+# these spaces — and that contains no housing token — is not a place to live.
+# Patterns are subject-shaped ("office space", "floor office") rather than bare
+# words so "sublease near office" / "parking included" stay untouched.
+NON_HOUSING_PATTERNS = [
+    r"\b(?:floor|private|shared|small|large|sunny|quiet|furnished|downtown)\s+office\b",
+    r"\boffice\s+(?:space|suite|for|in|available|sublet|sublease)\b",
+    r"\bparking\s+(?:space|spot|stall)\b",
+    r"\bgarage\s+(?:space|for\s+rent|for\s+lease)\b",
+    r"\bstorage\s+(?:space|unit)\b",
+    r"\b(?:commercial|retail|desk|warehouse|event|coworking)\s+space\b",
+    r"\bsalon\s+(?:suite|space|chair|station)\b",
+    r"\bkitchen\s+rental\b",
+]
+HOUSING_CONTEXT_RE = re.compile(
+    r"\b(?:\d+\s*(?:br|bd|bed|beds|bedroom|bedrooms)|bedroom|bedrooms|room|rooms|"
+    r"apartment|apt|house|home|flat|condo|townhouse|townhome|cottage|duplex|"
+    r"in law|studio|loft|bungalow|casita|unit)\b")
+
+
+def non_housing_reason(title: str) -> str:
+    text = normalize(str(title or "").replace("-", " ").replace("/", " "))
+    if not text or HOUSING_CONTEXT_RE.search(text):
+        return ""
+    for pattern in NON_HOUSING_PATTERNS:
+        match = re.search(pattern, text)
+        if match:
+            return f"non-housing listing ({match.group(0)})"
+    return ""
+
+
+def apply_non_housing(rows: list[dict[str, str]], run_date: str) -> None:
+    for row in rows:
+        if row.get("Status") not in ACTIVE_STATUSES | VERIFY_STATUSES:
+            continue
+        if parse_beds_count(row.get("Beds")) >= 1:
+            continue  # a real bedroom count means it's housing, whatever the title
+            # says ('studio' parses to 0 — sapi buckets office posts as studios)
+        if HOUSING_CONTEXT_RE.search(normalize(clean(row.get("Notes", "")))):
+            continue  # housing words in the description get the benefit of the doubt
+        reason = non_housing_reason(row.get("Title", ""))
+        if reason:
+            row["Status"] = "Rejected"
+            record_lifecycle(row, f"Rejected {run_date}: {reason}")
+
+
 def scam_reasons_for_row(row: dict[str, str]) -> list[str]:
     text = normalize(" ".join(clean(row.get(key, "")) for key in ["Title", "Notes", "Lease"]))
     reasons: list[str] = []
@@ -905,7 +1015,36 @@ def term_end(row: dict[str, str]) -> date | None:
 
 def ends_before_need_window(row: dict[str, str]) -> bool:
     end = term_end(row)
-    return bool(end and end < TOP_OVERALL_MIN_END)
+    if end and end < TOP_OVERALL_MIN_END:
+        return True
+    return 0 < short_stay_days(" ".join(clean(row.get(key, "")) for key in ["Title", "Notes"])) < 30
+
+
+_WORD_NUMBERS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5,
+                 "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
+
+
+def short_stay_days(text: str) -> int:
+    """Explicit '<N> week/day sublet' duration in days (0 = none stated).
+    Catches date-less short stays like 'Two Week Sublet Available' that the
+    stay-window parser cannot see."""
+    t = normalize(text)
+    match = re.search(
+        r"\b(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten)\s*[- ]\s*"
+        r"(weeks?|wks?|days?|nights?)\s*[- ]?\s*(?:only\s+)?(sublet|sublease|stay|rental)\b", t)
+    if not match:
+        match = re.search(
+            r"\b(?:sublet|sublease|stay|available)\s+(?:for\s+)?"
+            r"(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten)\s*[- ]\s*(weeks?|wks?|days?|nights?)\b", t)
+        if not match:
+            return 0
+        number, unit = match.group(1), match.group(2)
+    else:
+        number, unit = match.group(1), match.group(2)
+    count = _WORD_NUMBERS.get(number, 0) or (int(number) if number.isdigit() else 0)
+    if not count:
+        return 0
+    return count * 7 if unit.startswith("w") else count
 
 
 def mark_needs_verification(row: dict[str, str], note: str) -> None:
@@ -994,13 +1133,22 @@ def _components(row: dict[str, str]) -> dict[str, Any]:
             "summary": f"bike+Caltrain ({bike_note})",
         }
     flex, flex_reason = flexibility_score(row.get("Lease", ""), row.get("Title", ""), row.get("Notes", ""))
+    beds = parse_beds_exact(row.get("Beds"))
+    per_person = int(round(rent / beds)) if (rent and beds >= GROUP_MIN_BEDS) else 0
+    if 0 < per_person < 500:
+        # A Bay Area whole house can't rent for <$500/bedroom — the price is a
+        # per-room price carrying the house's bed count (e.g. $1,295 room in an
+        # "8 bd" home). Score it as the room it is, not a $162/person house.
+        per_person = 0
     return {
         "rent": rent,
         "market": market,
         "commute": commute,
         "flex": flex,
         "flex_reason": flex_reason,
-        "value": value_score(rent),
+        "beds": beds,
+        "per_person": per_person,
+        "value": group_value_score(per_person) if per_person else value_score(rent),
         "quality": quality_score(row.get("Title", ""), row.get("Notes", ""), row.get("Lease", "")),
         "confidence": confidence_score(row),
         "nhood": neighborhood_score(market, row.get("Title", ""), row.get("Notes", "")),
@@ -1030,18 +1178,30 @@ def score_row(row: dict[str, str]) -> dict[str, str]:
     commute = c["commute"]
     base = c["value"] + c["flex"] + c["quality"] + c["confidence"] + c["nhood"]
     no_car = base + commute_component(commute["no_car"])
-    car_value = value_score(rent + CAR_MONTHLY_BURDEN if rent else 0)
+    if c["per_person"]:
+        car_value = group_value_score(int(round((rent + CAR_MONTHLY_BURDEN) / c["beds"]))) if rent else 2
+    else:
+        car_value = value_score(rent + CAR_MONTHLY_BURDEN if rent else 0)
     car = car_value + commute_component(commute["car"]) + c["flex"] + c["quality"] + c["confidence"] + c["nhood"]
     overall = max(no_car, car - 3)
 
     if status in VERIFY_STATUSES:
         overall = max(0, overall - 8)
+    if c["market"] == "Other Bay Area" and "location out of search area" not in normalize(row.get("Notes", "")):
+        # Legacy rows bucketed out-of-area before ingest-time tagging existed.
+        if out_of_area_reason(" ".join(clean(row.get(key, "")) for key in ["City", "Title", "URL", "Notes"])):
+            row["Notes"] = merge_notes(row.get("Notes", ""), "location out of search area")
     if "location out of search area" in normalize(row.get("Notes", "")):
         overall = max(0, overall - 18)
     end = term_end(row)
     if end and end < TOP_OVERALL_MIN_END:
         overall = max(0, overall - 25)
         row["Notes"] = merge_notes(row.get("Notes", ""), f"term ends {end.isoformat()} — before need window")
+    else:
+        stay = short_stay_days(" ".join(clean(row.get(key, "")) for key in ["Title", "Notes"]))
+        if 0 < stay < 30:
+            overall = max(0, overall - 25)
+            row["Notes"] = merge_notes(row.get("Notes", ""), f"short stay ~{stay}d — below need window")
 
     row["Score"] = str(max(0, min(100, int(round(overall)))))
     row["No-Car Score"] = str(max(0, min(100, int(round(no_car)))))
@@ -1059,10 +1219,45 @@ def score_row(row: dict[str, str]) -> dict[str, str]:
     reason_bits = [c["flex_reason"], f"to work ~{nc_to}m / home ~{nc_from}m (no-car)"]
     if rent:
         reason_bits.append(f"${rent}/mo all-in")
+    if c["per_person"]:
+        reason_bits.append(f"${c['per_person']}/person split {c['beds']} ways")
     if car - 3 > no_car:
         reason_bits.append("car scenario drives rank (costs ~$900/mo)")
     row["Why"] = "; ".join(bit for bit in reason_bits if bit)
     return row
+
+
+FIT_TIERS = [(70, "Great"), (55, "Good"), (40, "Fair")]
+
+
+def fit_tier(score: Any) -> str:
+    """Organize scores into named fit bands so the board reads as a decision aid
+    (Great = tour-worthy now, Good = strong backup, Fair = situational, Weak = filler)."""
+    value = to_int(score)
+    for floor, label in FIT_TIERS:
+        if value >= floor:
+            return label
+    return "Weak"
+
+
+def score_breakdown(row: dict[str, str]) -> dict[str, Any]:
+    """Per-component fit-score breakdown for the dashboard, computed the same way
+    score_row computes the total (terminal rows return an empty dict)."""
+    if row.get("Status") in TERMINAL_STATUSES:
+        return {}
+    c = _components(row)
+    return {
+        "value": c["value"],
+        "flexibility": c["flex"],
+        "flexibilityReason": c["flex_reason"],
+        "quality": c["quality"],
+        "confidence": c["confidence"],
+        "neighborhood": c["nhood"],
+        "commuteNoCar": commute_component(c["commute"]["no_car"]),
+        "commuteCar": commute_component(c["commute"]["car"]),
+        "perPersonRent": c["per_person"] or None,
+        "fitTier": fit_tier(row.get("Score", "")),
+    }
 
 
 def merge_notes(existing: str, addition: str) -> str:
@@ -1304,8 +1499,49 @@ def _first_seen_sort_value(row: dict[str, str]) -> str:
     return clean(row.get("First Seen")) or "9999-12-31"
 
 
+_TITLE_STOPWORDS = {"a", "an", "the", "in", "of", "for", "with", "and", "or", "to",
+                    "at", "on", "by", "w", "available", "now"}
+
+
+def _title_token_set(title: str) -> set[str]:
+    return {tok for tok in slug(title).split("-")
+            if tok and not tok.isdigit() and tok not in _TITLE_STOPWORDS}
+
+
+def _stay_window_fingerprint(row: dict[str, str]) -> str:
+    """Same source + market + rent + identical stay window is a repost even when
+    the poster reworded the title ('(8/6 - 9/6) Sublet in beautiful NOPA' vs
+    '1b/1b Sublet in NOPA (8/6 - 9/6)' held two top-5 slots on 2026-07-02)."""
+    start, end = parse_stay_window(" ".join(clean(row.get(key, "")) for key in ["Title", "Available"]))
+    if not (start and end):
+        return ""
+    rent = to_int(row.get("All-In Estimate") or row.get("Rent"))
+    if not rent:
+        return ""
+    rent_bucket = int(round(rent / 50.0) * 50)
+    return "|".join([start.isoformat(), end.isoformat(), str(rent_bucket), normalize(row.get("Market", ""))])
+
+
+def _mark_duplicate_group(group: list[dict[str, str]]) -> None:
+    keys = {row.get("Listing Key", "") for row in group}
+    if len(group) < 2 or len(keys) < 2:
+        return
+    winner = sorted(group, key=lambda r: (clean(r.get("Last Seen")), clean(r.get("URL"))), reverse=True)[0]
+    first_seen = min((_first_seen_sort_value(row) for row in group), default=winner.get("First Seen", ""))
+    if first_seen != "9999-12-31":
+        winner["First Seen"] = first_seen
+    for row in group:
+        if row is winner:
+            if row.get("Status") == "Duplicate":
+                row["Status"] = "Active"
+            continue
+        row["Status"] = "Duplicate"
+        record_lifecycle(row, f"Duplicate {row.get('Last Seen')}: repost of {winner.get('Listing Key')}")
+
+
 def apply_content_dedupe(rows: list[dict[str, str]]) -> None:
     same_source: dict[tuple[str, str], list[dict[str, str]]] = {}
+    same_window: dict[tuple[str, str], list[dict[str, str]]] = {}
     cross_source: dict[str, list[dict[str, str]]] = {}
     for row in rows:
         if row.get("Status") in TERMINAL_STATUSES:
@@ -1315,22 +1551,27 @@ def apply_content_dedupe(rows: list[dict[str, str]]) -> None:
             continue
         same_source.setdefault((normalize(row.get("Source", "")), fp), []).append(row)
         cross_source.setdefault(fp, []).append(row)
+        window_fp = _stay_window_fingerprint(row)
+        if window_fp:
+            same_window.setdefault((normalize(row.get("Source", "")), window_fp), []).append(row)
 
     for group in same_source.values():
-        keys = {row.get("Listing Key", "") for row in group}
-        if len(group) < 2 or len(keys) < 2:
+        _mark_duplicate_group(group)
+
+    for group in same_window.values():
+        live = [row for row in group if row.get("Status") not in TERMINAL_STATUSES]
+        if len(live) < 2:
             continue
-        winner = sorted(group, key=lambda r: (clean(r.get("Last Seen")), clean(r.get("URL"))), reverse=True)[0]
-        first_seen = min((_first_seen_sort_value(row) for row in group), default=winner.get("First Seen", ""))
-        if first_seen != "9999-12-31":
-            winner["First Seen"] = first_seen
-        for row in group:
-            if row is winner:
-                if row.get("Status") == "Duplicate":
-                    row["Status"] = "Active"
-                continue
-            row["Status"] = "Duplicate"
-            record_lifecycle(row, f"Duplicate {row.get('Last Seen')}: repost of {winner.get('Listing Key')}")
+        # Reworded reposts still share most title words; unrelated listings that
+        # coincidentally share a window/rent do not — require token overlap.
+        anchor = _title_token_set(live[0].get("Title", ""))
+        cluster = [live[0]]
+        for row in live[1:]:
+            tokens = _title_token_set(row.get("Title", ""))
+            union = anchor | tokens
+            if union and len(anchor & tokens) / len(union) >= 0.34:
+                cluster.append(row)
+        _mark_duplicate_group(cluster)
 
     for group in cross_source.values():
         sources = {normalize(row.get("Source", "")) for row in group}
@@ -1429,6 +1670,9 @@ def parse_previous_rankings() -> dict[tuple[str, str], int]:
     previous: dict[tuple[str, str], int] = {}
     section = ""
     current_market = ""
+    # Header-derived so an added/removed column in RANK_HEADERS cannot silently
+    # misread the previous board (delta continuity relies on this parser).
+    title_idx = 7
     for raw in RANKINGS_MD.read_text(encoding="utf-8").splitlines():
         line = raw.strip()
         if line.startswith("### "):
@@ -1444,6 +1688,9 @@ def parse_previous_rankings() -> dict[tuple[str, str], int]:
         if not line.startswith("|"):
             continue
         cells = split_markdown_row(line)
+        if cells and cells[0] == "Rank" and "Listing" in cells:
+            title_idx = cells.index("Listing")
+            continue
         if not cells or not re.fullmatch(r"\d+", cells[0]):
             continue
         rank = int(cells[0])
@@ -1451,7 +1698,7 @@ def parse_previous_rankings() -> dict[tuple[str, str], int]:
         match = re.search(r"\((https?://[^)]+)\)", cells[-1])
         if match:
             url = canonical_url(match.group(1))
-        title = cells[7] if len(cells) > 7 else ""
+        title = cells[title_idx] if len(cells) > title_idx else ""
         key = url or normalize(title)
         if not key:
             continue
@@ -1483,19 +1730,21 @@ def delta_cell(previous: dict[tuple[str, str], int], scope: str, row: dict[str, 
     return str(change)
 
 
-RANK_HEADERS = ["Rank", "Delta", "Score", "No-Car", "Car", "Rent", "Market", "Listing", "Lease", "Commute", "Why", "Status", "Link"]
+RANK_HEADERS = ["Rank", "Delta", "Score", "Fit", "No-Car", "Car", "Rent", "Market", "Listing", "Lease", "Commute", "Why", "Status", "Link"]
+RANK_SEPARATOR = "| ---: | --- | ---: | --- | ---: | ---: | ---: | --- | --- | --- | --- | --- | --- | --- |"
 
 
 def ranking_table(rows: list[dict[str, str]], previous: dict[tuple[str, str], int], scope: str) -> list[str]:
     lines = [
         "| " + " | ".join(RANK_HEADERS) + " |",
-        "| ---: | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | --- | --- |",
+        RANK_SEPARATOR,
     ]
     for index, row in enumerate(rows, start=1):
         cells = {
             "Rank": str(index),
             "Delta": delta_cell(previous, scope, row, index),
             "Score": row.get("Score", ""),
+            "Fit": fit_tier(row.get("Score", "")),
             "No-Car": row.get("No-Car Score", ""),
             "Car": row.get("Car Score", ""),
             "Rent": rent_value(row),
@@ -1514,7 +1763,7 @@ def ranking_table(rows: list[dict[str, str]], previous: dict[tuple[str, str], in
 def empty_rank_table() -> list[str]:
     return [
         "| " + " | ".join(RANK_HEADERS) + " |",
-        "| ---: | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | --- | --- |",
+        RANK_SEPARATOR,
     ]
 
 
@@ -1660,6 +1909,7 @@ def run(
     apply_marks(rows, marks or [], run_date)
     mark_expired(rows, expire_keys or [], expire_urls or [], run_date)
     mark_stale(rows, run_date, stale_days, retire_days)
+    apply_non_housing(rows, run_date)
     apply_content_dedupe(rows)
     apply_scam_quality(rows)
     for row in rows:

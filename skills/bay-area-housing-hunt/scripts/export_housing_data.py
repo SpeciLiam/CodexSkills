@@ -335,6 +335,8 @@ def export() -> dict:
             "available": row.get("Available", ""),
             "status": row.get("Status", ""),
             "score": hp.to_int(row.get("Score", "")),
+            "fitTier": hp.fit_tier(row.get("Score", "")),
+            "scoreBreakdown": hp.score_breakdown(row),
             "noCarScore": hp.to_int(row.get("No-Car Score", "")),
             "carScore": hp.to_int(row.get("Car Score", "")),
             "overallRank": overall_ranks.get(lk),

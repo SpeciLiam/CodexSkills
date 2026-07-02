@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-06-30T18:05:28.133530+00:00",
+    "generatedAt": "2026-07-02T16:56:35.421379+00:00",
     "arrival": "2026-07-06T09:00:00-07:00",
     "endpoint": "https://housing-visualizer.vercel.app/api/commute",
     "primaryOffice": "HackerRank (Santa Clara)",
@@ -8,7 +8,7 @@
       "HackerRank (Santa Clara)": "2350 Mission College Blvd #750, Santa Clara, CA 95054",
       "Google (San Francisco)": "345 Spear Street, San Francisco, CA 94105"
     },
-    "originCount": 110
+    "originCount": 111
   },
   "origins": {
     "21st ave., san francisco, ca": {
@@ -2100,6 +2100,25 @@
       "computedAt": "2026-06-30T18:05:24.532488+00:00",
       "suspect": true,
       "homeTransit": 287
+    },
+    "salinas, ca": {
+      "origin": "Salinas, CA",
+      "office": {
+        "HackerRank (Santa Clara)": {
+          "transit": 165,
+          "drive": 77,
+          "bike": 398,
+          "transitSummary": "bus + South Santa Clara County Connector + Local Weekday"
+        },
+        "Google (San Francisco)": {
+          "transit": 194,
+          "drive": 124,
+          "bike": 611
+        }
+      },
+      "computedAt": "2026-07-02T16:39:59.870377+00:00",
+      "suspect": false,
+      "homeTransit": 191
     }
   }
 }

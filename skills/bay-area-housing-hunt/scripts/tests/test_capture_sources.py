@@ -112,5 +112,63 @@ class CaptureSourceParsers(unittest.TestCase):
         self.assertEqual(records[0]["beds"], "5 bd")
 
 
+    def test_parse_redfin_ldjson_joins_accommodation_and_product(self):
+        html = """
+        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"Redfin"}</script>
+        <script type="application/ld+json">[
+          {"@context":"http://schema.org","@type":"Accommodation",
+           "name":"City Gate - 5608 Stevens Creek Blvd, Cupertino, CA, 95014",
+           "url":"https://www.redfin.com/CA/Cupertino/City-Gate/apartment/177360368",
+           "address":{"@type":"PostalAddress","streetAddress":"5608 Stevens Creek Blvd","addressLocality":"Cupertino"},
+           "geo":{"@type":"GeoCoordinates","latitude":37.3225724,"longitude":-122.0018051},
+           "numberOfRooms":"1-3"},
+          {"@context":"http://schema.org","@type":"Product",
+           "name":"City Gate - 5608 Stevens Creek Blvd",
+           "offers":{"@type":"Offer","price":"3231","priceCurrency":"USD"},
+           "url":"https://www.redfin.com/CA/Cupertino/City-Gate/apartment/177360368"}
+        ]</script>
+        """
+        records = self.capture_web.parse_redfin_ldjson(html, {"market_hint": "Santa Clara"})
+        self.assertEqual(len(records), 1)
+        rec = records[0]
+        self.assertEqual(rec["listing_key"], "redfin-177360368")
+        self.assertEqual(rec["rent"], "$3231")
+        self.assertEqual(rec["beds"], "1-3")
+        self.assertEqual(rec["city"], "Cupertino")
+        self.assertEqual(rec["lat"], "37.3225724")
+
+    def test_parse_redfin_ldjson_empty_on_challenge_page(self):
+        records = self.capture_web.parse_redfin_ldjson("<html><body>checking your browser</body></html>", {})
+        self.assertEqual(records, [])
+
+    def test_parse_rss_atom_entries(self):
+        import run as run_mod
+        importlib.reload(run_mod)
+        body = """<?xml version="1.0" encoding="UTF-8"?>
+        <feed xmlns="http://www.w3.org/2005/Atom">
+          <title>search results</title>
+          <entry>
+            <title>Looking for sublet or room to share</title>
+            <link href="https://www.reddit.com/r/bayarea/comments/1uii6lb/looking_for_sublet/"/>
+            <content type="html">&lt;a href="x"&gt;submitted by&lt;/a&gt; $1,400/mo near Caltrain</content>
+            <published>2026-07-01T18:00:00+00:00</published>
+          </entry>
+        </feed>"""
+        records = run_mod.parse_rss_body(body, "Reddit", "")
+        self.assertEqual(len(records), 1)
+        rec = records[0]
+        self.assertEqual(rec["title"], "Looking for sublet or room to share")
+        self.assertEqual(rec["url"], "https://www.reddit.com/r/bayarea/comments/1uii6lb/looking_for_sublet/")
+        self.assertIn("$1,400/mo near Caltrain", rec["description"])
+        self.assertNotIn("<a", rec["description"])
+        self.assertEqual(rec["posted"], "2026-07-01T18:00:00+00:00")
+
+    def test_rss_url_preserves_dot_rss_paths(self):
+        import run as run_mod
+        importlib.reload(run_mod)
+        url = "https://www.reddit.com/r/bayarea/search.rss?q=sublet&restrict_sr=on&sort=new"
+        self.assertEqual(run_mod._rss_url(url), url)
+
+
 if __name__ == "__main__":
     unittest.main()

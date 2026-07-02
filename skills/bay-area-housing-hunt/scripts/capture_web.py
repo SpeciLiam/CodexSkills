@@ -33,11 +33,12 @@ import html as html_lib
 import json
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import quote_plus, urljoin
+from urllib.parse import quote_plus, urljoin, urlparse
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
@@ -474,6 +475,72 @@ def fetch_zumper(cfg: dict) -> tuple[list[dict], str | None]:
 
 
 # --------------------------------------------------------------------------- #
+# Redfin Rentals ld+json
+# --------------------------------------------------------------------------- #
+_LDJSON_RE = re.compile(r'<script type="application/ld\+json">(.*?)</script>', re.DOTALL)
+
+
+def parse_redfin_ldjson(html: str, cfg: dict) -> list[dict]:
+    """Redfin rental city pages embed schema.org data per listing: an
+    `Accommodation` entry (name/url/address/geo/beds) plus a `Product` entry
+    (offers.price), joined by url. Public SSR to a normal browser GET —
+    verified 2026-07-02 for Santa Clara / Sunnyvale / Mountain View."""
+    market = cfg.get("market_hint", "")
+    accommodations: dict[str, dict] = {}
+    prices: dict[str, str] = {}
+    for block in _LDJSON_RE.findall(html):
+        try:
+            data = json.loads(block)
+        except json.JSONDecodeError:
+            continue
+        for item in data if isinstance(data, list) else [data]:
+            if not isinstance(item, dict):
+                continue
+            url = hp.clean(item.get("url"))
+            if not url:
+                continue
+            if item.get("@type") == "Accommodation":
+                accommodations[url] = item
+            elif item.get("@type") == "Product":
+                price = hp.clean(((item.get("offers") or {}).get("price")))
+                if price:
+                    prices[url] = price
+    records: list[dict] = []
+    for url, item in accommodations.items():
+        address = item.get("address") or {}
+        geo = item.get("geo") or {}
+        listing_id = url.rstrip("/").rsplit("/", 1)[-1]
+        price = prices.get(url, "")
+        records.append({
+            "source": "Redfin",
+            "listing_key": f"redfin-{listing_id}" if listing_id.isdigit() else "",
+            "title": hp.clean(item.get("name")) or "Redfin rental",
+            "url": url,
+            "rent": f"${price}" if price else "",
+            "beds": hp.clean(item.get("numberOfRooms")),
+            "city": hp.clean(address.get("addressLocality")),
+            "address": hp.clean(address.get("streetAddress")),
+            "market": market,
+            "lat": hp.clean(geo.get("latitude")),
+            "lng": hp.clean(geo.get("longitude")),
+        })
+    return records[: cfg.get("limit", DEFAULT_LIMIT)]
+
+
+def fetch_redfin(cfg: dict) -> tuple[list[dict], str | None]:
+    url = cfg["url"]
+    try:
+        html = _get(url, "text/html,application/xhtml+xml,*/*;q=0.8")
+        records = parse_redfin_ldjson(html, cfg)
+        if not records:
+            # A 202/challenge page serves 200-shaped HTML with no ld+json listings.
+            raise ValueError("no ld+json Accommodation entries (challenge or layout change)")
+    except Exception as exc:  # noqa: BLE001
+        return [_blocked(cfg.get("name", "Redfin"), url, cfg.get("market_hint", ""), exc)], str(exc)
+    return records, None
+
+
+# --------------------------------------------------------------------------- #
 # Direct property-manager public state
 # --------------------------------------------------------------------------- #
 def parse_pm_udr(html: str, cfg: dict) -> list[dict]:
@@ -647,11 +714,19 @@ KINDS = {
     "zumper_state": fetch_zumper,
     "pm": fetch_pm,
     "rent_next_data": fetch_rent_next_data,
+    "redfin_ldjson": fetch_redfin,
 }
+
+
+# Seconds between consecutive fetches to the SAME host. Redfin serves HTTP 202
+# challenge pages to rapid back-to-back city requests but 200s politely-spaced
+# ones; this is pacing within the site's tolerance, not a challenge bypass.
+SAME_HOST_DELAY_SECONDS = 30
 
 
 def run_web_capture(capture_dir: Path, searches: dict) -> list[Path]:
     written: list[Path] = []
+    last_host = ""
     for cfg in searches.get("web", []):
         if not cfg.get("enabled", True):
             continue
@@ -661,6 +736,10 @@ def run_web_capture(capture_dir: Path, searches: dict) -> list[Path]:
         if not fetch:
             print(f"  web {label}: skipped (unknown kind {kind!r})", file=sys.stderr)
             continue
+        host = urlparse(cfg.get("url", "")).netloc
+        if host and host == last_host and kind == "redfin_ldjson":
+            time.sleep(SAME_HOST_DELAY_SECONDS)
+        last_host = host
         records, error = fetch(cfg)
         out = capture_dir / f"web-{hp.slug(cfg.get('name','web'))}-{hp.slug(label)}.json"
         out.write_text(json.dumps(records, indent=2), encoding="utf-8")

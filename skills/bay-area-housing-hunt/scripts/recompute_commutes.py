@@ -143,9 +143,19 @@ def load_cache() -> dict:
     return {"meta": {}, "origins": {}}
 
 
+def entry_has_numbers(entry: dict) -> bool:
+    """True when the primary-office record carries at least one real duration.
+    A quota-exhausted run (Google 429) yields all-null records — those must
+    never count as fresh or they poison the cache for max_age_days AND shadow
+    the legacy address-key fallback in export_housing_data.py."""
+    prim = (entry.get("office") or {}).get(co.PRIMARY_OFFICE) or {}
+    return any(isinstance(prim.get(k), (int, float)) for k in ("transit", "drive", "bike"))
+
+
 def is_fresh(entry: dict, max_age_days: int) -> bool:
-    """A cached origin is fresh if it routed at least the primary office recently."""
-    if not entry or not (entry.get("office") or {}).get(co.PRIMARY_OFFICE):
+    """A cached origin is fresh if it routed at least the primary office recently
+    and actually got numbers back."""
+    if not entry or not entry_has_numbers(entry):
         return False
     ts = entry.get("computedAt")
     if not ts:
@@ -193,6 +203,14 @@ def main() -> int:
     cache.setdefault("origins", {})
     arrival = next_weekday_arrival()
 
+    # Self-heal: drop all-null entries from prior quota-exhausted runs so they
+    # get re-routed AND stop shadowing the export's address-key fallback.
+    nulls = [k for k, v in cache["origins"].items() if not entry_has_numbers(v)]
+    for k in nulls:
+        del cache["origins"][k]
+    if nulls:
+        print(f"purged {len(nulls)} all-null cache entries (quota-exhausted runs)", flush=True)
+
     todo = [(k, a) for k, a in origins.items()
             if args.force or not is_fresh(cache["origins"].get(k, {}), args.max_age_days)]
     todo.sort(key=lambda ka: ka[1])
@@ -211,6 +229,11 @@ def main() -> int:
                 entry = fut.result()
             except Exception as e:
                 print(f"  ! {origins[key]}: {e}", flush=True)
+                continue
+            if not entry_has_numbers(entry):
+                # Google refused every mode (quota/geocode) — do not cache the
+                # failure or it would mask the address-key fallback until purged.
+                print(f"  ! {origins[key]}: no durations returned (quota?), not cached", flush=True)
                 continue
             cache["origins"][key] = entry
             done += 1
