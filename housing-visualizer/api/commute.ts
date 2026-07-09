@@ -9,6 +9,7 @@
 declare const process: { env: Record<string, string | undefined> };
 
 const KEY = process.env.GOOGLE_MAPS_API_KEY || "";
+const ENABLED = process.env.HOUSING_ENABLE_GOOGLE_PROXY === "true";
 const ROUTES = "https://routes.googleapis.com/directions/v2:computeRoutes";
 
 const secs = (d: any): number => (typeof d === "string" ? parseInt(d.replace(/[^\d]/g, ""), 10) || 0 : 0);
@@ -71,9 +72,14 @@ function parseSimple(j: any, arrivalISO: string, mode: string) {
 }
 
 export default async function handler(req: any, res: any) {
+  if (!ENABLED) return res.status(503).json({ error: "Google proxy disabled until private/authenticated deployment is configured" });
   if (!KEY) return res.status(503).json({ error: "GOOGLE_MAPS_API_KEY not configured" });
   const { origin, dest, arrival } = req.query || {};
   if (!origin || !dest || !arrival) return res.status(400).json({ error: "origin, dest, arrival required" });
+  if (String(origin).length > 300 || String(dest).length > 300) return res.status(400).json({ error: "origin/dest too long" });
+  const arrivalMs = Date.parse(String(arrival));
+  if (!Number.isFinite(arrivalMs) || arrivalMs < Date.now() - 3600000 || arrivalMs > Date.now() + 31 * 86400000)
+    return res.status(400).json({ error: "arrival must be within the next 31 days" });
   const base = { origin: { address: String(origin) }, destination: { address: String(dest) } };
   try {
     const [transit, drive, bike] = await Promise.all([

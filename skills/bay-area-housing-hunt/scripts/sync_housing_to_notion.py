@@ -22,10 +22,11 @@ import json
 import os
 import re
 import sys
+import time
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
-from urllib.error import HTTPError
+from urllib.error import HTTPError, URLError
 from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
@@ -114,19 +115,42 @@ def load_config(root: Path) -> NotionConfig | None:
     return NotionConfig(database_url=db, data_source_url=data_source)
 
 
+# Notion rate-limits (429) and, on a flaky network, single requests among the
+# thousands this sync makes can hit transient connection resets/timeouts. Retry
+# those with exponential backoff so one blip does not abort the whole run. 4xx
+# other than 429 are real request errors and are raised immediately.
+TRANSIENT_HTTP = frozenset({429, 500, 502, 503, 504})
+MAX_ATTEMPTS = 5
+
+
 def notion_request(method: str, path: str, token: str, body: dict[str, Any] | None = None) -> dict[str, Any]:
     payload = None if body is None else json.dumps(body).encode("utf-8")
-    request = Request(f"https://api.notion.com{path}", data=payload, method=method)
-    request.add_header("Authorization", f"Bearer {token}")
-    request.add_header("Notion-Version", NOTION_VERSION)
-    request.add_header("Content-Type", "application/json")
-    try:
-        with urlopen(request) as response:
-            text = response.read().decode("utf-8")
-    except HTTPError as exc:
-        details = exc.read().decode("utf-8", errors="replace")
-        raise RuntimeError(f"Notion API {exc.code} {exc.reason}: {details}") from exc
-    return json.loads(text) if text else {}
+    for attempt in range(MAX_ATTEMPTS):
+        request = Request(f"https://api.notion.com{path}", data=payload, method=method)
+        request.add_header("Authorization", f"Bearer {token}")
+        request.add_header("Notion-Version", NOTION_VERSION)
+        request.add_header("Content-Type", "application/json")
+        try:
+            with urlopen(request, timeout=60) as response:
+                text = response.read().decode("utf-8")
+            return json.loads(text) if text else {}
+        except HTTPError as exc:
+            if exc.code in TRANSIENT_HTTP and attempt < MAX_ATTEMPTS - 1:
+                retry_after = (exc.headers.get("Retry-After") or "").strip()
+                delay = float(retry_after) if retry_after.replace(".", "", 1).isdigit() else 2 ** attempt
+                time.sleep(min(delay, 30))
+                continue
+            details = exc.read().decode("utf-8", errors="replace")
+            raise RuntimeError(f"Notion API {exc.code} {exc.reason}: {details}") from exc
+        except (URLError, OSError) as exc:
+            # OSError covers ConnectionResetError, socket.timeout, and TimeoutError.
+            # (In Python 3.9 socket.timeout is NOT a subclass of TimeoutError, so we
+            # must catch OSError rather than TimeoutError to retry read timeouts.)
+            if attempt < MAX_ATTEMPTS - 1:
+                time.sleep(min(2 ** attempt, 30))
+                continue
+            raise RuntimeError(f"Notion request failed after {MAX_ATTEMPTS} attempts: {exc}") from exc
+    raise RuntimeError("Notion request exhausted retries")  # unreachable, satisfies type checkers
 
 
 def query_pages(token: str, data_source_id: str) -> list[dict[str, Any]]:
@@ -193,14 +217,26 @@ def compute_ranks(rows: list[dict[str, str]]) -> tuple[dict[str, int], dict[str,
     return overall, city
 
 
+def _rich_text(content: str) -> list[dict[str, Any]]:
+    """Notion caps each rich_text/title item's content at 2000 chars and rejects the
+    whole request (HTTP 400 validation_error) if any item exceeds it. Split long text
+    into consecutive ≤2000-char items so the full content is preserved without error."""
+    if not content:
+        return []
+    return [
+        {"type": "text", "text": {"content": content[i : i + 2000]}}
+        for i in range(0, len(content), 2000)
+    ]
+
+
 def build_properties(row: dict[str, str], overall_rank: int | None = None, city_rank: int | None = None) -> dict[str, Any]:
     props: dict[str, Any] = {}
     for notion_name, column, kind in PROPERTY_MAP:
         value = hp.clean(row.get(column, ""))
         if kind == "title":
-            props[notion_name] = {"title": [{"type": "text", "text": {"content": value or "(untitled)"}}]}
+            props[notion_name] = {"title": _rich_text(value) or [{"type": "text", "text": {"content": "(untitled)"}}]}
         elif kind == "text":
-            props[notion_name] = {"rich_text": [{"type": "text", "text": {"content": value}}]} if value else {"rich_text": []}
+            props[notion_name] = {"rich_text": _rich_text(value)}
         elif kind == "select":
             props[notion_name] = {"select": {"name": value}} if value else {"select": None}
         elif kind == "number":
@@ -219,9 +255,7 @@ def build_properties(row: dict[str, str], overall_rank: int | None = None, city_
     props["Commute (min)"] = {"number": no_car_to}
     props["Commute Home (min)"] = {"number": no_car_from}
     props["Car Commute (min)"] = {"number": car_to}
-    props["How to get there"] = (
-        {"rich_text": [{"type": "text", "text": {"content": how}}]} if how else {"rich_text": []}
-    )
+    props["How to get there"] = {"rich_text": _rich_text(how)}
     return props
 
 

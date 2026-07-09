@@ -14,8 +14,8 @@ fields, write a temp file in the same directory, then rename.
     "lockFile": "/tmp/linkedin_batch_drain_codex_worker.lock",
     "outputDir": "/tmp/linkedin_batch_drain_codex_outputs",
     "descriptionDir": "/tmp/linkedin_batch_drain_codex_descriptions",
-    "batchTarget": 20,
-    "maxJobs": 20
+    "batchTarget": 40,
+    "maxJobs": 40
   },
   "search": {
     "searchUrl": "",
@@ -23,13 +23,14 @@ fields, write a temp file in the same directory, then rename.
     "lastJobUrl": "",
     "scrollCheckpoint": "",
     "stopRequested": false,
+    "finalSearchSaturation": false,
     "saturationReason": "",
     "visitedJobUrls": [],
     "skippedJobUrls": []
   },
   "batch": {
     "phase": "discovering | tailoring | applying | complete | blocked",
-    "usableTarget": 20,
+    "usableTarget": 40,
     "usableKeys": [],
     "atsOrder": [
       "linkedin_easy_apply",
@@ -77,8 +78,14 @@ fields, write a temp file in the same directory, then rename.
 ## State Rules
 
 - `usableKeys` contains only postings worth pursuing. Do not include duplicate,
-  already-applied, or archived items unless search saturation leaves fewer than
-  20 usable postings and the reason is recorded.
+  already-applied, or archived items. If final search saturation leaves fewer
+  than `batch.usableTarget` usable postings, record the exact scanned counts
+  and exhausted search/freshness expansions in `search.saturationReason`.
+- In batch-first mode, do not start tailoring or applying until
+  `usableKeys.length >= batch.usableTarget` or final search-space saturation is
+  recorded after all configured expansions have been exhausted. Final
+  saturation requires both `search.stopRequested: true` and
+  `search.finalSearchSaturation: true`.
 - `tailoring` and `applying` are leases. Include `leaseOwner`, `leasePid` when
   a separate worker is active, and clear them on terminal state.
 - A submitted item must include `confirmationEvidence`.

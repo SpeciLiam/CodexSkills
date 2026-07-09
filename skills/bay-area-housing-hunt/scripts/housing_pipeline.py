@@ -11,11 +11,15 @@ from __future__ import annotations
 
 import argparse
 import csv
+import fcntl
+import functools
 import hashlib
 import json
 import os
 import re
 import sys
+import tempfile
+from contextlib import contextmanager
 from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any
@@ -28,6 +32,10 @@ import commute_origins as commute_geo  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[3]
 TRACKER_DIR = Path(os.environ.get("HOUSING_TRACKER_DIR", ROOT / "housing-trackers"))
+LOCK_FILE = Path(os.environ.get("HOUSING_LOCK_FILE", "/tmp/codexskills-housing-hunt/pipeline.lock"))
+CONDUCTOR_LOCK_FILE = Path(
+    os.environ.get("HOUSING_CONDUCTOR_LOCK_FILE", "/tmp/codexskills-housing-hunt/conductor.lock")
+)
 LISTINGS_MD = TRACKER_DIR / "listings.md"
 RANKINGS_MD = TRACKER_DIR / "power-rankings.md"
 
@@ -304,7 +312,33 @@ def write_listing_rows(rows: list[dict[str, str]]) -> None:
     parts = [before_text, "", block]
     if after_text:
         parts += ["", after_text]
-    LISTINGS_MD.write_text("\n".join(parts).rstrip() + "\n", encoding="utf-8")
+    atomic_write_text(LISTINGS_MD, "\n".join(parts).rstrip() + "\n")
+
+
+def atomic_write_text(path: Path, text: str) -> None:
+    """Write a generated artifact atomically so interruption cannot truncate it."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp_name = ""
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            dir=path.parent,
+            prefix=f".{path.name}.",
+            suffix=".tmp",
+            delete=False,
+        ) as tmp:
+            tmp.write(text)
+            tmp.flush()
+            os.fsync(tmp.fileno())
+            tmp_name = tmp.name
+        os.replace(tmp_name, path)
+    finally:
+        if tmp_name:
+            try:
+                Path(tmp_name).unlink(missing_ok=True)
+            except OSError:
+                pass
 
 
 def first_value(record: dict[str, Any], keys: list[str]) -> str:
@@ -514,11 +548,26 @@ def parse_stay_window(text: str) -> tuple[date | None, date | None]:
     return start, end
 
 
-def normalize_rent_amount(rent_text: str, title: str, description: str) -> tuple[int, list[str], bool, date | None]:
+def normalize_rent_amount(
+    rent_text: str,
+    title: str,
+    description: str,
+    *,
+    allow_title_fallback: bool = True,
+) -> tuple[int, list[str], bool, date | None]:
     amount = parse_money(rent_text)
-    if not amount and title:
-        lead = re.search(r"\$\s*[0-9][0-9,]*(?:\.\d+)?\s*[kKmM]?", title)
-        if lead:
+    if not amount and title and allow_title_fallback:
+        # Classifieds commonly lead with the monthly rent ("$3,200 / 1br").
+        # Do not grab arbitrary promotional/deposit amounts from later in a title,
+        # and do not treat a leading "$1,200 off" concession as monthly rent.
+        lead = re.match(r"\s*\$\s*[0-9][0-9,]*(?:\.\d+)?\s*[kKmM]?", title)
+        trailer = title[lead.end():lead.end() + 48] if lead else ""
+        promotional = bool(re.search(
+            r"^\s*(?:off\b|discount\b|credit\b|deposit\b|special\b|concession\b|move[- ]?in\b)",
+            trailer,
+            re.I,
+        ))
+        if lead and not promotional:
             amount = parse_money(lead.group(0))
             rent_text = lead.group(0)
     if not amount:
@@ -586,6 +635,27 @@ def listing_key(source: str, title: str, url: str, city: str, neighborhood: str,
             return f"{slug(source)}-{hashlib.sha1(stable.encode()).hexdigest()[:10]}"
     fallback = "|".join([source, title, city, neighborhood, str(rent)])
     return f"{slug(source)}-{hashlib.sha1(normalize(fallback).encode()).hexdigest()[:10]}"
+
+
+def source_from_url(url: str) -> str:
+    host = (urlparse(clean(url)).netloc or "").lower()
+    for token, source in [
+        ("facebook.com", "Facebook Marketplace"),
+        ("zillow.com", "Zillow"),
+        ("hotpads.com", "HotPads"),
+        ("trulia.com", "Trulia"),
+        ("realtor.com", "Realtor.com"),
+        ("redfin.com", "Redfin"),
+        ("apartments.com", "Apartments.com"),
+        ("furnishedfinder.com", "Furnished Finder"),
+        ("craigslist.org", "Craigslist"),
+        ("zumper.com", "Zumper"),
+        ("rent.com", "Rent.com"),
+        ("reddit.com", "Reddit"),
+    ]:
+        if token in host:
+            return source
+    return ""
 
 
 MARKET_BBOXES = {
@@ -966,6 +1036,24 @@ HOUSING_CONTEXT_RE = re.compile(
     r"apartment|apt|house|home|flat|condo|townhouse|townhome|cottage|duplex|"
     r"in law|studio|loft|bungalow|casita|unit)\b")
 
+# Reddit search is useful for actual community sublets, but its search feeds also
+# return rent-policy debates, moving sales, tickets, cars, and generic housing
+# advice. Only offer-shaped titles belong in the listing ledger. Seeker/advice
+# posts are intentionally excluded unless they are recruiting roommates for a
+# specific shared home.
+REDDIT_HOUSING_OFFER_PATTERNS = [
+    r"\b(?:sublet|sublease|lease\s+(?:takeover|assignment)|take\s+over\s+(?:my\s+)?lease)\b",
+    r"\b(?:room|bedroom|apartment|apt|studio|house|home|unit)\s+(?:is\s+)?(?:for\s+rent|available)\b",
+    r"\b(?:available|offering|renting\s+out)\b.{0,70}\b(?:room|bedroom|apartment|apt|studio|house|home|unit)\b",
+    r"\b(?:looking|seeking|iso)\b.{0,90}\b(?:roommates?|housemates?|interns?\s+to\s+share|people\s+to\s+share)\b",
+    r"\b(?:to\s+)?share\b.{0,50}\b(?:house|apartment|apt|home)\b",
+]
+
+
+def is_housing_offer_title(title: str) -> bool:
+    text = normalize(str(title or "").replace("-", " ").replace("/", " "))
+    return any(re.search(pattern, text) for pattern in REDDIT_HOUSING_OFFER_PATTERNS)
+
 
 def non_housing_reason(title: str) -> str:
     text = normalize(str(title or "").replace("-", " ").replace("/", " "))
@@ -982,6 +1070,10 @@ def apply_non_housing(rows: list[dict[str, str]], run_date: str) -> None:
     for row in rows:
         if row.get("Status") not in ACTIVE_STATUSES | VERIFY_STATUSES:
             continue
+        if "reddit" in normalize(row.get("Source", "")) and not is_housing_offer_title(row.get("Title", "")):
+            row["Status"] = "Rejected"
+            record_lifecycle(row, f"Rejected {run_date}: non-listing Reddit discussion")
+            continue
         if parse_beds_count(row.get("Beds")) >= 1:
             continue  # a real bedroom count means it's housing, whatever the title
             # says ('studio' parses to 0 — sapi buckets office posts as studios)
@@ -991,6 +1083,25 @@ def apply_non_housing(rows: list[dict[str, str]], run_date: str) -> None:
         if reason:
             row["Status"] = "Rejected"
             record_lifecycle(row, f"Rejected {run_date}: {reason}")
+
+
+def repair_all_in_floor(rows: list[dict[str, str]]) -> None:
+    """All-in cost cannot be lower than base rent; repair legacy promo parses."""
+    for row in rows:
+        rent = to_int(row.get("Rent", ""))
+        all_in = to_int(row.get("All-In Estimate", ""))
+        if rent and (not all_in or all_in < rent):
+            row["All-In Estimate"] = money_cell(rent)
+
+
+def repair_source_provenance(rows: list[dict[str, str]]) -> None:
+    """Recover portal names for legacy browser captures stored as `manual`."""
+    for row in rows:
+        if normalize(row.get("Source", "")) not in {"", "manual"}:
+            continue
+        inferred = source_from_url(row.get("URL", ""))
+        if inferred:
+            row["Source"] = inferred
 
 
 def scam_reasons_for_row(row: dict[str, str]) -> list[str]:
@@ -1289,6 +1400,8 @@ def row_from_record(record: dict[str, Any], default_source: str, run_date: str) 
     source = first_value(record, ["source", "site", "platform"]) or default_source
     title = first_value(record, ["title", "name", "listing", "headline"])
     url = canonical_url(first_value(record, ["url", "link", "listing_url", "href"]))
+    if normalize(source) in {"", "manual"}:
+        source = source_from_url(url) or source
     city = first_value(record, ["city", "municipality", "location_city"])
     neighborhood = first_value(record, ["neighborhood", "area", "district"])
     address = first_value(record, ["address", "street", "location"])
@@ -1302,7 +1415,12 @@ def row_from_record(record: dict[str, Any], default_source: str, run_date: str) 
     rent_text = first_value(record, ["rent", "price", "monthly_rent", "base_rent"])
     all_in_text = first_value(record, ["all_in", "all_in_estimate", "monthly_total", "estimated_total"])
     rent, rent_notes, rent_needs_verification, _term = normalize_rent_amount(rent_text, title, description)
-    all_in, all_in_notes, all_in_needs_verification, _term2 = normalize_rent_amount(all_in_text, title, description)
+    all_in, all_in_notes, all_in_needs_verification, _term2 = normalize_rent_amount(
+        all_in_text,
+        title,
+        description,
+        allow_title_fallback=False,
+    )
     rent_notes.extend(note for note in all_in_notes if note not in rent_notes)
     rent_needs_verification = rent_needs_verification or all_in_needs_verification
     if not rent:
@@ -1391,9 +1509,40 @@ def _fast_decay_source(source: str) -> bool:
     return any(token in src for token in ["facebook", "fb", "craigslist", "marketplace", "sublet", "roommate", "gypsy", "nextdoor", "reddit"])
 
 
-def mark_stale(rows: list[dict[str, str]], run_date: str, stale_days: int, retire_days: int) -> None:
+def source_family(source: str) -> str:
+    """Normalize portal variants so one covered capture can safely age its rows."""
+    text = normalize(source)
+    for token, family in [
+        ("facebook", "facebook"),
+        ("craigslist", "craigslist"),
+        ("apartments.com", "apartments.com"),
+        ("apartments com", "apartments.com"),
+        ("furnished finder", "furnished finder"),
+        ("rent.com", "rent.com"),
+        ("rent com", "rent.com"),
+        ("zillow", "zillow"),
+        ("zumper", "zumper"),
+        ("redfin", "redfin"),
+        ("reddit", "reddit"),
+        ("rentcast", "rentcast"),
+    ]:
+        if token in text:
+            return family
+    return text
+
+
+def mark_stale(
+    rows: list[dict[str, str]],
+    run_date: str,
+    stale_days: int,
+    retire_days: int,
+    covered_sources: set[str] | None = None,
+) -> None:
     current = parse_date(run_date) or date.today()
+    covered_families = {source_family(source) for source in covered_sources or set() if clean(source)}
     for row in rows:
+        if covered_sources is not None and source_family(row.get("Source", "")) not in covered_families:
+            continue
         status = row.get("Status", "")
         last_seen = parse_date(row.get("Last Seen", ""))
         if not last_seen:
@@ -1422,8 +1571,11 @@ def apply_marks(rows: list[dict[str, str]], marks: list[tuple[str, str]], run_da
             print(f"WARNING: unknown status '{status}' (skipped)", file=sys.stderr)
             continue
         ident_url = canonical_url(ident)
+        identifier_is_url = ident_url.startswith(("http://", "https://"))
         for row in rows:
-            if row.get("Listing Key") == ident or canonical_url(row.get("URL", "")) == ident_url and ident_url:
+            key_matches = row.get("Listing Key") == ident
+            url_matches = identifier_is_url and canonical_url(row.get("URL", "")) == ident_url
+            if key_matches or url_matches:
                 row["Status"] = status
                 row["Last Seen"] = run_date
                 record_lifecycle(row, f"{status} {run_date}: set manually")
@@ -1849,15 +2001,21 @@ def build_rankings(rows: list[dict[str, str]], run_date: str) -> None:
     else:
         lines.append("No blockers recorded yet.")
 
-    RANKINGS_MD.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+    atomic_write_text(RANKINGS_MD, "\n".join(lines).rstrip() + "\n")
 
 
-def ingest(inputs: list[Path], default_source: str, run_date: str, rows: list[dict[str, str]]) -> tuple[int, int, list[str]]:
+def ingest(
+    inputs: list[Path],
+    default_source: str,
+    run_date: str,
+    rows: list[dict[str, str]],
+) -> tuple[int, int, list[str], set[str]]:
     by_key = {row.get("Listing Key", ""): row for row in rows if row.get("Listing Key")}
     by_url = {canonical_url(row.get("URL", "")): row for row in rows if canonical_url(row.get("URL", ""))}
     created = 0
     updated = 0
     warnings: list[str] = []
+    covered_sources: set[str] = set()
     for input_path in inputs:
         try:
             records = load_capture(input_path)
@@ -1870,9 +2028,15 @@ def ingest(inputs: list[Path], default_source: str, run_date: str, rows: list[di
             if not isinstance(record, dict):
                 continue
             incoming = row_from_record(record, default_source, run_date)
+            if incoming.get("Status") != "Source Blocked" and incoming.get("Source"):
+                covered_sources.add(incoming["Source"])
             key = incoming.get("Listing Key", "")
             url = canonical_url(incoming.get("URL", ""))
-            existing = by_key.get(key) or (by_url.get(url) if url else None)
+            explicit_key = bool(first_value(record, ["listing_key", "key", "id"]))
+            # An explicit upstream key identifies a unit/floorplan even when a
+            # property portal reuses one building URL for every result. Only use
+            # URL fallback for records that lack their own stable identity.
+            existing = by_key.get(key) or (by_url.get(url) if url and not explicit_key else None)
             if existing:
                 merged = merge_row(existing, incoming, run_date)
                 existing.clear()
@@ -1884,9 +2048,51 @@ def ingest(inputs: list[Path], default_source: str, run_date: str, rows: list[di
                 if url:
                     by_url[url] = incoming
                 created += 1
-    return created, updated, warnings
+    return created, updated, warnings, covered_sources
 
 
+def serialized_tracker_update(func):
+    """Serialize the short ledger read/modify/write transaction across agents."""
+    @functools.wraps(func)
+    def wrapped(*args, **kwargs):
+        LOCK_FILE.parent.mkdir(parents=True, exist_ok=True)
+        with LOCK_FILE.open("a+", encoding="utf-8") as lock:
+            fcntl.flock(lock.fileno(), fcntl.LOCK_EX)
+            try:
+                return func(*args, **kwargs)
+            finally:
+                fcntl.flock(lock.fileno(), fcntl.LOCK_UN)
+    return wrapped
+
+
+class HousingConductorBusy(RuntimeError):
+    """Raised when another capture-to-health housing run owns the conductor lock."""
+
+
+@contextmanager
+def conductor_lock(*, blocking: bool = False):
+    """Serialize the full housing transaction, not only the ledger write.
+
+    `run.py` takes this non-blocking so two browser conductors never compete.
+    Exporters may take it in blocking mode to wait for a coherent tracker/health
+    snapshot after a run already in progress.
+    """
+    CONDUCTOR_LOCK_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with CONDUCTOR_LOCK_FILE.open("a+", encoding="utf-8") as lock:
+        flags = fcntl.LOCK_EX if blocking else fcntl.LOCK_EX | fcntl.LOCK_NB
+        try:
+            fcntl.flock(lock.fileno(), flags)
+        except BlockingIOError as exc:
+            raise HousingConductorBusy(
+                f"another housing conductor is active (lock: {CONDUCTOR_LOCK_FILE})"
+            ) from exc
+        try:
+            yield
+        finally:
+            fcntl.flock(lock.fileno(), fcntl.LOCK_UN)
+
+
+@serialized_tracker_update
 def run(
     inputs: list[Path] | None = None,
     default_source: str = "manual",
@@ -1897,19 +2103,33 @@ def run(
     stale_days: int = 3,
     retire_days: int = 14,
     refresh_only: bool = False,
+    decay_scope: str = "covered",
+    observed_sources: set[str] | None = None,
 ) -> dict[str, Any]:
     run_date = run_date or today_iso()
     inputs = inputs or []
     rows = load_listing_rows()
     created = updated = 0
     warnings: list[str] = []
+    covered_sources: set[str] = set(observed_sources or set())
     if inputs and not refresh_only:
-        created, updated, warnings = ingest(inputs, default_source, run_date, rows)
+        created, updated, warnings, ingested_sources = ingest(inputs, default_source, run_date, rows)
+        # A conductor-supplied observation set has already checked every lane in
+        # a source family. Do not let one successfully ingested partial lane
+        # bypass that check and age unrelated inventory from the same portal.
+        if observed_sources is None:
+            covered_sources.update(ingested_sources)
 
     apply_marks(rows, marks or [], run_date)
     mark_expired(rows, expire_keys or [], expire_urls or [], run_date)
-    mark_stale(rows, run_date, stale_days, retire_days)
+    repair_all_in_floor(rows)
+    repair_source_provenance(rows)
     apply_non_housing(rows, run_date)
+    if decay_scope not in {"all", "covered", "none"}:
+        raise ValueError(f"unknown decay_scope {decay_scope!r}")
+    decay_sources = None if decay_scope == "all" else covered_sources
+    if decay_scope != "none" and not refresh_only:
+        mark_stale(rows, run_date, stale_days, retire_days, decay_sources)
     apply_content_dedupe(rows)
     apply_scam_quality(rows)
     for row in rows:
@@ -1926,6 +2146,8 @@ def run(
         "needs_verification": len(needs_rows(rows)),
         "replaced": len(replaced_rows(rows)),
         "warnings": warnings,
+        "decay_scope": decay_scope,
+        "sources_covered": sorted(covered_sources),
         "listings": str(LISTINGS_MD),
         "rankings": str(RANKINGS_MD),
     }
@@ -1949,6 +2171,8 @@ def main() -> int:
     parser.add_argument("--expire-url", action="append", default=[], help="Listing URL to mark expired")
     parser.add_argument("--stale-days", type=int, default=3, help="Mark active listings stale after this many days without seeing them")
     parser.add_argument("--retire-days", type=int, default=14, help="Move long-unseen needs-verification/stale rows to the replaced lane after this many days (0 disables)")
+    parser.add_argument("--decay-scope", choices=("covered", "all", "none"), default="covered",
+                        help="Age only sources observed by this run (default), every source, or none")
     parser.add_argument("--date", default=today_iso(), help="Run date YYYY-MM-DD")
     args = parser.parse_args()
 
@@ -1968,6 +2192,7 @@ def main() -> int:
         stale_days=args.stale_days,
         retire_days=args.retire_days,
         refresh_only=args.refresh_only,
+        decay_scope=args.decay_scope,
     )
     print(json.dumps(summary, indent=2))
     return 0

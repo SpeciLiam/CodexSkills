@@ -98,6 +98,24 @@ class StatusLifecycle(unittest.TestCase):
             "manual", "2026-06-27")
         self.assertEqual(row["Status"], "Unavailable")
 
+    def test_mark_by_key_does_not_match_non_url_text_in_url_column(self):
+        rows = [
+            base_row(self.hp, **{"Listing Key": "listing-key", "URL": "https://example.test/one"}),
+            base_row(self.hp, **{"Listing Key": "other-key", "URL": "listing-key"}),
+        ]
+        changed = self.hp.apply_marks(rows, [("Rejected", "listing-key")], "2026-07-09")
+        self.assertEqual(changed, 1)
+        self.assertEqual(rows[0]["Status"], "Rejected")
+        self.assertEqual(rows[1]["Status"], "Active")
+
+    def test_mark_by_http_url_still_matches_canonical_url(self):
+        rows = [base_row(self.hp, **{
+            "Listing Key": "one", "URL": "https://example.test/unit/?utm_source=x",
+        })]
+        changed = self.hp.apply_marks(rows, [("Expired", "https://example.test/unit")], "2026-07-09")
+        self.assertEqual(changed, 1)
+        self.assertEqual(rows[0]["Status"], "Expired")
+
 
 class Capture(unittest.TestCase):
     def setUp(self):
@@ -676,8 +694,10 @@ class SourceSelection(unittest.TestCase):
     def test_stale_ai_capture_skipped_unless_explicit(self):
         p = Path(tempfile.mkdtemp()) / "ai-zillow-sf-5plus.json"
         p.write_text("[]")
-        now = datetime(2026, 7, 1, 12, tzinfo=timezone.utc)
-        stale_mtime = (now - timedelta(hours=24)).timestamp()
+        # Freshness uses the newer of mtime/ctime so a copied file reflects when
+        # it entered this capture directory. Move the comparison clock beyond both.
+        now = datetime.now(timezone.utc) + timedelta(hours=24)
+        stale_mtime = (now - timedelta(hours=48)).timestamp()
         os.utime(p, (stale_mtime, stale_mtime))
         warning = self.run.stale_ai_capture_warning(p, set(), False, now)
         self.assertIn("skipped stale AI capture", warning)
@@ -687,7 +707,7 @@ class SourceSelection(unittest.TestCase):
     def test_fresh_ai_capture_allowed_from_capture_dir(self):
         p = Path(tempfile.mkdtemp()) / "ai-apartments-com-sf-5plus.json"
         p.write_text("[]")
-        now = datetime(2026, 7, 1, 12, tzinfo=timezone.utc)
+        now = datetime.now(timezone.utc)
         fresh_mtime = (now - timedelta(hours=2)).timestamp()
         os.utime(p, (fresh_mtime, fresh_mtime))
         self.assertIsNone(self.run.stale_ai_capture_warning(p, set(), False, now))
@@ -886,6 +906,117 @@ class FitScoreOrganization(unittest.TestCase):
     def test_score_breakdown_empty_for_terminal(self):
         row = base_row(self.hp, Status="Rejected")
         self.assertEqual(self.hp.score_breakdown(row), {})
+
+
+class ReliabilityRegressions(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp()
+        self.hp = fresh_module(self.tmp)
+
+    def test_missing_all_in_inherits_base_rent_not_title_promotion(self):
+        row = self.hp.row_from_record({
+            "source": "Rent.com",
+            "title": "$1,200 OFF RENT! One bedroom special",
+            "url": "https://example.test/unit-1",
+            "rent": "$4,045",
+            "city": "Santa Clara",
+        }, "manual", "2026-07-09")
+        self.assertEqual(row["Rent"], "4045")
+        self.assertEqual(row["All-In Estimate"], "4045")
+
+    def test_legacy_all_in_below_base_rent_is_repaired(self):
+        rows = [base_row(self.hp, Rent="4395", **{"All-In Estimate": "1200"})]
+        self.hp.repair_all_in_floor(rows)
+        self.assertEqual(rows[0]["All-In Estimate"], "4395")
+
+    def test_manual_browser_capture_recovers_source_from_url(self):
+        row = self.hp.row_from_record({
+            "title": "Room in a shared house",
+            "url": "https://www.trulia.com/home/example",
+            "rent": "$1800",
+        }, "manual", "2026-07-09")
+        self.assertEqual(row["Source"], "Trulia")
+
+    def test_legacy_manual_source_is_repaired(self):
+        rows = [base_row(self.hp, Source="manual", URL="https://www.realtor.com/rentals/example")]
+        self.hp.repair_source_provenance(rows)
+        self.assertEqual(rows[0]["Source"], "Realtor.com")
+
+    def test_explicit_keys_sharing_property_url_do_not_collapse(self):
+        cap = Path(self.tmp) / "rent.json"
+        cap.write_text(json.dumps([
+            {"source": "Rent.com", "listing_key": "rent-building-a-1bd", "title": "Building A 1 bd",
+             "url": "https://example.test/building-a", "rent": "$3000", "beds": "1 bd"},
+            {"source": "Rent.com", "listing_key": "rent-building-a-2bd", "title": "Building A 2 bd",
+             "url": "https://example.test/building-a", "rent": "$4000", "beds": "2 bd"},
+        ]))
+        summary = self.hp.run(inputs=[cap], run_date="2026-07-09")
+        self.assertEqual(summary["created"], 2)
+        self.assertEqual({row["Listing Key"] for row in self.hp.load_listing_rows()},
+                         {"rent-building-a-1bd", "rent-building-a-2bd"})
+
+    def test_reddit_discussion_rejected_but_real_sublet_kept(self):
+        rows = [
+            base_row(self.hp, Source="Reddit", Title="Whole house water filter recommendations", URL="https://reddit.test/noise"),
+            base_row(self.hp, Source="Reddit", Title="Furnished 1BR apartment sublet in Nob Hill", URL="https://reddit.test/sublet"),
+        ]
+        self.hp.apply_non_housing(rows, "2026-07-09")
+        self.assertEqual(rows[0]["Status"], "Rejected")
+        self.assertEqual(rows[1]["Status"], "Active")
+
+    def test_covered_decay_does_not_age_unobserved_sources(self):
+        cap = Path(self.tmp) / "seed.json"
+        cap.write_text(json.dumps([
+            {"source": "Facebook Marketplace", "title": "Facebook room for rent", "url": "https://fb.test/1", "rent": "$2200"},
+            {"source": "Craigslist", "title": "Craigslist room for rent", "url": "https://cl.test/1", "rent": "$2100"},
+        ]))
+        self.hp.run(inputs=[cap], run_date="2026-07-01")
+        refresh = Path(self.tmp) / "cl-refresh.json"
+        refresh.write_text(json.dumps([
+            {"source": "Craigslist", "title": "Different Craigslist room for rent", "url": "https://cl.test/2", "rent": "$2000"},
+        ]))
+        self.hp.run(inputs=[refresh], run_date="2026-07-06", decay_scope="covered")
+        by_url = {row["URL"]: row for row in self.hp.load_listing_rows()}
+        self.assertEqual(by_url["https://fb.test/1"]["Status"], "Active")
+        self.assertEqual(by_url["https://cl.test/1"]["Status"], "Stale")
+
+    def test_explicit_observation_set_is_authoritative_over_ingested_sources(self):
+        seed = Path(self.tmp) / "seed-authoritative.json"
+        seed.write_text(json.dumps([
+            {"source": "Craigslist", "title": "Old Craigslist room", "url": "https://cl.test/old", "rent": "$2100"},
+        ]))
+        self.hp.run(inputs=[seed], run_date="2026-07-01")
+        partial = Path(self.tmp) / "partial-family.json"
+        partial.write_text(json.dumps([
+            {"source": "Craigslist", "title": "New group lane house", "url": "https://cl.test/new", "rent": "$9000"},
+        ]))
+        self.hp.run(
+            inputs=[partial],
+            run_date="2026-07-06",
+            decay_scope="covered",
+            observed_sources=set(),
+        )
+        by_url = {row["URL"]: row for row in self.hp.load_listing_rows()}
+        self.assertNotIn(by_url["https://cl.test/old"]["Status"], {"Stale", "Unavailable"})
+        self.assertEqual(by_url["https://cl.test/old"]["Last Seen"], "2026-07-01")
+
+    def test_refresh_only_never_decays_inventory(self):
+        cap = Path(self.tmp) / "seed.json"
+        cap.write_text(json.dumps([
+            {"source": "Craigslist", "title": "Room for rent", "url": "https://cl.test/1", "rent": "$2100"},
+        ]))
+        self.hp.run(inputs=[cap], run_date="2026-07-01")
+        self.hp.run(inputs=[], run_date="2026-07-10", refresh_only=True, decay_scope="all")
+        self.assertEqual(self.hp.load_listing_rows()[0]["Status"], "Active")
+
+    def test_successful_empty_observation_can_age_covered_source(self):
+        cap = Path(self.tmp) / "seed.json"
+        cap.write_text(json.dumps([
+            {"source": "Reddit", "title": "Furnished room available", "url": "https://reddit.test/offer", "rent": "$1800"},
+        ]))
+        self.hp.run(inputs=[cap], run_date="2026-07-01")
+        self.hp.run(inputs=[], run_date="2026-07-04", decay_scope="covered", observed_sources={"Reddit"})
+        self.assertEqual(self.hp.load_listing_rows()[0]["Status"], "Stale")
 
 
 if __name__ == "__main__":

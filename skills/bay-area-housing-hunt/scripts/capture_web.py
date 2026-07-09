@@ -649,6 +649,7 @@ def parse_rent_next_data(state: dict, cfg: dict) -> list[dict]:
     listings = (((search.get("location") or {}).get("listingSearch") or {}).get("listings") or [])
     market = cfg.get("market_hint", "")
     limit = cfg.get("limit", DEFAULT_LIMIT)
+    min_bedrooms = hp.to_int(cfg.get("min_bedrooms", 0))
     records: list[dict] = []
     for listing in listings:
         if not isinstance(listing, dict):
@@ -664,6 +665,9 @@ def parse_rent_next_data(state: dict, cfg: dict) -> list[dict]:
         for idx, fp in enumerate(floorplans):
             if not isinstance(fp, dict):
                 continue
+            beds_text = _fmt_beds(fp.get("bedCount"))
+            if min_bedrooms and hp.parse_beds_count(beds_text) < min_bedrooms:
+                continue
             price_range = fp.get("priceRange") if isinstance(fp.get("priceRange"), dict) else {}
             units = fp.get("units") or []
             unit_rent = ""
@@ -675,13 +679,14 @@ def parse_rent_next_data(state: dict, cfg: dict) -> list[dict]:
                 if bcd and isinstance(bcd[0], dict):
                     prices = bcd[0].get("prices") if isinstance(bcd[0].get("prices"), dict) else {}
                     rent = _fmt_money(prices.get("low"))
+            floorplan_key = fp.get("id") or fp.get("floorPlanId") or idx
             records.append({
                 "source": cfg.get("name", "Rent.com"),
-                "listing_key": f"rent-{listing_id}-{idx}" if listing_id else "",
-                "title": f"{name} {_fmt_beds(fp.get('bedCount'))}".strip(),
+                "listing_key": f"rent-{listing_id}-{floorplan_key}" if listing_id else "",
+                "title": f"{name} {beds_text}".strip(),
                 "url": url,
                 "rent": rent,
-                "beds": _fmt_beds(fp.get("bedCount")),
+                "beds": beds_text,
                 "baths": _fmt_baths(fp.get("bathCount")),
                 "available": _fmt_date(fp.get("availableDate")),
                 "city": loc.get("city", ""),

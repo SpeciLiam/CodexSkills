@@ -4,6 +4,10 @@ import { fetchRemoteMarks, upsertRemoteMark, deleteRemoteMark } from "./marksSto
 import { fetchConfig, saveConfig } from "./configStore";
 import RadarChart from "./RadarChart";
 import { MAIN_AXES, SF_AXES, listingAxisKey, DEFAULT_REGION_VALUES, regionBoost } from "./regions";
+import { resolvePoint, marketCentroids, listingDistanceMiles, fmtMiles, type Point } from "./pointSearch";
+import { pickInspiration } from "./inspire";
+import { parseCommand } from "./agent";
+import AgentPanel from "./AgentPanel";
 
 /* ──────────────────────────────────────────────────────────────────────────
    Bay Area Housing Hunt — implementation of Housing Hunt.dc.html
@@ -50,7 +54,7 @@ type Listing = {
   status: string;
   firstSeen: string;
   lastSeen?: string;
-  officeCommutes: Record<string, { transit: number; drive: number }>;
+  officeCommutes?: Record<string, { transit: number; drive: number }>;
   commuteOrigin?: string; // python-derived geocodable origin (matches the cached commute)
   source: string;
   sourceTier?: string;
@@ -81,6 +85,20 @@ type Listing = {
 type CfgPerson = { name: string; company: string; address: string; arrival?: string; car?: boolean; bike?: boolean };
 type Data = {
   generatedAt: string;
+  dashboardBuiltAt?: string;
+  pipelineRunAt?: string | null;
+  runHealth?: {
+    overall?: string;
+    finishedAt?: string;
+    summary?: Record<string, number>;
+    sources?: Array<{
+      id: string; tier: string; name: string; label?: string; status: string;
+      recordCount?: number; blockedCount?: number; lastAttemptAt?: string | null;
+      lastSuccessAt?: string | null; message?: string; selectedThisRun?: boolean;
+    }>;
+  } | null;
+  searchDefaults?: { needStart?: string; minimumStayDays?: number; rtoDays?: string[]; timezone?: string };
+  groupSearch?: { targetBedrooms?: number; budgetPerPerson?: number; totalBudget?: number; searchArea?: string };
   stats: {
     active: number; markets: number; total?: number; needsVerification?: number; replaced?: number; googleCommutes?: number;
     activeFivePlus?: number; sfMarketFivePlus?: number; strictSfCityFivePlus?: number; exactSfFivePlus?: number;
@@ -93,6 +111,15 @@ type Data = {
 type Person = { id: number; name: string; company: string; address: string; arrival: string; car: boolean; bike: boolean };
 
 const data = rawData as unknown as Data;
+const GROUP_SEARCH = {
+  targetBedrooms: data.groupSearch?.targetBedrooms || 5,
+  budgetPerPerson: data.groupSearch?.budgetPerPerson || 2650,
+  totalBudget: data.groupSearch?.totalBudget || 13250,
+  searchArea: data.groupSearch?.searchArea || "San Francisco only",
+};
+const LIAM_DEFAULT_BUDGET = 3750;
+const REMOTE_AGENT_ENABLED = import.meta.env.DEV || import.meta.env.VITE_ENABLE_REMOTE_AGENT === "true";
+const REMOTE_SYNC_ENABLED = import.meta.env.DEV || import.meta.env.VITE_ENABLE_REMOTE_SYNC === "true";
 const toPerson = (p: CfgPerson, id: number): Person => ({
   id, name: p.name || "Person " + id, company: p.company || "", address: p.address || "",
   arrival: p.arrival || "09:00", car: p.car ?? true, bike: p.bike ?? true,
@@ -106,7 +133,9 @@ const liamDefault: Person = data.defaultLiam ? toPerson(data.defaultLiam, 0) : D
 
 const clamp = (n: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, n));
 const money = (n: number | null) => (n == null ? "no price" : "$" + n.toLocaleString());
-const NEED_START = new Date("2026-07-16T00:00:00");
+const NEED_START_ISO = data.searchDefaults?.needStart || "2026-07-16";
+const NEED_START = new Date(`${NEED_START_ISO}T00:00:00`);
+const NEED_YEAR = NEED_START.getFullYear();
 const DAY_MS = 86400000;
 
 const compactTitle = (s: string) =>
@@ -140,7 +169,7 @@ function parseMonthDay(month: string, day: string, year?: string) {
   const m = MONTHS[month.toLowerCase()];
   const d = parseInt(day, 10);
   if (m == null || Number.isNaN(d)) return null;
-  return new Date(parseInt(year || "2026", 10), m, d);
+  return new Date(parseInt(year || String(NEED_YEAR), 10), m, d);
 }
 function termEndFromText(text: string): Date | null {
   const t = text || "";
@@ -148,7 +177,7 @@ function termEndFromText(text: string): Date | null {
   const m = t.match(long);
   if (m) return parseMonthDay(m[4] || m[1], m[5], m[6] || m[3]);
   const numeric = t.match(/\b(\d{1,2})\/(\d{1,2})\s*(?:-|–|—|to|through|until)\s*(\d{1,2})\/(\d{1,2})\b/i);
-  if (numeric) return new Date(2026, parseInt(numeric[3], 10) - 1, parseInt(numeric[4], 10));
+  if (numeric) return new Date(NEED_YEAR, parseInt(numeric[3], 10) - 1, parseInt(numeric[4], 10));
   return null;
 }
 function stayRangeDays(text: string): number | null {
@@ -162,8 +191,8 @@ function stayRangeDays(text: string): number | null {
   }
   const numeric = t.match(/\b(\d{1,2})\/(\d{1,2})\s*(?:-|–|—|to|through|until)\s*(\d{1,2})\/(\d{1,2})\b/i);
   if (numeric) {
-    const start = new Date(2026, parseInt(numeric[1], 10) - 1, parseInt(numeric[2], 10));
-    const end = new Date(2026, parseInt(numeric[3], 10) - 1, parseInt(numeric[4], 10));
+    const start = new Date(NEED_YEAR, parseInt(numeric[1], 10) - 1, parseInt(numeric[2], 10));
+    const end = new Date(NEED_YEAR, parseInt(numeric[3], 10) - 1, parseInt(numeric[4], 10));
     return Math.max(1, Math.round((end.getTime() - start.getTime()) / DAY_MS));
   }
   return null;
@@ -409,14 +438,16 @@ export default function App() {
   };
   const [weights, setWeights] = useState<{ commute: number; price: number; flex: number }>(saved.weights ?? { commute: 60, price: 30, flex: 10 });
   const [q, setQ] = useState("");
-  const [beds, setBeds] = useState<string>(saved.beds ?? "1+ bd"); // fresh user starts on Liam
+  const [beds, setBeds] = useState<string>(
+    saved.beds ?? (saved.profile === "group" ? bedsForGroup(GROUP_SEARCH.targetBedrooms) : "Any")
+  );
   const [market, setMarket] = useState<string>(saved.market ?? "All areas");
-  const [huntMode, setHuntMode] = useState<string>(saved.huntMode ?? "All inventory");
+  const [huntMode, setHuntMode] = useState<string>(saved.huntMode ?? (saved.profile === "group" ? "5+ whole homes" : "All inventory"));
   const [excludedSources, setExcludedSources] = useState<string[]>(Array.isArray(saved.excludedSources) ? saved.excludedSources : []);
-  const [region, setRegion] = useState<string>(saved.region ?? "All");
+  const [region, setRegion] = useState<string>(saved.region ?? (saved.profile === "group" ? "SF" : "All"));
   const [segment, setSegment] = useState<string>(saved.segment ?? "All");
   const [sort, setSort] = useState<string>(saved.sort ?? "Best fit");
-  const [maxPrice, setMaxPrice] = useState<number>(saved.maxPrice ?? 3000);
+  const [maxPrice, setMaxPrice] = useState<number>(saved.maxPrice ?? (saved.profile === "group" ? GROUP_SEARCH.totalBudget : LIAM_DEFAULT_BUDGET));
   const [maxTransit, setMaxTransit] = useState<number>(saved.maxTransit ?? 0);
   const [maxDrive, setMaxDrive] = useState<number>(saved.maxDrive ?? 0);
   const [budgetCustom, setBudgetCustom] = useState<boolean>(saved.budgetCustom ?? false);
@@ -424,6 +455,19 @@ export default function App() {
   const [marks, setMarks] = useState<Record<string, string>>(loadMarks);
   const [showNeedsReview, setShowNeedsReview] = useState<boolean>(saved.showNeedsReview ?? false);
   const [expandedClusters, setExpandedClusters] = useState<Record<string, boolean>>({});
+  const [visibleLimit, setVisibleLimit] = useState(80);
+
+  // Point search — a pinned place + radius; listings rank/filter by real distance.
+  const [point, setPoint] = useState<Point | null>(saved.point ?? null);
+  const [pointRadius, setPointRadius] = useState<number>(saved.pointRadius ?? 3);
+  const [pointQ, setPointQ] = useState<string>("");
+  const [pointBusy, setPointBusy] = useState(false);
+  const [pointErr, setPointErr] = useState<string>("");
+  const pointRequestGeneration = useRef(0);
+
+  // Inspire Me — a diverse shortlist outside the current filter bubble.
+  const [inspireOpen, setInspireOpen] = useState(false);
+  const [inspireSeed, setInspireSeed] = useState(1);
 
   // Resizable sidebar — drag the divider; width persists (double-click resets).
   const ASIDE_MIN = 280, ASIDE_MAX = 680, ASIDE_DEFAULT = 344;
@@ -449,19 +493,20 @@ export default function App() {
   const dense = DENSITY === "compact";
   const pad = dense ? "12px 15px" : "16px 17px";
 
-  // Budget: rule of thumb is $3k per tenant; the visitor can override (custom) and that sticks.
+  // Profile defaults come from the canonical household/search config. The group
+  // stays at $2,650/person; Liam starts at the solo sweet-spot ceiling.
   const tenants = activePeople.length;
-  const ruleOfThumb = 3000 * tenants;
-  const budgetSliderMax = Math.max(8000, ruleOfThumb + 3000);
-  const budget = budgetCustom ? Math.min(maxPrice, budgetSliderMax) : ruleOfThumb;
+  const profileBudget = profile === "group" ? GROUP_SEARCH.budgetPerPerson * tenants : LIAM_DEFAULT_BUDGET;
+  const budgetSliderMax = profile === "group" ? Math.max(16000, profileBudget + 3000) : 8000;
+  const budget = budgetCustom ? Math.min(maxPrice, budgetSliderMax) : profileBudget;
   const budgetIsAny = budget >= budgetSliderMax;
 
   // persist last selections (browser-local)
   useEffect(() => {
     try {
-      localStorage.setItem(STORE_KEY, JSON.stringify({ pref, profile, liam: liamPerson, people, liamRegions, groupRegions, weights, beds, market, huntMode, excludedSources, region, segment, sort, maxPrice, maxTransit, maxDrive, budgetCustom, markFilter, asideW, showNeedsReview }));
+      localStorage.setItem(STORE_KEY, JSON.stringify({ pref, profile, liam: liamPerson, people, liamRegions, groupRegions, weights, beds, market, huntMode, excludedSources, region, segment, sort, maxPrice, maxTransit, maxDrive, budgetCustom, markFilter, asideW, showNeedsReview, point, pointRadius }));
     } catch { /* storage unavailable — ignore */ }
-  }, [pref, profile, liamPerson, people, liamRegions, groupRegions, weights, beds, market, huntMode, excludedSources, region, segment, sort, maxPrice, maxTransit, maxDrive, budgetCustom, markFilter, asideW, showNeedsReview]);
+  }, [pref, profile, liamPerson, people, liamRegions, groupRegions, weights, beds, market, huntMode, excludedSources, region, segment, sort, maxPrice, maxTransit, maxDrive, budgetCustom, markFilter, asideW, showNeedsReview, point, pointRadius]);
 
   // Sync the shared bits (Liam + Group profiles, region priorities) to Supabase so the
   // last-set config is one source of truth across devices. Debounced; skips the initial
@@ -472,6 +517,7 @@ export default function App() {
   // remote data in a two-device race). Set true by every synced-field setter below.
   const cfgTouched = useRef(false);
   useEffect(() => {
+    if (!REMOTE_SYNC_ENABLED) return;
     if (!cfgTouched.current) return;
     const t = setTimeout(() => {
       saveConfig("profiles", { liam: liamPerson, group: people }).catch(() => {});
@@ -492,6 +538,7 @@ export default function App() {
   // them over the local cache (remote wins per key, except keys the user just touched).
   // Offline -> keep local.
   useEffect(() => {
+    if (!REMOTE_SYNC_ENABLED) return;
     let alive = true;
     fetchRemoteMarks()
       .then((remote) => {
@@ -515,6 +562,7 @@ export default function App() {
   // Pull the shared config (Liam + Group profiles, region priorities) from Supabase on
   // load — the single source of truth. Last-set wins over local defaults; offline -> local.
   useEffect(() => {
+    if (!REMOTE_SYNC_ENABLED) return;
     let alive = true;
     fetchConfig()
       .then((cfg) => {
@@ -537,8 +585,10 @@ export default function App() {
   const setMark = (key: string, val: string) => {
     touchedKeys.current.add(key);
     const clearing = marks[key] === val; // clicking the active mark clears it
-    if (clearing) deleteRemoteMark(key).catch(() => {});
-    else upsertRemoteMark(key, val).catch(() => {});
+    if (REMOTE_SYNC_ENABLED) {
+      if (clearing) deleteRemoteMark(key).catch(() => {});
+      else upsertRemoteMark(key, val).catch(() => {});
+    }
     setMarks((m) => {
       const n = { ...m };
       if (clearing) delete n[key];
@@ -550,7 +600,7 @@ export default function App() {
   const copyScrapeConfig = () => {
     const cfg = profile === "liam"
       ? { profile: "liam", people: [{ name: "Liam", company: "HackerRank", address: LIAM_OFFICE, arrival: liamPerson.arrival, car: liamPerson.car, bike: liamPerson.bike }] }
-      : { profile: "group", targetBedrooms: people.length, people: people.map((p) => ({ name: p.name, company: p.company, address: p.address, arrival: p.arrival, car: p.car, bike: p.bike })) };
+      : { profile: "group", ...GROUP_SEARCH, people: people.map((p) => ({ name: p.name, company: p.company, address: p.address, arrival: p.arrival, car: p.car, bike: p.bike })) };
     try { navigator.clipboard.writeText(JSON.stringify(cfg, null, 2)); } catch { /* ignore */ }
   };
   const copyMarkCommand = async (status: "Rejected" | "Unavailable" | "Duplicate", key: string) => {
@@ -614,12 +664,19 @@ export default function App() {
     setPeople((s) => s.map((p) => (p.id === id ? { ...p, [field]: value } : p)));
   };
   // Profile switch is a deliberate context change -> re-default the bedroom filter.
-  // Both use "N and up" semantics: Group targets ~1 bedroom per person (5 people -> 5+),
-  // Liam solo wants a 1-bedroom minimum ("1+ bd" — his own place, not a studio/room).
+  // Group targets ~1 bedroom per person (5 people -> 5+); Liam starts with all
+  // inventory visible and can narrow bedrooms explicitly.
   // Driven by user action (not an effect) so cross-device hydration never resets beds.
   const changeProfile = (k: "liam" | "group") => {
+    if (k === profile) return;
     setProfile(k);
-    setBeds(k === "group" ? bedsForGroup(people.length) : "1+ bd");
+    setBeds(k === "group" ? bedsForGroup(GROUP_SEARCH.targetBedrooms) : "Any");
+    setHuntMode(k === "group" ? "5+ whole homes" : "All inventory");
+    setRegion(k === "group" ? "SF" : "All");
+    setMarket("All areas");
+    setMaxPrice(k === "group" ? GROUP_SEARCH.totalBudget : LIAM_DEFAULT_BUDGET);
+    setBudgetCustom(false);
+    clearPoint();
   };
   const removePerson = (id: number) => {
     if (people.length <= 1) return;
@@ -638,6 +695,9 @@ export default function App() {
 
   const active = useMemo(() => data.listings.filter((l) => l.status === "Active"), []);
   const newest = useMemo(() => active.reduce((m, l) => (l.firstSeen > m ? l.firstSeen : m), ""), [active]);
+  // Market centroids give the ~half of listings without exact coordinates an
+  // approximate location, so point search never silently drops them.
+  const centroids = useMemo(() => marketCentroids(data.listings as any), []);
   const sourceStats = useMemo(() => {
     const stats: Record<string, { active: number; fivePlus: number; needs: number; blocked: number; stale: number; browser: number }> = {};
     for (const l of data.listings) {
@@ -658,44 +718,13 @@ export default function App() {
   const marketOptions = useMemo(() => ["All areas", ...(data.marketOrder || [])], []);
   const generatedDay = (data.generatedAt || new Date().toISOString()).slice(0, 10);
 
-  const rows = useMemo(() => {
-    const pool =
-      segment === "To verify"
-        ? data.listings.filter((l) => l.status === "Needs Verification")
-        : segment === "Expired"
-        ? data.listings.filter((l) => !["Active", "Needs Verification"].includes(l.status))
-        : active;
-
+  // Score one listing against the current profile/weights/marks/pinned point.
+  // Shared by the main list AND Inspire Me so every number agrees everywhere.
+  const scoreListing = useMemo(() => {
     const sum = weights.commute + weights.price + weights.flex || 1;
     const wc = weights.commute / sum, wp = weights.price / sum, wf = weights.flex / sum;
     const roster = activePeople;
-
-    const list = pool
-      .filter((l) => segPass(l, segment, newest))
-      .filter((l) => bedsPass(l, beds))
-      .filter((l) => huntPass(l, huntMode))
-      .filter((l) => market === "All areas" || l.market === market)
-      .filter((l) => !excludedSources.includes(l.source))
-      .filter((l) => regionPass(l, region))
-      .filter((l) => !maxTransit || (l.commuteMin != null && l.commuteMin <= maxTransit))
-      .filter((l) => !maxDrive || (l.carCommuteMin != null && l.carCommuteMin <= maxDrive))
-      .filter((l) => {
-        const p = l.allIn ?? l.rent;
-        return p == null || budgetIsAny || p <= budget;
-      })
-      .filter((l) => matchQ(l, q))
-      .filter((l) => {
-        if (showNeedsReview || segment !== "All") return true;
-        const termEnd = termEndFromText(`${l.title} ${l.notes || ""} ${l.available || ""}`);
-        return l.status !== "Needs Verification" && !isScamRisk(l) && !(termEnd && termEnd < NEED_START);
-      })
-      .filter((l) => {
-        const mk = marks[l.listingKey];
-        if (markFilter === "all") return true;
-        if (markFilter === "active") return mk !== "skip" && mk !== "gone"; // hide passed + archived
-        return mk === markFilter; // promising | checked | skip | gone
-      })
-      .map((l) => {
+    return (l: Listing) => {
         const per = roster.map((person) => {
           const hasOffice = `${person.company || ""}${person.address || ""}`.trim() !== "";
           const g = geocode((person.company || "") + " " + (person.address || ""));
@@ -746,6 +775,7 @@ export default function App() {
         const termEnd = termEndFromText(`${l.title} ${l.notes || ""} ${l.available || ""}`);
         const endsBeforeNeed = !!termEnd && termEnd < NEED_START;
         const commute = commuteChip(l);
+        const dist = point ? listingDistanceMiles(l, point, centroids) : null;
 
         return {
           id: l.listingKey, title: l.title || "(untitled)", url: l.url || "#",
@@ -779,12 +809,54 @@ export default function App() {
             : "",
           fit, segC, segP, segF,
           fitFg: tier === "hi" ? "var(--accent)" : tier === "mid" ? "#b07d1a" : "#9a9384",
+          distLabel: dist ? fmtMiles(dist) : "",
           _avg: avg == null ? 1e9 : avg, _price: price == null ? 1e9 : price, _first: l.firstSeen || "", _score: fit,
           _board: l.overallRank ?? 1e9, _noCar: l.noCarScore ?? 0, _car: l.carScore ?? 0,
+          _dist: dist ? dist.miles : 1e9,
         };
-      });
+    };
+  }, [activePeople, weights, pref, marks, activeRegions, newest, generatedDay, point, centroids]);
+
+  const rows = useMemo(() => {
+    const pool =
+      segment === "To verify"
+        ? data.listings.filter((l) => l.status === "Needs Verification")
+        : segment === "Expired"
+        ? data.listings.filter((l) => !["Active", "Needs Verification"].includes(l.status))
+        : active;
+
+    const list = pool
+      .filter((l) => segPass(l, segment, newest))
+      .filter((l) => bedsPass(l, beds))
+      .filter((l) => huntPass(l, huntMode))
+      .filter((l) => market === "All areas" || l.market === market)
+      .filter((l) => !excludedSources.includes(l.source))
+      .filter((l) => regionPass(l, region))
+      .filter((l) => !maxTransit || (l.commuteMin != null && l.commuteMin <= maxTransit))
+      .filter((l) => !maxDrive || (l.carCommuteMin != null && l.carCommuteMin <= maxDrive))
+      .filter((l) => {
+        const p = l.allIn ?? l.rent;
+        return p == null || budgetIsAny || p <= budget;
+      })
+      .filter((l) => matchQ(l, q))
+      .filter((l) => {
+        if (showNeedsReview || segment !== "All") return true;
+        const termEnd = termEndFromText(`${l.title} ${l.notes || ""} ${l.available || ""}`);
+        return l.status !== "Needs Verification" && !isScamRisk(l) && !(termEnd && termEnd < NEED_START);
+      })
+      .filter((l) => {
+        const mk = marks[l.listingKey];
+        if (markFilter === "all") return true;
+        if (markFilter === "active") return mk !== "skip" && mk !== "gone"; // hide passed + archived
+        return mk === markFilter; // promising | checked | skip | gone
+      })
+      .map(scoreListing)
+      // Point search: with a radius, keep listings inside it (centroid-located
+      // ones included); "Any distance" keeps everything and just sorts/labels.
+      .filter((r) => !point || pointRadius === 0 || r._dist <= pointRadius);
 
     const SB: Record<string, (a: typeof list[number], b: typeof list[number]) => number> = {
+      "Closest first": (a, b) => a._dist - b._dist || b._score - a._score,
       "Best fit": (a, b) => b._score - a._score || a._avg - b._avg,
       "Board rank": (a, b) => a._board - b._board || b._score - a._score,
       Cheapest: (a, b) => a._price - b._price || b._score - a._score,
@@ -807,7 +879,99 @@ export default function App() {
       collapsed.push({ ...row, duplicateCount: bucket.length, duplicates: bucket });
     }
     return collapsed;
-  }, [active, newest, activePeople, activeRegions, weights, q, beds, huntMode, market, excludedSources, region, segment, sort, budget, budgetIsAny, maxTransit, maxDrive, pref, marks, markFilter, showNeedsReview, generatedDay]);
+  }, [active, newest, scoreListing, q, beds, huntMode, market, excludedSources, region, segment, sort, budget, budgetIsAny, maxTransit, maxDrive, marks, markFilter, showNeedsReview, point, pointRadius]);
+
+  useEffect(() => setVisibleLimit(80), [q, beds, huntMode, market, excludedSources, region, segment, sort, budget, maxTransit, maxDrive, markFilter, showNeedsReview, point, pointRadius, profile]);
+  const visibleRows = rows.slice(0, visibleLimit);
+
+  // Inspire Me pool: everything Active that fits the profile's identity-level
+  // constraints (beds + budget), deliberately IGNORING the narrowing filters
+  // (area, source, commute caps, text search) — surfacing outside the bubble is
+  // the point. pickInspiration drops marked + scam-risk rows itself.
+  const inspirePicks = useMemo(() => {
+    if (!inspireOpen) return [];
+    const pool = active
+      .filter((l) => bedsPass(l, beds))
+      .filter((l) => {
+        const p = l.allIn ?? l.rent;
+        return p == null || budgetIsAny || p <= budget;
+      })
+      .map(scoreListing)
+      .filter((r) => !r.termEndLabel); // don't pitch stays that end before the need date
+    return pickInspiration(pool, inspireSeed);
+  }, [inspireOpen, inspireSeed, active, beds, budget, budgetIsAny, scoreListing]);
+
+  // ── Point search actions ────────────────────────────────────────────────────
+  const pinPoint = async (query: string, radius?: number) => {
+    const qq = (query || "").trim();
+    if (!qq) return;
+    const generation = ++pointRequestGeneration.current;
+    setPointBusy(true);
+    setPointErr("");
+    const p = await resolvePoint(qq);
+    if (generation !== pointRequestGeneration.current) return;
+    setPointBusy(false);
+    if (!p) {
+      setPointErr(`Couldn't place "${qq}" — try a city, Caltrain stop, or full address.`);
+      return;
+    }
+    setPoint(p);
+    if (radius != null) setPointRadius(clamp(radius, 0, 15));
+    setSort("Closest first");
+  };
+  const clearPoint = () => {
+    pointRequestGeneration.current += 1;
+    setPointBusy(false);
+    setPoint(null);
+    setPointQ("");
+    setPointErr("");
+    setSort((s) => (s === "Closest first" ? "Best fit" : s));
+  };
+
+  // ── Agent: one message → dashboard state changes (see src/agent.ts) ─────────
+  const resetAllFilters = () => {
+    setQ(""); setBeds(profile === "group" ? bedsForGroup(GROUP_SEARCH.targetBedrooms) : "Any");
+    setMarket("All areas"); setHuntMode(profile === "group" ? "5+ whole homes" : "All inventory"); setExcludedSources([]);
+    setRegion(profile === "group" ? "SF" : "All"); setSegment("All"); setSort("Best fit");
+    setMaxPrice(profile === "group" ? GROUP_SEARCH.totalBudget : LIAM_DEFAULT_BUDGET); setBudgetCustom(false); setMaxTransit(0); setMaxDrive(0);
+    setMarkFilter("active"); setShowNeedsReview(false);
+    clearPoint(); setSort("Best fit");
+  };
+  const runCommand = (text: string): { reply: string } | null => {
+    const parsed = parseCommand(text, marketOptions);
+    if (!parsed) return null;
+    const notes: string[] = [];
+    // A profile supplies defaults; explicit filters in the same command must
+    // always win regardless of the parser's action order.
+    const profileAction = parsed.actions.find((action) => action.kind === "profile");
+    if (profileAction?.kind === "profile") changeProfile(profileAction.value);
+    for (const a of parsed.actions) {
+      if (a.kind === "profile") continue;
+      switch (a.kind) {
+        case "budget": setMaxPrice(a.value); setBudgetCustom(true); break;
+        case "beds": setBeds(a.value); break;
+        // An area command is a new location scope — it replaces a conflicting pin,
+        // and market/region are mutually exclusive controls so one resets the other.
+        case "market": setMarket(a.value); setRegion("All"); if (point) { clearPoint(); notes.push("(unpinned the point)"); } break;
+        case "region": setRegion(a.value); setMarket("All areas"); if (point) { clearPoint(); notes.push("(unpinned the point)"); } break;
+        case "segment": setSegment(a.value); break;
+        case "sort":
+          if (a.value === "Closest first" && !point) notes.push("(pin a point first to sort by distance)");
+          else setSort(a.value);
+          break;
+        case "markFilter": setMarkFilter(a.value); break;
+        case "maxTransit": setMaxTransit(clamp(a.value, 0, 140)); break;
+        case "maxDrive": setMaxDrive(clamp(a.value, 0, 120)); break;
+        case "huntMode": setHuntMode(a.value); break;
+        case "point": setPointQ(a.query); pinPoint(a.query, a.radius); break;
+        case "clearPoint": clearPoint(); break;
+        case "inspire": setInspireOpen(true); setInspireSeed((s) => s + 1); break;
+        case "showNeedsReview": setShowNeedsReview(a.value); break;
+        case "reset": resetAllFilters(); break;
+      }
+    }
+    return { reply: "Done: " + parsed.said.join(" · ") + (notes.length ? " " + notes.join(" ") : "") + "." };
+  };
 
   const prefBtn = (k: string): CSSProperties => {
     const on = pref === k;
@@ -844,9 +1008,24 @@ export default function App() {
   }, []);
 
   const viewLabel = segment === "All" ? "All listings" : segment;
-  const updated = data.generatedAt
-    ? new Date(data.generatedAt).toLocaleDateString(undefined, { month: "short", day: "numeric" })
+  const pipelineStamp = data.pipelineRunAt || data.runHealth?.finishedAt || "";
+  const updated = pipelineStamp
+    ? new Date(pipelineStamp).toLocaleString(undefined, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })
     : "–";
+  const freshnessHours = pipelineStamp ? Math.max(0, (Date.now() - Date.parse(pipelineStamp)) / 3600000) : null;
+  const overallHealth = freshnessHours != null && freshnessHours > 24
+    ? "stale"
+    : data.runHealth?.overall || "unknown";
+  const healthTone = overallHealth === "healthy" ? "#4f8060" : overallHealth === "needs_browser" ? "#b07d1a" : "#b4502f";
+  const tierHealth = ["web", "rss", "apis", "ai_browser"].map((tier) => {
+    const sources = (data.runHealth?.sources || []).filter((source) => source.tier === tier);
+    const selected = sources.filter((source) => source.selectedThisRun !== false);
+    const bad = selected.filter((source) => ["blocked", "missing", "malformed", "degraded", "empty"].includes(source.status)).length;
+    const pending = selected.filter((source) => source.status === "pending").length;
+    const notRun = sources.filter((source) => source.selectedThisRun === false || ["not_run", "not_selected", "skipped"].includes(source.status)).length;
+    const ok = selected.filter((source) => ["ok", "captured"].includes(source.status)).length;
+    return { tier, label: tier === "ai_browser" ? "Browser" : tier === "apis" ? "APIs" : tier === "rss" ? "Alerts/RSS" : "Headless", sources, selected, bad, pending, notRun, ok };
+  }).filter((item) => item.sources.length > 0);
 
   return (
     <div style={{ ["--accent" as any]: ACCENT, minHeight: "100vh", display: "flex", flexDirection: "column" } as CSSProperties}>
@@ -865,7 +1044,24 @@ export default function App() {
             <h1 style={{ margin: 0, fontFamily: "'Space Grotesk',sans-serif", fontSize: 23, fontWeight: 700, letterSpacing: "-0.4px", lineHeight: 1 }}>
               Bay Area Housing Hunt
             </h1>
-            <p style={{ margin: "6px 0 0", fontSize: 13, color: "#6f6a61" }}>Scraped listings, ranked by who has to commute · updated {updated}</p>
+            <p style={{ margin: "6px 0 0", fontSize: 13, color: "#6f6a61" }}>
+              Scraped listings, ranked by who has to commute · pipeline {updated}
+              {freshnessHours != null ? ` · ${freshnessHours < 1 ? "under 1h old" : `${Math.floor(freshnessHours)}h old`}` : ""}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: 6, flexWrap: "wrap", marginTop: 8 }}>
+              <span title={`Run health: ${overallHealth.replace(/_/g, " ")}`} style={{ fontSize: 10.5, fontWeight: 800, letterSpacing: "0.04em", textTransform: "uppercase", padding: "3px 7px", borderRadius: 6, background: `${healthTone}18`, color: healthTone }}>
+                {overallHealth.replace(/_/g, " ")}
+              </span>
+              {tierHealth.map((item) => {
+                const tone = item.bad ? "#b4502f" : item.pending || item.notRun ? "#b07d1a" : "#4f8060";
+                const details = item.sources.map((source) => `${source.name}${source.label ? ` (${source.label})` : ""}: ${source.selectedThisRun === false ? `not selected this run; last result ${source.status}` : source.status}${source.message ? ` — ${source.message}` : ""}`).join("\n");
+                return (
+                  <span key={item.tier} title={details} style={{ fontSize: 10.5, fontWeight: 700, padding: "3px 7px", borderRadius: 6, background: `${tone}12`, color: tone, border: `1px solid ${tone}35` }}>
+                    {item.label} {item.ok}/{item.selected.length}{item.bad ? ` · ${item.bad} issue${item.bad === 1 ? "" : "s"}` : item.pending ? ` · ${item.pending} pending` : item.notRun ? ` · ${item.notRun} not run` : ""}
+                  </span>
+                );
+              })}
+            </div>
           </div>
         </div>
         <div style={{ display: "flex", gap: 22 }}>
@@ -886,6 +1082,11 @@ export default function App() {
                 <button key={k} onClick={() => changeProfile(k)} style={{ flex: 1, border: "none", cursor: "pointer", padding: "9px 10px", borderRadius: 8, fontSize: 13.5, fontWeight: 600, fontFamily: "'Space Grotesk',sans-serif", background: on ? "#fffdf8" : "transparent", color: on ? "#1c1a17" : "#8a8378", boxShadow: on ? "0 1px 3px rgba(28,26,23,0.12)" : "none" }}>{lbl}</button>
               );
             })}
+          </div>
+          <div style={{ fontSize: 11.5, color: "#6f6a61", margin: "-4px 2px 12px", lineHeight: 1.4 }}>
+            {profile === "group"
+              ? `${GROUP_SEARCH.searchArea} · ${GROUP_SEARCH.targetBedrooms}+ bedrooms · $${GROUP_SEARCH.totalBudget.toLocaleString()} total`
+              : `Flexible rooms/subleases included · up to $${LIAM_DEFAULT_BUDGET.toLocaleString()} all-in`}
           </div>
 
           <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 8, marginBottom: 4 }}>
@@ -997,6 +1198,39 @@ export default function App() {
             ))}
           </div>
           <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search title, neighborhood…" style={{ ...fieldStyle, padding: "10px 12px", fontSize: 13.5, marginBottom: 10 }} />
+
+          {/* Point search — pin any place, rank homes by distance to it */}
+          <div style={{ border: point ? "1.5px solid var(--accent)" : "1px solid #e6e1d6", borderRadius: 12, padding: "10px 11px", background: point ? "color-mix(in srgb, var(--accent) 5%, #fffdf8)" : "#fdfbf6", marginBottom: 12 }}>
+            <div style={{ ...sectionLabel, marginBottom: 7 }}>📍 Near a point</div>
+            {!point && (
+              <form onSubmit={(e) => { e.preventDefault(); pinPoint(pointQ); }} style={{ display: "flex", gap: 6 }}>
+                <input
+                  value={pointQ}
+                  onChange={(e) => { setPointQ(e.target.value); if (pointErr) setPointErr(""); }}
+                  placeholder="Caltrain stop, address, “the office”…"
+                  style={{ ...fieldStyle, borderRadius: 8, padding: "7px 9px", fontSize: 12.5, flex: 1, minWidth: 0 }}
+                />
+                <button type="submit" disabled={pointBusy} style={{ border: "none", background: "var(--accent)", color: "#fffdf8", borderRadius: 8, padding: "7px 12px", fontSize: 12, fontWeight: 700, cursor: "pointer", opacity: pointBusy ? 0.6 : 1 }}>
+                  {pointBusy ? "…" : "Pin"}
+                </button>
+              </form>
+            )}
+            {pointErr && <div style={{ fontSize: 11, color: "#b4502f", fontWeight: 600, marginTop: 6 }}>{pointErr}</div>}
+            {point && (
+              <>
+                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <span style={{ fontSize: 12.5, fontWeight: 700, color: "var(--accent)", flex: 1, minWidth: 0 }}>{point.label}</span>
+                  <button onClick={clearPoint} title="Clear the pin" style={{ border: "none", background: "transparent", cursor: "pointer", color: "#b0a99c", fontSize: 16, lineHeight: 1, padding: 0 }}>×</button>
+                </div>
+                <div style={{ fontSize: 10.5, color: "#8a8378", marginTop: 2 }}>{point.source === "google" ? "Google geocode" : "known place"} · distances are straight-line</div>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", margin: "8px 0 3px" }}>
+                  <span style={{ fontSize: 12.5, fontWeight: 600 }}>Within</span>
+                  <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, fontWeight: 700, color: "var(--accent)" }}>{pointRadius === 0 ? "Any distance" : `${pointRadius} mi`}</span>
+                </div>
+                <input type="range" min={0} max={10} step={0.5} value={pointRadius} onChange={(e) => setPointRadius(+e.target.value)} style={{ width: "100%" }} />
+              </>
+            )}
+          </div>
           <div style={{ display: "flex", gap: 8, marginBottom: 10 }}>
             <select value={beds} onChange={(e) => setBeds(e.target.value)} style={selectStyle}>
               {BEDS_OPTIONS.map((o) => <option key={o} value={o}>{o}</option>)}
@@ -1060,7 +1294,7 @@ export default function App() {
           <input type="range" min={500} max={budgetSliderMax} step={100} value={Math.min(budget, budgetSliderMax)} onChange={(e) => { setMaxPrice(+e.target.value); setBudgetCustom(true); }} style={{ width: "100%" }} />
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 8, marginTop: 5 }}>
             <span style={{ fontSize: 11, color: "#8a8378" }}>
-              Rule of thumb <strong style={{ color: "#6f6a61", fontWeight: 700 }}>$3k × {tenants}</strong> {tenants === 1 ? "tenant" : "tenants"} = ${ruleOfThumb.toLocaleString()}
+              Default <strong style={{ color: "#6f6a61", fontWeight: 700 }}>{profile === "group" ? `$${GROUP_SEARCH.budgetPerPerson.toLocaleString()} × ${tenants}` : "solo sweet spot"}</strong>{profile === "group" ? ` = $${profileBudget.toLocaleString()}` : ` = $${LIAM_DEFAULT_BUDGET.toLocaleString()}`}
             </span>
             {budgetCustom && (
               <button onClick={() => setBudgetCustom(false)} style={{ border: "none", background: "transparent", cursor: "pointer", fontSize: 11, fontWeight: 600, color: "var(--accent)", padding: 0, whiteSpace: "nowrap" }}>↺ reset</button>
@@ -1094,15 +1328,22 @@ export default function App() {
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
               <button
+                onClick={() => { setInspireOpen((o) => !o); if (!inspireOpen) setInspireSeed((s) => s + 1); }}
+                title="A five-angle shortlist of strong listings you haven't triaged — ignores your narrowing filters on purpose"
+                style={{ cursor: "pointer", padding: "7px 14px", borderRadius: 999, fontSize: 13, fontWeight: 700, border: "1px solid var(--accent)", background: inspireOpen ? "var(--accent)" : "color-mix(in srgb, var(--accent) 8%, #fff)", color: inspireOpen ? "#fffdf8" : "var(--accent)" }}
+              >
+                ✨ Inspire me
+              </button>
+              <button
                 onClick={() => setShowNeedsReview((v) => !v)}
-                title="Include Needs Verification and listings whose term ends before July 16, 2026"
+                title={`Include Needs Verification and listings whose term ends before ${fmtDate(NEED_START)}`}
                 style={markChip(showNeedsReview, "#b07d1a")}
               >
                 {showNeedsReview ? "Showing review-needed" : "Hide review-needed"}
               </button>
               <span style={{ fontSize: 12, color: "#8a8378", fontWeight: 600 }}>Sort</span>
               <select value={sort} onChange={(e) => setSort(e.target.value)} style={{ border: "1px solid #e0dacd", background: "#fffdf8", borderRadius: 9, padding: "7px 10px", fontSize: 13, fontWeight: 600, color: "#1c1a17", cursor: "pointer", outline: "none" }}>
-                {SORT_OPTIONS.map((o) => <option key={o} value={o}>{o}</option>)}
+                {(point ? [...SORT_OPTIONS, "Closest first"] : SORT_OPTIONS).map((o) => <option key={o} value={o}>{o}</option>)}
               </select>
             </div>
           </div>
@@ -1110,7 +1351,9 @@ export default function App() {
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10, marginBottom: 14, flexWrap: "wrap" }}>
             <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
               <span style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 15, fontWeight: 600 }}>{viewLabel}</span>
-              <span style={{ fontSize: 13, color: "#8a8378" }}>{rows.length} homes · ranked by best fit</span>
+              <span style={{ fontSize: 13, color: "#8a8378" }}>
+                showing {visibleRows.length} of {rows.length} homes · {point ? `${pointRadius === 0 ? "any distance" : `within ${pointRadius} mi`} of ${point.label}` : "ranked by best fit"}
+              </span>
             </div>
             <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
               {MARK_FILTERS.map((mf) => (
@@ -1121,14 +1364,52 @@ export default function App() {
             </div>
           </div>
 
+          {/* Inspire Me — five angles on what the current filters are hiding */}
+          {inspireOpen && (
+            <section style={{ border: "1.5px solid var(--accent)", borderRadius: 15, background: "color-mix(in srgb, var(--accent) 5%, #fffdf8)", padding: "15px 17px", marginBottom: 16 }}>
+              <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 4, flexWrap: "wrap" }}>
+                <span style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 15, fontWeight: 700, color: "var(--accent)" }}>✨ Inspire me</span>
+                <span style={{ fontSize: 12, color: "#6f6a61" }}>five angles on strong listings you haven't triaged — area/source/commute filters ignored on purpose</span>
+                <span style={{ marginLeft: "auto", display: "flex", gap: 6 }}>
+                  <button onClick={() => setInspireSeed((s) => s + 1)} style={{ cursor: "pointer", border: "1px solid var(--accent)", background: "#fffdf8", color: "var(--accent)", borderRadius: 8, padding: "4px 11px", fontSize: 12, fontWeight: 700 }}>↻ Another round</button>
+                  <button onClick={() => setInspireOpen(false)} style={{ cursor: "pointer", border: "1px solid #e0dacd", background: "#fffdf8", color: "#8a8378", borderRadius: 8, padding: "4px 11px", fontSize: 12, fontWeight: 700 }}>× Close</button>
+                </span>
+              </div>
+              {inspirePicks.length === 0 ? (
+                <div style={{ fontSize: 12.5, color: "#8a8378", padding: "10px 0 4px" }}>
+                  Nothing left to pitch — everything strong within budget/beds is already marked. Widen beds or budget, or check ★ Promising.
+                </div>
+              ) : (
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))", gap: 10, marginTop: 8 }}>
+                  {inspirePicks.map((p) => (
+                    <div key={p.row.id} style={{ background: "#fffdf8", border: "1px solid #e6e1d6", borderRadius: 12, padding: "11px 12px", display: "flex", flexDirection: "column", gap: 6 }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                        <span style={{ fontSize: 10, fontWeight: 800, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--accent)", background: "color-mix(in srgb, var(--accent) 12%, #fff)", padding: "2px 7px", borderRadius: 5 }}>{p.angle}</span>
+                        <span style={{ marginLeft: "auto", fontFamily: "'Space Grotesk',sans-serif", fontSize: 16, fontWeight: 700, color: p.row.fit >= 70 ? "var(--accent)" : "#b07d1a" }}>{p.row.fit}<span style={{ fontSize: 9, color: "#b0a99c", fontWeight: 700 }}> FIT</span></span>
+                      </div>
+                      <a href={p.row.url} target="_blank" rel="noreferrer" style={{ fontSize: 13.5, fontWeight: 650, color: "#1c1a17", textDecoration: "none", lineHeight: 1.3 }}>{p.row.title}</a>
+                      <div style={{ fontSize: 11.5, color: "#8a8378" }}>{p.row.sub}</div>
+                      <div style={{ fontSize: 12, color: "#4a5a6d", lineHeight: 1.4 }}>{p.reason}</div>
+                      <div style={{ display: "flex", gap: 5, marginTop: "auto", flexWrap: "wrap" }}>
+                        <a href={p.row.url} target="_blank" rel="noreferrer" style={{ ...markBtn(false, "var(--accent)"), textDecoration: "none" }}>Open</a>
+                        <button onClick={() => setMark(p.row.id, "promising")} style={markBtn(false, "var(--accent)")}>★ Promising</button>
+                        <button onClick={() => setMark(p.row.id, "skip")} style={markBtn(false, "#b4502f")}>✕ Not for me</button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </section>
+          )}
+
           {rows.length === 0 ? (
             <div style={{ textAlign: "center", color: "#8a8378", padding: "54px 20px", border: "1px dashed #d8d1c3", borderRadius: 15, background: "#fffdf8" }}>
               No homes match {huntMode !== "All inventory" ? huntMode : "these filters"}. Try widening beds, budget, source, or area.
             </div>
           ) : (
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-              {rows.map((r, i) => (
-                <article key={r.id} style={{ display: "grid", gridTemplateColumns: "34px 1fr auto", gap: 14, alignItems: "start", background: r.mark === "checked" ? "#fbf9f3" : "#fffdf8", border: r.mark === "promising" ? "1.5px solid var(--accent)" : r.mark === "gone" ? "1px dashed #cbc4b6" : "1px solid #e6e1d6", borderRadius: 15, padding: pad, boxShadow: "0 1px 2px rgba(28,26,23,0.03)", opacity: r.mark === "skip" || r.mark === "gone" ? 0.6 : r.stale ? 0.72 : 1 }}>
+              {visibleRows.map((r, i) => (
+                <article className="hh-listing-card" key={r.id} style={{ display: "grid", gridTemplateColumns: "34px 1fr auto", gap: 14, alignItems: "start", background: r.mark === "checked" ? "#fbf9f3" : "#fffdf8", border: r.mark === "promising" ? "1.5px solid var(--accent)" : r.mark === "gone" ? "1px dashed #cbc4b6" : "1px solid #e6e1d6", borderRadius: 15, padding: pad, boxShadow: "0 1px 2px rgba(28,26,23,0.03)", opacity: r.mark === "skip" || r.mark === "gone" ? 0.6 : r.stale ? 0.72 : 1 }}>
                   <div style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 15, fontWeight: 700, color: "#b8b1a2", textAlign: "center", fontVariantNumeric: "tabular-nums", paddingTop: 2 }}>{i + 1}</div>
 
                   <div style={{ minWidth: 0 }}>
@@ -1144,6 +1425,7 @@ export default function App() {
                     </div>
                     <div style={{ fontSize: 12.5, color: "#8a8378", marginTop: 3 }}>{r.sub}</div>
                     <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginTop: 7 }}>
+                      {r.distLabel && <span title={point ? `Straight-line distance to ${point.label}` : ""} style={{ fontSize: 11, fontWeight: 800, padding: "3px 7px", borderRadius: 6, background: "color-mix(in srgb, var(--accent) 12%, #fff)", color: "var(--accent)" }}>📍 {r.distLabel}</span>}
                       {r.boardRank && <span style={{ fontSize: 11, fontWeight: 700, padding: "3px 7px", borderRadius: 6, background: "#ece8df", color: "#5a554c" }}>Board #{r.boardRank}</span>}
                       {r.boardFitTier && (
                         <span title={r.boardFitTitle} style={{ fontSize: 11, fontWeight: 800, padding: "3px 7px", borderRadius: 6,
@@ -1275,10 +1557,18 @@ export default function App() {
                   </div>
                 </article>
               ))}
+              {visibleRows.length < rows.length && (
+                <button onClick={() => setVisibleLimit((limit) => limit + 80)} style={{ justifySelf: "center", alignSelf: "center", border: "1px solid var(--accent)", background: "#fffdf8", color: "var(--accent)", borderRadius: 10, padding: "10px 18px", fontSize: 13, fontWeight: 800, cursor: "pointer" }}>
+                  Show 80 more · {rows.length - visibleRows.length} remaining
+                </button>
+              )}
             </div>
           )}
         </main>
       </div>
+
+      {/* Agent — one chat box that drives every control above and queues repo work */}
+      {REMOTE_AGENT_ENABLED && <AgentPanel runCommand={runCommand} />}
     </div>
   );
 }

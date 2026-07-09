@@ -1,0 +1,4 @@
+interface:
+  display_name: "LinkedIn Batch Drain Codex Ver2"
+  short_description: "Compaction-safe batch drain monitor"
+  default_prompt: "Use $linkedin-batch-drain-codex-ver2 to run a compaction-safe LinkedIn batch drain with Codex monitoring, durable state, and one-application browser workers with inline fallback."

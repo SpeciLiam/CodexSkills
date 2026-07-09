@@ -38,6 +38,17 @@ DONE_STATES = {
     "skipped",
     "tailor_failed",
 }
+DEFAULT_ATS_ORDER = [
+    "linkedin_easy_apply",
+    "ashby",
+    "greenhouse",
+    "lever",
+    "smartrecruiters",
+    "icims",
+    "custom",
+    "workday",
+    "unknown",
+]
 TAILOR_READY_STATES = {"tailor_needed", "discovered", "needs_tailor"}
 APPLY_READY_STATES = {"apply_needed", "tailored", "resume_tailored"}
 NON_USABLE_BATCH_STATES = {
@@ -122,13 +133,34 @@ def has_systemic_blocker(state: dict[str, Any]) -> bool:
     for item in state.get("items", []):
         haystacks.append(" ".join(str(item.get(field) or "") for field in ("blocker", "result", "state")))
     for event in state.get("events", []):
+        if event.get("resolvedAt") or str(event.get("event") or "").startswith("resolved_"):
+            continue
         haystacks.append(" ".join(str(event.get(field) or "") for field in ("detail", "event", "stage")))
     lowered = "\n".join(haystacks).lower()
     return any(term in lowered for term in SYSTEMIC_BLOCKER_TERMS)
 
 
+def last_json_payload(text: str) -> dict[str, Any] | None:
+    for line in reversed(text.splitlines()):
+        candidate = line.strip()
+        if not (candidate.startswith("{") and candidate.endswith("}")):
+            continue
+        try:
+            parsed = json.loads(candidate)
+        except json.JSONDecodeError:
+            continue
+        if isinstance(parsed, dict):
+            return parsed
+    return None
+
+
 def stop_requested(state: dict[str, Any]) -> bool:
     return bool(state.get("search", {}).get("stopRequested"))
+
+
+def final_search_saturation_recorded(state: dict[str, Any]) -> bool:
+    search = state.get("search", {})
+    return bool(search.get("stopRequested") and search.get("finalSearchSaturation"))
 
 
 def batch_first_enabled(state: dict[str, Any]) -> bool:
@@ -144,6 +176,38 @@ def batch_target(state: dict[str, Any]) -> int:
     batch = state.get("batch", {})
     policy = state.get("runPolicy", {})
     return int(batch.get("usableTarget") or policy.get("batchTarget") or policy.get("maxJobs") or 0)
+
+
+def discovery_constraints_text(state: dict[str, Any]) -> str:
+    policy = state.get("runPolicy", {})
+    batch = state.get("batch", {})
+    constraints = policy.get("discoveryConstraints") or batch.get("constraints")
+    if not constraints:
+        return ""
+    if isinstance(constraints, str):
+        body = constraints.strip()
+    elif isinstance(constraints, dict):
+        lines = []
+        for key, value in constraints.items():
+            if isinstance(value, list):
+                rendered = ", ".join(str(item) for item in value)
+            else:
+                rendered = str(value)
+            lines.append(f"- {key}: {rendered}")
+        body = "\n".join(lines)
+    else:
+        body = str(constraints).strip()
+    if not body:
+        return ""
+    return f"""\
+
+Run-specific discovery constraints from state:
+{body}
+
+Treat these as hard filters for usable batch items. A posting that fails any
+hard filter should be skipped or archived with a concrete reason and should not
+count toward the usable batch target.
+"""
 
 
 def batch_usable_count(state: dict[str, Any]) -> int:
@@ -164,17 +228,52 @@ def has_batch_pending_work(state: dict[str, Any]) -> bool:
     )
 
 
+def batch_discovery_gate_closed(state: dict[str, Any]) -> bool:
+    target = batch_target(state)
+    if target and batch_usable_count(state) >= target:
+        return True
+    return final_search_saturation_recorded(state)
+
+
+def ranked_batch_items(state: dict[str, Any], states: set[str]) -> list[dict[str, Any]]:
+    batch = state.get("batch", {})
+    ats_order = batch.get("atsOrder") or DEFAULT_ATS_ORDER
+    ats_rank = {str(bucket): index for index, bucket in enumerate(ats_order)}
+
+    def location_rank(item: dict[str, Any]) -> int:
+        location = str(item.get("location") or "").lower()
+        if "new york" in location or "nyc" in location:
+            return 0
+        if "san francisco" in location or "bay area" in location or "sf" in location:
+            return 1
+        return 2
+
+    def fit_score(item: dict[str, Any]) -> float:
+        try:
+            return float(item.get("fitScore") or 0)
+        except (TypeError, ValueError):
+            return 0.0
+
+    return sorted(
+        [item for item in state.get("items", []) if item.get("state") in states],
+        key=lambda item: (
+            ats_rank.get(str(item.get("atsBucket") or "unknown"), len(ats_rank)),
+            -fit_score(item),
+            location_rank(item),
+            str(item.get("company") or ""),
+            str(item.get("role") or ""),
+        ),
+    )
+
+
 def select_stage(state: dict[str, Any]) -> tuple[str, dict[str, Any] | None]:
     if batch_first_enabled(state):
-        target = batch_target(state)
-        if not stop_requested(state) and (not target or batch_usable_count(state) < target):
+        if not batch_discovery_gate_closed(state):
             return "discover", None
-        for item in state.get("items", []):
-            if item.get("state") in TAILOR_READY_STATES:
-                return "tailor", item
-        for item in state.get("items", []):
-            if item.get("state") in APPLY_READY_STATES:
-                return "apply", item
+        for item in ranked_batch_items(state, TAILOR_READY_STATES):
+            return "tailor", item
+        for item in ranked_batch_items(state, APPLY_READY_STATES):
+            return "apply", item
         return "discover", None
 
     for item in state.get("items", []):
@@ -391,8 +490,6 @@ def run_child_chrome_preflight(
         child_sandbox,
         "-c",
         f'model_reasoning_effort="{reasoning_effort}"',
-        "-o",
-        str(final_file),
     ]
     if model and model != "default":
         cmd.extend(["-m", model])
@@ -412,7 +509,7 @@ def run_child_chrome_preflight(
         stdout = exc.stdout if isinstance(exc.stdout, str) else ""
         output_file.write_text(
             f"$ {' '.join(cmd[:-1])} <prompt>\n\n"
-            f"final message file: {final_file}\n\n"
+            f"final message file: disabled for Chrome preflight\n\n"
             f"{stdout}\npreflight timeout after {DEFAULT_PREFLIGHT_TIMEOUT_S}s\n",
             encoding="utf-8",
         )
@@ -420,19 +517,13 @@ def run_child_chrome_preflight(
 
     output_file.write_text(
         f"$ {' '.join(cmd[:-1])} <prompt>\n\n"
-        f"final message file: {final_file}\n\n"
+        f"final message file: disabled for Chrome preflight\n\n"
         f"{completed.stdout}",
         encoding="utf-8",
     )
     final_text = final_file.read_text(encoding="utf-8") if final_file.exists() else ""
     combined = f"{completed.stdout}\n{final_text}"
-    final_payload: dict[str, Any] | None = None
-    try:
-        parsed = json.loads(final_text)
-    except json.JSONDecodeError:
-        parsed = None
-    if isinstance(parsed, dict):
-        final_payload = parsed
+    final_payload = last_json_payload(combined)
 
     if (
         completed.returncode == 0
@@ -529,21 +620,24 @@ class WorkerLock:
         return False
 
 
-def discover_prompt(state_path: Path) -> str:
+def discover_prompt(state_path: Path, state: dict[str, Any]) -> str:
     return f"""\
 Read skills/linkedin-early-career-weekly/OPERATING_CARD.md before starting. Follow it strictly.
 {authorization_note()}
 {chrome_bootstrap_note()}
 
 You are the DISCOVERY worker for exactly one LinkedIn posting. Do not tailor a
-resume and do not apply. Capture one usable posting or mark search saturation,
-write {state_path}, then exit.
+resume and do not apply. Capture one usable posting, one durable non-usable
+posting, or final search saturation, write {state_path}, then exit.
 
 State file: {state_path}
 Description directory: {DESCRIPTION_DIR}
+{discovery_constraints_text(state)}
 
 Workflow:
-1. Re-read the state file. Open search.searchUrl in Liam's Chrome profile:
+1. Re-read the state file. Open search.searchUrl in Liam's Chrome profile, or
+   when search.searchUrls is present, open the URL at
+   search.currentSearchUrlIndex and preserve/switch that index on saturation:
    profile name "Liam", account liamvanpj@gmail.com, profile directory
    "Default". Use the Codex Chrome plugin first if available; Codex Computer Use
    is the only fallback. Do not use Ben's Chrome profile. Do not use Playwright,
@@ -563,8 +657,16 @@ Workflow:
 2. Continue from search.currentResultIndex, search.scrollCheckpoint,
    search.lastJobUrl, search.visitedJobUrls, and search.skippedJobUrls. Do not
    choose a visited or skipped job.
+   Batch-first gate: if state.batch.usableTarget/runPolicy.batchTarget is set
+   and usable count is below target, do not set search.stopRequested=true
+   unless every configured search URL, freshness pass, cursor/page, and
+   allowed expansion has been exhausted. If last-24-hours pages saturate below
+   target and last-week URLs are configured or allowed by runPolicy constraints,
+   advance to last-week instead of leaving discovery. If and only if every
+   allowed expansion is exhausted below target, set search.stopRequested=true,
+   search.finalSearchSaturation=true, and write the detailed saturation reason.
 3. Pick the next realistic early-career software engineering posting from the
-   last-week Entry level results. Prefer SWE I, SWE II, new grad, junior,
+   configured Entry level results. Prefer SWE I, SWE II, new grad, junior,
    associate, backend, full-stack, product, platform, applied AI, or generalist
    engineering. Skip internships, senior/staff/principal/manager, support,
    sales, recruiter, and obviously wrong-location roles.
@@ -579,18 +681,29 @@ Workflow:
    "already_submitted". If not applied but a valid tailored resume PDF already
    exists, set state "apply_needed". If it is new or lacks a valid tailored
    resume, set state "tailor_needed". If the posting is not worth pursuing, add
-   the URL to search.skippedJobUrls with a short event and keep looking only if
-   you can do so quickly within this single discovery stage.
+   or update an item with state "duplicate" or "archived" when evidence is
+   concrete, or add the URL to search.skippedJobUrls with a short event. Keep
+   looking within this single discovery stage when cheap; otherwise exit after
+   the durable non-usable outcome so the monitor can continue from the updated
+   cursor.
 7. Save the full job description to
-   /tmp/linkedin_early_career_weekly_descriptions/<key>.txt and store that path
+   {DESCRIPTION_DIR}/<key>.txt and store that path
    in jobDescriptionPath. Use a key based on the LinkedIn job id when available.
 8. Update search.visitedJobUrls, search.currentResultIndex, search.scrollCheckpoint,
-   search.lastJobUrl, duplicate/no-usable streaks, and updatedAt. If no more
-   usable results remain, set search.stopRequested=true and record a specific
-   search.saturationReason.
+   search.lastJobUrl, duplicate/no-usable streaks, currentSearchUrlIndex when
+   search.searchUrls is being used, and updatedAt. If one search URL saturates
+   but another configured search URL remains, advance to the next URL and keep
+   search.stopRequested=false. If a freshness pass such as last 24 hours
+   saturates below the usable target and an allowed broader pass such as last
+   week remains, switch to that pass and keep search.stopRequested=false. Set
+   search.stopRequested=true and search.finalSearchSaturation=true only when no
+   more usable results remain across the full configured and allowed search
+   space. The saturation reason must include unique cards scanned, hard-filter
+   matches, duplicate/already-applied counts, archived/skipped counts, current
+   usable count, target usable count, and why no allowed expansion remains.
 
-Write state atomically. Exit after exactly one durable posting outcome or search
-saturation. Do not commit or push.
+Write state atomically. Exit after exactly one durable posting outcome or final
+search saturation. Do not commit or push.
 """
 
 
@@ -624,6 +737,12 @@ Workflow:
    workflow: prepare the company/role folder, edit resume.tex, render the PDF,
    verify exactly one useful page, update application-trackers/applications.md,
    and refresh application-visualizer/src/data/tracker-data.json.
+   Preserve source-specific factual framing: if using the early-career generic
+   resume, keep both Caterpillar roles as internships and keep Dec 2024/GPA;
+   if using the general generic resume, keep the 2022 Caterpillar role as
+   Software Engineer Intern. Do not create a hybrid that changes historical
+   titles, employers, dates, graduation details, or GPA beyond the selected
+   source variant's truthful framing.
 5. Do not create, render, or upload cover letters.
 6. Update only this item in {state_path}: state "apply_needed", resumeFolder,
    resumePdf, fitScore when available, trackerStatus "Resume Tailored", result,
@@ -727,9 +846,14 @@ this one item.
 """
 
 
-def build_prompt(stage: str, state_path: Path, item: dict[str, Any] | None) -> str:
+def build_prompt(
+    stage: str,
+    state_path: Path,
+    item: dict[str, Any] | None,
+    state: dict[str, Any],
+) -> str:
     if stage == "discover":
-        return discover_prompt(state_path)
+        return discover_prompt(state_path, state)
     if stage == "tailor" and item is not None:
         return tailor_prompt(state_path, item)
     if stage == "apply" and item is not None:
@@ -747,6 +871,7 @@ def run_worker(
     child_sandbox: str,
     timeout_s: int,
     dry_run: bool,
+    ephemeral: bool,
 ) -> tuple[int, Path]:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     ts = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
@@ -755,23 +880,22 @@ def run_worker(
     cmd = [
         "codex",
         "exec",
-        "--ephemeral",
         "--cd",
         str(ROOT),
         "--sandbox",
         child_sandbox,
         "-c",
         f'model_reasoning_effort="{reasoning_effort}"',
-        "-o",
-        str(final_file),
     ]
+    if ephemeral:
+        cmd.insert(2, "--ephemeral")
     if model and model != "default":
         cmd.extend(["-m", model])
     cmd.append(prompt)
 
     print(f"\nStage: {stage} | key={key}")
     print(f"Output: {output_file}")
-    print(f"Final: {final_file}")
+    print("Final: disabled; state writeback is authoritative")
     if dry_run:
         printable = cmd[:-1] + ["<prompt>"]
         print("Command:")
@@ -795,7 +919,7 @@ def run_worker(
 
     with output_file.open("w", encoding="utf-8") as handle:
         handle.write(f"$ {' '.join(cmd[:-1])} <prompt>\n\n")
-        handle.write(f"final message file: {final_file}\n\n")
+        handle.write("final message file: disabled; state writeback is authoritative\n\n")
         while True:
             remaining = deadline - time.monotonic()
             if remaining <= 0:
@@ -836,6 +960,19 @@ def main() -> int:
     parser.add_argument("--lock-ttl", type=int, default=DEFAULT_LOCK_TTL_S)
     parser.add_argument("--max-stages", type=int, default=0, help="0 means run until stop condition")
     parser.add_argument("--max-no-progress", type=int, default=5)
+    parser.add_argument(
+        "--skip-child-chrome-preflight",
+        action="store_true",
+        help=(
+            "Skip the separate browser preflight process. Browser workers still "
+            "must prove an agent-owned Codex tab before navigation."
+        ),
+    )
+    parser.add_argument(
+        "--non-ephemeral-workers",
+        action="store_true",
+        help="Run spawned stage workers without codex exec --ephemeral.",
+    )
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -857,8 +994,16 @@ def main() -> int:
             state = load_state(args.state)
             policy = state.get("runPolicy", {})
             max_jobs = int(policy.get("maxJobs") or 0)
+            if has_systemic_blocker(state):
+                print("Systemic blocker recorded in state; stopping.")
+                return 2
             if stop_requested(state):
-                if not batch_first_enabled(state) or not has_batch_pending_work(state):
+                if not batch_first_enabled(state):
+                    print("Search stop requested; stage runner complete.")
+                    return 0
+                if not batch_discovery_gate_closed(state):
+                    print("Search stop requested before target/final saturation; continuing discovery.")
+                elif not has_batch_pending_work(state):
                     print("Search stop requested; stage runner complete.")
                     return 0
             if max_jobs:
@@ -869,9 +1014,6 @@ def main() -> int:
                 elif done_count(state) >= max_jobs:
                     print(f"Reached max jobs: {done_count(state)}/{max_jobs}")
                     return 0
-            if has_systemic_blocker(state):
-                print("Systemic blocker recorded in state; stopping.")
-                return 2
 
             stage, item = select_stage(state)
             key = item_key(item)
@@ -880,7 +1022,7 @@ def main() -> int:
             child_sandbox = args.child_sandbox or str(policy.get("childSandbox") or "danger-full-access")
             before = state_fingerprint(state)
 
-            if stage in {"discover", "apply"} and not args.dry_run:
+            if stage in {"discover", "apply"} and not args.dry_run and not args.skip_child_chrome_preflight:
                 preflight_ok, preflight_detail, preflight_output = run_child_chrome_preflight(
                     stage=stage,
                     model=model,
@@ -894,7 +1036,7 @@ def main() -> int:
                     return 2
                 print(preflight_detail)
 
-            prompt = build_prompt(stage, args.state, item)
+            prompt = build_prompt(stage, args.state, item, state)
 
             rc, output_file = run_worker(
                 stage=stage,
@@ -905,6 +1047,7 @@ def main() -> int:
                 child_sandbox=child_sandbox,
                 timeout_s=args.timeout,
                 dry_run=args.dry_run,
+                ephemeral=not args.non_ephemeral_workers,
             )
             processed += 1
 

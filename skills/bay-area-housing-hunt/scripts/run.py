@@ -35,13 +35,15 @@ from __future__ import annotations
 import argparse
 import copy
 import json
+import os
 import re
 import sys
 import time
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
@@ -52,6 +54,7 @@ import capture_web
 SCRIPT_DIR = Path(__file__).resolve().parent
 DEFAULT_CAPTURE_DIR = Path("/tmp/codexskills-housing-hunt")
 SEARCHES_FILE = SCRIPT_DIR / "searches.json"
+DEFAULT_RUN_HEALTH_FILE = hp.TRACKER_DIR / "run-health.json"
 USER_AGENT = "CodexSkills-housing-hunt/1.0 (personal housing search; contact via repo owner)"
 FETCH_TIMEOUT = 12
 # Reddit's public JSON endpoints 403 everywhere as of the 2026-07-02 probe, but the
@@ -102,12 +105,49 @@ SOURCE_ALIASES = {
 
 def load_searches() -> dict:
     if not SEARCHES_FILE.exists():
-        return {"web": [], "rss": [], "apis": [], "ai_browser": []}
+        raise RuntimeError(f"source configuration missing: {SEARCHES_FILE}")
     try:
-        return json.loads(SEARCHES_FILE.read_text(encoding="utf-8"))
+        searches = json.loads(SEARCHES_FILE.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, UnicodeDecodeError, OSError) as exc:
-        print(f"WARNING: could not read {SEARCHES_FILE.name} ({exc}); proceeding with no configured sources", file=sys.stderr)
-        return {"web": [], "rss": [], "apis": [], "ai_browser": []}
+        raise RuntimeError(f"could not read {SEARCHES_FILE.name}: {exc}") from exc
+    errors = validate_searches(searches)
+    if errors:
+        raise RuntimeError("invalid source configuration: " + "; ".join(errors))
+    return searches
+
+
+def validate_searches(searches: dict) -> list[str]:
+    """Fail closed when an automation would otherwise run zero/broken sources."""
+    if not isinstance(searches, dict):
+        return ["top level must be an object"]
+    errors: list[str] = []
+    for tier in SOURCE_TIERS:
+        rows = searches.get(tier, [])
+        if not isinstance(rows, list):
+            errors.append(f"{tier} must be a list")
+            continue
+        identities: set[str] = set()
+        for index, cfg in enumerate(rows):
+            if not isinstance(cfg, dict):
+                errors.append(f"{tier}[{index}] must be an object")
+                continue
+            if not cfg.get("enabled", True):
+                continue
+            name = hp.clean(cfg.get("name") or cfg.get("source"))
+            if not name:
+                errors.append(f"{tier}[{index}] missing name/source")
+            identity = hp.slug(str(cfg.get("label") or name or index))
+            if identity in identities:
+                errors.append(f"{tier} duplicate enabled id {identity!r}")
+            identities.add(identity)
+            needs_url = tier in {"rss", "apis"} or (tier == "web" and cfg.get("kind") != "craigslist_sapi")
+            if needs_url and not hp.clean(cfg.get("url")):
+                errors.append(f"{tier}[{identity}] missing url")
+            if tier == "ai_browser" and not hp.clean(cfg.get("search_url")):
+                errors.append(f"ai_browser[{identity}] missing search_url")
+            if tier == "web" and cfg.get("kind") not in capture_web.KINDS:
+                errors.append(f"web[{identity}] has unknown kind {cfg.get('kind')!r}")
+    return errors
 
 
 def _source_slug(value: str) -> str:
@@ -179,7 +219,11 @@ def source_tokens(cfg: dict) -> set[str]:
         label_slug = _source_slug(label)
         if "5plus" in label_slug:
             tokens.add("5plus")
-        if ("sf5plus" in label_slug) or (label_slug.startswith("sf") and "5plus" in label_slug):
+        if (
+            "sf5plus" in label_slug
+            or (label_slug.startswith("sf") and "5plus" in label_slug)
+            or ("sanfrancisco" in label_slug and "5plus" in label_slug)
+        ):
             tokens.add("sf5plus")
     return tokens
 
@@ -207,7 +251,10 @@ def filter_searches(searches: dict, raw_sources: str | list[str]) -> tuple[dict,
 
 
 def selected_source_counts(searches: dict) -> dict[str, int]:
-    return {tier: len(searches.get(tier, [])) for tier in SOURCE_TIERS}
+    return {
+        tier: sum(1 for cfg in searches.get(tier, []) if isinstance(cfg, dict) and cfg.get("enabled", True))
+        for tier in SOURCE_TIERS
+    }
 
 
 def source_display_name(cfg: dict) -> str:
@@ -223,6 +270,309 @@ def ai_capture_path(capture_dir: Path, src: dict) -> Path:
     return capture_dir / f"ai-{hp.slug(str(slug_base))}.json"
 
 
+def source_run_id(tier: str, cfg: dict) -> str:
+    return f"{tier}:{hp.slug(str(cfg.get('label') or cfg.get('name') or cfg.get('source') or 'source'))}"
+
+
+def expected_capture_paths(tier: str, cfg: dict, capture_dir: Path) -> list[Path]:
+    if tier == "web":
+        label = cfg.get("label") or hp.slug(cfg.get("name", "web"))
+        return [capture_dir / f"web-{hp.slug(cfg.get('name','web'))}-{hp.slug(label)}.json"]
+    if tier == "rss":
+        label = cfg.get("label", cfg.get("market_hint", ""))
+        slug = hp.slug(f"{cfg.get('name', 'feed')}-{label}") or "feed"
+        return [capture_dir / f"rss-{slug}.json"]
+    if tier == "apis":
+        cities = cfg.get("cities") or [None]
+        return [
+            capture_dir / f"api-{hp.slug(cfg.get('name','api'))}-{(city or 'all').lower().replace(' ', '-')}.json"
+            for city in cities
+        ]
+    if tier == "ai_browser":
+        return [ai_capture_path(capture_dir, cfg)]
+    return []
+
+
+def _capture_file_info(path: Path) -> dict:
+    try:
+        records = hp.load_capture(path)
+        stat = path.stat()
+        captured_at = datetime.fromtimestamp(max(stat.st_mtime, stat.st_ctime), tz=timezone.utc)
+    except (json.JSONDecodeError, UnicodeDecodeError, OSError, ValueError) as exc:
+        return {"path": str(path), "malformed": True, "error": f"{type(exc).__name__}: {exc}"}
+    blocked = []
+    usable = []
+    for record in records:
+        status = hp.normalize(hp.first_value(record, ["status", "availability_status"]))
+        if status == "source blocked":
+            blocked.append(record)
+        else:
+            usable.append(record)
+    messages = [
+        hp.first_value(record, ["description", "notes", "reason"])
+        for record in blocked
+    ]
+    return {
+        "path": str(path),
+        "malformed": False,
+        "recordCount": len(usable),
+        "blockedCount": len(blocked),
+        "capturedAt": captured_at.isoformat(),
+        "timestamp": captured_at.timestamp(),
+        "error": next((message for message in messages if message), ""),
+    }
+
+
+def observed_config_sources(
+    searches: dict,
+    capture_dir: Path,
+    started_at: datetime,
+    finished_at: datetime,
+    *,
+    network_enabled: bool,
+    all_searches: dict | None = None,
+) -> set[str]:
+    """Source families fully observed by this run with validated, non-empty captures.
+
+    Aging is deliberately conservative: every selected lane in a portal family
+    must have a fresh, non-blocked, non-empty result before that family may decay
+    omitted rows. An empty response is health evidence, not proof that inventory
+    vanished; it can also be a portal schema change.
+    """
+    family_results: dict[str, list[tuple[str, str, bool]]] = {}
+    global_family_ids: dict[str, set[str]] = {}
+    for tier in SOURCE_TIERS:
+        for cfg in (all_searches or searches).get(tier, []):
+            if not isinstance(cfg, dict) or not cfg.get("enabled", True):
+                continue
+            name = hp.clean(cfg.get("source") or cfg.get("name") or "source")
+            global_family_ids.setdefault(hp.source_family(name), set()).add(source_run_id(tier, cfg))
+    freshness_floor = started_at.timestamp() - 1
+    for tier in SOURCE_TIERS:
+        for cfg in searches.get(tier, []):
+            if not isinstance(cfg, dict) or not cfg.get("enabled", True):
+                continue
+            name = hp.clean(cfg.get("source") or cfg.get("name") or "source")
+            family = hp.source_family(name)
+            paths = expected_capture_paths(tier, cfg, capture_dir)
+            infos = [_capture_file_info(path) for path in paths if path.exists()]
+            success = False
+            if tier == "ai_browser":
+                if len(infos) == len(paths) == 1 and not infos[0].get("malformed"):
+                    captured = datetime.fromisoformat(infos[0]["capturedAt"])
+                    age_hours = max(0.0, (finished_at - captured).total_seconds() / 3600)
+                    success = (
+                        age_hours <= AI_CAPTURE_MAX_AGE_HOURS
+                        and infos[0].get("recordCount", 0) > 0
+                        and not infos[0].get("blockedCount")
+                    )
+            elif network_enabled and not (
+                tier == "apis" and cfg.get("key_env") and not os.environ.get(cfg["key_env"], "").strip()
+            ):
+                current = [
+                    info for info in infos
+                    if info.get("malformed") or info.get("timestamp", 0) >= freshness_floor
+                ]
+                success = (
+                    len(current) == len(paths)
+                    and all(
+                        not info.get("malformed")
+                        and not info.get("blockedCount")
+                        and info.get("recordCount", 0) > 0
+                        for info in current
+                    )
+                )
+            family_results.setdefault(family, []).append((source_run_id(tier, cfg), name, success))
+    return {
+        results[0][1]
+        for family, results in family_results.items()
+        if (
+            results
+            and {run_id for run_id, _name, _success in results} == global_family_ids.get(family, set())
+            and all(success for _run_id, _name, success in results)
+        )
+    }
+
+
+def build_run_health(
+    searches: dict,
+    capture_dir: Path,
+    started_at: datetime,
+    finished_at: datetime,
+    *,
+    network_enabled: bool,
+    source_filters: set[str],
+    decay_scope: str,
+    pipeline_summary: dict,
+    previous: dict | None = None,
+    all_searches: dict | None = None,
+) -> dict:
+    previous_rows = {
+        row.get("id"): row for row in (previous or {}).get("sources", []) if isinstance(row, dict) and row.get("id")
+    }
+    source_rows: list[dict] = []
+    freshness_floor = started_at.timestamp() - 1
+    for tier in SOURCE_TIERS:
+        for cfg in searches.get(tier, []):
+            if not isinstance(cfg, dict) or not cfg.get("enabled", True):
+                continue
+            run_id = source_run_id(tier, cfg)
+            paths = expected_capture_paths(tier, cfg, capture_dir)
+            infos = [_capture_file_info(path) for path in paths if path.exists()]
+            previous_row = previous_rows.get(run_id, {})
+            row = {
+                "id": run_id,
+                "tier": tier,
+                "name": hp.clean(cfg.get("name") or cfg.get("source") or "source"),
+                "label": hp.clean(cfg.get("label", "")),
+                "status": "not_run",
+                "recordCount": 0,
+                "blockedCount": 0,
+                "lastAttemptAt": None,
+                "lastSuccessAt": previous_row.get("lastSuccessAt"),
+                "message": "",
+                "selectedThisRun": True,
+            }
+            if tier == "ai_browser":
+                info = infos[0] if infos else None
+                if info and not info.get("malformed"):
+                    captured_at = datetime.fromisoformat(info["capturedAt"])
+                    age_hours = max(0.0, (finished_at - captured_at).total_seconds() / 3600)
+                    row["captureAgeHours"] = round(age_hours, 1)
+                    row["lastAttemptAt"] = info["capturedAt"]
+                    row["recordCount"] = info.get("recordCount", 0)
+                    row["blockedCount"] = info.get("blockedCount", 0)
+                    if age_hours > AI_CAPTURE_MAX_AGE_HOURS:
+                        row["status"] = "pending"
+                        row["message"] = f"last browser capture is {age_hours:.1f}h old"
+                    elif info.get("blockedCount") and not info.get("recordCount"):
+                        row["status"] = "blocked"
+                        row["message"] = info.get("error", "browser source blocked")
+                    elif info.get("recordCount"):
+                        row["status"] = "captured"
+                        row["lastSuccessAt"] = info["capturedAt"]
+                    else:
+                        row["status"] = "empty"
+                        row["message"] = "fresh browser capture contained zero listings"
+                elif info and info.get("malformed"):
+                    row["status"] = "malformed"
+                    row["message"] = info.get("error", "malformed browser capture")
+                else:
+                    row["status"] = "pending"
+                    row["message"] = "visible-browser capture still needed"
+                source_rows.append(row)
+                continue
+
+            if not network_enabled:
+                row["message"] = "network capture disabled for this run"
+                source_rows.append(row)
+                continue
+            if tier == "apis" and cfg.get("key_env") and not os.environ.get(cfg["key_env"], "").strip():
+                row["status"] = "skipped"
+                row["message"] = f"missing {cfg['key_env']}"
+                source_rows.append(row)
+                continue
+            current_infos = [info for info in infos if info.get("timestamp", 0) >= freshness_floor or info.get("malformed")]
+            if not current_infos:
+                row["status"] = "missing"
+                row["message"] = "capture adapter produced no file"
+                source_rows.append(row)
+                continue
+            row["recordCount"] = sum(info.get("recordCount", 0) for info in current_infos)
+            row["blockedCount"] = sum(info.get("blockedCount", 0) for info in current_infos)
+            attempts = [info.get("capturedAt") for info in current_infos if info.get("capturedAt")]
+            row["lastAttemptAt"] = max(attempts) if attempts else None
+            messages = [info.get("error") for info in current_infos if info.get("error")]
+            if any(info.get("malformed") for info in current_infos):
+                row["status"] = "malformed"
+            elif row["blockedCount"] and row["recordCount"]:
+                row["status"] = "degraded"
+            elif row["blockedCount"]:
+                row["status"] = "blocked"
+            elif row["recordCount"]:
+                row["status"] = "ok"
+                row["lastSuccessAt"] = row["lastAttemptAt"]
+            else:
+                row["status"] = "empty"
+            if messages:
+                row["message"] = messages[0]
+            elif row["status"] == "empty":
+                row["message"] = "adapter returned zero listings; verify schema/search"
+            source_rows.append(row)
+
+    selected_rows = list(source_rows)
+    selected_ids = {row["id"] for row in selected_rows}
+    all_config = all_searches or searches
+    for tier in SOURCE_TIERS:
+        for cfg in all_config.get(tier, []):
+            if not isinstance(cfg, dict) or not cfg.get("enabled", True):
+                continue
+            run_id = source_run_id(tier, cfg)
+            if run_id in selected_ids:
+                continue
+            previous_row = previous_rows.get(run_id)
+            if previous_row:
+                row = copy.deepcopy(previous_row)
+                row.update({
+                    "id": run_id,
+                    "tier": tier,
+                    "name": hp.clean(cfg.get("name") or cfg.get("source") or "source"),
+                    "label": hp.clean(cfg.get("label", "")),
+                    "selectedThisRun": False,
+                })
+            else:
+                row = {
+                    "id": run_id,
+                    "tier": tier,
+                    "name": hp.clean(cfg.get("name") or cfg.get("source") or "source"),
+                    "label": hp.clean(cfg.get("label", "")),
+                    "status": "not_selected",
+                    "recordCount": 0,
+                    "blockedCount": 0,
+                    "lastAttemptAt": None,
+                    "lastSuccessAt": None,
+                    "message": "not selected in this run",
+                    "selectedThisRun": False,
+                }
+            source_rows.append(row)
+
+    counts: dict[str, int] = {}
+    for row in selected_rows:
+        counts[row["status"]] = counts.get(row["status"], 0) + 1
+    problematic = sum(counts.get(status, 0) for status in ("blocked", "degraded", "missing", "malformed", "empty"))
+    pending = counts.get("pending", 0)
+    overall = "degraded" if problematic else "needs_browser" if pending else "offline" if not network_enabled else "healthy"
+    return {
+        "schemaVersion": 1,
+        "startedAt": started_at.isoformat(),
+        "finishedAt": finished_at.isoformat(),
+        "durationSeconds": round((finished_at - started_at).total_seconds(), 1),
+        "overall": overall,
+        "networkEnabled": network_enabled,
+        "decayScope": decay_scope,
+        "selectedFilters": sorted(source_filters),
+        "captureDir": str(capture_dir),
+        "summary": {
+            "configured": len(source_rows),
+            "selectedConfigured": len(selected_rows),
+            **counts,
+        },
+        "pipeline": {
+            key: pipeline_summary.get(key)
+            for key in ("created", "updated", "total", "active", "needs_verification", "replaced", "sources_covered")
+        },
+        "sources": source_rows,
+    }
+
+
+def load_previous_run_health(path: Path) -> dict:
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+        return value if isinstance(value, dict) else {}
+    except (OSError, json.JSONDecodeError, UnicodeDecodeError):
+        return {}
+
+
 def list_configured_sources(searches: dict) -> None:
     print("Selectable configured sources:")
     print("  common tokens: solo/liam (non-5+ Liam lanes), group (SF 5+ lanes; alias sf5plus), all")
@@ -235,7 +585,8 @@ def list_configured_sources(searches: dict) -> None:
             if not isinstance(cfg, dict):
                 continue
             aliases = ", ".join(sorted(source_tokens(cfg))[:12])
-            print(f"  - {source_display_name(cfg)}")
+            disabled = " (disabled)" if not cfg.get("enabled", True) else ""
+            print(f"  - {source_display_name(cfg)}{disabled}")
             if aliases:
                 print(f"    tokens: {aliases}")
 
@@ -253,6 +604,8 @@ def capture_path_matches(path: Path, filters: set[str]) -> bool:
     path_tokens = {compact, *(part for part in stem.split("-") if part)}
     if "solo" in filters and "5plus" not in compact:
         return True
+    if "sf5plus" in filters and "5plus" in compact and ("sf" in compact or "sanfrancisco" in compact):
+        return True
     for wanted in filters:
         if wanted in path_tokens:
             return True
@@ -268,7 +621,8 @@ def is_ai_capture(path: Path) -> bool:
 def capture_age_hours(path: Path, now: datetime | None = None) -> float:
     now = now or datetime.now(timezone.utc)
     try:
-        mtime = datetime.fromtimestamp(path.stat().st_mtime, tz=timezone.utc)
+        stat = path.stat()
+        mtime = datetime.fromtimestamp(max(stat.st_mtime, stat.st_ctime), tz=timezone.utc)
     except OSError:
         return float("inf")
     return max(0.0, (now - mtime).total_seconds() / 3600)
@@ -309,7 +663,7 @@ def _text(node, *suffixes) -> str:
     return ""
 
 
-def fetch_rss(name: str, url: str, market_hint: str) -> tuple[list[dict], str | None]:
+def fetch_rss(name: str, url: str, market_hint: str, cfg: dict | None = None) -> tuple[list[dict], str | None]:
     """Fetch one public RSS feed. Returns (records, error). On any failure we
     return a Source-Blocked record and the error string — never a retry, proxy,
     or bypass (that is a hard rule in references/sources.md)."""
@@ -354,7 +708,7 @@ def fetch_rss(name: str, url: str, market_hint: str) -> tuple[list[dict], str | 
             "description": f"Source Blocked: ParseError: {exc}",
             "market": market_hint,
         }], f"parse error: {exc}")
-    return records, None
+    return filter_rss_records(records, cfg or {"name": name}), None
 
 
 def _strip_html(text: str) -> str:
@@ -395,6 +749,49 @@ def parse_rss_body(body: str, name: str, market_hint: str) -> list[dict]:
     return records
 
 
+def _feed_datetime(value: str) -> datetime | None:
+    text = hp.clean(value)
+    if not text:
+        return None
+    try:
+        parsed = datetime.fromisoformat(text.replace("Z", "+00:00"))
+    except ValueError:
+        try:
+            parsed = parsedate_to_datetime(text)
+        except (TypeError, ValueError, OverflowError):
+            return None
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc)
+
+
+def filter_rss_records(records: list[dict], cfg: dict, now: datetime | None = None) -> list[dict]:
+    """Keep RSS as a small, recent lead source instead of a discussion firehose."""
+    name = hp.normalize(cfg.get("name", ""))
+    relevance = hp.normalize(cfg.get("relevance", ""))
+    if "reddit" not in name and relevance != "housing offer":
+        return records
+    now = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
+    max_age_days = max(1, hp.to_int(cfg.get("max_age_days", 21)) or 21)
+    cutoff = now - timedelta(days=max_age_days)
+    label = hp.slug(str(cfg.get("label", "")))
+    kept: list[dict] = []
+    for record in records:
+        title = hp.clean(record.get("title", ""))
+        if not hp.is_housing_offer_title(title):
+            continue
+        posted = _feed_datetime(record.get("posted", ""))
+        if posted and posted < cutoff:
+            continue
+        if "5plus" in label:
+            beds = hp.parse_bed_count(title)
+            group_house = bool(re.search(r"\b(?:whole|group)\s+house\b|\b(?:roommates?|housemates?)\b", title, re.I))
+            if (beds or 0) < 5 and not group_house:
+                continue
+        kept.append(record)
+    return kept
+
+
 def run_headless_capture(capture_dir: Path, searches: dict) -> list[Path]:
     written: list[Path] = []
     for feed in searches.get("rss", []):
@@ -403,7 +800,7 @@ def run_headless_capture(capture_dir: Path, searches: dict) -> list[Path]:
         if written:
             time.sleep(RSS_FEED_DELAY_SECONDS)
         name = feed.get("name", "Craigslist")
-        records, error = fetch_rss(name, feed["url"], feed.get("market_hint", ""))
+        records, error = fetch_rss(name, feed["url"], feed.get("market_hint", ""), feed)
         slug = hp.slug(f"{name}-{feed.get('label', feed.get('market_hint',''))}") or "feed"
         out = capture_dir / f"rss-{slug}.json"
         out.write_text(json.dumps(records, indent=2), encoding="utf-8")
@@ -435,7 +832,7 @@ def print_ai_capture_plan(searches: dict, capture_dir: Path, sources_arg: list[s
     def out(*args):
         print(*args, file=sys.stderr)
 
-    plan = searches.get("ai_browser", [])
+    plan = [src for src in searches.get("ai_browser", []) if src.get("enabled", True)]
     out("\n================ AI CAPTURE PLAN ================")
     if not plan:
         out("No AI-browser sources configured.")
@@ -477,7 +874,8 @@ def print_ai_capture_plan(searches: dict, capture_dir: Path, sources_arg: list[s
     out("================================================\n")
 
 
-def main() -> int:
+def _run_once() -> int:
+    started_at = datetime.now(timezone.utc)
     parser = argparse.ArgumentParser(description="Kickoff the Bay Area housing hunt (headless + plan).")
     parser.add_argument("--capture-dir", type=Path, default=DEFAULT_CAPTURE_DIR)
     parser.add_argument("--input", nargs="*", type=Path, default=[], help="Extra capture file(s) to ingest (e.g. AI-produced)")
@@ -492,20 +890,31 @@ def main() -> int:
     parser.add_argument("--date", default=hp.today_iso())
     parser.add_argument("--stale-days", type=int, default=3)
     parser.add_argument("--retire-days", type=int, default=14)
+    parser.add_argument("--decay-scope", choices=("covered", "all", "none"), default="covered",
+                        help="Age only sources observed by this run (default), every source, or none")
+    parser.add_argument("--health-file", type=Path, default=DEFAULT_RUN_HEALTH_FILE,
+                        help="Write per-source run health JSON here")
     args = parser.parse_args()
 
     capture_dir = args.capture_dir
+    try:
+        all_searches = load_searches()
+    except RuntimeError as exc:
+        print(f"ERROR: {exc}", file=sys.stderr)
+        return 2
     capture_dir.mkdir(parents=True, exist_ok=True)
     if args.fresh_capture_dir:
         removed = clear_capture_json(capture_dir)
         print(f"Cleared {removed} old capture file(s) from {capture_dir}", file=sys.stderr)
-    searches = load_searches()
-    searches, source_filters = filter_searches(searches, args.sources)
+    searches, source_filters = filter_searches(all_searches, args.sources)
     if args.list_sources:
         list_configured_sources(searches)
         return 0
+    counts = selected_source_counts(searches)
+    if sum(counts.values()) == 0 and not args.input:
+        print(f"ERROR: no enabled sources matched {' '.join(args.sources)!r}", file=sys.stderr)
+        return 2
     if "all" not in source_filters:
-        counts = selected_source_counts(searches)
         print(
             "Selected sources "
             f"{' '.join(args.sources)!r}: web={counts['web']}, rss={counts['rss']}, "
@@ -552,28 +961,81 @@ def main() -> int:
             deduped.append(path)
     captured = deduped
 
+    capture_finished_at = datetime.now(timezone.utc)
+    observed_sources = observed_config_sources(
+        searches,
+        capture_dir,
+        started_at,
+        capture_finished_at,
+        network_enabled=not args.no_network,
+        all_searches=all_searches,
+    )
+
     summary = hp.run(
         inputs=captured,
         default_source=args.source,
         run_date=args.date,
         stale_days=args.stale_days,
         retire_days=args.retire_days,
+        decay_scope=args.decay_scope,
+        observed_sources=observed_sources,
     )
     if capture_warnings:
         summary["warnings"] = [*summary.get("warnings", []), *capture_warnings]
+    finished_at = datetime.now(timezone.utc)
+    previous_health = load_previous_run_health(args.health_file)
+    run_health = build_run_health(
+        searches,
+        capture_dir,
+        started_at,
+        finished_at,
+        network_enabled=not args.no_network,
+        source_filters=source_filters,
+        decay_scope=args.decay_scope,
+        pipeline_summary=summary,
+        previous=previous_health,
+        all_searches=all_searches,
+    )
+    hp.atomic_write_text(args.health_file, json.dumps(run_health, indent=2) + "\n")
+    summary["run_health"] = str(args.health_file)
+    summary["source_health"] = run_health["summary"]
+    summary["overall_health"] = run_health["overall"]
+    notion_failed = False
+    if args.notion:
+        print("Mirroring to Notion...", file=sys.stderr)
+        import subprocess
+        result = subprocess.run(
+            [sys.executable, str(SCRIPT_DIR / "sync_housing_to_notion.py")],
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        if result.stdout.strip():
+            print(result.stdout.strip(), file=sys.stderr)
+        if result.stderr.strip():
+            print(result.stderr.strip(), file=sys.stderr)
+        notion_failed = result.returncode != 0
+        summary["notion"] = {"ok": not notion_failed, "returncode": result.returncode}
+        if notion_failed:
+            summary["warnings"] = [*summary.get("warnings", []), "Notion mirror failed"]
+
     print(json.dumps(summary, indent=2))
     if summary.get("warnings"):
         print("\nWarnings:", file=sys.stderr)
         for w in summary["warnings"]:
             print(f"  - {w}", file=sys.stderr)
 
-    if args.notion:
-        print("Mirroring to Notion...", file=sys.stderr)
-        import subprocess
-        subprocess.run([sys.executable, str(SCRIPT_DIR / "sync_housing_to_notion.py")], check=False)
-
     print_ai_capture_plan(searches, capture_dir, args.sources)
-    return 0
+    return 1 if notion_failed else 0
+
+
+def main() -> int:
+    try:
+        with hp.conductor_lock():
+            return _run_once()
+    except hp.HousingConductorBusy as exc:
+        print(f"ERROR: {exc}", file=sys.stderr)
+        return 3
 
 
 if __name__ == "__main__":

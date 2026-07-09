@@ -8,6 +8,12 @@
       "port": 4173
     },
     {
+      "name": "fantasywizard-frontend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "/Users/liamvan/Documents/Repos/FantasyWizard/frontend", "run", "dev"],
+      "port": 5173
+    },
+    {
       "name": "housing-visualizer",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "preview", "--prefix", "housing-visualizer", "--", "--port", "4174"],

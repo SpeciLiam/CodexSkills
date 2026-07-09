@@ -20,6 +20,8 @@ import commute_origins as co  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / "housing-visualizer" / "src" / "data" / "housing-data.json"
+RUN_HEALTH_FILE = hp.TRACKER_DIR / "run-health.json"
+SEARCHES_FILE = SCRIPT_DIR / "searches.json"
 
 # Real Google-Maps commute cache (durations only; written by recompute_commutes.py).
 # Reading it here costs nothing — Google was billed once when the cache was built —
@@ -77,7 +79,16 @@ def _norm_person(p: dict) -> dict:
 def load_household() -> dict:
     """The shared roommate config (scripts/household.json) — seeds the dashboard's two
     profiles. Returns {'liam': <person>, 'group': [<person>...]}. Solo HackerRank fallback."""
-    out = {"liam": dict(LIAM_DEFAULT), "group": [dict(LIAM_DEFAULT)]}
+    out = {
+        "liam": dict(LIAM_DEFAULT),
+        "group": [dict(LIAM_DEFAULT)],
+        "groupConfig": {
+            "targetBedrooms": 5,
+            "budgetPerPerson": 2650,
+            "totalBudget": 13250,
+            "searchArea": "San Francisco only",
+        },
+    }
     try:
         cfg = json.loads(HOUSEHOLD_FILE.read_text(encoding="utf-8"))
         liam_people = ((cfg.get("liam") or {}).get("people")) or []
@@ -87,6 +98,15 @@ def load_household() -> dict:
         group = [_norm_person(p) for p in group_people if isinstance(p, dict)]
         if group:
             out["group"] = group
+        group_cfg = cfg.get("group") or {}
+        out["groupConfig"] = {
+            "targetBedrooms": hp.to_int(group_cfg.get("targetBedrooms")) or len(out["group"]),
+            "budgetPerPerson": hp.to_int(group_cfg.get("budgetPerPerson")) or 2650,
+            "totalBudget": hp.to_int(group_cfg.get("totalBudget")) or (
+                (hp.to_int(group_cfg.get("budgetPerPerson")) or 2650) * len(out["group"])
+            ),
+            "searchArea": hp.clean(group_cfg.get("searchArea")) or "San Francisco only",
+        }
     except (OSError, json.JSONDecodeError, TypeError, AttributeError):
         pass
     return out
@@ -217,12 +237,14 @@ SF_NEIGHBORHOOD_HINTS = {
 
 def source_tier(source: str) -> str:
     text = hp.normalize(source)
-    if "craigslist" in text or "zumper" in text:
+    if any(term in text for term in ["craigslist", "zumper", "redfin", "rent.com", "rent com"]):
         return "headless"
-    if any(term in text for term in ["facebook", "zillow", "apartments", "furnished"]):
+    if any(term in text for term in ["facebook", "zillow", "apartments", "furnished", "hotpads", "trulia", "realtor"]):
         return "browser"
     if "reddit" in text or "rentcast" in text:
         return "api"
+    if text in configured_source_tiers():
+        return configured_source_tiers()[text]
     return "manual"
 
 
@@ -238,7 +260,53 @@ def source_health(source: str) -> str:
         return "structured headless; section spillover possible"
     if "zumper" in text:
         return "structured headless SSR"
+    if "redfin" in text:
+        return "structured headless ld+json; some cities challenge"
+    if "rent.com" in text or "rent com" in text:
+        return "structured headless Next.js state"
+    if source_tier(source) == "headless":
+        return "official property-manager availability state"
     return "capture source"
+
+
+def configured_source_tiers() -> dict[str, str]:
+    if hasattr(configured_source_tiers, "_cache"):
+        return configured_source_tiers._cache  # type: ignore[attr-defined]
+    tiers: dict[str, str] = {}
+    try:
+        searches = json.loads(SEARCHES_FILE.read_text(encoding="utf-8"))
+        for config_tier, export_tier in [("web", "headless"), ("rss", "api"), ("apis", "api"), ("ai_browser", "browser")]:
+            for cfg in searches.get(config_tier, []):
+                for key in ("name", "source"):
+                    value = hp.normalize(cfg.get(key, "")) if isinstance(cfg, dict) else ""
+                    if value:
+                        tiers[value] = export_tier
+    except (OSError, json.JSONDecodeError, TypeError, AttributeError):
+        pass
+    configured_source_tiers._cache = tiers  # type: ignore[attr-defined]
+    return tiers
+
+
+def load_run_health() -> dict:
+    try:
+        health = json.loads(RUN_HEALTH_FILE.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError, TypeError):
+        return {}
+    if not isinstance(health, dict):
+        return {}
+    # Keep local scratch paths out of the public dashboard artifact.
+    health.pop("captureDir", None)
+    for row in health.get("sources", []):
+        if isinstance(row, dict):
+            row.pop("path", None)
+    return health
+
+
+def compact_notes(value: str, limit: int = 1000) -> str:
+    text = hp.clean(value)
+    if len(text) <= limit:
+        return text
+    return text[:limit].rstrip() + "…"
 
 
 def unit_scope(row: dict, parsed_beds) -> str:
@@ -307,23 +375,16 @@ def export() -> dict:
     listings = []
     for row in rows:
         lk = row.get("Listing Key", "")
-        how, nc_to, nc_from, car_to = sync.commute_fields(row.get("Commute", ""), row.get("Market", ""))
         parsed_beds = beds_num(row.get("Beds", ""), row.get("Title", ""))
         loc = location_meta(row)
-        listings.append({
+        status = row.get("Status", "")
+        rich_status = status in hp.ACTIVE_STATUSES or status == "Needs Verification"
+        item = {
             "listingKey": lk,
             "title": row.get("Title", ""),
             "market": row.get("Market", ""),
             "city": row.get("City", ""),
             "neighborhood": row.get("Neighborhood", ""),
-            # The exact geocodable origin used for this listing's cached commute, so the
-            # browser's live "Optimal departure" routes from the SAME point (no divergence).
-            "commuteOrigin": (
-                co.coordinate_origin(row.get("Lat", ""), row.get("Lng", ""))
-                or co.origin_address(row.get("Market", ""), row.get("City", ""), row.get("Neighborhood", ""))
-            ),
-            "lat": coord_num(row.get("Lat", "")),
-            "lng": coord_num(row.get("Lng", "")),
             "rent": num(row.get("Rent", "")),
             "allIn": num(row.get("All-In Estimate", "")),
             "beds": row.get("Beds", ""),
@@ -333,19 +394,7 @@ def export() -> dict:
             "baths": row.get("Baths", ""),
             "lease": row.get("Lease", ""),
             "available": row.get("Available", ""),
-            "status": row.get("Status", ""),
-            "score": hp.to_int(row.get("Score", "")),
-            "fitTier": hp.fit_tier(row.get("Score", "")),
-            "scoreBreakdown": hp.score_breakdown(row),
-            "noCarScore": hp.to_int(row.get("No-Car Score", "")),
-            "carScore": hp.to_int(row.get("Car Score", "")),
-            "overallRank": overall_ranks.get(lk),
-            "cityRank": city_ranks.get(lk),
-            "commuteMin": nc_to,
-            "commuteHomeMin": nc_from,
-            "carCommuteMin": car_to,
-            "howToGetThere": how,
-            "officeCommutes": office_commutes(row.get("Market", "")),
+            "status": status,
             "why": sync.hp.clean(row.get("Why", "")),
             "source": row.get("Source", ""),
             "sourceTier": source_tier(row.get("Source", "")),
@@ -354,13 +403,40 @@ def export() -> dict:
             "firstSeen": row.get("First Seen", ""),
             "lastSeen": row.get("Last Seen", ""),
             "url": row.get("URL", ""),
-            "notes": row.get("Notes", ""),
-        })
+            "notes": compact_notes(row.get("Notes", ""), 1000 if rich_status else 300),
+        }
+        if rich_status:
+            how, nc_to, nc_from, car_to = sync.commute_fields(row.get("Commute", ""), row.get("Market", ""))
+            item.update({
+                # The exact geocodable origin used for this listing's cached commute, so the
+                # browser's live "Optimal departure" routes from the SAME point.
+                "commuteOrigin": (
+                    co.coordinate_origin(row.get("Lat", ""), row.get("Lng", ""))
+                    or co.origin_address(row.get("Market", ""), row.get("City", ""), row.get("Neighborhood", ""))
+                ),
+                "lat": coord_num(row.get("Lat", "")),
+                "lng": coord_num(row.get("Lng", "")),
+                "score": hp.to_int(row.get("Score", "")),
+                "fitTier": hp.fit_tier(row.get("Score", "")),
+                "scoreBreakdown": hp.score_breakdown(row),
+                "noCarScore": hp.to_int(row.get("No-Car Score", "")),
+                "carScore": hp.to_int(row.get("Car Score", "")),
+                "overallRank": overall_ranks.get(lk),
+                "cityRank": city_ranks.get(lk),
+                "commuteMin": nc_to,
+                "commuteHomeMin": nc_from,
+                "carCommuteMin": car_to,
+                "howToGetThere": how,
+                "officeCommutes": office_commutes(row.get("Market", "")),
+            })
+        listings.append(item)
 
     # Overlay real Google-Maps routing where the cache covers a listing's origin.
     cache = load_commute_cache()
     google_n = 0
     for x in listings:
+        if x.get("status") not in hp.ACTIVE_STATUSES | {"Needs Verification"}:
+            continue
         x.setdefault("commuteSource", "geo-estimate" if has_coords(x) else "region-default")
         if apply_google_commute(x, cache):
             google_n += 1
@@ -374,9 +450,22 @@ def export() -> dict:
     strict_sf_five_plus = [x for x in five_plus if x.get("strictSfCity")]
     exact_sf_five_plus = [x for x in five_plus if x.get("exactSf")]
     _hh = load_household()
+    run_health = load_run_health()
+    built_at = datetime.now(timezone.utc).isoformat()
 
     return {
-        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        # Keep generatedAt for old clients, but distinguish build time from the
+        # last pipeline/source attempt so a redeploy cannot pretend data is fresh.
+        "generatedAt": built_at,
+        "dashboardBuiltAt": built_at,
+        "pipelineRunAt": run_health.get("finishedAt"),
+        "runHealth": run_health or None,
+        "searchDefaults": {
+            "needStart": hp.NEED_START.isoformat(),
+            "minimumStayDays": hp.MIN_STAY_DAYS,
+            "rtoDays": ["Monday", "Wednesday", "Thursday"],
+            "timezone": "America/Los_Angeles",
+        },
         "stats": {
             "total": len(listings),
             "active": len(active),
@@ -395,15 +484,22 @@ def export() -> dict:
         "offices": OFFICES,
         "defaultPeople": _hh["group"],
         "defaultLiam": _hh["liam"],
+        "groupSearch": _hh["groupConfig"],
         "listings": listings,
     }
 
 
 def main() -> int:
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    data = export()
-    OUT.write_text(json.dumps(data, indent=2), encoding="utf-8")
-    print(json.dumps({"wrote": str(OUT), **data["stats"]}, indent=2))
+    # Wait for any active capture/ledger/health transaction before reading. This
+    # prevents a dashboard build from combining an old ledger with new health (or
+    # vice versa) while a scheduled conductor is running.
+    with hp.conductor_lock(blocking=True):
+        OUT.parent.mkdir(parents=True, exist_ok=True)
+        data = export()
+        # This file is bundled into the web app; compact JSON avoids doubling a
+        # multi-thousand-row payload with indentation before Vite even sees it.
+        hp.atomic_write_text(OUT, json.dumps(data, separators=(",", ":")) + "\n")
+        print(json.dumps({"wrote": str(OUT), **data["stats"]}, indent=2))
     return 0
 
 

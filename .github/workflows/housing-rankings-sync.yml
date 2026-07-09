@@ -1,22 +1,24 @@
-name: Housing rankings sync
+name: Housing source health
 
-# Cloud freshness backstop for the bay-area-housing-hunt skill. Every 6 hours it
-# runs the headless web/API tiers (Craigslist sapi JSON, Zumper SSR state, Reddit/API
-# sources where reachable), rescores, and mirrors the ledger into Notion.
+# Read-only cloud health backstop for the bay-area-housing-hunt skill. Once daily it
+# tests the pipeline and probes the headless tiers against the checked-out snapshot.
 # It does NOT log into Facebook/Zillow/Apartments.com/Furnished Finder (no browser)
-# and does NOT commit to the repo -- the rich browser capture and the authoritative
-# markdown stay in local Claude/Codex runs. The refreshed board is uploaded as an artifact.
+# and does NOT commit, deploy, or mutate Notion. Local Codex/Claude runs remain the
+# only canonical writers; this job uploads diagnostics for inspection.
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "7 */6 * * *"   # every 6 hours, off the top of the hour
+    - cron: "17 14 * * *"   # daily, off the top of the hour
+
+concurrency:
+  group: housing-source-health
+  cancel-in-progress: false
 
 jobs:
   refresh:
-    # Runs on manual dispatch always; on schedule only when explicitly enabled.
-    if: ${{ github.event_name == 'workflow_dispatch' || vars.HOUSING_SYNC_ENABLED == 'true' }}
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -24,16 +26,55 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Refresh board + mirror to Notion (headless web/API only)
+      - name: Run housing regression tests
+        run: python3 -m unittest discover -s skills/bay-area-housing-hunt/scripts/tests -v
+
+      - name: Probe headless sources and build health artifact
         env:
-          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          HOUSING_TRACKER_DIR: ${{ runner.temp }}/housing-trackers
+          HOUSING_LOCK_FILE: ${{ runner.temp }}/housing-pipeline.lock
+          HOUSING_CONDUCTOR_LOCK_FILE: ${{ runner.temp }}/housing-conductor.lock
         run: |
-          python3 skills/bay-area-housing-hunt/scripts/run.py --fresh-capture-dir --notion
+          mkdir -p "$HOUSING_TRACKER_DIR"
+          cp housing-trackers/listings.md housing-trackers/power-rankings.md "$HOUSING_TRACKER_DIR/"
+          python3 skills/bay-area-housing-hunt/scripts/run.py \
+            --fresh-capture-dir \
+            --capture-dir "$RUNNER_TEMP/housing-captures" \
+            --decay-scope covered
+          python3 skills/bay-area-housing-hunt/scripts/export_housing_data.py
+
+      - name: Fail on unhealthy selected headless sources
+        env:
+          HOUSING_HEALTH_FILE: ${{ runner.temp }}/housing-trackers/run-health.json
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          health = json.loads(Path(os.environ["HOUSING_HEALTH_FILE"]).read_text())
+          selected = [row for row in health.get("sources", []) if row.get("selectedThisRun") is not False]
+          bad_statuses = {"blocked", "degraded", "missing", "malformed", "empty"}
+          unhealthy = [
+              row for row in selected
+              if row.get("tier") != "ai_browser" and row.get("status") in bad_statuses
+          ]
+          if not selected:
+              raise SystemExit("health probe selected zero sources")
+          if unhealthy:
+              for row in unhealthy:
+                  print(f"{row.get('id')}: {row.get('status')} — {row.get('message', '')}")
+              raise SystemExit(f"{len(unhealthy)} selected headless source(s) unhealthy")
+          print(f"health gate passed: {len(selected)} selected sources; browser-pending is allowed")
+          PY
 
       - name: Upload refreshed board
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: housing-board
-          path: housing-trackers/*.md
+          path: |
+            ${{ runner.temp }}/housing-trackers/*.md
+            ${{ runner.temp }}/housing-trackers/run-health.json
+            housing-visualizer/src/data/housing-data.json
           if-no-files-found: warn

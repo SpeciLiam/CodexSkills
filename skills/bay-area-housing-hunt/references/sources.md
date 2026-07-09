@@ -100,7 +100,10 @@ a realistic desktop-Chrome UA). Prefer the highest tier a source supports:
     probe on 2026-07-01 tried likely public paths including
     `/california/san-francisco-apartments/5-bedroom` and query-filter variants; they
     returned public HTML without clean `__NEXT_DATA__`, so no SF 5+ Rent.com lane was
-    added.
+    added. A 2026-07-09 full-city fallback produced 60 studio-2bd floorplans across
+    only three property URLs and zero 5+ rows, so that experimental lane remains
+    disabled. The adapter now honors `min_bedrooms` and keeps explicit floorplan
+    identities instead of collapsing every floorplan onto the building URL.
 - **Free + headless JSON `apis` — `capture_api.py`:** keyless/keyed JSON endpoints.
   - **Reddit JSON is retired (2026-07-02):** the public `.json` endpoints now 403
     even from a residential IP (probed www/old/api hosts, multiple UAs). Reddit
@@ -108,8 +111,11 @@ a realistic desktop-Chrome UA). Prefer the highest tier a source supports:
     results per subreddit. They 429 on back-to-back requests, so `run.py` spaces
     RSS fetches 45s apart and honors one `Retry-After` per feed — polite pacing
     within the published limit, never a bypass; a second 429 records
-    `Source Blocked`. Reddit rows are lead-generation (usually no rent) and land
-    in `Needs Verification` for manual follow-up.
+    `Source Blocked`. As of 2026-07-09 the RSS adapter keeps only recent
+    offer-shaped titles (sublet, lease takeover, room/home available, or a
+    specific group-house roommate offer) inside a 21-day window. General advice,
+    policy/news, moving sales, tickets, car rentals, and housing seekers no longer
+    enter the ranked ledger; legacy noise is marked `Rejected` on refresh.
   - **RentCast / RapidAPI wrappers:** optional, off by default; enable via key env var.
     Free tiers only unless Liam opts into paying.
 - **Visible/logged-in browser `ai_browser`:** sources that genuinely block headless
@@ -242,6 +248,17 @@ Orchestration:
   `capture_api.py` (`apis`: Reddit etc.) — then ingests every JSON in the capture dir
   and rebuilds the board. With the `web` tier, a fully headless run (cloud/CI, no
   browser) already covers Craigslist + Zumper.
+- Every kickoff writes `housing-trackers/run-health.json` with per-source
+  attempt/success timestamps, row counts, blocked/empty/missing outcomes, and
+  pending browser captures. It retains unselected lanes and marks them with
+  `selectedThisRun: false`, so alternating solo/group runs do not erase history.
+  Source aging defaults to `--decay-scope covered`: every enabled lane in a portal
+  family must return a fresh, non-blocked, non-empty capture before omitted rows
+  from that family can age. A zero-row result is health degradation until a future
+  schema-aware empty sentinel exists; it never decays inventory by itself.
+- `run.py` takes one non-blocking conductor lock across capture → ledger → health,
+  while the exporter waits for the same lock. Scheduled agents must still use
+  distinct capture directories so `--fresh-capture-dir` is scoped to one task.
 - `--sources 5br` / `5plus` and `--sources sf5plus` are operationally equivalent
   for the current enabled group-house search because all enabled 5+ lanes are
   SF-only. Non-SF 5+ lanes are kept disabled, not deleted, for future re-enable.

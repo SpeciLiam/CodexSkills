@@ -1,6 +1,11 @@
 import importlib
+import json
+import os
+import subprocess
 import sys
+import tempfile
 import unittest
+from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -87,6 +92,25 @@ class CaptureSourceParsers(unittest.TestCase):
         self.assertEqual(records[0]["available"], "2026-07-17")
         self.assertEqual(records[0]["lat"], "37.339194")
 
+    def test_parse_rent_next_data_applies_min_bedroom_gate(self):
+        state = {
+            "props": {"pageProps": {"pageData": {"location": {"listingSearch": {
+                "listings": [{
+                    "id": "building-1", "name": "Building", "urlPathname": "/building-1",
+                    "floorPlans": [
+                        {"bedCount": 2, "bathCount": 1, "priceRange": {"min": 3000}},
+                        {"id": "five-bed", "bedCount": 5, "bathCount": 3, "priceRange": {"min": 9000}},
+                    ],
+                }],
+            }}}}},
+        }
+        records = self.capture_web.parse_rent_next_data(state, {
+            "name": "Rent.com", "market_hint": "San Francisco", "min_bedrooms": 5,
+        })
+        self.assertEqual(len(records), 1)
+        self.assertEqual(records[0]["beds"], "5 bd")
+        self.assertEqual(records[0]["listing_key"], "rent-building-1-five-bed")
+
     def test_title_bed_count_avoids_price_and_bath_bleed(self):
         cases = [
             ("$5,200 / 6br house", 6),
@@ -168,6 +192,206 @@ class CaptureSourceParsers(unittest.TestCase):
         importlib.reload(run_mod)
         url = "https://www.reddit.com/r/bayarea/search.rss?q=sublet&restrict_sr=on&sort=new"
         self.assertEqual(run_mod._rss_url(url), url)
+
+    def test_reddit_rss_keeps_recent_offers_only(self):
+        import run as run_mod
+        importlib.reload(run_mod)
+        records = [
+            {"source": "Reddit", "title": "Furnished 1BR apartment sublet in Nob Hill",
+             "url": "https://reddit.test/good", "posted": "2026-07-08T12:00:00+00:00"},
+            {"source": "Reddit", "title": "Whole house water filter recommendations",
+             "url": "https://reddit.test/noise", "posted": "2026-07-08T12:00:00+00:00"},
+            {"source": "Reddit", "title": "Room for rent near Caltrain",
+             "url": "https://reddit.test/old", "posted": "2026-05-01T12:00:00+00:00"},
+        ]
+        kept = run_mod.filter_rss_records(
+            records,
+            {"name": "Reddit", "max_age_days": 21},
+            datetime(2026, 7, 9, tzinfo=timezone.utc),
+        )
+        self.assertEqual([row["url"] for row in kept], ["https://reddit.test/good"])
+
+    def test_reddit_group_feed_requires_five_plus_or_group_house(self):
+        import run as run_mod
+        importlib.reload(run_mod)
+        records = [
+            {"title": "5BR house for rent in the Mission", "posted": "2026-07-08T12:00:00Z"},
+            {"title": "Whole house for rent to a group", "posted": "2026-07-08T12:00:00Z"},
+            {"title": "2BR apartment sublet in SOMA", "posted": "2026-07-08T12:00:00Z"},
+        ]
+        kept = run_mod.filter_rss_records(
+            records,
+            {"name": "Reddit", "label": "sf-5plus"},
+            datetime(2026, 7, 9, tzinfo=timezone.utc),
+        )
+        self.assertEqual([row["title"] for row in kept], [records[0]["title"], records[1]["title"]])
+
+    def test_run_health_distinguishes_headless_success_and_browser_pending(self):
+        import run as run_mod
+        importlib.reload(run_mod)
+        capture_dir = Path(tempfile.mkdtemp())
+        searches = {
+            "web": [{"name": "Rent.com", "kind": "rent_next_data", "label": "rent-test", "url": "https://example.test"}],
+            "rss": [],
+            "apis": [],
+            "ai_browser": [{"name": "Zillow Rentals", "label": "zillow-test", "search_url": "https://example.test/zillow"}],
+        }
+        path = run_mod.expected_capture_paths("web", searches["web"][0], capture_dir)[0]
+        path.write_text(json.dumps([{"source": "Rent.com", "title": "Test home", "url": "https://example.test/1"}]))
+        start = datetime.now(timezone.utc)
+        health = run_mod.build_run_health(
+            searches,
+            capture_dir,
+            start,
+            datetime.now(timezone.utc),
+            network_enabled=True,
+            source_filters={"all"},
+            decay_scope="covered",
+            pipeline_summary={"created": 1},
+        )
+        statuses = {row["id"]: row["status"] for row in health["sources"]}
+        self.assertEqual(statuses["web:rent-test"], "ok")
+        self.assertEqual(statuses["ai_browser:zillow-test"], "pending")
+        self.assertEqual(health["overall"], "needs_browser")
+
+    def test_empty_capture_is_not_safe_decay_evidence(self):
+        import run as run_mod
+        importlib.reload(run_mod)
+        capture_dir = Path(tempfile.mkdtemp())
+        searches = {
+            "web": [{"name": "Rent.com", "kind": "rent_next_data", "label": "rent-test", "url": "https://example.test"}],
+            "rss": [], "apis": [], "ai_browser": [],
+        }
+        started = datetime.now(timezone.utc)
+        path = run_mod.expected_capture_paths("web", searches["web"][0], capture_dir)[0]
+        path.write_text("[]")
+        observed = run_mod.observed_config_sources(
+            searches, capture_dir, started, datetime.now(timezone.utc), network_enabled=True,
+        )
+        self.assertEqual(observed, set())
+
+    def test_partial_source_family_is_not_safe_decay_evidence(self):
+        import run as run_mod
+        importlib.reload(run_mod)
+        capture_dir = Path(tempfile.mkdtemp())
+        solo = {"name": "Craigslist", "label": "craigslist-solo", "url": "https://example.test/solo"}
+        group = {"name": "Craigslist", "label": "craigslist-sf-5plus", "url": "https://example.test/group"}
+        selected = {"web": [solo], "rss": [], "apis": [], "ai_browser": []}
+        all_searches = {"web": [solo, group], "rss": [], "apis": [], "ai_browser": []}
+        started = datetime.now(timezone.utc)
+        path = run_mod.expected_capture_paths("web", solo, capture_dir)[0]
+        path.write_text(json.dumps([{"source": "Craigslist", "title": "Room", "url": "https://cl.test/1"}]))
+        observed = run_mod.observed_config_sources(
+            selected,
+            capture_dir,
+            started,
+            datetime.now(timezone.utc),
+            network_enabled=True,
+            all_searches=all_searches,
+        )
+        self.assertEqual(observed, set())
+
+    def test_complete_source_family_can_be_safe_decay_evidence(self):
+        import run as run_mod
+        importlib.reload(run_mod)
+        capture_dir = Path(tempfile.mkdtemp())
+        configs = [
+            {"name": "Craigslist", "label": "craigslist-solo", "url": "https://example.test/solo"},
+            {"name": "Craigslist", "label": "craigslist-sf-5plus", "url": "https://example.test/group"},
+        ]
+        searches = {"web": configs, "rss": [], "apis": [], "ai_browser": []}
+        started = datetime.now(timezone.utc)
+        for index, cfg in enumerate(configs):
+            path = run_mod.expected_capture_paths("web", cfg, capture_dir)[0]
+            path.write_text(json.dumps([{"source": "Craigslist", "title": f"Room {index}", "url": f"https://cl.test/{index}"}]))
+        observed = run_mod.observed_config_sources(
+            searches,
+            capture_dir,
+            started,
+            datetime.now(timezone.utc),
+            network_enabled=True,
+            all_searches=searches,
+        )
+        self.assertEqual(observed, {"Craigslist"})
+
+    def test_run_health_preserves_unselected_source_history(self):
+        import run as run_mod
+        importlib.reload(run_mod)
+        capture_dir = Path(tempfile.mkdtemp())
+        selected_cfg = {"name": "Rent.com", "label": "rent-solo", "url": "https://example.test/solo"}
+        group_cfg = {"name": "Craigslist", "label": "craigslist-sf-5plus", "url": "https://example.test/group"}
+        selected = {"web": [selected_cfg], "rss": [], "apis": [], "ai_browser": []}
+        all_searches = {"web": [selected_cfg, group_cfg], "rss": [], "apis": [], "ai_browser": []}
+        path = run_mod.expected_capture_paths("web", selected_cfg, capture_dir)[0]
+        path.write_text(json.dumps([{"source": "Rent.com", "title": "Unit", "url": "https://rent.test/1"}]))
+        prior_success = "2026-07-08T12:00:00+00:00"
+        previous = {"sources": [{
+            "id": "web:craigslist-sf-5plus", "tier": "web", "name": "Craigslist",
+            "label": "craigslist-sf-5plus", "status": "ok", "recordCount": 12,
+            "blockedCount": 0, "lastAttemptAt": prior_success, "lastSuccessAt": prior_success,
+            "message": "",
+        }]}
+        started = datetime.now(timezone.utc)
+        health = run_mod.build_run_health(
+            selected,
+            capture_dir,
+            started,
+            datetime.now(timezone.utc),
+            network_enabled=True,
+            source_filters={"solo"},
+            decay_scope="covered",
+            pipeline_summary={},
+            previous=previous,
+            all_searches=all_searches,
+        )
+        by_id = {row["id"]: row for row in health["sources"]}
+        self.assertFalse(by_id["web:craigslist-sf-5plus"]["selectedThisRun"])
+        self.assertEqual(by_id["web:craigslist-sf-5plus"]["lastSuccessAt"], prior_success)
+        self.assertEqual(health["summary"]["configured"], 2)
+        self.assertEqual(health["summary"]["selectedConfigured"], 1)
+
+    def test_main_partial_run_keeps_full_config_health_manifest(self):
+        import run as run_mod
+        importlib.reload(run_mod)
+        root = Path(tempfile.mkdtemp())
+        tracker_dir = root / "trackers"
+        health_file = tracker_dir / "run-health.json"
+        env = os.environ.copy()
+        env.update({
+            "HOUSING_TRACKER_DIR": str(tracker_dir),
+            "HOUSING_LOCK_FILE": str(root / "pipeline.lock"),
+            "HOUSING_CONDUCTOR_LOCK_FILE": str(root / "conductor.lock"),
+        })
+        result = subprocess.run(
+            [
+                sys.executable,
+                str(SCRIPT_DIR / "run.py"),
+                "--no-network",
+                "--fresh-capture-dir",
+                "--capture-dir", str(root / "captures"),
+                "--sources", "solo",
+                "--decay-scope", "none",
+                "--health-file", str(health_file),
+            ],
+            env=env,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
+        health = json.loads(health_file.read_text())
+        selected = [row for row in health["sources"] if row.get("selectedThisRun") is not False]
+        unselected = [row for row in health["sources"] if row.get("selectedThisRun") is False]
+        enabled_total = sum(
+            1
+            for tier in run_mod.SOURCE_TIERS
+            for cfg in run_mod.load_searches().get(tier, [])
+            if isinstance(cfg, dict) and cfg.get("enabled", True)
+        )
+        self.assertTrue(selected)
+        self.assertTrue(unselected)
+        self.assertEqual(len(health["sources"]), enabled_total)
+        self.assertEqual(health["summary"]["selectedConfigured"], len(selected))
 
 
 if __name__ == "__main__":

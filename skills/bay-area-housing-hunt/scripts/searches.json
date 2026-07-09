@@ -37,6 +37,14 @@
       "enabled": true,
       "market_hint": "",
       "url": "https://www.reddit.com/r/Sublets_/search.rss?q=san%20francisco%20OR%20bay%20area%20OR%20san%20jose%20OR%20santa%20clara&restrict_sr=on&sort=new"
+    },
+    {
+      "name": "Reddit",
+      "label": "sf-5plus",
+      "enabled": true,
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "url": "https://www.reddit.com/r/sanfrancisco+SFList+bayarea/search.rss?q=%225%20bedroom%22%20OR%20%225br%22%20OR%20%226%20bedroom%22%20OR%20%226br%22%20OR%20%22whole%20house%22&restrict_sr=on&sort=new",
+      "note": "Group SF 5+ lane: multi-sub search feed for 5/6-bedroom or whole-house posts. Added 2026-07-09."
     }
   ],
   "web": [
@@ -653,6 +661,17 @@
       "note": "Rent.com public __NEXT_DATA__ corridor lane."
     },
     {
+      "name": "Rent.com",
+      "kind": "rent_next_data",
+      "label": "rent-com-san-francisco-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "url": "https://www.rent.com/california/san-francisco-apartments",
+      "limit": 60,
+      "min_bedrooms": 5,
+      "enabled": false,
+      "note": "Disabled 2026-07-09: Rent.com's SF city payload yielded 60 studio-2bd floorplans across only three property URLs and zero 5+ rows. Keep the adapter/config for a future filtered endpoint, but do not spend a group run on known-zero inventory or ingest off-target floorplans."
+    },
+    {
       "name": "Zumper",
       "kind": "zumper_state",
       "label": "santa-clara",
@@ -931,6 +950,66 @@
         "san-francisco-ca"
       ],
       "note": "Visible-browser 5+ lane. 2026-07-01 Chrome probe: /5-_beds/ loaded but returned unfiltered SF rentals; applying the UI Beds 5+ control generated searchQueryState with beds.min=5, and direct reload of that URL showed Zillow Press & Hold human verification. Capture visible cards or __NEXT_DATA__ listResults only after the real browser loads the exact 5+ result set without challenge. Do not bypass; record Source Blocked if challenged. Budget cap for the SF-only 5-person group lane is $13,250/mo total ($2,650/person); apply that cap in visible-browser filters/results.",
+      "enabled": true
+    },
+    {
+      "name": "HotPads Rentals (SF 5+ bedrooms)",
+      "label": "hotpads-sf-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "search_url": "https://hotpads.com/san-francisco-ca/apartments-for-rent?beds=5-8plus",
+      "status": "DISABLED_DUPLICATE; Zillow-owned inventory overlaps the enabled Zillow SF 5+ lane.",
+      "cities": [
+        "san-francisco-ca"
+      ],
+      "note": "Visible-browser 5+ lane. Capture visible cards showing 5+ beds only. Budget cap for the SF-only 5-person group lane is $13,250/mo total ($2,650/person).",
+      "enabled": false
+    },
+    {
+      "name": "Trulia Rentals (SF 5+ bedrooms)",
+      "label": "trulia-sf-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "search_url": "https://www.trulia.com/for_rent/San_Francisco,CA/5p_beds/",
+      "status": "DISABLED_DUPLICATE; Zillow-owned inventory overlaps the enabled Zillow SF 5+ lane.",
+      "cities": [
+        "san-francisco-ca"
+      ],
+      "note": "Visible-browser 5+ lane. Capture visible cards showing 5+ beds only. Budget cap $13,250/mo total.",
+      "enabled": false
+    },
+    {
+      "name": "Realtor.com Rentals (SF 5+ bedrooms)",
+      "label": "realtor-sf-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "search_url": "https://www.realtor.com/apartments/San-Francisco_CA/beds-5",
+      "status": "AI_BROWSER; added 2026-07-09 for the max-sources SF 5+ sweep. Headless 403s historically; use visible browser.",
+      "cities": [
+        "san-francisco-ca"
+      ],
+      "note": "Visible-browser 5+ lane. Capture visible cards showing 5+ beds only. Budget cap $13,250/mo total.",
+      "enabled": true
+    },
+    {
+      "name": "PadMapper Rentals (SF 5+ bedrooms)",
+      "label": "padmapper-sf-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "search_url": "https://www.padmapper.com/apartments/san-francisco-ca?min-bedrooms=5",
+      "status": "DISABLED_DUPLICATE; PadMapper uses Zumper inventory and duplicates the enabled headless Zumper SF 5+ lane.",
+      "cities": [
+        "san-francisco-ca"
+      ],
+      "note": "Visible-browser 5+ lane. Capture visible cards showing 5+ beds only. Budget cap $13,250/mo total.",
+      "enabled": false
+    },
+    {
+      "name": "Redfin Rentals (SF 5+ bedrooms)",
+      "label": "redfin-sf-5plus",
+      "market_hint": "SF SoMa/South Beach/Mission Bay",
+      "search_url": "https://www.redfin.com/city/17151/CA/San-Francisco/apartments-for-rent/filter/min-beds=5",
+      "status": "AI_BROWSER; SF city page 202-challenges headless (probed 2026-07-02), so this is a visible-browser lane unlike the South Bay redfin_ldjson web rows.",
+      "cities": [
+        "san-francisco-ca"
+      ],
+      "note": "Visible-browser 5+ lane. Capture visible cards or ld+json after the real browser loads without challenge. Do not bypass; record Source Blocked if challenged. Budget cap $13,250/mo total.",
       "enabled": true
     },
     {
